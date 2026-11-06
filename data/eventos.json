@@ -1,21 +1,63 @@
 {
  "version": 1,
- "actualizado": "2026-11-06T12:54-03:00",
+ "actualizado": "2026-11-06T13:01-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
   "fecha": "2026-11-06T12:54-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 1,
+  "eventos_nuevos": 12,
   "llamadas_ia": 85,
   "ia_sin_cupo": false,
   "paginas_revisadas": 73,
   "busquedas": 48,
   "fuentes_fijas": 7,
   "errores": 6,
-  "redes_vistas": 84
+  "redes_vistas": 84,
+  "nuevos_ids": [
+   "d399a38072",
+   "f840300077",
+   "8aae86e35e",
+   "8e804e1d7b",
+   "30f5e90162",
+   "2dafda391c",
+   "db439ab52c",
+   "811308954e",
+   "d0f526c511",
+   "7df15a74fa",
+   "851cb68b37",
+   "19f603170c"
+  ]
  },
- "total": 11,
+ "total": 12,
  "eventos": [
+  {
+   "titulo": "Noche de Museos 2026",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": "17:00",
+   "lugar": "Museos del centro de Santiago (Bellas Artes, Historia Natural, MAC, Museo de la Música, Precolombino)",
+   "direccion": "Parque Forestal, Quinta Normal y casco histórico",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Museos abiertos de noche y gratis: ballena iluminada en Historia Natural (17–23 h), Bellas Artes nocturno, música en vivo con rock en el Museo de la Música y taller de animales míticos en el Precolombino.",
+   "imagen": "https://www.adnradio.cl/resizer/v2/PO6KB5GWZJDX5OBAI7QYY2O6MM.png?auth=ec2847470e39b6d6f91d168210eb1d58ceac1f01380cd0bf70b959ab1e0746db&quality=70&width=1200&height=675&focal=352,232",
+   "url": "https://www.adnradio.cl/2026/11/04/santiago-se-prepara-para-una-nueva-noche-de-museos-revisa-todos-panoramas-gratuitos-que-podras-visitar/",
+   "fuentes": [
+    {
+     "nombre": "ADN Radio",
+     "url": "https://www.adnradio.cl/2026/11/04/santiago-se-prepara-para-una-nueva-noche-de-museos-revisa-todos-panoramas-gratuitos-que-podras-visitar/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "manual",
+   "id": "19f603170c",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
   {
    "titulo": "Chile Terror Fest 2026 @ Teatro Caupolicán",
    "categoria": "fantasia",

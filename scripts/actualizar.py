@@ -580,6 +580,11 @@ class IA:
                 with urllib.request.urlopen(req, timeout=120) as r:
                     bruto = r.read().decode("utf-8", errors="replace")
                 self.usadas += 1
+                if bruto.strip() == "OK":
+                    # Así responde GitHub Models cuando el servicio no está disponible (visto en nov. 2026)
+                    log("  IA: GitHub Models no está disponible (responde 'OK' sin contenido); sigo sin IA")
+                    self.agotada = True
+                    raise SinCupo()
                 try:
                     datos = json.loads(bruto)
                     eleccion = datos["choices"][0]
@@ -1172,7 +1177,16 @@ def main():
 
     ahora = dt.datetime.now(TZ).isoformat(timespec="minutes")
     ultima = base.get("ultima_busqueda", {})
-    if not args.limpiar:
+    if args.agregar and args.origen == "manual":
+        # Agregar a mano no es una búsqueda: se suman a los "nuevos" de la última búsqueda
+        if "nuevos_ids" in ultima:
+            previos = [i for i in ultima["nuevos_ids"] if i in ids_vigentes]
+        else:  # búsquedas antiguas sin lista: lo agregado ese día
+            dia = str(ultima.get("fecha", ""))[:10]
+            previos = [e["id"] for e in eventos if e.get("agregado") == dia and e["id"] not in ids_nuevos]
+        ultima = {**ultima, "nuevos_ids": previos + [i for i in ids_nuevos if i not in previos]}
+        ultima["eventos_nuevos"] = len(ultima["nuevos_ids"])
+    elif not args.limpiar:
         ultima = {"fecha": ahora, "origen": args.origen if args.agregar else
                   ("github-actions" if os.environ.get("GITHUB_ACTIONS") else "local"),
                   "eventos_nuevos": agregados, "nuevos_ids": ids_nuevos, "llamadas_ia": ia.usadas,

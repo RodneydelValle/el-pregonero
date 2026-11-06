@@ -203,6 +203,33 @@
         "encuentro de rol comunidad Santiago",
         "jornadas de rol Chile"
       ]
+    },
+    {
+      "id": "museos",
+      "nombre": "Museos y cultura",
+      "emoji": "🏛️",
+      "color": "#6b4f2a",
+      "descripcion": "Noche de Museos, Día del Patrimonio, exposiciones, recorridos nocturnos o patrimoniales y panoramas culturales gratuitos",
+      "palabras": [
+        "noche de museos",
+        "dia del patrimonio",
+        "museo",
+        "museos",
+        "exposicion",
+        "recorrido patrimonial",
+        "recorrido nocturno",
+        "visita guiada",
+        "patrimonio cultural",
+        "centro cultural",
+        "panoramas gratis"
+      ],
+      "busquedas": [
+        "Noche de Museos Santiago",
+        "Día del Patrimonio Cultural Chile",
+        "panoramas gratis Santiago fin de semana",
+        "exposición museo Santiago",
+        "recorrido nocturno museo Santiago"
+      ]
     }
   ],
   "fuentes": [

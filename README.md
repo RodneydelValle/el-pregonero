@@ -8,7 +8,7 @@ Agenda personal de eventos en Chile, con formato de diario: ferias medievales, y
 
 | Cuándo | Qué hace | Costo |
 |---|---|---|
-| Todos los días, 07:15 | GitHub Actions corre `scripts/actualizar.py`: busca en Bing Noticias y DuckDuckGo, en agendas de fans, sitios de comunidades y ticketeras. La IA de **GitHub Models** lee cada página **y sus afiches**, y saca fecha, hora, lugar y precio. | Gratis (cupo diario de GitHub Models) |
+| Todos los días, 06:00 (hora de Chile, todo el año) | GitHub Actions corre `scripts/actualizar.py`: busca en Bing Noticias y DuckDuckGo, en agendas de fans, sitios de comunidades y ticketeras. La IA de **GitHub Models** lee cada página **y sus afiches**, y saca fecha, hora, lugar y precio. | Gratis (cupo diario de GitHub Models) |
 | Cuando quieras (desde el PC o el celular) | En GitHub: **Actions → Buscar eventos → Run workflow**. Es el botón "Buscar eventos ahora" al pie de la web. | Gratis |
 | Búsqueda profunda | En Claude Code: `/buscar-eventos`. Claude busca, abre las cuentas de comunidades en Instagram y Facebook con tu Chrome, lee los afiches y publica. | Incluido en tu plan de Claude |
 
