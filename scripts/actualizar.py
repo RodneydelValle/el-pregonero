@@ -988,6 +988,7 @@ def busqueda_completa(cfg: dict, ia: IA, vistos: dict) -> tuple[list[dict], dict
                       "imagen": fila.get("imagen"), "url": fila["url"], "confianza": e.get("confianza")}
                 n = normalizar_evento(ev, cfg, f["nombre"], fila["url"], "ticketera")
                 if n:
+                    log(f"   ✓ {n['fecha_inicio']} {n['titulo']} ({n['categoria']}, {f['nombre']})")
                     encontrados.append(n)
                 elif not ev["fecha_inicio"] and ia.disponible():
                     try:

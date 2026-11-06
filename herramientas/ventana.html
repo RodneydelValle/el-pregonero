@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pregonero · búsqueda</title>
+<link rel="icon" href="/icono.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,700;1,6..72,400&display=swap">
+<style>
+:root {
+  --papel: #f3ede2; --papel-2: #e9e0cf; --tinta: #1d1915; --suave: #6b6156; --regla: #cfc4b1;
+  --lacre: #7a1f1a; --lacre-2: #a1352b; --ok: #2f6b3a;
+  --serif: "Newsreader", Georgia, serif; --gotica: "UnifrakturMaguntia", Georgia, serif;
+  --sans: ui-sans-serif, system-ui, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --papel: #151311; --papel-2: #221e1a; --tinta: #ece5d8; --suave: #a99f91; --regla: #3a342e; --lacre: #e0654f; --lacre-2: #ef8a76; --ok: #7fc28a; }
+}
+:root[data-theme="dark"] { --papel: #151311; --papel-2: #221e1a; --tinta: #ece5d8; --suave: #a99f91; --regla: #3a342e; --lacre: #e0654f; --lacre-2: #ef8a76; --ok: #7fc28a; }
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html, body { margin: 0; height: 100%; }
+body { background: var(--papel); color: var(--tinta); font-family: var(--serif); padding: 18px 18px 16px; display: flex; flex-direction: column; overflow-x: hidden; }
+header { text-align: center; }
+h1 { font-family: var(--gotica); font-weight: 400; font-size: 40px; line-height: 1; margin: 0; }
+.sub { font: 600 11px var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--suave); margin-top: 4px; }
+.regla { border-top: 3px solid var(--tinta); border-bottom: 1px solid var(--tinta); height: 5px; margin: 10px 0 14px; }
+
+.escena { display: flex; align-items: flex-start; gap: 12px; }
+.campana { width: 86px; height: 96px; flex: none; color: var(--lacre); }
+.campana .cuerpo { transform-origin: 50px 14px; }
+.campana .badajo { transform-origin: 50px 30px; }
+.sonando .cuerpo { animation: balanceo 1.3s ease-in-out infinite; }
+.sonando .badajo { animation: badajo 1.3s ease-in-out infinite; }
+.sonando .onda { animation: onda 1.3s ease-out infinite; }
+.sonando .onda.d { animation-delay: .65s; }
+.onda { opacity: 0; }
+@keyframes balanceo { 0%,100% { transform: rotate(-13deg); } 50% { transform: rotate(13deg); } }
+@keyframes badajo { 0%,100% { transform: rotate(-22deg); } 50% { transform: rotate(22deg); } }
+@keyframes onda { 0% { opacity: .9; transform: scale(.85); } 100% { opacity: 0; transform: scale(1.15); } }
+.contento .cuerpo { animation: salto .9s ease-in-out 3; }
+@keyframes salto { 0%,100% { transform: translateY(0) rotate(0); } 40% { transform: translateY(-8px) rotate(-6deg); } 70% { transform: translateY(0) rotate(5deg); } }
+
+.globo { position: relative; flex: 1; background: var(--papel-2); border: 1px solid var(--regla); border-radius: 14px; padding: 10px 13px; font-size: 16px; line-height: 1.35; min-height: 64px; }
+.globo::before { content: ""; position: absolute; left: -8px; top: 22px; border: 8px solid transparent; border-left: 0; border-right-color: var(--regla); }
+.globo::after { content: ""; position: absolute; left: -6px; top: 23px; border: 7px solid transparent; border-left: 0; border-right-color: var(--papel-2); }
+.globo b { font-style: normal; }
+.globo .fino { display: block; font: 12px var(--sans); color: var(--suave); margin-top: 4px; }
+
+.barra { margin: 16px 0 4px; height: 14px; background: var(--papel-2); border: 1px solid var(--regla); border-radius: 999px; overflow: hidden; }
+.relleno { height: 100%; width: 0; background: repeating-linear-gradient(-45deg, var(--lacre) 0 10px, var(--lacre-2) 10px 20px); background-size: 28px 28px; transition: width .8s ease; }
+.sonando ~ * .relleno, .moviendo { animation: rayas 1s linear infinite; }
+@keyframes rayas { to { background-position: 28px 0; } }
+.cifras { display: flex; justify-content: space-between; font: 600 12px var(--sans); color: var(--suave); }
+.cifras .pct { color: var(--tinta); font-size: 13px; }
+
+ol.pasos { list-style: none; padding: 0; margin: 14px 0 0; }
+.pasos li { display: flex; align-items: center; gap: 10px; padding: 7px 0; border-bottom: 1px dashed var(--regla); font: 15px var(--sans); }
+.pasos li:last-child { border-bottom: 0; }
+.ico { width: 22px; height: 22px; flex: none; border-radius: 50%; display: grid; place-items: center; font: 700 12px var(--sans); border: 2px solid var(--regla); color: var(--suave); }
+.ok .ico { background: var(--ok); border-color: var(--ok); color: var(--papel); }
+.error .ico { background: var(--lacre); border-color: var(--lacre); color: var(--papel); }
+.en_curso .ico { border-color: var(--lacre); border-top-color: transparent; animation: girar .9s linear infinite; }
+@keyframes girar { to { transform: rotate(360deg); } }
+.pendiente, .omitido { color: var(--suave); }
+.pasos .det { margin-left: auto; font-size: 12px; color: var(--suave); }
+
+.resultado { margin-top: 12px; flex: 1; min-height: 0; display: flex; flex-direction: column; }
+.resultado h2 { font: 700 12px var(--sans); letter-spacing: .12em; text-transform: uppercase; margin: 6px 0; }
+.lista { overflow-y: auto; flex: 1; min-height: 60px; border-top: 1px solid var(--tinta); }
+.ev { display: grid; grid-template-columns: 54px 1fr; gap: 8px; padding: 7px 0; border-bottom: 1px solid var(--regla); }
+.ev .f { font: 700 12px/1.2 var(--sans); color: var(--lacre); text-transform: uppercase; text-align: center; padding-top: 2px; }
+.ev .f big { display: block; font: 700 20px var(--serif); color: var(--tinta); }
+.ev .t { font-size: 15.5px; line-height: 1.25; }
+.ev .c { display: block; font: 12px var(--sans); color: var(--suave); margin-top: 2px; }
+.vacio { color: var(--suave); font-style: italic; padding: 10px 0; }
+.avisos { font: 12.5px var(--sans); color: var(--lacre); margin: 6px 0 0; }
+
+.botones { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+.btn { flex: 1; text-align: center; font: 700 14px var(--sans); text-decoration: none; cursor: pointer; border-radius: 999px; padding: 10px 12px; border: 1px solid var(--lacre); background: var(--lacre); color: #fff; }
+.btn.sec { background: transparent; color: var(--tinta); border-color: var(--tinta); }
+.btn:disabled { opacity: .5; cursor: default; }
+.confeti { position: fixed; top: -12px; width: 8px; height: 12px; border-radius: 2px; pointer-events: none; animation: caer linear forwards; z-index: 9; }
+@keyframes caer { to { transform: translateY(105vh) rotate(720deg); opacity: .9; } }
+</style>
+</head>
+<body>
+  <header>
+    <h1>El Pregonero</h1>
+    <div class="sub" id="sub">Búsqueda de eventos</div>
+    <div class="regla"></div>
+  </header>
+
+  <div class="escena" id="escena">
+    <svg class="campana" viewBox="0 0 100 110" aria-hidden="true">
+      <g class="onda"><path d="M10 40 Q2 52 10 64" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><path d="M90 40 Q98 52 90 64" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></g>
+      <g class="onda d"><path d="M3 34 Q-7 52 3 70" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" opacity=".6"/><path d="M97 34 Q107 52 97 70" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" opacity=".6"/></g>
+      <g class="cuerpo">
+        <circle cx="50" cy="9" r="6" fill="none" stroke="currentColor" stroke-width="4"/>
+        <rect x="45.5" y="13" width="9" height="11" rx="3" fill="currentColor"/>
+        <path d="M31 48 C31 31 40 24 50 24 C60 24 69 31 69 48 L71 70 C72 77 77 79 82 81 L18 81 C23 79 28 77 29 70 Z" fill="currentColor"/>
+        <rect x="14" y="79" width="72" height="9" rx="4.5" fill="currentColor"/>
+        <g class="badajo"><line x1="50" y1="30" x2="50" y2="92" stroke="currentColor" stroke-width="3"/><circle cx="50" cy="95" r="7" fill="currentColor"/></g>
+      </g>
+    </svg>
+    <div class="globo" id="globo">Preguntándole a GitHub cómo va…</div>
+  </div>
+
+  <div class="barra"><div class="relleno" id="relleno"></div></div>
+  <div class="cifras"><span id="tiempo">—</span><span class="pct" id="pct">0%</span></div>
+
+  <ol class="pasos" id="pasos"></ol>
+
+  <section class="resultado" id="resultado" hidden>
+    <h2 id="res-titulo">Encontrado en esta búsqueda</h2>
+    <div class="lista" id="lista"></div>
+    <p class="avisos" id="avisos" hidden></p>
+  </section>
+
+  <div class="botones">
+    <a class="btn" id="btn-web" target="_blank" rel="noopener">Abrir El Pregonero</a>
+    <button class="btn sec" id="btn-buscar" type="button" hidden>Buscar de nuevo</button>
+    <a class="btn sec" id="btn-gh" target="_blank" rel="noopener">GitHub ↗</a>
+  </div>
+
+<script>
+"use strict";
+const $ = (s) => document.querySelector(s);
+const MESES = ["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
+const CAT = { medieval: "⚔️ Medieval", yokai: "👺 Yokai", anime: "🎌 Anime", ilustracion: "🖋️ Ilustración", metal: "🤘 Metal", fantasia: "🐉 Fantasía" };
+const FRASES = [
+  "¡Oíd, oíd! Recorriendo las ticketeras de la comarca…",
+  "Preguntando a los buscadores por ferias medievales…",
+  "Siguiéndole la pista a tocatas de metal…",
+  "Mirando afiches de convenciones de anime…",
+  "¿Algún yokai suelto en Santiago? Averiguando…",
+  "Hojeando ferias de ilustradores y fanzines…",
+  "Leyendo la letra chica de un afiche…",
+  "Revisando qué traen las comunidades de rol…",
+  "Anotando fechas, lugares y precios en el pergamino…",
+];
+let frase = 0, terminadoAntes = null, lanzando = false;
+const esc = (t) => String(t ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const ICO = { ok: "✓", error: "!", omitido: "–", pendiente: "", en_curso: "" };
+
+function confeti() {
+  const colores = ["#7a1f1a", "#a16207", "#7c3aed", "#0f766e", "#334155", "#4d7c0f", "#e0654f"];
+  for (let i = 0; i < 70; i++) {
+    const c = document.createElement("div");
+    c.className = "confeti";
+    c.style.left = Math.random() * 100 + "vw";
+    c.style.background = colores[i % colores.length];
+    c.style.animationDuration = 1.8 + Math.random() * 1.8 + "s";
+    c.style.animationDelay = Math.random() * .6 + "s";
+    document.body.appendChild(c);
+    setTimeout(() => c.remove(), 4500);
+  }
+}
+
+function pintar(d) {
+  if (d.error && !d.previo) { $("#globo").innerHTML = `No pude hablar con GitHub 😕<span class="fino">${esc(d.error)}</span>`; return; }
+  if (d.error) d = d.previo;
+  const run = d.run;
+  $("#btn-web").href = d.web;
+  $("#btn-gh").href = run.url;
+  $("#sub").textContent = run.evento === "schedule" ? "Búsqueda diaria automática" : run.evento === "push" ? "Publicación de la web" : "Búsqueda pedida a mano";
+  const pct = Math.round(d.avance * 100);
+  $("#relleno").style.width = pct + "%";
+  $("#relleno").classList.toggle("moviendo", !d.terminado);
+  $("#pct").textContent = pct + "%";
+  const escena = $("#escena");
+  escena.classList.toggle("sonando", !d.terminado);
+
+  if (d.terminado) {
+    $("#tiempo").textContent = `Tardó ${run.minutos} min`;
+  } else if (d.restante_s != null) {
+    const m = Math.ceil(d.restante_s / 60);
+    $("#tiempo").textContent = m > 0 ? `≈ ${m} min más (estimado) · van ${run.minutos} min` : `Terminando… · van ${run.minutos} min`;
+  } else {
+    $("#tiempo").textContent = `Van ${run.minutos} min`;
+  }
+
+  $("#pasos").innerHTML = d.pasos.map((p) =>
+    `<li class="${p.estado}"><span class="ico">${ICO[p.estado] || ""}</span>${esc(p.nombre)}<span class="det">${esc(p.detalle || (p.estado === "omitido" ? "omitido" : ""))}</span></li>`).join("");
+
+  const r = d.resultado;
+  const fallo = run.conclusion && !["success", "skipped"].includes(run.conclusion);
+  if (d.terminado) {
+    if (fallo) {
+      $("#globo").innerHTML = `Uy, algo falló en la búsqueda 😕<span class="fino">Toca “GitHub” para ver el detalle.</span>`;
+    } else if (r && r.listo) {
+      const n = r.listo.nuevos;
+      $("#globo").innerHTML = `${n ? `<b>¡Oíd, oíd! ${n} evento${n === 1 ? "" : "s"} nuevo${n === 1 ? "" : "s"}</b> en la agenda.` : "Todo revisado: hoy no hubo novedades."}` +
+        `<span class="fino">${r.listo.total} eventos vigentes · ${r.paginas} páginas leídas · ${r.listo.ia} lecturas con IA</span>`;
+    } else {
+      $("#globo").innerHTML = "¡Listo! La web quedó publicada.";
+    }
+    if (terminadoAntes === false) { escena.classList.add("contento"); if (!fallo) confeti(); }
+    $("#btn-buscar").hidden = false;
+  } else {
+    const enIA = d.pasos[1] && d.pasos[1].estado === "en_curso";
+    $("#globo").innerHTML = (enIA ? esc(FRASES[frase % FRASES.length]) : "Preparando la imprenta…") +
+      `<span class="fino">La IA gratuita de GitHub lee cada página y sus afiches.</span>`;
+    $("#btn-buscar").hidden = true;
+  }
+  terminadoAntes = d.terminado;
+
+  if (r) {
+    $("#resultado").hidden = false;
+    $("#res-titulo").textContent = r.eventos.length ? `Encontrado en esta búsqueda (${r.eventos.length})` : "Encontrado en esta búsqueda";
+    $("#lista").innerHTML = r.eventos.length ? r.eventos.map((e) => {
+      const [a, m, dd] = e.fecha.split("-");
+      const extra = e.extra === "afiche" ? " · 📷 leído del afiche" : e.extra ? ` · ${esc(e.extra)}` : "";
+      return `<div class="ev"><div class="f"><big>${+dd}</big>${MESES[+m - 1]}</div><div class="t">${esc(e.titulo)}<span class="c">${esc(CAT[e.categoria] || e.categoria)}${extra}</span></div></div>`;
+    }).join("") : `<p class="vacio">La lista detallada aparece cuando la búsqueda lee páginas con IA. Los eventos de ticketeras se suman directo a la agenda.</p>`;
+    $("#avisos").hidden = !r.avisos.length;
+    $("#avisos").textContent = r.avisos.join(" · ");
+  }
+}
+
+async function actualizar() {
+  try {
+    const d = await (await fetch("/estado.json", { cache: "no-store" })).json();
+    pintar(d);
+  } catch { $("#globo").textContent = "La ventana perdió contacto con su servidor. Ciérrala y vuelve a abrirla."; }
+}
+setInterval(() => { frase++; }, 7000);
+setInterval(actualizar, 5000);
+actualizar();
+
+$("#btn-buscar").addEventListener("click", async () => {
+  if (lanzando) return;
+  lanzando = true; $("#btn-buscar").disabled = true; $("#btn-buscar").textContent = "Pidiendo…";
+  try {
+    const r = await (await fetch("/buscar", { method: "POST", headers: { "X-Pregonero": "1" } })).json();
+    $("#globo").textContent = r.ok ? "¡Pedido! La búsqueda arranca en unos segundos…" : "No se pudo lanzar: " + (r.error || "");
+    terminadoAntes = null;
+    setTimeout(actualizar, 6000);
+  } finally {
+    setTimeout(() => { lanzando = false; $("#btn-buscar").disabled = false; $("#btn-buscar").textContent = "Buscar de nuevo"; }, 8000);
+  }
+});
+</script>
+</body>
+</html>
