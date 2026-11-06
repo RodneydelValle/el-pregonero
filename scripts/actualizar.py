@@ -709,6 +709,8 @@ def instrucciones_base(cfg: dict) -> str:
         "- Solo eventos que terminen hoy o después. Si falta el año, usa el más cercano a futuro.\n"
         "- Lee también el texto de las imágenes (afiches): ahí suelen estar la fecha, la hora, el lugar y el precio.\n"
         "- No inventes: si un dato no aparece, usa null. No confundas la fecha de publicación con la del evento.\n"
+        "- Si no aparece el DÍA exacto del evento (solo el mes o el año), pon fecha_inicio null: nunca uses el día 1 "
+        "ni el 1 de enero como relleno.\n"
         "- Ojo con 'Santiago' de otros países (España, Rep. Dominicana, Argentina): solo Chile.\n"
         "- Escribe en español de Chile. La descripción, máximo 200 caracteres, dice qué es y por qué calza.\n"
     )
@@ -860,6 +862,9 @@ def normalizar_evento(e: dict, cfg: dict, fuente_nombre: str, fuente_url: str, o
     inicio = fecha_iso(e.get("fecha_inicio"))
     if not titulo or not inicio:
         return None
+    if origen.startswith("ia") and inicio[5:] == "01-01" and not re.search(
+            r"enero|año nuevo|ano nuevo|01[/.-]01", sin_tildes(f"{titulo} {e.get('descripcion') or ''}")):
+        return None  # "1 de enero" sin respaldo: la IA rellenó una fecha que no sabía
     fin = fecha_iso(e.get("fecha_fin"))
     if fin and fin < inicio:
         fin = None
