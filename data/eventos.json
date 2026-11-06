@@ -1,20 +1,49 @@
 {
  "version": 1,
- "actualizado": "2026-11-06T12:22-03:00",
+ "actualizado": "2026-11-06T12:54-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-06T12:22-03:00",
-  "origen": "local",
-  "eventos_nuevos": 10,
-  "llamadas_ia": 0,
+  "fecha": "2026-11-06T12:54-03:00",
+  "origen": "github-actions",
+  "eventos_nuevos": 1,
+  "llamadas_ia": 85,
   "ia_sin_cupo": false,
-  "paginas_revisadas": 0,
-  "busquedas": 33,
-  "fuentes_fijas": 4,
-  "errores": 0
+  "paginas_revisadas": 73,
+  "busquedas": 48,
+  "fuentes_fijas": 7,
+  "errores": 6,
+  "redes_vistas": 84
  },
- "total": 10,
+ "total": 11,
  "eventos": [
+  {
+   "titulo": "Chile Terror Fest 2026 @ Teatro Caupolicán",
+   "categoria": "fantasia",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": "2026-11-29",
+   "hora": null,
+   "lugar": "Teatro Caupolicán",
+   "direccion": "San Diego 850",
+   "comuna": "Santiago",
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Chile Terror Fest 2026 at Teatro Caupolicán at 2026-11-28",
+   "imagen": "https://images.sk-static.com/images/media/profile_images/events/43233201/huge_avatar?series_id=3787557",
+   "url": "https://www.songkick.com/es/festivals/3787557-chile-terror-fest/id/43233201-chile-terror-fest-2026?utm_medium=organic&utm_source=microformat",
+   "fuentes": [
+    {
+     "nombre": "songkick.com",
+     "url": "https://www.songkick.com/es/metro-areas/27525-chile-santiago/genre/metal"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "d399a38072",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
   {
    "titulo": "BABYMETAL",
    "categoria": "metal",
