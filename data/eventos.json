@@ -1,11 +1,11 @@
 {
  "version": 1,
- "actualizado": "2026-11-06T13:59-03:00",
+ "actualizado": "2026-11-06T19:21-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
   "fecha": "2026-11-06T13:56-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 35,
+  "eventos_nuevos": 30,
   "nuevos_ids": [
    "23e15c1070",
    "cb4dec6816",
@@ -20,20 +20,13 @@
    "57d089bde2",
    "c9eb8aa421",
    "db33561036",
-   "c248044901",
-   "8464eb86b5",
    "6a9c1df7fe",
    "68516374f1",
    "26b4265cd9",
    "3beeed3811",
    "5197cbd0b7",
    "356fc2e953",
-   "7f4f853b03",
-   "3d78b829ec",
-   "94ba05e936",
    "09cd96f442",
-   "2265dd19e1",
-   "5e93d5e65e",
    "499bacbe90",
    "40f8528656",
    "3b27b430ae",
@@ -41,7 +34,9 @@
    "9793488d91",
    "be4111a5ae",
    "41bd8863fb",
-   "9b68238c51"
+   "9b68238c51",
+   "d30fc6d897",
+   "c1981fd414"
   ],
   "llamadas_ia": 70,
   "ia_sin_cupo": true,
@@ -51,8 +46,36 @@
   "errores": 5,
   "redes_vistas": 81
  },
- "total": 38,
+ "total": 40,
  "eventos": [
+  {
+   "titulo": "Mercaderes de la Ruta: Festival medieval de Oriente",
+   "categoria": "medieval",
+   "fecha_inicio": "2026-11-07",
+   "fecha_fin": "2026-11-08",
+   "hora": "11:00",
+   "lugar": "Casa de la Cultura de Ñuñoa",
+   "direccion": "Av. Irarrázaval 4055",
+   "comuna": "Ñuñoa",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "$4.400 por día · abono 2 días $7.600 · menores de 13 gratis",
+   "descripcion": "Único festival medieval de Chile inspirado en Oriente y las rutas de comercio: mercaderes, artesanos, henna, música, danza y cuentacuentos, de 11:00 a 20:00. Ven caracterizado: hay concursos.",
+   "imagen": "https://static-events.haulmer.com/v1/b356cc86-aca3-4ada-b445-8a10e938053d/banner-tuu_r301xxkU.png",
+   "url": "https://www.tuu.cl/mercaderes-de-la-ruta",
+   "fuentes": [
+    {
+     "nombre": "Instagram @mercadoyjuglares",
+     "url": "https://www.instagram.com/mercadoyjuglares/"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "manual",
+   "id": "d30fc6d897",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
   {
    "titulo": "Def Leppard - Live 2026 - with Special Guest Extreme",
    "categoria": "metal",
@@ -174,6 +197,34 @@
    "confianza": "alta",
    "origen": "ia",
    "id": "09cd96f442",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Medieval Party & Veladaa: Elfos, Hadas y Magia",
+   "categoria": "medieval",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": null,
+   "hora": "12:00",
+   "lugar": "Palacio Astoreca",
+   "direccion": "Dieciocho 121",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $5.000",
+   "descripcion": "Medieval Party y Veladaa se unen en una jornada de historia, fantasía y cultura medieval: música, recreación histórica y ambientación de elfos y hadas, de 12:00 a 20:00.",
+   "imagen": "https://www.passline.com/imagenes/eventos/noviembre-medieval-party-veladaa-palacio-astoreca-560027-rec.jpg",
+   "url": "https://www.passline.com/eventos/noviembre-medieval-party-veladaa-palacio-astoreca",
+   "fuentes": [
+    {
+     "nombre": "Passline",
+     "url": "https://www.passline.com/eventos/noviembre-medieval-party-veladaa-palacio-astoreca"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "manual",
+   "id": "c1981fd414",
    "agregado": "2026-11-06",
    "actualizado": "2026-11-06"
   },

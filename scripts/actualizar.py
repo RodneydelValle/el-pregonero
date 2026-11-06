@@ -2,9 +2,10 @@
 """El Pregonero: busca eventos en Chile según config/gustos.json y actualiza data/eventos.json.
 
 Solo usa servicios gratuitos:
-  * Búsqueda: RSS de Bing (noticias y web), DuckDuckGo como respaldo y páginas de ticketeras.
-  * IA: GitHub Models (incluido gratis en la cuenta de GitHub, con límite diario). Lee el texto
-    y también las imágenes (afiches), porque muchas veces la fecha y el lugar solo están ahí.
+  * Búsqueda: Bing Noticias (RSS), DuckDuckGo, ticketeras, agendas (sitemaps de VAMOH! y Keai)
+    y páginas de entradas (TUU, Passline...). Todo lo que trae datos estructurados se lee sin IA.
+  * IA: Gemini, plan gratis de Google AI Studio (con límite diario). Lee el texto y también
+    las imágenes (afiches), porque muchas veces la fecha y el lugar solo están ahí.
 
 Uso:
   python scripts/actualizar.py                 # búsqueda completa (en GitHub Actions)
@@ -17,6 +18,7 @@ from __future__ import annotations
 import argparse
 import base64
 import datetime as dt
+import email.utils
 import gzip
 import hashlib
 import html
@@ -110,6 +112,18 @@ def fecha_iso(valor) -> str | None:
         return dt.date(int(m[1]), int(m[2]), int(m[3])).isoformat()
     except ValueError:
         return None
+
+
+def a_hora_chile(valor) -> dt.datetime | None:
+    """'2026-11-09T02:59:59.999Z' → fecha y hora en Chile (las páginas suelen dar la hora en UTC)."""
+    s = str(valor or "").strip()
+    if "T" not in s:
+        return None
+    try:
+        d = dt.datetime.fromisoformat(s.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    return d.astimezone(TZ) if d.tzinfo else d
 
 
 def hora_hhmm(valor) -> str | None:
@@ -417,6 +431,8 @@ def eventos_jsonld(pagina: str, url_base: str) -> list[dict]:
                 nombre_lugar = limpiar(lugar)
             if pais and sin_tildes(pais) not in ("cl", "chile"):
                 continue
+            if comuna and sin_tildes(comuna) == sin_tildes(nombre_lugar):  # Passline repite el lugar como comuna
+                comuna = ""
             precio = None
             ofertas = d.get("offers")
             if isinstance(ofertas, list):
@@ -430,12 +446,18 @@ def eventos_jsonld(pagina: str, url_base: str) -> list[dict]:
                         precio = f"Desde ${int(float(p)):,}".replace(",", ".")
                 except (TypeError, ValueError):
                     pass
-            inicio = str(d.get("startDate"))
+            inicio, termino = str(d.get("startDate")), d.get("endDate")
+            di, df = a_hora_chile(inicio), a_hora_chile(termino)
+            if di and (di.hour or di.minute):
+                hora = di.strftime("%H:%M")
+            else:
+                hora = hora_hhmm(inicio[10:]) if "T" in inicio and not di else None
             res.append({
                 "titulo": limpiar(d.get("name")),
-                "fecha_inicio": fecha_iso(inicio),
-                "fecha_fin": fecha_iso(d.get("endDate")),
-                "hora": hora_hhmm(inicio[10:]) if "T" in inicio else None,
+                "fecha_inicio": di.date().isoformat() if di else fecha_iso(inicio),
+                "fecha_fin": df.date().isoformat() if df else fecha_iso(termino),
+                "hora": hora,
+                "_texto": f'{limpiar(d.get("name"))} {limpiar(d.get("description"))[:3000]}',
                 "lugar": nombre_lugar or None,
                 "direccion": direccion or None,
                 "comuna": comuna or None,
@@ -447,6 +469,63 @@ def eventos_jsonld(pagina: str, url_base: str) -> list[dict]:
                 "confianza": "alta",
             })
     return res
+
+
+def texto_plano(pagina: str) -> str:
+    t = re.sub(r"<(script|style|noscript|svg|template)\b.*?</\1>", " ", pagina, flags=re.S | re.I)
+    return limpiar(t)
+
+
+MESES_CORTOS = {"ene": 1, "feb": 2, "mar": 3, "abr": 4, "may": 5, "jun": 6, "jul": 7, "ago": 8,
+                "sep": 9, "set": 9, "oct": 10, "nov": 11, "dic": 12}
+RE_TUU = re.compile(r"\b(Comienza|Finaliza) el (\d{1,2}) ([a-zé]{3,10})\.? (\d{4}),? (\d{1,2}):(\d{2})(?::\d{2})? UTC",
+                    re.I)
+
+
+def eventos_tuu(pagina: str, meta: dict, url: str) -> list[dict]:
+    """Entradas de TUU (tuu.cl), muy usado por comunidades: no traen datos estructurados,
+    pero siempre dicen 'Comienza el 7 nov 2026, 14:00:00 UTC ... Ubicación ...'."""
+    texto = texto_plano(pagina)
+    fechas = {}
+    for tipo, d, mes, anio, h, m in RE_TUU.findall(texto):
+        n = MESES_CORTOS.get(sin_tildes(mes)[:3])
+        if not n:
+            continue
+        try:
+            f = dt.datetime(int(anio), n, int(d), int(h), int(m), tzinfo=dt.timezone.utc).astimezone(TZ)
+        except ValueError:
+            continue
+        fechas.setdefault(tipo.lower(), f)
+    ini, fin = fechas.get("comienza"), fechas.get("finaliza")
+    if not ini or not meta.get("og:title"):
+        return []
+    m = re.search(r"Ubicaci[oó]n\s+(.{5,160}?)\s+(?:Elige tus tickets|Comparte|Organiza|Preguntas|$)", texto)
+    direccion = m.group(1).strip() if m else None
+    comuna = None
+    for parte in (direccion or "").split(",")[1:]:  # "Av. Irarrázaval 4055, 7760077 Ñuñoa, Región Metropolitana, Chile"
+        parte = re.sub(r"^\s*\d{5,7}\s*", "", parte).strip()
+        if parte and not re.match(r"(?i)regi[oó]n|chile$", parte):
+            comuna = parte
+            break
+    precios = [int(x.replace(".", "")) for x in re.findall(r"\$\s?(\d{1,3}(?:\.\d{3})+|\d+)\s*CLP", texto)]
+    precios = [p for p in precios if p > 0]
+    descripcion = meta.get("og:description") or meta.get("description") or ""
+    return [{
+        "titulo": limpiar(meta["og:title"]),
+        "fecha_inicio": ini.date().isoformat(),
+        "fecha_fin": fin.date().isoformat() if fin else None,
+        "hora": ini.strftime("%H:%M"),
+        "_texto": f'{meta["og:title"]} {descripcion}',
+        "lugar": None,
+        "direccion": direccion,
+        "comuna": comuna,
+        "precio": f"Desde ${min(precios):,}".replace(",", ".") if precios else None,
+        "descripcion": limpiar(descripcion)[:240] or None,
+        "imagen": meta.get("og:image"),
+        "url": url,
+        "desde_imagen": False,
+        "confianza": "alta",
+    }]
 
 
 # ---------------------------------------------------------------- imágenes (afiches)
@@ -768,6 +847,8 @@ def ia_resumenes_redes(ia: IA, cfg: dict, resultados: list[dict]) -> list[tuple[
             r = ia.json(sistema, texto, max_tokens=3000)
         except (ValueError, SinCupo):
             break
+        for x in bloque:
+            x["_revisado"] = True
         for e in (r.get("eventos") or []) if isinstance(r, dict) else []:
             try:
                 n = int(e.get("n"))
@@ -775,6 +856,47 @@ def ia_resumenes_redes(ia: IA, cfg: dict, resultados: list[dict]) -> list[tuple[
                 continue
             if 0 <= n < len(resultados):
                 salida.append((resultados[n], e))
+    return salida
+
+
+def ia_filtrar_sueltos(ia: IA, cfg: dict, eventos: list[dict], fuente: str) -> list[dict]:
+    """Lo que se encontró solo por palabras clave pasa por un filtro barato (una llamada cada 60 eventos):
+    'esmalte sobre metal' no es música metal y un cantante llamado Manga no es manga.
+    Si no hay IA o se acaba el cupo, se quedan todos."""
+    if not eventos or not ia.disponible():
+        return eventos
+    ids = {c["id"] for c in cfg["categorias"]}
+    sistema = instrucciones_base(cfg) + (
+        "Recibirás eventos que una búsqueda por palabras clave encontró en una agenda; algunos calzan por casualidad "
+        "(por ejemplo 'esmalte sobre metal' no es música metal, un cantante apellidado Manga no es manga, una actividad "
+        "escolar o infantil no es para el usuario). Devuelve SOLO los que de verdad calzan con los intereses, con la "
+        'categoría correcta. Responde solo JSON: {"eventos": [{"n": número, "categoria": id}]}. '
+        'Si ninguno calza: {"eventos": []}.')
+    salida = []
+    for i in range(0, len(eventos), 60):
+        bloque = eventos[i:i + 60]
+        texto = f"Fuente: {fuente}\n" + "\n".join(
+            f'{j}. {e["titulo"]} | {e.get("lugar") or e.get("comuna") or ""} | {(e.get("descripcion") or "")[:160]}'
+            for j, e in enumerate(bloque))
+        try:
+            r = ia.json(sistema, texto, max_tokens=1500)
+        except (ValueError, SinCupo):
+            salida.extend(bloque)
+            continue
+        elegidos = set()
+        for x in (r.get("eventos") or []) if isinstance(r, dict) else []:
+            try:
+                n = int(x.get("n"))
+            except (TypeError, ValueError):
+                continue
+            if 0 <= n < len(bloque) and n not in elegidos:
+                elegidos.add(n)
+                if x.get("categoria") in ids:
+                    bloque[n]["categoria"] = x["categoria"]
+                salida.append(bloque[n])
+        quitados = [e["titulo"] for j, e in enumerate(bloque) if j not in elegidos]
+        if quitados:
+            log(f"  la IA descartó {len(quitados)}: " + "; ".join(t[:40] for t in quitados[:12]))
     return salida
 
 
@@ -865,9 +987,21 @@ CAMPOS = ["titulo", "categoria", "fecha_inicio", "fecha_fin", "hora", "lugar", "
 RANGO_CONFIANZA = {"baja": 0, "media": 1, "alta": 2}
 
 
+MINUSCULAS = {"de", "del", "la", "las", "el", "los", "y", "e", "en", "a", "al", "con", "por", "para", "o", "u"}
+
+
+def sin_gritar(t: str) -> str:
+    """'NOVIEMBRE - MEDIEVAL PARTY & VELADAA' → 'Noviembre - Medieval Party & Veladaa'."""
+    letras = [c for c in t if c.isalpha()]
+    if len(letras) < 12 or sum(c.isupper() for c in letras) < 0.85 * len(letras):
+        return t
+    palabras = t.lower().split(" ")
+    return " ".join(w if (i and w in MINUSCULAS) else w[:1].upper() + w[1:] for i, w in enumerate(palabras))
+
+
 def normalizar_evento(e: dict, cfg: dict, fuente_nombre: str, fuente_url: str, origen: str) -> dict | None:
     ids = {c["id"] for c in cfg["categorias"]}
-    titulo = limpiar(e.get("titulo"))[:160]
+    titulo = sin_gritar(limpiar(e.get("titulo"))[:160])
     inicio = fecha_iso(e.get("fecha_inicio"))
     if not titulo or not inicio:
         return None
@@ -1023,6 +1157,10 @@ RE_CHILE = re.compile(r"\b(chile|santiago|providencia|nunoa|las condes|maipu|val
                       r"concepcion|estacion central|recoleta|la florida|puente alto|temuco|la serena|"
                       r"antofagasta|rancagua|talca|movistar arena|teatro caupolican|blondie|gam|"
                       r"parque o'?higgins|matucana|espacio riesco|teatro coliseo|club chocolate)\b")
+DOMINIOS_ENTRADAS = {"tuu.cl", "passline.com", "ticketplus.cl", "puntoticket.com", "eventbrite.cl",
+                     "eventbrite.com", "keai.cl", "vamoh.cl", "ecopass.cl", "welcu.com", "joinnus.com",
+                     "ticketpro.cl", "portaldisc.com", "eventrid.cl"}
+RE_DOMINIO_EXTRANJERO = re.compile(r"\.(es|mx|ar|pe|co|uy|ec|ve|bo|py|gt|cr|pa|do|cu|hn|sv|ni|pt|it|fr|de|uk|br)$")
 RE_OTRO_PAIS = re.compile(r"\b(argentina|buenos aires|mexico|espana|madrid|barcelona|peru|lima|colombia|"
                           r"bogota|uruguay|montevideo|compostela|dominicana|ecuador|venezuela)\b")
 
@@ -1042,6 +1180,32 @@ def puntaje(c: dict, patron: re.Pattern) -> int:
         p += 1
     if c["origen"] == "bing-noticias":
         p += 1
+    # páginas de un evento con entradas (suelen traer datos estructurados: no gastan IA)
+    d = dominio(c["url"])
+    ruta = urllib.parse.urlparse(c["url"]).path.lower()
+    if any(d == x or d.endswith("." + x) for x in DOMINIOS_ENTRADAS) or re.search(r"/(evento|eventos|events?)/.", ruta):
+        p += 2
+    # sitios de otros países (diariodesantiago.es, .com.ar, ...)
+    if RE_DOMINIO_EXTRANJERO.search(d):
+        p -= 5
+    # noticias viejas: fecha en la dirección (/2023/05/...) o solo años pasados en el título
+    m = re.search(r"/(20\d\d)/(\d{1,2})/", ruta)
+    anios_ruta = [int(a) for a in re.findall(r"(?<!\d)(20[0-3]\d)(?!\d)", ruta)]
+    if m and 1 <= int(m[2]) <= 12:
+        if dt.date(int(m[1]), int(m[2]), 1) < HOY - dt.timedelta(days=150):
+            p -= 8
+    elif anios_ruta and max(anios_ruta) < HOY.year:
+        p -= 6
+    anios_titulo = [int(a) for a in re.findall(r"\b(20[0-3]\d)\b", c["titulo"])]
+    if anios_titulo and max(anios_titulo) < HOY.year:
+        p -= 6
+    publicado = c.get("publicado")
+    if publicado:
+        try:
+            if email.utils.parsedate_to_datetime(publicado).date() < HOY - dt.timedelta(days=150):
+                p -= 4
+        except (TypeError, ValueError):
+            pass
     return p
 
 
@@ -1071,9 +1235,11 @@ def procesar_pagina(url, titulo_busqueda, ia, cfg, patron, cat_fuente=None, nomb
     titulo = meta.get("og:title") or meta.get("_title") or titulo_busqueda
     estructurados = []
     ld = eventos_jsonld(pagina, final)
+    if not ld and dominio(final).endswith("tuu.cl"):
+        ld = eventos_tuu(pagina, meta, final)
     pagina_de_un_evento = len(ld) == 1 and bool(patron.search(sin_tildes(titulo)))
     for e in ld:
-        cats = categorias_por_palabras(cfg, f'{e["titulo"]} {e.get("descripcion") or ""}')
+        cats = categorias_por_palabras(cfg, e.get("_texto") or f'{e["titulo"]} {e.get("descripcion") or ""}')
         if cats:
             e["categoria"] = cats[0]
         elif cat_fuente and (confiar_categoria or pagina_de_un_evento):
@@ -1082,8 +1248,12 @@ def procesar_pagina(url, titulo_busqueda, ia, cfg, patron, cat_fuente=None, nomb
             continue
         estructurados.append(normalizar_evento(e, cfg, nombre, final, "datos-estructurados"))
     estructurados = [e for e in estructurados if e]
-    if estructurados or not ia.disponible():
+    d = dominio(final)
+    sin_ia = any(d == x or d.endswith("." + x) for x in cfg.get("solo_datos_estructurados", []))
+    if estructurados or sin_ia:
         return estructurados, False
+    if not ia.disponible():
+        return [], None  # None = queda pendiente: se lee con IA otro día
     texto, imgs = leer_html(pagina)
     descripcion = meta.get("og:description") or meta.get("description") or ""
     texto = (descripcion + "\n" + texto) if descripcion and descripcion not in texto else texto
@@ -1104,6 +1274,60 @@ def procesar_pagina(url, titulo_busqueda, ia, cfg, patron, cat_fuente=None, nomb
     return res, True
 
 
+def fuente_sitemap(f: dict, cfg: dict, patron: re.Pattern, vistos: dict) -> list[dict]:
+    """Agendas grandes (VAMOH!, Keai): de su sitemap se abren solo los eventos aún no vistos
+    y se leen sus datos estructurados. No gasta IA."""
+    texto, _, _ = descargar(f["url"], max_bytes=20_000_000, timeout=90)
+    filas = re.findall(r"<loc>\s*(.*?)\s*</loc>(?:\s*<lastmod>\s*(.*?)\s*</lastmod>)?", texto)
+    desde = (HOY - dt.timedelta(days=f.get("dias_lastmod", 60))).isoformat()
+    excluir = None
+    if f.get("excluir"):
+        excluir = re.compile(r"\b(" + "|".join(re.escape(sin_tildes(p)) for p in f["excluir"]) + r")\b")
+    pendientes = []
+    for loc, lastmod in filas:
+        loc = html.unescape(loc)
+        if f.get("patron_enlace", "/") not in loc or loc in vistos:
+            continue
+        if lastmod and lastmod[:10] < desde:
+            continue
+        slug = sin_tildes(urllib.parse.unquote(urllib.parse.urlparse(loc).path)).replace("-", " ").replace("/", " ")
+        if f.get("filtro_slug") and not patron.search(slug):
+            continue
+        if excluir and excluir.search(slug):
+            continue
+        pendientes.append((lastmod or "", loc))
+    pendientes.sort(reverse=True)  # lo más reciente primero
+    maximo = int(f.get("max_por_dia", 100))
+    log(f"  {len(pendientes)} eventos sin revisar; hoy se abren {min(len(pendientes), maximo)}")
+    res = []
+    for _, loc in pendientes[:maximo]:
+        try:
+            pagina, _, final = descargar(loc, intentos=1)
+        except NoPermitido:
+            vistos[loc] = HOY.isoformat()
+            continue
+        except urllib.error.HTTPError as e:
+            if e.code == 429:  # el sitio pide calma: se sigue mañana
+                log("  el sitio pidió ir más lento (429); sigo mañana")
+                break
+            if e.code in (404, 410):
+                vistos[loc] = HOY.isoformat()
+            continue
+        except Exception:  # noqa: BLE001  (se reintenta otro día)
+            continue
+        vistos[loc] = HOY.isoformat()
+        for e in eventos_jsonld(pagina, final):
+            cats = categorias_por_palabras(cfg, e.get("_texto") or e["titulo"])
+            if not cats or (excluir and excluir.search(sin_tildes(e["titulo"]))):
+                continue
+            e["categoria"] = cats[0]
+            n = normalizar_evento(e, cfg, f["nombre"], final, "datos-estructurados")
+            if n:
+                res.append(n)
+        time.sleep(float(f.get("pausa_s", 0.7)))
+    return res
+
+
 def busqueda_completa(cfg: dict, ia: IA, vistos: dict) -> tuple[list[dict], dict]:
     patron = patron_intereses(cfg)
     encontrados: list[dict] = []
@@ -1113,6 +1337,21 @@ def busqueda_completa(cfg: dict, ia: IA, vistos: dict) -> tuple[list[dict], dict
     # 1) Fuentes fijas (ticketeras y agendas)
     for f in cfg.get("fuentes", []):
         log(f"[fuente] {f['nombre']}: {f['url']}")
+        if f["tipo"] == "sitemap":
+            try:
+                res = fuente_sitemap(f, cfg, patron, vistos)
+                stats["fuentes_fijas"] += 1
+                d = dominio(f["url"])
+                if not any(d == x or d.endswith("." + x) for x in cfg.get("solo_datos_estructurados", [])):
+                    res = ia_filtrar_sueltos(ia, cfg, res, f["nombre"])
+                for n in res:
+                    log(f"   ✓ {n['fecha_inicio']} {n['titulo']} ({n['categoria']}, {f['nombre']})")
+                encontrados.extend(res)
+                log(f"  {len(res)} calzan con tus gustos")
+            except Exception as e:  # noqa: BLE001
+                log(f"  no se pudo abrir: {e}")
+                stats["errores"] += 1
+            continue
         try:
             pagina, _, final = descargar(f["url"])
         except Exception as e:  # noqa: BLE001
@@ -1143,7 +1382,7 @@ def busqueda_completa(cfg: dict, ia: IA, vistos: dict) -> tuple[list[dict], dict
                 if n:
                     log(f"   ✓ {n['fecha_inicio']} {n['titulo']} ({n['categoria']}, {f['nombre']})")
                     encontrados.append(n)
-                elif not ev["fecha_inicio"] and ia.disponible():
+                elif not ev["fecha_inicio"]:  # sin IA igual sirven los datos estructurados de la página
                     try:
                         res, _ = procesar_pagina(fila["url"], fila["titulo"], ia, cfg, patron,
                                                  e.get("categoria"), f["nombre"])
@@ -1210,13 +1449,34 @@ def busqueda_completa(cfg: dict, ia: IA, vistos: dict) -> tuple[list[dict], dict
                 ordenados.append(lista.pop(0))
     log(f"[búsquedas] {len(candidatos)} resultados nuevos, {len(ordenados)} prometedores")
 
-    # reparte el cupo de IA entre categorías para que ninguna se quede sin revisar
+    # 3) Publicaciones de comunidades en redes sociales (solo lo que muestra el buscador).
+    #    Van antes que las páginas: son baratas (20 por llamada) y ahí avisan las ferias chicas.
+    if de_redes and ia.disponible():
+        lista = list(de_redes.values())[:60]
+        log(f"[redes] {len(lista)} publicaciones vistas en el buscador")
+        for r, e in ia_resumenes_redes(ia, cfg, lista):
+            n = normalizar_evento(e, cfg, dominio(r["url"]), r["url"], "ia-resumen")
+            if n:
+                n["confianza"] = "baja" if n["confianza"] == "alta" else n["confianza"]
+                log(f"   ✓ {n['fecha_inicio']} {n['titulo']} ({n['categoria']}, red social)")
+                encontrados.append(n)
+        for r in lista:
+            if r.get("_revisado"):  # las que no alcanzó a leer (sin cupo) quedan para mañana
+                vistos[r["url"]] = HOY.isoformat()
+    stats["redes_vistas"] = len(de_redes)
+
+    # 4) Páginas: reparte el cupo de IA entre categorías para que ninguna se quede sin revisar.
+    #    Si se acaba el cupo, igual se leen las que traen datos estructurados (no gastan IA);
+    #    las demás quedan pendientes para el día siguiente.
     por_cat: dict[str, int] = {}
     tope = cfg.get("max_paginas_por_busqueda", 6) * 2
+    sin_ia_max, sin_ia_hechas = int(cfg.get("max_paginas_sin_ia", 80)), 0
     for c in ordenados:
         if not ia.disponible():
-            break
-        if por_cat.get(c["categoria"], 0) >= tope:
+            if sin_ia_hechas >= sin_ia_max:
+                break
+            sin_ia_hechas += 1
+        elif por_cat.get(c["categoria"], 0) >= tope:
             continue
         log(f"[página] ({c['puntaje']}) {c['titulo'][:80]} — {c['url'][:100]}")
         try:
@@ -1227,26 +1487,15 @@ def busqueda_completa(cfg: dict, ia: IA, vistos: dict) -> tuple[list[dict], dict
             for e in res:
                 log(f"   ✓ {e['fecha_inicio']} {e['titulo']} ({e['categoria']}{', afiche' if e['desde_imagen'] else ''})")
             encontrados.extend(res)
-            vistos[c["url"]] = HOY.isoformat()
+            if uso_ia is not None:
+                vistos[c["url"]] = HOY.isoformat()
         except SinCupo:
-            break
+            continue  # queda pendiente para mañana
         except Exception as e:  # noqa: BLE001
             stats["errores"] += 1
             log(f"   no se pudo leer: {e}")
-            vistos[c["url"]] = HOY.isoformat()
-
-    # 3) Publicaciones de redes sociales: solo con lo que muestra el buscador
-    if de_redes and ia.disponible():
-        lista = list(de_redes.values())[:60]
-        log(f"[redes] {len(lista)} publicaciones vistas en el buscador")
-        for r, e in ia_resumenes_redes(ia, cfg, lista):
-            n = normalizar_evento(e, cfg, dominio(r["url"]), r["url"], "ia-resumen")
-            if n:
-                n["confianza"] = "baja" if n["confianza"] == "alta" else n["confianza"]
-                log(f"   ✓ {n['fecha_inicio']} {n['titulo']} ({n['categoria']}, red social)")
-                encontrados.append(n)
-            vistos[r["url"]] = HOY.isoformat()
-    stats["redes_vistas"] = len(de_redes)
+            if not (isinstance(e, urllib.error.HTTPError) and (e.code == 429 or e.code >= 500)):
+                vistos[c["url"]] = HOY.isoformat()  # un error pasajero se reintenta mañana
     return encontrados, stats
 
 

@@ -8,7 +8,7 @@ Agenda personal de eventos en Chile, con formato de diario: ferias medievales, y
 
 | Cuándo | Qué hace | Costo |
 |---|---|---|
-| Todos los días, 06:00 (hora de Chile, todo el año) | GitHub Actions corre `scripts/actualizar.py`: busca en Bing Noticias y DuckDuckGo, en agendas de fans, sitios de comunidades y ticketeras. La IA **Gemini** (plan gratis de Google AI Studio) lee cada página **y sus afiches**, y saca fecha, hora, lugar y precio. | Gratis (cupo diario del plan gratis) |
+| Todos los días, 06:00 (hora de Chile, todo el año) | GitHub Actions corre `scripts/actualizar.py`: busca en Bing Noticias y DuckDuckGo, en agendas de fans, sitios de comunidades y ticketeras, y revisa los eventos nuevos de las agendas **VAMOH!** y **Keai**. Las páginas de entradas (TUU, Passline, Ticketplus…) se leen sin IA. La IA **Gemini** (plan gratis de Google AI Studio) lee las demás páginas **y sus afiches**, y saca fecha, hora, lugar y precio. | Gratis (cupo diario del plan gratis) |
 | Cuando quieras (desde el PC o el celular) | En GitHub: **Actions → Buscar eventos → Run workflow**. Es el botón "Buscar eventos ahora" al pie de la web. | Gratis |
 | Búsqueda profunda | En Claude Code: `/buscar-eventos`. Claude busca, abre las cuentas de comunidades en Instagram y Facebook con tu Chrome, lee los afiches y publica. | Incluido en tu plan de Claude |
 
@@ -32,6 +32,7 @@ La búsqueda automática no entra a Instagram ni a Facebook: respeta sus reglas 
 ## Notas
 
 - GitHub puede pausar las tareas programadas de un repositorio público si pasan 60 días sin actividad. Si eso pasa, se reactiva en la pestaña Actions con "Enable workflow".
-- Si la IA gratuita llega a su límite del día, lo que quedó pendiente se revisa al día siguiente. Sin IA igual se suman los eventos de ticketeras por palabras clave.
+- Si la IA gratuita llega a su límite del día, lo que quedó pendiente se revisa al día siguiente. Sin IA igual se suman los eventos de ticketeras por palabras clave y las páginas que traen datos estructurados (VAMOH!, Keai, TUU, Passline). Primero se revisan las publicaciones de comunidades que muestran los buscadores, porque son baratas, y las noticias viejas o de otros países quedan al final.
+- Keai pide en su `robots.txt` que su contenido no se use con IA: de ahí solo se leen sus datos estructurados (`solo_datos_estructurados` en `config/gustos.json`).
 - La clave de Gemini vive como secreto del repositorio (`GEMINI_API_KEY`), nunca en el código. GitHub Models (la IA de GitHub) dejó de responder en noviembre de 2026; el buscador lo detecta solo.
 - `Diagnóstico IA` (en Actions) prueba la IA en un minuto: modelos disponibles, lectura de un afiche y clasificación de un listado.

@@ -18,6 +18,7 @@
     "max_llamadas": 120
   },
   "max_paginas_por_busqueda": 6,
+  "max_paginas_sin_ia": 80,
   "dias_para_revisar_de_nuevo": 7,
   "categorias": [
     {
@@ -40,7 +41,10 @@
         "recreacion historica",
         "esgrima historica",
         "edad media",
-        "feudal"
+        "feudal",
+        "mercaderes",
+        "juglares",
+        "juglar"
       ],
       "busquedas": [
         "feria medieval Santiago",
@@ -53,7 +57,12 @@
         "encuentro medieval Santiago agrupación",
         "Ragnarok Fest festival nórdico medieval",
         "torneo buhurt Chile",
-        "feria medieval municipalidad Región Metropolitana"
+        "feria medieval municipalidad Región Metropolitana",
+        "festival medieval Ñuñoa",
+        "Mercado y Juglares festival medieval",
+        "Medieval Party Veladaa",
+        "festival medieval entradas tuu.cl",
+        "feria medieval entradas passline"
       ]
     },
     {
@@ -291,7 +300,62 @@
       "nombre": "WalkingStgo",
       "url": "https://walkingstgo.cl/conciertos/",
       "tipo": "pagina"
+    },
+    {
+      "nombre": "VAMOH!",
+      "url": "https://vamoh.cl/sitemap.xml",
+      "tipo": "sitemap",
+      "_nota": "Agenda grande de Chile. Del sitemap se abren solo los eventos nuevos cuya dirección tiene una palabra de tus gustos.",
+      "patron_enlace": "/events/",
+      "filtro_slug": true,
+      "dias_lastmod": 60,
+      "max_por_dia": 80,
+      "excluir": [
+        "niños",
+        "niñas",
+        "infantil",
+        "infantiles",
+        "kids",
+        "escolar",
+        "escolares",
+        "jóvenes",
+        "adolescentes",
+        "bebés",
+        "colegio",
+        "esmalte",
+        "orfebrería"
+      ],
+      "pausa_s": 1.5
+    },
+    {
+      "nombre": "Keai",
+      "url": "https://keai.cl/sitemap.xml",
+      "tipo": "sitemap",
+      "_nota": "Agenda de Santiago (ahí estaba Mercaderes de la Ruta). Sus direcciones no dicen el tema, así que se abre cada evento nuevo y se lee su descripción.",
+      "patron_enlace": "/evento/",
+      "filtro_slug": false,
+      "dias_lastmod": 45,
+      "max_por_dia": 150,
+      "excluir": [
+        "niños",
+        "niñas",
+        "infantil",
+        "infantiles",
+        "kids",
+        "escolar",
+        "escolares",
+        "jóvenes",
+        "adolescentes",
+        "bebés",
+        "colegio",
+        "esmalte",
+        "orfebrería"
+      ],
+      "pausa_s": 1.5
     }
+  ],
+  "solo_datos_estructurados": [
+    "keai.cl"
   ],
   "dominios_omitidos": [
     "x.com",
@@ -337,6 +401,16 @@
         "nombre": "Comunidad Medieval Chile",
         "url": "https://www.instagram.com/comunidad_medieval_chile/",
         "categoria": "medieval"
+      },
+      {
+        "nombre": "Mercado y Juglares (Mercaderes de la Ruta y otras ferias)",
+        "url": "https://www.instagram.com/mercadoyjuglares/",
+        "categoria": "medieval"
+      },
+      {
+        "nombre": "Producciones Omnia (festivales medievales)",
+        "url": "https://www.instagram.com/producciones.omnia/",
+        "categoria": "medieval"
       }
     ]
   },
@@ -344,5 +418,6 @@
     "instagram.com",
     "facebook.com",
     "fb.com"
-  ]
+  ],
+  "_nota_solo_datos_estructurados": "Sitios cuyo robots.txt pide no usar su contenido con IA (Content-Signal): se leen solo sus datos estructurados, nunca se mandan a Gemini."
 }
