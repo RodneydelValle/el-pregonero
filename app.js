@@ -94,7 +94,8 @@ function pintarCabecera(datos) {
     const f = new Date(u.fecha);
     const horas = Math.round((Date.now() - f) / 3600000);
     const cuando = horas < 1 ? "hace un rato" : horas < 24 ? `hace ${horas} h` : `hace ${Math.round(horas / 24)} días`;
-    txt = `Última búsqueda ${cuando}${u.eventos_nuevos ? ` · ${u.eventos_nuevos} nuevos` : ""}`;
+    const nNuevos = EVENTOS.filter((e) => NUEVOS.has(e.id)).length;   // mismo número que el botón "Nuevos"
+    txt = `Última búsqueda ${cuando}${nNuevos ? ` · ${nNuevos} nuevo${nNuevos === 1 ? "" : "s"}` : " · sin novedades"}`;
     const det = [];
     if (u.paginas_revisadas) det.push(`${u.paginas_revisadas} páginas leídas`);
     if (u.busquedas) det.push(`${u.busquedas} búsquedas`);
