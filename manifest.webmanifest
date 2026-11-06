@@ -1,0 +1,22 @@
+{
+  "name": "El Pregonero · eventos en Chile",
+  "short_name": "Pregonero",
+  "description": "Agenda personal de ferias medievales, yokai, anime, ilustración, metal y más en Chile.",
+  "lang": "es-CL",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f3ede2",
+  "theme_color": "#7a1f1a",
+  "categories": ["entertainment", "news", "lifestyle"],
+  "icons": [
+    { "src": "icons/icono-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icono-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icono-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Mis guardados", "url": "./?ver=guardados", "icons": [{ "src": "icons/icono-192.png", "sizes": "192x192" }] }
+  ]
+}

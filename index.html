@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>El Pregonero</title>
+  <meta name="description" content="Agenda personal de eventos en Chile: ferias medievales, yokai, anime, ilustración, metal y más. Se actualiza sola todos los días.">
+  <meta name="theme-color" content="#7a1f1a" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#151311" media="(prefers-color-scheme: dark)">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" href="icons/icono-192.png">
+  <link rel="apple-touch-icon" href="icons/icono-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="cabecera">
+    <div class="linea-edicion">
+      <span id="fecha-hoy">Santiago de Chile</span>
+      <span id="estado-busqueda">Cargando…</span>
+    </div>
+    <h1 class="cabezal">El Pregonero</h1>
+    <p class="bajada">Ferias medievales, yokai, anime, ilustración, metal y otras rarezas en Chile</p>
+    <div class="doble-regla" role="presentation"></div>
+  </header>
+
+  <nav class="filtros" aria-label="Filtros">
+    <div class="fila-busqueda">
+      <input type="search" id="buscar" placeholder="Buscar banda, feria, lugar…" aria-label="Buscar eventos" autocomplete="off">
+      <div class="segmento" role="group" aria-label="Cuándo">
+        <button type="button" data-periodo="todo" aria-pressed="true">Todo</button>
+        <button type="button" data-periodo="semana" aria-pressed="false">7 días</button>
+        <button type="button" data-periodo="mes" aria-pressed="false">30 días</button>
+      </div>
+    </div>
+    <div class="chips" id="chips" role="group" aria-label="Temas"></div>
+  </nav>
+
+  <main>
+    <section id="portada" class="portada" aria-label="Lo que viene"></section>
+    <section id="agenda" class="agenda" aria-label="Agenda"></section>
+    <div id="vacio" class="vacio" hidden>
+      <p class="vacio-titulo">Nada por aquí con esos filtros.</p>
+      <p>Prueba con otro tema o período, o pide una búsqueda nueva.</p>
+    </div>
+  </main>
+
+  <footer class="pie-pagina">
+    <div class="doble-regla" role="presentation"></div>
+    <div class="pie-columnas">
+      <div>
+        <h2>Cómo funciona</h2>
+        <p>Cada mañana un robot busca en noticias, comunidades, agendas de fans y ticketeras. Una IA lee las páginas y también los afiches, porque muchas veces la fecha y el lugar solo están en la imagen. Las notas marcadas con 📷 salieron de un afiche y las con ⚠ conviene confirmarlas en la fuente.</p>
+      </div>
+      <div>
+        <h2>Pregonar ahora</h2>
+        <p class="acciones-pie">
+          <a id="btn-buscar" class="boton" target="_blank" rel="noopener">Buscar eventos ahora ↗</a>
+          <a id="btn-gustos" class="boton secundario" target="_blank" rel="noopener">Editar mis gustos ↗</a>
+          <button id="btn-instalar" class="boton secundario" type="button" hidden>Instalar como app</button>
+        </p>
+        <p class="nota-pie" id="detalle-busqueda"></p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="aviso" class="aviso" role="status" aria-live="polite" hidden></div>
+  <script src="app.js" defer></script>
+</body>
+</html>

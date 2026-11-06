@@ -1,0 +1,35 @@
+# El Pregonero
+
+Agenda personal de eventos en Chile, con formato de diario: ferias medievales, yokai y Japón tradicional, anime y cosplay, ilustración y cómic, conciertos de metal, y fantasía, rol y juegos.
+
+**Web:** https://rodneydelvalle.github.io/el-pregonero/ (se puede instalar como app en el celular)
+
+## Cómo se actualiza
+
+| Cuándo | Qué hace | Costo |
+|---|---|---|
+| Todos los días, 07:15 | GitHub Actions corre `scripts/actualizar.py`: busca en Bing Noticias y DuckDuckGo, en agendas de fans, sitios de comunidades y ticketeras. La IA de **GitHub Models** lee cada página **y sus afiches**, y saca fecha, hora, lugar y precio. | Gratis (cupo diario de GitHub Models) |
+| Cuando quieras (desde el PC o el celular) | En GitHub: **Actions → Buscar eventos → Run workflow**. Es el botón "Buscar eventos ahora" al pie de la web. | Gratis |
+| Búsqueda profunda | En Claude Code: `/buscar-eventos`. Claude busca, abre las cuentas de comunidades en Instagram y Facebook con tu Chrome, lee los afiches y publica. | Incluido en tu plan de Claude |
+
+La búsqueda automática no entra a Instagram ni a Facebook: respeta sus reglas y el `robots.txt` de cada sitio. De esas redes solo usa lo que muestran los buscadores, y las cuentas las revisa `/buscar-eventos` con tu sesión.
+
+## Personalizar
+
+- **Gustos y búsquedas:** `config/gustos.json`. Ahí se agregan categorías, palabras clave, búsquedas, fuentes fijas y cuentas de comunidades (`comunidades.cuentas`).
+- **Ocultar un evento:** agrega su título, o parte de él, o su `id` a `data/ocultos.json`.
+- **Agregar eventos a mano:** crea un JSON con la lista de eventos y ejecuta `python scripts/actualizar.py --agregar archivo.json --origen manual`.
+
+## Archivos
+
+- `index.html`, `styles.css`, `app.js`: la web (sin dependencias).
+- `manifest.webmanifest`, `sw.js`, `icons/`: instalable como app y funciona sin conexión.
+- `data/eventos.json`: la agenda; es la "API" que leerá la futura app.
+- `data/vistos.json`: páginas ya revisadas, para no gastar IA dos veces.
+- `scripts/actualizar.py`: buscador. Usa solo la biblioteca estándar de Python; Pillow es opcional.
+- `PLAN_APP.md`: plan para pasarlo a app.
+
+## Notas
+
+- GitHub puede pausar las tareas programadas de un repositorio público si pasan 60 días sin actividad. Si eso pasa, se reactiva en la pestaña Actions con "Enable workflow".
+- Si la IA gratuita llega a su límite del día, lo que quedó pendiente se revisa al día siguiente.

@@ -1,0 +1,307 @@
+{
+  "zona": "Chile, con prioridad Santiago y Región Metropolitana",
+  "modelo_ia": "openai/gpt-4.1-mini",
+  "max_llamadas_ia": 90,
+  "max_paginas_por_busqueda": 6,
+  "dias_para_revisar_de_nuevo": 7,
+  "categorias": [
+    {
+      "id": "medieval",
+      "nombre": "Ferias medievales",
+      "emoji": "⚔️",
+      "color": "#a16207",
+      "descripcion": "ferias, fiestas y mercados medievales, renacentistas o vikingos, recreación histórica, justas, combate medieval (buhurt), esgrima histórica",
+      "palabras": [
+        "medieval",
+        "medievales",
+        "renacentista",
+        "renacimiento",
+        "vikingo",
+        "vikinga",
+        "vikingos",
+        "justas",
+        "caballeros",
+        "buhurt",
+        "recreacion historica",
+        "esgrima historica",
+        "edad media",
+        "feudal"
+      ],
+      "busquedas": [
+        "feria medieval Santiago",
+        "fiesta medieval Chile",
+        "mercado medieval Santiago",
+        "festival vikingo Chile",
+        "feria renacentista Chile",
+        "evento medieval Región Metropolitana",
+        "feria medieval comunidad Chile",
+        "encuentro medieval Santiago agrupación",
+        "Ragnarok Fest festival nórdico medieval",
+        "torneo buhurt Chile",
+        "feria medieval municipalidad Región Metropolitana"
+      ]
+    },
+    {
+      "id": "yokai",
+      "nombre": "Yokai y Japón tradicional",
+      "emoji": "👺",
+      "color": "#b91c1c",
+      "descripcion": "yokai, mitología y folclore japonés, ukiyo-e, matsuri, exposiciones o charlas de cultura japonesa tradicional",
+      "palabras": [
+        "yokai",
+        "youkai",
+        "ukiyo-e",
+        "ukiyoe",
+        "matsuri",
+        "folclore japones",
+        "mitologia japonesa",
+        "cultura japonesa",
+        "japon tradicional",
+        "kitsune",
+        "oni",
+        "tengu",
+        "bon odori",
+        "hanami",
+        "kimono"
+      ],
+      "busquedas": [
+        "yokai exposición Santiago",
+        "yokai Chile evento",
+        "matsuri Santiago",
+        "festival cultura japonesa Santiago",
+        "exposición ukiyo-e Chile",
+        "Instituto Chileno Japonés de Cultura evento",
+        "Bunkasai Santiago"
+      ]
+    },
+    {
+      "id": "anime",
+      "nombre": "Anime, manga y cosplay",
+      "emoji": "🎌",
+      "color": "#7c3aed",
+      "descripcion": "convenciones de anime y manga, cosplay, cultura otaku, ferias de comics, conciertos de anime o J-pop, eventos geek",
+      "palabras": [
+        "anime",
+        "manga",
+        "cosplay",
+        "otaku",
+        "comic con",
+        "comic-con",
+        "comiccon",
+        "convencion geek",
+        "j-pop",
+        "jpop",
+        "animation",
+        "animacion japonesa",
+        "kawaii",
+        "studio ghibli",
+        "ghibli",
+        "festigame",
+        "geek"
+      ],
+      "busquedas": [
+        "convención anime Santiago",
+        "evento anime Chile 2026",
+        "cosplay Santiago evento",
+        "Comic Con Chile",
+        "festival otaku Santiago",
+        "concierto anime Santiago",
+        "encuentro otaku Santiago comunidad",
+        "feria cosplay comunidad Santiago"
+      ]
+    },
+    {
+      "id": "ilustracion",
+      "nombre": "Ilustración y cómic",
+      "emoji": "🖋️",
+      "color": "#0f766e",
+      "descripcion": "ferias y festivales de ilustración, cómic, fanzines, novela gráfica, exposiciones de dibujo o arte ilustrado, talleres de ilustración",
+      "palabras": [
+        "ilustracion",
+        "ilustraciones",
+        "ilustrador",
+        "ilustradores",
+        "ilustradoras",
+        "fanzine",
+        "fanzines",
+        "comic",
+        "comics",
+        "historieta",
+        "novela grafica",
+        "dibujo",
+        "arte digital",
+        "concept art"
+      ],
+      "busquedas": [
+        "feria de ilustración Santiago",
+        "festival de ilustración Chile",
+        "feria de cómic Santiago",
+        "feria de fanzines Santiago",
+        "exposición ilustración Santiago",
+        "feria de ilustradores independientes Santiago",
+        "feria de autoedición Santiago"
+      ]
+    },
+    {
+      "id": "metal",
+      "nombre": "Conciertos de metal",
+      "emoji": "🤘",
+      "color": "#334155",
+      "descripcion": "conciertos y festivales de heavy metal y sus subgéneros (thrash, death, black, doom, power, folk, symphonic, metalcore, nu metal), también rock duro",
+      "palabras": [
+        "metal",
+        "heavy metal",
+        "thrash",
+        "death metal",
+        "black metal",
+        "doom",
+        "power metal",
+        "metalcore",
+        "nu metal",
+        "metalfest",
+        "hard rock",
+        "rock pesado"
+      ],
+      "busquedas": [
+        "concierto metal Santiago",
+        "conciertos metal Chile 2026",
+        "festival metal Chile",
+        "banda metal en Chile gira",
+        "concierto thrash metal Santiago",
+        "black metal Santiago concierto",
+        "tocata metal Santiago",
+        "agenda conciertos metal Chile"
+      ]
+    },
+    {
+      "id": "fantasia",
+      "nombre": "Fantasía, rol y juegos",
+      "emoji": "🐉",
+      "color": "#4d7c0f",
+      "descripcion": "juegos de rol, juegos de mesa, wargames (Warhammer), Magic, fantasía, Tolkien, terror y cine fantástico, mitología y criaturas (también chilota)",
+      "palabras": [
+        "juegos de rol",
+        "dungeons",
+        "dragones",
+        "juegos de mesa",
+        "warhammer",
+        "magic the gathering",
+        "tolkien",
+        "fantasia",
+        "cine fantastico",
+        "terror",
+        "mitologia",
+        "criaturas",
+        "lovecraft"
+      ],
+      "busquedas": [
+        "evento juegos de rol Santiago",
+        "feria juegos de mesa Santiago",
+        "festival cine fantástico Chile",
+        "evento Warhammer Santiago",
+        "festival de terror Santiago",
+        "encuentro de rol comunidad Santiago",
+        "jornadas de rol Chile"
+      ]
+    }
+  ],
+  "fuentes": [
+    {
+      "nombre": "PuntoTicket",
+      "url": "https://www.puntoticket.com/todos",
+      "tipo": "puntoticket"
+    },
+    {
+      "nombre": "Ticketplus",
+      "url": "https://ticketplus.cl/taxons/conciertos-y-espectaculos",
+      "tipo": "listado",
+      "patron_enlace": "/events/"
+    },
+    {
+      "nombre": "Eventbrite",
+      "url": "https://www.eventbrite.cl/d/chile--santiago/all-events/",
+      "tipo": "jsonld"
+    },
+    {
+      "nombre": "Cuartel del Metal",
+      "url": "https://cuarteldelmetal.com/conciertos-chile/2026/05/conciertos-metal-en-chile/",
+      "tipo": "pagina",
+      "categoria": "metal"
+    },
+    {
+      "nombre": "Concerts-Metal",
+      "url": "https://es.concerts-metal.com/next_cl_2026.html",
+      "tipo": "pagina",
+      "categoria": "metal"
+    },
+    {
+      "nombre": "Reino Medieval Chile",
+      "url": "http://www.reinomedieval.cl/",
+      "tipo": "pagina",
+      "categoria": "medieval"
+    },
+    {
+      "nombre": "Legendarium (Sociedad Tolkien Chilena)",
+      "url": "https://legendarium.cl/",
+      "tipo": "pagina",
+      "categoria": "medieval"
+    },
+    {
+      "nombre": "WalkingStgo",
+      "url": "https://walkingstgo.cl/conciertos/",
+      "tipo": "pagina"
+    }
+  ],
+  "dominios_omitidos": [
+    "x.com",
+    "twitter.com",
+    "tiktok.com",
+    "youtube.com",
+    "linkedin.com",
+    "pinterest.com",
+    "wikipedia.org",
+    "bing.com",
+    "google.com",
+    "spotify.com",
+    "amazon.com",
+    "mercadolibre.cl",
+    "booking.com",
+    "tripadvisor.com",
+    "tripadvisor.cl",
+    "duckduckgo.com",
+    "reddit.com",
+    "chatgpt.com",
+    "onedrive.live.com",
+    "whatsapp.com"
+  ],
+  "comunidades": {
+    "_nota": "Cuentas de comunidades en redes sociales. La búsqueda automática no entra a Instagram ni Facebook; las revisa /buscar-eventos en Claude Code usando tu Chrome. Agrega aquí las que conozcas.",
+    "cuentas": [
+      {
+        "nombre": "Ragnarok Fest (festival nórdico medieval)",
+        "url": "https://www.instagram.com/ragnarokfest.cl/",
+        "categoria": "medieval"
+      },
+      {
+        "nombre": "Medieval Party Oficial",
+        "url": "https://www.instagram.com/medievalpartyoficial/",
+        "categoria": "medieval"
+      },
+      {
+        "nombre": "Ferias Medievales en Chile (grupo)",
+        "url": "https://www.facebook.com/groups/femedechi/",
+        "categoria": "medieval"
+      },
+      {
+        "nombre": "Comunidad Medieval Chile",
+        "url": "https://www.instagram.com/comunidad_medieval_chile/",
+        "categoria": "medieval"
+      }
+    ]
+  },
+  "redes_solo_resumen": [
+    "instagram.com",
+    "facebook.com",
+    "fb.com"
+  ]
+}

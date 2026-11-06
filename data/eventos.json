@@ -1,0 +1,299 @@
+{
+ "version": 1,
+ "actualizado": "2026-11-06T12:22-03:00",
+ "zona_horaria": "America/Santiago",
+ "ultima_busqueda": {
+  "fecha": "2026-11-06T12:22-03:00",
+  "origen": "local",
+  "eventos_nuevos": 10,
+  "llamadas_ia": 0,
+  "ia_sin_cupo": false,
+  "paginas_revisadas": 0,
+  "busquedas": 33,
+  "fuentes_fijas": 4,
+  "errores": 0
+ },
+ "total": 10,
+ "eventos": [
+  {
+   "titulo": "BABYMETAL",
+   "categoria": "metal",
+   "fecha_inicio": "2026-12-03",
+   "fecha_fin": null,
+   "hora": null,
+   "lugar": "Santander Arena - Santiago Centro",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": null,
+   "imagen": "https://static.ptocdn.net/images/eventos/chj012_calugalistado.jpg",
+   "url": "https://www.puntoticket.com/baby-metal-2026",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/baby-metal-2026"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "ticketera",
+   "id": "f840300077",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Versailles - 2026 en Santiago Chile",
+   "categoria": "metal",
+   "fecha_inicio": "2026-12-03",
+   "fecha_fin": null,
+   "hora": null,
+   "lugar": "Teatro Coliseo - Santiago Centro",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": null,
+   "imagen": "https://static.ptocdn.net/images/eventos/ncs013_calugalistado.jpg",
+   "url": "https://www.puntoticket.com/2026-versailles-en-santiago-de-chile",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/2026-versailles-en-santiago-de-chile"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "ticketera",
+   "id": "8aae86e35e",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Doyle - Rockout-2026",
+   "categoria": "metal",
+   "fecha_inicio": "2026-12-06",
+   "fecha_fin": null,
+   "hora": null,
+   "lugar": "Teatro Coliseo - Santiago Centro",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": null,
+   "imagen": "https://static.ptocdn.net/images/eventos/cco116_calugalistado.jpg",
+   "url": "https://www.puntoticket.com/evento/doyle-chile26",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/evento/doyle-chile26"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "ticketera",
+   "id": "8e804e1d7b",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Deep Purple",
+   "categoria": "metal",
+   "fecha_inicio": "2026-12-08",
+   "fecha_fin": null,
+   "hora": null,
+   "lugar": "Santander Arena - Santiago Centro",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": null,
+   "imagen": "https://static.ptocdn.net/images/eventos/rec112_calugalistado.jpg",
+   "url": "https://www.puntoticket.com/deep-purple",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/deep-purple"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "ticketera",
+   "id": "30f5e90162",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "ELLENDE + THYRFING 2026 Chile",
+   "categoria": "metal",
+   "fecha_inicio": "2026-12-17",
+   "fecha_fin": null,
+   "hora": null,
+   "lugar": "Blondie - Santiago Centro",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": null,
+   "imagen": "https://static.ptocdn.net/images/eventos/hvp015_calugalistado.jpg",
+   "url": "https://www.puntoticket.com/evento/ellende-thyrfing-2026-chile-blondie-dic-2026",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/evento/ellende-thyrfing-2026-chile-blondie-dic-2026"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "ticketera",
+   "id": "2dafda391c",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Metallica Sinfónico S&M",
+   "categoria": "metal",
+   "fecha_inicio": "2027-01-09",
+   "fecha_fin": null,
+   "hora": null,
+   "lugar": "Teatro Municipal de Valparaíso",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": null,
+   "imagen": "https://static.ptocdn.net/images/eventos/iep002_calugalistado.jpg",
+   "url": "https://www.puntoticket.com/evento/metallica-sinfonico-teatro-municipal-valparaiso-ene-2026",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/evento/metallica-sinfonico-teatro-municipal-valparaiso-ene-2026"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "ticketera",
+   "id": "db439ab52c",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Motionless In White - The Come To Latin America Tour",
+   "categoria": "metal",
+   "fecha_inicio": "2027-03-07",
+   "fecha_fin": null,
+   "hora": null,
+   "lugar": "Teatro Caupolicán - Santiago Centro",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": null,
+   "imagen": "https://static.ptocdn.net/images/eventos/eff033_calugalistado.jpg",
+   "url": "https://www.puntoticket.com/motionless-in-white",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/motionless-in-white"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "ticketera",
+   "id": "811308954e",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Floor Jansen",
+   "categoria": "metal",
+   "fecha_inicio": "2027-04-22",
+   "fecha_fin": null,
+   "hora": null,
+   "lugar": "Teatro Coliseo - Santiago Centro",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": null,
+   "imagen": "https://static.ptocdn.net/images/eventos/rec114_calugalistado.jpg",
+   "url": "https://www.puntoticket.com/floor-jansen",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/floor-jansen"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "ticketera",
+   "id": "d0f526c511",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Emperor",
+   "categoria": "metal",
+   "fecha_inicio": "2027-04-23",
+   "fecha_fin": null,
+   "hora": null,
+   "lugar": "Teatro Caupolicán - Santiago Centro",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": null,
+   "imagen": "https://static.ptocdn.net/images/eventos/cau005_calugalistado.jpg",
+   "url": "https://www.puntoticket.com/emperor",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/emperor"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "ticketera",
+   "id": "7df15a74fa",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "KK’s Priest - Latin American Tour 2027",
+   "categoria": "metal",
+   "fecha_inicio": "2027-04-28",
+   "fecha_fin": null,
+   "hora": null,
+   "lugar": "Teatro Caupolicán - Santiago Centro",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": null,
+   "imagen": "https://static.ptocdn.net/images/eventos/chj013_calugalistado.jpg",
+   "url": "https://www.puntoticket.com/evento/kks-priest-teatro-caupolican-abr-2027",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/evento/kks-priest-teatro-caupolican-abr-2027"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "ticketera",
+   "id": "851cb68b37",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  }
+ ]
+}
