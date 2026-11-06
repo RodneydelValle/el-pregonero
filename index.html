@@ -28,6 +28,7 @@
 
   <nav class="filtros" aria-label="Filtros">
     <div class="fila-busqueda">
+      <button type="button" id="btn-nuevos" class="btn-nuevos" aria-pressed="false">🆕 Nuevos <span class="cuenta" id="cuenta-nuevos"></span></button>
       <input type="search" id="buscar" placeholder="Buscar banda, feria, lugar…" aria-label="Buscar eventos" autocomplete="off">
       <div class="segmento" role="group" aria-label="Cuándo">
         <button type="button" data-periodo="todo" aria-pressed="true">Todo</button>
@@ -39,6 +40,10 @@
   </nav>
 
   <main>
+    <div id="banner-nuevos" class="banner" role="status" hidden>
+      <p id="banner-texto"></p>
+      <button type="button" class="boton secundario" id="btn-salir-nuevos">Ver toda la agenda</button>
+    </div>
     <section id="portada" class="portada" aria-label="Lo que viene"></section>
     <section id="agenda" class="agenda" aria-label="Agenda"></section>
     <div id="vacio" class="vacio" hidden>

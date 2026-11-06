@@ -1,0 +1,29 @@
+name: Diagnóstico IA
+
+on:
+  workflow_dispatch:
+    inputs:
+      modelo:
+        description: "Modelo de GitHub Models a probar (vacío = el de config/gustos.json)"
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+  models: read
+
+jobs:
+  probar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet pillow tzdata
+      - name: Probar IA
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MODELO: ${{ inputs.modelo }}
+        run: python scripts/diagnostico_ia.py

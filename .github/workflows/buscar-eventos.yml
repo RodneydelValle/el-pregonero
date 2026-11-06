@@ -2,7 +2,10 @@ name: Buscar eventos
 
 on:
   schedule:
-    - cron: "15 10 * * *"   # todos los días 07:15 en Chile (horario de verano; 06:15 en invierno)
+    # Todos los días a las 06:00 hora de Chile. GitHub usa hora UTC y Chile cambia de horario,
+    # así que hay dos horarios y el paso "¿Son las 6 en Chile?" deja seguir solo al que corresponde.
+    - cron: "0 9 * * *"    # 06:00 en horario de verano (UTC-3)
+    - cron: "0 10 * * *"   # 06:00 en horario de invierno (UTC-4)
   workflow_dispatch:         # botón "Run workflow" para buscar cuando quieras
   push:
     branches: [main]         # cualquier cambio en la web o en los gustos se publica al tiro
@@ -22,18 +25,37 @@ jobs:
     if: github.event_name != 'push'
     runs-on: ubuntu-latest
     timeout-minutes: 40
+    outputs:
+      seguir: ${{ steps.hora.outputs.seguir }}
     steps:
+      - name: ¿Son las 6 en Chile?
+        id: hora
+        run: |
+          desfase=$(TZ=America/Santiago date +%z)
+          caso="${{ github.event_name }}|${{ github.event.schedule }}|$desfase"
+          case "$caso" in
+            "schedule|0 9 * * *|-0300"|"schedule|0 10 * * *|-0400") seguir=true ;;
+            schedule*) seguir=false ;;
+            *) seguir=true ;;
+          esac
+          echo "Chile está en UTC$desfase · $caso → seguir=$seguir"
+          echo "seguir=$seguir" >> "$GITHUB_OUTPUT"
       - uses: actions/checkout@v4
+        if: steps.hora.outputs.seguir == 'true'
       - uses: actions/setup-python@v5
+        if: steps.hora.outputs.seguir == 'true'
         with:
           python-version: "3.12"
       - name: Preparar
+        if: steps.hora.outputs.seguir == 'true'
         run: pip install --quiet pillow tzdata
       - name: Buscar eventos
+        if: steps.hora.outputs.seguir == 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/actualizar.py
       - name: Guardar resultados
+        if: steps.hora.outputs.seguir == 'true'
         run: |
           git config user.name "el-pregonero[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -48,7 +70,7 @@ jobs:
 
   publicar:
     needs: buscar
-    if: always() && (needs.buscar.result == 'success' || needs.buscar.result == 'skipped')
+    if: always() && (needs.buscar.result == 'success' || needs.buscar.result == 'skipped') && needs.buscar.outputs.seguir != 'false'
     runs-on: ubuntu-latest
     environment:
       name: github-pages

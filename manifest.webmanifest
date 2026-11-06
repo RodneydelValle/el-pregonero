@@ -17,6 +17,7 @@
     { "src": "icons/icono-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
   ],
   "shortcuts": [
+    { "name": "Eventos nuevos", "url": "./?ver=nuevos", "icons": [{ "src": "icons/icono-192.png", "sizes": "192x192" }] },
     { "name": "Mis guardados", "url": "./?ver=guardados", "icons": [{ "src": "icons/icono-192.png", "sizes": "192x192" }] }
   ]
 }

@@ -10,8 +10,10 @@ const DIAS_LARGOS = ["domingo", "lunes", "martes", "miércoles", "jueves", "vier
 const MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
 const COMUNAS_RM = /santiago|metropolitana|providencia|[ñn]u[ñn]oa|las condes|vitacura|lo barnechea|la reina|pe[ñn]alol[ée]n|macul|la florida|puente alto|maip[úu]|estaci[óo]n central|quinta normal|recoleta|independencia|conchal[íi]|huechuraba|quilicura|renca|cerro navia|lo prado|pudahuel|cerrillos|pedro aguirre cerda|san miguel|san joaqu[íi]n|la cisterna|el bosque|la granja|la pintana|san ram[óo]n|lo espejo|san bernardo|buin|colina|lampa|talagante|pe[ñn]aflor|melipilla|pirque|san jos[ée] de maipo|movistar arena|caupolic[áa]n|teatro coliseo|blondie|santander arena|espacio riesco|matucana|gam\b|parque o.?higgins/i;
 
-const estado = { cat: "todas", periodo: "todo", texto: "", soloRM: false };
+const estado = { cat: "todas", periodo: "todo", texto: "", soloRM: false, soloNuevos: false };
 let EVENTOS = [];
+let ULTIMA = {};          // datos de la última búsqueda
+let NUEVOS = new Set();   // id de los eventos que agregó la última búsqueda
 let CATS = {};
 let ORDEN_CATS = [];
 let guardados = leerGuardados();
@@ -69,6 +71,7 @@ function filtrar() {
   return EVENTOS.filter((e) => {
     const fin = e.fecha_fin ? fecha(e.fecha_fin) : fecha(e.fecha_inicio);
     if (fin < h) return false;
+    if (estado.soloNuevos) return NUEVOS.has(e.id);   // "Nuevos" muestra todo lo nuevo, sin otros filtros
     if (dias(h, fecha(e.fecha_inicio)) > limite) return false;
     if (estado.cat === "guardados" && !guardados.has(e.id)) return false;
     if (estado.cat !== "todas" && estado.cat !== "guardados" && e.categoria !== estado.cat) return false;
@@ -159,9 +162,40 @@ function imagen(e, clase, ancho) {
   return `<img class="${clase}" src="${esc(src)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="${ancho}" onerror="this.remove()">`;
 }
 
+function cuandoBusqueda() {
+  if (!ULTIMA.fecha) return null;
+  const f = new Date(ULTIMA.fecha);
+  const hora = `${String(f.getHours()).padStart(2, "0")}:${String(f.getMinutes()).padStart(2, "0")}`;
+  const d = new Date(f.getFullYear(), f.getMonth(), f.getDate());
+  const n = dias(d, hoy());
+  if (n === 0) return `hoy a las ${hora}`;
+  if (n === 1) return `ayer a las ${hora}`;
+  return `el ${DIAS_LARGOS[f.getDay()]} ${f.getDate()} de ${MESES[f.getMonth()]} a las ${hora}`;
+}
+
+function pintarNuevos(lista) {
+  const n = EVENTOS.filter((e) => NUEVOS.has(e.id) && fecha(e.fecha_fin || e.fecha_inicio) >= hoy()).length;
+  $("#cuenta-nuevos").textContent = n ? String(n) : "";
+  $("#btn-nuevos").setAttribute("aria-pressed", String(estado.soloNuevos));
+  const banner = $("#banner-nuevos");
+  banner.hidden = !estado.soloNuevos;
+  if (!estado.soloNuevos) return;
+  const cuando = cuandoBusqueda();
+  if (!cuando) {
+    $("#banner-texto").innerHTML = "<b>No hay eventos nuevos.</b><span class=\"fino\">Todavía no se ha hecho ninguna búsqueda.</span>";
+  } else if (lista.length) {
+    $("#banner-texto").innerHTML = `🆕 <b>${lista.length} evento${lista.length === 1 ? "" : "s"} nuevo${lista.length === 1 ? "" : "s"}</b> en la búsqueda de ${esc(cuando)}.` +
+      `<span class="fino">Ya quedaron en la agenda; aquí están solo ellos, ordenados por fecha.</span>`;
+  } else {
+    const leidas = ULTIMA.paginas_revisadas ? ` revisó ${ULTIMA.paginas_revisadas} páginas y` : "";
+    $("#banner-texto").innerHTML = `<b>No hay eventos nuevos.</b>` +
+      `<span class="fino">La última búsqueda (${esc(cuando)})${leidas} no encontró nada distinto a lo que ya tenías. La próxima es ${new Date().getHours() < 6 ? "hoy" : "mañana"} a las 06:00.</span>`;
+  }
+}
+
 function pintarPortada(lista) {
   const cont = $("#portada");
-  if (estado.texto || estado.cat === "guardados" || lista.length < 3) { cont.innerHTML = ""; return; }
+  if (estado.soloNuevos || estado.texto || estado.cat === "guardados" || lista.length < 3) { cont.innerHTML = ""; return; }
   const conFoto = lista.filter((e) => urlSegura(e.imagen));
   const elegidos = (conFoto.length >= 3 ? conFoto : lista).slice(0, 3);
   const [p, ...s] = elegidos;
@@ -225,10 +259,19 @@ function pintarAgenda(lista) {
 
 function pintar() {
   const lista = filtrar();
+  pintarNuevos(lista);
   pintarPortada(lista);
   pintarAgenda(lista);
-  $("#vacio").hidden = lista.length > 0;
+  $("#vacio").hidden = lista.length > 0 || estado.soloNuevos;   // en "Nuevos" el aviso lo da el recuadro
 }
+
+function alternarNuevos(activar) {
+  estado.soloNuevos = activar;
+  pintar();
+  if (activar) $("#banner-nuevos").scrollIntoView({ behavior: "smooth", block: "nearest" });
+}
+$("#btn-nuevos").addEventListener("click", () => alternarNuevos(!estado.soloNuevos));
+$("#btn-salir-nuevos").addEventListener("click", () => alternarNuevos(false));
 
 // ---------- acciones ----------
 function porId(id) { return EVENTOS.find((e) => e.id === id); }
@@ -340,11 +383,20 @@ async function iniciar() {
   $("#btn-gustos").href = URL_GUSTOS;
   const params = new URLSearchParams(location.search);
   if (params.get("ver") === "guardados") estado.cat = "guardados";
+  if (params.get("ver") === "nuevos") estado.soloNuevos = true;
   try {
     const [cfg, datos] = await Promise.all([cargarJson("config/gustos.json"), cargarJson("data/eventos.json")]);
     ORDEN_CATS = cfg.categorias;
     CATS = Object.fromEntries(cfg.categorias.map((c) => [c.id, c]));
     EVENTOS = datos.eventos || [];
+    ULTIMA = datos.ultima_busqueda || {};
+    if (Array.isArray(ULTIMA.nuevos_ids)) {
+      NUEVOS = new Set(ULTIMA.nuevos_ids);
+    } else if (ULTIMA.fecha && ULTIMA.eventos_nuevos) {
+      // búsquedas antiguas sin lista de id: lo agregado ese mismo día
+      const dia = ULTIMA.fecha.slice(0, 10);
+      NUEVOS = new Set(EVENTOS.filter((e) => e.agregado === dia).map((e) => e.id));
+    }
     pintarCabecera(datos);
   } catch (err) {
     $("#estado-busqueda").textContent = "No se pudo cargar la agenda";

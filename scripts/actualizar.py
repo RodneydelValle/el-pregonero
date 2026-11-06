@@ -535,18 +535,40 @@ class IA:
         self.usadas = 0
         self.agotada = not token
         self.ultima = 0.0
+        self.modo_json = os.environ.get("PREGONERO_MODO_JSON", "1") != "0"
+        self.buenas = 0
 
     def disponible(self) -> bool:
         return not self.agotada and self.usadas < self.maximo
+
+    @staticmethod
+    def _parsear(txt: str):
+        """Saca el JSON de la respuesta aunque venga con ``` o con texto alrededor."""
+        txt = re.sub(r"^\s*```(?:json)?|```\s*$", "", txt or "").strip()
+        if not txt:
+            return None
+        try:
+            return json.loads(txt)
+        except json.JSONDecodeError:
+            a, b = txt.find("{"), txt.rfind("}")
+            if a >= 0 and b > a:
+                try:
+                    return json.loads(txt[a:b + 1])
+                except json.JSONDecodeError:
+                    return None
+            return None
 
     def json(self, sistema: str, contenido, max_tokens=2200) -> dict:
         if not self.disponible():
             raise SinCupo()
         cuerpo = {"model": self.modelo, "temperature": 0.1, "max_tokens": max_tokens,
-                  "response_format": {"type": "json_object"},
                   "messages": [{"role": "system", "content": sistema},
                                {"role": "user", "content": contenido}]}
         for intento in range(4):
+            if self.modo_json:
+                cuerpo["response_format"] = {"type": "json_object"}
+            else:
+                cuerpo.pop("response_format", None)
             espera = 4.3 - (time.time() - self.ultima)  # máximo ~14 llamadas por minuto
             if espera > 0:
                 time.sleep(espera)
@@ -556,11 +578,27 @@ class IA:
                 "Accept": "application/json"})
             try:
                 with urllib.request.urlopen(req, timeout=120) as r:
-                    datos = json.loads(r.read().decode("utf-8"))
+                    bruto = r.read().decode("utf-8", errors="replace")
                 self.usadas += 1
-                txt = datos["choices"][0]["message"]["content"] or "{}"
-                txt = re.sub(r"^```(?:json)?|```$", "", txt.strip()).strip()
-                return json.loads(txt)
+                try:
+                    datos = json.loads(bruto)
+                    eleccion = datos["choices"][0]
+                    txt = eleccion["message"].get("content") or ""
+                    fin = eleccion.get("finish_reason")
+                except (json.JSONDecodeError, KeyError, IndexError, TypeError):
+                    log(f"  IA: respuesta rara del servidor: {bruto[:300]!r}")
+                    return {}
+                res = self._parsear(txt)
+                if isinstance(res, dict):
+                    self.buenas += 1
+                    return res
+                log(f"  IA: no vino JSON (fin={fin}, modo_json={self.modo_json}): {txt[:240]!r}")
+                if self.modo_json and self.buenas == 0:
+                    # Algunos modelos responden solo espacios en "modo JSON": se prueba sin ese modo
+                    self.modo_json = False
+                    log("  IA: sigo sin el modo JSON (las instrucciones ya piden responder en JSON)")
+                    continue
+                return {}
             except urllib.error.HTTPError as e:
                 detalle = e.read().decode("utf-8", errors="replace")[:400]
                 if e.code == 429:
@@ -580,10 +618,6 @@ class IA:
                     raise ValueError("contenido demasiado largo") from e
                 log(f"  IA: error {e.code}: {detalle[:200]}")
                 time.sleep(5)
-            except (json.JSONDecodeError, KeyError) as e:
-                log(f"  IA: respuesta no válida ({e})")
-                self.usadas += 1
-                return {}
             except Exception as e:  # noqa: BLE001
                 log(f"  IA: fallo de red ({e})")
                 time.sleep(5)
@@ -812,8 +846,9 @@ def nuevo_id(ev: dict) -> str:
     return hashlib.sha1(base.encode()).hexdigest()[:10]
 
 
-def unir(existentes: list[dict], nuevos: list[dict]) -> tuple[list[dict], int]:
-    agregados = 0
+def unir(existentes: list[dict], nuevos: list[dict]) -> tuple[list[dict], list[str]]:
+    """Une los eventos encontrados con la agenda. Devuelve la agenda y los id de los eventos recién agregados."""
+    agregados: list[str] = []
     hoy = HOY.isoformat()
     for n in nuevos:
         igual = next((e for e in existentes if mismo_evento(e, n)), None)
@@ -822,7 +857,7 @@ def unir(existentes: list[dict], nuevos: list[dict]) -> tuple[list[dict], int]:
             n["agregado"] = hoy
             n["actualizado"] = hoy
             existentes.append(n)
-            agregados += 1
+            agregados.append(n["id"])
             continue
         mejor = RANGO_CONFIANZA.get(n["confianza"], 1) > RANGO_CONFIANZA.get(igual.get("confianza"), 1)
         for c in CAMPOS:
@@ -971,14 +1006,13 @@ def busqueda_completa(cfg: dict, ia: IA, vistos: dict) -> tuple[list[dict], dict
             filas = (listado_puntoticket(pagina, final) if f["tipo"] == "puntoticket"
                      else listado_generico(pagina, final, f.get("patron_enlace", "/")))
             log(f"  {len(filas)} eventos en el listado")
-            elegidos = []
-            if ia.disponible():
-                elegidos = ia_clasificar_listado(ia, cfg, f["nombre"], filas)
-            else:  # sin IA: solo coincidencias por palabra clave
-                for fila in filas:
-                    cats = categorias_por_palabras(cfg, f'{fila["titulo"]} {fila.get("tipo", "")}')
-                    if cats:
-                        elegidos.append((fila, {"categoria": cats[0], "confianza": "media"}))
+            elegidos = ia_clasificar_listado(ia, cfg, f["nombre"], filas) if ia.disponible() else []
+            # respaldo por palabras clave (también sirve si la IA falla o se queda sin cupo)
+            ya = {fila["url"] for fila, _ in elegidos}
+            for fila in filas:
+                cats = categorias_por_palabras(cfg, f'{fila["titulo"]} {fila.get("tipo", "")}')
+                if cats and fila["url"] not in ya:
+                    elegidos.append((fila, {"categoria": cats[0], "confianza": "media"}))
             for fila, e in elegidos:
                 fechas = fechas_desde_texto(fila.get("fecha_texto", ""))
                 ev = {"titulo": fila["titulo"], "categoria": e.get("categoria"),
@@ -1128,8 +1162,11 @@ def main():
         log(f"Hoy: {HOY}  |  IA: {'sí (' + cfg['modelo_ia'] + ')' if token else 'no'}")
         nuevos, stats = busqueda_completa(cfg, ia, vistos)
 
-    eventos, agregados = unir(eventos, nuevos)
+    eventos, ids_nuevos = unir(eventos, nuevos)
     eventos = vigentes(eventos, ocultos)
+    ids_vigentes = {e["id"] for e in eventos}
+    ids_nuevos = [i for i in ids_nuevos if i in ids_vigentes]
+    agregados = len(ids_nuevos)
     corte = (HOY - dt.timedelta(days=60)).isoformat()
     vistos = {u: f for u, f in vistos.items() if f >= corte}
 
@@ -1138,7 +1175,7 @@ def main():
     if not args.limpiar:
         ultima = {"fecha": ahora, "origen": args.origen if args.agregar else
                   ("github-actions" if os.environ.get("GITHUB_ACTIONS") else "local"),
-                  "eventos_nuevos": agregados, "llamadas_ia": ia.usadas,
+                  "eventos_nuevos": agregados, "nuevos_ids": ids_nuevos, "llamadas_ia": ia.usadas,
                   "ia_sin_cupo": ia.agotada and ia.usadas > 0, **stats}
     salida = {"version": 1, "actualizado": ahora, "zona_horaria": "America/Santiago",
               "ultima_busqueda": ultima, "total": len(eventos), "eventos": eventos}

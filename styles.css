@@ -91,6 +91,27 @@ img { max-width: 100%; }
 }
 .segmento button + button { border-left: 1px solid var(--regla); }
 .segmento button[aria-pressed="true"] { background: var(--tinta); color: var(--papel); }
+.btn-nuevos {
+  flex: none; font: 700 14px var(--sans); cursor: pointer;
+  color: var(--lacre-texto); background: var(--resalte);
+  border: 2px solid var(--lacre); border-radius: 999px; padding: 7px 14px;
+}
+.btn-nuevos .cuenta {
+  display: inline-block; min-width: 20px; margin-left: 2px; padding: 0 6px; border-radius: 999px;
+  background: var(--lacre); color: #fff; font-size: 12px; line-height: 20px; text-align: center;
+}
+.btn-nuevos .cuenta:empty { display: none; }
+.btn-nuevos[aria-pressed="true"] { background: var(--lacre); color: #fff; }
+.btn-nuevos[aria-pressed="true"] .cuenta { background: #fff; color: var(--lacre); }
+.btn-nuevos:focus-visible { outline: 2px solid var(--lacre); outline-offset: 2px; }
+.banner {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px 18px; flex-wrap: wrap;
+  margin: 18px 0 0; padding: 14px 18px; background: var(--resalte);
+  border: 1px solid var(--lacre); border-left-width: 5px;
+}
+.banner[hidden] { display: none; }
+.banner p { margin: 0; font-size: 17px; flex: 1 1 260px; }
+.banner .fino { display: block; font: 13px/1.5 var(--sans); color: var(--tinta-suave); margin-top: 3px; }
 .chips { display: flex; gap: 8px; margin-top: 10px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
 .chips::-webkit-scrollbar { display: none; }
 .chip {

@@ -56,6 +56,7 @@ class Seguidor:
         self.cache: dict = {}
         self.cache_t = 0.0
         self.logs: dict[int, dict] = {}
+        self.saltados: dict[int, bool] = {}
         self.duracion = None
         self.ultimo_pedido = time.time()
 
@@ -76,11 +77,24 @@ class Seguidor:
         self.duracion = int(sorted(tiempos)[len(tiempos) // 2]) if tiempos else DURACION_DEFECTO
         return self.duracion
 
+    def _se_salto(self, run: dict) -> bool:
+        """True si fue el turno programado que no correspondía (no eran las 6 en Chile)."""
+        if run["status"] != "completed" or run["event"] != "schedule":
+            return False
+        if run["id"] not in self.saltados:
+            jobs = gh("api", f"repos/{REPO}/actions/runs/{run['id']}/jobs")["jobs"]
+            pasos = {s["name"]: s for j in jobs if j["name"] == "buscar" for s in j.get("steps", [])}
+            self.saltados[run["id"]] = pasos.get("Buscar eventos", {}).get("conclusion") == "skipped"
+        return self.saltados[run["id"]]
+
     def run_actual(self) -> dict:
         if self.run_fijo:
             return gh("api", f"repos/{REPO}/actions/runs/{self.run_fijo}")
         runs = gh("api", f"repos/{REPO}/actions/workflows/{WORKFLOW}/runs?per_page=10")["workflow_runs"]
         busquedas = [r for r in runs if r["event"] != "push"]
+        for r in busquedas:
+            if not self._se_salto(r):
+                return r
         return (busquedas or runs)[0]
 
     # ---- lectura del registro cuando la búsqueda terminó
@@ -89,14 +103,16 @@ class Seguidor:
             return self.logs[job_id]
         res = {"eventos": [], "listo": None, "avisos": [], "paginas": 0, "busquedas": None}
         try:
-            texto = gh("api", f"repos/{REPO}/actions/jobs/{job_id}/logs", texto=True)
+            texto = gh("run", "view", "-R", REPO, "--job", str(job_id), "--log", texto=True)
         except Exception as e:  # noqa: BLE001
             res["avisos"].append(f"No pude leer el registro: {e}")
             self.logs[job_id] = res
             return res
         vistos = set()
         for linea in texto.splitlines():
-            l = re.sub(r"^\S+Z\s", "", linea).strip()
+            if "\tBuscar eventos\t" not in linea:
+                continue
+            l = re.sub(r"^\S+Z\s", "", linea.split("\t")[-1]).strip()
             m = re.match(r"✓ (\d{4}-\d{2}-\d{2}) (.+) \(([a-z]+)(?:, (.+))?\)$", l)
             if m:
                 clave = (m[1], m[2].lower())
@@ -114,6 +130,8 @@ class Seguidor:
                 res["busquedas"] = {"resultados": int(m[1]), "prometedores": int(m[2])}
             if l.startswith("IA:") and ("cupo" in l or "permiso" in l):
                 res["avisos"].append(l)
+            if l.startswith("IA: no vino JSON") or l.startswith("IA: respuesta rara"):
+                res["fallos_ia"] = res.get("fallos_ia", 0) + 1
             if "Traceback" in l or l.startswith("Error"):
                 res["avisos"].append(l[:200])
         self.logs[job_id] = res
