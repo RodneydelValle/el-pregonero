@@ -12,7 +12,6 @@ on:
 
 permissions:
   contents: write   # guardar data/eventos.json
-  models: read      # IA gratuita de GitHub Models (lee texto y afiches)
   pages: write
   id-token: write
 
@@ -52,7 +51,7 @@ jobs:
       - name: Buscar eventos
         if: steps.hora.outputs.seguir == 'true'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}   # IA gratis de Google AI Studio (lee páginas y afiches)
         run: python scripts/actualizar.py
       - name: Guardar resultados
         if: steps.hora.outputs.seguir == 'true'

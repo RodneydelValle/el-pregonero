@@ -528,18 +528,56 @@ class SinCupo(Exception):
 
 
 class IA:
-    def __init__(self, token: str | None, modelo: str, maximo: int):
-        self.token = token
-        self.modelo = modelo
+    """Cliente de IA compatible con la API de OpenAI (por defecto, Gemini gratis de Google AI Studio).
+
+    Se configura en config/gustos.json -> "ia". Elige solo un modelo disponible, se adapta si el
+    proveedor rechaza algún parámetro y se detiene al llegar al cupo gratis del día.
+    """
+
+    def __init__(self, conf: dict | None, clave: str | None, maximo: int):
+        conf = conf or {}
+        self.url = conf.get("url", URL_IA)
+        self.base = self.url.rsplit("/chat/completions", 1)[0]
+        self.preferidos = list(conf.get("modelos") or ["openai/gpt-4.1-mini"])
+        self.modelo = self.preferidos[0]
+        self.modelo_elegido = False
+        self.pausa = float(conf.get("pausa_s", 4.3))
+        self.extra = dict(conf.get("extra") or {})
+        self.modo_json = bool(conf.get("modo_json", False))
+        self.token = clave
         self.maximo = maximo
         self.usadas = 0
-        self.agotada = not token
-        self.ultima = 0.0
-        self.modo_json = os.environ.get("PREGONERO_MODO_JSON", "1") != "0"
         self.buenas = 0
+        self.agotada = not clave
+        self.ultima = 0.0
 
     def disponible(self) -> bool:
         return not self.agotada and self.usadas < self.maximo
+
+    def elegir_modelo(self):
+        """Pregunta qué modelos hay y usa el primero de la lista de preferidos (o un 'flash' cualquiera)."""
+        if self.modelo_elegido or not self.token:
+            return
+        self.modelo_elegido = True
+        try:
+            req = urllib.request.Request(self.base + "/models", headers={"Authorization": f"Bearer {self.token}"})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                datos = json.loads(r.read().decode("utf-8"))
+            ids = [str(m.get("id", "")).replace("models/", "") for m in datos.get("data", [])]
+        except Exception as e:  # noqa: BLE001
+            log(f"  IA: no pude ver la lista de modelos ({e}); uso {self.modelo}")
+            return
+        for m in self.preferidos:
+            if m in ids:
+                self.modelo = m
+                break
+        else:
+            flash = [i for i in ids if "flash" in i and not re.search(r"image|tts|audio|live|embed|thinking", i)]
+            if flash:
+                self.modelo = sorted(flash, key=lambda i: ("preview" in i or "exp" in i, "lite" in i))[0]
+        self.preferidos = [self.modelo] + [m for m in self.preferidos if m != self.modelo and m in ids]
+        flash_txt = ", ".join(i for i in ids if "flash" in i)[:300]
+        log(f"  IA: modelo {self.modelo} (con 'flash' disponibles: {flash_txt})")
 
     @staticmethod
     def _parsear(txt: str):
@@ -558,74 +596,90 @@ class IA:
                     return None
             return None
 
-    def json(self, sistema: str, contenido, max_tokens=2200) -> dict:
+    def json(self, sistema: str, contenido, max_tokens=4000) -> dict:
         if not self.disponible():
             raise SinCupo()
-        cuerpo = {"model": self.modelo, "temperature": 0.1, "max_tokens": max_tokens,
-                  "messages": [{"role": "system", "content": sistema},
-                               {"role": "user", "content": contenido}]}
-        for intento in range(4):
+        self.elegir_modelo()
+        for _ in range(6):
+            cuerpo = {"model": self.modelo, "temperature": 0.1, "max_tokens": max_tokens,
+                      "messages": [{"role": "system", "content": sistema},
+                                   {"role": "user", "content": contenido}], **self.extra}
             if self.modo_json:
                 cuerpo["response_format"] = {"type": "json_object"}
-            else:
-                cuerpo.pop("response_format", None)
-            espera = 4.3 - (time.time() - self.ultima)  # máximo ~14 llamadas por minuto
+            espera = self.pausa - (time.time() - self.ultima)  # respeta el límite por minuto del plan gratis
             if espera > 0:
                 time.sleep(espera)
             self.ultima = time.time()
-            req = urllib.request.Request(URL_IA, data=json.dumps(cuerpo).encode(), headers={
+            req = urllib.request.Request(self.url, data=json.dumps(cuerpo).encode(), headers={
                 "Authorization": f"Bearer {self.token}", "Content-Type": "application/json",
                 "Accept": "application/json"})
             try:
-                with urllib.request.urlopen(req, timeout=120) as r:
+                with urllib.request.urlopen(req, timeout=150) as r:
                     bruto = r.read().decode("utf-8", errors="replace")
-                self.usadas += 1
-                if bruto.strip() == "OK":
-                    # Así responde GitHub Models cuando el servicio no está disponible (visto en nov. 2026)
-                    log("  IA: GitHub Models no está disponible (responde 'OK' sin contenido); sigo sin IA")
-                    self.agotada = True
-                    raise SinCupo()
-                try:
-                    datos = json.loads(bruto)
-                    eleccion = datos["choices"][0]
-                    txt = eleccion["message"].get("content") or ""
-                    fin = eleccion.get("finish_reason")
-                except (json.JSONDecodeError, KeyError, IndexError, TypeError):
-                    log(f"  IA: respuesta rara del servidor: {bruto[:300]!r}")
-                    return {}
-                res = self._parsear(txt)
-                if isinstance(res, dict):
-                    self.buenas += 1
-                    return res
-                log(f"  IA: no vino JSON (fin={fin}, modo_json={self.modo_json}): {txt[:240]!r}")
-                if self.modo_json and self.buenas == 0:
-                    # Algunos modelos responden solo espacios en "modo JSON": se prueba sin ese modo
-                    self.modo_json = False
-                    log("  IA: sigo sin el modo JSON (las instrucciones ya piden responder en JSON)")
-                    continue
-                return {}
             except urllib.error.HTTPError as e:
-                detalle = e.read().decode("utf-8", errors="replace")[:400]
+                detalle = e.read().decode("utf-8", errors="replace")[:600]
+                d = detalle.lower()
                 if e.code == 429:
-                    pausa = int(e.headers.get("retry-after") or 60)
-                    if pausa > 180 or "day" in detalle.lower() or "diar" in detalle.lower():
-                        log(f"  IA: se acabó el cupo gratis de hoy ({detalle[:120]})")
+                    pausa = int(float(e.headers.get("retry-after") or 60))
+                    if pausa > 180 or "day" in d or "diar" in d:
+                        log(f"  IA: se acabó el cupo gratis de hoy ({detalle[:160]})")
                         self.agotada = True
                         raise SinCupo()
                     log(f"  IA: límite por minuto, espero {pausa}s")
                     time.sleep(pausa)
                     continue
-                if e.code in (401, 403):
-                    log(f"  IA: sin permiso ({e.code}): {detalle[:200]}")
+                if e.code in (401, 403) or "api key" in d or "api_key" in d:
+                    log(f"  IA: la clave no sirve o no tiene permiso ({e.code}): {detalle[:200]}")
                     self.agotada = True
                     raise SinCupo()
-                if e.code == 413 or "token" in detalle.lower():
+                if e.code in (400, 404):
+                    quitado = [k for k in list(self.extra) if k in d]
+                    for k in quitado:
+                        self.extra.pop(k)
+                    if self.modo_json and "response_format" in d:
+                        self.modo_json = False
+                        quitado.append("response_format")
+                    if quitado:
+                        log(f"  IA: el proveedor no acepta {', '.join(quitado)}; sigo sin eso")
+                        continue
+                    if "model" in d and len(self.preferidos) > 1:
+                        self.preferidos.pop(0)
+                        self.modelo = self.preferidos[0]
+                        log(f"  IA: pruebo con el modelo {self.modelo}")
+                        continue
+                if e.code == 413 or ("token" in d and re.search(r"exceed|too long|too large|maximum", d)):
                     raise ValueError("contenido demasiado largo") from e
-                log(f"  IA: error {e.code}: {detalle[:200]}")
+                log(f"  IA: error {e.code}: {detalle[:240]}")
                 time.sleep(5)
+                continue
             except Exception as e:  # noqa: BLE001
                 log(f"  IA: fallo de red ({e})")
                 time.sleep(5)
+                continue
+            self.usadas += 1
+            if bruto.strip() == "OK":
+                # Así responde GitHub Models desde nov. 2026: servicio sin contenido
+                log("  IA: el servicio responde 'OK' sin contenido; sigo sin IA")
+                self.agotada = True
+                raise SinCupo()
+            try:
+                datos = json.loads(bruto)
+                eleccion = datos["choices"][0]
+                txt = eleccion["message"].get("content") or ""
+                fin = eleccion.get("finish_reason")
+            except (json.JSONDecodeError, KeyError, IndexError, TypeError):
+                log(f"  IA: respuesta rara del servidor: {bruto[:300]!r}")
+                return {}
+            res = self._parsear(txt)
+            if isinstance(res, dict):
+                self.buenas += 1
+                return res
+            log(f"  IA: no vino JSON (fin={fin}): {txt[:240]!r}")
+            if self.modo_json and self.buenas == 0:
+                self.modo_json = False
+                log("  IA: sigo sin el modo JSON (las instrucciones ya piden responder en JSON)")
+                continue
+            return {}
         return {}
 
 
@@ -656,17 +710,17 @@ ESQUEMA_EVENTO = (
 
 
 def ia_pagina(ia: IA, cfg: dict, url: str, titulo: str, texto: str, imagenes: list[str],
-              max_tokens=2200) -> list[dict]:
+              max_tokens=3500) -> list[dict]:
     sistema = instrucciones_base(cfg) + "Responde solo JSON con esta forma: " + ESQUEMA_EVENTO + \
         '. Si no hay eventos que calcen, responde {"eventos": []}.'
     partes = [{"type": "text", "text": f"URL: {url}\nTítulo: {titulo}\n\nTexto de la página:\n{texto}"}]
     for i, img in enumerate(imagenes):
-        partes.append({"type": "image_url", "image_url": {"url": img, "detail": "high" if i == 0 else "low"}})
+        partes.append({"type": "image_url", "image_url": {"url": img}})
     try:
         r = ia.json(sistema, partes, max_tokens=max_tokens)
     except ValueError:
         partes = [{"type": "text", "text": partes[0]["text"][:5000]}] + (
-            [{"type": "image_url", "image_url": {"url": imagenes[0], "detail": "low"}}] if imagenes else [])
+            [{"type": "image_url", "image_url": {"url": imagenes[0]}}] if imagenes else [])
         try:
             r = ia.json(sistema, partes, max_tokens=max_tokens)
         except ValueError:
@@ -980,7 +1034,7 @@ def procesar_pagina(url, titulo_busqueda, ia, cfg, patron, cat_fuente=None, nomb
     else:
         texto = texto_relevante(texto, patron)
         portada, imagenes = elegir_imagenes(meta, imgs, final)
-    crudos = ia_pagina(ia, cfg, final, titulo, texto, imagenes, max_tokens=4000 if agenda else 2200)
+    crudos = ia_pagina(ia, cfg, final, titulo, texto, imagenes, max_tokens=6000 if agenda else 3500)
     res = []
     for e in crudos:
         if not e.get("imagen") and portada:
@@ -1148,7 +1202,8 @@ def main():
     ocultos = cargar_json(ARCH_OCULTOS, [])
     stats: dict = {}
     nuevos: list[dict] = []
-    ia = IA(None, cfg["modelo_ia"], 0)
+    conf_ia = cfg.get("ia") or {}
+    ia = IA(conf_ia, None, 0)
 
     if args.agregar:
         datos = cargar_json(Path(args.agregar), [])
@@ -1162,9 +1217,13 @@ def main():
                 log(f"  descartado (sin fecha válida, pasado o fuera de tus gustos): {e.get('titulo')}")
         stats = {"agregados_a_mano": len(lista)}
     elif not args.limpiar:
-        token = None if args.sin_ia else token_github()
-        ia = IA(token, cfg["modelo_ia"], cfg.get("max_llamadas_ia", 90))
-        log(f"Hoy: {HOY}  |  IA: {'sí (' + cfg['modelo_ia'] + ')' if token else 'no'}")
+        variable = conf_ia.get("clave_env")
+        clave = None if args.sin_ia else (os.environ.get(variable) if variable else token_github())
+        ia = IA(conf_ia, clave, int(conf_ia.get("max_llamadas", 80)))
+        if clave:
+            log(f"Hoy: {HOY}  |  IA: sí ({conf_ia.get('nombre', ia.url)})")
+        else:
+            log(f"Hoy: {HOY}  |  IA: no" + (f" (falta el secreto {variable})" if variable and not args.sin_ia else ""))
         nuevos, stats = busqueda_completa(cfg, ia, vistos)
 
     eventos, ids_nuevos = unir(eventos, nuevos)

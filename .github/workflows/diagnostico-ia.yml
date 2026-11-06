@@ -4,13 +4,12 @@ on:
   workflow_dispatch:
     inputs:
       modelo:
-        description: "Modelo de GitHub Models a probar (vacío = el de config/gustos.json)"
+        description: "Modelo a probar primero (vacío = el de config/gustos.json)"
         required: false
         default: ""
 
 permissions:
   contents: read
-  models: read
 
 jobs:
   probar:
@@ -22,28 +21,8 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install --quiet pillow tzdata
-      - name: Probar con curl
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          cuerpo='{"model":"openai/gpt-4.1-mini","messages":[{"role":"user","content":"Di hola"}],"max_tokens":10}'
-          echo "== A) models.github.ai con cabeceras oficiales"
-          curl -sS -i -m 60 https://models.github.ai/inference/chat/completions \
-            -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" \
-            -H "Authorization: Bearer $GH_TOKEN" -H "Content-Type: application/json" -d "$cuerpo" | head -c 900; echo
-          echo "== B) catálogo"
-          curl -sS -i -m 30 https://models.github.ai/catalog/models -H "Accept: application/vnd.github+json" \
-            -H "Authorization: Bearer $GH_TOKEN" | head -c 600; echo
-          echo "== C) endpoint antiguo de Azure"
-          curl -sS -i -m 60 https://models.inference.ai.azure.com/chat/completions \
-            -H "Authorization: Bearer $GH_TOKEN" -H "Content-Type: application/json" \
-            -d '{"model":"gpt-4o-mini","messages":[{"role":"user","content":"Di hola"}],"max_tokens":10}' | head -c 900; echo
-          echo "== D) DNS y ruta"
-          getent hosts models.github.ai || true
-          echo "== E) extensión gh models"
-          gh extension install github/gh-models >/dev/null 2>&1 && gh models run openai/gpt-4.1-mini "Di hola en una palabra" 2>&1 | head -20 || echo "sin extensión"
       - name: Probar IA
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           MODELO: ${{ inputs.modelo }}
         run: python scripts/diagnostico_ia.py

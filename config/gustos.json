@@ -1,7 +1,22 @@
 {
   "zona": "Chile, con prioridad Santiago y Región Metropolitana",
-  "modelo_ia": "openai/gpt-4.1-mini",
-  "max_llamadas_ia": 90,
+  "ia": {
+    "nombre": "Gemini (plan gratis de Google AI Studio)",
+    "url": "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
+    "clave_env": "GEMINI_API_KEY",
+    "modelos": [
+      "gemini-flash-latest",
+      "gemini-2.5-flash",
+      "gemini-flash-lite-latest",
+      "gemini-2.5-flash-lite"
+    ],
+    "extra": {
+      "reasoning_effort": "low"
+    },
+    "modo_json": false,
+    "pausa_s": 7,
+    "max_llamadas": 80
+  },
   "max_paginas_por_busqueda": 6,
   "dias_para_revisar_de_nuevo": 7,
   "categorias": [
