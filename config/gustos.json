@@ -15,7 +15,7 @@
     },
     "modo_json": false,
     "pausa_s": 7,
-    "max_llamadas": 80
+    "max_llamadas": 120
   },
   "max_paginas_por_busqueda": 6,
   "dias_para_revisar_de_nuevo": 7,
@@ -61,7 +61,7 @@
       "nombre": "Yokai y Japón tradicional",
       "emoji": "👺",
       "color": "#b91c1c",
-      "descripcion": "yokai, mitología y folclore japonés, ukiyo-e, matsuri, exposiciones o charlas de cultura japonesa tradicional",
+      "descripcion": "yokai, mitología y folclore japonés, ukiyo-e, matsuri, exposiciones o charlas de cultura japonesa tradicional. NO: conciertos de bandas japonesas modernas (esos van en metal o anime)",
       "palabras": [
         "yokai",
         "youkai",
@@ -94,7 +94,7 @@
       "nombre": "Anime, manga y cosplay",
       "emoji": "🎌",
       "color": "#7c3aed",
-      "descripcion": "convenciones de anime y manga, cosplay, cultura otaku, ferias de comics, conciertos de anime o J-pop, eventos geek",
+      "descripcion": "convenciones de anime y manga, cosplay, cultura otaku, ferias de comics, conciertos de anime o J-pop, eventos geek, también conciertos de J-pop/J-rock e idols japoneses",
       "palabras": [
         "anime",
         "manga",
@@ -224,19 +224,18 @@
       "nombre": "Museos y cultura",
       "emoji": "🏛️",
       "color": "#6b4f2a",
-      "descripcion": "Noche de Museos, Día del Patrimonio, exposiciones, recorridos nocturnos o patrimoniales y panoramas culturales gratuitos",
+      "descripcion": "Noche de Museos, Día del Patrimonio, exposiciones de arte o historia, recorridos nocturnos o patrimoniales y panoramas culturales gratuitos. NO: tours de estadios, ferias de vino, gastronómicas o comerciales",
       "palabras": [
         "noche de museos",
         "dia del patrimonio",
-        "museo",
-        "museos",
-        "exposicion",
         "recorrido patrimonial",
         "recorrido nocturno",
         "visita guiada",
         "patrimonio cultural",
-        "centro cultural",
-        "panoramas gratis"
+        "panoramas gratis",
+        "museo de bellas artes",
+        "museo de historia natural",
+        "museo precolombino"
       ],
       "busquedas": [
         "Noche de Museos Santiago",

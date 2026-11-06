@@ -550,6 +550,7 @@ class IA:
         self.buenas = 0
         self.agotada = not clave
         self.ultima = 0.0
+        self.sin_cupo: set[str] = set()
 
     def disponible(self) -> bool:
         return not self.agotada and self.usadas < self.maximo
@@ -626,7 +627,14 @@ class IA:
                 if e.code == 429:
                     pausa = int(float(e.headers.get("retry-after") or 60))
                     if pausa > 180 or "day" in d or "diar" in d:
-                        log(f"  IA: se acabó el cupo gratis de hoy ({detalle[:160]})")
+                        # En el plan gratis cada modelo tiene su propio cupo diario: se pasa al siguiente
+                        self.sin_cupo.add(self.modelo)
+                        restantes = [m for m in self.preferidos if m not in self.sin_cupo]
+                        if restantes:
+                            log(f"  IA: {self.modelo} agotó su cupo gratis de hoy; sigo con {restantes[0]}")
+                            self.modelo = restantes[0]
+                            continue
+                        log(f"  IA: se acabó el cupo gratis de hoy en todos los modelos ({detalle[:120]})")
                         self.agotada = True
                         raise SinCupo()
                     log(f"  IA: límite por minuto, espero {pausa}s")
@@ -775,7 +783,8 @@ def ia_clasificar_listado(ia: IA, cfg: dict, fuente: str, filas: list[dict]) -> 
     sistema = instrucciones_base(cfg) + (
         "Recibirás un listado numerado de una ticketera. Usa tu conocimiento (por ejemplo, el género de cada banda) "
         "para elegir SOLO los que calcen con los intereses. Responde solo JSON: "
-        '{"eventos": [{"n": número, "categoria": id, "fecha_inicio": "AAAA-MM-DD"|null, '
+        '{"eventos": [{"n": número, "categoria": id, "titulo": "nombre limpio del evento, sin lugar, fecha ni precio", '
+        '"lugar": str|null, "precio": str|null, "fecha_inicio": "AAAA-MM-DD"|null, '
         '"fecha_fin": "AAAA-MM-DD"|null, "descripcion": "qué es y por qué calza, máx 160 caracteres", '
         '"confianza": "alta"|"media"|"baja"}]}. Si ninguno calza: {"eventos": []}.')
     elegidos = []
@@ -916,8 +925,38 @@ def mismo_evento(a: dict, b: dict) -> bool:
     p = parecido(a["titulo"], b["titulo"])
     if p >= 0.5:
         return True
+    # "Noche de Museos" y "Noche de Museos 2026 - Museo de la Música": uno contiene al otro
+    x, y = sorted((palabras_titulo(a["titulo"]), palabras_titulo(b["titulo"])), key=len)
+    if x and x <= y and (len(x) >= 2 or len(next(iter(x))) >= 6):
+        return True
     lugar_igual = a.get("lugar") and b.get("lugar") and parecido(a["lugar"], b["lugar"]) >= 0.5
-    return bool(lugar_igual and p >= 0.3)
+    if lugar_igual and p >= 0.3:
+        return True
+    # "Chile Terror Fest 2026" y "ChileTerror Fest II": mismo comienzo, mismo lugar y mismas fechas
+    na, nb = (re.sub(r"[^a-z0-9]", "", sin_tildes(t)) for t in (a["titulo"], b["titulo"]))
+    misma_fecha = ini_a == ini_b and fin_a == fin_b
+    return bool(lugar_igual and misma_fecha and len(na) >= 12 and len(nb) >= 12 and na[:12] == nb[:12])
+
+
+def compactar(eventos: list[dict]) -> list[dict]:
+    """Une duplicados que ya estaban en la agenda (se queda el primero que se agregó y suma sus fuentes)."""
+    eventos = sorted(eventos, key=lambda e: (e.get("agregado") or "", e.get("id") or ""))
+    res: list[dict] = []
+    for e in eventos:
+        igual = next((r for r in res if mismo_evento(r, e)), None)
+        if igual is None:
+            res.append(e)
+            continue
+        # si el repetido es el evento "general" ("Noche de Museos 2026"), sus datos mandan
+        general = (len(e["titulo"]) < len(igual["titulo"])
+                   and palabras_titulo(e["titulo"]) <= palabras_titulo(igual["titulo"]))
+        for c in CAMPOS:
+            if e.get(c) and (not igual.get(c) or general):
+                igual[c] = e[c]
+        urls = {f["url"] for f in igual.get("fuentes", [])}
+        igual.setdefault("fuentes", []).extend(f for f in e.get("fuentes", []) if f["url"] not in urls)
+        igual["desde_imagen"] = igual.get("desde_imagen") or e.get("desde_imagen", False)
+    return res
 
 
 def nuevo_id(ev: dict) -> str:
@@ -1094,10 +1133,11 @@ def busqueda_completa(cfg: dict, ia: IA, vistos: dict) -> tuple[list[dict], dict
                     elegidos.append((fila, {"categoria": cats[0], "confianza": "media"}))
             for fila, e in elegidos:
                 fechas = fechas_desde_texto(fila.get("fecha_texto", ""))
-                ev = {"titulo": fila["titulo"], "categoria": e.get("categoria"),
+                ev = {"titulo": e.get("titulo") or fila["titulo"], "categoria": e.get("categoria"),
                       "fecha_inicio": (fechas[0].isoformat() if fechas else e.get("fecha_inicio")),
                       "fecha_fin": (fechas[-1].isoformat() if len(fechas) > 1 else e.get("fecha_fin")),
-                      "lugar": fila.get("lugar"), "descripcion": e.get("descripcion"),
+                      "lugar": fila.get("lugar") or e.get("lugar"), "precio": e.get("precio"),
+                      "descripcion": e.get("descripcion"),
                       "imagen": fila.get("imagen"), "url": fila["url"], "confianza": e.get("confianza")}
                 n = normalizar_evento(ev, cfg, f["nombre"], fila["url"], "ticketera")
                 if n:
@@ -1159,6 +1199,15 @@ def busqueda_completa(cfg: dict, ia: IA, vistos: dict) -> tuple[list[dict], dict
                     candidatos[r["url"]] = r
     ordenados = sorted(candidatos.values(), key=lambda c: -c["puntaje"])
     ordenados = [c for c in ordenados if c["puntaje"] >= 2]
+    # Se intercalan las categorías (medieval, anime, metal, ...) para que el cupo de IA alcance para todas
+    por_categoria: dict[str, list[dict]] = {}
+    for c in ordenados:
+        por_categoria.setdefault(c["categoria"], []).append(c)
+    ordenados = []
+    while any(por_categoria.values()):
+        for lista in por_categoria.values():
+            if lista:
+                ordenados.append(lista.pop(0))
     log(f"[búsquedas] {len(candidatos)} resultados nuevos, {len(ordenados)} prometedores")
 
     # reparte el cupo de IA entre categorías para que ninguna se quede sin revisar
@@ -1247,7 +1296,7 @@ def main():
         nuevos, stats = busqueda_completa(cfg, ia, vistos)
 
     eventos, ids_nuevos = unir(eventos, nuevos)
-    eventos = vigentes(eventos, ocultos)
+    eventos = vigentes(compactar(eventos), ocultos)
     ids_vigentes = {e["id"] for e in eventos}
     ids_nuevos = [i for i in ids_nuevos if i in ids_vigentes]
     agregados = len(ids_nuevos)

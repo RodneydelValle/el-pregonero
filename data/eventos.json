@@ -1,6 +1,6 @@
 {
  "version": 1,
- "actualizado": "2026-11-06T13:56-03:00",
+ "actualizado": "2026-11-06T13:59-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
   "fecha": "2026-11-06T13:56-03:00",
@@ -51,36 +51,8 @@
   "errores": 5,
   "redes_vistas": 81
  },
- "total": 47,
+ "total": 38,
  "eventos": [
-  {
-   "titulo": "Museo y Tour Monumental 2026",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-06",
-   "fecha_fin": "2026-11-08",
-   "hora": null,
-   "lugar": "Estadio Monumental - Macul",
-   "direccion": null,
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
-   "precio": null,
-   "descripcion": null,
-   "imagen": "https://static.ptocdn.net/images/eventos/byn267_calugalistado.jpg",
-   "url": "https://www.puntoticket.com/museo-y-tour-monumental-2026",
-   "fuentes": [
-    {
-     "nombre": "PuntoTicket",
-     "url": "https://www.puntoticket.com/museo-y-tour-monumental-2026"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "media",
-   "origen": "ticketera",
-   "id": "c248044901",
-   "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
-  },
   {
    "titulo": "Def Leppard - Live 2026 - with Special Guest Extreme",
    "categoria": "metal",
@@ -166,34 +138,6 @@
    "actualizado": "2026-11-06"
   },
   {
-   "titulo": "Noche de Museos 2026 - Museo de Arte Contemporáneo (MAC)",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "10:30",
-   "lugar": "Museo de Arte Contemporáneo - Sede Parque Forestal",
-   "direccion": "Ismael Valdés Vergara 506",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratis",
-   "descripcion": "Apertura simultánea y extendida de las sedes Parque Forestal y Quinta Normal en la Noche de Museos.",
-   "imagen": "https://www.24horas.cl/24horas/site/artic/20261101/imag/foto_0000000620261101041354/Museo_de_Historia_Natural.webp",
-   "url": "https://www.24horas.cl/te-sirve/noche-de-museos-2026-panoramas-imperdibles-para-disfrutar-en-esta-nueva",
-   "fuentes": [
-    {
-     "nombre": "24horas.cl",
-     "url": "https://www.24horas.cl/te-sirve/noche-de-museos-2026-panoramas-imperdibles-para-disfrutar-en-esta-nueva"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "2265dd19e1",
-   "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
-  },
-  {
    "titulo": "Noche de Museos 2026",
    "categoria": "museos",
    "fecha_inicio": "2026-11-13",
@@ -210,158 +154,26 @@
    "url": "https://www.adnradio.cl/2026/11/04/santiago-se-prepara-para-una-nueva-noche-de-museos-revisa-todos-panoramas-gratuitos-que-podras-visitar/",
    "fuentes": [
     {
+     "nombre": "24horas.cl",
+     "url": "https://www.24horas.cl/te-sirve/noche-de-museos-2026-panoramas-imperdibles-para-disfrutar-en-esta-nueva"
+    },
+    {
      "nombre": "ADN Radio",
      "url": "https://www.adnradio.cl/2026/11/04/santiago-se-prepara-para-una-nueva-noche-de-museos-revisa-todos-panoramas-gratuitos-que-podras-visitar/"
     },
     {
      "nombre": "Diario y Radio Universidad Chile",
      "url": "https://radio.uchile.cl/2026/10/27/noche-de-museos-2026-abre-su-convocatoria-para-sumar-actividades-culturales-en-todo-chile/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "manual",
-   "id": "19f603170c",
-   "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
-  },
-  {
-   "titulo": "Noche de Museos 2026 - Museo Nacional de Historia Natural",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "17:00",
-   "lugar": "Museo Nacional de Historia Natural",
-   "direccion": "Interior Parque Quinta Normal S/N",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratis",
-   "descripcion": "Apertura nocturna con la intervención de una ballena gigante iluminada en el Parque Quinta Normal por la Noche de Museos.",
-   "imagen": "https://www.24horas.cl/24horas/site/artic/20261101/imag/foto_0000000620261101041354/Museo_de_Historia_Natural.webp",
-   "url": "https://www.24horas.cl/te-sirve/noche-de-museos-2026-panoramas-imperdibles-para-disfrutar-en-esta-nueva",
-   "fuentes": [
+    },
     {
-     "nombre": "24horas.cl",
-     "url": "https://www.24horas.cl/te-sirve/noche-de-museos-2026-panoramas-imperdibles-para-disfrutar-en-esta-nueva"
+     "nombre": "Home - Radio Agricultura",
+     "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/noche-de-museos-llega-a-santiago-conoce-los-espacios-de-la-universidad-de-chile-que-abriran-gratis_20261106/"
     }
    ],
    "desde_imagen": false,
    "confianza": "alta",
    "origen": "ia",
    "id": "09cd96f442",
-   "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
-  },
-  {
-   "titulo": "Noche de Museos - Museo de Química y Farmacia",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "17:30",
-   "lugar": "Museo de Química y Farmacia Profesor César Leyton",
-   "direccion": "Merced 50",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratis",
-   "descripcion": "Feria científica patrimonial y recorridos mediados gratuitos por la Noche de Museos.",
-   "imagen": "https://assets.radioagricultura.cl/2026/10/FotoJet-44-1024x600.jpg",
-   "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/noche-de-museos-llega-a-santiago-conoce-los-espacios-de-la-universidad-de-chile-que-abriran-gratis_20261106/",
-   "fuentes": [
-    {
-     "nombre": "Home - Radio Agricultura",
-     "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/noche-de-museos-llega-a-santiago-conoce-los-espacios-de-la-universidad-de-chile-que-abriran-gratis_20261106/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "94ba05e936",
-   "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
-  },
-  {
-   "titulo": "Noche de Museos - Universidad de Chile (Sede MAC Quinta Normal)",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "17:30",
-   "lugar": "Museo de Arte Contemporáneo (MAC) - Quinta Normal",
-   "direccion": "Avenida Matucana 464",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratis",
-   "descripcion": "Apertura nocturna gratuita y exposiciones en el MAC Quinta Normal en el marco de la Noche de Museos.",
-   "imagen": "https://assets.radioagricultura.cl/2026/10/FotoJet-44-1024x600.jpg",
-   "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/noche-de-museos-llega-a-santiago-conoce-los-espacios-de-la-universidad-de-chile-que-abriran-gratis_20261106/",
-   "fuentes": [
-    {
-     "nombre": "Home - Radio Agricultura",
-     "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/noche-de-museos-llega-a-santiago-conoce-los-espacios-de-la-universidad-de-chile-que-abriran-gratis_20261106/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "7f4f853b03",
-   "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
-  },
-  {
-   "titulo": "Noche de Museos - MAPA Tomás Lago",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "18:00",
-   "lugar": "Centro Cultural Gabriela Mistral (GAM)",
-   "direccion": "Av. Libertador Bernardo O'Higgins 227",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratis",
-   "descripcion": "Talleres de alfarería y cerámica japonesa, además de espacios de música y poesía en la Noche de Museos.",
-   "imagen": "https://assets.radioagricultura.cl/2026/10/FotoJet-44-1024x600.jpg",
-   "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/noche-de-museos-llega-a-santiago-conoce-los-espacios-de-la-universidad-de-chile-que-abriran-gratis_20261106/",
-   "fuentes": [
-    {
-     "nombre": "Home - Radio Agricultura",
-     "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/noche-de-museos-llega-a-santiago-conoce-los-espacios-de-la-universidad-de-chile-que-abriran-gratis_20261106/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "3d78b829ec",
-   "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
-  },
-  {
-   "titulo": "Noche de Museos 2026 - Museo de la Música Chilena",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "18:30",
-   "lugar": "Museo de la Música Chilena",
-   "direccion": "José Miguel Carrera 311",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratis",
-   "descripcion": "Velada 'Música en el Museo' con shows en vivo de folclor, rock y música clásica por la Noche de Museos.",
-   "imagen": "https://www.24horas.cl/24horas/site/artic/20261101/imag/foto_0000000620261101041354/Museo_de_Historia_Natural.webp",
-   "url": "https://www.24horas.cl/te-sirve/noche-de-museos-2026-panoramas-imperdibles-para-disfrutar-en-esta-nueva",
-   "fuentes": [
-    {
-     "nombre": "24horas.cl",
-     "url": "https://www.24horas.cl/te-sirve/noche-de-museos-2026-panoramas-imperdibles-para-disfrutar-en-esta-nueva"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "5e93d5e65e",
    "agregado": "2026-11-06",
    "actualizado": "2026-11-06"
   },
@@ -590,21 +402,25 @@
    "actualizado": "2026-11-06"
   },
   {
-   "titulo": "Chile Terror Fest 2026 @ Teatro Caupolicán",
+   "titulo": "ChileTerror Fest II - 2026",
    "categoria": "fantasia",
    "fecha_inicio": "2026-11-28",
    "fecha_fin": "2026-11-29",
    "hora": null,
-   "lugar": "Teatro Caupolicán",
+   "lugar": "Teatro Caupolicán - Santiago Centro",
    "direccion": "San Diego 850",
    "comuna": "Santiago",
    "ciudad": "Santiago",
    "region": "Región Metropolitana",
    "precio": null,
-   "descripcion": "Chile Terror Fest 2026 at Teatro Caupolicán at 2026-11-28",
-   "imagen": "https://images.sk-static.com/images/media/profile_images/events/43233201/huge_avatar?series_id=3787557",
-   "url": "https://www.songkick.com/es/festivals/3787557-chile-terror-fest/id/43233201-chile-terror-fest-2026?utm_medium=organic&utm_source=microformat",
+   "descripcion": "ChileTerror Fest II en el Teatro Caupolicán. Festival dedicado al cine fantástico y de terror.",
+   "imagen": "https://static.ptocdn.net/images/eventos/chj011v2_calugalistado.jpg",
+   "url": "https://www.puntoticket.com/evento/chileterror-2-teatro-caupolican-nov-2026",
    "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/evento/chileterror-2-teatro-caupolican-nov-2026"
+    },
     {
      "nombre": "songkick.com",
      "url": "https://www.songkick.com/es/metro-areas/27525-chile-santiago/genre/metal"
@@ -616,52 +432,24 @@
    ],
    "desde_imagen": true,
    "confianza": "alta",
-   "origen": "datos-estructurados",
-   "id": "d399a38072",
-   "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
-  },
-  {
-   "titulo": "ChileTerror Fest II - 2026",
-   "categoria": "fantasia",
-   "fecha_inicio": "2026-11-28",
-   "fecha_fin": "2026-11-29",
-   "hora": null,
-   "lugar": "Teatro Caupolicán - Santiago Centro",
-   "direccion": null,
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
-   "precio": null,
-   "descripcion": "ChileTerror Fest II en el Teatro Caupolicán. Festival dedicado al cine fantástico y de terror.",
-   "imagen": "https://static.ptocdn.net/images/eventos/chj011v2_calugalistado.jpg",
-   "url": "https://www.puntoticket.com/evento/chileterror-2-teatro-caupolican-nov-2026",
-   "fuentes": [
-    {
-     "nombre": "PuntoTicket",
-     "url": "https://www.puntoticket.com/evento/chileterror-2-teatro-caupolican-nov-2026"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
    "origen": "ticketera",
    "id": "c003178ec9",
    "agregado": "2026-11-06",
    "actualizado": "2026-11-06"
   },
   {
-   "titulo": "Club Subterraneo MAIDEN UNITED 1980 feat. DENNIS STRATTON ★ SÁBADO 28 NOVIEMBRE ★ Club Subterráneo 28 NOV Desde: CLP 22.400 CLP",
+   "titulo": "Maiden United 1980 feat. Dennis Stratton",
    "categoria": "metal",
    "fecha_inicio": "2026-11-28",
    "fecha_fin": null,
    "hora": null,
-   "lugar": null,
+   "lugar": "Club Subterráneo",
    "direccion": null,
    "comuna": null,
    "ciudad": null,
    "region": null,
-   "precio": null,
-   "descripcion": "Concierto de Maiden United feat. Dennis Stratton en Club Subterráneo. ¡Calza en metal!",
+   "precio": "Desde $22.400",
+   "descripcion": "Tributo a Iron Maiden con Dennis Stratton, guitarrista original de la banda en 1980.",
    "imagen": null,
    "url": "https://ticketplus.cl/events/maiden-united-1980-feat-dennis-stratton-sabado-28-noviembre-club-subterraneo",
    "fuentes": [
@@ -743,7 +531,7 @@
   },
   {
    "titulo": "Atarashii Gakko en Caupolicán",
-   "categoria": "yokai",
+   "categoria": "anime",
    "fecha_inicio": "2026-12-03",
    "fecha_fin": null,
    "hora": null,
@@ -966,34 +754,6 @@
    "actualizado": "2026-11-06"
   },
   {
-   "titulo": "La Cava Jumbo 2026",
-   "categoria": "museos",
-   "fecha_inicio": "2026-12-11",
-   "fecha_fin": "2026-12-13",
-   "hora": null,
-   "lugar": "Jardines El Mercurio - Vitacura",
-   "direccion": null,
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
-   "precio": null,
-   "descripcion": null,
-   "imagen": "https://static.ptocdn.net/images/eventos/glo209_calugalistado.jpg",
-   "url": "https://www.puntoticket.com/la-cava-jumbo",
-   "fuentes": [
-    {
-     "nombre": "PuntoTicket",
-     "url": "https://www.puntoticket.com/la-cava-jumbo"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "media",
-   "origen": "ticketera",
-   "id": "8464eb86b5",
-   "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
-  },
-  {
    "titulo": "ELLENDE + THYRFING 2026 Chile",
    "categoria": "metal",
    "fecha_inicio": "2026-12-17",
@@ -1106,18 +866,18 @@
    "actualizado": "2026-11-06"
   },
   {
-   "titulo": "Centro Cultural Ceina Silksong: En concierto 30 ENE Desde: CLP 19.550 CLP",
+   "titulo": "Silksong: En concierto",
    "categoria": "fantasia",
    "fecha_inicio": "2027-01-30",
    "fecha_fin": null,
    "hora": null,
-   "lugar": null,
+   "lugar": "Centro Cultural Ceina",
    "direccion": null,
    "comuna": null,
    "ciudad": null,
    "region": null,
-   "precio": null,
-   "descripcion": "Silksong: En concierto en Centro Cultural Ceina. Música del famoso videojuego de fantasía.",
+   "precio": "Desde $19.550",
+   "descripcion": "Concierto con la música del videojuego Hollow Knight: Silksong.",
    "imagen": null,
    "url": "https://ticketplus.cl/events/silksong-en-concierto",
    "fuentes": [
