@@ -23,7 +23,7 @@ if os.environ.get("MODELO"):
 ia = a.IA(CONF, CLAVE, 6)
 print("Proveedor:", CONF.get("nombre"), "|", ia.url)
 ia.elegir_modelo()
-print("Modelo elegido:", ia.modelo, "\n")
+print("Modelo elegido:", ia.modelo, "| respaldo:", ", ".join(ia.preferidos[1:]), "\n")
 
 sistema = a.instrucciones_base(CFG) + "Responde solo JSON con esta forma: " + a.ESQUEMA_EVENTO
 print("1) Texto de una feria")

@@ -575,7 +575,11 @@ class IA:
             flash = [i for i in ids if "flash" in i and not re.search(r"image|tts|audio|live|embed|thinking", i)]
             if flash:
                 self.modelo = sorted(flash, key=lambda i: ("preview" in i or "exp" in i, "lite" in i))[0]
+        # respaldo: los preferidos disponibles y después cualquier otro "flash" de texto (por si alguno se satura)
+        otros_flash = sorted((i for i in ids if "flash" in i and not re.search(r"image|tts|audio|live|embed|thinking", i)),
+                             key=lambda i: ("preview" in i or "exp" in i, "lite" in i))
         self.preferidos = [self.modelo] + [m for m in self.preferidos if m != self.modelo and m in ids]
+        self.preferidos += [m for m in otros_flash if m not in self.preferidos][:4]
         flash_txt = ", ".join(i for i in ids if "flash" in i)[:300]
         log(f"  IA: modelo {self.modelo} (con 'flash' disponibles: {flash_txt})")
 
@@ -647,6 +651,17 @@ class IA:
                         self.modelo = self.preferidos[0]
                         log(f"  IA: pruebo con el modelo {self.modelo}")
                         continue
+                if e.code in (500, 502, 503, 504) or "unavailable" in d or "overloaded" in d:
+                    # Modelo saturado ("high demand"): se pasa al siguiente modelo de la lista
+                    if len(self.preferidos) > 1:
+                        self.preferidos.append(self.preferidos.pop(0))
+                        self.modelo = self.preferidos[0]
+                        log(f"  IA: modelo saturado ({e.code}); cambio a {self.modelo}")
+                        time.sleep(3)
+                    else:
+                        log(f"  IA: modelo saturado ({e.code}); espero 20 s")
+                        time.sleep(20)
+                    continue
                 if e.code == 413 or ("token" in d and re.search(r"exceed|too long|too large|maximum", d)):
                     raise ValueError("contenido demasiado largo") from e
                 log(f"  IA: error {e.code}: {detalle[:240]}")

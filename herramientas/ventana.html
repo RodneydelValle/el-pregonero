@@ -165,7 +165,9 @@ function pintar(d) {
   const run = d.run;
   $("#btn-web").href = d.web;
   $("#btn-gh").href = run.url;
-  $("#sub").textContent = run.evento === "schedule" ? "Búsqueda diaria automática" : run.evento === "push" ? "Publicación de la web" : "Búsqueda pedida a mano";
+  const diag = d.tipo === "diagnostico";
+  $("#sub").textContent = diag ? "Prueba de la IA (Gemini)" : run.evento === "schedule" ? "Búsqueda diaria de las 06:00" : run.evento === "push" ? "Publicación de la web" : "Búsqueda pedida a mano";
+  $("#btn-buscar").textContent = diag ? "Buscar eventos" : "Buscar de nuevo";
   const pct = Math.round(d.avance * 100);
   $("#relleno").style.width = pct + "%";
   $("#relleno").classList.toggle("moviendo", !d.terminado);
@@ -187,6 +189,29 @@ function pintar(d) {
 
   const r = d.resultado;
   const fallo = run.conclusion && !["success", "skipped"].includes(run.conclusion);
+  if (diag) {
+    if (d.terminado) {
+      const ok = r && r.buenas > 0;
+      $("#globo").innerHTML = ok
+        ? `<b>¡Gemini funciona!</b> Respondió bien ${r.buenas} prueba${r.buenas === 1 ? "" : "s"}.<span class="fino">Ya se puede lanzar la búsqueda completa.</span>`
+        : `Gemini no respondió bien 😕<span class="fino">Abajo está el detalle de cada prueba.</span>`;
+      if (terminadoAntes === false) { escena.classList.add("contento"); if (ok) confeti(); }
+      $("#btn-buscar").hidden = false;
+    } else {
+      $("#globo").innerHTML = `Probando si Gemini lee bien textos y afiches…<span class="fino">Tres pruebas: un texto, un afiche y un listado de PuntoTicket.</span>`;
+      $("#btn-buscar").hidden = true;
+    }
+    terminadoAntes = d.terminado;
+    $("#resultado").hidden = !r;
+    if (r) {
+      $("#res-titulo").textContent = "Detalle de la prueba";
+      $("#lista").innerHTML = r.lineas.length
+        ? r.lineas.map((l) => `<div class="ev" style="grid-template-columns:1fr"><div class="t" style="font:13px/1.4 var(--sans)">${esc(l)}</div></div>`).join("")
+        : `<p class="vacio">Sin detalle.</p>`;
+      $("#avisos").hidden = true;
+    }
+    return;
+  }
   if (d.terminado) {
     if (fallo) {
       $("#globo").innerHTML = `Uy, algo falló en la búsqueda 😕<span class="fino">Toca “GitHub” para ver el detalle.</span>`;

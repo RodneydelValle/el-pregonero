@@ -25,6 +25,7 @@ from pathlib import Path
 
 REPO = "RodneydelValle/el-pregonero"
 WORKFLOW = "buscar-eventos.yml"
+DIAGNOSTICO = "diagnostico-ia.yml"
 WEB = "https://rodneydelvalle.github.io/el-pregonero/"
 AQUI = Path(__file__).resolve().parent
 SIN_CONSOLA = 0x08000000 if os.name == "nt" else 0
@@ -43,6 +44,18 @@ def gh(*args: str, texto=False):
 
 def fecha(t):
     return dt.datetime.fromisoformat(t.replace("Z", "+00:00")) if t else None
+
+
+def paso(nombre_amable, peso, estado, frac, detalle=""):
+    return {"nombre": nombre_amable, "peso": peso, "estado": estado, "frac": frac, "detalle": detalle}
+
+
+def estado_de(s):
+    if not s:
+        return "pendiente"
+    if s["status"] == "completed":
+        return "ok" if s.get("conclusion") in ("success", "skipped") else "error"
+    return "en_curso" if s["status"] == "in_progress" else "pendiente"
 
 
 def ahora():
@@ -90,12 +103,61 @@ class Seguidor:
     def run_actual(self) -> dict:
         if self.run_fijo:
             return gh("api", f"repos/{REPO}/actions/runs/{self.run_fijo}")
-        runs = gh("api", f"repos/{REPO}/actions/workflows/{WORKFLOW}/runs?per_page=10")["workflow_runs"]
-        busquedas = [r for r in runs if r["event"] != "push"]
-        for r in busquedas:
+        # La ejecución más reciente de la búsqueda o de la prueba de IA (las publicaciones solas no cuentan)
+        runs = gh("api", f"repos/{REPO}/actions/runs?per_page=20")["workflow_runs"]
+        seguibles = [r for r in runs if r["event"] != "push"
+                     and (WORKFLOW in r.get("path", "") or DIAGNOSTICO in r.get("path", ""))]
+        for r in seguibles:
             if not self._se_salto(r):
                 return r
-        return (busquedas or runs)[0]
+        return (seguibles or runs)[0]
+
+    def _estado_diagnostico(self, run: dict) -> dict:
+        jobs = gh("api", f"repos/{REPO}/actions/runs/{run['id']}/jobs")["jobs"]
+        job = jobs[0] if jobs else None
+        pasos_j = {s["name"]: s for s in (job or {}).get("steps", [])}
+        prep = [pasos_j.get(n) for n in ("Set up job", "Run actions/checkout@v4", "Run actions/setup-python@v5",
+                                         "Run pip install --quiet pillow tzdata")]
+        hechos = sum(1 for s in prep if s and s["status"] == "completed")
+        pasos = [paso("Preparando la prueba", 10, "ok" if hechos == 4 else ("en_curso" if job else "pendiente"), hechos / 4)]
+        sp = pasos_j.get("Probar IA")
+        est = estado_de(sp)
+        frac, detalle = (1.0 if est in ("ok", "error") else 0.0), ""
+        if est == "en_curso" and sp.get("started_at"):
+            t = (ahora() - fecha(sp["started_at"])).total_seconds()
+            frac, detalle = min(0.95, t / 150), f"{int(t // 60)} min"
+        pasos.append(paso("Probando Gemini: texto, afiche y listado", 90, est, frac, detalle))
+        terminado = run["status"] == "completed"
+        avance = 1.0 if terminado else sum(p["peso"] * p["frac"] for p in pasos) / 100
+        resultado = None
+        if job and job["status"] == "completed":
+            resultado = self.logs.get(job["id"])
+            if resultado is None:
+                lineas, buenas = [], 0
+                try:
+                    texto = gh("run", "view", "-R", REPO, "--job", str(job["id"]), "--log", texto=True)
+                except Exception as e:  # noqa: BLE001
+                    texto = f"x\tProbar IA\t2026-01-01T00:00:00Z No pude leer el registro: {e}"
+                for linea in texto.splitlines():
+                    if "\tProbar IA\t" not in linea:
+                        continue
+                    l = re.sub(r"^\S+Z\s", "", linea.split("\t")[-1]).strip()
+                    m = re.search(r"respuestas buenas: (\d+)", l)
+                    if m:
+                        buenas = int(m[1])
+                    if re.match(r"(Modelo elegido|IA:|✓|Llamadas:|\d\)|\{|Falta el secreto|No pude)", l):
+                        lineas.append(l[:220])
+                resultado = {"lineas": lineas[:40], "buenas": buenas}
+                self.logs[job["id"]] = resultado
+        inicio = fecha(run.get("run_started_at") or run["created_at"])
+        return {
+            "tipo": "diagnostico",
+            "run": {"id": run["id"], "url": run["html_url"], "evento": run["event"], "estado": run["status"],
+                    "conclusion": run.get("conclusion"),
+                    "minutos": int(((fecha(run["updated_at"]) if terminado else ahora()) - inicio).total_seconds() // 60)},
+            "pasos": pasos, "avance": round(avance, 4), "restante_s": None,
+            "terminado": terminado, "resultado": resultado, "web": WEB,
+        }
 
     # ---- lectura del registro cuando la búsqueda terminó
     def resumen_log(self, job_id: int) -> dict:
@@ -152,20 +214,12 @@ class Seguidor:
 
     def _estado(self) -> dict:
         run = self.run_actual()
+        if DIAGNOSTICO in run.get("path", ""):
+            return self._estado_diagnostico(run)
         jobs = {j["name"]: j for j in gh("api", f"repos/{REPO}/actions/runs/{run['id']}/jobs")["jobs"]}
         buscar, publicar = jobs.get("buscar"), jobs.get("publicar")
         tipica = self.duracion_tipica()
         pasos_b = {s["name"]: s for s in (buscar or {}).get("steps", [])}
-
-        def paso(nombre_amable, peso, estado, frac, detalle=""):
-            return {"nombre": nombre_amable, "peso": peso, "estado": estado, "frac": frac, "detalle": detalle}
-
-        def estado_de(s):
-            if not s:
-                return "pendiente"
-            if s["status"] == "completed":
-                return "ok" if s.get("conclusion") in ("success", "skipped") else "error"
-            return "en_curso" if s["status"] == "in_progress" else "pendiente"
 
         pasos = []
         # 1. Preparar
