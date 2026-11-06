@@ -7,6 +7,11 @@ on:
     - cron: "0 9 * * *"    # 06:00 en horario de verano (UTC-3)
     - cron: "0 10 * * *"   # 06:00 en horario de invierno (UTC-4)
   workflow_dispatch:         # botón "Run workflow" para buscar cuando quieras
+    inputs:
+      solo_publicar:
+        description: "Solo publicar la web, sin buscar (no gasta IA)"
+        type: boolean
+        default: false
   push:
     branches: [main]         # cualquier cambio en la web o en los gustos se publica al tiro
 
@@ -21,7 +26,7 @@ concurrency:
 
 jobs:
   buscar:
-    if: github.event_name != 'push'
+    if: github.event_name != 'push' && !inputs.solo_publicar
     runs-on: ubuntu-latest
     timeout-minutes: 55
     outputs:
