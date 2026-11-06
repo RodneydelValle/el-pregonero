@@ -1,35 +1,198 @@
 {
  "version": 1,
- "actualizado": "2026-11-06T13:01-03:00",
+ "actualizado": "2026-11-06T13:56-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-06T12:54-03:00",
+  "fecha": "2026-11-06T13:56-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 12,
-  "llamadas_ia": 85,
-  "ia_sin_cupo": false,
-  "paginas_revisadas": 73,
-  "busquedas": 48,
-  "fuentes_fijas": 7,
-  "errores": 6,
-  "redes_vistas": 84,
+  "eventos_nuevos": 35,
   "nuevos_ids": [
-   "d399a38072",
-   "f840300077",
-   "8aae86e35e",
-   "8e804e1d7b",
-   "30f5e90162",
-   "2dafda391c",
-   "db439ab52c",
-   "811308954e",
-   "d0f526c511",
-   "7df15a74fa",
-   "851cb68b37",
-   "19f603170c"
-  ]
+   "23e15c1070",
+   "cb4dec6816",
+   "f47a168741",
+   "c003178ec9",
+   "41da085532",
+   "f7065bcba6",
+   "9345063da7",
+   "ebc364f471",
+   "aefaf9f415",
+   "3e8348281a",
+   "57d089bde2",
+   "c9eb8aa421",
+   "db33561036",
+   "c248044901",
+   "8464eb86b5",
+   "6a9c1df7fe",
+   "68516374f1",
+   "26b4265cd9",
+   "3beeed3811",
+   "5197cbd0b7",
+   "356fc2e953",
+   "7f4f853b03",
+   "3d78b829ec",
+   "94ba05e936",
+   "09cd96f442",
+   "2265dd19e1",
+   "5e93d5e65e",
+   "499bacbe90",
+   "40f8528656",
+   "3b27b430ae",
+   "32ed296aa6",
+   "9793488d91",
+   "be4111a5ae",
+   "41bd8863fb",
+   "9b68238c51"
+  ],
+  "llamadas_ia": 70,
+  "ia_sin_cupo": true,
+  "paginas_revisadas": 52,
+  "busquedas": 53,
+  "fuentes_fijas": 6,
+  "errores": 5,
+  "redes_vistas": 81
  },
- "total": 12,
+ "total": 47,
  "eventos": [
+  {
+   "titulo": "Museo y Tour Monumental 2026",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-06",
+   "fecha_fin": "2026-11-08",
+   "hora": null,
+   "lugar": "Estadio Monumental - Macul",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": null,
+   "imagen": "https://static.ptocdn.net/images/eventos/byn267_calugalistado.jpg",
+   "url": "https://www.puntoticket.com/museo-y-tour-monumental-2026",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/museo-y-tour-monumental-2026"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "ticketera",
+   "id": "c248044901",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Def Leppard - Live 2026 - with Special Guest Extreme",
+   "categoria": "metal",
+   "fecha_inicio": "2026-11-08",
+   "fecha_fin": null,
+   "hora": null,
+   "lugar": "Santander Arena - Santiago Centro",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Concierto de Def Leppard y Extreme en Santander Arena. ¡Puro rock clásico!",
+   "imagen": "https://static.ptocdn.net/images/eventos/rec113_calugalistado.jpg",
+   "url": "https://www.puntoticket.com/def-leppard",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/def-leppard"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "23e15c1070",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Dragonfly en Chile",
+   "categoria": "metal",
+   "fecha_inicio": "2026-11-11",
+   "fecha_fin": null,
+   "hora": null,
+   "lugar": "Sala RBX",
+   "direccion": null,
+   "comuna": "Ñuñoa",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "La banda de heavy y power metal hispano-argentina Dragonfly se presenta en vivo en Sala RBX.",
+   "imagen": "https://sonorock.com/wp-content/uploads/2026/06/A-PERFECT-CIRCLE-FLAYER.jpg",
+   "url": "https://sonorock.com/cartelera-metal-chile/",
+   "fuentes": [
+    {
+     "nombre": "SonorocK",
+     "url": "https://sonorock.com/cartelera-metal-chile/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "3b27b430ae",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Ill Niño en Chile",
+   "categoria": "metal",
+   "fecha_inicio": "2026-11-11",
+   "fecha_fin": null,
+   "hora": null,
+   "lugar": "Teatro Cariola",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "La reconocida banda de nu metal y metal alternativo Ill Niño regresa a Chile para presentarse en el Teatro Cariola.",
+   "imagen": "https://sonorock.com/wp-content/uploads/2026/06/A-PERFECT-CIRCLE-FLAYER.jpg",
+   "url": "https://sonorock.com/cartelera-metal-chile/",
+   "fuentes": [
+    {
+     "nombre": "SonorocK",
+     "url": "https://sonorock.com/cartelera-metal-chile/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "32ed296aa6",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Noche de Museos 2026 - Museo de Arte Contemporáneo (MAC)",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": "10:30",
+   "lugar": "Museo de Arte Contemporáneo - Sede Parque Forestal",
+   "direccion": "Ismael Valdés Vergara 506",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Apertura simultánea y extendida de las sedes Parque Forestal y Quinta Normal en la Noche de Museos.",
+   "imagen": "https://www.24horas.cl/24horas/site/artic/20261101/imag/foto_0000000620261101041354/Museo_de_Historia_Natural.webp",
+   "url": "https://www.24horas.cl/te-sirve/noche-de-museos-2026-panoramas-imperdibles-para-disfrutar-en-esta-nueva",
+   "fuentes": [
+    {
+     "nombre": "24horas.cl",
+     "url": "https://www.24horas.cl/te-sirve/noche-de-museos-2026-panoramas-imperdibles-para-disfrutar-en-esta-nueva"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "2265dd19e1",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
   {
    "titulo": "Noche de Museos 2026",
    "categoria": "museos",
@@ -49,12 +212,380 @@
     {
      "nombre": "ADN Radio",
      "url": "https://www.adnradio.cl/2026/11/04/santiago-se-prepara-para-una-nueva-noche-de-museos-revisa-todos-panoramas-gratuitos-que-podras-visitar/"
+    },
+    {
+     "nombre": "Diario y Radio Universidad Chile",
+     "url": "https://radio.uchile.cl/2026/10/27/noche-de-museos-2026-abre-su-convocatoria-para-sumar-actividades-culturales-en-todo-chile/"
     }
    ],
    "desde_imagen": false,
    "confianza": "alta",
    "origen": "manual",
    "id": "19f603170c",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Noche de Museos 2026 - Museo Nacional de Historia Natural",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": "17:00",
+   "lugar": "Museo Nacional de Historia Natural",
+   "direccion": "Interior Parque Quinta Normal S/N",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Apertura nocturna con la intervención de una ballena gigante iluminada en el Parque Quinta Normal por la Noche de Museos.",
+   "imagen": "https://www.24horas.cl/24horas/site/artic/20261101/imag/foto_0000000620261101041354/Museo_de_Historia_Natural.webp",
+   "url": "https://www.24horas.cl/te-sirve/noche-de-museos-2026-panoramas-imperdibles-para-disfrutar-en-esta-nueva",
+   "fuentes": [
+    {
+     "nombre": "24horas.cl",
+     "url": "https://www.24horas.cl/te-sirve/noche-de-museos-2026-panoramas-imperdibles-para-disfrutar-en-esta-nueva"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "09cd96f442",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Noche de Museos - Museo de Química y Farmacia",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": "17:30",
+   "lugar": "Museo de Química y Farmacia Profesor César Leyton",
+   "direccion": "Merced 50",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Feria científica patrimonial y recorridos mediados gratuitos por la Noche de Museos.",
+   "imagen": "https://assets.radioagricultura.cl/2026/10/FotoJet-44-1024x600.jpg",
+   "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/noche-de-museos-llega-a-santiago-conoce-los-espacios-de-la-universidad-de-chile-que-abriran-gratis_20261106/",
+   "fuentes": [
+    {
+     "nombre": "Home - Radio Agricultura",
+     "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/noche-de-museos-llega-a-santiago-conoce-los-espacios-de-la-universidad-de-chile-que-abriran-gratis_20261106/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "94ba05e936",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Noche de Museos - Universidad de Chile (Sede MAC Quinta Normal)",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": "17:30",
+   "lugar": "Museo de Arte Contemporáneo (MAC) - Quinta Normal",
+   "direccion": "Avenida Matucana 464",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Apertura nocturna gratuita y exposiciones en el MAC Quinta Normal en el marco de la Noche de Museos.",
+   "imagen": "https://assets.radioagricultura.cl/2026/10/FotoJet-44-1024x600.jpg",
+   "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/noche-de-museos-llega-a-santiago-conoce-los-espacios-de-la-universidad-de-chile-que-abriran-gratis_20261106/",
+   "fuentes": [
+    {
+     "nombre": "Home - Radio Agricultura",
+     "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/noche-de-museos-llega-a-santiago-conoce-los-espacios-de-la-universidad-de-chile-que-abriran-gratis_20261106/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "7f4f853b03",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Noche de Museos - MAPA Tomás Lago",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": "18:00",
+   "lugar": "Centro Cultural Gabriela Mistral (GAM)",
+   "direccion": "Av. Libertador Bernardo O'Higgins 227",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Talleres de alfarería y cerámica japonesa, además de espacios de música y poesía en la Noche de Museos.",
+   "imagen": "https://assets.radioagricultura.cl/2026/10/FotoJet-44-1024x600.jpg",
+   "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/noche-de-museos-llega-a-santiago-conoce-los-espacios-de-la-universidad-de-chile-que-abriran-gratis_20261106/",
+   "fuentes": [
+    {
+     "nombre": "Home - Radio Agricultura",
+     "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/noche-de-museos-llega-a-santiago-conoce-los-espacios-de-la-universidad-de-chile-que-abriran-gratis_20261106/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "3d78b829ec",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Noche de Museos 2026 - Museo de la Música Chilena",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": "18:30",
+   "lugar": "Museo de la Música Chilena",
+   "direccion": "José Miguel Carrera 311",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Velada 'Música en el Museo' con shows en vivo de folclor, rock y música clásica por la Noche de Museos.",
+   "imagen": "https://www.24horas.cl/24horas/site/artic/20261101/imag/foto_0000000620261101041354/Museo_de_Historia_Natural.webp",
+   "url": "https://www.24horas.cl/te-sirve/noche-de-museos-2026-panoramas-imperdibles-para-disfrutar-en-esta-nueva",
+   "fuentes": [
+    {
+     "nombre": "24horas.cl",
+     "url": "https://www.24horas.cl/te-sirve/noche-de-museos-2026-panoramas-imperdibles-para-disfrutar-en-esta-nueva"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "5e93d5e65e",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Legendarium — El Legado de Tolkien",
+   "categoria": "fantasia",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": "2026-11-15",
+   "hora": null,
+   "lugar": "Canelo de Nos",
+   "direccion": null,
+   "comuna": "San Bernardo",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Gran feria medieval cultural de la Sociedad Tolkien Chilena con música, arte, gastronomía y combate medieval.",
+   "imagen": null,
+   "url": "https://legendarium.cl/",
+   "fuentes": [
+    {
+     "nombre": "Legendarium (Sociedad Tolkien Chilena)",
+     "url": "https://legendarium.cl/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "356fc2e953",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Marty Friedman en Santiago",
+   "categoria": "metal",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": null,
+   "hora": null,
+   "lugar": "Teatro Cariola",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "El virtuoso exguitarrista de Megadeth, Marty Friedman, agendó un concierto en el Teatro Cariola con su deslumbrante show de heavy metal.",
+   "imagen": "https://sonorock.com/wp-content/uploads/2026/06/A-PERFECT-CIRCLE-FLAYER.jpg",
+   "url": "https://sonorock.com/cartelera-metal-chile/",
+   "fuentes": [
+    {
+     "nombre": "SonorocK",
+     "url": "https://sonorock.com/cartelera-metal-chile/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "9793488d91",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Ratos de Porão en Chile",
+   "categoria": "metal",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": null,
+   "hora": null,
+   "lugar": "Arena Recoleta",
+   "direccion": null,
+   "comuna": "Recoleta",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Los legendarios del crossover thrash y hardcore punk brasileño Ratos de Porão destruirán el escenario de Arena Recoleta.",
+   "imagen": "https://sonorock.com/wp-content/uploads/2026/06/A-PERFECT-CIRCLE-FLAYER.jpg",
+   "url": "https://sonorock.com/cartelera-metal-chile/",
+   "fuentes": [
+    {
+     "nombre": "SonorocK",
+     "url": "https://sonorock.com/cartelera-metal-chile/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "be4111a5ae",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Nocturnal Depression en Chile",
+   "categoria": "metal",
+   "fecha_inicio": "2026-11-15",
+   "fecha_fin": null,
+   "hora": null,
+   "lugar": "Teatro Caupolicán / Cousiño",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "La banda francesa de depressive suicidal black metal (DSBM) Nocturnal Depression se presenta en Santiago.",
+   "imagen": "https://sonorock.com/wp-content/uploads/2026/06/A-PERFECT-CIRCLE-FLAYER.jpg",
+   "url": "https://sonorock.com/cartelera-metal-chile/",
+   "fuentes": [
+    {
+     "nombre": "SonorocK",
+     "url": "https://sonorock.com/cartelera-metal-chile/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "41bd8863fb",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "ZZ Top",
+   "categoria": "metal",
+   "fecha_inicio": "2026-11-16",
+   "fecha_fin": null,
+   "hora": null,
+   "lugar": "Teatro Caupolicán - Santiago Centro",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Concierto de ZZ Top en el Teatro Caupolicán. Rock clásico y blues rock en vivo.",
+   "imagen": "https://static.ptocdn.net/images/eventos/eff031_calugalistado.jpg",
+   "url": "https://www.puntoticket.com/zz-top",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/zz-top"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "cb4dec6816",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Saratoga en Chile",
+   "categoria": "metal",
+   "fecha_inicio": "2026-11-21",
+   "fecha_fin": null,
+   "hora": null,
+   "lugar": "Sala Metrónomo",
+   "direccion": null,
+   "comuna": "Recoleta",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Los referentes del heavy metal español Saratoga traen sus clásicos e himnos a Sala Metrónomo.",
+   "imagen": "https://sonorock.com/wp-content/uploads/2026/06/A-PERFECT-CIRCLE-FLAYER.jpg",
+   "url": "https://sonorock.com/cartelera-metal-chile/",
+   "fuentes": [
+    {
+     "nombre": "SonorocK",
+     "url": "https://sonorock.com/cartelera-metal-chile/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "9b68238c51",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Alexisonfire - Performs Crisis In Full",
+   "categoria": "metal",
+   "fecha_inicio": "2026-11-25",
+   "fecha_fin": "2026-11-26",
+   "hora": null,
+   "lugar": "Teatro Coliseo - Santiago Centro",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Concierto de Alexisonfire interpretando 'Crisis' en el Teatro Coliseo. Post-hardcore imperdible.",
+   "imagen": "https://static.ptocdn.net/images/eventos/cco117_calugalistado.jpg",
+   "url": "https://www.puntoticket.com/aof-coliseo",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/aof-coliseo"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "f47a168741",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Carcass",
+   "categoria": "metal",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": null,
+   "lugar": "Teatro Caupolicán",
+   "direccion": "San Diego 850",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto de Carcass y Necrot en el Teatro Caupolicán (Chile Terrorfest II).",
+   "imagen": null,
+   "url": "https://cuarteldelmetal.com/conciertos-chile/2026/05/conciertos-metal-en-chile/",
+   "fuentes": [
+    {
+     "nombre": "Cuartel del Metal",
+     "url": "https://cuarteldelmetal.com/conciertos-chile/2026/05/conciertos-metal-en-chile/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "3beeed3811",
    "agregado": "2026-11-06",
    "actualizado": "2026-11-06"
   },
@@ -67,8 +598,8 @@
    "lugar": "Teatro Caupolicán",
    "direccion": "San Diego 850",
    "comuna": "Santiago",
-   "ciudad": null,
-   "region": null,
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Chile Terror Fest 2026 at Teatro Caupolicán at 2026-11-28",
    "imagen": "https://images.sk-static.com/images/media/profile_images/events/43233201/huge_avatar?series_id=3787557",
@@ -77,12 +608,164 @@
     {
      "nombre": "songkick.com",
      "url": "https://www.songkick.com/es/metro-areas/27525-chile-santiago/genre/metal"
+    },
+    {
+     "nombre": "fromhell.cl",
+     "url": "https://fromhell.cl/chile-terror-fest-ii-el-mapa-de-las-bandas-que-vendran-a-desatar-el-caos-en-santiago/"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "d399a38072",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "ChileTerror Fest II - 2026",
+   "categoria": "fantasia",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": "2026-11-29",
+   "hora": null,
+   "lugar": "Teatro Caupolicán - Santiago Centro",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "ChileTerror Fest II en el Teatro Caupolicán. Festival dedicado al cine fantástico y de terror.",
+   "imagen": "https://static.ptocdn.net/images/eventos/chj011v2_calugalistado.jpg",
+   "url": "https://www.puntoticket.com/evento/chileterror-2-teatro-caupolican-nov-2026",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/evento/chileterror-2-teatro-caupolican-nov-2026"
     }
    ],
    "desde_imagen": false,
    "confianza": "alta",
-   "origen": "datos-estructurados",
-   "id": "d399a38072",
+   "origen": "ticketera",
+   "id": "c003178ec9",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Club Subterraneo MAIDEN UNITED 1980 feat. DENNIS STRATTON ★ SÁBADO 28 NOVIEMBRE ★ Club Subterráneo 28 NOV Desde: CLP 22.400 CLP",
+   "categoria": "metal",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": null,
+   "lugar": null,
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Concierto de Maiden United feat. Dennis Stratton en Club Subterráneo. ¡Calza en metal!",
+   "imagen": null,
+   "url": "https://ticketplus.cl/events/maiden-united-1980-feat-dennis-stratton-sabado-28-noviembre-club-subterraneo",
+   "fuentes": [
+    {
+     "nombre": "Ticketplus",
+     "url": "https://ticketplus.cl/events/maiden-united-1980-feat-dennis-stratton-sabado-28-noviembre-club-subterraneo"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "6a9c1df7fe",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "A Perfect Circle + Puscifer",
+   "categoria": "metal",
+   "fecha_inicio": "2026-11-29",
+   "fecha_fin": null,
+   "hora": null,
+   "lugar": "Arena Hipódromo - Independencia",
+   "direccion": null,
+   "comuna": "Independencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto de A Perfect Circle y Puscifer en Arena Hipódromo. Rock alternativo de primer nivel.",
+   "imagen": "https://static.ptocdn.net/images/eventos/cco104_calugalistado.jpg",
+   "url": "https://www.puntoticket.com/aperfectcircle-puscifer",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/aperfectcircle-puscifer"
+    },
+    {
+     "nombre": "SonorocK",
+     "url": "https://sonorock.com/cartelera-metal-chile/"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "41da085532",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Dying Fetus",
+   "categoria": "metal",
+   "fecha_inicio": "2026-12-01",
+   "fecha_fin": null,
+   "hora": null,
+   "lugar": "Club Blondie",
+   "direccion": "Av. Libertador Bernardo O'Higgins 2879",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto de Dying Fetus en Club Blondie.",
+   "imagen": "https://sonorock.com/wp-content/uploads/2026/06/A-PERFECT-CIRCLE-FLAYER.jpg",
+   "url": "https://cuarteldelmetal.com/conciertos-chile/2026/05/conciertos-metal-en-chile/",
+   "fuentes": [
+    {
+     "nombre": "Cuartel del Metal",
+     "url": "https://cuarteldelmetal.com/conciertos-chile/2026/05/conciertos-metal-en-chile/"
+    },
+    {
+     "nombre": "SonorocK",
+     "url": "https://sonorock.com/cartelera-metal-chile/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "5197cbd0b7",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Atarashii Gakko en Caupolicán",
+   "categoria": "yokai",
+   "fecha_inicio": "2026-12-03",
+   "fecha_fin": null,
+   "hora": null,
+   "lugar": "Teatro Caupolicán - Santiago Centro",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Atarashii Gakko en el Teatro Caupolicán. El fenómeno musical japonés en Chile.",
+   "imagen": "https://static.ptocdn.net/images/eventos/fna379_calugalistado.jpg",
+   "url": "https://www.puntoticket.com/evento/atarashii-gakko-teatro-caupolican",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/evento/atarashii-gakko-teatro-caupolican"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "f7065bcba6",
    "agregado": "2026-11-06",
    "actualizado": "2026-11-06"
   },
@@ -98,7 +781,7 @@
    "ciudad": null,
    "region": null,
    "precio": null,
-   "descripcion": null,
+   "descripcion": "Concierto de BABYMETAL en Santander Arena. La exitosa fusión de J-pop y heavy metal.",
    "imagen": "https://static.ptocdn.net/images/eventos/chj012_calugalistado.jpg",
    "url": "https://www.puntoticket.com/baby-metal-2026",
    "fuentes": [
@@ -108,7 +791,7 @@
     }
    ],
    "desde_imagen": false,
-   "confianza": "media",
+   "confianza": "alta",
    "origen": "ticketera",
    "id": "f840300077",
    "agregado": "2026-11-06",
@@ -126,7 +809,7 @@
    "ciudad": null,
    "region": null,
    "precio": null,
-   "descripcion": null,
+   "descripcion": "Concierto de Versailles en el Teatro Coliseo. Visual kei y rock japonés tradicional.",
    "imagen": "https://static.ptocdn.net/images/eventos/ncs013_calugalistado.jpg",
    "url": "https://www.puntoticket.com/2026-versailles-en-santiago-de-chile",
    "fuentes": [
@@ -136,7 +819,7 @@
     }
    ],
    "desde_imagen": false,
-   "confianza": "media",
+   "confianza": "alta",
    "origen": "ticketera",
    "id": "8aae86e35e",
    "agregado": "2026-11-06",
@@ -171,6 +854,34 @@
    "actualizado": "2026-11-06"
   },
   {
+   "titulo": "Candelabro - en teatro Caupolicán 2026",
+   "categoria": "metal",
+   "fecha_inicio": "2026-12-08",
+   "fecha_fin": null,
+   "hora": null,
+   "lugar": "Teatro Caupolicán - Santiago Centro",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Festival Candelabro en el Teatro Caupolicán, evento destacado de música pesada.",
+   "imagen": "https://static.ptocdn.net/images/eventos/arm011_calugalistado.jpg",
+   "url": "https://www.puntoticket.com/evento/candelabro-caupolican-dic-2026",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/evento/candelabro-caupolican-dic-2026"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "9345063da7",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
    "titulo": "Deep Purple",
    "categoria": "metal",
    "fecha_inicio": "2026-12-08",
@@ -182,7 +893,7 @@
    "ciudad": null,
    "region": null,
    "precio": null,
-   "descripcion": null,
+   "descripcion": "Concierto de la legendaria banda de rock duro y metal clásico Deep Purple en Santiago.",
    "imagen": "https://static.ptocdn.net/images/eventos/rec112_calugalistado.jpg",
    "url": "https://www.puntoticket.com/deep-purple",
    "fuentes": [
@@ -192,9 +903,93 @@
     }
    ],
    "desde_imagen": false,
-   "confianza": "media",
+   "confianza": "alta",
    "origen": "ticketera",
    "id": "30f5e90162",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Slaughter to Prevail",
+   "categoria": "metal",
+   "fecha_inicio": "2026-12-08",
+   "fecha_fin": null,
+   "hora": null,
+   "lugar": "Teatro Coliseo - Santiago Centro",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Concierto de la banda de deathcore Slaughter to Prevail en el Teatro Coliseo.",
+   "imagen": "https://static.ptocdn.net/images/eventos/cco113v2_calugalistado.jpg",
+   "url": "https://www.puntoticket.com/slaughtertoprevail-coliseo",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/slaughtertoprevail-coliseo"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "ebc364f471",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "FestiGame 2026: Entra al Juego",
+   "categoria": "fantasia",
+   "fecha_inicio": "2026-12-10",
+   "fecha_fin": null,
+   "hora": "10:00",
+   "lugar": "Cenco Florida",
+   "direccion": null,
+   "comuna": "La Florida",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "CLP 12.9k",
+   "descripcion": "Festival de videojuegos y cultura geek en Cenco Florida.",
+   "imagen": "https://cdn2.allevents.in/transup/2f/baff36b05648ad85ed152fbd515657/app-download-qr-banner.webp",
+   "url": "https://allevents.in/santiago/anime",
+   "fuentes": [
+    {
+     "nombre": "allevents.in",
+     "url": "https://allevents.in/santiago/anime"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "40f8528656",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "La Cava Jumbo 2026",
+   "categoria": "museos",
+   "fecha_inicio": "2026-12-11",
+   "fecha_fin": "2026-12-13",
+   "hora": null,
+   "lugar": "Jardines El Mercurio - Vitacura",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": null,
+   "imagen": "https://static.ptocdn.net/images/eventos/glo209_calugalistado.jpg",
+   "url": "https://www.puntoticket.com/la-cava-jumbo",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/la-cava-jumbo"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "ticketera",
+   "id": "8464eb86b5",
    "agregado": "2026-11-06",
    "actualizado": "2026-11-06"
   },
@@ -210,7 +1005,7 @@
    "ciudad": null,
    "region": null,
    "precio": null,
-   "descripcion": null,
+   "descripcion": "Concierto conjunto de Ellende y Thyrfing en Blondie, exponentes del metal extremo.",
    "imagen": "https://static.ptocdn.net/images/eventos/hvp015_calugalistado.jpg",
    "url": "https://www.puntoticket.com/evento/ellende-thyrfing-2026-chile-blondie-dic-2026",
    "fuentes": [
@@ -220,7 +1015,7 @@
     }
    ],
    "desde_imagen": false,
-   "confianza": "media",
+   "confianza": "alta",
    "origen": "ticketera",
    "id": "2dafda391c",
    "agregado": "2026-11-06",
@@ -255,6 +1050,118 @@
    "actualizado": "2026-11-06"
   },
   {
+   "titulo": "Feria Nocturna Medieval",
+   "categoria": "medieval",
+   "fecha_inicio": "2027-01-23",
+   "fecha_fin": "2027-01-25",
+   "hora": "16:00",
+   "lugar": "Plaza Ñuñoa (sector norte)",
+   "direccion": "Plaza Ñuñoa",
+   "comuna": "Ñuñoa",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Feria nocturna medieval con artesanos, combates, música y juegos en Plaza Ñuñoa.",
+   "imagen": "https://arcachile.cl/wp-content/uploads/2026/01/image_0eaae1f9-be31-4238-987c-d4e3e52292e7.webp",
+   "url": "https://arcachile.cl/feria-nocturna-medieval-un-viaje-familiar-a-la-edad-media/",
+   "fuentes": [
+    {
+     "nombre": "Arca Chile",
+     "url": "https://arcachile.cl/feria-nocturna-medieval-un-viaje-familiar-a-la-edad-media/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "499bacbe90",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "31 Minutos: Don Quijote",
+   "categoria": "fantasia",
+   "fecha_inicio": "2027-01-23",
+   "fecha_fin": "2027-01-24",
+   "hora": "18:30",
+   "lugar": "Centro Cultural CA660 de la Fundación Corpartes",
+   "direccion": "Rosario Norte 660",
+   "comuna": "Las Condes",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Obra de títeres de 31 Minutos inspirada en Don Quijote, que rescata la fantasía, la literatura y el humor clásico.",
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/975946c44c32cc2bd3c398863e9c30eba123267e.png?1791380689&format=baseline-jpeg&q=65",
+   "url": "https://teatro-a-mil.ticketplus.cl/events/31-minutos-don-quijote-FITAM2027",
+   "fuentes": [
+    {
+     "nombre": "Ticketplus",
+     "url": "https://teatro-a-mil.ticketplus.cl/events/31-minutos-don-quijote-FITAM2027"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "26b4265cd9",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Centro Cultural Ceina Silksong: En concierto 30 ENE Desde: CLP 19.550 CLP",
+   "categoria": "fantasia",
+   "fecha_inicio": "2027-01-30",
+   "fecha_fin": null,
+   "hora": null,
+   "lugar": null,
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Silksong: En concierto en Centro Cultural Ceina. Música del famoso videojuego de fantasía.",
+   "imagen": null,
+   "url": "https://ticketplus.cl/events/silksong-en-concierto",
+   "fuentes": [
+    {
+     "nombre": "Ticketplus",
+     "url": "https://ticketplus.cl/events/silksong-en-concierto"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "68516374f1",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Epica - Rhapsody - The Final Shows",
+   "categoria": "metal",
+   "fecha_inicio": "2027-03-06",
+   "fecha_fin": null,
+   "hora": null,
+   "lugar": "Santander Arena - Santiago Centro",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Gira de despedida conjunta de Epica y Rhapsody, grandes exponentes del metal sinfónico.",
+   "imagen": "https://static.ptocdn.net/images/eventos/rec116_calugalistado.jpg",
+   "url": "https://www.puntoticket.com/epica-rhapsody",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/epica-rhapsody"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "aefaf9f415",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
    "titulo": "Motionless In White - The Come To Latin America Tour",
    "categoria": "metal",
    "fecha_inicio": "2027-03-07",
@@ -266,7 +1173,7 @@
    "ciudad": null,
    "region": null,
    "precio": null,
-   "descripcion": null,
+   "descripcion": "Concierto de la banda estadounidense de metalcore Motionless In White en el Teatro Caupolicán.",
    "imagen": "https://static.ptocdn.net/images/eventos/eff033_calugalistado.jpg",
    "url": "https://www.puntoticket.com/motionless-in-white",
    "fuentes": [
@@ -276,9 +1183,121 @@
     }
    ],
    "desde_imagen": false,
-   "confianza": "media",
+   "confianza": "alta",
    "origen": "ticketera",
    "id": "811308954e",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Mago de Oz",
+   "categoria": "metal",
+   "fecha_inicio": "2027-03-19",
+   "fecha_fin": "2027-03-20",
+   "hora": null,
+   "lugar": "Teatro Caupolicán - Santiago Centro",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Conciertos de la banda española de folk metal Mago de Oz en el Teatro Caupolicán.",
+   "imagen": "https://static.ptocdn.net/images/eventos/div314_calugalistado.jpg",
+   "url": "https://www.puntoticket.com/evento/mago-de-oz-teatro-caupolican-mar-2027",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/evento/mago-de-oz-teatro-caupolican-mar-2027"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "3e8348281a",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Slash - Featuring Myles Kennedy and The Conspirators",
+   "categoria": "metal",
+   "fecha_inicio": "2027-04-02",
+   "fecha_fin": null,
+   "hora": null,
+   "lugar": "Teatro Caupolicán - Santiago Centro",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Concierto de Slash featuring Myles Kennedy and The Conspirators en el Teatro Caupolicán.",
+   "imagen": "https://static.ptocdn.net/images/eventos/cco122_calugalistado.jpg",
+   "url": "https://www.puntoticket.com/slash-2027",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/slash-2027"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "57d089bde2",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Attack On Titan - The Last Concert",
+   "categoria": "anime",
+   "fecha_inicio": "2027-04-03",
+   "fecha_fin": "2027-04-04",
+   "hora": null,
+   "lugar": "Teatro Caupolicán - Santiago Centro",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Concierto sinfónico oficial de la música de la popular serie anime Attack On Titan.",
+   "imagen": "https://static.ptocdn.net/images/eventos/cau004_calugalistado.jpg",
+   "url": "https://www.puntoticket.com/aot",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/aot"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "c9eb8aa421",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Saurom - XXX Aniversario En Chile",
+   "categoria": "metal",
+   "fecha_inicio": "2027-04-17",
+   "fecha_fin": null,
+   "hora": null,
+   "lugar": "Teatro Coliseo - Santiago Centro",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Concierto de la banda española de folk/power metal Saurom celebrando su XXX aniversario en el Teatro Coliseo.",
+   "imagen": "https://static.ptocdn.net/images/eventos/jug002_calugalistado.jpg",
+   "url": "https://www.puntoticket.com/evento/saurom-2026",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/evento/saurom-2026"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "db33561036",
    "agregado": "2026-11-06",
    "actualizado": "2026-11-06"
   },
@@ -294,7 +1313,7 @@
    "ciudad": null,
    "region": null,
    "precio": null,
-   "descripcion": null,
+   "descripcion": "Concierto solista de Floor Jansen, destacada voz del metal sinfónico, en el Teatro Coliseo.",
    "imagen": "https://static.ptocdn.net/images/eventos/rec114_calugalistado.jpg",
    "url": "https://www.puntoticket.com/floor-jansen",
    "fuentes": [
@@ -304,7 +1323,7 @@
     }
    ],
    "desde_imagen": false,
-   "confianza": "media",
+   "confianza": "alta",
    "origen": "ticketera",
    "id": "d0f526c511",
    "agregado": "2026-11-06",
@@ -322,7 +1341,7 @@
    "ciudad": null,
    "region": null,
    "precio": null,
-   "descripcion": null,
+   "descripcion": "Concierto de la legendaria banda noruega de black metal Emperor en el Teatro Caupolicán.",
    "imagen": "https://static.ptocdn.net/images/eventos/cau005_calugalistado.jpg",
    "url": "https://www.puntoticket.com/emperor",
    "fuentes": [
@@ -332,7 +1351,7 @@
     }
    ],
    "desde_imagen": false,
-   "confianza": "media",
+   "confianza": "alta",
    "origen": "ticketera",
    "id": "7df15a74fa",
    "agregado": "2026-11-06",
@@ -350,7 +1369,7 @@
    "ciudad": null,
    "region": null,
    "precio": null,
-   "descripcion": null,
+   "descripcion": "Concierto de la banda de heavy metal KK's Priest en el Teatro Caupolicán.",
    "imagen": "https://static.ptocdn.net/images/eventos/chj013_calugalistado.jpg",
    "url": "https://www.puntoticket.com/evento/kks-priest-teatro-caupolican-abr-2027",
    "fuentes": [
@@ -360,7 +1379,7 @@
     }
    ],
    "desde_imagen": false,
-   "confianza": "media",
+   "confianza": "alta",
    "origen": "ticketera",
    "id": "851cb68b37",
    "agregado": "2026-11-06",
