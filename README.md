@@ -32,7 +32,8 @@ La búsqueda automática no entra a Instagram ni a Facebook: respeta sus reglas 
 ## Notas
 
 - GitHub puede pausar las tareas programadas de un repositorio público si pasan 60 días sin actividad. Si eso pasa, se reactiva en la pestaña Actions con "Enable workflow".
-- Si la IA gratuita llega a su límite del día, lo que quedó pendiente se revisa al día siguiente. Sin IA igual se suman los eventos de ticketeras por palabras clave y las páginas que traen datos estructurados (VAMOH!, Keai, TUU, Passline). Primero se revisan las publicaciones de comunidades que muestran los buscadores, porque son baratas, y las noticias viejas o de otros países quedan al final.
+- Si la IA gratuita llega a su límite del día, lo que quedó pendiente se revisa al día siguiente. Sin IA igual se suman los eventos de ticketeras por palabras clave y las páginas que traen datos estructurados (VAMOH!, Keai, TUU, Passline). Primero se revisan las publicaciones de comunidades que muestran los buscadores, porque son baratas.
+- **Noticias:** solo se leen las publicadas desde la búsqueda anterior (en la diaria, ayer y hoy). Las más viejas se descartan sin gastar IA, ya sea por la fecha que muestra el buscador, por la fecha en la dirección o por la fecha de publicación de la página. Las ticketeras, agendas y páginas de eventos se leen siempre, y una agenda vuelve a leerse cuando se actualiza.
 - Keai pide en su `robots.txt` que su contenido no se use con IA: de ahí solo se leen sus datos estructurados (`solo_datos_estructurados` en `config/gustos.json`).
 - La clave de Gemini vive como secreto del repositorio (`GEMINI_API_KEY`), nunca en el código. GitHub Models (la IA de GitHub) dejó de responder en noviembre de 2026; el buscador lo detecta solo.
 - `Diagnóstico IA` (en Actions) prueba la IA en un minuto: modelos disponibles, lectura de un afiche y clasificación de un listado.

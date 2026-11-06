@@ -20,6 +20,8 @@
   "max_paginas_por_busqueda": 6,
   "max_paginas_sin_ia": 80,
   "dias_para_revisar_de_nuevo": 7,
+  "max_dias_noticias": 7,
+  "_nota_noticias": "Solo se leen noticias publicadas desde la búsqueda anterior (en la diaria: ayer y hoy); max_dias_noticias es el tope si las búsquedas estuvieron pausadas. Ticketeras, agendas y páginas de eventos se leen siempre.",
   "categorias": [
     {
       "id": "medieval",

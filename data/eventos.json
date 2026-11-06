@@ -5,7 +5,7 @@
  "ultima_busqueda": {
   "fecha": "2026-11-06T13:56-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 30,
+  "eventos_nuevos": 29,
   "nuevos_ids": [
    "23e15c1070",
    "cb4dec6816",
@@ -27,7 +27,6 @@
    "5197cbd0b7",
    "356fc2e953",
    "09cd96f442",
-   "499bacbe90",
    "40f8528656",
    "3b27b430ae",
    "32ed296aa6",
@@ -46,7 +45,7 @@
   "errores": 5,
   "redes_vistas": 81
  },
- "total": 40,
+ "total": 39,
  "eventos": [
   {
    "titulo": "Mercaderes de la Ruta: Festival medieval de Oriente",
@@ -857,34 +856,6 @@
    "confianza": "media",
    "origen": "ticketera",
    "id": "db439ab52c",
-   "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
-  },
-  {
-   "titulo": "Feria Nocturna Medieval",
-   "categoria": "medieval",
-   "fecha_inicio": "2027-01-23",
-   "fecha_fin": "2027-01-25",
-   "hora": "16:00",
-   "lugar": "Plaza Ñuñoa (sector norte)",
-   "direccion": "Plaza Ñuñoa",
-   "comuna": "Ñuñoa",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratis",
-   "descripcion": "Feria nocturna medieval con artesanos, combates, música y juegos en Plaza Ñuñoa.",
-   "imagen": "https://arcachile.cl/wp-content/uploads/2026/01/image_0eaae1f9-be31-4238-987c-d4e3e52292e7.webp",
-   "url": "https://arcachile.cl/feria-nocturna-medieval-un-viaje-familiar-a-la-edad-media/",
-   "fuentes": [
-    {
-     "nombre": "Arca Chile",
-     "url": "https://arcachile.cl/feria-nocturna-medieval-un-viaje-familiar-a-la-edad-media/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "499bacbe90",
    "agregado": "2026-11-06",
    "actualizado": "2026-11-06"
   },

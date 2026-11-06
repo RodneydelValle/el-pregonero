@@ -353,6 +353,58 @@ def metadatos(pagina: str) -> dict:
     return meta
 
 
+CLAVES_FECHA_PUBLICACION = ("article:published_time", "article:modified_time", "og:published_time",
+                            "og:updated_time", "datepublished", "datemodified", "date", "pubdate", "publishdate",
+                            "publish-date", "sailthru.date", "parsely-pub-date", "dc.date", "dcterms.date",
+                            "dcterms.modified", "cxenseparse:recs:publishtime")
+
+
+def fecha_publicacion(pagina: str, meta: dict) -> dt.date | None:
+    """Fecha en que se publicó (o actualizó por última vez) una noticia; None si la página no la dice."""
+    fechas = [fecha_iso(meta.get(k)) for k in CLAVES_FECHA_PUBLICACION]
+    for bloque in re.findall(r'<script[^>]+type=["\']application/ld\+json["\'][^>]*>(.*?)</script>',
+                             pagina, re.S | re.I):
+        fechas += [fecha_iso(v) for v in re.findall(r'"date(?:Published|Modified)"\s*:\s*"([^"]+)"', bloque)]
+    fechas += [fecha_iso(v) for v in re.findall(
+        r'<time[^>]+datetime=["\'](\d{4}-\d{2}-\d{2})[^"\']*["\'][^>]*(?:pubdate|itemprop=["\']datePublished)',
+        pagina, re.I)]
+    fechas = [dt.date.fromisoformat(f) for f in fechas if f]
+    return max(fechas) if fechas else None
+
+
+def es_pagina_de_evento(url: str) -> bool:
+    d = dominio(url)
+    ruta = urllib.parse.urlparse(url).path.lower()
+    return (any(d == x or d.endswith("." + x) for x in DOMINIOS_ENTRADAS)
+            or bool(re.search(r"/(evento|eventos|events?|panorama|panoramas)/.", ruta)))
+
+
+def noticia_vieja(c: dict, desde: dt.date) -> bool:
+    """Sin abrir la página: ¿el buscador o la dirección ya muestran que es una noticia de antes de `desde`?"""
+    publicado = c.get("publicado")
+    if publicado:
+        try:
+            if email.utils.parsedate_to_datetime(publicado).date() < desde:
+                return True
+        except (TypeError, ValueError):
+            pass
+    ruta = urllib.parse.urlparse(c["url"]).path
+    m = re.search(r"/(20\d\d)/(\d{1,2})(?:/(\d{1,2}))?/", ruta)
+    if m and 1 <= int(m[2]) <= 12:
+        anio, mes = int(m[1]), int(m[2])
+        if m[3]:
+            try:
+                return dt.date(anio, mes, int(m[3])) < desde
+            except ValueError:
+                pass
+        return (anio, mes) < (desde.year, desde.month)
+    anios = [int(a) for a in re.findall(r"/(20[0-3]\d)/", ruta)]
+    if anios and max(anios) < desde.year:
+        return True
+    anios = [int(a) for a in re.findall(r"\b(20[0-3]\d)\b", c.get("titulo") or "")]
+    return bool(anios) and max(anios) < HOY.year
+
+
 def texto_relevante(texto: str, patron: re.Pattern, maximo=4200) -> str:
     if len(texto) <= maximo:
         return texto
@@ -1181,31 +1233,11 @@ def puntaje(c: dict, patron: re.Pattern) -> int:
     if c["origen"] == "bing-noticias":
         p += 1
     # páginas de un evento con entradas (suelen traer datos estructurados: no gastan IA)
-    d = dominio(c["url"])
-    ruta = urllib.parse.urlparse(c["url"]).path.lower()
-    if any(d == x or d.endswith("." + x) for x in DOMINIOS_ENTRADAS) or re.search(r"/(evento|eventos|events?)/.", ruta):
+    if es_pagina_de_evento(c["url"]):
         p += 2
     # sitios de otros países (diariodesantiago.es, .com.ar, ...)
-    if RE_DOMINIO_EXTRANJERO.search(d):
+    if RE_DOMINIO_EXTRANJERO.search(dominio(c["url"])):
         p -= 5
-    # noticias viejas: fecha en la dirección (/2023/05/...) o solo años pasados en el título
-    m = re.search(r"/(20\d\d)/(\d{1,2})/", ruta)
-    anios_ruta = [int(a) for a in re.findall(r"(?<!\d)(20[0-3]\d)(?!\d)", ruta)]
-    if m and 1 <= int(m[2]) <= 12:
-        if dt.date(int(m[1]), int(m[2]), 1) < HOY - dt.timedelta(days=150):
-            p -= 8
-    elif anios_ruta and max(anios_ruta) < HOY.year:
-        p -= 6
-    anios_titulo = [int(a) for a in re.findall(r"\b(20[0-3]\d)\b", c["titulo"])]
-    if anios_titulo and max(anios_titulo) < HOY.year:
-        p -= 6
-    publicado = c.get("publicado")
-    if publicado:
-        try:
-            if email.utils.parsedate_to_datetime(publicado).date() < HOY - dt.timedelta(days=150):
-                p -= 4
-        except (TypeError, ValueError):
-            pass
     return p
 
 
@@ -1221,11 +1253,16 @@ def token_github() -> str | None:
         return None
 
 
+class NoticiaVieja(Exception):
+    pass
+
+
 def procesar_pagina(url, titulo_busqueda, ia, cfg, patron, cat_fuente=None, nombre_fuente=None,
-                    confiar_categoria=False, agenda=False):
+                    confiar_categoria=False, agenda=False, noticias_desde: dt.date | None = None):
     """Lee una página: primero datos estructurados; si no hay, texto + afiches con IA.
 
     confiar_categoria=True solo para fuentes fijas ya filtradas por tema (p. ej. búsqueda 'anime' de Eventbrite).
+    noticias_desde: si la página no es de un evento y se publicó antes de esa fecha, no se lee (NoticiaVieja).
     """
     pagina, tipo, final = descargar(url)
     if "html" not in tipo.lower() and "<html" not in pagina[:500].lower():
@@ -1252,11 +1289,17 @@ def procesar_pagina(url, titulo_busqueda, ia, cfg, patron, cat_fuente=None, nomb
     sin_ia = any(d == x or d.endswith("." + x) for x in cfg.get("solo_datos_estructurados", []))
     if estructurados or sin_ia:
         return estructurados, False
+    publicada = None if es_pagina_de_evento(final) else fecha_publicacion(pagina, meta)
+    if noticias_desde and publicada and publicada < noticias_desde:
+        raise NoticiaVieja(publicada.isoformat())
     if not ia.disponible():
         return [], None  # None = queda pendiente: se lee con IA otro día
     texto, imgs = leer_html(pagina)
     descripcion = meta.get("og:description") or meta.get("description") or ""
     texto = (descripcion + "\n" + texto) if descripcion and descripcion not in texto else texto
+    if publicada:  # para que una fecha sin año ("23 de enero") se lea respecto de cuándo se escribió
+        texto = (f"[Esta página se publicó o actualizó el {publicada.isoformat()}. Si una fecha no trae año, "
+                 f"es la próxima a partir de ese día; si ya pasó, el evento ya pasó.]\n" + texto)
     if agenda:  # agenda larga de fans: mucho texto y sin afiches, para que quepan todas las fechas
         texto = texto_relevante(texto, patron, maximo=12000)
         portada, imagenes = (meta.get("og:image"), [])
@@ -1328,10 +1371,15 @@ def fuente_sitemap(f: dict, cfg: dict, patron: re.Pattern, vistos: dict) -> list
     return res
 
 
-def busqueda_completa(cfg: dict, ia: IA, vistos: dict) -> tuple[list[dict], dict]:
+def busqueda_completa(cfg: dict, ia: IA, vistos: dict, noticias_desde: dt.date | None = None) -> tuple[list[dict], dict]:
+    """noticias_desde: solo se leen noticias publicadas desde esa fecha (la búsqueda anterior).
+    Las ticketeras, agendas y páginas de eventos se leen siempre."""
+    noticias_desde = noticias_desde or HOY
     patron = patron_intereses(cfg)
     encontrados: list[dict] = []
-    stats = {"paginas_revisadas": 0, "busquedas": 0, "fuentes_fijas": 0, "errores": 0}
+    stats = {"paginas_revisadas": 0, "busquedas": 0, "fuentes_fijas": 0, "errores": 0,
+             "noticias_desde": noticias_desde.isoformat(), "noticias_viejas_descartadas": 0}
+    viejas: set[str] = set()
     limite_vistos = (HOY - dt.timedelta(days=cfg.get("dias_para_revisar_de_nuevo", 7))).isoformat()
 
     # 1) Fuentes fijas (ticketeras y agendas)
@@ -1431,6 +1479,9 @@ def busqueda_completa(cfg: dict, ia: IA, vistos: dict) -> tuple[list[dict], dict
                     continue
                 if vistos.get(r["url"], "") >= limite_vistos:
                     continue
+                if not es_pagina_de_evento(r["url"]) and noticia_vieja(r, noticias_desde):
+                    viejas.add(r["url"])  # noticia de antes de la búsqueda anterior: no se lee
+                    continue
                 r["categoria"] = cat["id"]
                 r["puntaje"] = puntaje(r, patron)
                 previo = candidatos.get(r["url"])
@@ -1447,7 +1498,9 @@ def busqueda_completa(cfg: dict, ia: IA, vistos: dict) -> tuple[list[dict], dict
         for lista in por_categoria.values():
             if lista:
                 ordenados.append(lista.pop(0))
-    log(f"[búsquedas] {len(candidatos)} resultados nuevos, {len(ordenados)} prometedores")
+    viejas -= set(candidatos)
+    log(f"[búsquedas] {len(candidatos)} resultados nuevos, {len(ordenados)} prometedores, "
+        f"{len(viejas)} noticias anteriores al {noticias_desde.strftime('%d-%m-%Y')} descartadas sin leer")
 
     # 3) Publicaciones de comunidades en redes sociales (solo lo que muestra el buscador).
     #    Van antes que las páginas: son baratas (20 por llamada) y ahí avisan las ferias chicas.
@@ -1480,7 +1533,8 @@ def busqueda_completa(cfg: dict, ia: IA, vistos: dict) -> tuple[list[dict], dict
             continue
         log(f"[página] ({c['puntaje']}) {c['titulo'][:80]} — {c['url'][:100]}")
         try:
-            res, uso_ia = procesar_pagina(c["url"], c["titulo"], ia, cfg, patron, c["categoria"])
+            res, uso_ia = procesar_pagina(c["url"], c["titulo"], ia, cfg, patron, c["categoria"],
+                                          noticias_desde=noticias_desde)
             stats["paginas_revisadas"] += 1
             if uso_ia:
                 por_cat[c["categoria"]] = por_cat.get(c["categoria"], 0) + 1
@@ -1491,11 +1545,16 @@ def busqueda_completa(cfg: dict, ia: IA, vistos: dict) -> tuple[list[dict], dict
                 vistos[c["url"]] = HOY.isoformat()
         except SinCupo:
             continue  # queda pendiente para mañana
+        except NoticiaVieja as e:
+            log(f"   noticia publicada el {e}: no se lee")
+            viejas.add(c["url"])
+            vistos[c["url"]] = HOY.isoformat()
         except Exception as e:  # noqa: BLE001
             stats["errores"] += 1
             log(f"   no se pudo leer: {e}")
             if not (isinstance(e, urllib.error.HTTPError) and (e.code == 429 or e.code >= 500)):
                 vistos[c["url"]] = HOY.isoformat()  # un error pasajero se reintenta mañana
+    stats["noticias_viejas_descartadas"] = len(viejas)
     return encontrados, stats
 
 
@@ -1542,7 +1601,13 @@ def main():
             log(f"Hoy: {HOY}  |  IA: sí ({conf_ia.get('nombre', ia.url)})")
         else:
             log(f"Hoy: {HOY}  |  IA: no" + (f" (falta el secreto {variable})" if variable and not args.sin_ia else ""))
-        nuevos, stats = busqueda_completa(cfg, ia, vistos)
+        # Noticias: solo las publicadas desde la búsqueda anterior (en la diaria: ayer y hoy),
+        # con un tope de días por si las búsquedas estuvieron pausadas.
+        anterior = fecha_iso(base.get("ultima_busqueda", {}).get("fecha"))
+        desde = dt.date.fromisoformat(anterior) if anterior else HOY - dt.timedelta(days=1)
+        desde = max(min(desde, HOY), HOY - dt.timedelta(days=int(cfg.get("max_dias_noticias", 7))))
+        log(f"Noticias: solo las publicadas desde el {desde.strftime('%d-%m-%Y')}")
+        nuevos, stats = busqueda_completa(cfg, ia, vistos, desde)
 
     eventos, ids_nuevos = unir(eventos, nuevos)
     eventos = vigentes(compactar(eventos), ocultos)
