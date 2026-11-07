@@ -231,11 +231,51 @@
       ]
     },
     {
+      "id": "arte",
+      "nombre": "Exposiciones de arte",
+      "emoji": "🎨",
+      "color": "#9d174d",
+      "descripcion": "exposiciones y muestras de arte en museos, centros culturales y galerías (pintura, escultura, fotografía artística, grabado, arte contemporáneo, instalaciones, arte textil o popular), inauguraciones, retrospectivas, bienales y ferias de arte. NO: ferias de artesanía comercial, talleres pagados ni actividades infantiles",
+      "palabras": [
+        "exposicion de arte",
+        "muestra de arte",
+        "arte contemporaneo",
+        "artes visuales",
+        "galeria de arte",
+        "exposicion de pintura",
+        "exposicion de fotografia",
+        "exposicion de escultura",
+        "exposicion de grabado",
+        "exposicion colectiva",
+        "exposicion individual",
+        "muestra colectiva",
+        "muestra individual",
+        "exposicion retrospectiva",
+        "muestra retrospectiva",
+        "bienal de arte",
+        "feria de arte",
+        "museo de arte",
+        "museo de artes visuales",
+        "instalacion artistica"
+      ],
+      "busquedas": [
+        "exposición de arte Santiago",
+        "nuevas exposiciones de arte Santiago",
+        "inauguración exposición museo Santiago",
+        "muestra arte contemporáneo Santiago",
+        "exposición Museo Nacional de Bellas Artes",
+        "exposición Centro Cultural La Moneda",
+        "exposición artes visuales GAM",
+        "galería de arte Santiago exposición",
+        "feria de arte contemporáneo Santiago"
+      ]
+    },
+    {
       "id": "museos",
       "nombre": "Museos y cultura",
       "emoji": "🏛️",
       "color": "#6b4f2a",
-      "descripcion": "Noche de Museos, Día del Patrimonio, exposiciones de arte o historia, recorridos nocturnos o patrimoniales y panoramas culturales gratuitos. NO: tours de estadios, ferias de vino, gastronómicas o comerciales",
+      "descripcion": "Noche de Museos, Día del Patrimonio, exposiciones de historia, ciencia, arqueología o patrimonio en museos, visitas guiadas y recorridos nocturnos o patrimoniales, panoramas culturales gratuitos. NO: tours de estadios, ferias de vino, gastronómicas o comerciales",
       "palabras": [
         "noche de museos",
         "dia del patrimonio",
@@ -246,14 +286,24 @@
         "panoramas gratis",
         "museo de bellas artes",
         "museo de historia natural",
-        "museo precolombino"
+        "museo precolombino",
+        "exposicion temporal",
+        "muestra temporal",
+        "nueva exposicion",
+        "museo historico nacional",
+        "museo nacional de historia natural",
+        "museo de la memoria",
+        "centro cultural la moneda"
       ],
       "busquedas": [
         "Noche de Museos Santiago",
         "Día del Patrimonio Cultural Chile",
         "panoramas gratis Santiago fin de semana",
         "exposición museo Santiago",
-        "recorrido nocturno museo Santiago"
+        "recorrido nocturno museo Santiago",
+        "exposición temporal museo Santiago",
+        "nueva exposición museo Chile",
+        "visita guiada nocturna museo Santiago"
       ]
     }
   ],
@@ -354,6 +404,68 @@
         "orfebrería"
       ],
       "pausa_s": 1.5
+    },
+    {
+      "nombre": "Chile Cultura",
+      "url": "https://chilecultura.gob.cl/api/v1.0/eventos/search?status=approved&region=1&page_size=100&disciplines=4",
+      "tipo": "chilecultura",
+      "categoria": "arte",
+      "_nota": "Agenda del Ministerio de las Culturas (API JSON pública, sin IA): exposiciones de artes visuales en la Región Metropolitana con fecha de apertura y de cierre. Se descartan talleres, charlas, visitas mediadas, videos en línea y colecciones permanentes."
+    },
+    {
+      "nombre": "Chile Cultura",
+      "url": "https://chilecultura.gob.cl/api/v1.0/eventos/search?status=approved&region=1&page_size=100&disciplines=8",
+      "tipo": "chilecultura",
+      "categoria": "arte",
+      "_nota": "Igual que la anterior, para fotografía."
+    },
+    {
+      "nombre": "Chile Cultura",
+      "url": "https://chilecultura.gob.cl/api/v1.0/eventos/search?status=approved&region=1&page_size=100&disciplines=14",
+      "tipo": "chilecultura",
+      "categoria": "museos",
+      "_nota": "Igual que la anterior, para museos (muestras temporales de historia, ciencia y patrimonio)."
+    },
+    {
+      "nombre": "Servicio Nacional del Patrimonio (museos)",
+      "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion",
+      "tipo": "pagina",
+      "cada_dias": 3,
+      "_nota": "Cartelera de exposiciones de los museos del Estado en la RM (Bellas Artes, Histórico Nacional, Historia Natural, Artes Decorativas, Biblioteca Nacional…), con fecha de cierre. La IA la lee cada 3 días; son 3 páginas (las nuevas quedan al final)."
+    },
+    {
+      "nombre": "Servicio Nacional del Patrimonio (museos)",
+      "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=1",
+      "tipo": "pagina",
+      "cada_dias": 3
+    },
+    {
+      "nombre": "Servicio Nacional del Patrimonio (museos)",
+      "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=2",
+      "tipo": "pagina",
+      "cada_dias": 3
+    },
+    {
+      "nombre": "MAC (Museo de Arte Contemporáneo)",
+      "url": "https://mac.uchile.cl/periodo/actuales/",
+      "tipo": "pagina",
+      "categoria": "arte",
+      "cada_dias": 3,
+      "_nota": "Exposiciones vigentes de las dos sedes del MAC (Parque Forestal y Quinta Normal); casi no salen en Chile Cultura."
+    },
+    {
+      "nombre": "Museo Chileno de Arte Precolombino",
+      "url": "https://museo.precolombino.cl/exposiciones-cartelera/cartelera/",
+      "tipo": "pagina",
+      "cada_dias": 3
+    },
+    {
+      "nombre": "GAM (artes visuales)",
+      "url": "https://gam.cl/es/que-hacer-en-gam/artesvisuales/",
+      "tipo": "listado",
+      "patron_enlace": "/artesvisuales/",
+      "cada_dias": 3,
+      "_nota": "Tipo listado a propósito: las tarjetas con las fechas están dentro de un formulario, que la lectura de páginas se salta."
     }
   ],
   "solo_datos_estructurados": [

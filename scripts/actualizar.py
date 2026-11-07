@@ -443,12 +443,15 @@ def _es_evento(d: dict) -> bool:
     return any(isinstance(x, str) and x.endswith("Event") for x in tipos) and bool(d.get("startDate"))
 
 
-def _url_imagen(img):
-    if isinstance(img, list):
-        img = img[0] if img else None
-    if isinstance(img, dict):
-        img = img.get("url") or img.get("contentUrl")
-    return img if isinstance(img, str) and img.startswith("http") else None
+def _urls_imagen(img) -> list[str]:
+    """Todas las imágenes de un campo "image" de JSON-LD (texto, objeto o lista), sin repetir."""
+    res: list[str] = []
+    for x in img if isinstance(img, list) else [img]:
+        if isinstance(x, dict):
+            x = x.get("url") or x.get("contentUrl")
+        if isinstance(x, str) and x.startswith("http") and x not in res:
+            res.append(x)
+    return res
 
 
 def eventos_jsonld(pagina: str, url_base: str) -> list[dict]:
@@ -459,7 +462,10 @@ def eventos_jsonld(pagina: str, url_base: str) -> list[dict]:
         try:
             datos = json.loads(bloque)
         except json.JSONDecodeError:
-            continue
+            try:  # algunos sitios dejan saltos de línea sin escapar dentro de los textos
+                datos = json.loads(bloque, strict=False)
+            except json.JSONDecodeError:
+                continue
         for d in _recorrer(datos):
             if not _es_evento(d):
                 continue
@@ -498,6 +504,7 @@ def eventos_jsonld(pagina: str, url_base: str) -> list[dict]:
                         precio = f"Desde ${int(float(p)):,}".replace(",", ".")
                 except (TypeError, ValueError):
                     pass
+            imagenes = _urls_imagen(d.get("image"))
             inicio, termino = str(d.get("startDate")), d.get("endDate")
             di, df = a_hora_chile(inicio), a_hora_chile(termino)
             if di and (di.hour or di.minute):
@@ -515,7 +522,8 @@ def eventos_jsonld(pagina: str, url_base: str) -> list[dict]:
                 "comuna": comuna or None,
                 "precio": precio,
                 "descripcion": limpiar(d.get("description"))[:240] or None,
-                "imagen": _url_imagen(d.get("image")),
+                "imagen": imagenes[0] if imagenes else None,
+                "fotos": imagenes[1:5],  # si la página trae más fotos del evento, la web las muestra en su galería
                 "url": urllib.parse.urljoin(url_base, d.get("url") or url_base),
                 "desde_imagen": False,
                 "confianza": "alta",
@@ -850,6 +858,9 @@ def instrucciones_base(cfg: dict) -> str:
         "- No inventes: si un dato no aparece, usa null. No confundas la fecha de publicación con la del evento.\n"
         "- Si no aparece el DÍA exacto del evento (solo el mes o el año), pon fecha_inicio null: nunca uses el día 1 "
         "ni el 1 de enero como relleno.\n"
+        "- Exposiciones y muestras: fecha_inicio = día de la inauguración (si ya está abierta y no lo dice, la fecha "
+        "de hoy) y fecha_fin = día exacto de cierre. Si no aparece el día de cierre, NO incluyas la exposición. "
+        "El horario de visita va en 'horario' (corto, p. ej. 'Mar a dom, 10:00–18:00') y 'hora' queda null.\n"
         "- Ojo con 'Santiago' de otros países (España, Rep. Dominicana, Argentina): solo Chile.\n"
         "- Escribe en español de Chile. La descripción, máximo 200 caracteres, dice qué es y por qué calza.\n"
     )
@@ -857,7 +868,7 @@ def instrucciones_base(cfg: dict) -> str:
 
 ESQUEMA_EVENTO = (
     '{"eventos": [{"titulo": str, "categoria": id, "fecha_inicio": "AAAA-MM-DD", '
-    '"fecha_fin": "AAAA-MM-DD"|null, "hora": "HH:MM"|null, "lugar": str|null, '
+    '"fecha_fin": "AAAA-MM-DD"|null, "hora": "HH:MM"|null, "horario": str|null, "lugar": str|null, '
     '"direccion": str|null, "comuna": str|null, "ciudad": str|null, "region": str|null, '
     '"precio": str|null, "descripcion": str, "url_entradas": str|null, '
     '"desde_imagen": bool (true si la fecha o el lugar los sacaste de un afiche), '
@@ -1034,8 +1045,8 @@ def guardar_json(ruta: Path, datos):
     ruta.write_text(json.dumps(datos, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 
-CAMPOS = ["titulo", "categoria", "fecha_inicio", "fecha_fin", "hora", "lugar", "direccion", "comuna",
-          "ciudad", "region", "precio", "descripcion", "imagen", "url"]
+CAMPOS = ["titulo", "categoria", "fecha_inicio", "fecha_fin", "hora", "horario", "lugar", "direccion", "comuna",
+          "ciudad", "region", "precio", "descripcion", "imagen", "fotos", "url"]
 RANGO_CONFIANZA = {"baja": 0, "media": 1, "alta": 2}
 
 
@@ -1049,6 +1060,14 @@ def sin_gritar(t: str) -> str:
         return t
     palabras = t.lower().split(" ")
     return " ".join(w if (i and w in MINUSCULAS) else w[:1].upper() + w[1:] for i, w in enumerate(palabras))
+
+
+def url_https(u) -> str | None:
+    """La web es https: una imagen http:// el navegador la pide igual por https (o no la muestra)."""
+    if not isinstance(u, str) or not re.match(r"https?://", u.strip(), re.I):
+        return None
+    u = u.strip()
+    return "https://" + u[7:] if u[:7].lower() == "http://" else u
 
 
 def normalizar_evento(e: dict, cfg: dict, fuente_nombre: str, fuente_url: str, origen: str) -> dict | None:
@@ -1078,13 +1097,25 @@ def normalizar_evento(e: dict, cfg: dict, fuente_nombre: str, fuente_url: str, o
     url = e.get("url_entradas") or e.get("url") or fuente_url
     if not (isinstance(url, str) and url.startswith("http")):
         url = fuente_url
-    imagen = e.get("imagen")
+    if (origen.startswith("ia") and not fin and inicio == HOY.isoformat() and cat in ("arte", "museos")
+            and not hora_hhmm(e.get("hora"))):
+        return None  # una muestra "abierta desde hoy" sin día de cierre: volvería cada día con otro id
+    imagen = url_https(e.get("imagen"))
+    fotos_in = e.get("fotos")
+    fotos_in = [fotos_in] if isinstance(fotos_in, str) else fotos_in if isinstance(fotos_in, list) else []
+    horario = e.get("horario")
+    fotos = []
+    for u in fotos_in:
+        u = url_https(u)
+        if u and u != imagen and u not in fotos:
+            fotos.append(u)
     ev = {
         "titulo": titulo,
         "categoria": cat,
         "fecha_inicio": inicio,
         "fecha_fin": fin if fin and fin != inicio else None,
         "hora": hora_hhmm(e.get("hora")),
+        "horario": (limpiar(horario)[:80] or None) if isinstance(horario, str) else None,  # horario de visita
         "lugar": limpiar(e.get("lugar"))[:120] or None,
         "direccion": limpiar(e.get("direccion"))[:160] or None,
         "comuna": limpiar(e.get("comuna"))[:60] or None,
@@ -1092,7 +1123,8 @@ def normalizar_evento(e: dict, cfg: dict, fuente_nombre: str, fuente_url: str, o
         "region": limpiar(e.get("region"))[:60] or None,
         "precio": limpiar(e.get("precio"))[:80] or None,
         "descripcion": limpiar(e.get("descripcion"))[:240] or None,
-        "imagen": imagen if isinstance(imagen, str) and imagen.startswith("http") else None,
+        "imagen": imagen,
+        "fotos": fotos[:4] or None,
         "url": url,
         "fuentes": [{"nombre": fuente_nombre or dominio(fuente_url), "url": fuente_url}],
         "desde_imagen": bool(e.get("desde_imagen")),
@@ -1381,6 +1413,91 @@ def fuente_sitemap(f: dict, cfg: dict, patron: re.Pattern, vistos: dict) -> list
     return res
 
 
+# Chile Cultura (agenda del Ministerio de las Culturas): API JSON pública con el nombre, el lugar, la comuna y
+# las fechas de apertura y de cierre de cada actividad. También trae talleres, charlas, visitas mediadas y videos
+# de YouTube: se dejan solo las muestras presenciales que duran de una semana a poco más de un año.
+RE_CC_NO = re.compile(
+    r"\b(taller(es)?|conversatorio|seminario|encuentro|charlas?|curso|clases?|masterclass|lanzamiento|"
+    r"convocatoria|laboratorio|visitas?|recorridos?|mediacion(es)?|mediad[oa]s|sesion(es)?|ciclo de cine|"
+    r"funcion(es)?|concierto|infancias?|ninos|ninas|escolar(es)?|educacionales|cecrea)\b")
+RE_CC_EN_LINEA = re.compile(r"youtube|youtu\.be|instagram|facebook|tiktok|suyai|\bradio\b|en linea|online|virtual|"
+                            r"streaming|zoom")
+
+
+def resumen(t: str, maximo: int = 220) -> str:
+    """Las primeras frases de un texto (puede traer HTML), sin cortar palabras."""
+    t = limpiar(t)
+    t = re.sub(r"([«“(¿¡])\s+", r"\1", t)  # las etiquetas quitadas dejan espacios junto a comillas y signos
+    t = re.sub(r"\s+([»”),.;:!?])", r"\1", t)
+    if len(t) <= maximo:
+        return t
+    corte = t[:maximo]
+    fin = max(corte.rfind(". "), corte.rfind("! "), corte.rfind("? "))
+    if fin >= maximo // 2:
+        return corte[:fin + 1]
+    return corte[:corte.rfind(" ")].rstrip(",;:") + "…"
+
+
+def titulo_muestra(t: str) -> str:
+    """'Apertura exposición temporal “Electrizando la mente”' → 'Electrizando la mente'."""
+    t = limpiar(t)
+    sin = re.sub(r"^(apertura\s+(de\s+la\s+)?)?(nueva\s+)?(exposici[oó]n|muestra|exhibici[oó]n)(\s+temporal)?\s*:?\s*",
+                 "", t, flags=re.I)
+    if len(sin) >= 4:
+        t = sin
+    # "… - Exposición en el Centro de Extensión UC", "… - CCLM"
+    t = re.sub(r"\s+[-–]\s*(exposici[oó]n|muestra)\b.*$", "", t, flags=re.I)
+    t = re.sub(r"\s+[-–]\s*(?=[A-Z0-9]*[A-Z])[A-Z0-9]{2,6}$", "", t)
+    m = re.fullmatch(r"[«“\"'](.+?)[»”\"']", t)
+    if m:
+        t = m.group(1)
+    return t[:1].upper() + t[1:]
+
+
+def fuente_chilecultura(f: dict, cfg: dict) -> list[dict]:
+    """Muestras de la agenda Chile Cultura (API JSON; sin IA). La categoría viene de la fuente."""
+    res: list[dict] = []
+    url, paginas = f["url"], 0
+    while url and paginas < 5:
+        texto, _, final = descargar(url, max_bytes=20_000_000, timeout=60)
+        datos = json.loads(texto)
+        paginas += 1
+        for e in datos.get("results") or []:
+            nombre, lugar = limpiar(e.get("name")), limpiar(e.get("venue_name"))
+            enlace = str(e.get("permalink") or "")
+            inicio, fin = fecha_iso(e.get("start_date")), fecha_iso(e.get("end_date"))
+            if not (nombre and inicio and fin) or RE_CC_NO.search(sin_tildes(nombre)):
+                continue
+            if not lugar or RE_CC_EN_LINEA.search(sin_tildes(lugar)) or re.search(r"youtu\.?be|suyai", enlace, re.I):
+                continue  # sin lugar, videos y "galerías" en línea
+            dias = (dt.date.fromisoformat(fin) - dt.date.fromisoformat(inicio)).days
+            if not 6 <= dias <= 400:
+                continue  # actividad de un día o colección permanente
+            if re.search(r"\b(convoca(n)? a (participar|postular)|postulaciones|bases del concurso)\b",
+                         sin_tildes(limpiar(e.get("description"))[:400])):
+                continue  # el plazo de un concurso, no una muestra
+            region = limpiar(e.get("region"))
+            ev = {
+                "titulo": titulo_muestra(nombre), "categoria": f.get("categoria"),
+                "fecha_inicio": inicio, "fecha_fin": fin,
+                "lugar": lugar or None, "comuna": limpiar(e.get("commune")) or None,
+                "ciudad": "Santiago" if "metropolitana" in sin_tildes(region) else None,
+                "region": re.sub(r"\s+de\s+santiago$", "", region, flags=re.I) or None,
+                "precio": "Gratis" if e.get("free") is True else None,
+                "descripcion": resumen(e.get("description") or ""),
+                "imagen": e.get("image"),
+                "url": enlace if enlace.startswith("http") and not RE_CC_EN_LINEA.search(enlace) else e.get("url"),
+                "confianza": "media",
+            }
+            n = normalizar_evento(ev, cfg, f["nombre"], e.get("url") or final, "datos-estructurados")
+            if n:
+                res.append(n)
+        url = datos.get("next")
+        if url:
+            time.sleep(2)
+    return res
+
+
 def busqueda_completa(cfg: dict, ia: IA, vistos: dict, noticias_desde: dt.date | None = None) -> tuple[list[dict], dict]:
     """noticias_desde: solo se leen noticias publicadas desde esa fecha (la búsqueda anterior).
     Las ticketeras, agendas y páginas de eventos se leen siempre."""
@@ -1394,6 +1511,11 @@ def busqueda_completa(cfg: dict, ia: IA, vistos: dict, noticias_desde: dt.date |
 
     # 1) Fuentes fijas (ticketeras y agendas)
     for f in cfg.get("fuentes", []):
+        cada = int(f.get("cada_dias") or 1)
+        if cada > 1 and vistos.get(f["url"], "") > (HOY - dt.timedelta(days=cada)).isoformat():
+            # carteleras de museos: las exposiciones duran meses, no hace falta gastar IA en leerlas a diario
+            log(f"[fuente] {f['nombre']}: se lee cada {cada} días (última vez: {vistos[f['url']]})")
+            continue
         log(f"[fuente] {f['nombre']}: {f['url']}")
         if f["tipo"] == "sitemap":
             try:
@@ -1410,6 +1532,18 @@ def busqueda_completa(cfg: dict, ia: IA, vistos: dict, noticias_desde: dt.date |
                 log(f"  no se pudo abrir: {e}")
                 stats["errores"] += 1
             continue
+        if f["tipo"] == "chilecultura":
+            try:
+                res = fuente_chilecultura(f, cfg)
+                stats["fuentes_fijas"] += 1
+                for n in res:
+                    log(f"   ✓ {n['fecha_inicio']} → {n['fecha_fin']} {n['titulo']} ({n['categoria']}, {n.get('lugar')})")
+                encontrados.extend(res)
+                log(f"  {len(res)} muestras")
+            except Exception as e:  # noqa: BLE001
+                log(f"  no se pudo abrir: {e}")
+                stats["errores"] += 1
+            continue
         try:
             pagina, _, final = descargar(f["url"])
         except Exception as e:  # noqa: BLE001
@@ -1417,10 +1551,14 @@ def busqueda_completa(cfg: dict, ia: IA, vistos: dict, noticias_desde: dt.date |
             stats["errores"] += 1
             continue
         stats["fuentes_fijas"] += 1
+        leida = True
         if f["tipo"] in ("puntoticket", "listado"):
             filas = (listado_puntoticket(pagina, final) if f["tipo"] == "puntoticket"
                      else listado_generico(pagina, final, f.get("patron_enlace", "/")))
+            propias = {f["url"].rstrip("/"), final.rstrip("/")}
+            filas = [x for x in filas if x["url"].rstrip("/") not in propias]   # el enlace al mismo listado
             log(f"  {len(filas)} eventos en el listado")
+            leida = ia.disponible()   # sin IA solo queda el respaldo por palabras: se vuelve a leer mañana
             elegidos = ia_clasificar_listado(ia, cfg, f["nombre"], filas) if ia.disponible() else []
             # respaldo por palabras clave (también sirve si la IA falla o se queda sin cupo)
             ya = {fila["url"] for fila, _ in elegidos}
@@ -1452,13 +1590,15 @@ def busqueda_completa(cfg: dict, ia: IA, vistos: dict, noticias_desde: dt.date |
             log(f"  {len(elegidos)} calzan con tus gustos")
         else:
             try:
-                res, _ = procesar_pagina(f["url"], f["nombre"], ia, cfg, patron, f.get("categoria"), f["nombre"],
-                                         confiar_categoria=bool(f.get("categoria")), agenda=True)
+                res, uso_ia = procesar_pagina(f["url"], f["nombre"], ia, cfg, patron, f.get("categoria"), f["nombre"],
+                                              confiar_categoria=bool(f.get("categoria")), agenda=True)
+                leida = uso_ia is not None   # None: necesitaba la IA y no estaba (queda pendiente)
                 encontrados.extend(res)
                 log(f"  {len(res)} eventos")
             except SinCupo:
-                pass
-        vistos[f["url"]] = HOY.isoformat()
+                leida = False
+        if leida or not f.get("cada_dias"):
+            vistos[f["url"]] = HOY.isoformat()
 
     # 2) Búsquedas por interés
     candidatos: dict[str, dict] = {}

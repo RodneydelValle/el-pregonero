@@ -1,0 +1,1876 @@
+{
+ "version": 1,
+ "revisado": "2026-11-07",
+ "_nota": "Fotos de cada lugar (salas, teatros, museos). Un evento muestra las fotos de su lugar si su 'lugar' o su 'direccion' contienen el nombre o un alias (sin tildes, como palabras enteras); 'excluir' evita confundirlo con otra sede u otra ciudad. Las fotos se enlazan (no se copian): vienen de Wikimedia Commons, de los sitios oficiales o de la prensa, nunca de Instagram, Facebook ni Google Maps. 'referenciales' se muestran, marcadas como tales, solo si el evento no tiene afiche ni foto de su lugar. Revisar con: python scripts/fotos.py revisar",
+ "lugares": [
+  {
+   "id": "teatro-caupolican",
+   "nombre": "Teatro Caupolicán",
+   "alias": [
+    "teatro caupolican",
+    "san diego 850"
+   ],
+   "excluir": [
+    "valparaiso",
+    "vina del mar",
+    "concepcion",
+    "valdivia",
+    "temuco",
+    "la serena",
+    "coquimbo",
+    "antofagasta",
+    "puerto montt",
+    "talca",
+    "rancagua",
+    "iquique",
+    "arica",
+    "punta arenas",
+    "chillan",
+    "osorno",
+    "calama",
+    "copiapo",
+    "curico",
+    "los angeles"
+   ],
+   "direccion": "San Diego 850",
+   "comuna": "Santiago",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Guachup%C3%A9_15_a%C3%B1os.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Guachup%C3%A9_15_a%C3%B1os.jpg/330px-Guachup%C3%A9_15_a%C3%B1os.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Guachup%C3%A9_15_a%C3%B1os.jpg",
+     "credito": "Foto: Rodrigo1614 · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Público repleto frente al escenario iluminado del Teatro Caupolicán durante un concierto"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Teatro_Caupolic%C3%A1n%2C_Santiago_20240815_14.jpg/1280px-Teatro_Caupolic%C3%A1n%2C_Santiago_20240815_14.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Teatro_Caupolic%C3%A1n%2C_Santiago_20240815_14.jpg/330px-Teatro_Caupolic%C3%A1n%2C_Santiago_20240815_14.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Teatro_Caupolic%C3%A1n,_Santiago_20240815_14.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Fachada del Teatro Caupolicán en calle San Diego, con su gran letrero rojo"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Teatro_Caupolic%C3%A1n.jpg/1280px-Teatro_Caupolic%C3%A1n.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Teatro_Caupolic%C3%A1n.jpg/330px-Teatro_Caupolic%C3%A1n.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Teatro_Caupolic%C3%A1n.jpg",
+     "credito": "Foto: Carlos yo · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Entrada del Teatro Caupolicán con su antiguo letrero luminoso rojo, en 2009"
+    }
+   ]
+  },
+  {
+   "id": "teatro-coliseo",
+   "nombre": "Teatro Coliseo",
+   "alias": [
+    "teatro coliseo",
+    "nataniel cox 59"
+   ],
+   "direccion": "Nataniel Cox 59",
+   "comuna": "Santiago",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/20251028_Teatro_Coliseo.jpg/960px-20251028_Teatro_Coliseo.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/20251028_Teatro_Coliseo.jpg/330px-20251028_Teatro_Coliseo.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:20251028_Teatro_Coliseo.jpg",
+     "credito": "Foto: Aeveraal · CC BY 4.0 · Wikimedia Commons",
+     "descripcion": "Fachada del edificio del Teatro Coliseo en calle Nataniel Cox, con sus accesos y carteles"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Teatro_Coliseo%2C_Santiago_20231014.jpg/960px-Teatro_Coliseo%2C_Santiago_20231014.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Teatro_Coliseo%2C_Santiago_20231014.jpg/330px-Teatro_Coliseo%2C_Santiago_20231014.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Teatro_Coliseo,_Santiago_20231014.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Acceso a platea baja del Teatro Coliseo, con su letrero clásico y puertas de madera"
+    }
+   ]
+  },
+  {
+   "id": "santander-arena",
+   "nombre": "Santander Arena (ex Movistar Arena)",
+   "alias": [
+    "santander arena",
+    "movistar arena",
+    "arena movistar"
+   ],
+   "direccion": "Av. Beauchef 1204, Parque O'Higgins",
+   "comuna": "Santiago",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Movistar_Arena%2C_Chile%2C_2025.jpg/1280px-Movistar_Arena%2C_Chile%2C_2025.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Movistar_Arena%2C_Chile%2C_2025.jpg/330px-Movistar_Arena%2C_Chile%2C_2025.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Movistar_Arena,_Chile,_2025.jpg",
+     "credito": "Foto: Soulreaper · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Interior de la cúpula del Santander Arena repleto de público durante un concierto"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Movistar_arena_2018.jpg/1280px-Movistar_arena_2018.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Movistar_arena_2018.jpg/330px-Movistar_arena_2018.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Movistar_arena_2018.jpg",
+     "credito": "Foto: Alberto Brieba · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Fachada del recinto en 2018, cuando aún se llamaba Movistar Arena, en el Parque O'Higgins"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/La_c%C3%BApula_%2829066226095%29.jpg/1280px-La_c%C3%BApula_%2829066226095%29.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/La_c%C3%BApula_%2829066226095%29.jpg/330px-La_c%C3%BApula_%2829066226095%29.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:La_c%C3%BApula_(29066226095).jpg",
+     "credito": "Foto: Luis Orellana from Santiago, Chile · CC BY 2.0 · Wikimedia Commons",
+     "descripcion": "La cúpula del arena vista desde los prados del Parque O'Higgins"
+    }
+   ]
+  },
+  {
+   "id": "teatro-cariola",
+   "nombre": "Teatro Cariola",
+   "alias": [
+    "teatro cariola",
+    "san diego 246"
+   ],
+   "excluir": [
+    "valparaiso",
+    "vina del mar",
+    "concepcion",
+    "valdivia",
+    "temuco",
+    "la serena",
+    "coquimbo",
+    "antofagasta",
+    "puerto montt",
+    "talca",
+    "rancagua",
+    "iquique",
+    "arica",
+    "punta arenas",
+    "chillan",
+    "osorno",
+    "calama",
+    "copiapo",
+    "curico",
+    "los angeles"
+   ],
+   "direccion": "San Diego 246",
+   "comuna": "Santiago",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Teatro_Cariola_-_Interior_01.JPG/1280px-Teatro_Cariola_-_Interior_01.JPG",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Teatro_Cariola_-_Interior_01.JPG/330px-Teatro_Cariola_-_Interior_01.JPG",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Teatro_Cariola_-_Interior_01.JPG",
+     "credito": "Foto: 3BRBS · CC BY-SA 3.0 · Wikimedia Commons",
+     "descripcion": "Sala del Teatro Cariola con su platea de butacas y el escenario al fondo"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Teatro_Cariola_San_Diego.jpg/1280px-Teatro_Cariola_San_Diego.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Teatro_Cariola_San_Diego.jpg/330px-Teatro_Cariola_San_Diego.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Teatro_Cariola_San_Diego.jpg",
+     "credito": "Foto: Jaime Troncoso · CC0 · Wikimedia Commons",
+     "descripcion": "Marquesina del Teatro Cariola, Sala Alejandro Flores, en calle San Diego"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Final_AyR_3.jpg/1280px-Final_AyR_3.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Final_AyR_3.jpg/330px-Final_AyR_3.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Final_AyR_3.jpg",
+     "credito": "Foto: Aeveraal · CC BY 4.0 · Wikimedia Commons",
+     "descripcion": "Público en la platea y los balcones del Teatro Cariola durante un espectáculo"
+    }
+   ]
+  },
+  {
+   "id": "sala-rbx",
+   "nombre": "Sala RBX",
+   "alias": [
+    "sala rbx",
+    "rbx",
+    "rock bar xperience"
+   ],
+   "direccion": "Av. Vicuña Mackenna 1220",
+   "comuna": "Ñuñoa",
+   "fotos": [
+    {
+     "url": "https://metalbite.com/graphics/CamusLive2025.jpg",
+     "pagina": "https://metalbite.com/news/19616/live-review-cathalepsy-camus-tim-ripper-owens-rbx-hall-santiago-chile-052525",
+     "credito": "Foto: MetalBite",
+     "descripcion": "Banda y público reunidos en el escenario de la Sala RBX tras un concierto de metal"
+    },
+    {
+     "url": "https://metalbite.com/graphics/TRO1.jpg",
+     "pagina": "https://metalbite.com/news/19616/live-review-cathalepsy-camus-tim-ripper-owens-rbx-hall-santiago-chile-052525",
+     "credito": "Foto: MetalBite",
+     "descripcion": "Público con los cuernos en alto detrás de los músicos en el escenario de la Sala RBX"
+    }
+   ]
+  },
+  {
+   "id": "sala-metronomo",
+   "nombre": "Sala Metrónomo",
+   "alias": [
+    "sala metronomo",
+    "club metronomo"
+   ],
+   "direccion": "Ernesto Pinto Lagarrigue 179, Barrio Bellavista",
+   "comuna": "Recoleta",
+   "fotos": [
+    {
+     "url": "https://salametronomo.com/cdn/shop/files/10_Face_to_Face_Sala_Metronomo_2024_de_tamano_grande_8d5607ba-4ec8-40e5-9670-400669b4eed5.jpg?v=1737391247&width=1200",
+     "mini": "https://salametronomo.com/cdn/shop/files/10_Face_to_Face_Sala_Metronomo_2024_de_tamano_grande_8d5607ba-4ec8-40e5-9670-400669b4eed5.jpg?v=1737391247&width=400",
+     "pagina": "https://salametronomo.com/",
+     "credito": "Foto: sitio oficial de Sala Metrónomo",
+     "descripcion": "Banda tocando en el escenario de la Sala Metrónomo ante el público, bajo luces azules"
+    },
+    {
+     "url": "https://salametronomo.com/cdn/shop/files/DSC04105_de_tamano_grande_55c19922-ccae-4998-ab43-c0183b13a248.jpg?v=1737391345&width=1200",
+     "mini": "https://salametronomo.com/cdn/shop/files/DSC04105_de_tamano_grande_55c19922-ccae-4998-ab43-c0183b13a248.jpg?v=1737391345&width=400",
+     "pagina": "https://salametronomo.com/",
+     "credito": "Foto: sitio oficial de Sala Metrónomo",
+     "descripcion": "Sala Metrónomo llena de público, vista desde el escenario entre humo y focos"
+    },
+    {
+     "url": "https://salametronomo.com/cdn/shop/files/DSC_7925.png?v=1691958479&width=1200",
+     "mini": "https://salametronomo.com/cdn/shop/files/DSC_7925.png?v=1691958479&width=400",
+     "pagina": "https://salametronomo.com/",
+     "credito": "Foto: sitio oficial de Sala Metrónomo",
+     "descripcion": "Vista en blanco y negro desde el escenario de la Sala Metrónomo hacia el público"
+    }
+   ]
+  },
+  {
+   "id": "arena-recoleta",
+   "nombre": "Arena Recoleta",
+   "alias": [
+    "arena recoleta",
+    "einstein 898",
+    "einstein 848"
+   ],
+   "direccion": "Av. Einstein 898",
+   "comuna": "Recoleta",
+   "fotos": [
+    {
+     "url": "https://www.rocklegacy.cl/wp-content/uploads/photo-gallery/DSC_0334.png",
+     "mini": "https://www.rocklegacy.cl/wp-content/uploads/photo-gallery/thumb/DSC_0334.png",
+     "pagina": "https://www.rocklegacy.cl/2023/06/04/galeria-ratos-de-porao-anarkitran-en-arena-recoleta/",
+     "credito": "Foto: Nelson Sáez (Rock Legacy)",
+     "descripcion": "Vista desde el escenario hacia el patio al aire libre lleno de público, con el letrero «Arena Recoleta» en el muro del fondo (junio de 2023)"
+    },
+    {
+     "url": "https://www.rocklegacy.cl/wp-content/uploads/photo-gallery/DSC_0610_%281%29.png",
+     "mini": "https://www.rocklegacy.cl/wp-content/uploads/photo-gallery/thumb/DSC_0610_%281%29.png",
+     "pagina": "https://www.rocklegacy.cl/2023/06/04/galeria-ratos-de-porao-suicidio-colectivo-en-arena-recoleta/",
+     "credito": "Foto: Nelson Sáez (Rock Legacy)",
+     "descripcion": "Un tragafuegos lanza una llamarada ante el público reunido de noche en el patio, junto al letrero «Arena Recoleta» del muro"
+    },
+    {
+     "url": "https://www.rocklegacy.cl/wp-content/uploads/photo-gallery/DSC_0636.png",
+     "mini": "https://www.rocklegacy.cl/wp-content/uploads/photo-gallery/thumb/DSC_0636.png",
+     "pagina": "https://www.rocklegacy.cl/2023/06/04/galeria-ratos-de-porao-en-arena-recoleta/",
+     "credito": "Foto: Nelson Sáez (Rock Legacy)",
+     "descripcion": "Ratos de Porão en el escenario de Arena Recoleta en 2023, con focos, el telón de la banda y siluetas del público"
+    }
+   ]
+  },
+  {
+   "id": "club-subterraneo",
+   "nombre": "Club Subterráneo",
+   "alias": [
+    "club subterraneo",
+    "sala subterraneo",
+    "orrego luco 46"
+   ],
+   "direccion": "Paseo Orrego Luco 46",
+   "comuna": "Providencia",
+   "fotos": [
+    {
+     "url": "https://applications-media.feverup.com/image/upload/c_crop,g_north,w_1024,h_533/fever2/plan/photo/338936fe-b146-11f1-a754-dae2c67177c8.jpg",
+     "mini": "https://applications-media.feverup.com/image/upload/c_crop,g_north,w_1024,h_533/w_400/fever2/plan/photo/338936fe-b146-11f1-a754-dae2c67177c8.jpg",
+     "pagina": "https://feverup.com/es/santiago/venue/club-subterraneo",
+     "credito": "Foto: Fever",
+     "descripcion": "Escenario del Club Subterráneo con muro de ladrillo, instrumentos y velas encendidas"
+    },
+    {
+     "url": "https://applications-media.feverup.com/image/upload/fever2/plan/photo/916899a6-1136-11f0-a626-62f2070d049e.jpg",
+     "mini": "https://applications-media.feverup.com/image/upload/w_400/fever2/plan/photo/916899a6-1136-11f0-a626-62f2070d049e.jpg",
+     "pagina": "https://feverup.com/es/santiago/venue/club-subterraneo",
+     "credito": "Foto: Fever",
+     "descripcion": "Marquesina con estrellas y letrero del Club Subterráneo sobre su entrada"
+    },
+    {
+     "url": "https://applications-media.feverup.com/image/upload/w_1024/fever2/plan/photo/915a78b2-1136-11f0-a626-62f2070d049e.jpg",
+     "mini": "https://applications-media.feverup.com/image/upload/w_400/fever2/plan/photo/915a78b2-1136-11f0-a626-62f2070d049e.jpg",
+     "pagina": "https://feverup.com/es/santiago/venue/club-subterraneo",
+     "credito": "Foto: Fever",
+     "descripcion": "Cabina de DJ con el nombre Subterráneo iluminada en rosado dentro del club"
+    }
+   ]
+  },
+  {
+   "id": "arena-hipodromo",
+   "nombre": "Arena Hipódromo (Hipódromo Chile)",
+   "alias": [
+    "arena hipodromo",
+    "hipodromo chile"
+   ],
+   "direccion": "Av. Hipódromo Chile 1715",
+   "comuna": "Independencia",
+   "fotos": [
+    {
+     "url": "https://storage.elturf.com/fotos_sistema_auspicios/home_eventos.jpg",
+     "pagina": "https://eventos.hipodromo.cl/hch_eventos/home",
+     "credito": "Foto: sitio oficial de Hipódromo Chile",
+     "descripcion": "Multitud frente al escenario en un concierto al aire libre en el Hipódromo Chile"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Entrada_Hip%C3%B3dromo_Chile%2C_Independencia%2C_Santiago_20230519.jpg/1280px-Entrada_Hip%C3%B3dromo_Chile%2C_Independencia%2C_Santiago_20230519.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Entrada_Hip%C3%B3dromo_Chile%2C_Independencia%2C_Santiago_20230519.jpg/330px-Entrada_Hip%C3%B3dromo_Chile%2C_Independencia%2C_Santiago_20230519.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Entrada_Hip%C3%B3dromo_Chile,_Independencia,_Santiago_20230519.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Portal de entrada del Hipódromo Chile en Independencia, con sus pilares y banderas"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Meta_Del_Hipodromo_Chile.jpg/1280px-Meta_Del_Hipodromo_Chile.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Meta_Del_Hipodromo_Chile.jpg/330px-Meta_Del_Hipodromo_Chile.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Meta_Del_Hipodromo_Chile.jpg",
+     "credito": "Foto: Lanmeneses1987 · CC0 · Wikimedia Commons",
+     "descripcion": "Pista del Hipódromo Chile con el letrero de la meta y los cerros al fondo"
+    }
+   ]
+  },
+  {
+   "id": "cenco-florida",
+   "nombre": "Cenco Florida",
+   "alias": [
+    "cenco florida",
+    "mall florida center",
+    "florida center"
+   ],
+   "direccion": "Av. Vicuña Mackenna Oriente 6100",
+   "comuna": "La Florida",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Mall_Florida_Center%2C_La_Florida%2C_Santiago_20230812_02.jpg/1280px-Mall_Florida_Center%2C_La_Florida%2C_Santiago_20230812_02.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Mall_Florida_Center%2C_La_Florida%2C_Santiago_20230812_02.jpg/330px-Mall_Florida_Center%2C_La_Florida%2C_Santiago_20230812_02.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Mall_Florida_Center,_La_Florida,_Santiago_20230812_02.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Edificio del mall Cenco Florida (ex Florida Center) con palmeras en uno de sus accesos"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Tren_el%C3%A9ctrico_para_paseo_infantil_-_A742410.jpg/1280px-Tren_el%C3%A9ctrico_para_paseo_infantil_-_A742410.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Tren_el%C3%A9ctrico_para_paseo_infantil_-_A742410.jpg/330px-Tren_el%C3%A9ctrico_para_paseo_infantil_-_A742410.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Tren_el%C3%A9ctrico_para_paseo_infantil_-_A742410.jpg",
+     "credito": "Foto: Rjcastillo · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Interior del mall Cenco Florida bajo su cúpula vidriada, con un trencito infantil"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Mall_Florida_Center%2C_La_Florida%2C_Santiago_20230812_01.jpg/1280px-Mall_Florida_Center%2C_La_Florida%2C_Santiago_20230812_01.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Mall_Florida_Center%2C_La_Florida%2C_Santiago_20230812_01.jpg/330px-Mall_Florida_Center%2C_La_Florida%2C_Santiago_20230812_01.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Mall_Florida_Center,_La_Florida,_Santiago_20230812_01.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Acceso al mall Cenco Florida por el sector de Cineplanet y estacionamientos"
+    }
+   ]
+  },
+  {
+   "id": "teatro-municipal-valparaiso",
+   "nombre": "Teatro Municipal de Valparaíso",
+   "alias": [
+    "teatro municipal de valparaiso"
+   ],
+   "direccion": "Av. Uruguay 410",
+   "comuna": "Valparaíso",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Teatro_Municipal%2C_Valpara%C3%ADso_20230704.jpg/1280px-Teatro_Municipal%2C_Valpara%C3%ADso_20230704.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Teatro_Municipal%2C_Valpara%C3%ADso_20230704.jpg/330px-Teatro_Municipal%2C_Valpara%C3%ADso_20230704.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Teatro_Municipal,_Valpara%C3%ADso_20230704.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Fachada del Teatro Municipal de Valparaíso en avenida Uruguay, junto a la Plaza O'Higgins"
+    }
+   ]
+  },
+  {
+   "id": "corpartes-ca660",
+   "nombre": "Centro Cultural CA660 (Fundación Corpartes)",
+   "alias": [
+    "ca660",
+    "corpartes",
+    "rosario norte 660"
+   ],
+   "direccion": "Rosario Norte 660",
+   "comuna": "Las Condes",
+   "fotos": [
+    {
+     "url": "https://corpartes.cl/wp-content/uploads/2021/07/caja-conocenos-bg-1280x720.jpg",
+     "mini": "https://corpartes.cl/wp-content/uploads/2021/07/caja-conocenos-bg-480x270.jpg",
+     "pagina": "https://corpartes.cl/fundacion2/",
+     "credito": "Foto: sitio oficial de Fundación CorpArtes",
+     "descripcion": "Teatro CA660 lleno de público frente a dos artistas y un piano de cola en el escenario"
+    },
+    {
+     "url": "https://corpartes.cl/wp-content/uploads/2020/07/CorpArtes_0039-1-1280x960.jpg",
+     "mini": "https://corpartes.cl/wp-content/uploads/2020/07/CorpArtes_0039-1-480x360.jpg",
+     "pagina": "https://corpartes.cl/fundacion2/",
+     "credito": "Foto: sitio oficial de Fundación CorpArtes",
+     "descripcion": "Plaza y acceso del Centro Cultural CA660, entre las torres de vidrio de Rosario Norte"
+    }
+   ]
+  },
+  {
+   "id": "centro-cultural-ceina",
+   "nombre": "Centro Cultural Ceina",
+   "alias": [
+    "centro cultural ceina",
+    "ceina",
+    "arturo prat 33"
+   ],
+   "direccion": "Arturo Prat 33",
+   "comuna": "Santiago",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Centro_de_Extensi%C3%B3n_del_Instituto_Nacional_-_Aula_Magna.jpg/1280px-Centro_de_Extensi%C3%B3n_del_Instituto_Nacional_-_Aula_Magna.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Centro_de_Extensi%C3%B3n_del_Instituto_Nacional_-_Aula_Magna.jpg/330px-Centro_de_Extensi%C3%B3n_del_Instituto_Nacional_-_Aula_Magna.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Centro_de_Extensi%C3%B3n_del_Instituto_Nacional_-_Aula_Magna.jpg",
+     "credito": "Foto: Sfs90 · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Aula Magna del Centro Cultural Ceina, con butacas, escenario y muros decorados"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Centro_de_Extensi%C3%B3n_Instituto_Nacional.jpg/1280px-Centro_de_Extensi%C3%B3n_Instituto_Nacional.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Centro_de_Extensi%C3%B3n_Instituto_Nacional.jpg/330px-Centro_de_Extensi%C3%B3n_Instituto_Nacional.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Centro_de_Extensi%C3%B3n_Instituto_Nacional.jpg",
+     "credito": "Foto: TomasVial · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Fachada del Centro Cultural Ceina en calle Arturo Prat, con su letrero en la entrada"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Congreso_Futuro_2024_-_12.jpg/1280px-Congreso_Futuro_2024_-_12.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Congreso_Futuro_2024_-_12.jpg/330px-Congreso_Futuro_2024_-_12.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Congreso_Futuro_2024_-_12.jpg",
+     "credito": "Foto: LuisCG11 · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Vista del Aula Magna de Ceina desde el escenario, con la platea y el balcón"
+    }
+   ]
+  },
+  {
+   "id": "casa-cultura-nunoa",
+   "nombre": "Casa de la Cultura de Ñuñoa (Palacio Ossa)",
+   "alias": [
+    "casa de la cultura de nunoa",
+    "palacio ossa",
+    "irarrazaval 4055"
+   ],
+   "direccion": "Av. Irarrázaval 4055",
+   "comuna": "Ñuñoa",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Palacio_Ossa%2C_%C3%91u%C3%B1oa%2C_Santiago_20230422_01.jpg/1280px-Palacio_Ossa%2C_%C3%91u%C3%B1oa%2C_Santiago_20230422_01.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Palacio_Ossa%2C_%C3%91u%C3%B1oa%2C_Santiago_20230422_01.jpg/330px-Palacio_Ossa%2C_%C3%91u%C3%B1oa%2C_Santiago_20230422_01.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Palacio_Ossa,_%C3%91u%C3%B1oa,_Santiago_20230422_01.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Palacio Ossa, sede de la Casa de la Cultura de Ñuñoa, con su jardín y pileta"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Escalera_A74012620250525.jpg/960px-Escalera_A74012620250525.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Escalera_A74012620250525.jpg/330px-Escalera_A74012620250525.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Escalera_A74012620250525.jpg",
+     "credito": "Foto: Rjcastillo · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Escalera interior y columnas del Palacio Ossa, Casa de la Cultura de Ñuñoa"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Sala_de_Cine_de_%C3%91u%C3%B1oa_A74011420250525.jpg/960px-Sala_de_Cine_de_%C3%91u%C3%B1oa_A74011420250525.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Sala_de_Cine_de_%C3%91u%C3%B1oa_A74011420250525.jpg/330px-Sala_de_Cine_de_%C3%91u%C3%B1oa_A74011420250525.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Sala_de_Cine_de_%C3%91u%C3%B1oa_A74011420250525.jpg",
+     "credito": "Foto: Rjcastillo · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Acceso a la Sala de Cine de Ñuñoa en la galería con columnas del Palacio Ossa"
+    }
+   ]
+  },
+  {
+   "id": "palacio-astoreca",
+   "nombre": "Palacio Astoreca",
+   "alias": [
+    "palacio astoreca",
+    "dieciocho 121"
+   ],
+   "excluir": [
+    "valparaiso",
+    "vina del mar",
+    "concepcion",
+    "valdivia",
+    "temuco",
+    "la serena",
+    "coquimbo",
+    "antofagasta",
+    "puerto montt",
+    "talca",
+    "rancagua",
+    "iquique",
+    "arica",
+    "punta arenas",
+    "chillan",
+    "osorno",
+    "calama",
+    "copiapo",
+    "curico",
+    "los angeles"
+   ],
+   "direccion": "Dieciocho 121, Barrio Dieciocho",
+   "comuna": "Santiago",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Palacio_Astoreca.JPG/1280px-Palacio_Astoreca.JPG",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Palacio_Astoreca.JPG/330px-Palacio_Astoreca.JPG",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Palacio_Astoreca.JPG",
+     "credito": "Foto: Mmasalleras · CC BY-SA 3.0 · Wikimedia Commons",
+     "descripcion": "Fachada del Palacio Astoreca en calle Dieciocho, mansión blanca de estilo francés"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Sal%C3%B3n_del_Palacio_Astoreca..JPG/960px-Sal%C3%B3n_del_Palacio_Astoreca..JPG",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Sal%C3%B3n_del_Palacio_Astoreca..JPG/330px-Sal%C3%B3n_del_Palacio_Astoreca..JPG",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Sal%C3%B3n_del_Palacio_Astoreca..JPG",
+     "credito": "Foto: Pippe18 · CC BY-SA 3.0 · Wikimedia Commons",
+     "descripcion": "Salón del Palacio Astoreca con lámpara de lágrimas, columnas y balcón interior"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/WLMCL_-_Calle_Dieciocho_03.JPG/1280px-WLMCL_-_Calle_Dieciocho_03.JPG",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/WLMCL_-_Calle_Dieciocho_03.JPG/330px-WLMCL_-_Calle_Dieciocho_03.JPG",
+     "pagina": "https://commons.wikimedia.org/wiki/File:WLMCL_-_Calle_Dieciocho_03.JPG",
+     "credito": "Foto: Nereidas · CC BY-SA 3.0 · Wikimedia Commons",
+     "descripcion": "Palacio Astoreca entre árboles, con su pórtico de columnas y arco lateral"
+    }
+   ]
+  },
+  {
+   "id": "canelo-de-nos",
+   "nombre": "El Canelo de Nos",
+   "alias": [
+    "canelo de nos",
+    "el canelo de nos"
+   ],
+   "direccion": "Av. Portales 3020, Nos",
+   "comuna": "San Bernardo",
+   "fotos": [
+    {
+     "url": "https://delh.cl/wp-content/uploads/2021/01/IMG_5704-768x512.jpg",
+     "mini": "https://delh.cl/wp-content/uploads/2021/01/IMG_5704-300x200.jpg",
+     "pagina": "https://delh.cl/2021/01/21/el-canelo-de-nos-es-completamente-sanbernardino/",
+     "credito": "Foto: El Amanecer de lo Herrera",
+     "descripcion": "Avenida de árboles que lleva a las casas del parque El Canelo de Nos"
+    },
+    {
+     "url": "https://s.ineventos.com/cl/2015/05/114462/sociedad-inmobiliaria-el-canelo-166111-i-1080w.jpg",
+     "pagina": "https://www.ineventos.com/cl/elcanelodenos",
+     "credito": "Foto: InEventos",
+     "descripcion": "Público en el galpón de El Canelo de Nos durante una función de acrobacia aérea"
+    }
+   ]
+  },
+  {
+   "id": "mnba",
+   "nombre": "Museo Nacional de Bellas Artes",
+   "alias": [
+    "museo nacional de bellas artes",
+    "museo de bellas artes",
+    "bellas artes",
+    "mnba"
+   ],
+   "excluir": [
+    "valparaiso",
+    "vina del mar",
+    "concepcion",
+    "valdivia",
+    "temuco",
+    "la serena",
+    "coquimbo",
+    "antofagasta",
+    "puerto montt",
+    "talca",
+    "rancagua",
+    "iquique",
+    "arica",
+    "punta arenas",
+    "chillan",
+    "osorno",
+    "calama",
+    "copiapo",
+    "curico",
+    "los angeles",
+    "baburizza",
+    "palacio vergara",
+    "barrio bellas artes",
+    "metro bellas artes",
+    "estacion bellas artes"
+   ],
+   "direccion": "José Miguel de la Barra 650, Parque Forestal",
+   "comuna": "Santiago",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Museo_Nacional_de_Bellas_Artes%2C_Chile_2025_%282%29.jpg/1280px-Museo_Nacional_de_Bellas_Artes%2C_Chile_2025_%282%29.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Museo_Nacional_de_Bellas_Artes%2C_Chile_2025_%282%29.jpg/330px-Museo_Nacional_de_Bellas_Artes%2C_Chile_2025_%282%29.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Museo_Nacional_de_Bellas_Artes,_Chile_2025_(2).jpg",
+     "credito": "Foto: Soulreaper · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Hall central del museo con cúpula de fierro y vidrio, balcones y esculturas blancas"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Museo_Nacional_de_Bellas_Artes%2C_Santiago_20230311.jpg/1280px-Museo_Nacional_de_Bellas_Artes%2C_Santiago_20230311.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Museo_Nacional_de_Bellas_Artes%2C_Santiago_20230311.jpg/330px-Museo_Nacional_de_Bellas_Artes%2C_Santiago_20230311.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Museo_Nacional_de_Bellas_Artes,_Santiago_20230311.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Fachada del Palacio de Bellas Artes con su cúpula y una escultura frente a la entrada"
+    }
+   ]
+  },
+  {
+   "id": "mac-parque-forestal",
+   "nombre": "Museo de Arte Contemporáneo (MAC), Parque Forestal",
+   "alias": [
+    "museo de arte contemporaneo",
+    "mac parque forestal",
+    "mac sede parque forestal"
+   ],
+   "excluir": [
+    "quinta normal",
+    "valparaiso",
+    "vina del mar",
+    "concepcion",
+    "valdivia",
+    "temuco",
+    "la serena",
+    "coquimbo",
+    "antofagasta",
+    "puerto montt",
+    "talca",
+    "rancagua",
+    "iquique",
+    "arica",
+    "punta arenas",
+    "chillan",
+    "osorno",
+    "calama",
+    "copiapo",
+    "curico",
+    "los angeles",
+    "matucana"
+   ],
+   "direccion": "Ismael Valdés Vergara 506, Parque Forestal",
+   "comuna": "Santiago",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/MAC_interior_con_techo_-2014_fRF03.jpg/1280px-MAC_interior_con_techo_-2014_fRF03.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/MAC_interior_con_techo_-2014_fRF03.jpg/330px-MAC_interior_con_techo_-2014_fRF03.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:MAC_interior_con_techo_-2014_fRF03.jpg",
+     "credito": "Foto: Rodrigo Fernández · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Hall central blanco con arcos, tragaluz y piso ajedrezado del MAC Parque Forestal"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Museo_de_Arte_Contempor%C3%A1neo%2C_Santiago_20230311.jpg/1280px-Museo_de_Arte_Contempor%C3%A1neo%2C_Santiago_20230311.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Museo_de_Arte_Contempor%C3%A1neo%2C_Santiago_20230311.jpg/330px-Museo_de_Arte_Contempor%C3%A1neo%2C_Santiago_20230311.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Museo_de_Arte_Contempor%C3%A1neo,_Santiago_20230311.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Fachada del MAC con columnas, cúpula y letrero Academia de Bellas Artes, junto al parque"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/MAC_Sala_coleccion_f1.2.jpg/1280px-MAC_Sala_coleccion_f1.2.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/MAC_Sala_coleccion_f1.2.jpg/330px-MAC_Sala_coleccion_f1.2.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:MAC_Sala_coleccion_f1.2.jpg",
+     "credito": "Foto: Rodrigo Fernández · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Sala de colección con bustos sobre pedestales y retratos en un muro azul"
+    }
+   ]
+  },
+  {
+   "id": "mac-quinta-normal",
+   "nombre": "Museo de Arte Contemporáneo (MAC), Quinta Normal",
+   "alias": [
+    "museo de arte contemporaneo quinta normal",
+    "museo de arte contemporaneo espacio quinta normal",
+    "museo de arte contemporaneo mac quinta normal",
+    "museo de arte contemporaneo mac espacio quinta normal",
+    "mac quinta normal",
+    "mac espacio quinta normal",
+    "matucana 464"
+   ],
+   "excluir": [
+    "valparaiso",
+    "vina del mar",
+    "concepcion",
+    "valdivia",
+    "temuco",
+    "la serena",
+    "coquimbo",
+    "antofagasta",
+    "puerto montt",
+    "talca",
+    "rancagua",
+    "iquique",
+    "arica",
+    "punta arenas",
+    "chillan",
+    "osorno",
+    "calama",
+    "copiapo",
+    "curico",
+    "los angeles"
+   ],
+   "direccion": "Av. Matucana 464, Parque Quinta Normal",
+   "comuna": "Santiago",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Palacio_Versailles%2C_Santiago_20230520_01.jpg/1280px-Palacio_Versailles%2C_Santiago_20230520_01.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Palacio_Versailles%2C_Santiago_20230520_01.jpg/330px-Palacio_Versailles%2C_Santiago_20230520_01.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Palacio_Versailles,_Santiago_20230520_01.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Fachada blanca del Palacio Versailles, sede del MAC Quinta Normal, con pendón y visitantes"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Museo_de_arte_contempor%C3%A1neo_de_Santiago_06.jpg/1280px-Museo_de_arte_contempor%C3%A1neo_de_Santiago_06.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Museo_de_arte_contempor%C3%A1neo_de_Santiago_06.jpg/330px-Museo_de_arte_contempor%C3%A1neo_de_Santiago_06.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Museo_de_arte_contempor%C3%A1neo_de_Santiago_06.jpg",
+     "credito": "Foto: Jeni.cornejo · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Hall interior con columnas, balcones y escalera del MAC Quinta Normal"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Interior_MAC_Quinta_Normal%2C_Santiago_20230520_01.jpg/1280px-Interior_MAC_Quinta_Normal%2C_Santiago_20230520_01.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Interior_MAC_Quinta_Normal%2C_Santiago_20230520_01.jpg/330px-Interior_MAC_Quinta_Normal%2C_Santiago_20230520_01.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Interior_MAC_Quinta_Normal,_Santiago_20230520_01.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Instalación de tejido a crochet en forma de domo en una sala del museo"
+    }
+   ]
+  },
+  {
+   "id": "mnhn",
+   "nombre": "Museo Nacional de Historia Natural",
+   "alias": [
+    "museo nacional de historia natural",
+    "historia natural",
+    "mnhn"
+   ],
+   "excluir": [
+    "valparaiso",
+    "vina del mar",
+    "concepcion",
+    "valdivia",
+    "temuco",
+    "la serena",
+    "coquimbo",
+    "antofagasta",
+    "puerto montt",
+    "talca",
+    "rancagua",
+    "iquique",
+    "arica",
+    "punta arenas",
+    "chillan",
+    "osorno",
+    "calama",
+    "copiapo",
+    "curico",
+    "los angeles",
+    "regional"
+   ],
+   "direccion": "Interior Parque Quinta Normal s/n",
+   "comuna": "Santiago",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Ballena_Greta_del_Museo_Nacional_de_Historia_Natural_de_Chile_en_2022.jpg/1280px-Ballena_Greta_del_Museo_Nacional_de_Historia_Natural_de_Chile_en_2022.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Ballena_Greta_del_Museo_Nacional_de_Historia_Natural_de_Chile_en_2022.jpg/330px-Ballena_Greta_del_Museo_Nacional_de_Historia_Natural_de_Chile_en_2022.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Ballena_Greta_del_Museo_Nacional_de_Historia_Natural_de_Chile_en_2022.jpg",
+     "credito": "Foto: Jisa39 · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Esqueleto de la ballena Greta en el salón central del museo, visto desde el segundo piso"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Museo_Nacional_de_Historia_Natural%2C_Santiago_20230520_01.jpg/1280px-Museo_Nacional_de_Historia_Natural%2C_Santiago_20230520_01.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Museo_Nacional_de_Historia_Natural%2C_Santiago_20230520_01.jpg/330px-Museo_Nacional_de_Historia_Natural%2C_Santiago_20230520_01.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Museo_Nacional_de_Historia_Natural,_Santiago_20230520_01.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Fachada neoclásica del museo en el Parque Quinta Normal, con palmeras y una estatua"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Interior_MNHN.JPG/1280px-Interior_MNHN.JPG",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Interior_MNHN.JPG/330px-Interior_MNHN.JPG",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Interior_MNHN.JPG",
+     "credito": "Foto: Romigraphy · CC BY-SA 3.0 · Wikimedia Commons",
+     "descripcion": "Galería con columnas, faroles y vitrinas con animales disecados"
+    }
+   ]
+  },
+  {
+   "id": "precolombino",
+   "nombre": "Museo Chileno de Arte Precolombino",
+   "alias": [
+    "museo chileno de arte precolombino",
+    "museo precolombino",
+    "precolombino",
+    "bandera 361"
+   ],
+   "excluir": [
+    "valparaiso",
+    "vina del mar",
+    "concepcion",
+    "valdivia",
+    "temuco",
+    "la serena",
+    "coquimbo",
+    "antofagasta",
+    "puerto montt",
+    "talca",
+    "rancagua",
+    "iquique",
+    "arica",
+    "punta arenas",
+    "chillan",
+    "osorno",
+    "calama",
+    "copiapo",
+    "curico",
+    "los angeles"
+   ],
+   "direccion": "Bandera 361",
+   "comuna": "Santiago",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Museo_Chileno_de_Arte_Precolombino%2C_Santiago_20200128_14.jpg/1280px-Museo_Chileno_de_Arte_Precolombino%2C_Santiago_20200128_14.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Museo_Chileno_de_Arte_Precolombino%2C_Santiago_20200128_14.jpg/330px-Museo_Chileno_de_Arte_Precolombino%2C_Santiago_20200128_14.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Museo_Chileno_de_Arte_Precolombino,_Santiago_20200128_14.jpg",
+     "credito": "Foto: Carlos Figueroa · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Fachada del Palacio de la Real Aduana en calle Bandera con grandes pendones de colores"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Museo_de_Arte_Precolombino_de_Santiago_en_2024_01.jpg/1280px-Museo_de_Arte_Precolombino_de_Santiago_en_2024_01.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Museo_de_Arte_Precolombino_de_Santiago_en_2024_01.jpg/330px-Museo_de_Arte_Precolombino_de_Santiago_en_2024_01.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Museo_de_Arte_Precolombino_de_Santiago_en_2024_01.jpg",
+     "credito": "Foto: TomasVial · CC BY 4.0 · Wikimedia Commons",
+     "descripcion": "Sala en penumbra con vitrinas iluminadas de cerámicas precolombinas"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Chemamull_chile_precolumblian_museum.JPG/1280px-Chemamull_chile_precolumblian_museum.JPG",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Chemamull_chile_precolumblian_museum.JPG/330px-Chemamull_chile_precolumblian_museum.JPG",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Chemamull_chile_precolumblian_museum.JPG",
+     "credito": "Foto: Bkwillwm · CC BY-SA 3.0 · Wikimedia Commons",
+     "descripcion": "Tres chemamull, esculturas funerarias mapuche de madera, en una sala del museo"
+    }
+   ]
+  },
+  {
+   "id": "mhn",
+   "nombre": "Museo Histórico Nacional",
+   "alias": [
+    "museo historico nacional",
+    "plaza de armas 951"
+   ],
+   "excluir": [
+    "valparaiso",
+    "vina del mar",
+    "concepcion",
+    "valdivia",
+    "temuco",
+    "la serena",
+    "coquimbo",
+    "antofagasta",
+    "puerto montt",
+    "talca",
+    "rancagua",
+    "iquique",
+    "arica",
+    "punta arenas",
+    "chillan",
+    "osorno",
+    "calama",
+    "copiapo",
+    "curico",
+    "los angeles"
+   ],
+   "direccion": "Plaza de Armas 951",
+   "comuna": "Santiago",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Palacio_de_la_Real_Audiencia_de_Santiago%2C_Chile.jpg/1280px-Palacio_de_la_Real_Audiencia_de_Santiago%2C_Chile.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Palacio_de_la_Real_Audiencia_de_Santiago%2C_Chile.jpg/330px-Palacio_de_la_Real_Audiencia_de_Santiago%2C_Chile.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Palacio_de_la_Real_Audiencia_de_Santiago,_Chile.jpg",
+     "credito": "Foto: Bernard Gagnon · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Palacio de la Real Audiencia, sede del museo, con su torre del reloj en la Plaza de Armas"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Chile-trip-1318.jpg/1280px-Chile-trip-1318.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Chile-trip-1318.jpg/330px-Chile-trip-1318.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Chile-trip-1318.jpg",
+     "credito": "Foto: ilya_ktsn · CC BY 2.0 · Wikimedia Commons",
+     "descripcion": "Patio colonial interior con corredores de columnas, maceteros y una máquina antigua"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Chile-trip-1316.jpg/1280px-Chile-trip-1316.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Chile-trip-1316.jpg/330px-Chile-trip-1316.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Chile-trip-1316.jpg",
+     "credito": "Foto: ilya_ktsn · CC BY 2.0 · Wikimedia Commons",
+     "descripcion": "Sala con retratos históricos, una maqueta en vitrina y piso de madera"
+    }
+   ]
+  },
+  {
+   "id": "museo-memoria",
+   "nombre": "Museo de la Memoria y los Derechos Humanos",
+   "alias": [
+    "museo de la memoria",
+    "galeria de la memoria",
+    "matucana 501"
+   ],
+   "excluir": [
+    "valparaiso",
+    "vina del mar",
+    "concepcion",
+    "valdivia",
+    "temuco",
+    "la serena",
+    "coquimbo",
+    "antofagasta",
+    "puerto montt",
+    "talca",
+    "rancagua",
+    "iquique",
+    "arica",
+    "punta arenas",
+    "chillan",
+    "osorno",
+    "calama",
+    "copiapo",
+    "curico",
+    "los angeles"
+   ],
+   "direccion": "Av. Matucana 501",
+   "comuna": "Santiago",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Museo_de_la_Memoria_y_los_DDHH%2C_Santiago_20191219_32.jpg/1280px-Museo_de_la_Memoria_y_los_DDHH%2C_Santiago_20191219_32.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Museo_de_la_Memoria_y_los_DDHH%2C_Santiago_20191219_32.jpg/330px-Museo_de_la_Memoria_y_los_DDHH%2C_Santiago_20191219_32.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Museo_de_la_Memoria_y_los_DDHH,_Santiago_20191219_32.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Edificio de cobre verde del museo con un gran mural de retratos sobre la explanada"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Museo_de_la_memoria_chile_mural_de_desaparecidos_2023.jpg/1280px-Museo_de_la_memoria_chile_mural_de_desaparecidos_2023.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Museo_de_la_memoria_chile_mural_de_desaparecidos_2023.jpg/330px-Museo_de_la_memoria_chile_mural_de_desaparecidos_2023.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Museo_de_la_memoria_chile_mural_de_desaparecidos_2023.jpg",
+     "credito": "Foto: Karen Arévalo Calle · CC0 · Wikimedia Commons",
+     "descripcion": "Muro con fotos de víctimas de la dictadura, velas y una pantalla interactiva"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Museo_memoria_sala_DDHH.JPG/1280px-Museo_memoria_sala_DDHH.JPG",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Museo_memoria_sala_DDHH.JPG/330px-Museo_memoria_sala_DDHH.JPG",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Museo_memoria_sala_DDHH.JPG",
+     "credito": "Foto: Warko · CC BY-SA 3.0 · Wikimedia Commons",
+     "descripcion": "Muro de hormigón con fotografías en forma de mapamundi y paneles informativos"
+    }
+   ]
+  },
+  {
+   "id": "cclm",
+   "nombre": "Centro Cultural La Moneda",
+   "alias": [
+    "centro cultural la moneda",
+    "centro cultural palacio la moneda",
+    "cclm"
+   ],
+   "direccion": "Plaza de la Ciudadanía 26",
+   "comuna": "Santiago",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Centro_Cultural_La_Moneda_interior_20171203_fRF08.jpg/1280px-Centro_Cultural_La_Moneda_interior_20171203_fRF08.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Centro_Cultural_La_Moneda_interior_20171203_fRF08.jpg/330px-Centro_Cultural_La_Moneda_interior_20171203_fRF08.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Centro_Cultural_La_Moneda_interior_20171203_fRF08.jpg",
+     "credito": "Foto: Rodrigo Fernández · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Gran hall subterráneo con rampas, muros perforados y acceso a la Sala Andes"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Centro_Cultural_La_Moneda_3.jpg/1280px-Centro_Cultural_La_Moneda_3.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Centro_Cultural_La_Moneda_3.jpg/330px-Centro_Cultural_La_Moneda_3.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Centro_Cultural_La_Moneda_3.jpg",
+     "credito": "Foto: Rodrigo Fernández · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Letrero del Centro Cultural La Moneda en el acceso, con el Palacio de La Moneda detrás"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Chile_-_Santiago_-_Centro_Cultural_Palacio_de_La_Moneda.jpg/1280px-Chile_-_Santiago_-_Centro_Cultural_Palacio_de_La_Moneda.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Chile_-_Santiago_-_Centro_Cultural_Palacio_de_La_Moneda.jpg/330px-Chile_-_Santiago_-_Centro_Cultural_Palacio_de_La_Moneda.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Chile_-_Santiago_-_Centro_Cultural_Palacio_de_La_Moneda.jpg",
+     "credito": "Foto: BenGoetzinger · CC BY-SA 3.0 · Wikimedia Commons",
+     "descripcion": "Hall central con una exposición de grandes fotografías colgadas del techo"
+    }
+   ]
+  },
+  {
+   "id": "gam",
+   "nombre": "Centro Cultural Gabriela Mistral (GAM)",
+   "alias": [
+    "centro cultural gabriela mistral",
+    "centro gabriela mistral",
+    "gam"
+   ],
+   "excluir": [
+    "valparaiso",
+    "vina del mar",
+    "concepcion",
+    "valdivia",
+    "temuco",
+    "la serena",
+    "coquimbo",
+    "antofagasta",
+    "puerto montt",
+    "talca",
+    "rancagua",
+    "iquique",
+    "arica",
+    "punta arenas",
+    "chillan",
+    "osorno",
+    "calama",
+    "copiapo",
+    "curico",
+    "los angeles"
+   ],
+   "direccion": "Av. Libertador Bernardo O'Higgins 227",
+   "comuna": "Santiago",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Centro_Cultural_Gabriela_Mistral%2C_Santiago_20230422.jpg/1280px-Centro_Cultural_Gabriela_Mistral%2C_Santiago_20230422.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Centro_Cultural_Gabriela_Mistral%2C_Santiago_20230422.jpg/330px-Centro_Cultural_Gabriela_Mistral%2C_Santiago_20230422.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Centro_Cultural_Gabriela_Mistral,_Santiago_20230422.jpg",
+     "credito": "Foto: Carlos yo · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Edificio del GAM con su cubierta de acero corten y la torre, junto a la Alameda"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Centro_Gabriela_Mistral-008.jpg/1280px-Centro_Gabriela_Mistral-008.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Centro_Gabriela_Mistral-008.jpg/330px-Centro_Gabriela_Mistral-008.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Centro_Gabriela_Mistral-008.jpg",
+     "credito": "Foto: Rodrigo Pizarro · CC BY-SA 2.0 · Wikimedia Commons",
+     "descripcion": "Sala de teatro con butacas grises, muros de madera y escenario"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/2017_Santiago_de_Chile_-_Avenida_Libertador_Bernardo_O%27Higgins_227_-_Centro_Gabriela_Mistral_%28GAM%29.jpg/1280px-2017_Santiago_de_Chile_-_Avenida_Libertador_Bernardo_O%27Higgins_227_-_Centro_Gabriela_Mistral_%28GAM%29.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/2017_Santiago_de_Chile_-_Avenida_Libertador_Bernardo_O%27Higgins_227_-_Centro_Gabriela_Mistral_%28GAM%29.jpg/330px-2017_Santiago_de_Chile_-_Avenida_Libertador_Bernardo_O%27Higgins_227_-_Centro_Gabriela_Mistral_%28GAM%29.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:2017_Santiago_de_Chile_-_Avenida_Libertador_Bernardo_O%27Higgins_227_-_Centro_Gabriela_Mistral_(GAM).jpg",
+     "credito": "Foto: Felipe Restrepo Acosta · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Acceso al GAM desde la Alameda, bajo el gran alero, con el logo del centro"
+    }
+   ]
+  },
+  {
+   "id": "mavi",
+   "nombre": "Museo de Artes Visuales (MAVI UC)",
+   "alias": [
+    "museo de artes visuales",
+    "mavi"
+   ],
+   "excluir": [
+    "valparaiso",
+    "vina del mar",
+    "concepcion",
+    "valdivia",
+    "temuco",
+    "la serena",
+    "coquimbo",
+    "antofagasta",
+    "puerto montt",
+    "talca",
+    "rancagua",
+    "iquique",
+    "arica",
+    "punta arenas",
+    "chillan",
+    "osorno",
+    "calama",
+    "copiapo",
+    "curico",
+    "los angeles"
+   ],
+   "direccion": "José Victorino Lastarria 307, Plaza Mulato Gil de Castro",
+   "comuna": "Santiago",
+   "fotos": [
+    {
+     "url": "https://mavi.uc.cl/wp-content/uploads/2026/04/DSC0896.jpg",
+     "mini": "https://mavi.uc.cl/wp-content/uploads/2026/04/DSC0896-300x200.jpg",
+     "pagina": "https://mavi.uc.cl/exposiciones-pasadas/exposicion-codigos-populares-en-mavi-uc/",
+     "credito": "Foto: sitio oficial de MAVI UC",
+     "descripcion": "Sala de exposición con pinturas en muros grises y piso de madera brillante"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Museo_de_Artes_Visuales%2C_Santiago_20230815.jpg/1280px-Museo_de_Artes_Visuales%2C_Santiago_20230815.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Museo_de_Artes_Visuales%2C_Santiago_20230815.jpg/330px-Museo_de_Artes_Visuales%2C_Santiago_20230815.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Museo_de_Artes_Visuales,_Santiago_20230815.jpg",
+     "credito": "Foto: Carlos yo · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Acceso al MAVI UC en la plaza Mulato Gil de Castro, con un mural de cerámica"
+    },
+    {
+     "url": "https://mavi.uc.cl/wp-content/uploads/2025/08/DSC0482-1536x1025.jpg",
+     "mini": "https://mavi.uc.cl/wp-content/uploads/2025/08/DSC0482-300x200.jpg",
+     "pagina": "https://mavi.uc.cl/exposiciones-pasadas/exposicion-utopias-del-sol-en-mavi-uc/",
+     "credito": "Foto: sitio oficial de MAVI UC",
+     "descripcion": "Sala con pinturas, esculturas sobre pedestales y obras apoyadas en el piso"
+    }
+   ]
+  },
+  {
+   "id": "matucana-100",
+   "nombre": "Matucana 100",
+   "alias": [
+    "matucana 100",
+    "m100"
+   ],
+   "direccion": "Av. Matucana 100",
+   "comuna": "Estación Central",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Teatro_Principal_del_Centro_Cultural_Matucana_100.jpg/1280px-Teatro_Principal_del_Centro_Cultural_Matucana_100.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Teatro_Principal_del_Centro_Cultural_Matucana_100.jpg/330px-Teatro_Principal_del_Centro_Cultural_Matucana_100.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Teatro_Principal_del_Centro_Cultural_Matucana_100.jpg",
+     "credito": "Foto: Vadim Vidal · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Vista aérea del Teatro Principal de Matucana 100, de madera y ladrillo, junto a la avenida"
+    },
+    {
+     "url": "https://www.m100.cl/wp-content/uploads/2021/02/galeria-03-1536x960.jpg",
+     "mini": "https://www.m100.cl/wp-content/uploads/2021/02/galeria-03-300x188.jpg",
+     "pagina": "https://www.m100.cl/espacios/",
+     "credito": "Foto: sitio oficial de Matucana 100",
+     "descripcion": "Galería de artes visuales en un antiguo galpón con vigas de madera y fotografías"
+    },
+    {
+     "url": "https://www.m100.cl/wp-content/uploads/2021/08/02_teatro-principal-1_baja.jpg",
+     "mini": "https://www.m100.cl/wp-content/uploads/2021/08/02_teatro-principal-1_baja-300x196.jpg",
+     "pagina": "https://www.m100.cl/espacios/",
+     "credito": "Foto: sitio oficial de Matucana 100",
+     "descripcion": "Butacas rojas y muros de madera del Teatro Principal, vistos desde el escenario"
+    }
+   ]
+  },
+  {
+   "id": "estacion-mapocho",
+   "nombre": "Centro Cultural Estación Mapocho",
+   "alias": [
+    "estacion mapocho"
+   ],
+   "direccion": "Plaza de la Cultura s/n",
+   "comuna": "Santiago",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Centro_Cultural_Estaci%C3%B3n_Mapocho%2C_Santiago_20200203_02.jpg/1280px-Centro_Cultural_Estaci%C3%B3n_Mapocho%2C_Santiago_20200203_02.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Centro_Cultural_Estaci%C3%B3n_Mapocho%2C_Santiago_20200203_02.jpg/330px-Centro_Cultural_Estaci%C3%B3n_Mapocho%2C_Santiago_20200203_02.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Centro_Cultural_Estaci%C3%B3n_Mapocho,_Santiago_20200203_02.jpg",
+     "credito": "Foto: Carlos Figueroa · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Fachada de la antigua estación de trenes con arcos, marquesina y cúpulas"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Estaci%C3%B3n_Mapocho_interior.jpg/960px-Estaci%C3%B3n_Mapocho_interior.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Estaci%C3%B3n_Mapocho_interior.jpg/330px-Estaci%C3%B3n_Mapocho_interior.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Mapocho_interior.jpg",
+     "credito": "Foto: andresumida · CC BY 2.0 · Wikimedia Commons",
+     "descripcion": "Nave central vacía con estructura metálica y ventanal en arco"
+    }
+   ]
+  },
+  {
+   "id": "biblioteca-nacional",
+   "nombre": "Biblioteca Nacional",
+   "alias": [
+    "biblioteca nacional"
+   ],
+   "excluir": [
+    "valparaiso",
+    "vina del mar",
+    "concepcion",
+    "valdivia",
+    "temuco",
+    "la serena",
+    "coquimbo",
+    "antofagasta",
+    "puerto montt",
+    "talca",
+    "rancagua",
+    "iquique",
+    "arica",
+    "punta arenas",
+    "chillan",
+    "osorno",
+    "calama",
+    "copiapo",
+    "curico",
+    "los angeles"
+   ],
+   "direccion": "Av. Libertador Bernardo O'Higgins 651",
+   "comuna": "Santiago",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Biblioteca_Nacional_de_Chile_%28Vista_Frontal%29.JPG/1280px-Biblioteca_Nacional_de_Chile_%28Vista_Frontal%29.JPG",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Biblioteca_Nacional_de_Chile_%28Vista_Frontal%29.JPG/330px-Biblioteca_Nacional_de_Chile_%28Vista_Frontal%29.JPG",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Biblioteca_Nacional_de_Chile_(Vista_Frontal).JPG",
+     "credito": "Foto: 3BRBS · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Fachada de la Biblioteca Nacional con su cúpula, frente a la Alameda"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Biblioteca_Nacional_-_Sala_Jos%C3%A9_Toribio_Medina.JPG/1280px-Biblioteca_Nacional_-_Sala_Jos%C3%A9_Toribio_Medina.JPG",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Biblioteca_Nacional_-_Sala_Jos%C3%A9_Toribio_Medina.JPG/330px-Biblioteca_Nacional_-_Sala_Jos%C3%A9_Toribio_Medina.JPG",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Biblioteca_Nacional_-_Sala_Jos%C3%A9_Toribio_Medina.JPG",
+     "credito": "Foto: Nereidas · CC BY-SA 3.0 · Wikimedia Commons",
+     "descripcion": "Sala Medina con galerías de madera tallada, un gran retrato y techo pintado"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/BNCL_-_Galer%C3%ADa_de_Cristal_%28Pasillo%29_-_Imagen_Horizontal_01.JPG/1280px-BNCL_-_Galer%C3%ADa_de_Cristal_%28Pasillo%29_-_Imagen_Horizontal_01.JPG",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/BNCL_-_Galer%C3%ADa_de_Cristal_%28Pasillo%29_-_Imagen_Horizontal_01.JPG/330px-BNCL_-_Galer%C3%ADa_de_Cristal_%28Pasillo%29_-_Imagen_Horizontal_01.JPG",
+     "pagina": "https://commons.wikimedia.org/wiki/File:BNCL_-_Galer%C3%ADa_de_Cristal_(Pasillo)_-_Imagen_Horizontal_01.JPG",
+     "credito": "Foto: Eduardo Testart · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Galería de Cristal, pasillo vidriado con paneles de una exposición"
+    }
+   ]
+  },
+  {
+   "id": "cnac",
+   "nombre": "Centro Nacional de Arte Contemporáneo (Cerrillos)",
+   "alias": [
+    "centro nacional de arte contemporaneo",
+    "cnac"
+   ],
+   "direccion": "Av. Pedro Aguirre Cerda 6100",
+   "comuna": "Cerrillos",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Cerrillos%2C_CNAC_20171201_fRF02.1.jpg/1280px-Cerrillos%2C_CNAC_20171201_fRF02.1.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Cerrillos%2C_CNAC_20171201_fRF02.1.jpg/330px-Cerrillos%2C_CNAC_20171201_fRF02.1.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Cerrillos,_CNAC_20171201_fRF02.1.jpg",
+     "credito": "Foto: Rodrigo Fernández · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Acceso del Centro Nacional de Arte Contemporáneo, antiguo terminal del aeropuerto de Cerrillos"
+    },
+    {
+     "url": "https://centronacionaldearte.cultura.gob.cl/wp-content/uploads/2024/03/img_6691-1536x1152.jpeg",
+     "mini": "https://centronacionaldearte.cultura.gob.cl/wp-content/uploads/2024/03/img_6691-380x285.jpeg",
+     "pagina": "https://centronacionaldearte.cultura.gob.cl/extendemos-todavia-somos-el-tiempo-arte-y-resistencia-a-50-anos-del-golpe-hasta-el-5-de-mayo/",
+     "credito": "Foto: sitio oficial del Centro Nacional de Arte Contemporáneo Cerrillos",
+     "descripcion": "Sala de exposición con ventanales, obras en muros blancos y visitantes"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Cerrillos%2C_CNAC_-Condores_de_Samuel_%26_Hector_Roman_20171201_fRF02.jpg/1280px-Cerrillos%2C_CNAC_-Condores_de_Samuel_%26_Hector_Roman_20171201_fRF02.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Cerrillos%2C_CNAC_-Condores_de_Samuel_%26_Hector_Roman_20171201_fRF02.jpg/330px-Cerrillos%2C_CNAC_-Condores_de_Samuel_%26_Hector_Roman_20171201_fRF02.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Cerrillos,_CNAC_-Condores_de_Samuel_%26_Hector_Roman_20171201_fRF02.jpg",
+     "credito": "Foto: Rodrigo Fernández · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Mural de cóndores en relieve sobre azulejos azules en el edificio del CNAC"
+    }
+   ]
+  },
+  {
+   "id": "museo-ralli",
+   "nombre": "Museo Ralli",
+   "alias": [
+    "museo ralli"
+   ],
+   "direccion": "Alonso de Sotomayor 4110",
+   "comuna": "Vitacura",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Colecci%C3%B3n_Ralli.jpg/1280px-Colecci%C3%B3n_Ralli.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Colecci%C3%B3n_Ralli.jpg/330px-Colecci%C3%B3n_Ralli.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Colecci%C3%B3n_Ralli.jpg",
+     "credito": "Foto: Francisca Yaksic · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Salas del museo con pinturas latinoamericanas y una escultura de tres mujeres en bronce"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Museo_Ralli_Santiago.jpg/1280px-Museo_Ralli_Santiago.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Museo_Ralli_Santiago.jpg/330px-Museo_Ralli_Santiago.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Museo_Ralli_Santiago.jpg",
+     "credito": "Foto: Francisca Yaksic · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Edificio rosado del Museo Ralli con escalinata y esculturas junto a la entrada"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/MuseoRalli.jpg/1280px-MuseoRalli.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/MuseoRalli.jpg/330px-MuseoRalli.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:MuseoRalli.jpg",
+     "credito": "Foto: Francisca Yaksic · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Entrada del museo con el letrero Museo Ralli y una escultura de dos figuras"
+    }
+   ]
+  },
+  {
+   "id": "cc-las-condes",
+   "nombre": "Centro Cultural Las Condes",
+   "alias": [
+    "centro cultural las condes"
+   ],
+   "direccion": "Av. Apoquindo 6570 (entrada por Nuestra Señora del Rosario 30)",
+   "comuna": "Las Condes",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Centro_Cultural_Las_Condes%2C_Las_Condes%2C_Santiago_20241006_01.jpg/1280px-Centro_Cultural_Las_Condes%2C_Las_Condes%2C_Santiago_20241006_01.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Centro_Cultural_Las_Condes%2C_Las_Condes%2C_Santiago_20241006_01.jpg/330px-Centro_Cultural_Las_Condes%2C_Las_Condes%2C_Santiago_20241006_01.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Centro_Cultural_Las_Condes,_Las_Condes,_Santiago_20241006_01.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Casona del Centro Cultural Las Condes al fondo de un parque con árboles y bancas"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Centro_Cultural_Las_Condes%2C_Las_Condes%2C_Santiago_20241006_04.jpg/1280px-Centro_Cultural_Las_Condes%2C_Las_Condes%2C_Santiago_20241006_04.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Centro_Cultural_Las_Condes%2C_Las_Condes%2C_Santiago_20241006_04.jpg/330px-Centro_Cultural_Las_Condes%2C_Las_Condes%2C_Santiago_20241006_04.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Centro_Cultural_Las_Condes,_Las_Condes,_Santiago_20241006_04.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Patio de la casona con el acceso a las salas de exposición y grandes tinajas"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Centro_Cultural_Las_Condes%2C_Las_Condes%2C_Santiago_20241006_02.jpg/1280px-Centro_Cultural_Las_Condes%2C_Las_Condes%2C_Santiago_20241006_02.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Centro_Cultural_Las_Condes%2C_Las_Condes%2C_Santiago_20241006_02.jpg/330px-Centro_Cultural_Las_Condes%2C_Las_Condes%2C_Santiago_20241006_02.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Centro_Cultural_Las_Condes,_Las_Condes,_Santiago_20241006_02.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Corredor de la casona con balcón de madera y esculturas en forma de corazón"
+    }
+   ]
+  },
+  {
+   "id": "museo-artes-decorativas",
+   "nombre": "Museo de Artes Decorativas",
+   "alias": [
+    "museo de artes decorativas",
+    "recoleta dominica"
+   ],
+   "direccion": "Av. Recoleta 683 (Centro Patrimonial Recoleta Dominica)",
+   "comuna": "Recoleta",
+   "fotos": [
+    {
+     "url": "https://www.artdec.gob.cl/sites/www.artdec.gob.cl/files/styles/full_1140_auto_/public/2021-07/IMG_9980.JPG?itok=AufWu4Pm",
+     "pagina": "https://www.artdec.gob.cl/servicios/prestamo-de-salones",
+     "credito": "Foto: sitio oficial del Museo de Artes Decorativas",
+     "descripcion": "Patio del convento de la Recoleta Dominica con galerías amarillas, jardín y pendones"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Centro_Patrimonial_Recoleta_Dominica%2C_Recoleta%2C_Santiago_20230324_03.jpg/1280px-Centro_Patrimonial_Recoleta_Dominica%2C_Recoleta%2C_Santiago_20230324_03.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Centro_Patrimonial_Recoleta_Dominica%2C_Recoleta%2C_Santiago_20230324_03.jpg/330px-Centro_Patrimonial_Recoleta_Dominica%2C_Recoleta%2C_Santiago_20230324_03.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Centro_Patrimonial_Recoleta_Dominica,_Recoleta,_Santiago_20230324_03.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Edificio rojo del Centro Patrimonial Recoleta Dominica con corredores y balcones"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Museo_de_Artes_Decorativas%2C_Recoleta%2C_Santiago_20230324_01.jpg/1280px-Museo_de_Artes_Decorativas%2C_Recoleta%2C_Santiago_20230324_01.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Museo_de_Artes_Decorativas%2C_Recoleta%2C_Santiago_20230324_01.jpg/330px-Museo_de_Artes_Decorativas%2C_Recoleta%2C_Santiago_20230324_01.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Museo_de_Artes_Decorativas,_Recoleta,_Santiago_20230324_01.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Vitrina con candelabros y objetos de plata de la colección del museo"
+    }
+   ]
+  },
+  {
+   "id": "museo-moda",
+   "nombre": "Museo de la Moda",
+   "alias": [
+    "museo de la moda"
+   ],
+   "direccion": "Av. Vitacura 4562",
+   "comuna": "Vitacura",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Museo_de_la_Moda%2C_Vitacura%2C_Santiago_20250804_01.jpg/1280px-Museo_de_la_Moda%2C_Vitacura%2C_Santiago_20250804_01.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Museo_de_la_Moda%2C_Vitacura%2C_Santiago_20250804_01.jpg/330px-Museo_de_la_Moda%2C_Vitacura%2C_Santiago_20250804_01.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Museo_de_la_Moda,_Vitacura,_Santiago_20250804_01.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Casa moderna del Museo de la Moda rodeada de jardín y árboles"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Museo_de_la_Moda%2C_Vitacura%2C_Santiago_20260322_01.jpg/1280px-Museo_de_la_Moda%2C_Vitacura%2C_Santiago_20260322_01.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Museo_de_la_Moda%2C_Vitacura%2C_Santiago_20260322_01.jpg/330px-Museo_de_la_Moda%2C_Vitacura%2C_Santiago_20260322_01.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Museo_de_la_Moda,_Vitacura,_Santiago_20260322_01.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Portón y muro de piedra con el letrero del Museo de la Moda en avenida Vitacura"
+    }
+   ]
+  },
+  {
+   "id": "museo-violeta-parra",
+   "nombre": "Museo Violeta Parra",
+   "alias": [
+    "museo violeta parra"
+   ],
+   "direccion": "Av. Vicuña Mackenna 37",
+   "comuna": "Santiago",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Museo_Violeta_Parra%2C_Santiago_20260411_04.jpg/1280px-Museo_Violeta_Parra%2C_Santiago_20260411_04.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Museo_Violeta_Parra%2C_Santiago_20260411_04.jpg/330px-Museo_Violeta_Parra%2C_Santiago_20260411_04.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Museo_Violeta_Parra,_Santiago_20260411_04.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Sala con pinturas de Violeta Parra en muros oscuros y piso de madera"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Museo_Violeta_Parra%2C_Santiago_20260411_02.jpg/1280px-Museo_Violeta_Parra%2C_Santiago_20260411_02.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Museo_Violeta_Parra%2C_Santiago_20260411_02.jpg/330px-Museo_Violeta_Parra%2C_Santiago_20260411_02.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Museo_Violeta_Parra,_Santiago_20260411_02.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Espacio interior de hormigón con ventanal de celosía y público viendo una proyección"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Museo_Violeta_Parra_-acceso_por_VicMac_f01.jpg/1280px-Museo_Violeta_Parra_-acceso_por_VicMac_f01.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Museo_Violeta_Parra_-acceso_por_VicMac_f01.jpg/330px-Museo_Violeta_Parra_-acceso_por_VicMac_f01.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Museo_Violeta_Parra_-acceso_por_VicMac_f01.jpg",
+     "credito": "Foto: Rodrigo Fernández · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Acceso al museo por Vicuña Mackenna, con el letrero y un mural en la fachada"
+    }
+   ]
+  },
+  {
+   "id": "galeria-gabriela-mistral",
+   "nombre": "Galería Gabriela Mistral",
+   "alias": [
+    "galeria gabriela mistral"
+   ],
+   "direccion": "Av. Libertador Bernardo O'Higgins 1381",
+   "comuna": "Santiago",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Galer%C3%ADa_Gabriela_Mistral%2C_Santiago_20230310.jpg/1280px-Galer%C3%ADa_Gabriela_Mistral%2C_Santiago_20230310.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Galer%C3%ADa_Gabriela_Mistral%2C_Santiago_20230310.jpg/330px-Galer%C3%ADa_Gabriela_Mistral%2C_Santiago_20230310.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Galer%C3%ADa_Gabriela_Mistral,_Santiago_20230310.jpg",
+     "credito": "Foto: Carlos yo · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Vitrina y letrero de la Galería Gabriela Mistral, galería de arte contemporáneo en la Alameda"
+    }
+   ]
+  },
+  {
+   "id": "palacio-cousino",
+   "nombre": "Palacio Cousiño",
+   "alias": [
+    "palacio cousino"
+   ],
+   "direccion": "Dieciocho 438",
+   "comuna": "Santiago",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Palacio_Cousino_20171129_fRF01.jpg/1280px-Palacio_Cousino_20171129_fRF01.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Palacio_Cousino_20171129_fRF01.jpg/330px-Palacio_Cousino_20171129_fRF01.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Palacio_Cousino_20171129_fRF01.jpg",
+     "credito": "Foto: Rodrigo Fernández · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Fachada del Palacio Cousiño con escalinata y leones de bronce en el jardín"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Palacio_Cousino_20171129_fRF04.jpg/1280px-Palacio_Cousino_20171129_fRF04.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Palacio_Cousino_20171129_fRF04.jpg/330px-Palacio_Cousino_20171129_fRF04.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Palacio_Cousino_20171129_fRF04.jpg",
+     "credito": "Foto: Rodrigo Fernández · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Vestíbulo con paneles de mármol, lámpara colgante, jarrones y piso de mosaico"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Palacio_Cousino_20171129_fRF13.jpg/1280px-Palacio_Cousino_20171129_fRF13.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Palacio_Cousino_20171129_fRF13.jpg/330px-Palacio_Cousino_20171129_fRF13.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Palacio_Cousino_20171129_fRF13.jpg",
+     "credito": "Foto: Rodrigo Fernández · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Jardín de invierno de fierro y vidrio adosado al palacio"
+    }
+   ]
+  },
+  {
+   "id": "casa-museo-santa-rosa-apoquindo",
+   "nombre": "Casa Museo Santa Rosa de Apoquindo",
+   "alias": [
+    "casa museo santa rosa de apoquindo",
+    "santa rosa de apoquindo"
+   ],
+   "direccion": "Av. Padre Hurtado Sur 1195",
+   "comuna": "Las Condes",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Casa_Museo_Santa_Rosa_de_Apoquindo_02.jpg/1280px-Casa_Museo_Santa_Rosa_de_Apoquindo_02.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Casa_Museo_Santa_Rosa_de_Apoquindo_02.jpg/330px-Casa_Museo_Santa_Rosa_de_Apoquindo_02.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Casa_Museo_Santa_Rosa_de_Apoquindo_02.jpg",
+     "credito": "Foto: Rodrigo Fernández · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Casona amarilla con corredor de columnas blancas y jardín de la Casa Museo Santa Rosa de Apoquindo"
+    }
+   ]
+  },
+  {
+   "id": "mssa",
+   "nombre": "Museo de la Solidaridad Salvador Allende",
+   "alias": [
+    "museo de la solidaridad salvador allende",
+    "museo de la solidaridad",
+    "mssa"
+   ],
+   "direccion": "Av. República 475",
+   "comuna": "Santiago",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Museo_de_la_Solidaridad_Salvador_Allende.jpg/1280px-Museo_de_la_Solidaridad_Salvador_Allende.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Museo_de_la_Solidaridad_Salvador_Allende.jpg/330px-Museo_de_la_Solidaridad_Salvador_Allende.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Museo_de_la_Solidaridad_Salvador_Allende.jpg",
+     "credito": "Foto: Museo de la Solidaridad Salvador Allende · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Fachada de ladrillo y piedra del palacete del Museo de la Solidaridad Salvador Allende, en calle República"
+    },
+    {
+     "url": "https://www.mssa.cl/wp-content/uploads/2022/10/hallcentral_01b-1536x1024.jpg",
+     "mini": "https://www.mssa.cl/wp-content/uploads/2022/10/hallcentral_01b-360x240.jpg",
+     "pagina": "https://www.mssa.cl/el-museo/la-casa/",
+     "credito": "Foto: sitio oficial del Museo de la Solidaridad Salvador Allende",
+     "descripcion": "Hall central del MSSA con arcos, piso de parqué y afiches de una exposición en los muros"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Museo_de_la_Solidaridad_Salvador_Allende_en_2024_10.jpg/1280px-Museo_de_la_Solidaridad_Salvador_Allende_en_2024_10.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Museo_de_la_Solidaridad_Salvador_Allende_en_2024_10.jpg/330px-Museo_de_la_Solidaridad_Salvador_Allende_en_2024_10.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Museo_de_la_Solidaridad_Salvador_Allende_en_2024_10.jpg",
+     "credito": "Foto: TomasVial · CC0 · Wikimedia Commons",
+     "descripcion": "Casona de piedra y ladrillo del MSSA en calle República, con patio adoquinado y bandera roja"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Museo_de_la_Solidaridad_Salvador_Allende_en_2024_04.jpg/1280px-Museo_de_la_Solidaridad_Salvador_Allende_en_2024_04.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Museo_de_la_Solidaridad_Salvador_Allende_en_2024_04.jpg/330px-Museo_de_la_Solidaridad_Salvador_Allende_en_2024_04.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Museo_de_la_Solidaridad_Salvador_Allende_en_2024_04.jpg",
+     "credito": "Foto: TomasVial · CC0 · Wikimedia Commons",
+     "descripcion": "Escalera de madera tallada del museo, iluminada por ventanales con vidrios emplomados"
+    }
+   ]
+  },
+  {
+   "id": "parque-cultural-valparaiso",
+   "nombre": "Parque Cultural de Valparaíso",
+   "alias": [
+    "parque cultural de valparaiso",
+    "parque cultural valparaiso",
+    "ex carcel de valparaiso",
+    "parque cultural ex carcel"
+   ],
+   "direccion": "Cárcel 471, Cerro Cárcel",
+   "comuna": "Valparaíso",
+   "fotos": [
+    {
+     "url": "https://parquecultural.cl/wp-content/uploads/2021/08/patio-central.jpg",
+     "pagina": "https://parquecultural.cl/espacios/",
+     "credito": "Foto: sitio oficial del Parque Cultural de Valparaíso",
+     "descripcion": "Jardines del Parque Cultural de Valparaíso con la antigua casa de pólvora y el edificio de la ex cárcel"
+    },
+    {
+     "url": "https://parquecultural.cl/wp-content/uploads/2021/07/home-1.jpg",
+     "pagina": "https://parquecultural.cl/espacios/",
+     "credito": "Foto: sitio oficial del Parque Cultural de Valparaíso",
+     "descripcion": "Edificio de Difusión del Parque Cultural, volumen de hormigón y vidrio sobre una plaza con público"
+    }
+   ]
+  },
+  {
+   "id": "biblioteca-recoleta-dominica",
+   "nombre": "Biblioteca Patrimonial Recoleta Dominica",
+   "alias": [
+    "biblioteca patrimonial recoleta dominica",
+    "biblioteca recoleta dominica"
+   ],
+   "direccion": "Av. Recoleta 683",
+   "comuna": "Recoleta",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Biblioteca_Patrimonial_Recoleta_Dominica%2C_Recoleta%2C_Santiago_20230324_01.jpg/1280px-Biblioteca_Patrimonial_Recoleta_Dominica%2C_Recoleta%2C_Santiago_20230324_01.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Biblioteca_Patrimonial_Recoleta_Dominica%2C_Recoleta%2C_Santiago_20230324_01.jpg/330px-Biblioteca_Patrimonial_Recoleta_Dominica%2C_Recoleta%2C_Santiago_20230324_01.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Biblioteca_Patrimonial_Recoleta_Dominica,_Recoleta,_Santiago_20230324_01.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Sala de la Biblioteca Patrimonial Recoleta Dominica con estanterías de madera repletas de libros antiguos"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Biblioteca_Patrimonial_Recoleta_Dominica%2C_Recoleta%2C_Santiago_20230324_04.jpg/1280px-Biblioteca_Patrimonial_Recoleta_Dominica%2C_Recoleta%2C_Santiago_20230324_04.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Biblioteca_Patrimonial_Recoleta_Dominica%2C_Recoleta%2C_Santiago_20230324_04.jpg/330px-Biblioteca_Patrimonial_Recoleta_Dominica%2C_Recoleta%2C_Santiago_20230324_04.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Biblioteca_Patrimonial_Recoleta_Dominica,_Recoleta,_Santiago_20230324_04.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Libros antiguos encuadernados en pergamino y cuero en los estantes de la biblioteca dominica"
+    }
+   ]
+  },
+  {
+   "id": "galeria-patricia-ready",
+   "nombre": "Galería Patricia Ready",
+   "alias": [
+    "galeria patricia ready",
+    "patricia ready"
+   ],
+   "direccion": "Espoz 3125",
+   "comuna": "Vitacura",
+   "fotos": [
+    {
+     "url": "https://cdn.prod.website-files.com/6543bd781d56f2e86e749809/6a4ff8d3e86cd572fc3138df_ginkgo-muro-p-1080.jpg",
+     "mini": "https://cdn.prod.website-files.com/6543bd781d56f2e86e749809/6a4ff8d3e86cd572fc3138df_ginkgo-muro-p-500.jpg",
+     "pagina": "https://galeriapready.cl/",
+     "credito": "Foto: sitio oficial de Galería Patricia Ready",
+     "descripcion": "Muro de hormigón de la galería con ginkgos amarillos y una escultura de piedra en el jardín"
+    }
+   ]
+  },
+  {
+   "id": "aninat-galeria",
+   "nombre": "Aninat Galería",
+   "alias": [
+    "aninat galeria",
+    "galeria aninat",
+    "galeria isabel aninat",
+    "isabel aninat"
+   ],
+   "direccion": "Alonso de Córdova 4355",
+   "comuna": "Vitacura",
+   "fotos": [
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/5d93621cc1ed84125185a315/a1a1f96a-587a-4cd1-9f5e-6f9927b27669/WhatsApp%2BImage%2B2021-11-08%2Bat%2B18.05.35.jpg?format=1000w",
+     "mini": "https://images.squarespace-cdn.com/content/v1/5d93621cc1ed84125185a315/a1a1f96a-587a-4cd1-9f5e-6f9927b27669/WhatsApp%2BImage%2B2021-11-08%2Bat%2B18.05.35.jpg?format=500w",
+     "pagina": "https://www.aninatgaleria.org/nosotros",
+     "credito": "Foto: sitio oficial de Aninat Galería",
+     "descripcion": "Fachada vidriada de Aninat Galería de Arte con su letrero y obras visibles desde la vereda"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/5d93621cc1ed84125185a315/ebd550c5-2e47-4951-a681-1e74681551c1/WhatsApp+Image+2021-11-08+at+18.06.55+%281%29.jpeg?format=1000w",
+     "mini": "https://images.squarespace-cdn.com/content/v1/5d93621cc1ed84125185a315/ebd550c5-2e47-4951-a681-1e74681551c1/WhatsApp+Image+2021-11-08+at+18.06.55+%281%29.jpeg?format=500w",
+     "pagina": "https://www.aninatgaleria.org/nosotros",
+     "credito": "Foto: sitio oficial de Aninat Galería",
+     "descripcion": "Sala de la galería con pinturas en los muros y una instalación de cajas de luz al centro"
+    }
+   ]
+  },
+  {
+   "id": "suizspacio-metro-nunoa",
+   "nombre": "Suizspacio (Metro Ñuñoa)",
+   "alias": [
+    "suizspacio"
+   ],
+   "direccion": "Estación Ñuñoa (combinación Líneas 3 y 6), nivel -3",
+   "comuna": "Ñuñoa",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Exposicion_Roberto_Montandon%2C_Suizspacio_Metro_%C3%91u%C3%B1oa.jpg/1280px-Exposicion_Roberto_Montandon%2C_Suizspacio_Metro_%C3%91u%C3%B1oa.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Exposicion_Roberto_Montandon%2C_Suizspacio_Metro_%C3%91u%C3%B1oa.jpg/330px-Exposicion_Roberto_Montandon%2C_Suizspacio_Metro_%C3%91u%C3%B1oa.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Exposicion_Roberto_Montandon,_Suizspacio_Metro_%C3%91u%C3%B1oa.jpg",
+     "credito": "Foto: Sfs90 · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Sala Suizspacio dentro de la estación Ñuñoa, con paneles de fotos colgantes y techo rojo"
+    }
+   ]
+  },
+  {
+   "id": "mut-mercado-urbano-tobalaba",
+   "nombre": "MUT, Mercado Urbano Tobalaba",
+   "alias": [
+    "mercado urbano tobalaba",
+    "mut mercado urbano"
+   ],
+   "direccion": "Av. Apoquindo 2730",
+   "comuna": "Las Condes",
+   "fotos": [
+    {
+     "url": "https://mut.cl/cms/wp-content/uploads/2026/06/MUT-b3-2-1-1024x683.jpg",
+     "mini": "https://mut.cl/cms/wp-content/uploads/2026/06/MUT-b3-2-1-300x200.jpg",
+     "pagina": "https://mut.cl/es/piso/piso-3-la-estacion/",
+     "credito": "Foto: sitio oficial de MUT",
+     "descripcion": "Acceso al piso -3 La Estación, con gran reloj y el letrero Mercado Urbano Tobalaba"
+    },
+    {
+     "url": "https://mut.cl/cms/wp-content/uploads/2026/07/7U8A2367_2-1536x1024.jpg",
+     "mini": "https://mut.cl/cms/wp-content/uploads/2026/07/7U8A2367_2-300x200.jpg",
+     "pagina": "https://mut.cl/es/pisos/",
+     "credito": "Foto: sitio oficial de MUT",
+     "descripcion": "Terrazas del MUT con plantas colgantes, mesas rojas y locales en varios pisos"
+    }
+   ]
+  },
+  {
+   "id": "sala-mhn-metro-plaza-de-armas",
+   "nombre": "Metro Plaza de Armas",
+   "alias": [
+    "estacion plaza de armas",
+    "metro plaza de armas"
+   ],
+   "excluir": [
+    "valparaiso",
+    "vina del mar",
+    "concepcion",
+    "valdivia",
+    "temuco",
+    "la serena",
+    "coquimbo",
+    "antofagasta",
+    "puerto montt",
+    "talca",
+    "rancagua",
+    "iquique",
+    "arica",
+    "punta arenas",
+    "chillan",
+    "osorno",
+    "calama",
+    "copiapo",
+    "curico",
+    "los angeles"
+   ],
+   "direccion": "Estación Plaza de Armas, Metro de Santiago",
+   "comuna": "Santiago",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Acceso_Estaci%C3%B3n_de_Metro_Plaza_de_Armas.jpg/1280px-Acceso_Estaci%C3%B3n_de_Metro_Plaza_de_Armas.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Acceso_Estaci%C3%B3n_de_Metro_Plaza_de_Armas.jpg/330px-Acceso_Estaci%C3%B3n_de_Metro_Plaza_de_Armas.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Acceso_Estaci%C3%B3n_de_Metro_Plaza_de_Armas.jpg",
+     "credito": "Foto: Rjcastillo · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Acceso amarillo a la estación Plaza de Armas del Metro, con su logo y la plaza al fondo"
+    }
+   ]
+  },
+  {
+   "id": "museo-baburizza",
+   "nombre": "Palacio Baburizza (Museo de Bellas Artes de Valparaíso)",
+   "alias": [
+    "palacio baburizza",
+    "museo baburizza",
+    "museo de bellas artes de valparaiso"
+   ],
+   "direccion": "Paseo Yugoslavo 176, Cerro Alegre",
+   "comuna": "Valparaíso",
+   "fotos": [
+    {
+     "url": "https://www.museobaburizza.cl/wp-content/uploads/2026/02/BABURIZZA052-1024x681.jpg",
+     "mini": "https://www.museobaburizza.cl/wp-content/uploads/2026/02/BABURIZZA052-300x200.jpg",
+     "pagina": "https://www.museobaburizza.cl/museo/",
+     "credito": "Foto: sitio oficial del Museo Baburizza",
+     "descripcion": "Fachada blanca del Palacio Baburizza con torre, balcones y aleros de madera"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Palacio_Baburizza%2C_Valpara%C3%ADso.jpg/1280px-Palacio_Baburizza%2C_Valpara%C3%ADso.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Palacio_Baburizza%2C_Valpara%C3%ADso.jpg/330px-Palacio_Baburizza%2C_Valpara%C3%ADso.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Palacio_Baburizza,_Valpara%C3%ADso.jpg",
+     "credito": "Foto: FcaSeFi · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Palacio Baburizza visto desde el paseo Yugoslavo, con visitantes en la entrada"
+    }
+   ]
+  },
+  {
+   "id": "mapa-museo-arte-popular",
+   "nombre": "Museo de Arte Popular Americano (MAPA)",
+   "alias": [
+    "museo de arte popular americano",
+    "museo de arte popular americano tomas lago"
+   ],
+   "direccion": "Av. Libertador Bernardo O'Higgins 227, Edificio B, nivel -1 (GAM)",
+   "comuna": "Santiago",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Museo_de_Arte_Popular_Americano%2C_Centro_Cultural_Gabriela_Mistral%2C_Santiago_20250617_01.jpg/1280px-Museo_de_Arte_Popular_Americano%2C_Centro_Cultural_Gabriela_Mistral%2C_Santiago_20250617_01.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Museo_de_Arte_Popular_Americano%2C_Centro_Cultural_Gabriela_Mistral%2C_Santiago_20250617_01.jpg/330px-Museo_de_Arte_Popular_Americano%2C_Centro_Cultural_Gabriela_Mistral%2C_Santiago_20250617_01.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Museo_de_Arte_Popular_Americano,_Centro_Cultural_Gabriela_Mistral,_Santiago_20250617_01.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Entrada vidriada de la Sala de Arte Popular Americano, con puertas de cobre, en el GAM"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Museo_de_Arte_Popular_Americano%2C_Centro_Cultural_Gabriela_Mistral%2C_Santiago_20250617_03.jpg/960px-Museo_de_Arte_Popular_Americano%2C_Centro_Cultural_Gabriela_Mistral%2C_Santiago_20250617_03.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Museo_de_Arte_Popular_Americano%2C_Centro_Cultural_Gabriela_Mistral%2C_Santiago_20250617_03.jpg/330px-Museo_de_Arte_Popular_Americano%2C_Centro_Cultural_Gabriela_Mistral%2C_Santiago_20250617_03.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Museo_de_Arte_Popular_Americano,_Centro_Cultural_Gabriela_Mistral,_Santiago_20250617_03.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Sala del MAPA con piezas de cerámica popular sobre pedestales y piso de madera"
+    }
+   ]
+  },
+  {
+   "id": "blondie",
+   "nombre": "Blondie",
+   "alias": [
+    "blondie"
+   ],
+   "direccion": "Av. Libertador Bernardo O'Higgins 2879",
+   "comuna": "Santiago",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Horregias_en_Blondie.jpg/1280px-Horregias_en_Blondie.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Horregias_en_Blondie.jpg/330px-Horregias_en_Blondie.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Horregias_en_Blondie.jpg",
+     "credito": "Foto: Pastaiola · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Escenario con pantallas gigantes y focos de colores, una banda tocando y la pista llena de público"
+    },
+    {
+     "url": "https://uchile-media-storage.nyc3.cdn.digitaloceanspaces.com/2024/05/Blondie-abrira-sus-puertas-para-el-dia-de-los-patrimonios.png",
+     "pagina": "https://radio.uchile.cl/2024/05/16/por-primera-vez-en-su-historia-la-mitica-discoteca-blondie-abrira-sus-puertas-para-el-dia-de-los-patrimonios/",
+     "credito": "Foto: Blondie Club (vía Diario y Radio Universidad de Chile)",
+     "descripcion": "Muro de ladrillo con el letrero BLONDIE iluminado, parlantes y cabina de DJ bajo luz roja"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Blondie%2C_Santiago_20220619.jpg/1280px-Blondie%2C_Santiago_20220619.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Blondie%2C_Santiago_20220619.jpg/330px-Blondie%2C_Santiago_20220619.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Blondie,_Santiago_20220619.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Fachada de día en la Alameda: letrero BLONDIE, logo circular con la B y cortina metálica cerrada"
+    }
+   ]
+  }
+ ],
+ "referenciales": {
+  "medieval": [
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Serbia_Medieval.jpg",
+    "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Serbia_Medieval.jpg/330px-Serbia_Medieval.jpg",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Serbia_Medieval.jpg",
+    "credito": "Foto: Serbiosunidos · CC BY-SA 4.0 · Wikimedia Commons",
+    "descripcion": "Recreacionistas con cascos, cotas de malla y escudos redondos pintados en una feria medieval"
+   },
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Mercado_medieval_danzas.jpg/1280px-Mercado_medieval_danzas.jpg",
+    "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Mercado_medieval_danzas.jpg/330px-Mercado_medieval_danzas.jpg",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Mercado_medieval_danzas.jpg",
+    "credito": "Foto: Xemenendura · CC BY-SA 4.0 · Wikimedia Commons",
+    "descripcion": "Mercado medieval con toldos, banderas y visitantes en una plaza de Ávila, España"
+   }
+  ],
+  "yokai": [
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Kitsune_no_Gyoretsu_Starts.jpg/1280px-Kitsune_no_Gyoretsu_Starts.jpg",
+    "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Kitsune_no_Gyoretsu_Starts.jpg/330px-Kitsune_no_Gyoretsu_Starts.jpg",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Kitsune_no_Gyoretsu_Starts.jpg",
+    "credito": "Foto: Fred Cherrygarden · CC BY-SA 4.0 · Wikimedia Commons",
+    "descripcion": "Desfile nocturno con grandes máscaras de zorro kitsune y faroles en un festival de Tokio"
+   },
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Shozoku_Inari_Fox_Masks.jpg/1280px-Shozoku_Inari_Fox_Masks.jpg",
+    "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Shozoku_Inari_Fox_Masks.jpg/330px-Shozoku_Inari_Fox_Masks.jpg",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Shozoku_Inari_Fox_Masks.jpg",
+    "credito": "Foto: Fred Cherrygarden · CC BY-SA 4.0 · Wikimedia Commons",
+    "descripcion": "Máscaras de zorro gigantes sobre hileras de faroles de papel japoneses encendidos"
+   }
+  ],
+  "anime": [
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Fuerzas_Especiales_Ginyu.jpg/1280px-Fuerzas_Especiales_Ginyu.jpg",
+    "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Fuerzas_Especiales_Ginyu.jpg/330px-Fuerzas_Especiales_Ginyu.jpg",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Fuerzas_Especiales_Ginyu.jpg",
+    "credito": "Foto: Rjcastillo · CC BY-SA 4.0 · Wikimedia Commons",
+    "descripcion": "Cosplayers de las Fuerzas Especiales Ginyu de Dragon Ball en la Comic Con Chile 2026"
+   }
+  ],
+  "ilustracion": [
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/FLUKE_Mini-Comics_%26_Zine_Festival_2018_interior.jpg/1280px-FLUKE_Mini-Comics_%26_Zine_Festival_2018_interior.jpg",
+    "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/FLUKE_Mini-Comics_%26_Zine_Festival_2018_interior.jpg/330px-FLUKE_Mini-Comics_%26_Zine_Festival_2018_interior.jpg",
+    "pagina": "https://commons.wikimedia.org/wiki/File:FLUKE_Mini-Comics_%26_Zine_Festival_2018_interior.jpg",
+    "credito": "Foto: Saginaw-hitchhiker · CC BY-SA 4.0 · Wikimedia Commons",
+    "descripcion": "Mesas con cómics, fanzines e ilustraciones en una feria bajo guirnaldas de luces"
+   }
+  ],
+  "metal": [
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orategod_Metal_fest_2013.jpg/960px-Orategod_Metal_fest_2013.jpg",
+    "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orategod_Metal_fest_2013.jpg/330px-Orategod_Metal_fest_2013.jpg",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Orategod_Metal_fest_2013.jpg",
+    "credito": "Foto: Alex.corpse.acosta · CC BY-SA 3.0 · Wikimedia Commons",
+    "descripcion": "Banda chilena de death metal tocando en un festival al aire libre frente al público"
+   }
+  ],
+  "fantasia": [
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Play_Modena_2015_-_Wargame_tridimensionale_fantasy.jpg/1280px-Play_Modena_2015_-_Wargame_tridimensionale_fantasy.jpg",
+    "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Play_Modena_2015_-_Wargame_tridimensionale_fantasy.jpg/330px-Play_Modena_2015_-_Wargame_tridimensionale_fantasy.jpg",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Play_Modena_2015_-_Wargame_tridimensionale_fantasy.jpg",
+    "credito": "Foto: Moroboshi · CC BY-SA 3.0 · Wikimedia Commons",
+    "descripcion": "Mesa de wargame de fantasía con castillo, aldea y bosque de miniaturas pintadas"
+   },
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Warhammer_AoS_Lind.jpg/960px-Warhammer_AoS_Lind.jpg",
+    "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Warhammer_AoS_Lind.jpg/330px-Warhammer_AoS_Lind.jpg",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Warhammer_AoS_Lind.jpg",
+    "credito": "Foto: Timothy Lind · CC BY-SA 4.0 · Wikimedia Commons",
+    "descripcion": "Partida de Warhammer con ejércitos de miniaturas sobre un tablero de juego"
+   }
+  ],
+  "museos": [
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/National_Museum_of_Natural_History_main_hall_Santiago_Chile_2009_May_24.JPG/1280px-National_Museum_of_Natural_History_main_hall_Santiago_Chile_2009_May_24.JPG",
+    "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/National_Museum_of_Natural_History_main_hall_Santiago_Chile_2009_May_24.JPG/330px-National_Museum_of_Natural_History_main_hall_Santiago_Chile_2009_May_24.JPG",
+    "pagina": "https://commons.wikimedia.org/wiki/File:National_Museum_of_Natural_History_main_hall_Santiago_Chile_2009_May_24.JPG",
+    "credito": "Foto: Jason Quinn · CC BY-SA 3.0 · Wikimedia Commons",
+    "descripcion": "Visitantes en el salón central del Museo Nacional de Historia Natural, con esqueleto de ballena"
+   }
+  ],
+  "arte": [
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Interior_Museo_Nacional_de_Bellas_Artes.jpg/1280px-Interior_Museo_Nacional_de_Bellas_Artes.jpg",
+    "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Interior_Museo_Nacional_de_Bellas_Artes.jpg/330px-Interior_Museo_Nacional_de_Bellas_Artes.jpg",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Interior_Museo_Nacional_de_Bellas_Artes.jpg",
+    "credito": "Foto: Santiago Vicente Calvo · CC BY-SA 3.0 · Wikimedia Commons",
+    "descripcion": "Hall del Museo Nacional de Bellas Artes con esculturas y visitantes bajo la cúpula"
+   }
+  ]
+ }
+}

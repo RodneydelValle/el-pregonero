@@ -1,52 +1,1597 @@
 {
  "version": 1,
- "actualizado": "2026-11-06T19:21-03:00",
+ "actualizado": "2026-11-07T03:53-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-06T13:56-03:00",
-  "origen": "github-actions",
-  "eventos_nuevos": 29,
+  "fecha": "2026-11-07T03:53-03:00",
+  "origen": "claude",
+  "eventos_nuevos": 57,
   "nuevos_ids": [
-   "23e15c1070",
-   "cb4dec6816",
-   "f47a168741",
-   "c003178ec9",
-   "41da085532",
-   "f7065bcba6",
-   "9345063da7",
-   "ebc364f471",
-   "aefaf9f415",
-   "3e8348281a",
-   "57d089bde2",
-   "c9eb8aa421",
-   "db33561036",
-   "6a9c1df7fe",
-   "68516374f1",
-   "26b4265cd9",
-   "3beeed3811",
-   "5197cbd0b7",
-   "356fc2e953",
-   "09cd96f442",
-   "40f8528656",
-   "3b27b430ae",
-   "32ed296aa6",
-   "9793488d91",
-   "be4111a5ae",
-   "41bd8863fb",
-   "9b68238c51",
-   "d30fc6d897",
-   "c1981fd414"
+   "ae5b603f04",
+   "6dfafa8970",
+   "4e82abe6b7",
+   "44a03de0a7",
+   "0bdfd1df65",
+   "29e7f87994",
+   "94601c7845",
+   "c32f483a1c",
+   "158c42778a",
+   "8828debb68",
+   "33a119f815",
+   "0ba9aaeefc",
+   "707fe2b3b9",
+   "bb4f9dcd21",
+   "ac7820b39e",
+   "3aa2a057f2",
+   "347d5f69b6",
+   "5ca969e3c6",
+   "2683b909e8",
+   "526eb4a6d4",
+   "aff6ce01a9",
+   "0ab446f27c",
+   "fc0d3c3035",
+   "dfa0189c0c",
+   "4a3298ee26",
+   "4d5808d49a",
+   "0af68d4eb8",
+   "6e98a34c41",
+   "7fc2bdb573",
+   "ed05e88989",
+   "362b1bc210",
+   "02b56d99df",
+   "54addd7304",
+   "e96e111ea3",
+   "b3eac2efa6",
+   "fcbb3f5a07",
+   "f8f38aaee7",
+   "daa19ce599",
+   "25228fa03c",
+   "e09eb1beeb",
+   "ae07a2796c",
+   "5579008677",
+   "3636e60042",
+   "0997d6f0b1",
+   "562569f3c4",
+   "bfb912b5ba",
+   "3b3025cb65",
+   "c74849a44f",
+   "43a0dd1f1a",
+   "d705a6b195",
+   "fe429a2453",
+   "7010ac604a",
+   "a2ea3899ab",
+   "fbe7d8bf46",
+   "2b04adba08",
+   "3f73ac8f60",
+   "20d77619ca"
   ],
-  "llamadas_ia": 70,
-  "ia_sin_cupo": true,
-  "paginas_revisadas": 52,
-  "busquedas": 53,
-  "fuentes_fijas": 6,
-  "errores": 5,
-  "redes_vistas": 81
+  "llamadas_ia": 0,
+  "ia_sin_cupo": false,
+  "agregados_a_mano": 58
  },
- "total": 39,
+ "total": 96,
  "eventos": [
+  {
+   "titulo": "Un archivo en construcción: la obra de Tito Vásquez",
+   "categoria": "arte",
+   "fecha_inicio": "2025-08-28",
+   "fecha_fin": "2026-11-27",
+   "hora": null,
+   "horario": "Lun a jue 9:15–18:00; vie 9:15–17:00; sáb 9:15–14:00",
+   "lugar": "Biblioteca Nacional de Chile",
+   "direccion": "Av. Libertador Bernardo O'Higgins 651",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Primera mirada al archivo de unos 20 mil negativos del fotógrafo Tito Vásquez: retratos, Santiago, CORFO, danza, teatro y el Foto Cine Club. Últimas semanas.",
+   "imagen": "https://www.bibliotecanacional.gob.cl/sites/www.bibliotecanacional.gob.cl/files/styles/4x3_mediano/public/2025-07/CLBNAF_C0041_LTVOF-0124_0.jpg?h=e0eedb20&itok=4T8XzrPP",
+   "fotos": null,
+   "url": "https://www.bibliotecanacional.gob.cl/cartelera/un-archivo-en-construccion-la-obra-de-tito-vasquez",
+   "fuentes": [
+    {
+     "nombre": "Biblioteca Nacional de Chile (cartelera)",
+     "url": "https://www.bibliotecanacional.gob.cl/cartelera"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "ae5b603f04",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Vertebrados: anatomía, evolución, extinción",
+   "categoria": "museos",
+   "fecha_inicio": "2025-12-16",
+   "fecha_fin": "2026-12-31",
+   "hora": null,
+   "horario": "Mar a sáb 10:00–17:30; dom y festivos 11:00–17:30",
+   "lugar": "Museo Nacional de Historia Natural",
+   "direccion": "Parque Quinta Normal s/n",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Muestra de zoología sobre anatomía, evolución y extinción de los vertebrados, con la nueva base del gran esqueleto de ballena del Salón Central del museo.",
+   "imagen": "https://www.mnhn.gob.cl/sites/www.mnhn.gob.cl/files/styles/4x3_mediano/public/2025-12/rrss%20expo%20vertebrados%202025_cartelera%20MNHN%201440%20x%201080%20px.png?h=5ec731b2&itok=VeV6-E3m",
+   "fotos": null,
+   "url": "https://www.mnhn.gob.cl/cartelera/vertebrados-anatomia-evolucion-extincion",
+   "fuentes": [
+    {
+     "nombre": "Museo Nacional de Historia Natural (cartelera)",
+     "url": "https://www.mnhn.gob.cl/cartelera"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "6dfafa8970",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Carisma y misión. Órdenes religiosas en el arte virreinal surandino",
+   "categoria": "arte",
+   "fecha_inicio": "2026-03-11",
+   "fecha_fin": "2027-01-22",
+   "hora": null,
+   "horario": null,
+   "lugar": "Sala Joaquín Gandarillas, Centro de Extensión Alameda UC",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "La evangelización de los pueblos originarios a través del arte constituyó una empresa de enorme complejidad en la vasta geografía americana, particularmente en el territorio del Virreinato del Perú.",
+   "imagen": "https://chilecultura.gob.cl/uploads/cropped_pWg4jBq.png",
+   "fotos": null,
+   "url": "https://extension.uc.cl/cine-uc/cine-uc/",
+   "fuentes": [
+    {
+     "nombre": "Chile Cultura",
+     "url": "https://chilecultura.gob.cl/events/37422/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "claude",
+   "id": "562569f3c4",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Comadres",
+   "categoria": "museos",
+   "fecha_inicio": "2026-03-21",
+   "fecha_fin": "2026-12-26",
+   "hora": null,
+   "horario": null,
+   "lugar": "Museo Violeta Parra",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "La muestra incluye fotografías, archivos de prensa, videos, cartas, música de Margot Loyola y vestuario perteneciente a la folclorista.",
+   "imagen": "https://chilecultura.gob.cl/uploads/cropped_4lJZqRp.png",
+   "fotos": null,
+   "url": "https://www.museovioletaparra.cl/",
+   "fuentes": [
+    {
+     "nombre": "Chile Cultura",
+     "url": "https://chilecultura.gob.cl/events/37702/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "claude",
+   "id": "bfb912b5ba",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "MAVI UC conmemora su 25° aniversario con gran exposición de su colección",
+   "categoria": "arte",
+   "fecha_inicio": "2026-04-11",
+   "fecha_fin": "2027-05-02",
+   "hora": null,
+   "horario": null,
+   "lugar": "Museo de Artes Visuales MAVI UC",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "En el marco de la conmemoración de su vigésimo quinto aniversario, el Museo de Artes Visuales MAVI UC presenta la exposición “La llegada de lo blanco”.",
+   "imagen": "https://chilecultura.gob.cl/uploads/cropped_7jaC30J.png",
+   "fotos": null,
+   "url": "https://mavi.uc.cl/",
+   "fuentes": [
+    {
+     "nombre": "Chile Cultura",
+     "url": "https://chilecultura.gob.cl/events/38122/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "claude",
+   "id": "3b3025cb65",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "La Veta",
+   "categoria": "arte",
+   "fecha_inicio": "2026-06-25",
+   "fecha_fin": "2026-12-06",
+   "hora": null,
+   "horario": "Mar, mié y dom 10:00–19:00; jue a sáb 10:00–20:00",
+   "lugar": "Museo de Arte Popular Americano (MAPA), en el GAM",
+   "direccion": "Av. Libertador Bernardo O'Higgins 227, edificio B, nivel -1",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Cerámica popular de ayer y hoy: piezas nunca exhibidas del MAPA junto a obras de alfareras como Sara Gutiérrez o Dolores Jorquera y ceramistas actuales, con sus relatos de vida.",
+   "imagen": "https://gam.cl/media/images/_DSC0261.max-1200x900.jpg",
+   "fotos": [
+    "https://gam.cl/media/images/_DSC0214.max-1200x900.jpg",
+    "https://gam.cl/media/images/_DSC0245.max-1200x900.jpg"
+   ],
+   "url": "https://gam.cl/es/que-hacer-en-gam/artesvisuales/la-veta/",
+   "fuentes": [
+    {
+     "nombre": "Centro Cultural Gabriela Mistral (GAM)",
+     "url": "https://gam.cl/es/que-hacer-en-gam/artesvisuales/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "4e82abe6b7",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Huidobro: amores, rebeldías y propuestas",
+   "categoria": "arte",
+   "fecha_inicio": "2026-07-27",
+   "fecha_fin": "2027-01-30",
+   "hora": null,
+   "horario": null,
+   "lugar": "Sala Vicente Huidobro, Casa Central UC",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "“Huidobro: amores, rebeldías y propuestas” recorre la formación personal, intelectual y artística de Vicente Huidobro, desde su infancia en el seno de la élite chilena hasta su consolidación como uno de los principales…",
+   "imagen": "https://chilecultura.gob.cl/uploads/cropped_1IcJEx9.png",
+   "fotos": null,
+   "url": "https://extension.uc.cl/cine-uc/cine-uc/",
+   "fuentes": [
+    {
+     "nombre": "Chile Cultura",
+     "url": "https://chilecultura.gob.cl/events/39347/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "claude",
+   "id": "c74849a44f",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Casa común. 100 años de Parques Nacionales",
+   "categoria": "museos",
+   "fecha_inicio": "2026-08-20",
+   "fecha_fin": "2026-12-06",
+   "hora": null,
+   "horario": "Mar a dom, 10:15–18:45",
+   "lugar": "Centro Cultural La Moneda",
+   "direccion": "Plaza de la Ciudadanía 26",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Un siglo de parques nacionales en Chile, con línea de tiempo, un mapa de las áreas protegidas y la obra audiovisual inmersiva «RESPIRAR», con registros de la Reserva Costera Valdiviana y otros paisajes.",
+   "imagen": "https://cdn.cclm.cl/web/wp-content/uploads/2026/08/casa-comun-header-2100x900.jpg",
+   "fotos": null,
+   "url": "https://www.cclm.cl/exposicion/casa-comun/",
+   "fuentes": [
+    {
+     "nombre": "Centro Cultural La Moneda",
+     "url": "https://www.cclm.cl/exposiciones/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "44a03de0a7",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Criaturas de Tierra: Animales Cerámicos en el Museo de Artes Decorativas",
+   "categoria": "museos",
+   "fecha_inicio": "2026-08-22",
+   "fecha_fin": "2027-04-30",
+   "hora": null,
+   "horario": "Mar a vie 10:00–17:00; sáb 10:00–14:00",
+   "lugar": "Museo de Artes Decorativas",
+   "direccion": "Av. Recoleta 683",
+   "comuna": "Recoleta",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Figuras y objetos de cerámica con forma de animales: porcelana, mayólica y loza europea de principios y mediados del siglo XX y piezas de fábricas chilenas como Lota, Fanaloza, RUA y Serra.",
+   "imagen": "https://www.artdec.gob.cl/sites/www.artdec.gob.cl/files/styles/4x3_mediano/public/2026-07/24.13.208-03.jpg?h=8239fef7&itok=V07bPPcG",
+   "fotos": null,
+   "url": "https://www.artdec.gob.cl/cartelera/nueva-exposicion-temporal-criaturas-de-tierra-animales-ceramicos-en-el-museo-de-artes",
+   "fuentes": [
+    {
+     "nombre": "Museo de Artes Decorativas (cartelera)",
+     "url": "https://www.artdec.gob.cl/cartelera"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "0bdfd1df65",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Intervención: Ximena Lecca en Sala Chile antes de Chile",
+   "categoria": "museos",
+   "fecha_inicio": "2026-08-28",
+   "fecha_fin": "2026-11-22",
+   "hora": null,
+   "horario": null,
+   "lugar": "Museo Chileno de Arte Precolombino",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "El Museo Chileno de Arte Precolombino recibe una intervención de ART CUT 2026, Trienal de la universidades católicas de América, Europa y Asia.",
+   "imagen": "https://chilecultura.gob.cl/uploads/cropped_BPsUwtW.png",
+   "fotos": null,
+   "url": "https://museo.precolombino.cl/evento/muestra-temporal-bajo-nuestros-pies-las-tierras-raras-de-la-ia/",
+   "fuentes": [
+    {
+     "nombre": "Chile Cultura",
+     "url": "https://chilecultura.gob.cl/events/39670/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "claude",
+   "id": "43a0dd1f1a",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "La vida en una mirada. Fernando Opazo",
+   "categoria": "arte",
+   "fecha_inicio": "2026-08-31",
+   "fecha_fin": "2026-11-30",
+   "hora": null,
+   "horario": null,
+   "lugar": "Sala patrimonial del MHN, estación Plaza de Armas del Metro",
+   "direccion": "Estación Plaza de Armas, Metro de Santiago",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Fotografías de Fernando Opazo, discípulo de Antonio Quintana, que retrató con su Rolleiflex a trabajadores, campesinos y niños de Chile entre 1960 y 1980.",
+   "imagen": "https://www.mhn.gob.cl/sites/www.mhn.gob.cl/files/styles/16x9_mediano/public/2026-08/FERODA-107%20web.jpg?h=21bd96e6&itok=xhNOsoTl",
+   "fotos": null,
+   "url": "https://www.mhn.gob.cl/noticias/la-vida-en-una-mirada-fernando-opazo",
+   "fuentes": [
+    {
+     "nombre": "Museo Histórico Nacional (sitio oficial)",
+     "url": "https://www.mhn.gob.cl/noticias/la-vida-en-una-mirada-fernando-opazo"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "29e7f87994",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Ejercicios de Empatía: Tramas de lo Vivo (Trienal ART CUT 26)",
+   "categoria": "arte",
+   "fecha_inicio": "2026-09-04",
+   "fecha_fin": "2026-11-22",
+   "hora": null,
+   "horario": "Mar a vie 10:00–18:00; sáb, dom y festivos 11:00–19:00",
+   "lugar": "Museo de Artes Visuales MAVI UC",
+   "direccion": "José Victorino Lastarria 307",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "$3.000; 13 a 18 años $1.000; menores de 12, mayores de 65 y universitarios grati",
+   "descripcion": "Primera Trienal ART CUT: 19 artistas de Chile y el mundo en siete salas del MAVI UC y 47 piezas precolombinas sobre nuestro vínculo con animales, plantas, agua y cosmos.",
+   "imagen": "https://agendauc-prod.s3.amazonaws.com/Kuenan_Mayu_Agenda_UC_9c6b95856b.jpg",
+   "fotos": [
+    "https://agendauc-prod.s3.amazonaws.com/large_Pichilla_agenda_UC_116a10eb4f.jpg"
+   ],
+   "url": "https://www.uc.cl/agenda/actividad/mavi-uc-reune-a-19-artistas-de-chile-y-el-mundo-para-repensar-nuestra-relacion-con-lo-vivo",
+   "fuentes": [
+    {
+     "nombre": "Chile Cultura (Ministerio de las Culturas) y Agenda UC",
+     "url": "https://chilecultura.gob.cl/events/39964/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "claude",
+   "id": "94601c7845",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Luis Vargas Rosas. Un museo al ritmo de lo contemporáneo (1946 - 1970)",
+   "categoria": "arte",
+   "fecha_inicio": "2026-09-10",
+   "fecha_fin": "2027-02-28",
+   "hora": null,
+   "horario": "Mar a dom, 10:00–18:30",
+   "lugar": "Museo Nacional de Bellas Artes",
+   "direccion": "José Miguel de la Barra 650",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Unas 70 obras, algunas no exhibidas en décadas, revisan los 24 años en que el pintor Luis Vargas Rosas dirigió el Bellas Artes y lo transformó en un museo moderno.",
+   "imagen": "https://www.mnba.gob.cl/sites/www.mnba.gob.cl/files/2026-09/vargasrosas_web.jpg",
+   "fotos": null,
+   "url": "https://www.mnba.gob.cl/cartelera/luis-vargas-rosas-un-museo-al-ritmo-de-lo-contemporaneo-1946-1970",
+   "fuentes": [
+    {
+     "nombre": "Museo Nacional de Bellas Artes (cartelera)",
+     "url": "https://www.mnba.gob.cl/cartelera"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "c32f483a1c",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Observaciones Americanas. Alberto Cruz visita el Museo Chileno de Arte Precolombino",
+   "categoria": "arte",
+   "fecha_inicio": "2026-09-24",
+   "fecha_fin": "2026-11-22",
+   "hora": null,
+   "horario": "Mar a dom, 10:00–18:00",
+   "lugar": "Museo Chileno de Arte Precolombino",
+   "direccion": "Bandera 361",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "$3.000 (nacional y residente); universitarios $1.000; 1er domingo del mes gratis",
+   "descripcion": "Dibujos y anotaciones del arquitecto y artista Alberto Cruz, uno de los refundadores de la Escuela de Arquitectura de la U. Católica de Valparaíso, en diálogo con piezas del Precolombino. Sala Philippi.",
+   "imagen": "https://museo.precolombino.cl/media/images/alberto-cruz.width-1200.webp",
+   "fotos": null,
+   "url": "https://museo.precolombino.cl/exposiciones-cartelera/cartelera/exploraciones-curatoriales-observaciones-americanas-alberto-cruz-visita-el-museo-chileno-de-arte-precolombino/",
+   "fuentes": [
+    {
+     "nombre": "Museo Chileno de Arte Precolombino (cartelera)",
+     "url": "https://museo.precolombino.cl/exposiciones-cartelera/cartelera/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "158c42778a",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Balmaceda Visual, Premoniciones",
+   "categoria": "arte",
+   "fecha_inicio": "2026-09-25",
+   "fecha_fin": "2027-01-24",
+   "hora": null,
+   "horario": "Mar a dom, 10:30–17:30",
+   "lugar": "Museo de Arte Contemporáneo (MAC), Espacio Quinta Normal",
+   "direccion": "Av. Matucana 464",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "33 artistas jóvenes de todo Chile, elegidos por Balmaceda Arte Joven, imaginan futuros posibles entre tecnología, archivo y territorio en las salas del MAC Quinta Normal.",
+   "imagen": "https://mac.uchile.cl/wp-content/uploads/2026/08/BALMACEDA_WEB-1536x784.jpg",
+   "fotos": null,
+   "url": "https://mac.uchile.cl/exposiciones/balmaceda-visual-premoniciones/",
+   "fuentes": [
+    {
+     "nombre": "MAC Universidad de Chile",
+     "url": "https://mac.uchile.cl/periodo/actuales/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "8828debb68",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Instalación “Registro Nacional de Espera” en Galería Gabriela Mistral",
+   "categoria": "arte",
+   "fecha_inicio": "2026-09-25",
+   "fecha_fin": "2026-11-07",
+   "hora": null,
+   "horario": null,
+   "lugar": "Galería Gabriela Mistral",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "El Colectivo Honorarias compuesto por Loreto Muñoz y Roery Herrera inaugurará este viernes 25 de septiembre la instalación “Registro Nacional de Espera”, en la Galería Gabriela Mistral.",
+   "imagen": "https://chilecultura.gob.cl/uploads/cropped_4pKpB6T.png",
+   "fotos": null,
+   "url": "https://galeriagm.cultura.gob.cl/",
+   "fuentes": [
+    {
+     "nombre": "Chile Cultura",
+     "url": "https://chilecultura.gob.cl/events/39887/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "claude",
+   "id": "d705a6b195",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Cuerpo Archivo — Lorena Córdova",
+   "categoria": "arte",
+   "fecha_inicio": "2026-09-26",
+   "fecha_fin": "2026-12-19",
+   "hora": null,
+   "horario": "Lun a sáb, 10:30–17:00",
+   "lugar": "Museo Ralli",
+   "direccion": "Alonso de Sotomayor 4110",
+   "comuna": "Vitacura",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Doce collages inéditos en blanco y negro de Lorena Córdova, armados con sus propias fotos, cortes y costuras a mano, que tratan el cuerpo como un archivo. Curaduría de Felipe Mella.",
+   "imagen": "https://museoralli.cl/images/museoralli/2026-09-26-LorenaCordova2.jpg",
+   "fotos": null,
+   "url": "https://museoralli.cl/index.php/noticias/300-museo-ralli-inauguro-cuerpo-archivo-la-exposicion-de-lorena-cordova",
+   "fuentes": [
+    {
+     "nombre": "Museo Ralli (sitio oficial)",
+     "url": "https://museoralli.cl/index.php/noticias/300-museo-ralli-inauguro-cuerpo-archivo-la-exposicion-de-lorena-cordova"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "707fe2b3b9",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Estéticas intuitivas. Bernardo Oyarzún",
+   "categoria": "arte",
+   "fecha_inicio": "2026-09-26",
+   "fecha_fin": "2026-11-22",
+   "hora": null,
+   "horario": "Mar a dom, 10:00–18:30",
+   "lugar": "Centro Nacional de Arte Contemporáneo Cerrillos",
+   "direccion": "Av. Pedro Aguirre Cerda 6100",
+   "comuna": "Cerrillos",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Quince años de obra de Bernardo Oyarzún, con esculturas gigantes inspiradas en criaturas de la mitología del sur de Chile, como Piwichen y Puyu, además de video, foto e instalación.",
+   "imagen": "https://centronacionaldearte.cultura.gob.cl/wp-content/uploads/2026/09/proyecto-expositivo-_bernado-oyarzun-.jpeg",
+   "fotos": null,
+   "url": "https://centronacionaldearte.cultura.gob.cl/bernardo-oyarzun/",
+   "fuentes": [
+    {
+     "nombre": "Centro Nacional de Arte Contemporáneo (CNAC)",
+     "url": "https://centronacionaldearte.cultura.gob.cl/bernardo-oyarzun/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "33a119f815",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Fotografía: alteraciones matéricas",
+   "categoria": "arte",
+   "fecha_inicio": "2026-09-26",
+   "fecha_fin": "2026-11-22",
+   "hora": null,
+   "horario": "Mar a dom, 10:00–18:30",
+   "lugar": "Centro Nacional de Arte Contemporáneo Cerrillos",
+   "direccion": "Av. Pedro Aguirre Cerda 6100",
+   "comuna": "Cerrillos",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "23 artistas, de Alfredo Jaar a Zaida González, muestran fotos que se vuelven objeto, pintura o instalación. Obras de la Colección de Arte Contemporáneo del Ministerio.",
+   "imagen": "https://centronacionaldearte.cultura.gob.cl/wp-content/uploads/2026/09/cholita-chic-2014-inti-fotografia-ilustrada-digital-imrpesion-sobre-lienzo-1034x589.jpg",
+   "fotos": null,
+   "url": "https://centronacionaldearte.cultura.gob.cl/wp-content-uploads-2026-09-443_-jpg/",
+   "fuentes": [
+    {
+     "nombre": "Ministerio de las Culturas (agenda cultural)",
+     "url": "https://www.cultura.gob.cl/agendacultural/cnac-inaugura-tres-exposiciones-bernardo-oyarzun-y-dos-muestras-dedicadas-a-la-fotografia-en-chile/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "0ba9aaeefc",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "«Remanencias locales» reúne en el Centro Nacional de Arte Contemporáneo 15 festivales de fotografía de todo Chile",
+   "categoria": "arte",
+   "fecha_inicio": "2026-09-26",
+   "fecha_fin": "2026-11-22",
+   "hora": null,
+   "horario": null,
+   "lugar": "Centro Nacional de Arte Contemporáneo Cerrillos (CNAC)",
+   "direccion": null,
+   "comuna": "Cerrillos",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "El Centro Nacional de Arte Contemporáneo Cerrillos (CNAC) presenta Remanencias locales, exposición que reúne a 15 festivales y encuentros de fotografía realizados en distintas ciudades de Chile, con curatoría del equipo…",
+   "imagen": "https://chilecultura.gob.cl/uploads/cropped_6VkfduW.png",
+   "fotos": null,
+   "url": "https://centronacionaldearte.cultura.gob.cl/remanencias-locales/",
+   "fuentes": [
+    {
+     "nombre": "Chile Cultura",
+     "url": "https://chilecultura.gob.cl/events/39957/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "claude",
+   "id": "fe429a2453",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Vitrina de objeto destacado: sarcófago de Ta-Sherit-Min",
+   "categoria": "museos",
+   "fecha_inicio": "2026-09-29",
+   "fecha_fin": "2026-12-06",
+   "hora": null,
+   "horario": "Mar a sáb 10:00–17:30; dom y festivos 11:00–17:30",
+   "lugar": "Museo Nacional de Historia Natural",
+   "direccion": "Parque Quinta Normal s/n",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Vitrina con el sarcófago pintado de Ta-Sherit-Min, joven egipcia de 17 años del período ptolemaico cuyo cuerpo y ataúd llegaron desde Tebas al museo en 1887.",
+   "imagen": "https://www.mnhn.gob.cl/sites/www.mnhn.gob.cl/files/styles/4x3_mediano/public/2026-09/1448be48-30c1-4514-be08-9dd521daf514.jpg?h=3d5dcffd&itok=W3jZ3mY5",
+   "fotos": null,
+   "url": "https://www.mnhn.gob.cl/cartelera/vitrina-de-objeto-destacado-sarcofago-de-ta-sherit-min",
+   "fuentes": [
+    {
+     "nombre": "Museo Nacional de Historia Natural (cartelera)",
+     "url": "https://www.mnhn.gob.cl/cartelera"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "bb4f9dcd21",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Vistas de taller, artistas, objetos e identidades (1880-1950)",
+   "categoria": "arte",
+   "fecha_inicio": "2026-09-30",
+   "fecha_fin": "2027-03-28",
+   "hora": null,
+   "horario": "Mar a dom, 10:30–19:00",
+   "lugar": "Casa Museo Santa Rosa de Apoquindo",
+   "direccion": "Av. Padre Hurtado Sur 1195",
+   "comuna": "Las Condes",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "32 pinturas, esculturas y objetos del MNBA y la Colección Las Condes, con fotos y archivos, muestran los talleres de artistas chilenos de 1880 a 1950. Incluye el atril de Pablo Vidor.",
+   "imagen": "https://www.mnba.gob.cl/sites/www.mnba.gob.cl/files/2026-09/lascondes_talleres_web_0.jpg",
+   "fotos": null,
+   "url": "https://www.mnba.gob.cl/cartelera/vistas-de-taller-artistas-objetos-e-identidades-1880-1950",
+   "fuentes": [
+    {
+     "nombre": "Museo Nacional de Bellas Artes (cartelera)",
+     "url": "https://www.mnba.gob.cl/cartelera"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "ac7820b39e",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Dentro del Aire — Beatrice di Girolamo",
+   "categoria": "arte",
+   "fecha_inicio": "2026-10-01",
+   "fecha_fin": "2026-11-14",
+   "hora": null,
+   "horario": "Lun a vie 10:00–20:00; sáb 11:00–14:00",
+   "lugar": "Aninat Galería",
+   "direccion": "Alonso de Córdova 4355",
+   "comuna": "Vitacura",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Diez obras en madera de Beatrice di Girolamo, entre pintura y escultura, con trampas al ojo que cambian según dónde te pares. Curaduría de César Gabler. Últimos días.",
+   "imagen": "https://images.squarespace-cdn.com/content/v1/5d93621cc1ed84125185a315/96409951-64ce-41ec-8457-f6073a80c785/09-2.jpg?format=1500w",
+   "fotos": [
+    "https://images.squarespace-cdn.com/content/v1/5d93621cc1ed84125185a315/b4aed2ce-8e8c-4fff-a161-e9d162243f22/07-2.jpg?format=1500w",
+    "https://images.squarespace-cdn.com/content/v1/5d93621cc1ed84125185a315/0adb64d0-b8b0-4900-88fc-34e70f7f36c5/01-2.jpg?format=1500w"
+   ],
+   "url": "https://www.aninatgaleria.org/exhibiciones-2026-aux/beatrice-di-girolamo-dentro-del-aire",
+   "fuentes": [
+    {
+     "nombre": "Aninat Galería (sitio oficial)",
+     "url": "https://www.aninatgaleria.org/exhibiciones-2026-aux/beatrice-di-girolamo-dentro-del-aire"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "3aa2a057f2",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Llevaban un mundo nuevo en el corazón",
+   "categoria": "arte",
+   "fecha_inicio": "2026-10-02",
+   "fecha_fin": "2027-03-28",
+   "hora": null,
+   "horario": "Mar a dom, 10:00–18:00 (último ingreso 17:30)",
+   "lugar": "Galería de la Memoria, Museo de la Memoria y los Derechos Humanos",
+   "direccion": "Av. Matucana 501 (entrada por Metro Quinta Normal)",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Lorenzo Sandoval y Soledad Aguirre cruzan archivos, videos y documentos sobre el exilio español en Chile, el Winnipeg y las redes anarquistas, en un proyecto del CCE y el Museo de la Memoria.",
+   "imagen": "https://ccesantiago.aecid.es/documents/7771081/0/web+expo+ll+%281%29.png/584f510b-391d-2151-7d92-efff4ef9796a?t=1791324936850",
+   "fotos": null,
+   "url": "https://ccesantiago.aecid.es/w/exposici%C3%B3n-llevaban-un-mundo-en-el-coraz%C3%B3n",
+   "fuentes": [
+    {
+     "nombre": "Centro Cultural de España en Santiago (coorganizador con el Museo de la Memoria)",
+     "url": "https://ccesantiago.aecid.es/w/exposici%C3%B3n-llevaban-un-mundo-en-el-coraz%C3%B3n"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "347d5f69b6",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Tiempo de sombreros, 1920-1960. Colección Museo Histórico Nacional",
+   "categoria": "museos",
+   "fecha_inicio": "2026-10-03",
+   "fecha_fin": "2026-11-29",
+   "hora": null,
+   "horario": null,
+   "lugar": "MUT, Mercado Urbano Tobalaba (piso -3, La Estación)",
+   "direccion": "Av. Apoquindo 2730",
+   "comuna": "Las Condes",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "80 piezas de la colección del Museo Histórico Nacional recorren la sombrerería femenina en Chile entre 1920 y 1960, en dos vitrinas del MUT conectadas al Metro Tobalaba.",
+   "imagen": "https://mut.cl/cms/wp-content/uploads/2026/08/Tiempo-de-sombreros-2-1024x777.jpg",
+   "fotos": [
+    "https://mut.cl/cms/wp-content/uploads/2026/08/Tiempo-de-sombreros-1229x1536.jpg",
+    "https://www.mhn.gob.cl/sites/www.mhn.gob.cl/files/styles/16x9_mediano/public/2026-09/foto%20web%202-1.png?h=a78000c5&itok=XrVjAzVe"
+   ],
+   "url": "https://www.mhn.gob.cl/noticias/tiempo-de-sombreros-1920-1960-coleccion-museo-historico-nacional",
+   "fuentes": [
+    {
+     "nombre": "Museo Histórico Nacional y MUT (sitios oficiales)",
+     "url": "https://www.mhn.gob.cl/noticias/tiempo-de-sombreros-1920-1960-coleccion-museo-historico-nacional"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "5ca969e3c6",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Ensueño — Raúl Cuello",
+   "categoria": "arte",
+   "fecha_inicio": "2026-10-07",
+   "fecha_fin": "2026-12-12",
+   "hora": null,
+   "horario": "Lun a sáb, 10:30–17:00",
+   "lugar": "Museo Ralli",
+   "direccion": "Alonso de Sotomayor 4110",
+   "comuna": "Vitacura",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Más de 20 esculturas en bronce de Raúl Cuello, inspiradas en los paisajes y la gente del norte de Chile, repasan cuatro décadas de su trabajo. Entrada liberada.",
+   "imagen": "https://museoralli.cl/images/museoralli/2026-10-07-RaulCuello.jpg",
+   "fotos": null,
+   "url": "https://museoralli.cl/index.php/noticias/301-raul-cuello-inauguro-ensueno-en-museo-ralli-santiago",
+   "fuentes": [
+    {
+     "nombre": "Museo Ralli (sitio oficial)",
+     "url": "https://museoralli.cl/index.php/noticias/301-raul-cuello-inauguro-ensueno-en-museo-ralli-santiago"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "2683b909e8",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Alien: El Origen, by H.R. Giger",
+   "categoria": "fantasia",
+   "fecha_inicio": "2026-10-08",
+   "fecha_fin": "2026-12-31",
+   "hora": null,
+   "horario": "En el horario del Metro",
+   "lugar": "Suizspacio, estación Ñuñoa del Metro",
+   "direccion": "Estación Ñuñoa (combinación Líneas 3 y 6), nivel -3",
+   "comuna": "Ñuñoa",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis (solo se necesita un ingreso válido al Metro)",
+   "descripcion": "Primera muestra en Sudamérica avalada por el Museo H.R. Giger: reproducciones de obras y esculturas, audiovisuales y una línea de tiempo del artista suizo que diseñó el monstruo de Alien, en el Suizspacio del Metro Ñuñoa.",
+   "imagen": "https://assets.radioagricultura.cl/2026/10/Metro-de-Santiago-3-1024x538.jpg",
+   "fotos": [
+    "https://media-front.elmostrador.cl/2026/10/Afiche-Exhibicion-2026-scaled.jpg"
+   ],
+   "url": "https://www.elmostrador.cl/cultura/2026/10/05/obra-del-creador-de-alien-expone-por-primera-vez-en-chile/",
+   "fuentes": [
+    {
+     "nombre": "El Mostrador y Radio Agricultura (citando a Metro de Santiago)",
+     "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/alien-llega-gratis-al-metro-de-santiago-donde-y-hasta-cuando-visitar-la-muestra-de-h-r-giger_20261015/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "claude",
+   "id": "aff6ce01a9",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Enrique Ramírez. Te creo paisaje",
+   "categoria": "arte",
+   "fecha_inicio": "2026-10-08",
+   "fecha_fin": "2027-02-28",
+   "hora": null,
+   "horario": "Mar a dom, 10:00–18:30",
+   "lugar": "Museo Nacional de Bellas Artes",
+   "direccion": "José Miguel de la Barra 650",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "La mayor muestra en Chile del artista medial Enrique Ramírez: 24 obras (videos, fotos e instalaciones) sobre memoria, migración y paisaje, con una intervención en el hall del MNBA.",
+   "imagen": "https://www.mnba.gob.cl/sites/www.mnba.gob.cl/files/2026-09/enriqueramirez_web_0.jpg",
+   "fotos": null,
+   "url": "https://www.mnba.gob.cl/cartelera/enrique-ramirez-te-creo-paisaje",
+   "fuentes": [
+    {
+     "nombre": "Museo Nacional de Bellas Artes (cartelera)",
+     "url": "https://www.mnba.gob.cl/cartelera"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "526eb4a6d4",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Del espacio de acá",
+   "categoria": "arte",
+   "fecha_inicio": "2026-10-09",
+   "fecha_fin": "2027-01-31",
+   "hora": null,
+   "horario": "Mar a vie 10:00–18:00; sáb, dom y festivos 11:00–18:00",
+   "lugar": "Museo de la Solidaridad Salvador Allende (MSSA)",
+   "direccion": "Av. República 475",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "$1.000; estudiantes y tercera edad gratis; domingo gratis",
+   "descripcion": "Natalia Babarovic y artistas de su taller exploran la huella de la fotografía en la pintura chilena, en diálogo con obras de la Colección MSSA como León Ferrari o Arnulf Rainer.",
+   "imagen": "https://www.mssa.cl/wp-content/uploads/2026/09/Probadores-Editado-1200x892.jpg",
+   "fotos": null,
+   "url": "https://www.mssa.cl/exposicion/del-espacio-de-aca/",
+   "fuentes": [
+    {
+     "nombre": "Museo de la Solidaridad Salvador Allende",
+     "url": "https://www.mssa.cl/exposicion/del-espacio-de-aca/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "0ab446f27c",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Nosotros los chilenos: archivar para imaginarnos",
+   "categoria": "arte",
+   "fecha_inicio": "2026-10-09",
+   "fecha_fin": "2027-01-31",
+   "hora": null,
+   "horario": "Mar a vie 10:00–18:00; sáb y dom 11:00–18:00",
+   "lugar": "Museo de la Solidaridad Salvador Allende (MSSA)",
+   "direccion": "Av. República 475",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "$1.000; turistas $5.000; domingos gratis",
+   "descripcion": "Cinco artistas reinterpretan la colección Nosotros los chilenos de Quimantú (1971-1973) con gráfica, fotografía e IA; incluye un mapa de leyendas chilenas de N3t0.",
+   "imagen": "https://www.mssa.cl/wp-content/uploads/2026/09/IMG_4249-2-Editado-1200x800.jpg",
+   "fotos": null,
+   "url": "https://www.mssa.cl/exposicion/nosotros-los-chilenos-archivar-para-imaginarnos/",
+   "fuentes": [
+    {
+     "nombre": "Museo de la Solidaridad Salvador Allende (sitio oficial)",
+     "url": "https://www.mssa.cl/exposicion/nosotros-los-chilenos-archivar-para-imaginarnos/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "4a3298ee26",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Recordar el futuro. Íconos del diseño y arte geométrico en Chile",
+   "categoria": "arte",
+   "fecha_inicio": "2026-10-09",
+   "fecha_fin": "2026-11-29",
+   "hora": null,
+   "horario": "Mar a dom, 10:30–19:00",
+   "lugar": "Centro Cultural Las Condes",
+   "direccion": "Nuestra Señora del Rosario 30",
+   "comuna": "Las Condes",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Sillas icónicas del diseño mundial, de la Thonet a Philippe Starck, conversan con pinturas chilenas del siglo XX de la Colección Las Condes. Curaduría de Hernán Garfias.",
+   "imagen": "https://www.culturallascondes.cl/wp-content/uploads/2026/10/modulo_recordar-el-futuro_20261015b-1482x830.jpg",
+   "fotos": [
+    "https://www.culturallascondes.cl/wp-content/uploads/2026/10/20261009_123743-499x800.jpg",
+    "https://www.culturallascondes.cl/wp-content/uploads/2026/10/IMG-20261009-WA0005-608x800.jpg",
+    "https://www.culturallascondes.cl/wp-content/uploads/2026/10/20261009_123444-499x800.jpg"
+   ],
+   "url": "https://www.culturallascondes.cl/2026/10/15/recordar-el-futuro/",
+   "fuentes": [
+    {
+     "nombre": "Corporación Cultural de Las Condes",
+     "url": "https://www.culturallascondes.cl/2026/10/15/recordar-el-futuro/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "fc0d3c3035",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Tu Museo, tu Colección",
+   "categoria": "arte",
+   "fecha_inicio": "2026-10-09",
+   "fecha_fin": "2027-01-31",
+   "hora": null,
+   "horario": "Mar a vie 10:00–18:00; sáb y dom 11:00–18:00",
+   "lugar": "Museo de la Solidaridad Salvador Allende (MSSA)",
+   "direccion": "Av. República 475",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "$1.000; turistas $5.000; domingos gratis",
+   "descripcion": "Recorrido por la colección del Museo de la Solidaridad, nacida con obras donadas al pueblo de Chile: desde una pintura icónica de Joan Miró hasta grabados de Eduardo Vilches.",
+   "imagen": "https://www.mssa.cl/wp-content/uploads/2026/09/0784-RF3-Editado-1-1200x802.jpg",
+   "fotos": null,
+   "url": "https://www.mssa.cl/exposicion/tu-museo-tu-coleccion/",
+   "fuentes": [
+    {
+     "nombre": "Museo de la Solidaridad Salvador Allende (sitio oficial)",
+     "url": "https://www.mssa.cl/exposicion/tu-museo-tu-coleccion/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "dfa0189c0c",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Fragmentos de lo propio",
+   "categoria": "arte",
+   "fecha_inicio": "2026-10-20",
+   "fecha_fin": "2026-11-08",
+   "hora": null,
+   "horario": null,
+   "lugar": "Espacio Wiphala, Nivel -1 Centro Cultural La Moneda",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "En el marco del Mes de los Públicos, Fragmentos de lo propio reúne 11 autorretratos creados por jóvenes artistas de la Unidad de Terapias Artísticas Creativas (UTAC) de Teletón Santiago, en el marco de un vínculo…",
+   "imagen": "https://chilecultura.gob.cl/uploads/cropped_cpyDs59.png",
+   "fotos": null,
+   "url": "https://www.cclm.cl/exposicion/fragmentos-de-lo-propio/",
+   "fuentes": [
+    {
+     "nombre": "Chile Cultura",
+     "url": "https://chilecultura.gob.cl/events/40755/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "claude",
+   "id": "7010ac604a",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "El Alma de la Forma",
+   "categoria": "arte",
+   "fecha_inicio": "2026-10-22",
+   "fecha_fin": "2026-12-06",
+   "hora": null,
+   "horario": "Mar a dom, 11:00–14:00 y 15:00–18:00",
+   "lugar": "Centro Cultural Estación Mapocho",
+   "direccion": "Plaza de la Cultura s/n",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Fotografía urbana y de arquitectura de Patricio Gómez, que compara la ciudad con un cuerpo vivo: escaleras, fachadas, sombras y estructuras vistas desde ángulos inusuales.",
+   "imagen": "https://www.estacionmapocho.cl/wp-content/uploads/2026/10/DSC0639-Edit-2-Edit-1-1024x683.jpg",
+   "fotos": [
+    "https://www.estacionmapocho.cl/wp-content/uploads/2026/10/DSC1012-Edit-1024x683.jpg"
+   ],
+   "url": "https://www.estacionmapocho.cl/?artvis=el-alma-de-la-forma",
+   "fuentes": [
+    {
+     "nombre": "Centro Cultural Estación Mapocho",
+     "url": "https://www.estacionmapocho.cl/?artvis=el-alma-de-la-forma"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "4d5808d49a",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "La hora del té. Envases, etiquetas y carteles",
+   "categoria": "museos",
+   "fecha_inicio": "2026-10-23",
+   "fecha_fin": "2026-11-30",
+   "hora": null,
+   "horario": "Mar a dom, 10:30–18:00",
+   "lugar": "Casa Museo Santa Rosa de Apoquindo",
+   "direccion": "Av. Padre Hurtado Sur 1195",
+   "comuna": "Las Condes",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Latas, etiquetas y carteles de té de fines del siglo XIX a mediados del XX, de la colección de Óscar Aedo, en un montaje que recrea un almacén de barrio de época.",
+   "imagen": "https://www.culturallascondes.cl/wp-content/uploads/2026/11/modulo_la-hora-de-te_20261105-1482x830.jpg",
+   "fotos": null,
+   "url": "https://www.culturallascondes.cl/2026/11/05/la-hora-del-te/",
+   "fuentes": [
+    {
+     "nombre": "Corporación Cultural de Las Condes",
+     "url": "https://www.culturallascondes.cl/2026/11/05/la-hora-del-te/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "0af68d4eb8",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Electrizando la mente. La chispa que iluminó el siglo XVIII",
+   "categoria": "museos",
+   "fecha_inicio": "2026-10-24",
+   "fecha_fin": "2027-01-23",
+   "hora": null,
+   "horario": "Mar a vie 10:00–17:00; sáb 10:00–14:00",
+   "lugar": "Biblioteca Patrimonial Recoleta Domínica",
+   "direccion": "Av. Recoleta 683",
+   "comuna": "Recoleta",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Libros ilustrados e instrumentos del siglo XVIII muestran cómo la electricidad, entre ciencia y espectáculo, llegó a Chile. Una muestra de la Recoleta Domínica y el Histórico Nacional.",
+   "imagen": "https://www.mhn.gob.cl/sites/www.mhn.gob.cl/files/styles/4x3_mediano/public/2026-10/post-01%20%281%29.jpg?h=b0e295a9&itok=97vZQe8Q",
+   "fotos": null,
+   "url": "https://www.mhn.gob.cl/noticias/electrizando-la-mente-la-chispa-que-ilumino-el-siglo-xviii",
+   "fuentes": [
+    {
+     "nombre": "Museo Histórico Nacional (sitio oficial)",
+     "url": "https://www.mhn.gob.cl/noticias/electrizando-la-mente-la-chispa-que-ilumino-el-siglo-xviii"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "6e98a34c41",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Ruta Nativa: la huella que dejamos",
+   "categoria": "museos",
+   "fecha_inicio": "2026-10-24",
+   "fecha_fin": "2026-11-14",
+   "hora": null,
+   "horario": null,
+   "lugar": "Museo Violeta Parra",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Impulsado por Bosque Santiago de Parquemet y el Instituto de Ecología y Biodiversidad (IEB), con el apoyo de la Municipalidad de Recoleta, Ruta Nativa es un programa de educación ambiental dirigido a personas mayores…",
+   "imagen": "https://chilecultura.gob.cl/uploads/cropped_vgz3sKu.png",
+   "fotos": null,
+   "url": "https://www.museovioletaparra.cl/",
+   "fuentes": [
+    {
+     "nombre": "Chile Cultura",
+     "url": "https://chilecultura.gob.cl/events/40861/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "claude",
+   "id": "a2ea3899ab",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Odisea del Espacio: 25 años de Matucana 100",
+   "categoria": "arte",
+   "fecha_inicio": "2026-10-27",
+   "fecha_fin": "2027-01-24",
+   "hora": null,
+   "horario": "Mié a dom, 12:00–14:00 y 15:00–21:00",
+   "lugar": "Centro Cultural Matucana 100",
+   "direccion": "Av. Matucana 100",
+   "comuna": "Estación Central",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Matucana 100 celebra 25 años con obras de 61 autores, de Antúnez y Balmes a Dittborn y Downey, que recorren un siglo de cultura chilena. Curaduría de Camilo Yáñez.",
+   "imagen": "https://www.m100.cl/wp-content/uploads/2026/10/Odisea-del-espacio_slidehome_1920x1488-1024x794.jpg",
+   "fotos": null,
+   "url": "https://www.m100.cl/programacion/artes-visuales/odisea-del-espacio-25-anos-de-matucana-100/",
+   "fuentes": [
+    {
+     "nombre": "Centro Cultural Matucana 100",
+     "url": "https://www.m100.cl/programacion/artes-visuales/odisea-del-espacio-25-anos-de-matucana-100/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "7fc2bdb573",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Index, \"Formas de lo incierto\"",
+   "categoria": "arte",
+   "fecha_inicio": "2026-10-29",
+   "fecha_fin": "2026-11-13",
+   "hora": null,
+   "horario": null,
+   "lugar": "Sala Santiago Nattino de APECH",
+   "direccion": null,
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Una imagen puede permitirnos reconocer algo y, al mismo tiempo, volverlo extraño. El propio reflejo, una fotografía familiar, una cama o un paisaje conservan señales de lo que conocemos, pero también revelan una…",
+   "imagen": "https://chilecultura.gob.cl/uploads/cropped_Ket0XOr.png",
+   "fotos": null,
+   "url": "https://www.apech.cl/",
+   "fuentes": [
+    {
+     "nombre": "Chile Cultura",
+     "url": "https://chilecultura.gob.cl/events/40660/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "claude",
+   "id": "fbe7d8bf46",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Hibridaciones de Francisca Larraín",
+   "categoria": "arte",
+   "fecha_inicio": "2026-10-30",
+   "fecha_fin": "2026-11-20",
+   "hora": null,
+   "horario": null,
+   "lugar": "Taller Nube Lab",
+   "direccion": null,
+   "comuna": "La Reina",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Te invitamos a la inauguración de “Hibridaciones”, exposición de Francisca Larraín y tercera muestra del ciclo anual de residencias creativas “En el Lab”.",
+   "imagen": "https://chilecultura.gob.cl/uploads/cropped_df95Lav.png",
+   "fotos": null,
+   "url": "https://chilecultura.gob.cl/events/40663/",
+   "fuentes": [
+    {
+     "nombre": "Chile Cultura",
+     "url": "https://chilecultura.gob.cl/events/40663/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "claude",
+   "id": "2b04adba08",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Valores de Chile: Personajes de nuestra historia en los billetes nacionales",
+   "categoria": "museos",
+   "fecha_inicio": "2026-10-30",
+   "fecha_fin": "2027-02-27",
+   "hora": null,
+   "horario": "Lun a jue 9:15–18:00; vie 9:15–17:00; sáb 9:15–14:00",
+   "lugar": "Biblioteca Nacional de Chile",
+   "direccion": "Av. Libertador Bernardo O'Higgins 651",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Muestra del Banco Central sobre los personajes que aparecen en los billetes chilenos actuales y la historia del billete, con sus imágenes y símbolos.",
+   "imagen": "https://www.bibliotecanacional.gob.cl/sites/www.bibliotecanacional.gob.cl/files/styles/4x3_pequeno/public/2026-10/imagen_0.png?h=bf2a9c3c&itok=WLwF6a9z",
+   "fotos": null,
+   "url": "https://www.bibliotecanacional.gob.cl/cartelera/valores-de-chile-personajes-de-nuestra-historia-en-los-billetes-nacionales",
+   "fuentes": [
+    {
+     "nombre": "Biblioteca Nacional de Chile (cartelera)",
+     "url": "https://www.bibliotecanacional.gob.cl/cartelera"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "ed05e88989",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "XIII Bienal Internacional de Artes de Valparaíso: fantasías, fantasmas y fulgores II",
+   "categoria": "arte",
+   "fecha_inicio": "2026-10-30",
+   "fecha_fin": "2026-12-27",
+   "hora": null,
+   "horario": "Mar a dom, 10:00–18:00",
+   "lugar": "Museo de Bellas Artes de Valparaíso (Palacio Baburizza), Sala Blanca",
+   "direccion": "Paseo Yugoslavo 176, Cerro Alegre",
+   "comuna": "Valparaíso",
+   "ciudad": "Valparaíso",
+   "region": "Valparaíso",
+   "precio": "Gratis",
+   "descripcion": "La XIII Bienal Internacional de Artes de Valparaíso muestra en el Palacio Baburizza 31 obras de pequeño y mediano formato, elegidas en su concurso, que invitan a pensar el derecho a la ciudad.",
+   "imagen": "https://www.museobaburizza.cl/wp-content/uploads/2026/10/Diseno-sin-titulo-62-1536x1024.png",
+   "fotos": [
+    "https://www.museobaburizza.cl/wp-content/uploads/2026/11/evento-portada-biav-1-1536x1024.jpg"
+   ],
+   "url": "https://www.museobaburizza.cl/actividad/fantasias-fantasmas-y-fulgores-ii/",
+   "fuentes": [
+    {
+     "nombre": "Museo Baburizza (sitio oficial)",
+     "url": "https://www.museobaburizza.cl/actividad/fantasias-fantasmas-y-fulgores-ii/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "362b1bc210",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Hilos de la Memoria — Mónica Undurraga",
+   "categoria": "arte",
+   "fecha_inicio": "2026-11-04",
+   "fecha_fin": "2026-12-09",
+   "hora": null,
+   "horario": "Lun a vie 10:30–19:00; sáb 11:00–17:00",
+   "lugar": "Galería Patricia Ready (Sala Araucaria)",
+   "direccion": "Espoz 3125",
+   "comuna": "Vitacura",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Diecisiete obras textiles de Mónica Undurraga, hechas con bordado, estampado a mano y aplique, varias sobre antiguos textiles aymaras, que tejen recuerdos de infancia y maternidad, más un video de sus manos trabajando.",
+   "imagen": "https://cdn.prod.website-files.com/6550e38a73ed7d0d9a4e4333/6ab58cd933933572deba7893_6ab58ca635b03ef3cd93ac04_monica-undurraga-hilos-de-la-memoria.jpeg",
+   "fotos": null,
+   "url": "https://galeriapready.cl/exhibition/monica-undurraga---hilos-de-la-memoria",
+   "fuentes": [
+    {
+     "nombre": "Galería Patricia Ready (sitio oficial)",
+     "url": "https://galeriapready.cl/exhibition/monica-undurraga---hilos-de-la-memoria"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "54addd7304",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "La vida adulta — Ignacio Gumucio",
+   "categoria": "arte",
+   "fecha_inicio": "2026-11-04",
+   "fecha_fin": "2026-12-09",
+   "hora": null,
+   "horario": "Lun a vie 10:30–19:00; sáb 11:00–17:00",
+   "lugar": "Galería Patricia Ready (Sala Ginkgo)",
+   "direccion": "Espoz 3125",
+   "comuna": "Vitacura",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Treinta y cinco pinturas recientes de Ignacio Gumucio sobre la adultez, a 30 años de su primera muestra; algunas cruzan el óleo con imágenes generadas por inteligencia artificial.",
+   "imagen": "https://cdn.prod.website-files.com/6550e38a73ed7d0d9a4e4333/6ab58cd933933572deba788d_6ab58ca688bc6c089b2bd303_ignacio-gumucio-vida-adulta.jpeg",
+   "fotos": null,
+   "url": "https://galeriapready.cl/exhibition/ignacio-gumucio---vida-adulta",
+   "fuentes": [
+    {
+     "nombre": "Galería Patricia Ready (sitio oficial)",
+     "url": "https://galeriapready.cl/exhibition/ignacio-gumucio---vida-adulta"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "02b56d99df",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "De Cesante a Mirón. Enrique Flores",
+   "categoria": "arte",
+   "fecha_inicio": "2026-11-06",
+   "fecha_fin": "2027-01-24",
+   "hora": null,
+   "horario": "Mar a dom, 10:30–17:30",
+   "lugar": "Museo de Arte Contemporáneo (MAC), sede Parque Forestal",
+   "direccion": "Ismael Valdés Vergara 506",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Enrique Flores juega con la histórica muestra «De Cézanne a Miró» (1968) y un chiste de Condorito para mirar el arte desde la cultura popular y la calle.",
+   "imagen": "https://mac.uchile.cl/wp-content/uploads/2026/10/cesantemiron.jpg",
+   "fotos": null,
+   "url": "https://mac.uchile.cl/exposiciones/de-cesante-a-miron/",
+   "fuentes": [
+    {
+     "nombre": "MAC Universidad de Chile",
+     "url": "https://mac.uchile.cl/periodo/actuales/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "f8f38aaee7",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "La oscuridad es la puerta. Amparo Sard",
+   "categoria": "arte",
+   "fecha_inicio": "2026-11-06",
+   "fecha_fin": "2027-01-24",
+   "hora": null,
+   "horario": "Mar a dom, 10:30–17:30",
+   "lugar": "Museo de Arte Contemporáneo (MAC), sede Parque Forestal",
+   "direccion": "Ismael Valdés Vergara 506",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "La artista española Amparo Sard cruza naturaleza y tecnología en tres salas del MAC, a partir del poema nigeriano «Our Earth Will Not Die». Curaduría de Adonay Bermúdez.",
+   "imagen": "https://mac.uchile.cl/wp-content/uploads/2026/10/02.jpg",
+   "fotos": null,
+   "url": "https://mac.uchile.cl/exposiciones/la-oscuridad-es-la-puerta/",
+   "fuentes": [
+    {
+     "nombre": "MAC Universidad de Chile",
+     "url": "https://mac.uchile.cl/periodo/actuales/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "b3eac2efa6",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Love From Afar. Bruce Weber",
+   "categoria": "arte",
+   "fecha_inicio": "2026-11-06",
+   "fecha_fin": "2027-01-24",
+   "hora": null,
+   "horario": "Mar a dom, 10:30–17:30",
+   "lugar": "Museo de Arte Contemporáneo (MAC), sede Parque Forestal",
+   "direccion": "Ismael Valdés Vergara 506",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Primera exposición en Latinoamérica del fotógrafo y cineasta Bruce Weber: retratos en blanco y negro y campañas para Calvin Klein o Versace que marcaron los años 80 y 90.",
+   "imagen": "https://mac.uchile.cl/wp-content/uploads/2026/10/bruceweber.jpg",
+   "fotos": null,
+   "url": "https://mac.uchile.cl/exposiciones/love-from-afar/",
+   "fuentes": [
+    {
+     "nombre": "MAC Universidad de Chile",
+     "url": "https://mac.uchile.cl/periodo/actuales/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "e96e111ea3",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Resonandes. Sonoridades andinas en relieve",
+   "categoria": "arte",
+   "fecha_inicio": "2026-11-06",
+   "fecha_fin": "2026-12-27",
+   "hora": null,
+   "horario": "Mar a dom, 10:00–18:00",
+   "lugar": "Museo Chileno de Arte Precolombino",
+   "direccion": "Bandera 361",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "$3.000 (nacional y residente); universitarios $1.000; 1er domingo del mes gratis",
+   "descripcion": "Clemente McKay convierte cantos e instrumentos andinos en relieves de cerámica que se miran, se tocan y se escuchan, con una mesa de arena que crea sonido en tiempo real.",
+   "imagen": "https://museo.precolombino.cl/media/images/Resonandes_cartelera.width-1200.webp",
+   "fotos": null,
+   "url": "https://museo.precolombino.cl/exposiciones-cartelera/cartelera/resonandes-sonoridades-andinas-en-relieve/",
+   "fuentes": [
+    {
+     "nombre": "Museo Chileno de Arte Precolombino (cartelera)",
+     "url": "https://museo.precolombino.cl/exposiciones-cartelera/cartelera/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "daa19ce599",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Trazos. Lily Garafulic",
+   "categoria": "arte",
+   "fecha_inicio": "2026-11-06",
+   "fecha_fin": "2027-01-24",
+   "hora": null,
+   "horario": "Mar a dom, 10:30–17:30",
+   "lugar": "Museo de Arte Contemporáneo (MAC), sede Parque Forestal",
+   "direccion": "Ismael Valdés Vergara 506",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Dibujos y grabados de la escultora Lily Garafulic, varios hechos en el mítico Atelier 17 de Nueva York, antes de que muchos viajen al Museo de Arte Moderno de Zagreb.",
+   "imagen": "https://mac.uchile.cl/wp-content/uploads/2026/10/lilyGARAFULIC.jpg",
+   "fotos": null,
+   "url": "https://mac.uchile.cl/exposiciones/trazos/",
+   "fuentes": [
+    {
+     "nombre": "MAC Universidad de Chile",
+     "url": "https://mac.uchile.cl/periodo/actuales/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "fcbb3f5a07",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Valparaíso 1839–2026. Fotografías, tiempos y fragmentos",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-06",
+   "fecha_fin": "2026-12-27",
+   "hora": null,
+   "horario": "Mar a dom, 10:00–18:00",
+   "lugar": "Museo de Bellas Artes de Valparaíso (Palacio Baburizza), Sala Extensión",
+   "direccion": "Paseo Yugoslavo 176, Cerro Alegre",
+   "comuna": "Valparaíso",
+   "ciudad": "Valparaíso",
+   "region": "Valparaíso",
+   "precio": "Gratis",
+   "descripcion": "Casi dos siglos del puerto en fotos, postales, retratos y prensa de la Biblioteca Nacional y los Archivos UDP, en una muestra hecha con Puerto de Ideas. Recién inaugurada.",
+   "imagen": "https://www.museobaburizza.cl/wp-content/uploads/2026/11/evento-portada-valparaisoptoideas-1-1536x1024.jpg",
+   "fotos": null,
+   "url": "https://www.museobaburizza.cl/actividad/valparaiso-1839-2026-fotografias-tiempos-y-fragmentos/",
+   "fuentes": [
+    {
+     "nombre": "Museo Baburizza (sitio oficial)",
+     "url": "https://www.museobaburizza.cl/actividad/valparaiso-1839-2026-fotografias-tiempos-y-fragmentos/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "25228fa03c",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
   {
    "titulo": "Mercaderes de la Ruta: Festival medieval de Oriente",
    "categoria": "medieval",
@@ -74,6 +1619,36 @@
    "id": "d30fc6d897",
    "agregado": "2026-11-06",
    "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Art Week Chile 2026",
+   "categoria": "arte",
+   "fecha_inicio": "2026-11-07",
+   "fecha_fin": "2026-11-08",
+   "hora": null,
+   "horario": "Sáb 7 y dom 8, 11:00–21:00",
+   "lugar": "Centro Cultural Estación Mapocho",
+   "direccion": "Plaza de la Cultura s/n (Metro Puente Cal y Canto)",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "$3.000; menores de 10 y mayores de 70 gratis",
+   "descripcion": "Feria internacional de arte contemporáneo en la Estación Mapocho: más de 380 artistas emergentes y consagrados, con obras a precio de taller. Solo este fin de semana.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.artweekchile.cl/",
+   "fuentes": [
+    {
+     "nombre": "Art Week Chile (sitio oficial) y Meganoticias",
+     "url": "https://www.artweekchile.cl/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "e09eb1beeb",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
   },
   {
    "titulo": "Def Leppard - Live 2026 - with Special Guest Extreme",
@@ -132,6 +1707,66 @@
    "actualizado": "2026-11-06"
   },
   {
+   "titulo": "El universo de Matta: Être Cible (Ser el blanco)",
+   "categoria": "arte",
+   "fecha_inicio": "2026-11-11",
+   "fecha_fin": "2027-01-03",
+   "hora": null,
+   "horario": "Mar a dom, 10:15–18:45",
+   "lugar": "Centro Cultural La Moneda",
+   "direccion": "Plaza de la Ciudadanía 26",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "El CCLM exhibe «Être Cible», gran óleo de Roberto Matta (ca. 1958-1960, 2 x 3 m), y abre la 5ª edición del Circuito Matta Patrimonial por los 115 años del artista.",
+   "imagen": "https://cdn.cclm.cl/web/wp-content/uploads/2026/11/matta-cclm-2026-2100x900.jpg",
+   "fotos": null,
+   "url": "https://www.cclm.cl/exposicion/el-universo-de-matta/",
+   "fuentes": [
+    {
+     "nombre": "Centro Cultural La Moneda",
+     "url": "https://www.cclm.cl/exposiciones/futuras-exposiciones/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "ae07a2796c",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Grabados en Sala Matta en Museo Ralli",
+   "categoria": "arte",
+   "fecha_inicio": "2026-11-11",
+   "fecha_fin": "2026-11-29",
+   "hora": null,
+   "horario": null,
+   "lugar": "Museo Ralli Santiago",
+   "direccion": null,
+   "comuna": "Vitacura",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "La Sala Roberto Matta del Museo Ralli, reúne 19 obras gráficas pertenecientes a la Colección Ralli, realizadas principalmente durante las décadas de 1970 y 1980.",
+   "imagen": "https://chilecultura.gob.cl/uploads/cropped_NmuWjV6.png",
+   "fotos": null,
+   "url": "https://www.museoralli.cl/index.php",
+   "fuentes": [
+    {
+     "nombre": "Chile Cultura",
+     "url": "https://chilecultura.gob.cl/events/40853/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "claude",
+   "id": "3f73ac8f60",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
    "titulo": "Ill Niño en Chile",
    "categoria": "metal",
    "fecha_inicio": "2026-11-11",
@@ -158,6 +1793,36 @@
    "id": "32ed296aa6",
    "agregado": "2026-11-06",
    "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Matta: Memorias de Guerra",
+   "categoria": "arte",
+   "fecha_inicio": "2026-11-12",
+   "fecha_fin": "2026-12-06",
+   "hora": null,
+   "horario": "Mar a dom, 10:00–18:30",
+   "lugar": "Parque Cultural de Valparaíso",
+   "direccion": "Cárcel 471, Cerro Cárcel",
+   "comuna": "Valparaíso",
+   "ciudad": "Valparaíso",
+   "region": "Valparaíso",
+   "precio": "$1.000 + cargo (PortalTickets); extranjeros $3.000; universitarios, menores de e",
+   "descripcion": "Grabados de Roberto Matta de la Colección Fundación Tarquinia sobre guerra, poder y resistencia, en la Galería de Artes Visuales del Parque Cultural. Parte del Circuito Matta y de la Bienal de Valparaíso (BIAV).",
+   "imagen": "https://chilecultura.gob.cl/uploads/cropped_PxZcKCM.png",
+   "fotos": null,
+   "url": "https://biav.cl/evento/matta-memorias-de-guerra/",
+   "fuentes": [
+    {
+     "nombre": "Bienal Internacional de Artes de Valparaíso (BIAV)",
+     "url": "https://biav.cl/evento/matta-memorias-de-guerra/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "5579008677",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
   },
   {
    "titulo": "Noche de Museos 2026",
@@ -190,6 +1855,10 @@
     {
      "nombre": "Home - Radio Agricultura",
      "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/noche-de-museos-llega-a-santiago-conoce-los-espacios-de-la-universidad-de-chile-que-abriran-gratis_20261106/"
+    },
+    {
+     "nombre": "Ministerio de las Culturas, las Artes y el Patrimonio",
+     "url": "https://www.cultura.gob.cl/agendacultural/ministerio-de-las-culturas-abre-inscripciones-para-noche-de-museos-2026/"
     }
    ],
    "desde_imagen": false,
@@ -197,7 +1866,11 @@
    "origen": "ia",
    "id": "09cd96f442",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
+   "actualizado": "2026-11-07",
+   "horario": "Desde las 17:00; cada museo tiene su horario (gratis)",
+   "fotos": [
+    "https://www.mnhn.gob.cl/sites/www.mnhn.gob.cl/files/styles/4x3_mediano/public/2026-10/Nochemuseos.png?h=98f88c31&itok=GUofKna_"
+   ]
   },
   {
    "titulo": "Medieval Party & Veladaa: Elfos, Hadas y Magia",
@@ -366,6 +2039,36 @@
    "id": "cb4dec6816",
    "agregado": "2026-11-06",
    "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Tolomiro Todomiro: escultura de Matta en La Moneda",
+   "categoria": "arte",
+   "fecha_inicio": "2026-11-18",
+   "fecha_fin": "2026-11-26",
+   "hora": null,
+   "horario": null,
+   "lugar": "Palacio de La Moneda",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Te invitamos a descubrir el patrimonio artístico e histórico del Palacio de La Moneda a través de un recorrido por sus patios y salones protocolares, con una detención especial en la escultura Tolomiro Todomiro, de…",
+   "imagen": "https://chilecultura.gob.cl/uploads/cropped_C5qJRLe.png",
+   "fotos": null,
+   "url": "https://chilecultura.gob.cl/events/40932/",
+   "fuentes": [
+    {
+     "nombre": "Chile Cultura",
+     "url": "https://chilecultura.gob.cl/events/40932/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "claude",
+   "id": "20d77619ca",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
   },
   {
    "titulo": "Saratoga en Chile",
@@ -578,6 +2281,38 @@
    "id": "5197cbd0b7",
    "agregado": "2026-11-06",
    "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Pepo: antes y después de Condorito",
+   "categoria": "ilustracion",
+   "fecha_inicio": "2026-12-02",
+   "fecha_fin": "2027-03-28",
+   "hora": null,
+   "horario": "Mar a sáb 10:00–20:00; dom 10:00–19:00",
+   "lugar": "Centro Cultural Gabriela Mistral (GAM)",
+   "direccion": "Av. Libertador Bernardo O'Higgins 227",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Archivos originales y experiencias interactivas sobre Pepo, creador de Condorito, y su trabajo en revistas como Pobre Diablo y El Pingüino, a partir de más de mil piezas de la Fundación Pepo.",
+   "imagen": "https://gam.cl/media/images/pepo3.c2e0492d.fill-694x463.jpg",
+   "fotos": [
+    "https://gam.cl/media/images/peepo.2e16d0ba.fill-694x463.jpg"
+   ],
+   "url": "https://gam.cl/es/que-hacer-en-gam/artesvisuales/mundo-pepo/",
+   "fuentes": [
+    {
+     "nombre": "Centro Cultural Gabriela Mistral (GAM)",
+     "url": "https://gam.cl/es/que-hacer-en-gam/artesvisuales/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "3636e60042",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
   },
   {
    "titulo": "Atarashii Gakko en Caupolicán",
@@ -830,6 +2565,39 @@
    "id": "2dafda391c",
    "agregado": "2026-11-06",
    "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "El Valle de los Moomin",
+   "categoria": "ilustracion",
+   "fecha_inicio": "2026-12-23",
+   "fecha_fin": "2027-01-30",
+   "hora": null,
+   "horario": "Mar a sáb, 10:00–18:00",
+   "lugar": "Centro Cultural Gabriela Mistral (GAM)",
+   "direccion": "Av. Libertador Bernardo O'Higgins 227",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis (por orden de llegada, cupos limitados)",
+   "descripcion": "Los trolls blancos de Tove Jansson llegan a BiblioGAM con personajes ilustrados, libros y cortos animados finlandeses, en una muestra junto a la Embajada de Finlandia.",
+   "imagen": "https://gam.cl/media/images/Moominfamily.max-1200x900.jpg",
+   "fotos": [
+    "https://gam.cl/media/images/Moomin_Comet_1080x1350_1.max-1200x900.jpg",
+    "https://gam.cl/media/images/Portada__-_Martina.2e16d0ba.fill-1200x800.png"
+   ],
+   "url": "https://gam.cl/es/que-hacer-en-gam/artesvisuales/exposicion-el-valle-de-los-moomin/",
+   "fuentes": [
+    {
+     "nombre": "Centro Cultural Gabriela Mistral (GAM)",
+     "url": "https://gam.cl/es/que-hacer-en-gam/artesvisuales/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "0997d6f0b1",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
   },
   {
    "titulo": "Metallica Sinfónico S&M",

@@ -1,5 +1,6 @@
 /* IMP TRAVEL (antes El Pregonero) — agenda de eventos, restaurantes temáticos y favoritos. Sin dependencias.
- * Datos: data/eventos.json (lo actualiza el robot) y data/restaurantes.json (lista revisada a mano).
+ * Datos: data/eventos.json (lo actualiza el robot), data/restaurantes.json (lista revisada a mano)
+ * y data/lugares.json (fotos de teatros, museos y salas: se muestran en cada evento que ocurre ahí).
  * Favoritos: en el navegador; con sesión de Google (cuenta.js + Firebase) quedan en la cuenta de cada persona. */
 "use strict";
 
@@ -14,12 +15,14 @@ const MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "
 const COMUNAS_RM = /santiago|metropolitana|providencia|[ñn]u[ñn]oa|las condes|vitacura|lo barnechea|la reina|pe[ñn]alol[ée]n|macul|la florida|puente alto|maip[úu]|estaci[óo]n central|quinta normal|recoleta|independencia|conchal[íi]|huechuraba|quilicura|renca|cerro navia|lo prado|pudahuel|cerrillos|pedro aguirre cerda|san miguel|san joaqu[íi]n|la cisterna|el bosque|la granja|la pintana|san ram[óo]n|lo espejo|san bernardo|buin|colina|lampa|talagante|pe[ñn]aflor|melipilla|pirque|san jos[ée] de maipo|movistar arena|caupolic[áa]n|teatro coliseo|blondie|santander arena|espacio riesco|matucana|gam\b|parque o.?higgins/i;
 const HASH_SECCION = { agenda: "eventos", restaurantes: "restaurantes", favoritos: "favoritos" };
 
-const estado = { seccion: "agenda", cat: "todas", periodo: "todo", texto: "", soloRM: false, soloNuevos: false, tema: "todos" };
+const estado = { seccion: "agenda", cat: "todas", periodo: "todo", texto: "", soloRM: false, soloNuevos: false, tema: "todos", verTemporadas: false };
 let EVENTOS = [];
 let EVENTOS_CARGADOS = false;
 let AGENDA_FALLO = false;
 let ESTADO_RESTAURANTES = "cargando";   // "cargando" | "listo" | "fallo"
-const FOTOS_ROTAS = new Set();   // afiches que no cargaron: no se vuelven a pintar
+const FOTOS_ROTAS = new Set();   // fotos que no cargaron: no se vuelven a pintar
+let LUGARES = [];         // teatros, museos, salas... con sus fotos (data/lugares.json)
+let REFERENCIALES = {};   // categoría -> foto referencial, para eventos en un lugar que aún no tiene foto
 let ULTIMA = {};          // datos de la última búsqueda
 let NUEVOS = new Set();   // id de los eventos que agregó la última búsqueda
 let CATS = {};
@@ -273,6 +276,7 @@ function datosLinea(e) {
   const l = lugarTexto(e);
   if (l) partes.push(`<span>📍 ${esc(l)}</span>`);
   if (e.hora) partes.push(`<span>🕖 ${esc(e.hora)} h</span>`);
+  else if (e.horario) partes.push(`<span>🕖 ${esc(e.horario)}</span>`);   // exposiciones: horario de visita
   if (e.precio) partes.push(`<span>🎟 ${esc(e.precio)}</span>`);
   return partes.length ? `<p class="datos">${partes.join('<span class="sep">|</span>')}</p>` : "";
 }
@@ -310,28 +314,246 @@ function acciones(e, panel) {
   </div>`;
 }
 
-/** Afiche completo, sin recortes: la imagen va entera dentro del recuadro y una copia desenfocada
- *  (el mismo archivo, que el navegador baja una sola vez) rellena los bordes. */
-function imagen(e, clase) {
-  const src = urlSegura(e.imagen);
-  if (!src || FOTOS_ROTAS.has(src)) return "";
-  const s = esc(src);
-  return `<div class="${clase} marco-foto">` +
-    `<img class="fondo" src="${s}" alt="" aria-hidden="true" loading="lazy" decoding="async" referrerpolicy="no-referrer">` +
-    `<img class="imagen" src="${s}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onload="ajustarMarco(this)" onerror="fotoRota(this)">` +
+// ---------- fotos: afiches, fotos de los lugares y de los restaurantes ----------
+/** "Teatro Caupolicán - Santiago Centro" → " teatro caupolican santiago centro " (para buscar alias como palabras enteras). */
+function claveTexto(t) { return ` ${sinTildes(t).replace(/[^a-z0-9]+/g, " ").trim()} `; }
+
+function prepararLugares(datos) {
+  const claves = (lista) => (lista || []).map(claveTexto).filter((c) => c.trim().length >= 3);
+  LUGARES = (datos.lugares || []).map((l) => ({ ...l, _claves: claves([l.nombre, ...(l.alias || [])]), _excluir: claves(l.excluir) }));
+  REFERENCIALES = datos.referenciales || {};
+}
+
+/** Lugares conocidos que aparecen en el lugar o la dirección del evento, en el orden en que se nombran.
+ *  Si un alias está dentro de otro más específico ("museo de arte contemporaneo" y "... quinta normal"), gana el específico;
+ *  "excluir" descarta un lugar cuando el texto nombra otra sede ("quinta normal" no es el MAC del Parque Forestal). */
+function lugaresDe(e) {
+  const t = claveTexto([e.lugar, e.direccion].filter(Boolean).join(" "));
+  if (!t.trim()) return [];
+  const todo = claveTexto([e.lugar, e.direccion, e.comuna, e.ciudad, e.region].filter(Boolean).join(" "));
+  const hallados = [];
+  for (const l of LUGARES) {
+    if (l._excluir.some((x) => todo.includes(x))) continue;
+    const alias = l._claves.filter((a) => t.includes(a)).sort((a, b) => b.length - a.length)[0];
+    if (alias) hallados.push({ l, alias, pos: t.indexOf(alias) });
+  }
+  // Se descarta un lugar si otro que también calzó tiene un alias más largo que contiene el suyo:
+  // "Museo de Arte Contemporáneo (MAC), Av. Matucana 464" es la sede Quinta Normal, no la del Parque Forestal.
+  return hallados
+    .filter((x) => !hallados.some((y) => y !== x && y.l._claves.some((c) => c.length > x.alias.length && c.includes(x.alias))))
+    .sort((a, b) => a.pos - b.pos)
+    .map((x) => x.l);
+}
+
+/** Sin repetidas ni rotas (las que ya fallaron en esta visita). */
+function unicas(fotos) {
+  const vistas = new Set();
+  return fotos.filter((f) => {
+    const u = urlSegura(f.url);
+    if (!u || FOTOS_ROTAS.has(u) || vistas.has(u)) return false;
+    vistas.add(u);
+    return true;
+  });
+}
+
+/** El afiche y las fotos del evento primero; después, las del lugar (de varios lugares, una de cada uno).
+ *  Si no hay ninguna, una imagen referencial de la categoría (se avisa que lo es). */
+function dominioDe(u) {
+  try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return ""; }
+}
+function fotosEvento(e) {
+  // El crédito del afiche es la fuente del sitio al que lleva su enlace (o, si no está entre las fuentes, ese sitio)
+  const fuentes = (e.fuentes || []).filter((f) => urlSegura(f.url));
+  const sitio = dominioDe(urlSegura(e.url) || "");
+  const fuente = fuentes.find((f) => sitio && dominioDe(f.url) === sitio)
+    || fuentes.find((f) => dominioDe(f.url) === dominioDe(urlSegura(e.imagen) || "")) || (sitio ? null : fuentes[0]);
+  const deEvento = {
+    credito: fuente?.nombre ? `Fuente: ${fuente.nombre}` : sitio ? `Fuente: ${sitio}` : "",
+    pagina: urlSegura(e.url) || fuente?.url || null,
+  };
+  const fotos = [];
+  if (urlSegura(e.imagen)) fotos.push({ url: e.imagen, tipo: "afiche", ...deEvento });
+  for (const u of Array.isArray(e.fotos) ? e.fotos : []) fotos.push({ url: u, tipo: "evento", ...deEvento });
+  const lugares = lugaresDe(e).slice(0, 3);
+  for (const l of lugares) {
+    // primero se quitan las que no cargaron, para que un lugar con más fotos no desaparezca de la galería
+    const buenas = (l.fotos || []).filter((f) => urlSegura(f.url) && !FOTOS_ROTAS.has(f.url));
+    for (const f of buenas.slice(0, lugares.length === 1 ? 4 : 1)) fotos.push({ ...f, tipo: "lugar", lugar: l.nombre });
+  }
+  const lista = unicas(fotos);
+  if (lista.length) return lista;
+  return unicas((REFERENCIALES[e.categoria] || []).map((f) => ({ ...f, tipo: "referencial" })));
+}
+function fotosLocal(r) { return unicas((r.fotos || []).map((f) => ({ ...f, tipo: "local" }))); }
+
+function datosFotos(ref) {
+  const tipo = ref.slice(0, 1), id = ref.slice(2);
+  if (tipo === "e") {
+    const e = porId(id);
+    return e ? { titulo: e.titulo, fotos: fotosEvento(e) } : null;
+  }
+  const r = RESTAURANTES.find((x) => x.id === id);
+  return r ? { titulo: r.nombre, fotos: fotosLocal(r) } : null;
+}
+
+/** Foto principal completa, sin recortes (una copia desenfocada del mismo archivo, que el navegador baja
+ *  una sola vez, rellena el recuadro) y, si hay más, una tira con las siguientes. Todas abren el visor. */
+function htmlGaleria(ref, clase, opciones = {}) {
+  const d = datosFotos(ref);
+  if (!d || !d.fotos.length) return "";
+  const { titulo, fotos } = d;
+  const n = fotos.length;
+  const [p, ...resto] = fotos;
+  const r = esc(ref), s = esc(p.url);
+  const minis = opciones.sinTira ? [] : resto.slice(0, 3);
+  const nombre = n > 1 ? `Ver las ${n} fotos de ${titulo}` : `Ver en grande la foto de ${titulo}`;
+  const tira = minis.map((f, i) => {
+    const quedan = n - minis.length - 1;
+    const mas = i === minis.length - 1 && quedan > 0 ? `<span class="mas" aria-hidden="true">+${quedan}</span>` : "";
+    return `<button type="button" class="mini" data-accion="fotos" data-ref="${r}" data-i="${i + 1}" aria-label="${esc(`Foto ${i + 2} de ${n}: ${f.descripcion || f.lugar || titulo}`)}">` +
+      `<img src="${esc(urlSegura(f.mini) || f.url)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-url="${esc(f.url)}" onerror="fotoRota(this)">${mas}</button>`;
+  }).join("");
+  return `<div class="galeria ${clase}" data-ref="${r}" data-clase="${esc(clase)}"${opciones.sinTira ? ' data-sin-tira="1"' : ""}>` +
+    `<button type="button" class="marco-foto" data-accion="fotos" data-ref="${r}" data-i="0" aria-label="${esc(nombre)}">` +
+    `<img class="fondo" src="${s}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">` +
+    `<img class="imagen" src="${s}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-url="${s}" onload="ajustarMarco(this)" onerror="fotoRota(this)">` +
+    (p.tipo === "referencial" ? `<span class="sello">Imagen referencial</span>` : "") +
+    (n > 1 ? `<span class="contador" aria-hidden="true">📷 ${n}</span>` : "") +
+    `</button>` +
+    (tira ? `<div class="tira">${tira}</div>` : "") +
     `</div>`;
 }
-/** Las miniaturas toman la forma de su imagen (el CSS la limita), para no dejar franjas grandes. */
+/** Las miniaturas de la agenda toman la forma de su imagen (el CSS la limita), para no dejar franjas grandes. */
 function ajustarMarco(img) {
-  const marco = img.closest(".miniatura");
-  if (!marco || !img.naturalWidth || !img.naturalHeight) return;
-  marco.style.setProperty("--proporcion", (img.naturalWidth / img.naturalHeight).toFixed(3));
+  if (!img.closest(".galeria.miniatura") || !img.naturalWidth || !img.naturalHeight) return;
+  img.closest(".marco-foto").style.setProperty("--proporcion", (img.naturalWidth / img.naturalHeight).toFixed(3));
 }
+/** Una foto no cargó: si era la versión chica se prueba la grande; si no, se quita del visor y se rehacen
+ *  todas las galerías que la tenían (las fotos de un lugar se repiten en los eventos de ese lugar). */
 function fotoRota(img) {
-  FOTOS_ROTAS.add(img.getAttribute("src"));
-  const nota = img.closest(".nota");
-  (img.closest(".marco-foto") || img).remove();
-  if (nota && !nota.querySelector(".marco-foto")) nota.classList.add("sin-foto");
+  const url = img.dataset.url || img.getAttribute("src");
+  if (img.dataset.url && img.getAttribute("src") !== img.dataset.url && !img.dataset.reintento) {
+    img.dataset.reintento = "1";
+    img.src = img.dataset.url;
+    return;
+  }
+  const propia = img.closest(".galeria");
+  const afectadas = [...document.querySelectorAll(".galeria")].filter((g) =>
+    g === propia || datosFotos(g.dataset.ref)?.fotos.some((f) => f.url === url));
+  FOTOS_ROTAS.add(url);
+  const figura = img.closest(".visor-foto");
+  if (figura) quitarDelVisor(figura);
+  afectadas.forEach(rehacerGaleria);
+}
+function rehacerGaleria(g) {
+  if (!document.contains(g)) return;
+  const tarjeta = g.closest("article");
+  // si el visor se abrió desde esta galería, el foco debe volver al botón equivalente de la galería nueva
+  const abria = visor.abridor && g.contains(visor.abridor) ? visor.abridor.dataset.i || "0" : null;
+  const html = htmlGaleria(g.dataset.ref, g.dataset.clase, { sinTira: !!g.dataset.sinTira });
+  if (!html) {
+    g.remove();
+    tarjeta?.classList.add("sin-foto");
+    if (abria !== null) visor.abridor = tarjeta?.querySelector("h2 a, h3 a, a, button") || null;
+    return;
+  }
+  const t = document.createElement("template");
+  t.innerHTML = html;
+  const nueva = t.content.firstElementChild;
+  g.replaceWith(nueva);
+  if (abria !== null) visor.abridor = nueva.querySelector(`[data-i="${abria}"]`) || nueva.querySelector(".marco-foto");
+}
+
+// ---------- visor de fotos (se desliza con el dedo, con las flechas o con el teclado) ----------
+// destino: la foto a la que va un desplazamiento suave (las flechas suman desde ahí, no desde la posición a medio camino)
+const visor = { ref: null, abridor: null, indice: 0, cuadro: 0, destino: null, fin: 0 };
+const QUE_ES = { afiche: "Afiche del evento", evento: "Foto del evento", referencial: "Imagen referencial: aún no tenemos una foto de este lugar" };
+
+function figuraVisor(f, titulo) {
+  const que = f.tipo === "lugar" ? `El lugar: ${f.lugar}` : QUE_ES[f.tipo] || "";
+  const credito = !f.credito ? "" : urlSegura(f.pagina)
+    ? `<a href="${esc(f.pagina)}" target="_blank" rel="noopener">${esc(f.credito)} ↗</a>` : esc(f.credito);
+  const texto = [que && `<b>${esc(que)}</b>`, f.tipo === "afiche" ? "" : esc(f.descripcion || ""), credito].filter(Boolean).join(" · ");
+  return `<figure class="visor-foto"><div class="visor-marco">` +
+    `<img src="${esc(f.url)}" alt="${esc(f.descripcion || que || titulo)}" decoding="async" referrerpolicy="no-referrer" data-url="${esc(f.url)}" onerror="fotoRota(this)">` +
+    `</div>${texto ? `<figcaption>${texto}</figcaption>` : ""}</figure>`;
+}
+function figurasVisor() { return [...$("#visor-carril").children]; }
+
+function abrirVisor(ref, i, abridor) {
+  const d = datosFotos(ref);
+  if (!d || !d.fotos.length || !$("#visor")) return;
+  visor.ref = ref;
+  visor.abridor = abridor;
+  $("#visor-titulo").textContent = d.titulo;
+  $("#visor-carril").innerHTML = d.fotos.map((f) => figuraVisor(f, d.titulo)).join("");
+  const dlg = $("#visor");
+  if (!dlg.open) dlg.showModal();
+  irAFoto(i, false);
+}
+function irAFoto(i, suave = true) {
+  const carril = $("#visor-carril");
+  const n = figurasVisor().length;
+  if (!n) { $("#visor").close(); return; }
+  visor.indice = Math.min(Math.max(0, i), n - 1);
+  const izquierda = visor.indice * carril.clientWidth;
+  visor.destino = suave && Math.abs(carril.scrollLeft - izquierda) > 1 ? visor.indice : null;
+  carril.scrollTo({ left: izquierda, behavior: suave ? "smooth" : "auto" });
+  pintarContador();
+}
+function pintarContador() {
+  const n = figurasVisor().length;
+  const ant = $("#visor-ant"), sig = $("#visor-sig");
+  const foco = document.activeElement;
+  $("#visor-contador").textContent = n > 1 ? `${visor.indice + 1} de ${n}` : "";
+  ant.hidden = sig.hidden = n < 2;
+  ant.disabled = visor.indice <= 0;
+  sig.disabled = visor.indice >= n - 1;
+  // Una flecha que se deshabilita pierde el foco y el navegador lo manda fuera del visor: se pasa a la otra
+  if ((foco === ant || foco === sig) && (foco.disabled || foco.hidden)) {
+    const otra = foco === ant ? sig : ant;
+    (otra.disabled || otra.hidden ? $("#visor-carril") : otra).focus({ preventScroll: true });
+  }
+}
+function quitarDelVisor(figura) {
+  const k = figurasVisor().indexOf(figura);
+  if (k < 0) return;
+  figura.remove();
+  irAFoto(k < visor.indice ? visor.indice - 1 : visor.indice, false);   // si se fue una anterior, la actual se corrió
+}
+/** La foto que se ve según la posición del carril (cuando no va camino a un destino). */
+function sincronizarVisor() {
+  const c = $("#visor-carril");
+  if (!c.clientWidth || visor.destino !== null) return;
+  const i = Math.min(Math.round(c.scrollLeft / c.clientWidth), figurasVisor().length - 1);
+  if (i >= 0 && i !== visor.indice) { visor.indice = i; pintarContador(); }
+}
+if ($("#visor")) {   // (una versión vieja de index.html en caché no tiene visor: el resto de la página sigue funcionando)
+  $("#visor-carril").addEventListener("scroll", () => {
+    cancelAnimationFrame(visor.cuadro);
+    visor.cuadro = requestAnimationFrame(sincronizarVisor);
+    clearTimeout(visor.fin);
+    // terminó el desplazamiento (sirve también en los navegadores sin el evento "scrollend")
+    visor.fin = setTimeout(() => { visor.destino = null; sincronizarVisor(); }, 180);
+  });
+  $("#visor-ant").addEventListener("click", () => irAFoto(visor.indice - 1));
+  $("#visor-sig").addEventListener("click", () => irAFoto(visor.indice + 1));
+  $("#visor-cerrar").addEventListener("click", () => $("#visor").close());
+  $("#visor").addEventListener("click", (ev) => { if (ev.target === ev.currentTarget) ev.currentTarget.close(); });   // tocar fuera de la foto
+  // En el documento y no en el diálogo: así las flechas funcionan aunque el foco haya quedado en otra parte
+  document.addEventListener("keydown", (ev) => {
+    if (!$("#visor").open || ev.altKey || ev.ctrlKey || ev.metaKey) return;
+    if (ev.key === "ArrowRight") { ev.preventDefault(); irAFoto(visor.indice + 1); }
+    else if (ev.key === "ArrowLeft") { ev.preventDefault(); irAFoto(visor.indice - 1); }
+  });
+  $("#visor").addEventListener("close", () => {
+    $("#visor-carril").innerHTML = "";
+    visor.destino = null;
+    const a = visor.abridor;
+    visor.abridor = null;
+    if (a && document.contains(a)) a.focus({ preventScroll: true });
+  });
+  window.addEventListener("resize", () => { if ($("#visor").open) irAFoto(visor.indice, false); });
 }
 
 function cuandoBusqueda() {
@@ -365,16 +587,26 @@ function pintarNuevos(lista) {
   }
 }
 
+/** Exposiciones y temporadas largas que ya están abiertas: en la agenda van juntas, por fecha de cierre. */
+function temporadaLarga(e) {
+  if (!e.fecha_fin) return false;
+  const i = fecha(e.fecha_inicio);
+  return i < hoy() && dias(i, fecha(e.fecha_fin)) >= 7;
+}
+
 function pintarPortada(lista) {
   const cont = $("#portada");
   if (estado.soloNuevos || estado.texto || lista.length < 3) { cont.innerHTML = ""; return; }
-  const conFoto = lista.filter((e) => urlSegura(e.imagen));
-  const elegidos = (conFoto.length >= 3 ? conFoto : lista).slice(0, 3);
+  // La portada es para lo que viene: las exposiciones que ya están abiertas tienen su propio grupo
+  const proximos = lista.filter((e) => !temporadaLarga(e));
+  const base = proximos.length >= 3 ? proximos : [...proximos, ...lista.filter(temporadaLarga)];   // lo que viene va primero
+  const conFoto = base.filter((e) => urlSegura(e.imagen) && !FOTOS_ROTAS.has(e.imagen));
+  const elegidos = (conFoto.length >= 3 ? conFoto : base).slice(0, 3);
   const [p, ...s] = elegidos;
   const enlace = (e) => urlSegura(e.url) || "#";
   cont.innerHTML = `
     <article class="principal">
-      ${imagen(p, "foto")}
+      ${htmlGaleria(`e:${p.id}`, "foto")}
       <p class="cuando-grande">${esc(cuandoRelativo(p))}</p>
       ${antetitulo(p)}
       <h2><a href="${esc(enlace(p))}" target="_blank" rel="noopener">${esc(p.titulo)}</a></h2>
@@ -384,7 +616,7 @@ function pintarPortada(lista) {
     </article>
     ${s.map((e) => `
     <article class="secundaria">
-      ${imagen(e, "foto")}
+      ${htmlGaleria(`e:${e.id}`, "foto", { sinTira: true })}
       <p class="cuando-grande">${esc(cuandoRelativo(e))}</p>
       <h2><a href="${esc(enlace(e))}" target="_blank" rel="noopener">${esc(e.titulo)}</a></h2>
       ${datosLinea(e)}
@@ -395,7 +627,7 @@ function htmlNota(e, panel) {
   const h = hoy();
   const i = fecha(e.fecha_inicio);
   const enCurso = i < h;
-  const foto = imagen(e, "miniatura");
+  const foto = htmlGaleria(`e:${e.id}`, "miniatura");
   const ref = panel ? ` data-ref="e:${esc(e.id)}"` : "";
   const elegido = panel && seleccion[panel] === `e:${e.id}` ? " elegida" : "";
   return `<article class="nota${foto ? "" : " sin-foto"}${elegido}" id="${panel ? "f" : "e"}-${esc(e.id)}"${ref}>
@@ -419,8 +651,10 @@ function htmlNota(e, panel) {
 
 function pintarAgenda(lista) {
   const h = hoy();
-  const grupos = new Map();
+  const largas = lista.filter(temporadaLarga).sort((a, b) => a.fecha_fin.localeCompare(b.fecha_fin));
+  const grupos = new Map([["Ahora mismo", []]]);
   for (const e of lista) {
+    if (temporadaLarga(e)) continue;
     const i = fecha(e.fecha_inicio);
     const clave = i < h ? "Ahora mismo" : `${MESES[i.getMonth()]} ${i.getFullYear()}`;
     if (!grupos.has(clave)) grupos.set(clave, []);
@@ -428,9 +662,22 @@ function pintarAgenda(lista) {
   }
   let html = "";
   for (const [mes, evs] of grupos) {
-    html += `<h2 class="mes">${esc(mes)}</h2>` + evs.map((e) => htmlNota(e)).join("");
+    if (evs.length) html += `<h2 class="mes">${esc(mes)}</h2>` + evs.map((e) => htmlNota(e)).join("");
+    if (mes === "Ahora mismo" && largas.length) html += htmlTemporadas(largas);   // después de lo de hoy, antes de los meses
   }
   $("#agenda").innerHTML = html;
+}
+
+/** Las exposiciones abiertas por semanas o meses no tapan la agenda: se ven las 3 que cierran antes
+ *  y un botón muestra el resto (al filtrar por arte o museos, o al buscar, se ven todas). */
+function htmlTemporadas(largas) {
+  const todas = estado.verTemporadas || largas.length <= 4 || !!estado.texto || estado.soloNuevos
+    || ["arte", "museos"].includes(estado.cat);
+  const visibles = todas ? largas : largas.slice(0, 3);
+  return `<h2 class="mes" id="t-temporadas" tabindex="-1">Exposiciones y temporadas abiertas</h2>` +
+    visibles.map((e) => htmlNota(e)).join("") +
+    (todas ? "" : `<p class="ver-mas"><button type="button" class="boton secundario" data-accion="temporadas">` +
+      `Ver las ${largas.length} exposiciones y temporadas abiertas</button></p>`);
 }
 
 function pintar() {
@@ -516,7 +763,9 @@ function htmlLocal(r, panel) {
   const enlaces = [];
   if (urlSegura(r.instagram)) enlaces.push(`<a class="accion" href="${esc(r.instagram)}" target="_blank" rel="noopener">Instagram ↗</a>`);
   if (urlSegura(r.web)) enlaces.push(`<a class="accion" href="${esc(r.web)}" target="_blank" rel="noopener">Sitio web ↗</a>`);
-  return `<article class="local${elegido}" id="${panel === "favoritos" ? "fr" : "r"}-${esc(r.id)}" data-ref="r:${esc(r.id)}">
+  const galeria = htmlGaleria(`r:${r.id}`, "foto-local");
+  return `<article class="local${elegido}${galeria ? "" : " sin-foto"}" id="${panel === "favoritos" ? "fr" : "r"}-${esc(r.id)}" data-ref="r:${esc(r.id)}">
+    ${galeria}
     <p class="antetitulo"><span aria-hidden="true">${esc(t.emoji)}</span> ${esc(t.nombre)}</p>
     <h3>${esc(r.nombre)}</h3>
     ${datos.length ? `<p class="datos">${datos.join('<span class="sep">|</span>')}</p>` : ""}
@@ -618,7 +867,7 @@ function icsTexto(e) {
   lineas.push(`SUMMARY:${limpio(e.titulo)}`);
   const l = [e.lugar, e.direccion, e.comuna].filter(Boolean).join(", ");
   if (l) lineas.push(`LOCATION:${limpio(l)}`);
-  lineas.push(`DESCRIPTION:${limpio([e.descripcion, e.precio && "Precio: " + e.precio, e.url].filter(Boolean).join("\n"))}`);
+  lineas.push(`DESCRIPTION:${limpio([e.descripcion, e.horario && "Horario: " + e.horario, e.precio && "Precio: " + e.precio, e.url].filter(Boolean).join("\n"))}`);
   if (urlSegura(e.url)) lineas.push(`URL:${e.url}`);
   lineas.push("END:VEVENT", "END:VCALENDAR");
   return lineas.join("\r\n");
@@ -668,6 +917,13 @@ document.addEventListener("click", (ev) => {
   const accion = btn.dataset.accion;
   if (accion === "favorito") { alternarFavorito(btn.dataset.tipo, btn.dataset.id, btn); return; }
   if (accion === "mapa") { elegirEnMapa(btn.dataset.panel, btn.dataset.ref, true); return; }
+  if (accion === "fotos") { abrirVisor(btn.dataset.ref, Number(btn.dataset.i) || 0, btn); return; }
+  if (accion === "temporadas") {
+    estado.verTemporadas = true;
+    pintar();
+    $("#t-temporadas")?.focus({ preventScroll: true });
+    return;
+  }
   const e = porId(btn.dataset.id);
   if (!e) return;
   if (accion === "calendario") descargarIcs(e);
@@ -717,10 +973,13 @@ async function iniciar() {
   }
   estado.seccion = seccionDeHash();
   pintarSecciones();
-  const [agenda, locales] = await Promise.allSettled([
+  const [agenda, locales, lugares] = await Promise.allSettled([
     Promise.all([cargarJson("config/gustos.json"), cargarJson("data/eventos.json")]),
     cargarJson("data/restaurantes.json"),
+    cargarJson("data/lugares.json"),
   ]);
+  if (lugares.status === "fulfilled") prepararLugares(lugares.value);
+  else console.error(lugares.reason);   // sin fotos de los lugares la agenda igual funciona
   if (agenda.status === "fulfilled") {
     const [cfg, datos] = agenda.value;
     ORDEN_CATS = cfg.categorias;
@@ -750,9 +1009,24 @@ async function iniciar() {
     console.error(locales.reason);
   }
   ESTADO_RESTAURANTES = locales.status === "fulfilled" ? "listo" : "fallo";
+  const h = hashActual();
+  mostrarTemporadaDe(h);
   pintarTodo();
   pintarCuenta();
-  const h = hashActual();
   if (h.startsWith("e-") || h.startsWith("r-")) document.getElementById(h)?.scrollIntoView({ block: "center" });
 }
+/** Un enlace compartido a una exposición que está entre las "Ver las N…" (escondidas) las muestra todas. */
+function mostrarTemporadaDe(h) {
+  if (!h.startsWith("e-") || estado.verTemporadas) return false;
+  const e = porId(h.slice(2));
+  if (!e || !temporadaLarga(e)) return false;
+  estado.verTemporadas = true;
+  return true;
+}
+window.addEventListener("hashchange", () => {
+  const h = hashActual();
+  if (document.getElementById(h) || !mostrarTemporadaDe(h)) return;
+  pintar();
+  document.getElementById(h)?.scrollIntoView({ block: "center" });
+});
 iniciar();

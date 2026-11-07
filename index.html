@@ -128,6 +128,7 @@
       <div>
         <h2>Cómo funciona</h2>
         <p>Cada mañana un robot busca en noticias del día, comunidades, agendas de fans y ticketeras. Una IA lee las páginas y también los afiches, porque muchas veces la fecha y el lugar solo están en la imagen. Las notas marcadas con 📷 salieron de un afiche y las con ⚠ conviene confirmarlas en la fuente.</p>
+        <p>Las fotos de los lugares vienen de sus sitios oficiales, de la prensa o de Wikimedia Commons (con licencia libre): al abrir una foto se ve de dónde es y quién la tomó.</p>
         <p>Los mapas son de Google Maps. Si inicias sesión con Google, tus favoritos se guardan en tu cuenta y solo tú puedes verlos.</p>
       </div>
       <div>
@@ -141,6 +142,22 @@
       </div>
     </div>
   </footer>
+
+  <!-- Visor de fotos: se abre al tocar una foto (desliza o usa las flechas para ver las demás) -->
+  <dialog id="visor" class="visor" aria-labelledby="visor-titulo">
+    <div class="visor-caja">
+      <div class="visor-cabeza">
+        <h2 id="visor-titulo"></h2>
+        <span class="visor-contador" id="visor-contador" aria-live="polite"></span>
+        <button type="button" class="visor-cerrar" id="visor-cerrar" aria-label="Cerrar fotos">✕</button>
+      </div>
+      <div class="visor-cuerpo">
+        <div class="visor-carril" id="visor-carril" tabindex="-1"></div>
+        <button type="button" class="visor-flecha visor-ant" id="visor-ant" aria-label="Foto anterior">‹</button>
+        <button type="button" class="visor-flecha visor-sig" id="visor-sig" aria-label="Foto siguiente">›</button>
+      </div>
+    </div>
+  </dialog>
 
   <div id="aviso" class="aviso" role="status" aria-live="polite" hidden></div>
   <script src="app.js" defer></script>
