@@ -1776,6 +1776,65 @@
      "descripcion": "Fachada de día en la Alameda: letrero BLONDIE, logo circular con la B y cortina metálica cerrada"
     }
    ]
+  },
+  {
+   "id": "aldea-del-encuentro",
+   "nombre": "Aldea del Encuentro",
+   "alias": [
+    "aldea del encuentro",
+    "castillo velasco 9750"
+   ],
+   "direccion": "Av. Alcalde Fernando Castillo Velasco 9750",
+   "comuna": "La Reina",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Aldea_del_Encuentro.jpg/1280px-Aldea_del_Encuentro.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Aldea_del_Encuentro.jpg/330px-Aldea_del_Encuentro.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Aldea_del_Encuentro.jpg",
+     "credito": "Foto: Tommy Boy · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Portal de entrada de la Aldea del Encuentro, centro cultural de La Reina"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Aldea_del_encuentro.jpg/1280px-Aldea_del_encuentro.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Aldea_del_encuentro.jpg/330px-Aldea_del_encuentro.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Aldea_del_encuentro.jpg",
+     "credito": "Foto: Cuidro · CC BY-SA 3.0 · Wikimedia Commons",
+     "descripcion": "Artesanos trabajando en sus puestos bajo los pórticos de madera de la Aldea"
+    }
+   ]
+  },
+  {
+   "id": "parque-el-llano-san-miguel",
+   "nombre": "Parque El Llano (San Miguel)",
+   "alias": [
+    "parque el llano",
+    "parque llano subercaseaux",
+    "parque el llano subercaseaux"
+   ],
+   "excluir": [
+    "coquimbo",
+    "la serena",
+    "concepcion",
+    "talca"
+   ],
+   "direccion": "Av. El Llano Subercaseaux con Carlos Valdovinos",
+   "comuna": "San Miguel",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Vista_hacia_Parque_El_Llano_desde_Portal.jpg/1280px-Vista_hacia_Parque_El_Llano_desde_Portal.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Vista_hacia_Parque_El_Llano_desde_Portal.jpg/330px-Vista_hacia_Parque_El_Llano_desde_Portal.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Vista_hacia_Parque_El_Llano_desde_Portal.jpg",
+     "credito": "Foto: José Ignacio Gallardo · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Vista del Parque El Llano con sus palmeras, la plaza y los edificios de San Miguel"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Parque_El_Llano%2C_San_Miguel%2C_Santiago_20240515.jpg/1280px-Parque_El_Llano%2C_San_Miguel%2C_Santiago_20240515.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Parque_El_Llano%2C_San_Miguel%2C_Santiago_20240515.jpg/330px-Parque_El_Llano%2C_San_Miguel%2C_Santiago_20240515.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Parque_El_Llano%2C_San_Miguel%2C_Santiago_20240515.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Prados, árboles y senderos del Parque El Llano en San Miguel"
+    }
+   ]
   }
  ],
  "referenciales": {

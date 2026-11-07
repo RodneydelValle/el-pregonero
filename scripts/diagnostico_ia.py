@@ -47,6 +47,6 @@ else:
 print("3) Clasificar 60 eventos de PuntoTicket (bandas de metal, anime, etc.)")
 pagina, _, final = a.descargar("https://www.puntoticket.com/todos")
 filas = a.listado_puntoticket(pagina, final)
-for f, e in a.ia_clasificar_listado(ia, CFG, "PuntoTicket", filas[:60]):
+for f, e in a.ia_clasificar_listado(ia, CFG, "PuntoTicket", filas[:60])[0]:
     print("   ✓", f["titulo"], "→", e.get("categoria"), "|", e.get("descripcion"))
 print(f"\nLlamadas: {ia.usadas}, respuestas buenas: {ia.buenas}, cupo agotado: {ia.agotada}, extra: {ia.extra}")

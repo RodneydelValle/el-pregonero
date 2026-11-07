@@ -1063,12 +1063,14 @@ function pintarNuevos(lista) {
   if (!cuando) {
     $("#banner-texto").innerHTML = "<b>No hay eventos nuevos.</b><span class=\"fino\">Todavía no se ha hecho ninguna búsqueda.</span>";
   } else if (lista.length) {
-    $("#banner-texto").innerHTML = `${ico("i-fuego")}<b>${lista.length} evento${lista.length === 1 ? "" : "s"} nuevo${lista.length === 1 ? "" : "s"}</b> en la búsqueda de ${esc(cuando)}.` +
+    // nuevos_desde: el robot busca cada hora y "Nuevos" junta lo de las últimas 24 horas
+    const enQue = ULTIMA.nuevos_desde ? `en las últimas ${ULTIMA.horas_nuevos || 24} horas` : `en la búsqueda de ${esc(cuando)}`;
+    $("#banner-texto").innerHTML = `${ico("i-fuego")}<b>${lista.length} evento${lista.length === 1 ? "" : "s"} nuevo${lista.length === 1 ? "" : "s"}</b> ${enQue}.` +
       `<span class="fino">Ya quedaron en la agenda; aquí están solo ellos, ordenados por fecha.</span>`;
   } else {
     const leidas = ULTIMA.paginas_revisadas ? ` revisó ${ULTIMA.paginas_revisadas} páginas y` : "";
     $("#banner-texto").innerHTML = `<b>No hay eventos nuevos.</b>` +
-      `<span class="fino">La última búsqueda (${esc(cuando)})${leidas} no encontró nada distinto a lo que ya tenías. La próxima es ${new Date().getHours() < 6 ? "hoy" : "mañana"} a las 06:00.</span>`;
+      `<span class="fino">La última búsqueda (${esc(cuando)})${leidas} no encontró nada distinto a lo que ya tenías. La página vuelve a buscar cada hora.</span>`;
   }
 }
 

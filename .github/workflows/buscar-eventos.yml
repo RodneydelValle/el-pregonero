@@ -2,11 +2,11 @@ name: Buscar eventos
 
 on:
   schedule:
-    # Todos los días a las 06:00 hora de Chile. GitHub usa hora UTC y Chile cambia de horario,
-    # así que hay dos horarios y el paso "¿Son las 6 en Chile?" deja seguir solo al que corresponde.
-    - cron: "0 9 * * *"    # 06:00 en horario de verano (UTC-3)
-    - cron: "0 10 * * *"   # 06:00 en horario de invierno (UTC-4)
-  workflow_dispatch:         # botón "Run workflow" para buscar cuando quieras
+    # Cada hora, al minuto 17 (a la hora en punto GitHub se atrasa más). El script decide qué búsqueda toca:
+    # la completa cada "horas_entre_completas" (config/gustos.json) y, entre medio, la rápida
+    # (solo ticketeras y agendas, que es donde aparecen primero los eventos nuevos).
+    - cron: "17 * * * *"
+  workflow_dispatch:         # botón "Run workflow" para buscar cuando quieras (siempre hace la completa)
     inputs:
       solo_publicar:
         description: "Solo publicar la web, sin buscar (no gasta IA)"
@@ -29,52 +29,45 @@ jobs:
     if: github.event_name != 'push' && !inputs.solo_publicar
     runs-on: ubuntu-latest
     timeout-minutes: 55
-    outputs:
-      seguir: ${{ steps.hora.outputs.seguir }}
     steps:
-      - name: ¿Son las 6 en Chile?
-        id: hora
-        run: |
-          desfase=$(TZ=America/Santiago date +%z)
-          caso="${{ github.event_name }}|${{ github.event.schedule }}|$desfase"
-          case "$caso" in
-            "schedule|0 9 * * *|-0300"|"schedule|0 10 * * *|-0400") seguir=true ;;
-            schedule*) seguir=false ;;
-            *) seguir=true ;;
-          esac
-          echo "Chile está en UTC$desfase · $caso → seguir=$seguir"
-          echo "seguir=$seguir" >> "$GITHUB_OUTPUT"
       - uses: actions/checkout@v4
-        if: steps.hora.outputs.seguir == 'true'
       - uses: actions/setup-python@v5
-        if: steps.hora.outputs.seguir == 'true'
         with:
           python-version: "3.12"
       - name: Preparar
-        if: steps.hora.outputs.seguir == 'true'
         run: pip install --quiet pillow tzdata
       - name: Buscar eventos
-        if: steps.hora.outputs.seguir == 'true'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}   # IA gratis de Google AI Studio (lee páginas y afiches)
-        run: python scripts/actualizar.py
+          MODO: ${{ github.event_name == 'schedule' && 'auto' || 'completa' }}
+        run: python scripts/actualizar.py --modo "$MODO"
       - name: Guardar resultados
-        if: steps.hora.outputs.seguir == 'true'
         run: |
           git config user.name "el-pregonero[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data
           if git diff --cached --quiet; then
             echo "Sin cambios en la agenda"
-          else
-            git commit -m "Pregón del $(TZ=America/Santiago date +%F)"
-            git pull --rebase
-            git push
+            exit 0
           fi
+          git commit -m "Pregón del $(TZ=America/Santiago date '+%F %H:%M')"
+          for intento in 1 2 3; do
+            if ! git pull --rebase; then
+              # Alguien agregó eventos a mano mientras el robot buscaba: se respeta lo de la persona,
+              # esta vuelta no se guarda y la próxima (en una hora) vuelve a encontrar lo mismo.
+              git rebase --abort
+              echo "::warning::La agenda cambió mientras buscaba; esta vuelta no se guarda y la próxima la repite."
+              exit 0
+            fi
+            git push && exit 0
+            sleep 10
+          done
+          echo "::error::No se pudo guardar la agenda"
+          exit 1
 
   publicar:
     needs: buscar
-    if: always() && (needs.buscar.result == 'success' || needs.buscar.result == 'skipped') && needs.buscar.outputs.seguir != 'false'
+    if: always() && (needs.buscar.result == 'success' || needs.buscar.result == 'skipped')
     runs-on: ubuntu-latest
     environment:
       name: github-pages

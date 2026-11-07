@@ -166,7 +166,7 @@ function pintar(d) {
   $("#btn-web").href = d.web;
   $("#btn-gh").href = run.url;
   const diag = d.tipo === "diagnostico";
-  $("#sub").textContent = diag ? "Prueba de la IA (Gemini)" : run.evento === "schedule" ? "Búsqueda diaria de las 06:00" : run.evento === "push" ? "Publicación de la web" : "Búsqueda pedida a mano";
+  $("#sub").textContent = diag ? "Prueba de la IA (Gemini)" : run.evento === "schedule" ? "Búsqueda automática (cada hora)" : run.evento === "push" ? "Publicación de la web" : "Búsqueda pedida a mano";
   $("#btn-buscar").textContent = diag ? "Buscar eventos" : "Buscar de nuevo";
   const pct = Math.round(d.avance * 100);
   $("#relleno").style.width = pct + "%";

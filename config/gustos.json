@@ -21,7 +21,9 @@
   "max_paginas_sin_ia": 80,
   "dias_para_revisar_de_nuevo": 7,
   "max_dias_noticias": 7,
-  "_nota_noticias": "Solo se leen noticias publicadas desde la búsqueda anterior (en la diaria: ayer y hoy); max_dias_noticias es el tope si las búsquedas estuvieron pausadas. Ticketeras, agendas y páginas de eventos se leen siempre.",
+  "horas_entre_completas": 6,
+  "_nota_frecuencia": "El robot corre cada hora. Cada horas_entre_completas hace la búsqueda completa (buscadores, noticias, redes, Chile Cultura y museos); en las demás vueltas hace la rápida: solo ticketeras y agendas, y la IA lee solo lo que apareció desde la vuelta anterior.",
+  "_nota_noticias": "Solo se leen noticias publicadas desde la búsqueda completa anterior; max_dias_noticias es el tope si las búsquedas estuvieron pausadas. Ticketeras, agendas y páginas de eventos se leen siempre.",
   "categorias": [
     {
       "id": "medieval",
@@ -524,6 +526,21 @@
       {
         "nombre": "Producciones Omnia (festivales medievales)",
         "url": "https://www.instagram.com/producciones.omnia/",
+        "categoria": "medieval"
+      },
+      {
+        "nombre": "Yggdrasil Medieval Fest (mercado medieval, San Miguel)",
+        "url": "https://www.instagram.com/yggdrasilfestchile/",
+        "categoria": "medieval"
+      },
+      {
+        "nombre": "Torhild Hidromiel (avisa ferias nórdicas y medievales)",
+        "url": "https://www.instagram.com/torhild.hidromiel/",
+        "categoria": "medieval"
+      },
+      {
+        "nombre": "Aldea del Encuentro (La Reina: Ragnarok Fest y otras ferias)",
+        "url": "https://www.instagram.com/aldeaencuentro/",
         "categoria": "medieval"
       }
     ]

@@ -8,7 +8,9 @@ Solo usa servicios gratuitos:
     las imágenes (afiches), porque muchas veces la fecha y el lugar solo están ahí.
 
 Uso:
-  python scripts/actualizar.py                 # búsqueda completa (en GitHub Actions)
+  python scripts/actualizar.py                 # búsqueda completa
+  python scripts/actualizar.py --modo auto     # GitHub Actions, cada hora: la completa si ya pasaron
+                                               # "horas_entre_completas"; si no, la rápida (solo ticketeras y agendas)
   python scripts/actualizar.py --sin-ia        # solo fuentes que no necesitan IA
   python scripts/actualizar.py --agregar x.json --origen claude   # une eventos encontrados a mano
   python scripts/actualizar.py --limpiar       # solo quita eventos pasados y ocultos
@@ -61,6 +63,7 @@ except Exception:
     Image = None
 
 HOY = dt.datetime.now(TZ).date()
+HORAS_NUEVOS = 24   # el botón "Nuevos" muestra lo agregado en las últimas 24 horas
 MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto",
          "septiembre", "octubre", "noviembre", "diciembre"]
 DIAS = ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"]
@@ -922,10 +925,12 @@ def ia_resumenes_redes(ia: IA, cfg: dict, resultados: list[dict]) -> list[tuple[
     return salida
 
 
-def ia_filtrar_sueltos(ia: IA, cfg: dict, eventos: list[dict], fuente: str) -> list[dict]:
+def ia_filtrar_sueltos(ia: IA, cfg: dict, eventos: list[dict], fuente: str,
+                       pendientes: list | None = None) -> list[dict]:
     """Lo que se encontró solo por palabras clave pasa por un filtro barato (una llamada cada 60 eventos):
     'esmalte sobre metal' no es música metal y un cantante llamado Manga no es manga.
-    Si no hay IA o se acaba el cupo, se quedan todos."""
+    Si no hay IA o se acaba el cupo, se quedan todos; pero si se pasa 'pendientes', lo que no alcanzó a
+    filtrarse por falta de cupo va ahí (para leerlo en otra vuelta) y no a la agenda."""
     if not eventos or not ia.disponible():
         return eventos
     ids = {c["id"] for c in cfg["categorias"]}
@@ -943,7 +948,10 @@ def ia_filtrar_sueltos(ia: IA, cfg: dict, eventos: list[dict], fuente: str) -> l
             for j, e in enumerate(bloque))
         try:
             r = ia.json(sistema, texto, max_tokens=1500)
-        except (ValueError, SinCupo):
+        except SinCupo:
+            (pendientes if pendientes is not None else salida).extend(bloque)
+            continue
+        except ValueError:
             salida.extend(bloque)
             continue
         elegidos = set()
@@ -963,8 +971,9 @@ def ia_filtrar_sueltos(ia: IA, cfg: dict, eventos: list[dict], fuente: str) -> l
     return salida
 
 
-def ia_clasificar_listado(ia: IA, cfg: dict, fuente: str, filas: list[dict]) -> list[dict]:
-    """Manda un listado compacto (título | lugar | fecha) y la IA dice cuáles calzan (p. ej. bandas de metal)."""
+def ia_clasificar_listado(ia: IA, cfg: dict, fuente: str, filas: list[dict]) -> tuple[list, list[str]]:
+    """Manda un listado compacto (título | lugar | fecha) y la IA dice cuáles calzan (p. ej. bandas de metal).
+    Devuelve los elegidos y las direcciones de las filas que la IA alcanzó a revisar."""
     sistema = instrucciones_base(cfg) + (
         "Recibirás un listado numerado de una ticketera. Usa tu conocimiento (por ejemplo, el género de cada banda) "
         "para elegir SOLO los que calcen con los intereses. Responde solo JSON: "
@@ -972,7 +981,7 @@ def ia_clasificar_listado(ia: IA, cfg: dict, fuente: str, filas: list[dict]) -> 
         '"lugar": str|null, "precio": str|null, "fecha_inicio": "AAAA-MM-DD"|null, '
         '"fecha_fin": "AAAA-MM-DD"|null, "descripcion": "qué es y por qué calza, máx 160 caracteres", '
         '"confianza": "alta"|"media"|"baja"}]}. Si ninguno calza: {"eventos": []}.')
-    elegidos = []
+    elegidos, revisadas = [], []
     for i in range(0, len(filas), 110):
         bloque = filas[i:i + 110]
         texto = f"Fuente: {fuente}\n" + "\n".join(
@@ -982,6 +991,7 @@ def ia_clasificar_listado(ia: IA, cfg: dict, fuente: str, filas: list[dict]) -> 
             r = ia.json(sistema, texto)
         except (ValueError, SinCupo):
             break
+        revisadas += [f["url"] for f in bloque]
         for e in (r.get("eventos") or []) if isinstance(r, dict) else []:
             try:
                 n = int(e.get("n"))
@@ -989,7 +999,7 @@ def ia_clasificar_listado(ia: IA, cfg: dict, fuente: str, filas: list[dict]) -> 
                 continue
             if 0 <= n < len(filas):
                 elegidos.append((filas[n], e))
-    return elegidos
+    return elegidos, revisadas
 
 
 # ---------------------------------------------------------------- fuentes fijas
@@ -1290,11 +1300,14 @@ class NoticiaVieja(Exception):
 
 
 def procesar_pagina(url, titulo_busqueda, ia, cfg, patron, cat_fuente=None, nombre_fuente=None,
-                    confiar_categoria=False, agenda=False, noticias_desde: dt.date | None = None):
+                    confiar_categoria=False, agenda=False, noticias_desde: dt.date | None = None,
+                    huellas: dict | None = None):
     """Lee una página: primero datos estructurados; si no hay, texto + afiches con IA.
 
     confiar_categoria=True solo para fuentes fijas ya filtradas por tema (p. ej. búsqueda 'anime' de Eventbrite).
     noticias_desde: si la página no es de un evento y se publicó antes de esa fecha, no se lee (NoticiaVieja).
+    huellas: para las agendas que se leen cada hora (data/vistos.json). Si el texto no cambió desde la última
+    lectura con IA, no se vuelve a gastar IA: sus eventos ya están en la agenda.
     """
     pagina, tipo, final = descargar(url)
     if "html" not in tipo.lower() and "<html" not in pagina[:500].lower():
@@ -1338,7 +1351,17 @@ def procesar_pagina(url, titulo_busqueda, ia, cfg, patron, cat_fuente=None, nomb
     else:
         texto = texto_relevante(texto, patron)
         portada, imagenes = elegir_imagenes(meta, imgs, final)
+    clave_huella, huella = "#huella " + final, hashlib.sha1(f"{titulo}\n{texto}".encode()).hexdigest()[:16]
+    # El valor lleva la fecha delante: la limpieza de vistos.json (por fecha) la borra a los 60 días, y una agenda
+    # que no cambia igual se vuelve a leer con IA cada "dias_para_revisar_de_nuevo" (por si la lectura anterior falló).
+    previa = (huellas or {}).get(clave_huella, "")
+    vence = (HOY - dt.timedelta(days=cfg.get("dias_para_revisar_de_nuevo", 7))).isoformat()
+    if huellas is not None and previa.endswith("|" + huella) and previa[:10] > vence:
+        log("  sin cambios desde la última lectura")
+        return [], False
     crudos = ia_pagina(ia, cfg, final, titulo, texto, imagenes, max_tokens=6000 if agenda else 3500)
+    if huellas is not None:
+        huellas[clave_huella] = f"{HOY.isoformat()}|{huella}"
     res = []
     for e in crudos:
         # La imagen principal de la página solo sirve de respaldo si la página es de UN evento:
@@ -1498,9 +1521,12 @@ def fuente_chilecultura(f: dict, cfg: dict) -> list[dict]:
     return res
 
 
-def busqueda_completa(cfg: dict, ia: IA, vistos: dict, noticias_desde: dt.date | None = None) -> tuple[list[dict], dict]:
-    """noticias_desde: solo se leen noticias publicadas desde esa fecha (la búsqueda anterior).
-    Las ticketeras, agendas y páginas de eventos se leen siempre."""
+def busqueda_completa(cfg: dict, ia: IA, vistos: dict, noticias_desde: dt.date | None = None,
+                      completa: bool = True) -> tuple[list[dict], dict]:
+    """noticias_desde: solo se leen noticias publicadas desde esa fecha (la búsqueda completa anterior).
+    Las ticketeras, agendas y páginas de eventos se leen siempre.
+    completa=False es la búsqueda rápida de cada hora: solo ticketeras y agendas (lo que cambia seguido),
+    sin buscadores ni noticias, sin Chile Cultura ni las carteleras de museos (que se leen cada pocos días)."""
     noticias_desde = noticias_desde or HOY
     patron = patron_intereses(cfg)
     encontrados: list[dict] = []
@@ -1512,18 +1538,30 @@ def busqueda_completa(cfg: dict, ia: IA, vistos: dict, noticias_desde: dt.date |
     # 1) Fuentes fijas (ticketeras y agendas)
     for f in cfg.get("fuentes", []):
         cada = int(f.get("cada_dias") or 1)
+        if not completa and (cada > 1 or f["tipo"] == "chilecultura"):
+            continue
         if cada > 1 and vistos.get(f["url"], "") > (HOY - dt.timedelta(days=cada)).isoformat():
             # carteleras de museos: las exposiciones duran meses, no hace falta gastar IA en leerlas a diario
             log(f"[fuente] {f['nombre']}: se lee cada {cada} días (última vez: {vistos[f['url']]})")
             continue
         log(f"[fuente] {f['nombre']}: {f['url']}")
         if f["tipo"] == "sitemap":
+            d = dominio(f["url"])
+            filtrar = not any(d == x or d.endswith("." + x) for x in cfg.get("solo_datos_estructurados", []))
+            if filtrar and ia.token and not ia.disponible():
+                # La IA se quedó sin cupo: sin su filtro entrarían talleres y visitas escolares.
+                # Los eventos nuevos de la agenda se quedan sin abrir para una vuelta con IA.
+                log("  la IA no está disponible ahora; esta agenda se lee en una vuelta con IA")
+                continue
             try:
                 res = fuente_sitemap(f, cfg, patron, vistos)
                 stats["fuentes_fijas"] += 1
-                d = dominio(f["url"])
-                if not any(d == x or d.endswith("." + x) for x in cfg.get("solo_datos_estructurados", [])):
-                    res = ia_filtrar_sueltos(ia, cfg, res, f["nombre"])
+                if filtrar:
+                    sin_filtrar: list[dict] = []
+                    res = ia_filtrar_sueltos(ia, cfg, res, f["nombre"], sin_filtrar if ia.token else None)
+                    for e in sin_filtrar:   # se vuelven a abrir cuando haya IA
+                        for fu in e.get("fuentes", []):
+                            vistos.pop(fu["url"], None)
                 for n in res:
                     log(f"   ✓ {n['fecha_inicio']} {n['titulo']} ({n['categoria']}, {f['nombre']})")
                 encontrados.extend(res)
@@ -1557,9 +1595,16 @@ def busqueda_completa(cfg: dict, ia: IA, vistos: dict, noticias_desde: dt.date |
                      else listado_generico(pagina, final, f.get("patron_enlace", "/")))
             propias = {f["url"].rstrip("/"), final.rstrip("/")}
             filas = [x for x in filas if x["url"].rstrip("/") not in propias]   # el enlace al mismo listado
-            log(f"  {len(filas)} eventos en el listado")
-            leida = ia.disponible()   # sin IA solo queda el respaldo por palabras: se vuelve a leer mañana
-            elegidos = ia_clasificar_listado(ia, cfg, f["nombre"], filas) if ia.disponible() else []
+            # Las filas que la IA ya revisó hace poco no se le vuelven a mandar: las que calzaban ya están en la
+            # agenda. Así la vuelta de cada hora solo gasta IA en lo que apareció desde la anterior.
+            total = len(filas)
+            filas = [x for x in filas if vistos.get(x["url"], "") < limite_vistos]
+            log(f"  {total} eventos en el listado, {len(filas)} sin revisar")
+            leida = ia.disponible()   # sin IA solo queda el respaldo por palabras: se vuelve a leer después
+            elegidos, revisadas = (ia_clasificar_listado(ia, cfg, f["nombre"], filas)
+                                   if filas and ia.disponible() else ([], []))
+            for u in revisadas:
+                vistos[u] = HOY.isoformat()
             # respaldo por palabras clave (también sirve si la IA falla o se queda sin cupo)
             ya = {fila["url"] for fila, _ in elegidos}
             for fila in filas:
@@ -1591,7 +1636,8 @@ def busqueda_completa(cfg: dict, ia: IA, vistos: dict, noticias_desde: dt.date |
         else:
             try:
                 res, uso_ia = procesar_pagina(f["url"], f["nombre"], ia, cfg, patron, f.get("categoria"), f["nombre"],
-                                              confiar_categoria=bool(f.get("categoria")), agenda=True)
+                                              confiar_categoria=bool(f.get("categoria")), agenda=True,
+                                              huellas=vistos)
                 leida = uso_ia is not None   # None: necesitaba la IA y no estaba (queda pendiente)
                 encontrados.extend(res)
                 log(f"  {len(res)} eventos")
@@ -1599,6 +1645,9 @@ def busqueda_completa(cfg: dict, ia: IA, vistos: dict, noticias_desde: dt.date |
                 leida = False
         if leida or not f.get("cada_dias"):
             vistos[f["url"]] = HOY.isoformat()
+
+    if not completa:
+        return encontrados, stats
 
     # 2) Búsquedas por interés
     candidatos: dict[str, dict] = {}
@@ -1714,7 +1763,10 @@ def main():
     ap.add_argument("--agregar", help="archivo JSON con eventos para unir (lista o {'eventos': [...]})")
     ap.add_argument("--origen", default="manual", help="quién encontró los eventos de --agregar")
     ap.add_argument("--limpiar", action="store_true", help="solo quitar eventos pasados y ocultos")
+    ap.add_argument("--modo", choices=["completa", "rapida", "auto"], default="completa",
+                    help="auto: la completa si ya pasaron 'horas_entre_completas' desde la anterior; si no, la rápida")
     args = ap.parse_args()
+    inicio = dt.datetime.now(TZ)
     try:
         sys.stdout.reconfigure(encoding="utf-8")
     except Exception:  # noqa: BLE001
@@ -1751,13 +1803,32 @@ def main():
             log(f"Hoy: {HOY}  |  IA: sí ({conf_ia.get('nombre', ia.url)})")
         else:
             log(f"Hoy: {HOY}  |  IA: no" + (f" (falta el secreto {variable})" if variable and not args.sin_ia else ""))
-        # Noticias: solo las publicadas desde la búsqueda anterior (en la diaria: ayer y hoy),
+        previa = base.get("ultima_busqueda", {})
+        completa_anterior = previa.get("ultima_completa") or previa.get("fecha")
+        modo = args.modo
+        if modo == "auto":
+            horas = float(cfg.get("horas_entre_completas", 6))
+            try:
+                pasaron = (inicio - dt.datetime.fromisoformat(completa_anterior)).total_seconds() / 3600
+            except (TypeError, ValueError):
+                pasaron = horas
+            # media hora de holgura: GitHub no parte los horarios exactos
+            modo = "completa" if pasaron >= horas - 0.5 else "rapida"
+            log(f"Búsqueda {'rápida' if modo == 'rapida' else modo}: la completa anterior fue hace {pasaron:.1f} h (se hace cada {horas:g} h)")
+        stats["modo"] = modo
+        if modo == "completa":
+            stats["ultima_completa"] = inicio.isoformat(timespec="minutes")
+        elif completa_anterior:
+            stats["ultima_completa"] = completa_anterior
+        # Noticias: solo las publicadas desde la búsqueda completa anterior (la rápida no las lee),
         # con un tope de días por si las búsquedas estuvieron pausadas.
-        anterior = fecha_iso(base.get("ultima_busqueda", {}).get("fecha"))
+        anterior = fecha_iso(completa_anterior)
         desde = dt.date.fromisoformat(anterior) if anterior else HOY - dt.timedelta(days=1)
         desde = max(min(desde, HOY), HOY - dt.timedelta(days=int(cfg.get("max_dias_noticias", 7))))
-        log(f"Noticias: solo las publicadas desde el {desde.strftime('%d-%m-%Y')}")
-        nuevos, stats = busqueda_completa(cfg, ia, vistos, desde)
+        if modo == "completa":
+            log(f"Noticias: solo las publicadas desde el {desde.strftime('%d-%m-%Y')}")
+        nuevos, encontrado = busqueda_completa(cfg, ia, vistos, desde, completa=(modo == "completa"))
+        stats.update(encontrado)
 
     eventos, ids_nuevos = unir(eventos, nuevos)
     eventos = vigentes(compactar(eventos), ocultos)
@@ -1767,22 +1838,35 @@ def main():
     corte = (HOY - dt.timedelta(days=60)).isoformat()
     vistos = {u: f for u, f in vistos.items() if f >= corte}
 
-    ahora = dt.datetime.now(TZ).isoformat(timespec="minutes")
+    ahora_dt = dt.datetime.now(TZ)
+    ahora = ahora_dt.isoformat(timespec="minutes")
     ultima = base.get("ultima_busqueda", {})
+    # "Nuevos" = lo agregado en las últimas HORAS_NUEVOS horas: como el robot busca cada hora, cada vuelta
+    # suma lo suyo a lo anterior en vez de reemplazarlo. nuevos_desde guarda cuándo llegó cada uno.
+    marcas = dict(ultima.get("nuevos_desde") or {})
+    if not marcas and ultima.get("nuevos_ids") and ultima.get("fecha"):  # formato anterior: sin hora por evento
+        marcas = {i: ultima["fecha"] for i in ultima["nuevos_ids"]}
+    for i in ids_nuevos:
+        marcas.setdefault(i, ahora)
+    limite_nuevos = ahora_dt - dt.timedelta(hours=HORAS_NUEVOS)
+
+    def reciente(t) -> bool:
+        try:
+            return dt.datetime.fromisoformat(t) >= limite_nuevos
+        except (TypeError, ValueError):
+            return False
+    marcas = {i: t for i, t in marcas.items() if i in ids_vigentes and reciente(t)}
+    ids_recientes = sorted(marcas, key=lambda i: marcas[i])
     if args.agregar and args.origen == "manual":
-        # Agregar a mano no es una búsqueda: se suman a los "nuevos" de la última búsqueda
-        if "nuevos_ids" in ultima:
-            previos = [i for i in ultima["nuevos_ids"] if i in ids_vigentes]
-        else:  # búsquedas antiguas sin lista: lo agregado ese día
-            dia = str(ultima.get("fecha", ""))[:10]
-            previos = [e["id"] for e in eventos if e.get("agregado") == dia and e["id"] not in ids_nuevos]
-        ultima = {**ultima, "nuevos_ids": previos + [i for i in ids_nuevos if i not in previos]}
-        ultima["eventos_nuevos"] = len(ultima["nuevos_ids"])
+        # Agregar a mano no es una búsqueda: se suman a los "nuevos" sin cambiar la hora de la búsqueda
+        ultima = {**ultima, "nuevos_ids": ids_recientes, "nuevos_desde": marcas, "eventos_nuevos": len(marcas)}
     elif not args.limpiar:
         ultima = {"fecha": ahora, "origen": args.origen if args.agregar else
                   ("github-actions" if os.environ.get("GITHUB_ACTIONS") else "local"),
-                  "eventos_nuevos": agregados, "nuevos_ids": ids_nuevos, "llamadas_ia": ia.usadas,
-                  "ia_sin_cupo": ia.agotada and ia.usadas > 0, **stats}
+                  "eventos_nuevos": len(marcas), "nuevos_esta_vez": agregados,
+                  "nuevos_ids": ids_recientes, "nuevos_desde": marcas, "horas_nuevos": HORAS_NUEVOS,
+                  "llamadas_ia": ia.usadas, "ia_sin_cupo": ia.agotada and ia.usadas > 0,
+                  "ultima_completa": ultima.get("ultima_completa") or ultima.get("fecha"), **stats}
     salida = {"version": 1, "actualizado": ahora, "zona_horaria": "America/Santiago",
               "ultima_busqueda": ultima, "total": len(eventos), "eventos": eventos}
     guardar_json(ARCH_EVENTOS, salida)
