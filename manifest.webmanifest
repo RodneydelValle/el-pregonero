@@ -1,7 +1,7 @@
 {
-  "name": "El Pregonero · eventos en Chile",
-  "short_name": "Pregonero",
-  "description": "Agenda personal de ferias medievales, yokai, anime, ilustración, metal y más en Chile.",
+  "name": "IMP TRAVEL · eventos y lugares temáticos en Chile",
+  "short_name": "IMP TRAVEL",
+  "description": "Agenda de ferias medievales, yokai, anime, ilustración, metal y restaurantes temáticos en Chile, con tus favoritos en un mapa.",
   "lang": "es-CL",
   "id": "./",
   "start_url": "./",
@@ -10,15 +10,59 @@
   "orientation": "portrait",
   "background_color": "#f3ede2",
   "theme_color": "#7a1f1a",
-  "categories": ["entertainment", "news", "lifestyle"],
+  "categories": [
+    "entertainment",
+    "news",
+    "lifestyle"
+  ],
   "icons": [
-    { "src": "icons/icono-192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "icons/icono-512.png", "sizes": "512x512", "type": "image/png" },
-    { "src": "icons/icono-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+    {
+      "src": "icons/icono-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icono-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icono-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
   ],
   "shortcuts": [
-    { "name": "Eventos nuevos", "url": "./?ver=nuevos", "icons": [{ "src": "icons/icono-192.png", "sizes": "192x192" }] },
-    { "name": "Mis favoritos", "url": "./?ver=favoritos", "icons": [{ "src": "icons/icono-192.png", "sizes": "192x192" }] },
-    { "name": "Restaurantes temáticos", "url": "./?ver=restaurantes", "icons": [{ "src": "icons/icono-192.png", "sizes": "192x192" }] }
+    {
+      "name": "Eventos nuevos",
+      "url": "./?ver=nuevos",
+      "icons": [
+        {
+          "src": "icons/icono-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Mis favoritos",
+      "url": "./?ver=favoritos",
+      "icons": [
+        {
+          "src": "icons/icono-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Restaurantes temáticos",
+      "url": "./?ver=restaurantes",
+      "icons": [
+        {
+          "src": "icons/icono-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
   ]
 }

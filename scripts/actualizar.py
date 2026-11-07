@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""El Pregonero: busca eventos en Chile según config/gustos.json y actualiza data/eventos.json.
+"""IMP TRAVEL (antes El Pregonero): busca eventos en Chile según config/gustos.json y actualiza data/eventos.json.
 
 Solo usa servicios gratuitos:
   * Búsqueda: Bing Noticias (RSS), DuckDuckGo, ticketeras, agendas (sitemaps de VAMOH! y Keai)

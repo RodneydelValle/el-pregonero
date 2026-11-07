@@ -1,4 +1,4 @@
-/* El Pregonero — "Iniciar sesión con Google" y favoritos por persona.
+/* IMP TRAVEL — "Iniciar sesión con Google" y favoritos por persona.
  * Usa Firebase (plan gratis Spark, sin tarjeta): Authentication con Google + Firestore.
  * Cada persona guarda sus favoritos en favoritos/{uid}; las reglas (firestore.rules) impiden ver los de otros.
  * Si config/firebase.js está vacío, no hace nada y los favoritos quedan en el navegador.
@@ -61,6 +61,10 @@ async function iniciar() {
     } catch (e) {
       if (e.code === "auth/popup-blocked" || e.code === "auth/operation-not-supported-in-this-environment") {
         await A.signInWithRedirect(auth, proveedor);
+      } else if (e.code === "auth/operation-not-allowed") {
+        cuenta.error("El inicio de sesión con Google aún no está habilitado (Firebase → Authentication → Método de acceso)", e);
+      } else if (e.code === "auth/unauthorized-domain") {
+        cuenta.error("Falta autorizar este dominio en Firebase (Authentication → Configuración → Dominios autorizados)", e);
       } else if (e.code !== "auth/popup-closed-by-user" && e.code !== "auth/cancelled-popup-request") {
         cuenta.error("No se pudo iniciar sesión", e);
       }

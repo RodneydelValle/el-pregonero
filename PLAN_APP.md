@@ -1,6 +1,6 @@
 # Plan: de web a app
 
-El Pregonero se pensó desde el inicio para convertirse en app sin rehacerlo. Toda la información vive en un solo archivo público, `data/eventos.json`, que funciona como una "API" gratuita. La web, la versión instalable y una futura app de Android leen ese mismo archivo, así que no hace falta ningún servidor pagado.
+IMP TRAVEL (antes El Pregonero) se pensó desde el inicio para convertirse en app sin rehacerlo. Toda la información vive en un solo archivo público, `data/eventos.json`, que funciona como una "API" gratuita. La web, la versión instalable y una futura app de Android leen ese mismo archivo, así que no hace falta ningún servidor pagado.
 
 Regla de oro: **cero costo extra**. Todo lo de abajo es gratis, salvo lo que está marcado con 💲, que queda como opción para decidir más adelante.
 

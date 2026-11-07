@@ -1,5 +1,5 @@
-/* Service worker: permite instalar El Pregonero como app y verlo sin conexión. */
-const VERSION = "pregonero-v3";
+/* Service worker: permite instalar IMP TRAVEL como app y verlo sin conexión. */
+const VERSION = "imp-travel-v4";
 const BASE = ["./", "index.html", "styles.css", "app.js", "cuenta.js", "manifest.webmanifest", "config/gustos.json",
   "config/firebase.js", "data/eventos.json", "data/restaurantes.json", "icons/icono-192.png", "icons/icono-512.png"];
 

@@ -1,5 +1,5 @@
 rules_version = '2';
-// Reglas de Firestore para El Pregonero: cada persona solo puede leer y escribir SUS favoritos.
+// Reglas de Firestore para IMP TRAVEL: cada persona solo puede leer y escribir SUS favoritos.
 // Se pegan en la consola de Firebase → Firestore Database → Reglas → Publicar.
 service cloud.firestore {
   match /databases/{database}/documents {

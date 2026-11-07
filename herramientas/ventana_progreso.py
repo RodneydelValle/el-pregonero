@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Ventana de progreso de El Pregonero.
+"""Ventana de progreso de IMP TRAVEL (antes El Pregonero).
 
 Muestra en una ventanita el avance de la búsqueda de eventos que corre en GitHub Actions
 y, al terminar, qué encontró. También permite lanzar una búsqueda nueva.

@@ -1,4 +1,6 @@
-# El Pregonero
+# IMP TRAVEL
+
+_(antes «El Pregonero»)_
 
 Agenda personal de eventos en Chile, con formato de diario: ferias medievales, yokai y Japón tradicional, anime y cosplay, ilustración y cómic, conciertos de metal, y fantasía, rol y juegos.
 
@@ -27,7 +29,7 @@ Usa **Firebase** en su plan gratis (Spark, sin tarjeta): Authentication con Goog
 Para activarlo (una sola vez):
 
 1. En [console.firebase.google.com](https://console.firebase.google.com) crea un proyecto (Google Analytics no hace falta). Queda en el plan **Spark, gratis**. No lo pases a Blaze.
-2. **Authentication → Comenzar → Método de acceso → Google → Habilitar.** Pon "El Pregonero" como nombre público y guarda.
+2. **Authentication → Comenzar → Método de acceso → Google → Habilitar.** Pon "IMP TRAVEL" como nombre público y guarda.
 3. **Authentication → Configuración → Dominios autorizados → Agregar dominio:** `rodneydelvalle.github.io`.
 4. **Firestore Database → Crear base de datos** (ubicación `southamerica-east1`, modo producción). En la pestaña **Reglas**, pega `firestore.rules` y publica.
 5. **Configuración del proyecto → Tus apps → Web (</>)**: registra la app y copia el objeto `firebaseConfig` en `config/firebase.js`. Esos datos son públicos por diseño; lo que protege los favoritos son las reglas.

@@ -1,4 +1,4 @@
-/* El Pregonero — agenda de eventos, restaurantes temáticos y favoritos. Sin dependencias.
+/* IMP TRAVEL (antes El Pregonero) — agenda de eventos, restaurantes temáticos y favoritos. Sin dependencias.
  * Datos: data/eventos.json (lo actualiza el robot) y data/restaurantes.json (lista revisada a mano).
  * Favoritos: en el navegador; con sesión de Google (cuenta.js + Firebase) quedan en la cuenta de cada persona. */
 "use strict";
@@ -591,7 +591,7 @@ function icsTexto(e) {
   const limpio = (t) => String(t || "").replace(/\\/g, "\\\\").replace(/([,;])/g, "\\$1").replace(/\n/g, "\\n");
   const d = (iso) => iso.replace(/-/g, "");
   const ahora = new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d+/, "");
-  const lineas = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//El Pregonero//ES", "CALSCALE:GREGORIAN", "BEGIN:VEVENT",
+  const lineas = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//IMP TRAVEL//ES", "CALSCALE:GREGORIAN", "BEGIN:VEVENT",
     `UID:${e.id}@el-pregonero`, `DTSTAMP:${ahora}`];
   if (e.hora) {
     const [hh, mm] = e.hora.split(":").map(Number);

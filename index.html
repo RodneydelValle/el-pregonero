@@ -3,16 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>El Pregonero</title>
-  <meta name="description" content="Agenda personal de eventos en Chile: ferias medievales, yokai, anime, ilustración, metal y más, con restaurantes temáticos y favoritos. Se actualiza sola todos los días.">
+  <title>IMP TRAVEL</title>
+  <meta name="description" content="IMP TRAVEL: agenda de eventos en Chile (ferias medievales, yokai, anime, ilustración, metal y más), restaurantes temáticos y tus favoritos con mapa. Se actualiza sola todos los días.">
   <meta name="theme-color" content="#7a1f1a" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#151311" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-title" content="IMP TRAVEL">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="IMP TRAVEL">
+  <meta property="og:description" content="Ferias medievales, yokai, anime, ilustración, metal y restaurantes temáticos en Chile.">
+  <meta property="og:url" content="https://rodneydelvalle.github.io/el-pregonero/">
+  <meta property="og:image" content="https://rodneydelvalle.github.io/el-pregonero/img/banner-1200.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="400">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" type="image/png" href="icons/icono-192.png">
   <link rel="apple-touch-icon" href="icons/icono-180.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&display=swap">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,7 +30,14 @@
       <span id="fecha-hoy">Santiago de Chile</span>
       <span id="estado-busqueda">Cargando…</span>
     </div>
-    <h1 class="cabezal">El Pregonero</h1>
+    <picture class="banner-cabecera">
+      <source type="image/webp"
+              srcset="img/banner-900.webp 900w, img/banner-1400.webp 1400w, img/banner-2172.webp 2172w"
+              sizes="(max-width: 600px) 150vw, (max-width: 1152px) calc(100vw - 32px), 1120px">
+      <img src="img/banner-1200.jpg" width="2172" height="724" fetchpriority="high" decoding="async"
+           alt="Un diablillo rojo con mochila mira un mapa junto a un camino luminoso que une una feria medieval, un torii japonés, un evento gamer y un teatro">
+    </picture>
+    <h1 class="cabezal"><span class="imp">IMP</span> TRAVEL</h1>
     <p class="bajada">Ferias medievales, yokai, anime, ilustración, metal y otras rarezas en Chile</p>
     <div class="doble-regla" role="presentation"></div>
   </header>

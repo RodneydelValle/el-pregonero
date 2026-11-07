@@ -1,4 +1,4 @@
-/* El Pregonero — estilo de diario impreso, claro y oscuro */
+/* IMP TRAVEL (antes El Pregonero) — estilo de diario impreso, claro y oscuro */
 :root {
   --papel: #f3ede2;
   --papel-2: #ebe3d4;
@@ -12,7 +12,7 @@
   --sobre-lacre: #fff;
   --sombra: 0 1px 0 rgba(0,0,0,.04);
   --serif: "Newsreader", Georgia, "Times New Roman", serif;
-  --gotica: "UnifrakturMaguntia", "Old English Text MT", Georgia, serif;
+  --titulo: "Cinzel Decorative", "Cinzel", Georgia, "Times New Roman", serif;
   --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --ancho: 1120px;
   color-scheme: light;
@@ -66,11 +66,19 @@ h2[tabindex="-1"]:focus { outline: none; }
   border-bottom: 1px solid var(--regla-suave); padding-bottom: 8px;
 }
 .linea-edicion a { color: var(--lacre-texto); text-decoration: none; }
-.cabezal {
-  font-family: var(--gotica); font-weight: 400;
-  font-size: clamp(48px, 11vw, 104px); line-height: 1; margin: 18px 0 6px;
-  letter-spacing: .01em;
+/* Banner: la imagen completa en pantallas anchas; en el celular, recortada a 2:1 mostrando al diablillo */
+.banner-cabecera { display: block; margin: 14px 0 0; }
+.banner-cabecera img {
+  display: block; width: 100%; height: auto; aspect-ratio: 2172 / 724;
+  object-fit: cover; object-position: 0% 50%;
+  background: var(--papel-2); border: 1px solid var(--regla);
 }
+.cabezal {
+  font-family: var(--titulo); font-weight: 900;
+  font-size: clamp(40px, 8.4vw, 92px); line-height: 1; margin: 18px 0 8px;
+  letter-spacing: .04em;
+}
+.cabezal .imp { color: var(--lacre); }
 .bajada { margin: 0 0 14px; font-style: italic; color: var(--tinta-suave); font-size: clamp(15px, 2.4vw, 19px); }
 .doble-regla { border-top: 3px solid var(--regla); border-bottom: 1px solid var(--regla); height: 6px; }
 
@@ -298,12 +306,6 @@ h2[tabindex="-1"]:focus { outline: none; }
   .mapa-pie p { margin: 0; flex: 1 1 200px; }
 }
 
-@media (max-width: 400px) {
-  .pestana > span[aria-hidden] { display: none; }
-  .pestana { padding: 8px 6px; }
-  .pestanas { gap: 2px; }
-}
-
 /* ---------- celular ---------- */
 @media (max-width: 760px) {
   .secciones { padding: 6px 0 8px; }
@@ -325,4 +327,18 @@ h2[tabindex="-1"]:focus { outline: none; }
   .nota h3 { font-size: 20px; }
   .pie-columnas { grid-template-columns: 1fr; gap: 12px; }
   .linea-edicion { justify-content: center; text-align: center; }
+}
+
+/* Banner en el celular: más alto (2:1) y anclado a la izquierda, donde está el diablillo */
+@media (max-width: 600px) {
+  .banner-cabecera { margin-top: 10px; }
+  .banner-cabecera img { aspect-ratio: 2 / 1; }
+}
+
+/* Pantallas muy angostas (360 px o menos): pestañas sin emojis y con menos relleno.
+   Va al final para ganarle a las reglas de "celular". */
+@media (max-width: 400px) {
+  .pestana > span[aria-hidden] { display: none; }
+  .pestana { padding: 8px 6px; }
+  .pestanas { gap: 2px; }
 }
