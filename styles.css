@@ -493,7 +493,7 @@ html:has(.visor[open]) { overflow: hidden; }
 /* ---------- pie (granate, de borde a borde) ---------- */
 .pie-pagina {
   position: relative;
-  margin: 52px calc(50% - 50vw) 0; padding: 28px max(16px, calc(50vw - 560px)) 40px;
+  margin: 52px calc(50% - 50vw) 0; padding: 72px max(16px, calc(50vw - 560px)) 40px;
   color: #f6e7cf; background: var(--granate) url("img/adornos/seigaiha.svg") 0 0 / 48px 24px;
   border-top: 3px solid var(--oro);
 }
@@ -565,6 +565,7 @@ html:has(.visor[open]) { overflow: hidden; }
   .dia-bloque .num { font-size: 28px; }
   .nota h3 { font-size: 20px; }
   .pie-columnas { grid-template-columns: 1fr; gap: 12px; }
+  .pie-pagina { padding-top: 52px; }
   .pie-pagina::before, .pie-pagina::after { top: -34px; width: 96px; }
 }
 
