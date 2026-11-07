@@ -20,11 +20,13 @@ La búsqueda automática no entra a Instagram ni a Facebook: respeta sus reglas 
 
 - **Agenda:** los eventos, con filtros, buscador y botón 🆕 Nuevos. Las exposiciones que ya están abiertas van juntas en «Exposiciones y temporadas abiertas» (primero las que cierran antes), para no tapar lo que viene.
 - **Restaurantes temáticos:** japoneses, vikingos y medievales, góticos y geek en Santiago (`data/restaurantes.json`). La lista se armó el 6-11-2026: cada lugar lo verificó un agente independiente (que siga abierto, la dirección y que la temática sea real) y los que tienen algo por confirmar muestran un aviso ⚠. Los que cerraron o no calzaban quedaron fuera.
-- **Mis favoritos:** lo que marcaste con ☆ Favorito, con un mapa de Google Maps del lugar elegido. Al tocar el mapa se abre Google Maps (en el celular, la app).
+- **Mis favoritos:** lo que marcaste con ☆ Favorito.
+
+La web no muestra mapas. En cada evento y restaurante, **🗺 Cómo llegar** abre Google Maps (en el celular, su app) con la ruta desde donde estás hasta el lugar.
 
 ## Fotos de los lugares
 
-Cada evento muestra al menos una foto, y también cada restaurante del que hay fotos en fuentes que se pueden usar (a Doragon Maid aún le falta). Al tocarla se abre un visor con todas (se pasan deslizando o con las flechas) y cada una dice de dónde es. Para mantenerlas: `python scripts/fotos.py pendientes` (qué falta) y `python scripts/fotos.py revisar` (qué fotos dejaron de cargar).
+Cada evento muestra al menos una foto, y también cada restaurante del que hay fotos en fuentes que se pueden usar (a Doragon Maid aún le falta). En cada nota se ve una foto a la vez: las demás se pasan deslizando con el dedo, con las flechas ‹ › (en el computador) o con ← → del teclado, y el contador dice cuántas hay. Al tocar una se abre en grande, en un visor que dice de dónde es cada foto. De entrada solo se baja la primera foto de cada nota; las siguientes, cuando alguien toca la galería, le pasa el mouse o la enfoca. Para mantenerlas: `python scripts/fotos.py pendientes` (qué falta) y `python scripts/fotos.py revisar` (qué fotos dejaron de cargar).
 
 - **Eventos:** primero el afiche y las fotos del evento; después, las del lugar. Las fotos de teatros, salas, museos y centros culturales están en `data/lugares.json`: cada lugar tiene su `nombre`, sus `alias` (cómo lo escriben las ticketeras, por ejemplo «Teatro Caupolicán - Santiago Centro» calza con el alias «teatro caupolican») y sus `fotos`. Así, todos los eventos de un mismo lugar muestran sus fotos, también los que encuentre el robot más adelante.
 - **Lugar nuevo sin foto:** se muestra una imagen referencial de la categoría (dice «Imagen referencial»). `/buscar-eventos` revisa esos lugares y les agrega fotos.
@@ -52,7 +54,7 @@ Para activarlo (una sola vez):
 
 ## Archivos
 
-- `index.html`, `styles.css`, `app.js`: la web (sin dependencias).
+- `index.html`, `styles.css`, `app.js`: la web (sin dependencias). Cada vez que cambia alguno de ellos (o `cuenta.js`), se sube en uno el número `?v=` con que `index.html` pide `styles.css` y `app.js`, y el mismo número `V` de `sw.js`. Así nadie queda con una mezcla de la versión vieja y la nueva: con red, la página siempre se pide al servidor; sin conexión se usa la página que se guardó junto con su `app.js` y su `styles.css`.
 - `cuenta.js`, `config/firebase.js`, `firestore.rules`: inicio de sesión con Google y favoritos en la nube.
 - `data/restaurantes.json`: restaurantes temáticos (nombre, tema, dirección, redes, fuentes y fotos).
 - `data/lugares.json`: teatros, salas, museos y centros culturales con sus fotos, y las imágenes referenciales por categoría.

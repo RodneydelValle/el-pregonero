@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>IMP TRAVEL</title>
-  <meta name="description" content="IMP TRAVEL: agenda de eventos en Chile (ferias medievales, yokai, anime, ilustración, metal y más), restaurantes temáticos y tus favoritos con mapa. Se actualiza sola todos los días.">
+  <meta name="description" content="IMP TRAVEL: agenda de eventos en Chile (ferias medievales, yokai, anime, ilustración, metal y más), restaurantes temáticos y tus favoritos. Se actualiza sola todos los días.">
   <meta name="theme-color" content="#7a1f1a" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#151311" media="(prefers-color-scheme: dark)">
   <meta name="apple-mobile-web-app-title" content="IMP TRAVEL">
@@ -22,7 +22,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&display=swap">
-  <link rel="stylesheet" href="styles.css">
+  <!-- ?v= sube cada vez que cambian styles.css o app.js: así nadie queda con una mezcla de la versión vieja y la nueva -->
+  <link rel="stylesheet" href="styles.css?v=6">
 </head>
 <body>
   <header class="cabecera">
@@ -96,10 +97,7 @@
       <p class="bajada-seccion">Izakayas, tabernas vikingas, bares góticos y refugios geek en Santiago.</p>
     </header>
     <div class="chips" id="chips-temas" role="group" aria-label="Tipo de restaurante"></div>
-    <div class="dos-columnas">
-      <div id="lista-restaurantes" class="lista-locales"></div>
-      <aside class="panel-mapa" id="mapa-restaurantes" aria-label="Mapa del restaurante elegido"></aside>
-    </div>
+    <div id="lista-restaurantes" class="lista-locales"></div>
     <p class="nota-seccion" id="nota-restaurantes"></p>
   </section>
 
@@ -110,14 +108,11 @@
       <div id="aviso-cuenta" class="aviso-cuenta"></div>
     </header>
     <div id="fav-vacio" class="vacio" hidden></div>
-    <div class="dos-columnas" id="fav-contenido">
-      <div>
-        <h3 class="mes" id="fav-titulo-eventos">Eventos</h3>
-        <div id="fav-eventos"></div>
-        <h3 class="mes" id="fav-titulo-restaurantes">Restaurantes</h3>
-        <div id="fav-restaurantes" class="lista-locales una-columna"></div>
-      </div>
-      <aside class="panel-mapa" id="mapa-favoritos" aria-label="Mapa del favorito elegido"></aside>
+    <div id="fav-contenido">
+      <h3 class="mes" id="fav-titulo-eventos">Eventos</h3>
+      <div id="fav-eventos"></div>
+      <h3 class="mes" id="fav-titulo-restaurantes">Restaurantes</h3>
+      <div id="fav-restaurantes" class="lista-locales"></div>
     </div>
   </section>
   </main>
@@ -128,8 +123,8 @@
       <div>
         <h2>Cómo funciona</h2>
         <p>Cada mañana un robot busca en noticias del día, comunidades, agendas de fans y ticketeras. Una IA lee las páginas y también los afiches, porque muchas veces la fecha y el lugar solo están en la imagen. Las notas marcadas con 📷 salieron de un afiche y las con ⚠ conviene confirmarlas en la fuente.</p>
-        <p>Las fotos de los lugares vienen de sus sitios oficiales, de la prensa o de Wikimedia Commons (con licencia libre): al abrir una foto se ve de dónde es y quién la tomó.</p>
-        <p>Los mapas son de Google Maps. Si inicias sesión con Google, tus favoritos se guardan en tu cuenta y solo tú puedes verlos.</p>
+        <p>Las fotos de los lugares vienen de sus sitios oficiales, de la prensa o de Wikimedia Commons (con licencia libre): en cada nota se pasan deslizando y al abrir una se ve de dónde es y quién la tomó.</p>
+        <p>«Cómo llegar» abre la ruta en Google Maps (en el celular, en su app). Si inicias sesión con Google, tus favoritos se guardan en tu cuenta y solo tú puedes verlos.</p>
       </div>
       <div>
         <h2>Pregonar ahora</h2>
@@ -160,7 +155,7 @@
   </dialog>
 
   <div id="aviso" class="aviso" role="status" aria-live="polite" hidden></div>
-  <script src="app.js" defer></script>
+  <script src="app.js?v=6" defer></script>
   <script type="module" src="cuenta.js"></script>
 </body>
 </html>

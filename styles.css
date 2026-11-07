@@ -125,34 +125,13 @@ h2[tabindex="-1"]:focus { outline: none; }
 .aviso-cuenta p { margin: 0; flex: 1 1 260px; }
 .aviso-cuenta:empty { display: none; }
 
-.dos-columnas { display: grid; grid-template-columns: minmax(0, 1fr) 380px; gap: 28px; align-items: start; margin-top: 14px; }
-.panel-mapa { position: sticky; top: 12px; }
-.mapa-marco { position: relative; aspect-ratio: 4 / 3; border: 1px solid var(--regla); background: var(--papel-2); overflow: hidden; }
-.mapa-marco iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
-.mapa-toque { position: absolute; inset: 0; display: flex; align-items: flex-end; justify-content: center; padding: 10px; text-decoration: none; }
-.mapa-toque span {
-  font: 600 12.5px var(--sans); color: #fff; background: rgba(29, 25, 21, .82);
-  padding: 6px 12px; border-radius: 999px; transition: background .15s;
-}
-.mapa-toque:hover span, .mapa-toque:focus-visible span { background: var(--lacre); color: var(--sobre-lacre); }
-.mapa-toque:focus-visible { outline: 3px solid var(--lacre); outline-offset: -3px; }
-.mapa-pie { padding: 10px 0 0; }
-.mapa-pie p { margin: 0 0 10px; font-size: 16px; line-height: 1.35; }
-.mapa-pie span { font: 13.5px/1.5 var(--sans); color: var(--tinta-suave); }
-.mapa-vacio {
-  aspect-ratio: 4 / 3; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;
-  text-align: center; padding: 20px; border: 1px dashed var(--regla-suave); color: var(--tinta-suave); font-family: var(--sans);
-}
-.mapa-vacio span { font-size: 34px; }
-.mapa-vacio p { margin: 0; font-size: 14px; }
-
-.lista-locales { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 24px; }
-.lista-locales.una-columna { grid-template-columns: minmax(0, 1fr); }
+/* Restaurantes: tantas columnas como quepan (3 en el computador, 1 en el celular) */
+.lista-locales { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 0 24px; }
+#lista-restaurantes { margin-top: 14px; }
 .lista-locales > .vacio { grid-column: 1 / -1; }
 .local { padding: 16px 0; border-bottom: 1px solid var(--regla-suave); }
 .local h3 { font-size: 21px; line-height: 1.2; margin: 0 0 6px; }
 .aviso-local { margin: 0 0 8px; font: 12.5px/1.45 var(--sans); color: var(--lacre-texto); overflow-wrap: anywhere; }
-.nota.elegida, .local.elegida { box-shadow: inset 4px 0 0 var(--lacre); padding-left: 12px; background: linear-gradient(90deg, var(--resalte), transparent 70%); }
 
 /* ---------- filtros ---------- */
 .filtros {
@@ -219,18 +198,41 @@ h2[tabindex="-1"]:focus { outline: none; }
 .secundaria { padding-bottom: 16px; }
 .secundaria + .secundaria { border-top: 1px solid var(--regla-suave); padding-top: 16px; }
 .secundaria h2 { font-size: 21px; line-height: 1.2; margin: 8px 0 6px; }
-/* Fotos: la imagen se ve completa (contain) y su copia desenfocada rellena el recuadro.
-   El recuadro es un botón: abre el visor con todas las fotos. */
-.galeria { display: block; min-width: 0; }
-.marco-foto {
-  position: relative; overflow: hidden; display: block; width: 100%;
-  padding: 0; margin: 0; font: inherit; color: inherit; cursor: zoom-in;
+/* Fotos de cada tarjeta: se ve una a la vez, completa (contain), y su copia desenfocada rellena el recuadro.
+   Las demás se pasan deslizando (carrusel con scroll-snap) o con las flechas; cada foto es un botón que abre el visor. */
+/* align-self: el recuadro mide lo que la foto (en la grilla de la agenda no se estira): así el contador y las flechas quedan sobre ella */
+.galeria { position: relative; display: block; min-width: 0; align-self: start; }
+.carrusel {
+  display: flex; overflow-x: auto; overflow-y: hidden;
+  scroll-snap-type: x mandatory; overscroll-behavior-x: contain; scrollbar-width: none;
   background: var(--papel-2); border: 1px solid var(--regla-suave);
+}
+.carrusel::-webkit-scrollbar { display: none; }
+.marco-foto {
+  position: relative; overflow: hidden; display: block; flex: 0 0 100%; width: 100%; min-width: 0;
+  padding: 0; margin: 0; border: 0; font: inherit; color: inherit; cursor: zoom-in; background: transparent;
+  scroll-snap-align: start; scroll-snap-stop: always;
 }
 .marco-foto > img { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
 .marco-foto > .fondo { object-fit: cover; filter: blur(14px) saturate(1.2) brightness(.82); transform: scale(1.2); }
 .marco-foto > .imagen { object-fit: contain; }
-.marco-foto:focus-visible, .mini:focus-visible { outline: 2px solid var(--lacre); outline-offset: 2px; }
+/* Anillo de foco por encima de las fotos (un outline quedaría tapado por ellas), en dos tonos para que se vea
+   sobre fotos claras, oscuras o rojas */
+.marco-foto:focus-visible { outline: none; }
+.marco-foto:focus-visible::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  box-shadow: inset 0 0 0 3px var(--lacre), inset 0 0 0 5px #fff;
+}
+/* Los temas de contraste alto de Windows (colores forzados) no dibujan sombras: ahí el anillo va por fuera de la
+   galería, en el color de foco del sistema. Sin :has() (navegadores antiguos), una línea por dentro de la foto. */
+@media (forced-colors: active) {
+  .galeria:has(> .carrusel > .marco-foto:focus-visible) { outline: 2px solid Highlight; outline-offset: 2px; }
+}
+@supports not selector(:has(*)) {
+  @media (forced-colors: active) {
+    .marco-foto:focus-visible::after { outline: 3px solid CanvasText; outline-offset: -3px; }
+  }
+}
 .contador, .sello { position: absolute; font-family: var(--sans); color: #fff; pointer-events: none; }
 .contador {
   right: 8px; bottom: 8px; padding: 5px 9px; border-radius: 999px;
@@ -240,15 +242,23 @@ h2[tabindex="-1"]:focus { outline: none; }
   left: 8px; top: 8px; padding: 4px 7px; border-radius: 3px;
   font-size: 11px; font-weight: 600; line-height: 1.2; letter-spacing: .03em; background: rgba(20, 17, 14, .74);
 }
-.tira { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; margin-top: 6px; }
-.mini {
-  position: relative; display: block; padding: 0; overflow: hidden; cursor: zoom-in; aspect-ratio: 4 / 3;
-  background: var(--papel-2); border: 1px solid var(--regla-suave);
+.flecha-foto {
+  position: absolute; top: 50%; z-index: 1; transform: translateY(-50%);
+  width: 32px; height: 32px; padding: 0 0 3px; border: 0; border-radius: 50%; cursor: pointer;
+  font: 700 22px/1 var(--sans); color: #1d1915; background: rgba(255, 255, 255, .9); box-shadow: 0 1px 4px rgba(0, 0, 0, .4);
+  opacity: .85; transition: opacity .15s;
 }
-.mini img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.mini .mas {
-  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
-  background: rgba(20, 17, 14, .62); color: #fff; font: 700 15px var(--sans);
+.flecha-foto.ant { left: 6px; }
+.flecha-foto.sig { right: 6px; }
+.galeria:hover .flecha-foto { opacity: 1; }
+.flecha-foto:focus-visible { outline: 2px solid var(--lacre); outline-offset: 2px; opacity: 1; }
+/* En los extremos la flecha se desactiva: tenue con el mouse encima y oculta si no; sigue ahí para que un clic
+   de más no caiga en la foto y abra el visor */
+.galeria .flecha-foto:disabled { opacity: 0; cursor: default; }
+.galeria:hover .flecha-foto:disabled { opacity: .3; }
+/* Con el dedo las fotos se deslizan: en el celular no hacen falta las flechas */
+@media (hover: none) and (pointer: coarse) {
+  .flecha-foto { display: none; }
 }
 .galeria.foto { width: 100%; }
 .galeria.foto .marco-foto { aspect-ratio: 2 / 1; }
@@ -363,14 +373,6 @@ html:has(.visor[open]) { overflow: hidden; }
   padding: 10px 18px; border-radius: 999px; z-index: 20; max-width: calc(100vw - 32px);
 }
 
-@media (max-width: 900px) {
-  .dos-columnas { grid-template-columns: minmax(0, 1fr); gap: 12px; }
-  .panel-mapa { position: static; order: -1; scroll-margin-top: 12px; }
-  .mapa-marco { aspect-ratio: 16 / 10; }
-  .mapa-pie { display: flex; align-items: center; justify-content: space-between; gap: 8px 14px; flex-wrap: wrap; }
-  .mapa-pie p { margin: 0; flex: 1 1 200px; }
-}
-
 /* ---------- celular ---------- */
 @media (max-width: 760px) {
   .secciones { padding: 6px 0 8px; }
@@ -379,7 +381,6 @@ html:has(.visor[open]) { overflow: hidden; }
   .pestana .largo { display: none; }
   .pestana .corto { display: inline; }
   .zona-cuenta { width: 100%; justify-content: flex-end; }
-  .lista-locales { grid-template-columns: minmax(0, 1fr); }
   body { font-size: 16px; }
   .portada { grid-template-columns: 1fr; }
   .principal { grid-row: auto; border-right: 0; padding-right: 0; border-bottom: 1px solid var(--regla-suave); padding-bottom: 18px; margin-bottom: 16px; }

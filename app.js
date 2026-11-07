@@ -34,7 +34,6 @@ let REVISADO = null;
 let favEventos = leerSet(CLAVE_GUARDADOS);
 let favRest = leerSet(CLAVE_REST);
 let CUENTA = { disponible: false, usuario: null };
-const seleccion = { restaurantes: null, favoritos: null };   // "e:<id>" o "r:<id>" que muestra cada mapa
 
 // ---------- utilidades ----------
 const $ = (s) => document.querySelector(s);
@@ -61,15 +60,23 @@ function avisar(texto) {
   a.textContent = texto; a.hidden = false;
   clearTimeout(avisar.t); avisar.t = setTimeout(() => { a.hidden = true; }, 2800);
 }
-/** Une partes de una dirección sin repetir ("Ñuñoa" ya incluido en "Casa de la Cultura de Ñuñoa"). */
+/** Une partes de una dirección sin repetir ("Ñuñoa" ya incluido en "Casa de la Cultura de Ñuñoa").
+ *  Si una parte nueva contiene a otras anteriores, queda la más completa ("Blondie" → "Blondie, Alameda 2879"). */
 function unirPartes(partes) {
   const unico = [];
   partes.filter(Boolean).forEach((p) => {
-    if (!unico.some((u) => sinTildes(u).includes(sinTildes(p)) || sinTildes(p).includes(sinTildes(u)))) unico.push(p);
+    const q = sinTildes(p);
+    if (unico.some((u) => sinTildes(u).includes(q))) return;
+    const dentro = unico.filter((u) => q.includes(sinTildes(u)));
+    if (!dentro.length) { unico.push(p); return; }
+    unico.splice(unico.indexOf(dentro[0]), 1, p);
+    for (const u of dentro.slice(1)) unico.splice(unico.indexOf(u), 1);
   });
   return unico;
 }
-function urlMaps(q) { return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`; }
+/** "Cómo llegar": abre Google Maps (en el celular, su app) con la ruta desde donde está la persona hasta el lugar.
+ *  La página no muestra mapas: solo manda el lugar a Google Maps. */
+function urlComoLlegar(q) { return `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(q)}`; }
 
 function rangoTexto(e) {
   const i = fecha(e.fecha_inicio);
@@ -203,6 +210,9 @@ function pintarSecciones() {
   $("#cuenta-favoritos").textContent = n ? String(n) : "";
   if (estado.seccion === "restaurantes") pintarRestaurantes();
   if (estado.seccion === "favoritos") pintarFavoritos();
+  // Las fotos de la pestaña que se muestra quedan donde estaban (mientras estuvo escondida no se podían mover)
+  const visible = $(`#sec-${estado.seccion}`);
+  if (visible) reubicarCarruseles(visible);
 }
 function pintarTodo() {
   pintarChips();
@@ -301,15 +311,12 @@ function botonFavorito(tipo, id, enFavoritos) {
   return `<button type="button" class="accion${enFavoritos ? " guardado" : ""}" data-accion="favorito" data-tipo="${tipo}" data-id="${esc(id)}" aria-pressed="${enFavoritos}">${enFavoritos ? "★ En favoritos" : "☆ Favorito"}</button>`;
 }
 
-function acciones(e, panel) {
+function acciones(e) {
   const tieneLugar = lugarTexto(e) || e.direccion;
-  const verMapa = panel && tieneLugar
-    ? `<button type="button" class="accion" data-accion="mapa" data-panel="${panel}" data-ref="e:${esc(e.id)}">📍 Ver en el mapa</button>` : "";
   return `<div class="acciones">
     ${botonFavorito("e", e.id, favEventos.has(e.id))}
-    ${verMapa}
     <button type="button" class="accion" data-accion="calendario" data-id="${esc(e.id)}">📅 Calendario</button>
-    ${tieneLugar ? `<a class="accion" href="${esc(urlMaps(consultaEvento(e)))}" target="_blank" rel="noopener">🗺 Cómo llegar</a>` : ""}
+    ${tieneLugar ? `<a class="accion" href="${esc(urlComoLlegar(consultaEvento(e)))}" target="_blank" rel="noopener">🗺 Cómo llegar</a>` : ""}
     <button type="button" class="accion" data-accion="compartir" data-id="${esc(e.id)}">↗ Compartir</button>
   </div>`;
 }
@@ -396,73 +403,253 @@ function datosFotos(ref) {
   return r ? { titulo: r.nombre, fotos: fotosLocal(r) } : null;
 }
 
-/** Foto principal completa, sin recortes (una copia desenfocada del mismo archivo, que el navegador baja
- *  una sola vez, rellena el recuadro) y, si hay más, una tira con las siguientes. Todas abren el visor. */
-function htmlGaleria(ref, clase, opciones = {}) {
+/** Fotos de una tarjeta: se ve una a la vez, completa y sin recortes (una copia desenfocada del mismo archivo,
+ *  que el navegador baja una sola vez, rellena el recuadro). Las demás se pasan deslizando con el dedo, con las
+ *  flechas ‹ › o con ←/→, y al tocar una se abre en grande en el visor.
+ *  De entrada solo se baja la primera; las demás, cuando la persona llega a la galería (la toca, le pasa el mouse
+ *  o la enfoca), de a una adelante: así la agenda no baja cientos de fotos que nadie va a mirar. */
+function htmlGaleria(ref, clase) {
   const d = datosFotos(ref);
   if (!d || !d.fotos.length) return "";
   const { titulo, fotos } = d;
   const n = fotos.length;
-  const [p, ...resto] = fotos;
-  const r = esc(ref), s = esc(p.url);
-  const minis = opciones.sinTira ? [] : resto.slice(0, 3);
-  const nombre = n > 1 ? `Ver las ${n} fotos de ${titulo}` : `Ver en grande la foto de ${titulo}`;
-  const tira = minis.map((f, i) => {
-    const quedan = n - minis.length - 1;
-    const mas = i === minis.length - 1 && quedan > 0 ? `<span class="mas" aria-hidden="true">+${quedan}</span>` : "";
-    return `<button type="button" class="mini" data-accion="fotos" data-ref="${r}" data-i="${i + 1}" aria-label="${esc(`Foto ${i + 2} de ${n}: ${f.descripcion || f.lugar || titulo}`)}">` +
-      `<img src="${esc(urlSegura(f.mini) || f.url)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-url="${esc(f.url)}" onerror="fotoRota(this)">${mas}</button>`;
+  const r = esc(ref);
+  const diapos = fotos.map((f, i) => {
+    const s = esc(f.url);
+    const fuente = i ? `data-src="${s}"` : `src="${s}" loading="lazy"`;
+    const que = f.tipo === "afiche" ? "afiche del evento" : f.descripcion || f.lugar || titulo;
+    const nombre = n > 1 ? `Foto ${i + 1} de ${n}: ${que}. Ver en grande` : `Ver en grande la foto de ${titulo}`;
+    return `<button type="button" class="marco-foto" data-accion="fotos" data-ref="${r}" data-i="${i}"${i ? ' tabindex="-1"' : ""} aria-label="${esc(nombre)}">` +
+      `<img class="fondo" ${fuente} alt="" decoding="async" referrerpolicy="no-referrer">` +
+      `<img class="imagen" ${fuente} alt="" decoding="async" referrerpolicy="no-referrer" data-url="${s}"${i ? "" : ' onload="ajustarMarco(this)"'} onerror="fotoRota(this)">` +
+      (f.tipo === "referencial" ? `<span class="sello">Imagen referencial</span>` : "") +
+      `</button>`;
   }).join("");
-  return `<div class="galeria ${clase}" data-ref="${r}" data-clase="${esc(clase)}"${opciones.sinTira ? ' data-sin-tira="1"' : ""}>` +
-    `<button type="button" class="marco-foto" data-accion="fotos" data-ref="${r}" data-i="0" aria-label="${esc(nombre)}">` +
-    `<img class="fondo" src="${s}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">` +
-    `<img class="imagen" src="${s}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-url="${s}" onload="ajustarMarco(this)" onerror="fotoRota(this)">` +
-    (p.tipo === "referencial" ? `<span class="sello">Imagen referencial</span>` : "") +
-    (n > 1 ? `<span class="contador" aria-hidden="true">📷 ${n}</span>` : "") +
-    `</button>` +
-    (tira ? `<div class="tira">${tira}</div>` : "") +
-    `</div>`;
+  // Las flechas son para el mouse (con el dedo se desliza y con el teclado se usan ←/→): no suman paradas al tabulador
+  const controles = n < 2 ? "" :
+    `<button type="button" class="flecha-foto ant" data-accion="foto-ant" tabindex="-1" aria-label="Foto anterior" disabled>‹</button>` +
+    `<button type="button" class="flecha-foto sig" data-accion="foto-sig" tabindex="-1" aria-label="Foto siguiente">›</button>` +
+    `<span class="contador" aria-hidden="true">1 / ${n}</span>`;
+  return `<div class="galeria ${clase}" data-ref="${r}" data-clase="${esc(clase)}">` +
+    `<div class="carrusel"${n > 1 ? ` role="group" aria-label="${esc(`${n} fotos de ${titulo}`)}"` : ""}>${diapos}</div>` +
+    controles + `</div>`;
 }
-/** Las miniaturas de la agenda toman la forma de su imagen (el CSS la limita), para no dejar franjas grandes. */
+/** Las miniaturas de la agenda toman la forma de su primera foto (el CSS la limita), para no dejar franjas grandes;
+ *  las siguientes se ven completas dentro del mismo recuadro. */
 function ajustarMarco(img) {
-  if (!img.closest(".galeria.miniatura") || !img.naturalWidth || !img.naturalHeight) return;
-  img.closest(".marco-foto").style.setProperty("--proporcion", (img.naturalWidth / img.naturalHeight).toFixed(3));
+  const g = img.closest(".galeria.miniatura");
+  if (!g || !img.naturalWidth || !img.naturalHeight) return;
+  g.style.setProperty("--proporcion", (img.naturalWidth / img.naturalHeight).toFixed(3));
 }
-/** Una foto no cargó: si era la versión chica se prueba la grande; si no, se quita del visor y se rehacen
- *  todas las galerías que la tenían (las fotos de un lugar se repiten en los eventos de ese lugar). */
+/** Una foto no cargó: se quita del visor y se rehacen todas las galerías que la tenían
+ *  (las fotos de un lugar se repiten en los eventos de ese lugar). Mientras haya un dedo sobre la pantalla no se
+ *  rehace ninguna: se espera a que se suelte y se detenga. Si se reemplazara la que está bajo un dedo, el gesto
+ *  se perdería y su touchend no llegaría. */
 function fotoRota(img) {
   const url = img.dataset.url || img.getAttribute("src");
-  if (img.dataset.url && img.getAttribute("src") !== img.dataset.url && !img.dataset.reintento) {
-    img.dataset.reintento = "1";
-    img.src = img.dataset.url;
-    return;
-  }
   const propia = img.closest(".galeria");
   const afectadas = [...document.querySelectorAll(".galeria")].filter((g) =>
     g === propia || datosFotos(g.dataset.ref)?.fotos.some((f) => f.url === url));
   FOTOS_ROTAS.add(url);
   const figura = img.closest(".visor-foto");
   if (figura) quitarDelVisor(figura);
-  afectadas.forEach(rehacerGaleria);
+  const esperar = dedoAbajo();
+  afectadas.forEach((g) => { if (esperar) PENDIENTES.add(g); else rehacerGaleria(g); });
 }
 function rehacerGaleria(g) {
   if (!document.contains(g)) return;
   const tarjeta = g.closest("article");
-  // si el visor se abrió desde esta galería, el foco debe volver al botón equivalente de la galería nueva
-  const abria = visor.abridor && g.contains(visor.abridor) ? visor.abridor.dataset.i || "0" : null;
-  const html = htmlGaleria(g.dataset.ref, g.dataset.clase, { sinTira: !!g.dataset.sinTira });
+  const viejo = g.querySelector(".carrusel");
+  const i0 = viejo ? indiceCarrusel(viejo) : 0;
+  const vista = viejo?.children[i0]?.querySelector(".imagen")?.dataset.url;   // la foto que se estaba mirando
+  const primera = viejo?.querySelector(".imagen")?.dataset.url;
+  // si el visor se abrió desde esta galería, el foco debe volver a la foto equivalente de la galería nueva
+  const abria = !!visor.abridor && g.contains(visor.abridor);
+  const conFoco = g.contains(document.activeElement);
+  const html = htmlGaleria(g.dataset.ref, g.dataset.clase);
   if (!html) {
     g.remove();
     tarjeta?.classList.add("sin-foto");
-    if (abria !== null) visor.abridor = tarjeta?.querySelector("h2 a, h3 a, a, button") || null;
+    const otro = tarjeta?.querySelector("h2 a, h3 a, a, button") || null;
+    if (abria) visor.abridor = otro;
+    if (conFoco) otro?.focus({ preventScroll: true });
     return;
   }
   const t = document.createElement("template");
   t.innerHTML = html;
   const nueva = t.content.firstElementChild;
+  const proporcion = g.style.getPropertyValue("--proporcion");
+  if (proporcion && nueva.querySelector(".imagen")?.dataset.url === primera) nueva.style.setProperty("--proporcion", proporcion);
   g.replaceWith(nueva);
-  if (abria !== null) visor.abridor = nueva.querySelector(`[data-i="${abria}"]`) || nueva.querySelector(".marco-foto");
+  // Se sigue en la misma foto; si la que se fue era justo esa, en la que quedó en su lugar
+  const urls = [...nueva.querySelectorAll(".carrusel .imagen")].map((im) => im.dataset.url);
+  const i = urls.indexOf(vista);
+  irACarrusel(nueva, i >= 0 ? i : i0, { enfocar: conFoco });
+  if (abria) visor.abridor = nueva.querySelector(".carrusel").children[indiceCarrusel(nueva.querySelector(".carrusel"))];
 }
+
+// ---------- carrusel de cada tarjeta ----------
+// destino: la foto a la que va un desplazamiento suave (las flechas suman desde ahí, no desde la posición a medio camino)
+const CARRUSELES = new WeakMap();   // carrusel -> { destino, indice, cuadro, fin }
+const MOVIMIENTO_REDUCIDO = window.matchMedia("(prefers-reduced-motion: reduce)");
+function estadoCarrusel(c) {
+  let s = CARRUSELES.get(c);
+  if (!s) CARRUSELES.set(c, (s = { destino: null, indice: 0, cuadro: 0, fin: 0 }));
+  return s;
+}
+/** La foto que se ve (o a la que se va). */
+function indiceCarrusel(c) {
+  const s = estadoCarrusel(c);
+  const i = s.destino ?? (c.clientWidth ? Math.round(c.scrollLeft / c.clientWidth) : s.indice);
+  return Math.min(Math.max(0, i), c.children.length - 1);
+}
+/** Baja la foto que se ve y sus vecinas (justo antes de que la persona las pase). */
+function cargarVecinas(c, i) {
+  for (const k of [i - 1, i, i + 1]) {
+    c.children[k]?.querySelectorAll("img[data-src]").forEach((img) => {
+      img.src = img.dataset.src;
+      img.removeAttribute("data-src");
+    });
+  }
+}
+/** Contador, flechas y foco según la foto que se ve. Solo esa foto es una parada del tabulador.
+ *  En los extremos la flecha se desactiva (no se esconde): si desapareciera bajo el mouse, el clic siguiente
+ *  caería en la foto y abriría el visor sin querer. */
+function pintarCarrusel(g) {
+  const c = g?.querySelector(".carrusel");
+  if (!c || !g.isConnected) return;   // una galería que ya se reemplazó
+  const n = c.children.length;
+  const i = indiceCarrusel(c);
+  estadoCarrusel(c).indice = i;
+  for (let k = 0; k < n; k++) c.children[k].tabIndex = k === i ? 0 : -1;
+  cargarVecinas(c, i);
+  if (n < 2) return;
+  const cont = g.querySelector(".contador");
+  if (cont) cont.textContent = `${i + 1} / ${n}`;
+  const ant = g.querySelector(".flecha-foto.ant"), sig = g.querySelector(".flecha-foto.sig");
+  const foco = document.activeElement;
+  if (ant) ant.disabled = i <= 0;
+  if (sig) sig.disabled = i >= n - 1;
+  // Una flecha que se desactiva con el foco encima lo perdería: pasa a la foto que se ve
+  if ((foco === ant || foco === sig) && foco.disabled) c.children[i].focus({ preventScroll: true });
+}
+function irACarrusel(g, i, { suave = false, enfocar = false } = {}) {
+  const c = g?.querySelector(".carrusel");
+  if (!c || !c.children.length) return;
+  i = Math.min(Math.max(0, i), c.children.length - 1);
+  const s = estadoCarrusel(c);
+  const izquierda = i * c.clientWidth;
+  const mover = c.clientWidth > 0 && Math.abs(c.scrollLeft - izquierda) > 1;
+  const animar = mover && suave && !MOVIMIENTO_REDUCIDO.matches;
+  s.destino = animar ? i : null;
+  s.indice = i;
+  if (mover) c.scrollTo({ left: izquierda, behavior: animar ? "smooth" : "auto" });
+  if (animar) {   // por si el navegador no avisa el fin del desplazamiento
+    clearTimeout(s.fin);
+    s.fin = setTimeout(() => { s.destino = null; pintarCarrusel(g); }, 900);
+  }
+  pintarCarrusel(g);
+  if (enfocar) c.children[i].focus({ preventScroll: true });
+}
+function moverCarrusel(g, paso, enfocar = false) {
+  const c = g?.querySelector(".carrusel");
+  if (!c) return;
+  const actual = indiceCarrusel(c);
+  const i = Math.min(Math.max(0, actual + paso), c.children.length - 1);
+  if (i !== actual) irACarrusel(g, i, { suave: true, enfocar });
+}
+// El carrusel se desliza con el dedo o el trackpad: el contador sigue a la foto que queda
+// (los eventos "scroll" de los elementos no burbujean: se escuchan en la captura)
+document.addEventListener("scroll", (ev) => {
+  const c = ev.target;
+  if (!(c instanceof Element) || !c.classList.contains("carrusel")) return;
+  const s = estadoCarrusel(c);
+  s.ultimo = performance.now();
+  cancelAnimationFrame(s.cuadro);
+  s.cuadro = requestAnimationFrame(() => pintarCarrusel(c.parentElement));
+  clearTimeout(s.fin);
+  s.fin = setTimeout(() => { s.destino = null; pintarCarrusel(c.parentElement); alQuietarse(c); }, 180);
+}, true);
+
+// Respaldo del "scroll-snap": con algunos gestos muy rápidos el navegador puede dejar el carrusel (o el visor)
+// entre dos fotos. Cuando el dedo se levanta y el desplazamiento se detiene, se lleva a la foto más cercana.
+let DEDOS = 0;          // dedos sobre la pantalla: mientras alguien arrastra no se acomoda ni se rehace nada
+let TOCADO = null;      // el carrusel (o el carril del visor) donde empezó el toque, o null
+const PENDIENTES = new Set();      // galerías con una foto rota que esperan que se suelte el dedo para rehacerse
+const ACOMODADO = new WeakMap();   // cuándo se acomodó por última vez cada uno (a lo más una vez por segundo)
+/** ¿Hay un dedo sobre la pantalla? Si lo que se tocaba salió de la página, su touchend no llegará: se da por suelto. */
+function dedoAbajo() {
+  if (DEDOS && TOCADO && !TOCADO.isConnected) { DEDOS = 0; TOCADO = null; }
+  return DEDOS > 0;
+}
+/** Si quedó entre dos fotos, lo lleva a la más cercana. Devuelve true si lo puso en movimiento. */
+function acomodar(c) {
+  if (dedoAbajo() || !c?.clientWidth || !c.children.length || !c.isConnected) return false;
+  const ancho = c.scrollWidth / c.children.length;   // ancho real de cada foto (clientWidth viene redondeado)
+  const i = Math.round(c.scrollLeft / ancho);
+  if (Math.abs(c.scrollLeft - i * ancho) <= 3 || performance.now() - (ACOMODADO.get(c) || -1e9) < 1000) return false;
+  ACOMODADO.set(c, performance.now());
+  c.scrollTo({ left: i * ancho, behavior: MOVIMIENTO_REDUCIDO.matches ? "auto" : "smooth" });
+  return true;
+}
+function rehacerPendientes() {
+  for (const g of [...PENDIENTES]) { PENDIENTES.delete(g); rehacerGaleria(g); }
+}
+/** Se soltó el dedo y el carrusel (o el visor) se detuvo: se acomoda en una foto y después se rehacen
+ *  las galerías pendientes. */
+function alQuietarse(c) {
+  if (dedoAbajo()) return;
+  if (c && acomodar(c)) return;   // se mueve otra vez: cuando se detenga se vuelve a pasar por aquí
+  rehacerPendientes();
+}
+document.addEventListener("touchstart", (ev) => {
+  DEDOS = ev.touches.length;
+  if (DEDOS === 1) TOCADO = ev.target instanceof Element ? ev.target.closest(".carrusel, .visor-carril") : null;
+}, { passive: true });
+function soltar(ev) {
+  DEDOS = ev.touches.length;
+  if (DEDOS) return;
+  const c = TOCADO;
+  TOCADO = null;
+  // Si el navegador sigue moviéndolo (inercia o su propio ajuste), se espera a que termine
+  setTimeout(() => {
+    const ultimo = !c ? 0 : c.classList.contains("visor-carril") ? visor.ultimo : CARRUSELES.get(c)?.ultimo;
+    if (!ultimo || performance.now() - ultimo > 150) alQuietarse(c);
+  }, 220);
+}
+document.addEventListener("touchend", soltar, { passive: true });
+document.addEventListener("touchcancel", soltar, { passive: true });
+// Al tocar la galería, pasarle el mouse o enfocarla, se baja la foto siguiente
+function prepararGaleria(ev) {
+  const c = ev.target instanceof Element ? ev.target.closest(".galeria")?.querySelector(".carrusel") : null;
+  if (c) cargarVecinas(c, indiceCarrusel(c));
+}
+document.addEventListener("pointerover", prepararGaleria, { passive: true });
+document.addEventListener("focusin", prepararGaleria);
+document.addEventListener("keydown", (ev) => {
+  if ((ev.key !== "ArrowRight" && ev.key !== "ArrowLeft") || ev.altKey || ev.ctrlKey || ev.metaKey || ev.shiftKey) return;
+  if ($("#visor")?.open) return;   // el visor tiene sus propias flechas
+  const diapo = ev.target instanceof Element ? ev.target.closest(".carrusel > .marco-foto") : null;
+  if (!diapo) return;
+  ev.preventDefault();
+  moverCarrusel(diapo.closest(".galeria"), ev.key === "ArrowRight" ? 1 : -1, true);
+});
+/** Deja cada carrusel visible en la foto que mostraba. Se usa al cambiar el ancho de la pantalla y al volver
+ *  a mostrar una pestaña: una galería escondida no se puede desplazar (por ejemplo, si se rehízo por una foto
+ *  rota que se descubrió desde otra pestaña) y, al mostrarla, el navegador la puede dejar en otra foto. */
+function reubicarCarruseles(raiz = document) {
+  raiz.querySelectorAll(".carrusel").forEach((c) => {
+    if (dedoAbajo() && c === TOCADO) return;   // el que se está arrastrando lo acomoda el navegador al soltar
+    const s = CARRUSELES.get(c);
+    if (!s || !c.clientWidth || !c.children.length) return;
+    const ancho = c.scrollWidth / c.children.length;
+    const i = Math.min(s.indice, c.children.length - 1);
+    s.destino = null;
+    if (Math.abs(c.scrollLeft - i * ancho) > 1) c.scrollTo({ left: i * ancho, behavior: "auto" });
+    pintarCarrusel(c.parentElement);
+  });
+}
+window.addEventListener("resize", () => reubicarCarruseles());
 
 // ---------- visor de fotos (se desliza con el dedo, con las flechas o con el teclado) ----------
 // destino: la foto a la que va un desplazamiento suave (las flechas suman desde ahí, no desde la posición a medio camino)
@@ -480,7 +667,9 @@ function figuraVisor(f, titulo) {
 }
 function figurasVisor() { return [...$("#visor-carril").children]; }
 
-function abrirVisor(ref, i, abridor) {
+/** url: la foto que se tocó. Se busca por dirección y no por posición, porque la lista de la tarjeta puede
+ *  ir un paso atrás de la del visor (una foto rota que se quitará cuando se suelte el dedo). */
+function abrirVisor(ref, i, abridor, url) {
   const d = datosFotos(ref);
   if (!d || !d.fotos.length || !$("#visor")) return;
   visor.ref = ref;
@@ -489,7 +678,8 @@ function abrirVisor(ref, i, abridor) {
   $("#visor-carril").innerHTML = d.fotos.map((f) => figuraVisor(f, d.titulo)).join("");
   const dlg = $("#visor");
   if (!dlg.open) dlg.showModal();
-  irAFoto(i, false);
+  const k = url ? d.fotos.findIndex((f) => f.url === url) : -1;
+  irAFoto(k >= 0 ? k : i, false);
 }
 function irAFoto(i, suave = true) {
   const carril = $("#visor-carril");
@@ -497,8 +687,12 @@ function irAFoto(i, suave = true) {
   if (!n) { $("#visor").close(); return; }
   visor.indice = Math.min(Math.max(0, i), n - 1);
   const izquierda = visor.indice * carril.clientWidth;
-  visor.destino = suave && Math.abs(carril.scrollLeft - izquierda) > 1 ? visor.indice : null;
-  carril.scrollTo({ left: izquierda, behavior: suave ? "smooth" : "auto" });
+  const animar = suave && !MOVIMIENTO_REDUCIDO.matches && Math.abs(carril.scrollLeft - izquierda) > 1;
+  visor.destino = animar ? visor.indice : null;
+  // El temporizador del desplazamiento anterior no debe borrar este destino (se perdería una flecha rápida)
+  clearTimeout(visor.fin);
+  if (animar) visor.fin = setTimeout(() => { visor.destino = null; sincronizarVisor(); }, 900);   // por si no llega ningún "scroll"
+  carril.scrollTo({ left: izquierda, behavior: animar ? "smooth" : "auto" });
   pintarContador();
 }
 function pintarContador() {
@@ -530,11 +724,13 @@ function sincronizarVisor() {
 }
 if ($("#visor")) {   // (una versión vieja de index.html en caché no tiene visor: el resto de la página sigue funcionando)
   $("#visor-carril").addEventListener("scroll", () => {
+    visor.ultimo = performance.now();
     cancelAnimationFrame(visor.cuadro);
     visor.cuadro = requestAnimationFrame(sincronizarVisor);
     clearTimeout(visor.fin);
-    // terminó el desplazamiento (sirve también en los navegadores sin el evento "scrollend")
-    visor.fin = setTimeout(() => { visor.destino = null; sincronizarVisor(); }, 180);
+    // terminó el desplazamiento (sirve también en los navegadores sin el evento "scrollend"): si quedó entre
+    // dos fotos, se acomoda en la más cercana, y se rehacen las galerías que esperaban que se soltara el dedo
+    visor.fin = setTimeout(() => { visor.destino = null; alQuietarse($("#visor-carril")); sincronizarVisor(); }, 180);
   });
   $("#visor-ant").addEventListener("click", () => irAFoto(visor.indice - 1));
   $("#visor-sig").addEventListener("click", () => irAFoto(visor.indice + 1));
@@ -547,11 +743,22 @@ if ($("#visor")) {   // (una versión vieja de index.html en caché no tiene vis
     else if (ev.key === "ArrowLeft") { ev.preventDefault(); irAFoto(visor.indice - 1); }
   });
   $("#visor").addEventListener("close", () => {
+    const vista = figurasVisor()[visor.indice]?.querySelector("img")?.dataset.url;   // la foto que se miraba
     $("#visor-carril").innerHTML = "";
     visor.destino = null;
+    clearTimeout(visor.fin);
+    // Las galerías con una foto rota que esperaban que se soltara el dedo se rehacen antes de volver a la tarjeta
+    // (rehacerGaleria actualiza visor.abridor)
+    if (!dedoAbajo()) rehacerPendientes();
     const a = visor.abridor;
     visor.abridor = null;
-    if (a && document.contains(a)) a.focus({ preventScroll: true });
+    if (!a || !document.contains(a)) return;
+    // La tarjeta queda en la foto que se estaba mirando en grande (se busca por dirección: si una foto se rompió
+    // con el visor abierto, la tarjeta pudo cambiar su lista), y el foco vuelve a ella
+    const g = a.closest(".galeria");
+    if (!g) { a.focus({ preventScroll: true }); return; }
+    const k = [...g.querySelectorAll(".carrusel .imagen")].findIndex((im) => im.dataset.url === vista);
+    irACarrusel(g, k >= 0 ? k : visor.indice, { enfocar: true });
   });
   window.addEventListener("resize", () => { if ($("#visor").open) irAFoto(visor.indice, false); });
 }
@@ -616,21 +823,20 @@ function pintarPortada(lista) {
     </article>
     ${s.map((e) => `
     <article class="secundaria">
-      ${htmlGaleria(`e:${e.id}`, "foto", { sinTira: true })}
+      ${htmlGaleria(`e:${e.id}`, "foto")}
       <p class="cuando-grande">${esc(cuandoRelativo(e))}</p>
       <h2><a href="${esc(enlace(e))}" target="_blank" rel="noopener">${esc(e.titulo)}</a></h2>
       ${datosLinea(e)}
     </article>`).join("")}`;
 }
 
-function htmlNota(e, panel) {
+/** prefijo del id: "e" en la agenda (los enlaces compartidos llevan a #e-<id>) y "f" en Mis favoritos. */
+function htmlNota(e, prefijo = "e") {
   const h = hoy();
   const i = fecha(e.fecha_inicio);
   const enCurso = i < h;
   const foto = htmlGaleria(`e:${e.id}`, "miniatura");
-  const ref = panel ? ` data-ref="e:${esc(e.id)}"` : "";
-  const elegido = panel && seleccion[panel] === `e:${e.id}` ? " elegida" : "";
-  return `<article class="nota${foto ? "" : " sin-foto"}${elegido}" id="${panel ? "f" : "e"}-${esc(e.id)}"${ref}>
+  return `<article class="nota${foto ? "" : " sin-foto"}" id="${prefijo}-${esc(e.id)}">
     <div class="dia-bloque${enCurso ? " en-curso" : ""}" aria-hidden="true">
       <span class="sem">${enCurso ? "hasta" : DIAS[i.getDay()]}</span>
       <span class="num">${enCurso ? fecha(e.fecha_fin).getDate() : i.getDate()}</span>
@@ -643,7 +849,7 @@ function htmlNota(e, panel) {
       ${datosLinea(e)}
       ${e.descripcion ? `<p class="desc">${esc(e.descripcion)}</p>` : ""}
       ${fuenteLinea(e)}
-      ${acciones(e, panel)}
+      ${acciones(e)}
     </div>
     ${foto}
   </article>`;
@@ -696,75 +902,20 @@ function alternarNuevos(activar) {
 $("#btn-nuevos").addEventListener("click", () => alternarNuevos(!estado.soloNuevos));
 $("#btn-salir-nuevos").addEventListener("click", () => alternarNuevos(false));
 
-// ---------- mapa (Google Maps incrustado: sin clave ni costo) ----------
-function datosMapa(ref) {
-  if (!ref) return null;
-  const [tipo, id] = [ref.slice(0, 1), ref.slice(2)];
-  if (tipo === "e") {
-    const e = EVENTOS.find((x) => x.id === id);
-    if (!e) return null;
-    return { titulo: e.titulo, detalle: [lugarTexto(e), e.direccion].filter(Boolean).join(" · "), q: consultaEvento(e) };
-  }
-  const r = RESTAURANTES.find((x) => x.id === id);
-  if (!r) return null;
-  return { titulo: r.nombre, detalle: unirPartes([r.direccion, r.comuna]).join(", "), q: consultaLocal(r) };
-}
-
-function pintarMapa(panel) {
-  const cont = $(`#mapa-${panel}`);
-  const d = datosMapa(seleccion[panel]);
-  if (!d) {
-    cont.innerHTML = `<div class="mapa-vacio"><span aria-hidden="true">🗺</span><p>Elige “📍 Ver en el mapa” en cualquier lugar para verlo aquí.</p></div>`;
-    return;
-  }
-  const embed = `https://maps.google.com/maps?q=${encodeURIComponent(d.q)}&hl=es&z=15&output=embed`;
-  const abrir = urlMaps(d.q);
-  const marco = cont.querySelector("iframe");
-  if (marco && marco.dataset.q === d.q) {
-    // Mismo lugar (por ejemplo, dos conciertos en el Caupolicán): no se recarga el mapa, pero sí sus textos
-    marco.title = `Mapa de ${d.titulo}`;
-    cont.querySelector(".mapa-toque").setAttribute("aria-label", `Abrir ${d.titulo} en Google Maps`);
-    cont.querySelector(".mapa-pie p").innerHTML = `<b>${esc(d.titulo)}</b>${d.detalle ? `<br><span>${esc(d.detalle)}</span>` : ""}`;
-    return;
-  }
-  cont.innerHTML = `
-    <div class="mapa-marco">
-      <iframe src="${esc(embed)}" data-q="${esc(d.q)}" title="Mapa de ${esc(d.titulo)}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <a class="mapa-toque" href="${esc(abrir)}" target="_blank" rel="noopener" aria-label="Abrir ${esc(d.titulo)} en Google Maps">
-        <span>Toca el mapa para abrirlo en Google Maps ↗</span>
-      </a>
-    </div>
-    <div class="mapa-pie">
-      <p><b>${esc(d.titulo)}</b>${d.detalle ? `<br><span>${esc(d.detalle)}</span>` : ""}</p>
-      <a class="boton" href="${esc(abrir)}" target="_blank" rel="noopener">🗺 Abrir en Google Maps</a>
-    </div>`;
-}
-
-function elegirEnMapa(panel, ref, desplazar) {
-  seleccion[panel] = ref;
-  document.querySelectorAll(`#sec-${panel} [data-ref]`).forEach((n) => {
-    if (n.matches("article")) n.classList.toggle("elegida", n.dataset.ref === ref);
-  });
-  pintarMapa(panel);
-  if (desplazar && window.matchMedia("(max-width: 900px)").matches) {
-    $(`#mapa-${panel}`).scrollIntoView({ behavior: "smooth", block: "start" });
-  }
-}
-
 // ---------- restaurantes temáticos ----------
-function htmlLocal(r, panel) {
+/** prefijo del id: "r" en Restaurantes (los enlaces compartidos llevan a #r-<id>) y "fr" en Mis favoritos. */
+function htmlLocal(r, prefijo = "r") {
   const t = TEMAS[r.tema] || { nombre: r.tema, emoji: "•" };
   const datos = [];
   const dir = unirPartes([r.direccion, r.comuna]).join(", ");
   if (dir) datos.push(`<span>📍 ${esc(dir)}</span>`);
   if (r.horario) datos.push(`<span>🕖 ${esc(r.horario)}</span>`);
   if (r.precio) datos.push(`<span>💲 ${esc(r.precio)}</span>`);
-  const elegido = seleccion[panel] === `r:${r.id}` ? " elegida" : "";
   const enlaces = [];
   if (urlSegura(r.instagram)) enlaces.push(`<a class="accion" href="${esc(r.instagram)}" target="_blank" rel="noopener">Instagram ↗</a>`);
   if (urlSegura(r.web)) enlaces.push(`<a class="accion" href="${esc(r.web)}" target="_blank" rel="noopener">Sitio web ↗</a>`);
   const galeria = htmlGaleria(`r:${r.id}`, "foto-local");
-  return `<article class="local${elegido}${galeria ? "" : " sin-foto"}" id="${panel === "favoritos" ? "fr" : "r"}-${esc(r.id)}" data-ref="r:${esc(r.id)}">
+  return `<article class="local${galeria ? "" : " sin-foto"}" id="${prefijo}-${esc(r.id)}">
     ${galeria}
     <p class="antetitulo"><span aria-hidden="true">${esc(t.emoji)}</span> ${esc(t.nombre)}</p>
     <h3>${esc(r.nombre)}</h3>
@@ -773,8 +924,7 @@ function htmlLocal(r, panel) {
     ${r.dudas ? `<p class="aviso-local"><span aria-hidden="true">⚠</span> ${esc(r.dudas)}</p>` : ""}
     <div class="acciones">
       ${botonFavorito("r", r.id, favRest.has(r.id))}
-      ${dir ? `<button type="button" class="accion" data-accion="mapa" data-panel="${panel}" data-ref="r:${esc(r.id)}">📍 Ver en el mapa</button>` : ""}
-      <a class="accion" href="${esc(urlMaps(consultaLocal(r)))}" target="_blank" rel="noopener">🗺 Cómo llegar</a>
+      <a class="accion" href="${esc(urlComoLlegar(consultaLocal(r)))}" target="_blank" rel="noopener">🗺 Cómo llegar</a>
       ${enlaces.join("")}
     </div>
   </article>`;
@@ -788,21 +938,15 @@ function pintarRestaurantes() {
     `<button type="button" class="chip" data-tema="${esc(c.id)}" aria-pressed="${estado.tema === c.id}">` +
     `<span aria-hidden="true">${esc(c.emoji)}</span>${esc(c.nombre)} <span class="cuenta">${c.n}</span></button>`).join("");
   const lista = RESTAURANTES.filter((r) => estado.tema === "todos" || r.tema === estado.tema);
-  if (!lista.some((r) => seleccion.restaurantes === `r:${r.id}`)) {
-    const primero = lista.find((r) => r.direccion);
-    seleccion.restaurantes = primero ? `r:${primero.id}` : null;
-  }
   const vacioTexto = RESTAURANTES.length ? "Nada en este tema."
     : { cargando: "Cargando restaurantes…", fallo: "No se pudo cargar la lista de restaurantes. Prueba recargando la página." }[ESTADO_RESTAURANTES]
       || "Todavía no hay restaurantes en la lista.";
   $("#lista-restaurantes").innerHTML = lista.length
-    ? lista.map((r) => htmlLocal(r, "restaurantes")).join("")
+    ? lista.map((r) => htmlLocal(r)).join("")
     : `<div class="vacio"><p class="vacio-titulo">${esc(vacioTexto)}</p></div>`;
-  $("#mapa-restaurantes").hidden = !lista.length;
   $("#nota-restaurantes").textContent = REVISADO
     ? `Lista revisada el ${fecha(REVISADO).toLocaleDateString("es-CL", { dateStyle: "long" })}. Los horarios y precios cambian: confírmalos en sus redes antes de ir.`
     : "";
-  pintarMapa("restaurantes");
 }
 
 // ---------- mis favoritos ----------
@@ -819,15 +963,10 @@ function pintarFavoritos() {
   const evs = EVENTOS.filter((e) => favEventos.has(e.id) && vigente(e))
     .sort((a, b) => a.fecha_inicio.localeCompare(b.fecha_inicio));
   const rs = RESTAURANTES.filter((r) => favRest.has(r.id));
-  const refs = [...evs.map((e) => `e:${e.id}`), ...rs.map((r) => `r:${r.id}`)];
-  if (!refs.includes(seleccion.favoritos)) {
-    const primero = evs.find((e) => lugarTexto(e) || e.direccion);
-    seleccion.favoritos = primero ? `e:${primero.id}` : (rs.find((r) => r.direccion) ? `r:${rs.find((r) => r.direccion).id}` : null);
-  }
   $("#fav-titulo-eventos").hidden = !evs.length;
   $("#fav-titulo-restaurantes").hidden = !rs.length;
-  $("#fav-eventos").innerHTML = evs.map((e) => htmlNota(e, "favoritos")).join("");
-  $("#fav-restaurantes").innerHTML = rs.map((r) => htmlLocal(r, "favoritos")).join("");
+  $("#fav-eventos").innerHTML = evs.map((e) => htmlNota(e, "f")).join("");
+  $("#fav-restaurantes").innerHTML = rs.map((r) => htmlLocal(r, "fr")).join("");
   const hay = evs.length + rs.length > 0;
   // El estado vacío depende de lo guardado, no de lo pintado: mientras carga la agenda no se dice "no tienes favoritos"
   const guardados = favEventos.size + favRest.size;
@@ -835,12 +974,11 @@ function pintarFavoritos() {
   if (!hay) {
     if (guardados && !EVENTOS_CARGADOS && !AGENDA_FALLO) vacio = `<p class="vacio-titulo">Cargando tus favoritos…</p>`;
     else if (guardados && AGENDA_FALLO) vacio = `<p class="vacio-titulo">No se pudo cargar la agenda.</p><p>Tus favoritos siguen guardados; prueba recargando la página.</p>`;
-    else vacio = `<p class="vacio-titulo">Aún no tienes favoritos.</p><p>Marca ☆ Favorito en un evento de la agenda o en un restaurante temático y aparecerá aquí con su mapa.</p>`;
+    else vacio = `<p class="vacio-titulo">Aún no tienes favoritos.</p><p>Marca ☆ Favorito en un evento de la agenda o en un restaurante temático y aparecerá aquí.</p>`;
   }
   $("#fav-vacio").innerHTML = vacio;
   $("#fav-vacio").hidden = hay;
   $("#fav-contenido").hidden = !hay;
-  pintarMapa("favoritos");
 }
 
 const LOGO_GOOGLE = `<svg class="logo-g" viewBox="0 0 48 48" aria-hidden="true" width="18" height="18"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>`;
@@ -916,8 +1054,11 @@ document.addEventListener("click", (ev) => {
   if (!btn) return;
   const accion = btn.dataset.accion;
   if (accion === "favorito") { alternarFavorito(btn.dataset.tipo, btn.dataset.id, btn); return; }
-  if (accion === "mapa") { elegirEnMapa(btn.dataset.panel, btn.dataset.ref, true); return; }
-  if (accion === "fotos") { abrirVisor(btn.dataset.ref, Number(btn.dataset.i) || 0, btn); return; }
+  if (accion === "fotos") {
+    abrirVisor(btn.dataset.ref, Number(btn.dataset.i) || 0, btn, btn.querySelector(".imagen")?.dataset.url);
+    return;
+  }
+  if (accion === "foto-ant" || accion === "foto-sig") { moverCarrusel(btn.closest(".galeria"), accion === "foto-sig" ? 1 : -1); return; }
   if (accion === "temporadas") {
     estado.verTemporadas = true;
     pintar();

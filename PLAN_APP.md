@@ -10,7 +10,7 @@ Regla de oro: **cero costo extra**. Todo lo de abajo es gratis, salvo lo que est
 - [x] `sw.js` (service worker): la agenda queda guardada en el teléfono y se puede ver sin conexión.
 - [x] Botón **Instalar como app** (Chrome y Edge en Android y PC). En iPhone se instala desde Safari con Compartir → *Agregar a inicio*.
 - [x] Atajo **Mis guardados** al mantener presionado el ícono.
-- [x] Guardados (★), exportar al calendario (.ics), mapa y compartir.
+- [x] Guardados (★), exportar al calendario (.ics), «Cómo llegar» (abre la ruta en Google Maps) y compartir.
 
 ## Fase 1 · Avisos de eventos nuevos (gratis)
 
@@ -35,7 +35,7 @@ Distribución:
 
 ## Fase 3 · Funciones de app
 
-- Vista **mapa** con todos los eventos (Leaflet + OpenStreetMap, gratis).
+- Vista **mapa** con todos los eventos (Leaflet + OpenStreetMap, gratis). _El 7-11-2026 se pidió quitar los mapas de la página y dejar solo «Cómo llegar»: hacerlo solo si se vuelve a pedir._
 - **"Voy / No me interesa"**: hoy "No me interesa" se resuelve agregando el título a `data/ocultos.json`. En la app sería un botón que crea ese cambio, con una GitHub Action disparada por *issue* o *repository_dispatch*.
 - Filtro por **comuna** y por **precio** (gratis / pagado).
 - **Widget** de "próximo evento guardado" (Capacitor).
