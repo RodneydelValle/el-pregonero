@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&display=swap">
   <!-- ?v= sube cada vez que cambian styles.css o app.js: así nadie queda con una mezcla de la versión vieja y la nueva -->
-  <link rel="stylesheet" href="styles.css?v=6">
+  <link rel="stylesheet" href="styles.css?v=7">
 </head>
 <body>
   <header class="cabecera">
@@ -31,13 +31,48 @@
       <span id="fecha-hoy">Santiago de Chile</span>
       <span id="estado-busqueda">Cargando…</span>
     </div>
-    <picture class="banner-cabecera">
-      <source type="image/webp"
-              srcset="img/banner-900.webp 900w, img/banner-1400.webp 1400w, img/banner-2172.webp 2172w"
-              sizes="(max-width: 1152px) calc(100vw - 32px), 1120px">
-      <img src="img/banner-1200.jpg" width="2172" height="724" fetchpriority="high" decoding="async"
-           alt="Un diablillo rojo con mochila mira un mapa junto a un camino luminoso que une una feria medieval, un torii japonés, un evento gamer y un teatro">
-    </picture>
+    <!-- Un banner por sección: al deslizarlo (o tocar sus puntos o flechas) la página muestra la sección del banner -->
+    <div class="banners" id="banners">
+      <div class="banners-carril" id="banners-carril" tabindex="-1" role="group" aria-roledescription="carrusel"
+           aria-label="Secciones: desliza el banner para cambiar de sección">
+        <picture class="banner-cabecera" data-banner="agenda">
+          <source type="image/webp"
+                  srcset="img/banner-900.webp 900w, img/banner-1400.webp 1400w, img/banner-2172.webp 2172w"
+                  sizes="(max-width: 1152px) calc(100vw - 32px), 1120px">
+          <img src="img/banner-1200.jpg" width="2172" height="724" fetchpriority="high" decoding="async"
+               alt="Agenda: un diablillo rojo con mochila mira un mapa junto a un camino luminoso que une una feria medieval, un torii japonés, un evento gamer y un teatro">
+        </picture>
+        <picture class="banner-cabecera" data-banner="juegos">
+          <source type="image/webp"
+                  srcset="img/banner-juegos-900.webp 900w, img/banner-juegos-1400.webp 1400w, img/banner-juegos-2000.webp 2000w"
+                  sizes="(max-width: 1152px) calc(100vw - 32px), 1120px">
+          <img src="img/banner-juegos-1200.jpg" width="2000" height="667" loading="lazy" decoding="async"
+               alt="Juegos: el diablillo juega cartas coleccionables con un dragón y una elfa en una tienda de juegos con torneos">
+        </picture>
+        <picture class="banner-cabecera" data-banner="museos">
+          <source type="image/webp"
+                  srcset="img/banner-museos-900.webp 900w, img/banner-museos-1400.webp 1400w, img/banner-museos-2000.webp 2000w"
+                  sizes="(max-width: 1152px) calc(100vw - 32px), 1120px">
+          <img src="img/banner-museos-1200.jpg" width="2000" height="667" loading="lazy" decoding="async"
+               alt="Museos: el diablillo, con mochila y cámara, recorre un museo con un esqueleto de dinosaurio, una estatua griega, una armadura samurái y el busto de un faraón">
+        </picture>
+        <picture class="banner-cabecera" data-banner="restaurantes">
+          <source type="image/webp"
+                  srcset="img/banner-restaurantes-900.webp 900w, img/banner-restaurantes-1400.webp 1400w, img/banner-restaurantes-2000.webp 2000w"
+                  sizes="(max-width: 1152px) calc(100vw - 32px), 1120px">
+          <img src="img/banner-restaurantes-1200.jpg" width="2000" height="667" loading="lazy" decoding="async"
+               alt="Restaurantes: el diablillo, un dragón y una elfa comen ramen en un restaurante japonés con faroles y flores de cerezo">
+        </picture>
+      </div>
+      <button type="button" class="banners-flecha ant" data-banner-paso="-1" tabindex="-1" aria-label="Sección anterior" disabled>‹</button>
+      <button type="button" class="banners-flecha sig" data-banner-paso="1" tabindex="-1" aria-label="Sección siguiente">›</button>
+      <div class="banners-puntos" role="group" aria-label="Secciones">
+        <button type="button" class="punto" data-banner="agenda" aria-label="Agenda: todos los eventos" title="Agenda: todos los eventos" aria-current="true"></button>
+        <button type="button" class="punto" data-banner="juegos" aria-label="Juegos: fantasía, rol y juegos" title="Juegos: fantasía, rol y juegos"></button>
+        <button type="button" class="punto" data-banner="museos" aria-label="Museos y exposiciones de arte" title="Museos y exposiciones de arte"></button>
+        <button type="button" class="punto" data-banner="restaurantes" aria-label="Restaurantes temáticos" title="Restaurantes temáticos"></button>
+      </div>
+    </div>
     <h1 class="cabezal"><span class="imp">IMP</span> TRAVEL</h1>
     <p class="bajada">Ferias medievales, yokai, anime, ilustración, metal y otras rarezas en Chile</p>
     <div class="doble-regla" role="presentation"></div>
@@ -46,7 +81,6 @@
   <nav class="secciones" aria-label="Secciones">
     <div class="pestanas">
       <a class="pestana" href="#eventos" data-seccion="agenda" aria-current="page"><span aria-hidden="true">📰</span> Agenda</a>
-      <a class="pestana" href="#restaurantes" data-seccion="restaurantes"><span aria-hidden="true">🏮</span> Restaurantes<span class="largo"> temáticos</span></a>
       <a class="pestana" href="#favoritos" data-seccion="favoritos"><span aria-hidden="true">★</span> <span class="largo">Mis favoritos</span><span class="corto">Favoritos</span> <span class="cuenta" id="cuenta-favoritos"></span></a>
     </div>
     <div class="zona-cuenta" id="zona-cuenta" hidden>
@@ -155,7 +189,7 @@
   </dialog>
 
   <div id="aviso" class="aviso" role="status" aria-live="polite" hidden></div>
-  <script src="app.js?v=6" defer></script>
+  <script src="app.js?v=7" defer></script>
   <script type="module" src="cuenta.js"></script>
 </body>
 </html>

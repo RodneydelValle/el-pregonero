@@ -16,11 +16,16 @@ Agenda personal de eventos en Chile, con formato de diario: ferias medievales, y
 
 La búsqueda automática no entra a Instagram ni a Facebook: respeta sus reglas y el `robots.txt` de cada sitio. De esas redes solo usa lo que muestran los buscadores, y las cuentas las revisa `/buscar-eventos` con tu sesión.
 
-## Pestañas
+## Secciones
 
-- **Agenda:** los eventos, con filtros, buscador y botón 🆕 Nuevos. Las exposiciones que ya están abiertas van juntas en «Exposiciones y temporadas abiertas» (primero las que cierran antes), para no tapar lo que viene.
-- **Restaurantes temáticos:** japoneses, vikingos y medievales, góticos y geek en Santiago (`data/restaurantes.json`). La lista se armó el 6-11-2026: cada lugar lo verificó un agente independiente (que siga abierto, la dirección y que la temática sea real) y los que tienen algo por confirmar muestran un aviso ⚠. Los que cerraron o no calzaban quedaron fuera.
-- **Mis favoritos:** lo que marcaste con ☆ Favorito.
+La cabecera tiene un banner por sección. Al deslizarlo con el dedo, tocar sus puntos, usar las flechas ‹ › (en el computador) o ← → con el foco en un punto, la página muestra la sección de ese banner:
+
+- **Agenda** (el diablillo con el mapa): todos los eventos, con filtros, buscador y botón 🆕 Nuevos. Las exposiciones que ya están abiertas van juntas en «Exposiciones y temporadas abiertas» (primero las que cierran antes), para no tapar lo que viene.
+- **Juegos** (la tienda de juegos): la agenda con el tema «Fantasía, rol y juegos».
+- **Museos** (el museo): la agenda con los temas «Museos y cultura» y «Exposiciones de arte».
+- **Restaurantes** (el ramen): restaurantes temáticos japoneses, vikingos y medievales, góticos y geek en Santiago (`data/restaurantes.json`). La lista se armó el 6-11-2026: cada lugar lo verificó un agente independiente (que siga abierto, la dirección y que la temática sea real) y los que tienen algo por confirmar muestran un aviso ⚠. Los que cerraron o no calzaban quedaron fuera.
+
+Bajo la cabecera hay dos pestañas: **Agenda** (vuelve a la agenda completa) y **Mis favoritos** (lo que marcaste con ☆ Favorito). Elegir un tema en la agenda también mueve el banner (por ejemplo, «Exposiciones de arte» lo pasa a Museos). Cada sección tiene su dirección: `#eventos`, `#juegos`, `#museos`, `#restaurantes` y `#favoritos`. Los banners están en `img/banner-*.webp` (3:1, en 900, 1400 y el tamaño original, más un JPG de 1200 de respaldo); su orden y su sección, en `BANNERS` de `app.js`.
 
 La web no muestra mapas. En cada evento y restaurante, **🗺 Cómo llegar** abre Google Maps (en el celular, su app) con la ruta desde donde estás hasta el lugar.
 

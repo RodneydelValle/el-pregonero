@@ -66,11 +66,52 @@ h2[tabindex="-1"]:focus { outline: none; }
   border-bottom: 1px solid var(--regla-suave); padding-bottom: 8px;
 }
 .linea-edicion a { color: var(--lacre-texto); text-decoration: none; }
-/* Banner: siempre completo, en cualquier pantalla (alto según su proporción) */
-.banner-cabecera { display: block; margin: 14px 0 0; }
-.banner-cabecera img {
-  display: block; width: 100%; height: auto;
+/* Banners: uno por sección (Agenda, Juegos, Museos, Restaurantes). Se deslizan de a uno y cada uno muestra su
+   sección. Siempre completos, en cualquier pantalla: todos miden 3:1 y el alto sale del ancho. */
+.banners { position: relative; margin: 14px 0 0; }
+.banners-carril {
+  display: flex; overflow-x: auto; overflow-y: hidden;
+  scroll-snap-type: x mandatory; overscroll-behavior-x: contain; scrollbar-width: none;
   background: var(--papel-2); border: 1px solid var(--regla);
+}
+.banners-carril::-webkit-scrollbar { display: none; }
+.banners-carril:focus { outline: none; }
+.banner-cabecera { display: block; flex: 0 0 100%; width: 100%; min-width: 0; scroll-snap-align: start; scroll-snap-stop: always; }
+.banner-cabecera img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 1; object-fit: cover; }
+/* Puntos: cuál banner se ve; cada uno lleva a su sección */
+.banners-puntos {
+  position: absolute; left: 50%; bottom: 6px; transform: translateX(-50%);
+  display: flex; padding: 0 4px; border-radius: 999px; background: rgba(20, 17, 14, .55);
+}
+.punto { display: grid; place-items: center; width: 24px; height: 24px; padding: 0; border: 0; background: none; cursor: pointer; }
+.punto::before {
+  content: ""; display: block; width: 8px; height: 8px; border-radius: 4px;
+  background: rgba(255, 255, 255, .6); transition: width .2s, background-color .2s;
+}
+.punto:hover::before { background: #fff; }
+.punto[aria-current="true"]::before { width: 18px; background: #fff; }
+.punto:focus-visible { outline: 2px solid #fff; outline-offset: -2px; border-radius: 999px; }
+.banners-flecha {
+  position: absolute; top: 50%; z-index: 1; transform: translateY(-50%);
+  width: 36px; height: 36px; padding: 0 0 3px; border: 0; border-radius: 50%; cursor: pointer;
+  font: 700 24px/1 var(--sans); color: #1d1915; background: rgba(255, 255, 255, .9); box-shadow: 0 1px 4px rgba(0, 0, 0, .4);
+  opacity: 0; transition: opacity .15s;
+}
+.banners-flecha.ant { left: 8px; }
+.banners-flecha.sig { right: 8px; }
+/* Con el mouse encima aparecen; en los extremos la flecha queda tenue y desactivada (un clic de más no hace nada) */
+.banners:hover .banners-flecha { opacity: .9; }
+.banners:hover .banners-flecha:disabled { opacity: .3; cursor: default; }
+@media (hover: none) and (pointer: coarse) {
+  .banners-flecha { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .punto::before, .banners-flecha { transition: none; }
+}
+@media (forced-colors: active) {
+  .banners-puntos { background: Canvas; border: 1px solid CanvasText; }
+  .punto::before { forced-color-adjust: none; background: CanvasText; }
+  .punto[aria-current="true"]::before { background: Highlight; }
 }
 .cabezal {
   font-family: var(--titulo); font-weight: 900;
@@ -378,8 +419,6 @@ html:has(.visor[open]) { overflow: hidden; }
   .secciones { padding: 6px 0 8px; }
   .pestanas { width: 100%; }
   .pestana { padding: 8px 8px; font-size: 13.5px; gap: 5px; }
-  .pestana .largo { display: none; }
-  .pestana .corto { display: inline; }
   .zona-cuenta { width: 100%; justify-content: flex-end; }
   body { font-size: 16px; }
   .portada { grid-template-columns: 1fr; }
@@ -402,7 +441,7 @@ html:has(.visor[open]) { overflow: hidden; }
 }
 
 @media (max-width: 600px) {
-  .banner-cabecera { margin-top: 10px; }
+  .banners { margin-top: 10px; }
 }
 
 /* Celular acostado (poca altura): el visor ocupa la pantalla y la foto deja espacio al pie con el autor y la licencia */
