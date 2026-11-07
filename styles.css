@@ -109,9 +109,9 @@ h2[tabindex="-1"]:focus { outline: none; }
 .banners-carril:focus { outline: none; }
 .banner-cabecera { display: block; flex: 0 0 100%; width: 100%; min-width: 0; scroll-snap-align: start; scroll-snap-stop: always; }
 .banner-cabecera img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 1; object-fit: cover; }
-/* Puntos: cuál banner se ve; cada uno lleva a su sección */
+/* Puntos: cuál banner se ve; cada uno lleva a su sección. Arriba a la derecha, donde no tapan el dibujo ni el logo */
 .banners-puntos {
-  position: absolute; left: 50%; bottom: calc(var(--logo-solape) + 6px); z-index: 3; transform: translateX(-50%);
+  position: absolute; right: 10px; top: 10px; z-index: 3;
   display: flex; padding: 0 4px; border-radius: 999px; background: rgba(20, 17, 14, .55);
 }
 .punto { display: grid; place-items: center; width: 24px; height: 24px; padding: 0; border: 0; background: none; cursor: pointer; }
@@ -132,7 +132,6 @@ h2[tabindex="-1"]:focus { outline: none; }
 .banners-flecha.sig { right: 10px; }
 /* Con el mouse encima aparecen; en los extremos la flecha queda tenue y desactivada (un clic de más no hace nada) */
 .banners:hover .banners-flecha { opacity: .92; }
-.banners:hover .banners-flecha:disabled { opacity: .3; cursor: default; }
 @media (hover: none) and (pointer: coarse) {
   .banners-flecha { display: none; }
 }
@@ -252,6 +251,12 @@ h2[tabindex="-1"]:focus { outline: none; }
 .banner .fino { display: block; font: 14px/1.5 var(--sans); color: var(--tinta-suave); margin-top: 3px; }
 .chips { display: flex; gap: 10px; margin-top: 12px; overflow-x: auto; scrollbar-width: none; padding: 2px 2px 6px; }
 .chips::-webkit-scrollbar { display: none; }
+/* Con el mouse, la fila de temas y el banner se arrastran de lado */
+@media (hover: hover) and (pointer: fine) {
+  .chips, .banners-carril { cursor: grab; }
+}
+.arrastrando { cursor: grabbing !important; scroll-snap-type: none !important; user-select: none; }
+.arrastrando * { pointer-events: none; }
 .chip {
   flex: none; display: inline-flex; align-items: center; gap: 8px;
   font: 600 16px/1.2 var(--sans); color: var(--tinta);

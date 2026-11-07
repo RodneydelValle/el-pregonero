@@ -1,5 +1,5 @@
 /* Service worker: permite instalar IMP TRAVEL como app y verlo sin conexión. */
-const V = 9;   // el mismo número ?v= con que index.html pide styles.css y app.js: se suben juntos
+const V = 11;   // el mismo número ?v= con que index.html pide styles.css y app.js: se suben juntos
 const VERSION = `imp-travel-v${V}`;
 // La página y sus dos archivos con versión se guardan juntos y de una vez: sin conexión siempre se usa este trío,
 // nunca la página de una versión con el código de otra

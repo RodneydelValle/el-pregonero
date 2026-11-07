@@ -226,10 +226,10 @@ function bannerActual() {
 /** Sección y tema según la dirección: #eventos, #juegos, #museos, #restaurantes, #favoritos, #e-…, #r-… */
 function aplicarHash() {
   estado.seccion = seccionDeHash();
+  if (estado.seccion !== "agenda") return;
   const b = BANNERS.find((x) => x.hash === hashActual());
-  if (b?.seccion !== "agenda") return;
-  if (b.cat !== "todas") estado.cat = b.cat;
-  else if (bannerDeCat() !== 0) estado.cat = "todas";   // #eventos con el tema de Juegos o Museos: toda la agenda
+  if (b && b.cat !== "todas") estado.cat = b.cat;
+  else if (bannerDeCat() !== 0) estado.cat = "todas";   // #eventos, sin dirección o #e-… con el tema de Juegos o Museos: toda la agenda
 }
 function irA(seccion) {
   // La pestaña Agenda muestra la agenda completa: si se venía de Juegos o Museos, vuelve a "Todo"
@@ -332,10 +332,11 @@ function pintarChips() {
     `${icoCat(c.id, c.emoji)}${esc(c.nombre)} <span class="cuenta">${c.n}</span></button>`
   ).join("") +
     `<button type="button" class="chip" data-rm="1" aria-pressed="${estado.soloRM}">${ico("i-pin-rm", "ico-pin")}Solo Región Metropolitana</button>`;
-  mostrarTemaMarcado();
+  if (estado.cat !== temaMostrado) { temaMostrado = estado.cat; mostrarTemaMarcado(); }
 }
 /** La fila de temas se desliza (en el celular no caben): que se vea el tema marcado, por ejemplo al pasar al banner
  *  Juegos o Museos, cuyos temas están al final de la fila. */
+let temaMostrado = null;
 function mostrarTemaMarcado() {
   const fila = $("#chips");
   const marcados = [...fila.querySelectorAll('.chip[data-cat][aria-pressed="true"]')];
@@ -686,7 +687,13 @@ function rehacerPendientes() {
 /** Se soltó el dedo y el carrusel (o el visor) se detuvo: se acomoda en una foto y después se rehacen
  *  las galerías pendientes. */
 function alQuietarse(c) {
-  if (dedoAbajo()) return;
+  if (c?.classList?.contains("arrastrando")) return;   // con el mouse apretado: se decide al soltar
+  if (dedoAbajo()) {
+    // El banner se detuvo con un dedo en otra parte (por ejemplo, bajando por la página): se revisa de nuevo
+    // cuando ese dedo se suelte; si no, el banner quedaría en una sección y la página en otra
+    if (c?.id === "banners-carril" && TOCADO !== c) { clearTimeout(banners.fin); banners.fin = setTimeout(() => alQuietarse(c), 160); }
+    return;
+  }
   // se mueve otra vez: cuando se detenga se vuelve a pasar por aquí
   if (c?.id === "banners-carril") { if (bannerQuieto(c)) return; }
   else if (c && acomodar(c)) return;
@@ -695,7 +702,10 @@ function alQuietarse(c) {
 document.addEventListener("touchstart", (ev) => {
   DEDOS = ev.touches.length;
   if (DEDOS === 1) TOCADO = ev.target instanceof Element ? ev.target.closest(".carrusel, .visor-carril, .banners-carril") : null;
-  if (TOCADO?.id === "banners-carril") banners.programado = false;   // si la página lo estaba moviendo, ahora manda la persona
+  if (TOCADO?.id === "banners-carril") {
+    banners.programado = false;   // si la página lo estaba moviendo, ahora manda la persona
+    banners.x0 = ev.touches[0].clientX; banners.k0 = indiceVisibleBanners(TOCADO); banners.vuelta = null;
+  }
 }, { passive: true });
 /** Cuándo se movió por última vez el carrusel, el visor o el banner. */
 function ultimoMovimiento(c) {
@@ -709,6 +719,12 @@ function soltar(ev) {
   if (DEDOS) return;
   const c = TOCADO;
   TOCADO = null;
+  // En el último banner, seguir deslizando hacia la izquierda lleva al primero (y en el primero, hacia la derecha, al último)
+  if (c?.id === "banners-carril" && ev.changedTouches?.length) {
+    const dx = ev.changedTouches[0].clientX - banners.x0, n = BANNERS.length;
+    if (banners.k0 === n - 1 && dx < -50) banners.vuelta = 0;
+    else if (banners.k0 === 0 && dx > 50) banners.vuelta = n - 1;
+  }
   // Si el navegador sigue moviéndolo (inercia o su propio ajuste), se espera a que termine
   setTimeout(() => {
     const ultimo = ultimoMovimiento(c);
@@ -752,7 +768,9 @@ window.addEventListener("resize", () => reubicarCarruseles());
 // ---------- banners de la cabecera: cada uno muestra su sección ----------
 // indice: el banner de la sección que se muestra (o el último, en Mis favoritos)
 // programado: lo está moviendo la página (no la persona): al detenerse no cambia la sección
-const banners = { indice: 0, programado: false, ultimo: 0, fin: 0, cuadro: 0, seguro: 0 };
+const banners = { indice: 0, programado: false, ultimo: 0, fin: 0, cuadro: 0, seguro: 0, x0: 0, k0: 0, vuelta: null };
+/** El banner da la vuelta: después del último viene el primero y antes del primero, el último. */
+function bannerVecino(paso) { const n = BANNERS.length; return ((banners.indice + paso) % n + n) % n; }
 function carrilBanners() { return document.getElementById("banners-carril"); }   // null con un index.html viejo
 function anchoBanner(c) { return c.children.length ? c.scrollWidth / c.children.length : 0; }
 function indiceVisibleBanners(c) {
@@ -765,16 +783,19 @@ function pintarPuntos(k) {
     if (i === k) p.setAttribute("aria-current", "true"); else p.removeAttribute("aria-current");
   });
   const i = k ?? banners.indice;
+  carrilBanners()?.querySelectorAll(".banner-cabecera").forEach((b, j) => {
+    if (j === i) b.removeAttribute("aria-hidden"); else b.setAttribute("aria-hidden", "true");
+  });
   const ant = $(".banners-flecha.ant"), sig = $(".banners-flecha.sig");
-  if (ant) ant.disabled = i <= 0;
-  if (sig) sig.disabled = i >= BANNERS.length - 1;
+  // El banner da la vuelta: las flechas siempre sirven
+  if (ant) ant.disabled = false;
+  if (sig) sig.disabled = false;
 }
 /** Lleva el banner a la posición k, salvo que la persona lo esté arrastrando. */
 function moverBanners(k, suave = false) {
   const c = carrilBanners();
   if (!c || (dedoAbajo() && TOCADO === c)) return;
-  const img = c.children[k]?.querySelector("img");
-  if (img?.loading === "lazy") img.loading = "eager";
+  activarBanner(c.children[k]);
   const a = anchoBanner(c);
   if (!a || Math.abs(c.scrollLeft - k * a) <= 1) return;
   banners.programado = true;
@@ -807,6 +828,8 @@ function irABanner(k, suave = true) {
   if (antes !== b.seccion) history.pushState(null, "", hash);
   else if (location.hash !== hash) history.replaceState(null, "", hash);
   pintarSecciones(suave);
+  const anuncio = $("#anuncio-banner");   // para lectores de pantalla
+  if (anuncio) anuncio.textContent = `Sección: ${["Agenda", "Juegos", "Museos y exposiciones", "Restaurantes temáticos"][k]}`;
 }
 /** El banner se detuvo. Si lo deslizó la persona y quedó en otro, se muestra su sección.
  *  Devuelve true si lo puso en movimiento otra vez (cuando se detenga se vuelve a pasar por aquí). */
@@ -820,13 +843,60 @@ function bannerQuieto(c) {
   }
   if (acomodar(c)) return true;   // quedó entre dos: se lleva al más cercano
   const k = indiceVisibleBanners(c);
+  if (banners.vuelta !== null) {   // se siguió deslizando más allá del extremo: da la vuelta
+    const v = banners.vuelta;
+    banners.vuelta = null;
+    if (k === banners.k0) { irABanner(v); return false; }
+  }
   if (k !== banners.indice) irABanner(k, false);
   else pintarPuntos(bannerActual());
   return false;
 }
+/** Arrastrar con el mouse lo que se desliza de lado (con el dedo ya funciona solo): las filas de temas y el banner.
+ *  alSoltar(dx): qué hacer al soltar (el banner pasa al de al lado o da la vuelta). Un arrastre no cuenta como clic. */
+function arrastreConMouse(el, alSoltar) {
+  let x0 = 0, s0 = 0, activo = false, movido = false, fin = 0;
+  el.addEventListener("pointerdown", (ev) => {
+    if (ev.pointerType !== "mouse" || ev.button !== 0) return;
+    activo = true; movido = false; x0 = ev.clientX; s0 = el.scrollLeft;
+  });
+  window.addEventListener("pointermove", (ev) => {
+    if (!activo) return;
+    const dx = ev.clientX - x0;
+    if (!movido && Math.abs(dx) < 6) return;
+    if (!movido) { movido = true; el.classList.add("arrastrando"); }
+    el.scrollLeft = s0 - dx;
+  });
+  window.addEventListener("pointerup", (ev) => {
+    if (!activo) return;
+    activo = false;
+    if (!movido) return;
+    fin = performance.now();
+    el.classList.remove("arrastrando");
+    alSoltar?.(ev.clientX - x0);
+  });
+  el.addEventListener("click", (ev) => { if (performance.now() - fin < 300) { ev.preventDefault(); ev.stopPropagation(); } }, true);
+  el.addEventListener("dragstart", (ev) => ev.preventDefault());
+}
+document.querySelectorAll(".chips").forEach((fila) => arrastreConMouse(fila));
+if (carrilBanners()) {
+  arrastreConMouse(carrilBanners(), (dx) => {
+    if (dx < -40) irABanner(bannerVecino(1));
+    else if (dx > 40) irABanner(bannerVecino(-1));
+    else moverBanners(banners.indice, true);
+  });
+}
 /** Los banners que no se ven se bajan cuando la página terminó de cargar, o antes si la persona llega al banner. */
+function activarBanner(pic) {
+  pic?.querySelectorAll("[data-srcset], [data-src]").forEach((el) => {
+    if (el.dataset.srcset) { el.srcset = el.dataset.srcset; el.removeAttribute("data-srcset"); }
+    if (el.dataset.src) { el.src = el.dataset.src; el.removeAttribute("data-src"); }
+  });
+  const img = pic?.querySelector("img");
+  if (img) img.loading = "eager";   // con "lazy", Chromium no baja el banner que está a dos o más de distancia
+}
 function cargarBanners() {
-  document.querySelectorAll('.banner-cabecera img[loading="lazy"]').forEach((img) => { img.loading = "eager"; });
+  document.querySelectorAll(".banner-cabecera").forEach(activarBanner);
 }
 if (carrilBanners()) {
   const c = carrilBanners();
@@ -851,7 +921,9 @@ if (carrilBanners()) {
   $(".banners-puntos").addEventListener("keydown", (ev) => {
     if ((ev.key !== "ArrowRight" && ev.key !== "ArrowLeft") || ev.altKey || ev.ctrlKey || ev.metaKey || ev.shiftKey) return;
     ev.preventDefault();
-    const k = Math.min(Math.max(0, banners.indice + (ev.key === "ArrowRight" ? 1 : -1)), BANNERS.length - 1);
+    const puntos = [...document.querySelectorAll(".banners-puntos .punto")];
+    const base = Math.max(0, puntos.indexOf(document.activeElement));   // desde el punto enfocado
+    const n = BANNERS.length, k = ((base + (ev.key === "ArrowRight" ? 1 : -1)) % n + n) % n;
     if (k !== banners.indice || bannerActual() === null) irABanner(k);
     document.querySelectorAll(".banners-puntos .punto")[k]?.focus();
   });
@@ -1083,7 +1155,7 @@ function pintarAgenda(lista) {
  *  y un botón muestra el resto (al filtrar por arte o museos, o al buscar, se ven todas). */
 function htmlTemporadas(largas) {
   const todas = estado.verTemporadas || largas.length <= 4 || !!estado.texto || estado.soloNuevos
-    || ["arte", "museos"].includes(estado.cat);
+    || !!catsFiltro()?.every((c) => c === "arte" || c === "museos");   // también con el banner Museos (arte + museos)
   const visibles = todas ? largas : largas.slice(0, 3);
   return `<h2 class="mes" id="t-temporadas" tabindex="-1">Exposiciones y temporadas abiertas</h2>` +
     visibles.map((e) => htmlNota(e)).join("") +
@@ -1254,7 +1326,7 @@ document.addEventListener("click", (ev) => {
   const punto = ev.target.closest(".banners-puntos .punto");
   if (punto) { irABanner(BANNERS.findIndex((b) => b.id === punto.dataset.banner)); return; }
   const flecha = ev.target.closest("[data-banner-paso]");
-  if (flecha) { irABanner(banners.indice + Number(flecha.dataset.bannerPaso)); return; }
+  if (flecha) { irABanner(bannerVecino(Number(flecha.dataset.bannerPaso))); return; }
   if (ev.target.closest("#btn-entrar, [data-accion='entrar']")) { entrar(); return; }
   if (ev.target.closest("#btn-salir")) { salir(); return; }
   const chip = ev.target.closest(".chip");
