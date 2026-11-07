@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>IMP TRAVEL</title>
   <meta name="description" content="IMP TRAVEL: agenda de eventos en Chile (ferias medievales, yokai, anime, ilustración, metal y más), restaurantes temáticos y tus favoritos. Se actualiza sola todos los días.">
-  <meta name="theme-color" content="#7a1f1a" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#151311" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#760928">
+  <meta name="color-scheme" content="light">
   <meta name="apple-mobile-web-app-title" content="IMP TRAVEL">
   <meta property="og:type" content="website">
   <meta property="og:title" content="IMP TRAVEL">
@@ -21,15 +21,53 @@
   <link rel="apple-touch-icon" href="icons/icono-180.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Fira+Sans+Condensed:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&display=swap">
   <!-- ?v= sube cada vez que cambian styles.css o app.js: así nadie queda con una mezcla de la versión vieja y la nueva -->
-  <link rel="stylesheet" href="styles.css?v=7">
+  <link rel="stylesheet" href="styles.css?v=8">
 </head>
 <body>
+  <!-- Íconos de la página (se usan con <svg><use href="#i-…"/></svg>) -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+<symbol id="i-calendario" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.8" rx="3"/><path d="M8 2.8v3.4M16 2.8v3.4"/></g><path fill="currentColor" stroke="none" d="M3.5 8a3 3 0 0 1 3-3h11a3 3 0 0 1 3 3v2h-17z"/><g fill="currentColor" stroke="none"><circle cx="8" cy="13.2" r="1.3"/><circle cx="12" cy="13.2" r="1.3"/><circle cx="16" cy="13.2" r="1.3"/><circle cx="8" cy="16.9" r="1.3"/><circle cx="12" cy="16.9" r="1.3"/><circle cx="16" cy="16.9" r="1.3"/></g></symbol>
+<symbol id="i-estrella" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M12 3.35L14.73 9.09L21.04 9.91L16.42 14.29L17.58 20.54L12 17.5L6.42 20.54L7.58 14.29L2.96 9.91L9.27 9.09Z"/></symbol>
+<symbol id="i-estrella-llena" viewBox="0 0 24 24"><path fill="#e0a12b" stroke="#a9661b" stroke-width="1.2" stroke-linejoin="round" d="M12 2.85L14.88 8.89L21.51 9.76L16.66 14.36L17.88 20.94L12 17.75L6.12 20.94L7.34 14.36L2.49 9.76L9.12 8.89Z"/><path fill="#f3c766" d="M11.45 8.05L12.65 10.59L15.44 10.95L13.4 12.88L13.92 15.65L11.45 14.3L8.98 15.65L9.5 12.88L7.46 10.95L10.25 10.59Z"/></symbol>
+<symbol id="i-cubiertos" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M4.6 3.4a.75.75 0 0 1 1.5 0V7.3a.6.6 0 0 0 1.2 0V3.4a.75.75 0 0 1 1.5 0V7.3a.6.6 0 0 0 1.2 0V3.4a.75.75 0 0 1 1.5 0V8.2c0 1.9-1.1 3.1-2.4 3.5V20.4a1.1 1.1 0 0 1-2.2 0V11.7C5.7 11.3 4.6 10.1 4.6 8.2ZM15.1 20.4V5.4c0-1.7 1.1-2.9 2.3-2.9 1.4 0 2.2 1.6 2.2 4.2v3.6c0 1.1-.6 1.8-1.4 2.1l-.9.3v7.7a1.1 1.1 0 0 1-2.2 0Z"/></symbol>
+<symbol id="i-fuego" viewBox="0 0 24 24"><path fill="#f7941d" stroke="#d2421c" stroke-width=".9" stroke-linejoin="round" d="M12 22.2C7.5 22.2 4.3 19.2 4.3 15c0-3.3 1.4-5.6 2.4-7.3.5 1.5 1.2 2.6 2.3 3.2-.2-3.9 1.5-6.9 3.9-8.9.4 2.7 1.8 4.6 3.3 6.2.5-.8.9-1.7 1.1-2.8 1.7 2 3 4.7 3 7.70 4.3-3.2 7.1-8.3 7.1Z"/><path fill="#ffc928" d="M12 21.3c-3.2 0-5.5-2-5.5-4.9 0-2.4 1.3-4 2.4-5.2.3 1.2.8 2 1.6 2.4.1-2.3 1.2-4.3 2.8-5.6.4 2 1.4 3.4 2.4 4.6.4-.5.7-1.2.8-1.9 1 1.3 1.6 2.9 1.6 4.6 0 3.2-2.4 6-6.1 6Z"/><path fill="#fff4cf" d="M12 21c-1.9 0-3.2-1.2-3.2-2.9 0-1.9 1.5-3.4 3.2-5.3 1.7 1.9 3.2 3.4 3.2 5.3 0 1.7-1.3 2.9-3.2 2.9Z"/></symbol>
+<symbol id="i-lupa" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.6" cy="10.6" r="6.5"/><path stroke-width="2.7" d="M15.5 15.5l5 5"/></g></symbol>
+<symbol id="i-cuadricula" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="3" fill="currentColor" fill-opacity=".22"/><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="17" height="17" rx="3"/><path d="M9.17 4v16M14.83 4v16M4 9.17h16M4 14.83h16"/></g></symbol>
+<symbol id="i-espadas" viewBox="0 0 24 24"><path fill="#c9d1d8" d="M3 3L4.38 6.43L14.49 16.54L16.54 14.49L6.43 4.38Z"/><path fill="#8e99a3" d="M3 3L15.52 15.52L16.54 14.49L6.43 4.38Z"/><path fill="none" stroke="#33261f" stroke-width=".9" stroke-linejoin="round" d="M3 3L4.38 6.43L14.49 16.54L16.54 14.49L6.43 4.38Z"/><path fill="#c9d1d8" d="M21 3L17.57 4.38L7.46 14.49L9.51 16.54L19.62 6.43Z"/><path fill="#8e99a3" d="M21 3L8.48 15.52L7.46 14.49L17.57 4.38Z"/><path fill="none" stroke="#33261f" stroke-width=".9" stroke-linejoin="round" d="M21 3L17.57 4.38L7.46 14.49L9.51 16.54L19.62 6.43Z"/><g fill="none" stroke-linecap="round"><path stroke="#33261f" stroke-width="2.9" d="M16.58 16.58L18.27 18.27M13.75 17.99L17.99 13.75"/><path stroke="#7a4524" stroke-width="1.8" d="M16.58 16.58L18.27 18.27"/><path stroke="#e2ae45" stroke-width="2" d="M13.75 17.99L17.99 13.75"/><circle cx="19.09" cy="19.09" r="1.35" fill="#e2ae45" stroke="#33261f" stroke-width=".9"/><path stroke="#33261f" stroke-width="2.9" d="M7.42 16.58L5.73 18.27M6.01 13.75L10.25 17.99"/><path stroke="#7a4524" stroke-width="1.8" d="M7.42 16.58L5.73 18.27"/><path stroke="#e2ae45" stroke-width="2" d="M6.01 13.75L10.25 17.99"/><circle cx="4.91" cy="19.09" r="1.35" fill="#e2ae45" stroke="#33261f" stroke-width=".9"/></g></symbol>
+<symbol id="i-torii" viewBox="0 0 24 24"><path fill="#c42b2b" d="M1.8 3.3C5 4.7 8.4 5.2 12 5.2s7-.5 10.2-1.9l-.9 3.3C18.4 7.4 15.3 7.8 12 7.8s-6.4-.4-9.3-1.2ZM11 7.5h2v3.2h-2ZM3.4 10.2h17.2v2.2H3.4ZM6.3 7.4h2.3l-.2 12.6H6ZM15.4 7.4h2.3l.3 12.6h-2.4ZM5.2 19.6h3.8v1.9H5.2ZM15 19.6h3.8v1.9H15Z"/></symbol>
+<symbol id="i-mando" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M7.2 5.8h9.6c2.5 0 4.3 1.6 4.9 4.2l.9 5.2c.4 2.4-1 4.3-3.1 4.3-1.4 0-2.3-.8-3.1-2l-.8-1.2c-.4-.6-.9-.9-1.6-.9H10c-.7 0-1.2.3-1.6.9l-.8 1.2c-.8 1.2-1.7 2-3.1 2-2.1 0-3.5-1.9-3.1-4.3l.9-5.2C2.9 7.4 4.7 5.8 7.2 5.8ZM6.5 8.9h1.6v1.7h1.7v1.6H8.1v1.7H6.5v-1.7H4.8v-1.6h1.7ZM17.65 8.9a1.05 1.05 0 1 0-2.1 0 1.05 1.05 0 1 0 2.1 0ZM19.65 10.9a1.05 1.05 0 1 0-2.1 0 1.05 1.05 0 1 0 2.1 0ZM17.65 12.9a1.05 1.05 0 1 0-2.1 0 1.05 1.05 0 1 0 2.1 0ZM15.65 10.9a1.05 1.05 0 1 0-2.1 0 1.05 1.05 0 1 0 2.1 0Z"/></symbol>
+<symbol id="i-pincel" viewBox="0 0 24 24"><path fill="#6b3a1c" d="M19.99 2.59L11.72 10.44L13.56 12.28L21.41 4.01A1 1 0 0 1 19.99 2.59Z"/><path fill="#a8662e" d="M9.7 11.82C7.26 13.34 5.29 16.74 3.66 20.77C7.62 19.07 10.59 16.66 12.18 14.3Z"/><path fill="#5a2f14" d="M6.03 16.35C5 17.87 4.3 19.28 3.66 20.77C5.14 20.13 6.42 19.28 7.8 18.11Z"/><path fill="#e3b75c" stroke="#8a5a1e" stroke-width=".6" stroke-linejoin="round" d="M11.65 10.09L9.74 12L12 14.26L13.91 12.35Z"/></symbol>
+<symbol id="i-guitarra" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M3.7 20.3C1.79 18.39 1.15 15.92 2.71 14.36C3.84 13.23 5.11 13.65 5.96 12.8C6.81 11.96 7.24 10.26 8.51 9.55C9 10.19 8.86 11.6 8.58 12.73C8.37 13.51 8.37 13.94 8.54 14.11L17.45 5.2L20.21 2.02L20.32 6.37C20.03 6.79 19.26 6.86 18.73 6.62L9.75 15.6C9.99 15.85 10.49 15.92 11.12 15.85C12.11 15.7 12.89 16.2 12.61 16.91C12.11 17.83 10.91 18.04 10.35 18.6C9.64 19.31 10.28 20.65 9.29 21.64C7.87 23.06 5.61 22.21 3.7 20.3ZM4.9 15.99L8.01 19.1L8.72 18.39L5.61 15.28ZM6.53 14.64L9.36 17.47L10.06 16.76L7.24 13.94Z"/></symbol>
+<symbol id="i-dado" viewBox="0 0 24 24"><path fill="currentColor" fill-opacity=".16" d="M12 2.4L20.31 7.2L20.31 16.8L12 21.6L3.69 16.8L3.69 7.2Z"/><path fill="currentColor" fill-opacity=".38" d="M12 7.1L16.76 15.35L7.24 15.35Z"/><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.4L20.31 7.2L20.31 16.8L12 21.6L3.69 16.8L3.69 7.2Z"/><path stroke-width="1.5" d="M12 7.1L16.76 15.35L7.24 15.35ZM12 7.1L3.69 7.2M12 7.1L12 2.4M12 7.1L20.31 7.2M16.76 15.35L20.31 7.2M16.76 15.35L20.31 16.8M16.76 15.35L12 21.6M7.24 15.35L12 21.6M7.24 15.35L3.69 16.8M7.24 15.35L3.69 7.2"/></g></symbol>
+<symbol id="i-paleta" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M12 2.6c5.6 0 9.6 3.8 9.6 8.5 0 3.2-2 4.9-4.3 4.9h-1.4c-1.3 0-2 1-1.6 2.2.6 1.6-.3 3.2-2.3 3.2C6.4 21.4 2.4 17.3 2.4 12 2.4 6.7 6.6 2.6 12 2.6ZM8.9 11.6a1.6 1.6 0 1 0-3.2 0 1.6 1.6 0 1 0 3.2 0ZM10.5 7.2a1.6 1.6 0 1 0-3.2 0 1.6 1.6 0 1 0 3.2 0ZM15.2 6.4a1.6 1.6 0 1 0-3.2 0 1.6 1.6 0 1 0 3.2 0ZM19 9.4a1.6 1.6 0 1 0-3.2 0 1.6 1.6 0 1 0 3.2 0Z"/></symbol>
+<symbol id="i-museo" viewBox="0 0 24 24"><path fill="currentColor" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" fill-rule="evenodd" d="M12 2.9l8.9 5.4H3.1ZM4.8 10h2.3v7.4H4.8ZM8.8 10h2.3v7.4H8.8ZM12.9 10h2.3v7.4h-2.3ZM16.9 10h2.3v7.4h-2.3ZM3 18.6h18v2.8H3ZM13.05 6.3a1.05 1.05 0 1 0-2.1 0 1.05 1.05 0 1 0 2.1 0Z"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path fill="#d32f2f" stroke="#a51f1f" stroke-width=".8" stroke-linejoin="round" d="M12 22c-2.6-2.4-7.2-7.1-7.2-12C4.8 6 8 2.6 12 2.6S19.2 6 19.2 10c0 4.9-4.6 9.6-7.2 12Z"/><circle cx="12" cy="9.9" r="2.7" fill="#fff6e8"/></symbol>
+<symbol id="i-reloj" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7.2V12l3.3 2.1"/></g></symbol>
+<symbol id="i-ticket" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 6h14a2.5 2.5 0 0 1 2.5 2.5v1.3a2.2 2.2 0 0 0 0 4.4v1.3A2.5 2.5 0 0 1 19 18H5a2.5 2.5 0 0 1-2.5-2.5v-1.3a2.2 2.2 0 0 0 0-4.4V8.5A2.5 2.5 0 0 1 5 6Z"/><path stroke-width="1.9" d="M15.2 9.2v0M15.2 12v0M15.2 14.8v0"/></g></symbol>
+<symbol id="i-compartir" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M8.3 10.8l7.4-4.1M8.3 13.2l7.4 4.1"/><g fill="currentColor" stroke="none"><circle cx="17.6" cy="5.6" r="2.9"/><circle cx="6.2" cy="12" r="2.9"/><circle cx="17.6" cy="18.4" r="2.9"/></g></symbol>
+<symbol id="i-ruta" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.6 2.8a2 2 0 0 1 2.8 0l7.8 7.8a2 2 0 0 1 0 2.8l-7.8 7.8a2 2 0 0 1-2.8 0l-7.8-7.8a2 2 0 0 1 0-2.8Z"/><path d="M9 15.6v-2.4a2 2 0 0 1 2-2h4.4M13.2 8.8l2.4 2.4-2.4 2.4"/></g></symbol>
+<symbol id="i-calendario-mas" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.8" rx="3"/><path d="M8 2.8v3.4M16 2.8v3.4"/></g><path fill="currentColor" stroke="none" d="M3.5 8a3 3 0 0 1 3-3h11a3 3 0 0 1 3 3v2h-17z"/><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M12 12.3v5.4M9.3 15h5.4"/></symbol>
+<symbol id="i-pin-rm" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M12 21.2c-2.4-2.3-6.6-6.6-6.6-11.1C5.4 6.4 8.3 3.3 12 3.3s6.6 3.1 6.6 6.8c0 4.5-4.2 8.8-6.6 11.1Z"/><path fill="currentColor" stroke="currentColor" stroke-width=".6" stroke-linejoin="round" d="M12 7L12.91 9.15L15.23 9.35L13.47 10.88L14 13.15L12 11.95L10 13.15L10.53 10.88L8.77 9.35L11.09 9.15Z"/></symbol>
+<symbol id="i-salir" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3.6H6.6A2.6 2.6 0 0 0 4 6.2v11.6a2.6 2.6 0 0 0 2.6 2.6H10"/><path d="M10.4 12h9.8M16.4 8l4 4-4 4"/></g></symbol>
+<symbol id="i-flecha-izq" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="M15 5.5L8.5 12l6.5 6.5"/></symbol>
+<symbol id="i-flecha-der" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="M9 5.5l6.5 6.5L9 18.5"/></symbol>
+<symbol id="i-camara" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7.4h2.5l1.5-2.3h6l1.5 2.3H19a2.5 2.5 0 0 1 2.5 2.5v7.6a2.5 2.5 0 0 1-2.5 2.5H5a2.5 2.5 0 0 1-2.5-2.5V9.9A2.5 2.5 0 0 1 5 7.4Z"/><circle cx="12" cy="13.3" r="3.4"/></g><circle cx="18" cy="10.4" r="1" fill="currentColor"/></symbol>
+<symbol id="i-aviso" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.2 4.1a2.1 2.1 0 0 1 3.6 0l7.6 13.2a2.1 2.1 0 0 1-1.8 3.2H4.4a2.1 2.1 0 0 1-1.8-3.2Z"/><path d="M12 9.3v4.2"/></g><circle cx="12" cy="16.9" r="1.3" fill="currentColor"/></symbol>
+<symbol id="i-plato" viewBox="0 0 24 24"><path fill="currentColor" fill-opacity=".22" d="M3 12.2h18a9 6.9 0 0 1-18 0Z"/><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12.2h18a9 6.9 0 0 1-18 0Z"/><path d="M9.6 21h4.8"/><path stroke-width="1.8" d="M8.2 8.8c-.9-1 .9-1.9 0-3M12 8.8c-.9-1 .9-1.9 0-3M15.8 8.8c-.9-1 .9-1.9 0-3"/></g></symbol>
+  </svg>
   <header class="cabecera">
-    <div class="linea-edicion">
-      <span id="fecha-hoy">Santiago de Chile</span>
-      <span id="estado-busqueda">Cargando…</span>
+    <!-- Barra de arriba: inicio de sesión con Google (o la persona y "Salir") -->
+    <div class="barra-cuenta">
+      <div class="zona-cuenta" id="zona-cuenta" hidden>
+        <button type="button" class="btn-google" id="btn-entrar"><svg class="logo-g" viewBox="0 0 48 48" aria-hidden="true" width="18" height="18"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>Iniciar sesión con Google</button>
+        <div class="usuario" id="usuario" hidden>
+          <img id="avatar" alt="" width="34" height="34" referrerpolicy="no-referrer" hidden>
+          <span id="nombre-usuario"></span>
+          <button type="button" class="btn-salir" id="btn-salir">Salir</button>
+        </div>
+      </div>
     </div>
     <!-- Un banner por sección: al deslizarlo (o tocar sus puntos o flechas) la página muestra la sección del banner -->
     <div class="banners" id="banners">
@@ -73,23 +111,19 @@
         <button type="button" class="punto" data-banner="restaurantes" aria-label="Restaurantes temáticos" title="Restaurantes temáticos"></button>
       </div>
     </div>
-    <h1 class="cabezal"><span class="imp">IMP</span> TRAVEL</h1>
-    <p class="bajada">Ferias medievales, yokai, anime, ilustración, metal y otras rarezas en Chile</p>
-    <div class="doble-regla" role="presentation"></div>
+    <!-- Logo sobre el pie del banner (como lo pidió el usuario): reemplaza el título y el subtítulo -->
+    <div class="portadilla">
+      <h1 class="cabezal"><img class="logo" src="img/logo-1100.webp"
+          srcset="img/logo-700.webp 700w, img/logo-1100.webp 1100w, img/logo-1600.webp 1600w, img/logo-2133.webp 2133w"
+          sizes="(max-width: 760px) 96vw, min(84vw, 960px)" width="2133" height="546" fetchpriority="high"
+          alt="IMP TRAVEL"></h1>
+    </div>
   </header>
 
   <nav class="secciones" aria-label="Secciones">
     <div class="pestanas">
-      <a class="pestana" href="#eventos" data-seccion="agenda" aria-current="page"><span aria-hidden="true">📰</span> Agenda</a>
-      <a class="pestana" href="#favoritos" data-seccion="favoritos"><span aria-hidden="true">★</span> <span class="largo">Mis favoritos</span><span class="corto">Favoritos</span> <span class="cuenta" id="cuenta-favoritos"></span></a>
-    </div>
-    <div class="zona-cuenta" id="zona-cuenta" hidden>
-      <button type="button" class="btn-google" id="btn-entrar"><svg class="logo-g" viewBox="0 0 48 48" aria-hidden="true" width="18" height="18"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>Iniciar sesión con Google</button>
-      <div class="usuario" id="usuario" hidden>
-        <img id="avatar" alt="" width="28" height="28" referrerpolicy="no-referrer" hidden>
-        <span id="nombre-usuario"></span>
-        <button type="button" class="accion" id="btn-salir">Salir</button>
-      </div>
+      <a class="pestana" href="#eventos" data-seccion="agenda" aria-current="page"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-calendario"/></svg>Agenda</a>
+      <a class="pestana" href="#favoritos" data-seccion="favoritos"><svg class="ico ico-estrella" aria-hidden="true" focusable="false"><use href="#i-estrella-llena"/></svg>Mis favoritos <span class="cuenta" id="cuenta-favoritos"></span></a>
     </div>
   </nav>
 
@@ -99,8 +133,11 @@
     <h2 id="t-agenda" class="solo-lector" tabindex="-1">Agenda de eventos</h2>
     <nav class="filtros" aria-label="Filtros">
       <div class="fila-busqueda">
-        <button type="button" id="btn-nuevos" class="btn-nuevos" aria-pressed="false">🆕 Nuevos <span class="cuenta" id="cuenta-nuevos"></span></button>
-        <input type="search" id="buscar" placeholder="Buscar banda, feria, lugar…" aria-label="Buscar eventos" autocomplete="off">
+        <button type="button" id="btn-nuevos" class="btn-nuevos" aria-pressed="false"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-fuego"/></svg>Nuevos <span class="cuenta" id="cuenta-nuevos"></span></button>
+        <div class="buscador">
+          <svg class="ico" aria-hidden="true" focusable="false"><use href="#i-lupa"/></svg>
+          <input type="search" id="buscar" placeholder="Buscar banda, feria, lugar…" aria-label="Buscar eventos" autocomplete="off">
+        </div>
         <div class="segmento" role="group" aria-label="Cuándo">
           <button type="button" data-periodo="todo" aria-pressed="true">Todo</button>
           <button type="button" data-periodo="semana" aria-pressed="false">7 días</button>
@@ -189,7 +226,7 @@
   </dialog>
 
   <div id="aviso" class="aviso" role="status" aria-live="polite" hidden></div>
-  <script src="app.js?v=7" defer></script>
+  <script src="app.js?v=8" defer></script>
   <script type="module" src="cuenta.js"></script>
 </body>
 </html>

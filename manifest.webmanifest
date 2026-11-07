@@ -8,8 +8,8 @@
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#f3ede2",
-  "theme_color": "#7a1f1a",
+  "background_color": "#f3e3c6",
+  "theme_color": "#760928",
   "categories": [
     "entertainment",
     "news",

@@ -46,6 +46,16 @@ let CUENTA = { disponible: false, usuario: null };
 
 // ---------- utilidades ----------
 const $ = (s) => document.querySelector(s);
+// Íconos: están en el <svg class="sprite"> de index.html. Cada tema de la agenda tiene el suyo
+// (un tema nuevo sin ícono muestra su emoji de config/gustos.json).
+const ICONO_CAT = { todas: "i-cuadricula", medieval: "i-espadas", yokai: "i-torii", anime: "i-mando", ilustracion: "i-pincel",
+  metal: "i-guitarra", fantasia: "i-dado", arte: "i-paleta", museos: "i-museo" };
+function ico(id, clase = "") {
+  return `<svg class="ico${clase ? " " + clase : ""}" aria-hidden="true" focusable="false"><use href="#${id}"/></svg>`;
+}
+function icoCat(id, emoji) {
+  return ICONO_CAT[id] ? ico(ICONO_CAT[id], "ico-cat") : `<span class="emoji" aria-hidden="true">${esc(emoji || "•")}</span>`;
+}
 function esc(t) {
   return String(t ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 }
@@ -116,7 +126,7 @@ function refrescarFavoritos(desde) {
     const en = (b.dataset.tipo === "r" ? favRest : favEventos).has(b.dataset.id);
     b.classList.toggle("guardado", en);
     b.setAttribute("aria-pressed", String(en));
-    b.textContent = en ? "★ En favoritos" : "☆ Favorito";
+    pintarBotonFavorito(b, en);
   });
   const n = contarFavoritos();
   $("#cuenta-favoritos").textContent = n ? String(n) : "";
@@ -284,9 +294,12 @@ function filtrar() {
 }
 
 // ---------- agenda: pintar ----------
+/** El detalle de la última búsqueda va al pie (la línea con la fecha y la última búsqueda arriba se quitó;
+ *  un index.html viejo en caché aún la tiene: se sigue llenando si está). */
 function pintarCabecera(datos) {
   const h = new Date();
-  $("#fecha-hoy").textContent = `${DIAS_LARGOS[h.getDay()]} ${h.getDate()} de ${MESES[h.getMonth()]} de ${h.getFullYear()} · Santiago de Chile`;
+  const hoyEl = $("#fecha-hoy");
+  if (hoyEl) hoyEl.textContent = `${DIAS_LARGOS[h.getDay()]} ${h.getDate()} de ${MESES[h.getMonth()]} de ${h.getFullYear()} · Santiago de Chile`;
   const u = datos.ultima_busqueda || {};
   let txt = "Aún sin búsquedas";
   if (u.fecha) {
@@ -302,7 +315,8 @@ function pintarCabecera(datos) {
     if (u.ia_sin_cupo) det.push("la IA gratuita llegó a su límite del día");
     $("#detalle-busqueda").textContent = `Última búsqueda: ${f.toLocaleString("es-CL", { dateStyle: "long", timeStyle: "short" })}${det.length ? " · " + det.join(" · ") : ""}. Total en agenda: ${datos.total ?? EVENTOS.length}.`;
   }
-  $("#estado-busqueda").textContent = txt;
+  const est = $("#estado-busqueda");
+  if (est) est.textContent = txt;
 }
 
 function pintarChips() {
@@ -315,9 +329,9 @@ function pintarChips() {
   const cats = catsFiltro();   // con el banner Museos quedan marcados Museos y Exposiciones de arte
   $("#chips").innerHTML = chips.map((c) =>
     `<button type="button" class="chip" data-cat="${esc(c.id)}" aria-pressed="${c.id === "todas" ? !cats : !!cats?.includes(c.id)}">` +
-    `<span aria-hidden="true">${esc(c.emoji)}</span>${esc(c.nombre)} <span class="cuenta">${c.n}</span></button>`
+    `${icoCat(c.id, c.emoji)}${esc(c.nombre)} <span class="cuenta">${c.n}</span></button>`
   ).join("") +
-    `<button type="button" class="chip" data-rm="1" aria-pressed="${estado.soloRM}"><span aria-hidden="true">📍</span>Solo Región Metropolitana</button>`;
+    `<button type="button" class="chip" data-rm="1" aria-pressed="${estado.soloRM}">${ico("i-pin-rm", "ico-pin")}Solo Región Metropolitana</button>`;
   mostrarTemaMarcado();
 }
 /** La fila de temas se desliza (en el celular no caben): que se vea el tema marcado, por ejemplo al pasar al banner
@@ -337,25 +351,25 @@ function mostrarTemaMarcado() {
 function antetitulo(e) {
   const c = CATS[e.categoria] || { nombre: e.categoria, emoji: "•" };
   const nuevo = e.agregado && dias(fecha(e.agregado), hoy()) <= 2 ? '<span class="etiqueta nuevo">NUEVO</span>' : "";
-  return `<p class="antetitulo"><span aria-hidden="true">${esc(c.emoji)}</span> ${esc(c.nombre)}${nuevo}</p>`;
+  return `<p class="antetitulo">${icoCat(e.categoria, c.emoji)}${esc(c.nombre)}${nuevo}</p>`;
 }
 
 function datosLinea(e) {
   const partes = [];
   const l = lugarTexto(e);
-  if (l) partes.push(`<span>📍 ${esc(l)}</span>`);
-  if (e.hora) partes.push(`<span>🕖 ${esc(e.hora)} h</span>`);
-  else if (e.horario) partes.push(`<span>🕖 ${esc(e.horario)}</span>`);   // exposiciones: horario de visita
-  if (e.precio) partes.push(`<span>🎟 ${esc(e.precio)}</span>`);
-  return partes.length ? `<p class="datos">${partes.join('<span class="sep">|</span>')}</p>` : "";
+  if (l) partes.push(`<span class="dato">${ico("i-pin", "ico-pin")}${esc(l)}</span>`);
+  if (e.hora) partes.push(`<span class="dato">${ico("i-reloj")}${esc(e.hora)} h</span>`);
+  else if (e.horario) partes.push(`<span class="dato">${ico("i-reloj")}${esc(e.horario)}</span>`);   // exposiciones: horario de visita
+  if (e.precio) partes.push(`<span class="dato">${ico("i-ticket")}${esc(e.precio)}</span>`);
+  return partes.length ? `<p class="datos">${partes.join("")}</p>` : "";
 }
 
 function fuenteLinea(e) {
   const fuentes = (e.fuentes || []).filter((f) => urlSegura(f.url)).slice(0, 3)
     .map((f) => `<a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.nombre || "fuente")}</a>`).join(", ");
   const marcas = [];
-  if (e.desde_imagen) marcas.push('<span class="marca" title="La fecha o el lugar se leyeron de un afiche">📷 leído del afiche</span>');
-  if (e.confianza === "baja") marcas.push('<span class="marca aviso-baja" title="Conviene confirmar en la fuente">⚠ por confirmar</span>');
+  if (e.desde_imagen) marcas.push(`<span class="marca" title="La fecha o el lugar se leyeron de un afiche">${ico("i-camara")}leído del afiche</span>`);
+  if (e.confianza === "baja") marcas.push(`<span class="marca aviso-baja" title="Conviene confirmar en la fuente">${ico("i-aviso")}por confirmar</span>`);
   return `<p class="fuente">${fuentes ? "Fuente: " + fuentes : ""}${marcas.join("")}</p>`;
 }
 
@@ -366,17 +380,32 @@ function consultaLocal(r) {
   return unirPartes([r.nombre, ...dir]).concat("Chile").join(", ");
 }
 
-function botonFavorito(tipo, id, enFavoritos) {
-  return `<button type="button" class="accion${enFavoritos ? " guardado" : ""}" data-accion="favorito" data-tipo="${tipo}" data-id="${esc(id)}" aria-pressed="${enFavoritos}">${enFavoritos ? "★ En favoritos" : "☆ Favorito"}</button>`;
+/** Contenido del botón de favorito: estrella y texto, o solo la estrella (en las tarjetas de la portada). */
+function contenidoFavorito(en, soloEstrella) {
+  const estrella = ico(en ? "i-estrella-llena" : "i-estrella", "ico-estrella");
+  return soloEstrella ? estrella : `${estrella}${en ? "En favoritos" : "Favorito"}`;
+}
+function pintarBotonFavorito(b, en) {
+  const solo = b.classList.contains("estrella-fav");
+  b.innerHTML = contenidoFavorito(en, solo);
+  if (solo) b.setAttribute("aria-label", en ? "Quitar de mis favoritos" : "Agregar a mis favoritos");
+}
+function botonFavorito(tipo, id, enFavoritos, soloEstrella = false) {
+  const datos = `data-accion="favorito" data-tipo="${tipo}" data-id="${esc(id)}" aria-pressed="${enFavoritos}"`;
+  if (soloEstrella) {
+    return `<button type="button" class="estrella-fav${enFavoritos ? " guardado" : ""}" ${datos} ` +
+      `aria-label="${enFavoritos ? "Quitar de mis favoritos" : "Agregar a mis favoritos"}">${contenidoFavorito(enFavoritos, true)}</button>`;
+  }
+  return `<button type="button" class="accion${enFavoritos ? " guardado" : ""}" ${datos}>${contenidoFavorito(enFavoritos, false)}</button>`;
 }
 
 function acciones(e) {
   const tieneLugar = lugarTexto(e) || e.direccion;
   return `<div class="acciones">
     ${botonFavorito("e", e.id, favEventos.has(e.id))}
-    <button type="button" class="accion" data-accion="calendario" data-id="${esc(e.id)}">📅 Calendario</button>
-    ${tieneLugar ? `<a class="accion" href="${esc(urlComoLlegar(consultaEvento(e)))}" target="_blank" rel="noopener">🗺 Cómo llegar</a>` : ""}
-    <button type="button" class="accion" data-accion="compartir" data-id="${esc(e.id)}">↗ Compartir</button>
+    <button type="button" class="accion" data-accion="calendario" data-id="${esc(e.id)}">${ico("i-calendario-mas")}Calendario</button>
+    ${tieneLugar ? `<a class="accion" href="${esc(urlComoLlegar(consultaEvento(e)))}" target="_blank" rel="noopener">${ico("i-ruta")}Cómo llegar</a>` : ""}
+    <button type="button" class="accion" data-accion="compartir" data-id="${esc(e.id)}">${ico("i-compartir")}Compartir</button>
   </div>`;
 }
 
@@ -962,7 +991,7 @@ function pintarNuevos(lista) {
   if (!cuando) {
     $("#banner-texto").innerHTML = "<b>No hay eventos nuevos.</b><span class=\"fino\">Todavía no se ha hecho ninguna búsqueda.</span>";
   } else if (lista.length) {
-    $("#banner-texto").innerHTML = `🆕 <b>${lista.length} evento${lista.length === 1 ? "" : "s"} nuevo${lista.length === 1 ? "" : "s"}</b> en la búsqueda de ${esc(cuando)}.` +
+    $("#banner-texto").innerHTML = `${ico("i-fuego")}<b>${lista.length} evento${lista.length === 1 ? "" : "s"} nuevo${lista.length === 1 ? "" : "s"}</b> en la búsqueda de ${esc(cuando)}.` +
       `<span class="fino">Ya quedaron en la agenda; aquí están solo ellos, ordenados por fecha.</span>`;
   } else {
     const leidas = ULTIMA.paginas_revisadas ? ` revisó ${ULTIMA.paginas_revisadas} páginas y` : "";
@@ -986,25 +1015,24 @@ function pintarPortada(lista) {
   const base = proximos.length >= 3 ? proximos : [...proximos, ...lista.filter(temporadaLarga)];   // lo que viene va primero
   const conFoto = base.filter((e) => urlSegura(e.imagen) && !FOTOS_ROTAS.has(e.imagen));
   const elegidos = (conFoto.length >= 3 ? conFoto : base).slice(0, 3);
-  const [p, ...s] = elegidos;
   const enlace = (e) => urlSegura(e.url) || "#";
-  cont.innerHTML = `
-    <article class="principal">
-      ${htmlGaleria(`e:${p.id}`, "foto")}
-      <p class="cuando-grande">${esc(cuandoRelativo(p))}</p>
-      ${antetitulo(p)}
-      <h2><a href="${esc(enlace(p))}" target="_blank" rel="noopener">${esc(p.titulo)}</a></h2>
-      ${datosLinea(p)}
-      ${p.descripcion ? `<p class="desc">${esc(p.descripcion)}</p>` : ""}
-      ${acciones(p)}
-    </article>
-    ${s.map((e) => `
-    <article class="secundaria">
+  // Tarjetas como en la maqueta del usuario: foto, cuándo (HOY, MAÑANA…), título, lugar, fecha y la estrella.
+  // El detalle completo (descripción, calendario, cómo llegar, compartir) está en la misma nota más abajo.
+  cont.innerHTML = elegidos.map((e, k) => {
+    const lugar = lugarTexto(e);
+    const fechaHora = rangoTexto(e) + (e.hora ? ` · ${e.hora} h` : "");
+    return `
+    <article class="${k === 0 ? "principal" : "secundaria"}">
       ${htmlGaleria(`e:${e.id}`, "foto")}
-      <p class="cuando-grande">${esc(cuandoRelativo(e))}</p>
-      <h2><a href="${esc(enlace(e))}" target="_blank" rel="noopener">${esc(e.titulo)}</a></h2>
-      ${datosLinea(e)}
-    </article>`).join("")}`;
+      <div class="tarjeta-texto">
+        <p class="cuando-grande">${esc(cuandoRelativo(e))}</p>
+        <h2><a href="${esc(enlace(e))}" target="_blank" rel="noopener">${esc(e.titulo)}</a></h2>
+        <p class="datos datos-columna">${lugar ? `<span class="dato">${ico("i-pin", "ico-pin")}${esc(lugar)}</span>` : ""}` +
+          `<span class="dato">${ico("i-calendario")}${esc(fechaHora)}</span></p>
+        ${botonFavorito("e", e.id, favEventos.has(e.id), true)}
+      </div>
+    </article>`;
+  }).join("");
 }
 
 /** prefijo del id: "e" en la agenda (los enlaces compartidos llevan a #e-<id>) y "f" en Mis favoritos. */
@@ -1022,7 +1050,7 @@ function htmlNota(e, prefijo = "e") {
     <div class="cuerpo">
       ${antetitulo(e)}
       <h3><a href="${esc(urlSegura(e.url) || "#")}" target="_blank" rel="noopener">${esc(e.titulo)}</a></h3>
-      ${e.fecha_fin ? `<p class="datos"><span>🗓 ${esc(rangoTexto(e))}</span></p>` : ""}
+      ${e.fecha_fin ? `<p class="datos"><span class="dato">${ico("i-calendario")}${esc(rangoTexto(e))}</span></p>` : ""}
       ${datosLinea(e)}
       ${e.descripcion ? `<p class="desc">${esc(e.descripcion)}</p>` : ""}
       ${fuenteLinea(e)}
@@ -1068,7 +1096,11 @@ function pintar() {
   pintarNuevos(lista);
   pintarPortada(lista);
   pintarAgenda(lista);
-  $("#vacio").hidden = lista.length > 0 || estado.soloNuevos;   // en "Nuevos" el aviso lo da el recuadro
+  const vacio = $("#vacio");
+  vacio.hidden = lista.length > 0 || estado.soloNuevos;   // en "Nuevos" el aviso lo da el recuadro
+  if (AGENDA_FALLO) {
+    vacio.innerHTML = `<p class="vacio-titulo">No se pudo cargar la agenda.</p><p>Revisa tu conexión y recarga la página.</p>`;
+  }
 }
 
 function alternarNuevos(activar) {
@@ -1085,23 +1117,23 @@ function htmlLocal(r, prefijo = "r") {
   const t = TEMAS[r.tema] || { nombre: r.tema, emoji: "•" };
   const datos = [];
   const dir = unirPartes([r.direccion, r.comuna]).join(", ");
-  if (dir) datos.push(`<span>📍 ${esc(dir)}</span>`);
-  if (r.horario) datos.push(`<span>🕖 ${esc(r.horario)}</span>`);
-  if (r.precio) datos.push(`<span>💲 ${esc(r.precio)}</span>`);
+  if (dir) datos.push(`<span class="dato">${ico("i-pin", "ico-pin")}${esc(dir)}</span>`);
+  if (r.horario) datos.push(`<span class="dato">${ico("i-reloj")}${esc(r.horario)}</span>`);
+  if (r.precio) datos.push(`<span class="dato">${ico("i-ticket")}${esc(r.precio)}</span>`);
   const enlaces = [];
   if (urlSegura(r.instagram)) enlaces.push(`<a class="accion" href="${esc(r.instagram)}" target="_blank" rel="noopener">Instagram ↗</a>`);
   if (urlSegura(r.web)) enlaces.push(`<a class="accion" href="${esc(r.web)}" target="_blank" rel="noopener">Sitio web ↗</a>`);
   const galeria = htmlGaleria(`r:${r.id}`, "foto-local");
   return `<article class="local${galeria ? "" : " sin-foto"}" id="${prefijo}-${esc(r.id)}">
     ${galeria}
-    <p class="antetitulo"><span aria-hidden="true">${esc(t.emoji)}</span> ${esc(t.nombre)}</p>
+    <p class="antetitulo"><span class="emoji" aria-hidden="true">${esc(t.emoji)}</span>${esc(t.nombre)}</p>
     <h3>${esc(r.nombre)}</h3>
-    ${datos.length ? `<p class="datos">${datos.join('<span class="sep">|</span>')}</p>` : ""}
+    ${datos.length ? `<p class="datos datos-columna">${datos.join("")}</p>` : ""}
     ${r.descripcion ? `<p class="desc">${esc(r.descripcion)}</p>` : ""}
-    ${r.dudas ? `<p class="aviso-local"><span aria-hidden="true">⚠</span> ${esc(r.dudas)}</p>` : ""}
+    ${r.dudas ? `<p class="aviso-local">${ico("i-aviso")}${esc(r.dudas)}</p>` : ""}
     <div class="acciones">
       ${botonFavorito("r", r.id, favRest.has(r.id))}
-      <a class="accion" href="${esc(urlComoLlegar(consultaLocal(r)))}" target="_blank" rel="noopener">🗺 Cómo llegar</a>
+      <a class="accion" href="${esc(urlComoLlegar(consultaLocal(r)))}" target="_blank" rel="noopener">${ico("i-ruta")}Cómo llegar</a>
       ${enlaces.join("")}
     </div>
   </article>`;
@@ -1135,7 +1167,8 @@ function pintarFavoritos() {
     aviso.innerHTML = `<p><b>Inicia sesión con Google</b> para guardar tus favoritos en tu cuenta y verlos en el celular y en el computador.</p>
       <button type="button" class="btn-google" data-accion="entrar">${LOGO_GOOGLE}Iniciar sesión con Google</button>`;
   } else {
-    aviso.innerHTML = `<p>Sesión iniciada como <b>${esc(CUENTA.usuario.nombre)}</b>. Tus favoritos quedan guardados en tu cuenta.</p>`;
+    // Solo se dice que quedan en la cuenta cuando ya se pudo leer (si no, siguen en el navegador, sin aviso de error)
+    aviso.innerHTML = `<p>Sesión iniciada como <b>${esc(CUENTA.usuario.nombre)}</b>.${CUENTA.sincronizada ? " Tus favoritos quedan guardados en tu cuenta." : ""}</p>`;
   }
   const evs = EVENTOS.filter((e) => favEventos.has(e.id) && vigente(e))
     .sort((a, b) => a.fecha_inicio.localeCompare(b.fecha_inicio));
@@ -1333,7 +1366,8 @@ async function iniciar() {
     pintarCabecera(datos);
   } else {
     AGENDA_FALLO = true;
-    $("#estado-busqueda").textContent = "No se pudo cargar la agenda";
+    const est = $("#estado-busqueda");   // solo en un index.html viejo
+    if (est) est.textContent = "No se pudo cargar la agenda";
     console.error(agenda.reason);
   }
   if (locales.status === "fulfilled") {

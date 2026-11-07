@@ -97,6 +97,7 @@ async function iniciar() {
       recordarUid(u.uid);
       if (!snap.exists() || !mismos(fav.eventos, nube.eventos) || !mismos(fav.restaurantes, nube.restaurantes)) escribir(fav);
       cuenta.favoritos(fav);
+      cuenta.estado({ sincronizada: true });
       // Lo que se guarde en otro dispositivo aparece aquí al tiro (los ecos de lo propio llegan como pendientes)
       desuscribir = F.onSnapshot(docRef, (s) => {
         if (s.exists() && !s.metadata.hasPendingWrites) cuenta.favoritos(limpios(s.data()));
@@ -104,7 +105,9 @@ async function iniciar() {
     } catch (e) {
       if (usuario !== u) return;
       intentos += 1;
-      cuenta.error("No se pudieron leer tus favoritos de tu cuenta; lo vuelvo a intentar", e);
+      // Sin aviso en pantalla (lo pidió el usuario): mientras la cuenta no se pueda leer (por ejemplo, si Firestore
+      // aún no está creado), los favoritos siguen en el navegador y se suben solos cuando la lectura funcione.
+      console.warn("No se pudieron leer los favoritos de la cuenta; se reintenta", e);
       reintento = setTimeout(() => sincronizar(u), Math.min(60000, 5000 * 2 ** (intentos - 1)));
     }
   }
@@ -117,14 +120,14 @@ async function iniciar() {
     if (!u) {
       if (previo || uidPestana) { recordarUid(null); cuenta.limpiarLocales(); }
       uidPestana = null; cambiosSinSubir = false;
-      cuenta.estado({ disponible: true, usuario: null });
+      cuenta.estado({ disponible: true, sincronizada: false, usuario: null });
       return;
     }
     // Los favoritos de otra cuenta no se mezclan con los de esta
     if ((previo && previo !== u.uid) || (uidPestana && uidPestana !== u.uid)) {
       recordarUid(null); cuenta.limpiarLocales(); cambiosSinSubir = false;
     }
-    cuenta.estado({ disponible: true, usuario: { nombre: u.displayName || u.email || "", foto: u.photoURL || null } });
+    cuenta.estado({ disponible: true, sincronizada: false, usuario: { nombre: u.displayName || u.email || "", foto: u.photoURL || null } });
     sincronizar(u);
   });
 }
