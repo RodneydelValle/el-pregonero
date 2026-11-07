@@ -1,76 +1,221 @@
 {
  "version": 1,
- "actualizado": "2026-11-07T03:53-03:00",
+ "actualizado": "2026-11-07T13:02-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-07T03:53-03:00",
-  "origen": "claude",
-  "eventos_nuevos": 57,
+  "fecha": "2026-11-07T13:02-03:00",
+  "origen": "github-actions",
+  "eventos_nuevos": 72,
   "nuevos_ids": [
-   "ae5b603f04",
-   "6dfafa8970",
-   "4e82abe6b7",
-   "44a03de0a7",
-   "0bdfd1df65",
-   "29e7f87994",
-   "94601c7845",
-   "c32f483a1c",
-   "158c42778a",
-   "8828debb68",
-   "33a119f815",
-   "0ba9aaeefc",
-   "707fe2b3b9",
-   "bb4f9dcd21",
-   "ac7820b39e",
-   "3aa2a057f2",
-   "347d5f69b6",
-   "5ca969e3c6",
-   "2683b909e8",
-   "526eb4a6d4",
-   "aff6ce01a9",
-   "0ab446f27c",
-   "fc0d3c3035",
-   "dfa0189c0c",
-   "4a3298ee26",
-   "4d5808d49a",
-   "0af68d4eb8",
-   "6e98a34c41",
-   "7fc2bdb573",
-   "ed05e88989",
-   "362b1bc210",
-   "02b56d99df",
-   "54addd7304",
-   "e96e111ea3",
-   "b3eac2efa6",
-   "fcbb3f5a07",
-   "f8f38aaee7",
-   "daa19ce599",
-   "25228fa03c",
-   "e09eb1beeb",
-   "ae07a2796c",
-   "5579008677",
-   "3636e60042",
-   "0997d6f0b1",
-   "562569f3c4",
-   "bfb912b5ba",
-   "3b3025cb65",
-   "c74849a44f",
-   "43a0dd1f1a",
-   "d705a6b195",
-   "fe429a2453",
-   "7010ac604a",
-   "a2ea3899ab",
-   "fbe7d8bf46",
-   "2b04adba08",
-   "3f73ac8f60",
-   "20d77619ca"
+   "429f8ea87c",
+   "4fb5aa7103",
+   "f86137aa96",
+   "aeac9930e3",
+   "0651ca14b4",
+   "aa4a4a261b",
+   "55257bcf33",
+   "a2af6cc955",
+   "d04b8c1116",
+   "625f47d0d4",
+   "032f3df471",
+   "d5f62b4132",
+   "edf97cb654",
+   "4c39e5bf70",
+   "c0486ed264",
+   "be2a0b9bda",
+   "966f35706a",
+   "c1ccfb91de",
+   "b240f6e84d",
+   "b91cbc5d41",
+   "6dd0741db1",
+   "a2b9db3fc8",
+   "50b4603a83",
+   "4f3ed2eb73",
+   "6fd9b8d405",
+   "da0eb1db3c",
+   "c4609d9554",
+   "59875c1d42",
+   "c4609ac473",
+   "8330fb3ee5",
+   "0248a93239",
+   "e381f47523",
+   "a81ce004c8",
+   "a2b349ee42",
+   "a63a50166b",
+   "44eb40acf7",
+   "3d1bbb4626",
+   "43741e2b3d",
+   "62af8b8153",
+   "e95b482f5e",
+   "965527d5e7",
+   "62f29994ca",
+   "6d839fa102",
+   "b9bde47bf1",
+   "2f1b68db8f",
+   "c91ffc691a",
+   "4d5f2940d2",
+   "f5670ec010",
+   "f2299bd942",
+   "9324abff5f",
+   "bc60672df9",
+   "fb78b6b9f5",
+   "8f02eb5cce",
+   "5d6ef373bb",
+   "6b80f85dd3",
+   "da7b2811ae",
+   "57bf3a4361",
+   "c5b1d7de21",
+   "fc9361b210",
+   "042f6d8550",
+   "f745721607",
+   "c4ec055829",
+   "c22a962c51",
+   "6f9728b22f",
+   "ea236dcf5d",
+   "e9015dff95",
+   "49bae6150e",
+   "84b10367f6",
+   "72ed90cd4d",
+   "68b6c0d173",
+   "7d4495a696",
+   "7ecea2322a"
   ],
-  "llamadas_ia": 0,
+  "llamadas_ia": 103,
   "ia_sin_cupo": false,
-  "agregados_a_mano": 58
+  "paginas_revisadas": 94,
+  "busquedas": 70,
+  "fuentes_fijas": 17,
+  "errores": 25,
+  "noticias_desde": "2026-11-07",
+  "noticias_viejas_descartadas": 308,
+  "redes_vistas": 103
  },
- "total": 96,
+ "total": 168,
  "eventos": [
+  {
+   "titulo": "Festival Internacional de Ilustración Festilus",
+   "categoria": "ilustracion",
+   "fecha_inicio": "2013-08-29",
+   "fecha_fin": "2026-11-07",
+   "hora": "10:00",
+   "horario": null,
+   "lugar": null,
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": null,
+   "imagen": null,
+   "fotos": null,
+   "url": "https://radio.uchile.cl/agenda_cultural/festival-internacional-de-ilustracion-festilus/",
+   "fuentes": [
+    {
+     "nombre": "Diario y Radio Universidad Chile",
+     "url": "https://radio.uchile.cl/agenda_cultural/festival-internacional-de-ilustracion-festilus/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "7ecea2322a",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Mariposas y Polillas, Colores en Movimiento",
+   "categoria": "museos",
+   "fecha_inicio": "2025-04-24",
+   "fecha_fin": "2027-01-03",
+   "hora": null,
+   "horario": "10:00 - 17:30",
+   "lugar": "Museo Nacional de Historia Natural",
+   "direccion": "Parque Quinta Normal s/n",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Exposición temporal sobre mariposas y polillas en el Museo Nacional de Historia Natural.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion",
+   "fuentes": [
+    {
+     "nombre": "Servicio Nacional del Patrimonio (museos)",
+     "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion"
+    },
+    {
+     "nombre": "mnhn.gob.cl",
+     "url": "https://www.mnhn.gob.cl/cartelera"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "b240f6e84d",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Roberto Matta. Abrir la mirada",
+   "categoria": "arte",
+   "fecha_inicio": "2025-07-10",
+   "fecha_fin": "2027-07-31",
+   "hora": null,
+   "horario": "10:00 - 18:30",
+   "lugar": "Museo Nacional de Bellas Artes",
+   "direccion": "José Miguel de la Barra 650",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Muestra dedicada a la obra del destacado artista chileno Roberto Matta en el MNBA.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion",
+   "fuentes": [
+    {
+     "nombre": "Servicio Nacional del Patrimonio (museos)",
+     "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "b91cbc5d41",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "El mundo en una biblioteca. Cien años de la donación de José Toribio Medina",
+   "categoria": "museos",
+   "fecha_inicio": "2025-08-19",
+   "fecha_fin": "2026-11-27",
+   "hora": null,
+   "horario": "09:15 - 18:00",
+   "lugar": "Biblioteca Nacional",
+   "direccion": "Libertador Bernardo O'Higgins 651",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Exposición patrimonial que conmemora el centenario de la donación bibliográfica de José Toribio Medina.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion",
+   "fuentes": [
+    {
+     "nombre": "Servicio Nacional del Patrimonio (museos)",
+     "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "6dd0741db1",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
   {
    "titulo": "Un archivo en construcción: la obra de Tito Vásquez",
    "categoria": "arte",
@@ -92,12 +237,80 @@
     {
      "nombre": "Biblioteca Nacional de Chile (cartelera)",
      "url": "https://www.bibliotecanacional.gob.cl/cartelera"
+    },
+    {
+     "nombre": "Servicio Nacional del Patrimonio (museos)",
+     "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion"
     }
    ],
    "desde_imagen": false,
    "confianza": "alta",
    "origen": "claude",
    "id": "ae5b603f04",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "145 años: Historias de una Colección",
+   "categoria": "arte",
+   "fecha_inicio": "2025-09-10",
+   "fecha_fin": "2027-09-26",
+   "hora": null,
+   "horario": "10:00 - 18:30",
+   "lugar": "Museo Nacional de Bellas Artes",
+   "direccion": "José Miguel de la Barra 650",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Exposición conmemorativa por los 145 años de la colección del Museo Nacional de Bellas Artes.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion",
+   "fuentes": [
+    {
+     "nombre": "Servicio Nacional del Patrimonio (museos)",
+     "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "a2b9db3fc8",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Vitrina Colecciones arqueológicas y su estudio en el MNHN",
+   "categoria": "museos",
+   "fecha_inicio": "2025-10-14",
+   "fecha_fin": "2027-05-20",
+   "hora": null,
+   "horario": "10:00 - 17:30",
+   "lugar": "Museo Nacional de Historia Natural",
+   "direccion": "Parque Quinta Normal s/n",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Muestra patrimonial sobre colecciones arqueológicas y su investigación en el MNHN.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion",
+   "fuentes": [
+    {
+     "nombre": "Servicio Nacional del Patrimonio (museos)",
+     "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion"
+    },
+    {
+     "nombre": "mnhn.gob.cl",
+     "url": "https://www.mnhn.gob.cl/cartelera"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "50b4603a83",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
   },
@@ -122,6 +335,14 @@
     {
      "nombre": "Museo Nacional de Historia Natural (cartelera)",
      "url": "https://www.mnhn.gob.cl/cartelera"
+    },
+    {
+     "nombre": "Chile Cultura",
+     "url": "https://chilecultura.gob.cl/events/38714/"
+    },
+    {
+     "nombre": "Servicio Nacional del Patrimonio (museos)",
+     "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion"
     }
    ],
    "desde_imagen": false,
@@ -222,6 +443,70 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "Me lo contó un pajarito",
+   "categoria": "museos",
+   "fecha_inicio": "2026-05-14",
+   "fecha_fin": "2027-05-10",
+   "hora": null,
+   "horario": "10:00 - 17:30",
+   "lugar": "Museo Nacional de Historia Natural",
+   "direccion": "Parque Quinta Normal s/n",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Exhibición temporal sobre avifauna en el Museo Nacional de Historia Natural.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion",
+   "fuentes": [
+    {
+     "nombre": "Servicio Nacional del Patrimonio (museos)",
+     "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion"
+    },
+    {
+     "nombre": "mnhn.gob.cl",
+     "url": "https://www.mnhn.gob.cl/cartelera"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "4f3ed2eb73",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Exposición inmersiva: La ronda del Sol y la Luna",
+   "categoria": "arte",
+   "fecha_inicio": "2026-06-11",
+   "fecha_fin": "2027-05-30",
+   "hora": null,
+   "horario": "10:15–18:45 hrs",
+   "lugar": "Centro Cultural La Moneda, Galería Cero",
+   "direccion": "Plaza de la Ciudadanía 26",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Entrada liberada",
+   "descripcion": "Muestras inmersiva de la artista e ilustradora Andrea Franco en el Centro Cultural La Moneda, ideal para disfrutar en familia.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.santiagoturismo.cl/es/events/exposicion-inmersiva-en-centro-cultural-la-moneda/",
+   "fuentes": [
+    {
+     "nombre": "santiagoturismo.cl",
+     "url": "https://www.santiagoturismo.cl/es/events/exposicion-inmersiva-en-centro-cultural-la-moneda/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "bc60672df9",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
    "titulo": "La Veta",
    "categoria": "arte",
    "fecha_inicio": "2026-06-25",
@@ -245,12 +530,80 @@
     {
      "nombre": "Centro Cultural Gabriela Mistral (GAM)",
      "url": "https://gam.cl/es/que-hacer-en-gam/artesvisuales/"
+    },
+    {
+     "nombre": "GAM (artes visuales)",
+     "url": "https://gam.cl/es/que-hacer-en-gam/artesvisuales/la-veta/"
     }
    ],
    "desde_imagen": false,
    "confianza": "alta",
    "origen": "claude",
    "id": "4e82abe6b7",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Flor de Cobalto",
+   "categoria": "museos",
+   "fecha_inicio": "2026-07-07",
+   "fecha_fin": "2026-11-27",
+   "hora": null,
+   "horario": "09:15 - 18:00",
+   "lugar": "Biblioteca Nacional",
+   "direccion": "Libertador Bernardo O'Higgins 651",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Exposición temporal en la Biblioteca Nacional sobre la historia del salitre y patrimonio documental chileno.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=1",
+   "fuentes": [
+    {
+     "nombre": "Servicio Nacional del Patrimonio (museos)",
+     "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=1"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "6fd9b8d405",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Colección MAC: Modulaciones de la imagen fotográfica",
+   "categoria": "arte",
+   "fecha_inicio": "2026-07-18",
+   "fecha_fin": "2026-12-13",
+   "hora": null,
+   "horario": null,
+   "lugar": "MAC Quinta Normal",
+   "direccion": "Av. Matucana 464",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Exposición de fotografía perteneciente a la colección del Museo de Arte Contemporáneo.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://mac.uchile.cl/periodo/actuales/",
+   "fuentes": [
+    {
+     "nombre": "MAC (Museo de Arte Contemporáneo)",
+     "url": "https://mac.uchile.cl/periodo/actuales/"
+    },
+    {
+     "nombre": "mac.uchile.cl",
+     "url": "https://mac.uchile.cl/exposiciones/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "62f29994ca",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
   },
@@ -335,6 +688,10 @@
     {
      "nombre": "Museo de Artes Decorativas (cartelera)",
      "url": "https://www.artdec.gob.cl/cartelera"
+    },
+    {
+     "nombre": "Servicio Nacional del Patrimonio (museos)",
+     "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=1"
     }
    ],
    "desde_imagen": false,
@@ -345,48 +702,18 @@
    "actualizado": "2026-11-07"
   },
   {
-   "titulo": "Intervención: Ximena Lecca en Sala Chile antes de Chile",
-   "categoria": "museos",
-   "fecha_inicio": "2026-08-28",
-   "fecha_fin": "2026-11-22",
-   "hora": null,
-   "horario": null,
-   "lugar": "Museo Chileno de Arte Precolombino",
-   "direccion": null,
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "El Museo Chileno de Arte Precolombino recibe una intervención de ART CUT 2026, Trienal de la universidades católicas de América, Europa y Asia.",
-   "imagen": "https://chilecultura.gob.cl/uploads/cropped_BPsUwtW.png",
-   "fotos": null,
-   "url": "https://museo.precolombino.cl/evento/muestra-temporal-bajo-nuestros-pies-las-tierras-raras-de-la-ia/",
-   "fuentes": [
-    {
-     "nombre": "Chile Cultura",
-     "url": "https://chilecultura.gob.cl/events/39670/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "media",
-   "origen": "claude",
-   "id": "43a0dd1f1a",
-   "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
-  },
-  {
    "titulo": "La vida en una mirada. Fernando Opazo",
    "categoria": "arte",
    "fecha_inicio": "2026-08-31",
    "fecha_fin": "2026-11-30",
    "hora": null,
-   "horario": null,
+   "horario": "07:00 - 22:00",
    "lugar": "Sala patrimonial del MHN, estación Plaza de Armas del Metro",
    "direccion": "Estación Plaza de Armas, Metro de Santiago",
    "comuna": "Santiago",
    "ciudad": "Santiago",
    "region": "Región Metropolitana",
-   "precio": null,
+   "precio": "Gratis",
    "descripcion": "Fotografías de Fernando Opazo, discípulo de Antonio Quintana, que retrató con su Rolleiflex a trabajadores, campesinos y niños de Chile entre 1960 y 1980.",
    "imagen": "https://www.mhn.gob.cl/sites/www.mhn.gob.cl/files/styles/16x9_mediano/public/2026-08/FERODA-107%20web.jpg?h=21bd96e6&itok=xhNOsoTl",
    "fotos": null,
@@ -395,12 +722,54 @@
     {
      "nombre": "Museo Histórico Nacional (sitio oficial)",
      "url": "https://www.mhn.gob.cl/noticias/la-vida-en-una-mirada-fernando-opazo"
+    },
+    {
+     "nombre": "Servicio Nacional del Patrimonio (museos)",
+     "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=1"
+    },
+    {
+     "nombre": "mhn.gob.cl",
+     "url": "https://www.mhn.gob.cl/cartelera"
     }
    ],
    "desde_imagen": false,
    "confianza": "alta",
    "origen": "claude",
    "id": "29e7f87994",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Intervención: Ximena Lecca en Sala Chile antes de Chile",
+   "categoria": "museos",
+   "fecha_inicio": "2026-09-01",
+   "fecha_fin": "2026-11-22",
+   "hora": null,
+   "horario": "10:00 a 18:00",
+   "lugar": "Museo Chileno de Arte Precolombino",
+   "direccion": "Bandera 361",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Exposición de arte contemporáneo de Ximena Garrido-Lecca en el Museo Chileno de Arte Precolombino.",
+   "imagen": "https://chilecultura.gob.cl/uploads/cropped_BPsUwtW.png",
+   "fotos": null,
+   "url": "https://museo.precolombino.cl/exposiciones-cartelera/cartelera/",
+   "fuentes": [
+    {
+     "nombre": "Chile Cultura",
+     "url": "https://chilecultura.gob.cl/events/39670/"
+    },
+    {
+     "nombre": "Museo Chileno de Arte Precolombino",
+     "url": "https://museo.precolombino.cl/exposiciones-cartelera/cartelera/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "43a0dd1f1a",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
   },
@@ -457,6 +826,10 @@
     {
      "nombre": "Museo Nacional de Bellas Artes (cartelera)",
      "url": "https://www.mnba.gob.cl/cartelera"
+    },
+    {
+     "nombre": "Servicio Nacional del Patrimonio (museos)",
+     "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=1"
     }
    ],
    "desde_imagen": false,
@@ -517,6 +890,10 @@
     {
      "nombre": "MAC Universidad de Chile",
      "url": "https://mac.uchile.cl/periodo/actuales/"
+    },
+    {
+     "nombre": "mac.uchile.cl",
+     "url": "https://mac.uchile.cl/exposiciones/"
     }
    ],
    "desde_imagen": false,
@@ -587,6 +964,74 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "En la Punta de la Lengua - Lizi Sánchez",
+   "categoria": "arte",
+   "fecha_inicio": "2026-09-26",
+   "fecha_fin": "2027-01-24",
+   "hora": null,
+   "horario": null,
+   "lugar": "MAC Quinta Normal",
+   "direccion": "Av. Matucana 464",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Exposición de Lizi Sánchez en el Museo de Arte Contemporáneo, sede Quinta Normal.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://mac.uchile.cl/periodo/actuales/",
+   "fuentes": [
+    {
+     "nombre": "MAC (Museo de Arte Contemporáneo)",
+     "url": "https://mac.uchile.cl/periodo/actuales/"
+    },
+    {
+     "nombre": "mac.uchile.cl",
+     "url": "https://mac.uchile.cl/exposiciones/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "62af8b8153",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Estratos. Cartografías del tiempo - Archivo MAC",
+   "categoria": "arte",
+   "fecha_inicio": "2026-09-26",
+   "fecha_fin": "2027-01-24",
+   "hora": null,
+   "horario": null,
+   "lugar": "MAC Quinta Normal",
+   "direccion": "Av. Matucana 464",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Muestra patrimonial e investigativa basada en los archivos del Museo de Arte Contemporáneo.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://mac.uchile.cl/periodo/actuales/",
+   "fuentes": [
+    {
+     "nombre": "MAC (Museo de Arte Contemporáneo)",
+     "url": "https://mac.uchile.cl/periodo/actuales/"
+    },
+    {
+     "nombre": "mac.uchile.cl",
+     "url": "https://mac.uchile.cl/exposiciones/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "965527d5e7",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
    "titulo": "Estéticas intuitivas. Bernardo Oyarzún",
    "categoria": "arte",
    "fecha_inicio": "2026-09-26",
@@ -607,6 +1052,10 @@
     {
      "nombre": "Centro Nacional de Arte Contemporáneo (CNAC)",
      "url": "https://centronacionaldearte.cultura.gob.cl/bernardo-oyarzun/"
+    },
+    {
+     "nombre": "Chile Cultura",
+     "url": "https://chilecultura.gob.cl/events/39955/"
     }
    ],
    "desde_imagen": false,
@@ -637,12 +1086,118 @@
     {
      "nombre": "Ministerio de las Culturas (agenda cultural)",
      "url": "https://www.cultura.gob.cl/agendacultural/cnac-inaugura-tres-exposiciones-bernardo-oyarzun-y-dos-muestras-dedicadas-a-la-fotografia-en-chile/"
+    },
+    {
+     "nombre": "Chile Cultura",
+     "url": "https://chilecultura.gob.cl/events/39956/"
     }
    ],
    "desde_imagen": false,
    "confianza": "alta",
    "origen": "claude",
    "id": "0ba9aaeefc",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "La Trayectoria Intermedial del Gesto - Valentina Díaz",
+   "categoria": "arte",
+   "fecha_inicio": "2026-09-26",
+   "fecha_fin": "2027-01-24",
+   "hora": null,
+   "horario": null,
+   "lugar": "MAC Quinta Normal",
+   "direccion": "Av. Matucana 464",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Exposición de arte contemporáneo de Valentina Díaz en el MAC Quinta Normal.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://mac.uchile.cl/periodo/actuales/",
+   "fuentes": [
+    {
+     "nombre": "MAC (Museo de Arte Contemporáneo)",
+     "url": "https://mac.uchile.cl/periodo/actuales/"
+    },
+    {
+     "nombre": "mac.uchile.cl",
+     "url": "https://mac.uchile.cl/exposiciones/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "e95b482f5e",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Por Ambos Lados - Andrés Denegri",
+   "categoria": "arte",
+   "fecha_inicio": "2026-09-26",
+   "fecha_fin": "2027-01-24",
+   "hora": null,
+   "horario": null,
+   "lugar": "MAC Quinta Normal",
+   "direccion": "Av. Matucana 464",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Muestra audiovisual y artística de Andrés Denegri en MAC Quinta Normal.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://mac.uchile.cl/periodo/actuales/",
+   "fuentes": [
+    {
+     "nombre": "MAC (Museo de Arte Contemporáneo)",
+     "url": "https://mac.uchile.cl/periodo/actuales/"
+    },
+    {
+     "nombre": "mac.uchile.cl",
+     "url": "https://mac.uchile.cl/exposiciones/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "43741e2b3d",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Sistema Público de Fluidos - Constanza Hermosilla Urra",
+   "categoria": "arte",
+   "fecha_inicio": "2026-09-26",
+   "fecha_fin": "2027-01-24",
+   "hora": null,
+   "horario": null,
+   "lugar": "MAC Quinta Normal",
+   "direccion": "Av. Matucana 464",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Exposición de arte contemporáneo en la sede Quinta Normal del MAC.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://mac.uchile.cl/periodo/actuales/",
+   "fuentes": [
+    {
+     "nombre": "MAC (Museo de Arte Contemporáneo)",
+     "url": "https://mac.uchile.cl/periodo/actuales/"
+    },
+    {
+     "nombre": "mac.uchile.cl",
+     "url": "https://mac.uchile.cl/exposiciones/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "3d1bbb4626",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
   },
@@ -697,6 +1252,10 @@
     {
      "nombre": "Museo Nacional de Historia Natural (cartelera)",
      "url": "https://www.mnhn.gob.cl/cartelera"
+    },
+    {
+     "nombre": "Servicio Nacional del Patrimonio (museos)",
+     "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=1"
     }
    ],
    "desde_imagen": false,
@@ -727,6 +1286,10 @@
     {
      "nombre": "Museo Nacional de Bellas Artes (cartelera)",
      "url": "https://www.mnba.gob.cl/cartelera"
+    },
+    {
+     "nombre": "Servicio Nacional del Patrimonio (museos)",
+     "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=1"
     }
    ],
    "desde_imagen": false,
@@ -823,12 +1386,50 @@
     {
      "nombre": "Museo Histórico Nacional y MUT (sitios oficiales)",
      "url": "https://www.mhn.gob.cl/noticias/tiempo-de-sombreros-1920-1960-coleccion-museo-historico-nacional"
+    },
+    {
+     "nombre": "Chile Cultura",
+     "url": "https://chilecultura.gob.cl/events/40185/"
+    },
+    {
+     "nombre": "Suitip",
+     "url": "https://www.suitip.cl/panoramas/guia/gratis"
     }
    ],
    "desde_imagen": false,
    "confianza": "alta",
    "origen": "claude",
    "id": "5ca969e3c6",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "AzulVerde. Algas y comunidades en la costa pacífica americana",
+   "categoria": "museos",
+   "fecha_inicio": "2026-10-05",
+   "fecha_fin": "2026-11-09",
+   "hora": null,
+   "horario": "10:00 a 18:00",
+   "lugar": "Museo Chileno de Arte Precolombino",
+   "direccion": "Bandera 361",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Exposición en el portal del museo sobre la relación entre algas y comunidades costeras.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://museo.precolombino.cl/exposiciones-cartelera/cartelera/",
+   "fuentes": [
+    {
+     "nombre": "Museo Chileno de Arte Precolombino",
+     "url": "https://museo.precolombino.cl/exposiciones-cartelera/cartelera/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "6d839fa102",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
   },
@@ -915,6 +1516,10 @@
     {
      "nombre": "Museo Nacional de Bellas Artes (cartelera)",
      "url": "https://www.mnba.gob.cl/cartelera"
+    },
+    {
+     "nombre": "Servicio Nacional del Patrimonio (museos)",
+     "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=1"
     }
    ],
    "desde_imagen": false,
@@ -945,6 +1550,10 @@
     {
      "nombre": "Museo de la Solidaridad Salvador Allende",
      "url": "https://www.mssa.cl/exposicion/del-espacio-de-aca/"
+    },
+    {
+     "nombre": "Chile Cultura",
+     "url": "https://chilecultura.gob.cl/events/40934/"
     }
    ],
    "desde_imagen": false,
@@ -975,6 +1584,10 @@
     {
      "nombre": "Museo de la Solidaridad Salvador Allende (sitio oficial)",
      "url": "https://www.mssa.cl/exposicion/nosotros-los-chilenos-archivar-para-imaginarnos/"
+    },
+    {
+     "nombre": "Chile Cultura",
+     "url": "https://chilecultura.gob.cl/events/40941/"
     }
    ],
    "desde_imagen": false,
@@ -1039,12 +1652,106 @@
     {
      "nombre": "Museo de la Solidaridad Salvador Allende (sitio oficial)",
      "url": "https://www.mssa.cl/exposicion/tu-museo-tu-coleccion/"
+    },
+    {
+     "nombre": "Chile Cultura",
+     "url": "https://chilecultura.gob.cl/events/40930/"
     }
    ],
    "desde_imagen": false,
    "confianza": "alta",
    "origen": "claude",
    "id": "dfa0189c0c",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Exposición “Cultivar la memoria de las mujeres del Elqui: Creación textil en torno a la poesía territorial de Gabriela Mistral”",
+   "categoria": "arte",
+   "fecha_inicio": "2026-10-15",
+   "fecha_fin": "2026-12-19",
+   "hora": null,
+   "horario": "10:00 - 19:00",
+   "lugar": "Biblioteca Regional Gabriela Mistral",
+   "direccion": "Juan José Latorre 782",
+   "comuna": "La Serena",
+   "ciudad": "La Serena",
+   "region": "Coquimbo",
+   "precio": "Gratis",
+   "descripcion": "Exposición de arte textil inspirada en la poesía territorial de Gabriela Mistral.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=2",
+   "fuentes": [
+    {
+     "nombre": "Servicio Nacional del Patrimonio (museos)",
+     "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=2"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "da0eb1db3c",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Muestra de Ilustraciones “excelencia Italiana. el Traje Nuevo de Pinocho”",
+   "categoria": "ilustracion",
+   "fecha_inicio": "2026-10-20",
+   "fecha_fin": "2026-12-02",
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Instituto Italiano de Cultura",
+   "direccion": null,
+   "comuna": "Providencia",
+   "ciudad": null,
+   "region": null,
+   "precio": "Gratis",
+   "descripcion": "MUESTRA DE ILUSTRACIONES “EXCELENCIA ITALIANA. EL TRAJE NUEVO DE PINOCHO” Promovida por la Feria del Libro Infantil y Juvenil de Bolonia y bajo la curaduría de la Academia Drosselmeier 20.10.26- 2.12.26 Salón de Exposiciones – Instituto Ita",
+   "imagen": "https://img.vamoh.cl/events/b905a6a6-a2d9-4525-8067-7012603bff9e.webp?v=6d5e6ce1",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/muestra-de-ilustraciones-excelencia-italiana-el-traje-nuevo-de-pinocho-2e1ky/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/muestra-de-ilustraciones-excelencia-italiana-el-traje-nuevo-de-pinocho-2e1ky/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "c0486ed264",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Exposición Salvataje",
+   "categoria": "arte",
+   "fecha_inicio": "2026-10-20",
+   "fecha_fin": "2026-12-30",
+   "hora": null,
+   "horario": null,
+   "lugar": "GAM",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Muestra de artes visuales en el GAM que forma parte de la programación cultural de la temporada.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://gam.cl/es/que-hacer-en-gam/artesvisuales/exposicion-salvataje/",
+   "fuentes": [
+    {
+     "nombre": "GAM (artes visuales)",
+     "url": "https://gam.cl/es/que-hacer-en-gam/artesvisuales/exposicion-salvataje/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "2f1b68db8f",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
   },
@@ -1101,12 +1808,46 @@
     {
      "nombre": "Centro Cultural Estación Mapocho",
      "url": "https://www.estacionmapocho.cl/?artvis=el-alma-de-la-forma"
+    },
+    {
+     "nombre": "Chile Cultura",
+     "url": "https://chilecultura.gob.cl/events/40546/"
     }
    ],
    "desde_imagen": false,
    "confianza": "alta",
    "origen": "claude",
    "id": "4d5808d49a",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Habitar en equilibrio: Aves y territorios, el arte de construir la vida",
+   "categoria": "museos",
+   "fecha_inicio": "2026-10-22",
+   "fecha_fin": "2027-10-31",
+   "hora": null,
+   "horario": "11:00 - 16:00",
+   "lugar": "Museo de Historia Natural de Valparaíso",
+   "direccion": "Condell 1546",
+   "comuna": "Valparaíso",
+   "ciudad": "Valparaíso",
+   "region": "Valparaíso",
+   "precio": "Gratis",
+   "descripcion": "Exposición sobre aves y territorios en el Museo de Historia Natural de Valparaíso.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=2",
+   "fuentes": [
+    {
+     "nombre": "Servicio Nacional del Patrimonio (museos)",
+     "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=2"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "c4609d9554",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
   },
@@ -1161,6 +1902,14 @@
     {
      "nombre": "Museo Histórico Nacional (sitio oficial)",
      "url": "https://www.mhn.gob.cl/noticias/electrizando-la-mente-la-chispa-que-ilumino-el-siglo-xviii"
+    },
+    {
+     "nombre": "Chile Cultura",
+     "url": "https://chilecultura.gob.cl/events/40575/"
+    },
+    {
+     "nombre": "Servicio Nacional del Patrimonio (museos)",
+     "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=2"
     }
    ],
    "desde_imagen": false,
@@ -1311,6 +2060,10 @@
     {
      "nombre": "Biblioteca Nacional de Chile (cartelera)",
      "url": "https://www.bibliotecanacional.gob.cl/cartelera"
+    },
+    {
+     "nombre": "Servicio Nacional del Patrimonio (museos)",
+     "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=2"
     }
    ],
    "desde_imagen": false,
@@ -1413,6 +2166,96 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "Exposición \"Liminal: el ruido que queda\"",
+   "categoria": "arte",
+   "fecha_inicio": "2026-11-05",
+   "fecha_fin": "2026-11-28",
+   "hora": null,
+   "horario": "10:00 - 17:00",
+   "lugar": "Museo Gabriela Mistral de Vicuña",
+   "direccion": "Gabriela Mistral 759",
+   "comuna": "Vicuña",
+   "ciudad": "Vicuña",
+   "region": "Coquimbo",
+   "precio": "Gratis",
+   "descripcion": "Exposición de artes visuales en la Sala Laura Rodig del Museo Gabriela Mistral.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=2",
+   "fuentes": [
+    {
+     "nombre": "Servicio Nacional del Patrimonio (museos)",
+     "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=2"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "59875c1d42",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Sinapsis: una exposición fotográfica sobre los inicios de la neurocirugía en Chile",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-05",
+   "fecha_fin": "2026-12-24",
+   "hora": null,
+   "horario": "11:00 - 16:00",
+   "lugar": "Museo de Historia Natural de Valparaíso",
+   "direccion": "Condell 1546",
+   "comuna": "Valparaíso",
+   "ciudad": "Valparaíso",
+   "region": "Valparaíso",
+   "precio": "Gratis",
+   "descripcion": "Exposición fotográfica de Domingo Ulloa sobre los inicios de la neurocirugía en Chile.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=2",
+   "fuentes": [
+    {
+     "nombre": "Servicio Nacional del Patrimonio (museos)",
+     "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=2"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "c4609ac473",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Noche de Rock y Metal",
+   "categoria": "metal",
+   "fecha_inicio": "2026-11-06",
+   "fecha_fin": "2026-11-07",
+   "hora": "22:30",
+   "horario": null,
+   "lugar": "Bar Democrático",
+   "direccion": null,
+   "comuna": "Iquique",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $3.000",
+   "descripcion": "Prepárate para una noche cargada de energía, guitarras potentes y música en vivo. El escenario de El Democrático se enciende con una jornada dedicada a los sonidos del Hard Rock, Nu Metal, Grunge y Metal Alternativo. Dos bandas en vivo, muc",
+   "imagen": "https://img.vamoh.cl/events/59b6fc83-038c-4a40-a064-6538d95d9bd8.webp?v=cd1ec4f7",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/noche-de-rock-y-metal-en-el-democratico-iquique-laxkk/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/noche-de-rock-y-metal-en-el-democratico-iquique-laxkk/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "55257bcf33",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
    "titulo": "De Cesante a Mirón. Enrique Flores",
    "categoria": "arte",
    "fecha_inicio": "2026-11-06",
@@ -1433,12 +2276,46 @@
     {
      "nombre": "MAC Universidad de Chile",
      "url": "https://mac.uchile.cl/periodo/actuales/"
+    },
+    {
+     "nombre": "mac.uchile.cl",
+     "url": "https://mac.uchile.cl/exposiciones/"
     }
    ],
    "desde_imagen": false,
    "confianza": "alta",
    "origen": "claude",
    "id": "f8f38aaee7",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Exposición Retazos de historias",
+   "categoria": "arte",
+   "fecha_inicio": "2026-11-06",
+   "fecha_fin": "2026-11-28",
+   "hora": null,
+   "horario": "19:00 - 20:00",
+   "lugar": "Centro de Extensión Patrimonial - Museo del Limarí",
+   "direccion": "Covarrubias esquina Antofagasta",
+   "comuna": "Ovalle",
+   "ciudad": "Ovalle",
+   "region": "Coquimbo",
+   "precio": "Gratis",
+   "descripcion": "Exposición de artes decorativas en el Museo del Limarí.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=2",
+   "fuentes": [
+    {
+     "nombre": "Servicio Nacional del Patrimonio (museos)",
+     "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=2"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "8330fb3ee5",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
   },
@@ -1463,6 +2340,10 @@
     {
      "nombre": "MAC Universidad de Chile",
      "url": "https://mac.uchile.cl/periodo/actuales/"
+    },
+    {
+     "nombre": "mac.uchile.cl",
+     "url": "https://mac.uchile.cl/exposiciones/"
     }
    ],
    "desde_imagen": false,
@@ -1493,6 +2374,10 @@
     {
      "nombre": "MAC Universidad de Chile",
      "url": "https://mac.uchile.cl/periodo/actuales/"
+    },
+    {
+     "nombre": "mac.uchile.cl",
+     "url": "https://mac.uchile.cl/exposiciones/"
     }
    ],
    "desde_imagen": false,
@@ -1553,6 +2438,10 @@
     {
      "nombre": "MAC Universidad de Chile",
      "url": "https://mac.uchile.cl/periodo/actuales/"
+    },
+    {
+     "nombre": "mac.uchile.cl",
+     "url": "https://mac.uchile.cl/exposiciones/"
     }
    ],
    "desde_imagen": false,
@@ -1611,6 +2500,22 @@
     {
      "nombre": "Instagram @mercadoyjuglares",
      "url": "https://www.instagram.com/mercadoyjuglares/"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/mercaderes-de-la-ruta-festival-medieval-de-oriente-whwsx/"
+    },
+    {
+     "nombre": "tuu.cl",
+     "url": "https://www.tuu.cl/mercaderes-de-la-ruta"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/medieval-party-veladaa-palacio-astoreca-ffsf2/"
+    },
+    {
+     "nombre": "Chile es TUYO",
+     "url": "https://chileestuyo.cl/eventos/mercaderes-de-la-ruta-festival-medieval-de-oriente/"
     }
    ],
    "desde_imagen": true,
@@ -1618,7 +2523,218 @@
    "origen": "manual",
    "id": "d30fc6d897",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
+   "actualizado": "2026-11-07",
+   "horario": "11:00 a 20:00 hrs"
+  },
+  {
+   "titulo": "Poligonal: Temporalidades de mundos",
+   "categoria": "arte",
+   "fecha_inicio": "2026-11-07",
+   "fecha_fin": null,
+   "hora": "15:00",
+   "horario": "15:00 a 20:00 h",
+   "lugar": "Museo Chileno de Arte Precolombino",
+   "direccion": "Bandera 361",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Encuentro y muestra vinculada a temporalidades y mundos americanos.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://museo.precolombino.cl/exposiciones-cartelera/cartelera/",
+   "fuentes": [
+    {
+     "nombre": "Museo Chileno de Arte Precolombino",
+     "url": "https://museo.precolombino.cl/exposiciones-cartelera/cartelera/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "b9bde47bf1",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Brainbuster: Zomoz, Sanafabitch, Cabaret Psycofuzz, Yta",
+   "categoria": "metal",
+   "fecha_inicio": "2026-11-07",
+   "fecha_fin": null,
+   "hora": "17:00",
+   "horario": null,
+   "lugar": "Santiago Fight Club",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $5.000",
+   "descripcion": "Tocata pesada con Zomoz, Sanafabitch, Cabaret Psycofuzz e Yta en Santiago Fight Club.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://salirsantiago.com/panoramas/tocata",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/tocata"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "f745721607",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Magical Girls en Bar 44",
+   "categoria": "anime",
+   "fecha_inicio": "2026-11-07",
+   "fecha_fin": null,
+   "hora": "17:00",
+   "horario": null,
+   "lugar": "Bar 44",
+   "direccion": "Seminario 44, 7500847 Santiago, Providencia, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "✨ ¡La magia llega al Bar 44 ✨ El Ensamble Consonantia te invita a vivir un concierto instrumental de anime dedicado al género de Magical Girls. Nuestro repert",
+   "imagen": "https://cdn.keai.cl/events/20255-22d2d168fe1d8ea6afed18a77a33dfd1.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/magical-girls-en-bar-44-20255",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/magical-girls-en-bar-44-20255"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "966f35706a",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Total Thrash - Alcoholic Productions",
+   "categoria": "metal",
+   "fecha_inicio": "2026-11-07",
+   "fecha_fin": null,
+   "hora": "17:00",
+   "horario": null,
+   "lugar": "Hangar Subterráneo",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $5.000",
+   "descripcion": "Tocata de thrash metal organizada por Alcoholic Productions en Hangar Subterráneo.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://salirsantiago.com/panoramas/tocata",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/tocata"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "68b6c0d173",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Hardcore Solidario: Knockout, Distantex y más",
+   "categoria": "metal",
+   "fecha_inicio": "2026-11-07",
+   "fecha_fin": null,
+   "hora": "18:00",
+   "horario": null,
+   "lugar": "Club Cultural Bula",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $2.000",
+   "descripcion": "Tocata hardcore solidaria con Knockout, Distantex y más bandas en Club Cultural Bula.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://salirsantiago.com/panoramas/tocata",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/tocata"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "042f6d8550",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Yambo, Corriente Continua y más en Caja Acústica",
+   "categoria": "metal",
+   "fecha_inicio": "2026-11-07",
+   "fecha_fin": null,
+   "hora": "18:00",
+   "horario": null,
+   "lugar": "Caja Acústica",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Tocata de rock y metal con Yambo, Corriente Continua y más en Caja Acústica.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://salirsantiago.com/panoramas/tocata",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/tocata"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "fc9361b210",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "2da Feria de Ilustración, Cómic y Autoedición (Feria ICA 2026)",
+   "categoria": "ilustracion",
+   "fecha_inicio": "2026-11-07",
+   "fecha_fin": "2026-11-08",
+   "hora": null,
+   "horario": null,
+   "lugar": "Escuela de Diseño Gráfico UBB",
+   "direccion": "Av. Andrés Bello 720",
+   "comuna": "Chillán",
+   "ciudad": "Chillán",
+   "region": "Región de Ñuble",
+   "precio": "Gratis",
+   "descripcion": "Segunda versión de la Feria ICA, un espacio de encuentro con stands de ilustradores, editoriales independientes, charlas y talleres.",
+   "imagen": "https://farcodi.ubiobio.cl/wp-content/uploads/2026/11/unnamed.png",
+   "fotos": null,
+   "url": "https://feriaica.cl",
+   "fuentes": [
+    {
+     "nombre": "Facultad de Arquitectura Construcción y Diseño, FARCODI",
+     "url": "https://farcodi.ubiobio.cl/agenda/evento/23192/"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "f5670ec010",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
   },
   {
    "titulo": "Art Week Chile 2026",
@@ -1651,6 +2767,296 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "Crear:Destruir:Transformar - Rincón de escucha",
+   "categoria": "arte",
+   "fecha_inicio": "2026-11-07",
+   "fecha_fin": "2027-01-24",
+   "hora": null,
+   "horario": null,
+   "lugar": "MAC Parque Forestal",
+   "direccion": "Ismael Valdés Vergara 506",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Instalación y espacio de escucha en el Museo de Arte Contemporáneo.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://mac.uchile.cl/periodo/actuales/",
+   "fuentes": [
+    {
+     "nombre": "MAC (Museo de Arte Contemporáneo)",
+     "url": "https://mac.uchile.cl/periodo/actuales/"
+    },
+    {
+     "nombre": "mac.uchile.cl",
+     "url": "https://mac.uchile.cl/exposiciones/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "a2b349ee42",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "De Atajos y Permanencias - Antonia Moena Burgos",
+   "categoria": "arte",
+   "fecha_inicio": "2026-11-07",
+   "fecha_fin": "2026-12-06",
+   "hora": null,
+   "horario": null,
+   "lugar": "MAC Parque Forestal",
+   "direccion": "Ismael Valdés Vergara 506",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Exposición de arte contemporáneo de Antonia Moena Burgos en el MAC.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://mac.uchile.cl/periodo/actuales/",
+   "fuentes": [
+    {
+     "nombre": "MAC (Museo de Arte Contemporáneo)",
+     "url": "https://mac.uchile.cl/periodo/actuales/"
+    },
+    {
+     "nombre": "mac.uchile.cl",
+     "url": "https://mac.uchile.cl/exposiciones/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "a63a50166b",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Exposición El jardín de los silencios",
+   "categoria": "arte",
+   "fecha_inicio": "2026-11-07",
+   "fecha_fin": "2026-11-08",
+   "hora": null,
+   "horario": null,
+   "lugar": "Centro Comunitario Casa Rota – Jardín 1",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Muestra artística 'El jardín de los silencios' en el Centro Comunitario Casa Rota.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://salirsantiago.com/panorama/inauguracion-tercer-ciclo-exposiciones-2026-63874b36",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panorama/inauguracion-tercer-ciclo-exposiciones-2026-63874b36"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "6b80f85dd3",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Extremofilia - Isidora Correa",
+   "categoria": "arte",
+   "fecha_inicio": "2026-11-07",
+   "fecha_fin": "2027-01-24",
+   "hora": null,
+   "horario": null,
+   "lugar": "MAC Parque Forestal",
+   "direccion": "Ismael Valdés Vergara 506",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Muestra artística de Isidora Correa ubicada en el zócalo del MAC Parque Forestal.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://mac.uchile.cl/periodo/actuales/",
+   "fuentes": [
+    {
+     "nombre": "MAC (Museo de Arte Contemporáneo)",
+     "url": "https://mac.uchile.cl/periodo/actuales/"
+    },
+    {
+     "nombre": "mac.uchile.cl",
+     "url": "https://mac.uchile.cl/exposiciones/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "44eb40acf7",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Feria de Arte Artweek 2026",
+   "categoria": "arte",
+   "fecha_inicio": "2026-11-07",
+   "fecha_fin": "2026-11-08",
+   "hora": null,
+   "horario": "11:00 a 21:00 hrs",
+   "lugar": "Centro Cultural Estación Mapocho",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $3.000",
+   "descripcion": "Feria de arte con exposición y venta de obras de diversos artistas visuales.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://vamoh.cl/events/medieval-party-veladaa-palacio-astoreca-ffsf2/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/medieval-party-veladaa-palacio-astoreca-ffsf2/"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "f2299bd942",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Paisajes de Chile - Exposición Fotográfica",
+   "categoria": "arte",
+   "fecha_inicio": "2026-11-07",
+   "fecha_fin": "2026-11-08",
+   "hora": null,
+   "horario": null,
+   "lugar": "Casa Foto",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Exposición fotográfica que muestra hermosos paisajes de Chile en Casa Foto.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://salirsantiago.com/panorama/inauguracion-tercer-ciclo-exposiciones-2026-63874b36",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panorama/inauguracion-tercer-ciclo-exposiciones-2026-63874b36"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "5d6ef373bb",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Prensado botánico Andrea Contreras",
+   "categoria": "arte",
+   "fecha_inicio": "2026-11-07",
+   "fecha_fin": "2026-11-08",
+   "hora": null,
+   "horario": null,
+   "lugar": "Matildas Hotel Boutique",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Exposición de prensado botánico de la artista Andrea Contreras en Matildas Hotel Boutique.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://salirsantiago.com/panorama/inauguracion-tercer-ciclo-exposiciones-2026-63874b36",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panorama/inauguracion-tercer-ciclo-exposiciones-2026-63874b36"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "da7b2811ae",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Selfie - Alexis Carreño",
+   "categoria": "arte",
+   "fecha_inicio": "2026-11-07",
+   "fecha_fin": "2027-01-24",
+   "hora": null,
+   "horario": null,
+   "lugar": "MAC Parque Forestal",
+   "direccion": "Ismael Valdés Vergara 506",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Muestra de arte contemporáneo de Alexis Carreño en el MAC.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://mac.uchile.cl/periodo/actuales/",
+   "fuentes": [
+    {
+     "nombre": "MAC (Museo de Arte Contemporáneo)",
+     "url": "https://mac.uchile.cl/periodo/actuales/"
+    },
+    {
+     "nombre": "mac.uchile.cl",
+     "url": "https://mac.uchile.cl/exposiciones/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "a81ce004c8",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Modern Metal Sessions XIX",
+   "categoria": "metal",
+   "fecha_inicio": "2026-11-08",
+   "fecha_fin": null,
+   "hora": "16:00",
+   "horario": null,
+   "lugar": "Bar Oxido",
+   "direccion": null,
+   "comuna": "Recoleta",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "🤘 ¡VUELVEN LAS MODERN METAL SESSIONS! 🤘 Se viene la Modern Metal Sessions XIX con un cartel brutal que no te puedes perder. La cita es en el clásico Bar Óxido para vivir una tarde llena de puro metal. • 🗓️ Fecha: Domingo 08 de Noviembre • 🕓",
+   "imagen": "https://img.vamoh.cl/events/e2e8e817-5f70-4724-a374-85f8a6be3e25.webp?v=9f868291",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/modern-metal-sessions-xix-tabtb/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/modern-metal-sessions-xix-tabtb/"
+    },
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/tocata"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "edf97cb654",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
    "titulo": "Def Leppard - Live 2026 - with Special Guest Extreme",
    "categoria": "metal",
    "fecha_inicio": "2026-11-08",
@@ -1676,7 +3082,7 @@
    "origen": "ticketera",
    "id": "23e15c1070",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
+   "actualizado": "2026-11-07"
   },
   {
    "titulo": "Dragonfly en Chile",
@@ -1727,12 +3133,46 @@
     {
      "nombre": "Centro Cultural La Moneda",
      "url": "https://www.cclm.cl/exposiciones/futuras-exposiciones/"
+    },
+    {
+     "nombre": "Chile Cultura",
+     "url": "https://chilecultura.gob.cl/events/40869/"
     }
    ],
    "desde_imagen": false,
    "confianza": "alta",
    "origen": "claude",
    "id": "ae07a2796c",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Fluyen las miradas, florecen los derechos",
+   "categoria": "arte",
+   "fecha_inicio": "2026-11-11",
+   "fecha_fin": "2026-12-11",
+   "hora": null,
+   "horario": "10:00 - 17:00",
+   "lugar": "Museo de Sitio Castillo de Niebla",
+   "direccion": "Calle del Castillo s/n",
+   "comuna": "Valdivia",
+   "ciudad": "Valdivia",
+   "region": "Los Ríos",
+   "precio": "Gratis",
+   "descripcion": "Exposición fotográfica en la Sala 5 del Museo de Sitio Castillo de Niebla.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=2",
+   "fuentes": [
+    {
+     "nombre": "Servicio Nacional del Patrimonio (museos)",
+     "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=2"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "0248a93239",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
   },
@@ -1795,6 +3235,70 @@
    "actualizado": "2026-11-06"
   },
   {
+   "titulo": "Los Cosmos de Matta",
+   "categoria": "arte",
+   "fecha_inicio": "2026-11-11",
+   "fecha_fin": "2026-11-27",
+   "hora": null,
+   "horario": "10:00 - 17:30",
+   "lugar": "CEDOC MNBA - Museo Nacional de Bellas Artes",
+   "direccion": "José Miguel de la Barra 650",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Exposición de artes visuales en el CEDOC del Museo Nacional de Bellas Artes.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=2",
+   "fuentes": [
+    {
+     "nombre": "Servicio Nacional del Patrimonio (museos)",
+     "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=2"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "e381f47523",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Nu Metal Sessions Vol.5 Linkin Park Hybrid Theory en Casa Rockaxis",
+   "categoria": "metal",
+   "fecha_inicio": "2026-11-12",
+   "fecha_fin": null,
+   "hora": "19:30",
+   "horario": null,
+   "lugar": "Casa Estudio Rockaxis",
+   "direccion": "Av. Salvador 2549, 7750152 Ñuñoa, Región Metropolitana",
+   "comuna": "Ñuñoa",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $4.000",
+   "descripcion": "Nu Metal Sessions Vol. 5 — Linkin Park Listening Party HYBRID THEORY El próximo Jueves 12 de Noviembre celebraremos los 26 años del Hybrid Theory con una nueva edición de Nu Metal Sessions. La noche incluirá un Listening Party del disco, ad",
+   "imagen": "https://img.vamoh.cl/events/0208d750-a821-4377-bfc1-9fc583b51d84.webp?v=9b0f3d5f",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/nu-metal-sessions-vol-5-linkin-park-hybrid-theory-en-casa-rockaxis-5wl42/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/nu-metal-sessions-vol-5-linkin-park-hybrid-theory-en-casa-rockaxis-5wl42/"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/nu-metal-sessions-vol5-linkin-park-hybrid-theory-en-casa-rockaxis-20270"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "d04b8c1116",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
    "titulo": "Matta: Memorias de Guerra",
    "categoria": "arte",
    "fecha_inicio": "2026-11-12",
@@ -1821,6 +3325,36 @@
    "confianza": "alta",
    "origen": "claude",
    "id": "5579008677",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Festival Internacional del Cómic de Santiago llega a la Universidad Finis Terrae",
+   "categoria": "ilustracion",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": "2026-11-15",
+   "hora": "12:00",
+   "horario": null,
+   "lugar": "Facultad de Arquitectura, Diseño y Estudios Creativos",
+   "direccion": "Pedro de Valdivia 1224",
+   "comuna": "Providencia",
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Actividad liberada.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://finis.cl/agenda/facultad-de-arquitectura-y-diseno/festival-internacional-del-comic-de-santiago-2026/",
+   "fuentes": [
+    {
+     "nombre": "Universidad Finis Terrae",
+     "url": "https://finis.cl/agenda/facultad-de-arquitectura-y-diseno/festival-internacional-del-comic-de-santiago-2026/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "9324abff5f",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
   },
@@ -1859,6 +3393,30 @@
     {
      "nombre": "Ministerio de las Culturas, las Artes y el Patrimonio",
      "url": "https://www.cultura.gob.cl/agendacultural/ministerio-de-las-culturas-abre-inscripciones-para-noche-de-museos-2026/"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/noche-de-museos-en-la-region-del-maule-uf9vp/"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/noche-de-museos-4sl6m/"
+    },
+    {
+     "nombre": "Museo Chileno de Arte Precolombino",
+     "url": "https://museo.precolombino.cl/exposiciones-cartelera/cartelera/"
+    },
+    {
+     "nombre": "Suitip",
+     "url": "https://www.suitip.cl/panoramas/guia/gratis"
+    },
+    {
+     "nombre": "mnhn.gob.cl",
+     "url": "https://www.mnhn.gob.cl/cartelera"
+    },
+    {
+     "nombre": "mac.uchile.cl",
+     "url": "https://mac.uchile.cl/actividades/"
     }
    ],
    "desde_imagen": false,
@@ -1871,6 +3429,96 @@
    "fotos": [
     "https://www.mnhn.gob.cl/sites/www.mnhn.gob.cl/files/styles/4x3_mediano/public/2026-10/Nochemuseos.png?h=98f88c31&itok=GUofKna_"
    ]
+  },
+  {
+   "titulo": "Recorrido \"Santiago Museos a Cielo Abierto\"",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": "17:00",
+   "horario": null,
+   "lugar": "Oficina de Turismo Plaza de Armas",
+   "direccion": "Plaza de Armas S/N",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Metropolitana de Santiago",
+   "precio": "Gratuito",
+   "descripcion": "Recorrido guiado caminando por el entorno de Plaza de Armas en torno a espacios culturales e históricos.",
+   "imagen": "https://nochedemuseos.cl/_ipx/f_webp&q_75&fit_cover&s_860x532/https://nochedemuseos-cultura-gob-cl.s3.amazonaws.com/imagenes/06c99f5f-7fb3-491c-a63a-81d1e1b84886.jpg",
+   "fotos": null,
+   "url": "https://docs.google.com/forms/d/e/1FAIpQLScKz8CiWuf-C-6QRF5MNNAQits9kEOEqAKXuLCxtDu0PZ_Hzg/viewform",
+   "fuentes": [
+    {
+     "nombre": "nochedemuseos.cl",
+     "url": "https://nochedemuseos.cl/actividades/164-recorrido-santiago-museos-a-cielo-abierto"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "57bf3a4361",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Anime Symphony en Teatro Parque Cousiño",
+   "categoria": "anime",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Teatro Parque Cousiño",
+   "direccion": "San Ignacio de Loyola 1249",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $22.990",
+   "descripcion": "Concierto sinfónico con las mejores bandas sonoras de tus animes favoritos interpretadas por el Ensamble FandomQuest. ¡Ven con tu cosplay!",
+   "imagen": "https://images.portaldisc.com/l/eventos/360/21858.jpg?t=1791452294",
+   "fotos": null,
+   "url": "https://portaldisc.com/evento/animesymphonychile",
+   "fuentes": [
+    {
+     "nombre": "portaldisc.com",
+     "url": "https://portaldisc.com/evento/animesymphonychile"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "4d5f2940d2",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "3° Planeta Cómic Fest",
+   "categoria": "anime",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": null,
+   "hora": "11:00",
+   "horario": null,
+   "lugar": "Jardín y auditorio Fundación Av. Nueva Providencia 1995",
+   "direccion": null,
+   "comuna": "Providencia",
+   "ciudad": null,
+   "region": null,
+   "precio": "Gratis",
+   "descripcion": "Por tercer año consecutivo, Grupo Planeta y la Fundación Cultural de Providencia realizarán Planeta Cómic Fest, encuentro dedicado al cómic, el manga, la ilustración y la novela gráfica que reunirá a destacados autores en una jornada gratui",
+   "imagen": "https://img.vamoh.cl/referenciales/exposicion-ninos-manana-b51496cd.webp",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/3-planeta-comic-fest-3g3hy/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/3-planeta-comic-fest-3g3hy/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "4c39e5bf70",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
   },
   {
    "titulo": "Medieval Party & Veladaa: Elfos, Hadas y Magia",
@@ -1891,6 +3539,10 @@
     {
      "nombre": "Passline",
      "url": "https://www.passline.com/eventos/noviembre-medieval-party-veladaa-palacio-astoreca"
+    },
+    {
+     "nombre": "Resonar",
+     "url": "https://resonarapp.cl/e/6f38ae04-b09d-45f9-ab16-742970a475d3"
     }
    ],
    "desde_imagen": false,
@@ -1898,7 +3550,97 @@
    "origen": "manual",
    "id": "c1981fd414",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Noviembre - Medieval Party & Veladaa - Palacio Astoreca",
+   "categoria": "medieval",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": null,
+   "hora": "12:00",
+   "horario": null,
+   "lugar": null,
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Descubre NOVIEMBRE - MEDIEVAL PARTY & VELADAA - PALACIO ASTORECA en Keai. Evento en Santiago el 14/11/2026.",
+   "imagen": "https://cdn.keai.cl/events/18742-0757e922cc17cab549787ba186cb6959.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/noviembre-medieval-party-veladaa-palacio-astoreca-18742",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/noviembre-medieval-party-veladaa-palacio-astoreca-18742"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "c91ffc691a",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Vengeance of Hell I",
+   "categoria": "metal",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": null,
+   "hora": "17:00",
+   "horario": null,
+   "lugar": "Sala RBX (Rock Bar Xperience)",
+   "direccion": null,
+   "comuna": "Ñuñoa",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $8.000",
+   "descripcion": "Festival de metal extremo y thrash en Sala RBX.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://salirsantiago.com/panoramas/tocata",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/tocata"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "72ed90cd4d",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Gojira Fest",
+   "categoria": "yokai",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": "2026-11-15",
+   "hora": null,
+   "horario": null,
+   "lugar": null,
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Evento temático dedicado a la cultura japonesa tradicional y monstruos gigantes (Kaiju).",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.yokai.cl/eventos-yokai-social-club",
+   "fuentes": [
+    {
+     "nombre": "Yōkai - Poleras de anime, manga y jrock en serigrafía ",
+     "url": "https://www.yokai.cl/eventos-yokai-social-club"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "ia",
+   "id": "fb78b6b9f5",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
   },
   {
    "titulo": "Legendarium — El Legado de Tolkien",
@@ -1926,7 +3668,7 @@
    "origen": "ia",
    "id": "356fc2e953",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
+   "actualizado": "2026-11-07"
   },
   {
    "titulo": "Marty Friedman en Santiago",
@@ -2038,7 +3780,7 @@
    "origen": "ticketera",
    "id": "cb4dec6816",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
+   "actualizado": "2026-11-07"
   },
   {
    "titulo": "Tolomiro Todomiro: escultura de Matta en La Moneda",
@@ -2071,6 +3813,36 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "Pentakle en Chile",
+   "categoria": "metal",
+   "fecha_inicio": "2026-11-20",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Bar Óxido",
+   "direccion": "Purísima 282",
+   "comuna": "Recoleta",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $5.000",
+   "descripcion": "Concierto de la banda internacional Pentakle en Bar Óxido.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://salirsantiago.com/panoramas/tocata",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/tocata"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "7d4495a696",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
    "titulo": "Saratoga en Chile",
    "categoria": "metal",
    "fecha_inicio": "2026-11-21",
@@ -2099,6 +3871,36 @@
    "actualizado": "2026-11-06"
   },
   {
+   "titulo": "Concierto Internacional: Música medieval portuguesa",
+   "categoria": "medieval",
+   "fecha_inicio": "2026-11-25",
+   "fecha_fin": null,
+   "hora": "19:30",
+   "horario": null,
+   "lugar": "Corporación Cultural de Vitacura",
+   "direccion": null,
+   "comuna": "Vitacura",
+   "ciudad": null,
+   "region": null,
+   "precio": "Gratis",
+   "descripcion": "Miércoles 25 de noviembre 2026, 19:30 horas Sala Vitacura, Av. Bicentenario 3800 Presencial / Gratis Av. Bicentenario 3800",
+   "imagen": "https://img.vamoh.cl/events/e880303c-2ab6-4476-adb1-3d3a167c9c4e.webp?v=42984130",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/concierto-internacional-musica-medieval-portuguesa-0hy4u/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/concierto-internacional-musica-medieval-portuguesa-0hy4u/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "be2a0b9bda",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
    "titulo": "Alexisonfire - Performs Crisis In Full",
    "categoria": "metal",
    "fecha_inicio": "2026-11-25",
@@ -2124,7 +3926,103 @@
    "origen": "ticketera",
    "id": "f47a168741",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Evangelion en Bar 44",
+   "categoria": "anime",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": "2026-11-28",
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Bar 44",
+   "direccion": "Seminario 44, 7500847 Santiago, Providencia, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "✨Consonantia les trae una segunda fecha de su concierto instrumental dedicado a Evangelion, un anime que marcó la infancia de millones de personas",
+   "imagen": "https://cdn.keai.cl/events/20384-a9d43802d360c095031e527cc22cace0.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/evangelion-en-bar-44-20384",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/evangelion-en-bar-44-20384"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "c1ccfb91de",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Haru Matsuri · Fiesta de Primavera en la Sociedad Japonesa de Beneficencia",
+   "categoria": "yokai",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": "12:00",
+   "horario": null,
+   "lugar": "Sociedad Japonesa de Beneficiencia",
+   "direccion": null,
+   "comuna": "Las Condes",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $3.000",
+   "descripcion": "🌸 ¡Celebremos juntos la primavera japonesa! Shinraikai, grupo de jóvenes Nikkei, te invita al Haru Matsuri: una jornada para disfrutar de la cultura japonesa, compartir y apoyar a nuestros emprendedores. Encontrarás curry rice, bebestibles,",
+   "imagen": "https://img.vamoh.cl/events/0526fead-7723-464a-9d82-5a9f417e5ccf.webp?v=450e0a28",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/haru-matsuri-fiesta-de-primavera-en-la-sociedad-japonesa-de-beneficencia-z230e/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/haru-matsuri-fiesta-de-primavera-en-la-sociedad-japonesa-de-beneficencia-z230e/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "d5f62b4132",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "ChileTerror Fest II - 2026",
+   "categoria": "fantasia",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": "2026-11-29",
+   "hora": "18:00",
+   "lugar": "Teatro Caupolicán - Santiago Centro",
+   "direccion": "San Diego 850",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $103.500",
+   "descripcion": "ChileTerror Fest II en el Teatro Caupolicán. Festival dedicado al cine fantástico y de terror.",
+   "imagen": "https://static.ptocdn.net/images/eventos/chj011v2_calugalistado.jpg",
+   "url": "https://www.puntoticket.com/evento/chileterror-2-teatro-caupolican-nov-2026",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/evento/chileterror-2-teatro-caupolican-nov-2026"
+    },
+    {
+     "nombre": "songkick.com",
+     "url": "https://www.songkick.com/es/metro-areas/27525-chile-santiago/genre/metal"
+    },
+    {
+     "nombre": "fromhell.cl",
+     "url": "https://fromhell.cl/chile-terror-fest-ii-el-mapa-de-las-bandas-que-vendran-a-desatar-el-caos-en-santiago/"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "c003178ec9",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-07"
   },
   {
    "titulo": "Carcass",
@@ -2152,43 +4050,7 @@
    "origen": "ia",
    "id": "3beeed3811",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
-  },
-  {
-   "titulo": "ChileTerror Fest II - 2026",
-   "categoria": "fantasia",
-   "fecha_inicio": "2026-11-28",
-   "fecha_fin": "2026-11-29",
-   "hora": null,
-   "lugar": "Teatro Caupolicán - Santiago Centro",
-   "direccion": "San Diego 850",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "ChileTerror Fest II en el Teatro Caupolicán. Festival dedicado al cine fantástico y de terror.",
-   "imagen": "https://static.ptocdn.net/images/eventos/chj011v2_calugalistado.jpg",
-   "url": "https://www.puntoticket.com/evento/chileterror-2-teatro-caupolican-nov-2026",
-   "fuentes": [
-    {
-     "nombre": "PuntoTicket",
-     "url": "https://www.puntoticket.com/evento/chileterror-2-teatro-caupolican-nov-2026"
-    },
-    {
-     "nombre": "songkick.com",
-     "url": "https://www.songkick.com/es/metro-areas/27525-chile-santiago/genre/metal"
-    },
-    {
-     "nombre": "fromhell.cl",
-     "url": "https://fromhell.cl/chile-terror-fest-ii-el-mapa-de-las-bandas-que-vendran-a-desatar-el-caos-en-santiago/"
-    }
-   ],
-   "desde_imagen": true,
-   "confianza": "alta",
-   "origen": "ticketera",
-   "id": "c003178ec9",
-   "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
+   "actualizado": "2026-11-07"
   },
   {
    "titulo": "Maiden United 1980 feat. Dennis Stratton",
@@ -2217,6 +4079,36 @@
    "id": "6a9c1df7fe",
    "agregado": "2026-11-06",
    "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Quemando en Cajacústica: Movimiento No Humano",
+   "categoria": "metal",
+   "fecha_inicio": "2026-11-29",
+   "fecha_fin": null,
+   "hora": "17:00",
+   "horario": null,
+   "lugar": "Cajacústica",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Tocata de rock y metal con Movimiento No Humano en Cajacústica.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://salirsantiago.com/panoramas/tocata",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/tocata"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "c4ec055829",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
   },
   {
    "titulo": "A Perfect Circle + Puscifer",
@@ -2248,7 +4140,7 @@
    "origen": "ticketera",
    "id": "41da085532",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
+   "actualizado": "2026-11-07"
   },
   {
    "titulo": "Dying Fetus",
@@ -2280,7 +4172,7 @@
    "origen": "ia",
    "id": "5197cbd0b7",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
+   "actualizado": "2026-11-07"
   },
   {
    "titulo": "Pepo: antes y después de Condorito",
@@ -2305,6 +4197,14 @@
     {
      "nombre": "Centro Cultural Gabriela Mistral (GAM)",
      "url": "https://gam.cl/es/que-hacer-en-gam/artesvisuales/"
+    },
+    {
+     "nombre": "Chile Cultura",
+     "url": "https://chilecultura.gob.cl/events/40697/"
+    },
+    {
+     "nombre": "GAM (artes visuales)",
+     "url": "https://gam.cl/es/que-hacer-en-gam/artesvisuales/mundo-pepo/"
     }
    ],
    "desde_imagen": false,
@@ -2312,6 +4212,34 @@
    "origen": "claude",
    "id": "3636e60042",
    "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "BABYMETAL",
+   "categoria": "metal",
+   "fecha_inicio": "2026-12-03",
+   "fecha_fin": null,
+   "hora": "21:00",
+   "lugar": "Santander Arena - Santiago Centro",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "$35.000 a $130.000 (más cargos)",
+   "descripcion": "Concierto de BABYMETAL en Santander Arena. La exitosa fusión de J-pop y heavy metal.",
+   "imagen": "https://static.ptocdn.net/images/eventos/chj012_calugalistado.jpg",
+   "url": "https://www.puntoticket.com/baby-metal-2026",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/baby-metal-2026"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "f840300077",
+   "agregado": "2026-11-06",
    "actualizado": "2026-11-07"
   },
   {
@@ -2340,35 +4268,7 @@
    "origen": "ticketera",
    "id": "f7065bcba6",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
-  },
-  {
-   "titulo": "BABYMETAL",
-   "categoria": "metal",
-   "fecha_inicio": "2026-12-03",
-   "fecha_fin": null,
-   "hora": null,
-   "lugar": "Santander Arena - Santiago Centro",
-   "direccion": null,
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
-   "precio": null,
-   "descripcion": "Concierto de BABYMETAL en Santander Arena. La exitosa fusión de J-pop y heavy metal.",
-   "imagen": "https://static.ptocdn.net/images/eventos/chj012_calugalistado.jpg",
-   "url": "https://www.puntoticket.com/baby-metal-2026",
-   "fuentes": [
-    {
-     "nombre": "PuntoTicket",
-     "url": "https://www.puntoticket.com/baby-metal-2026"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ticketera",
-   "id": "f840300077",
-   "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
+   "actualizado": "2026-11-07"
   },
   {
    "titulo": "Versailles - 2026 en Santiago Chile",
@@ -2396,7 +4296,67 @@
    "origen": "ticketera",
    "id": "8aae86e35e",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Metal Darkness XXII",
+   "categoria": "metal",
+   "fecha_inicio": "2026-12-04",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Bar Oxido",
+   "direccion": null,
+   "comuna": "Recoleta",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $8.000",
+   "descripcion": "Nueva edición del festival Metal Darkness en Bar Óxido.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://salirsantiago.com/panoramas/tocata",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/tocata"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "49bae6150e",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Ladies Of Metal 3",
+   "categoria": "metal",
+   "fecha_inicio": "2026-12-05",
+   "fecha_fin": "2026-12-06",
+   "hora": "20:30",
+   "horario": null,
+   "lugar": "Bar Oxido",
+   "direccion": null,
+   "comuna": "Recoleta",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $6.000",
+   "descripcion": "¡Vuelve la noche más potente del metal sinfónico y gótico! 🤘🔥 Ladies of Metal III llega con todo para encender el escenario de Bar Óxido. Prepárate para una jornada increíble con dos shows extendidos que repasan lo mejor de dos bandas icóni",
+   "imagen": "https://img.vamoh.cl/events/464d069f-f456-434f-94fb-57aea7b5f7b5.webp?v=fe32fe4f",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/ladies-of-metal-3-gf0d9/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/ladies-of-metal-3-gf0d9/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "032f3df471",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
   },
   {
    "titulo": "Doyle - Rockout-2026",
@@ -2410,7 +4370,7 @@
    "ciudad": null,
    "region": null,
    "precio": null,
-   "descripcion": null,
+   "descripcion": "El legendario guitarrista de Misfits se presenta en solitario con su proyecto de horror punk y metal.",
    "imagen": "https://static.ptocdn.net/images/eventos/cco116_calugalistado.jpg",
    "url": "https://www.puntoticket.com/evento/doyle-chile26",
    "fuentes": [
@@ -2420,11 +4380,41 @@
     }
    ],
    "desde_imagen": false,
-   "confianza": "media",
+   "confianza": "alta",
    "origen": "ticketera",
    "id": "8e804e1d7b",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Festival Perros con Tiña",
+   "categoria": "metal",
+   "fecha_inicio": "2026-12-07",
+   "fecha_fin": null,
+   "hora": "19:30",
+   "horario": null,
+   "lugar": "Teatro Coliseo",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $5.000",
+   "descripcion": "Festival de música rock y underground en el Teatro Coliseo.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://salirsantiago.com/panoramas/tocata",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/tocata"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "c22a962c51",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
   },
   {
    "titulo": "Candelabro - en teatro Caupolicán 2026",
@@ -2480,7 +4470,7 @@
    "origen": "ticketera",
    "id": "30f5e90162",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
+   "actualizado": "2026-11-07"
   },
   {
    "titulo": "Slaughter to Prevail",
@@ -2508,7 +4498,7 @@
    "origen": "ticketera",
    "id": "ebc364f471",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
+   "actualizado": "2026-11-07"
   },
   {
    "titulo": "FestiGame 2026: Entra al Juego",
@@ -2539,6 +4529,96 @@
    "actualizado": "2026-11-06"
   },
   {
+   "titulo": "Slayer — Santiago [Chile]",
+   "categoria": "metal",
+   "fecha_inicio": "2026-12-10",
+   "fecha_fin": null,
+   "hora": "14:00",
+   "horario": null,
+   "lugar": "Estadio Santa Laura Usek",
+   "direccion": "Sta. Laura 1291",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "wp:paragraph La gira latinoamericana con la que Slayer conmemorará el 40 aniversario de Reign In Blood sigue tomando forma y ya tiene una parada confirmada para Chile. La legendaria banda de thrash metal se presentará el próximo 10 de dicie",
+   "imagen": "https://summainferno.com/wp-content/uploads/2026/05/image-144.png",
+   "fotos": null,
+   "url": "https://summainferno.com/concierto/slayer-2026-santiago-chile/",
+   "fuentes": [
+    {
+     "nombre": "Summa Inferno | Noticias de Metal, Rock, conciertos y Cultura Alternativa",
+     "url": "https://summainferno.com/concierto/slayer-2026-santiago-chile/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "c5b1d7de21",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Sleeping With Sirens - AN ENDING IN ITSELF TOUR",
+   "categoria": "metal",
+   "fecha_inicio": "2026-12-11",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Coliseo - Santiago Centro",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Reconocida banda de post-hardcore y rock alternativo estadounidense en concierto.",
+   "imagen": "https://static.ptocdn.net/images/eventos/cco118_calugalistado.jpg",
+   "fotos": null,
+   "url": "https://www.puntoticket.com/sleeping-with-sirens-2026",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/sleeping-with-sirens-2026"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "429f8ea87c",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Evento Navideño: Una navidad en el club",
+   "categoria": "yokai",
+   "fecha_inicio": "2026-12-12",
+   "fecha_fin": "2026-12-13",
+   "hora": null,
+   "horario": null,
+   "lugar": null,
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Celebración navideña con temática de cultura japonesa y yokai.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.yokai.cl/eventos-yokai-social-club",
+   "fuentes": [
+    {
+     "nombre": "Yōkai - Poleras de anime, manga y jrock en serigrafía ",
+     "url": "https://www.yokai.cl/eventos-yokai-social-club"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "ia",
+   "id": "8f02eb5cce",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
    "titulo": "ELLENDE + THYRFING 2026 Chile",
    "categoria": "metal",
    "fecha_inicio": "2026-12-17",
@@ -2564,7 +4644,67 @@
    "origen": "ticketera",
    "id": "2dafda391c",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Conce Nü Metal Vol. 3.0",
+   "categoria": "metal",
+   "fecha_inicio": "2026-12-19",
+   "fecha_fin": null,
+   "hora": "18:30",
+   "horario": null,
+   "lugar": "Templo Crápula",
+   "direccion": null,
+   "comuna": "Concepción",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $8.000",
+   "descripcion": "VUELVE CONCE NÜ METAL VOL. 3.0. EN TEMPLO CRÁPULA, CONCEPCIÓN Si pensaban que el Vol. 2.0 había sido el techo, estaban muy equivocados. ⛓️🔥 Para cerrar el año como se debe, el volumen y la nostalgia vuelven a apoderarse de Concepción en el",
+   "imagen": "https://img.vamoh.cl/events/29e57220-dc32-417b-a4ba-f4efa03763de.webp?v=efcce384",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/conce-nu-metal-vol-3-0-vtqmt/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/conce-nu-metal-vol-3-0-vtqmt/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "a2af6cc955",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Surdeathcore OG Night",
+   "categoria": "metal",
+   "fecha_inicio": "2026-12-20",
+   "fecha_fin": null,
+   "hora": "16:00",
+   "horario": null,
+   "lugar": "Bar Óxido",
+   "direccion": null,
+   "comuna": "Recoleta",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $6.000",
+   "descripcion": "Noche de deathcore y metal extremo en Bar Óxido.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://salirsantiago.com/panoramas/tocata",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/tocata"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "6f9728b22f",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
   },
   {
    "titulo": "El Valle de los Moomin",
@@ -2590,12 +4730,106 @@
     {
      "nombre": "Centro Cultural Gabriela Mistral (GAM)",
      "url": "https://gam.cl/es/que-hacer-en-gam/artesvisuales/"
+    },
+    {
+     "nombre": "GAM (artes visuales)",
+     "url": "https://gam.cl/es/que-hacer-en-gam/artesvisuales/exposicion-el-valle-de-los-moomin/"
     }
    ],
    "desde_imagen": false,
    "confianza": "alta",
    "origen": "claude",
    "id": "0997d6f0b1",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Metal Forces Total Thrash",
+   "categoria": "metal",
+   "fecha_inicio": "2026-12-26",
+   "fecha_fin": null,
+   "hora": "14:00",
+   "horario": null,
+   "lugar": "Arena Recoleta",
+   "direccion": null,
+   "comuna": "Recoleta",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $5.000",
+   "descripcion": "Festival de thrash metal con múltiples bandas en Arena Recoleta.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://salirsantiago.com/panoramas/tocata",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/tocata"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "ea236dcf5d",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Chinchorro Macabre Fest - Simposio Doom Metal",
+   "categoria": "metal",
+   "fecha_inicio": "2026-12-26",
+   "fecha_fin": "2026-12-27",
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Centro de Eventos Pucarani",
+   "direccion": null,
+   "comuna": "Arica",
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Evento solo para Mayores de 17 Años. CHINCHORRO MACABRE FEST - SIMPOSIO DOOM METAL; es una plataforma cultural territorial, disruptiva del pensamiento liminal, el patrimonio bio arqueológico y las artes extremas. Más que un evento estaciona",
+   "imagen": "https://img.vamoh.cl/events/5c83a5ef-1659-4fd5-addb-036613832d03.webp?v=04cb6f1b",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/chinchorro-macabre-fest-simposio-doom-metal-ick6d/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/chinchorro-macabre-fest-simposio-doom-metal-ick6d/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "625f47d0d4",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Insecurity + Evil Madness",
+   "categoria": "metal",
+   "fecha_inicio": "2027-01-02",
+   "fecha_fin": null,
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Mi Bar Música",
+   "direccion": null,
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $7.000",
+   "descripcion": "Tocata de metal underground con Insecurity y Evil Madness en Mi Bar.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://salirsantiago.com/panoramas/tocata",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/tocata"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "84b10367f6",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
   },
@@ -2611,7 +4845,7 @@
    "ciudad": null,
    "region": null,
    "precio": null,
-   "descripcion": null,
+   "descripcion": "Tributo sinfónico recreando el legendario concierto S&M de Metallica en Valparaíso.",
    "imagen": "https://static.ptocdn.net/images/eventos/iep002_calugalistado.jpg",
    "url": "https://www.puntoticket.com/evento/metallica-sinfonico-teatro-municipal-valparaiso-ene-2026",
    "fuentes": [
@@ -2621,11 +4855,11 @@
     }
    ],
    "desde_imagen": false,
-   "confianza": "media",
+   "confianza": "alta",
    "origen": "ticketera",
    "id": "db439ab52c",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
+   "actualizado": "2026-11-07"
   },
   {
    "titulo": "31 Minutos: Don Quijote",
@@ -2681,7 +4915,37 @@
    "origen": "ticketera",
    "id": "68516374f1",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "D'espairsRay",
+   "categoria": "anime",
+   "fecha_inicio": "2027-02-04",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Coliseo - Santiago Centro",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Histórica banda japonesa de visual kei y rock/metal gótico llega a Chile.",
+   "imagen": "https://static.ptocdn.net/images/eventos/ncs014_calugalistado.jpg",
+   "fotos": null,
+   "url": "https://www.puntoticket.com/2027-despairs-ray-en-santiago-de-chile",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/2027-despairs-ray-en-santiago-de-chile"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "4fb5aa7103",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
   },
   {
    "titulo": "Epica - Rhapsody - The Final Shows",
@@ -2702,14 +4966,48 @@
     {
      "nombre": "PuntoTicket",
      "url": "https://www.puntoticket.com/epica-rhapsody"
+    },
+    {
+     "nombre": "Ruta Rock",
+     "url": "https://www.rutarock.com/seccion/cartelera/cartelera-chile/"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "aefaf9f415",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Undertale: The Determination Symphony",
+   "categoria": "fantasia",
+   "fecha_inicio": "2027-03-06",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Coliseo - Santiago Centro",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Concierto sinfónico con la música del icónico videojuego RPG de culto Undertale.",
+   "imagen": "https://static.ptocdn.net/images/eventos/cco115_calugalistado.jpg",
+   "fotos": null,
+   "url": "https://www.puntoticket.com/undertale-symphony",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/undertale-symphony"
     }
    ],
    "desde_imagen": false,
    "confianza": "alta",
    "origen": "ticketera",
-   "id": "aefaf9f415",
-   "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
+   "id": "f86137aa96",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
   },
   {
    "titulo": "Motionless In White - The Come To Latin America Tour",
@@ -2737,7 +5035,7 @@
    "origen": "ticketera",
    "id": "811308954e",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
+   "actualizado": "2026-11-07"
   },
   {
    "titulo": "Mago de Oz",
@@ -2765,7 +5063,37 @@
    "origen": "ticketera",
    "id": "3e8348281a",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Vomitory - In Death Throes Tour",
+   "categoria": "metal",
+   "fecha_inicio": "2027-03-26",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Rock Bar Xperience / RBX",
+   "direccion": null,
+   "comuna": "Ñuñoa",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto internacional de death metal con Vomitory en RBX.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://salirsantiago.com/panoramas/tocata",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/tocata"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "e9015dff95",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
   },
   {
    "titulo": "Slash - Featuring Myles Kennedy and The Conspirators",
@@ -2793,20 +5121,20 @@
    "origen": "ticketera",
    "id": "57d089bde2",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
+   "actualizado": "2026-11-07"
   },
   {
    "titulo": "Attack On Titan - The Last Concert",
    "categoria": "anime",
    "fecha_inicio": "2027-04-03",
    "fecha_fin": "2027-04-04",
-   "hora": null,
+   "hora": "19:00",
    "lugar": "Teatro Caupolicán - Santiago Centro",
-   "direccion": null,
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
-   "precio": null,
+   "direccion": "San Diego 850",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "$30.000 a $89.000",
    "descripcion": "Concierto sinfónico oficial de la música de la popular serie anime Attack On Titan.",
    "imagen": "https://static.ptocdn.net/images/eventos/cau004_calugalistado.jpg",
    "url": "https://www.puntoticket.com/aot",
@@ -2816,12 +5144,12 @@
      "url": "https://www.puntoticket.com/aot"
     }
    ],
-   "desde_imagen": false,
+   "desde_imagen": true,
    "confianza": "alta",
    "origen": "ticketera",
    "id": "c9eb8aa421",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
+   "actualizado": "2026-11-07"
   },
   {
    "titulo": "Saurom - XXX Aniversario En Chile",
@@ -2849,7 +5177,37 @@
    "origen": "ticketera",
    "id": "db33561036",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Destripando La Historia - HEROES DEL INFRAMUNDO",
+   "categoria": "fantasia",
+   "fecha_inicio": "2027-04-18",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Caupolicán - Santiago Centro",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Show musical y visual dedicado a la mitología, leyendas y fantasía a través del popular proyecto de animación y música.",
+   "imagen": "https://static.ptocdn.net/images/eventos/chj014_calugalistado.jpg",
+   "fotos": null,
+   "url": "https://www.puntoticket.com/evento/destripando-la-historia-teatro-caupolican-abr-2027",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/evento/destripando-la-historia-teatro-caupolican-abr-2027"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "aeac9930e3",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
   },
   {
    "titulo": "Floor Jansen",
@@ -2877,7 +5235,7 @@
    "origen": "ticketera",
    "id": "d0f526c511",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
+   "actualizado": "2026-11-07"
   },
   {
    "titulo": "Emperor",
@@ -2905,7 +5263,7 @@
    "origen": "ticketera",
    "id": "7df15a74fa",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
+   "actualizado": "2026-11-07"
   },
   {
    "titulo": "KK’s Priest - Latin American Tour 2027",
@@ -2933,7 +5291,67 @@
    "origen": "ticketera",
    "id": "851cb68b37",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Centimillimental - Latin America Tour 2027 in Santiago de Chile",
+   "categoria": "anime",
+   "fecha_inicio": "2027-05-14",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Coliseo - Santiago Centro",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Concierto del proyecto solista de J-rock conocido por sus composiciones para populares animes como Given.",
+   "imagen": "https://static.ptocdn.net/images/eventos/ncs015_calugalistado.jpg",
+   "fotos": null,
+   "url": "https://www.puntoticket.com/centimillimental-latin-america-tour-2027",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/centimillimental-latin-america-tour-2027"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "0651ca14b4",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Gackt Yellow Fried Chickenz - Back To Latam Tour 2027",
+   "categoria": "anime",
+   "fecha_inicio": "2027-09-04",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Coliseo - Santiago Centro",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Regreso a Chile de la banda de J-rock y visual kei liderada por el icónico cantante japonés Gackt.",
+   "imagen": "https://static.ptocdn.net/images/eventos/cco124_calugalistado.jpg",
+   "fotos": null,
+   "url": "https://www.puntoticket.com/evento/gackt-yfcz-2027",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/evento/gackt-yfcz-2027"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "aa4a4a261b",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
   }
  ]
 }
