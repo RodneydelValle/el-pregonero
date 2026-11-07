@@ -1,0 +1,44 @@
+name: Coordenadas (OpenStreetMap)
+
+# A mano (botón «Run workflow»): completa lat y lng de los restaurantes y tiendas del Mapa del Aventurero que no las
+# tienen, con scripts/coordenadas.py. Corre aquí porque la red de la oficina no llega a la API de OpenStreetMap.
+on:
+  workflow_dispatch:
+    inputs:
+      todos:
+        description: "Recalcular también los que ya tienen coordenadas"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pregonero          # la misma fila que la búsqueda: nunca guardan a la vez
+  cancel-in-progress: false
+
+jobs:
+  coordenadas:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Buscar coordenadas
+        env:
+          TODOS: ${{ inputs.todos && '--todos' || '' }}
+        run: python scripts/coordenadas.py $TODOS
+      - name: Guardar
+        run: |
+          git config user.name "el-pregonero[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "Sin coordenadas nuevas"
+            exit 0
+          fi
+          git commit -m "Coordenadas desde OpenStreetMap"
+          git pull --rebase
+          git push

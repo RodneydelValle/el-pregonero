@@ -1,7 +1,7 @@
 {
  "version": 1,
  "revisado": "2026-11-06",
- "_nota": "Lista revisada a mano: cada lugar lo verificó un agente independiente (abierto, dirección y temática). 'dudas' se muestra en la web como aviso; 'mapa' es la búsqueda para Google Maps cuando la dirección es confusa.",
+ "_nota": "Lista revisada a mano: cada lugar lo verificó un agente independiente (abierto, dirección y temática). 'dudas' se muestra en la web como aviso; 'mapa' es la búsqueda para Google Maps cuando la dirección es confusa. Para el Mapa del Aventurero: lat y lng (de OpenStreetMap), y opcionalmente categorias_mapa (tcg, mesa, rol, miniaturas, anime, videojuegos: dónde aparece además de «Restaurantes temáticos»), torneos y espacio_juego.",
  "temas": [
   {
    "id": "japones",
@@ -83,6 +83,9 @@
      "credito": "Foto: Ciro Noor (cironoor.cl)",
      "descripcion": "Mesón de entrada con letrero de Magikoffee y figura de cartón de Komi-san a tamaño real"
     }
+   ],
+   "categorias_mapa": [
+    "anime"
    ]
   },
   {
@@ -218,7 +221,12 @@
      "credito": "Foto: En Cancha",
      "descripcion": "Frappé de plátano con sticker de Sailor Moon, una de las bebidas temáticas"
     }
-   ]
+   ],
+   "categorias_mapa": [
+    "anime",
+    "videojuegos"
+   ],
+   "espacio_juego": true
   },
   {
    "id": "oishi-cafe",
@@ -380,6 +388,9 @@
     "https://www.tiktok.com/discover/maid-cafe-en-chile",
     "https://linktr.ee/doragon.cl",
     "https://doragon.cl"
+   ],
+   "categorias_mapa": [
+    "anime"
    ]
   },
   {
@@ -886,7 +897,11 @@
      "credito": "Foto: 800.cl",
      "descripcion": "Terraza con murales de Pac-Man y sus fantasmas, taca-taca, máquinas arcade y mesas altas"
     }
-   ]
+   ],
+   "categorias_mapa": [
+    "videojuegos"
+   ],
+   "espacio_juego": true
   },
   {
    "id": "cafe-2d6",
@@ -941,7 +956,12 @@
      "credito": "Foto: sitio oficial de Café 2d6",
      "descripcion": "Vaso de café con el logo de Dos de Seis frente a la decoración del local"
     }
-   ]
+   ],
+   "categorias_mapa": [
+    "mesa"
+   ],
+   "espacio_juego": true,
+   "venta_online": true
   },
   {
    "id": "cinema",
@@ -988,7 +1008,8 @@
      "credito": "Foto: Meganoticias",
      "descripcion": "Collage: reservado del Expreso de Hogwarts, terraza techada con mesas y la muñeca Annabelle"
     }
-   ]
+   ],
+   "buscar_osm": "Patio Bellavista"
   },
   {
    "id": "el-arcanista",
@@ -1036,7 +1057,14 @@
      "credito": "Foto: Comino",
      "descripcion": "Barra de café con tazas rojas y amarillas y el letrero de neón del mago de El Arcanista"
     }
-   ]
+   ],
+   "categorias_mapa": [
+    "tcg",
+    "mesa"
+   ],
+   "espacio_juego": true,
+   "venta_online": true,
+   "torneos": "Pokémon: ligas semanales y torneos nocturnos; también Magic y Riftbound (sin calendario publicado)"
   },
   {
    "id": "incantum",
@@ -1131,7 +1159,12 @@
      "credito": "Foto: @insertcoinbar vía Meteored",
      "descripcion": "Hamburguesa con orejas de Pikachu, papas y tragos en vasos temáticos de Gengar y Donkey Kong"
     }
-   ]
+   ],
+   "categorias_mapa": [
+    "videojuegos",
+    "mesa"
+   ],
+   "espacio_juego": true
   },
   {
    "id": "insert-coin-nunoa",
@@ -1173,7 +1206,12 @@
      "credito": "Foto: Insert Coin Bar Ñuñoa vía En Cancha",
      "descripcion": "Hamburguesa con orejas de Pikachu de masa frita, servida con papas fritas"
     }
-   ]
+   ],
+   "categorias_mapa": [
+    "videojuegos",
+    "mesa"
+   ],
+   "espacio_juego": true
   },
   {
    "id": "ludum-bar",
@@ -1221,7 +1259,12 @@
      "credito": "Foto: Comino",
      "descripcion": "Jarra de madera estilo taberna rodeada de dados de rol de colores"
     }
-   ]
+   ],
+   "categorias_mapa": [
+    "mesa"
+   ],
+   "espacio_juego": true,
+   "torneos": "Torneos de Catán y otros juegos, karaoke y cosplay (sin calendario publicado)"
   },
   {
    "id": "nowa-s-cantina",
@@ -1306,7 +1349,11 @@
      "credito": "Foto: En Cancha",
      "descripcion": "Mosaico: Mario disfrazado con hamburguesa, salón de piso ajedrezado y trago con figura de Donkey Kong"
     }
-   ]
+   ],
+   "categorias_mapa": [
+    "videojuegos"
+   ],
+   "espacio_juego": true
   },
   {
    "id": "cafe-pixel",
@@ -1360,6 +1407,9 @@
      "credito": "Foto: La Tercera",
      "descripcion": "Café con galletas Oreo en taza de pokébola sobre un individual con dibujos de consolas retro"
     }
+   ],
+   "categorias_mapa": [
+    "videojuegos"
    ]
   },
   {
@@ -1397,7 +1447,13 @@
      "credito": "Foto: Guía Comino",
      "descripcion": "Entrada con reja y letrero de Club El Dado, adornos rojos de Año Nuevo chino y mesas adentro"
     }
-   ]
+   ],
+   "categorias_mapa": [
+    "mesa"
+   ],
+   "espacio_juego": true,
+   "venta_online": true,
+   "torneos": "Bingos, trivias de cine y torneos de ajedrez (sin calendario publicado)"
   },
   {
    "id": "el-desafio-cafeteria",
@@ -1450,7 +1506,12 @@
      "credito": "Foto: Guía Comino",
      "descripcion": "Trago rojo servido en un vaso envuelto por un dragón dorado"
     }
-   ]
+   ],
+   "categorias_mapa": [
+    "mesa",
+    "rol"
+   ],
+   "espacio_juego": true
   },
   {
    "id": "casa-bosque",
@@ -1548,7 +1609,8 @@
      "credito": "Foto: La Tercera",
      "descripcion": "Tazas de café ilustradas con Alicia y galletas en un plato con frases del libro"
     }
-   ]
+   ],
+   "buscar_osm": "Apumanque"
   },
   {
    "id": "wonderland-cafe",
