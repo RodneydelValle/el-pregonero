@@ -14,6 +14,24 @@ Agenda personal de eventos en Chile, con formato de diario: ferias medievales, y
 
 La búsqueda automática no entra a Instagram ni a Facebook: respeta sus reglas y el `robots.txt` de cada sitio. De esas redes solo usa lo que muestran los buscadores, y las cuentas las revisa `/buscar-eventos` con tu sesión.
 
+## Pestañas
+
+- **Agenda:** los eventos, con filtros, buscador y botón 🆕 Nuevos.
+- **Restaurantes temáticos:** japoneses, vikingos y medievales, góticos y geek en Santiago (`data/restaurantes.json`). La lista se armó el 6-11-2026: cada lugar lo verificó un agente independiente (que siga abierto, la dirección y que la temática sea real) y los que tienen algo por confirmar muestran un aviso ⚠. Los que cerraron o no calzaban quedaron fuera.
+- **Mis favoritos:** lo que marcaste con ☆ Favorito, con un mapa de Google Maps del lugar elegido. Al tocar el mapa se abre Google Maps (en el celular, la app).
+
+## Inicio de sesión con Google (favoritos de cada persona)
+
+Usa **Firebase** en su plan gratis (Spark, sin tarjeta): Authentication con Google y Firestore. Cada persona guarda sus favoritos en `favoritos/{uid}` y las reglas (`firestore.rules`) impiden que alguien vea los de otro. Sin sesión, los favoritos quedan en el navegador; al iniciar sesión se suman a la cuenta. Al cerrar sesión se borran del navegador.
+
+Para activarlo (una sola vez):
+
+1. En [console.firebase.google.com](https://console.firebase.google.com) crea un proyecto (Google Analytics no hace falta). Queda en el plan **Spark, gratis**. No lo pases a Blaze.
+2. **Authentication → Comenzar → Método de acceso → Google → Habilitar.** Pon "El Pregonero" como nombre público y guarda.
+3. **Authentication → Configuración → Dominios autorizados → Agregar dominio:** `rodneydelvalle.github.io`.
+4. **Firestore Database → Crear base de datos** (ubicación `southamerica-east1`, modo producción). En la pestaña **Reglas**, pega `firestore.rules` y publica.
+5. **Configuración del proyecto → Tus apps → Web (</>)**: registra la app y copia el objeto `firebaseConfig` en `config/firebase.js`. Esos datos son públicos por diseño; lo que protege los favoritos son las reglas.
+
 ## Personalizar
 
 - **Gustos y búsquedas:** `config/gustos.json`. Ahí se agregan categorías, palabras clave, búsquedas, fuentes fijas y cuentas de comunidades (`comunidades.cuentas`).
@@ -23,6 +41,8 @@ La búsqueda automática no entra a Instagram ni a Facebook: respeta sus reglas 
 ## Archivos
 
 - `index.html`, `styles.css`, `app.js`: la web (sin dependencias).
+- `cuenta.js`, `config/firebase.js`, `firestore.rules`: inicio de sesión con Google y favoritos en la nube.
+- `data/restaurantes.json`: restaurantes temáticos (nombre, tema, dirección, redes y fuentes).
 - `manifest.webmanifest`, `sw.js`, `icons/`: instalable como app y funciona sin conexión.
 - `data/eventos.json`: la agenda; es la "API" que leerá la futura app.
 - `data/vistos.json`: páginas ya revisadas, para no gastar IA dos veces.

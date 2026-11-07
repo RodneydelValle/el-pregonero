@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>El Pregonero</title>
-  <meta name="description" content="Agenda personal de eventos en Chile: ferias medievales, yokai, anime, ilustración, metal y más. Se actualiza sola todos los días.">
+  <meta name="description" content="Agenda personal de eventos en Chile: ferias medievales, yokai, anime, ilustración, metal y más, con restaurantes temáticos y favoritos. Se actualiza sola todos los días.">
   <meta name="theme-color" content="#7a1f1a" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#151311" media="(prefers-color-scheme: dark)">
   <link rel="manifest" href="manifest.webmanifest">
@@ -26,30 +26,84 @@
     <div class="doble-regla" role="presentation"></div>
   </header>
 
-  <nav class="filtros" aria-label="Filtros">
-    <div class="fila-busqueda">
-      <button type="button" id="btn-nuevos" class="btn-nuevos" aria-pressed="false">🆕 Nuevos <span class="cuenta" id="cuenta-nuevos"></span></button>
-      <input type="search" id="buscar" placeholder="Buscar banda, feria, lugar…" aria-label="Buscar eventos" autocomplete="off">
-      <div class="segmento" role="group" aria-label="Cuándo">
-        <button type="button" data-periodo="todo" aria-pressed="true">Todo</button>
-        <button type="button" data-periodo="semana" aria-pressed="false">7 días</button>
-        <button type="button" data-periodo="mes" aria-pressed="false">30 días</button>
+  <nav class="secciones" aria-label="Secciones">
+    <div class="pestanas">
+      <a class="pestana" href="#eventos" data-seccion="agenda" aria-current="page"><span aria-hidden="true">📰</span> Agenda</a>
+      <a class="pestana" href="#restaurantes" data-seccion="restaurantes"><span aria-hidden="true">🏮</span> Restaurantes<span class="largo"> temáticos</span></a>
+      <a class="pestana" href="#favoritos" data-seccion="favoritos"><span aria-hidden="true">★</span> <span class="largo">Mis favoritos</span><span class="corto">Favoritos</span> <span class="cuenta" id="cuenta-favoritos"></span></a>
+    </div>
+    <div class="zona-cuenta" id="zona-cuenta" hidden>
+      <button type="button" class="btn-google" id="btn-entrar"><svg class="logo-g" viewBox="0 0 48 48" aria-hidden="true" width="18" height="18"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>Iniciar sesión con Google</button>
+      <div class="usuario" id="usuario" hidden>
+        <img id="avatar" alt="" width="28" height="28" referrerpolicy="no-referrer" hidden>
+        <span id="nombre-usuario"></span>
+        <button type="button" class="accion" id="btn-salir">Salir</button>
       </div>
     </div>
-    <div class="chips" id="chips" role="group" aria-label="Temas"></div>
   </nav>
 
-  <main>
-    <div id="banner-nuevos" class="banner" role="status" hidden>
-      <p id="banner-texto"></p>
-      <button type="button" class="boton secundario" id="btn-salir-nuevos">Ver toda la agenda</button>
+  <main id="contenido">
+  <!-- Agenda de eventos -->
+  <div id="sec-agenda" class="seccion">
+    <h2 id="t-agenda" class="solo-lector" tabindex="-1">Agenda de eventos</h2>
+    <nav class="filtros" aria-label="Filtros">
+      <div class="fila-busqueda">
+        <button type="button" id="btn-nuevos" class="btn-nuevos" aria-pressed="false">🆕 Nuevos <span class="cuenta" id="cuenta-nuevos"></span></button>
+        <input type="search" id="buscar" placeholder="Buscar banda, feria, lugar…" aria-label="Buscar eventos" autocomplete="off">
+        <div class="segmento" role="group" aria-label="Cuándo">
+          <button type="button" data-periodo="todo" aria-pressed="true">Todo</button>
+          <button type="button" data-periodo="semana" aria-pressed="false">7 días</button>
+          <button type="button" data-periodo="mes" aria-pressed="false">30 días</button>
+        </div>
+      </div>
+      <div class="chips" id="chips" role="group" aria-label="Temas"></div>
+    </nav>
+
+    <div class="agenda-cuerpo">
+      <div id="banner-nuevos" class="banner" role="status" hidden>
+        <p id="banner-texto"></p>
+        <button type="button" class="boton secundario" id="btn-salir-nuevos">Ver toda la agenda</button>
+      </div>
+      <section id="portada" class="portada" aria-label="Lo que viene"></section>
+      <section id="agenda" class="agenda" aria-label="Agenda"></section>
+      <div id="vacio" class="vacio" hidden>
+        <p class="vacio-titulo">Nada por aquí con esos filtros.</p>
+        <p>Prueba con otro tema o período, o pide una búsqueda nueva.</p>
+      </div>
     </div>
-    <section id="portada" class="portada" aria-label="Lo que viene"></section>
-    <section id="agenda" class="agenda" aria-label="Agenda"></section>
-    <div id="vacio" class="vacio" hidden>
-      <p class="vacio-titulo">Nada por aquí con esos filtros.</p>
-      <p>Prueba con otro tema o período, o pide una búsqueda nueva.</p>
+  </div>
+
+  <!-- Restaurantes temáticos -->
+  <section id="sec-restaurantes" class="seccion" aria-labelledby="t-restaurantes" hidden>
+    <header class="encabezado-seccion">
+      <h2 id="t-restaurantes" class="titulo-seccion" tabindex="-1">Restaurantes temáticos</h2>
+      <p class="bajada-seccion">Izakayas, tabernas vikingas, bares góticos y refugios geek en Santiago.</p>
+    </header>
+    <div class="chips" id="chips-temas" role="group" aria-label="Tipo de restaurante"></div>
+    <div class="dos-columnas">
+      <div id="lista-restaurantes" class="lista-locales"></div>
+      <aside class="panel-mapa" id="mapa-restaurantes" aria-label="Mapa del restaurante elegido"></aside>
     </div>
+    <p class="nota-seccion" id="nota-restaurantes"></p>
+  </section>
+
+  <!-- Mis favoritos -->
+  <section id="sec-favoritos" class="seccion" aria-labelledby="t-favoritos" hidden>
+    <header class="encabezado-seccion">
+      <h2 id="t-favoritos" class="titulo-seccion" tabindex="-1">Mis favoritos</h2>
+      <div id="aviso-cuenta" class="aviso-cuenta"></div>
+    </header>
+    <div id="fav-vacio" class="vacio" hidden></div>
+    <div class="dos-columnas" id="fav-contenido">
+      <div>
+        <h3 class="mes" id="fav-titulo-eventos">Eventos</h3>
+        <div id="fav-eventos"></div>
+        <h3 class="mes" id="fav-titulo-restaurantes">Restaurantes</h3>
+        <div id="fav-restaurantes" class="lista-locales una-columna"></div>
+      </div>
+      <aside class="panel-mapa" id="mapa-favoritos" aria-label="Mapa del favorito elegido"></aside>
+    </div>
+  </section>
   </main>
 
   <footer class="pie-pagina">
@@ -57,7 +111,8 @@
     <div class="pie-columnas">
       <div>
         <h2>Cómo funciona</h2>
-        <p>Cada mañana un robot busca en noticias, comunidades, agendas de fans y ticketeras. Una IA lee las páginas y también los afiches, porque muchas veces la fecha y el lugar solo están en la imagen. Las notas marcadas con 📷 salieron de un afiche y las con ⚠ conviene confirmarlas en la fuente.</p>
+        <p>Cada mañana un robot busca en noticias del día, comunidades, agendas de fans y ticketeras. Una IA lee las páginas y también los afiches, porque muchas veces la fecha y el lugar solo están en la imagen. Las notas marcadas con 📷 salieron de un afiche y las con ⚠ conviene confirmarlas en la fuente.</p>
+        <p>Los mapas son de Google Maps. Si inicias sesión con Google, tus favoritos se guardan en tu cuenta y solo tú puedes verlos.</p>
       </div>
       <div>
         <h2>Pregonar ahora</h2>
@@ -73,5 +128,6 @@
 
   <div id="aviso" class="aviso" role="status" aria-live="polite" hidden></div>
   <script src="app.js" defer></script>
+  <script type="module" src="cuenta.js"></script>
 </body>
 </html>

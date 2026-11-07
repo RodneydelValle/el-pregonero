@@ -18,6 +18,7 @@
   ],
   "shortcuts": [
     { "name": "Eventos nuevos", "url": "./?ver=nuevos", "icons": [{ "src": "icons/icono-192.png", "sizes": "192x192" }] },
-    { "name": "Mis guardados", "url": "./?ver=guardados", "icons": [{ "src": "icons/icono-192.png", "sizes": "192x192" }] }
+    { "name": "Mis favoritos", "url": "./?ver=favoritos", "icons": [{ "src": "icons/icono-192.png", "sizes": "192x192" }] },
+    { "name": "Restaurantes temáticos", "url": "./?ver=restaurantes", "icons": [{ "src": "icons/icono-192.png", "sizes": "192x192" }] }
   ]
 }

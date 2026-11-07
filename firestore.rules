@@ -1,0 +1,23 @@
+rules_version = '2';
+// Reglas de Firestore para El Pregonero: cada persona solo puede leer y escribir SUS favoritos.
+// Se pegan en la consola de Firebase → Firestore Database → Reglas → Publicar.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /favoritos/{uid} {
+      allow read, delete: if request.auth != null && request.auth.uid == uid;
+      // Solo listas de id cortos (letras, números, "-" y "_"): nada de datos arbitrarios ni textos gigantes.
+      // Si algún elemento no es texto, join() falla y la escritura se rechaza.
+      allow create, update: if request.auth != null && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['eventos', 'restaurantes', 'actualizado'])
+        && request.resource.data.eventos is list && request.resource.data.eventos.size() <= 500
+        && request.resource.data.restaurantes is list && request.resource.data.restaurantes.size() <= 300
+        && request.resource.data.eventos.join(',').matches('^([A-Za-z0-9_-]{1,64}(,[A-Za-z0-9_-]{1,64})*)?$')
+        && request.resource.data.restaurantes.join(',').matches('^([A-Za-z0-9_-]{1,64}(,[A-Za-z0-9_-]{1,64})*)?$')
+        && request.resource.data.actualizado == request.time;
+    }
+    // Todo lo demás queda cerrado.
+    match /{documento=**} {
+      allow read, write: if false;
+    }
+  }
+}

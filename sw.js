@@ -1,10 +1,13 @@
 /* Service worker: permite instalar El Pregonero como app y verlo sin conexión. */
-const VERSION = "pregonero-v1";
-const BASE = ["./", "index.html", "styles.css", "app.js", "manifest.webmanifest", "config/gustos.json",
-  "data/eventos.json", "icons/icono-192.png", "icons/icono-512.png"];
+const VERSION = "pregonero-v3";
+const BASE = ["./", "index.html", "styles.css", "app.js", "cuenta.js", "manifest.webmanifest", "config/gustos.json",
+  "config/firebase.js", "data/eventos.json", "data/restaurantes.json", "icons/icono-192.png", "icons/icono-512.png"];
 
 self.addEventListener("install", (ev) => {
-  ev.waitUntil(caches.open(VERSION).then((c) => c.addAll(BASE)).then(() => self.skipWaiting()));
+  // Archivo por archivo: si alguno falla, la app igual se instala con el resto
+  ev.waitUntil(caches.open(VERSION)
+    .then((c) => Promise.allSettled(BASE.map((u) => c.add(u))))
+    .then(() => self.skipWaiting()));
 });
 
 self.addEventListener("activate", (ev) => {
