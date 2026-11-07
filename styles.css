@@ -66,11 +66,10 @@ h2[tabindex="-1"]:focus { outline: none; }
   border-bottom: 1px solid var(--regla-suave); padding-bottom: 8px;
 }
 .linea-edicion a { color: var(--lacre-texto); text-decoration: none; }
-/* Banner: la imagen completa en pantallas anchas; en el celular, recortada a 2:1 mostrando al diablillo */
+/* Banner: siempre completo, en cualquier pantalla (alto según su proporción) */
 .banner-cabecera { display: block; margin: 14px 0 0; }
 .banner-cabecera img {
-  display: block; width: 100%; height: auto; aspect-ratio: 2172 / 724;
-  object-fit: cover; object-position: 0% 50%;
+  display: block; width: 100%; height: auto;
   background: var(--papel-2); border: 1px solid var(--regla);
 }
 .cabezal {
@@ -216,16 +215,21 @@ h2[tabindex="-1"]:focus { outline: none; }
 .portada { display: grid; grid-template-columns: 1.6fr 1fr; gap: 0 28px; padding: 22px 0 8px; }
 .portada:empty { display: none; }
 .principal { grid-row: span 2; border-right: 1px solid var(--regla-suave); padding-right: 28px; }
-.principal .foto { aspect-ratio: 16 / 10; }
+.principal .foto { aspect-ratio: 2 / 1; }
 .principal h2 { font-size: clamp(26px, 3.6vw, 38px); line-height: 1.1; margin: 10px 0 8px; }
 .secundaria { padding-bottom: 16px; }
 .secundaria + .secundaria { border-top: 1px solid var(--regla-suave); padding-top: 16px; }
-.secundaria .foto { aspect-ratio: 16 / 9; }
+.secundaria .foto { aspect-ratio: 2 / 1; }
 .secundaria h2 { font-size: 21px; line-height: 1.2; margin: 8px 0 6px; }
-.foto {
-  width: 100%; display: block; object-fit: cover; background: var(--papel-2);
-  border: 1px solid var(--regla-suave);
+/* Afiches: la imagen se ve completa (contain) y su copia desenfocada rellena el recuadro */
+.marco-foto {
+  position: relative; overflow: hidden; display: block;
+  background: var(--papel-2); border: 1px solid var(--regla-suave);
 }
+.marco-foto > img { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.marco-foto > .fondo { object-fit: cover; filter: blur(14px) saturate(1.2) brightness(.82); transform: scale(1.2); }
+.marco-foto > .imagen { object-fit: contain; }
+.foto { width: 100%; }
 .portada h2 a, .nota h3 a { text-decoration: none; }
 .portada h2 a:hover, .nota h3 a:hover { text-decoration: underline; text-decoration-thickness: 1px; }
 .cuando-grande { font: 700 13px var(--sans); letter-spacing: .05em; text-transform: uppercase; color: var(--lacre-texto); margin: 10px 0 0; }
@@ -237,7 +241,7 @@ h2[tabindex="-1"]:focus { outline: none; }
 }
 .mes::after { content: ""; flex: 1; border-top: 1px solid var(--regla); }
 .nota {
-  display: grid; grid-template-columns: 64px 1fr 180px; gap: 18px;
+  display: grid; grid-template-columns: 64px 1fr 220px; gap: 18px;
   padding: 18px 0; border-bottom: 1px solid var(--regla-suave);
 }
 .nota.sin-foto { grid-template-columns: 64px 1fr; }
@@ -273,10 +277,8 @@ h2[tabindex="-1"]:focus { outline: none; }
 }
 .accion:hover { border-color: var(--tinta); }
 .accion.guardado { background: var(--resalte); border-color: var(--lacre); color: var(--lacre-texto); }
-.miniatura {
-  width: 180px; height: 135px; object-fit: cover; display: block;
-  background: var(--papel-2); border: 1px solid var(--regla-suave);
-}
+/* Miniaturas: toman la forma de su imagen (entre vertical 4:5 y apaisada 2,4:1) */
+.miniatura { width: 220px; height: auto; aspect-ratio: clamp(0.8, var(--proporcion, 1.333), 2.4); }
 .vacio { text-align: center; padding: 60px 0; color: var(--tinta-suave); }
 .vacio-titulo { font-size: 22px; color: var(--tinta); margin-bottom: 4px; }
 
@@ -318,21 +320,17 @@ h2[tabindex="-1"]:focus { outline: none; }
   body { font-size: 16px; }
   .portada { grid-template-columns: 1fr; }
   .principal { grid-row: auto; border-right: 0; padding-right: 0; border-bottom: 1px solid var(--regla-suave); padding-bottom: 18px; margin-bottom: 16px; }
-  .secundaria { display: grid; grid-template-columns: 1fr 112px; gap: 0 14px; align-items: start; }
-  .secundaria .foto { grid-column: 2; grid-row: 1 / span 3; aspect-ratio: 1; }
   .secundaria h2 { font-size: 19px; margin-top: 4px; }
   .nota, .nota.sin-foto { grid-template-columns: 52px 1fr; gap: 12px; }
-  .miniatura { grid-column: 2; width: 100%; height: auto; aspect-ratio: 16 / 9; order: -1; }
+  .miniatura { grid-column: 2; width: 100%; height: auto; aspect-ratio: clamp(1, var(--proporcion, 1.333), 2.4); order: -1; }
   .dia-bloque .num { font-size: 30px; }
   .nota h3 { font-size: 20px; }
   .pie-columnas { grid-template-columns: 1fr; gap: 12px; }
   .linea-edicion { justify-content: center; text-align: center; }
 }
 
-/* Banner en el celular: más alto (2:1) y anclado a la izquierda, donde está el diablillo */
 @media (max-width: 600px) {
   .banner-cabecera { margin-top: 10px; }
-  .banner-cabecera img { aspect-ratio: 2 / 1; }
 }
 
 /* Pantallas muy angostas (360 px o menos): pestañas sin emojis y con menos relleno.

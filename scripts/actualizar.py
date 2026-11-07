@@ -1309,11 +1309,21 @@ def procesar_pagina(url, titulo_busqueda, ia, cfg, patron, cat_fuente=None, nomb
     crudos = ia_pagina(ia, cfg, final, titulo, texto, imagenes, max_tokens=6000 if agenda else 3500)
     res = []
     for e in crudos:
-        if not e.get("imagen") and portada:
+        # La imagen principal de la página solo sirve de respaldo si la página es de UN evento:
+        # en una cartelera es el afiche de otro (p. ej. el de A Perfect Circle en la de Sonorock).
+        if not e.get("imagen") and portada and len(crudos) == 1:
             e["imagen"] = portada
         n = normalizar_evento(e, cfg, nombre, final, "ia")
         if n:
             res.append(n)
+    # Si varios eventos de la misma página quedaron con la misma imagen, es la de la página: se quita
+    veces: dict[str, int] = {}
+    for n in res:
+        if n.get("imagen"):
+            veces[n["imagen"]] = veces.get(n["imagen"], 0) + 1
+    for n in res:
+        if n.get("imagen") and veces[n["imagen"]] > 1:
+            n["imagen"] = None
     return res, True
 
 

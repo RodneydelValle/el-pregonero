@@ -310,16 +310,28 @@ function acciones(e, panel) {
   </div>`;
 }
 
-function imagen(e, clase, ancho) {
+/** Afiche completo, sin recortes: la imagen va entera dentro del recuadro y una copia desenfocada
+ *  (el mismo archivo, que el navegador baja una sola vez) rellena los bordes. */
+function imagen(e, clase) {
   const src = urlSegura(e.imagen);
   if (!src || FOTOS_ROTAS.has(src)) return "";
-  return `<img class="${clase}" src="${esc(src)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="${ancho}" onerror="fotoRota(this)">`;
+  const s = esc(src);
+  return `<div class="${clase} marco-foto">` +
+    `<img class="fondo" src="${s}" alt="" aria-hidden="true" loading="lazy" decoding="async" referrerpolicy="no-referrer">` +
+    `<img class="imagen" src="${s}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onload="ajustarMarco(this)" onerror="fotoRota(this)">` +
+    `</div>`;
+}
+/** Las miniaturas toman la forma de su imagen (el CSS la limita), para no dejar franjas grandes. */
+function ajustarMarco(img) {
+  const marco = img.closest(".miniatura");
+  if (!marco || !img.naturalWidth || !img.naturalHeight) return;
+  marco.style.setProperty("--proporcion", (img.naturalWidth / img.naturalHeight).toFixed(3));
 }
 function fotoRota(img) {
   FOTOS_ROTAS.add(img.getAttribute("src"));
   const nota = img.closest(".nota");
-  img.remove();
-  if (nota && !nota.querySelector("img")) nota.classList.add("sin-foto");
+  (img.closest(".marco-foto") || img).remove();
+  if (nota && !nota.querySelector(".marco-foto")) nota.classList.add("sin-foto");
 }
 
 function cuandoBusqueda() {
@@ -362,7 +374,7 @@ function pintarPortada(lista) {
   const enlace = (e) => urlSegura(e.url) || "#";
   cont.innerHTML = `
     <article class="principal">
-      ${imagen(p, "foto", 800)}
+      ${imagen(p, "foto")}
       <p class="cuando-grande">${esc(cuandoRelativo(p))}</p>
       ${antetitulo(p)}
       <h2><a href="${esc(enlace(p))}" target="_blank" rel="noopener">${esc(p.titulo)}</a></h2>
@@ -372,7 +384,7 @@ function pintarPortada(lista) {
     </article>
     ${s.map((e) => `
     <article class="secundaria">
-      ${imagen(e, "foto", 400)}
+      ${imagen(e, "foto")}
       <p class="cuando-grande">${esc(cuandoRelativo(e))}</p>
       <h2><a href="${esc(enlace(e))}" target="_blank" rel="noopener">${esc(e.titulo)}</a></h2>
       ${datosLinea(e)}
@@ -383,7 +395,7 @@ function htmlNota(e, panel) {
   const h = hoy();
   const i = fecha(e.fecha_inicio);
   const enCurso = i < h;
-  const foto = imagen(e, "miniatura", 180);
+  const foto = imagen(e, "miniatura");
   const ref = panel ? ` data-ref="e:${esc(e.id)}"` : "";
   const elegido = panel && seleccion[panel] === `e:${e.id}` ? " elegida" : "";
   return `<article class="nota${foto ? "" : " sin-foto"}${elegido}" id="${panel ? "f" : "e"}-${esc(e.id)}"${ref}>
