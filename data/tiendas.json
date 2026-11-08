@@ -65,9 +65,6 @@
    "horario": "Mar a jue 11:00–22:00; vie 11:00–03:30; sáb 11:00–02:00",
    "web": "https://area52.cl/",
    "instagram": "https://www.instagram.com/area52.cl/",
-   "lat_propuesta": -33.4447792,
-   "lng_propuesta": -70.618798,
-   "fuente_propuesta": "OpenStreetMap, nodo 11907821522 «Area 52» (Avenida Santa Isabel 962, editado el 11-03-2025); coincide exactamente con el geo schema.org de area52.cl/pages/contact. El límite comunal de OSM la sitúa en Providencia.",
    "fotos": [
     {
      "url": "https://area52.cl/cdn/shop/files/IMG_1395.jpg?v=1742672896",
@@ -101,7 +98,10 @@
     "https://area52.cl/sitemap_products_1.xml",
     "https://www.torneostcg.cl/region-metropolitana/tiendas/area-52",
     "https://www.openstreetmap.org/node/11907821522"
-   ]
+   ],
+   "lat": -33.444779,
+   "lng": -70.618798,
+   "coordenadas_fuente": "OpenStreetMap, nodo 11907821522 «Area 52» (Avenida Santa Isabel 962, editado el 11-03-2025); coincide exactamente con el geo schema.org de area52.cl/pages/contact. El límite comunal de OSM la sitúa en Providencia."
   },
   {
    "id": "bazinga-comics",
@@ -118,9 +118,6 @@
    "horario": "Lun a vie 10:30–14:00 y 15:30–19:00",
    "web": "https://bazingacomics.cl/",
    "instagram": "https://www.instagram.com/bazingacomics_cl",
-   "lat_propuesta": -33.4393735,
-   "lng_propuesta": -70.6486885,
-   "fuente_propuesta": "OpenStreetMap: entrada por Huérfanos del pasillo «Galería España» (nodo 11064204026, way 247762650). Marca la galería, no la oficina 514 del 5.º piso",
    "fotos": [
     {
      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Galer%C3%ADa_Espa%C3%B1a%2C_Santiago_20230418_01.jpg/960px-Galer%C3%ADa_Espa%C3%B1a%2C_Santiago_20230418_01.jpg",
@@ -147,7 +144,10 @@
     "https://web.archive.org/web/20261008204634/https://bazingacomics.cl/",
     "https://www.futuro.cl/2025/07/el-caso-ardelean-el-comic-de-horror-que-navega-en-las-aguas-movedizas-de-la-impunidad",
     "https://www.cuartomundo.cl/lista-de-comiquerias-en-chile/"
-   ]
+   ],
+   "lat": -33.439374,
+   "lng": -70.648689,
+   "coordenadas_fuente": "OpenStreetMap: entrada por Huérfanos del pasillo «Galería España» (nodo 11064204026, way 247762650). Marca la galería, no la oficina 514 del 5.º piso"
   },
   {
    "id": "card-house",
@@ -174,7 +174,10 @@
     "https://www.torneostcg.cl/region-metropolitana/tiendas/card-house",
     "https://api.openstreetmap.org/api/0.6/node/4424001378/history",
     "https://api.openstreetmap.org/api/0.6/map?bbox=-70.6115,-33.4228,-70.6070,-33.4200"
-   ]
+   ],
+   "lat": -33.421677,
+   "lng": -70.608371,
+   "coordenadas_fuente": "OpenStreetMap, entre Avenida Nueva Providencia 2250 y 2266"
   },
   {
    "id": "centro-comercial-dos-caracoles",
@@ -195,9 +198,6 @@
    "web": null,
    "instagram": null,
    "es_galeria": true,
-   "lat_propuesta": -33.4212637,
-   "lng_propuesta": -70.609911,
-   "fuente_propuesta": "OpenStreetMap, relación 6652879 'Centro Comercial Dos Caracoles' (Av. Providencia 2216, shop=mall). Es el centro del polígono de las dos torres.",
    "fotos": [
     {
      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/20260121_Galeria_Dos_Caracoles.jpg/960px-20260121_Galeria_Dos_Caracoles.jpg",
@@ -224,7 +224,10 @@
     "https://api.openstreetmap.org/api/0.6/map?bbox=-70.6118,-33.4224,-70.6080,-33.4203",
     "https://www.hangar019.cl/content/11-pick-up-store",
     "https://takanodan.cl/tiendas"
-   ]
+   ],
+   "lat": -33.421264,
+   "lng": -70.609911,
+   "coordenadas_fuente": "OpenStreetMap, relación 6652879 'Centro Comercial Dos Caracoles' (Av. Providencia 2216, shop=mall). Es el centro del polígono de las dos torres."
   },
   {
    "id": "crazy-all-comics",
@@ -241,9 +244,6 @@
    "horario": "Lun a jue 11:00–19:30; vie 11:00–20:00; sáb 10:00–14:00; dom y festivos cerrado",
    "web": "https://www.crazyallcomics.cl/",
    "instagram": "https://www.instagram.com/crazyallcomics/",
-   "lat_propuesta": -33.4388771,
-   "lng_propuesta": -70.6465669,
-   "fuente_propuesta": "OpenStreetMap (Overpass): edificio «Galería de La Merced», way 448738333, centro del polígono. Marca la galería, no el local 22. OSM le asigna Huérfanos 669 en vez de 635, y el acceso por Miraflores pasa por el edificio vecino «Edificio La Merced» (Huérfanos 645), que está a menos de 100 m.",
    "fotos": [
     {
      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Galer%C3%ADa_La_Merced%2C_Santiago_20230418_01.jpg/960px-Galer%C3%ADa_La_Merced%2C_Santiago_20230418_01.jpg",
@@ -261,7 +261,10 @@
     "https://www.crazyallcomics.cl/media/codazon/slideshow/resize/587x438/fondo-horario-verano-2026.jpg",
     "https://www.lanacion.cl/4-tiendas-de-comics-y-mangas-la-ruta-sobre-que-hacer-en-santiago/",
     "https://overpass-api.de/api/interpreter (OSM way 448738333 «Galería de La Merced», way 892134653 «Edificio La Merced», node 5264966922 Crazy All Comics Portal Lyon)"
-   ]
+   ],
+   "lat": -33.438877,
+   "lng": -70.646567,
+   "coordenadas_fuente": "OpenStreetMap (Overpass): edificio «Galería de La Merced», way 448738333, centro del polígono. Marca la galería, no el local 22. OSM le asigna Huérfanos 669 en vez de 635, y el acceso por Miraflores pasa por el edificio vecino «Edificio La Merced» (Huérfanos 645), que está a menos de 100 m."
   },
   {
    "id": "customzero101",
@@ -303,7 +306,10 @@
     "https://www.cz101.cl/ (no resuelve el 07-11-2026)",
     "https://api.openstreetmap.org/api/0.6/relation/6652879/full.json",
     "https://www.torneostcg.cl/region-metropolitana/tiendas"
-   ]
+   ],
+   "lat": -33.421264,
+   "lng": -70.609911,
+   "coordenadas_fuente": "la de Centro Comercial Dos Caracoles"
   },
   {
    "id": "demente-games",
@@ -322,9 +328,6 @@
    "horario": "Lun a vie 12:00–21:00; sáb y dom 11:00–21:00",
    "web": "https://dementegames.cl/",
    "instagram": "https://www.instagram.com/dementegames_cl",
-   "lat_propuesta": -33.4490098,
-   "lng_propuesta": -70.6244516,
-   "fuente_propuesta": "Aproximadas: interpolación de la numeración de OpenStreetMap (Nominatim; way 108390447 entre Av. Italia 1551 y 1771). OSM no tiene un nodo de la tienda y su web no publica mapa ni coordenadas; el error puede ser de algunas decenas de metros. El límite comunal de OSM sitúa el punto en Ñuñoa.",
    "fotos": [],
    "evidencia": "Confirmada. Su web vende inscripciones a un Pokémon League Challenge el domingo 22-11-2026 y a una League Cup el domingo 29-11-2026. También tiene torneos semanales con «Lugar: Av. Italia 1601». En /tiendas publica la sucursal Barrio Italia (Avenida Italia 1601, Ñuñoa) con su horario, junto a las de Mall Plaza Los Dominicos y Drugstore. Su Zona de Juegos tiene capacidad para 24 personas y ludoteca gratis, pero muestra otro horario. TorneosTCG coincide en los 4 torneos semanales. No encontré noticias de cierre. Agregué «rol» porque vende juegos de rol (D&D, Pathfinder, La Llamada de Cthulhu).",
    "fuentes": [
@@ -336,7 +339,10 @@
     "https://dementegames.cl/torneos/7276-pokemon-league-cup-noviembre-2026.html",
     "https://dementegames.cl/torneos/5650-weekly-magic-the-gathering.html",
     "https://dementegames.cl/torneos/5648-weekly-star-wars-unlimited.html"
-   ]
+   ],
+   "lat": -33.44901,
+   "lng": -70.624452,
+   "coordenadas_fuente": "Aproximadas: interpolación de la numeración de OpenStreetMap (Nominatim; way 108390447 entre Av. Italia 1551 y 1771). OSM no tiene un nodo de la tienda y su web no publica mapa ni coordenadas; el error puede ser de algunas decenas de metros. El límite comunal de OSM sitúa el punto en Ñuñoa."
   },
   {
    "id": "doubleimpactstore",
@@ -368,7 +374,10 @@
     "https://doubleimpactstore.cl/",
     "https://ropavejeroretro.cl/",
     "https://overpass-api.de/api/interpreter (OSM way 1431591363 McDonald's Av. Santa Rosa 2174; way 24444772 calle Bio-Bio; way 283888731 Mercado Persa Bio-Bio)"
-   ]
+   ],
+   "lat": -33.4746,
+   "lng": -70.644308,
+   "coordenadas_fuente": "la de Persa Biobío"
   },
   {
    "id": "encuadrocomics",
@@ -405,7 +414,10 @@
     "https://web.archive.org/web/20260310115836/https://encuadrocomics.cl/",
     "https://web.archive.org/web/20250122002027/https://encuadrocomics.cl/",
     "https://www.cinebooom.cl/encuadrocomics-realizara-gran-venta-de-bodega-de-mangas-y-comics/"
-   ]
+   ],
+   "lat": -33.421264,
+   "lng": -70.609911,
+   "coordenadas_fuente": "la de Centro Comercial Dos Caracoles"
   },
   {
    "id": "enroque-juegos-de-mesa",
@@ -423,9 +435,6 @@
    "horario": "Mar a sáb 11:30–19:45; dom 11:30–18:00; lun cerrado",
    "web": "https://juegosenroque.cl/",
    "instagram": "https://www.instagram.com/enroque_juegosdemesa/",
-   "lat_propuesta": -33.4509965,
-   "lng_propuesta": -70.6239546,
-   "fuente_propuesta": "Enlace de mapa en el HTML de juegosenroque.cl (botón «¡Visítanos!»: !3d-33.4509965!4d-70.6239546). Coincide con la numeración de Av. Italia en OSM (1771–1791 en esa cuadra, lado Ñuñoa)",
    "fotos": [
     {
      "url": "https://juegosenroque.cl/cdn/shop/files/VISITANOS_2.0_1_1.jpg?v=1710271099",
@@ -452,7 +461,10 @@
     "https://www.torneostcg.cl/region-metropolitana/tiendas/enroque-juegos",
     "https://melee.gg/Hub/Organization/13175",
     "https://api.openstreetmap.org/api/0.6/map.json?bbox=-70.6255,-33.4522,-70.6225,-33.4498"
-   ]
+   ],
+   "lat": -33.450997,
+   "lng": -70.623955,
+   "coordenadas_fuente": "Enlace de mapa en el HTML de juegosenroque.cl (botón «¡Visítanos!»: !3d-33.4509965!4d-70.6239546). Coincide con la numeración de Av. Italia en OSM (1771–1791 en esa cuadra, lado Ñuñoa)"
   },
   {
    "id": "figuras-dbz-chile",
@@ -469,9 +481,6 @@
    "horario": "Lun a vie 10:30–19:30; sáb 10:30–14:30",
    "web": "https://www.figurasdbzchile.cl/",
    "instagram": "https://www.instagram.com/figurasdbzchile/",
-   "lat_propuesta": -33.441327,
-   "lng_propuesta": -70.6486205,
-   "fuente_propuesta": "OpenStreetMap, way 157650809 'Paseo San Agustín' (shop=mall). Es el centro del edificio de la galería, que da a San Antonio y a Moneda; el local 73 no está mapeado. El mapa de la web de la tienda solo apunta al 'metro U. de Chile'.",
    "fotos": [
     {
      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Paseo_San_Agust%C3%ADn%2C_Santiago_20230418_06.jpg/960px-Paseo_San_Agust%C3%ADn%2C_Santiago_20230418_06.jpg",
@@ -497,7 +506,10 @@
     "https://www.lanacion.cl/la-ruta-tiendas-de-figuras-de-coleccion-y-juguetes-geek-que-hacer-en-santiago/",
     "https://api.openstreetmap.org/api/0.6/way/157650809/full",
     "https://www.figurasdbzchile.cl/contacto"
-   ]
+   ],
+   "lat": -33.441327,
+   "lng": -70.648621,
+   "coordenadas_fuente": "OpenStreetMap, way 157650809 'Paseo San Agustín' (shop=mall). Es el centro del edificio de la galería, que da a San Antonio y a Moneda; el local 73 no está mapeado. El mapa de la web de la tienda solo apunta al 'metro U. de Chile'."
   },
   {
    "id": "galeria-eurocentro",
@@ -519,9 +531,6 @@
    "web": null,
    "instagram": null,
    "es_galeria": true,
-   "lat_propuesta": -33.44211111,
-   "lng_propuesta": -70.65041667,
-   "fuente_propuesta": "Wikipedia (es), artículo «Eurocentro»: -33.44211111, -70.65041667. OSM coincide: nodo 1754035371 «Galería Eurocentro» y edificio way 447520292 «EuroCentro»",
    "fotos": [
     {
      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Eurocentro%2C_Santiago_20230418.jpg/960px-Eurocentro%2C_Santiago_20230418.jpg",
@@ -555,7 +564,10 @@
     "https://www.torneostcg.cl/region-metropolitana/tiendas",
     "https://www.juegomania.cl/",
     "https://www.juegomania.cl/collection/juegos-de-mesa"
-   ]
+   ],
+   "lat": -33.442111,
+   "lng": -70.650417,
+   "coordenadas_fuente": "Wikipedia (es), artículo «Eurocentro»: -33.44211111, -70.65041667. OSM coincide: nodo 1754035371 «Galería Eurocentro» y edificio way 447520292 «EuroCentro»"
   },
   {
    "id": "galeria-paseo-las-palmas",
@@ -574,9 +586,6 @@
    "web": null,
    "instagram": null,
    "es_galeria": true,
-   "lat_propuesta": -33.421912,
-   "lng_propuesta": -70.609286,
-   "fuente_propuesta": "OpenStreetMap: punto medio de la vía peatonal techada 'Paseo Las Palmas' (way 1174039035), consultada en la API oficial de OSM",
    "fotos": [
     {
      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Paseo_Las_Palmas%2C_Providencia%2C_Santiago_20230930_01.jpg/960px-Paseo_Las_Palmas%2C_Providencia%2C_Santiago_20230930_01.jpg",
@@ -603,7 +612,10 @@
     "https://www.ice.it/it/news/notizie-dal-mondo/307416",
     "https://www.retrogamers.cl/condiciones-de-venta/",
     "https://www.torneostcg.cl/region-metropolitana/tiendas/guilddreams"
-   ]
+   ],
+   "lat": -33.421912,
+   "lng": -70.609286,
+   "coordenadas_fuente": "OpenStreetMap: punto medio de la vía peatonal techada 'Paseo Las Palmas' (way 1174039035), consultada en la API oficial de OSM"
   },
   {
    "id": "guild-dreams",
@@ -651,7 +663,10 @@
     "https://www.guildreams.com/collection/comics-y-revistas",
     "https://www.torneostcg.cl/region-metropolitana/tiendas/guilddreams",
     "https://ludipedia.cl/wiki/Guild_Dreams"
-   ]
+   ],
+   "lat": -33.421912,
+   "lng": -70.609286,
+   "coordenadas_fuente": "la de Galería Paseo Las Palmas"
   },
   {
    "id": "hobbiegames",
@@ -689,7 +704,10 @@
     "https://hobbiegames.cl/sitemap_products_1.xml",
     "https://www.torneostcg.cl/region-metropolitana/tiendas",
     "https://nominatim.openstreetmap.org/search?q=Paseo+Las+Palmas,+Providencia,+Chile"
-   ]
+   ],
+   "lat": -33.421912,
+   "lng": -70.609286,
+   "coordenadas_fuente": "la de Galería Paseo Las Palmas"
   },
   {
    "id": "hobby-fest-tienda",
@@ -707,9 +725,6 @@
    "web": null,
    "instagram": null,
    "dudas": "Hay poca información reciente (la última es de febrero de 2026): confirma en sus redes que siga abierta antes de ir.",
-   "lat_propuesta": -33.4201661,
-   "lng_propuesta": -70.6074395,
-   "fuente_propuesta": "OpenStreetMap: nodo 11982155670 de RC Import Store, con dirección Av. Providencia 2348 (misma Galería Los Pájaros según la web de esa tienda); marca la galería, no el local 74",
    "fotos": [
     {
      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Anticuarios%2C_Providencia%2C_Santiago_20230930.jpg/960px-Anticuarios%2C_Providencia%2C_Santiago_20230930.jpg",
@@ -726,7 +741,10 @@
     "https://www.tiktok.com/@hobbyfesttienda",
     "https://api.openstreetmap.org/api/0.6/node/11982155670.json",
     "https://api.openstreetmap.org/api/0.6/map.json?bbox=-70.6085,-33.4210,-70.6065,-33.4194"
-   ]
+   ],
+   "lat": -33.420166,
+   "lng": -70.607439,
+   "coordenadas_fuente": "OpenStreetMap: nodo 11982155670 de RC Import Store, con dirección Av. Providencia 2348 (misma Galería Los Pájaros según la web de esa tienda); marca la galería, no el local 74"
   },
   {
    "id": "magicsur-la-reina",
@@ -772,9 +790,6 @@
    "horario": "Lun a jue 14:00–22:00; vie 14:00–23:00; sáb 14:00–20:00 (dom solo con eventos)",
    "web": "https://www.magicsur.cl/",
    "instagram": "https://www.instagram.com/magicsurchile/",
-   "lat_propuesta": -33.4471874,
-   "lng_propuesta": -70.6284947,
-   "fuente_propuesta": "Mapa incrustado en https://www.magicsur.cl/contactanos (iframe q=-33.4471874,-70.6284947), junto a los datos de Seminario 507. El nodo OSM 12193721348 'Magicsur' queda a unos 20 m.",
    "fotos": [],
    "evidencia": "Casa matriz vigente. Su página de contacto mantiene Seminario 507 como tienda principal, y la web tiene preventas con entrega estimada el 13-11-2026. TorneosTCG (consultado el 07-11-2026) publica 7 torneos semanales en esta dirección. El sitemap de cartasmagicsur.cl tiene páginas de eventos en Seminario actualizadas al 07-11-2026: prerelease de Star Trek, RCQ y Store Championship de Reality Fracture. No encontré noticias de cierre ni de traslado. El horario sale de la página 'Nuestras tiendas' de magicsur.cl. Esa página todavía lista la ex sucursal Los Dominicos, que ya no aparece en Contacto ni en TorneosTCG, así que el horario podría estar desactualizado; además, los domingos hay torneos fijos. Agrego 'miniaturas' porque la tienda vende Heroclix, que ella misma describe como 'juegos de miniaturas', y tiene stock. También vende D&D y libros de rol (rol) y juegos de mesa.",
    "fuentes": [
@@ -786,7 +801,10 @@
     "https://www.magicsur.cl/21-heroclix",
     "https://www.torneostcg.cl/region-metropolitana/tiendas/magicsur",
     "https://www.cartasmagicsur.cl/sitemap.xml"
-   ]
+   ],
+   "lat": -33.447187,
+   "lng": -70.628495,
+   "coordenadas_fuente": "Mapa incrustado en https://www.magicsur.cl/contactanos (iframe q=-33.4471874,-70.6284947), junto a los datos de Seminario 507. El nodo OSM 12193721348 'Magicsur' queda a unos 20 m."
   },
   {
    "id": "mesa-1",
@@ -803,9 +821,6 @@
    "horario": "Lun a vie 12:00–21:00; sáb 10:00–21:00; dom 10:00–19:00",
    "web": "https://mesa1.cl/",
    "instagram": "https://www.instagram.com/mesa1chile",
-   "lat_propuesta": -33.4218286,
-   "lng_propuesta": -70.6443939,
-   "fuente_propuesta": "OpenStreetMap: edificio comercial de Av. Recoleta 901, Recoleta (way 444940662, punto central)",
    "fotos": [],
    "evidencia": "Su web está muy activa (© 2026): publicó el prelanzamiento de Pokémon Delta Reign del 23 al 31-10-2026 y una preventa con lanzamiento estimado el 06-11. En sus preguntas frecuentes dice: «¡SÍ! Estamos en Av. Recoleta 901, local 4… Metro Cerro Blanco… estacionamiento gratuito». TorneosTCG (07-11-2026) también la incluye. Correcciones: es una tienda solo de TCG (para juegos de mesa remite a su tienda hermana Santiago Games, en Ahumada 83, Eurocentro), así que quito «mesa». Los torneos son los del calendario semanal de su propia web, que difiere del de TorneosTCG: Riftbound es el lunes y no el miércoles, Pokémon sáb y dom a las 11:00 y no a las 11:30, Magic el sáb a las 15:30, y hay torneos gratis a las 14:30 de martes a viernes. No hay avisos de cierre ni de traslado.",
    "fuentes": [
@@ -817,7 +832,10 @@
     "https://www.torneostcg.cl/region-metropolitana/tiendas/mesa-1",
     "https://www.openstreetmap.org/way/444940662",
     "https://mesa1.cl/"
-   ]
+   ],
+   "lat": -33.421829,
+   "lng": -70.644394,
+   "coordenadas_fuente": "OpenStreetMap: edificio comercial de Av. Recoleta 901, Recoleta (way 444940662, punto central)"
   },
   {
    "id": "mirax-hobbies",
@@ -837,9 +855,6 @@
    "horario": "Lun a sáb 10:00–20:00; dom y festivos 11:00–20:00 (Costanera Center: todos los días 10:00–21:00)",
    "web": "https://www.mirax.cl/",
    "instagram": "https://www.instagram.com/miraxhobbies/",
-   "lat_propuesta": -33.410029,
-   "lng_propuesta": -70.567573,
-   "fuente_propuesta": "OpenStreetMap: nodo 922233371 (shop=toys 'Mirax', Av. Manquehue Sur 31, Las Condes). El mapa incrustado en mirax.cl solo da el centro de la vista (-33.409529, -70.569541), unos 190 m al oeste, por eso no se usó.",
    "fotos": [
     {
      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Mirax_Hobbies_ubicaci%C3%B3n_actual_Apumanque.jpg/960px-Mirax_Hobbies_ubicaci%C3%B3n_actual_Apumanque.jpg",
@@ -866,7 +881,10 @@
     "https://www.mirax.cl/index.php?menu=1072",
     "https://www.lanacion.cl/la-ruta-tiendas-de-figuras-de-coleccion-y-juguetes-geek-que-hacer-en-santiago/",
     "https://www.24horas.cl/actualidad/economia/remataran-juguetes-desde-los-500-en-tienda-de-mall-apumanque"
-   ]
+   ],
+   "lat": -33.410029,
+   "lng": -70.567573,
+   "coordenadas_fuente": "OpenStreetMap: nodo 922233371 (shop=toys 'Mirax', Av. Manquehue Sur 31, Las Condes). El mapa incrustado en mirax.cl solo da el centro de la vista (-33.409529, -70.569541), unos 190 m al oeste, por eso no se usó."
   },
   {
    "id": "missplay-tcg",
@@ -883,9 +901,6 @@
    "horario": "Lun a dom 13:00–22:30",
    "web": "https://www.missplay.cl/",
    "instagram": "https://www.instagram.com/missplaytcg",
-   "lat_propuesta": -33.454644,
-   "lng_propuesta": -70.597613,
-   "fuente_propuesta": "OpenStreetMap, way 725963262 (Edificio Don Miguel, Av. Irarrázaval 3192, Ñuñoa), vía Overpass; ubica el edificio, no el local 12",
    "fotos": [],
    "evidencia": "Su web (Jumpseller) está vigente, con productos de 2026 (Ascended Heroes, 30th Celebration). Tiene fichas de torneos en su local con fechas 29-05, 18-06, 03-07 y 01-08; los días de semana corresponden a 2026. El torneo Premodern tenía cupo para 20 jugadores. TorneosTCG (consultado el 07-11-2026) publica 10 eventos semanales en Av. Irarrázaval #3192, local 12. No encontré noticias de cierre ni traslado. Dos fichas de torneo dicen '3193' (errata); el pie de página, la página de contacto y TorneosTCG dicen 3192. Vende online con retiro en tienda (lun-dom 12:00-22:00) o despacho por Blue Express.",
    "fuentes": [
@@ -897,7 +912,10 @@
     "https://www.missplay.cl/torneo-one-piece-tcg-03-julio",
     "https://www.missplay.cl/torneo-pokemon-casual-18-junio",
     "https://www.missplay.cl/torneo-one-piece-tcg"
-   ]
+   ],
+   "lat": -33.454644,
+   "lng": -70.597613,
+   "coordenadas_fuente": "OpenStreetMap, way 725963262 (Edificio Don Miguel, Av. Irarrázaval 3192, Ñuñoa), vía Overpass; ubica el edificio, no el local 12"
   },
   {
    "id": "neo-tokyo-store",
@@ -914,9 +932,6 @@
    "horario": "Lun a dom 10:00–19:45",
    "web": "https://www.neotokyo.cl/",
    "instagram": "https://www.instagram.com/neotokyo3store",
-   "lat_propuesta": -33.4405,
-   "lng_propuesta": -70.6486,
-   "fuente_propuesta": "geo schema.org que publica su sitio (neotokyo.cl/contact), con 4 decimales. OSM (Nominatim inverso) lo ubica en Agustinas 853, junto al n.º 833 y al acceso del Mall Vivo Imperio por Agustinas. El iframe de su web solo trae la dirección escrita, sin coordenadas.",
    "fotos": [
     {
      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Vivo_Imperio%2C_Santiago_20220627.jpg/960px-Vivo_Imperio%2C_Santiago_20220627.jpg",
@@ -941,7 +956,10 @@
     "https://www.lanacion.cl/4-tiendas-de-comics-y-mangas-la-ruta-sobre-que-hacer-en-santiago/",
     "https://www.openstreetmap.org/way/542958817",
     "https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=-33.4405&lon=-70.6486"
-   ]
+   ],
+   "lat": -33.4405,
+   "lng": -70.6486,
+   "coordenadas_fuente": "geo schema.org que publica su sitio (neotokyo.cl/contact), con 4 decimales. OSM (Nominatim inverso) lo ubica en Agustinas 853, junto al n.º 833 y al acceso del Mall Vivo Imperio por Agustinas. El iframe de su web solo trae la dirección escrita, sin coordenadas."
   },
   {
    "id": "oasis-games-chile",
@@ -959,9 +977,6 @@
    "horario": "Lun a vie 12:00–22:00; sáb, dom y festivos 12:00–20:00",
    "web": "https://www.oasisgames.cl/",
    "instagram": "https://www.instagram.com/oasisgameschile/",
-   "lat_propuesta": -33.4140535,
-   "lng_propuesta": -70.5829093,
-   "fuente_propuesta": "OpenStreetMap, nodo 13596743805 'Oasis Games' (Avenida Apoquindo 4501, unidad 5; mismo teléfono que la web; creado el 24-02-2026).",
    "fotos": [],
    "evidencia": "Tienda física vigente. El pie de página de su web (Shopify) publica Av. Apoquindo 4501, local 5, y el 'Horario de atención': lunes a viernes de 12:00 a 22:00; sábado, domingo y festivos de 12:00 a 20:00. Su sitemap de productos tiene cambios del 07-11-2026 (cartas de Star Trek y Pokémon). TorneosTCG (07-11-2026) publica 11 torneos semanales en el local. OSM agregó la tienda el 24-02-2026 con el mismo teléfono. Vende Magic, Pokémon, One Piece, Gundam y Riftbound, además de juegos de tablero (por ejemplo, expansiones de Carcassonne). No encontré noticias de cierre ni de traslado. La página 'Contáctanos' trae un texto de plantilla en inglés ('Monday–Saturday 10AM–5PM, closed on Sunday') que contradice el pie de página y los torneos nocturnos y dominicales, así que uso el horario del pie de página. Corrijo los torneos: al resumen anterior le faltaba Gundam el domingo a las 16:30.",
    "fuentes": [
@@ -970,7 +985,10 @@
     "https://www.oasisgames.cl/sitemap_products_153.xml?from=10537812295975&to=10547324846375",
     "https://www.torneostcg.cl/region-metropolitana/tiendas/oasis",
     "https://api.openstreetmap.org/api/0.6/node/13596743805"
-   ]
+   ],
+   "lat": -33.414054,
+   "lng": -70.582909,
+   "coordenadas_fuente": "OpenStreetMap, nodo 13596743805 'Oasis Games' (Avenida Apoquindo 4501, unidad 5; mismo teléfono que la web; creado el 24-02-2026)."
   },
   {
    "id": "persa-biobio",
@@ -989,9 +1007,6 @@
    "instagram": null,
    "dudas": "La Galería Placer (Placer 880) está clausurada desde diciembre de 2025; el resto de los galpones funciona.",
    "es_galeria": true,
-   "lat_propuesta": -33.4746,
-   "lng_propuesta": -70.64430833,
-   "fuente_propuesta": "Wikipedia en español, artículo «Persa Biobío» (coordenadas -33.4746, -70.64430833)",
    "fotos": [
     {
      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Entrada_posterior_Persa_Biobi%C3%B3.JPG/960px-Entrada_posterior_Persa_Biobi%C3%B3.JPG",
@@ -1018,7 +1033,10 @@
     "https://www.meteored.cl/noticias/ocio/santiago-revive-la-era-dorada-de-los-videojuegos-donde-jugar-arcades-pinball-y-encontrar-consolas-clasicas.html",
     "https://puranoticia.pnt.cl/nacional/cierran-galeria-placer-del-persa-bio-bio-denunciado-por-venta-de",
     "https://g5noticias.cl/2025/12/29/clausuran-galpon-del-persa-biobio-tras-funcionar-mas-de-10-anos-sin-permisos-de-obras-ni-comerciales/"
-   ]
+   ],
+   "lat": -33.4746,
+   "lng": -70.644308,
+   "coordenadas_fuente": "Wikipedia en español, artículo «Persa Biobío» (coordenadas -33.4746, -70.64430833)"
   },
   {
    "id": "piedrabruja",
@@ -1038,9 +1056,6 @@
    "horario": "Lun a vie 9:00–22:00; sáb y dom 10:00–20:00",
    "web": "https://piedrabruja.cl/",
    "instagram": "https://www.instagram.com/piedrabruja_chile/",
-   "lat_propuesta": -33.42983333,
-   "lng_propuesta": -70.62308611,
-   "fuente_propuesta": "Wikidata Q28500970 (Torres de Tajamar), cuya dirección registrada es «Avenida Providencia 1100»; es.wikipedia da las mismas coordenadas. Es el punto del conjunto, no el del local 45. OSM lo respalda: el nodo 3144059598 (Av. Providencia 1100, local 18) está a unos 30 m.",
    "fotos": [
     {
      "url": "https://cdn.shopify.com/s/files/1/0697/4482/0504/files/Portada.jpg?v=1718933414",
@@ -1066,7 +1081,10 @@
     "https://www.wikidata.org/wiki/Q28500970",
     "https://es.wikipedia.org/wiki/Torres_de_Tajamar",
     "https://overpass-api.de/api/interpreter (OSM node 3144059598, Av. Providencia 1100 local 18)"
-   ]
+   ],
+   "lat": -33.429833,
+   "lng": -70.623086,
+   "coordenadas_fuente": "Wikidata Q28500970 (Torres de Tajamar), cuya dirección registrada es «Avenida Providencia 1100»; es.wikipedia da las mismas coordenadas. Es el punto del conjunto, no el del local 45. OSM lo respalda: el nodo 3144059598 (Av. Providencia 1100, local 18) está a unos 30 m."
   },
   {
    "id": "playset-tcg-store",
@@ -1085,9 +1103,6 @@
    "horario": "Lun a vie 12:00–21:00; sáb 12:00–19:00",
    "web": "https://www.playset.cl/",
    "instagram": "https://www.instagram.com/playsetcl/",
-   "lat_propuesta": -33.4370185,
-   "lng_propuesta": -70.6364374,
-   "fuente_propuesta": "Mapa de Google incrustado en playset.cl/contacto y en la portada (!3d-33.4370185 !2d-70.6364374, con el rótulo «Merced 80, 8320119 Santiago»; generado el 25/26-12-2025). Concuerda con OSM: el Hostel Merced 88 está a unos 20 m.",
    "fotos": [],
    "evidencia": "Confirmada. La tienda online está muy activa: subió productos 30th Celebration el 05 y el 06-11-2026. La página de contacto (modificada el 25-12-2025) y el mapa incrustado ubican la tienda en Merced 80 con horario lun-vie 12-21 y sáb 12-19. OSM todavía la muestra en la dirección antigua, Seminario 768 (nodo 11050122209, desactualizado). TorneosTCG (consultado el 07-11-2026) publica en Merced 80 la liga oficial Pokémon (mar 19:30) y el «Desafío Playset» (jue 19:00), más una League Cup con fecha 08-11-2026 a las 11:00, tomada del Event Locator de Play! Pokémon. Correcciones al agente anterior: la League Cup del domingo es un evento puntual y no semanal. Además del TCG Pokémon vende juegos de mesa (19 productos en stock) y peluches y figuras Pokémon (categorías «Figuras y Peluches» y «Pokemon Center»). No encontré noticias de cierre.",
    "fuentes": [
@@ -1099,7 +1114,10 @@
     "https://www.playset.cl/categoria-producto/figuras-y-peluches/",
     "https://www.torneostcg.cl/region-metropolitana/tiendas/playsetcl",
     "https://overpass-api.de/api/interpreter (OSM node 11050122209 Playset en Seminario 768, desactualizado; node 13390616869 Hostel Merced 88)"
-   ]
+   ],
+   "lat": -33.437019,
+   "lng": -70.636437,
+   "coordenadas_fuente": "Mapa de Google incrustado en playset.cl/contacto y en la portada (!3d-33.4370185 !2d-70.6364374, con el rótulo «Merced 80, 8320119 Santiago»; generado el 25/26-12-2025). Concuerda con OSM: el Hostel Merced 88 está a unos 20 m."
   },
   {
    "id": "retrogamers",
@@ -1137,7 +1155,10 @@
     "https://www.youtube.com/watch?v=qKM6jT4JPfM",
     "https://www.openstreetmap.org/way/1174039035",
     "https://www.openstreetmap.org/way/447572408"
-   ]
+   ],
+   "lat": -33.421912,
+   "lng": -70.609286,
+   "coordenadas_fuente": "la de Galería Paseo Las Palmas"
   },
   {
    "id": "shazam-comics",
@@ -1154,9 +1175,6 @@
    "horario": "Lun a vie 12:00–20:00; sáb 12:00–15:00 (sin confirmar: la tienda no lo publica)",
    "web": "https://www.shazamcomics.cl/",
    "instagram": "https://www.instagram.com/shazamcomics",
-   "lat_propuesta": -33.4216349,
-   "lng_propuesta": -70.6102587,
-   "fuente_propuesta": "OpenStreetMap: centro del edificio 'Portal Lyon' (way 234331817, editado el 28-05-2026). Es la sucursal de Av. Providencia 2198. Marín 0279 no tiene punto en OSM.",
    "fotos": [
     {
      "url": "https://assets.jumpseller.com/store/shazam-online/themes/334780/espacio-shazam.jpg",
@@ -1190,7 +1208,10 @@
     "https://www.13.cl/rec/articulos/maria-jesus-sothers-conocio-la-tienda-mas-grande-de-comics-en-chile",
     "https://api.openstreetmap.org/api/0.6/way/234331817",
     "https://api.openstreetmap.org/api/0.6/map?bbox=-70.6400,-33.4520,-70.6280,-33.4440"
-   ]
+   ],
+   "lat": -33.421635,
+   "lng": -70.610259,
+   "coordenadas_fuente": "OpenStreetMap: centro del edificio 'Portal Lyon' (way 234331817, editado el 28-05-2026). Es la sucursal de Av. Providencia 2198. Marín 0279 no tiene punto en OSM."
   },
   {
    "id": "taylor-comics",
@@ -1207,9 +1228,6 @@
    "horario": null,
    "web": "https://www.taylorcomics.cl/",
    "instagram": "https://www.instagram.com/taylor_comics/",
-   "lat_propuesta": -33.4524904,
-   "lng_propuesta": -70.679885,
-   "fuente_propuesta": "OpenStreetMap, way 71871574 (centroide del mall Arauco Estación, Av. Libertador Bernardo O'Higgins 3250), consultado vía Overpass; ubica el mall, no el local F516",
    "fotos": [
     {
      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Arauco_Estaci%C3%B3n%2C_Estaci%C3%B3n_Central%2C_Santiago_20230327.jpg/960px-Arauco_Estaci%C3%B3n%2C_Estaci%C3%B3n_Central%2C_Santiago_20230327.jpg",
@@ -1229,7 +1247,10 @@
     "https://web.archive.org/web/20241103145836/https://www.taylorcomics.cl/",
     "https://web.archive.org/web/20250430051021/https://www.taylorcomics.cl/",
     "https://web.archive.org/web/20260618120434/https://www.taylorcomics.cl/"
-   ]
+   ],
+   "lat": -33.45249,
+   "lng": -70.679885,
+   "coordenadas_fuente": "OpenStreetMap, way 71871574 (centroide del mall Arauco Estación, Av. Libertador Bernardo O'Higgins 3250), consultado vía Overpass; ubica el mall, no el local F516"
   },
   {
    "id": "third-impact",
@@ -1247,9 +1268,6 @@
    "horario": "Lun a vie 11:30–21:30; sáb y dom 10:00–17:30",
    "web": "https://www.thirdimpact.cl/",
    "instagram": "https://www.instagram.com/thirdimpact.cl",
-   "lat_propuesta": -33.4192623,
-   "lng_propuesta": -70.6033063,
-   "fuente_propuesta": "OpenStreetMap, way 600017024 (edificio con dirección Av. Providencia 2563), vía Overpass; el nodo vecino del Smart Fit (11590108774) está a pocos metros; ubica el edificio, no el local 12",
    "fotos": [],
    "evidencia": "Su web está vigente: pie '© 2026', preventas de Pokémon 30th Celebration y Delta Reign y de Magic Star Trek. Publica 'Sucursal Tobalaba: Av. Providencia 2563, Local 12, Metro L1 Tobalaba' con su horario. TorneosTCG (consultado el 07-11-2026) la ubica 'al costado del gimnasio Smart Fit' y lista 19 eventos semanales. Ojo, su propia web se contradice. El artículo 'Conoce nuestras tiendas' (modificado el 20-09-2026) todavía llama 'Sucursal Tobalaba' a Av. Providencia 2594, local 204 (edificio Pirámide del Sol). Ese local figuraba en el pie de página hasta julio de 2026 (Wayback, 16-07-2026). Hoy lo reemplaza la Sucursal Dos Caracoles (Av. Providencia 2216, local 19A). La tercera sucursal es Antonio Varas 1412, local 2. El artículo promete 'espacio para jugar, aprender, intercambiar' y torneos. Vende juegos de mesa (Asmodee, Devir, Salta Pal Lao). La sección 'Juguetes' tiene solo 5 productos, así que no amerita 'anime'. Hace envíos a todo Chile. No encontré noticias de cierre.",
    "fuentes": [
@@ -1261,7 +1279,10 @@
     "https://www.torneostcg.cl/region-metropolitana/tiendas/third-impact/third-impact-tobalaba",
     "https://web.archive.org/web/20260716082008/https://www.thirdimpact.cl/",
     "https://web.archive.org/web/20250618054907/https://www.thirdimpact.cl/"
-   ]
+   ],
+   "lat": -33.419262,
+   "lng": -70.603306,
+   "coordenadas_fuente": "OpenStreetMap, way 600017024 (edificio con dirección Av. Providencia 2563), vía Overpass; el nodo vecino del Smart Fit (11590108774) está a pocos metros; ubica el edificio, no el local 12"
   },
   {
    "id": "universo-toys",
@@ -1305,7 +1326,10 @@
     "https://web.archive.org/web/20250917171258/https://www.universotoys.cl/",
     "https://web.archive.org/web/20260122003641/https://www.universotoys.cl/",
     "https://web.archive.org/web/20230610195659/https://www.universotoystienda.com/contact"
-   ]
+   ],
+   "lat": -33.421264,
+   "lng": -70.609911,
+   "coordenadas_fuente": "la de Centro Comercial Dos Caracoles"
   },
   {
    "id": "vudu-gaming",
@@ -1325,9 +1349,6 @@
    "horario": "Lun a dom 14:00–21:00 (según OpenStreetMap; la tienda no lo publica)",
    "web": "https://www.vudugaming.cl/",
    "instagram": "https://www.instagram.com/vudugaming.cl",
-   "lat_propuesta": -33.4293937,
-   "lng_propuesta": -70.6224036,
-   "fuente_propuesta": "OpenStreetMap: nodo 13644199072 'Vudu Games' (shop=games), creado el 13-03-2026 y vecino del nodo 'Galerías Veneto'. Descarté el geo del JSON-LD de su web (-33.4335, -70.6262), que cae a unos 580 m de la dirección.",
    "fotos": [],
    "evidencia": "Confirmada. Su web vende cupos para el prerelease de Magic 'Star Trek' del sábado 07-11-2026 a las 11:00 en Av. Providencia 1108, local 15. Su calendario de eventos, con imágenes subidas el 05-10-2026, repite esa dirección. Subió productos hasta el 05-11-2026 y TorneosTCG le publica 7 eventos semanales. No encontré noticias de cierre ni de traslado. Corrijo los torneos del otro agente: el One Piece de los viernes 20:00 ('Pirates Party') es un torneo online en el simulador oficial, no en la tienda. El One Piece presencial es los jueves a las 19:30, y faltaba Gundam los lunes a las 19:00. Agrego 'rol': vende 71 productos de rol, como D&D y La Llamada de Cthulhu. 'Miniaturas' se confirma: tiene 137 juegos de miniaturas (Batman Miniature Game, Marvel Crisis Protocol, Zombicide). La tienda no publica horario; el de OSM lo cargó un colaborador y conviene confirmarlo.",
    "fuentes": [
@@ -1339,7 +1360,10 @@
     "https://www.vudugaming.cl/magic-commander-bracket-2",
     "https://www.vudugaming.cl/juegos-de-rol",
     "https://www.vudugaming.cl/juegos-de-mesa/miniaturas"
-   ]
+   ],
+   "lat": -33.429394,
+   "lng": -70.622404,
+   "coordenadas_fuente": "OpenStreetMap: nodo 13644199072 'Vudu Games' (shop=games), creado el 13-03-2026 y vecino del nodo 'Galerías Veneto'. Descarté el geo del JSON-LD de su web (-33.4335, -70.6262), que cae a unos 580 m de la dirección."
   },
   {
    "id": "wargaming-cl",
@@ -1392,7 +1416,10 @@
     "https://bodega.wargaming.cl/product/torneo-aos-nov",
     "https://bodega.wargaming.cl/product/pokemon-league-cup-season-1-montt",
     "https://bodega.wargaming.cl/product/league-challenge-nov-manuel-montt"
-   ]
+   ],
+   "lat": -33.430815,
+   "lng": -70.618021,
+   "coordenadas_fuente": "OpenStreetMap, entre Doctor Manuel Barros Borgoño 78 y 228"
   }
  ]
 }
