@@ -1,77 +1,13 @@
 {
  "version": 1,
- "actualizado": "2026-11-08T12:59-03:00",
+ "actualizado": "2026-11-08T17:46-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-08T12:59-03:00",
+  "fecha": "2026-11-08T17:46-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 127,
-  "nuevos_esta_vez": 3,
+  "eventos_nuevos": 69,
+  "nuevos_esta_vez": 6,
   "nuevos_ids": [
-   "429f8ea87c",
-   "4fb5aa7103",
-   "f86137aa96",
-   "aeac9930e3",
-   "0651ca14b4",
-   "aa4a4a261b",
-   "a2af6cc955",
-   "d04b8c1116",
-   "625f47d0d4",
-   "032f3df471",
-   "d5f62b4132",
-   "edf97cb654",
-   "4c39e5bf70",
-   "c0486ed264",
-   "be2a0b9bda",
-   "c1ccfb91de",
-   "b240f6e84d",
-   "b91cbc5d41",
-   "6dd0741db1",
-   "a2b9db3fc8",
-   "50b4603a83",
-   "4f3ed2eb73",
-   "6fd9b8d405",
-   "da0eb1db3c",
-   "c4609d9554",
-   "59875c1d42",
-   "c4609ac473",
-   "8330fb3ee5",
-   "0248a93239",
-   "e381f47523",
-   "a81ce004c8",
-   "a2b349ee42",
-   "a63a50166b",
-   "44eb40acf7",
-   "3d1bbb4626",
-   "43741e2b3d",
-   "62af8b8153",
-   "e95b482f5e",
-   "965527d5e7",
-   "62f29994ca",
-   "6d839fa102",
-   "2f1b68db8f",
-   "c91ffc691a",
-   "4d5f2940d2",
-   "f5670ec010",
-   "f2299bd942",
-   "9324abff5f",
-   "bc60672df9",
-   "fb78b6b9f5",
-   "8f02eb5cce",
-   "5d6ef373bb",
-   "6b80f85dd3",
-   "da7b2811ae",
-   "57bf3a4361",
-   "c5b1d7de21",
-   "c4ec055829",
-   "c22a962c51",
-   "6f9728b22f",
-   "ea236dcf5d",
-   "e9015dff95",
-   "49bae6150e",
-   "84b10367f6",
-   "72ed90cd4d",
-   "7d4495a696",
    "c7c60f5db9",
    "fe14aa1cb1",
    "5ae5fe6040",
@@ -134,73 +70,15 @@
    "be16a62f60",
    "b14d3de7f7",
    "c23b38981c",
-   "54328215b8"
+   "54328215b8",
+   "ef40d88c07",
+   "307971fb3d",
+   "e138b01837",
+   "3429e9c5ae",
+   "e6df33fa62",
+   "ae235db2f3"
   ],
   "nuevos_desde": {
-   "429f8ea87c": "2026-11-07T13:02-03:00",
-   "4fb5aa7103": "2026-11-07T13:02-03:00",
-   "f86137aa96": "2026-11-07T13:02-03:00",
-   "aeac9930e3": "2026-11-07T13:02-03:00",
-   "0651ca14b4": "2026-11-07T13:02-03:00",
-   "aa4a4a261b": "2026-11-07T13:02-03:00",
-   "a2af6cc955": "2026-11-07T13:02-03:00",
-   "d04b8c1116": "2026-11-07T13:02-03:00",
-   "625f47d0d4": "2026-11-07T13:02-03:00",
-   "032f3df471": "2026-11-07T13:02-03:00",
-   "d5f62b4132": "2026-11-07T13:02-03:00",
-   "edf97cb654": "2026-11-07T13:02-03:00",
-   "4c39e5bf70": "2026-11-07T13:02-03:00",
-   "c0486ed264": "2026-11-07T13:02-03:00",
-   "be2a0b9bda": "2026-11-07T13:02-03:00",
-   "c1ccfb91de": "2026-11-07T13:02-03:00",
-   "b240f6e84d": "2026-11-07T13:02-03:00",
-   "b91cbc5d41": "2026-11-07T13:02-03:00",
-   "6dd0741db1": "2026-11-07T13:02-03:00",
-   "a2b9db3fc8": "2026-11-07T13:02-03:00",
-   "50b4603a83": "2026-11-07T13:02-03:00",
-   "4f3ed2eb73": "2026-11-07T13:02-03:00",
-   "6fd9b8d405": "2026-11-07T13:02-03:00",
-   "da0eb1db3c": "2026-11-07T13:02-03:00",
-   "c4609d9554": "2026-11-07T13:02-03:00",
-   "59875c1d42": "2026-11-07T13:02-03:00",
-   "c4609ac473": "2026-11-07T13:02-03:00",
-   "8330fb3ee5": "2026-11-07T13:02-03:00",
-   "0248a93239": "2026-11-07T13:02-03:00",
-   "e381f47523": "2026-11-07T13:02-03:00",
-   "a81ce004c8": "2026-11-07T13:02-03:00",
-   "a2b349ee42": "2026-11-07T13:02-03:00",
-   "a63a50166b": "2026-11-07T13:02-03:00",
-   "44eb40acf7": "2026-11-07T13:02-03:00",
-   "3d1bbb4626": "2026-11-07T13:02-03:00",
-   "43741e2b3d": "2026-11-07T13:02-03:00",
-   "62af8b8153": "2026-11-07T13:02-03:00",
-   "e95b482f5e": "2026-11-07T13:02-03:00",
-   "965527d5e7": "2026-11-07T13:02-03:00",
-   "62f29994ca": "2026-11-07T13:02-03:00",
-   "6d839fa102": "2026-11-07T13:02-03:00",
-   "2f1b68db8f": "2026-11-07T13:02-03:00",
-   "c91ffc691a": "2026-11-07T13:02-03:00",
-   "4d5f2940d2": "2026-11-07T13:02-03:00",
-   "f5670ec010": "2026-11-07T13:02-03:00",
-   "f2299bd942": "2026-11-07T13:02-03:00",
-   "9324abff5f": "2026-11-07T13:02-03:00",
-   "bc60672df9": "2026-11-07T13:02-03:00",
-   "fb78b6b9f5": "2026-11-07T13:02-03:00",
-   "8f02eb5cce": "2026-11-07T13:02-03:00",
-   "5d6ef373bb": "2026-11-07T13:02-03:00",
-   "6b80f85dd3": "2026-11-07T13:02-03:00",
-   "da7b2811ae": "2026-11-07T13:02-03:00",
-   "57bf3a4361": "2026-11-07T13:02-03:00",
-   "c5b1d7de21": "2026-11-07T13:02-03:00",
-   "c4ec055829": "2026-11-07T13:02-03:00",
-   "c22a962c51": "2026-11-07T13:02-03:00",
-   "6f9728b22f": "2026-11-07T13:02-03:00",
-   "ea236dcf5d": "2026-11-07T13:02-03:00",
-   "e9015dff95": "2026-11-07T13:02-03:00",
-   "49bae6150e": "2026-11-07T13:02-03:00",
-   "84b10367f6": "2026-11-07T13:02-03:00",
-   "72ed90cd4d": "2026-11-07T13:02-03:00",
-   "7d4495a696": "2026-11-07T13:02-03:00",
    "c7c60f5db9": "2026-11-07T19:07-03:00",
    "fe14aa1cb1": "2026-11-07T19:07-03:00",
    "5ae5fe6040": "2026-11-07T20:38-03:00",
@@ -263,21 +141,28 @@
    "be16a62f60": "2026-11-08T11:30-03:00",
    "b14d3de7f7": "2026-11-08T12:59-03:00",
    "c23b38981c": "2026-11-08T12:59-03:00",
-   "54328215b8": "2026-11-08T12:59-03:00"
+   "54328215b8": "2026-11-08T12:59-03:00",
+   "ef40d88c07": "2026-11-08T17:46-03:00",
+   "307971fb3d": "2026-11-08T17:46-03:00",
+   "e138b01837": "2026-11-08T17:46-03:00",
+   "3429e9c5ae": "2026-11-08T17:46-03:00",
+   "e6df33fa62": "2026-11-08T17:46-03:00",
+   "ae235db2f3": "2026-11-08T17:46-03:00"
   },
   "horas_nuevos": 24,
-  "llamadas_ia": 2,
+  "llamadas_ia": 32,
   "ia_sin_cupo": false,
-  "ultima_completa": "2026-11-08T10:59-03:00",
-  "modo": "rapida",
-  "paginas_revisadas": 0,
-  "busquedas": 0,
-  "fuentes_fijas": 8,
-  "errores": 2,
+  "ultima_completa": "2026-11-08T17:28-03:00",
+  "modo": "completa",
+  "paginas_revisadas": 32,
+  "busquedas": 77,
+  "fuentes_fijas": 11,
+  "errores": 11,
   "noticias_desde": "2026-11-08",
-  "noticias_viejas_descartadas": 0
+  "noticias_viejas_descartadas": 282,
+  "redes_vistas": 17
  },
- "total": 221,
+ "total": 227,
  "eventos": [
   {
    "titulo": "Mariposas y Polillas, Colores en Movimiento",
@@ -543,6 +428,36 @@
    "origen": "claude",
    "id": "6dfafa8970",
    "agregado": "2026-11-07",
+   "actualizado": "2026-11-08"
+  },
+  {
+   "titulo": "Kume Mongen",
+   "categoria": "museos",
+   "fecha_inicio": "2026-01-02",
+   "fecha_fin": "2027-04-24",
+   "hora": null,
+   "horario": null,
+   "lugar": "Museo de Artes Visuales MAVI UC",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Exposición en el MAVI UC que forma parte de la cartelera cultural de Santiago.",
+   "imagen": "https://www.circuitosantiago.cl/wp-content/uploads/2026/07/kumemongen-1536x862.jpg",
+   "fotos": null,
+   "url": "https://www.circuitosantiago.cl/categoria/exposiciones/",
+   "fuentes": [
+    {
+     "nombre": "circuitosantiago.cl",
+     "url": "https://www.circuitosantiago.cl/categoria/exposiciones/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "3429e9c5ae",
+   "agregado": "2026-11-08",
    "actualizado": "2026-11-08"
   },
   {
@@ -923,6 +838,10 @@
     {
      "nombre": "ARTEINFORMADO",
      "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-de-arte-en-santiago-region-metropolitana-chile-409031_1"
+    },
+    {
+     "nombre": "ARTEINFORMADO",
+     "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-de-arte-en-chile-cl_1"
     }
    ],
    "desde_imagen": false,
@@ -1612,6 +1531,10 @@
     {
      "nombre": "ARTEINFORMADO",
      "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-de-arte-en-santiago-region-metropolitana-chile-409031_1"
+    },
+    {
+     "nombre": "ARTEINFORMADO",
+     "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-de-arte-en-chile-cl_1"
     }
    ],
    "desde_imagen": false,
@@ -1721,6 +1644,10 @@
     {
      "nombre": "ARTEINFORMADO",
      "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-de-arte-en-santiago-region-metropolitana-chile-409031_1"
+    },
+    {
+     "nombre": "ARTEINFORMADO",
+     "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-de-arte-en-chile-cl_1"
     }
    ],
    "desde_imagen": false,
@@ -1987,6 +1914,10 @@
     {
      "nombre": "ARTEINFORMADO",
      "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-de-arte-en-santiago-region-metropolitana-chile-409031_1"
+    },
+    {
+     "nombre": "ARTEINFORMADO",
+     "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-de-arte-en-chile-cl_1"
     }
    ],
    "desde_imagen": false,
@@ -2279,6 +2210,36 @@
    "id": "7fc2bdb573",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Trayectos de la Carne",
+   "categoria": "museos",
+   "fecha_inicio": "2026-10-28",
+   "fecha_fin": "2026-11-25",
+   "hora": null,
+   "horario": null,
+   "lugar": "Centro Cultural",
+   "direccion": "Independencia 2112",
+   "comuna": "Valparaíso",
+   "ciudad": "Valparaíso",
+   "region": "Región de Valparaíso",
+   "precio": null,
+   "descripcion": "Exposición artística 'Trayectos de la Carne' en Valparaíso. Arte y cultura.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-de-arte-en-chile-cl_1",
+   "fuentes": [
+    {
+     "nombre": "ARTEINFORMADO",
+     "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-de-arte-en-chile-cl_1"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "e138b01837",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Index, \"Formas de lo incierto\"",
@@ -2753,6 +2714,36 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "TINTA: Feria de Arte Impreso",
+   "categoria": "ilustracion",
+   "fecha_inicio": "2026-11-06",
+   "fecha_fin": "2026-11-08",
+   "hora": null,
+   "horario": null,
+   "lugar": "Campus Oriente UC",
+   "direccion": null,
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Sexta edición de TINTA, feria dedicada al arte impreso y la ilustración en el Campus Oriente UC.",
+   "imagen": "https://festivalindex.com/static/brand/social/festivalindex-og-image-1200x630.png",
+   "fotos": null,
+   "url": "https://festivalindex.com/es-cl",
+   "fuentes": [
+    {
+     "nombre": "festivalindex.com",
+     "url": "https://festivalindex.com/es-cl"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "e6df33fa62",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
+  },
+  {
    "titulo": "Trazos. Lily Garafulic",
    "categoria": "museos",
    "fecha_inicio": "2026-11-06",
@@ -2905,6 +2896,10 @@
     {
      "nombre": "Salir Santiago",
      "url": "https://salirsantiago.com/panorama/festival-medieval-vikingo-3a7bc38c"
+    },
+    {
+     "nombre": "facebook.com",
+     "url": "https://www.facebook.com/Entremercadoyjuglares/"
     }
    ],
    "desde_imagen": true,
@@ -3019,13 +3014,17 @@
    "region": "Región Metropolitana",
    "precio": "$3.000; menores de 10 y mayores de 70 gratis",
    "descripcion": "Feria internacional de arte contemporáneo en la Estación Mapocho: más de 380 artistas emergentes y consagrados, con obras a precio de taller. Solo este fin de semana.",
-   "imagen": null,
+   "imagen": "https://assets.encancha.cl/social/323430-b48a4bdfb0.jpg",
    "fotos": null,
    "url": "https://www.artweekchile.cl/",
    "fuentes": [
     {
      "nombre": "Art Week Chile (sitio oficial) y Meganoticias",
      "url": "https://www.artweekchile.cl/"
+    },
+    {
+     "nombre": "En Cancha",
+     "url": "https://www.encancha.cl/enlahora/panoramas/2026/10/29/art-week-chile-2026-fecha-artistas-actividades-y-precios-de-la-feria-de-arte-internacional-323430.html"
     }
    ],
    "desde_imagen": false,
@@ -3033,7 +3032,7 @@
    "origen": "claude",
    "id": "e09eb1beeb",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Crear:Destruir:Transformar - Rincón de escucha",
@@ -4064,9 +4063,17 @@
     {
      "nombre": "nochedemuseos.cl",
      "url": "https://nochedemuseos.cl/actividades/77-visita-guiada"
+    },
+    {
+     "nombre": "patrimoniocultural.gob.cl",
+     "url": "https://www.patrimoniocultural.gob.cl/noticias/ministerio-de-las-culturas-abre-inscripciones-para-noche-de-museos-2026"
+    },
+    {
+     "nombre": "mnhn.gob.cl",
+     "url": "https://www.mnhn.gob.cl/cartelera/noche-de-museos-2026"
     }
    ],
-   "desde_imagen": false,
+   "desde_imagen": true,
    "confianza": "alta",
    "origen": "ia",
    "id": "09cd96f442",
@@ -4204,6 +4211,36 @@
    "id": "4c39e5bf70",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "GAM y Periscopio presenta: Juegos de Mesa en BiblioGAM",
+   "categoria": "juegos",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": null,
+   "hora": "11:00",
+   "horario": null,
+   "lugar": "Centro Gabriela Mistral - GAM - BiblioGAM (Edificio A, piso 3)",
+   "direccion": "Av. Libertador Bernardo O'Higgins 227",
+   "comuna": "Santiago",
+   "ciudad": null,
+   "region": null,
+   "precio": "Gratis",
+   "descripcion": "Un ciclo de encuentros gratuitos para descubrir el mundo de los juegos de mesa, desde los clásicos modernos hasta la creación nacional, celebrando el tablero...",
+   "imagen": "https://gam.cl/media/images/PortadaPerioscopioGAM.2e16d0ba.fill-1200x630.png",
+   "fotos": null,
+   "url": "https://gam.cl/es/que-hacer-en-gam/actividades/gam-y-periscopio-presentan-juegos-de-mesa-en-bibliogam/",
+   "fuentes": [
+    {
+     "nombre": "Centro Gabriela Mistral - GAM",
+     "url": "https://gam.cl/es/que-hacer-en-gam/actividades/gam-y-periscopio-presentan-juegos-de-mesa-en-bibliogam/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "ae235db2f3",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Gojira Fest",
@@ -4728,6 +4765,36 @@
    "actualizado": "2026-11-08"
   },
   {
+   "titulo": "WACKEN METAL BATTLE CHILE HEAT 6 - VALPARAÍSO - Trotamundos Valparaíso",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-15",
+   "fecha_fin": "2026-11-16",
+   "hora": "16:00",
+   "horario": null,
+   "lugar": "Trotamundos Valparaíso",
+   "direccion": null,
+   "comuna": "Valparaíso",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $5.000",
+   "descripcion": "WACKEN METAL BATTLE CHILE HEAT 6 - VALPARAÍSO Domingo 15 de noviembre del 2026 a las 16:00 🔥 Wacken Metal Battle en Chile 🔥 📢 VALPARAÍSO ABRE SUS COMPUERTAS PARA LA GRAN BATALLA DE BANDAS❗ La 5ta región será testigo privilegiado de este esp",
+   "imagen": "https://img.vamoh.cl/events/fd41f0bc-af63-47e3-a8eb-f9d18af4d8e0.webp?v=34d96d77",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/wacken-metal-battle-chile-heat-6-valparaiso-trotamundos-valparaiso-c2i8c/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/wacken-metal-battle-chile-heat-6-valparaiso-trotamundos-valparaiso-c2i8c/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "307971fb3d",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
+  },
+  {
    "titulo": "Welcome To The Show Vol.1 en Matsumoto Nikkei",
    "categoria": "medieval",
    "fecha_inicio": "2026-11-15",
@@ -5076,6 +5143,10 @@
     {
      "nombre": "ARTEINFORMADO",
      "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-de-arte-en-santiago-region-metropolitana-chile-409031_1"
+    },
+    {
+     "nombre": "ARTEINFORMADO",
+     "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-de-arte-en-chile-cl_1"
     }
    ],
    "desde_imagen": false,
@@ -6190,9 +6261,9 @@
    "horario": null,
    "lugar": "Estadio Santa Laura Usek",
    "direccion": "Sta. Laura 1291",
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
+   "comuna": "Independencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "wp:paragraph La gira latinoamericana con la que Slayer conmemorará el 40 aniversario de Reign In Blood sigue tomando forma y ya tiene una parada confirmada para Chile. La legendaria banda de thrash metal se presentará el próximo 10 de dicie",
    "imagen": "https://summainferno.com/wp-content/uploads/2026/05/image-144.png",
@@ -6202,14 +6273,18 @@
     {
      "nombre": "Summa Inferno | Noticias de Metal, Rock, conciertos y Cultura Alternativa",
      "url": "https://summainferno.com/concierto/slayer-2026-santiago-chile/"
+    },
+    {
+     "nombre": "BCH Stage",
+     "url": "https://sitiospublicos.bancochile.cl/bch-stage/cartelera/detalle/slayer"
     }
    ],
-   "desde_imagen": false,
+   "desde_imagen": true,
    "confianza": "alta",
    "origen": "datos-estructurados",
    "id": "c5b1d7de21",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "FestiGame diciembre 2026",
@@ -6401,7 +6476,7 @@
    "hora": "19:00",
    "horario": null,
    "lugar": "Teatro Cariola",
-   "direccion": null,
+   "direccion": "San Diego 246, 8330309 Santiago, Región Metropolitana, Chile",
    "comuna": "Santiago",
    "ciudad": null,
    "region": null,
@@ -6414,6 +6489,10 @@
     {
      "nombre": "VAMOH!",
      "url": "https://vamoh.cl/events/cumbre-del-metal-chileno-2026-2i2av/"
+    },
+    {
+     "nombre": "passline.com",
+     "url": "https://www.passline.com/eventos/cumbre-del-metal-chileno-2026"
     }
    ],
    "desde_imagen": false,
@@ -6843,6 +6922,36 @@
    "id": "c1e0ab922f",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Card-geek Puente Elantris",
+   "categoria": "juegos",
+   "fecha_inicio": "2027-03-06",
+   "fecha_fin": null,
+   "hora": "11:00",
+   "horario": null,
+   "lugar": "Espacio Vicente Valdés - Vicente Valdés",
+   "direccion": null,
+   "comuna": "La Florida",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $3.500",
+   "descripcion": "CARD-GEEK PUENTE ELANTRIS 2027 ¡La comunidad TCG y geek tiene una cita imperdible! Este sábado 6 de marzo de 2027 llega Card-geek Puente Elantris, un encuentro creado para reunir en un mismo lugar a jugadores, coleccionistas, tiendas, cread",
+   "imagen": "https://img.vamoh.cl/events/d5947f40-3c01-4ebe-a53e-a51cb9a7308c.webp?v=b349ec5b",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/card-geek-puente-elantris-x96xl/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/card-geek-puente-elantris-x96xl/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "ef40d88c07",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Epica - Rhapsody - The Final Shows",
