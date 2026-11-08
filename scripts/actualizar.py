@@ -83,10 +83,24 @@ def sin_tildes(t: str) -> str:
     return "".join(c for c in t if not unicodedata.combining(c)).lower()
 
 
+RE_SURROGATE = re.compile("[\ud800-\udfff]")
+
+
+def sin_surrogates(t: str) -> str:
+    """Repara las letras partidas por la mitad. Algunos sitios recortan sus textos en JavaScript justo en medio de
+    una letra «decorada» (𝐅𝐄𝐒𝐓) o de un emoji, y su JSON trae la mitad suelta ("\\ud835"). Con eso Python no puede
+    escribir el archivo en UTF-8 y se perdía la búsqueda completa (8-11-2026). Junta las mitades que vienen
+    seguidas y borra las que quedaron solas."""
+    if not RE_SURROGATE.search(t):
+        return t
+    t = t.encode("utf-16-le", "surrogatepass").decode("utf-16-le", "surrogatepass")
+    return RE_SURROGATE.sub("", t)
+
+
 def limpiar(t) -> str:
     if t is None:
         return ""
-    t = html.unescape(str(t))
+    t = sin_surrogates(html.unescape(str(t)))
     t = re.sub(r"<[^>]+>", " ", t)
     return re.sub(r"\s+", " ", t).strip()
 
@@ -1052,7 +1066,8 @@ def cargar_json(ruta: Path, defecto):
 
 def guardar_json(ruta: Path, datos):
     ruta.parent.mkdir(parents=True, exist_ok=True)
-    ruta.write_text(json.dumps(datos, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    # sin_surrogates: por si algún texto no pasó por limpiar(); una letra partida no debe botar la vuelta entera
+    ruta.write_text(sin_surrogates(json.dumps(datos, ensure_ascii=False, indent=1)) + "\n", encoding="utf-8")
 
 
 CAMPOS = ["titulo", "categoria", "fecha_inicio", "fecha_fin", "hora", "horario", "lugar", "direccion", "comuna",
@@ -1767,8 +1782,8 @@ def main():
                     help="auto: la completa si ya pasaron 'horas_entre_completas' desde la anterior; si no, la rápida")
     args = ap.parse_args()
     inicio = dt.datetime.now(TZ)
-    try:
-        sys.stdout.reconfigure(encoding="utf-8")
+    try:  # errors="replace": una línea del registro con una letra partida no debe botar al robot
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     except Exception:  # noqa: BLE001
         pass
 
