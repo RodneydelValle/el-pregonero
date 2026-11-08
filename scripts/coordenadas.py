@@ -126,6 +126,34 @@ def nombre_buscado(x: dict) -> str:
     return re.sub(r"\(.*?\)", "", x.get("buscar_osm") or x["nombre"]).strip()
 
 
+def centro_de_calle_corta(calle: str, largo_max_km: float = 0.6) -> list[tuple]:
+    """Último recurso, cuando OSM no tiene ni el local ni números en esa calle: si la calle es corta (un pasaje,
+    unas pocas cuadras), su punto medio queda a lo más a unos 300 m del local. Se marca como aproximada.
+    Si hay varias calles con ese nombre (en distintas comunas), cada una es un intento: la comuna decide."""
+    partes = "".join(f'way["highway"]["name"="{comillas(v)}"]{BBOX};' for v in variantes(calle))
+    tramos = overpass(f"[out:json][timeout:120];({partes});out geom;")
+    # se juntan los tramos que se tocan o casi (una misma calle partida en varios trozos)
+    calles = []
+    for w in tramos:
+        pts = [(p["lat"], p["lon"]) for p in w.get("geometry", [])]
+        if len(pts) < 2:
+            continue
+        c = next((c for c in calles if min(distancia_km(a, b) for a in c for b in (pts[0], pts[-1])) < 0.05), None)
+        if c is not None:
+            c.extend(pts)
+        else:
+            calles.append(list(pts))
+    intentos = []
+    for pts in calles:
+        largo = sum(distancia_km(pts[i], pts[i + 1]) for i in range(len(pts) - 1))
+        if largo > largo_max_km:
+            continue
+        la = sum(p[0] for p in pts) / len(pts)
+        lo = sum(p[1] for p in pts) / len(pts)
+        intentos.append((la, lo, f"aproximada: centro de {calle} ({round(largo * 1000)} m de largo; OSM no tiene sus números)"))
+    return intentos
+
+
 def geocodificar(lugares: list[dict]) -> dict[str, dict]:
     # 1) nombres: entre lugares con nombre que sean comercios, comida, malls o galerías
     nombres = sorted({nombre_buscado(x) for x in lugares})
@@ -215,6 +243,8 @@ def geocodificar(lugares: list[dict]) -> dict[str, dict]:
                 intentos.append((p["lat"], p["lng"], f"OpenStreetMap, número cercano: {p['calle']} {p['txt']}"))
         if x.get("buscar_osm") or not calle or len(debiles) <= 3:
             intentos += [(la, lo, f) for _, la, lo, f in sorted(debiles, key=lambda c: -c[0])[:3]]
+        if not intentos and calle:
+            intentos += centro_de_calle_corta(calle)
         elegido, vistos = None, []
         aceptadas = {st(x.get("comuna"))} | {st(c) for c in x.get("comunas_aceptadas") or []}
         for la, lo, fuente in intentos[:7]:
