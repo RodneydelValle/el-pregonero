@@ -6,7 +6,9 @@ Usa la API Overpass (no Nominatim: su robots.txt no deja usarlo así), con pocas
   1) por nombre, entre restaurantes, cafés, bares, tiendas, malls y galerías del mapa;
   2) por dirección: todos los números de esas calles (dirección exacta o interpolada entre dos números);
   3) la comuna de cada punto (is_in), que debe ser la del dato. Si no calza, no se guarda.
-Pistas opcionales en cada lugar: "buscar_osm" (otro nombre para buscar, p. ej. el mall donde está) y "en"
+Pistas opcionales en cada lugar: "lat_propuesta"/"lng_propuesta"/"fuente_propuesta" (coordenadas de su sitio
+oficial o de Wikipedia: se prueban primero y también deben caer en la comuna), "buscar_osm" (otro nombre para buscar,
+p. ej. el mall donde está) y "en"
 (el id de la galería donde está: toma sus coordenadas, así todos los de la galería van en un mismo marcador).
 Corre en GitHub Actions (workflow «Coordenadas»): la red de la oficina no llega a overpass-api.de.
 
@@ -190,6 +192,8 @@ def geocodificar(lugares: list[dict]) -> dict[str, dict]:
             (fuertes if puntos >= 3 else debiles).append((puntos, la, lo, fuente))
         fuertes.sort(key=lambda c: -c[0])
         intentos = [(la, lo, f) for _, la, lo, f in fuertes[:2]]
+        if isinstance(x.get("lat_propuesta"), (int, float)) and isinstance(x.get("lng_propuesta"), (int, float)):
+            intentos.insert(0, (x["lat_propuesta"], x["lng_propuesta"], x.get("fuente_propuesta") or "coordenadas propuestas"))
         if calle and numtxt:
             n, cero = int(numtxt), con_cero(numtxt)
             misma = [p for p in numeros if st(p["calle"]) in de_calle and p["cero"] == cero]
@@ -267,6 +271,8 @@ def main():
             if r:
                 x["lat"], x["lng"] = round(r["lat"], 6), round(r["lng"], 6)
                 x["coordenadas_fuente"] = r["fuente"]
+                for k in ("lat_propuesta", "lng_propuesta", "fuente_propuesta"):
+                    x.pop(k, None)
                 cambio = True
         if cambio:
             with open(ruta, "w", encoding="utf-8", newline="") as f:

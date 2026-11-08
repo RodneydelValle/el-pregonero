@@ -1,0 +1,1398 @@
+{
+ "version": 1,
+ "revisado": "2026-11-07",
+ "_nota": "Tiendas del Mapa del Aventurero (lista revisada a mano; el robot no la toca). categorias: los filtros del mapa, con el ícono del sprite de index.html y su color. Cada tienda: id, nombre, categorias, direccion, comuna, lat, lng, descripcion, torneos, espacio_juego, venta_online, horario, web, instagram, fotos [{url, mini, pagina, credito, descripcion}], evidencia, fuentes. Los restaurantes temáticos salen de data/restaurantes.json (los que tienen lat y lng).",
+ "categorias": [
+  {
+   "id": "tcg",
+   "nombre": "Cartas TCG",
+   "icono": "i-cartas",
+   "color": "#7446c9"
+  },
+  {
+   "id": "mesa",
+   "nombre": "Juegos de mesa",
+   "icono": "i-dado6",
+   "color": "#8f6406"
+  },
+  {
+   "id": "rol",
+   "nombre": "Rol (RPG)",
+   "icono": "i-dado",
+   "color": "#c62a2a"
+  },
+  {
+   "id": "miniaturas",
+   "nombre": "Miniaturas",
+   "icono": "i-meeple",
+   "color": "#18786f"
+  },
+  {
+   "id": "anime",
+   "nombre": "Anime y manga",
+   "icono": "i-gato",
+   "color": "#b93279"
+  },
+  {
+   "id": "videojuegos",
+   "nombre": "Videojuegos",
+   "icono": "i-mando",
+   "color": "#2f63c9"
+  },
+  {
+   "id": "restaurantes",
+   "nombre": "Restaurantes temáticos",
+   "icono": "i-cubiertos",
+   "color": "#a84f1c"
+  }
+ ],
+ "tiendas": [
+  {
+   "id": "area-52",
+   "nombre": "Area 52",
+   "categorias": [
+    "tcg",
+    "mesa",
+    "rol",
+    "miniaturas"
+   ],
+   "direccion": "Av. Santa Isabel 962",
+   "comuna": "Providencia",
+   "descripcion": "Casona con patio que reúne tienda, cafetería, pizzería, ludoteca de más de 100 juegos, la sala de rol Danyeon (one-shots o arriendo) y una comunidad de wargames y Magic.",
+   "torneos": "Magic Commander: mié 19:30 (liga Bracket 3) y jue 19:30 (preconstruido), vie 19:00 y sáb 17:00 casual; su web pone la Liga Commander Budget los jueves 19:30. Pokémon: mar 19:30 y sáb 11:30. One Piece: mié 19:30 (TorneosTCG). Especial: Commander Star Trek el sáb 28-11-2026 a las 17:00",
+   "espacio_juego": true,
+   "venta_online": true,
+   "horario": "Mar a jue 11:00–22:00; vie 11:00–03:30; sáb 11:00–02:00",
+   "web": "https://area52.cl/",
+   "instagram": "https://www.instagram.com/area52.cl/",
+   "lat_propuesta": -33.4447792,
+   "lng_propuesta": -70.618798,
+   "fuente_propuesta": "OpenStreetMap, nodo 11907821522 «Area 52» (Avenida Santa Isabel 962, editado el 11-03-2025); coincide exactamente con el geo schema.org de area52.cl/pages/contact. El límite comunal de OSM la sitúa en Providencia.",
+   "fotos": [
+    {
+     "url": "https://area52.cl/cdn/shop/files/IMG_1395.jpg?v=1742672896",
+     "mini": null,
+     "pagina": "https://area52.cl/pages/contact",
+     "credito": "Foto: Area 52",
+     "descripcion": "Fachada en Santa Isabel 962 con el mural de Area 52 y la pizzería Pedro es una Pizza"
+    },
+    {
+     "url": "https://area52.cl/cdn/shop/files/IMG_1794.jpg?v=1742672896",
+     "mini": null,
+     "pagina": "https://area52.cl/pages/contact",
+     "credito": "Foto: Area 52",
+     "descripcion": "Patio con mesas, murales y jugadores en una partida de Magic"
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0682/4234/2124/files/20250803_153756.jpg?v=1754330444",
+     "mini": null,
+     "pagina": "https://area52.cl/pages/%EF%B8%8F-danyeon",
+     "credito": "Foto: Area 52",
+     "descripcion": "Mesa de la sala de rol Danyeon con pantalla de máster, escenografía y miniaturas"
+    }
+   ],
+   "evidencia": "Confirmada. Su web vende inscripciones a un torneo Commander Bracket 3 de Star Trek el sábado 28-11-2026 a las 17:00 en «Área 52 – Santa Isabel 962, Providencia». Subió el banner del prelanzamiento de Star Trek el 29-10-2026 y en marzo de 2026 publicó cambios a su Liga Commander Budget. TorneosTCG muestra 7 eventos semanales (consulta del 07-11-2026). Tiene ludoteca de más de 100 juegos, patio con mesas, la sala de rol Danyeon, cafetería y pizzería. No encontré noticias de cierre. El horario solo aparece en los datos schema.org de su web, no en un texto visible. «Miniaturas» va porque acoge una comunidad de wargames (Warhammer, Star Wars Legion, Crisis Protocol); en el sitemap de productos no aparecen miniaturas a la venta.",
+   "fuentes": [
+    "https://area52.cl/",
+    "https://area52.cl/pages/contact",
+    "https://area52.cl/pages/liga-budget-commander",
+    "https://area52.cl/blogs/noticias",
+    "https://area52.cl/products/inscripcion-magic-the-gathering-torneo-commander-bracket-3-star-trek",
+    "https://area52.cl/sitemap_products_1.xml",
+    "https://www.torneostcg.cl/region-metropolitana/tiendas/area-52",
+    "https://www.openstreetmap.org/node/11907821522"
+   ]
+  },
+  {
+   "id": "bazinga-comics",
+   "nombre": "Bazinga Comics",
+   "categorias": [
+    "anime"
+   ],
+   "direccion": "Huérfanos 863, Galería España, 5.º piso, oficina 514",
+   "comuna": "Santiago",
+   "descripcion": "Cómics DC, Marvel, independientes y de autores chilenos, manga y literatura fantástica; recibe cómics usados como parte de pago. Atiende en una oficina, no a pie de calle.",
+   "torneos": null,
+   "espacio_juego": null,
+   "venta_online": true,
+   "horario": "Lun a vie 10:30–14:00 y 15:30–19:00",
+   "web": "https://bazingacomics.cl/",
+   "instagram": "https://www.instagram.com/bazingacomics_cl",
+   "lat_propuesta": -33.4393735,
+   "lng_propuesta": -70.6486885,
+   "fuente_propuesta": "OpenStreetMap: entrada por Huérfanos del pasillo «Galería España» (nodo 11064204026, way 247762650). Marca la galería, no la oficina 514 del 5.º piso",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Galer%C3%ADa_Espa%C3%B1a%2C_Santiago_20230418_01.jpg/960px-Galer%C3%ADa_Espa%C3%B1a%2C_Santiago_20230418_01.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Galer%C3%ADa_Espa%C3%B1a%2C_Santiago_20230418_01.jpg/330px-Galer%C3%ADa_Espa%C3%B1a%2C_Santiago_20230418_01.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Galer%C3%ADa_Espa%C3%B1a,_Santiago_20230418_01.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Pasillo interior de la Galería España: techo abovedado de celosía, lámparas colgantes de globos blancos y vitrinas de tiendas de ropa y perfumería a ambos lados, con algunas personas caminando (abril de 2023)."
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Edificio_Espa%C3%B1a%2C_Santiago_20230521.jpg/960px-Edificio_Espa%C3%B1a%2C_Santiago_20230521.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Edificio_Espa%C3%B1a%2C_Santiago_20230521.jpg/330px-Edificio_Espa%C3%B1a%2C_Santiago_20230521.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Edificio_Espa%C3%B1a,_Santiago_20230521.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Edificio España visto desde la esquina: torre de oficinas con fachada de ventanas en retícula, árboles en la vereda y, a nivel de calle, locales como The Optical Store. En su primer piso está la Galería España (mayo de 2023)."
+    }
+   ],
+   "evidencia": "Su web publica hoy esta dirección y el horario de atención. El mismo pie de página aparece en las capturas de Wayback de enero de 2025 y del 08-10-2026. Sigue cargando productos: la API de WordPress muestra fichas creadas el 05-11-2026 y el 06-11-2026. Futuro.cl (25-07-2025) anunció un lanzamiento para el sábado 9-8-2025 «en la tienda de Bazinga Comics, ubicada en Huérfanos 863, oficina 514 (5° piso de la Galería España)». Es decir, atiende al público en una oficina-tienda; no encontré menciones de retiro con cita previa. El listado de Cuarto Mundo (actualizado en 2020) la daba sin tienda física y OSM la ubica en Moneda 782: ambos datos están desactualizados. Vende cómics DC, Marvel, independientes y chilenos, manga y literatura fantástica, y acepta cómics usados como parte de pago. No encontré torneos ni mesas para jugar.",
+   "fuentes": [
+    "https://bazingacomics.cl/",
+    "https://bazingacomics.cl/contactanos/",
+    "https://bazingacomics.cl/producto/el-topo/",
+    "https://bazingacomics.cl/wp-json/wp/v2/product?per_page=15&orderby=date&order=desc",
+    "https://web.archive.org/web/20250110173405/https://bazingacomics.cl/",
+    "https://web.archive.org/web/20261008204634/https://bazingacomics.cl/",
+    "https://www.futuro.cl/2025/07/el-caso-ardelean-el-comic-de-horror-que-navega-en-las-aguas-movedizas-de-la-impunidad",
+    "https://www.cuartomundo.cl/lista-de-comiquerias-en-chile/"
+   ]
+  },
+  {
+   "id": "card-house",
+   "nombre": "Card House",
+   "categorias": [
+    "tcg"
+   ],
+   "direccion": "Av. Nueva Providencia 2260, local 185, 4.º piso, Galería Zona Franca (Metro Los Leones)",
+   "comuna": "Providencia",
+   "descripcion": "Tienda de TCG con ligas casi todos los días de Pokémon, One Piece, Gundam, Riftbound y Mitos y Leyendas.",
+   "torneos": "Según su web: Pokémon lun, mar y vie 19:15 y sáb 17:30; One Piece lun y mié 19:15 y sáb 12:00; Gundam mar y jue 19:15 y sáb 14:30; Mitos y Leyendas (Primer Bloque) jue 19:15. TorneosTCG suma Riftbound (mié 19:15 y sáb 14:30) y Pokémon dom 12:00 y 14:30, y cambia algunos días.",
+   "espacio_juego": true,
+   "venta_online": true,
+   "horario": "Lun a sáb 12:00–20:00",
+   "web": "https://cardhousegaming.com/",
+   "instagram": "https://www.instagram.com/cardhousegaming.cl",
+   "dudas": "Los días de torneo de su web y de TorneosTCG no coinciden: confírmalos antes de ir.",
+   "fotos": [],
+   "evidencia": "Confirmada. Su web (Shopify) publica el local en Av. Nueva Providencia 2260, local 185, 4.º piso, Galería Zona Franca, con horario de lunes a sábado de 12:00 a 20:00. Ofrece retiro gratis en la tienda y publica ligas semanales en el local. Subió fotos de productos el 03-11-2026. TorneosTCG (revisado el 07-11-2026) le publica 15 eventos semanales, pero con días distintos a los de la web: agrega Riftbound y torneos de Pokémon los domingos, lo que choca con el horario de lunes a sábado. Conviene confirmar antes de ir. No encontré noticias de cierre ni de traslado. No hay coordenadas fiables: su web no tiene mapa, TorneosTCG solo enlaza a Google Maps y OSM no tiene ese número ni la galería. En OSM solo hay un nodo 'Zona Franca' de 2016 en Av. Providencia, sin confirmar que sea la galería.",
+   "fuentes": [
+    "https://cardhousegaming.com/",
+    "https://cardhousegaming.com/pages/contact",
+    "https://cardhousegaming.com/sitemap_products_1.xml",
+    "https://www.torneostcg.cl/region-metropolitana/tiendas/card-house",
+    "https://api.openstreetmap.org/api/0.6/node/4424001378/history",
+    "https://api.openstreetmap.org/api/0.6/map?bbox=-70.6115,-33.4228,-70.6070,-33.4200"
+   ]
+  },
+  {
+   "id": "centro-comercial-dos-caracoles",
+   "nombre": "Centro Comercial Dos Caracoles",
+   "categorias": [
+    "anime",
+    "tcg",
+    "miniaturas",
+    "videojuegos"
+   ],
+   "direccion": "Av. Providencia 2216, esquina Ricardo Lyon (metro Los Leones)",
+   "comuna": "Providencia",
+   "descripcion": "Dos torres en espiral de los años 70, hoy dedicadas sobre todo a cómics, manga y anime: comiquerías, figuras (Universo Toys, Customzero101), tiendas K-pop y el café otaku My Hero's Café.",
+   "torneos": null,
+   "espacio_juego": true,
+   "venta_online": null,
+   "horario": null,
+   "web": null,
+   "instagram": null,
+   "es_galeria": true,
+   "lat_propuesta": -33.4212637,
+   "lng_propuesta": -70.609911,
+   "fuente_propuesta": "OpenStreetMap, relación 6652879 'Centro Comercial Dos Caracoles' (Av. Providencia 2216, shop=mall). Es el centro del polígono de las dos torres.",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/20260121_Galeria_Dos_Caracoles.jpg/960px-20260121_Galeria_Dos_Caracoles.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/20260121_Galeria_Dos_Caracoles.jpg/330px-20260121_Galeria_Dos_Caracoles.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:20260121_Galeria_Dos_Caracoles.jpg",
+     "credito": "Foto: Aeveraal, Wikimedia Commons, CC BY 4.0",
+     "descripcion": "Interior en espiral con pisos de tiendas geek y letreros de Universo Toys y K-pop (enero de 2026)"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Dos_Caracoles%2C_Providencia%2C_Santiago_20230328.jpg/960px-Dos_Caracoles%2C_Providencia%2C_Santiago_20230328.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Dos_Caracoles%2C_Providencia%2C_Santiago_20230328.jpg/330px-Dos_Caracoles%2C_Providencia%2C_Santiago_20230328.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Dos_Caracoles,_Providencia,_Santiago_20230328.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas (Carlos yo), Wikimedia Commons, CC BY-SA 4.0",
+     "descripcion": "Fachada del centro comercial sobre Av. Providencia (marzo de 2023)"
+    }
+   ],
+   "evidencia": "La galería sigue abierta en 2026. El 28-10-2026 Universo Toys publicó en Chiletrabajos un aviso para su tienda 'en Providencia / dos caracoles'. En Cancha (30-05-2026) reseña My Hero's Café en el nivel 0, con consolas Switch y Xbox para jugar (lun-vie 12:30-19:30, sáb 12:00-17:30). Hay una foto en Wikimedia Commons del 21-01-2026 con los locales abiertos, y OSM la mapea como mall (relación editada en 2026). The Clinic (29-05-2026) la incluye en el plan municipal de señalética patrimonial. No encontré noticias de cierre, venta ni demolición. Ajustes respecto del otro agente: según OSM el edificio da a Av. Providencia y a Nueva de Lyon, que es la continuación de Ricardo Lyon, y hay locales con dirección Nueva de Lyon 45. Amplío las categorías: anime (ENcuadrocomics, Taka No Dan local 44B, Holygeek piso 4 local 56AB, Customzero101 local 40-B, Universo Toys); miniaturas (Hangar 019, local 56B, con Warhammer 40k, Age of Sigmar y Gunpla); tcg (Collector Center, local 18-B según TorneosTCG, sin torneos publicados; Taka No Dan vende Yu-Gi-Oh! y Weiss Schwarz); videojuegos (las consolas del café). Espacio de juego: solo las consolas de My Hero's Café; no hay evidencia de mesas para TCG. La galería no publica un horario general: los locales revisados abren de lunes a sábado, más o menos de 11:00 a 20:00, y varios cierran el domingo.",
+   "fuentes": [
+    "https://www.chiletrabajos.cl/trabajo/vendedora-encargada-de-local-centro-comercial-3922246",
+    "https://www.encancha.cl/enlahora/panoramas/2026/05/30/my-heros-cafe-el-panorama-otaku-en-santiago-donde-se-puede-jugar-y-leer-mangas-mientras-se-disfruta-de-la-comida/",
+    "https://www.theclinic.cl/2026/05/29/providencia-rescata-su-patrimonio-oculto-urbano-con-nuevas-senaleticas-en-galerias-caracoles-y-edificios-emblematicos/",
+    "https://commons.wikimedia.org/wiki/File:20260121_Galeria_Dos_Caracoles.jpg",
+    "https://api.openstreetmap.org/api/0.6/relation/6652879/full",
+    "https://api.openstreetmap.org/api/0.6/map?bbox=-70.6118,-33.4224,-70.6080,-33.4203",
+    "https://www.hangar019.cl/content/11-pick-up-store",
+    "https://takanodan.cl/tiendas"
+   ]
+  },
+  {
+   "id": "crazy-all-comics",
+   "nombre": "Crazy All Comics",
+   "categorias": [
+    "anime"
+   ],
+   "direccion": "Galería de la Merced, Huérfanos 635, local 22",
+   "comuna": "Santiago",
+   "descripcion": "Comiquería con décadas de trayectoria: manga por género, superhéroes Marvel y DC (Panini, ECC, Ovni Press), cómic europeo, ediciones de lujo y colecciones completas.",
+   "torneos": null,
+   "espacio_juego": null,
+   "venta_online": true,
+   "horario": "Lun a jue 11:00–19:30; vie 11:00–20:00; sáb 10:00–14:00; dom y festivos cerrado",
+   "web": "https://www.crazyallcomics.cl/",
+   "instagram": "https://www.instagram.com/crazyallcomics/",
+   "lat_propuesta": -33.4388771,
+   "lng_propuesta": -70.6465669,
+   "fuente_propuesta": "OpenStreetMap (Overpass): edificio «Galería de La Merced», way 448738333, centro del polígono. Marca la galería, no el local 22. OSM le asigna Huérfanos 669 en vez de 635, y el acceso por Miraflores pasa por el edificio vecino «Edificio La Merced» (Huérfanos 645), que está a menos de 100 m.",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Galer%C3%ADa_La_Merced%2C_Santiago_20230418_01.jpg/960px-Galer%C3%ADa_La_Merced%2C_Santiago_20230418_01.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Galer%C3%ADa_La_Merced%2C_Santiago_20230418_01.jpg/330px-Galer%C3%ADa_La_Merced%2C_Santiago_20230418_01.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Galer%C3%ADa_La_Merced,_Santiago_20230418_01.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Entrada de la Galería La Merced por calle Miraflores. Sobre la entrada hay un letrero rojo con «370 Galería La Merced 370», y detrás se ve un pasillo largo e iluminado con vitrinas a ambos lados. En la vereda hay una banca de cemento, un árbol joven y un caballete de fotos carné. A la izquierda hay un café y a la derecha una tienda Voker."
+    }
+   ],
+   "evidencia": "Confirmada. La web sigue activa: tiene la sección «Novedades Octubre 2026» con 51 títulos (banner del 09-10-2026). En la portada hay un banner de horario primavera-verano 2026 de la casa matriz («Galería de la Merced, Miraflores 370, local 22»), con fecha de archivo 08-09-2026, que enlaza a «Nuestras tiendas». Esa página mantiene la casa matriz en Huérfanos 635, local 22, y también las sucursales Portal Lyon (Av. Providencia 2198, local 63, Providencia; está en OSM, nodo 5264966922), Paseo San Agustín (San Antonio 118, local 45) y Viña del Mar. La Nación (28-01-2026) la recomienda con las mismas direcciones. No encontré noticias de cierre ni de traslado. Correcciones al agente anterior: la casa matriz también se publica como Miraflores 370, local 22 (es la misma galería con dos accesos), y la dirección debería ser solo la de la casa matriz. Solo vende manga y cómics (no figuras ni juegos) y vende online con despacho.",
+   "fuentes": [
+    "https://www.crazyallcomics.cl/",
+    "https://www.crazyallcomics.cl/nuestras-tiendas",
+    "https://www.crazyallcomics.cl//novedades-oct-2026.html",
+    "https://www.crazyallcomics.cl/media/codazon/slideshow/resize/587x438/fondo-horario-verano-2026.jpg",
+    "https://www.lanacion.cl/4-tiendas-de-comics-y-mangas-la-ruta-sobre-que-hacer-en-santiago/",
+    "https://overpass-api.de/api/interpreter (OSM way 448738333 «Galería de La Merced», way 892134653 «Edificio La Merced», node 5264966922 Crazy All Comics Portal Lyon)"
+   ]
+  },
+  {
+   "id": "customzero101",
+   "nombre": "Customzero101",
+   "categorias": [
+    "anime"
+   ],
+   "direccion": "Centro Comercial Dos Caracoles, Av. Providencia 2216, local 40-B",
+   "comuna": "Providencia",
+   "descripcion": "Figuras de series clásicas de los 80 y 90: Robotech/Macross, ThunderCats, Transformers, Star Wars, Gundam y Power Rangers.",
+   "torneos": null,
+   "espacio_juego": null,
+   "venta_online": null,
+   "horario": "Lun a sáb 11:00–19:00",
+   "web": null,
+   "instagram": null,
+   "en": "centro-comercial-dos-caracoles",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/20260121_Galeria_Dos_Caracoles.jpg/960px-20260121_Galeria_Dos_Caracoles.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/20260121_Galeria_Dos_Caracoles.jpg/330px-20260121_Galeria_Dos_Caracoles.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:20260121_Galeria_Dos_Caracoles.jpg",
+     "credito": "Foto: Aeveraal · CC BY 4.0 · Wikimedia Commons",
+     "descripcion": "Interior del Centro Comercial Dos Caracoles visto desde un piso alto: rampas en espiral con vitrinas de tiendas de figuras, juguetes y cultura pop (se leen carteles de Universo Toys y de una K-Pop Store), una lámpara de luces colgando al centro y mesas en el primer piso (enero de 2026)."
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Dos_Caracoles%2C_Providencia%2C_Santiago_20230328.jpg/960px-Dos_Caracoles%2C_Providencia%2C_Santiago_20230328.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Dos_Caracoles%2C_Providencia%2C_Santiago_20230328.jpg/330px-Dos_Caracoles%2C_Providencia%2C_Santiago_20230328.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Dos_Caracoles,_Providencia,_Santiago_20230328.jpg",
+     "credito": "Foto: Carlos yo · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Frente del Centro Comercial Dos Caracoles en Av. Providencia: letreros rojos de 'Centro Comercial' sobre los accesos, el letrero 'Dos Caracoles' arriba a la derecha y el edificio redondo del caracol detrás de los árboles (marzo de 2023)."
+    }
+   ],
+   "evidencia": "La Nación (11-02-2026) la ubica en Los Dos Caracoles, Providencia 2216, local 40-B, abierta de lunes a sábado de 11:00 a 19:00. El canal de ToyCon Chile publicó el 16-08-2026 un video que presenta a «Custom Zero 101 (@customzero101)» como expositor de ToyCon Chile 2026 (31 de octubre y 1 de noviembre), así que el negocio sigue activo. Ojo: la evidencia más reciente del local físico es esa nota de febrero de 2026. Refuto que no tenga web: tenía una tienda online, cz101.cl (Jumpseller, figuras de Robotech/Macross, Myth Cloth, MOTU, Star Wars y Hot Toys; última captura en Wayback del 21-11-2024). Pero hoy ese dominio no resuelve (sus servidores DNS rechazan la consulta), así que no se puede confirmar que venda online. Un resultado de búsqueda atribuye a su Instagram, que no abrí, un segundo punto en Persa Bío Bío; no lo verifiqué. OSM confirma que Dos Caracoles está en Av. Providencia 2216.",
+   "fuentes": [
+    "https://www.lanacion.cl/la-ruta-tiendas-de-figuras-de-coleccion-y-juguetes-geek-que-hacer-en-santiago/",
+    "https://www.youtube.com/watch?v=hw0aYRaulB0",
+    "https://web.archive.org/web/20241121083238/https://www.cz101.cl/",
+    "https://www.cz101.cl/ (no resuelve el 07-11-2026)",
+    "https://api.openstreetmap.org/api/0.6/relation/6652879/full.json",
+    "https://www.torneostcg.cl/region-metropolitana/tiendas"
+   ]
+  },
+  {
+   "id": "demente-games",
+   "nombre": "DeMente Games (Barrio Italia)",
+   "categorias": [
+    "mesa",
+    "tcg",
+    "rol"
+   ],
+   "direccion": "Av. Italia 1601, Barrio Italia",
+   "comuna": "Ñuñoa",
+   "descripcion": "Tienda de juegos de mesa con Zona de Juegos, ludoteca gratuita (hasta 24 personas) y torneos de TCG. Tiene otras tiendas en Mall Plaza Los Dominicos y en el Drugstore de Providencia.",
+   "torneos": "Magic cEDH lun 19:00; Star Wars Unlimited mar 19:00; Pokémon mié 19:00; Riftbound Nexus Night vie 19:00; Pokémon League Challenge dom 22-11-2026 y League Cup dom 29-11-2026, ambos a las 11:30",
+   "espacio_juego": true,
+   "venta_online": true,
+   "horario": "Lun a vie 12:00–21:00; sáb y dom 11:00–21:00",
+   "web": "https://dementegames.cl/",
+   "instagram": "https://www.instagram.com/dementegames_cl",
+   "lat_propuesta": -33.4490098,
+   "lng_propuesta": -70.6244516,
+   "fuente_propuesta": "Aproximadas: interpolación de la numeración de OpenStreetMap (Nominatim; way 108390447 entre Av. Italia 1551 y 1771). OSM no tiene un nodo de la tienda y su web no publica mapa ni coordenadas; el error puede ser de algunas decenas de metros. El límite comunal de OSM sitúa el punto en Ñuñoa.",
+   "fotos": [],
+   "evidencia": "Confirmada. Su web vende inscripciones a un Pokémon League Challenge el domingo 22-11-2026 y a una League Cup el domingo 29-11-2026. También tiene torneos semanales con «Lugar: Av. Italia 1601». En /tiendas publica la sucursal Barrio Italia (Avenida Italia 1601, Ñuñoa) con su horario, junto a las de Mall Plaza Los Dominicos y Drugstore. Su Zona de Juegos tiene capacidad para 24 personas y ludoteca gratis, pero muestra otro horario. TorneosTCG coincide en los 4 torneos semanales. No encontré noticias de cierre. Agregué «rol» porque vende juegos de rol (D&D, Pathfinder, La Llamada de Cthulhu).",
+   "fuentes": [
+    "https://dementegames.cl/",
+    "https://dementegames.cl/tiendas",
+    "https://dementegames.cl/content/13-zona-de-juegos",
+    "https://dementegames.cl/19-torneos",
+    "https://dementegames.cl/torneos/7275-pokemon-tcg-league-challenge-22-de-noviembre-2026.html",
+    "https://dementegames.cl/torneos/7276-pokemon-league-cup-noviembre-2026.html",
+    "https://dementegames.cl/torneos/5650-weekly-magic-the-gathering.html",
+    "https://dementegames.cl/torneos/5648-weekly-star-wars-unlimited.html"
+   ]
+  },
+  {
+   "id": "doubleimpactstore",
+   "nombre": "DoubleImpactStore",
+   "categorias": [
+    "videojuegos"
+   ],
+   "direccion": "Persa Biobío, Galpón Nuevo Bío Bío, Bío Bío 654, local 58",
+   "comuna": "Santiago",
+   "descripcion": "Local de videojuegos, consolas y coleccionables retro originales (Nintendo, PlayStation, Sega, Xbox, Atari) con servicio técnico de consolas, limpieza y pulido de discos.",
+   "torneos": null,
+   "espacio_juego": null,
+   "venta_online": true,
+   "horario": "Sábados, domingos y festivos 11:00–18:00",
+   "web": "https://doubleimpactstore.cl/",
+   "instagram": "https://www.instagram.com/ropavejero.retro/",
+   "en": "persa-biobio",
+   "fotos": [
+    {
+     "url": "https://doubleimpactstore.cl/img/Local_DoubleImpactStore_BioBio.webp",
+     "mini": null,
+     "pagina": "https://doubleimpactstore.cl/",
+     "credito": "Foto: DoubleImpactStore (doubleimpactstore.cl)",
+     "descripcion": "Frente del local en un galpón del Persa Biobío, con vitrinas de juegos y consolas retro"
+    }
+   ],
+   "evidencia": "Confirmada, pero toda la evidencia viene de la propia tienda. doubleimpactstore.cl (alojado en GitHub Pages, última modificación 05-11-2026, «© 2026») tiene entradas de blog del 29-07, 05-08 y 12-08-2026. Dice que la tienda es «nueva» y pide visitarla en el Persa Bío Bío (Bio Bio 654, local 58, Galpón Nuevo Bio Bio) los sábados, domingos y festivos de 11:00 a 18:00. ropavejeroretro.cl (modificado el 07-11-2026) repite la misma dirección y horario del local físico, que comparten Ropavejero.Retro y NekketsuStore. Venden por catálogo en Google Sheets y por WhatsApp, con envío a todo Chile, y ofrecen servicio técnico y pulido de discos. No encontré prensa ni fuentes externas, ni tampoco noticias de cierre. No hay datos de mesas para jugar ni de torneos.",
+   "fuentes": [
+    "https://doubleimpactstore.cl/",
+    "https://ropavejeroretro.cl/",
+    "https://overpass-api.de/api/interpreter (OSM way 1431591363 McDonald's Av. Santa Rosa 2174; way 24444772 calle Bio-Bio; way 283888731 Mercado Persa Bio-Bio)"
+   ]
+  },
+  {
+   "id": "encuadrocomics",
+   "nombre": "ENcuadrocomics",
+   "categorias": [
+    "anime"
+   ],
+   "direccion": "Avenida Providencia 2216, Galería Dos Caracoles, Local 1B",
+   "comuna": "Providencia",
+   "descripcion": "Comiquería de manga y cómics (Ovni Press, Panini, Ivrea) con packs, películas, libros y figuras de merchandising; despacho a todo Chile y retiro en el local.",
+   "torneos": null,
+   "espacio_juego": null,
+   "venta_online": true,
+   "horario": "Lun a vie 12:30–19:30; sáb 12:30–17:30",
+   "web": "https://encuadrocomics.cl/",
+   "instagram": "https://www.instagram.com/encuadrocomics.cl/",
+   "en": "centro-comercial-dos-caracoles",
+   "fotos": [
+    {
+     "url": "https://encuadrocomics.cl/cdn/shop/files/IMG_2418-1.jpg?v=1709132172",
+     "mini": null,
+     "pagina": "https://encuadrocomics.cl/",
+     "credito": "Foto: ENcuadrocomics",
+     "descripcion": "Interior de la tienda: estanterías de madera oscura y repisas blancas llenas de tomos de manga ordenados por serie, y un mesón de madera con tomos y láminas de anime en exhibición"
+    }
+   ],
+   "evidencia": "Confirmada. La web (Shopify) sigue activa: creó el producto «Blue Lock 37» el 25-09-2026. Su portada dice «Visita nuestra tienda»: Av. Providencia 2216, Galería Dos Caracoles, Local 1B, de lunes a viernes 12:30–19:30 y sábados 12:30–17:30. Según el Wayback Machine, ese bloque decía «Local 18A» (11:00–19:30) hasta el 22-01-2025 y ya mostraba «Local 1B» el 10-03-2026, así que la tienda se cambió de local dentro de la galería. Ojo: su página de contacto, su política de despacho y su schema.org siguen con los datos viejos («Locales 18A y 40B», retiro en el 18A, 11:00–19:00). Cuarto Mundo dice «Local 4-B» y en 2023 (Cinebooom) tenía los locales 18A, 39B y 40B. No encontré noticias de cierre. Vende manga, cómics, películas y figuras.",
+   "fuentes": [
+    "https://encuadrocomics.cl/",
+    "https://encuadrocomics.cl/pages/contactanos",
+    "https://encuadrocomics.cl/policies/shipping-policy",
+    "https://encuadrocomics.cl/products/blue-lock-37",
+    "https://encuadrocomics.cl/sitemap.xml",
+    "https://web.archive.org/web/20260310115836/https://encuadrocomics.cl/",
+    "https://web.archive.org/web/20250122002027/https://encuadrocomics.cl/",
+    "https://www.cinebooom.cl/encuadrocomics-realizara-gran-venta-de-bodega-de-mangas-y-comics/"
+   ]
+  },
+  {
+   "id": "enroque-juegos-de-mesa",
+   "nombre": "Enroque Juegos de Mesa",
+   "categorias": [
+    "mesa",
+    "tcg"
+   ],
+   "direccion": "Av. Italia 1805",
+   "comuna": "Ñuñoa",
+   "descripcion": "Tienda de juegos de mesa en Barrio Italia con salón para jugar gratis. También vende ajedrez, accesorios y productos Pokémon, y organiza torneos de Pokémon y Star Wars Unlimited.",
+   "torneos": "Star Wars Unlimited: mié 19:00; Pokémon TCG casual: vie 19:00 (calendario confirmado en TorneosTCG). Planetary Qualifier de SWU el sáb 14-11-2026",
+   "espacio_juego": true,
+   "venta_online": true,
+   "horario": "Mar a sáb 11:30–19:45; dom 11:30–18:00; lun cerrado",
+   "web": "https://juegosenroque.cl/",
+   "instagram": "https://www.instagram.com/enroque_juegosdemesa/",
+   "lat_propuesta": -33.4509965,
+   "lng_propuesta": -70.6239546,
+   "fuente_propuesta": "Enlace de mapa en el HTML de juegosenroque.cl (botón «¡Visítanos!»: !3d-33.4509965!4d-70.6239546). Coincide con la numeración de Av. Italia en OSM (1771–1791 en esa cuadra, lado Ñuñoa)",
+   "fotos": [
+    {
+     "url": "https://juegosenroque.cl/cdn/shop/files/VISITANOS_2.0_1_1.jpg?v=1710271099",
+     "mini": null,
+     "pagina": "https://juegosenroque.cl/",
+     "credito": "Foto: Juegos Enroque",
+     "descripcion": "Interior de la tienda con estanterías llenas de juegos de mesa"
+    },
+    {
+     "url": "https://juegosenroque.cl/cdn/shop/files/tienda-juegos-enroque.jpg?v=1703766996",
+     "mini": null,
+     "pagina": "https://juegosenroque.cl/pages/tienda",
+     "credito": "Foto: Juegos Enroque",
+     "descripcion": "Interior de la tienda: letras negras 'EnRoquE' en la pared blanca, repisas con cajas de juegos, una estantería metálica llena de juegos, un mesón vitrina de vidrio y, a la derecha, una mesa con pisos y cajas como Wingspan junto a la puerta de vidrio con el logo de la tienda."
+    }
+   ],
+   "evidencia": "La web está activa: la API de Shopify muestra productos creados el 02-11-2026 y el 04-11-2026, y vende la inscripción al Planetary Qualifier de Star Wars Unlimited del 14-11-2026 (aparece agotada). Ese torneo tiene rondas preliminares en la Corporación Cultural de Ñuñoa y la parte final en la tienda de Av. Italia 1805. TorneosTCG marca su calendario semanal como confirmado (consultado el 07-11-2026). La web ofrece un salón de juego gratuito junto a la tienda, con más de 150 a 200 juegos; se deja un carnet por cada dos personas y se puede reservar por Instagram. Abrió el local en 2019. No encontré noticias de cierre ni de traslado. También vende Pokémon y otros TCG/LCG.",
+   "fuentes": [
+    "https://juegosenroque.cl/",
+    "https://juegosenroque.cl/pages/tienda",
+    "https://juegosenroque.cl/pages/beneficios",
+    "https://juegosenroque.cl/products.json?limit=30",
+    "https://juegosenroque.cl/products/star-wars-unlimited-inscripcion-pq-enroque",
+    "https://www.torneostcg.cl/region-metropolitana/tiendas/enroque-juegos",
+    "https://melee.gg/Hub/Organization/13175",
+    "https://api.openstreetmap.org/api/0.6/map.json?bbox=-70.6255,-33.4522,-70.6225,-33.4498"
+   ]
+  },
+  {
+   "id": "figuras-dbz-chile",
+   "nombre": "Figuras DBZ Chile",
+   "categorias": [
+    "anime"
+   ],
+   "direccion": "Paseo San Agustín, San Antonio 144, local 73 (entrada también por Moneda 835)",
+   "comuna": "Santiago",
+   "descripcion": "Figuras de anime (Dragon Ball, One Piece, Dandadan, Pokémon, Evangelion): S.H.Figuarts, Figma, Nendoroid, estatuas, gashapon, peluches y blind box.",
+   "torneos": null,
+   "espacio_juego": null,
+   "venta_online": true,
+   "horario": "Lun a vie 10:30–19:30; sáb 10:30–14:30",
+   "web": "https://www.figurasdbzchile.cl/",
+   "instagram": "https://www.instagram.com/figurasdbzchile/",
+   "lat_propuesta": -33.441327,
+   "lng_propuesta": -70.6486205,
+   "fuente_propuesta": "OpenStreetMap, way 157650809 'Paseo San Agustín' (shop=mall). Es el centro del edificio de la galería, que da a San Antonio y a Moneda; el local 73 no está mapeado. El mapa de la web de la tienda solo apunta al 'metro U. de Chile'.",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Paseo_San_Agust%C3%ADn%2C_Santiago_20230418_06.jpg/960px-Paseo_San_Agust%C3%ADn%2C_Santiago_20230418_06.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Paseo_San_Agust%C3%ADn%2C_Santiago_20230418_06.jpg/330px-Paseo_San_Agust%C3%ADn%2C_Santiago_20230418_06.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Paseo_San_Agust%C3%ADn,_Santiago_20230418_06.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Uno de los accesos de la galería Paseo San Agustín, donde está la tienda. Tiene una fachada color crema con «PASEO SAN AGUSTIN» en letras rojas sobre la entrada y en el muro lateral, una entrada de marcos azules con la cortina metálica a medio subir y un quiosco vidriado al fondo. No hay gente (abril de 2023)."
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Paseo_San_Agust%C3%ADn%2C_Santiago_20230418_05.jpg/960px-Paseo_San_Agust%C3%ADn%2C_Santiago_20230418_05.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Paseo_San_Agust%C3%ADn%2C_Santiago_20230418_05.jpg/330px-Paseo_San_Agust%C3%ADn%2C_Santiago_20230418_05.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Paseo_San_Agust%C3%ADn,_Santiago_20230418_05.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Interior de la galería Paseo San Agustín. Se ve un pasillo de baldosas claras bajo un techo blanco con lucarnas, quioscos vidriados de zapatos y de relojes, maceteros con plantas y una persona caminando al fondo (abril de 2023)."
+    }
+   ],
+   "evidencia": "Tienda física vigente. La Nación (11-02-2026) la sitúa en Paseo San Agustín, local 73, con entrada por Moneda 835, abierta de lunes a viernes de 10:30 a 19:30 y el sábado de 10:30 a 14:30. Su web sigue activa (productos cargados hasta el 03-11-2026) y publica 'San Antonio #144, Local 73, Santiago Centro'. En la página de contacto esa dirección aparece bajo 'Entregas', pero La Nación y el video de la tienda que reproduce ('Visítanos en…') confirman que atiende en persona; no es un punto de retiro con cita. En OSM el edificio Paseo San Agustín ocupa la manzana con frentes a San Antonio y Moneda, lo que cuadra con las dos entradas. No encontré noticias de cierre ni de traslado. Vende figuras de anime, gashapon, blind box y peluches, más accesorios importados de Pokémon TCG (protectores, playmats); no encontré torneos. El horario sale de La Nación; la web no publica uno.",
+   "fuentes": [
+    "https://www.figurasdbzchile.cl/",
+    "https://www.figurasdbzchile.cl/contacto/",
+    "https://www.figurasdbzchile.cl/envios-y-entregas/",
+    "https://www.figurasdbzchile.cl/wp-json/wp/v2/product?orderby=date&order=desc&per_page=15",
+    "https://www.lanacion.cl/la-ruta-tiendas-de-figuras-de-coleccion-y-juguetes-geek-que-hacer-en-santiago/",
+    "https://api.openstreetmap.org/api/0.6/way/157650809/full",
+    "https://www.figurasdbzchile.cl/contacto"
+   ]
+  },
+  {
+   "id": "galeria-eurocentro",
+   "nombre": "Galería Eurocentro",
+   "categorias": [
+    "tcg",
+    "mesa",
+    "miniaturas",
+    "anime",
+    "videojuegos"
+   ],
+   "direccion": "Paseo Ahumada 85, esquina Moneda",
+   "comuna": "Santiago",
+   "descripcion": "Galería de cinco pisos (1979), punto de encuentro otaku en los 2000. Reúne tiendas de coleccionables de cultura pop, videojuegos (cada vez menos), ropa gótica y merch de bandas.",
+   "torneos": "Pokémon TCG: vie 15:00 en IR Gamers (local 0129, piso -1); sáb 12:00 y 15:30 en Juegomania (local 206). Ambos calendarios figuran como confirmados en TorneosTCG",
+   "espacio_juego": true,
+   "venta_online": null,
+   "horario": "Según cada local (por ejemplo, lun a vie 11:00–19:00 y sáb hasta las 18:00)",
+   "web": null,
+   "instagram": null,
+   "es_galeria": true,
+   "lat_propuesta": -33.44211111,
+   "lng_propuesta": -70.65041667,
+   "fuente_propuesta": "Wikipedia (es), artículo «Eurocentro»: -33.44211111, -70.65041667. OSM coincide: nodo 1754035371 «Galería Eurocentro» y edificio way 447520292 «EuroCentro»",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Eurocentro%2C_Santiago_20230418.jpg/960px-Eurocentro%2C_Santiago_20230418.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Eurocentro%2C_Santiago_20230418.jpg/330px-Eurocentro%2C_Santiago_20230418.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Eurocentro,_Santiago_20230418.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas (Carlos yo), Wikimedia Commons, CC BY-SA 4.0",
+     "descripcion": "Fachada del Eurocentro en la esquina de Ahumada con Moneda, con el letrero sobre el acceso (abril de 2023)"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Eurocentro%2C_Santiago_20230812.jpg/960px-Eurocentro%2C_Santiago_20230812.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Eurocentro%2C_Santiago_20230812.jpg/330px-Eurocentro%2C_Santiago_20230812.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Eurocentro,_Santiago_20230812.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas (Carlos yo), Wikimedia Commons, CC BY-SA 4.0",
+     "descripcion": "Acceso por Ahumada 85 con el letrero 'Centro Comercial Eurocentro' (agosto de 2023)"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Eurocentro%2C_Santiago_20231204.jpg/960px-Eurocentro%2C_Santiago_20231204.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Eurocentro%2C_Santiago_20231204.jpg/330px-Eurocentro%2C_Santiago_20231204.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Eurocentro,_Santiago_20231204.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas (Carlos yo), Wikimedia Commons, CC BY-SA 4.0",
+     "descripcion": "Interior de la galería: pasillo con locales iluminados y escaleras mecánicas (diciembre de 2023)"
+    }
+   ],
+   "evidencia": "Sigue abierta. Un video de YouTube del 17-07-2026 la recorre («Recorriendo el EUROCENTRO de Santiago en 2026»), aunque comenta que quedan pocas tiendas de videojuegos. Al 07-11-2026, TorneosTCG publica calendarios confirmados de dos tiendas que están dentro (IR Gamers y Juegomania, ambas en Ahumada 85). TopGames (local 0101) tiene productos y pedidos de septiembre y octubre de 2026. Wikipedia, revisada el 14-10-2026, no informa ningún cierre, y no encontré noticias de cierre de la galería. Corrijo las categorías: además de anime y videojuegos hay TCG (Juegomania, IR Gamers), miniaturas Warhammer y figuras de anime (TopGames) y juegos de mesa (Juegomania, 45 productos). Hay mesas porque esas tiendas hacen torneos. La galería no vende online, pero sus tiendas sí. Tanto el anexo de galerías de Wikipedia como las tiendas usan la dirección Ahumada 85; OSM registra el edificio como Moneda 970.",
+   "fuentes": [
+    "https://es.wikipedia.org/wiki/Eurocentro",
+    "https://es.wikipedia.org/wiki/Anexo:Galer%C3%ADas_comerciales_de_Santiago",
+    "https://www.youtube.com/watch?v=n7HhdX_hYUE",
+    "https://www.torneostcg.cl/region-metropolitana/tiendas/ir-gamers",
+    "https://www.torneostcg.cl/region-metropolitana/tiendas/juegomania",
+    "https://www.torneostcg.cl/region-metropolitana/tiendas",
+    "https://www.juegomania.cl/",
+    "https://www.juegomania.cl/collection/juegos-de-mesa"
+   ]
+  },
+  {
+   "id": "galeria-paseo-las-palmas",
+   "nombre": "Galería Paseo Las Palmas",
+   "categorias": [
+    "videojuegos",
+    "tcg"
+   ],
+   "direccion": "Av. Nueva Providencia 2212 (metro Los Leones)",
+   "comuna": "Providencia",
+   "descripcion": "Galería y paseo peatonal techado junto a metro Los Leones, con tiendas de videojuegos nuevos y retro (RetroGamers), reparación de consolas y TCG (HobbieGames, 3.er piso).",
+   "torneos": "HobbieGames (L-204): torneos de lanzamiento de Mitos y Leyendas; próximos vie 13-11-2026 19:00 y sáb 14-11-2026 11:00. No publica ligas semanales con día fijo.",
+   "espacio_juego": true,
+   "venta_online": true,
+   "horario": "Según cada local (por ejemplo, HobbieGames: lun a vie 10:30–19:00 y sáb 10:00–15:00)",
+   "web": null,
+   "instagram": null,
+   "es_galeria": true,
+   "lat_propuesta": -33.421912,
+   "lng_propuesta": -70.609286,
+   "fuente_propuesta": "OpenStreetMap: punto medio de la vía peatonal techada 'Paseo Las Palmas' (way 1174039035), consultada en la API oficial de OSM",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Paseo_Las_Palmas%2C_Providencia%2C_Santiago_20230930_01.jpg/960px-Paseo_Las_Palmas%2C_Providencia%2C_Santiago_20230930_01.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Paseo_Las_Palmas%2C_Providencia%2C_Santiago_20230930_01.jpg/330px-Paseo_Las_Palmas%2C_Providencia%2C_Santiago_20230930_01.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Paseo_Las_Palmas,_Providencia,_Santiago_20230930_01.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas (Carlos yo), Wikimedia Commons, CC BY-SA 4.0",
+     "descripcion": "Acceso a la Galería Comercial Paseo Las Palmas desde la calle, con su pérgola arqueada, una palmera y el letrero de la galería (septiembre de 2023)"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Paseo_Las_Palmas%2C_Providencia%2C_Santiago_20230930_03.jpg/960px-Paseo_Las_Palmas%2C_Providencia%2C_Santiago_20230930_03.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Paseo_Las_Palmas%2C_Providencia%2C_Santiago_20230930_03.jpg/330px-Paseo_Las_Palmas%2C_Providencia%2C_Santiago_20230930_03.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Paseo_Las_Palmas,_Providencia,_Santiago_20230930_03.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas (Carlos yo), Wikimedia Commons, CC BY-SA 4.0",
+     "descripcion": "Pérgola del paseo peatonal con palmeras y locales comerciales (septiembre de 2023, antes de las obras municipales)"
+    }
+   ],
+   "evidencia": "Confirmada. HobbieGames publica su local en el 3.er piso de la Galería Paseo Las Palmas (Av. Nueva Providencia 2212, L-204). El 04-11-2026 abrió en su web las inscripciones para torneos en ese local (13 y 14-11-2026), y entre junio y octubre de 2026 hizo otros. Meteored (14-08-2026) ubica ahí el local principal de RetroGamers. Ex-Ante (08-08-2026) describe las galerías del paseo con tiendas activas. Las obras municipales (ICE 11-08-2026; Ex-Ante) son del espacio público (veredas, mobiliario, luces), no un cierre. Refutado: las 'ligas semanales de Mitos y Leyendas'. La web de HobbieGames solo muestra torneos de lanzamiento y su blog se detuvo en marzo de 2025. Ninguna tienda publica 'Av. Providencia 2209'; OSM ubica en el paseo los números impares 2201–2239 de Av. Providencia, así que es plausible pero no se usó. En el mismo número, torneostcg lista a Guild Dreams (piso 2, local 126; One Piece jue 19:30 y sáb 12:15), pero con el calendario marcado 'no confirmado'. Espacio de juego y venta online corresponden a HobbieGames (tienda Shopify).",
+   "fuentes": [
+    "https://hobbiegames.cl/pages/nosotros",
+    "https://hobbiegames.cl/collections/preventas/products.json?limit=50",
+    "https://hobbiegames.cl/blogs/news.atom",
+    "https://www.meteored.cl/noticias/ocio/santiago-revive-la-era-dorada-de-los-videojuegos-donde-jugar-arcades-pinball-y-encontrar-consolas-clasicas.html",
+    "https://ex-ante.cl/cronica/la-remodelacion-del-paseo-las-palmas",
+    "https://www.ice.it/it/news/notizie-dal-mondo/307416",
+    "https://www.retrogamers.cl/condiciones-de-venta/",
+    "https://www.torneostcg.cl/region-metropolitana/tiendas/guilddreams"
+   ]
+  },
+  {
+   "id": "guild-dreams",
+   "nombre": "Guild Dreams",
+   "categorias": [
+    "rol",
+    "tcg",
+    "miniaturas",
+    "mesa"
+   ],
+   "direccion": "Av. Nueva Providencia 2212, piso 2, local 126, galería Paseo Las Palmas",
+   "comuna": "Providencia",
+   "descripcion": "Tienda abierta en 2003 en el mismo local, junto a Metro Los Leones. Se especializa en rol (D&D, Pathfinder, Vampiro, Cthulhu), cartas, miniaturas (Warhammer, HeroClix) y cómics.",
+   "torneos": "One Piece: jue 19:30 y sáb 12:15 según TorneosTCG, que no confirma el calendario hace tiempo (la tienda dice que cierra los sábados)",
+   "espacio_juego": null,
+   "venta_online": true,
+   "horario": "Lun a vie 11:00–20:00; sáb y dom cerrado",
+   "web": "https://www.guildreams.com/",
+   "instagram": "https://www.instagram.com/guilddreams/",
+   "dudas": "Su calendario de torneos no está confirmado y los fines de semana cierra.",
+   "en": "galeria-paseo-las-palmas",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Paseo_Las_Palmas%2C_Providencia%2C_Santiago_20230930_01.jpg/960px-Paseo_Las_Palmas%2C_Providencia%2C_Santiago_20230930_01.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Paseo_Las_Palmas%2C_Providencia%2C_Santiago_20230930_01.jpg/330px-Paseo_Las_Palmas%2C_Providencia%2C_Santiago_20230930_01.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Paseo_Las_Palmas,_Providencia,_Santiago_20230930_01.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Acceso al Paseo Las Palmas: gran techo curvo de celosía clara sobre el pasaje, una palmera alta al centro, gente cruzando la calle y, a la derecha, el letrero 'Galería Comercial Paseo Las Palmas' sobre una entrada con escaleras (septiembre de 2023)."
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Paseo_Las_Palmas_-_Santiago_de_Chile_-_2013.jpg/960px-Paseo_Las_Palmas_-_Santiago_de_Chile_-_2013.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Paseo_Las_Palmas_-_Santiago_de_Chile_-_2013.jpg/330px-Paseo_Las_Palmas_-_Santiago_de_Chile_-_2013.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Paseo_Las_Palmas_-_Santiago_de_Chile_-_2013.jpg",
+     "credito": "Foto: Robert Meszaros · CC BY 3.0 · Wikimedia Commons",
+     "descripcion": "Pasaje interior del Paseo Las Palmas bajo el techo abovedado de celosía, con pasarelas del segundo piso a los costados, mesas de café a la izquierda y gente caminando (octubre de 2013)."
+    }
+   ],
+   "evidencia": "Según el sitemap de su web, la página «Dónde Estamos», con esta dirección y este horario, se actualizó el 24-01-2026, y los Términos el 03-01-2026. La web vende online, ofrece retiro gratis «en la tienda física» en horario de atención y muestra novedades recientes (D&D Ravenloft: The Horrors Within, Riftbound: Unleashed, Gundam Card Game). No encontré noticias de cierre ni de traslado; está en el mismo local desde 2003. TorneosTCG marca su calendario como «no confirmado recientemente» y lo oculta de sus listados. Además, ahí figura un torneo el sábado, día en que la tienda dice estar cerrada, así que los torneos son dudosos y no queda confirmado que tenga mesas para jugar. Vende cómics, pero son marginales (6 productos antiguos), por eso no agrego 'anime'.",
+   "fuentes": [
+    "https://www.guildreams.com/",
+    "https://www.guildreams.com/article/donde-estamos",
+    "https://www.guildreams.com/article/costo-y-formas-de-envio",
+    "https://www.guildreams.com/article/quienes-somos",
+    "https://www.guildreams.com/sitemap.xml",
+    "https://www.guildreams.com/collection/comics-y-revistas",
+    "https://www.torneostcg.cl/region-metropolitana/tiendas/guilddreams",
+    "https://ludipedia.cl/wiki/Guild_Dreams"
+   ]
+  },
+  {
+   "id": "hobbiegames",
+   "nombre": "HobbieGames",
+   "categorias": [
+    "tcg",
+    "videojuegos"
+   ],
+   "direccion": "Galería Paseo Las Palmas, 3.er piso, local 204 (L-204), Av. Nueva Providencia 2212",
+   "comuna": "Providencia",
+   "descripcion": "Tienda oficial de Mitos y Leyendas con espacio para jugar TCG; vende Pokémon TCG, videojuegos de PS5, PS4 y Nintendo y amiibos, y repara consolas Nintendo, PlayStation y Xbox.",
+   "torneos": "Ligas semanales de Mitos y Leyendas (la web no publica los días) y torneos de lanzamiento en el local: vie 16-10 a las 19:00 (Leyendas de Ultratumba) y sáb 14-11 a las 11:00 (Raciales Primer Bloque)",
+   "espacio_juego": true,
+   "venta_online": true,
+   "horario": "Lun a vie 10:30–19:00; sáb 10:30–15:00",
+   "web": "https://hobbiegames.cl/",
+   "instagram": "https://www.instagram.com/hobbiegames",
+   "en": "galeria-paseo-las-palmas",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Paseo_Las_Palmas_-_Santiago_de_Chile_-_2013.jpg/960px-Paseo_Las_Palmas_-_Santiago_de_Chile_-_2013.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Paseo_Las_Palmas_-_Santiago_de_Chile_-_2013.jpg/330px-Paseo_Las_Palmas_-_Santiago_de_Chile_-_2013.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Paseo_Las_Palmas_-_Santiago_de_Chile_-_2013.jpg",
+     "credito": "Foto: Robert Meszaros · CC BY 3.0 · Wikimedia Commons",
+     "descripcion": "Interior del Paseo Las Palmas: pasillo peatonal bajo la pérgola blanca de arcos curvos y columnas en Y. A la izquierda se ven pasillos con baranda en los pisos altos, locales y mesas de café con quitasoles verdes; hay gente caminando y una pasarela al fondo (octubre de 2013)."
+    }
+   ],
+   "evidencia": "Confirmada. Su web dice 'Tienda física: tercer piso de la Galería Paseo Las Palmas, Av. Nueva Providencia 2212, L-204'. También vende cupos para torneos de Mitos y Leyendas en ese local: el viernes 16 de octubre y el sábado 14 de noviembre, días de la semana que solo calzan con 2026. Subió imágenes nuevas entre el 28-10 y el 04-11-2026. No encontré noticias de cierre ni de traslado. Corrijo un detalle del horario: la página de contacto dice sábados 10:30–15:00 y el encabezado dice desde las 10:00. No figura en TorneosTCG y la web no publica los días de las ligas semanales. Su blog no publica desde marzo de 2025, pero la tienda y los torneos están activos. Vende juegos y accesorios de PS5, PS4 y Nintendo, amiibos, Mitos y Leyendas y Pokémon, y hace servicio técnico de consolas.",
+   "fuentes": [
+    "https://hobbiegames.cl/",
+    "https://hobbiegames.cl/pages/nosotros",
+    "https://hobbiegames.cl/pages/contact",
+    "https://hobbiegames.cl/products/torneo-de-lanzamiento-2-raciales-primer-bloque",
+    "https://hobbiegames.cl/products/torneo-de-lanzamiento-leyendas-de-ultratumba",
+    "https://hobbiegames.cl/sitemap_products_1.xml",
+    "https://www.torneostcg.cl/region-metropolitana/tiendas",
+    "https://nominatim.openstreetmap.org/search?q=Paseo+Las+Palmas,+Providencia,+Chile"
+   ]
+  },
+  {
+   "id": "hobby-fest-tienda",
+   "nombre": "Hobby Fest Tienda",
+   "categorias": [
+    "anime"
+   ],
+   "direccion": "Galería Los Pájaros, Av. Providencia 2348, local 74 (esquina Bucarest)",
+   "comuna": "Providencia",
+   "descripcion": "Figuras japonesas retro y vintage: Gundam, Mazinger Z, Ultraman, Astro Boy, Super Sentai, Godzilla y kaijus, con piezas originales de los 70 a los 90 y bootlegs de culto.",
+   "torneos": null,
+   "espacio_juego": null,
+   "venta_online": null,
+   "horario": "Lun a vie 11:30–17:30",
+   "web": null,
+   "instagram": null,
+   "dudas": "Hay poca información reciente (la última es de febrero de 2026): confirma en sus redes que siga abierta antes de ir.",
+   "lat_propuesta": -33.4201661,
+   "lng_propuesta": -70.6074395,
+   "fuente_propuesta": "OpenStreetMap: nodo 11982155670 de RC Import Store, con dirección Av. Providencia 2348 (misma Galería Los Pájaros según la web de esa tienda); marca la galería, no el local 74",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Anticuarios%2C_Providencia%2C_Santiago_20230930.jpg/960px-Anticuarios%2C_Providencia%2C_Santiago_20230930.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Anticuarios%2C_Providencia%2C_Santiago_20230930.jpg/330px-Anticuarios%2C_Providencia%2C_Santiago_20230930.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Anticuarios,_Providencia,_Santiago_20230930.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Edificio de la galería en Av. Providencia 2348, esquina Bucarest: construcción de ladrillo rojizo en la esquina, con un gran alero anaranjado, un letrero vertical «ANTIGÜEDADES» y otro sobre el acceso que dice «ANTIGÜEDADES 2348 Providencia». Se ven las placas de calle «Providencia 2304–2348» y «Bucarest» y locales a pie de calle con algunos peatones (septiembre de 2023)."
+    }
+   ],
+   "evidencia": "Confirmada, con evidencia débil. La única fuente de 2026 es La Nación (11-02-2026), que la describe abierta en Galería Los Pájaros, Av. Providencia 2348, local 74, lun a vie 11:30–17:30. El video de TikTok que esa nota incrusta como prueba es del 16-04-2025 (fecha sacada del ID del video). La tienda no tiene web y no existe la cuenta de TikTok @hobbyfesttienda. Un buscador muestra la misma dirección en la descripción de su cuenta de Instagram (sin fecha; no se abrió). La galería existe y sigue activa: RC Import Store publica 'Av. Providencia 2348, local 83, Galería Los Pájaros', y OSM sitúa ese número en la esquina norte de Av. Providencia con Bucarest. No se encontraron noticias de cierre. Conviene confirmar antes de ir.",
+   "fuentes": [
+    "https://www.lanacion.cl/la-ruta-tiendas-de-figuras-de-coleccion-y-juguetes-geek-que-hacer-en-santiago/",
+    "https://www.rcimportstore.com/",
+    "https://www.tiktok.com/@hobbyfesttienda",
+    "https://api.openstreetmap.org/api/0.6/node/11982155670.json",
+    "https://api.openstreetmap.org/api/0.6/map.json?bbox=-70.6085,-33.4210,-70.6065,-33.4194"
+   ]
+  },
+  {
+   "id": "magicsur-la-reina",
+   "nombre": "Magicsur (La Reina)",
+   "categorias": [
+    "tcg",
+    "mesa"
+   ],
+   "direccion": "Avenida Ossa 1149",
+   "comuna": "La Reina",
+   "descripcion": "Sucursal de Magicsur con ligas de Magic Commander y Pokémon, incluida una academia para niños los sábados. También tiene Riftbound, Star Wars Unlimited y Flesh and Blood.",
+   "torneos": "Según TorneosTCG: Magic, Commander casual mar y vie 15:00 y Liga Commander jue 18:30; Pokémon, liga casual jue 19:30, academia para niños sáb 11:00 y liga sáb 16:00; Riftbound mié 19:00 y vie 18:00; Star Wars Unlimited mié 19:00; Flesh and Blood vie 18:00.",
+   "espacio_juego": true,
+   "venta_online": true,
+   "horario": null,
+   "web": "https://www.magicsur.cl/",
+   "instagram": "https://www.instagram.com/magicsurlareina",
+   "fotos": [],
+   "evidencia": "La web oficial magicsur.cl está activa (preventas con entrega estimada el 13-11-2026) y muestra en todas sus páginas la «Sucursal Magicsur La Reina, Avenida Ossa 1149, La Reina» (tel. +56 2 2503 5266). TorneosTCG (consultado el 07-11-2026) publica 10 eventos semanales en el local. El sitio de torneos de la cadena (cartasmagicsur.cl/torneos) bloquea el acceso con una verificación antibots y no pude abrirlo. En los resultados de búsqueda sí aparecen eventos de 2026 en La Reina: «Clasificatorio Carcassonne 2026 Av Ossa 1149 - La Reina», un clasificatorio de Catan, el prerelease de El Hobbit y el de Star Trek del 06-11-2026; por eso agrego «mesa». Ese mismo buscador atribuye a su página de tiendas el horario lun–mié 12:00–21:00, jue–vie 12:00–22:00 y sáb 10:00–20:00. No pude comprobarlo, así que dejo el horario vacío. No encontré noticias de cierre ni de traslado. Sin coordenadas: OSM no tiene el local ni el n.º 1149 (Nominatim solo devuelve la calle), y el mapa incrustado de magicsur.cl apunta a la casa matriz (Seminario 507, Providencia).",
+   "fuentes": [
+    "https://www.magicsur.cl/",
+    "https://www.magicsur.cl/contactanos",
+    "https://www.magicsur.cl/content/14-en-magicsur-somos-tienda-wpn-premium",
+    "https://www.torneostcg.cl/region-metropolitana/tiendas/magicsur-la-reina",
+    "https://nominatim.openstreetmap.org/search?street=1149+Avenida+Ossa&city=La+Reina&country=Chile&format=jsonv2"
+   ]
+  },
+  {
+   "id": "magicsur-seminario",
+   "nombre": "Magicsur (Seminario)",
+   "categorias": [
+    "tcg",
+    "mesa",
+    "rol",
+    "miniaturas"
+   ],
+   "direccion": "Seminario 507, Barrio Italia",
+   "comuna": "Providencia",
+   "descripcion": "Casa matriz de Magicsur, tienda WPN Premium activa desde 1998. Vende Magic, Pokémon, Yu-Gi-Oh!, One Piece, D&D y juegos de mesa, y organiza torneos todas las semanas.",
+   "torneos": "Magic Commander: mar 19:00 y dom 15:00; Pokémon: jue 19:30 y dom 15:30; One Piece y Gundam: vie 19:00; Riftbound: dom 12:00 (TorneosTCG); además prereleases, RCQ y Store Championships (cartasmagicsur.cl)",
+   "espacio_juego": true,
+   "venta_online": true,
+   "horario": "Lun a jue 14:00–22:00; vie 14:00–23:00; sáb 14:00–20:00 (dom solo con eventos)",
+   "web": "https://www.magicsur.cl/",
+   "instagram": "https://www.instagram.com/magicsurchile/",
+   "lat_propuesta": -33.4471874,
+   "lng_propuesta": -70.6284947,
+   "fuente_propuesta": "Mapa incrustado en https://www.magicsur.cl/contactanos (iframe q=-33.4471874,-70.6284947), junto a los datos de Seminario 507. El nodo OSM 12193721348 'Magicsur' queda a unos 20 m.",
+   "fotos": [],
+   "evidencia": "Casa matriz vigente. Su página de contacto mantiene Seminario 507 como tienda principal, y la web tiene preventas con entrega estimada el 13-11-2026. TorneosTCG (consultado el 07-11-2026) publica 7 torneos semanales en esta dirección. El sitemap de cartasmagicsur.cl tiene páginas de eventos en Seminario actualizadas al 07-11-2026: prerelease de Star Trek, RCQ y Store Championship de Reality Fracture. No encontré noticias de cierre ni de traslado. El horario sale de la página 'Nuestras tiendas' de magicsur.cl. Esa página todavía lista la ex sucursal Los Dominicos, que ya no aparece en Contacto ni en TorneosTCG, así que el horario podría estar desactualizado; además, los domingos hay torneos fijos. Agrego 'miniaturas' porque la tienda vende Heroclix, que ella misma describe como 'juegos de miniaturas', y tiene stock. También vende D&D y libros de rol (rol) y juegos de mesa.",
+   "fuentes": [
+    "https://www.magicsur.cl/",
+    "https://www.magicsur.cl/contactanos",
+    "https://www.magicsur.cl/index.php?controller=stores",
+    "https://www.magicsur.cl/content/4-nosotros",
+    "https://www.magicsur.cl/content/14-en-magicsur-somos-tienda-wpn-premium",
+    "https://www.magicsur.cl/21-heroclix",
+    "https://www.torneostcg.cl/region-metropolitana/tiendas/magicsur",
+    "https://www.cartasmagicsur.cl/sitemap.xml"
+   ]
+  },
+  {
+   "id": "mesa-1",
+   "nombre": "Mesa 1",
+   "categorias": [
+    "tcg"
+   ],
+   "direccion": "Av. Recoleta 901, local 4 (Metro Cerro Blanco)",
+   "comuna": "Recoleta",
+   "descripcion": "Tienda de TCG con torneos casuales los siete días de la semana (Pokémon, Magic, One Piece y Riftbound). Es parte de Santiago Games y se presenta con «más de 20 años armando mesa».",
+   "torneos": "Torneos casuales todos los días: Pokémon mar y jue 14:30 (gratis) y 19:00, sáb 11:00 y 19:00, dom 11:00; Magic lun 19:00, vie 14:30 (gratis) y 19:00 (Commander Bracket 3, según TorneosTCG), sáb 15:30; One Piece mié 14:30 (gratis) y 19:00, dom 15:00; Riftbound lun 19:00. Además hace prelanzamientos y eventos especiales.",
+   "espacio_juego": true,
+   "venta_online": true,
+   "horario": "Lun a vie 12:00–21:00; sáb 10:00–21:00; dom 10:00–19:00",
+   "web": "https://mesa1.cl/",
+   "instagram": "https://www.instagram.com/mesa1chile",
+   "lat_propuesta": -33.4218286,
+   "lng_propuesta": -70.6443939,
+   "fuente_propuesta": "OpenStreetMap: edificio comercial de Av. Recoleta 901, Recoleta (way 444940662, punto central)",
+   "fotos": [],
+   "evidencia": "Su web está muy activa (© 2026): publicó el prelanzamiento de Pokémon Delta Reign del 23 al 31-10-2026 y una preventa con lanzamiento estimado el 06-11. En sus preguntas frecuentes dice: «¡SÍ! Estamos en Av. Recoleta 901, local 4… Metro Cerro Blanco… estacionamiento gratuito». TorneosTCG (07-11-2026) también la incluye. Correcciones: es una tienda solo de TCG (para juegos de mesa remite a su tienda hermana Santiago Games, en Ahumada 83, Eurocentro), así que quito «mesa». Los torneos son los del calendario semanal de su propia web, que difiere del de TorneosTCG: Riftbound es el lunes y no el miércoles, Pokémon sáb y dom a las 11:00 y no a las 11:30, Magic el sáb a las 15:30, y hay torneos gratis a las 14:30 de martes a viernes. No hay avisos de cierre ni de traslado.",
+   "fuentes": [
+    "https://www.mesa1.cl/",
+    "https://www.mesa1.cl/pages/events",
+    "https://www.mesa1.cl/nosotros",
+    "https://www.mesa1.cl/pages/preguntas-frecuentes",
+    "https://www.mesa1.cl/event/pokemon-prelanzamiento-delta-reign-1",
+    "https://www.torneostcg.cl/region-metropolitana/tiendas/mesa-1",
+    "https://www.openstreetmap.org/way/444940662",
+    "https://mesa1.cl/"
+   ]
+  },
+  {
+   "id": "mirax-hobbies",
+   "nombre": "Mirax Hobbies",
+   "categorias": [
+    "anime",
+    "mesa",
+    "tcg",
+    "miniaturas"
+   ],
+   "direccion": "Mall Apumanque, Av. Manquehue Sur 31, local 510, nivel Terraza (también en Costanera Center, local 125)",
+   "comuna": "Las Condes",
+   "descripcion": "Tienda de hobbies y cultura geek: figuras y estatuas (Hot Toys, Marvel Legends, S.H.Figuarts, Good Smile, NECA), cómics, manga, maquetas, modelismo y juegos de mesa.",
+   "torneos": "Torneos semanales TCG en Apumanque: mar (Pokémon y Gundam) y jue (Pokémon y One Piece), check-in 18:00. Noviembre 2026: Gundam dom 8, League Challenge Pokémon dom 15, One Piece y Star Wars Unlimited dom 22, League Cup Pokémon dom 29.",
+   "espacio_juego": true,
+   "venta_online": true,
+   "horario": "Lun a sáb 10:00–20:00; dom y festivos 11:00–20:00 (Costanera Center: todos los días 10:00–21:00)",
+   "web": "https://www.mirax.cl/",
+   "instagram": "https://www.instagram.com/miraxhobbies/",
+   "lat_propuesta": -33.410029,
+   "lng_propuesta": -70.567573,
+   "fuente_propuesta": "OpenStreetMap: nodo 922233371 (shop=toys 'Mirax', Av. Manquehue Sur 31, Las Condes). El mapa incrustado en mirax.cl solo da el centro de la vista (-33.409529, -70.569541), unos 190 m al oeste, por eso no se usó.",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Mirax_Hobbies_ubicaci%C3%B3n_actual_Apumanque.jpg/960px-Mirax_Hobbies_ubicaci%C3%B3n_actual_Apumanque.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Mirax_Hobbies_ubicaci%C3%B3n_actual_Apumanque.jpg/330px-Mirax_Hobbies_ubicaci%C3%B3n_actual_Apumanque.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Mirax_Hobbies_ubicaci%C3%B3n_actual_Apumanque.jpg",
+     "credito": "Foto: Joje198913 · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Frente del local de Mirax Hobbies en el Mall Apumanque: vitrina de vidrio con el letrero ovalado iluminado «MIRAX Hobbies», estanterías con juguetes y figuras al fondo, dos estatuas de stormtrooper en la entrada y mesas del patio de comidas a los lados. A la izquierda hay un niño con la cara pixelada, así que no se le reconoce (diciembre de 2024)."
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Mirax_Hobbies_mall_Cenco_costanera_center.jpg/960px-Mirax_Hobbies_mall_Cenco_costanera_center.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Mirax_Hobbies_mall_Cenco_costanera_center.jpg/330px-Mirax_Hobbies_mall_Cenco_costanera_center.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Mirax_Hobbies_mall_Cenco_costanera_center.jpg",
+     "credito": "Foto: Joje198913 · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Fachada de la tienda de Mirax Hobbies en Costanera Center: frente negro con el letrero rojo «MIRAX Hobbies», vitrinas con estatuas de Spider-Man y de Luffy (One Piece) y siete personas del equipo, adultas y con delantal, posando en la entrada; al fondo, pasillos de estanterías con productos (mayo de 2024)."
+    }
+   ],
+   "evidencia": "Confirmada. mirax.cl (© 2026) publica sus dos puntos de venta con dirección y horario. También vende entradas para torneos TCG de noviembre de 2026; las fichas de Gundam (08-11) y de los torneos semanales indican 'Lugar: Mirax Hobbies – Mall Apumanque'. El remate de diciembre de 2025 (The Clinic 09-12-2025, 24horas 10-12-2025) fue de 103 juguetes y no menciona cierre; no se hallaron noticias de cierre ni de traslado. Correcciones al otro agente: faltaban 'tcg' (cartas TCG, Pokémon, torneos) y 'miniaturas' (vende Warhammer 40.000 y pinturas Citadel), los torneos y el espacio de juego (los torneos se juegan en la tienda de Apumanque). La dirección exacta es local 510, nivel Terraza. 'Mundo gamer' son periféricos (audífonos, teclados), no videojuegos.",
+   "fuentes": [
+    "https://www.mirax.cl/",
+    "https://www.mirax.cl/buscadorx.php?categoria=90274",
+    "https://www.mirax.cl/detalles.php?codigo=312610",
+    "https://www.mirax.cl/detalles.php?codigo=312510",
+    "https://www.mirax.cl/detalles.php?codigo=312517",
+    "https://www.mirax.cl/index.php?menu=1072",
+    "https://www.lanacion.cl/la-ruta-tiendas-de-figuras-de-coleccion-y-juguetes-geek-que-hacer-en-santiago/",
+    "https://www.24horas.cl/actualidad/economia/remataran-juguetes-desde-los-500-en-tienda-de-mall-apumanque"
+   ]
+  },
+  {
+   "id": "missplay-tcg",
+   "nombre": "Missplay TCG",
+   "categorias": [
+    "tcg"
+   ],
+   "direccion": "Av. Irarrázaval 3192, local 12 (metro Chile España)",
+   "comuna": "Ñuñoa",
+   "descripcion": "Tienda de TCG con torneos de Pokémon, Magic (Premodern y Commander) y One Piece, además de «escuelitas» para aprender a jugar. Abre todos los días hasta tarde.",
+   "torneos": "Pokémon: lun 19:30 (casual), jue 19:30 y sáb 12:00; Magic: mar 19:30 (Premodern), mié 19:30 y sáb 15:00 (Commander Bracket 3); One Piece: vie 19:30; escuelitas a las 16:00: Pokémon lun y jue, One Piece vie (TorneosTCG)",
+   "espacio_juego": true,
+   "venta_online": true,
+   "horario": "Lun a dom 13:00–22:30",
+   "web": "https://www.missplay.cl/",
+   "instagram": "https://www.instagram.com/missplaytcg",
+   "lat_propuesta": -33.454644,
+   "lng_propuesta": -70.597613,
+   "fuente_propuesta": "OpenStreetMap, way 725963262 (Edificio Don Miguel, Av. Irarrázaval 3192, Ñuñoa), vía Overpass; ubica el edificio, no el local 12",
+   "fotos": [],
+   "evidencia": "Su web (Jumpseller) está vigente, con productos de 2026 (Ascended Heroes, 30th Celebration). Tiene fichas de torneos en su local con fechas 29-05, 18-06, 03-07 y 01-08; los días de semana corresponden a 2026. El torneo Premodern tenía cupo para 20 jugadores. TorneosTCG (consultado el 07-11-2026) publica 10 eventos semanales en Av. Irarrázaval #3192, local 12. No encontré noticias de cierre ni traslado. Dos fichas de torneo dicen '3193' (errata); el pie de página, la página de contacto y TorneosTCG dicen 3192. Vende online con retiro en tienda (lun-dom 12:00-22:00) o despacho por Blue Express.",
+   "fuentes": [
+    "https://www.missplay.cl/",
+    "https://www.missplay.cl/contact",
+    "https://www.missplay.cl/envios-y-devoluciones",
+    "https://www.missplay.cl/eventos",
+    "https://www.missplay.cl/torneo-premodern-survival-of-the-fitness",
+    "https://www.missplay.cl/torneo-one-piece-tcg-03-julio",
+    "https://www.missplay.cl/torneo-pokemon-casual-18-junio",
+    "https://www.missplay.cl/torneo-one-piece-tcg"
+   ]
+  },
+  {
+   "id": "neo-tokyo-store",
+   "nombre": "Neo Tokyo Store",
+   "categorias": [
+    "anime"
+   ],
+   "direccion": "Agustinas 833, Local J10, Mall Vivo Imperio",
+   "comuna": "Santiago",
+   "descripcion": "Tienda especializada en manga, abierta en pandemia: ediciones argentinas y españolas de shonen, seinen, shojo, BL y yuri, con sección de novedades y retiro en tienda.",
+   "torneos": null,
+   "espacio_juego": null,
+   "venta_online": true,
+   "horario": "Lun a dom 10:00–19:45",
+   "web": "https://www.neotokyo.cl/",
+   "instagram": "https://www.instagram.com/neotokyo3store",
+   "lat_propuesta": -33.4405,
+   "lng_propuesta": -70.6486,
+   "fuente_propuesta": "geo schema.org que publica su sitio (neotokyo.cl/contact), con 4 decimales. OSM (Nominatim inverso) lo ubica en Agustinas 853, junto al n.º 833 y al acceso del Mall Vivo Imperio por Agustinas. El iframe de su web solo trae la dirección escrita, sin coordenadas.",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Vivo_Imperio%2C_Santiago_20220627.jpg/960px-Vivo_Imperio%2C_Santiago_20220627.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Vivo_Imperio%2C_Santiago_20220627.jpg/330px-Vivo_Imperio%2C_Santiago_20220627.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Vivo_Imperio,_Santiago_20220627.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas (Carlos yo) · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Entrada del mall Vivo Imperio desde una calle con tránsito: portal negro con el letrero «VIVO IMPERIO», franjas de luz a los costados y un farol a cada lado. Al fondo se ve el pasillo interior iluminado, con vitrinas de tiendas (junio de 2022)"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Vivo_Imperio%2C_Santiago_20230414.jpg/960px-Vivo_Imperio%2C_Santiago_20230414.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Vivo_Imperio%2C_Santiago_20230414.jpg/330px-Vivo_Imperio%2C_Santiago_20230414.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Vivo_Imperio,_Santiago_20230414.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas (Carlos yo) · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Fachada principal del mall Vivo Imperio sobre un paseo peatonal: edificio de piedra blanca con celosías oscuras y un gran letrero «VIVO IMPERIO» sobre la entrada. Se ven peatones entrando y, adentro, la tienda H&M (abril de 2023)"
+    }
+   ],
+   "evidencia": "Confirmada. Su tienda online (Jumpseller) sigue activa: el 05-11-2026 subió un logo navideño (según la marca de tiempo de la imagen) y promociona un «Pasaporte Navidad». En el pie y en /contact publica la tienda física en Agustinas 833, Local J10, Mall Vivo Imperio, con horario de lunes a domingo de 10:00 a 19:45, y ofrece retiro en tienda. La Nación (28-01-2026) la recomendó en el «Pasillo Asiático» del mall. No encontré noticias de cierre ni de traslado, ni de la tienda ni del mall. Es una tienda de manga: no hay torneos y no se habla de mesas para jugar.",
+   "fuentes": [
+    "https://www.neotokyo.cl/",
+    "https://www.neotokyo.cl/contact",
+    "https://www.neotokyo.cl/blog",
+    "https://www.lanacion.cl/4-tiendas-de-comics-y-mangas-la-ruta-sobre-que-hacer-en-santiago/",
+    "https://www.openstreetmap.org/way/542958817",
+    "https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=-33.4405&lon=-70.6486"
+   ]
+  },
+  {
+   "id": "oasis-games-chile",
+   "nombre": "Oasis Games",
+   "categorias": [
+    "tcg",
+    "mesa"
+   ],
+   "direccion": "Av. Apoquindo 4501, local 5 (sector Escuela Militar)",
+   "comuna": "Las Condes",
+   "descripcion": "Tienda de Magic (singles y sellado), Pokémon, One Piece, Gundam y Riftbound, con accesorios y juegos de tablero. Tiene torneos casi todos los días de la semana.",
+   "torneos": "Magic: lun 19:00 (cEDH), mié 19:00 (Commander Bracket 3) y 19:30 (Modern); Pokémon: mar y vie 19:30, dom 16:30; One Piece: lun y mié 19:30; Gundam: jue 19:00 y dom 16:30; Riftbound (Nexus Night): jue 19:00 (TorneosTCG)",
+   "espacio_juego": true,
+   "venta_online": true,
+   "horario": "Lun a vie 12:00–22:00; sáb, dom y festivos 12:00–20:00",
+   "web": "https://www.oasisgames.cl/",
+   "instagram": "https://www.instagram.com/oasisgameschile/",
+   "lat_propuesta": -33.4140535,
+   "lng_propuesta": -70.5829093,
+   "fuente_propuesta": "OpenStreetMap, nodo 13596743805 'Oasis Games' (Avenida Apoquindo 4501, unidad 5; mismo teléfono que la web; creado el 24-02-2026).",
+   "fotos": [],
+   "evidencia": "Tienda física vigente. El pie de página de su web (Shopify) publica Av. Apoquindo 4501, local 5, y el 'Horario de atención': lunes a viernes de 12:00 a 22:00; sábado, domingo y festivos de 12:00 a 20:00. Su sitemap de productos tiene cambios del 07-11-2026 (cartas de Star Trek y Pokémon). TorneosTCG (07-11-2026) publica 11 torneos semanales en el local. OSM agregó la tienda el 24-02-2026 con el mismo teléfono. Vende Magic, Pokémon, One Piece, Gundam y Riftbound, además de juegos de tablero (por ejemplo, expansiones de Carcassonne). No encontré noticias de cierre ni de traslado. La página 'Contáctanos' trae un texto de plantilla en inglés ('Monday–Saturday 10AM–5PM, closed on Sunday') que contradice el pie de página y los torneos nocturnos y dominicales, así que uso el horario del pie de página. Corrijo los torneos: al resumen anterior le faltaba Gundam el domingo a las 16:30.",
+   "fuentes": [
+    "https://www.oasisgames.cl/",
+    "https://www.oasisgames.cl/pages/contactanos",
+    "https://www.oasisgames.cl/sitemap_products_153.xml?from=10537812295975&to=10547324846375",
+    "https://www.torneostcg.cl/region-metropolitana/tiendas/oasis",
+    "https://api.openstreetmap.org/api/0.6/node/13596743805"
+   ]
+  },
+  {
+   "id": "persa-biobio",
+   "nombre": "Persa Biobío",
+   "categorias": [
+    "videojuegos"
+   ],
+   "direccion": "Calle Placer y Biobío, barrio Franklin (metro Franklin o Biobío)",
+   "comuna": "Santiago",
+   "descripcion": "Feria persa de fin de semana en antiguos galpones industriales: antigüedades, coleccionables, libros, vinilos y locales de consolas y juegos retro (RetroGamers, DoubleImpactStore).",
+   "torneos": null,
+   "espacio_juego": null,
+   "venta_online": null,
+   "horario": "Sáb, dom y festivos, aprox. 11:00–16:00 (algunos locales desde las 9:00 y hasta las 18:00)",
+   "web": null,
+   "instagram": null,
+   "dudas": "La Galería Placer (Placer 880) está clausurada desde diciembre de 2025; el resto de los galpones funciona.",
+   "es_galeria": true,
+   "lat_propuesta": -33.4746,
+   "lng_propuesta": -70.64430833,
+   "fuente_propuesta": "Wikipedia en español, artículo «Persa Biobío» (coordenadas -33.4746, -70.64430833)",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Entrada_posterior_Persa_Biobi%C3%B3.JPG/960px-Entrada_posterior_Persa_Biobi%C3%B3.JPG",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Entrada_posterior_Persa_Biobi%C3%B3.JPG/330px-Entrada_posterior_Persa_Biobi%C3%B3.JPG",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Entrada_posterior_Persa_Biobi%C3%B3.JPG",
+     "credito": "Foto: Ciberprofe, Wikimedia Commons, CC BY-SA 3.0",
+     "descripcion": "Letrero 'Persa Bio-Bio, 100 años de tradición' sobre uno de los accesos a los galpones (2008)"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Persa_Biob%C3%ADo_%2817641645566%29.jpg/960px-Persa_Biob%C3%ADo_%2817641645566%29.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Persa_Biob%C3%ADo_%2817641645566%29.jpg/330px-Persa_Biob%C3%ADo_%2817641645566%29.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Persa_Biob%C3%ADo_(17641645566).jpg",
+     "credito": "Foto: The Travel Manuel (Flickr), Wikimedia Commons, CC BY-SA 2.0",
+     "descripcion": "Calle del persa con puestos y público un fin de semana (abril de 2015)"
+    }
+   ],
+   "evidencia": "Sigue funcionando en 2026. DoubleImpactStore publica en su web (entradas de blog del 29-07, 05-08 y 12-08-2026) su local de juegos retro en el persa: Biobío 654, local 58, Galpón Nuevo Bío Bío, sáb, dom y festivos 11:00–18:00. Meteored (14-08-2026) también menciona la sucursal de RetroGamers en el persa. Ojo: el 29-12-2025 la Municipalidad y la Delegación Presidencial clausuraron la «Galería Placer» (Placer 880, la Plaza Magoza de la Cooperativa Plazas Techadas, unos 790 locales, sobre todo de telefonía). No encontré noticias de que haya reabierto, pero la clausura no afecta al resto de los galpones. No es una tienda única ni tiene una web oficial común: el horario sale de persa-biobio.com y de feriasdesantiago.cl (© 2026). No hay datos de mesas de juego ni de venta online del persa como tal.",
+   "fuentes": [
+    "https://es.wikipedia.org/wiki/Persa_Biob%C3%ADo",
+    "https://feriasdesantiago.cl/feria/persa-bio-bio-santiago/",
+    "https://www.persa-biobio.com/persa/horarios",
+    "https://www.persa-biobio.com/galpones",
+    "https://doubleimpactstore.cl/",
+    "https://www.meteored.cl/noticias/ocio/santiago-revive-la-era-dorada-de-los-videojuegos-donde-jugar-arcades-pinball-y-encontrar-consolas-clasicas.html",
+    "https://puranoticia.pnt.cl/nacional/cierran-galeria-placer-del-persa-bio-bio-denunciado-por-venta-de",
+    "https://g5noticias.cl/2025/12/29/clausuran-galpon-del-persa-biobio-tras-funcionar-mas-de-10-anos-sin-permisos-de-obras-ni-comerciales/"
+   ]
+  },
+  {
+   "id": "piedrabruja",
+   "nombre": "PiedraBruja",
+   "categorias": [
+    "tcg",
+    "mesa",
+    "rol",
+    "miniaturas"
+   ],
+   "direccion": "Av. Providencia 1100, local 45",
+   "comuna": "Providencia",
+   "descripcion": "Tienda WPN Premium con dos salones de juego en el segundo piso (hasta 48 jugadores cada uno), ludoteca y café. Vende TCG, juegos de mesa, rol y Warhammer, y organiza partidas de D&D.",
+   "torneos": "Magic: lun, mié, jue y vie 19:00 y sáb 11:00 (Commander). Pokémon: mar 19:00, más League Challenge el sáb 7-11 y League Cup el sáb 14-11 a las 11:00. One Piece: mar 19:00. Yu-Gi-Oh!: mié 19:00. Gundam: lun 19:00. Digimon y Riftbound: vie 19:00. D&D: domingos (DomingRol).",
+   "espacio_juego": true,
+   "venta_online": true,
+   "horario": "Lun a vie 9:00–22:00; sáb y dom 10:00–20:00",
+   "web": "https://piedrabruja.cl/",
+   "instagram": "https://www.instagram.com/piedrabruja_chile/",
+   "lat_propuesta": -33.42983333,
+   "lng_propuesta": -70.62308611,
+   "fuente_propuesta": "Wikidata Q28500970 (Torres de Tajamar), cuya dirección registrada es «Avenida Providencia 1100»; es.wikipedia da las mismas coordenadas. Es el punto del conjunto, no el del local 45. OSM lo respalda: el nodo 3144059598 (Av. Providencia 1100, local 18) está a unos 30 m.",
+   "fotos": [
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0697/4482/0504/files/Portada.jpg?v=1718933414",
+     "mini": null,
+     "pagina": "https://piedrabruja.cl/pages/nuestra-tienda",
+     "credito": "Foto: PiedraBruja",
+     "descripcion": "Fachada del local 45 con el letrero iluminado de Piedra Bruja"
+    },
+    {
+     "url": "https://piedrabruja.cl/cdn/shop/files/MAGIC-ACTIVIDADES-PIEDRA-BRUJA-05.jpg",
+     "mini": null,
+     "pagina": "https://piedrabruja.cl/pages/zona-magic-the-gathering",
+     "credito": "Foto: PiedraBruja",
+     "descripcion": "Sala de juego de PiedraBruja durante una jornada de Magic: mesas largas y oscuras con jugadores en plena partida y ventanales con rejas a la izquierda. Al fondo hay un televisor y un lienzo de NovaSonic Mods; a la derecha, repisas blancas con bebidas y snacks junto a un refrigerador. Del techo cuelgan banderines tricolores."
+    }
+   ],
+   "evidencia": "Confirmada con evidencia muy reciente. El blog tiene entradas hasta el 15-10-2026 (Arkanova, Marvel Darkhold Destiny del 14-10 y Reality Fracture del 25-09). Vende preventas de Darkhold Destiny y entradas para un torneo de lanzamiento de Gundam (ST11-ST14). TorneosTCG (consultado el 07-11-2026) publica 12 eventos semanales en Av. Providencia 1100, local 45, más un Pokémon League Challenge el 07-11-2026 y una League Cup el 14-11-2026, tomados de Play! Pokémon. La página de la tienda describe un 2.º piso con dos salones para 48 jugadores simultáneos, ludoteca, café y DomingRol los domingos. Correcciones al agente anterior: le faltaba Gundam (lun 19:00); los eventos Pokémon del sábado tienen fecha y no son semanales; los dos salones suman 48 jugadores en total, no 48 cada uno.",
+   "fuentes": [
+    "https://piedrabruja.cl/",
+    "https://piedrabruja.cl/pages/nuestra-tienda",
+    "https://piedrabruja.cl/pages/zona-juegos-de-cartas",
+    "https://www.torneostcg.cl/region-metropolitana/tiendas/piedrabruja",
+    "https://www.wikidata.org/wiki/Q28500970",
+    "https://es.wikipedia.org/wiki/Torres_de_Tajamar",
+    "https://overpass-api.de/api/interpreter (OSM node 3144059598, Av. Providencia 1100 local 18)"
+   ]
+  },
+  {
+   "id": "playset-tcg-store",
+   "nombre": "Playset TCG Store",
+   "categorias": [
+    "tcg",
+    "mesa",
+    "anime"
+   ],
+   "direccion": "Merced 80",
+   "comuna": "Santiago",
+   "descripcion": "Tienda especializada en Pokémon TCG (sellado, singles y accesorios), con liga oficial y torneos semanales. Se trasladó de Seminario 768 a Merced 80.",
+   "torneos": "Pokémon: liga oficial mar 19:30 y «Desafío Playset» jue 19:00. Además, una League Cup especial el dom 8-11-2026 a las 11:00.",
+   "espacio_juego": true,
+   "venta_online": true,
+   "horario": "Lun a vie 12:00–21:00; sáb 12:00–19:00",
+   "web": "https://www.playset.cl/",
+   "instagram": "https://www.instagram.com/playsetcl/",
+   "lat_propuesta": -33.4370185,
+   "lng_propuesta": -70.6364374,
+   "fuente_propuesta": "Mapa de Google incrustado en playset.cl/contacto y en la portada (!3d-33.4370185 !2d-70.6364374, con el rótulo «Merced 80, 8320119 Santiago»; generado el 25/26-12-2025). Concuerda con OSM: el Hostel Merced 88 está a unos 20 m.",
+   "fotos": [],
+   "evidencia": "Confirmada. La tienda online está muy activa: subió productos 30th Celebration el 05 y el 06-11-2026. La página de contacto (modificada el 25-12-2025) y el mapa incrustado ubican la tienda en Merced 80 con horario lun-vie 12-21 y sáb 12-19. OSM todavía la muestra en la dirección antigua, Seminario 768 (nodo 11050122209, desactualizado). TorneosTCG (consultado el 07-11-2026) publica en Merced 80 la liga oficial Pokémon (mar 19:30) y el «Desafío Playset» (jue 19:00), más una League Cup con fecha 08-11-2026 a las 11:00, tomada del Event Locator de Play! Pokémon. Correcciones al agente anterior: la League Cup del domingo es un evento puntual y no semanal. Además del TCG Pokémon vende juegos de mesa (19 productos en stock) y peluches y figuras Pokémon (categorías «Figuras y Peluches» y «Pokemon Center»). No encontré noticias de cierre.",
+   "fuentes": [
+    "https://www.playset.cl/",
+    "https://www.playset.cl/contacto/",
+    "https://www.playset.cl/torneos-eventos/",
+    "https://www.playset.cl/wp-json/wp/v2/product?per_page=8&orderby=date&order=desc",
+    "https://www.playset.cl/categoria-producto/juegos-de-mesa/",
+    "https://www.playset.cl/categoria-producto/figuras-y-peluches/",
+    "https://www.torneostcg.cl/region-metropolitana/tiendas/playsetcl",
+    "https://overpass-api.de/api/interpreter (OSM node 11050122209 Playset en Seminario 768, desactualizado; node 13390616869 Hostel Merced 88)"
+   ]
+  },
+  {
+   "id": "retrogamers",
+   "nombre": "RetroGamers",
+   "categorias": [
+    "videojuegos",
+    "anime"
+   ],
+   "direccion": "Galería Paseo Las Palmas, Av. Nueva Providencia 2212 (los fines de semana, en el Persa Biobío)",
+   "comuna": "Providencia",
+   "descripcion": "Consolas y juegos originales retro y actuales (Nintendo, PlayStation, Sega, Xbox, Neo Geo), figuras y coleccionables; recibe consolas y juegos retro como parte de pago.",
+   "torneos": null,
+   "espacio_juego": null,
+   "venta_online": true,
+   "horario": "Providencia: lun a vie 12:00–18:00. Persa Biobío: sáb, dom y festivos 11:00–18:00",
+   "web": "https://www.retrogamers.cl/",
+   "instagram": "https://www.instagram.com/tienda_retrogamers/",
+   "en": "galeria-paseo-las-palmas",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Paseo_Las_Palmas%2C_Providencia%2C_Santiago_20230930_02.jpg/960px-Paseo_Las_Palmas%2C_Providencia%2C_Santiago_20230930_02.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Paseo_Las_Palmas%2C_Providencia%2C_Santiago_20230930_02.jpg/330px-Paseo_Las_Palmas%2C_Providencia%2C_Santiago_20230930_02.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Paseo_Las_Palmas,_Providencia,_Santiago_20230930_02.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Entrada de la Galería Comercial Paseo Las Palmas vista desde el cruce peatonal: pérgola arqueada sobre el pasaje, una palmera alta, el letrero «Galería Comercial Paseo Las Palmas» junto a la señal del Metro Los Leones a la derecha y peatones cruzando la calle (septiembre de 2023)"
+    }
+   ],
+   "evidencia": "Está activa: su web subió productos hasta el 4 y 5-11-2026 y vende online (pago con Flow, despacho en 24–72 h, retiro en los «locales de Providencia y Santa Rosa»). Meteored (14-08-2026) ubica su local principal en el Paseo Las Palmas de Providencia, a pasos del Metro Los Leones, con sucursal en el Persa Biobío. La web no publica dirección ni número de local. Un video de YouTube del 13-12-2024 la situaba en Av. Providencia 2237, local T14, 2.º piso (C.C. Dos Providencias, edificio que en OSM queda junto al Paseo Las Palmas). Los horarios de la web (página editada el 20-08-2025) y de Meteored (agosto de 2026) no coinciden; se informan ambos. Agrego «anime»: su categoría Coleccionables (95 productos) incluye figuras y Funko de Dragon Ball, Inuyasha, Street Fighter y Mega Man. No encontré noticias de cierre ni de traslado.",
+   "fuentes": [
+    "https://www.retrogamers.cl/",
+    "https://www.retrogamers.cl/condiciones-de-venta/",
+    "https://www.retrogamers.cl/page-sitemap.xml",
+    "https://www.retrogamers.cl/categoria-producto/coleccionables/",
+    "https://www.meteored.cl/noticias/ocio/santiago-revive-la-era-dorada-de-los-videojuegos-donde-jugar-arcades-pinball-y-encontrar-consolas-clasicas.html",
+    "https://www.youtube.com/watch?v=qKM6jT4JPfM",
+    "https://www.openstreetmap.org/way/1174039035",
+    "https://www.openstreetmap.org/way/447572408"
+   ]
+  },
+  {
+   "id": "shazam-comics",
+   "nombre": "Shazam Comics",
+   "categorias": [
+    "anime"
+   ],
+   "direccion": "Portal Lyon, Av. Providencia 2198, local 49 (también en Marín 0279 y en Huérfanos 714, local 8)",
+   "comuna": "Providencia",
+   "descripcion": "Comiquería con más de 18 años: novedades Marvel y DC (línea Absolute), Dark Horse, IDW y Boom, manga, cómic europeo e indie, y revistas vintage en español. Descuentos de hasta 35%.",
+   "torneos": null,
+   "espacio_juego": null,
+   "venta_online": true,
+   "horario": "Lun a vie 12:00–20:00; sáb 12:00–15:00 (sin confirmar: la tienda no lo publica)",
+   "web": "https://www.shazamcomics.cl/",
+   "instagram": "https://www.instagram.com/shazamcomics",
+   "lat_propuesta": -33.4216349,
+   "lng_propuesta": -70.6102587,
+   "fuente_propuesta": "OpenStreetMap: centro del edificio 'Portal Lyon' (way 234331817, editado el 28-05-2026). Es la sucursal de Av. Providencia 2198. Marín 0279 no tiene punto en OSM.",
+   "fotos": [
+    {
+     "url": "https://assets.jumpseller.com/store/shazam-online/themes/334780/espacio-shazam.jpg",
+     "mini": null,
+     "pagina": "https://www.shazamcomics.cl/sucursales",
+     "credito": "Foto: Shazam Comics (shazamcomics.cl)",
+     "descripcion": "Estanterías repletas de tomos de cómics en Espacio Shazam"
+    },
+    {
+     "url": "https://assets.jumpseller.com/store/shazam-online/themes/334780/centro.jpg",
+     "mini": null,
+     "pagina": "https://www.shazamcomics.cl/sucursales",
+     "credito": "Foto: Shazam Comics (shazamcomics.cl)",
+     "descripcion": "Vitrina del local 8 de Huérfanos 714 con cómics y manga"
+    },
+    {
+     "url": "https://assets.jumpseller.com/store/shazam-online/themes/334780/portal-lyon.jpg",
+     "mini": null,
+     "pagina": "https://www.shazamcomics.cl/sucursales",
+     "credito": "Foto: Shazam Comics (shazamcomics.cl)",
+     "descripcion": "Vitrina del local 49 en Portal Lyon con manga y cómics"
+    }
+   ],
+   "evidencia": "Confirmada. Su tienda online (Jumpseller) subió fotos de productos el mismo 07-11-2026 y el banner 'Batman Day 2026' el 14-09-2026, según las marcas de tiempo de las imágenes. La página Sucursales publica hoy los tres locales: Espacio Shazam (Marín 0279), Huérfanos 714 local 8 y Portal Lyon (Av. Providencia 2198 local 49). La Nación los listó igual el 28-01-2026. No encontré noticias de cierre ni de traslado. El '© 2026' del pie se genera solo y no prueba nada por sí mismo. La web no publica horario: el que va viene del listado sin fecha de Cuarto Mundo, que además dice que Espacio Shazam cierra los domingos salvo aviso. Puse primero Portal Lyon porque es la única sucursal con coordenadas fiables (edificio en OSM). Los iframes de su web solo traen la dirección, sin coordenadas. No hay evidencia de mesas para jugar.",
+   "fuentes": [
+    "https://www.shazamcomics.cl/",
+    "https://www.shazamcomics.cl/sucursales",
+    "https://www.shazamcomics.cl/contact",
+    "https://www.lanacion.cl/4-tiendas-de-comics-y-mangas-la-ruta-sobre-que-hacer-en-santiago/",
+    "https://www.cuartomundo.cl/lista-de-comiquerias-en-chile/",
+    "https://www.13.cl/rec/articulos/maria-jesus-sothers-conocio-la-tienda-mas-grande-de-comics-en-chile",
+    "https://api.openstreetmap.org/api/0.6/way/234331817",
+    "https://api.openstreetmap.org/api/0.6/map?bbox=-70.6400,-33.4520,-70.6280,-33.4440"
+   ]
+  },
+  {
+   "id": "taylor-comics",
+   "nombre": "Taylor Comics",
+   "categorias": [
+    "anime"
+   ],
+   "direccion": "Mall Arauco Estación, local F516",
+   "comuna": "Estación Central",
+   "descripcion": "Cómics Marvel, DC y europeos, manga y merchandising a precios accesibles; hace encargos de títulos desde Argentina y España.",
+   "torneos": null,
+   "espacio_juego": null,
+   "venta_online": true,
+   "horario": null,
+   "web": "https://www.taylorcomics.cl/",
+   "instagram": "https://www.instagram.com/taylor_comics/",
+   "lat_propuesta": -33.4524904,
+   "lng_propuesta": -70.679885,
+   "fuente_propuesta": "OpenStreetMap, way 71871574 (centroide del mall Arauco Estación, Av. Libertador Bernardo O'Higgins 3250), consultado vía Overpass; ubica el mall, no el local F516",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Arauco_Estaci%C3%B3n%2C_Estaci%C3%B3n_Central%2C_Santiago_20230327.jpg/960px-Arauco_Estaci%C3%B3n%2C_Estaci%C3%B3n_Central%2C_Santiago_20230327.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Arauco_Estaci%C3%B3n%2C_Estaci%C3%B3n_Central%2C_Santiago_20230327.jpg/330px-Arauco_Estaci%C3%B3n%2C_Estaci%C3%B3n_Central%2C_Santiago_20230327.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Arauco_Estaci%C3%B3n,_Estaci%C3%B3n_Central,_Santiago_20230327.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Entrada del mall Arauco Estación con su letrero y logo sobre la puerta, entre un OK Market y un KFC. A la izquierda hay un edificio antiguo con techo de mansarda y una tienda Adidas, y en la vereda, peatones y vendedores ambulantes (marzo de 2023)."
+    }
+   ],
+   "evidencia": "La doy por abierta, con reparos. El pie de página de taylorcomics.cl publica hoy 'Mall Arauco Estación, local F516, Estación Central'. Es una tienda online activa: cargó productos el 06-11-2026. Lo respaldan La Nación (28-01-2026) y una resolución del SII del 15-12-2025, que ordenó clausurar 2 días (06 al 08-01-2026) ese local 'ubicado en un centro comercial', en Av. L. Bdo. O'Higgins 3110-3156, F516. REFUTO la segunda dirección que dio el otro agente: Huérfanos 669, local 31A (Galería de la Merced) fue su primer local. El pie de la web cambió de Huérfanos al mall entre nov-2024 y abr-2025 (Wayback). La página 'Quiénes somos', que aún dice Huérfanos, no se edita desde el 18-12-2024 (API de WordPress). Reparos: no figura en el directorio oficial de Arauco Estación (API de Parque Arauco, 271 tiendas, consultado el 07-11-2026). Además, en nov-2025 el dueño declaró al SII ventas 'pésimas'. La evidencia independiente más reciente del local es de enero de 2026, así que conviene confirmar antes de ir. No publica horario ni hace torneos. Vende cómics, manga y merchandising, y despacha con Shipit.",
+   "fuentes": [
+    "https://www.taylorcomics.cl/",
+    "https://www.taylorcomics.cl/quienes-somos/",
+    "https://www.taylorcomics.cl/politicas-de-envio/",
+    "https://www.taylorcomics.cl/wp-json/wp/v2/product?per_page=10&orderby=date&order=desc",
+    "https://www.taylorcomics.cl/wp-json/wp/v2/pages",
+    "https://web.archive.org/web/20241103145836/https://www.taylorcomics.cl/",
+    "https://web.archive.org/web/20250430051021/https://www.taylorcomics.cl/",
+    "https://web.archive.org/web/20260618120434/https://www.taylorcomics.cl/"
+   ]
+  },
+  {
+   "id": "third-impact",
+   "nombre": "Third Impact (Tobalaba)",
+   "categorias": [
+    "tcg",
+    "mesa"
+   ],
+   "direccion": "Av. Providencia 2563, local 12 (metro Tobalaba)",
+   "comuna": "Providencia",
+   "descripcion": "Tienda de TCG con amplia oferta de juegos japoneses (One Piece, Vanguard, Weiss Schwarz, Hololive), además de Pokémon y Magic. Tiene otras sucursales en Antonio Varas 1412 y en Dos Caracoles.",
+   "torneos": "Pokémon: lun 19:00 (casual), mar 19:00 (libre), vie 12:00 (intercambio), dom 10:00 (escuela); One Piece: mié 19:00 y sáb 12:30; Magic Commander libre: vie y sáb 15:00; Vanguard: mar y vie 19:00, sáb 12:30; Gundam: lun y vie 19:00; Weiss Schwarz: mié y vie 19:00; Digimon: mié 19:00; DBS Fusion World: jue 19:00; Hololive: jue 19:00 y dom 11:00 (TorneosTCG)",
+   "espacio_juego": true,
+   "venta_online": true,
+   "horario": "Lun a vie 11:30–21:30; sáb y dom 10:00–17:30",
+   "web": "https://www.thirdimpact.cl/",
+   "instagram": "https://www.instagram.com/thirdimpact.cl",
+   "lat_propuesta": -33.4192623,
+   "lng_propuesta": -70.6033063,
+   "fuente_propuesta": "OpenStreetMap, way 600017024 (edificio con dirección Av. Providencia 2563), vía Overpass; el nodo vecino del Smart Fit (11590108774) está a pocos metros; ubica el edificio, no el local 12",
+   "fotos": [],
+   "evidencia": "Su web está vigente: pie '© 2026', preventas de Pokémon 30th Celebration y Delta Reign y de Magic Star Trek. Publica 'Sucursal Tobalaba: Av. Providencia 2563, Local 12, Metro L1 Tobalaba' con su horario. TorneosTCG (consultado el 07-11-2026) la ubica 'al costado del gimnasio Smart Fit' y lista 19 eventos semanales. Ojo, su propia web se contradice. El artículo 'Conoce nuestras tiendas' (modificado el 20-09-2026) todavía llama 'Sucursal Tobalaba' a Av. Providencia 2594, local 204 (edificio Pirámide del Sol). Ese local figuraba en el pie de página hasta julio de 2026 (Wayback, 16-07-2026). Hoy lo reemplaza la Sucursal Dos Caracoles (Av. Providencia 2216, local 19A). La tercera sucursal es Antonio Varas 1412, local 2. El artículo promete 'espacio para jugar, aprender, intercambiar' y torneos. Vende juegos de mesa (Asmodee, Devir, Salta Pal Lao). La sección 'Juguetes' tiene solo 5 productos, así que no amerita 'anime'. Hace envíos a todo Chile. No encontré noticias de cierre.",
+   "fuentes": [
+    "https://www.thirdimpact.cl/",
+    "https://www.thirdimpact.cl/article/conoce-nuestras-tiendas",
+    "https://www.thirdimpact.cl/blog",
+    "https://www.thirdimpact.cl/search?search_text=preventa",
+    "https://www.thirdimpact.cl/collection/juguetes",
+    "https://www.torneostcg.cl/region-metropolitana/tiendas/third-impact/third-impact-tobalaba",
+    "https://web.archive.org/web/20260716082008/https://www.thirdimpact.cl/",
+    "https://web.archive.org/web/20250618054907/https://www.thirdimpact.cl/"
+   ]
+  },
+  {
+   "id": "universo-toys",
+   "nombre": "Universo Toys",
+   "categorias": [
+    "anime"
+   ],
+   "direccion": "Centro Comercial Dos Caracoles, Av. Providencia 2216",
+   "comuna": "Providencia",
+   "descripcion": "Juguetería para coleccionistas: figuras de anime (Banpresto, Good Smile, Kotobukiya, MegaHouse, Pop Up Parade), Marvel y DC, Transformers, Hot Wheels, blind box y maquetas.",
+   "torneos": null,
+   "espacio_juego": null,
+   "venta_online": null,
+   "horario": null,
+   "web": null,
+   "instagram": null,
+   "en": "centro-comercial-dos-caracoles",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/20260121_Galeria_Dos_Caracoles.jpg/960px-20260121_Galeria_Dos_Caracoles.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/20260121_Galeria_Dos_Caracoles.jpg/330px-20260121_Galeria_Dos_Caracoles.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:20260121_Galeria_Dos_Caracoles.jpg",
+     "credito": "Foto: Aeveraal, Wikimedia Commons, CC BY 4.0",
+     "descripcion": "Interior del Dos Caracoles con el letrero de Universo Toys en uno de sus pisos (enero de 2026)"
+    },
+    {
+     "url": "https://static.theclinic.cl/media/2024/10/03-182724_8mkz_Diseno-sin-titulo-7.jpg",
+     "mini": null,
+     "pagina": "https://www.theclinic.cl/2024/10/05/el-choque-generacional-que-acosa-a-los-dos-caracoles-frente-al-boom-de-los-malls-chinos-en-providencia/",
+     "credito": "Foto: The Clinic (Philippe Vigoroux)",
+     "descripcion": "Interior del Dos Caracoles visto desde un piso alto. Se ven las rampas en espiral con letreros de Universo Toys y Playmore en las barandas, vitrinas iluminadas con figuras y peluches arriba a la izquierda, una lámpara de ampolletas colgando al centro y mesas de café en el nivel más bajo (publicada en octubre de 2024)."
+    }
+   ],
+   "evidencia": "El 28-10-2026 la propia Universo Toys publicó un aviso en Chiletrabajos: busca una 'vendedora encargada de local para tienda de juguetes y coleccionables en Providencia / dos caracoles'. El cargo incluye abrir y cerrar el local y trabajar fines de semana y festivos. Una foto de Wikimedia Commons del 21-01-2026 muestra varios lienzos de Universo Toys ('Juguetes de colección') en el atrio de Dos Caracoles. Corrección al otro agente: el aviso del 29-07-2026 solo dice 'Providencia', no 'Dos Caracoles'. No hay número de local ni horario vigentes. universotoys.cl es hoy un dominio estacionado (ya lo era en la copia de Wayback del 22-01-2026). universotoystienda.cl dice 'Coming soon' y universotoystienda.com ya no existe. Su última web, de sept-2025 (Wayback), daba: Dos Caracoles, locales 32-33-50-56, lun-sáb 11:00-19:30, domingo cerrado. Listaba también Paseo Las Palmas (Av. Providencia 2209, local 31) y Mall Quilín (Av. Américo Vespucio 3300). Vendía figuras de anime, Hot Wheels, cómics y algo de Pokémon TCG. Como no tiene web activa, la venta online queda sin datos.",
+   "fuentes": [
+    "https://www.chiletrabajos.cl/trabajo/vendedora-encargada-de-local-centro-comercial-3922246",
+    "https://www.chiletrabajos.cl/trabajo/vendedor-a-experto-a-en-anime-coleccionismo-y-mundo-geek-3874490",
+    "https://commons.wikimedia.org/wiki/File:20260121_Galeria_Dos_Caracoles.jpg",
+    "https://www.universotoys.cl/",
+    "https://www.universotoystienda.cl/",
+    "https://web.archive.org/web/20250917171258/https://www.universotoys.cl/",
+    "https://web.archive.org/web/20260122003641/https://www.universotoys.cl/",
+    "https://web.archive.org/web/20230610195659/https://www.universotoystienda.com/contact"
+   ]
+  },
+  {
+   "id": "vudu-gaming",
+   "nombre": "Vudu Gaming",
+   "categorias": [
+    "tcg",
+    "mesa",
+    "rol",
+    "miniaturas"
+   ],
+   "direccion": "Av. Providencia 1108, local 15, Galería Veneto",
+   "comuna": "Providencia",
+   "descripcion": "Tienda de TCG con eventos casi todos los días de Magic, Pokémon, One Piece, Riftbound y Flesh and Blood. También vende Lorcana, juegos de mesa y miniaturas.",
+   "torneos": "Lun 19:00 Flesh and Blood y Gundam; mar 19:00 Riftbound; mié y vie 19:00 Pokémon; jue 19:30 One Piece; Magic Commander lun 18:00 y jue 19:00 (según TorneosTCG); prerelease de Magic 'Star Trek' sáb 07-11 11:00. El One Piece de los viernes 20:00 es online.",
+   "espacio_juego": true,
+   "venta_online": true,
+   "horario": "Lun a dom 14:00–21:00 (según OpenStreetMap; la tienda no lo publica)",
+   "web": "https://www.vudugaming.cl/",
+   "instagram": "https://www.instagram.com/vudugaming.cl",
+   "lat_propuesta": -33.4293937,
+   "lng_propuesta": -70.6224036,
+   "fuente_propuesta": "OpenStreetMap: nodo 13644199072 'Vudu Games' (shop=games), creado el 13-03-2026 y vecino del nodo 'Galerías Veneto'. Descarté el geo del JSON-LD de su web (-33.4335, -70.6262), que cae a unos 580 m de la dirección.",
+   "fotos": [],
+   "evidencia": "Confirmada. Su web vende cupos para el prerelease de Magic 'Star Trek' del sábado 07-11-2026 a las 11:00 en Av. Providencia 1108, local 15. Su calendario de eventos, con imágenes subidas el 05-10-2026, repite esa dirección. Subió productos hasta el 05-11-2026 y TorneosTCG le publica 7 eventos semanales. No encontré noticias de cierre ni de traslado. Corrijo los torneos del otro agente: el One Piece de los viernes 20:00 ('Pirates Party') es un torneo online en el simulador oficial, no en la tienda. El One Piece presencial es los jueves a las 19:30, y faltaba Gundam los lunes a las 19:00. Agrego 'rol': vende 71 productos de rol, como D&D y La Llamada de Cthulhu. 'Miniaturas' se confirma: tiene 137 juegos de miniaturas (Batman Miniature Game, Marvel Crisis Protocol, Zombicide). La tienda no publica horario; el de OSM lo cargó un colaborador y conviene confirmarlo.",
+   "fuentes": [
+    "https://www.vudugaming.cl/",
+    "https://www.vudugaming.cl/contact",
+    "https://www.vudugaming.cl/eventos",
+    "https://www.vudugaming.cl/preventa-prerelease-star-trek-sabado-07-de-noviembre-1100-hrs-espanol",
+    "https://www.vudugaming.cl/evento-pirates-party-one-piece-tcg-todos-los-viernes-2000-hrs",
+    "https://www.vudugaming.cl/magic-commander-bracket-2",
+    "https://www.vudugaming.cl/juegos-de-rol",
+    "https://www.vudugaming.cl/juegos-de-mesa/miniaturas"
+   ]
+  },
+  {
+   "id": "wargaming-cl",
+   "nombre": "Wargaming.cl (Manuel Montt)",
+   "categorias": [
+    "miniaturas",
+    "mesa",
+    "rol",
+    "tcg"
+   ],
+   "direccion": "Dr. Manuel Barros Borgoño 160 (metro Manuel Montt)",
+   "comuna": "Providencia",
+   "descripcion": "Especialista en Warhammer y otros wargames, pinturas y modelismo. También vende juegos de mesa, rol y TCG, y tiene mesas para jugar y ligas bimensuales. Otra sucursal: Eliodoro Yáñez 2970.",
+   "torneos": "One Piece jue 19:00 (su web menciona además un torneo femenino los martes); Pokémon dom 12:00; ligas bimensuales de wargames. Noviembre 2026 en Manuel Montt: Age of Sigmar sáb 14, League Cup Pokémon dom 15, League Challenge dom 22, novatos Warhammer 40K sáb 28, StarCraft dom 29.",
+   "espacio_juego": true,
+   "venta_online": true,
+   "horario": "Lun a mié 12:00–20:00; jue y vie 12:00–21:00; sáb 10:00–21:00; dom 10:00–20:00",
+   "web": "https://www.wargaming.cl/",
+   "instagram": "https://www.instagram.com/wargaming.cl/",
+   "fotos": [
+    {
+     "url": "https://dojiw2m9tvv09.cloudfront.net/16153/6/p_x-test/whatsappimage2024-04-21at13-05-04-37356.jpeg",
+     "mini": null,
+     "pagina": "https://www.wargaming.cl/article/conoce-nuestras-tiendas",
+     "credito": "Foto: Wargaming.cl",
+     "descripcion": "Entrada de una tienda Wargaming.cl con un cartel de Warhammer 40,000 (abril de 2024; no se indica la sucursal)"
+    },
+    {
+     "url": "https://dojiw2m9tvv09.cloudfront.net/16153/6/p_x-test/whatsappimage2024-04-21at13-05-04-19308.jpeg",
+     "mini": null,
+     "pagina": "https://www.wargaming.cl/article/conoce-nuestras-tiendas",
+     "credito": "Foto: Wargaming.cl",
+     "descripcion": "Interior con una mesa de Warhammer con escenografía, vitrinas y mostrador"
+    },
+    {
+     "url": "https://dojiw2m9tvv09.cloudfront.net/16153/6/p_x-test/whatsappimage2024-04-21at12-37-161981.jpeg",
+     "mini": null,
+     "pagina": "https://www.wargaming.cl/article/conoce-nuestras-tiendas",
+     "credito": "Foto: Wargaming.cl",
+     "descripcion": "Sala de juego con mesas ocupadas por jugadores de cartas"
+    }
+   ],
+   "evidencia": "Confirmada. Su web (© 2026) publica la sucursal Manuel Montt con horario y 'espacio y mesas disponibles' para jugar. El concurso de pintura Halloween 2026 (actualizado el 02-10-2026) recibe obras en la tienda hasta el 08-11-2026. Además vende inscripciones para eventos en la sucursal Manuel Montt en noviembre de 2026 (14, 15, 22, 28 y 29-11). torneostcg.cl (consultado el 07-11-2026) lista One Piece jue 19:00 y Pokémon dom 12:00. El torneo femenino de los martes sale solo de un artículo sin fecha de su web y torneostcg no lo lista. torneostcg pone el League Challenge el 15-11, pero la tienda lo publica el 22-11 (el 15-11 es la League Cup). No hay noticias de cierre ni de traslado. Sin coordenadas fiables: OSM no tiene la tienda ni el número 160, solo dos líneas de interpolación duplicadas (78–228) que dan puntos a unos 95 m entre sí.",
+   "fuentes": [
+    "https://www.wargaming.cl/",
+    "https://www.wargaming.cl/article/conoce-nuestras-tiendas",
+    "https://www.wargaming.cl/article/bases-concurso-halloween-2026",
+    "https://www.wargaming.cl/article/premios-y-puntos-de-participacion-pokemon-tcg",
+    "https://bodega.wargaming.cl/collection/eventos",
+    "https://bodega.wargaming.cl/product/torneo-aos-nov",
+    "https://bodega.wargaming.cl/product/pokemon-league-cup-season-1-montt",
+    "https://bodega.wargaming.cl/product/league-challenge-nov-manuel-montt"
+   ]
+  }
+ ]
+}
