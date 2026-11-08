@@ -109,9 +109,10 @@ h2[tabindex="-1"]:focus { outline: none; }
 .banners-carril:focus { outline: none; }
 .banner-cabecera { display: block; flex: 0 0 100%; width: 100%; min-width: 0; scroll-snap-align: start; scroll-snap-stop: always; }
 .banner-cabecera img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 1; object-fit: cover; }
-/* Puntos: cuál banner se ve; cada uno lleva a su sección. Arriba a la derecha, donde no tapan el dibujo ni el logo */
+/* Puntos: cuál banner se ve; cada uno lleva a su sección. Arriba a la izquierda: a la derecha varios banners tienen
+   letreros («Feria Medieval», «Tienda de Juegos») o caras, y con 8 puntos la fila los tapaba */
 .banners-puntos {
-  position: absolute; right: 10px; top: 10px; z-index: 3;
+  position: absolute; left: 10px; top: 10px; z-index: 3;
   display: flex; padding: 0 4px; border-radius: 999px; background: rgba(20, 17, 14, .55);
 }
 .punto { display: grid; place-items: center; width: 24px; height: 24px; padding: 0; border: 0; background: none; cursor: pointer; }
@@ -555,6 +556,12 @@ html:has(.visor[open]) { overflow: hidden; }
   body { font-size: 16px; }
   .fila-busqueda { gap: 10px; flex-wrap: nowrap; }   /* Nuevos y el buscador en una sola fila: la barra fija ocupa menos */
   .fila-busqueda .buscador { flex-basis: 0; }
+  /* El banner es bajo: con 8 banners, la franja oscura de los puntos tapaba cabezas. En el celular se dibujan solo
+     los puntos, chicos y con contorno; el área de toque sigue de 24 × 24 (Restaurantes solo se alcanza así o deslizando) */
+  .banners-puntos { top: 2px; left: 4px; padding: 0; background: none; }
+  .punto::before { width: 6px; height: 6px; background: rgba(255, 255, 255, .8);
+    box-shadow: 0 0 0 1px rgba(20, 17, 14, .45), 0 1px 3px rgba(20, 17, 14, .6); }
+  .punto[aria-current="true"]::before { width: 13px; }
   .portada { grid-template-columns: 1fr; gap: 14px; }
   .principal { grid-row: auto; }
   .nota, .nota.sin-foto { grid-template-columns: 56px 1fr; gap: 12px; padding: 12px; }
@@ -911,4 +918,11 @@ html:has(.visor[open]) { overflow: hidden; }
 @media (max-width: 340px) {
   .fila-busqueda { flex-wrap: wrap; }
   .fila-busqueda .buscador { flex-basis: 100%; }
+}
+/* Colores forzados (alto contraste) en pantallas angostas: las reglas del celular de arriba les quitaban la franja y
+   el color a los puntos, y el punto actual casi no se veía. Va al final para ganarles. */
+@media (forced-colors: active) and (max-width: 760px) {
+  .banners-puntos { background: Canvas; }
+  .punto::before { background: CanvasText; box-shadow: none; }
+  .punto[aria-current="true"]::before { background: Highlight; }
 }

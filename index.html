@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Fira+Sans+Condensed:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&display=swap">
   <!-- ?v= sube cada vez que cambian styles.css o app.js: así nadie queda con una mezcla de la versión vieja y la nueva -->
-  <link rel="stylesheet" href="styles.css?v=14">
+  <link rel="stylesheet" href="styles.css?v=15">
 </head>
 <body>
   <!-- Íconos de la página (se usan con <svg><use href="#i-…"/></svg>) -->
@@ -96,6 +96,27 @@
           <img src="img/banner-1200.jpg" width="2172" height="724" fetchpriority="high" decoding="async"
                alt="Agenda: un diablillo rojo con mochila mira un mapa junto a un camino luminoso que une una feria medieval, un torii japonés, un evento gamer y un teatro">
         </picture>
+        <picture class="banner-cabecera" data-banner="medieval" aria-hidden="true">
+          <source type="image/webp"
+                  data-srcset="img/banner-medieval-900.webp 900w, img/banner-medieval-1400.webp 1400w, img/banner-medieval-2172.webp 2172w"
+                  sizes="(max-width: 1152px) calc(100vw - 32px), 1120px">
+          <img data-src="img/banner-medieval-1200.jpg" width="2172" height="724" loading="lazy" decoding="async"
+               alt="Medieval, fantasía y rol: un dragón caballero con espada, el diablillo vestido de mago con su libro de hechizos y una elfa arquera en una feria medieval, con un castillo al fondo y un dado de veinte caras">
+        </picture>
+        <picture class="banner-cabecera" data-banner="anime" aria-hidden="true">
+          <source type="image/webp"
+                  data-srcset="img/banner-anime-900.webp 900w, img/banner-anime-1400.webp 1400w, img/banner-anime-2172.webp 2172w"
+                  sizes="(max-width: 1152px) calc(100vw - 32px), 1120px">
+          <img data-src="img/banner-anime-1200.jpg" width="2172" height="724" loading="lazy" decoding="async"
+               alt="Anime, manga y cosplay: en una convención, el diablillo con un traje de artes marciales naranja, un dragón con armadura azul y un cañón en el brazo, y una elfa maga que lanza fuego, todos en cosplay">
+        </picture>
+        <picture class="banner-cabecera" data-banner="ilustracion" aria-hidden="true">
+          <source type="image/webp"
+                  data-srcset="img/banner-ilustracion-900.webp 900w, img/banner-ilustracion-1400.webp 1400w, img/banner-ilustracion-2172.webp 2172w"
+                  sizes="(max-width: 1152px) calc(100vw - 32px), 1120px">
+          <img data-src="img/banner-ilustracion-1200.jpg" width="2172" height="724" loading="lazy" decoding="async"
+               alt="Ilustración y cómic: el diablillo muestra una lámina de una chica de anime en una feria de ilustración, manga y cómic, junto al puesto de una ilustradora">
+        </picture>
         <picture class="banner-cabecera" data-banner="conciertos" aria-hidden="true">
           <source type="image/webp"
                   data-srcset="img/banner-conciertos-900.webp 900w, img/banner-conciertos-1400.webp 1400w, img/banner-conciertos-2172.webp 2172w"
@@ -129,6 +150,9 @@
       <button type="button" class="banners-flecha sig" data-banner-paso="1" tabindex="-1" aria-label="Sección siguiente">›</button>
       <div class="banners-puntos" role="group" aria-label="Banners de secciones">
         <button type="button" class="punto" data-banner="agenda" aria-label="Agenda: todos los eventos" title="Agenda: todos los eventos" aria-current="true"></button>
+        <button type="button" class="punto" data-banner="medieval" aria-label="Medieval, fantasía y rol" title="Medieval, fantasía y rol"></button>
+        <button type="button" class="punto" data-banner="anime" aria-label="Anime, manga y cosplay" title="Anime, manga y cosplay"></button>
+        <button type="button" class="punto" data-banner="ilustracion" aria-label="Ilustración y cómic" title="Ilustración y cómic"></button>
         <button type="button" class="punto" data-banner="conciertos" aria-label="Conciertos" title="Conciertos"></button>
         <button type="button" class="punto" data-banner="juegos" aria-label="Juegos de mesa" title="Juegos de mesa"></button>
         <button type="button" class="punto" data-banner="museos" aria-label="Museos, arte y cultura" title="Museos, arte y cultura"></button>
@@ -308,7 +332,7 @@
   </dialog>
 
   <div id="aviso" class="aviso" role="status" aria-live="polite" hidden></div>
-  <script src="app.js?v=14" defer></script>
+  <script src="app.js?v=15" defer></script>
   <script type="module" src="cuenta.js"></script>
 </body>
 </html>

@@ -21,12 +21,15 @@ La búsqueda automática no entra a Instagram ni a Facebook: respeta sus reglas 
 La cabecera tiene un banner por sección. Al deslizarlo con el dedo, tocar sus puntos, usar las flechas ‹ › (en el computador) o ← → con el foco en un punto, la página muestra la sección de ese banner:
 
 - **Agenda** (el diablillo con el mapa): todos los eventos, con filtros, buscador y botón 🆕 Nuevos. Las exposiciones que ya están abiertas van juntas en «Exposiciones y temporadas abiertas» (primero las que cierran antes), para no tapar lo que viene.
+- **Medieval** (el dragón caballero, el diablillo mago y la elfa arquera en la feria): la agenda con el tema «Medieval, fantasía y rol».
+- **Anime** (los tres en cosplay): la agenda con el tema «Anime, manga y cosplay».
+- **Ilustración** (la feria de ilustración, manga y cómic): la agenda con el tema «Ilustración y cómic».
 - **Conciertos** (el festival de metal): la agenda con el tema «Conciertos».
 - **Juegos** (la tienda de juegos): la agenda con el tema «Juegos de mesa».
 - **Museos** (el museo): la agenda con el tema «Museos, arte y cultura».
 - **Restaurantes** (el ramen): restaurantes temáticos japoneses, vikingos y medievales, góticos y geek en Santiago (`data/restaurantes.json`). La lista se armó el 6-11-2026: cada lugar lo verificó un agente independiente (que siga abierto, la dirección y que la temática sea real) y los que tienen algo por confirmar muestran un aviso ⚠. Los que cerraron o no calzaban quedaron fuera.
 
-Bajo la cabecera hay tres pestañas: **Agenda** (vuelve a la agenda completa), **Mapa del Aventurero** y **Mis favoritos** (lo que marcaste con ☆ Favorito). Elegir un tema en la agenda también mueve el banner (por ejemplo, «Juegos de mesa» lo pasa a Juegos). Cada sección tiene su dirección: `#eventos`, `#conciertos`, `#juegos`, `#museos`, `#restaurantes`, `#mapa` y `#favoritos`. Los banners están en `img/banner-*.webp` (3:1, en 900, 1400 y el tamaño original, más un JPG de 1200 de respaldo); su orden y su sección, en `BANNERS` de `app.js`.
+Bajo la cabecera hay tres pestañas: **Agenda** (vuelve a la agenda completa), **Mapa del Aventurero** y **Mis favoritos** (lo que marcaste con ☆ Favorito). Elegir un tema en la agenda también mueve el banner (por ejemplo, «Juegos de mesa» lo pasa a Juegos; Yokai no tiene banner propio y deja el de Agenda). Cada sección tiene su dirección: `#eventos`, `#medieval`, `#anime`, `#ilustracion`, `#conciertos`, `#juegos`, `#museos`, `#restaurantes`, `#mapa` y `#favoritos`. Los banners están en `img/banner-*.webp` (3:1, en 900, 1400 y el tamaño original, más un JPG de 1200 de respaldo); su orden y su sección, en `BANNERS` de `app.js`.
 
 En cada evento, restaurante y tienda, **🗺 Cómo llegar** abre Google Maps (en el celular, su app) con la ruta desde donde estás hasta el lugar.
 
