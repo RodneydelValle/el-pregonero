@@ -63,9 +63,6 @@
    "horario": null,
    "web": "https://addictionmodel.cl/",
    "instagram": "https://www.instagram.com/addictionmodelcl",
-   "lat_propuesta": -33.4467058,
-   "lng_propuesta": -70.6573168,
-   "fuente_propuesta": "OpenStreetMap (Nominatim): interpolación de San Ignacio de Loyola 75 (vía 112503595), coherente con los números 69 y 81 mapeados en la misma cuadra.",
    "fotos": [],
    "evidencia": "Su web (© 2026) vendió cupos para el prerelease de Pokémon Delta Reign del 30-10-2026 en 'San Ignacio de Loyola 75, Local 32, Metro Moneda' (ficha subida el 30-9-2026). torneostcg.cl lista su League Challenge de Pokémon del 12-11-2026, tomado de Play! Pokémon. No publica horario de atención. Corrección: no hay evidencia de miniaturas de wargame; sus model kits caben en 'anime'.",
    "fuentes": [
@@ -77,7 +74,10 @@
     "https://nominatim.openstreetmap.org/search?street=75+San+Ignacio+de+Loyola&city=Santiago&countrycodes=cl",
     "https://www.openstreetmap.org/way/112503595",
     "https://torneostcg.cl/"
-   ]
+   ],
+   "lat": -33.446706,
+   "lng": -70.657317,
+   "coordenadas_fuente": "OpenStreetMap (Nominatim): interpolación de San Ignacio de Loyola 75 (vía 112503595), coherente con los números 69 y 81 mapeados en la misma cuadra."
   },
   {
    "id": "area-52",
@@ -326,7 +326,10 @@
     "https://crows.cl/wp-json/wp/v2/search?search=local%2072",
     "https://www.torneostcg.cl/",
     "https://overpass-api.de/api/interpreter (direcciones de calle Merced, sin el 832)"
-   ]
+   ],
+   "lat": -33.438357,
+   "lng": -70.648803,
+   "coordenadas_fuente": "la de Galería Casa Colorada"
   },
   {
    "id": "customzero101",
@@ -397,7 +400,10 @@
     "https://www.torneostcg.cl/",
     "https://www.openstreetmap.org/way/112603613",
     "https://deckkingdom.cl/"
-   ]
+   ],
+   "lat": -33.438357,
+   "lng": -70.648803,
+   "coordenadas_fuente": "la de Galería Casa Colorada"
   },
   {
    "id": "demente-games",
@@ -578,7 +584,10 @@
     "https://los40.cl/2026/07/27/trading-fest-chile-2026-conoce-las-mas-de-50-tiendas-confirmadas-para-la-gran-cita-del-tcg/",
     "https://www.openstreetmap.org/way/112603613",
     "https://fenixcardstore.cl/"
-   ]
+   ],
+   "lat": -33.438357,
+   "lng": -70.648803,
+   "coordenadas_fuente": "la de Galería Casa Colorada"
   },
   {
    "id": "figuras-dbz-chile",
@@ -643,9 +652,6 @@
    "web": "https://onplaygames.cl/ · https://deckkingdom.cl/ · https://www.tiendaoops.cl/ · https://crows.cl/ · https://fenixcardstore.cl/",
    "instagram": "https://www.instagram.com/onplay.games · https://www.instagram.com/deck_kingdom · https://www.instagram.com/tienda.oops · https://www.instagram.com/crowscl · https://www.instagram.com/fenixcardstore/",
    "es_galeria": true,
-   "lat_propuesta": -33.4383568,
-   "lng_propuesta": -70.6488025,
-   "fuente_propuesta": "OpenStreetMap (Nominatim): interpolación de la numeración par de Merced entre los nodos de dirección 800 y 858 (way 112603613). Es una posición aproximada (±30 m), sin mapa incrustado en los sitios de las tiendas.",
    "fotos": [
     {
      "url": "https://onplay.cl/wp-content/themes/onplay/assets/img/tienda-frontis.jpg",
@@ -665,7 +671,10 @@
     "https://ikigaibazar.cl/",
     "https://www.lanacion.cl/que-hacer-en-santiago-lugares-para-comprar-objetos-japoneses-y-decorativos/",
     "https://los40.cl/2026/07/27/trading-fest-chile-2026-conoce-las-mas-de-50-tiendas-confirmadas-para-la-gran-cita-del-tcg/"
-   ]
+   ],
+   "lat": -33.438357,
+   "lng": -70.648803,
+   "coordenadas_fuente": "OpenStreetMap (Nominatim): interpolación de la numeración par de Merced entre los nodos de dirección 800 y 858 (way 112603613). Es una posición aproximada (±30 m), sin mapa incrustado en los sitios de las tiendas."
   },
   {
    "id": "galeria-eurocentro",
@@ -789,9 +798,6 @@
    "horario": "Lunes a jueves 10:30-21:00; viernes, sábado y domingo 10:30-21:30",
    "web": "https://www.gameclub.cl/",
    "instagram": "https://www.instagram.com/movistargameclub/",
-   "lat_propuesta": -33.3655635,
-   "lng_propuesta": -70.6794033,
-   "fuente_propuesta": "OpenStreetMap: nodo 'Movistar Game Club' en Mall Plaza Norte (node 13302541790); el sitio de Mallplaza da -33.3649, -70.6793 para el mall. Las coordenadas de la tienda online de GameClub (-33.3913, -70.5959) están mal: caen en Vitacura",
    "fotos": [
     {
      "url": "https://nexoplay.com/wp-content/uploads/2024/11/movistar-gameclub-2.jpg",
@@ -825,7 +831,10 @@
     "https://www.gameclub.cl/tcg",
     "https://www.gameclub.cl/",
     "https://www.mallplaza.com/cl/norte/tiendas"
-   ]
+   ],
+   "lat": -33.365564,
+   "lng": -70.679403,
+   "coordenadas_fuente": "OpenStreetMap: nodo 'Movistar Game Club' en Mall Plaza Norte (node 13302541790); el sitio de Mallplaza da -33.3649, -70.6793 para el mall. Las coordenadas de la tienda online de GameClub (-33.3913, -70.5959) están mal: caen en Vitacura"
   },
   {
    "id": "gameclub-vespucio",
@@ -845,9 +854,6 @@
    "horario": "Lunes a jueves 10:30-21:00; viernes, sábado y domingo 10:30-22:00",
    "web": "https://www.gameclub.cl/",
    "instagram": "https://www.instagram.com/movistargameclub/",
-   "lat_propuesta": -33.5176755,
-   "lng_propuesta": -70.5997894,
-   "fuente_propuesta": "OpenStreetMap: nodo 'Movistar Game Club' (node 12050191139, shop=video_games) dentro de Mall Plaza Vespucio",
    "fotos": [
     {
      "url": "https://img.entnerd.com/upload/2022/05/17161D564C43416D171E7B55554947701F161F4F51434E70155A1D5C5446-2000x1125.jpg",
@@ -881,7 +887,10 @@
     "https://www.gameclub.cl/madrugaming-ft-jugabet-vespucio",
     "https://www.gameclub.cl/community-clash-just-dance-vsp",
     "https://www.gameclub.cl/contact"
-   ]
+   ],
+   "lat": -33.517676,
+   "lng": -70.599789,
+   "coordenadas_fuente": "OpenStreetMap: nodo 'Movistar Game Club' (node 12050191139, shop=video_games) dentro de Mall Plaza Vespucio"
   },
   {
    "id": "geekz-costanera",
@@ -902,9 +911,6 @@
    "web": "https://www.geekz.cl/",
    "instagram": "https://www.instagram.com/geekz.cl/",
    "buscar_osm": "Cenco Costanera",
-   "lat_propuesta": -33.41744167,
-   "lng_propuesta": -70.6057,
-   "fuente_propuesta": "Wikidata Q5990609 (Cenco Costanera). Son las coordenadas del mall, no las del local.",
    "fotos": [
     {
      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Mall_Costanera_Center%2C_Providencia%2C_Santiago_20230423.jpg/960px-Mall_Costanera_Center%2C_Providencia%2C_Santiago_20230423.jpg",
@@ -931,7 +937,10 @@
     "https://www.geekz.cl/event/taller-dino-cenco-mall-2026-11-08-1180/register",
     "https://www.cencomalls.cl/costanera/tiendas/geekz",
     "https://geekz.cl/preguntas-frecuentes"
-   ]
+   ],
+   "lat": -33.417442,
+   "lng": -70.6057,
+   "coordenadas_fuente": "Wikidata Q5990609 (Cenco Costanera). Son las coordenadas del mall, no las del local."
   },
   {
    "id": "geekz-barrio-independencia",
@@ -952,9 +961,6 @@
    "web": "https://www.geekz.cl/",
    "instagram": "https://www.instagram.com/geekz.cl/",
    "buscar_osm": "Mall Barrio Independencia",
-   "lat_propuesta": -33.4246863,
-   "lng_propuesta": -70.654728,
-   "fuente_propuesta": "Mapa de Google incrustado en geekz.cl/tiendas para Mall Barrio Independencia (!3d/!2d, leído del HTML); OpenStreetMap ubica el mall (way 539467381) a unos 100 m",
    "fotos": [
     {
      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Mall_Barrio_Independencia%2C_Independencia%2C_Santiago_20220529.jpg/960px-Mall_Barrio_Independencia%2C_Independencia%2C_Santiago_20220529.jpg",
@@ -981,7 +987,10 @@
     "https://geekz.cl/politicas-de-despacho",
     "https://www.geekz.cl/shop/category/juegos-de-mesa-tablero-35",
     "https://www.mallbarrioindependencia.cl/tienda/geekz/"
-   ]
+   ],
+   "lat": -33.424686,
+   "lng": -70.654728,
+   "coordenadas_fuente": "Mapa de Google incrustado en geekz.cl/tiendas para Mall Barrio Independencia (!3d/!2d, leído del HTML); OpenStreetMap ubica el mall (way 539467381) a unos 100 m"
   },
   {
    "id": "geekz-vivo-imperio",
@@ -1002,9 +1011,6 @@
    "web": "https://www.geekz.cl/",
    "instagram": "https://www.instagram.com/geekz.cl/",
    "buscar_osm": "Mall Vivo Imperio",
-   "lat_propuesta": -33.4395242,
-   "lng_propuesta": -70.648671,
-   "fuente_propuesta": "Mapa de Google incrustado en https://www.geekz.cl/tiendas para 'Mall Vivo Imperio' (!3d-33.4395242!2d-70.648671). Coincide a unos 40 m con el edificio del mall en OpenStreetMap (way 542958817).",
    "fotos": [
     {
      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Vivo_Imperio%2C_Santiago_20230414.jpg/960px-Vivo_Imperio%2C_Santiago_20230414.jpg",
@@ -1031,7 +1037,10 @@
     "https://vivoimperio.cl/tiendas/",
     "https://vivoimperio.cl/wp-json/wp/v2/tienda/177",
     "https://www.openstreetmap.org/way/542958817"
-   ]
+   ],
+   "lat": -33.439524,
+   "lng": -70.648671,
+   "coordenadas_fuente": "Mapa de Google incrustado en https://www.geekz.cl/tiendas para 'Mall Vivo Imperio' (!3d-33.4395242!2d-70.648671). Coincide a unos 40 m con el edificio del mall en OpenStreetMap (way 542958817)."
   },
   {
    "id": "geekz-plaza-egana",
@@ -1052,9 +1061,6 @@
    "web": "https://www.geekz.cl/",
    "instagram": "https://www.instagram.com/geekz.cl/",
    "buscar_osm": "Mallplaza Egaña",
-   "lat_propuesta": -33.4527278,
-   "lng_propuesta": -70.5698297,
-   "fuente_propuesta": "OpenStreetMap, vía 157963277 (Mall Plaza Egaña, Av. Larraín 5862; centro según Nominatim). Son las coordenadas del mall, no las del local.",
    "fotos": [
     {
      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/MallPlazaEga%C3%B1a.jpg/960px-MallPlazaEga%C3%B1a.jpg",
@@ -1081,7 +1087,10 @@
     "https://www.mallplaza.com/page-data/cl/egana/tiendas/page-data.json",
     "https://www.geekz.cl/event?date=old",
     "https://web.archive.org/web/20251016232427/https://geekz.cl/tiendas"
-   ]
+   ],
+   "lat": -33.452728,
+   "lng": -70.56983,
+   "coordenadas_fuente": "OpenStreetMap, vía 157963277 (Mall Plaza Egaña, Av. Larraín 5862; centro según Nominatim). Son las coordenadas del mall, no las del local."
   },
   {
    "id": "geekz-los-dominicos",
@@ -1102,9 +1111,6 @@
    "web": "https://www.geekz.cl/",
    "instagram": "https://www.instagram.com/geekz.cl/",
    "buscar_osm": "Mallplaza Los Dominicos",
-   "lat_propuesta": -33.4152017,
-   "lng_propuesta": -70.5408031,
-   "fuente_propuesta": "OpenStreetMap (Nominatim): centroide del polígono del Mall Plaza Los Dominicos (way 207738085). Es la ubicación del mall, no del local, y coincide con el enlace 'Cómo llegar' del sitio de Mallplaza",
    "fotos": [
     {
      "url": "https://chocale.cl/wp-content/uploads/2026/03/exterior-mallplaza-los-dominicos.jpg",
@@ -1131,7 +1137,10 @@
     "https://www.geekz.cl/shop",
     "https://www.mallplaza.com/page-data/cl/losdominicos/tiendas/page-data.json",
     "https://www.openstreetmap.org/way/207738085"
-   ]
+   ],
+   "lat": -33.415202,
+   "lng": -70.540803,
+   "coordenadas_fuente": "OpenStreetMap (Nominatim): centroide del polígono del Mall Plaza Los Dominicos (way 207738085). Es la ubicación del mall, no del local, y coincide con el enlace 'Cómo llegar' del sitio de Mallplaza"
   },
   {
    "id": "geekz-plaza-oeste",
@@ -1152,9 +1161,6 @@
    "web": "https://www.geekz.cl/",
    "instagram": "https://www.instagram.com/geekz.cl/",
    "buscar_osm": "Mallplaza Oeste",
-   "lat_propuesta": -33.5170028,
-   "lng_propuesta": -70.7175414,
-   "fuente_propuesta": "OpenStreetMap: centro de la relación 3709845 (edificio Mall Plaza Oeste, Av. Américo Vespucio 1501), a 14 m de las coordenadas que publica el sitio de Mallplaza",
    "fotos": [
     {
      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Mallplaza_Oeste_-_Septiembre_2021_-_02.jpg/960px-Mallplaza_Oeste_-_Septiembre_2021_-_02.jpg",
@@ -1181,7 +1187,10 @@
     "https://www.geekz.cl/event/mall-plaza-oeste-league-cup-2026-10-18-1117/register",
     "https://www.geekz.cl/preguntas-frecuentes",
     "https://www.geekz.cl/"
-   ]
+   ],
+   "lat": -33.517003,
+   "lng": -70.717541,
+   "coordenadas_fuente": "OpenStreetMap: centro de la relación 3709845 (edificio Mall Plaza Oeste, Av. Américo Vespucio 1501), a 14 m de las coordenadas que publica el sitio de Mallplaza"
   },
   {
    "id": "geekz-plaza-vespucio",
@@ -1202,9 +1211,6 @@
    "web": "https://www.geekz.cl/",
    "instagram": "https://www.instagram.com/geekz.cl/",
    "buscar_osm": "Mallplaza Vespucio",
-   "lat_propuesta": -33.5176171,
-   "lng_propuesta": -70.5981151,
-   "fuente_propuesta": "Mapa de Google incrustado en geekz.cl/tiendas (iframe 'Mallplaza Vespucio', !3d/!2d). Cae dentro del edificio del mall en OpenStreetMap (vía 25448975) y a 8 m de Wikidata Q132191624",
    "fotos": [
     {
      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Mallplaza_Vespucio%2C_La_Florida%2C_Santiago_20230812_01.jpg/960px-Mallplaza_Vespucio%2C_La_Florida%2C_Santiago_20230812_01.jpg",
@@ -1231,7 +1237,10 @@
     "https://www.geekz.cl/event/mallplaza-vespucio-league-challenge-pokemon-tcg-2026-10-24-1162/register",
     "https://www.geekz.cl/preguntas-frecuentes",
     "https://www.geekz.cl/"
-   ]
+   ],
+   "lat": -33.517617,
+   "lng": -70.598115,
+   "coordenadas_fuente": "Mapa de Google incrustado en geekz.cl/tiendas (iframe 'Mallplaza Vespucio', !3d/!2d). Cae dentro del edificio del mall en OpenStreetMap (vía 25448975) y a 8 m de Wikidata Q132191624"
   },
   {
    "id": "griffin-games",
@@ -1249,9 +1258,6 @@
    "horario": null,
    "web": "https://www.griffingames.cl/",
    "instagram": "https://www.instagram.com/griffingamescl/",
-   "lat_propuesta": -33.4389884,
-   "lng_propuesta": -70.6459213,
-   "fuente_propuesta": "OpenStreetMap: nodo 6582577486, de otra tienda (Polar Hobbies) con dirección Huérfanos 635, el mismo edificio. No marca el local 29-30 exacto.",
    "fotos": [
     {
      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Galer%C3%ADa_La_Merced%2C_Santiago_20230418_01.jpg/960px-Galer%C3%ADa_La_Merced%2C_Santiago_20230418_01.jpg",
@@ -1278,7 +1284,10 @@
     "https://www.griffingames.cl/producto/pokemon-vgc-challenge-2026/",
     "https://www.griffingames.cl/producto/pokemon-tcg-league-cup-2/",
     "https://www.griffingames.cl/wp-content/uploads/2024/01/banner-1920x100-visitanos-2.jpg"
-   ]
+   ],
+   "lat": -33.438988,
+   "lng": -70.645921,
+   "coordenadas_fuente": "OpenStreetMap: nodo 6582577486, de otra tienda (Polar Hobbies) con dirección Huérfanos 635, el mismo edificio. No marca el local 29-30 exacto."
   },
   {
    "id": "guild-dreams",
@@ -1424,9 +1433,6 @@
    "horario": null,
    "web": "https://konohastore.cl/",
    "instagram": "https://www.instagram.com/konohastorechile/",
-   "lat_propuesta": -33.4411634,
-   "lng_propuesta": -70.6667784,
-   "fuente_propuesta": "OpenStreetMap: nodo 1244910389 (dirección Maturana 302), a 6 m de la ubicación del organizador en la página oficial de eventos de Riftbound",
    "fotos": [],
    "evidencia": "Confirmada. El feed de Instagram incrustado en su web anuncia torneos en 'Maturana #302, Plaza Brasil — Metro Cumming' el sábado 24, el martes 27 y el sábado 31 de octubre (días que calzan con 2026). La página oficial de Riftbound registra 'Nexus Nights en Konoha Store' el 27-10-2026 en Maturana 302, como evento completado. Su tienda online subió productos nuevos el 6-11-2026, y torneostcg.cl (7-11-2026) la lista con torneos semanales. Su página 'Quiénes somos' sigue mostrando la dirección antigua (Cienfuegos 78), y no publica horario de atención. Quito 'anime': solo vende TCG y accesorios (más bebidas de fantasía de One Piece). No encontré noticias de cierre ni de un nuevo traslado.",
    "fuentes": [
@@ -1438,7 +1444,10 @@
     "https://playriftbound.com/es-ES/events/117510135992177704",
     "https://www.torneostcg.cl/",
     "https://www.openstreetmap.org/node/1244910389"
-   ]
+   ],
+   "lat": -33.441163,
+   "lng": -70.666778,
+   "coordenadas_fuente": "OpenStreetMap: nodo 1244910389 (dirección Maturana 302), a 6 m de la ubicación del organizador en la página oficial de eventos de Riftbound"
   },
   {
    "id": "la-comarca-providencia",
@@ -1456,9 +1465,6 @@
    "horario": "Lunes a sábado de 12:00 a 21:00",
    "web": "https://www.tiendalacomarca.cl/",
    "instagram": "https://www.instagram.com/lacomarca_hyg",
-   "lat_propuesta": -33.4199535,
-   "lng_propuesta": -70.6078918,
-   "fuente_propuesta": "OpenStreetMap (Nominatim): interpolación de la numeración impar de General Holley entre los nodos de dirección 2303 y 2359 (way 108453407). Es una posición aproximada (±30 m), sin mapa incrustado en su sitio.",
    "fotos": [],
    "evidencia": "Confirmada. Su sitio (© 2026, con preventas para diciembre de 2026 y 2027) publica la sede 'Gral Holley 2335 local 211, Providencia', abierta de lunes a sábado de 12:00 a 21:00, además de la de San Bernardo. Su política de torneos indica eventos de lunes a viernes desde las 19:30 y habla del mobiliario y del área de juego. torneostcg.cl (consultado el 7-11-2026) lista sus torneos semanales en esa dirección, y LOS40 (26-7-2026) la nombra entre las expositoras del Trading Fest 2026. Ojo: torneostcg.cl también le asigna Pokémon los domingos, lo que no calza con el horario publicado, y da el local como '0211 -2'. Uso lo que publica la tienda. No encontré noticias de cierre.",
    "fuentes": [
@@ -1468,7 +1474,10 @@
     "https://torneostcg.cl/",
     "https://los40.cl/2026/07/27/trading-fest-chile-2026-conoce-las-mas-de-50-tiendas-confirmadas-para-la-gran-cita-del-tcg/",
     "https://www.openstreetmap.org/way/108453407"
-   ]
+   ],
+   "lat": -33.419953,
+   "lng": -70.607892,
+   "coordenadas_fuente": "OpenStreetMap (Nominatim): interpolación de la numeración impar de General Holley entre los nodos de dirección 2303 y 2359 (way 108453407). Es una posición aproximada (±30 m), sin mapa incrustado en su sitio."
   },
   {
    "id": "la-comarca-san-bernardo",
@@ -1486,9 +1495,6 @@
    "horario": "Lunes a viernes 12:00-21:00; sábado y domingo 11:00-20:00",
    "web": "https://www.tiendalacomarca.cl/",
    "instagram": "https://www.instagram.com/lacomarca_hyg",
-   "lat_propuesta": -33.5957547,
-   "lng_propuesta": -70.7050627,
-   "fuente_propuesta": "OpenStreetMap (Nominatim): interpolación de Ramón Freire 670 entre los números 632 y 688 mapeados en la misma cuadra (vía 108463432). Se descartó otra coincidencia de Nominatim más al norte, que sale de un error de datos (número 1106 mal cargado).",
    "fotos": [],
    "evidencia": "Su web (© 2026, con productos subidos en noviembre de 2026) mantiene la tienda de Freire 670 y le cambió el horario entre abril de 2026 (lunes a viernes 13:00-22:00) y hoy (12:00-21:00). torneostcg.cl muestra su torneo semanal de Gundam en San Bernardo, con afiche del 22-2-2026, y la marca expuso en Trading Fest (LOS40, 26-7-2026). Corrección: casi todos los torneos que traía la propuesta son de la sucursal de Providencia (Los Leones).",
    "fuentes": [
@@ -1500,7 +1506,10 @@
     "https://www.torneostcg.cl/images/events/comarca-sanbernardo/2026-02-22.jpg",
     "https://los40.cl/2026/07/27/trading-fest-chile-2026-conoce-las-mas-de-50-tiendas-confirmadas-para-la-gran-cita-del-tcg/",
     "https://nominatim.openstreetmap.org/search?street=670+Freire&city=San+Bernardo&countrycodes=cl"
-   ]
+   ],
+   "lat": -33.595755,
+   "lng": -70.705063,
+   "coordenadas_fuente": "OpenStreetMap (Nominatim): interpolación de Ramón Freire 670 entre los números 632 y 688 mapeados en la misma cuadra (vía 108463432). Se descartó otra coincidencia de Nominatim más al norte, que sale de un error de datos (número 1106 mal cargado)."
   },
   {
    "id": "magic4ever",
@@ -1521,9 +1530,6 @@
    "horario": null,
    "web": "https://www.m4e.cl/",
    "instagram": "https://www.instagram.com/magic4everchile",
-   "lat_propuesta": -33.4418,
-   "lng_propuesta": -70.6487,
-   "fuente_propuesta": "Datos estructurados schema.org (GeoCoordinates) publicados en m4e.cl/contact; coinciden (unos 40 m) con las direcciones de OpenStreetMap en Moneda 812 y 846",
    "fotos": [],
    "evidencia": "Su calendario oficial (torneos.magic4ever.cl, consultado el 7-11-2026) muestra eventos hoy sáb 7-11 y mañana dom 8-11 en Moneda 840 (prerelease Magic Star Trek, demo de StarCraft, Fusion World Ultimate Battle 2026 Vol.4) y la cartelera hasta el 14-11; m4e.cl vende esas inscripciones. No encontré noticias de cierre ni traslado. Su web no publica horario.",
    "fuentes": [
@@ -1535,7 +1541,10 @@
     "https://www.torneostcg.cl/",
     "https://www.openstreetmap.org/node/4446190776",
     "https://www.openstreetmap.org/node/4443727190"
-   ]
+   ],
+   "lat": -33.4418,
+   "lng": -70.6487,
+   "coordenadas_fuente": "Datos estructurados schema.org (GeoCoordinates) publicados en m4e.cl/contact; coinciden (unos 40 m) con las direcciones de OpenStreetMap en Moneda 812 y 846"
   },
   {
    "id": "magicsur-la-reina",
@@ -1564,7 +1573,10 @@
    ],
    "comunas_aceptadas": [
     "Ñuñoa"
-   ]
+   ],
+   "lat": -33.443821,
+   "lng": -70.572709,
+   "coordenadas_fuente": "OpenStreetMap, entre Avenida Ossa 1130 y 1152"
   },
   {
    "id": "magicsur-seminario",
@@ -1864,7 +1876,10 @@
     "https://onplaygames.cl/wp-json/wp/v2/product?per_page=15&_fields=date,modified,title,link",
     "https://www.torneostcg.cl/",
     "https://los40.cl/2026/07/27/trading-fest-chile-2026-conoce-las-mas-de-50-tiendas-confirmadas-para-la-gran-cita-del-tcg/"
-   ]
+   ],
+   "lat": -33.438357,
+   "lng": -70.648803,
+   "coordenadas_fuente": "la de Galería Casa Colorada"
   },
   {
    "id": "oops",
@@ -1893,7 +1908,10 @@
     "https://www.tiendaoops.cl/productos/inscripcion-torneo-fenix-oops/",
     "https://www.tiendaoops.cl/politicas-de-envio/",
     "https://www.torneostcg.cl/"
-   ]
+   ],
+   "lat": -33.438357,
+   "lng": -70.648803,
+   "coordenadas_fuente": "la de Galería Casa Colorada"
   },
   {
    "id": "persa-biobio",
@@ -2341,9 +2359,6 @@
    "horario": "Lunes a viernes 15:30-22:00; sábado 10:30-20:00; domingo 16:00-20:00",
    "web": "https://zendicard.cl/",
    "instagram": "https://www.instagram.com/zendicard_chile",
-   "lat_propuesta": -33.5049423,
-   "lng_propuesta": -70.655001,
-   "fuente_propuesta": "Enlace de mapa de la ficha 'ZendiCard' publicado en zendicard.cl/contacto (!3d/!4d, leído del HTML sin abrirlo); coincide (unos 10 m) con OpenStreetMap 'Miguel León Prado 1091' (way 109311639)",
    "fotos": [
     {
      "url": "https://zendicard.cl/wp-content/uploads/2025/08/06-1.jpg",
@@ -2370,7 +2385,10 @@
     "https://zendicard.cl/product-category/juegos-de-mesa/",
     "https://zendicard.cl/politicas-de-la-tienda/",
     "https://zendicard.cl/sobre-nosotros/"
-   ]
+   ],
+   "lat": -33.504942,
+   "lng": -70.655001,
+   "coordenadas_fuente": "Enlace de mapa de la ficha 'ZendiCard' publicado en zendicard.cl/contacto (!3d/!4d, leído del HTML sin abrirlo); coincide (unos 10 m) con OpenStreetMap 'Miguel León Prado 1091' (way 109311639)"
   }
  ]
 }
