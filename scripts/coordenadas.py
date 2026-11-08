@@ -108,7 +108,8 @@ def distancia_km(a, b) -> float:
 
 def variantes(calle: str) -> list[str]:
     """Cómo puede estar escrita la calle en OpenStreetMap (se busca con igualdad exacta, que es rápida)."""
-    base = {calle, calle.replace("Bío Bío", "Biobío"), calle.replace("Biobío", "Bío Bío")}
+    sin_tildes = "".join(c for c in unicodedata.normalize("NFD", calle) if unicodedata.category(c) != "Mn")
+    base = {calle, sin_tildes, calle.replace("Bío Bío", "Biobío"), calle.replace("Biobío", "Bío Bío")}
     out = []
     for c in base:
         for v in (c, f"Avenida {c}", f"Paseo {c}", f"Calle {c}", f"Pasaje {c}"):
