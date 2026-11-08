@@ -1,12 +1,12 @@
 {
  "version": 1,
- "actualizado": "2026-11-07T22:33-03:00",
+ "actualizado": "2026-11-08T11:30-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-07T22:33-03:00",
+  "fecha": "2026-11-08T11:30-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 104,
-  "nuevos_esta_vez": 11,
+  "eventos_nuevos": 124,
+  "nuevos_esta_vez": 29,
   "nuevos_ids": [
    "429f8ea87c",
    "4fb5aa7103",
@@ -14,7 +14,6 @@
    "aeac9930e3",
    "0651ca14b4",
    "aa4a4a261b",
-   "55257bcf33",
    "a2af6cc955",
    "d04b8c1116",
    "625f47d0d4",
@@ -24,7 +23,6 @@
    "4c39e5bf70",
    "c0486ed264",
    "be2a0b9bda",
-   "966f35706a",
    "c1ccfb91de",
    "b240f6e84d",
    "b91cbc5d41",
@@ -51,7 +49,6 @@
    "965527d5e7",
    "62f29994ca",
    "6d839fa102",
-   "b9bde47bf1",
    "2f1b68db8f",
    "c91ffc691a",
    "4d5f2940d2",
@@ -66,9 +63,6 @@
    "da7b2811ae",
    "57bf3a4361",
    "c5b1d7de21",
-   "fc9361b210",
-   "042f6d8550",
-   "f745721607",
    "c4ec055829",
    "c22a962c51",
    "6f9728b22f",
@@ -77,9 +71,7 @@
    "49bae6150e",
    "84b10367f6",
    "72ed90cd4d",
-   "68b6c0d173",
    "7d4495a696",
-   "7ecea2322a",
    "c7c60f5db9",
    "fe14aa1cb1",
    "5ae5fe6040",
@@ -101,7 +93,6 @@
    "c62ab5b922",
    "464603118b",
    "352213a0ac",
-   "ea09a8754c",
    "1514b0f075",
    "0843bbe6a1",
    "9247df3468",
@@ -111,7 +102,36 @@
    "9d0deb2fe5",
    "e158e32839",
    "61695f41b1",
-   "87a2cca5aa"
+   "87a2cca5aa",
+   "a5b11e25d7",
+   "c4ef03af7f",
+   "9b35a67d5a",
+   "5442a68a62",
+   "6ea8c4d016",
+   "ce8e5fa662",
+   "b063b90657",
+   "405fc7f9f0",
+   "28cdd347e9",
+   "2711e341c1",
+   "417c55f418",
+   "2550179711",
+   "8ddabd4d64",
+   "085e0d1d5e",
+   "6508a8b4f2",
+   "59d1c0f24e",
+   "0da2b36bb0",
+   "23a9bece3c",
+   "26912aaed8",
+   "b54f0831a9",
+   "03e4173194",
+   "0bfa0b69c5",
+   "9537803159",
+   "8ac63cc959",
+   "58bd029f33",
+   "75862a4463",
+   "133ae3025d",
+   "1e71f05a47",
+   "be16a62f60"
   ],
   "nuevos_desde": {
    "429f8ea87c": "2026-11-07T13:02-03:00",
@@ -120,7 +140,6 @@
    "aeac9930e3": "2026-11-07T13:02-03:00",
    "0651ca14b4": "2026-11-07T13:02-03:00",
    "aa4a4a261b": "2026-11-07T13:02-03:00",
-   "55257bcf33": "2026-11-07T13:02-03:00",
    "a2af6cc955": "2026-11-07T13:02-03:00",
    "d04b8c1116": "2026-11-07T13:02-03:00",
    "625f47d0d4": "2026-11-07T13:02-03:00",
@@ -130,7 +149,6 @@
    "4c39e5bf70": "2026-11-07T13:02-03:00",
    "c0486ed264": "2026-11-07T13:02-03:00",
    "be2a0b9bda": "2026-11-07T13:02-03:00",
-   "966f35706a": "2026-11-07T13:02-03:00",
    "c1ccfb91de": "2026-11-07T13:02-03:00",
    "b240f6e84d": "2026-11-07T13:02-03:00",
    "b91cbc5d41": "2026-11-07T13:02-03:00",
@@ -157,7 +175,6 @@
    "965527d5e7": "2026-11-07T13:02-03:00",
    "62f29994ca": "2026-11-07T13:02-03:00",
    "6d839fa102": "2026-11-07T13:02-03:00",
-   "b9bde47bf1": "2026-11-07T13:02-03:00",
    "2f1b68db8f": "2026-11-07T13:02-03:00",
    "c91ffc691a": "2026-11-07T13:02-03:00",
    "4d5f2940d2": "2026-11-07T13:02-03:00",
@@ -172,9 +189,6 @@
    "da7b2811ae": "2026-11-07T13:02-03:00",
    "57bf3a4361": "2026-11-07T13:02-03:00",
    "c5b1d7de21": "2026-11-07T13:02-03:00",
-   "fc9361b210": "2026-11-07T13:02-03:00",
-   "042f6d8550": "2026-11-07T13:02-03:00",
-   "f745721607": "2026-11-07T13:02-03:00",
    "c4ec055829": "2026-11-07T13:02-03:00",
    "c22a962c51": "2026-11-07T13:02-03:00",
    "6f9728b22f": "2026-11-07T13:02-03:00",
@@ -183,9 +197,7 @@
    "49bae6150e": "2026-11-07T13:02-03:00",
    "84b10367f6": "2026-11-07T13:02-03:00",
    "72ed90cd4d": "2026-11-07T13:02-03:00",
-   "68b6c0d173": "2026-11-07T13:02-03:00",
    "7d4495a696": "2026-11-07T13:02-03:00",
-   "7ecea2322a": "2026-11-07T13:02-03:00",
    "c7c60f5db9": "2026-11-07T19:07-03:00",
    "fe14aa1cb1": "2026-11-07T19:07-03:00",
    "5ae5fe6040": "2026-11-07T20:38-03:00",
@@ -207,7 +219,6 @@
    "c62ab5b922": "2026-11-07T20:38-03:00",
    "464603118b": "2026-11-07T20:38-03:00",
    "352213a0ac": "2026-11-07T20:38-03:00",
-   "ea09a8754c": "2026-11-07T22:33-03:00",
    "1514b0f075": "2026-11-07T22:33-03:00",
    "0843bbe6a1": "2026-11-07T22:33-03:00",
    "9247df3468": "2026-11-07T22:33-03:00",
@@ -217,52 +228,52 @@
    "9d0deb2fe5": "2026-11-07T22:33-03:00",
    "e158e32839": "2026-11-07T22:33-03:00",
    "61695f41b1": "2026-11-07T22:33-03:00",
-   "87a2cca5aa": "2026-11-07T22:33-03:00"
+   "87a2cca5aa": "2026-11-07T22:33-03:00",
+   "a5b11e25d7": "2026-11-08T11:30-03:00",
+   "c4ef03af7f": "2026-11-08T11:30-03:00",
+   "9b35a67d5a": "2026-11-08T11:30-03:00",
+   "5442a68a62": "2026-11-08T11:30-03:00",
+   "6ea8c4d016": "2026-11-08T11:30-03:00",
+   "ce8e5fa662": "2026-11-08T11:30-03:00",
+   "b063b90657": "2026-11-08T11:30-03:00",
+   "405fc7f9f0": "2026-11-08T11:30-03:00",
+   "28cdd347e9": "2026-11-08T11:30-03:00",
+   "2711e341c1": "2026-11-08T11:30-03:00",
+   "417c55f418": "2026-11-08T11:30-03:00",
+   "2550179711": "2026-11-08T11:30-03:00",
+   "8ddabd4d64": "2026-11-08T11:30-03:00",
+   "085e0d1d5e": "2026-11-08T11:30-03:00",
+   "6508a8b4f2": "2026-11-08T11:30-03:00",
+   "59d1c0f24e": "2026-11-08T11:30-03:00",
+   "0da2b36bb0": "2026-11-08T11:30-03:00",
+   "23a9bece3c": "2026-11-08T11:30-03:00",
+   "26912aaed8": "2026-11-08T11:30-03:00",
+   "b54f0831a9": "2026-11-08T11:30-03:00",
+   "03e4173194": "2026-11-08T11:30-03:00",
+   "0bfa0b69c5": "2026-11-08T11:30-03:00",
+   "9537803159": "2026-11-08T11:30-03:00",
+   "8ac63cc959": "2026-11-08T11:30-03:00",
+   "58bd029f33": "2026-11-08T11:30-03:00",
+   "75862a4463": "2026-11-08T11:30-03:00",
+   "133ae3025d": "2026-11-08T11:30-03:00",
+   "1e71f05a47": "2026-11-08T11:30-03:00",
+   "be16a62f60": "2026-11-08T11:30-03:00"
   },
   "horas_nuevos": 24,
-  "llamadas_ia": 2,
+  "llamadas_ia": 56,
   "ia_sin_cupo": false,
-  "ultima_completa": "2026-11-07T20:13-03:00",
-  "modo": "rapida",
-  "paginas_revisadas": 0,
-  "busquedas": 0,
-  "fuentes_fijas": 8,
-  "errores": 2,
+  "ultima_completa": "2026-11-08T10:59-03:00",
+  "modo": "completa",
+  "paginas_revisadas": 53,
+  "busquedas": 77,
+  "fuentes_fijas": 11,
+  "errores": 25,
   "noticias_desde": "2026-11-07",
-  "noticias_viejas_descartadas": 0
+  "noticias_viejas_descartadas": 284,
+  "redes_vistas": 27
  },
- "total": 199,
+ "total": 218,
  "eventos": [
-  {
-   "titulo": "Festival Internacional de Ilustración Festilus",
-   "categoria": "ilustracion",
-   "fecha_inicio": "2013-08-29",
-   "fecha_fin": "2026-11-07",
-   "hora": "10:00",
-   "horario": null,
-   "lugar": null,
-   "direccion": null,
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
-   "precio": null,
-   "descripcion": null,
-   "imagen": null,
-   "fotos": null,
-   "url": "https://radio.uchile.cl/agenda_cultural/festival-internacional-de-ilustracion-festilus/",
-   "fuentes": [
-    {
-     "nombre": "Diario y Radio Universidad Chile",
-     "url": "https://radio.uchile.cl/agenda_cultural/festival-internacional-de-ilustracion-festilus/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "datos-estructurados",
-   "id": "7ecea2322a",
-   "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
-  },
   {
    "titulo": "Mariposas y Polillas, Colores en Movimiento",
    "categoria": "museos",
@@ -288,6 +299,10 @@
     {
      "nombre": "mnhn.gob.cl",
      "url": "https://www.mnhn.gob.cl/cartelera"
+    },
+    {
+     "nombre": "museoschile.gob.cl",
+     "url": "https://www.museoschile.gob.cl/cartelera/red-nacional"
     }
    ],
    "desde_imagen": false,
@@ -295,7 +310,7 @@
    "origen": "ia",
    "id": "b240f6e84d",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Roberto Matta. Abrir la mirada",
@@ -322,6 +337,10 @@
     {
      "nombre": "mnba.gob.cl",
      "url": "https://www.mnba.gob.cl/cartelera"
+    },
+    {
+     "nombre": "museoschile.gob.cl",
+     "url": "https://www.museoschile.gob.cl/cartelera/red-nacional"
     }
    ],
    "desde_imagen": false,
@@ -329,7 +348,7 @@
    "origen": "ia",
    "id": "b91cbc5d41",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "El mundo en una biblioteca. Cien años de la donación de José Toribio Medina",
@@ -352,6 +371,10 @@
     {
      "nombre": "Servicio Nacional del Patrimonio (museos)",
      "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion"
+    },
+    {
+     "nombre": "museoschile.gob.cl",
+     "url": "https://www.museoschile.gob.cl/cartelera/red-nacional"
     }
    ],
    "desde_imagen": false,
@@ -359,7 +382,7 @@
    "origen": "ia",
    "id": "6dd0741db1",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Un archivo en construcción: la obra de Tito Vásquez",
@@ -386,6 +409,10 @@
     {
      "nombre": "Servicio Nacional del Patrimonio (museos)",
      "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion"
+    },
+    {
+     "nombre": "museoschile.gob.cl",
+     "url": "https://www.museoschile.gob.cl/cartelera/red-nacional"
     }
    ],
    "desde_imagen": false,
@@ -393,7 +420,7 @@
    "origen": "claude",
    "id": "ae5b603f04",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "145 años: Historias de una Colección",
@@ -420,6 +447,10 @@
     {
      "nombre": "mnba.gob.cl",
      "url": "https://www.mnba.gob.cl/cartelera"
+    },
+    {
+     "nombre": "museoschile.gob.cl",
+     "url": "https://www.museoschile.gob.cl/cartelera/red-nacional"
     }
    ],
    "desde_imagen": false,
@@ -427,7 +458,7 @@
    "origen": "ia",
    "id": "a2b9db3fc8",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Vitrina Colecciones arqueológicas y su estudio en el MNHN",
@@ -454,6 +485,10 @@
     {
      "nombre": "mnhn.gob.cl",
      "url": "https://www.mnhn.gob.cl/cartelera"
+    },
+    {
+     "nombre": "museoschile.gob.cl",
+     "url": "https://www.museoschile.gob.cl/cartelera/red-nacional"
     }
    ],
    "desde_imagen": false,
@@ -461,7 +496,7 @@
    "origen": "ia",
    "id": "50b4603a83",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Vertebrados: anatomía, evolución, extinción",
@@ -492,6 +527,10 @@
     {
      "nombre": "Servicio Nacional del Patrimonio (museos)",
      "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion"
+    },
+    {
+     "nombre": "museoschile.gob.cl",
+     "url": "https://www.museoschile.gob.cl/cartelera/red-nacional"
     }
    ],
    "desde_imagen": false,
@@ -499,7 +538,7 @@
    "origen": "claude",
    "id": "6dfafa8970",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Carisma y misión. Órdenes religiosas en el arte virreinal surandino",
@@ -529,7 +568,7 @@
    "origen": "claude",
    "id": "562569f3c4",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Comadres",
@@ -559,7 +598,7 @@
    "origen": "claude",
    "id": "bfb912b5ba",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "MAVI UC conmemora su 25° aniversario con gran exposición de su colección",
@@ -589,7 +628,7 @@
    "origen": "claude",
    "id": "3b3025cb65",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Me lo contó un pajarito",
@@ -788,7 +827,7 @@
    "origen": "claude",
    "id": "c74849a44f",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Casa común. 100 años de Parques Nacionales",
@@ -853,6 +892,40 @@
    "id": "0bdfd1df65",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Geometría Sonora",
+   "categoria": "museos",
+   "fecha_inicio": "2026-08-22",
+   "fecha_fin": "2026-12-12",
+   "hora": null,
+   "horario": null,
+   "lugar": "Museo Ralli Santiago",
+   "direccion": "Alonso de Sotomayor 4110",
+   "comuna": "Vitacura",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Exposición 'Geometría Sonora' en el Museo Ralli Santiago, explorando la relación entre arte, forma y sonido.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-santiago-409031_4_22",
+   "fuentes": [
+    {
+     "nombre": "ARTEINFORMADO",
+     "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-santiago-409031_4_22"
+    },
+    {
+     "nombre": "ARTEINFORMADO",
+     "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-de-arte-en-santiago-region-metropolitana-chile-409031_1"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "0da2b36bb0",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "La vida en una mirada. Fernando Opazo",
@@ -924,7 +997,7 @@
    "origen": "claude",
    "id": "43a0dd1f1a",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Ejercicios de Empatía: Tramas de lo Vivo (Trienal ART CUT 26)",
@@ -956,7 +1029,7 @@
    "origen": "claude",
    "id": "94601c7845",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Luis Vargas Rosas. Un museo al ritmo de lo contemporáneo (1946 - 1970)",
@@ -1057,36 +1130,6 @@
    "confianza": "alta",
    "origen": "claude",
    "id": "8828debb68",
-   "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
-  },
-  {
-   "titulo": "Instalación “Registro Nacional de Espera” en Galería Gabriela Mistral",
-   "categoria": "museos",
-   "fecha_inicio": "2026-09-25",
-   "fecha_fin": "2026-11-07",
-   "hora": null,
-   "horario": null,
-   "lugar": "Galería Gabriela Mistral",
-   "direccion": null,
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratis",
-   "descripcion": "El Colectivo Honorarias compuesto por Loreto Muñoz y Roery Herrera inaugurará este viernes 25 de septiembre la instalación “Registro Nacional de Espera”, en la Galería Gabriela Mistral.",
-   "imagen": "https://chilecultura.gob.cl/uploads/cropped_4pKpB6T.png",
-   "fotos": null,
-   "url": "https://galeriagm.cultura.gob.cl/",
-   "fuentes": [
-    {
-     "nombre": "Chile Cultura",
-     "url": "https://chilecultura.gob.cl/events/39887/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "media",
-   "origen": "claude",
-   "id": "d705a6b195",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
   },
@@ -1224,7 +1267,7 @@
    "origen": "claude",
    "id": "33a119f815",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Fotografía: alteraciones matéricas",
@@ -1258,7 +1301,7 @@
    "origen": "claude",
    "id": "0ba9aaeefc",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "La Trayectoria Intermedial del Gesto - Valentina Díaz",
@@ -1432,7 +1475,7 @@
    "origen": "claude",
    "id": "fe429a2453",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Vitrina de objeto destacado: sarcófago de Ta-Sherit-Min",
@@ -1556,6 +1599,14 @@
     {
      "nombre": "Centro Cultural de España en Santiago (coorganizador con el Museo de la Memoria)",
      "url": "https://ccesantiago.aecid.es/w/exposici%C3%B3n-llevaban-un-mundo-en-el-coraz%C3%B3n"
+    },
+    {
+     "nombre": "ARTEINFORMADO",
+     "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-santiago-409031_4_22"
+    },
+    {
+     "nombre": "ARTEINFORMADO",
+     "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-de-arte-en-santiago-region-metropolitana-chile-409031_1"
     }
    ],
    "desde_imagen": false,
@@ -1563,7 +1614,7 @@
    "origen": "claude",
    "id": "347d5f69b6",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Tiempo de sombreros, 1920-1960. Colección Museo Histórico Nacional",
@@ -1604,7 +1655,7 @@
    "origen": "claude",
    "id": "5ca969e3c6",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "AzulVerde. Algas y comunidades en la costa pacífica americana",
@@ -1657,6 +1708,14 @@
     {
      "nombre": "Museo Ralli (sitio oficial)",
      "url": "https://museoralli.cl/index.php/noticias/301-raul-cuello-inauguro-ensueno-en-museo-ralli-santiago"
+    },
+    {
+     "nombre": "ARTEINFORMADO",
+     "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-santiago-409031_4_22"
+    },
+    {
+     "nombre": "ARTEINFORMADO",
+     "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-de-arte-en-santiago-region-metropolitana-chile-409031_1"
     }
    ],
    "desde_imagen": false,
@@ -1664,7 +1723,7 @@
    "origen": "claude",
    "id": "2683b909e8",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Alien: El Origen, by H.R. Giger",
@@ -1764,7 +1823,7 @@
    "origen": "claude",
    "id": "0ab446f27c",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Nosotros los chilenos: archivar para imaginarnos",
@@ -1798,7 +1857,7 @@
    "origen": "claude",
    "id": "4a3298ee26",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Recordar el futuro. Íconos del diseño y arte geométrico en Chile",
@@ -1866,7 +1925,7 @@
    "origen": "claude",
    "id": "dfa0189c0c",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Exposición “Cultivar la memoria de las mujeres del Elqui: Creación textil en torno a la poesía territorial de Gabriela Mistral”",
@@ -1897,6 +1956,40 @@
    "id": "da0eb1db3c",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Exposición colectiva de egresados en el Foro de las Artes 2026",
+   "categoria": "museos",
+   "fecha_inicio": "2026-10-16",
+   "fecha_fin": "2026-11-13",
+   "hora": null,
+   "horario": null,
+   "lugar": "Satélite 218",
+   "direccion": "Huelén 10, depto 3b",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Exposición colectiva de egresados en el Foro de las Artes 2026. Muestra de arte contemporáneo en Satélite 218.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-santiago-409031_4_22",
+   "fuentes": [
+    {
+     "nombre": "ARTEINFORMADO",
+     "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-santiago-409031_4_22"
+    },
+    {
+     "nombre": "ARTEINFORMADO",
+     "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-de-arte-en-santiago-region-metropolitana-chile-409031_1"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "59d1c0f24e",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Muestra de Ilustraciones “excelencia Italiana. el Traje Nuevo de Pinocho”",
@@ -1986,7 +2079,7 @@
    "origen": "claude",
    "id": "7010ac604a",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "El Alma de la Forma",
@@ -2022,7 +2115,7 @@
    "origen": "claude",
    "id": "4d5808d49a",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Habitar en equilibrio: Aves y territorios, el arte de construir la vida",
@@ -2120,7 +2213,7 @@
    "origen": "claude",
    "id": "6e98a34c41",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Ruta Nativa: la huella que dejamos",
@@ -2150,7 +2243,7 @@
    "origen": "claude",
    "id": "a2ea3899ab",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Odisea del Espacio: 25 años de Matucana 100",
@@ -2210,7 +2303,7 @@
    "origen": "claude",
    "id": "fbe7d8bf46",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "XIII Bienal Internacional de Artes de Valparaíso: fantasías, fantasmas y fulgores II",
@@ -2276,7 +2369,7 @@
    "origen": "claude",
    "id": "2b04adba08",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Valores de Chile: Personajes de nuestra historia en los billetes nacionales",
@@ -2459,36 +2552,6 @@
    "confianza": "alta",
    "origen": "datos-estructurados",
    "id": "1514b0f075",
-   "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
-  },
-  {
-   "titulo": "Noche de Rock y Metal",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-06",
-   "fecha_fin": "2026-11-07",
-   "hora": "22:30",
-   "horario": null,
-   "lugar": "Bar Democrático",
-   "direccion": null,
-   "comuna": "Iquique",
-   "ciudad": null,
-   "region": null,
-   "precio": "Desde $3.000",
-   "descripcion": "Prepárate para una noche cargada de energía, guitarras potentes y música en vivo. El escenario de El Democrático se enciende con una jornada dedicada a los sonidos del Hard Rock, Nu Metal, Grunge y Metal Alternativo. Dos bandas en vivo, muc",
-   "imagen": "https://img.vamoh.cl/events/59b6fc83-038c-4a40-a064-6538d95d9bd8.webp?v=cd1ec4f7",
-   "fotos": null,
-   "url": "https://vamoh.cl/events/noche-de-rock-y-metal-en-el-democratico-iquique-laxkk/",
-   "fuentes": [
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/noche-de-rock-y-metal-en-el-democratico-iquique-laxkk/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "datos-estructurados",
-   "id": "55257bcf33",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
   },
@@ -2829,6 +2892,10 @@
     {
      "nombre": "Keai",
      "url": "https://keai.cl/evento/mercaderes-de-la-ruta-20135"
+    },
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panorama/festival-medieval-vikingo-3a7bc38c"
     }
    ],
    "desde_imagen": true,
@@ -2836,7 +2903,7 @@
    "origen": "manual",
    "id": "d30fc6d897",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-07",
+   "actualizado": "2026-11-08",
    "horario": "11:00 a 20:00 hrs"
   },
   {
@@ -2870,214 +2937,34 @@
    "actualizado": "2026-11-07"
   },
   {
-   "titulo": "Poligonal: Temporalidades de mundos",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-07",
-   "fecha_fin": null,
-   "hora": "15:00",
-   "horario": "15:00 a 20:00 h",
-   "lugar": "Museo Chileno de Arte Precolombino",
-   "direccion": "Bandera 361",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Encuentro y muestra vinculada a temporalidades y mundos americanos.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://museo.precolombino.cl/exposiciones-cartelera/cartelera/",
-   "fuentes": [
-    {
-     "nombre": "Museo Chileno de Arte Precolombino",
-     "url": "https://museo.precolombino.cl/exposiciones-cartelera/cartelera/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "b9bde47bf1",
-   "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
-  },
-  {
-   "titulo": "Wacken Metal Battle Chile - Semifinal 1",
+   "titulo": "Nu-Metal & Punk",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-07",
-   "fecha_fin": null,
-   "hora": "16:00",
+   "fecha_fin": "2026-11-08",
+   "hora": "21:00",
    "horario": null,
-   "lugar": "Templo Crápula",
+   "lugar": "Punto de Encuentro",
    "direccion": null,
-   "comuna": "Concepción",
+   "comuna": "Coquimbo",
    "ciudad": null,
    "region": null,
-   "precio": "Desde $6.000",
-   "descripcion": "WACKEN METAL BATTLE CHILE - SEMIFINAL 1 / CONCEPCIÓN Sábado 07 de noviembre del 2026 a las 16:00 🔥¡Llega la primera semifinal de Wacken Metal Battle Chile! 🔥 📢 CONCEPCIÓN ABRE SUS COMPUERTAS PARA LA GRAN BATALLA DE BANDAS❗ Los primeros 3 he",
-   "imagen": "https://img.vamoh.cl/events/492646b3-7016-49e0-bd4c-76afe590a462.webp?v=0e76965a",
+   "precio": "Desde $4.000",
+   "descripcion": "🔥 ¡NU-METAL Y PUNK CALIFORNIANO EN VIVO EN PUNTO DE ENCUENTRO! 🔥 Este SÁBADO 7 DE NOVIEMBRE prepárate para una noche cargada de riffs pesados, punk, nu-metal y clásicos de los 90 y 2000. 🤘💥 ¡4 TRIBUTOS EN UNA MISMA NOCHE! 🤘 @fuckthesistem_b",
+   "imagen": "https://img.vamoh.cl/events/50200d7e-9797-421e-a6ab-1bf84e31fbdb.webp?v=04fdad6c",
    "fotos": null,
-   "url": "https://vamoh.cl/events/wacken-metal-battle-chile-semifinal-1-33db9/",
+   "url": "https://vamoh.cl/events/nu-metal-punk-en-punto-de-encuentro-coquimbo-1mrtr/",
    "fuentes": [
     {
      "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/wacken-metal-battle-chile-semifinal-1-33db9/"
+     "url": "https://vamoh.cl/events/nu-metal-punk-en-punto-de-encuentro-coquimbo-1mrtr/"
     }
    ],
    "desde_imagen": false,
    "confianza": "alta",
    "origen": "datos-estructurados",
-   "id": "ea09a8754c",
-   "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
-  },
-  {
-   "titulo": "Brainbuster: Zomoz, Sanafabitch, Cabaret Psycofuzz, Yta",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-07",
-   "fecha_fin": null,
-   "hora": "17:00",
-   "horario": null,
-   "lugar": "Santiago Fight Club",
-   "direccion": null,
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Desde $5.000",
-   "descripcion": "Tocata pesada con Zomoz, Sanafabitch, Cabaret Psycofuzz e Yta en Santiago Fight Club.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://salirsantiago.com/panoramas/tocata",
-   "fuentes": [
-    {
-     "nombre": "Salir Santiago",
-     "url": "https://salirsantiago.com/panoramas/tocata"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "f745721607",
-   "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
-  },
-  {
-   "titulo": "Magical Girls en Bar 44",
-   "categoria": "anime",
-   "fecha_inicio": "2026-11-07",
-   "fecha_fin": null,
-   "hora": "17:00",
-   "horario": null,
-   "lugar": "Bar 44",
-   "direccion": "Seminario 44, 7500847 Santiago, Providencia, Región Metropolitana",
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
-   "precio": null,
-   "descripcion": "✨ ¡La magia llega al Bar 44 ✨ El Ensamble Consonantia te invita a vivir un concierto instrumental de anime dedicado al género de Magical Girls. Nuestro repert",
-   "imagen": "https://cdn.keai.cl/events/20255-22d2d168fe1d8ea6afed18a77a33dfd1.jpg",
-   "fotos": null,
-   "url": "https://keai.cl/evento/magical-girls-en-bar-44-20255",
-   "fuentes": [
-    {
-     "nombre": "Keai",
-     "url": "https://keai.cl/evento/magical-girls-en-bar-44-20255"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "datos-estructurados",
-   "id": "966f35706a",
-   "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
-  },
-  {
-   "titulo": "Total Thrash - Alcoholic Productions",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-07",
-   "fecha_fin": null,
-   "hora": "17:00",
-   "horario": null,
-   "lugar": "Hangar Subterráneo",
-   "direccion": null,
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Desde $5.000",
-   "descripcion": "Tocata de thrash metal organizada por Alcoholic Productions en Hangar Subterráneo.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://salirsantiago.com/panoramas/tocata",
-   "fuentes": [
-    {
-     "nombre": "Salir Santiago",
-     "url": "https://salirsantiago.com/panoramas/tocata"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "68b6c0d173",
-   "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
-  },
-  {
-   "titulo": "Hardcore Solidario: Knockout, Distantex y más",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-07",
-   "fecha_fin": null,
-   "hora": "18:00",
-   "horario": null,
-   "lugar": "Club Cultural Bula",
-   "direccion": null,
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Desde $2.000",
-   "descripcion": "Tocata hardcore solidaria con Knockout, Distantex y más bandas en Club Cultural Bula.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://salirsantiago.com/panoramas/tocata",
-   "fuentes": [
-    {
-     "nombre": "Salir Santiago",
-     "url": "https://salirsantiago.com/panoramas/tocata"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "042f6d8550",
-   "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
-  },
-  {
-   "titulo": "Yambo, Corriente Continua y más en Caja Acústica",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-07",
-   "fecha_fin": null,
-   "hora": "18:00",
-   "horario": null,
-   "lugar": "Caja Acústica",
-   "direccion": null,
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Tocata de rock y metal con Yambo, Corriente Continua y más en Caja Acústica.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://salirsantiago.com/panoramas/tocata",
-   "fuentes": [
-    {
-     "nombre": "Salir Santiago",
-     "url": "https://salirsantiago.com/panoramas/tocata"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "fc9361b210",
-   "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "id": "c4ef03af7f",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "2da Feria de Ilustración, Cómic y Autoedición (Feria ICA 2026)",
@@ -3430,6 +3317,70 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "League Cup Pokémon TCG - Deck Kingdom",
+   "categoria": "juegos",
+   "fecha_inicio": "2026-11-08",
+   "fecha_fin": null,
+   "hora": "09:00",
+   "horario": null,
+   "lugar": "Deck Kingdom (Torre de Batalla)",
+   "direccion": "Merced 832, Local 78",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "$12.000 CLP",
+   "descripcion": "Torneo oficial League Cup de Pokémon TCG en Deck Kingdom, Santiago Centro.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.torneostcg.cl/region-metropolitana/torneos/pokemon-tcg",
+   "fuentes": [
+    {
+     "nombre": "TorneosTCG",
+     "url": "https://www.torneostcg.cl/region-metropolitana/torneos/pokemon-tcg"
+    },
+    {
+     "nombre": "quieromilch",
+     "url": "https://www.quieromilch.cl/deck-kingdom/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "75862a4463",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
+  },
+  {
+   "titulo": "League Challenge Pokémon TCG - ZendiCard",
+   "categoria": "juegos",
+   "fecha_inicio": "2026-11-08",
+   "fecha_fin": null,
+   "hora": "11:00",
+   "horario": null,
+   "lugar": "ZendiCard",
+   "direccion": null,
+   "comuna": "San Miguel",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Torneo oficial League Challenge de Pokémon TCG en ZendiCard, San Miguel.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.torneostcg.cl/region-metropolitana/torneos/pokemon-tcg",
+   "fuentes": [
+    {
+     "nombre": "TorneosTCG",
+     "url": "https://www.torneostcg.cl/region-metropolitana/torneos/pokemon-tcg"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "133ae3025d",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
+  },
+  {
    "titulo": "Performance sonora de Enrique Ramírez y Matthias Puech",
    "categoria": "museos",
    "fecha_inicio": "2026-11-08",
@@ -3458,6 +3409,36 @@
    "id": "464603118b",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Pre-Release Star Trek · Domingo 8",
+   "categoria": "juegos",
+   "fecha_inicio": "2026-11-08",
+   "fecha_fin": null,
+   "hora": "15:00",
+   "horario": null,
+   "lugar": "Magic4ever",
+   "direccion": "Moneda 840",
+   "comuna": "Santiago",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $44.990",
+   "descripcion": "Pre-release de Magic: The Gathering formato Sellado el domingo 8 de noviembre a las 15:00 en Magic4ever, Moneda 840, Santiago Centro. Inscripción $44.990. Prerelease oficial de Magic: The Gathering | Star Trek, una semana antes de que el se",
+   "imagen": "https://torneos.magic4ever.cl/m4e/horizontal.png",
+   "fotos": null,
+   "url": "https://torneos.magic4ever.cl/calendario/evento/619",
+   "fuentes": [
+    {
+     "nombre": "Magic4ever",
+     "url": "https://torneos.magic4ever.cl/calendario"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "0bfa0b69c5",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Modern Metal Sessions XIX",
@@ -3505,9 +3486,9 @@
    "hora": null,
    "lugar": "Santander Arena - Santiago Centro",
    "direccion": null,
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Concierto de Def Leppard y Extreme en Santander Arena. ¡Puro rock clásico!",
    "imagen": "https://static.ptocdn.net/images/eventos/rec113_calugalistado.jpg",
@@ -3516,6 +3497,10 @@
     {
      "nombre": "PuntoTicket",
      "url": "https://www.puntoticket.com/def-leppard"
+    },
+    {
+     "nombre": "Poleras de Rock",
+     "url": "https://polerasderock.cl/pages/proximos-conciertos"
     }
    ],
    "desde_imagen": false,
@@ -3523,7 +3508,37 @@
    "origen": "ticketera",
    "id": "23e15c1070",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
+  },
+  {
+   "titulo": "Felipe Balzo: Del Enigma al Juego",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-08",
+   "fecha_fin": "2026-11-27",
+   "hora": null,
+   "horario": null,
+   "lugar": "Aldea del Encuentro",
+   "direccion": null,
+   "comuna": "La Reina",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Exposición artística en la Aldea del Encuentro. Entrada liberada.",
+   "imagen": "https://salirsantiago.com/og.png",
+   "fotos": null,
+   "url": "https://salirsantiago.com/lugar/aldea-del-encuentro-la-reina",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/lugar/aldea-del-encuentro-la-reina"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "8ac63cc959",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Lanzamiento: Museos en transformación. Política Nacional de Museos 2026-2031",
@@ -3554,6 +3569,36 @@
    "id": "352213a0ac",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Bunbury",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-09",
+   "fecha_fin": null,
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Santander Arena",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Enrique Bunbury se presenta en vivo en Santiago con lo mejor de su repertorio de rock.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://polerasderock.cl/pages/proximos-conciertos",
+   "fuentes": [
+    {
+     "nombre": "Poleras de Rock",
+     "url": "https://polerasderock.cl/pages/proximos-conciertos"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "23a9bece3c",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "“Play: Una Travesía Geek”",
@@ -3645,7 +3690,7 @@
    "origen": "claude",
    "id": "ae07a2796c",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Fluyen las miradas, florecen los derechos",
@@ -3705,7 +3750,7 @@
    "origen": "claude",
    "id": "3f73ac8f60",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Ill Niño en Chile",
@@ -3802,6 +3847,36 @@
    "id": "d04b8c1116",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "John 5",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-12",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Blondie",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "El virtuoso guitarrista John 5 se presenta en vivo en el Club Blondie.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://polerasderock.cl/pages/proximos-conciertos",
+   "fuentes": [
+    {
+     "nombre": "Poleras de Rock",
+     "url": "https://polerasderock.cl/pages/proximos-conciertos"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "26912aaed8",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Matta: Memorias de Guerra",
@@ -3968,6 +4043,18 @@
     {
      "nombre": "artdec.gob.cl",
      "url": "https://www.artdec.gob.cl/cartelera"
+    },
+    {
+     "nombre": "instagram.com",
+     "url": "https://www.instagram.com/reel/DfSzznWyE0U/"
+    },
+    {
+     "nombre": "nochedemuseos.cl",
+     "url": "https://nochedemuseos.cl/actividades/416-exposiciones-mnba"
+    },
+    {
+     "nombre": "nochedemuseos.cl",
+     "url": "https://nochedemuseos.cl/actividades/77-visita-guiada"
     }
    ],
    "desde_imagen": false,
@@ -3975,7 +4062,7 @@
    "origen": "ia",
    "id": "09cd96f442",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-07",
+   "actualizado": "2026-11-08",
    "horario": "Desde las 17:00; cada museo tiene su horario (gratis)",
    "fotos": [
     "https://www.mnhn.gob.cl/sites/www.mnhn.gob.cl/files/styles/4x3_mediano/public/2026-10/Nochemuseos.png?h=98f88c31&itok=GUofKna_"
@@ -4036,6 +4123,10 @@
     {
      "nombre": "Keai",
      "url": "https://keai.cl/evento/anime-symphony-en-teatro-parque-cousino-17048"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/anime-symphony-en-teatro-parque-cousino-1d8rt/"
     }
    ],
    "desde_imagen": true,
@@ -4043,7 +4134,7 @@
    "origen": "ia",
    "id": "4d5f2940d2",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "FILSA 2026: Feria Internacional del Libro de Santiago",
@@ -4104,6 +4195,40 @@
    "id": "4c39e5bf70",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Gojira Fest",
+   "categoria": "yokai",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": "2026-11-15",
+   "hora": "11:00",
+   "horario": "11:00 a 19:00 hrs",
+   "lugar": "Yokai Social Club",
+   "direccion": "Santa Rosa 179",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Celebra el cumpleaños del Dios de los monstruos con stands de merch, arte, charlas, talleres y más.",
+   "imagen": "https://cdnx.jumpseller.com/yokai/image/81226362/BANDER_C3_8DN.jpg?1789489665",
+   "fotos": null,
+   "url": "https://www.yokai.cl/en/evento-gojira-fest-%F0%9F%A6%96-14-y-15-de-noviembre-2026",
+   "fuentes": [
+    {
+     "nombre": "Yōkai - Poleras de anime, manga y jrock en serigrafía ",
+     "url": "https://www.yokai.cl/eventos-yokai-social-club"
+    },
+    {
+     "nombre": "Yōkai - Poleras de anime, manga y jrock en serigrafía ",
+     "url": "https://www.yokai.cl/en/evento-gojira-fest-%F0%9F%A6%96-14-y-15-de-noviembre-2026"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "fb78b6b9f5",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Ragnarok Fest: La Aldea del Encuentro, Harry Potter vs. El Señor de los Anillos",
@@ -4232,6 +4357,36 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "Jornada Metal Extremo: Evil Steel & Revenge Zine",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": null,
+   "hora": "17:00",
+   "horario": null,
+   "lugar": "BYM Music",
+   "direccion": null,
+   "comuna": "Ñuñoa",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto de metal extremo con Evil Steel y Revenge Zine en BYM Music, Ñuñoa.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://salirsantiago.com/panorama/festival-medieval-vikingo-3a7bc38c",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panorama/festival-medieval-vikingo-3a7bc38c"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "6508a8b4f2",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
+  },
+  {
    "titulo": "Vengeance of Hell I",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-14",
@@ -4292,6 +4447,36 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "Wixapaiñ Metalfest Temuko Ii",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": "2026-11-15",
+   "hora": "18:00",
+   "horario": null,
+   "lugar": "The Daiky Bar",
+   "direccion": null,
+   "comuna": "Temuco",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $2.000",
+   "descripcion": "# WIXAPAIÑ METALFEST TEMUKO II 🤘🔥 ### El festival más brutal y fraterno de la escena extrema nacional. Este sábado 14 de noviembre, la brutalidad vuelve a Temuko con la segunda edición de **WIXAPAIÑ METALFEST**, una jornada de música extrem",
+   "imagen": "https://img.vamoh.cl/events/a64c583b-68b1-4974-a76a-3b9440ca0a3e.webp?v=0c674c45",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/wixapain-metalfest-temuko-ii-v9zh7/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/wixapain-metalfest-temuko-ii-v9zh7/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "417c55f418",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
+  },
+  {
    "titulo": "Muestra 07 en Casa Palacio",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-14",
@@ -4320,6 +4505,38 @@
    "id": "61695f41b1",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Marty Friedman en Santiago",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "lugar": "Teatro Cariola",
+   "direccion": "San Diego 246",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "El virtuoso exguitarrista de Megadeth, Marty Friedman, agendó un concierto en el Teatro Cariola con su deslumbrante show de heavy metal.",
+   "imagen": null,
+   "url": "https://sonorock.com/cartelera-metal-chile/",
+   "fuentes": [
+    {
+     "nombre": "SonorocK",
+     "url": "https://sonorock.com/cartelera-metal-chile/"
+    },
+    {
+     "nombre": "Poleras de Rock",
+     "url": "https://polerasderock.cl/pages/proximos-conciertos"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "9793488d91",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Titanes en Mibar",
@@ -4352,34 +4569,34 @@
    "actualizado": "2026-11-07"
   },
   {
-   "titulo": "Gojira Fest",
-   "categoria": "yokai",
+   "titulo": "Fiesta Otaku Aniversario #3",
+   "categoria": "anime",
    "fecha_inicio": "2026-11-14",
    "fecha_fin": "2026-11-15",
-   "hora": null,
+   "hora": "23:00",
    "horario": null,
-   "lugar": null,
+   "lugar": "Euclides 1204",
    "direccion": null,
-   "comuna": null,
+   "comuna": "San Miguel",
    "ciudad": null,
    "region": null,
-   "precio": null,
-   "descripcion": "Evento temático dedicado a la cultura japonesa tradicional y monstruos gigantes (Kaiju).",
-   "imagen": null,
+   "precio": "Desde $4.000",
+   "descripcion": null,
+   "imagen": "https://img.vamoh.cl/events/4fcc7395-c073-460e-b752-f62a1df9b571.webp?v=62add23b",
    "fotos": null,
-   "url": "https://www.yokai.cl/eventos-yokai-social-club",
+   "url": "https://vamoh.cl/events/fiesta-otaku-aniversario-3-0r85i/",
    "fuentes": [
     {
-     "nombre": "Yōkai - Poleras de anime, manga y jrock en serigrafía ",
-     "url": "https://www.yokai.cl/eventos-yokai-social-club"
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/fiesta-otaku-aniversario-3-0r85i/"
     }
    ],
    "desde_imagen": false,
-   "confianza": "media",
-   "origen": "ia",
-   "id": "fb78b6b9f5",
-   "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "6ea8c4d016",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Legendarium — El Legado de Tolkien",
@@ -4410,32 +4627,34 @@
    "actualizado": "2026-11-07"
   },
   {
-   "titulo": "Marty Friedman en Santiago",
+   "titulo": "Los Tres — 30 años MTV Unplugged",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-14",
-   "fecha_fin": null,
+   "fecha_fin": "2026-11-15",
    "hora": null,
-   "lugar": "Teatro Cariola",
+   "horario": null,
+   "lugar": "Santander Arena",
    "direccion": null,
    "comuna": "Santiago",
    "ciudad": "Santiago",
    "region": "Región Metropolitana",
    "precio": null,
-   "descripcion": "El virtuoso exguitarrista de Megadeth, Marty Friedman, agendó un concierto en el Teatro Cariola con su deslumbrante show de heavy metal.",
+   "descripcion": "La emblemática banda chilena celebra tres décadas de su histórico concierto acústico.",
    "imagen": null,
-   "url": "https://sonorock.com/cartelera-metal-chile/",
+   "fotos": null,
+   "url": "https://polerasderock.cl/pages/proximos-conciertos",
    "fuentes": [
     {
-     "nombre": "SonorocK",
-     "url": "https://sonorock.com/cartelera-metal-chile/"
+     "nombre": "Poleras de Rock",
+     "url": "https://polerasderock.cl/pages/proximos-conciertos"
     }
    ],
    "desde_imagen": false,
    "confianza": "alta",
    "origen": "ia",
-   "id": "9793488d91",
-   "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
+   "id": "b54f0831a9",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Ratos de Porão en Chile",
@@ -4456,6 +4675,10 @@
     {
      "nombre": "SonorocK",
      "url": "https://sonorock.com/cartelera-metal-chile/"
+    },
+    {
+     "nombre": "Poleras de Rock",
+     "url": "https://polerasderock.cl/pages/proximos-conciertos"
     }
    ],
    "desde_imagen": false,
@@ -4463,7 +4686,37 @@
    "origen": "ia",
    "id": "be4111a5ae",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
+   "actualizado": "2026-11-08"
+  },
+  {
+   "titulo": "Welcome To The Show Vol.1 en Matsumoto Nikkei",
+   "categoria": "medieval",
+   "fecha_inicio": "2026-11-15",
+   "fecha_fin": null,
+   "hora": "16:00",
+   "horario": null,
+   "lugar": "Calle Porvenir 541",
+   "direccion": "Calle Porvenir 541",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "🎭 WELCOME TO THE SHOW - Vol.1️⃣ 🎭 Se abre el telón, se sube el volumen… Damas y caballeros, el show está por",
+   "imagen": "https://cdn.keai.cl/events/19731-4b1821c04c8924f5dbdb5a87401cc4cc.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/welcome-to-the-show-vol1-en-matsumoto-nikkei-19731",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/welcome-to-the-show-vol1-en-matsumoto-nikkei-19731"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "2550179711",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Nocturnal Depression en Chile",
@@ -4549,7 +4802,37 @@
    "origen": "claude",
    "id": "20d77619ca",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
+  },
+  {
+   "titulo": "Hard & Dark en Rockstar Stage",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-19",
+   "fecha_fin": "2026-11-20",
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Rockstar Stage",
+   "direccion": "Bombero Núñez 343",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "HARD & DARK: dos trayectorias, dos estilos y un mismo escenario. Poema XX es una banda chilena de hard rock formada en 1992, que durante los años 90 con",
+   "imagen": "https://cdn.keai.cl/events/19468-3281b0a1e5c46ad5ba70747fcea0234d.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/hard-dark-en-rockstar-stage-19468",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/hard-dark-en-rockstar-stage-19468"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "085e0d1d5e",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "La Nostalgia de los 2000 y el Mejor Metal Se Toman la Noche",
@@ -4642,6 +4925,36 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "Metal Sinfónico con From Wishes – Tributo a Nightwish y Deadly Mist",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-21",
+   "fecha_fin": "2026-11-22",
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Templo Crápula",
+   "direccion": null,
+   "comuna": "Concepción",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $7.000",
+   "descripcion": "Bienvenidos al Templo Crápula, el mejor escenario de Concepción. Una sala climatizada con recirculación de aire para que el ambiente nunca se ponga pesado, sonido que se siente en el pecho, tótems de autoatención y una barra con schops Cráp",
+   "imagen": "https://img.vamoh.cl/events/0c22fb90-5b50-4a03-9733-30c38452773d.webp?v=1ea6f1fa",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/metal-sinfonico-con-from-wishes-tributo-a-nightwish-y-deadly-mist-en-templo-crapula-concepcion-3hcre/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/metal-sinfonico-con-from-wishes-tributo-a-nightwish-y-deadly-mist-en-templo-crapula-concepcion-3hcre/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "b063b90657",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
+  },
+  {
    "titulo": "Saratoga en Chile",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-21",
@@ -4660,6 +4973,10 @@
     {
      "nombre": "SonorocK",
      "url": "https://sonorock.com/cartelera-metal-chile/"
+    },
+    {
+     "nombre": "Poleras de Rock",
+     "url": "https://polerasderock.cl/pages/proximos-conciertos"
     }
    ],
    "desde_imagen": false,
@@ -4667,7 +4984,37 @@
    "origen": "ia",
    "id": "9b68238c51",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
+   "actualizado": "2026-11-08"
+  },
+  {
+   "titulo": "Imitación a la vida",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-24",
+   "fecha_fin": "2027-01-30",
+   "hora": null,
+   "horario": null,
+   "lugar": "Centro Cultural de España - CCE Santiago de Chile",
+   "direccion": "Av. Providencia 927",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Exposición de arte en el Centro Cultural de España.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-de-arte-en-santiago-region-metropolitana-chile-409031_1",
+   "fuentes": [
+    {
+     "nombre": "ARTEINFORMADO",
+     "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-de-arte-en-santiago-region-metropolitana-chile-409031_1"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "58bd029f33",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Concierto Internacional: Música medieval portuguesa",
@@ -4758,6 +5105,66 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "Kaídos en Vivo: Una Noche de Hard Rock y Desvelo",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-26",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "House of Rock & Blues Bar",
+   "direccion": null,
+   "comuna": "Ñuñoa",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $6.990",
+   "descripcion": "KAÍDOS EN VIVO — Una noche de hard rock, atmósferas y desvelo Kaídos llega a House Rock & Blues para una noche especialmente diseñada para vivir la banda de cerca: guitarras, intensidad, atmósferas y la energía de un show en sala donde cada",
+   "imagen": "https://img.vamoh.cl/events/808ae686-e12f-4fe0-aeee-ef6b214d0bc2.webp?v=82b72811",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/kaidos-en-vivo-una-noche-de-hard-rock-y-desvelo-en-house-rock-blues-5d9bx/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/kaidos-en-vivo-una-noche-de-hard-rock-y-desvelo-en-house-rock-blues-5d9bx/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "ce8e5fa662",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
+  },
+  {
+   "titulo": "Festival Fauna Primavera 2026",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-26",
+   "fecha_fin": "2026-11-28",
+   "hora": null,
+   "horario": null,
+   "lugar": "Parque Ciudad Empresarial",
+   "direccion": null,
+   "comuna": "Huechuraba",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Festival de rock y música alternativa con The Strokes, New Order, Johnny Marr y más.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://puntoticket.com",
+   "fuentes": [
+    {
+     "nombre": "Poleras de Rock",
+     "url": "https://polerasderock.cl/pages/proximos-conciertos"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "03e4173194",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
+  },
+  {
    "titulo": "Evangelion en Bar 44",
    "categoria": "anime",
    "fecha_inicio": "2026-11-27",
@@ -4818,6 +5225,36 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "Rancagua Metal Fest",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": null,
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Teatro San Martín",
+   "direccion": null,
+   "comuna": "Rancagua",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $25.000",
+   "descripcion": "Rancagua se prepara para una noche de metal extremo con Rancagua Metal Fest, encabezado por Necrot, desde Estados Unidos, y Krisiun, una de las agrupaciones más importantes del death metal brasileño. La jornada contará además con la partici",
+   "imagen": "https://img.vamoh.cl/events/8760e896-3de9-4eca-b365-d81029f65bb1.webp",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/rancagua-metal-fest-5g8hx/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/rancagua-metal-fest-5g8hx/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "2711e341c1",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
+  },
+  {
    "titulo": "Classic Thrash Attack: Artillery y Atrophy en Valparaíso",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-27",
@@ -4846,6 +5283,66 @@
    "id": "aeedd2480b",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "League Challenge Noviembre",
+   "categoria": "juegos",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": "10:00",
+   "horario": null,
+   "lugar": "Deck Kingdom",
+   "direccion": "Merced 832, Local 78",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "$8.000 CLP",
+   "descripcion": "Torneo oficial League Challenge de Pokémon TCG en Deck Kingdom.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.quieromilch.cl/deck-kingdom/",
+   "fuentes": [
+    {
+     "nombre": "quieromilch",
+     "url": "https://www.quieromilch.cl/deck-kingdom/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "1e71f05a47",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
+  },
+  {
+   "titulo": "TCG Family Fest",
+   "categoria": "juegos",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": "11:00",
+   "horario": null,
+   "lugar": "Almacruz Hotel y Centro de Convenciones",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $5.500",
+   "descripcion": "Vive la primera edición de TCG Family Fest junto a tiendas y expositores de todo Chile. Juega, intercambia, compra o encuentra esas cartas que tanto buscas, y comparte un sábado diferente disfrutando este hobby junto a quienes más quieres.",
+   "imagen": "https://img.vamoh.cl/events/87c31bb8-e886-46c4-aecd-2d25e50c212c.webp?v=61d4f53d",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/tcg-family-fest-yfphc/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/tcg-family-fest-yfphc/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "a5b11e25d7",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Haru Matsuri · Fiesta de Primavera en la Sociedad Japonesa de Beneficencia",
@@ -4908,6 +5405,10 @@
     {
      "nombre": "Cuartel del Metal",
      "url": "https://cuarteldelmetal.com/conciertos-chile/2026/05/conciertos-metal-en-chile/"
+    },
+    {
+     "nombre": "Poleras de Rock",
+     "url": "https://polerasderock.cl/pages/proximos-conciertos"
     }
    ],
    "desde_imagen": true,
@@ -4915,7 +5416,7 @@
    "origen": "ticketera",
    "id": "c003178ec9",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Classic Thrash Attack: Artillery y Atrophy en Concepción",
@@ -4974,6 +5475,36 @@
    "id": "6a9c1df7fe",
    "agregado": "2026-11-06",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "El Antro Anime On Tour",
+   "categoria": "anime",
+   "fecha_inicio": "2026-11-29",
+   "fecha_fin": null,
+   "hora": "17:00",
+   "horario": null,
+   "lugar": "Amsterdam Club (Ex-Rbx)",
+   "direccion": null,
+   "comuna": "Ñuñoa",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $25.000",
+   "descripcion": "🎤✨ ¡EL ANTRO ANIME CUMPLE 25 AÑOS Y LO CELEBRAMOS A LO GRANDE EN SANTIAGO! ✨🎤 Prepárate para un concierto de fin de año lleno de nostalgia, anime, música y grandes invitados. 💜🔥 🌙 MARISA DE LILLE 🎶 Intérprete de canciones de Sailor Moon, Dr",
+   "imagen": "https://img.vamoh.cl/events/79a6ef36-33be-4ee4-a297-b9be8d00bfbe.webp?v=bca0f8ab",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/el-antro-anime-on-tour-mygaw/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/el-antro-anime-on-tour-mygaw/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "28cdd347e9",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Pripiat: Lanzamiento Ep Cripta en Warehousechile",
@@ -5040,9 +5571,9 @@
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-29",
    "fecha_fin": null,
-   "hora": null,
+   "hora": "20:00",
    "lugar": "Arena Hipódromo - Independencia",
-   "direccion": null,
+   "direccion": "Av. Hipódromo Chile 1715",
    "comuna": "Independencia",
    "ciudad": "Santiago",
    "region": "Región Metropolitana",
@@ -5058,6 +5589,10 @@
     {
      "nombre": "SonorocK",
      "url": "https://sonorock.com/cartelera-metal-chile/"
+    },
+    {
+     "nombre": "Poleras de Rock",
+     "url": "https://polerasderock.cl/pages/proximos-conciertos"
     }
    ],
    "desde_imagen": true,
@@ -5065,7 +5600,7 @@
    "origen": "ticketera",
    "id": "41da085532",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Classic Thrash Attack: Artillery y Atrophy en Santiago",
@@ -5098,6 +5633,36 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "GO Cup · Pokémon GO",
+   "categoria": "juegos",
+   "fecha_inicio": "2026-11-30",
+   "fecha_fin": null,
+   "hora": "10:00",
+   "horario": null,
+   "lugar": "Deck Kingdom",
+   "direccion": "Merced 832, Local 78",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "$8.000 CLP",
+   "descripcion": "Torneo competitivo GO Cup de Pokémon GO en Deck Kingdom.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.quieromilch.cl/deck-kingdom/",
+   "fuentes": [
+    {
+     "nombre": "quieromilch",
+     "url": "https://www.quieromilch.cl/deck-kingdom/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "be16a62f60",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
+  },
+  {
    "titulo": "Dying Fetus",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-01",
@@ -5127,7 +5692,7 @@
    "origen": "ia",
    "id": "5197cbd0b7",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Pepo: antes y después de Condorito",
@@ -5167,7 +5732,7 @@
    "origen": "claude",
    "id": "3636e60042",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "BABYMETAL",
@@ -5257,7 +5822,7 @@
    "titulo": "Metal Darkness XXII",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-04",
-   "fecha_fin": null,
+   "fecha_fin": "2026-12-05",
    "hora": "20:00",
    "horario": null,
    "lugar": "Bar Oxido",
@@ -5267,13 +5832,17 @@
    "region": "Región Metropolitana",
    "precio": "Desde $8.000",
    "descripcion": "Nueva edición del festival Metal Darkness en Bar Óxido.",
-   "imagen": null,
+   "imagen": "https://img.vamoh.cl/events/b3c2f25d-3767-429e-a701-62d94a1f2f93.webp",
    "fotos": null,
    "url": "https://salirsantiago.com/panoramas/tocata",
    "fuentes": [
     {
      "nombre": "Salir Santiago",
      "url": "https://salirsantiago.com/panoramas/tocata"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/metal-darkness-xxii-ae8dy/"
     }
    ],
    "desde_imagen": false,
@@ -5281,7 +5850,37 @@
    "origen": "ia",
    "id": "49bae6150e",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
+  },
+  {
+   "titulo": "Kanetis ...y Amigos en Sala Master",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-05",
+   "fecha_fin": null,
+   "hora": "19:30",
+   "horario": null,
+   "lugar": "Sala Master",
+   "direccion": "Miguel Claro 509, 7500695 Providencia, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "La banda chilena de metal y rock alternativo Kanetis llega a la Sala Master de Radio Universidad de Chile para presentar oficialmente su nuevo EP: \"Artefacto\".",
+   "imagen": "https://cdn.keai.cl/events/19479-7663ba15e7d6e91919bdf03b567d81b5.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/kanetis-y-amigos-en-sala-master-19479",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/kanetis-y-amigos-en-sala-master-19479"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "8ddabd4d64",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Ladies Of Metal 3",
@@ -5514,6 +6113,36 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "FestiGame diciembre 2026",
+   "categoria": "anime",
+   "fecha_inicio": "2026-12-10",
+   "fecha_fin": "2026-12-13",
+   "hora": null,
+   "horario": null,
+   "lugar": null,
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "El festival de videojuegos y cultura geek más importante de Chile. ¡Calza en anime y videojuegos!",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.nferias.com/chile/",
+   "fuentes": [
+    {
+     "nombre": "nferias.com",
+     "url": "https://www.nferias.com/chile/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "9537803159",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
+  },
+  {
    "titulo": "Sleeping With Sirens - AN ENDING IN ITSELF TOUR",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-11",
@@ -5552,10 +6181,10 @@
    "horario": null,
    "lugar": "Espacio Cousiño",
    "direccion": "P.º Matías Cousiño 166, 8320237 Santiago, Región Metropolitana",
-   "comuna": null,
+   "comuna": "Santiago",
    "ciudad": null,
    "region": null,
-   "precio": null,
+   "precio": "Desde $10.000",
    "descripcion": "Nu Metal Sessions Live La vieja escuela y la nueva generación del aggro se reúnen en un sólo lugar. Rey Chocolate Dawan Rtumba Locotrip",
    "imagen": "https://cdn.keai.cl/events/20062-09a28c811068b997eb9196a6aa22bf23.jpg",
    "fotos": null,
@@ -5564,6 +6193,10 @@
     {
      "nombre": "Keai",
      "url": "https://keai.cl/evento/nu-metal-sessions-live-en-espacio-cousino-20062"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/nu-metal-sessions-live-en-espacio-cousino-mphu8/"
     }
    ],
    "desde_imagen": false,
@@ -5571,7 +6204,7 @@
    "origen": "datos-estructurados",
    "id": "93471e5952",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Evento Navideño: Una navidad en el club",
@@ -5660,6 +6293,36 @@
    "id": "2dafda391c",
    "agregado": "2026-11-06",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Cumbre del Metal Chileno 2026",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-18",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Teatro Cariola",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $12.000",
+   "descripcion": "𝗖𝗨𝗠𝗕𝗥𝗘 𝗗𝗘𝗟 𝗠𝗘𝗧𝗔𝗟 𝗖𝗛𝗜𝗟𝗘𝗡𝗢 𝟮𝟬𝟮𝟲 El 𝘃𝗶𝗲𝗿𝗻𝗲𝘀 𝟭𝟴 𝗱𝗲 𝗱𝗶𝗰𝗶𝗲𝗺𝗯𝗿𝗲 𝗱𝗲 𝟮𝟬𝟮𝟲, 𝗧𝗲𝗮𝘁𝗿𝗼 𝗖𝗮𝗿𝗶𝗼𝗹𝗮 recibirá la 𝗖𝘂𝗺𝗯𝗿𝗲 𝗱𝗲𝗹 𝗠𝗲𝘁𝗮𝗹 𝗖𝗵𝗶𝗹𝗲𝗻𝗼, una jornada que reunirá a 𝗗𝗼𝗿𝘀𝗼, 𝗗𝗲𝗰𝗲𝘀𝘀𝘂𝘀, 𝗠𝗮𝘄𝗶𝘇𝗮, 𝗖𝗿𝗶𝘁𝗶𝗰𝗮𝗹 𝗗𝗲𝗳𝗶",
+   "imagen": "https://img.vamoh.cl/events/75c1b8d5-26b5-4399-894f-6a3f7525d017.webp?v=9d965a64",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/cumbre-del-metal-chileno-2026-2i2av/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/cumbre-del-metal-chileno-2026-2i2av/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "5442a68a62",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Alejandro Silva | «hyperspaced» | Sala Scd Bellavista",
@@ -5937,6 +6600,36 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "STUDIO GHIBLI SINFÓNICO - Teatro Municipal de Valparaíso",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-01-23",
+   "fecha_fin": null,
+   "hora": "18:00",
+   "horario": null,
+   "lugar": "Teatro Municipal de Valparaíso",
+   "direccion": null,
+   "comuna": "Valparaíso",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $29.000",
+   "descripcion": "The Geek Orchestra presenta: STUDIO GHIBLI SINFÓNICO Vive la magia de un concierto inolvidable donde la música, las voces, imágenes de los mejores momentos y una gran puesta en escena te transportarán a la mente y corazón del gran Hayao Miy",
+   "imagen": "https://img.vamoh.cl/events/228c16a5-037c-409c-9efa-aa5d683a6b2e.webp?v=eaaa2d6b",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/studio-ghibli-sinfonico-teatro-municipal-de-valparaiso-vzce1/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/studio-ghibli-sinfonico-teatro-municipal-de-valparaiso-vzce1/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "9b35a67d5a",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
+  },
+  {
    "titulo": "31 Minutos: Don Quijote",
    "categoria": "medieval",
    "fecha_inicio": "2027-01-23",
@@ -6113,6 +6806,36 @@
    "id": "f86137aa96",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Heavy Metal Fest 2",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-03-07",
+   "fecha_fin": null,
+   "hora": "14:00",
+   "horario": null,
+   "lugar": "Sala Metrónomo",
+   "direccion": null,
+   "comuna": "Recoleta",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $5.000",
+   "descripcion": null,
+   "imagen": "https://img.vamoh.cl/events/9e6bd782-1f70-42df-bc59-dcb5c31c36f5.webp?v=5d1f99ea",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/heavy-metal-fest-2-9m1yr/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/heavy-metal-fest-2-9m1yr/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "405fc7f9f0",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Motionless In White - The Come To Latin America Tour",
@@ -6377,13 +7100,13 @@
    "categoria": "conciertos",
    "fecha_inicio": "2027-04-23",
    "fecha_fin": null,
-   "hora": null,
+   "hora": "21:00",
    "lugar": "Teatro Caupolicán - Santiago Centro",
    "direccion": "San Diego 850",
    "comuna": "Santiago",
    "ciudad": "Santiago",
    "region": "Región Metropolitana",
-   "precio": null,
+   "precio": "$45.000 - $79.000 (más cargos)",
    "descripcion": "Concierto de la legendaria banda noruega de black metal Emperor en el Teatro Caupolicán.",
    "imagen": "https://static.ptocdn.net/images/eventos/cau005_calugalistado.jpg",
    "url": "https://www.puntoticket.com/emperor",
@@ -6401,12 +7124,12 @@
      "url": "https://iguanasong.com/calendario/categoria/black-metal/"
     }
    ],
-   "desde_imagen": false,
+   "desde_imagen": true,
    "confianza": "alta",
    "origen": "ticketera",
    "id": "7df15a74fa",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "KK’s Priest - Latin American Tour 2027",
