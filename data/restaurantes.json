@@ -134,7 +134,10 @@
      "credito": "Foto: Carlos yo · CC BY-SA 4.0 · Wikimedia Commons",
      "descripcion": "Fachada de la Galería Dos Caracoles en Av. Providencia, edificio donde funciona KaraOK (local 3B)"
     }
-   ]
+   ],
+   "lat": -33.421289,
+   "lng": -70.609684,
+   "coordenadas_fuente": "OpenStreetMap, dirección: Avenida Providencia 2216"
   },
   {
    "id": "maruy",
@@ -273,7 +276,10 @@
      "credito": "Foto: sitio oficial de Oishi Café",
      "descripcion": "Ramen con huevo y un katsu con mayonesa servidos sobre una mesa de madera"
     }
-   ]
+   ],
+   "lat": -33.448862,
+   "lng": -70.671607,
+   "coordenadas_fuente": "OpenStreetMap, entre Avenida Libertador Bernardo O'Higgins 2503 y 2602"
   },
   {
    "id": "restaurant-japon",
@@ -786,7 +792,10 @@
      "credito": "Foto: FotosMetal",
      "descripcion": "Vista desde la batería: el cantante sobre alfombras se acerca al público en la sala de techo bajo"
     }
-   ]
+   ],
+   "lat": -33.4466,
+   "lng": -70.626424,
+   "coordenadas_fuente": "OpenStreetMap, entre Avenida Santa Isabel 0323 y 0395"
   },
   {
    "id": "haunted-house",
@@ -1647,7 +1656,10 @@
      "descripcion": "Sendero de piedra y escaleras hacia la terraza con quitasoles, entre árboles y muros curvos"
     }
    ],
-   "buscar_osm": "Casa Bosque"
+   "buscar_osm": "Casa Bosque",
+   "lat": -33.599978,
+   "lng": -70.360952,
+   "coordenadas_fuente": "OpenStreetMap, por nombre: Casa Bosque"
   },
   {
    "id": "la-hora-del-te",
