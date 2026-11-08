@@ -86,7 +86,10 @@
    ],
    "categorias_mapa": [
     "anime"
-   ]
+   ],
+   "lat": -33.435026,
+   "lng": -70.645871,
+   "coordenadas_fuente": "OpenStreetMap, por nombre: Magikoffee"
   },
   {
    "id": "karaok",
@@ -171,7 +174,10 @@
      "credito": "Foto: En Cancha",
      "descripcion": "Dorayaki con frutillas y crema verde, servido en un plato japonés azul y blanco"
     }
-   ]
+   ],
+   "lat": -33.422079,
+   "lng": -70.610638,
+   "coordenadas_fuente": "OpenStreetMap, entre Avenida Providencia 2128 y 2178"
   },
   {
    "id": "my-hero-s-cafe",
@@ -226,7 +232,10 @@
     "anime",
     "videojuegos"
    ],
-   "espacio_juego": true
+   "espacio_juego": true,
+   "lat": -33.421289,
+   "lng": -70.609684,
+   "coordenadas_fuente": "OpenStreetMap, dirección: Avenida Providencia 2216"
   },
   {
    "id": "oishi-cafe",
@@ -314,7 +323,10 @@
      "credito": "Foto: sitio oficial de Restaurant Japón",
      "descripcion": "Sala tatami con cojines, biombo calado, faroles de papel y cortina noren"
     }
-   ]
+   ],
+   "lat": -33.440213,
+   "lng": -70.635023,
+   "coordenadas_fuente": "OpenStreetMap, dirección: Barón Pierre de Coubertin 39"
   },
   {
    "id": "sakumu",
@@ -366,7 +378,10 @@
      "credito": "Foto: sitio oficial de Sakumu",
      "descripcion": "Té japonés en tetera kyusu y daifuku sobre una bandeja lacada"
     }
-   ]
+   ],
+   "lat": -33.437418,
+   "lng": -70.641836,
+   "coordenadas_fuente": "OpenStreetMap, por nombre: Sakumu Merced 336"
   },
   {
    "id": "doragon-maid",
@@ -391,7 +406,10 @@
    ],
    "categorias_mapa": [
     "anime"
-   ]
+   ],
+   "lat": -33.510931,
+   "lng": -70.737949,
+   "coordenadas_fuente": "OpenStreetMap, entre Avenida Esquina Blanca 882 y 892"
   },
   {
    "id": "cafe-mun",
@@ -443,7 +461,10 @@
      "credito": "Foto: sitio oficial de Café Mun",
      "descripcion": "Café «Aliento de dragón» humeante, servido sobre una mesa con forma de escudo vikingo"
     }
-   ]
+   ],
+   "lat": -33.452346,
+   "lng": -70.612193,
+   "coordenadas_fuente": "OpenStreetMap, entre Leopoldo Urrutia 1819 y 1900"
   },
   {
    "id": "la-taberna-cajon-del-maipo",
@@ -496,7 +517,10 @@
      "credito": "Foto: sitio oficial de La Taberna (Cajón del Maipo)",
      "descripcion": "Salón con vigas de madera, lámpara de hierro y mesas largas, preparado para una charla"
     }
-   ]
+   ],
+   "lat": -33.725855,
+   "lng": -70.319172,
+   "coordenadas_fuente": "OpenStreetMap, dirección: Los Maitenes 107"
   },
   {
    "id": "los-vikingos",
@@ -550,7 +574,10 @@
      "credito": "Foto: La Tercera",
      "descripcion": "Cóctel con menta y flores servido sobre un cofre de cuero con una máscara de casco vikingo"
     }
-   ]
+   ],
+   "lat": -33.442985,
+   "lng": -70.668086,
+   "coordenadas_fuente": "OpenStreetMap, por nombre: Los Vikingos Avenida Ricardo Cumming 166"
   },
   {
    "id": "bar-enigma",
@@ -602,7 +629,10 @@
      "credito": "Foto: sitio oficial de Bar Enigma",
      "descripcion": "El Baúl de las Curiosidades: cofre antiguo, frascos de pociones, pluma y botella de gin entre engranajes"
     }
-   ]
+   ],
+   "lat": -33.453147,
+   "lng": -70.568581,
+   "coordenadas_fuente": "OpenStreetMap, entre Avenida Larraín 5940 y 5956"
   },
   {
    "id": "blondie",
@@ -648,7 +678,10 @@
      "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
      "descripcion": "Fachada de día en la Alameda: letrero BLONDIE, logo circular con la B y cortina metálica cerrada"
     }
-   ]
+   ],
+   "lat": -33.449228,
+   "lng": -70.673813,
+   "coordenadas_fuente": "OpenStreetMap, por nombre: Blondie Avenida Libertador Bernardo O'Higgins 2879"
   },
   {
    "id": "celda-13",
@@ -702,7 +735,10 @@
      "credito": "Foto: La Cuarta",
      "descripcion": "Actriz caracterizada como La Monja entre el público, junto a una criatura monstruosa en un muro rojo"
     }
-   ]
+   ],
+   "lat": -33.446569,
+   "lng": -70.625293,
+   "coordenadas_fuente": "OpenStreetMap, entre Avenida Italia 1307 y 1350"
   },
   {
    "id": "mibar",
@@ -789,7 +825,10 @@
      "credito": "Foto: En Palco",
      "descripcion": "Figura de Pennywise de tamaño real junto a libros de ocultismo, en el interior del café"
     }
-   ]
+   ],
+   "lat": -33.428769,
+   "lng": -70.612641,
+   "coordenadas_fuente": "OpenStreetMap, dirección: Marchant Pereira 433"
   },
   {
    "id": "psiquis-bar",
@@ -847,7 +886,10 @@
      "credito": "Foto: sitio oficial de Psiquis Bar",
      "descripcion": "Un «doctor» de delantal blanco con un cerebro en las manos atiende a clientes en su mesa"
     }
-   ]
+   ],
+   "lat": -33.427454,
+   "lng": -70.618784,
+   "coordenadas_fuente": "OpenStreetMap, dirección: General Flores 51"
   },
   {
    "id": "arcade-bar",
@@ -901,7 +943,10 @@
    "categorias_mapa": [
     "videojuegos"
    ],
-   "espacio_juego": true
+   "espacio_juego": true,
+   "lat": -33.43265,
+   "lng": -70.634719,
+   "coordenadas_fuente": "OpenStreetMap, entre Constitución 137 y 153"
   },
   {
    "id": "cafe-2d6",
@@ -961,7 +1006,10 @@
     "mesa"
    ],
    "espacio_juego": true,
-   "venta_online": true
+   "venta_online": true,
+   "lat": -33.406402,
+   "lng": -70.569813,
+   "coordenadas_fuente": "OpenStreetMap, entre Balmoral 200 y 353"
   },
   {
    "id": "cinema",
@@ -1009,7 +1057,10 @@
      "descripcion": "Collage: reservado del Expreso de Hogwarts, terraza techada con mesas y la muñeca Annabelle"
     }
    ],
-   "buscar_osm": "Patio Bellavista"
+   "buscar_osm": "Patio Bellavista",
+   "lat": -33.434402,
+   "lng": -70.634783,
+   "coordenadas_fuente": "OpenStreetMap, por nombre: Patio Bellavista Bellavista 052"
   },
   {
    "id": "el-arcanista",
@@ -1064,7 +1115,10 @@
    ],
    "espacio_juego": true,
    "venta_online": true,
-   "torneos": "Pokémon: ligas semanales y torneos nocturnos; también Magic y Riftbound (sin calendario publicado)"
+   "torneos": "Pokémon: ligas semanales y torneos nocturnos; también Magic y Riftbound (sin calendario publicado)",
+   "lat": -33.428179,
+   "lng": -70.619526,
+   "coordenadas_fuente": "OpenStreetMap, número cercano: Almirante Pastene 16"
   },
   {
    "id": "incantum",
@@ -1118,7 +1172,10 @@
      "credito": "Foto: sitio oficial de Incantum",
      "descripcion": "Reservados tipo vagón de tren, con arcos rojos, sillones azules y mesas de madera"
     }
-   ]
+   ],
+   "lat": -33.403623,
+   "lng": -70.575097,
+   "coordenadas_fuente": "OpenStreetMap, por nombre: Incantum Presidente Riesco 5330"
   },
   {
    "id": "insert-coin-providencia",
@@ -1164,7 +1221,10 @@
     "videojuegos",
     "mesa"
    ],
-   "espacio_juego": true
+   "espacio_juego": true,
+   "lat": -33.427322,
+   "lng": -70.618024,
+   "coordenadas_fuente": "OpenStreetMap, por nombre: Insert Coin Bar Gamer Cirujano Guzman 39"
   },
   {
    "id": "insert-coin-nunoa",
@@ -1211,7 +1271,10 @@
     "videojuegos",
     "mesa"
    ],
-   "espacio_juego": true
+   "espacio_juego": true,
+   "lat": -33.456733,
+   "lng": -70.607541,
+   "coordenadas_fuente": "OpenStreetMap, por nombre: Insert Coin Avenida José Domingo Cañas 2306"
   },
   {
    "id": "ludum-bar",
@@ -1264,7 +1327,10 @@
     "mesa"
    ],
    "espacio_juego": true,
-   "torneos": "Torneos de Catán y otros juegos, karaoke y cosplay (sin calendario publicado)"
+   "torneos": "Torneos de Catán y otros juegos, karaoke y cosplay (sin calendario publicado)",
+   "lat": -33.439121,
+   "lng": -70.627415,
+   "coordenadas_fuente": "OpenStreetMap, por nombre: Ludum Bar Condell 456"
   },
   {
    "id": "nowa-s-cantina",
@@ -1318,7 +1384,10 @@
      "credito": "Foto: sitio oficial de Nowa's Cantina",
      "descripcion": "Cócteles de colores sobre la barra, con los tubos luminosos y el techo rojo al fondo"
     }
-   ]
+   ],
+   "lat": -33.404277,
+   "lng": -70.574794,
+   "coordenadas_fuente": "OpenStreetMap, dirección: Avenida Presidente Riesco 5330"
   },
   {
    "id": "press-start",
@@ -1353,7 +1422,10 @@
    "categorias_mapa": [
     "videojuegos"
    ],
-   "espacio_juego": true
+   "espacio_juego": true,
+   "lat": -33.440655,
+   "lng": -70.622413,
+   "coordenadas_fuente": "OpenStreetMap, entre Avenida Francisco Bilbao 761 y 827"
   },
   {
    "id": "cafe-pixel",
@@ -1410,7 +1482,10 @@
    ],
    "categorias_mapa": [
     "videojuegos"
-   ]
+   ],
+   "lat": -33.449093,
+   "lng": -70.599227,
+   "coordenadas_fuente": "OpenStreetMap, entre Avenida Simón Bolívar 2908 y 2931"
   },
   {
    "id": "club-el-dado",
@@ -1453,7 +1528,10 @@
    ],
    "espacio_juego": true,
    "venta_online": true,
-   "torneos": "Bingos, trivias de cine y torneos de ajedrez (sin calendario publicado)"
+   "torneos": "Bingos, trivias de cine y torneos de ajedrez (sin calendario publicado)",
+   "lat": -33.455891,
+   "lng": -70.596015,
+   "coordenadas_fuente": "OpenStreetMap, dirección: Juan Enrique Concha 75"
   },
   {
    "id": "el-desafio-cafeteria",
@@ -1511,7 +1589,10 @@
     "mesa",
     "rol"
    ],
-   "espacio_juego": true
+   "espacio_juego": true,
+   "lat": -33.441482,
+   "lng": -70.633812,
+   "coordenadas_fuente": "OpenStreetMap, dirección: Avenida Vicuña Mackenna 96"
   },
   {
    "id": "casa-bosque",
@@ -1610,7 +1691,10 @@
      "descripcion": "Tazas de café ilustradas con Alicia y galletas en un plato con frases del libro"
     }
    ],
-   "buscar_osm": "Apumanque"
+   "buscar_osm": "Apumanque",
+   "lat": -33.410404,
+   "lng": -70.567515,
+   "coordenadas_fuente": "OpenStreetMap, por nombre: Estacionamiento Apumanque"
   },
   {
    "id": "wonderland-cafe",
@@ -1666,7 +1750,10 @@
      "credito": "Foto: sitio oficial de Wonderland Café",
      "descripcion": "Bebida de matcha con borde de chocolate junto a un reloj de bolsillo y un libro abierto"
     }
-   ]
+   ],
+   "lat": -33.43816,
+   "lng": -70.642146,
+   "coordenadas_fuente": "OpenStreetMap, por nombre: Wonderland Café Rosal 361"
   }
  ]
 }
