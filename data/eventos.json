@@ -1,12 +1,12 @@
 {
  "version": 1,
- "actualizado": "2026-11-07T20:38-03:00",
+ "actualizado": "2026-11-07T22:33-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-07T20:38-03:00",
+  "fecha": "2026-11-07T22:33-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 93,
-  "nuevos_esta_vez": 19,
+  "eventos_nuevos": 104,
+  "nuevos_esta_vez": 11,
   "nuevos_ids": [
    "429f8ea87c",
    "4fb5aa7103",
@@ -100,7 +100,18 @@
    "7a1851cf16",
    "c62ab5b922",
    "464603118b",
-   "352213a0ac"
+   "352213a0ac",
+   "ea09a8754c",
+   "1514b0f075",
+   "0843bbe6a1",
+   "9247df3468",
+   "93471e5952",
+   "13a2f1ca1d",
+   "a8349fbc4e",
+   "9d0deb2fe5",
+   "e158e32839",
+   "61695f41b1",
+   "87a2cca5aa"
   ],
   "nuevos_desde": {
    "429f8ea87c": "2026-11-07T13:02-03:00",
@@ -195,22 +206,32 @@
    "7a1851cf16": "2026-11-07T20:38-03:00",
    "c62ab5b922": "2026-11-07T20:38-03:00",
    "464603118b": "2026-11-07T20:38-03:00",
-   "352213a0ac": "2026-11-07T20:38-03:00"
+   "352213a0ac": "2026-11-07T20:38-03:00",
+   "ea09a8754c": "2026-11-07T22:33-03:00",
+   "1514b0f075": "2026-11-07T22:33-03:00",
+   "0843bbe6a1": "2026-11-07T22:33-03:00",
+   "9247df3468": "2026-11-07T22:33-03:00",
+   "93471e5952": "2026-11-07T22:33-03:00",
+   "13a2f1ca1d": "2026-11-07T22:33-03:00",
+   "a8349fbc4e": "2026-11-07T22:33-03:00",
+   "9d0deb2fe5": "2026-11-07T22:33-03:00",
+   "e158e32839": "2026-11-07T22:33-03:00",
+   "61695f41b1": "2026-11-07T22:33-03:00",
+   "87a2cca5aa": "2026-11-07T22:33-03:00"
   },
   "horas_nuevos": 24,
-  "llamadas_ia": 63,
+  "llamadas_ia": 2,
   "ia_sin_cupo": false,
   "ultima_completa": "2026-11-07T20:13-03:00",
-  "modo": "completa",
-  "paginas_revisadas": 56,
-  "busquedas": 70,
-  "fuentes_fijas": 11,
-  "errores": 12,
+  "modo": "rapida",
+  "paginas_revisadas": 0,
+  "busquedas": 0,
+  "fuentes_fijas": 8,
+  "errores": 2,
   "noticias_desde": "2026-11-07",
-  "noticias_viejas_descartadas": 254,
-  "redes_vistas": 38
+  "noticias_viejas_descartadas": 0
  },
- "total": 189,
+ "total": 200,
  "eventos": [
   {
    "titulo": "Festival Internacional de Ilustración Festilus",
@@ -2412,6 +2433,36 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "“Exposición Colectiva: Colección Eulogio Rojas Durán”",
+   "categoria": "arte",
+   "fecha_inicio": "2026-11-06",
+   "fecha_fin": "2027-03-05",
+   "hora": "12:00",
+   "horario": null,
+   "lugar": "Galería de Arte Casa Tartari",
+   "direccion": null,
+   "comuna": "Concón",
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "“Exposición Colectiva: Colección Eulogio Rojas Durán” Fechas: 6 de noviembre del 2026 al 5 de marzo del 2027",
+   "imagen": "https://img.vamoh.cl/events/50cb12c9-dc66-4640-942f-86eb1c868f75.webp?v=9786c6ef",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/exposicion-colectiva-coleccion-eulogio-rojas-duran-89pj3/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/exposicion-colectiva-coleccion-eulogio-rojas-duran-89pj3/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "1514b0f075",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
    "titulo": "Noche de Rock y Metal",
    "categoria": "metal",
    "fecha_inicio": "2026-11-06",
@@ -2774,6 +2825,10 @@
     {
      "nombre": "tuu.cl",
      "url": "https://www.tuu.cl/mercaderes-de-la-ruta?ref=keai"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/mercaderes-de-la-ruta-20135"
     }
    ],
    "desde_imagen": true,
@@ -2841,6 +2896,36 @@
    "confianza": "alta",
    "origen": "ia",
    "id": "b9bde47bf1",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Wacken Metal Battle Chile - Semifinal 1",
+   "categoria": "metal",
+   "fecha_inicio": "2026-11-07",
+   "fecha_fin": null,
+   "hora": "16:00",
+   "horario": null,
+   "lugar": "Templo Crápula",
+   "direccion": null,
+   "comuna": "Concepción",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $6.000",
+   "descripcion": "WACKEN METAL BATTLE CHILE - SEMIFINAL 1 / CONCEPCIÓN Sábado 07 de noviembre del 2026 a las 16:00 🔥¡Llega la primera semifinal de Wacken Metal Battle Chile! 🔥 📢 CONCEPCIÓN ABRE SUS COMPUERTAS PARA LA GRAN BATALLA DE BANDAS❗ Los primeros 3 he",
+   "imagen": "https://img.vamoh.cl/events/492646b3-7016-49e0-bd4c-76afe590a462.webp?v=0e76965a",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/wacken-metal-battle-chile-semifinal-1-33db9/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/wacken-metal-battle-chile-semifinal-1-33db9/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "ea09a8754c",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
   },
@@ -4177,6 +4262,96 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "Fusion Shibuya en Playkingdom",
+   "categoria": "anime",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": null,
+   "hora": "18:00",
+   "horario": null,
+   "lugar": "Play Kingdom",
+   "direccion": "Gral. Holley 134, 7510035 Providencia, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Este sábado se juntan dos proyectos unidos por la música y el anime. Fusion Host Club, lleva los temas de anime a estilos como el jazz, el rock, l",
+   "imagen": "https://cdn.keai.cl/events/20037-72bdfe9e6a70f4cf25ed2dd8a2ef5770.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/fusion-shibuya-en-playkingdom-20037",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/fusion-shibuya-en-playkingdom-20037"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "13a2f1ca1d",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Muestra 07 en Casa Palacio",
+   "categoria": "metal",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": null,
+   "hora": "18:30",
+   "horario": null,
+   "lugar": "Casa Palacio",
+   "direccion": "Alameda 2133",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "MUESTRA 07 en CASA PALACIO Asakusa mon amour c678924 Falso documental Felpa Mía Klapp Motivado Narrativa Lilen Visuales: sutil metal, cristobal parra",
+   "imagen": "https://cdn.keai.cl/events/19901-974430ecd4a4e5d15d087710aca6b2cd.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/muestra-07-en-casa-palacio-19901",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/muestra-07-en-casa-palacio-19901"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "61695f41b1",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Titanes en Mibar",
+   "categoria": "metal",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": "2026-11-15",
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "MiBar",
+   "direccion": "Av. Sta. Isabel 0350, 7501422 Providencia, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "TITANES: DOS FUERZAS, UNA NOCHE, UN SOLO ESCENARIO 🔥 Santiago temblará este Sábado 14 de noviembre. Dos destructivas propuestas del metal",
+   "imagen": "https://cdn.keai.cl/events/17645-9092e21df988db35646425607b1e1050.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/titanes-en-mibar-17645",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/titanes-en-mibar-17645"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "9247df3468",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
    "titulo": "Gojira Fest",
    "categoria": "yokai",
    "fecha_inicio": "2026-11-14",
@@ -4407,6 +4582,36 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "Demon Slayer en Concierto en Universidad Mayor",
+   "categoria": "anime",
+   "fecha_inicio": "2026-11-20",
+   "fecha_fin": "2026-11-21",
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Manuel Montt 367",
+   "direccion": "Manuel Montt 367",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "🎶Consonantia les presenta un espectacular concierto tributo al anime Demon Slayer con instrumentos y voz🎶 En esta presentación, abordare",
+   "imagen": "https://cdn.keai.cl/events/20104-eabd4c152a5bab6216ec53a3ef8613b4.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/demon-slayer-en-concierto-en-universidad-mayor-20104",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/demon-slayer-en-concierto-en-universidad-mayor-20104"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "0843bbe6a1",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
    "titulo": "Pentakle en Chile",
    "categoria": "metal",
    "fecha_inicio": "2026-11-20",
@@ -4579,6 +4784,36 @@
    "confianza": "alta",
    "origen": "datos-estructurados",
    "id": "c1ccfb91de",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Nightcrawler: Tributo a Judas Priest + Cronopolis en Good Luck Pizza & Drinks",
+   "categoria": "metal",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": "2026-11-28",
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Good Luck Pizza & Drinks",
+   "direccion": "Lira 400, 8330357 Santiago, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "¡SANTIAGO, EL HEAVY METAL RETUMBA FUERTE! ¡Prepárense para una noche cargada de cuero, acero y la máxima potencia del metal! Somos NIGHTCRAWLER tributo a Judas",
+   "imagen": "https://cdn.keai.cl/events/20026-ce6d442261fce8f39946735fc22538a3.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/nightcrawler-tributo-a-judas-priest-cronopolis-en-good-luck-pizza-drinks-20026",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/nightcrawler-tributo-a-judas-priest-cronopolis-en-good-luck-pizza-drinks-20026"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "a8349fbc4e",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
   },
@@ -4762,6 +4997,36 @@
    "origen": "ticketera",
    "id": "6a9c1df7fe",
    "agregado": "2026-11-06",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Pripiat: Lanzamiento Ep Cripta en Warehousechile",
+   "categoria": "metal",
+   "fecha_inicio": "2026-11-29",
+   "fecha_fin": null,
+   "hora": "17:00",
+   "horario": null,
+   "lugar": "Warehousechile",
+   "direccion": "Condell 1786",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Una jornada de metal atmosférico, con ejemplares nacionales del doom, shoegaze, post-punk, sludge y post-hardcore, celebrando el lanzamiento del EP debut de la",
+   "imagen": "https://cdn.keai.cl/events/19725-dc813868501cdb7a12575d5222017977.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/pripiat-lanzamiento-ep-cripta-en-warehousechile-19725",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/pripiat-lanzamiento-ep-cripta-en-warehousechile-19725"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "e158e32839",
+   "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
   },
   {
@@ -5303,6 +5568,36 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "Nu Metal Sessions Live en Espacio Cousiño",
+   "categoria": "metal",
+   "fecha_inicio": "2026-12-12",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Espacio Cousiño",
+   "direccion": "P.º Matías Cousiño 166, 8320237 Santiago, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Nu Metal Sessions Live La vieja escuela y la nueva generación del aggro se reúnen en un sólo lugar. Rey Chocolate Dawan Rtumba Locotrip",
+   "imagen": "https://cdn.keai.cl/events/20062-09a28c811068b997eb9196a6aa22bf23.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/nu-metal-sessions-live-en-espacio-cousino-20062",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/nu-metal-sessions-live-en-espacio-cousino-20062"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "93471e5952",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
    "titulo": "Evento Navideño: Una navidad en el club",
    "categoria": "yokai",
    "fecha_inicio": "2026-12-12",
@@ -5329,6 +5624,36 @@
    "confianza": "media",
    "origen": "ia",
    "id": "8f02eb5cce",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Qyntral + Derringer en Mibar",
+   "categoria": "metal",
+   "fecha_inicio": "2026-12-17",
+   "fecha_fin": "2026-12-18",
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "MiBar",
+   "direccion": "Av. Sta. Isabel 0350, 7501422 Providencia, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "🔥 QYNTRAL + DERRINGER — NOCHE DE HARD ROCK EN MIBAR 🔥 Dos bandas, un mismo idioma: Hard Rock con riffs potentes, actitud y volumen. El ju",
+   "imagen": "https://cdn.keai.cl/events/20025-fcee0b5faa8c9402d226bb40c0d2857a.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/qyntral-derringer-en-mibar-20025",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/qyntral-derringer-en-mibar-20025"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "9d0deb2fe5",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
   },
@@ -5417,6 +5742,36 @@
    "confianza": "alta",
    "origen": "datos-estructurados",
    "id": "a2af6cc955",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Tributo a Within Temptation en Biker Chop",
+   "categoria": "metal",
+   "fecha_inicio": "2026-12-19",
+   "fecha_fin": "2026-12-20",
+   "hora": "22:00",
+   "horario": null,
+   "lugar": "Biker Chop",
+   "direccion": "Carlos Valdovinos 1989",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "THE SILENT FORCE- TRIBUTO A WITHIN TEMPTATION Prepárate para una noche inolvidable de metal sinfónico porque Dark Metal Queens presenta la celeb",
+   "imagen": "https://cdn.keai.cl/events/19893-b60fa9ec1d08a351fb24decbfead8a52.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/tributo-a-within-temptation-en-biker-chop-19893",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/tributo-a-within-temptation-en-biker-chop-19893"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "87a2cca5aa",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
   },
