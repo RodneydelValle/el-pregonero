@@ -48,6 +48,38 @@
  ],
  "tiendas": [
   {
+   "id": "addiction-model",
+   "nombre": "Addiction Model",
+   "categorias": [
+    "tcg",
+    "anime"
+   ],
+   "direccion": "San Ignacio de Loyola 75, local 32",
+   "comuna": "Santiago",
+   "descripcion": "Tienda de model kits y figuras (Bandai, Kotobukiya, Good Smile Company) y de TCG (One Piece, Gundam, Digimon, Dragon Ball, Pokémon, Magic, Riftbound) con ligas semanales.",
+   "torneos": "Según torneostcg.cl: martes Digimon; miércoles One Piece y Commander; jueves Pokémon, Digimon y Gundam (19:00-19:20); sábado One Piece (12:00) y Gundam (14:00). Prerelease de Delta Reign el 30-10-2026 y League Challenge de Pokémon el 12-11-2026.",
+   "espacio_juego": true,
+   "venta_online": true,
+   "horario": null,
+   "web": "https://addictionmodel.cl/",
+   "instagram": "https://www.instagram.com/addictionmodelcl",
+   "lat_propuesta": -33.4467058,
+   "lng_propuesta": -70.6573168,
+   "fuente_propuesta": "OpenStreetMap (Nominatim): interpolación de San Ignacio de Loyola 75 (vía 112503595), coherente con los números 69 y 81 mapeados en la misma cuadra.",
+   "fotos": [],
+   "evidencia": "Su web (© 2026) vendió cupos para el prerelease de Pokémon Delta Reign del 30-10-2026 en 'San Ignacio de Loyola 75, Local 32, Metro Moneda' (ficha subida el 30-9-2026). torneostcg.cl lista su League Challenge de Pokémon del 12-11-2026, tomado de Play! Pokémon. No publica horario de atención. Corrección: no hay evidencia de miniaturas de wargame; sus model kits caben en 'anime'.",
+   "fuentes": [
+    "https://addictionmodel.cl/",
+    "https://addictionmodel.cl/contacto/",
+    "https://addictionmodel.cl/eventos/",
+    "https://addictionmodel.cl/productos/prerelease-pokemon-tcg-delta-reign-30-de-octubre-kft2n/",
+    "https://www.torneostcg.cl/",
+    "https://nominatim.openstreetmap.org/search?street=75+San+Ignacio+de+Loyola&city=Santiago&countrycodes=cl",
+    "https://www.openstreetmap.org/way/112503595",
+    "https://torneostcg.cl/"
+   ]
+  },
+  {
    "id": "area-52",
    "nombre": "Area 52",
    "categorias": [
@@ -267,6 +299,36 @@
    "coordenadas_fuente": "OpenStreetMap (Overpass): edificio «Galería de La Merced», way 448738333, centro del polígono. Marca la galería, no el local 22. OSM le asigna Huérfanos 669 en vez de 635, y el acceso por Miraflores pasa por el edificio vecino «Edificio La Merced» (Huérfanos 645), que está a menos de 100 m."
   },
   {
+   "id": "crows",
+   "nombre": "Crows",
+   "categorias": [
+    "tcg",
+    "anime"
+   ],
+   "direccion": "Galería Casa Colorada, Merced 832, local 72, 3.er piso",
+   "comuna": "Santiago",
+   "descripcion": "Tienda de TCG en la Galería Casa Colorada: cartas y accesorios de Pokémon, One Piece, Gundam, Hololive y Dragon Ball; vende manga en su web y hace torneos casi a diario, también de Riftbound.",
+   "torneos": "Según torneostcg.cl: Gundam lun 19:00 y sáb 19:00; One Piece mar y jue 19:00, vie 17:00 y sáb 12:00; Riftbound y Hololive mié 19:00 y sáb (15:30 y 18:00); Pokémon y Dragon Ball Fusion World vie 19:00. Su web vende cupos para League Challenges de Pokémon y eventos especiales.",
+   "espacio_juego": true,
+   "venta_online": true,
+   "horario": null,
+   "web": "https://crows.cl/",
+   "instagram": "https://www.instagram.com/crowscl/",
+   "en": "galeria-casa-colorada",
+   "fotos": [],
+   "evidencia": "Confirmada. Su web vende en 2026 cupos para torneos en 'Galería Casa Colorada – Merced 832, local 72 3er piso'. Entre ellos está el League Challenge de Pokémon del viernes 23-10-2026, publicado el 12-10-2026, y hay otros de enero, febrero, marzo, abril y septiembre de 2026. El 5-11-2026 publicó torneos de Gundam y Hololive para el sábado 7-11-2026. torneostcg.cl (consultado el 7-11-2026) la lista en la misma dirección, con torneos de lunes a sábado. Ojo: las páginas de envíos y de preguntas frecuentes son de 2021 (hablan de entregas en Metro Plaza Maipú) y no publica horario de atención. No encontré noticias de cierre. Va sin coordenadas porque Merced 832 no está en OpenStreetMap, la tienda no tiene mapa incrustado y torneostcg solo enlaza a Google Maps.",
+   "fuentes": [
+    "https://crows.cl/",
+    "https://crows.cl/entregas-y-envios/",
+    "https://crows.cl/preguntas-frecuentes/",
+    "https://crows.cl/wp-json/wp/v2/product?per_page=15&orderby=date&order=desc",
+    "https://crows.cl/wp-json/wp/v2/product?include=6747,6745,6743,6721,6691",
+    "https://crows.cl/wp-json/wp/v2/search?search=local%2072",
+    "https://www.torneostcg.cl/",
+    "https://overpass-api.de/api/interpreter (direcciones de calle Merced, sin el 832)"
+   ]
+  },
+  {
    "id": "customzero101",
    "nombre": "Customzero101",
    "categorias": [
@@ -310,6 +372,32 @@
    "lat": -33.421264,
    "lng": -70.609911,
    "coordenadas_fuente": "la de Centro Comercial Dos Caracoles"
+  },
+  {
+   "id": "deck-kingdom",
+   "nombre": "Deck Kingdom",
+   "categorias": [
+    "tcg"
+   ],
+   "direccion": "Galería Casa Colorada, Merced 832, local 78",
+   "comuna": "Santiago",
+   "descripcion": "Tienda de TCG (Pokémon, One Piece, Riftbound, Gundam y Dragon Ball) con preventas, accesorios Top Deck y torneos semanales. Tiene otro local en Paseo San Agustín (San Antonio 140, local 91).",
+   "torneos": "Según torneostcg.cl: Pokémon casual de lunes a viernes 16:30, Liga ETB martes y jueves 19:00 y torneo ETB sábado 17:00; One Piece lunes 19:00 y miércoles 19:10; Riftbound viernes 19:00 y domingo 12:00 (gratis); Gundam domingo 14:30. League Cup de Pokémon el domingo 8-11-2026 a las 09:00.",
+   "espacio_juego": true,
+   "venta_online": true,
+   "horario": "Lunes a viernes 15:30-21:30; sábados y domingos figuran como 'coming soon' (sin horario publicado)",
+   "web": "https://deckkingdom.cl/",
+   "instagram": "https://www.instagram.com/deck.kingdom/",
+   "en": "galeria-casa-colorada",
+   "fotos": [],
+   "evidencia": "Su web (consultada el 7-11-2026) publica el local 78 de la Galería Casa Colorada con horario, y vende productos de Pokémon cuyas imágenes se subieron en 2026 (Delta Reign, el 12-10-2026). torneostcg.cl lista su League Cup del 8-11-2026, tomada del registro de Play! Pokémon, y ligas semanales en ese local. Matices: la web dice que los fines de semana están 'coming soon', aunque torneostcg anuncia torneos el sábado y el domingo; el Instagram que enlaza su web es deck.kingdom, no deck_kingdom. No se hallaron noticias de cierre ni traslado.",
+   "fuentes": [
+    "https://www.deckkingdom.cl/",
+    "https://www.deckkingdom.cl/pages/contact",
+    "https://www.torneostcg.cl/",
+    "https://www.openstreetmap.org/way/112603613",
+    "https://deckkingdom.cl/"
+   ]
   },
   {
    "id": "demente-games",
@@ -467,6 +555,32 @@
    "coordenadas_fuente": "Enlace de mapa en el HTML de juegosenroque.cl (botón «¡Visítanos!»: !3d-33.4509965!4d-70.6239546). Coincide con la numeración de Av. Italia en OSM (1771–1791 en esa cuadra, lado Ñuñoa)"
   },
   {
+   "id": "fenix-card-store",
+   "nombre": "Fenix Card Store",
+   "categorias": [
+    "tcg"
+   ],
+   "direccion": "Galería Casa Colorada, Merced 832, local 100, 4.º piso",
+   "comuna": "Santiago",
+   "descripcion": "Tienda de cartas coleccionables en el piso 4 de la Galería Casa Colorada, con torneos de Pokémon, One Piece, Gundam y Riftbound varias tardes a la semana.",
+   "torneos": "Según torneostcg.cl: Riftbound los lunes a las 19:00 (Nexus Night); Pokémon martes y jueves a las 19:30; Gundam martes (gratis) y jueves a las 19:15; One Piece de miércoles a viernes a las 19:15. Pokémon League Challenge el domingo 15-11-2026 a las 10:30.",
+   "espacio_juego": true,
+   "venta_online": null,
+   "horario": null,
+   "web": "https://fenixcardstore.cl/",
+   "instagram": null,
+   "en": "galeria-casa-colorada",
+   "fotos": [],
+   "evidencia": "Confirmada. torneostcg.cl (consultado el 7-11-2026) da la dirección Merced 832, local 100, piso 4, su calendario semanal de torneos y un Pokémon League Challenge el 15-11-2026. Ese evento sale del listado oficial de Play! Pokémon consultado el 21-9-2026. calendariochile.com registra además un torneo casual de One Piece el 10-7-2026 en 'Merced 832, Loc 100'. No pude revisar fenixcardstore.cl: el filtro de la red de la oficina lo bloquea como 'dominio nuevo' y WebFetch falla por el certificado. Por eso dejo vacíos el horario y el Instagram (torneostcg.cl indica @fenixcardstore) y no confirmé la venta online. Tampoco aparece en la lista de LOS40 del Trading Fest 2026. No encontré noticias de cierre ni de traslado.",
+   "fuentes": [
+    "https://torneostcg.cl/",
+    "https://www.calendariochile.com/evento/santiago/one-piece-tcg-torneo-casual-10-07-2026-6ndun",
+    "https://los40.cl/2026/07/27/trading-fest-chile-2026-conoce-las-mas-de-50-tiendas-confirmadas-para-la-gran-cita-del-tcg/",
+    "https://www.openstreetmap.org/way/112603613",
+    "https://fenixcardstore.cl/"
+   ]
+  },
+  {
    "id": "figuras-dbz-chile",
    "nombre": "Figuras DBZ Chile",
    "categorias": [
@@ -510,6 +624,48 @@
    "lat": -33.441327,
    "lng": -70.648621,
    "coordenadas_fuente": "OpenStreetMap, way 157650809 'Paseo San Agustín' (shop=mall). Es el centro del edificio de la galería, que da a San Antonio y a Moneda; el local 73 no está mapeado. El mapa de la web de la tienda solo apunta al 'metro U. de Chile'."
+  },
+  {
+   "id": "galeria-casa-colorada",
+   "nombre": "Galería Casa Colorada",
+   "categorias": [
+    "tcg",
+    "mesa",
+    "anime"
+   ],
+   "direccion": "Merced 832 (metro Plaza de Armas)",
+   "comuna": "Santiago",
+   "descripcion": "Galería que reúne tiendas de cartas: Onplay Games (local 54), Crows (72), Deck Kingdom (78), Oops (96) y Fenix Card Store (100), más Ikigai Bazar (75), con katanas y artículos de anime.",
+   "torneos": "Torneos casi todos los días en sus tiendas: Pokémon, One Piece, Magic, Riftbound, Gundam, Digimon, Dragon Ball FW, Hololive y Flesh and Blood. Eventos Pokémon oficiales: Challenge de Onplay (7-11), Cup de Onplay, Deck Kingdom y Oops (8-11) y Challenge de Fenix (15-11-2026).",
+   "espacio_juego": true,
+   "venta_online": true,
+   "horario": "Varía por tienda: Deck Kingdom (local 78) atiende de lunes a viernes de 15:30 a 21:30; Onplay (local 54) atiende de lunes a sábado, sin horas publicadas.",
+   "web": "https://onplaygames.cl/ · https://deckkingdom.cl/ · https://www.tiendaoops.cl/ · https://crows.cl/ · https://fenixcardstore.cl/",
+   "instagram": "https://www.instagram.com/onplay.games · https://www.instagram.com/deck_kingdom · https://www.instagram.com/tienda.oops · https://www.instagram.com/crowscl · https://www.instagram.com/fenixcardstore/",
+   "es_galeria": true,
+   "lat_propuesta": -33.4383568,
+   "lng_propuesta": -70.6488025,
+   "fuente_propuesta": "OpenStreetMap (Nominatim): interpolación de la numeración par de Merced entre los nodos de dirección 800 y 858 (way 112603613). Es una posición aproximada (±30 m), sin mapa incrustado en los sitios de las tiendas.",
+   "fotos": [
+    {
+     "url": "https://onplay.cl/wp-content/themes/onplay/assets/img/tienda-frontis.jpg",
+     "mini": null,
+     "pagina": "https://onplay.cl/contacto/",
+     "credito": "Foto: onplay.cl",
+     "descripcion": "Pasillo interior de la Galería Casa Colorada. A la izquierda, la vitrina de Onplay Games (local 54) con su letrero de One Piece, Pokémon y Magic. A la derecha sigue el pasillo de baldosas con otros locales de vitrina de vidrio, y a través del vidrio se ve el vacío central del edificio con barandas."
+    }
+   ],
+   "evidencia": "Confirmada. torneostcg.cl (consultado el 7-11-2026) lista torneos semanales en Merced 832 y eventos Pokémon oficiales de sus tiendas este mes: Onplay el 7 y 8-11, Deck Kingdom y Oops el 8-11 (Oops también tiene la final de su liga Riftbound el 7-11) y Fenix el 15-11. Onplay, Deck Kingdom y Oops publican esa dirección en sus propios sitios (© 2026). La Nación (5-2-2026) ubica a Ikigai Bazar en el local 75. Ojo: Crows aparece en el local 72 solo según torneostcg.cl, porque su web no da dirección física y dice 'envíos desde Maipú'. La galería no tiene web ni Instagram propios: los de cada tienda van en sus fichas. No encontré noticias de cierre.",
+   "fuentes": [
+    "https://torneostcg.cl/",
+    "https://onplaygames.cl/",
+    "https://deckkingdom.cl/",
+    "https://www.tiendaoops.cl/",
+    "https://crows.cl/",
+    "https://ikigaibazar.cl/",
+    "https://www.lanacion.cl/que-hacer-en-santiago-lugares-para-comprar-objetos-japoneses-y-decorativos/",
+    "https://los40.cl/2026/07/27/trading-fest-chile-2026-conoce-las-mas-de-50-tiendas-confirmadas-para-la-gran-cita-del-tcg/"
+   ]
   },
   {
    "id": "galeria-eurocentro",
@@ -616,6 +772,513 @@
    "lat": -33.421912,
    "lng": -70.609286,
    "coordenadas_fuente": "OpenStreetMap: punto medio de la vía peatonal techada 'Paseo Las Palmas' (way 1174039035), consultada en la API oficial de OSM"
+  },
+  {
+   "id": "gameclub-plaza-norte",
+   "nombre": "GameClub (Mallplaza Norte)",
+   "categorias": [
+    "videojuegos",
+    "tcg"
+   ],
+   "direccion": "Mallplaza Norte, Av. Américo Vespucio 1737, nivel 2, local P2302",
+   "comuna": "Huechuraba",
+   "descripcion": "Centros gamer con zona PC, consolas PlayStation y Nintendo, sim racing, VR y salas pro; venden PC gamer, periféricos, figuras y juegos de mesa. Vespucio es su arena de 1.000 m².",
+   "torneos": "Pokéclub de Pokémon TCG (suizo, $6.000) los domingos 17:00-20:00; League Challenge de Pokémon el dom 15-11-2026 a las 15:00 ($8.000). Además, Madrugaming (noche de juego 21:00-09:00) el 20 y 27-11-2026.",
+   "espacio_juego": true,
+   "venta_online": true,
+   "horario": "Lunes a jueves 10:30-21:00; viernes, sábado y domingo 10:30-21:30",
+   "web": "https://www.gameclub.cl/",
+   "instagram": "https://www.instagram.com/movistargameclub/",
+   "lat_propuesta": -33.3655635,
+   "lng_propuesta": -70.6794033,
+   "fuente_propuesta": "OpenStreetMap: nodo 'Movistar Game Club' en Mall Plaza Norte (node 13302541790); el sitio de Mallplaza da -33.3649, -70.6793 para el mall. Las coordenadas de la tienda online de GameClub (-33.3913, -70.5959) están mal: caen en Vitacura",
+   "fotos": [
+    {
+     "url": "https://nexoplay.com/wp-content/uploads/2024/11/movistar-gameclub-2.jpg",
+     "mini": null,
+     "pagina": "https://nexoplay.com/movistar-gameclub-inaugura-un-espacio-gamer-unico-en-mallplaza-norte/",
+     "credito": "Foto: Nexoplay",
+     "descripcion": "Zona de PC del club, vista desde arriba: filas de puestos con notebooks OMEN, monitores, teclados iluminados y sillas gamer Cougar negras. Al fondo hay un gran mural naranja con los textos 'OMEN Playground' y 'AMD Ryzen' y personajes de videojuegos. Los puestos están vacíos."
+    },
+    {
+     "url": "https://www.alertageekchile.cl/wp-content/uploads/2024/11/MGC-Mallplaza-norte.jpeg",
+     "mini": null,
+     "pagina": "https://www.alertageekchile.cl/2024/11/22/movistar-gameclub-estrena-su-quinto-club-local-en-mallplaza-norte/",
+     "credito": "Foto: Alerta Geek",
+     "descripcion": "Zona de consolas del club, con luz tenue: puestos numerados (01, 03, 05) con televisores sobre muebles negros iluminados por debajo y un gran sofá gris en primer plano. Las paredes son de policarbonato translúcido y al fondo hay un letrero de neón."
+    },
+    {
+     "url": "https://img2-levelup.buscafs.com/881252/881252.jpg",
+     "mini": null,
+     "pagina": "https://www.tarreo.com/noticias/811812/Movistar-GameClub-el-centro-de-entretencion-gamer-mas-grande-de-Chile-abre-nueva-sucursal-en-Santiago-450-metros-cuadrados-con-zonas-PC-PlayStation-5-y-servicio-tecnico-gaming/",
+     "credito": "Foto: Tarreo",
+     "descripcion": "Vista amplia del club el día de su apertura. En primer plano hay puestos de PC con notebooks OMEN, monitores y sillas Cougar. Más atrás se ven el mural 'OMEN Playground', pantallas en las paredes, la tienda con estanterías de productos y adultos recorriendo el lugar bajo luces de neón."
+    }
+   ],
+   "evidencia": "gameclub.cl vende cupos para el League Challenge del 15-11-2026, los Pokéclub del 22 y 29-11-2026 y Madrugaming del 20 y 27-11-2026 en Mallplaza Norte, local P2302. El directorio de Mallplaza Norte (actualizado el 6-11-2026) lo da como 'Abierto' en el nivel 2, junto a Johnny Rockets. movistargameclub.cl redirige a gameclub.cl. Sin noticias de cierre.",
+   "fuentes": [
+    "https://www.gameclub.cl/club-mallplaza-norte-1",
+    "https://www.gameclub.cl/torneos-pokeclub-norte",
+    "https://www.gameclub.cl/torneos-pokeclub-league-norte",
+    "https://www.gameclub.cl/madrugaming-ft-jugabet-norte-4sep",
+    "https://www.gameclub.cl/eventos",
+    "https://www.gameclub.cl/tcg",
+    "https://www.gameclub.cl/",
+    "https://www.mallplaza.com/cl/norte/tiendas"
+   ]
+  },
+  {
+   "id": "gameclub-vespucio",
+   "nombre": "GameClub (Mallplaza Vespucio)",
+   "categorias": [
+    "videojuegos",
+    "tcg",
+    "mesa",
+    "anime"
+   ],
+   "direccion": "Mallplaza Vespucio, Av. Vicuña Mackenna 7110, local BA-249B, nivel 2, sector Aires",
+   "comuna": "La Florida",
+   "descripcion": "Centros gamer con zona PC, consolas PlayStation y Nintendo, sim racing, VR y salas pro; venden PC gamer, periféricos, figuras y juegos de mesa. Vespucio es su arena de 1.000 m².",
+   "torneos": "Torneos Pokéclub de Pokémon TCG los viernes 19:00-21:00 ($6.000, suizo, 32 cupos) y League Challenge el domingo 22-11-2026 a las 12:00 ($8.000). Además Madrugaming (13 y 27-11, de 21:00 a 09:00) y Community Clash de Just Dance gratis los miércoles 16:00-20:00.",
+   "espacio_juego": true,
+   "venta_online": true,
+   "horario": "Lunes a jueves 10:30-21:00; viernes, sábado y domingo 10:30-22:00",
+   "web": "https://www.gameclub.cl/",
+   "instagram": "https://www.instagram.com/movistargameclub/",
+   "lat_propuesta": -33.5176755,
+   "lng_propuesta": -70.5997894,
+   "fuente_propuesta": "OpenStreetMap: nodo 'Movistar Game Club' (node 12050191139, shop=video_games) dentro de Mall Plaza Vespucio",
+   "fotos": [
+    {
+     "url": "https://img.entnerd.com/upload/2022/05/17161D564C43416D171E7B55554947701F161F4F51434E70155A1D5C5446-2000x1125.jpg",
+     "mini": null,
+     "pagina": "https://www.entnerd.com/paraiso-gamer-abren-centro-de-entretencion-mas-grande-de-chile/",
+     "credito": "Foto: EntrepreNerd",
+     "descripcion": "Entrada del club en Mallplaza Vespucio con el letrero luminoso «Movistar GameClub», nombre que tenía al abrir en mayo de 2022. Bajo el letrero hay gente con mascarilla haciendo fila y, a la derecha, se ve la vidriera de la zona de computadores «Omen Academy»."
+    },
+    {
+     "url": "https://static2.pisapapeles.net/uploads/2022/05/IMG_20220526_110016-1024x768.jpg",
+     "mini": null,
+     "pagina": "https://pisapapeles.net/movistar-gameclub-llega-a-lo-grande-al-mall-plaza-vespucio/",
+     "credito": "Foto: Pisapapeles",
+     "descripcion": "Zona de computadores «Omen Academy» sin gente: filas de PC gamer con teclados iluminados y sillas negras con rojo, frente a un muro blanco con los logos de Intel y OMEN y el lema «Sube tu nivel de juego»."
+    },
+    {
+     "url": "https://static2.pisapapeles.net/uploads/2022/05/Movistar-GameClub-foto-6-1024x768.jpg",
+     "mini": null,
+     "pagina": "https://pisapapeles.net/movistar-gameclub-llega-a-lo-grande-al-mall-plaza-vespucio/",
+     "credito": "Foto: Pisapapeles",
+     "descripcion": "Zona PlayStation: sillones gamer negros con azul frente a pantallas con consolas PS5. Al fondo hay un letrero iluminado «PlayStation» y algunos visitantes adultos, y del techo cuelga un gran marco de luz con los símbolos de PlayStation."
+    }
+   ],
+   "evidencia": "La página del club (consultada el 7-11-2026) da dirección y horario, y su tienda vende inscripciones fechadas en Vespucio: Pokéclub los viernes 13, 20 y 27-11-2026, League Challenge el 22-11-2026, Madrugaming el 13 y el 27-11 y Just Dance el 11, 18 y 25-11. El directorio de Mallplaza Vespucio lista 'Movistar GameClub' como abierto (nivel 2, sector Aires). Corrige al candidato: el League Challenge es el 22-11 según su web (torneostcg.cl dice 15-11) y su web no enlaza Instagram. Algunas fichas citan el local como 249-a.",
+   "fuentes": [
+    "https://www.gameclub.cl/club-mallplaza-vespucio-1",
+    "https://www.gameclub.cl/eventos",
+    "https://www.gameclub.cl/tcg",
+    "https://www.gameclub.cl/torneos-pokeclub-vespucio",
+    "https://www.gameclub.cl/torneos-pokeclub-league-vespucio",
+    "https://www.gameclub.cl/madrugaming-ft-jugabet-vespucio",
+    "https://www.gameclub.cl/community-clash-just-dance-vsp",
+    "https://www.gameclub.cl/contact"
+   ]
+  },
+  {
+   "id": "geekz-costanera",
+   "nombre": "Geekz (Cenco Costanera)",
+   "categorias": [
+    "anime",
+    "tcg",
+    "videojuegos",
+    "mesa"
+   ],
+   "direccion": "Cenco Costanera (Av. Andrés Bello 2425), planta baja, local 260",
+   "comuna": "Providencia",
+   "descripcion": "Cadena que se presenta como tienda oficial de Tamashii Nations y Bandai Hobby en Chile: figuras, model kits, TCG, videojuegos, cómics, manga y juegos de mesa en siete malls de Santiago.",
+   "torneos": "Sin liga semanal publicada. Eventos puntuales en el local: League Challenge de Pokémon (5-9 y 24-10-2026), prelanzamiento de Delta Reign (7-11-2026) y talleres de maquetismo (Gundam, Dragon Ball y Dino; el próximo, el 8-11-2026).",
+   "espacio_juego": true,
+   "venta_online": true,
+   "horario": "Domingo a jueves 10:00-20:30; viernes y sábado 10:00-21:00",
+   "web": "https://www.geekz.cl/",
+   "instagram": "https://www.instagram.com/geekz.cl/",
+   "buscar_osm": "Cenco Costanera",
+   "lat_propuesta": -33.41744167,
+   "lng_propuesta": -70.6057,
+   "fuente_propuesta": "Wikidata Q5990609 (Cenco Costanera). Son las coordenadas del mall, no las del local.",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Mall_Costanera_Center%2C_Providencia%2C_Santiago_20230423.jpg/960px-Mall_Costanera_Center%2C_Providencia%2C_Santiago_20230423.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Mall_Costanera_Center%2C_Providencia%2C_Santiago_20230423.jpg/330px-Mall_Costanera_Center%2C_Providencia%2C_Santiago_20230423.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Mall_Costanera_Center,_Providencia,_Santiago_20230423.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Edificio del mall Costanera Center (hoy Cenco Costanera) visto desde la calle. Se ve un bloque de varios pisos con fachada de vidrio y, a la derecha, un volumen blanco con el letrero verde de Jumbo y una pantalla publicitaria. Detrás aparece la base de la Gran Torre Santiago. En primer plano hay un cruce con semáforos, autos y peatones, bajo un cielo despejado."
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Mall_Costanera_Center%2C_Providencia%2C_Santiago_20200314_01.jpg/960px-Mall_Costanera_Center%2C_Providencia%2C_Santiago_20200314_01.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Mall_Costanera_Center%2C_Providencia%2C_Santiago_20200314_01.jpg/330px-Mall_Costanera_Center%2C_Providencia%2C_Santiago_20200314_01.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Mall_Costanera_Center,_Providencia,_Santiago_20200314_01.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Interior del mall Costanera Center visto desde un piso alto. Dos palmeras muy altas atraviesan los niveles. Abajo hay un patio de comidas con mesas, gente almorzando y una pileta iluminada, y alrededor se ven vitrinas de tiendas en tres pisos. La foto es vertical."
+    }
+   ],
+   "evidencia": "El calendario de Geekz sitúa en 'Mall Costanera Center Local 260' un League Challenge de Pokémon (24-10-2026, con cupos agotados), el prelanzamiento de Delta Reign (7-11-2026) y el Taller Dino (8-11-2026). El directorio de Cenco Malls la lista en el nivel PB (consultado el 7-11-2026). Corrección: el dato de Pokémon los domingos a las 12:30 que traía la propuesta es de Mallplaza Oeste, no de esta sucursal.",
+   "fuentes": [
+    "https://www.geekz.cl/tiendas",
+    "https://www.geekz.cl/events",
+    "https://www.geekz.cl/event?date=old",
+    "https://www.geekz.cl/event/cenco-costanera-league-challenge-pokemon-tcg-2026-10-24-1161/register",
+    "https://www.geekz.cl/event/cenco-costanera-prelanzamiento-delta-reign-2026-11-07-1163/register",
+    "https://www.geekz.cl/event/taller-dino-cenco-mall-2026-11-08-1180/register",
+    "https://www.cencomalls.cl/costanera/tiendas/geekz",
+    "https://geekz.cl/preguntas-frecuentes"
+   ]
+  },
+  {
+   "id": "geekz-barrio-independencia",
+   "nombre": "Geekz (Mall Barrio Independencia)",
+   "categorias": [
+    "anime",
+    "tcg",
+    "videojuegos",
+    "mesa"
+   ],
+   "direccion": "Mall Barrio Independencia, Av. Independencia 565, piso 1, local MT-105 (TM 105)",
+   "comuna": "Independencia",
+   "descripcion": "Cadena que se presenta como tienda oficial de Tamashii Nations y Bandai Hobby en Chile: figuras, model kits, TCG, videojuegos, cómics, manga y juegos de mesa en siete malls de Santiago.",
+   "torneos": "Sin torneos publicados para esta sucursal; el dom 8-11-2026 a las 17:00 hace un Taller Dino ($3.000, 12 cupos). Las ligas de Geekz (Pokémon dom 12:30, Mitos y Leyendas) son en Mallplaza Oeste.",
+   "espacio_juego": null,
+   "venta_online": true,
+   "horario": "Lunes a jueves 10:00-20:00; viernes y sábado 10:00-20:30; domingo 10:00-19:30",
+   "web": "https://www.geekz.cl/",
+   "instagram": "https://www.instagram.com/geekz.cl/",
+   "buscar_osm": "Mall Barrio Independencia",
+   "lat_propuesta": -33.4246863,
+   "lng_propuesta": -70.654728,
+   "fuente_propuesta": "Mapa de Google incrustado en geekz.cl/tiendas para Mall Barrio Independencia (!3d/!2d, leído del HTML); OpenStreetMap ubica el mall (way 539467381) a unos 100 m",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Mall_Barrio_Independencia%2C_Independencia%2C_Santiago_20220529.jpg/960px-Mall_Barrio_Independencia%2C_Independencia%2C_Santiago_20220529.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Mall_Barrio_Independencia%2C_Independencia%2C_Santiago_20220529.jpg/330px-Mall_Barrio_Independencia%2C_Independencia%2C_Santiago_20220529.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Mall_Barrio_Independencia,_Independencia,_Santiago_20220529.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Edificio de vidrio del Mall Barrio Independencia, con su letrero en lo alto y los logos de Jumbo y Paris, entre otros. Al frente, sobre la avenida, está el muro de ladrillo con reja de la antigua cervecería, con peatones en la vereda y el cielo despejado."
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Cervecer%C3%ADa_Ebner%2C_Independencia%2C_Santiago_20220529_01.jpg/960px-Cervecer%C3%ADa_Ebner%2C_Independencia%2C_Santiago_20220529_01.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Cervecer%C3%ADa_Ebner%2C_Independencia%2C_Santiago_20220529_01.jpg/330px-Cervecer%C3%ADa_Ebner%2C_Independencia%2C_Santiago_20220529_01.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Cervecer%C3%ADa_Ebner,_Independencia,_Santiago_20220529_01.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Fachada patrimonial de la antigua Cervecería Ebner, de ladrillo y estuco con un torreón en la esquina, a lo largo de la Av. Independencia. Detrás asoma un cubo de vidrio con el logo de H&M y, al fondo a la derecha, el edificio del Mall Barrio Independencia con su letrero y los logos de Jumbo y Paris."
+    }
+   ],
+   "evidencia": "La web de Geekz vende cupos para el 'Taller Dino Mall Barrio Independencia' del 8-11-2026 con lugar en Av. Independencia 565, piso 1, local TM 105, y mantiene la sucursal en su lista de tiendas con horario y retiro en tienda. El directorio del mall, que se actualiza en 2026, aún lista GEEKZ (local TM 105, nivel 1). Sin noticias de cierre.",
+   "fuentes": [
+    "https://www.geekz.cl/tiendas",
+    "https://www.geekz.cl/events",
+    "https://www.geekz.cl/event/page/2?date=all&type=all&country=all",
+    "https://www.geekz.cl/event/taller-dino-mall-barrio-independencia-2026-11-08-1181/register",
+    "https://geekz.cl/preguntas-frecuentes",
+    "https://geekz.cl/politicas-de-despacho",
+    "https://www.geekz.cl/shop/category/juegos-de-mesa-tablero-35",
+    "https://www.mallbarrioindependencia.cl/tienda/geekz/"
+   ]
+  },
+  {
+   "id": "geekz-vivo-imperio",
+   "nombre": "Geekz (Mall Vivo Imperio)",
+   "categorias": [
+    "anime",
+    "tcg",
+    "videojuegos",
+    "mesa"
+   ],
+   "direccion": "Mall Vivo Imperio (Huérfanos 830), primer piso, local 4D",
+   "comuna": "Santiago",
+   "descripcion": "Cadena que se presenta como tienda oficial de Tamashii Nations y Bandai Hobby en Chile: figuras, model kits, TCG, videojuegos, cómics, manga y juegos de mesa en siete malls de Santiago.",
+   "torneos": "Eventos presenciales en tienda, como el prelanzamiento de Pokémon Delta Reign y la Liga Mitos y Leyendas PB en Mallplaza Oeste y talleres en Cenco Costanera (8-11-2026). Según torneostcg.cl, en Mallplaza Oeste hay Pokémon los domingos a las 12:30.",
+   "espacio_juego": null,
+   "venta_online": true,
+   "horario": "Lunes a domingo de 10:00 a 20:00",
+   "web": "https://www.geekz.cl/",
+   "instagram": "https://www.instagram.com/geekz.cl/",
+   "buscar_osm": "Mall Vivo Imperio",
+   "lat_propuesta": -33.4395242,
+   "lng_propuesta": -70.648671,
+   "fuente_propuesta": "Mapa de Google incrustado en https://www.geekz.cl/tiendas para 'Mall Vivo Imperio' (!3d-33.4395242!2d-70.648671). Coincide a unos 40 m con el edificio del mall en OpenStreetMap (way 542958817).",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Vivo_Imperio%2C_Santiago_20230414.jpg/960px-Vivo_Imperio%2C_Santiago_20230414.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Vivo_Imperio%2C_Santiago_20230414.jpg/330px-Vivo_Imperio%2C_Santiago_20230414.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Vivo_Imperio,_Santiago_20230414.jpg",
+     "credito": "Foto: Carlos yo · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Acceso principal del Mall Vivo Imperio en el Paseo Huérfanos: fachada de piedra blanca con celosías oscuras y el letrero «VIVO Imperio» sobre la entrada. En el hall hay un gran cartel «Hola!» y al fondo se ve la tienda H&M. En el paseo caminan peatones adultos y pasa un repartidor en bicicleta."
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Vivo_Imperio%2C_Santiago_20220627.jpg/960px-Vivo_Imperio%2C_Santiago_20220627.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Vivo_Imperio%2C_Santiago_20220627.jpg/330px-Vivo_Imperio%2C_Santiago_20220627.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Vivo_Imperio,_Santiago_20220627.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Otro acceso del Mall Vivo Imperio, desde una calle con tránsito: portal negro con el logo «VIVO Imperio» y luces lineales doradas. Al fondo se ve el pasillo iluminado con locales y algunas personas."
+    }
+   ],
+   "evidencia": "Confirmada, aunque sin eventos propios. La página de tiendas de geekz.cl (consultada el 7-11-2026) lista 'Mall Vivo Imperio, primer piso, local 4D, lunes a domingo 10:00 a 20:00' con su mapa, y la sección de preguntas frecuentes la cuenta entre sus 10 sucursales con retiro en tienda. El directorio de vivoimperio.cl, que se editó durante 2026 (la última vez el 27-10-2026), mantiene a Geekz en el nivel 1; esa ficha se creó el 21-10-2025. El horario coincide con el de las tiendas del mall. El pie de página de geekz.cl dice 'Piso -1', pero las otras dos fuentes dicen primer piso. Corrijo dos cosas de la propuesta. Primero, de unos 450 eventos de Geekz entre noviembre de 2025 y noviembre de 2026 ninguno fue en esta sucursal: los torneos citados eran de Mallplaza Oeste y Costanera, así que dejo 'torneos' vacío. Segundo, quité 'miniaturas', porque su catálogo no muestra miniaturas de wargame (los model kits van en anime).",
+   "fuentes": [
+    "https://www.geekz.cl/tiendas",
+    "https://geekz.cl/preguntas-frecuentes",
+    "https://www.geekz.cl/events",
+    "https://www.geekz.cl/event?date=old&type=all&country=all",
+    "https://vivoimperio.cl/",
+    "https://vivoimperio.cl/tiendas/",
+    "https://vivoimperio.cl/wp-json/wp/v2/tienda/177",
+    "https://www.openstreetmap.org/way/542958817"
+   ]
+  },
+  {
+   "id": "geekz-plaza-egana",
+   "nombre": "Geekz (Mallplaza Egaña)",
+   "categorias": [
+    "anime",
+    "tcg",
+    "videojuegos",
+    "mesa"
+   ],
+   "direccion": "Mall Plaza Egaña, tercer piso, local A-3036 (pasillo Ripley, según el mall)",
+   "comuna": "La Reina",
+   "descripcion": "Cadena que se presenta como tienda oficial de Tamashii Nations y Bandai Hobby en Chile: figuras, model kits, TCG, videojuegos, cómics, manga y juegos de mesa en siete malls de Santiago.",
+   "torneos": "Eventos presenciales en tienda, como el prelanzamiento de Pokémon Delta Reign y la Liga Mitos y Leyendas PB en Mallplaza Oeste y talleres en Cenco Costanera (8-11-2026). Según torneostcg.cl, en Mallplaza Oeste hay Pokémon los domingos a las 12:30.",
+   "espacio_juego": null,
+   "venta_online": true,
+   "horario": "Lunes a jueves 10:30-20:30; viernes y sábado 10:30-21:00; domingo 11:00-20:00",
+   "web": "https://www.geekz.cl/",
+   "instagram": "https://www.instagram.com/geekz.cl/",
+   "buscar_osm": "Mallplaza Egaña",
+   "lat_propuesta": -33.4527278,
+   "lng_propuesta": -70.5698297,
+   "fuente_propuesta": "OpenStreetMap, vía 157963277 (Mall Plaza Egaña, Av. Larraín 5862; centro según Nominatim). Son las coordenadas del mall, no las del local.",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/MallPlazaEga%C3%B1a.jpg/960px-MallPlazaEga%C3%B1a.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/MallPlazaEga%C3%B1a.jpg/330px-MallPlazaEga%C3%B1a.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:MallPlazaEga%C3%B1a.jpg",
+     "credito": "Foto: Aeveraal · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Exterior de Mallplaza Egaña visto desde la avenida. Se ve un edificio de vidrio de varios pisos con el logo rojo de mallplaza y letreros del cine, con palmeras frente a la entrada y autos en la calzada. En primer plano hay un letrero vial verde que dice «Mall Plaza Egaña», con una flecha y la E de estacionamiento."
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Mallplaza_Ega%C3%B1a%2C_La_Reina%2C_Santiago_20241112_02.jpg/960px-Mallplaza_Ega%C3%B1a%2C_La_Reina%2C_Santiago_20241112_02.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Mallplaza_Ega%C3%B1a%2C_La_Reina%2C_Santiago_20241112_02.jpg/330px-Mallplaza_Ega%C3%B1a%2C_La_Reina%2C_Santiago_20241112_02.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Mallplaza_Ega%C3%B1a,_La_Reina,_Santiago_20241112_02.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Interior de Mallplaza Egaña: un pasillo con baranda de vidrio que da a un atrio de varios pisos. Arriba y abajo se ven vitrinas de tiendas, entre ellas Bata e Isadora, con guirnaldas y adornos de Navidad y piso de baldosas claras."
+    }
+   ],
+   "evidencia": "El directorio de Mallplaza Egaña (datos actualizados el 6-11-2026) lista GEEKZ con estado 'Abierto' en el nivel 3, pasillo Ripley; el mismo directorio marca otras tiendas como 'Cerrado', así que el estado se mantiene al día. La web de Geekz la incluye entre sus 10 tiendas y sus puntos de retiro. Reparos: no aparece en ninguno de los cerca de 400 eventos de Geekz desde diciembre de 2025, y su ficha en geekz.cl no cambia desde octubre de 2025.",
+   "fuentes": [
+    "https://www.geekz.cl/tiendas",
+    "https://geekz.cl/preguntas-frecuentes",
+    "https://geekz.cl/politicas-de-despacho",
+    "https://www.mallplaza.com/cl/egana/tiendas/geekz",
+    "https://www.mallplaza.com/page-data/cl/egana/tiendas/geekz/page-data.json",
+    "https://www.mallplaza.com/page-data/cl/egana/tiendas/page-data.json",
+    "https://www.geekz.cl/event?date=old",
+    "https://web.archive.org/web/20251016232427/https://geekz.cl/tiendas"
+   ]
+  },
+  {
+   "id": "geekz-los-dominicos",
+   "nombre": "Geekz (Mallplaza Los Dominicos)",
+   "categorias": [
+    "anime",
+    "tcg",
+    "videojuegos",
+    "mesa"
+   ],
+   "direccion": "Mallplaza Los Dominicos (Av. Padre Hurtado Sur 875), segundo piso, local A2028",
+   "comuna": "Las Condes",
+   "descripcion": "Cadena que se presenta como tienda oficial de Tamashii Nations y Bandai Hobby en Chile: figuras, model kits, TCG, videojuegos, cómics, manga y juegos de mesa en siete malls de Santiago.",
+   "torneos": "Eventos presenciales en tienda, como el prelanzamiento de Pokémon Delta Reign y la Liga Mitos y Leyendas PB en Mallplaza Oeste y talleres en Cenco Costanera (8-11-2026). Según torneostcg.cl, en Mallplaza Oeste hay Pokémon los domingos a las 12:30.",
+   "espacio_juego": null,
+   "venta_online": true,
+   "horario": "Lunes a jueves 10:30-20:30; viernes y sábado 10:30-21:00; domingo 11:00-20:00",
+   "web": "https://www.geekz.cl/",
+   "instagram": "https://www.instagram.com/geekz.cl/",
+   "buscar_osm": "Mallplaza Los Dominicos",
+   "lat_propuesta": -33.4152017,
+   "lng_propuesta": -70.5408031,
+   "fuente_propuesta": "OpenStreetMap (Nominatim): centroide del polígono del Mall Plaza Los Dominicos (way 207738085). Es la ubicación del mall, no del local, y coincide con el enlace 'Cómo llegar' del sitio de Mallplaza",
+   "fotos": [
+    {
+     "url": "https://chocale.cl/wp-content/uploads/2026/03/exterior-mallplaza-los-dominicos.jpg",
+     "mini": null,
+     "pagina": "https://chocale.cl/2026/04/mallplaza-los-dominicos-pocos-visitantes-y-tiendas-cerradas-10-anos-de-operacion/",
+     "credito": "Foto: Mallplaza, vía Chócale",
+     "descripcion": "Vista aérea del Mallplaza Los Dominicos al atardecer. Se ve la fachada blanca de grandes triángulos con el logo de mallplaza, un edificio vidriado con paneles blancos a la izquierda, los accesos con jardines y, en primer plano, la avenida con árboles."
+    },
+    {
+     "url": "https://chocale.cl/wp-content/uploads/2026/03/fotos-interior-mallplaza-los-dominicos.jpg",
+     "mini": null,
+     "pagina": "https://chocale.cl/2026/04/mallplaza-los-dominicos-pocos-visitantes-y-tiendas-cerradas-10-anos-de-operacion/",
+     "credito": "Foto: Chócale",
+     "descripcion": "Interior del Mallplaza Los Dominicos. Desde un sector de mesas con estructura de fierro negro y ampolletas colgantes se ve el atrio central bajo una gran cúpula de vidrio, con los pisos superiores, columnas blancas y plantas."
+    }
+   ],
+   "evidencia": "geekz.cl (tiendas, preguntas frecuentes y despacho; consultado el 7-11-2026) incluye Los Dominicos entre sus 10 sucursales, con horario y como punto de retiro de pedidos web. El directorio de Mallplaza Los Dominicos la muestra 'Abierto' (nivel 2, pasillo Falabella); ese directorio sí marca otros locales como cerrados. Corrige al candidato: su calendario no tiene eventos en esta sucursal desde marzo de 2026 (los torneos y talleres citados eran de otros malls), y no hay evidencia de miniaturas de wargame, por lo que se quitó esa categoría.",
+   "fuentes": [
+    "https://www.geekz.cl/tiendas",
+    "https://geekz.cl/preguntas-frecuentes",
+    "https://geekz.cl/politicas-de-despacho",
+    "https://www.geekz.cl/event",
+    "https://www.geekz.cl/event?date=old",
+    "https://www.geekz.cl/shop",
+    "https://www.mallplaza.com/page-data/cl/losdominicos/tiendas/page-data.json",
+    "https://www.openstreetmap.org/way/207738085"
+   ]
+  },
+  {
+   "id": "geekz-plaza-oeste",
+   "nombre": "Geekz (Mallplaza Oeste)",
+   "categorias": [
+    "anime",
+    "tcg",
+    "mesa",
+    "videojuegos"
+   ],
+   "direccion": "Mallplaza Oeste, Av. Américo Vespucio 1501, 2.º piso, local BA 226b-228-230-234",
+   "comuna": "Cerrillos",
+   "descripcion": "Cadena que se presenta como tienda oficial de Tamashii Nations y Bandai Hobby en Chile: figuras, model kits, TCG, videojuegos, cómics, manga y juegos de mesa en siete malls de Santiago.",
+   "torneos": "Liga Geekz de Pokémon los domingos 12:30 (torneostcg.cl). Su web publica ligas de Mitos y Leyendas (PE y PB) casi todos los fines de semana, copas de Smash Bros. Ultimate y eFootball, League Cup de Pokémon (dom 18-10-2026), prelanzamiento Delta Reign y talleres (dom 8-11-2026).",
+   "espacio_juego": true,
+   "venta_online": true,
+   "horario": "Lunes a jueves 10:30-20:30; viernes y sábado 10:30-21:00; domingo 11:00-20:00",
+   "web": "https://www.geekz.cl/",
+   "instagram": "https://www.instagram.com/geekz.cl/",
+   "buscar_osm": "Mallplaza Oeste",
+   "lat_propuesta": -33.5170028,
+   "lng_propuesta": -70.7175414,
+   "fuente_propuesta": "OpenStreetMap: centro de la relación 3709845 (edificio Mall Plaza Oeste, Av. Américo Vespucio 1501), a 14 m de las coordenadas que publica el sitio de Mallplaza",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Mallplaza_Oeste_-_Septiembre_2021_-_02.jpg/960px-Mallplaza_Oeste_-_Septiembre_2021_-_02.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Mallplaza_Oeste_-_Septiembre_2021_-_02.jpg/330px-Mallplaza_Oeste_-_Septiembre_2021_-_02.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Mallplaza_Oeste_-_Septiembre_2021_-_02.jpg",
+     "credito": "Foto: Jorgebarrios · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Exterior de Mallplaza Oeste en un día soleado. Se ve un edificio de fachada blanca ondulada con un volumen de vidrio, terrazas de restaurantes con quitasoles junto a una laguna, palmeras y arbustos en primer plano. Hay algunos peatones adultos a lo lejos."
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Mall_Plaza_Oeste_2009.JPG/960px-Mall_Plaza_Oeste_2009.JPG",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Mall_Plaza_Oeste_2009.JPG/330px-Mall_Plaza_Oeste_2009.JPG",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Mall_Plaza_Oeste_2009.JPG",
+     "credito": "Foto: Jorgebarrios · CC BY-SA 3.0 · Wikimedia Commons",
+     "descripcion": "Vista en altura del sector Las Terrazas de Mallplaza Oeste al atardecer. Hay locales con terrazas y quitasoles blancos y un paseo con árboles y flores. Abajo a la izquierda está el letrero rojo «Mallplaza Oeste» y al fondo el tótem rojo del mall, el estacionamiento y la autopista."
+    }
+   ],
+   "evidencia": "Confirmada. Su web publica actividades presenciales en Mallplaza Oeste el 7 y el 8-11-2026: Liga de Mitos y Leyendas PE y PB, prelanzamiento Delta Reign, Smash Bros. y Taller Dino. El directorio de Mallplaza la muestra como 'Abierto'. Corrijo la dirección: el directorio del mall y el pie de página de geekz.cl dicen 2.º piso, local BA 226b-228-230-234. En abril de 2026 ese pie decía 3er piso, local D333 (Wayback Machine), así que parece un traslado dentro del mismo mall. La página /tiendas, las fichas de eventos y torneostcg.cl siguen diciendo D333, así que conviene confirmar el piso al ir. Quito 'miniaturas': no vende miniaturas de wargame, sus 'mini figuras' son coleccionables. No encontré noticias de cierre.",
+   "fuentes": [
+    "https://www.geekz.cl/tiendas",
+    "https://www.geekz.cl/events",
+    "https://www.geekz.cl/event?date=old",
+    "https://www.geekz.cl/event/liga-myl-pb-mall-plaza-oeste-nov-fecha-1-2026-11-08-1188/register",
+    "https://www.geekz.cl/event/mallplaza-oeste-prelanzamiento-delta-reign-2026-11-08-1166/register",
+    "https://www.geekz.cl/event/mall-plaza-oeste-league-cup-2026-10-18-1117/register",
+    "https://www.geekz.cl/preguntas-frecuentes",
+    "https://www.geekz.cl/"
+   ]
+  },
+  {
+   "id": "geekz-plaza-vespucio",
+   "nombre": "Geekz (Mallplaza Vespucio)",
+   "categorias": [
+    "anime",
+    "tcg",
+    "mesa",
+    "videojuegos"
+   ],
+   "direccion": "Mallplaza Vespucio, Av. Vicuña Mackenna Oriente 7110, piso 2, local 245A (zona Prosport)",
+   "comuna": "La Florida",
+   "descripcion": "Cadena que se presenta como tienda oficial de Tamashii Nations y Bandai Hobby en Chile: figuras, model kits, TCG, videojuegos, cómics, manga y juegos de mesa en siete malls de Santiago.",
+   "torneos": "Su web publica eventos de Pokémon TCG en la tienda: League Cup (sáb 17-10-2026, 12:00), League Challenge (sáb 24-10-2026, 17:00) y prelanzamiento Delta Reign (sáb 7-11-2026, 17:00). Además hay talleres de maquetismo los domingos (Taller Dino, 8-11-2026, 17:00).",
+   "espacio_juego": true,
+   "venta_online": true,
+   "horario": "Lunes a jueves 10:30-20:30; viernes y sábado 10:30-21:00; domingo 11:00-20:00",
+   "web": "https://www.geekz.cl/",
+   "instagram": "https://www.instagram.com/geekz.cl/",
+   "buscar_osm": "Mallplaza Vespucio",
+   "lat_propuesta": -33.5176171,
+   "lng_propuesta": -70.5981151,
+   "fuente_propuesta": "Mapa de Google incrustado en geekz.cl/tiendas (iframe 'Mallplaza Vespucio', !3d/!2d). Cae dentro del edificio del mall en OpenStreetMap (vía 25448975) y a 8 m de Wikidata Q132191624",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Mallplaza_Vespucio%2C_La_Florida%2C_Santiago_20230812_01.jpg/960px-Mallplaza_Vespucio%2C_La_Florida%2C_Santiago_20230812_01.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Mallplaza_Vespucio%2C_La_Florida%2C_Santiago_20230812_01.jpg/330px-Mallplaza_Vespucio%2C_La_Florida%2C_Santiago_20230812_01.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Mallplaza_Vespucio,_La_Florida,_Santiago_20230812_01.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Acceso exterior de Mallplaza Vespucio con cielo despejado. Se ven pórticos grises con el logo de Mallplaza, la fachada con los letreros «Mallplaza» y «Click&Collect», palmeras a la izquierda y una explanada con bancas de piedra. Hay algunos peatones adultos a media distancia."
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Mallplaza_Vespucio%2C_La_Florida%2C_Santiago_20240604.jpg/960px-Mallplaza_Vespucio%2C_La_Florida%2C_Santiago_20240604.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Mallplaza_Vespucio%2C_La_Florida%2C_Santiago_20240604.jpg/330px-Mallplaza_Vespucio%2C_La_Florida%2C_Santiago_20240604.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Mallplaza_Vespucio,_La_Florida,_Santiago_20240604.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Interior de Mallplaza Vespucio. Es un pasillo de dos niveles bajo una bóveda con tragaluz, con barandas de vidrio y vitrinas de tiendas como Tommy Hilfiger y Make Up. Pocas personas recorren el nivel inferior."
+    }
+   ],
+   "evidencia": "Confirmada. Su web publica eventos presenciales en el local 245A de Mallplaza Vespucio: League Cup el 17-10-2026, League Challenge el 24-10-2026, prelanzamiento Delta Reign el sábado 7-11-2026 y Taller Dino el domingo 8-11-2026. El directorio de Mallplaza la muestra como 'Abierto' en el nivel 2, zona Prosport. La página /tiendas dice 'Tercer piso', pero el pie de página de geekz.cl y el mall dicen piso 2, y el número 245A también calza con el nivel 2. El directorio del mall da para el domingo un horario genérico de 10:30 a 21:00, distinto del que publica la tienda. No figura en torneostcg.cl. Quito 'miniaturas' porque no vende miniaturas de wargame. No encontré noticias de cierre.",
+   "fuentes": [
+    "https://www.geekz.cl/tiendas",
+    "https://www.geekz.cl/event?date=old",
+    "https://www.geekz.cl/event/mallplaza-vespucio-prelanzamiento-delta-reign-2026-11-07-1165/register",
+    "https://www.geekz.cl/event/taller-dino-mall-plaza-vespucio-2026-11-08-1184/register",
+    "https://www.geekz.cl/event/mallplaza-vespucio-league-cup-2026-10-17-1116/register",
+    "https://www.geekz.cl/event/mallplaza-vespucio-league-challenge-pokemon-tcg-2026-10-24-1162/register",
+    "https://www.geekz.cl/preguntas-frecuentes",
+    "https://www.geekz.cl/"
+   ]
+  },
+  {
+   "id": "griffin-games",
+   "nombre": "Griffin Games",
+   "categorias": [
+    "mesa",
+    "tcg"
+   ],
+   "direccion": "Galería La Merced, Huérfanos 635, locales 29 y 30",
+   "comuna": "Santiago",
+   "descripcion": "Tienda de juegos de mesa (familiares, cooperativos, party games), puzzles de 500 a 6.000 piezas y cartas Pokémon y Magic, con ligas semanales en el local.",
+   "torneos": "Liga oficial de Pokémon TCG los viernes a las 18:00 y Commander (Magic) los lunes a las 19:00, ambas a $6.000 según su web. torneostcg.cl da las 18:30 y suma una liga Pokémon los jueves. En 2026 hizo League Cup (mayo) y League Challenge TCG y VGC (26-9).",
+   "espacio_juego": true,
+   "venta_online": true,
+   "horario": null,
+   "web": "https://www.griffingames.cl/",
+   "instagram": "https://www.instagram.com/griffingamescl/",
+   "lat_propuesta": -33.4389884,
+   "lng_propuesta": -70.6459213,
+   "fuente_propuesta": "OpenStreetMap: nodo 6582577486, de otra tienda (Polar Hobbies) con dirección Huérfanos 635, el mismo edificio. No marca el local 29-30 exacto.",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Galer%C3%ADa_La_Merced%2C_Santiago_20230418_01.jpg/960px-Galer%C3%ADa_La_Merced%2C_Santiago_20230418_01.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Galer%C3%ADa_La_Merced%2C_Santiago_20230418_01.jpg/330px-Galer%C3%ADa_La_Merced%2C_Santiago_20230418_01.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Galer%C3%ADa_La_Merced,_Santiago_20230418_01.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Entrada de la Galería La Merced desde la calle, con el letrero rojo y dorado «370 Galería La Merced 370» sobre el acceso y un banco de piedra en la vereda. Al fondo se ve el pasillo interior con locales y algunas personas caminando."
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Galer%C3%ADa_La_Merced%2C_Santiago_20230418_02.jpg/960px-Galer%C3%ADa_La_Merced%2C_Santiago_20230418_02.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Galer%C3%ADa_La_Merced%2C_Santiago_20230418_02.jpg/330px-Galer%C3%ADa_La_Merced%2C_Santiago_20230418_02.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Galer%C3%ADa_La_Merced,_Santiago_20230418_02.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Pasillo interior de la Galería La Merced: piso de baldosas blancas brillantes y locales con vitrinas a ambos lados (fotocopias, impresión de fotos). Una mujer camina de espaldas hacia el fondo."
+    }
+   ],
+   "evidencia": "Confirmada. Su web (© 2026) vende inscripciones para torneos en 'Paseo Huérfanos 635, Locales 29-30': el League Challenge de TCG y el de VGC del sábado 26-9-2026 (páginas editadas el 24-9-2026) y la League Cup de mayo de 2026. Su banner dice 'Huerfanos 635, local 29 & 30, Galería La Merced'. torneostcg.cl (consultado el 7-11-2026) mantiene sus ligas semanales, y LOS40 (26-7-2026) la nombra entre las expositoras del Trading Fest 2026. No encontré un horario de atención publicado ni noticias de cierre o traslado.",
+   "fuentes": [
+    "https://www.griffingames.cl/",
+    "https://www.griffingames.cl/categoria-producto/eventos/",
+    "https://www.griffingames.cl/producto/pokemon-tcg-league-official-league/",
+    "https://www.griffingames.cl/producto/mtg-commander-lunes/",
+    "https://www.griffingames.cl/producto/pokemon-tcg-league-challenge/",
+    "https://www.griffingames.cl/producto/pokemon-vgc-challenge-2026/",
+    "https://www.griffingames.cl/producto/pokemon-tcg-league-cup-2/",
+    "https://www.griffingames.cl/wp-content/uploads/2024/01/banner-1920x100-visitanos-2.jpg"
+   ]
   },
   {
    "id": "guild-dreams",
@@ -747,6 +1410,134 @@
    "coordenadas_fuente": "OpenStreetMap: nodo 11982155670 de RC Import Store, con dirección Av. Providencia 2348 (misma Galería Los Pájaros según la web de esa tienda); marca la galería, no el local 74"
   },
   {
+   "id": "konoha-store",
+   "nombre": "Konoha Store",
+   "categorias": [
+    "tcg"
+   ],
+   "direccion": "Maturana 302, Plaza Brasil (metro Cumming)",
+   "comuna": "Santiago",
+   "descripcion": "Tienda de TCG en Barrio Brasil con mesas de juego y venta de bebidas (incluye bebidas de fantasía One Piece); vende Yu-Gi-Oh!, Pokémon, Gundam, Magic, Riftbound y accesorios.",
+   "torneos": "Martes 19:30: Gundam (Store Tournament el primer martes del mes) y Riftbound (Nexus Nights). Miércoles 19:30: Pokémon. Jueves 19:00: Yu-Gi-Oh! Genesys y viernes 19:00: Yu-Gi-Oh! avanzado (según torneostcg.cl). Sábado: Pokémon 13:00 y Yu-Gi-Oh! avanzado 16:30.",
+   "espacio_juego": true,
+   "venta_online": true,
+   "horario": null,
+   "web": "https://konohastore.cl/",
+   "instagram": "https://www.instagram.com/konohastorechile/",
+   "lat_propuesta": -33.4411634,
+   "lng_propuesta": -70.6667784,
+   "fuente_propuesta": "OpenStreetMap: nodo 1244910389 (dirección Maturana 302), a 6 m de la ubicación del organizador en la página oficial de eventos de Riftbound",
+   "fotos": [],
+   "evidencia": "Confirmada. El feed de Instagram incrustado en su web anuncia torneos en 'Maturana #302, Plaza Brasil — Metro Cumming' el sábado 24, el martes 27 y el sábado 31 de octubre (días que calzan con 2026). La página oficial de Riftbound registra 'Nexus Nights en Konoha Store' el 27-10-2026 en Maturana 302, como evento completado. Su tienda online subió productos nuevos el 6-11-2026, y torneostcg.cl (7-11-2026) la lista con torneos semanales. Su página 'Quiénes somos' sigue mostrando la dirección antigua (Cienfuegos 78), y no publica horario de atención. Quito 'anime': solo vende TCG y accesorios (más bebidas de fantasía de One Piece). No encontré noticias de cierre ni de un nuevo traslado.",
+   "fuentes": [
+    "https://konohastore.cl/",
+    "https://konohastore.cl/quienes-somos/",
+    "https://konohastore.cl/2021/03/22/metodo-de-envio-retiro-en-konoha-store/",
+    "https://konohastore.cl/wp-json/wp/v2/posts?include=52005",
+    "https://konohastore.cl/wp-json/wp/v2/product?per_page=8&orderby=date&order=desc",
+    "https://playriftbound.com/es-ES/events/117510135992177704",
+    "https://www.torneostcg.cl/",
+    "https://www.openstreetmap.org/node/1244910389"
+   ]
+  },
+  {
+   "id": "la-comarca-providencia",
+   "nombre": "La Comarca TCG (Providencia)",
+   "categorias": [
+    "tcg",
+    "mesa"
+   ],
+   "direccion": "Gral. Holley 2335, local 211",
+   "comuna": "Providencia",
+   "descripcion": "Tienda de TCG con dos locales: Magic, Pokémon, One Piece, Digimon, Dragon Ball, Yu-Gi-Oh!, Gundam, Star Wars Unlimited, Riftbound y Mitos y Leyendas, más juegos de mesa y artículos geek.",
+   "torneos": "Eventos semanales de lunes a viernes desde las 19:30. Según torneostcg.cl: One Piece los lunes; Magic de martes a viernes (Commander, Standard, FNM Modern); Digimon, Dragon Ball FW y Mitos y Leyendas los martes; Gundam y Riftbound los miércoles; Pokémon jueves y viernes (17:30 y 19:30).",
+   "espacio_juego": true,
+   "venta_online": true,
+   "horario": "Lunes a sábado de 12:00 a 21:00",
+   "web": "https://www.tiendalacomarca.cl/",
+   "instagram": "https://www.instagram.com/lacomarca_hyg",
+   "lat_propuesta": -33.4199535,
+   "lng_propuesta": -70.6078918,
+   "fuente_propuesta": "OpenStreetMap (Nominatim): interpolación de la numeración impar de General Holley entre los nodos de dirección 2303 y 2359 (way 108453407). Es una posición aproximada (±30 m), sin mapa incrustado en su sitio.",
+   "fotos": [],
+   "evidencia": "Confirmada. Su sitio (© 2026, con preventas para diciembre de 2026 y 2027) publica la sede 'Gral Holley 2335 local 211, Providencia', abierta de lunes a sábado de 12:00 a 21:00, además de la de San Bernardo. Su política de torneos indica eventos de lunes a viernes desde las 19:30 y habla del mobiliario y del área de juego. torneostcg.cl (consultado el 7-11-2026) lista sus torneos semanales en esa dirección, y LOS40 (26-7-2026) la nombra entre las expositoras del Trading Fest 2026. Ojo: torneostcg.cl también le asigna Pokémon los domingos, lo que no calza con el horario publicado, y da el local como '0211 -2'. Uso lo que publica la tienda. No encontré noticias de cierre.",
+   "fuentes": [
+    "https://www.tiendalacomarca.cl/",
+    "https://www.tiendalacomarca.cl/pages/sobre-nosotros",
+    "https://www.tiendalacomarca.cl/pages/politica-de-torneos",
+    "https://torneostcg.cl/",
+    "https://los40.cl/2026/07/27/trading-fest-chile-2026-conoce-las-mas-de-50-tiendas-confirmadas-para-la-gran-cita-del-tcg/",
+    "https://www.openstreetmap.org/way/108453407"
+   ]
+  },
+  {
+   "id": "la-comarca-san-bernardo",
+   "nombre": "La Comarca TCG (San Bernardo)",
+   "categorias": [
+    "tcg",
+    "mesa"
+   ],
+   "direccion": "Freire 670, local 18 al 23",
+   "comuna": "San Bernardo",
+   "descripcion": "Tienda de TCG con dos locales: Magic, Pokémon, One Piece, Digimon, Dragon Ball, Yu-Gi-Oh!, Gundam, Star Wars Unlimited, Riftbound y Mitos y Leyendas, más juegos de mesa y artículos geek.",
+   "torneos": "Gundam Card Game los martes a las 19:00 ($7.000), según un afiche de febrero de 2026 publicado en torneostcg.cl. La tienda anuncia eventos de lunes a viernes desde las 19:30, pero los demás torneos listados en torneostcg.cl son de su sucursal de Providencia.",
+   "espacio_juego": true,
+   "venta_online": true,
+   "horario": "Lunes a viernes 12:00-21:00; sábado y domingo 11:00-20:00",
+   "web": "https://www.tiendalacomarca.cl/",
+   "instagram": "https://www.instagram.com/lacomarca_hyg",
+   "lat_propuesta": -33.5957547,
+   "lng_propuesta": -70.7050627,
+   "fuente_propuesta": "OpenStreetMap (Nominatim): interpolación de Ramón Freire 670 entre los números 632 y 688 mapeados en la misma cuadra (vía 108463432). Se descartó otra coincidencia de Nominatim más al norte, que sale de un error de datos (número 1106 mal cargado).",
+   "fotos": [],
+   "evidencia": "Su web (© 2026, con productos subidos en noviembre de 2026) mantiene la tienda de Freire 670 y le cambió el horario entre abril de 2026 (lunes a viernes 13:00-22:00) y hoy (12:00-21:00). torneostcg.cl muestra su torneo semanal de Gundam en San Bernardo, con afiche del 22-2-2026, y la marca expuso en Trading Fest (LOS40, 26-7-2026). Corrección: casi todos los torneos que traía la propuesta son de la sucursal de Providencia (Los Leones).",
+   "fuentes": [
+    "https://www.tiendalacomarca.cl/",
+    "https://www.tiendalacomarca.cl/pages/sobre-nosotros",
+    "https://www.tiendalacomarca.cl/pages/politica-de-torneos",
+    "https://web.archive.org/web/20260416112410/https://tiendalacomarca.cl/",
+    "https://www.torneostcg.cl/region-metropolitana/torneos/gundam-card-game",
+    "https://www.torneostcg.cl/images/events/comarca-sanbernardo/2026-02-22.jpg",
+    "https://los40.cl/2026/07/27/trading-fest-chile-2026-conoce-las-mas-de-50-tiendas-confirmadas-para-la-gran-cita-del-tcg/",
+    "https://nominatim.openstreetmap.org/search?street=670+Freire&city=San+Bernardo&countrycodes=cl"
+   ]
+  },
+  {
+   "id": "magic4ever",
+   "nombre": "Magic4ever",
+   "categorias": [
+    "tcg",
+    "mesa",
+    "rol",
+    "miniaturas",
+    "anime"
+   ],
+   "direccion": "Moneda 840",
+   "comuna": "Santiago",
+   "descripcion": "Tienda de TCG con sala para 150 jugadores; vende Magic, Pokémon y otros TCG, Warhammer y miniaturas, rol (D&D), juegos de mesa, cómics, manga y figuras.",
+   "torneos": "32 torneos fijos por semana: Magic de martes a domingo, Pokémon (mar 19:00 y dom 12:00), One Piece, Digimon, Riftbound, Dragon Ball Fusion World, Gundam, Hololive, Mitos y Leyendas, Flesh and Blood y Neuroscape. Prerelease de Magic Star Trek el 7 y 8-11-2026.",
+   "espacio_juego": true,
+   "venta_online": true,
+   "horario": null,
+   "web": "https://www.m4e.cl/",
+   "instagram": "https://www.instagram.com/magic4everchile",
+   "lat_propuesta": -33.4418,
+   "lng_propuesta": -70.6487,
+   "fuente_propuesta": "Datos estructurados schema.org (GeoCoordinates) publicados en m4e.cl/contact; coinciden (unos 40 m) con las direcciones de OpenStreetMap en Moneda 812 y 846",
+   "fotos": [],
+   "evidencia": "Su calendario oficial (torneos.magic4ever.cl, consultado el 7-11-2026) muestra eventos hoy sáb 7-11 y mañana dom 8-11 en Moneda 840 (prerelease Magic Star Trek, demo de StarCraft, Fusion World Ultimate Battle 2026 Vol.4) y la cartelera hasta el 14-11; m4e.cl vende esas inscripciones. No encontré noticias de cierre ni traslado. Su web no publica horario.",
+   "fuentes": [
+    "https://torneos.magic4ever.cl/calendario",
+    "https://www.m4e.cl/",
+    "https://www.m4e.cl/eventos",
+    "https://www.m4e.cl/contact",
+    "https://www.magic4ever.cl/",
+    "https://www.torneostcg.cl/",
+    "https://www.openstreetmap.org/node/4446190776",
+    "https://www.openstreetmap.org/node/4443727190"
+   ]
+  },
+  {
    "id": "magicsur-la-reina",
    "nombre": "Magicsur (La Reina)",
    "categorias": [
@@ -770,6 +1561,9 @@
     "https://www.magicsur.cl/content/14-en-magicsur-somos-tienda-wpn-premium",
     "https://www.torneostcg.cl/region-metropolitana/tiendas/magicsur-la-reina",
     "https://nominatim.openstreetmap.org/search?street=1149+Avenida+Ossa&city=La+Reina&country=Chile&format=jsonv2"
+   ],
+   "comunas_aceptadas": [
+    "Ñuñoa"
    ]
   },
   {
@@ -989,6 +1783,117 @@
    "lat": -33.414054,
    "lng": -70.582909,
    "coordenadas_fuente": "OpenStreetMap, nodo 13596743805 'Oasis Games' (Avenida Apoquindo 4501, unidad 5; mismo teléfono que la web; creado el 24-02-2026)."
+  },
+  {
+   "id": "one-up-store",
+   "nombre": "One Up Store",
+   "categorias": [
+    "tcg",
+    "anime"
+   ],
+   "direccion": "Julio Vildósola 7407",
+   "comuna": "La Florida",
+   "descripcion": "Tienda de cartas y accesorios TCG (Pokémon, One Piece, Yu-Gi-Oh!, Magic, Digimon, Gundam, Riftbound, Mitos y Leyendas) que abre todos los días y tiene torneos casi a diario.",
+   "torneos": "Ligas casi diarias a las 18:30-19:30: Pokémon (lun, mar, jue, sáb y dom), One Piece (jue, vie y dom), Mitos y Leyendas (lun a mié), Yu-Gi-Oh! (mar y dom), Gundam (mié y sáb), Riftbound (jue y sáb), Digimon y Commander (vie). League Challenge 7-11 y League Cup 8-11 de Pokémon; lanzamiento Raciales PB de MyL del 13 al 15-11.",
+   "espacio_juego": true,
+   "venta_online": true,
+   "horario": "Lunes a domingo 13:00-22:00",
+   "web": "https://www.oneupstore.cl/",
+   "instagram": "https://www.instagram.com/oneupcl",
+   "fotos": [
+    {
+     "url": "https://dojiw2m9tvv09.cloudfront.net/29535/3/p_x-test/32337.jpg",
+     "mini": null,
+     "pagina": "https://www.oneupstore.cl/article/torneo-de-apertura-primer-bloque",
+     "credito": "Foto: One Up Store",
+     "descripcion": "Dentro de la tienda, dos jugadores juegan una partida de cartas sobre una mesa negra con un tapete de One Up. Al fondo hay un muro de ladrillo blanco con cuadros de ilustraciones, un refrigerador de bebidas y una cámara en trípode sobre la mesa."
+    },
+    {
+     "url": "https://dojiw2m9tvv09.cloudfront.net/29535/3/p_x-test/img-6586-enhanced-nr7417.jpg",
+     "mini": null,
+     "pagina": "https://www.oneupstore.cl/article/torneo-de-apertura-primer-bloque",
+     "credito": "Foto: One Up Store",
+     "descripcion": "Sala de juego: cinco jugadores adultos alrededor de una mesa con tapetes ilustrados y cartas, en una pieza de paredes claras con ventana enrejada, cortina y un cuadro de ilustración."
+    },
+    {
+     "url": "https://dojiw2m9tvv09.cloudfront.net/29535/3/p_x-test/img-66487843.jpg",
+     "mini": null,
+     "pagina": "https://www.oneupstore.cl/article/torneo-de-apertura-imperio-y-furia",
+     "credito": "Foto: One Up Store",
+     "descripcion": "Mesas de juego al aire libre: jugadores adultos jugan partidas de cartas frente a un muro de ladrillo rojo con una ventana enrejada, y a la derecha hay un pendón ilustrado."
+    }
+   ],
+   "evidencia": "Su web (consultada el 7-11-2026) invita a visitar Julio Vildósola 7407 de lunes a domingo, cuenta que abrió su tienda física en La Florida y vende cupos para eventos en el local: League Challenge el sábado 7-11-2026, League Cup el 8-11, lanzamiento Raciales PB del 13 al 15-11 y Newtype Challenge el 21-11. torneostcg.cl coincide en el Challenge y la Cup (registro Play! Pokémon). Vende manga (Ivrea), por eso se agregó 'anime'. Sin coordenadas: OpenStreetMap no tiene ese número.",
+   "fuentes": [
+    "https://www.oneupstore.cl/",
+    "https://www.oneupstore.cl/article/quienes-somos",
+    "https://www.oneupstore.cl/collection/eventos",
+    "https://www.oneupstore.cl/product/league-challenge-pokemon-tcg-noviembre",
+    "https://www.oneupstore.cl/product/lanzamiento-raciales-pb-2026-14-de-noviembre",
+    "https://www.oneupstore.cl/product/avanzado-one-piece-noviembre",
+    "https://www.oneupstore.cl/collection/mangas",
+    "https://www.torneostcg.cl/"
+   ]
+  },
+  {
+   "id": "onplay-games",
+   "nombre": "Onplay Games",
+   "categorias": [
+    "tcg",
+    "mesa",
+    "rol"
+   ],
+   "direccion": "Galería Casa Colorada, Merced 832, local 54",
+   "comuna": "Santiago",
+   "descripcion": "Tienda de juegos de cartas (Magic, Pokémon, One Piece, Riftbound, Flesh and Blood, Star Wars Unlimited), juegos de mesa y de rol en la Galería Casa Colorada, con torneos casi a diario.",
+   "torneos": "Según torneostcg.cl, desde las 19:20: lunes Commander; martes Gundam, Riftbound y Flesh and Blood; miércoles Pokémon y One Piece; jueves Commander (casual desde 15:00); viernes FNM Standard. League Challenge de Pokémon el 7-11-2026 y League Cup el 8-11-2026 (12:00).",
+   "espacio_juego": true,
+   "venta_online": true,
+   "horario": "Lunes a viernes 11:00-20:00; fin de semana 11:00-20:00 (página de contacto; la portada dice lunes a sábado)",
+   "web": "https://onplaygames.cl/",
+   "instagram": "https://www.instagram.com/onplay.games/",
+   "en": "galeria-casa-colorada",
+   "fotos": [],
+   "evidencia": "Su web (© 2026) sitúa la tienda en Galería Casa Colorada, Merced 832, local 54. Subió productos el 22-10-2026 (editados el 2-11-2026) y su calendario tuvo torneos semanales en el local hasta agosto de 2026 (publicados el 22-7-2026). torneostcg.cl lista su League Challenge del 7-11-2026 y su League Cup del 8-11-2026, tomados de Play! Pokémon. LOS40 (26-7-2026) la incluye entre las expositoras de Trading Fest. Reparo: su página de eventos ya no muestra eventos próximos.",
+   "fuentes": [
+    "https://onplaygames.cl/",
+    "https://onplaygames.cl/contacto/",
+    "https://onplaygames.cl/nosotros/",
+    "https://onplaygames.cl/eventos/",
+    "https://onplaygames.cl/wp-json/tribe/events/v1/events?per_page=50&start_date=2026-01-01",
+    "https://onplaygames.cl/wp-json/wp/v2/product?per_page=15&_fields=date,modified,title,link",
+    "https://www.torneostcg.cl/",
+    "https://los40.cl/2026/07/27/trading-fest-chile-2026-conoce-las-mas-de-50-tiendas-confirmadas-para-la-gran-cita-del-tcg/"
+   ]
+  },
+  {
+   "id": "oops",
+   "nombre": "Oops",
+   "categorias": [
+    "tcg"
+   ],
+   "direccion": "Galería Casa Colorada, Merced 832, local 96",
+   "comuna": "Santiago",
+   "descripcion": "Tienda de TCG en una galería de Merced 832: Pokémon, One Piece, Digimon, Magic, Riftbound, Gundam, Union Arena y Fusion World; sellado, singles, accesorios y torneos.",
+   "torneos": "Según torneostcg.cl: lun Commander y Digimon (gratis), mar One Piece, mié Pokémon, jue Fusion World y vie One Piece (noches); sáb Commander 11:30, Riftbound 12:00, Digimon 14:30 y One Piece 18:15. League Cup de Pokémon el dom 15-11-2026 según su web (torneostcg dice 8-11).",
+   "espacio_juego": true,
+   "venta_online": true,
+   "horario": null,
+   "web": "https://www.tiendaoops.cl/",
+   "instagram": "https://instagram.com/tienda.oops",
+   "en": "galeria-casa-colorada",
+   "fotos": [],
+   "evidencia": "Su web ubica sus torneos en Merced 832, local 96: prelanzamiento Riftbound Radiance del 16 al 18-10-2026 (agotado), torneo Oops x Fenix del sáb 10-10 y League Cup de noviembre (dom 15-11) con 29 cupos a la venta el 7-11-2026. torneostcg.cl lista su Nexus Night del 7-11-2026. Sin noticias de cierre. Su web no publica horario.",
+   "fuentes": [
+    "https://www.tiendaoops.cl/",
+    "https://www.tiendaoops.cl/contacto/",
+    "https://www.tiendaoops.cl/torneos-tcg/",
+    "https://www.tiendaoops.cl/productos/inscripcion-league-cup-noviembre-mcajw/",
+    "https://www.tiendaoops.cl/productos/inscripcion-pre-lanzamiento-riftbound-radiance-preventa/",
+    "https://www.tiendaoops.cl/productos/inscripcion-torneo-fenix-oops/",
+    "https://www.tiendaoops.cl/politicas-de-envio/",
+    "https://www.torneostcg.cl/"
+   ]
   },
   {
    "id": "persa-biobio",
@@ -1420,6 +2325,52 @@
    "lat": -33.430815,
    "lng": -70.618021,
    "coordenadas_fuente": "OpenStreetMap, entre Doctor Manuel Barros Borgoño 78 y 228"
+  },
+  {
+   "id": "zendicard",
+   "nombre": "ZendiCard",
+   "categorias": [
+    "tcg"
+   ],
+   "direccion": "León Prado 1091",
+   "comuna": "San Miguel",
+   "descripcion": "Tienda de cartas coleccionables y juegos de mesa centrada en Magic y Pokémon (sellado y singles), con torneos casi todos los días y prelanzamientos.",
+   "torneos": "Liga Pokémon casual los viernes 19:00 (su web). Según torneostcg.cl, Magic de lunes a sábado (FNM vie 19:30; sáb 11:00 y 16:00) y Pokémon lun, mié, jue y dom. Prelanzamiento Magic Star Trek sáb 7-11 16:30 y mar 10-11 19:15; League Challenge de Pokémon dom 8-11-2026 11:00.",
+   "espacio_juego": true,
+   "venta_online": true,
+   "horario": "Lunes a viernes 15:30-22:00; sábado 10:30-20:00; domingo 16:00-20:00",
+   "web": "https://zendicard.cl/",
+   "instagram": "https://www.instagram.com/zendicard_chile",
+   "lat_propuesta": -33.5049423,
+   "lng_propuesta": -70.655001,
+   "fuente_propuesta": "Enlace de mapa de la ficha 'ZendiCard' publicado en zendicard.cl/contacto (!3d/!4d, leído del HTML sin abrirlo); coincide (unos 10 m) con OpenStreetMap 'Miguel León Prado 1091' (way 109311639)",
+   "fotos": [
+    {
+     "url": "https://zendicard.cl/wp-content/uploads/2025/08/06-1.jpg",
+     "mini": null,
+     "pagina": "https://zendicard.cl/sobre-nosotros/",
+     "credito": "Foto: ZendiCard",
+     "descripcion": "Interior de la tienda visto desde lo alto de la escalera: mesas con jugadores adultos jugando cartas sobre tapetes. A la izquierda hay estanterías con juegos y un mesón con vitrina adornado con guirnalda dorada, en las paredes cuelgan afiches de juegos y al fondo está la puerta de madera y vidrio que da a la calle."
+    },
+    {
+     "url": "https://zendicard.cl/wp-content/uploads/2025/08/03-1.jpg",
+     "mini": null,
+     "pagina": "https://zendicard.cl/sobre-nosotros/",
+     "credito": "Foto: ZendiCard",
+     "descripcion": "Sala de juego con mesas largas llenas de jugadores y sillas negras. Hay una escalera metálica morada que sube a un entrepiso con más mesas, afiches de Magic (Shadows over Innistrad, Eldritch Moon) y una pizarra con precios en la pared."
+    }
+   ],
+   "evidencia": "Su web publica dirección y horario, y el 3-11-2026 publicó el prelanzamiento Magic Star Trek del sáb 7-11 y mar 10-11 (30 cupos). torneostcg.cl lista su League Challenge del 8-11-2026 (Play! Pokémon). Sus políticas aún dicen 'tienda online, en vías de local comercial', pero es texto viejo: en 2025 ya informó un torneo de 38 jugadores 'en nuestra tienda'.",
+   "fuentes": [
+    "https://zendicard.cl/",
+    "https://zendicard.cl/contacto/",
+    "https://zendicard.cl/tienda/eventos/eventos-mtg/pre-lanzamiento-star-trek-mtg/",
+    "https://zendicard.cl/wp-json/wp/v2/product?search=star%20trek",
+    "https://zendicard.cl/product-category/eventos/",
+    "https://zendicard.cl/product-category/juegos-de-mesa/",
+    "https://zendicard.cl/politicas-de-la-tienda/",
+    "https://zendicard.cl/sobre-nosotros/"
+   ]
   }
  ]
 }

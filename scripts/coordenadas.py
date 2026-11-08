@@ -8,7 +8,8 @@ Usa la API Overpass (no Nominatim: su robots.txt no deja usarlo así), con pocas
   3) la comuna de cada punto (is_in), que debe ser la del dato. Si no calza, no se guarda.
 Pistas opcionales en cada lugar: "lat_propuesta"/"lng_propuesta"/"fuente_propuesta" (coordenadas de su sitio
 oficial o de Wikipedia: se prueban primero y también deben caer en la comuna), "buscar_osm" (otro nombre para buscar,
-p. ej. el mall donde está) y "en"
+p. ej. el mall donde está), "comunas_aceptadas" (para un local en una calle que es límite entre dos comunas,
+como Av. Ossa entre Ñuñoa y La Reina: el punto de la calle puede caer en la vecina) y "en"
 (el id de la galería donde está: toma sus coordenadas, así todos los de la galería van en un mismo marcador).
 Corre en GitHub Actions (workflow «Coordenadas»): la red de la oficina no llega a overpass-api.de.
 
@@ -214,9 +215,10 @@ def geocodificar(lugares: list[dict]) -> dict[str, dict]:
         if x.get("buscar_osm") or not calle or len(debiles) <= 3:
             intentos += [(la, lo, f) for _, la, lo, f in sorted(debiles, key=lambda c: -c[0])[:3]]
         elegido, vistos = None, []
+        aceptadas = {st(x.get("comuna"))} | {st(c) for c in x.get("comunas_aceptadas") or []}
         for la, lo, fuente in intentos[:7]:
             comuna = comuna_de(la, lo)
-            if comuna and st(comuna) == st(x.get("comuna")):
+            if comuna and st(comuna) in aceptadas:
                 elegido = {"lat": la, "lng": lo, "fuente": fuente}
                 break
             vistos.append(f"{fuente} -> {comuna}")

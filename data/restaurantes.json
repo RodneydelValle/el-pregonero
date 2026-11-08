@@ -135,9 +135,9 @@
      "descripcion": "Fachada de la Galería Dos Caracoles en Av. Providencia, edificio donde funciona KaraOK (local 3B)"
     }
    ],
-   "lat": -33.421289,
-   "lng": -70.609684,
-   "coordenadas_fuente": "OpenStreetMap, dirección: Avenida Providencia 2216"
+   "lat": -33.421264,
+   "lng": -70.609911,
+   "coordenadas_fuente": "la del Centro Comercial Dos Caracoles (OpenStreetMap), donde está el local"
   },
   {
    "id": "maruy",
@@ -236,9 +236,9 @@
     "videojuegos"
    ],
    "espacio_juego": true,
-   "lat": -33.421289,
-   "lng": -70.609684,
-   "coordenadas_fuente": "OpenStreetMap, dirección: Avenida Providencia 2216"
+   "lat": -33.421264,
+   "lng": -70.609911,
+   "coordenadas_fuente": "la del Centro Comercial Dos Caracoles (OpenStreetMap), donde está el local"
   },
   {
    "id": "oishi-cafe",
@@ -1394,9 +1394,9 @@
      "descripcion": "Cócteles de colores sobre la barra, con los tubos luminosos y el techo rojo al fondo"
     }
    ],
-   "lat": -33.404277,
-   "lng": -70.574794,
-   "coordenadas_fuente": "OpenStreetMap, dirección: Avenida Presidente Riesco 5330"
+   "lat": -33.403623,
+   "lng": -70.575097,
+   "coordenadas_fuente": "la de Centro Parque (OpenStreetMap, junto a Incantum), donde está el local"
   },
   {
    "id": "press-start",
@@ -1705,9 +1705,9 @@
     }
    ],
    "buscar_osm": "Apumanque",
-   "lat": -33.410404,
-   "lng": -70.567515,
-   "coordenadas_fuente": "OpenStreetMap, por nombre: Estacionamiento Apumanque"
+   "lat": -33.410029,
+   "lng": -70.567573,
+   "coordenadas_fuente": "la del Mall Apumanque (OpenStreetMap), donde está el local"
   },
   {
    "id": "wonderland-cafe",
