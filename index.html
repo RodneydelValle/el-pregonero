@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Fira+Sans+Condensed:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&display=swap">
   <!-- ?v= sube cada vez que cambian styles.css o app.js: así nadie queda con una mezcla de la versión vieja y la nueva -->
-  <link rel="stylesheet" href="styles.css?v=12">
+  <link rel="stylesheet" href="styles.css?v=13">
 </head>
 <body>
   <!-- Íconos de la página (se usan con <svg><use href="#i-…"/></svg>) -->
@@ -55,6 +55,22 @@
 <symbol id="i-flecha-der" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="M9 5.5l6.5 6.5L9 18.5"/></symbol>
 <symbol id="i-camara" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7.4h2.5l1.5-2.3h6l1.5 2.3H19a2.5 2.5 0 0 1 2.5 2.5v7.6a2.5 2.5 0 0 1-2.5 2.5H5a2.5 2.5 0 0 1-2.5-2.5V9.9A2.5 2.5 0 0 1 5 7.4Z"/><circle cx="12" cy="13.3" r="3.4"/></g><circle cx="18" cy="10.4" r="1" fill="currentColor"/></symbol>
 <symbol id="i-aviso" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.2 4.1a2.1 2.1 0 0 1 3.6 0l7.6 13.2a2.1 2.1 0 0 1-1.8 3.2H4.4a2.1 2.1 0 0 1-1.8-3.2Z"/><path d="M12 9.3v4.2"/></g><circle cx="12" cy="16.9" r="1.3" fill="currentColor"/></symbol>
+<!-- Mapa del Aventurero: categorías de lugares y botones (dibujados en código, a la espera de los íconos del usuario) -->
+<symbol id="i-cartas" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3.4" y="5.6" width="10" height="14.4" rx="1.8" transform="rotate(-13 8.4 12.8)" fill="currentColor" fill-opacity=".25"/><rect x="9.6" y="3.4" width="10" height="14.4" rx="1.8" transform="rotate(9 14.6 10.6)"/></g><path fill="currentColor" d="M14.6 7.1l1.2 2.4 2.4 1.1-2.4 1.1-1.2 2.4-1.2-2.4-2.4-1.1 2.4-1.1z"/></symbol>
+<symbol id="i-dado6" viewBox="0 0 24 24"><path fill="currentColor" fill-opacity=".2" d="M12 2.8l8.4 4.6v9.2L12 21.2l-8.4-4.6V7.4z"/><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 2.8l8.4 4.6v9.2L12 21.2l-8.4-4.6V7.4z"/><path d="M3.6 7.4L12 12l8.4-4.6M12 12v9.2"/></g><g fill="currentColor"><ellipse cx="12" cy="7.4" rx="1.5" ry=".9"/><circle cx="6.6" cy="11.9" r="1.1"/><circle cx="9.3" cy="17" r="1.1"/><circle cx="14.6" cy="17.3" r="1.1"/><circle cx="16.3" cy="14.6" r="1.1"/><circle cx="18" cy="11.9" r="1.1"/></g></symbol>
+<symbol id="i-meeple" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.6a3.4 3.4 0 0 1 3.4 3.4c0 1-.4 1.8-1 2.4 2.9.6 6.4 1.7 6.4 3.6 0 1.3-1.8 1.7-3.6 1.6l2.3 6.1c.3.8-.3 1.4-1 1.4h-3.6L12 17.2l-2.9 3.9H5.5c-.7 0-1.3-.6-1-1.4l2.3-6.1c-1.8.1-3.6-.3-3.6-1.6 0-1.9 3.5-3 6.4-3.6-.6-.6-1-1.4-1-2.4A3.4 3.4 0 0 1 12 2.6Z"/></symbol>
+<symbol id="i-gato" viewBox="0 0 24 24"><path fill="currentColor" d="M3.6 3.2l5 3.9c1.1-.4 2.2-.6 3.4-.6s2.3.2 3.4.6l5-3.9.6 7.4c.6 1 .9 2.1.9 3.3 0 4.2-4.2 6.9-9.9 6.9s-9.9-2.7-9.9-6.9c0-1.2.3-2.3.9-3.3Z"/><g fill="#fff"><ellipse cx="8.5" cy="13.1" rx="1.35" ry="1.7"/><ellipse cx="15.5" cy="13.1" rx="1.35" ry="1.7"/></g><path fill="none" stroke="#fff" stroke-width="1.3" stroke-linecap="round" d="M10.6 16.4c.4.6 1.4.6 1.4-.3 0 .9 1 .9 1.4.3"/></symbol>
+<symbol id="i-brujula" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.3" fill="none" stroke="currentColor" stroke-width="2"/><path fill="#d32f2f" d="M12 3.9l2.3 8.1H9.7z"/><path fill="currentColor" d="M12 20.1l-2.3-8.1h4.6z"/><circle cx="12" cy="12" r="1.5" fill="#f6c84c" stroke="currentColor" stroke-width=".8"/></symbol>
+<symbol id="i-tienda" viewBox="0 0 24 24"><path fill="currentColor" d="M3.2 4.2h17.6l1.2 5.2a2.6 2.6 0 0 1-5 1 2.6 2.6 0 0 1-5 0 2.6 2.6 0 0 1-5 0 2.6 2.6 0 0 1-5-1Z"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M4.6 11.6v8.6h14.8v-8.6"/><path fill="currentColor" d="M9.6 14.4h4.8v5.8H9.6z"/></symbol>
+<symbol id="i-trofeo" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.5 3.5h9v5.2a4.5 4.5 0 0 1-9 0Z"/><path d="M7.5 5.5H4.2v1.3a3.4 3.4 0 0 0 3.6 3.4M16.5 5.5h3.3v1.3a3.4 3.4 0 0 1-3.6 3.4M12 13.2v3.6M8.5 20.5h7l-.8-3.7H9.3Z"/></g></symbol>
+<symbol id="i-mesa" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5h18M5 8.5l-1 11M19 8.5l1 11M7.5 8.5v5h9v-5"/></g></symbol>
+<symbol id="i-carro" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M2.5 3.8h2.6l2.4 11.4h11l2-7.7H6.2"/><g fill="currentColor"><circle cx="9.2" cy="19.2" r="1.7"/><circle cx="17.2" cy="19.2" r="1.7"/></g></symbol>
+<symbol id="i-web" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.5 4.5h6v6M19.5 4.5l-8.5 8.5"/><path d="M18 14v4.2A1.8 1.8 0 0 1 16.2 20H5.8A1.8 1.8 0 0 1 4 18.2V7.8A1.8 1.8 0 0 1 5.8 6H10"/></g></symbol>
+<symbol id="i-filtro" viewBox="0 0 24 24"><path fill="currentColor" fill-opacity=".2" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" d="M3.5 4.5h17l-6.6 7.8v6.2l-3.8 1.9v-8.1Z"/></symbol>
+<symbol id="i-mapa" viewBox="0 0 24 24"><path fill="currentColor" fill-opacity=".2" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round" d="M3 6.2l5.6-2.4 6.8 2.4 5.6-2.4v14l-5.6 2.4-6.8-2.4L3 20.2Z"/><path fill="none" stroke="currentColor" stroke-width="2.1" d="M8.6 3.8v14M15.4 6.2v14"/></symbol>
+<symbol id="i-lista" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6h11.5M9 12h11.5M9 18h11.5"/></g><g fill="currentColor"><circle cx="4.5" cy="6" r="1.7"/><circle cx="4.5" cy="12" r="1.7"/><circle cx="4.5" cy="18" r="1.7"/></g></symbol>
+<symbol id="i-ubicacion" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="6.5"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3"/></g><circle cx="12" cy="12" r="2.4" fill="currentColor"/></symbol>
+<symbol id="i-recargar" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3"/><path d="M19.8 4.2v4.6h-4.6"/></g></symbol>
 <symbol id="i-plato" viewBox="0 0 24 24"><path fill="currentColor" fill-opacity=".22" d="M3 12.2h18a9 6.9 0 0 1-18 0Z"/><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12.2h18a9 6.9 0 0 1-18 0Z"/><path d="M9.6 21h4.8"/><path stroke-width="1.8" d="M8.2 8.8c-.9-1 .9-1.9 0-3M12 8.8c-.9-1 .9-1.9 0-3M15.8 8.8c-.9-1 .9-1.9 0-3"/></g></symbol>
   </svg>
   <header class="cabecera">
@@ -124,6 +140,7 @@
   <nav class="secciones" aria-label="Secciones">
     <div class="pestanas">
       <a class="pestana" href="#eventos" data-seccion="agenda" aria-current="page"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-calendario"/></svg>Agenda</a>
+      <a class="pestana" href="#mapa" data-seccion="mapa"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-brujula"/></svg><span>Mapa<span class="solo-ancho"> del Aventurero</span></span></a>
       <a class="pestana" href="#favoritos" data-seccion="favoritos"><svg class="ico ico-estrella" aria-hidden="true" focusable="false"><use href="#i-estrella-llena"/></svg>Mis favoritos <span class="cuenta" id="cuenta-favoritos"></span></a>
     </div>
   </nav>
@@ -173,6 +190,65 @@
     <p class="nota-seccion" id="nota-restaurantes"></p>
   </section>
 
+  <!-- Mapa del Aventurero: tiendas (data/tiendas.json) y restaurantes temáticos en un mapa con filtros.
+       Leaflet (vendor/) se carga solo al abrir esta sección; el mapa base son las teselas de OpenStreetMap. -->
+  <section id="sec-mapa" class="seccion seccion-mapa" aria-labelledby="t-mapa" hidden>
+    <header class="mapa-cabecera">
+      <div class="mapa-pergamino">
+        <svg class="mapa-rosa" aria-hidden="true" focusable="false"><use href="#i-brujula"/></svg>
+        <div>
+          <h2 id="t-mapa" class="mapa-titulo" tabindex="-1">Mapa del Aventurero</h2>
+          <p class="mapa-bajada">Tiendas de cartas, juegos de mesa, rol, miniaturas, anime y videojuegos, y restaurantes temáticos en Santiago.</p>
+        </div>
+      </div>
+    </header>
+    <div class="mapa-categorias">
+      <p class="mapa-cat-titulo" id="mapa-cat-titulo">Filtrar por categorías <small>(una o más)</small></p>
+      <div class="chips" id="mapa-chips" role="group" aria-labelledby="mapa-cat-titulo"></div>
+      <button type="button" class="accion mapa-limpiar" id="mapa-limpiar"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-recargar"/></svg>Limpiar filtros</button>
+    </div>
+    <div class="mapa-cuerpo">
+      <aside class="mapa-filtros" aria-label="Filtros del mapa">
+        <button type="button" class="mapa-filtros-boton" id="mapa-filtros-boton" aria-expanded="false" aria-controls="mapa-filtros-campos">
+          <svg class="ico" aria-hidden="true" focusable="false"><use href="#i-filtro"/></svg>Filtros <span class="cuenta" id="mapa-filtros-cuenta"></span>
+        </button>
+        <h3 class="mapa-filtros-titulo"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-filtro"/></svg>Filtros</h3>
+        <div class="mapa-filtros-campos" id="mapa-filtros-campos">
+          <div class="buscador">
+            <svg class="ico" aria-hidden="true" focusable="false"><use href="#i-lupa"/></svg>
+            <input type="search" id="mapa-buscar" placeholder="Buscar tienda…" aria-label="Buscar en el mapa" autocomplete="off">
+          </div>
+          <label class="mapa-campo">Comuna
+            <select id="mapa-comuna"><option value="">Todas</option></select>
+          </label>
+          <label class="mapa-check"><input type="checkbox" id="mapa-torneos"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-trofeo"/></svg>Con torneos o eventos</label>
+          <label class="mapa-check"><input type="checkbox" id="mapa-espacio"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-mesa"/></svg>Con espacio de juego</label>
+          <label class="mapa-check"><input type="checkbox" id="mapa-online"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-carro"/></svg>Venta online</label>
+        </div>
+      </aside>
+      <div class="mapa-centro">
+        <div id="mapa-lienzo" class="mapa-lienzo" role="region" aria-label="Mapa de los lugares (también puedes verlos en la vista Lista)"></div>
+        <div id="mapa-lista" class="mapa-lista" hidden></div>
+        <div class="mapa-barra">
+          <p class="mapa-cuenta"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-tienda"/></svg><span id="mapa-cuenta" aria-live="polite">Cargando lugares…</span></p>
+          <label class="mapa-orden">Ordenar por
+            <select id="mapa-orden">
+              <option value="nombre">Nombre</option>
+              <option value="cerca">Más cercanas</option>
+              <option value="comuna">Comuna</option>
+            </select>
+          </label>
+          <div class="segmento" role="group" aria-label="Vista">
+            <button type="button" data-vista="mapa" aria-pressed="true"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-mapa"/></svg>Mapa</button>
+            <button type="button" data-vista="lista" aria-pressed="false"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-lista"/></svg>Lista</button>
+          </div>
+        </div>
+      </div>
+      <article id="mapa-ficha" class="mapa-ficha" role="region" aria-label="Ficha del lugar"></article>
+    </div>
+    <p class="nota-seccion" id="nota-mapa"></p>
+  </section>
+
   <!-- Mis favoritos -->
   <section id="sec-favoritos" class="seccion" aria-labelledby="t-favoritos" hidden>
     <header class="encabezado-seccion">
@@ -185,6 +261,8 @@
       <div id="fav-eventos"></div>
       <h3 class="mes" id="fav-titulo-restaurantes">Restaurantes</h3>
       <div id="fav-restaurantes" class="lista-locales"></div>
+      <h3 class="mes" id="fav-titulo-tiendas" hidden>Tiendas del mapa</h3>
+      <div id="fav-tiendas" class="lista-locales"></div>
     </div>
   </section>
   </main>
@@ -194,7 +272,7 @@
     <div class="pie-columnas">
       <div>
         <h2>Cómo funciona</h2>
-        <p>Cada mañana un robot busca en noticias del día, comunidades, agendas de fans y ticketeras. Una IA lee las páginas y también los afiches, porque muchas veces la fecha y el lugar solo están en la imagen. Las notas marcadas con 📷 salieron de un afiche y las con ⚠ conviene confirmarlas en la fuente.</p>
+        <p>Cada hora un robot revisa ticketeras y agendas de fans, y cada 6 horas busca además en las noticias, en comunidades y en museos. Una IA lee las páginas y también los afiches, porque muchas veces la fecha y el lugar solo están en la imagen. Las notas marcadas con 📷 salieron de un afiche y las con ⚠ conviene confirmarlas en la fuente.</p>
         <p>Las fotos de los lugares vienen de sus sitios oficiales, de la prensa o de Wikimedia Commons (con licencia libre): en cada nota se pasan deslizando y al abrir una se ve de dónde es y quién la tomó.</p>
         <p>«Cómo llegar» abre la ruta en Google Maps (en el celular, en su app). Si inicias sesión con Google, tus favoritos se guardan en tu cuenta y solo tú puedes verlos.</p>
       </div>
@@ -227,7 +305,7 @@
   </dialog>
 
   <div id="aviso" class="aviso" role="status" aria-live="polite" hidden></div>
-  <script src="app.js?v=12" defer></script>
+  <script src="app.js?v=13" defer></script>
   <script type="module" src="cuenta.js"></script>
 </body>
 </html>

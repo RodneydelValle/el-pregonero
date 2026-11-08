@@ -584,6 +584,321 @@ html:has(.visor[open]) { overflow: hidden; }
   .visor-flecha { width: 38px; height: 38px; font-size: 24px; opacity: .85; }
 }
 
+/* ---------- Mapa del Aventurero ---------- */
+/* Como la maqueta del usuario (7-11-2026): título en un pergamino con rosa de los vientos, categorías de colores,
+   filtros a la izquierda, mapa con marco dorado y la ficha del lugar a la derecha. En el celular todo va en una
+   columna y la ficha sube desde abajo. Leaflet se carga después de esta hoja: por eso sus ajustes van con más
+   especificidad (.mapa-lienzo …). */
+.seccion-mapa { padding-bottom: 8px; }
+.mapa-cabecera { display: flex; justify-content: center; padding: 22px 12px 4px; }
+.mapa-pergamino {
+  position: relative; display: flex; align-items: center; gap: 12px 18px; max-width: 780px;
+  padding: 14px 34px 14px 24px;
+  background: linear-gradient(180deg, rgba(255, 248, 228, .92), rgba(240, 214, 170, .95)), var(--textura);
+  background-size: auto, 512px;
+  border: 1.5px solid #c9a46a; border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(80, 45, 15, .22), inset 0 0 24px rgba(160, 110, 50, .25);
+}
+/* Los rollos del pergamino, a cada lado */
+.mapa-pergamino::before, .mapa-pergamino::after {
+  content: ""; position: absolute; top: -6px; bottom: -6px; width: 15px; border-radius: 8px;
+  background: linear-gradient(90deg, #a87a3e, #e8cd96 45%, #b88a4c 70%, #8a5f2a);
+  box-shadow: 0 2px 4px rgba(60, 30, 5, .35);
+}
+.mapa-pergamino::before { left: -9px; }
+.mapa-pergamino::after { right: -9px; }
+.mapa-rosa { flex: none; width: 74px; height: 74px; color: #5a3a1e; filter: drop-shadow(0 1px 1px rgba(0, 0, 0, .25)); }
+.mapa-titulo { margin: 0; font: 900 clamp(27px, 4.8vw, 48px)/1.05 var(--titulo); color: var(--titulo-color); }
+.mapa-bajada { margin: 5px 0 0; font: 15.5px/1.4 var(--sans); color: var(--tinta-suave); }
+
+/* Categorías: cada una con su color (--c) */
+.mapa-categorias { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin: 14px 0; }
+.mapa-cat-titulo { margin: 0; font: 700 16px/1.2 var(--sans); }
+.mapa-cat-titulo small { display: block; font-size: 13px; font-weight: 400; color: var(--tinta-suave); }
+#mapa-chips { flex: 1 1 420px; flex-wrap: wrap; margin: 0; overflow: visible; padding: 2px; }
+.mapa-limpiar { margin-left: auto; }
+.mapa-limpiar .ico { width: 18px; height: 18px; }
+.chip.chip-mapa { padding: 5px 13px 5px 6px; background: var(--chip); border-color: var(--chip-borde); }
+@supports (background: color-mix(in srgb, red 10%, white)) {
+  .chip.chip-mapa { background: color-mix(in srgb, var(--c) 9%, #fffaf0); border-color: color-mix(in srgb, var(--c) 45%, #d9c3a0); }
+}
+.chip-mapa .chip-ico { display: inline-grid; place-items: center; width: 27px; height: 27px; border-radius: 8px; background: var(--c); }
+.chip-mapa .chip-ico .ico { width: 18px; height: 18px; color: #fff; }
+.chip.chip-mapa[aria-pressed="true"] {
+  color: #fff; background: var(--c); border-color: var(--c);
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, .55), 0 1px 4px rgba(0, 0, 0, .25);
+}
+.chip.chip-mapa[aria-pressed="true"] .chip-ico { background: rgba(255, 255, 255, .2); }
+.chip.chip-mapa[aria-pressed="true"] .cuenta { color: #fff; background: rgba(0, 0, 0, .22); }
+
+/* Cuerpo: filtros | mapa | ficha */
+.mapa-cuerpo { display: grid; grid-template-columns: 240px minmax(0, 1fr) 340px; gap: 16px; align-items: start; }
+.mapa-filtros, .mapa-ficha {
+  background: var(--tarjeta) var(--textura); background-size: 512px;
+  border: 1px solid var(--tarjeta-borde); border-radius: 16px; box-shadow: var(--sombra);
+}
+.mapa-filtros { padding: 14px; font-family: var(--sans); }
+.mapa-filtros-titulo { display: flex; align-items: center; gap: 8px; margin: 0 0 12px; font: 700 22px/1.1 var(--sans); }
+.mapa-filtros-titulo .ico { width: 24px; height: 24px; }
+.mapa-filtros-boton { display: none; }
+.mapa-filtros-campos { display: flex; flex-direction: column; gap: 13px; }
+.mapa-filtros .buscador { flex: none; order: 0; flex-basis: auto; }
+#mapa-buscar {
+  width: 100%; min-width: 0; font: 16px var(--sans); color: var(--tinta);
+  background: var(--campo); border: 1.5px solid var(--chip-borde); border-radius: 999px;
+  padding: 9px 14px 9px 44px; box-shadow: inset 0 1px 3px rgba(80, 50, 20, .12);
+}
+#mapa-buscar::placeholder { color: var(--tinta-suave); opacity: .85; }
+.mapa-filtros .buscador .ico { left: 14px; width: 20px; height: 20px; }
+.mapa-campo { display: flex; flex-direction: column; gap: 4px; font-size: 15px; font-weight: 600; }
+.mapa-campo select, .mapa-orden select {
+  font: 16px var(--sans); color: var(--tinta); background: var(--campo);
+  border: 1.5px solid var(--chip-borde); border-radius: 10px; padding: 8px 10px;
+}
+.mapa-check { display: flex; align-items: center; gap: 8px; font-size: 15.5px; line-height: 1.3; cursor: pointer; }
+.mapa-check input { flex: none; width: 19px; height: 19px; margin: 0; accent-color: var(--rojo-osc); }
+.mapa-check .ico { width: 20px; height: 20px; color: #8a5a1e; }
+#mapa-buscar:focus, .mapa-campo select:focus, .mapa-orden select:focus { outline: 2px solid var(--lacre); outline-offset: 1px; }
+.mapa-check input:focus-visible { outline: 2px solid var(--lacre); outline-offset: 2px; }
+
+/* Marco dorado del mapa (y de la lista) */
+.mapa-centro {
+  min-width: 0; padding: 8px 8px 4px; border-radius: 16px;
+  background: linear-gradient(180deg, #ecd3a2, #d8b477);
+  box-shadow: var(--sombra), inset 0 0 0 1px rgba(120, 80, 30, .35);
+}
+.mapa-lienzo, .mapa-lista { border: 2px solid #8a6634; border-radius: 10px; }
+/* z-index: 0 encierra los z-index internos de Leaflet (llegan a 1000) para que no tapen la ficha ni los avisos */
+.mapa-lienzo { position: relative; z-index: 0; height: clamp(380px, 64vh, 600px); overflow: hidden; background: #efe3c8; }
+.mapa-lista {
+  display: flex; flex-direction: column; gap: 6px; padding: 6px;
+  max-height: clamp(380px, 64vh, 600px); overflow-y: auto; background: var(--papel);
+}
+.mapa-barra { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding: 10px 6px 6px; font-family: var(--sans); }
+.mapa-cuenta { display: flex; align-items: center; gap: 8px; margin: 0 auto 0 0; font: 700 17px/1.2 var(--sans); color: #3a2416; }
+.mapa-cuenta .ico { width: 24px; height: 24px; }
+.mapa-orden { display: flex; align-items: center; gap: 8px; font-weight: 600; }
+.mapa-orden select { padding: 6px 8px; }
+.mapa-barra .segmento button { display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; }
+.mapa-barra .segmento .ico { width: 18px; height: 18px; }
+
+/* Filas de la vista Lista */
+.fila-lugar {
+  display: flex; align-items: center; gap: 12px; width: 100%; padding: 10px 12px; text-align: left; cursor: pointer;
+  font: inherit; color: inherit; background: var(--tarjeta); border: 1px solid var(--tarjeta-borde); border-radius: 10px;
+}
+.fila-lugar:hover { border-color: #b8925f; }
+.fila-lugar[aria-current="true"] { background: var(--resalte); border-color: var(--rojo-osc); box-shadow: inset 0 0 0 1px var(--rojo-osc); }
+.fila-lugar:focus-visible { outline: 2px solid var(--lacre); outline-offset: 2px; }
+.fila-texto { display: flex; flex-direction: column; flex: 1; min-width: 0; font-family: var(--sans); }
+.fila-texto b { font-size: 17px; line-height: 1.25; }
+.fila-texto span { font-size: 14px; line-height: 1.35; color: var(--tinta-suave); }
+.fila-dist { flex: none; font: 700 14px var(--sans); color: var(--rojo-osc); }
+.mapa-lista .vacio { margin: 0; }
+
+/* Íconos redondos de categoría (lista, globos del mapa) */
+.pin-mini {
+  flex: none; display: inline-grid; place-items: center; width: 32px; height: 32px; border-radius: 50%;
+  background: var(--c); color: #fff; box-shadow: inset 0 0 0 2px rgba(255, 255, 255, .45), 0 1px 2px rgba(0, 0, 0, .25);
+}
+.pin-mini .ico { width: 18px; height: 18px; }
+
+/* Marcadores: una gota del color de la categoría con su ícono; el elegido crece y brilla */
+.marcador { background: none; border: 0; }
+.pin-mapa { position: absolute; left: 0; top: 0; width: 40px; height: 46px; transform-origin: 50% 92%; transition: transform .15s ease; }
+.pin-mapa::before {
+  content: ""; position: absolute; left: 3px; top: 1px; width: 34px; height: 34px; box-sizing: border-box;
+  border-radius: 50% 50% 50% 0; transform: rotate(-45deg);
+  background: var(--c); border: 2.5px solid #fff; box-shadow: -1px 2px 5px rgba(40, 20, 5, .45);
+}
+.pin-mapa .ico { position: absolute; left: 10.5px; top: 8.5px; width: 19px; height: 19px; color: #fff; }
+.marcador:hover .pin-mapa { transform: scale(1.12); }
+.marcador.activo .pin-mapa { transform: scale(1.32); }
+.marcador.activo .pin-mapa::before { box-shadow: 0 0 0 3px rgba(255, 255, 255, .7), 0 0 18px 7px rgba(255, 210, 120, .9); }
+.mapa-lienzo .marcador:focus { outline: none; }
+.mapa-lienzo .marcador:focus-visible .pin-mapa::before { box-shadow: 0 0 0 3px #fff, 0 0 0 6px var(--lacre); }
+@media (prefers-reduced-motion: reduce) { .pin-mapa, .pin-racimo { transition: none; } }
+/* Marcador con varios lugares en la misma dirección: gota café con borde dorado y su número */
+.marcador.grupo .pin-mapa::before { background: #6b4423; border-color: var(--oro-vivo); }
+.pin-cuenta {
+  position: absolute; right: -6px; top: -9px; min-width: 22px; height: 22px; padding: 0 5px; border-radius: 999px;
+  font: 800 13px/19px var(--sans); text-align: center; color: #3a2416; background: var(--oro-vivo);
+  border: 1.5px solid #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+}
+.tt-sub { font-size: 13px; font-weight: 400; color: var(--tinta-suave); }
+/* Racimo: varios marcadores cercanos con el mapa alejado (al tocarlo, el mapa se acerca) */
+.pin-racimo {
+  display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%;
+  font: 800 17px/1 var(--sans); color: #fff; text-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+  background: radial-gradient(circle at 35% 30%, #a36b34, #5b3a1d 70%);
+  border: 3px solid var(--oro-vivo); box-shadow: 0 0 0 5px rgba(246, 200, 76, .32), 0 2px 6px rgba(40, 20, 5, .45);
+  transition: transform .15s ease;
+}
+.marcador.racimo:hover .pin-racimo { transform: scale(1.1); }
+.mapa-lienzo .marcador.racimo:focus-visible .pin-racimo { box-shadow: 0 0 0 3px #fff, 0 0 0 6px var(--lacre); }
+/* Lista de ese marcador (globo de Leaflet) */
+.leaflet-popup.popup-mapa .leaflet-popup-content-wrapper {
+  background: var(--papel); border: 1.5px solid #c9a46a; border-radius: 12px; box-shadow: var(--sombra);
+}
+.leaflet-popup.popup-mapa .leaflet-popup-tip { background: var(--papel); }
+.leaflet-popup.popup-mapa .leaflet-popup-content { margin: 10px 12px; font: 15px/1.35 var(--sans); color: var(--tinta); }
+.leaflet-popup.popup-mapa a.leaflet-popup-close-button { width: 28px; height: 28px; font: 20px/26px var(--sans); color: var(--tinta-suave); }
+.popup-titulo { display: flex; align-items: center; gap: 6px; margin: 0 22px 8px 0; font-weight: 700; }
+.popup-titulo .ico { width: 18px; height: 18px; color: var(--rojo-osc); }
+.popup-lista { display: flex; flex-direction: column; gap: 4px; max-height: 270px; margin: 0; padding: 0; overflow-y: auto; list-style: none; }
+.popup-lugar {
+  display: flex; align-items: center; gap: 9px; width: 100%; padding: 6px 8px; text-align: left; cursor: pointer;
+  font: inherit; color: inherit; background: var(--tarjeta); border: 1px solid var(--tarjeta-borde); border-radius: 8px;
+}
+.popup-lugar:hover { border-color: #b8925f; }
+.popup-lugar:focus-visible { outline: 2px solid var(--lacre); outline-offset: 1px; }
+.popup-lugar b { display: block; }
+.popup-lugar small { display: block; font-size: 12.5px; color: var(--tinta-suave); }
+.popup-lugar .pin-mini { width: 28px; height: 28px; }
+.popup-lugar .pin-mini .ico { width: 16px; height: 16px; }
+
+/* Globo con el nombre */
+.leaflet-tooltip.tooltip-mapa {
+  display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 8px 12px;
+  font: 600 15px/1.25 var(--sans); color: var(--tinta); white-space: nowrap;
+  background: var(--papel); border: 1.5px solid #c9a46a; border-radius: 12px; box-shadow: var(--sombra);
+}
+.leaflet-tooltip-top.tooltip-mapa::before { border-top-color: #c9a46a; }
+.tt-nombre { display: flex; align-items: center; gap: 6px; }
+.tt-nombre .ico { width: 19px; height: 19px; color: var(--rojo-osc); }
+.tt-cats { display: flex; gap: 5px; }
+.tt-cats .pin-mini { width: 25px; height: 25px; }
+.tt-cats .ico { width: 15px; height: 15px; }
+
+/* Leaflet con los colores de la página */
+.mapa-lienzo.leaflet-container { font: 14px/1.4 var(--sans); background: #efe3c8; }
+.mapa-lienzo .leaflet-tile-pane { filter: sepia(.3) saturate(1.08) hue-rotate(-6deg) brightness(1.02); }
+.mapa-lienzo .leaflet-bar { border: 1.5px solid #b48a4e; border-radius: 10px; box-shadow: var(--sombra-boton); overflow: hidden; }
+.mapa-lienzo .leaflet-bar a { width: 38px; height: 38px; font: 700 21px/36px var(--sans); color: var(--tinta); background: var(--chip); }
+.mapa-lienzo .leaflet-bar a:hover { background: var(--resalte); }
+.mapa-lienzo .mapa-ubicarme {
+  display: grid; place-items: center; width: 41px; height: 41px; padding: 0; cursor: pointer;
+  color: var(--tinta); background: var(--chip); border: 1.5px solid #b48a4e; border-radius: 10px;
+}
+.mapa-lienzo .mapa-ubicarme .ico { width: 23px; height: 23px; }
+.mapa-lienzo .leaflet-bar a:focus-visible, .mapa-lienzo .mapa-ubicarme:focus-visible { outline: 2px solid var(--lacre); outline-offset: 1px; }
+.mapa-lienzo .leaflet-control-attribution { font-size: 11px; background: rgba(251, 243, 226, .88); }
+
+/* Ficha del lugar */
+.mapa-ficha { position: sticky; top: 12px; padding: 12px; }
+.ficha-cerrar { display: none; }
+.ficha-foto { position: relative; margin-bottom: 12px; }
+.galeria.foto-ficha .marco-foto { aspect-ratio: 16 / 10; }
+.ficha-foto .estrella-fav { top: 10px; right: 10px; }
+.ficha-sin-foto {
+  display: grid; place-content: center; justify-items: center; gap: 8px; aspect-ratio: 16 / 10; border-radius: 12px;
+  font: 600 14px var(--sans); color: var(--tinta-suave); background: var(--papel-2);
+}
+@supports (background: color-mix(in srgb, red 10%, white)) {
+  .ficha-sin-foto { background: color-mix(in srgb, var(--c) 13%, #f6ead2); }
+}
+.ficha-sin-foto .ico { width: 66px; height: 66px; color: var(--c); opacity: .85; }
+.ficha-titulo { display: flex; align-items: center; gap: 10px; margin: 0 0 6px; font: 700 25px/1.15 var(--sans); color: var(--tinta); }
+.ficha-titulo:focus { outline: none; }
+.ficha-titulo .ico-ficha { width: 30px; height: 30px; color: var(--rojo-osc); }
+.ficha-dir { display: flex; align-items: flex-start; gap: 6px; margin: 0 0 9px; font: 15.5px/1.4 var(--sans); }
+.ficha-dir .ico { width: 18px; height: 18px; margin-top: 1px; }
+.ficha-dir .ico-pin { color: #d32f2f; }
+.ficha-etiquetas { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 10px; }
+.etiqueta-mapa {
+  display: inline-flex; align-items: center; gap: 5px; padding: 3px 10px 3px 7px; border-radius: 999px;
+  font: 600 13.5px/1.3 var(--sans); color: var(--tinta); background: #fffaf0; border: 1.5px solid var(--c);
+}
+@supports (background: color-mix(in srgb, red 10%, white)) {
+  .etiqueta-mapa { background: color-mix(in srgb, var(--c) 12%, #fffaf0); }
+}
+.etiqueta-mapa .ico { width: 16px; height: 16px; color: var(--c); }
+.ficha-cajas { display: grid; gap: 8px; margin: 0 0 12px; }
+.ficha-caja {
+  margin: 0; padding: 10px 12px; list-style: none; font: 15px/1.4 var(--sans);
+  background: rgba(255, 250, 240, .78); border: 1px solid var(--tarjeta-borde); border-radius: 10px;
+}
+.ficha-datos li { display: flex; align-items: flex-start; gap: 8px; }
+.ficha-datos li + li { margin-top: 5px; }
+.ficha-datos .ico, .ficha-horario > .ico { flex: none; width: 19px; height: 19px; margin-top: 1px; color: #8a5a1e; }
+.ficha-horario { display: flex; align-items: flex-start; gap: 8px; }
+.ficha-horario p { margin: 2px 0 0; }
+.accion.accion-fuerte { color: #fff; background: linear-gradient(180deg, #c62230, #940f20); border-color: #7d0b1a; }
+.accion.accion-fuerte .ico { color: #fff; }
+.ficha-vacia { padding: 34px 12px; text-align: center; font-family: var(--sans); color: var(--tinta-suave); }
+.ficha-vacia p { margin: 0 0 4px; }
+.ficha-rosa { width: 86px; height: 86px; margin-bottom: 8px; color: #8a6a3a; }
+.local .ficha-etiquetas { margin-top: 2px; }
+
+/* Computador mediano: columnas más angostas */
+@media (max-width: 1180px) {
+  .mapa-cuerpo { grid-template-columns: 220px minmax(0, 1fr) 300px; gap: 12px; }
+}
+/* Tablet y celular: una columna; los filtros detrás de un botón y la ficha sube desde abajo */
+@media (max-width: 979px) {
+  .mapa-cuerpo { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  #mapa-chips { flex: 1 1 100%; flex-wrap: nowrap; overflow-x: auto; }
+  .mapa-limpiar { margin-left: 0; }
+  .mapa-filtros { padding: 0; background: none; border: 0; box-shadow: none; }
+  .mapa-filtros-titulo { display: none; }
+  .mapa-filtros-boton {
+    display: inline-flex; align-items: center; gap: 8px; cursor: pointer;
+    font: 600 16px/1.2 var(--sans); color: var(--tinta);
+    background: var(--chip); border: 1.5px solid var(--chip-borde); border-radius: 999px; padding: 8px 16px;
+    box-shadow: var(--sombra-boton);
+  }
+  .mapa-filtros-boton .ico { width: 20px; height: 20px; }
+  .mapa-filtros-boton .cuenta {
+    min-width: 22px; padding: 0 6px; border-radius: 999px; background: var(--rojo); color: #fff;
+    font: 700 13px/22px var(--sans); text-align: center;
+  }
+  .mapa-filtros-boton .cuenta:empty { display: none; }
+  .mapa-filtros-boton[aria-expanded="true"] { background: var(--resalte); border-color: var(--rojo-osc); }
+  .mapa-filtros-boton:focus-visible { outline: 2px solid var(--lacre); outline-offset: 2px; }
+  .mapa-filtros-campos {
+    display: none; margin-top: 10px; padding: 14px;
+    background: var(--tarjeta) var(--textura); background-size: 512px;
+    border: 1px solid var(--tarjeta-borde); border-radius: 14px; box-shadow: var(--sombra);
+  }
+  .mapa-filtros.abierto .mapa-filtros-campos { display: flex; }
+  .mapa-centro { display: flex; flex-direction: column; overflow-anchor: none; }
+  .mapa-barra { order: -1; padding: 2px 4px 8px; }
+  .mapa-lienzo { height: 58vh; height: 58svh; min-height: 320px; }
+  .mapa-lista { max-height: none; overflow: visible; }
+  .mapa-ficha {
+    position: fixed; z-index: 15; top: auto; bottom: 8px;
+    left: max(8px, calc(50% - 330px)); right: max(8px, calc(50% - 330px));
+    max-height: min(56vh, 560px); max-height: min(56svh, 560px); overflow-y: auto; overscroll-behavior: contain;
+    padding-top: 8px; box-shadow: 0 -4px 26px rgba(40, 20, 5, .4);
+    transform: translateY(calc(100% + 24px)); visibility: hidden;
+    transition: transform .25s ease, visibility 0s linear .25s;
+  }
+  .mapa-ficha.abierta { transform: none; visibility: visible; transition: transform .25s ease; }
+  .ficha-cerrar {
+    position: sticky; top: 0; z-index: 2; display: grid; place-items: center; width: 40px; height: 40px;
+    margin: 0 0 6px auto; padding: 0; cursor: pointer; font: 700 18px/1 var(--sans); color: var(--tinta);
+    background: var(--chip); border: 1.5px solid var(--chip-borde); border-radius: 50%; box-shadow: var(--sombra-boton);
+  }
+  .ficha-cerrar:focus-visible { outline: 2px solid var(--lacre); outline-offset: 2px; }
+}
+@media (min-width: 560px) and (max-width: 979px) {
+  .ficha-cajas { grid-template-columns: 1.2fr 1fr; }
+}
+@media (max-width: 560px) {
+  .mapa-pergamino { padding: 12px 20px 12px 16px; gap: 10px; }
+  .mapa-rosa { width: 46px; height: 46px; }
+  .mapa-bajada { font-size: 14px; }
+  .mapa-barra { gap: 8px 10px; }
+  .mapa-cuenta { flex-basis: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mapa-ficha, .mapa-ficha.abierta { transition: none; }
+}
+/* Pestaña: en pantallas angostas dice solo "Mapa" */
+@media (max-width: 640px) {
+  .pestana .solo-ancho { display: none; }
+}
+
 /* Pantallas muy angostas (360 px o menos). Va al final para ganarle a las reglas de "celular". */
 @media (max-width: 400px) {
   .pestana { padding: 9px 11px 10px; font-size: 15.5px; }

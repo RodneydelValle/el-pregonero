@@ -1,11 +1,11 @@
 /* Service worker: permite instalar IMP TRAVEL como app y verlo sin conexión. */
-const V = 12;   // el mismo número ?v= con que index.html pide styles.css y app.js: se suben juntos
+const V = 13;   // el mismo número ?v= con que index.html pide styles.css y app.js: se suben juntos
 const VERSION = `imp-travel-v${V}`;
 // La página y sus dos archivos con versión se guardan juntos y de una vez: sin conexión siempre se usa este trío,
 // nunca la página de una versión con el código de otra
 const NUCLEO = ["./", `styles.css?v=${V}`, `app.js?v=${V}`];
 const RESTO = ["cuenta.js", "manifest.webmanifest", "config/gustos.json", "config/firebase.js",
-  "data/eventos.json", "data/restaurantes.json", "data/lugares.json", "icons/icono-192.png", "icons/icono-512.png"];
+  "data/eventos.json", "data/restaurantes.json", "data/lugares.json", "data/tiendas.json", "icons/icono-192.png", "icons/icono-512.png"];
 // cache: "reload" va directo al servidor: la caché del navegador podría tener aún los archivos de la versión anterior
 const delServidor = (u) => new Request(u, { cache: "reload" });
 

@@ -25,9 +25,23 @@ La cabecera tiene un banner por sección. Al deslizarlo con el dedo, tocar sus p
 - **Museos** (el museo): la agenda con los temas «Museos y cultura» y «Exposiciones de arte».
 - **Restaurantes** (el ramen): restaurantes temáticos japoneses, vikingos y medievales, góticos y geek en Santiago (`data/restaurantes.json`). La lista se armó el 6-11-2026: cada lugar lo verificó un agente independiente (que siga abierto, la dirección y que la temática sea real) y los que tienen algo por confirmar muestran un aviso ⚠. Los que cerraron o no calzaban quedaron fuera.
 
-Bajo la cabecera hay dos pestañas: **Agenda** (vuelve a la agenda completa) y **Mis favoritos** (lo que marcaste con ☆ Favorito). Elegir un tema en la agenda también mueve el banner (por ejemplo, «Exposiciones de arte» lo pasa a Museos). Cada sección tiene su dirección: `#eventos`, `#juegos`, `#museos`, `#restaurantes` y `#favoritos`. Los banners están en `img/banner-*.webp` (3:1, en 900, 1400 y el tamaño original, más un JPG de 1200 de respaldo); su orden y su sección, en `BANNERS` de `app.js`.
+Bajo la cabecera hay tres pestañas: **Agenda** (vuelve a la agenda completa), **Mapa del Aventurero** y **Mis favoritos** (lo que marcaste con ☆ Favorito). Elegir un tema en la agenda también mueve el banner (por ejemplo, «Exposiciones de arte» lo pasa a Museos). Cada sección tiene su dirección: `#eventos`, `#juegos`, `#museos`, `#restaurantes`, `#mapa` y `#favoritos`. Los banners están en `img/banner-*.webp` (3:1, en 900, 1400 y el tamaño original, más un JPG de 1200 de respaldo); su orden y su sección, en `BANNERS` de `app.js`.
 
-La web no muestra mapas. En cada evento y restaurante, **🗺 Cómo llegar** abre Google Maps (en el celular, su app) con la ruta desde donde estás hasta el lugar.
+En cada evento, restaurante y tienda, **🗺 Cómo llegar** abre Google Maps (en el celular, su app) con la ruta desde donde estás hasta el lugar.
+
+## Mapa del Aventurero
+
+Pestaña aparte (`#mapa`), pedida el 7-11-2026 con una maqueta del usuario. Muestra en un mapa las **tiendas** de cartas (TCG), juegos de mesa, rol, miniaturas, anime y manga y videojuegos (`data/tiendas.json`) y los **restaurantes temáticos** que tienen coordenadas (`lat` y `lng` en `data/restaurantes.json`).
+
+- **Filtros:** categorías (una o más, con su color e ícono), buscador, comuna y «con torneos», «con espacio de juego» y «venta online». «Limpiar filtros» vuelve a mostrar todo.
+- **Ficha:** al tocar un marcador (o una fila de la vista **Lista**) se ven sus fotos, categorías, descripción, torneos, mesas de juego, venta online y horario, con ☆ Favorito, Cómo llegar, Sitio web y Compartir. En el computador va a la derecha; en el celular sube desde abajo. Cada lugar tiene su dirección: `#m-t-<id>` (tienda) o `#m-r-<id>` (restaurante).
+- **Ordenar por** nombre, comuna o «Más cercanas» (pide la ubicación al navegador; también el botón ⌖ del mapa).
+- **Mapa:** [Leaflet 1.9.4](https://leafletjs.com) (en `vendor/`, licencia BSD-2; se carga solo al abrir la pestaña) con las teselas de OpenStreetMap y un filtro sepia para que combine con el pergamino. Las de CARTO quedaron fuera: desde 2026 piden clave.
+- **Íconos:** dibujados en código en el sprite de `index.html` (`i-cartas`, `i-dado6`, `i-dado`, `i-meeple`, `i-gato`, `i-mando`, `i-cubiertos`), a la espera de los del usuario. Las categorías (nombre, ícono y color) están en `categorias` de `data/tiendas.json`.
+- **Datos de las tiendas:** lista revisada a mano (el robot no la toca), con evidencia de que siguen abiertas. Las tiendas dentro de una galería llevan `"en": "<id de la galería>"` y comparten su marcador.
+- **Coordenadas:** las pone `scripts/coordenadas.py` con OpenStreetMap (API Overpass): por nombre, por dirección exacta o interpolando entre dos números de la misma calle, y solo las guarda si el punto cae en la comuna del dato. Se corre con el botón **Run workflow** del workflow «Coordenadas (OpenStreetMap)» (desde la red de la oficina no se llega a Overpass). Pistas: `buscar_osm` (p. ej. el mall donde está el local).
+- **Marcadores:** los lugares de una misma dirección van en un marcador con su número (al tocarlo, la lista para elegir) y, con el mapa alejado, los cercanos se juntan en racimos que al tocarlos acercan el mapa. Las fotos siguen las mismas reglas que las de los lugares (sitio oficial, prensa o Wikimedia Commons; nunca Instagram, Facebook ni Google Maps).
+- **Favoritos de tiendas:** en el navegador (`pregonero:tiendas`) y, con sesión iniciada, en la cuenta dentro de la lista de restaurantes con `t-` delante (así no hubo que cambiar las reglas de Firestore).
 
 ## Fotos de los lugares
 

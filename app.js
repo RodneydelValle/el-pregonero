@@ -1,6 +1,7 @@
-/* IMP TRAVEL (antes El Pregonero) — agenda de eventos, restaurantes temáticos y favoritos. Sin dependencias.
- * Datos: data/eventos.json (lo actualiza el robot), data/restaurantes.json (lista revisada a mano)
+/* IMP TRAVEL (antes El Pregonero) — agenda de eventos, restaurantes temáticos, Mapa del Aventurero y favoritos.
+ * Datos: data/eventos.json (lo actualiza el robot), data/restaurantes.json y data/tiendas.json (listas revisadas a mano)
  * y data/lugares.json (fotos de teatros, museos y salas: se muestran en cada evento que ocurre ahí).
+ * El mapa usa Leaflet (vendor/), que se carga solo al abrir esa sección.
  * Favoritos: en el navegador; con sesión de Google (cuenta.js + Firebase) quedan en la cuenta de cada persona. */
 "use strict";
 
@@ -9,11 +10,13 @@ const URL_BUSCAR = `https://github.com/${REPO}/actions/workflows/buscar-eventos.
 const URL_GUSTOS = `https://github.com/${REPO}/edit/main/config/gustos.json`;
 const CLAVE_GUARDADOS = "pregonero:guardados";
 const CLAVE_REST = "pregonero:restaurantes";
+const CLAVE_TIENDAS = "pregonero:tiendas";
 const DIAS = ["dom", "lun", "mar", "mié", "jue", "vie", "sáb"];
 const DIAS_LARGOS = ["domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado"];
 const MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
 const COMUNAS_RM = /santiago|metropolitana|providencia|[ñn]u[ñn]oa|las condes|vitacura|lo barnechea|la reina|pe[ñn]alol[ée]n|macul|la florida|puente alto|maip[úu]|estaci[óo]n central|quinta normal|recoleta|independencia|conchal[íi]|huechuraba|quilicura|renca|cerro navia|lo prado|pudahuel|cerrillos|pedro aguirre cerda|san miguel|san joaqu[íi]n|la cisterna|el bosque|la granja|la pintana|san ram[óo]n|lo espejo|san bernardo|buin|colina|lampa|talagante|pe[ñn]aflor|melipilla|pirque|san jos[ée] de maipo|movistar arena|caupolic[áa]n|teatro coliseo|blondie|santander arena|espacio riesco|matucana|gam\b|parque o.?higgins/i;
-const HASH_SECCION = { agenda: "eventos", restaurantes: "restaurantes", favoritos: "favoritos" };
+const HASH_SECCION = { agenda: "eventos", restaurantes: "restaurantes", mapa: "mapa", favoritos: "favoritos" };
+const SECCIONES = ["agenda", "restaurantes", "mapa", "favoritos"];
 // Banners de la cabecera: cada uno es una sección (en ese orden se deslizan). Juegos y Museos son la agenda con su
 // tema; "grupo:museos" junta los museos con las exposiciones de arte. Restaurantes no tiene pestaña: se llega por su banner.
 const BANNERS = [
@@ -37,11 +40,14 @@ let NUEVOS = new Set();   // id de los eventos que agregó la última búsqueda
 let CATS = {};
 let ORDEN_CATS = [];
 let RESTAURANTES = [];
+let TIENDAS = [];          // tiendas del Mapa del Aventurero (data/tiendas.json)
+let TIENDAS_FALLO = false;
 let TEMAS = {};
 let ORDEN_TEMAS = [];
 let REVISADO = null;
 let favEventos = leerSet(CLAVE_GUARDADOS);
 let favRest = leerSet(CLAVE_REST);
+let favTiendas = leerSet(CLAVE_TIENDAS);
 let CUENTA = { disponible: false, usuario: null };
 
 // ---------- utilidades ----------
@@ -59,7 +65,7 @@ function icoCat(id, emoji) {
 function esc(t) {
   return String(t ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 }
-function urlSegura(u) { return typeof u === "string" && /^https?:\/\//i.test(u) ? u : null; }
+function urlSegura(u) { return typeof u === "string" && /^https?:\/\/\S+$/i.test(u.trim()) ? u.trim() : null; }
 function sinTildes(t) { return String(t || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase(); }
 function fecha(iso) { const [a, m, d] = iso.split("-").map(Number); return new Date(a, m - 1, d); }
 function hoy() { const h = new Date(); return new Date(h.getFullYear(), h.getMonth(), h.getDate()); }
@@ -72,6 +78,7 @@ function guardarLocal() {
   try {
     localStorage.setItem(CLAVE_GUARDADOS, JSON.stringify([...favEventos]));
     localStorage.setItem(CLAVE_REST, JSON.stringify([...favRest]));
+    localStorage.setItem(CLAVE_TIENDAS, JSON.stringify([...favTiendas]));
   } catch { /* sin almacenamiento */ }
 }
 function avisar(texto) {
@@ -118,12 +125,31 @@ function lugarTexto(e) { return unirPartes([e.lugar, e.comuna || e.ciudad]).join
 // ---------- favoritos y cuenta ----------
 // Los favoritos de eventos que ya pasaron no se borran de la cuenta (otra pestaña podría tener una agenda
 // más nueva o más vieja): simplemente no se muestran. El tope de la cuenta guarda los más recientes.
-function favoritosActuales() { return { eventos: [...favEventos], restaurantes: [...favRest] }; }
+// Las tiendas del mapa viajan a la cuenta dentro de la lista de restaurantes, con "t-" delante: así no hay que
+// cambiar las reglas de Firestore (que solo aceptan las listas "eventos" y "restaurantes").
+const PREFIJO_TIENDA = "t-";
+function favoritosActuales() {
+  return { eventos: [...favEventos], restaurantes: [...favRest, ...[...favTiendas].map((id) => PREFIJO_TIENDA + id)] };
+}
+function separarFavoritos(lista) {
+  const r = (lista || []).filter((x) => typeof x === "string");
+  return { rest: r.filter((x) => !x.startsWith(PREFIJO_TIENDA)), tiendas: r.filter((x) => x.startsWith(PREFIJO_TIENDA)).map((x) => x.slice(PREFIJO_TIENDA.length)) };
+}
+function conjuntoFav(tipo) { return tipo === "r" ? favRest : tipo === "t" ? favTiendas : favEventos; }
+/** Lee los favoritos del navegador. Una pestaña con la versión anterior de la página guarda la lista de la cuenta
+ *  tal cual (con las tiendas "t-…" mezcladas en restaurantes): aquí se separan siempre. */
+function leerFavoritosLocales() {
+  const s = separarFavoritos([...leerSet(CLAVE_REST)]);
+  favEventos = leerSet(CLAVE_GUARDADOS);
+  favRest = new Set(s.rest);
+  favTiendas = new Set([...leerSet(CLAVE_TIENDAS), ...s.tiendas]);
+}
+leerFavoritosLocales();
 
 /** Actualiza en su lugar los botones ☆/★ y el contador, sin redibujar la página (no se pierde el foco ni la posición). */
 function refrescarFavoritos(desde) {
   document.querySelectorAll('[data-accion="favorito"]').forEach((b) => {
-    const en = (b.dataset.tipo === "r" ? favRest : favEventos).has(b.dataset.id);
+    const en = conjuntoFav(b.dataset.tipo).has(b.dataset.id);
     b.classList.toggle("guardado", en);
     b.setAttribute("aria-pressed", String(en));
     pintarBotonFavorito(b, en);
@@ -141,7 +167,7 @@ function refrescarFavoritos(desde) {
 }
 
 function alternarFavorito(tipo, id, boton) {
-  const conjunto = tipo === "r" ? favRest : favEventos;
+  const conjunto = conjuntoFav(tipo);
   const quitar = conjunto.has(id);
   if (quitar) conjunto.delete(id); else conjunto.add(id);
   guardarLocal();
@@ -156,18 +182,19 @@ window.pregoneroCuenta = {
   entrar: null, salir: null, guardar: () => {},
   estado(info) { CUENTA = { ...CUENTA, ...info }; pintarCuenta(); if (estado.seccion === "favoritos") pintarFavoritos(); },
   favoritos(fav) {
-    favEventos = new Set(fav.eventos || []); favRest = new Set(fav.restaurantes || []);
+    const { rest, tiendas } = separarFavoritos(fav.restaurantes);
+    favEventos = new Set(fav.eventos || []); favRest = new Set(rest); favTiendas = new Set(tiendas);
     guardarLocal(); refrescarFavoritos();
   },
   locales() { return favoritosActuales(); },
-  limpiarLocales() { favEventos = new Set(); favRest = new Set(); guardarLocal(); refrescarFavoritos(); },
+  limpiarLocales() { favEventos = new Set(); favRest = new Set(); favTiendas = new Set(); guardarLocal(); refrescarFavoritos(); },
   error(msg, e) { console.error(e); avisar(msg); },
 };
 
 // Otra pestaña cambió los favoritos (o cerró la sesión y los borró): esta se pone al día
 window.addEventListener("storage", (ev) => {
-  if (ev.key === null || ev.key === CLAVE_GUARDADOS || ev.key === CLAVE_REST) {
-    favEventos = leerSet(CLAVE_GUARDADOS); favRest = leerSet(CLAVE_REST);
+  if (ev.key === null || ev.key === CLAVE_GUARDADOS || ev.key === CLAVE_REST || ev.key === CLAVE_TIENDAS) {
+    leerFavoritosLocales();
     refrescarFavoritos();
   }
 });
@@ -203,6 +230,7 @@ function hashActual() {
 function seccionDeHash() {
   const h = hashActual();
   if (h === "restaurantes" || h.startsWith("r-")) return "restaurantes";
+  if (h === "mapa" || h.startsWith("m-")) return "mapa";
   if (h === "favoritos") return "favoritos";
   return "agenda";
 }
@@ -217,7 +245,7 @@ function bannerDeCat(cat = estado.cat) {
   const k = BANNERS.findIndex((b) => b.seccion === "agenda" && b.cat !== "todas" && cats.every((c) => catsFiltro(b.cat).includes(c)));
   return k >= 0 ? k : 0;
 }
-/** El banner de lo que se está mostrando; null en Mis favoritos (ahí el banner se queda donde estaba). */
+/** El banner de lo que se está mostrando; null en el mapa y en Mis favoritos (ahí el banner se queda donde estaba). */
 function bannerActual() {
   if (estado.seccion === "agenda") return bannerDeCat();
   const k = BANNERS.findIndex((b) => b.seccion === estado.seccion);
@@ -235,7 +263,7 @@ function irA(seccion) {
   // La pestaña Agenda muestra la agenda completa: si se venía de Juegos o Museos, vuelve a "Todo"
   // (un tema elegido con los botones de temas, como Metal, se mantiene)
   if (seccion === "agenda" && bannerDeCat() !== 0) { estado.cat = "todas"; pintarChips(); pintar(); }
-  const hash = `#${HASH_SECCION[seccion]}`;
+  const hash = seccion === "mapa" && MAPA.sel ? `#m-${MAPA.sel}` : `#${HASH_SECCION[seccion]}`;
   if (estado.seccion !== seccion) history.pushState(null, "", hash);
   else if (location.hash !== hash) history.replaceState(null, "", hash);
   estado.seccion = seccion;
@@ -247,12 +275,14 @@ function irA(seccion) {
 }
 function contarFavoritos() {
   return EVENTOS.filter((e) => favEventos.has(e.id) && vigente(e)).length
-    + RESTAURANTES.filter((r) => favRest.has(r.id)).length;
+    + RESTAURANTES.filter((r) => favRest.has(r.id)).length
+    + TIENDAS.filter((x) => favTiendas.has(x.id)).length;
 }
 /** suave: el banner pasa al de la sección deslizándose (al tocar una pestaña, un punto o una flecha). */
 function pintarSecciones(suave = false) {
-  for (const s of ["agenda", "restaurantes", "favoritos"]) {
-    $(`#sec-${s}`).hidden = estado.seccion !== s;
+  for (const s of SECCIONES) {
+    const sec = $(`#sec-${s}`);   // un index.html anterior en caché no tiene #sec-mapa
+    if (sec) sec.hidden = estado.seccion !== s;
     const p = $(`.pestana[data-seccion="${s}"]`);   // Restaurantes no tiene pestaña (sí en un index.html viejo en caché)
     if (!p) continue;
     if (estado.seccion === s) p.setAttribute("aria-current", "page"); else p.removeAttribute("aria-current");
@@ -261,6 +291,7 @@ function pintarSecciones(suave = false) {
   $("#cuenta-favoritos").textContent = n ? String(n) : "";
   if (estado.seccion === "restaurantes") pintarRestaurantes();
   if (estado.seccion === "favoritos") pintarFavoritos();
+  if (estado.seccion === "mapa") abrirMapa();
   // Las fotos de la pestaña que se muestra quedan donde estaban (mientras estuvo escondida no se podían mover)
   const visible = $(`#sec-${estado.seccion}`);
   if (visible) reubicarCarruseles(visible);
@@ -488,6 +519,15 @@ function datosFotos(ref) {
     const e = porId(id);
     return e ? { titulo: e.titulo, fotos: fotosEvento(e) } : null;
   }
+  if (tipo === "t") {
+    const x = TIENDAS.find((y) => y.id === id);
+    if (!x) return null;
+    let fotos = fotosLocal(x);
+    // Una tienda sin fotos propias dentro de una galería muestra las de la galería (con su sello)
+    const g = !fotos.length && x.en ? TIENDAS.find((y) => y.id === x.en) : null;
+    if (g) fotos = fotosLocal(g).map((f) => ({ ...f, tipo: "galeria" }));
+    return { titulo: x.nombre, fotos };
+  }
   const r = RESTAURANTES.find((x) => x.id === id);
   return r ? { titulo: r.nombre, fotos: fotosLocal(r) } : null;
 }
@@ -512,6 +552,7 @@ function htmlGaleria(ref, clase) {
       `<img class="fondo" ${fuente} alt="" decoding="async" referrerpolicy="no-referrer">` +
       `<img class="imagen" ${fuente} alt="" decoding="async" referrerpolicy="no-referrer" data-url="${s}"${i ? "" : ' onload="ajustarMarco(this)"'} onerror="fotoRota(this)">` +
       (f.tipo === "referencial" ? `<span class="sello">Imagen referencial</span>` : "") +
+      (f.tipo === "galeria" ? `<span class="sello">Foto de la galería</span>` : "") +
       `</button>`;
   }).join("");
   // Las flechas son para el mouse (con el dedo se desliza y con el teclado se usan ←/→): no suman paradas al tabulador
@@ -547,6 +588,7 @@ function fotoRota(img) {
 }
 function rehacerGaleria(g) {
   if (!document.contains(g)) return;
+  if (g.closest("#mapa-ficha")) { pintarFicha(); return; }   // la ficha del mapa sabe qué poner si ya no quedan fotos
   const tarjeta = g.closest("article");
   const viejo = g.querySelector(".carrusel");
   const i0 = viejo ? indiceCarrusel(viejo) : 0;
@@ -1232,6 +1274,684 @@ function pintarRestaurantes() {
     : "";
 }
 
+// ---------- Mapa del Aventurero ----------
+// Tiendas (data/tiendas.json) y restaurantes temáticos (los de data/restaurantes.json que tienen lat y lng) en un mapa
+// de Leaflet. El mapa base son las teselas de OpenStreetMap (gratis con su crédito, para un sitio de poco tráfico;
+// las de CARTO ya piden clave). Un filtro sepia las deja color pergamino.
+// Los íconos de las categorías están en el sprite de index.html (dibujados en código, a la espera de los del usuario).
+const LEAFLET = "vendor/leaflet-1.9.4/";
+const TESELAS = "https://tile.openstreetmap.org/{z}/{x}/{y}.png";
+const CREDITO_MAPA = '© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">colaboradores de OpenStreetMap</a>';
+const CENTRO_SANTIAGO = [-33.44, -70.62];
+const CELULAR = window.matchMedia("(max-width: 979px)");
+// data/tiendas.json puede traer sus propias categorías (nombre, ícono del sprite y color)
+let CATS_MAPA = [
+  { id: "tcg", nombre: "Cartas TCG", icono: "i-cartas", color: "#7446c9" },
+  { id: "mesa", nombre: "Juegos de mesa", icono: "i-dado6", color: "#8f6406" },
+  { id: "rol", nombre: "Rol (RPG)", icono: "i-dado", color: "#c62a2a" },
+  { id: "miniaturas", nombre: "Miniaturas", icono: "i-meeple", color: "#18786f" },
+  { id: "anime", nombre: "Anime y manga", icono: "i-gato", color: "#b93279" },
+  { id: "videojuegos", nombre: "Videojuegos", icono: "i-mando", color: "#2f63c9" },
+  { id: "restaurantes", nombre: "Restaurantes temáticos", icono: "i-cubiertos", color: "#a84f1c" },
+];
+const DATOS_MAPA = { listos: false, revisado: null };
+const MAPA = {
+  preparado: false, lugares: [], cats: new Set(), texto: "", comuna: "", torneos: false, espacio: false, online: false,
+  orden: "nombre", vista: "mapa", sel: null, yo: null,
+  mapa: null, capa: null, grupos: [], grupoDe: new Map(), racimos: [], globo: null, capaYo: null,
+  desdeHash: true,      // al abrir, si la dirección es #m-…, se elige ese lugar
+  encuadrar: "todo",    // "todo": el mapa muestra los lugares filtrados; "sel": el elegido; null: no se mueve
+};
+
+function prepararTiendas(datos) {
+  if (Array.isArray(datos.categorias) && datos.categorias.length) CATS_MAPA = datos.categorias;
+  TIENDAS = (datos.tiendas || []).filter((x) => x && x.id && x.nombre);
+  DATOS_MAPA.revisado = datos.revisado || null;
+}
+function catMapa(id) { return CATS_MAPA.find((c) => c.id === id) || { id, nombre: id, icono: "i-pin-rm", color: "#7a5230" }; }
+function claveLugar(l) { return `${l.tipo}-${l.id}`; }
+function lugarPorClave(k) { return MAPA.lugares.find((l) => claveLugar(l) === k) || null; }
+function conCoordenadas(x) { return Number.isFinite(x.lat) && Number.isFinite(x.lng); }
+
+function armarLugares() {
+  const conocida = (c) => CATS_MAPA.some((k) => k.id === c);
+  const tiendas = TIENDAS.filter(conCoordenadas).map((x) => ({ ...x, tipo: "t", ref: `t:${x.id}`, cats: (x.categorias || []).filter(conocida) }));
+  // Un restaurante donde se juega (o de anime) aparece también en esas categorías (categorias_mapa), y su marcador
+  // es el de la primera de ellas: un café de juegos de mesa se ve con su dado.
+  const rest = RESTAURANTES.filter(conCoordenadas).map((r) => ({
+    id: r.id, tipo: "r", ref: `r:${r.id}`, cats: [...(r.categorias_mapa || []).filter(conocida), "restaurantes"],
+    nombre: r.nombre, tema: r.tema, mapa: r.mapa, direccion: r.direccion, comuna: r.comuna, lat: r.lat, lng: r.lng,
+    descripcion: r.descripcion, horario: r.horario, precio: r.precio, web: r.web, instagram: r.instagram, dudas: r.dudas,
+    torneos: r.torneos, espacio_juego: r.espacio_juego, venta_online: r.venta_online }));
+  MAPA.lugares = [...tiendas, ...rest].filter((l) => l.cats.length);
+}
+
+function distanciaKm(a, b) {
+  const rad = (g) => g * Math.PI / 180;
+  const dLat = rad(b[0] - a[0]), dLng = rad(b[1] - a[1]);
+  const h = Math.sin(dLat / 2) ** 2 + Math.cos(rad(a[0])) * Math.cos(rad(b[0])) * Math.sin(dLng / 2) ** 2;
+  return 12742 * Math.asin(Math.sqrt(h));
+}
+function textoDistancia(km) { return km < 1 ? `${Math.round(km * 100) * 10} m` : `${km.toFixed(1).replace(".", ",")} km`; }
+
+function lugaresFiltrados() {
+  const q = sinTildes(MAPA.texto.trim());
+  const lista = MAPA.lugares.filter((l) => {
+    if (MAPA.cats.size && !l.cats.some((c) => MAPA.cats.has(c))) return false;
+    if (MAPA.comuna && l.comuna !== MAPA.comuna) return false;
+    if (MAPA.torneos && !l.torneos) return false;
+    if (MAPA.espacio && l.espacio_juego !== true) return false;
+    if (MAPA.online && l.venta_online !== true) return false;
+    if (q) {
+      const t = sinTildes([l.nombre, l.descripcion, l.comuna, l.direccion, l.torneos, TEMAS[l.tema]?.nombre,
+        ...l.cats.map((c) => catMapa(c).nombre)].join(" "));
+      if (!q.split(/\s+/).every((p) => t.includes(p))) return false;
+    }
+    return true;
+  });
+  const nombre = (a, b) => a.nombre.localeCompare(b.nombre, "es");
+  if (MAPA.orden === "cerca" && MAPA.yo) lista.sort((a, b) => distanciaKm(MAPA.yo, [a.lat, a.lng]) - distanciaKm(MAPA.yo, [b.lat, b.lng]));
+  else if (MAPA.orden === "comuna") lista.sort((a, b) => (a.comuna || "").localeCompare(b.comuna || "", "es") || nombre(a, b));
+  else lista.sort(nombre);
+  return lista;
+}
+
+/** Se llama al mostrar la sección (y al terminar de cargar los datos). */
+function abrirMapa() {
+  if (!DATOS_MAPA.listos || !$("#sec-mapa")) return;   // iniciar() la llama cuando llegan los datos
+  if (!MAPA.preparado) {
+    MAPA.preparado = true;
+    armarLugares();
+    prepararControlesMapa();
+  }
+  if (MAPA.desdeHash) {
+    MAPA.desdeHash = false;
+    const h = hashActual();
+    const l = h.startsWith("m-") ? lugarPorClave(h.slice(2)) : null;
+    if (l) {
+      MAPA.sel = claveLugar(l);
+      if (!lugaresFiltrados().includes(l)) limpiarFiltrosMapa(false);   // un enlace compartido siempre muestra su lugar
+      MAPA.encuadrar = "sel";
+      MAPA.llevarA = MAPA.sel;   // cuando el mapa esté listo, la página baja hasta él
+    } else if (h === "mapa") {
+      MAPA.sel = null;
+    }
+  }
+  pintarMapa();
+  if (MAPA.vista === "mapa") prepararLeaflet();
+}
+
+let promesaLeaflet = null;
+function cargarLeaflet() {
+  if (window.L) return Promise.resolve(window.L);
+  if (!promesaLeaflet) {
+    promesaLeaflet = new Promise((ok, mal) => {
+      if (!document.querySelector(`link[href="${LEAFLET}leaflet.css"]`)) {   // al reintentar no se duplica
+        const css = document.createElement("link");
+        css.rel = "stylesheet"; css.href = LEAFLET + "leaflet.css";
+        document.head.appendChild(css);
+      }
+      const s = document.createElement("script");
+      s.src = LEAFLET + "leaflet.js";
+      s.onload = () => ok(window.L);
+      s.onerror = () => { promesaLeaflet = null; s.remove(); mal(new Error("No se pudo cargar Leaflet")); };
+      document.head.appendChild(s);
+    });
+  }
+  return promesaLeaflet;
+}
+
+async function prepararLeaflet() {
+  if (!MAPA.mapa) {
+    try {
+      await cargarLeaflet();
+    } catch (e) {
+      console.error(e);
+      avisar("No se pudo cargar el mapa: te muestro la lista");
+      MAPA.vista = "lista";
+      pintarMapa();
+      return;
+    }
+  }
+  if (estado.seccion !== "mapa" || MAPA.vista !== "mapa") return;   // se escondió mientras bajaba Leaflet
+  if (!MAPA.mapa) crearMapa();
+  pintarMarcadores();   // mide el recuadro de nuevo (invalidateSize) y encuadra lo pendiente
+  // Enlace directo a un lugar (#m-…): la página baja hasta el mapa (en el celular, con el lugar sobre la ficha)
+  const destino = MAPA.llevarA && lugarPorClave(MAPA.llevarA);
+  MAPA.llevarA = null;
+  if (destino) {
+    if (CELULAR.matches) acomodarParaFicha(destino);
+    else $(".mapa-cuerpo").scrollIntoView({ block: "start" });
+  }
+}
+
+function crearMapa() {
+  const L = window.L;
+  const m = L.map("mapa-lienzo", { center: CENTRO_SANTIAGO, zoom: 12, minZoom: 9, maxZoom: 19, zoomSnap: 0.5, scrollWheelZoom: false, zoomControl: false });
+  L.control.zoom({ zoomInTitle: "Acercar", zoomOutTitle: "Alejar" }).addTo(m);   // title y aria-label en español
+  L.tileLayer(TESELAS, { maxZoom: 19, attribution: CREDITO_MAPA }).addTo(m);
+  m.attributionControl.setPrefix('<a href="https://leafletjs.com" target="_blank" rel="noopener">Leaflet</a>');
+  // La rueda del mouse acerca el mapa solo después de hacer clic en él: si no, al bajar por la página se quedaría pegada
+  m.on("click focus", () => m.scrollWheelZoom.enable());
+  m.on("mouseout blur", () => m.scrollWheelZoom.disable());
+  const Ubicarme = L.Control.extend({
+    options: { position: "topleft" },
+    onAdd() {
+      const b = L.DomUtil.create("button", "mapa-ubicarme leaflet-bar");
+      b.type = "button"; b.title = "Mostrar dónde estoy"; b.setAttribute("aria-label", "Mostrar dónde estoy");
+      b.innerHTML = ico("i-ubicacion");
+      L.DomEvent.disableClickPropagation(b);
+      L.DomEvent.on(b, "click", () => ubicarme(true));
+      return b;
+    },
+  });
+  new Ubicarme().addTo(m);
+  MAPA.mapa = m;
+  MAPA.capa = L.layerGroup().addTo(m);
+  m.on("zoomend", agrupar);   // al acercar o alejar, los racimos se arman de nuevo
+  crearMarcadores();
+  if (MAPA.yo) dibujarYo();
+}
+
+function htmlTooltip(l) {
+  const cats = l.cats.map((c) => { const k = catMapa(c); return `<span class="pin-mini" style="--c:${esc(k.color)}">${ico(k.icono)}</span>`; }).join("");
+  return `<span class="tt-nombre">${ico(l.tipo === "r" ? "i-cubiertos" : "i-tienda")}<b>${esc(l.nombre)}</b></span><span class="tt-cats">${cats}</span>`;
+}
+
+// ---------- marcadores ----------
+/** Enter o Espacio sobre un marcador (Leaflet les da tabindex y role=button, pero no los convierte en clic). */
+function esActivar(e) {
+  if (e.key !== "Enter" && e.key !== " ") return false;
+  e.preventDefault();   // Espacio no baja la página
+  return true;
+}
+/** El nombre del marcador (title, que leen los lectores de pantalla): Leaflet no lo cambia al cambiar el ícono. */
+function rotular(g) {
+  const el = g.mk.getElement();
+  if (el) { el.title = g.mk.options.title; el.setAttribute("aria-label", g.mk.options.title); }
+}
+// Los lugares de una misma dirección (una galería, un mall, el persa) van en UN marcador con su número; al tocarlo
+// se abre una lista para elegir. Así ninguno queda tapado por otro (con marcadores separados, los de abajo no se
+// podían tocar). Si los filtros dejan uno solo, el marcador es el de ese lugar.
+function nombreGrupo(g) {
+  if (g.principal) return g.principal.nombre;
+  const primera = String(g.visibles[0]?.direccion || "").replace(/\s*\([^)]*\)/g, "").split(",")[0].trim();
+  return primera || g.visibles[0]?.nombre || "";
+}
+function tituloGrupo(g) {
+  return g.visibles.length === 1 ? g.visibles[0].nombre : `${nombreGrupo(g)}: ${g.visibles.length} lugares`;
+}
+function tooltipGrupo(g) {
+  const sel = g.visibles.find((l) => claveLugar(l) === MAPA.sel);
+  if (sel || g.visibles.length === 1) return htmlTooltip(sel || g.visibles[0]);
+  return `<span class="tt-nombre">${ico("i-tienda")}<b>${esc(nombreGrupo(g))}</b></span>` +
+    `<span class="tt-sub">${g.visibles.length} lugares aquí: toca para elegir</span>`;
+}
+function iconoGrupo(g) {
+  const solo = g.visibles.length === 1 ? g.visibles[0] : null;
+  const c = solo ? catMapa(solo.cats[0]) : { color: "#6b4423", icono: "i-tienda" };
+  const cuenta = solo ? "" : `<span class="pin-cuenta">${g.visibles.length}</span>`;
+  return window.L.divIcon({
+    className: `marcador${solo ? "" : " grupo"}`,
+    html: `<span class="pin-mapa" style="--c:${esc(c.color)}">${ico(c.icono)}${cuenta}</span>`,
+    iconSize: [40, 46], iconAnchor: [20, 43], tooltipAnchor: [0, -46],
+  });
+}
+
+const MISMO_PUNTO_KM = 0.03;   // a menos de 30 m es la misma dirección (dos locales de un mall, una galería)
+function crearMarcadores() {
+  const L = window.L;
+  const puntos = [];   // [{ centro: [lat, lng], lugares: [...] }]
+  // Primero las galerías, para que sus locales se junten con ellas
+  for (const l of [...MAPA.lugares].sort((a, b) => (b.es_galeria ? 1 : 0) - (a.es_galeria ? 1 : 0))) {
+    const p = puntos.find((x) => distanciaKm(x.centro, [l.lat, l.lng]) < MISMO_PUNTO_KM);
+    if (p) p.lugares.push(l); else puntos.push({ centro: [l.lat, l.lng], lugares: [l] });
+  }
+  MAPA.grupos = puntos.map(({ lugares }) => {
+    const g = { lugares, visibles: lugares, principal: lugares.find((l) => l.es_galeria) || null, firma: null, activo: false };
+    const centro = g.principal || lugares[0];
+    g.mk = L.marker([centro.lat, centro.lng], { icon: iconoGrupo(g), title: tituloGrupo(g), keyboard: true, riseOnHover: true });
+    g.mk.bindTooltip(tooltipGrupo(g), { direction: "top", className: "tooltip-mapa", opacity: 1 });
+    const activar = (tecla) => {
+      if (g.visibles.length === 1) elegirLugar(claveLugar(g.visibles[0]), { desdeMapa: true, enfocar: tecla });
+      else abrirGrupo(g, tecla);
+    };
+    g.mk.on("click", () => activar(false));
+    g.mk.on("keydown", (ev) => { if (esActivar(ev.originalEvent)) activar(true); });
+    for (const l of lugares) MAPA.grupoDe.set(claveLugar(l), g);
+    return g;
+  });
+}
+
+/** La lista de un marcador con varios lugares (un globo con un botón por lugar). */
+function abrirGrupo(g, enfocar) {
+  g.mk.closeTooltip();
+  abrirLista(g.visibles, g.mk.getLatLng(), nombreGrupo(g), enfocar, 38);
+}
+function abrirLista(lugares, donde, titulo, enfocar, alto) {
+  const filas = lugares.map((l) => {
+    const c = catMapa(l.cats[0]);
+    return `<li><button type="button" class="popup-lugar" data-lugar="${esc(claveLugar(l))}">` +
+      `<span class="pin-mini" style="--c:${esc(c.color)}">${ico(c.icono)}</span>` +
+      `<span><b>${esc(l.nombre)}</b><small>${esc(l.cats.map((x) => catMapa(x).nombre).join(" · "))}</small></span></button></li>`;
+  }).join("");
+  MAPA.globo = window.L.popup({ className: "popup-mapa", maxWidth: 320, minWidth: 230, offset: [0, -alto], autoPanPadding: [30, 30] })
+    .setLatLng(donde)
+    .setContent(`<p class="popup-titulo">${ico("i-tienda")}${esc(titulo)} · ${lugares.length} lugares</p><ul class="popup-lista">${filas}</ul>`)
+    .openOn(MAPA.mapa);
+  MAPA.globo.getElement()?.querySelector(".leaflet-popup-close-button")?.setAttribute("aria-label", "Cerrar la lista");
+  if (enfocar) MAPA.globo.getElement()?.querySelector(".popup-lugar")?.focus();
+}
+
+function pintarMarcadores() {
+  if (!MAPA.mapa) return;
+  const lista = lugaresFiltrados();
+  const visibles = new Set(lista.map(claveLugar));
+  MAPA.mapa.closePopup();
+  for (const g of MAPA.grupos) {
+    g.visibles = g.lugares.filter((l) => visibles.has(claveLugar(l)));
+    if (!g.visibles.length) {
+      if (MAPA.capa.hasLayer(g.mk)) MAPA.capa.removeLayer(g.mk);
+      continue;
+    }
+    const firma = g.visibles.map(claveLugar).join("|");
+    if (firma !== g.firma) {   // cambió qué lugares de este punto se ven: número, ícono y globo nuevos
+      g.firma = firma;
+      g.mk.options.title = tituloGrupo(g);
+      g.mk.setIcon(iconoGrupo(g));
+      rotular(g);
+      g.mk.setTooltipContent(tooltipGrupo(g));
+      g.activo = null;
+    }
+  }
+  const aLaVista = estado.seccion === "mapa" && MAPA.vista === "mapa" && !$("#mapa-lienzo").hidden;
+  if (aLaVista) MAPA.mapa.invalidateSize();   // pudo cambiar de tamaño escondido (otra pestaña, la Lista, girar el teléfono)
+  agrupar();
+  marcarActivo();
+  if (MAPA.encuadrar && aLaVista) encuadrarMapa(lista);   // escondido no tiene tamaño: se encuadra al volver
+}
+
+// ---------- racimos ----------
+// Con el mapa alejado, los marcadores a menos de RADIO_RACIMO píxeles se juntan en un racimo con su número
+// (en Los Leones o Barrio Italia hay varios por cuadra y se tapaban). Al tocarlo, el mapa se acerca hasta
+// separarlos. Desde el zoom 17 ya no se juntan, y el lugar elegido nunca queda dentro de un racimo.
+const RADIO_RACIMO = 38;
+function mostrarGrupo(g, ver) {
+  if (ver && !MAPA.capa.hasLayer(g.mk)) { MAPA.capa.addLayer(g.mk); rotular(g); }
+  else if (!ver && MAPA.capa.hasLayer(g.mk)) MAPA.capa.removeLayer(g.mk);
+}
+function agrupar() {
+  if (!MAPA.mapa) return;
+  for (const r of MAPA.racimos) MAPA.capa.removeLayer(r);
+  MAPA.racimos = [];
+  const z = MAPA.mapa.getZoom();
+  const vivos = MAPA.grupos.filter((g) => g.visibles.length).sort((a, b) => b.visibles.length - a.visibles.length);
+  const elegido = MAPA.sel ? MAPA.grupoDe.get(MAPA.sel) : null;
+  const punto = new Map(vivos.map((g) => [g, MAPA.mapa.latLngToLayerPoint(g.mk.getLatLng())]));
+  const libres = new Set(vivos);
+  for (const g of vivos) {
+    if (!libres.has(g)) continue;
+    libres.delete(g);
+    const juntos = [g];
+    if (z < 17 && g !== elegido) {
+      for (const h of vivos) {
+        if (libres.has(h) && h !== elegido && punto.get(h).distanceTo(punto.get(g)) < RADIO_RACIMO) {
+          juntos.push(h);
+          libres.delete(h);
+        }
+      }
+    }
+    if (juntos.length === 1) { mostrarGrupo(g, true); continue; }
+    for (const h of juntos) mostrarGrupo(h, false);
+    MAPA.racimos.push(crearRacimo(juntos));
+  }
+}
+function crearRacimo(grupos) {
+  const L = window.L;
+  const lugares = grupos.flatMap((g) => g.visibles);
+  const pts = grupos.map((g) => g.mk.getLatLng());
+  const centro = L.latLng(pts.reduce((s, p) => s + p.lat, 0) / pts.length, pts.reduce((s, p) => s + p.lng, 0) / pts.length);
+  const n = lugares.length;
+  const mk = L.marker(centro, {
+    icon: L.divIcon({ className: "marcador racimo", html: `<span class="pin-racimo">${n}</span>`, iconSize: [46, 46], iconAnchor: [23, 23], tooltipAnchor: [0, -24] }),
+    title: `${n} lugares juntos: acerca el mapa para verlos`, keyboard: true, riseOnHover: true,
+  });
+  mk.bindTooltip(`<span class="tt-nombre">${ico("i-mapa")}<b>${n} lugares</b></span><span class="tt-sub">Toca para acercar el mapa</span>`,
+    { direction: "top", className: "tooltip-mapa", opacity: 1 });
+  const activar = (tecla) => {
+    const caja = L.latLngBounds(pts);
+    // si no se pueden separar más (misma cuadra y ya muy cerca), la lista de todos
+    if (MAPA.mapa.getZoom() >= 17) { abrirLista(lugares, centro, "Aquí", tecla, 20); return; }
+    // con el teclado, el foco queda en el mapa (el racimo desaparece al acercarse)
+    if (tecla) MAPA.mapa.once("zoomend", () => MAPA.mapa.getContainer().focus({ preventScroll: true }));
+    MAPA.mapa.fitBounds(caja.pad(0.4), { maxZoom: 17, animate: !MOVIMIENTO_REDUCIDO.matches });
+  };
+  mk.on("click", () => activar(false));
+  mk.on("keydown", (ev) => { if (esActivar(ev.originalEvent)) activar(true); });
+  MAPA.capa.addLayer(mk);
+  return mk;
+}
+
+/** Lleva el mapa a lo que hay que mostrar. Los lugares lejos del centro (Cajón del Maipo) no achican el mapa
+ *  de Santiago, salvo que sean los únicos que quedan con los filtros. */
+function encuadrarMapa(lista) {
+  const modo = MAPA.encuadrar;
+  MAPA.encuadrar = null;
+  const sel = MAPA.sel && lugarPorClave(MAPA.sel);
+  if (modo === "sel" && sel) {
+    MAPA.mapa.setView([sel.lat, sel.lng], 16);
+    MAPA.grupoDe.get(MAPA.sel)?.mk.openTooltip();
+    return;
+  }
+  if (!lista.length) return;
+  const cerca = lista.filter((l) => distanciaKm(CENTRO_SANTIAGO, [l.lat, l.lng]) < 22);
+  const puntos = (cerca.length ? cerca : lista).map((l) => [l.lat, l.lng]);
+  MAPA.mapa.fitBounds(window.L.latLngBounds(puntos), { paddingTopLeft: [40, 96], paddingBottomRight: [40, 36], maxZoom: 16 });
+}
+
+function marcarActivo() {
+  for (const g of MAPA.grupos || []) {
+    const activo = g.visibles.some((l) => claveLugar(l) === MAPA.sel);
+    g.mk.getElement()?.classList.toggle("activo", activo);
+    g.mk.setZIndexOffset(activo ? 1000 : 0);
+    if (g.activo !== activo) g.mk.setTooltipContent(tooltipGrupo(g));   // el globo dice cuál de sus lugares se eligió
+    g.activo = activo;
+  }
+}
+
+function elegirLugar(k, { desdeMapa = false, enfocar = false } = {}) {
+  const l = lugarPorClave(k);
+  if (!l) return;
+  MAPA.sel = k;
+  history.replaceState(null, "", `#m-${k}`);
+  pintarFicha();
+  agrupar();
+  marcarActivo();
+  document.querySelectorAll(".fila-lugar").forEach((b) => {
+    if (b.dataset.lugar === k) b.setAttribute("aria-current", "true"); else b.removeAttribute("aria-current");
+  });
+  if (MAPA.mapa && MAPA.vista === "mapa") {
+    MAPA.mapa.closePopup();
+    if (CELULAR.matches) acomodarParaFicha(l);
+    else if (desdeMapa) MAPA.mapa.panInside([l.lat, l.lng], { padding: [60, 60] });
+    else MAPA.mapa.setView([l.lat, l.lng], Math.max(MAPA.mapa.getZoom(), 15));
+    MAPA.grupoDe.get(k)?.mk.openTooltip();
+  }
+  if (enfocar) $("#ficha-titulo")?.focus({ preventScroll: CELULAR.matches });
+}
+
+/** En el celular la ficha sube desde abajo y tapa parte de la pantalla: la página sube hasta el mapa y el mapa
+ *  se corre para que el lugar elegido quede a la vista, encima de la ficha. */
+function acomodarParaFicha(l) {
+  const lienzo = $("#mapa-lienzo");
+  let caja = lienzo.getBoundingClientRect();
+  if (caja.top < 0 || caja.top > window.innerHeight * 0.2) {
+    window.scrollBy({ top: caja.top - 8, behavior: "auto" });
+    caja = lienzo.getBoundingClientRect();
+  }
+  const libreAbajo = window.innerHeight - $("#mapa-ficha").offsetHeight - 16;
+  const arriba = Math.max(caja.top, 0), abajo = Math.min(caja.bottom, libreAbajo);
+  if (MAPA.mapa.getZoom() < 14) MAPA.mapa.setView([l.lat, l.lng], 15, { animate: false });
+  const punto = MAPA.mapa.latLngToContainerPoint([l.lat, l.lng]);
+  const meta = window.L.point(caja.width / 2, Math.max(70, (arriba + abajo) / 2 - caja.top + 20));
+  MAPA.mapa.panBy(punto.subtract(meta), { animate: !MOVIMIENTO_REDUCIDO.matches });
+}
+
+function cerrarFicha({ teclado = false } = {}) {
+  const k = MAPA.sel;
+  MAPA.sel = null;
+  history.replaceState(null, "", "#mapa");
+  pintarFicha();
+  marcarActivo();
+  agrupar();
+  const g = MAPA.grupoDe.get(k);
+  if (teclado) {
+    // el foco vuelve a donde se eligió el lugar: su fila de la lista, su marcador o, si quedó en un racimo, el mapa
+    const fila = MAPA.vista === "lista" ? document.querySelector(`.fila-lugar[data-lugar="${CSS.escape(k || "")}"]`) : null;
+    const destino = fila || g?.mk.getElement() || (MAPA.mapa && MAPA.vista === "mapa" ? MAPA.mapa.getContainer() : $("#t-mapa"));
+    destino?.focus({ preventScroll: true });
+  }
+  g?.mk.closeTooltip();   // después del foco: Leaflet abre el globo cuando el marcador recibe el foco
+}
+
+function siNo(v) { return v === true ? "Sí" : v === false ? "No" : "Sin datos"; }
+function etiquetasMapa(cats) {
+  return cats.map((c) => { const k = catMapa(c); return `<span class="etiqueta-mapa" style="--c:${esc(k.color)}">${ico(k.icono)}${esc(k.nombre)}</span>`; }).join("");
+}
+
+function htmlFicha(l) {
+  const c0 = catMapa(l.cats[0]);
+  const galeria = htmlGaleria(l.ref, "foto-ficha");
+  const foto = galeria || `<div class="ficha-sin-foto" style="--c:${esc(c0.color)}">${ico(c0.icono)}<span>Aún sin fotos de este lugar</span></div>`;
+  const dir = unirPartes([l.direccion, l.comuna]).join(", ");
+  const info = [];
+  if (l.tipo === "t") {
+    info.push(`<li>${ico("i-trofeo")}<span><b>Torneos:</b> ${esc(l.torneos || "Sin datos")}</span></li>`);
+    info.push(`<li>${ico("i-mesa")}<span><b>Mesas de juego:</b> ${siNo(l.espacio_juego)}</span></li>`);
+    info.push(`<li>${ico("i-carro")}<span><b>Venta online:</b> ${siNo(l.venta_online)}</span></li>`);
+  } else {
+    const t = TEMAS[l.tema];
+    if (t) info.push(`<li><span class="emoji" aria-hidden="true">${esc(t.emoji)}</span><span><b>Tema:</b> ${esc(t.nombre)}</span></li>`);
+    if (l.torneos) info.push(`<li>${ico("i-trofeo")}<span><b>Torneos:</b> ${esc(l.torneos)}</span></li>`);
+    if (l.espacio_juego === true) info.push(`<li>${ico("i-mesa")}<span><b>Para jugar:</b> sí, en el local</span></li>`);
+    if (l.precio) info.push(`<li>${ico("i-ticket")}<span><b>Precios:</b> ${esc(l.precio)}</span></li>`);
+  }
+  const enlaces = [];
+  if (urlSegura(l.web)) enlaces.push(`<a class="accion" href="${esc(l.web)}" target="_blank" rel="noopener">${ico("i-web")}Sitio web</a>`);
+  if (urlSegura(l.instagram)) enlaces.push(`<a class="accion" href="${esc(l.instagram)}" target="_blank" rel="noopener">Instagram ↗</a>`);
+  return `<button type="button" class="ficha-cerrar" data-accion="cerrar-ficha" aria-label="Cerrar la ficha">✕</button>
+    <div class="ficha-foto">${foto}${botonFavorito(l.tipo, l.id, conjuntoFav(l.tipo).has(l.id), true)}</div>
+    <div class="ficha-cuerpo">
+      <h3 id="ficha-titulo" class="ficha-titulo" tabindex="-1">${ico(l.tipo === "r" ? "i-cubiertos" : "i-tienda", "ico-ficha")}${esc(l.nombre)}</h3>
+      ${dir ? `<p class="ficha-dir">${ico("i-pin", "ico-pin")}${esc(dir)}</p>` : ""}
+      <p class="ficha-etiquetas">${etiquetasMapa(l.cats)}</p>
+      ${l.descripcion ? `<p class="desc">${esc(l.descripcion)}</p>` : ""}
+      ${l.dudas ? `<p class="aviso-local">${ico("i-aviso")}${esc(l.dudas)}</p>` : ""}
+      <div class="ficha-cajas">
+        ${info.length ? `<ul class="ficha-caja ficha-datos">${info.join("")}</ul>` : ""}
+        <div class="ficha-caja ficha-horario">${ico("i-reloj")}<div><b>Horario</b><p>${esc(l.horario || "Sin datos: confírmalo en sus redes")}</p></div></div>
+      </div>
+      <div class="acciones">
+        <a class="accion accion-fuerte" href="${esc(urlComoLlegar(consultaLocal(l)))}" target="_blank" rel="noopener">${ico("i-ruta")}Cómo llegar</a>
+        ${enlaces.join("")}
+        <button type="button" class="accion" data-accion="compartir-lugar" data-lugar="${esc(claveLugar(l))}">${ico("i-compartir")}Compartir</button>
+      </div>
+    </div>`;
+}
+
+function pintarFicha() {
+  const l = MAPA.sel && lugarPorClave(MAPA.sel);
+  const f = $("#mapa-ficha");
+  f.classList.remove("sin-foto");
+  f.classList.toggle("abierta", !!l);
+  f.setAttribute("aria-label", l ? `Ficha de ${l.nombre}` : "Ficha del lugar");
+  f.innerHTML = l ? htmlFicha(l)
+    : `<div class="ficha-vacia">${ico("i-brujula", "ficha-rosa")}<p class="vacio-titulo">Elige un lugar</p>` +
+      `<p>Toca un marcador del mapa o un lugar de la lista para ver sus fotos, sus datos y cómo llegar.</p></div>`;
+}
+
+function htmlFilaLugar(l) {
+  const k = claveLugar(l), c = catMapa(l.cats[0]);
+  const d = MAPA.yo ? distanciaKm(MAPA.yo, [l.lat, l.lng]) : null;
+  const sub = [l.comuna, l.cats.map((x) => catMapa(x).nombre).join(" · ")].filter(Boolean).join(" — ");
+  return `<button type="button" class="fila-lugar" data-lugar="${esc(k)}"${k === MAPA.sel ? ' aria-current="true"' : ""}>` +
+    `<span class="pin-mini" style="--c:${esc(c.color)}">${ico(c.icono)}</span>` +
+    `<span class="fila-texto"><b>${esc(l.nombre)}</b><span>${esc(sub)}</span></span>` +
+    (d != null ? `<span class="fila-dist">${textoDistancia(d)}</span>` : "") + `</button>`;
+}
+
+function pintarMapa() {
+  const lista = lugaresFiltrados();
+  const cuenta = (id) => MAPA.lugares.filter((l) => l.cats.includes(id)).length;
+  $("#mapa-chips").innerHTML = CATS_MAPA.filter((c) => cuenta(c.id)).map((c) =>
+    `<button type="button" class="chip chip-mapa" data-mcat="${esc(c.id)}" aria-pressed="${MAPA.cats.has(c.id)}" style="--c:${esc(c.color)}">` +
+    `<span class="chip-ico">${ico(c.icono)}</span>${esc(c.nombre)} <span class="cuenta">${cuenta(c.id)}</span></button>`).join("");
+  const n = lista.length;
+  $("#mapa-cuenta").textContent = MAPA.lugares.length ? `${n} ${n === 1 ? "lugar encontrado" : "lugares encontrados"}` : "Aún no hay lugares en el mapa";
+  const activos = [MAPA.texto.trim(), MAPA.comuna, MAPA.torneos, MAPA.espacio, MAPA.online].filter(Boolean).length;
+  $("#mapa-filtros-cuenta").textContent = activos ? String(activos) : "";
+  $("#mapa-lienzo").hidden = MAPA.vista !== "mapa";
+  $("#mapa-lista").hidden = MAPA.vista !== "lista";
+  document.querySelectorAll("#sec-mapa [data-vista]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.vista === MAPA.vista)));
+  if (MAPA.vista === "lista") {
+    $("#mapa-lista").innerHTML = n ? lista.map(htmlFilaLugar).join("")
+      : `<div class="vacio"><p class="vacio-titulo">Nada con esos filtros.</p><p>Prueba con otra categoría o toca «Limpiar filtros».</p></div>`;
+  }
+  if (MAPA.sel && !lista.some((l) => claveLugar(l) === MAPA.sel)) {   // los filtros dejaron fuera al elegido
+    MAPA.sel = null;
+    history.replaceState(null, "", "#mapa");
+  }
+  pintarFicha();
+  pintarMarcadores();
+  const revisado = DATOS_MAPA.revisado ? `Lista de tiendas revisada el ${fecha(DATOS_MAPA.revisado).toLocaleDateString("es-CL", { dateStyle: "long" })}. ` : "";
+  $("#nota-mapa").textContent = `${revisado}Los horarios y los torneos cambian: confírmalos en sus redes antes de ir. Mapa: © colaboradores de OpenStreetMap.`;
+}
+
+function limpiarFiltrosMapa(repintar = true) {
+  Object.assign(MAPA, { cats: new Set(), texto: "", comuna: "", torneos: false, espacio: false, online: false, encuadrar: "todo" });
+  $("#mapa-buscar").value = ""; $("#mapa-comuna").value = "";
+  for (const id of ["mapa-torneos", "mapa-espacio", "mapa-online"]) $(`#${id}`).checked = false;
+  if (repintar) pintarMapa();
+}
+
+function prepararControlesMapa() {
+  const comunas = [...new Set(MAPA.lugares.map((l) => l.comuna).filter(Boolean))].sort((a, b) => a.localeCompare(b, "es"));
+  $("#mapa-comuna").innerHTML = `<option value="">Todas</option>` + comunas.map((c) => `<option value="${esc(c)}">${esc(c)}</option>`).join("");
+  let espera;
+  $("#mapa-buscar").addEventListener("input", (ev) => {
+    clearTimeout(espera);
+    espera = setTimeout(() => { MAPA.texto = ev.target.value; MAPA.encuadrar = "todo"; pintarMapa(); }, 150);
+  });
+  $("#mapa-comuna").addEventListener("change", (ev) => { MAPA.comuna = ev.target.value; MAPA.encuadrar = "todo"; pintarMapa(); });
+  for (const [id, campo] of [["mapa-torneos", "torneos"], ["mapa-espacio", "espacio"], ["mapa-online", "online"]]) {
+    $(`#${id}`).addEventListener("change", (ev) => { MAPA[campo] = ev.target.checked; MAPA.encuadrar = "todo"; pintarMapa(); });
+  }
+  $("#mapa-orden").addEventListener("change", (ev) => cambiarOrden(ev.target.value));
+  document.addEventListener("keydown", (ev) => {
+    if (ev.key !== "Escape" || ev.defaultPrevented || document.querySelector("dialog[open]")) return;
+    if (ev.target.closest?.("input, select, textarea")) return;
+    if (estado.seccion === "mapa" && MAPA.sel && CELULAR.matches) cerrarFicha({ teclado: true });
+  });
+}
+
+/** La Lista empieza arriba: en el computador tiene su propio desplazamiento; en el celular, la página baja a ella. */
+function alComienzoDeLaLista() {
+  const lista = $("#mapa-lista");
+  lista.scrollTop = 0;
+  if (CELULAR.matches) lista.scrollIntoView({ block: "start", behavior: "auto" });
+}
+
+async function cambiarOrden(v) {
+  MAPA.orden = v;
+  if (v === "cerca" && !MAPA.yo && !(await ubicarme(MAPA.vista === "mapa"))) {
+    MAPA.orden = "nombre";
+    $("#mapa-orden").value = "nombre";
+  }
+  pintarMapa();
+  if (MAPA.vista === "lista") alComienzoDeLaLista();
+}
+
+function dibujarYo() {
+  const L = window.L;
+  if (!MAPA.mapa || !MAPA.yo) return;
+  if (MAPA.capaYo) MAPA.capaYo.setLatLng(MAPA.yo);
+  else {
+    MAPA.capaYo = L.circleMarker(MAPA.yo, { radius: 9, color: "#fff", weight: 3, fillColor: "#2f63c9", fillOpacity: 1 })
+      .bindTooltip("Estás aquí", { direction: "top", className: "tooltip-mapa" }).addTo(MAPA.mapa);
+  }
+}
+
+function ubicarme(centrar) {
+  return new Promise((ok) => {
+    if (!navigator.geolocation) { avisar("Este navegador no puede dar tu ubicación"); ok(null); return; }
+    navigator.geolocation.getCurrentPosition((p) => {
+      MAPA.yo = [p.coords.latitude, p.coords.longitude];
+      dibujarYo();
+      if (centrar && MAPA.mapa) MAPA.mapa.setView(MAPA.yo, 14);
+      if (MAPA.vista === "lista") pintarMapa();
+      ok(MAPA.yo);
+    }, () => {
+      avisar("No se pudo saber dónde estás: revisa el permiso de ubicación del navegador");
+      ok(null);
+    }, { timeout: 12000, maximumAge: 300000 });
+  });
+}
+
+async function compartirLugar(k) {
+  const l = lugarPorClave(k);
+  if (!l) return;
+  const url = `${location.origin}${location.pathname}#m-${k}`;
+  const texto = `${l.nombre}${l.comuna ? ` (${l.comuna})` : ""} en el Mapa del Aventurero de IMP TRAVEL`;
+  try {
+    if (navigator.share) { await navigator.share({ title: l.nombre, text: texto, url }); return; }
+    await navigator.clipboard.writeText(`${texto}\n${url}`);
+    avisar("Enlace copiado");
+  } catch { /* cancelado */ }
+}
+
+/** Clics de la sección del mapa. Devuelve true si el clic era de ella. */
+function clicMapa(ev) {
+  const cat = ev.target.closest("[data-mcat]");
+  if (cat) {
+    const id = cat.dataset.mcat;
+    if (MAPA.cats.has(id)) MAPA.cats.delete(id); else MAPA.cats.add(id);
+    MAPA.encuadrar = "todo";
+    pintarMapa();
+    $(`#mapa-chips [data-mcat="${CSS.escape(id)}"]`)?.focus();   // la fila de chips se redibujó
+    return true;
+  }
+  if (ev.target.closest("#mapa-limpiar")) { limpiarFiltrosMapa(); return true; }
+  const vista = ev.target.closest("#sec-mapa [data-vista]");
+  if (vista) {
+    MAPA.vista = vista.dataset.vista;
+    if (MAPA.vista === "mapa") MAPA.encuadrar = MAPA.sel ? "sel" : "todo";
+    pintarMapa();
+    if (MAPA.vista === "mapa") prepararLeaflet();
+    else alComienzoDeLaLista();
+    return true;
+  }
+  const filtros = ev.target.closest("#mapa-filtros-boton");
+  if (filtros) {
+    const abrir = filtros.getAttribute("aria-expanded") !== "true";
+    filtros.setAttribute("aria-expanded", String(abrir));
+    filtros.closest(".mapa-filtros").classList.toggle("abierto", abrir);
+    return true;
+  }
+  const fila = ev.target.closest(".fila-lugar");
+  if (fila) { elegirLugar(fila.dataset.lugar, { enfocar: true }); return true; }
+  const deGrupo = ev.target.closest(".popup-lugar");   // un lugar de la lista de un marcador con varios
+  if (deGrupo) { elegirLugar(deGrupo.dataset.lugar, { desdeMapa: true, enfocar: ev.detail === 0 }); return true; }
+  const btn = ev.target.closest("[data-accion='cerrar-ficha'], [data-accion='compartir-lugar']");
+  if (btn) {
+    if (btn.dataset.accion === "cerrar-ficha") cerrarFicha({ teclado: ev.detail === 0 }); else compartirLugar(btn.dataset.lugar);
+    return true;
+  }
+  return false;
+}
+
+/** Tarjeta de una tienda en Mis favoritos. */
+function htmlTienda(x, prefijo = "t") {
+  const galeria = htmlGaleria(`t:${x.id}`, "foto-local");
+  const datos = [];
+  const dir = unirPartes([x.direccion, x.comuna]).join(", ");
+  if (dir) datos.push(`<span class="dato">${ico("i-pin", "ico-pin")}${esc(dir)}</span>`);
+  if (x.horario) datos.push(`<span class="dato">${ico("i-reloj")}${esc(x.horario)}</span>`);
+  if (x.torneos) datos.push(`<span class="dato">${ico("i-trofeo")}${esc(x.torneos)}</span>`);
+  return `<article class="local${galeria ? "" : " sin-foto"}" id="${prefijo}-${esc(x.id)}">
+    ${galeria}
+    <p class="ficha-etiquetas">${etiquetasMapa((x.categorias || []).filter((c) => CATS_MAPA.some((k) => k.id === c)))}</p>
+    <h3>${esc(x.nombre)}</h3>
+    ${datos.length ? `<p class="datos datos-columna">${datos.join("")}</p>` : ""}
+    ${x.descripcion ? `<p class="desc">${esc(x.descripcion)}</p>` : ""}
+    <div class="acciones">
+      ${botonFavorito("t", x.id, favTiendas.has(x.id))}
+      ${conCoordenadas(x) ? `<a class="accion" href="#m-t-${esc(x.id)}">${ico("i-brujula")}Ver en el mapa</a>` : ""}
+      <a class="accion" href="${esc(urlComoLlegar(consultaLocal(x)))}" target="_blank" rel="noopener">${ico("i-ruta")}Cómo llegar</a>
+      ${urlSegura(x.web) ? `<a class="accion" href="${esc(x.web)}" target="_blank" rel="noopener">Sitio web ↗</a>` : ""}
+    </div>
+  </article>`;
+}
+
 // ---------- mis favoritos ----------
 function pintarFavoritos() {
   const aviso = $("#aviso-cuenta");
@@ -1247,18 +1967,24 @@ function pintarFavoritos() {
   const evs = EVENTOS.filter((e) => favEventos.has(e.id) && vigente(e))
     .sort((a, b) => a.fecha_inicio.localeCompare(b.fecha_inicio));
   const rs = RESTAURANTES.filter((r) => favRest.has(r.id));
+  const ts = TIENDAS.filter((x) => favTiendas.has(x.id));
   $("#fav-titulo-eventos").hidden = !evs.length;
   $("#fav-titulo-restaurantes").hidden = !rs.length;
+  if ($("#fav-titulo-tiendas")) $("#fav-titulo-tiendas").hidden = !ts.length;
   $("#fav-eventos").innerHTML = evs.map((e) => htmlNota(e, "f")).join("");
   $("#fav-restaurantes").innerHTML = rs.map((r) => htmlLocal(r, "fr")).join("");
-  const hay = evs.length + rs.length > 0;
+  if ($("#fav-tiendas")) $("#fav-tiendas").innerHTML = ts.map((x) => htmlTienda(x, "ft")).join("");
+  const hay = evs.length + rs.length + ts.length > 0;
   // El estado vacío depende de lo guardado, no de lo pintado: mientras carga la agenda no se dice "no tienes favoritos"
-  const guardados = favEventos.size + favRest.size;
+  const guardados = favEventos.size + favRest.size + favTiendas.size;
   let vacio = "";
   if (!hay) {
     if (guardados && !EVENTOS_CARGADOS && !AGENDA_FALLO) vacio = `<p class="vacio-titulo">Cargando tus favoritos…</p>`;
     else if (guardados && AGENDA_FALLO) vacio = `<p class="vacio-titulo">No se pudo cargar la agenda.</p><p>Tus favoritos siguen guardados; prueba recargando la página.</p>`;
-    else vacio = `<p class="vacio-titulo">Aún no tienes favoritos.</p><p>Marca ☆ Favorito en un evento de la agenda o en un restaurante temático y aparecerá aquí.</p>`;
+    else if ((favTiendas.size && TIENDAS_FALLO) || (favRest.size && ESTADO_RESTAURANTES === "fallo")) {
+      vacio = `<p class="vacio-titulo">No se pudo cargar la lista de tiendas o de restaurantes.</p><p>Tus favoritos siguen guardados; prueba recargando la página.</p>`;
+    }
+    else vacio = `<p class="vacio-titulo">Aún no tienes favoritos.</p><p>Marca ☆ Favorito en un evento de la agenda, en un restaurante temático o en una tienda del Mapa del Aventurero y aparecerá aquí.</p>`;
   }
   $("#fav-vacio").innerHTML = vacio;
   $("#fav-vacio").hidden = hay;
@@ -1331,6 +2057,7 @@ document.addEventListener("click", (ev) => {
   if (flecha) { irABanner(bannerVecino(Number(flecha.dataset.bannerPaso))); return; }
   if (ev.target.closest("#btn-entrar, [data-accion='entrar']")) { entrar(); return; }
   if (ev.target.closest("#btn-salir")) { salir(); return; }
+  if (clicMapa(ev)) return;
   const chip = ev.target.closest(".chip");
   if (chip) {
     if (chip.dataset.tema) { estado.tema = chip.dataset.tema; pintarRestaurantes(); return; }
@@ -1377,6 +2104,7 @@ $("#buscar").addEventListener("input", (ev) => {
 window.addEventListener("popstate", () => {
   const cat = estado.cat;
   aplicarHash();
+  if (estado.seccion === "mapa") MAPA.desdeHash = true;
   if (estado.cat !== cat) { pintarChips(); pintar(); }
   pintarSecciones();
 });
@@ -1416,11 +2144,14 @@ async function iniciar() {
   }
   aplicarHash();
   pintarSecciones();
-  const [agenda, locales, lugares] = await Promise.allSettled([
+  const [agenda, locales, lugares, tiendas] = await Promise.allSettled([
     Promise.all([cargarJson("config/gustos.json"), cargarJson("data/eventos.json")]),
     cargarJson("data/restaurantes.json"),
     cargarJson("data/lugares.json"),
+    cargarJson("data/tiendas.json"),
   ]);
+  if (tiendas.status === "fulfilled") prepararTiendas(tiendas.value);
+  else { TIENDAS_FALLO = true; console.error(tiendas.reason); }   // sin tiendas, el mapa muestra igual los restaurantes
   if (lugares.status === "fulfilled") prepararLugares(lugares.value);
   else console.error(lugares.reason);   // sin fotos de los lugares la agenda igual funciona
   if (agenda.status === "fulfilled") {
@@ -1453,6 +2184,7 @@ async function iniciar() {
     console.error(locales.reason);
   }
   ESTADO_RESTAURANTES = locales.status === "fulfilled" ? "listo" : "fallo";
+  DATOS_MAPA.listos = true;
   const h = hashActual();
   mostrarTemporadaDe(h);
   pintarTodo();
