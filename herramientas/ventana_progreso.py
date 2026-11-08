@@ -42,6 +42,22 @@ def gh(*args: str, texto=False):
     return salida if texto else json.loads(salida)
 
 
+def nombres_temas() -> dict:
+    """Emoji y nombre de cada tema, leídos de config/gustos.json (así la ventana no queda atrás si cambian los
+    temas). Los ids viejos de 'temas_renombrados' (p. ej. 'metal') se muestran con el nombre del tema nuevo."""
+    try:
+        cfg = json.loads((AQUI.parent / "config" / "gustos.json").read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+    res = {c["id"]: f"{c.get('emoji', '')} {c.get('nombre', c['id'])}".strip() for c in cfg.get("categorias", [])}
+    for viejo, nuevo in (cfg.get("temas_renombrados") or {}).items():
+        destinos = [nuevo] if isinstance(nuevo, str) else nuevo if isinstance(nuevo, list) else []
+        destino = next((n for n in destinos if n in res), None)
+        if destino and viejo not in res:
+            res[viejo] = res[destino]
+    return res
+
+
 def fecha(t):
     return dt.datetime.fromisoformat(t.replace("Z", "+00:00")) if t else None
 
@@ -265,7 +281,7 @@ class Seguidor:
                     "conclusion": run.get("conclusion"), "inicio": run.get("run_started_at") or run["created_at"],
                     "minutos": int(((fecha(run["updated_at"]) if terminado else ahora()) - inicio).total_seconds() // 60)},
             "pasos": pasos, "avance": round(avance, 4), "restante_s": restante, "tipica_s": tipica,
-            "terminado": terminado, "resultado": resultado, "web": WEB,
+            "terminado": terminado, "resultado": resultado, "web": WEB, "temas": nombres_temas(),
         }
 
     def lanzar(self) -> dict:

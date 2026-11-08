@@ -24,13 +24,27 @@
   "horas_entre_completas": 6,
   "_nota_frecuencia": "El robot corre cada hora. Cada horas_entre_completas hace la búsqueda completa (buscadores, noticias, redes, Chile Cultura y museos); en las demás vueltas hace la rápida: solo ticketeras y agendas, y la IA lee solo lo que apareció desde la vuelta anterior.",
   "_nota_noticias": "Solo se leen noticias publicadas desde la búsqueda completa anterior; max_dias_noticias es el tope si las búsquedas estuvieron pausadas. Ticketeras, agendas y páginas de eventos se leen siempre.",
+  "_nota_categorias": "Temas de la agenda (el orden es el de sus botones). 'peso' (opcional, 1 si no está): los temas que juntan dos (Medieval con fantasía y rol; Museos con arte) leen el doble de páginas con IA en cada búsqueda y les toca dos veces en cada vuelta del reparto. Si cambias un id, anota el viejo en 'temas_renombrados' (el robot pasa solo sus eventos al tema nuevo y la página los muestra ahí mientras tanto) y cambia también BANNERS e ICONO_CAT en app.js y las claves de 'referenciales' en data/lugares.json. 'palabras_secundarias' (opcional) son palabras generales, como «terror» o «Tolkien», que cuentan solo si el texto no calza con las 'palabras' de otro tema: así «Terror Yokai» va en Yokai y un concierto de metal sobre Tolkien va en Conciertos.",
+  "_nota_temas_renombrados": "Ids de temas que ya no existen → tema al que pasaron sus eventos (cambio del 8-11-2026). Una lista quiere decir que el tema se repartió: deciden las palabras del evento y, si no calza ninguna, el primero de la lista.",
+  "temas_renombrados": {
+    "metal": "conciertos",
+    "arte": "museos",
+    "fantasia": [
+      "medieval",
+      "juegos",
+      "conciertos",
+      "anime",
+      "museos"
+    ]
+  },
   "categorias": [
     {
       "id": "medieval",
-      "nombre": "Ferias medievales",
+      "nombre": "Medieval, fantasía y rol",
       "emoji": "⚔️",
       "color": "#a16207",
-      "descripcion": "ferias, fiestas y mercados medievales, renacentistas o vikingos, recreación histórica, justas, combate medieval (buhurt), esgrima histórica",
+      "peso": 2,
+      "descripcion": "ferias, fiestas y mercados medievales, renacentistas o vikingos, recreación histórica, justas, combate medieval (buhurt), esgrima histórica; fantasía (Tolkien, Harry Potter, mitología y criaturas, también chilota), juegos de rol (Dungeons & Dragons, rol en vivo), terror y cine fantástico. NO: juegos de mesa, de cartas ni wargames (van en juegos), ni conciertos o festivales de música aunque sean de terror o fantasía (van en conciertos)",
       "palabras": [
         "medieval",
         "medievales",
@@ -50,6 +64,19 @@
         "juglares",
         "juglar"
       ],
+      "palabras_secundarias": [
+        "juegos de rol",
+        "rol en vivo",
+        "dungeons",
+        "dragones",
+        "tolkien",
+        "fantasia",
+        "cine fantastico",
+        "terror",
+        "mitologia",
+        "criaturas",
+        "lovecraft"
+      ],
       "busquedas": [
         "feria medieval Santiago",
         "fiesta medieval Chile",
@@ -66,7 +93,12 @@
         "Mercado y Juglares festival medieval",
         "Medieval Party Veladaa",
         "festival medieval entradas tuu.cl",
-        "feria medieval entradas passline"
+        "feria medieval entradas passline",
+        "evento juegos de rol Santiago",
+        "encuentro de rol comunidad Santiago",
+        "jornadas de rol Chile",
+        "festival cine fantástico Chile",
+        "festival de terror Santiago"
       ]
     },
     {
@@ -74,7 +106,7 @@
       "nombre": "Yokai y Japón tradicional",
       "emoji": "👺",
       "color": "#b91c1c",
-      "descripcion": "yokai, mitología y folclore japonés, ukiyo-e, matsuri, exposiciones o charlas de cultura japonesa tradicional. NO: conciertos de bandas japonesas modernas (esos van en metal o anime)",
+      "descripcion": "yokai, mitología y folclore japonés, ukiyo-e, matsuri, exposiciones o charlas de cultura japonesa tradicional. NO: conciertos de bandas japonesas modernas (esos van en conciertos o anime)",
       "palabras": [
         "yokai",
         "youkai",
@@ -107,7 +139,7 @@
       "nombre": "Anime, manga y cosplay",
       "emoji": "🎌",
       "color": "#7c3aed",
-      "descripcion": "convenciones de anime y manga, cosplay, cultura otaku, ferias de comics, conciertos de anime o J-pop, eventos geek, también conciertos de J-pop/J-rock e idols japoneses",
+      "descripcion": "convenciones de anime y manga, cosplay, cultura otaku, ferias de cómics, eventos geek y de videojuegos (como FestiGame), conciertos de anime, J-pop, J-rock e idols japoneses",
       "palabras": [
         "anime",
         "manga",
@@ -171,11 +203,11 @@
       ]
     },
     {
-      "id": "metal",
-      "nombre": "Conciertos de metal",
+      "id": "conciertos",
+      "nombre": "Conciertos",
       "emoji": "🤘",
       "color": "#334155",
-      "descripcion": "conciertos y festivales de heavy metal y sus subgéneros (thrash, death, black, doom, power, folk, symphonic, metalcore, nu metal), también rock duro",
+      "descripcion": "conciertos y festivales de heavy metal y sus subgéneros (thrash, death, black, doom, power, folk, symphonic, metalcore, nu metal) y de rock duro; también conciertos sinfónicos o en vivo con música de videojuegos, películas o series de fantasía. NO: conciertos de anime, J-pop, J-rock o idols japoneses (van en anime), salvo las bandas japonesas de metal, que sí van aquí",
       "palabras": [
         "metal",
         "heavy metal",
@@ -198,46 +230,54 @@
         "concierto thrash metal Santiago",
         "black metal Santiago concierto",
         "tocata metal Santiago",
-        "agenda conciertos metal Chile"
+        "agenda conciertos metal Chile",
+        "concierto sinfónico música de videojuegos Santiago",
+        "concierto música de videojuegos Chile"
       ]
     },
     {
-      "id": "fantasia",
-      "nombre": "Fantasía, rol y juegos",
-      "emoji": "🐉",
+      "id": "juegos",
+      "nombre": "Juegos de mesa",
+      "emoji": "🎲",
       "color": "#4d7c0f",
-      "descripcion": "juegos de rol, juegos de mesa, wargames (Warhammer), Magic, fantasía, Tolkien, terror y cine fantástico, mitología y criaturas (también chilota)",
+      "descripcion": "juegos de mesa y de cartas coleccionables (Magic, Pokémon TCG, Yu-Gi-Oh!), wargames y miniaturas (Warhammer): ferias, convenciones, torneos, jornadas abiertas y lanzamientos. NO: juegos de rol (van en medieval) ni videojuegos (van en anime)",
       "palabras": [
-        "juegos de rol",
-        "dungeons",
-        "dragones",
         "juegos de mesa",
+        "juego de mesa",
         "warhammer",
         "magic the gathering",
-        "tolkien",
-        "fantasia",
-        "cine fantastico",
-        "terror",
-        "mitologia",
-        "criaturas",
-        "lovecraft"
+        "pokemon tcg",
+        "yu-gi-oh",
+        "yugioh",
+        "cartas coleccionables",
+        "wargame",
+        "wargames",
+        "boardgame",
+        "boardgames",
+        "board game",
+        "board games",
+        "magic: the gathering",
+        "yu gi oh",
+        "tcg",
+        "jcc"
       ],
       "busquedas": [
-        "evento juegos de rol Santiago",
         "feria juegos de mesa Santiago",
-        "festival cine fantástico Chile",
         "evento Warhammer Santiago",
-        "festival de terror Santiago",
-        "encuentro de rol comunidad Santiago",
-        "jornadas de rol Chile"
+        "torneo Magic the Gathering Santiago",
+        "torneo Pokémon TCG Santiago",
+        "jornada de juegos de mesa Santiago",
+        "convención juegos de mesa Chile",
+        "festival de juegos de mesa Chile"
       ]
     },
     {
-      "id": "arte",
-      "nombre": "Exposiciones de arte",
-      "emoji": "🎨",
-      "color": "#9d174d",
-      "descripcion": "exposiciones y muestras de arte en museos, centros culturales y galerías (pintura, escultura, fotografía artística, grabado, arte contemporáneo, instalaciones, arte textil o popular), inauguraciones, retrospectivas, bienales y ferias de arte. NO: ferias de artesanía comercial, talleres pagados ni actividades infantiles",
+      "id": "museos",
+      "nombre": "Museos, arte y cultura",
+      "emoji": "🏛️",
+      "color": "#6b4f2a",
+      "peso": 2,
+      "descripcion": "exposiciones y muestras de arte en museos, centros culturales y galerías (pintura, escultura, fotografía artística, grabado, arte contemporáneo, instalaciones, arte textil o popular), inauguraciones, retrospectivas, bienales y ferias de arte; exposiciones de historia, ciencia, arqueología o patrimonio; Noche de Museos, Día del Patrimonio, visitas guiadas y recorridos nocturnos o patrimoniales, panoramas culturales gratuitos. NO: ferias de artesanía comercial, talleres pagados, actividades infantiles, tours de estadios ni ferias de vino, gastronómicas o comerciales",
       "palabras": [
         "exposicion de arte",
         "muestra de arte",
@@ -258,27 +298,7 @@
         "feria de arte",
         "museo de arte",
         "museo de artes visuales",
-        "instalacion artistica"
-      ],
-      "busquedas": [
-        "exposición de arte Santiago",
-        "nuevas exposiciones de arte Santiago",
-        "inauguración exposición museo Santiago",
-        "muestra arte contemporáneo Santiago",
-        "exposición Museo Nacional de Bellas Artes",
-        "exposición Centro Cultural La Moneda",
-        "exposición artes visuales GAM",
-        "galería de arte Santiago exposición",
-        "feria de arte contemporáneo Santiago"
-      ]
-    },
-    {
-      "id": "museos",
-      "nombre": "Museos y cultura",
-      "emoji": "🏛️",
-      "color": "#6b4f2a",
-      "descripcion": "Noche de Museos, Día del Patrimonio, exposiciones de historia, ciencia, arqueología o patrimonio en museos, visitas guiadas y recorridos nocturnos o patrimoniales, panoramas culturales gratuitos. NO: tours de estadios, ferias de vino, gastronómicas o comerciales",
-      "palabras": [
+        "instalacion artistica",
         "noche de museos",
         "dia del patrimonio",
         "recorrido patrimonial",
@@ -298,6 +318,15 @@
         "centro cultural la moneda"
       ],
       "busquedas": [
+        "exposición de arte Santiago",
+        "nuevas exposiciones de arte Santiago",
+        "inauguración exposición museo Santiago",
+        "muestra arte contemporáneo Santiago",
+        "exposición Museo Nacional de Bellas Artes",
+        "exposición Centro Cultural La Moneda",
+        "exposición artes visuales GAM",
+        "galería de arte Santiago exposición",
+        "feria de arte contemporáneo Santiago",
         "Noche de Museos Santiago",
         "Día del Patrimonio Cultural Chile",
         "panoramas gratis Santiago fin de semana",
@@ -330,13 +359,13 @@
       "nombre": "Cuartel del Metal",
       "url": "https://cuarteldelmetal.com/conciertos-chile/2026/05/conciertos-metal-en-chile/",
       "tipo": "pagina",
-      "categoria": "metal"
+      "categoria": "conciertos"
     },
     {
       "nombre": "Concerts-Metal",
       "url": "https://es.concerts-metal.com/next_cl_2026.html",
       "tipo": "pagina",
-      "categoria": "metal"
+      "categoria": "conciertos"
     },
     {
       "nombre": "Reino Medieval Chile",
@@ -411,14 +440,14 @@
       "nombre": "Chile Cultura",
       "url": "https://chilecultura.gob.cl/api/v1.0/eventos/search?status=approved&region=1&page_size=100&disciplines=4",
       "tipo": "chilecultura",
-      "categoria": "arte",
+      "categoria": "museos",
       "_nota": "Agenda del Ministerio de las Culturas (API JSON pública, sin IA): exposiciones de artes visuales en la Región Metropolitana con fecha de apertura y de cierre. Se descartan talleres, charlas, visitas mediadas, videos en línea y colecciones permanentes."
     },
     {
       "nombre": "Chile Cultura",
       "url": "https://chilecultura.gob.cl/api/v1.0/eventos/search?status=approved&region=1&page_size=100&disciplines=8",
       "tipo": "chilecultura",
-      "categoria": "arte",
+      "categoria": "museos",
       "_nota": "Igual que la anterior, para fotografía."
     },
     {
@@ -451,7 +480,7 @@
       "nombre": "MAC (Museo de Arte Contemporáneo)",
       "url": "https://mac.uchile.cl/periodo/actuales/",
       "tipo": "pagina",
-      "categoria": "arte",
+      "categoria": "museos",
       "cada_dias": 3,
       "_nota": "Exposiciones vigentes de las dos sedes del MAC (Parque Forestal y Quinta Normal); casi no salen en Chile Cultura."
     },

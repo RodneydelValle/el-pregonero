@@ -231,7 +231,7 @@
   "noticias_desde": "2026-11-07",
   "noticias_viejas_descartadas": 0
  },
- "total": 200,
+ "total": 199,
  "eventos": [
   {
    "titulo": "Festival Internacional de Ilustración Festilus",
@@ -299,7 +299,7 @@
   },
   {
    "titulo": "Roberto Matta. Abrir la mirada",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2025-07-10",
    "fecha_fin": "2027-07-31",
    "hora": null,
@@ -363,7 +363,7 @@
   },
   {
    "titulo": "Un archivo en construcción: la obra de Tito Vásquez",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2025-08-28",
    "fecha_fin": "2026-11-27",
    "hora": null,
@@ -397,7 +397,7 @@
   },
   {
    "titulo": "145 años: Historias de una Colección",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2025-09-10",
    "fecha_fin": "2027-09-26",
    "hora": null,
@@ -503,7 +503,7 @@
   },
   {
    "titulo": "Carisma y misión. Órdenes religiosas en el arte virreinal surandino",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-03-11",
    "fecha_fin": "2027-01-22",
    "hora": null,
@@ -563,7 +563,7 @@
   },
   {
    "titulo": "MAVI UC conmemora su 25° aniversario con gran exposición de su colección",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-04-11",
    "fecha_fin": "2027-05-02",
    "hora": null,
@@ -627,7 +627,7 @@
   },
   {
    "titulo": "Exposición inmersiva: La ronda del Sol y la Luna",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-06-11",
    "fecha_fin": "2027-05-30",
    "hora": null,
@@ -657,7 +657,7 @@
   },
   {
    "titulo": "La Veta",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-06-25",
    "fecha_fin": "2026-12-06",
    "hora": null,
@@ -728,7 +728,7 @@
   },
   {
    "titulo": "Colección MAC: Modulaciones de la imagen fotográfica",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-07-18",
    "fecha_fin": "2026-12-13",
    "hora": null,
@@ -762,7 +762,7 @@
   },
   {
    "titulo": "Huidobro: amores, rebeldías y propuestas",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-07-27",
    "fecha_fin": "2027-01-30",
    "hora": null,
@@ -856,7 +856,7 @@
   },
   {
    "titulo": "La vida en una mirada. Fernando Opazo",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-08-31",
    "fecha_fin": "2026-11-30",
    "hora": null,
@@ -928,7 +928,7 @@
   },
   {
    "titulo": "Ejercicios de Empatía: Tramas de lo Vivo (Trienal ART CUT 26)",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-09-04",
    "fecha_fin": "2026-11-22",
    "hora": null,
@@ -960,7 +960,7 @@
   },
   {
    "titulo": "Luis Vargas Rosas. Un museo al ritmo de lo contemporáneo (1946 - 1970)",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-09-10",
    "fecha_fin": "2027-02-28",
    "hora": null,
@@ -994,7 +994,7 @@
   },
   {
    "titulo": "Observaciones Americanas. Alberto Cruz visita el Museo Chileno de Arte Precolombino",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-09-24",
    "fecha_fin": "2026-11-22",
    "hora": null,
@@ -1024,7 +1024,7 @@
   },
   {
    "titulo": "Balmaceda Visual, Premoniciones",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-09-25",
    "fecha_fin": "2027-01-24",
    "hora": null,
@@ -1062,7 +1062,7 @@
   },
   {
    "titulo": "Instalación “Registro Nacional de Espera” en Galería Gabriela Mistral",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-09-25",
    "fecha_fin": "2026-11-07",
    "hora": null,
@@ -1092,7 +1092,7 @@
   },
   {
    "titulo": "Cuerpo Archivo — Lorena Córdova",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-09-26",
    "fecha_fin": "2026-12-19",
    "hora": null,
@@ -1122,7 +1122,7 @@
   },
   {
    "titulo": "En la Punta de la Lengua - Lizi Sánchez",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-09-26",
    "fecha_fin": "2027-01-24",
    "hora": null,
@@ -1156,7 +1156,7 @@
   },
   {
    "titulo": "Estratos. Cartografías del tiempo - Archivo MAC",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-09-26",
    "fecha_fin": "2027-01-24",
    "hora": null,
@@ -1194,7 +1194,7 @@
   },
   {
    "titulo": "Estéticas intuitivas. Bernardo Oyarzún",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-09-26",
    "fecha_fin": "2026-11-22",
    "hora": null,
@@ -1228,7 +1228,7 @@
   },
   {
    "titulo": "Fotografía: alteraciones matéricas",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-09-26",
    "fecha_fin": "2026-11-22",
    "hora": null,
@@ -1262,7 +1262,7 @@
   },
   {
    "titulo": "La Trayectoria Intermedial del Gesto - Valentina Díaz",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-09-26",
    "fecha_fin": "2027-01-24",
    "hora": null,
@@ -1300,7 +1300,7 @@
   },
   {
    "titulo": "Muestra \"En la punta de la lengua\" en MAC Quinta Normal",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-09-26",
    "fecha_fin": "2027-01-24",
    "hora": null,
@@ -1330,7 +1330,7 @@
   },
   {
    "titulo": "Por Ambos Lados - Andrés Denegri",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-09-26",
    "fecha_fin": "2027-01-24",
    "hora": null,
@@ -1368,7 +1368,7 @@
   },
   {
    "titulo": "Sistema Público de Fluidos - Constanza Hermosilla Urra",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-09-26",
    "fecha_fin": "2027-01-24",
    "hora": null,
@@ -1406,7 +1406,7 @@
   },
   {
    "titulo": "«Remanencias locales» reúne en el Centro Nacional de Arte Contemporáneo 15 festivales de fotografía de todo Chile",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-09-26",
    "fecha_fin": "2026-11-22",
    "hora": null,
@@ -1470,7 +1470,7 @@
   },
   {
    "titulo": "Vistas de taller, artistas, objetos e identidades (1880-1950)",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-09-30",
    "fecha_fin": "2027-03-28",
    "hora": null,
@@ -1504,7 +1504,7 @@
   },
   {
    "titulo": "Dentro del Aire — Beatrice di Girolamo",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-10-01",
    "fecha_fin": "2026-11-14",
    "hora": null,
@@ -1537,7 +1537,7 @@
   },
   {
    "titulo": "Llevaban un mundo nuevo en el corazón",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-10-02",
    "fecha_fin": "2027-03-28",
    "hora": null,
@@ -1638,7 +1638,7 @@
   },
   {
    "titulo": "Ensueño — Raúl Cuello",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-10-07",
    "fecha_fin": "2026-12-12",
    "hora": null,
@@ -1668,7 +1668,7 @@
   },
   {
    "titulo": "Alien: El Origen, by H.R. Giger",
-   "categoria": "fantasia",
+   "categoria": "museos",
    "fecha_inicio": "2026-10-08",
    "fecha_fin": "2026-12-31",
    "hora": null,
@@ -1700,7 +1700,7 @@
   },
   {
    "titulo": "Enrique Ramírez. Te creo paisaje",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-10-08",
    "fecha_fin": "2027-02-28",
    "hora": null,
@@ -1734,7 +1734,7 @@
   },
   {
    "titulo": "Del espacio de acá",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-10-09",
    "fecha_fin": "2027-01-31",
    "hora": null,
@@ -1768,7 +1768,7 @@
   },
   {
    "titulo": "Nosotros los chilenos: archivar para imaginarnos",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-10-09",
    "fecha_fin": "2027-01-31",
    "hora": null,
@@ -1802,7 +1802,7 @@
   },
   {
    "titulo": "Recordar el futuro. Íconos del diseño y arte geométrico en Chile",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-10-09",
    "fecha_fin": "2026-11-29",
    "hora": null,
@@ -1836,7 +1836,7 @@
   },
   {
    "titulo": "Tu Museo, tu Colección",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-10-09",
    "fecha_fin": "2027-01-31",
    "hora": null,
@@ -1870,7 +1870,7 @@
   },
   {
    "titulo": "Exposición “Cultivar la memoria de las mujeres del Elqui: Creación textil en torno a la poesía territorial de Gabriela Mistral”",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-10-15",
    "fecha_fin": "2026-12-19",
    "hora": null,
@@ -1930,7 +1930,7 @@
   },
   {
    "titulo": "Exposición Salvataje",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-10-20",
    "fecha_fin": "2026-12-30",
    "hora": null,
@@ -1960,7 +1960,7 @@
   },
   {
    "titulo": "Fragmentos de lo propio",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-10-20",
    "fecha_fin": "2026-11-08",
    "hora": null,
@@ -1990,7 +1990,7 @@
   },
   {
    "titulo": "El Alma de la Forma",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-10-22",
    "fecha_fin": "2026-12-06",
    "hora": null,
@@ -2154,7 +2154,7 @@
   },
   {
    "titulo": "Odisea del Espacio: 25 años de Matucana 100",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-10-27",
    "fecha_fin": "2027-01-24",
    "hora": null,
@@ -2184,7 +2184,7 @@
   },
   {
    "titulo": "Index, \"Formas de lo incierto\"",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-10-29",
    "fecha_fin": "2026-11-13",
    "hora": null,
@@ -2214,7 +2214,7 @@
   },
   {
    "titulo": "XIII Bienal Internacional de Artes de Valparaíso: fantasías, fantasmas y fulgores II",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-10-30",
    "fecha_fin": "2026-12-27",
    "hora": "10:00",
@@ -2250,7 +2250,7 @@
   },
   {
    "titulo": "Hibridaciones de Francisca Larraín",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-10-30",
    "fecha_fin": "2026-11-20",
    "hora": null,
@@ -2314,7 +2314,7 @@
   },
   {
    "titulo": "Hilos de la Memoria — Mónica Undurraga",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-11-04",
    "fecha_fin": "2026-12-09",
    "hora": null,
@@ -2344,7 +2344,7 @@
   },
   {
    "titulo": "La vida adulta — Ignacio Gumucio",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-11-04",
    "fecha_fin": "2026-12-09",
    "hora": null,
@@ -2374,7 +2374,7 @@
   },
   {
    "titulo": "Exposición \"Liminal: el ruido que queda\"",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-11-05",
    "fecha_fin": "2026-11-28",
    "hora": null,
@@ -2434,7 +2434,7 @@
   },
   {
    "titulo": "“Exposición Colectiva: Colección Eulogio Rojas Durán”",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-11-06",
    "fecha_fin": "2027-03-05",
    "hora": "12:00",
@@ -2464,7 +2464,7 @@
   },
   {
    "titulo": "Noche de Rock y Metal",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-11-06",
    "fecha_fin": "2026-11-07",
    "hora": "22:30",
@@ -2494,7 +2494,7 @@
   },
   {
    "titulo": "De Cesante a Mirón. Enrique Flores",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-11-06",
    "fecha_fin": "2027-01-24",
    "hora": null,
@@ -2528,7 +2528,7 @@
   },
   {
    "titulo": "Exposición Retazos de historias",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-11-06",
    "fecha_fin": "2026-11-28",
    "hora": null,
@@ -2558,7 +2558,7 @@
   },
   {
    "titulo": "La oscuridad es la puerta. Amparo Sard",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-11-06",
    "fecha_fin": "2027-01-24",
    "hora": null,
@@ -2592,7 +2592,7 @@
   },
   {
    "titulo": "Love From Afar. Bruce Weber",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-11-06",
    "fecha_fin": "2027-01-24",
    "hora": null,
@@ -2626,7 +2626,7 @@
   },
   {
    "titulo": "Resonandes. Sonoridades andinas en relieve",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-11-06",
    "fecha_fin": "2026-12-27",
    "hora": null,
@@ -2656,7 +2656,7 @@
   },
   {
    "titulo": "Santiago Horror Film Festival 2026",
-   "categoria": "fantasia",
+   "categoria": "medieval",
    "fecha_inicio": "2026-11-06",
    "fecha_fin": "2026-11-10",
    "hora": null,
@@ -2686,7 +2686,7 @@
   },
   {
    "titulo": "Trazos. Lily Garafulic",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-11-06",
    "fecha_fin": "2027-01-24",
    "hora": null,
@@ -2754,7 +2754,7 @@
   },
   {
    "titulo": "Feria de Arte Artweek 2026",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-11-07",
    "fecha_fin": "2026-11-08",
    "hora": "11:00",
@@ -2871,7 +2871,7 @@
   },
   {
    "titulo": "Poligonal: Temporalidades de mundos",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-11-07",
    "fecha_fin": null,
    "hora": "15:00",
@@ -2901,7 +2901,7 @@
   },
   {
    "titulo": "Wacken Metal Battle Chile - Semifinal 1",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-11-07",
    "fecha_fin": null,
    "hora": "16:00",
@@ -2931,7 +2931,7 @@
   },
   {
    "titulo": "Brainbuster: Zomoz, Sanafabitch, Cabaret Psycofuzz, Yta",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-11-07",
    "fecha_fin": null,
    "hora": "17:00",
@@ -2991,7 +2991,7 @@
   },
   {
    "titulo": "Total Thrash - Alcoholic Productions",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-11-07",
    "fecha_fin": null,
    "hora": "17:00",
@@ -3021,7 +3021,7 @@
   },
   {
    "titulo": "Hardcore Solidario: Knockout, Distantex y más",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-11-07",
    "fecha_fin": null,
    "hora": "18:00",
@@ -3051,7 +3051,7 @@
   },
   {
    "titulo": "Yambo, Corriente Continua y más en Caja Acústica",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-11-07",
    "fecha_fin": null,
    "hora": "18:00",
@@ -3111,7 +3111,7 @@
   },
   {
    "titulo": "Art Week Chile 2026",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-11-07",
    "fecha_fin": "2026-11-08",
    "hora": null,
@@ -3141,7 +3141,7 @@
   },
   {
    "titulo": "Crear:Destruir:Transformar - Rincón de escucha",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-11-07",
    "fecha_fin": "2027-01-24",
    "hora": null,
@@ -3179,7 +3179,7 @@
   },
   {
    "titulo": "De Atajos y Permanencias - Antonia Moena Burgos",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-11-07",
    "fecha_fin": "2026-12-06",
    "hora": null,
@@ -3213,7 +3213,7 @@
   },
   {
    "titulo": "Exposición El jardín de los silencios",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-11-07",
    "fecha_fin": "2026-11-08",
    "hora": null,
@@ -3243,7 +3243,7 @@
   },
   {
    "titulo": "Exposición “Frutos de la sequía” de Elisa Aguirre",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-11-07",
    "fecha_fin": "2026-11-27",
    "hora": null,
@@ -3273,7 +3273,7 @@
   },
   {
    "titulo": "Extremofilia - Isidora Correa",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-11-07",
    "fecha_fin": "2027-01-24",
    "hora": null,
@@ -3307,7 +3307,7 @@
   },
   {
    "titulo": "Muestra \"De Cesante a Mirón\" en MAC Parque Forestal",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-11-07",
    "fecha_fin": "2027-01-24",
    "hora": null,
@@ -3337,7 +3337,7 @@
   },
   {
    "titulo": "Paisajes de Chile - Exposición Fotográfica",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-11-07",
    "fecha_fin": "2026-11-08",
    "hora": null,
@@ -3367,7 +3367,7 @@
   },
   {
    "titulo": "Prensado botánico Andrea Contreras",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-11-07",
    "fecha_fin": "2026-11-08",
    "hora": null,
@@ -3397,7 +3397,7 @@
   },
   {
    "titulo": "Selfie - Alexis Carreño",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-11-07",
    "fecha_fin": "2027-01-24",
    "hora": null,
@@ -3431,7 +3431,7 @@
   },
   {
    "titulo": "Performance sonora de Enrique Ramírez y Matthias Puech",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-11-08",
    "fecha_fin": null,
    "hora": "12:00",
@@ -3461,7 +3461,7 @@
   },
   {
    "titulo": "Modern Metal Sessions XIX",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-11-08",
    "fecha_fin": null,
    "hora": "16:00",
@@ -3499,7 +3499,7 @@
   },
   {
    "titulo": "Def Leppard - Live 2026 - with Special Guest Extreme",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-11-08",
    "fecha_fin": null,
    "hora": null,
@@ -3587,7 +3587,7 @@
   },
   {
    "titulo": "Dragonfly en Chile",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-11-11",
    "fecha_fin": null,
    "hora": null,
@@ -3615,7 +3615,7 @@
   },
   {
    "titulo": "El universo de Matta: Être Cible (Ser el blanco)",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-11-11",
    "fecha_fin": "2027-01-03",
    "hora": null,
@@ -3649,7 +3649,7 @@
   },
   {
    "titulo": "Fluyen las miradas, florecen los derechos",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-11-11",
    "fecha_fin": "2026-12-11",
    "hora": null,
@@ -3679,7 +3679,7 @@
   },
   {
    "titulo": "Grabados en Sala Matta en Museo Ralli",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-11-11",
    "fecha_fin": "2026-11-29",
    "hora": null,
@@ -3709,7 +3709,7 @@
   },
   {
    "titulo": "Ill Niño en Chile",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-11-11",
    "fecha_fin": null,
    "hora": null,
@@ -3737,7 +3737,7 @@
   },
   {
    "titulo": "Los Cosmos de Matta",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-11-11",
    "fecha_fin": "2026-11-27",
    "hora": null,
@@ -3771,7 +3771,7 @@
   },
   {
    "titulo": "Nu Metal Sessions Vol.5 Linkin Park Hybrid Theory en Casa Rockaxis",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-11-12",
    "fecha_fin": null,
    "hora": "19:30",
@@ -3805,7 +3805,7 @@
   },
   {
    "titulo": "Matta: Memorias de Guerra",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-11-12",
    "fecha_fin": "2026-12-06",
    "hora": null,
@@ -3835,7 +3835,7 @@
   },
   {
    "titulo": "Conversatorio \"Piezas de Cerámica Nacional: Historia, coleccionismo y manufactura\"",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-11-13",
    "fecha_fin": null,
    "hora": "12:00",
@@ -4107,7 +4107,7 @@
   },
   {
    "titulo": "Ragnarok Fest: La Aldea del Encuentro, Harry Potter vs. El Señor de los Anillos",
-   "categoria": "fantasia",
+   "categoria": "medieval",
    "fecha_inicio": "2026-11-14",
    "fecha_fin": "2026-11-15",
    "hora": "11:00",
@@ -4203,7 +4203,7 @@
   },
   {
    "titulo": "Club de dragones y mazmorras",
-   "categoria": "fantasia",
+   "categoria": "medieval",
    "fecha_inicio": "2026-11-14",
    "fecha_fin": null,
    "hora": "16:00",
@@ -4233,7 +4233,7 @@
   },
   {
    "titulo": "Vengeance of Hell I",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-11-14",
    "fecha_fin": null,
    "hora": "17:00",
@@ -4293,7 +4293,7 @@
   },
   {
    "titulo": "Muestra 07 en Casa Palacio",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-11-14",
    "fecha_fin": null,
    "hora": "18:30",
@@ -4323,7 +4323,7 @@
   },
   {
    "titulo": "Titanes en Mibar",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-11-14",
    "fecha_fin": "2026-11-15",
    "hora": "21:00",
@@ -4383,7 +4383,7 @@
   },
   {
    "titulo": "Legendarium — El Legado de Tolkien",
-   "categoria": "fantasia",
+   "categoria": "medieval",
    "fecha_inicio": "2026-11-14",
    "fecha_fin": "2026-11-15",
    "hora": null,
@@ -4411,7 +4411,7 @@
   },
   {
    "titulo": "Marty Friedman en Santiago",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-11-14",
    "fecha_fin": null,
    "hora": null,
@@ -4439,7 +4439,7 @@
   },
   {
    "titulo": "Ratos de Porão en Chile",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-11-14",
    "fecha_fin": null,
    "hora": null,
@@ -4467,7 +4467,7 @@
   },
   {
    "titulo": "Nocturnal Depression en Chile",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-11-15",
    "fecha_fin": null,
    "hora": null,
@@ -4495,7 +4495,7 @@
   },
   {
    "titulo": "ZZ Top",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-11-16",
    "fecha_fin": null,
    "hora": null,
@@ -4523,7 +4523,7 @@
   },
   {
    "titulo": "Tolomiro Todomiro: escultura de Matta en La Moneda",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2026-11-18",
    "fecha_fin": "2026-11-26",
    "hora": null,
@@ -4553,7 +4553,7 @@
   },
   {
    "titulo": "La Nostalgia de los 2000 y el Mejor Metal Se Toman la Noche",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-11-19",
    "fecha_fin": "2026-11-20",
    "hora": "21:00",
@@ -4613,7 +4613,7 @@
   },
   {
    "titulo": "Pentakle en Chile",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-11-20",
    "fecha_fin": null,
    "hora": null,
@@ -4643,7 +4643,7 @@
   },
   {
    "titulo": "Saratoga en Chile",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-11-21",
    "fecha_fin": null,
    "hora": null,
@@ -4731,7 +4731,7 @@
   },
   {
    "titulo": "Alexisonfire - Performs Crisis In Full",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-11-25",
    "fecha_fin": "2026-11-26",
    "hora": null,
@@ -4789,7 +4789,7 @@
   },
   {
    "titulo": "Nightcrawler: Tributo a Judas Priest + Cronopolis en Good Luck Pizza & Drinks",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-11-27",
    "fecha_fin": "2026-11-28",
    "hora": "21:00",
@@ -4819,7 +4819,7 @@
   },
   {
    "titulo": "Classic Thrash Attack: Artillery y Atrophy en Valparaíso",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-11-27",
    "fecha_fin": null,
    "hora": null,
@@ -4878,8 +4878,8 @@
    "actualizado": "2026-11-07"
   },
   {
-   "titulo": "ChileTerror Fest II - 2026",
-   "categoria": "fantasia",
+   "titulo": "ChileTerror Fest II: Carcass, Necrot y más",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-11-28",
    "fecha_fin": "2026-11-29",
    "hora": "18:00",
@@ -4889,7 +4889,7 @@
    "ciudad": "Santiago",
    "region": "Región Metropolitana",
    "precio": "Desde $103.500",
-   "descripcion": "ChileTerror Fest II en el Teatro Caupolicán. Festival dedicado al cine fantástico y de terror.",
+   "descripcion": "Segunda edición del festival de metal extremo ChileTerror Fest en el Teatro Caupolicán, encabezada por Carcass, con Necrot y más bandas.",
    "imagen": "https://static.ptocdn.net/images/eventos/chj011v2_calugalistado.jpg",
    "url": "https://www.puntoticket.com/evento/chileterror-2-teatro-caupolican-nov-2026",
    "fuentes": [
@@ -4904,6 +4904,10 @@
     {
      "nombre": "fromhell.cl",
      "url": "https://fromhell.cl/chile-terror-fest-ii-el-mapa-de-las-bandas-que-vendran-a-desatar-el-caos-en-santiago/"
+    },
+    {
+     "nombre": "Cuartel del Metal",
+     "url": "https://cuarteldelmetal.com/conciertos-chile/2026/05/conciertos-metal-en-chile/"
     }
    ],
    "desde_imagen": true,
@@ -4914,36 +4918,8 @@
    "actualizado": "2026-11-07"
   },
   {
-   "titulo": "Carcass",
-   "categoria": "metal",
-   "fecha_inicio": "2026-11-28",
-   "fecha_fin": null,
-   "hora": null,
-   "lugar": "Teatro Caupolicán",
-   "direccion": "San Diego 850",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Concierto de Carcass y Necrot en el Teatro Caupolicán (Chile Terrorfest II).",
-   "imagen": null,
-   "url": "https://cuarteldelmetal.com/conciertos-chile/2026/05/conciertos-metal-en-chile/",
-   "fuentes": [
-    {
-     "nombre": "Cuartel del Metal",
-     "url": "https://cuarteldelmetal.com/conciertos-chile/2026/05/conciertos-metal-en-chile/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "3beeed3811",
-   "agregado": "2026-11-06",
-   "actualizado": "2026-11-07"
-  },
-  {
    "titulo": "Classic Thrash Attack: Artillery y Atrophy en Concepción",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-11-28",
    "fecha_fin": null,
    "hora": null,
@@ -4973,7 +4949,7 @@
   },
   {
    "titulo": "Maiden United 1980 feat. Dennis Stratton",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-11-28",
    "fecha_fin": null,
    "hora": null,
@@ -5001,7 +4977,7 @@
   },
   {
    "titulo": "Pripiat: Lanzamiento Ep Cripta en Warehousechile",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-11-29",
    "fecha_fin": null,
    "hora": "17:00",
@@ -5031,7 +5007,7 @@
   },
   {
    "titulo": "Quemando en Cajacústica: Movimiento No Humano",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-11-29",
    "fecha_fin": null,
    "hora": "17:00",
@@ -5061,7 +5037,7 @@
   },
   {
    "titulo": "A Perfect Circle + Puscifer",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-11-29",
    "fecha_fin": null,
    "hora": null,
@@ -5093,7 +5069,7 @@
   },
   {
    "titulo": "Classic Thrash Attack: Artillery y Atrophy en Santiago",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-11-29",
    "fecha_fin": null,
    "hora": null,
@@ -5123,7 +5099,7 @@
   },
   {
    "titulo": "Dying Fetus",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-12-01",
    "fecha_fin": null,
    "hora": null,
@@ -5195,7 +5171,7 @@
   },
   {
    "titulo": "BABYMETAL",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-12-03",
    "fecha_fin": null,
    "hora": "21:00",
@@ -5251,7 +5227,7 @@
   },
   {
    "titulo": "Versailles - 2026 en Santiago Chile",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-12-03",
    "fecha_fin": null,
    "hora": null,
@@ -5279,7 +5255,7 @@
   },
   {
    "titulo": "Metal Darkness XXII",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-12-04",
    "fecha_fin": null,
    "hora": "20:00",
@@ -5309,7 +5285,7 @@
   },
   {
    "titulo": "Ladies Of Metal 3",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-12-05",
    "fecha_fin": "2026-12-06",
    "hora": "20:30",
@@ -5339,7 +5315,7 @@
   },
   {
    "titulo": "Doyle - Rockout-2026",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-12-06",
    "fecha_fin": null,
    "hora": null,
@@ -5367,7 +5343,7 @@
   },
   {
    "titulo": "Festival Perros con Tiña",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-12-07",
    "fecha_fin": null,
    "hora": "19:30",
@@ -5397,7 +5373,7 @@
   },
   {
    "titulo": "Candelabro - en teatro Caupolicán 2026",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-12-08",
    "fecha_fin": null,
    "hora": null,
@@ -5425,7 +5401,7 @@
   },
   {
    "titulo": "Deep Purple",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-12-08",
    "fecha_fin": null,
    "hora": null,
@@ -5453,7 +5429,7 @@
   },
   {
    "titulo": "Slaughter to Prevail",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-12-08",
    "fecha_fin": null,
    "hora": null,
@@ -5481,7 +5457,7 @@
   },
   {
    "titulo": "FestiGame 2026: Entra al Juego",
-   "categoria": "fantasia",
+   "categoria": "anime",
    "fecha_inicio": "2026-12-10",
    "fecha_fin": null,
    "hora": "10:00",
@@ -5509,7 +5485,7 @@
   },
   {
    "titulo": "Slayer — Santiago [Chile]",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-12-10",
    "fecha_fin": null,
    "hora": "14:00",
@@ -5539,7 +5515,7 @@
   },
   {
    "titulo": "Sleeping With Sirens - AN ENDING IN ITSELF TOUR",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-12-11",
    "fecha_fin": null,
    "hora": null,
@@ -5569,7 +5545,7 @@
   },
   {
    "titulo": "Nu Metal Sessions Live en Espacio Cousiño",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-12-12",
    "fecha_fin": null,
    "hora": "19:00",
@@ -5629,7 +5605,7 @@
   },
   {
    "titulo": "Qyntral + Derringer en Mibar",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-12-17",
    "fecha_fin": "2026-12-18",
    "hora": "21:00",
@@ -5659,7 +5635,7 @@
   },
   {
    "titulo": "ELLENDE + THYRFING 2026 Chile",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-12-17",
    "fecha_fin": null,
    "hora": null,
@@ -5687,7 +5663,7 @@
   },
   {
    "titulo": "Alejandro Silva | «hyperspaced» | Sala Scd Bellavista",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-12-18",
    "fecha_fin": "2026-12-19",
    "hora": "20:00",
@@ -5717,7 +5693,7 @@
   },
   {
    "titulo": "Conce Nü Metal Vol. 3.0",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-12-19",
    "fecha_fin": null,
    "hora": "18:30",
@@ -5747,7 +5723,7 @@
   },
   {
    "titulo": "Tributo a Within Temptation en Biker Chop",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-12-19",
    "fecha_fin": "2026-12-20",
    "hora": "22:00",
@@ -5777,7 +5753,7 @@
   },
   {
    "titulo": "Surdeathcore OG Night",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-12-20",
    "fecha_fin": null,
    "hora": "16:00",
@@ -5844,7 +5820,7 @@
   },
   {
    "titulo": "Metal Forces Total Thrash",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-12-26",
    "fecha_fin": null,
    "hora": "14:00",
@@ -5874,7 +5850,7 @@
   },
   {
    "titulo": "Chinchorro Macabre Fest - Simposio Doom Metal",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2026-12-26",
    "fecha_fin": "2026-12-27",
    "hora": "19:00",
@@ -5904,7 +5880,7 @@
   },
   {
    "titulo": "Insecurity + Evil Madness",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2027-01-02",
    "fecha_fin": null,
    "hora": "21:00",
@@ -5934,7 +5910,7 @@
   },
   {
    "titulo": "Metallica Sinfónico S&M",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2027-01-09",
    "fecha_fin": null,
    "hora": null,
@@ -5962,7 +5938,7 @@
   },
   {
    "titulo": "31 Minutos: Don Quijote",
-   "categoria": "fantasia",
+   "categoria": "medieval",
    "fecha_inicio": "2027-01-23",
    "fecha_fin": "2027-01-24",
    "hora": "18:30",
@@ -5990,7 +5966,7 @@
   },
   {
    "titulo": "Silksong: En concierto",
-   "categoria": "fantasia",
+   "categoria": "conciertos",
    "fecha_inicio": "2027-01-30",
    "fecha_fin": null,
    "hora": null,
@@ -6078,7 +6054,7 @@
   },
   {
    "titulo": "Epica - Rhapsody - The Final Shows",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2027-03-06",
    "fecha_fin": null,
    "hora": null,
@@ -6110,7 +6086,7 @@
   },
   {
    "titulo": "Undertale: The Determination Symphony",
-   "categoria": "fantasia",
+   "categoria": "conciertos",
    "fecha_inicio": "2027-03-06",
    "fecha_fin": null,
    "hora": null,
@@ -6140,7 +6116,7 @@
   },
   {
    "titulo": "Motionless In White - The Come To Latin America Tour",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2027-03-07",
    "fecha_fin": null,
    "hora": null,
@@ -6168,7 +6144,7 @@
   },
   {
    "titulo": "Feria Internacional de Arte Contemporáneo Ch.ACO 17",
-   "categoria": "arte",
+   "categoria": "museos",
    "fecha_inicio": "2027-03-17",
    "fecha_fin": "2027-03-21",
    "hora": null,
@@ -6198,7 +6174,7 @@
   },
   {
    "titulo": "Mago de Oz",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2027-03-19",
    "fecha_fin": "2027-03-20",
    "hora": null,
@@ -6226,7 +6202,7 @@
   },
   {
    "titulo": "Vomitory - In Death Throes Tour",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2027-03-26",
    "fecha_fin": null,
    "hora": "20:00",
@@ -6256,7 +6232,7 @@
   },
   {
    "titulo": "Slash - Featuring Myles Kennedy and The Conspirators",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2027-04-02",
    "fecha_fin": null,
    "hora": null,
@@ -6312,7 +6288,7 @@
   },
   {
    "titulo": "Saurom - XXX Aniversario En Chile",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2027-04-17",
    "fecha_fin": null,
    "hora": null,
@@ -6340,7 +6316,7 @@
   },
   {
    "titulo": "Destripando La Historia - HEROES DEL INFRAMUNDO",
-   "categoria": "fantasia",
+   "categoria": "conciertos",
    "fecha_inicio": "2027-04-18",
    "fecha_fin": null,
    "hora": null,
@@ -6370,7 +6346,7 @@
   },
   {
    "titulo": "Floor Jansen",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2027-04-22",
    "fecha_fin": null,
    "hora": null,
@@ -6398,7 +6374,7 @@
   },
   {
    "titulo": "Emperor",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2027-04-23",
    "fecha_fin": null,
    "hora": null,
@@ -6434,7 +6410,7 @@
   },
   {
    "titulo": "KK’s Priest - Latin American Tour 2027",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2027-04-28",
    "fecha_fin": null,
    "hora": null,
@@ -6492,7 +6468,7 @@
   },
   {
    "titulo": "Mass Of Fermenting Dregs",
-   "categoria": "metal",
+   "categoria": "conciertos",
    "fecha_inicio": "2027-05-20",
    "fecha_fin": null,
    "hora": null,

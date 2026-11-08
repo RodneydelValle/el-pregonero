@@ -17,17 +17,21 @@ const MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "
 const COMUNAS_RM = /santiago|metropolitana|providencia|[ñn]u[ñn]oa|las condes|vitacura|lo barnechea|la reina|pe[ñn]alol[ée]n|macul|la florida|puente alto|maip[úu]|estaci[óo]n central|quinta normal|recoleta|independencia|conchal[íi]|huechuraba|quilicura|renca|cerro navia|lo prado|pudahuel|cerrillos|pedro aguirre cerda|san miguel|san joaqu[íi]n|la cisterna|el bosque|la granja|la pintana|san ram[óo]n|lo espejo|san bernardo|buin|colina|lampa|talagante|pe[ñn]aflor|melipilla|pirque|san jos[ée] de maipo|movistar arena|caupolic[áa]n|teatro coliseo|blondie|santander arena|espacio riesco|matucana|gam\b|parque o.?higgins/i;
 const HASH_SECCION = { agenda: "eventos", restaurantes: "restaurantes", mapa: "mapa", favoritos: "favoritos" };
 const SECCIONES = ["agenda", "restaurantes", "mapa", "favoritos"];
-// Banners de la cabecera: cada uno es una sección (en ese orden se deslizan). Juegos y Museos son la agenda con su
-// tema; "grupo:museos" junta los museos con las exposiciones de arte. Restaurantes no tiene pestaña: se llega por su banner.
+// Banners de la cabecera: cada uno es una sección (en ese orden se deslizan). Conciertos, Juegos y Museos son la agenda
+// con su tema (id de config/gustos.json). Restaurantes no tiene pestaña: se llega por su banner.
+// "nombre" es lo que oye un lector de pantalla al pasar a ese banner.
 const BANNERS = [
-  { id: "agenda", hash: "eventos", seccion: "agenda", cat: "todas" },
-  { id: "juegos", hash: "juegos", seccion: "agenda", cat: "fantasia" },
-  { id: "museos", hash: "museos", seccion: "agenda", cat: "grupo:museos" },
-  { id: "restaurantes", hash: "restaurantes", seccion: "restaurantes", cat: null },
+  { id: "agenda", hash: "eventos", seccion: "agenda", cat: "todas", nombre: "Agenda" },
+  { id: "conciertos", hash: "conciertos", seccion: "agenda", cat: "conciertos", nombre: "Conciertos" },
+  { id: "juegos", hash: "juegos", seccion: "agenda", cat: "juegos", nombre: "Juegos de mesa" },
+  { id: "museos", hash: "museos", seccion: "agenda", cat: "museos", nombre: "Museos, arte y cultura" },
+  { id: "restaurantes", hash: "restaurantes", seccion: "restaurantes", cat: null, nombre: "Restaurantes temáticos" },
 ];
-const GRUPOS = { "grupo:museos": ["museos", "arte"] };
+// Un banner también puede mostrar varios temas juntos: cat "grupo:x" y aquí { "grupo:x": ["tema1", "tema2"] }.
+// Hoy ninguno lo usa (el 8-11-2026 las exposiciones de arte pasaron a ser parte de Museos).
+const GRUPOS = {};
 
-const estado = { seccion: "agenda", cat: "todas", periodo: "todo", texto: "", soloRM: false, soloNuevos: false, tema: "todos", verTemporadas: false };
+const estado = { seccion: "agenda", cat: "todas", texto: "", soloRM: false, soloNuevos: false, tema: "todos", verTemporadas: false };
 let EVENTOS = [];
 let EVENTOS_CARGADOS = false;
 let AGENDA_FALLO = false;
@@ -55,7 +59,7 @@ const $ = (s) => document.querySelector(s);
 // Íconos: están en el <svg class="sprite"> de index.html. Cada tema de la agenda tiene el suyo
 // (un tema nuevo sin ícono muestra su emoji de config/gustos.json).
 const ICONO_CAT = { todas: "i-cuadricula", medieval: "i-espadas", yokai: "i-torii", anime: "i-mando", ilustracion: "i-pincel",
-  metal: "i-guitarra", fantasia: "i-dado", arte: "i-paleta", museos: "i-museo" };
+  conciertos: "i-guitarra", juegos: "i-dado6", museos: "i-museo" };
 function ico(id, clase = "") {
   return `<svg class="ico${clase ? " " + clase : ""}" aria-hidden="true" focusable="false"><use href="#${id}"/></svg>`;
 }
@@ -238,7 +242,7 @@ function seccionDeHash() {
 function catsFiltro(cat = estado.cat) {
   return cat === "todas" ? null : GRUPOS[cat] || [cat];
 }
-/** El banner de la agenda que corresponde a un tema: Juegos o Museos si el tema es de ellos; si no, Agenda. */
+/** El banner de la agenda que corresponde a un tema: Conciertos, Juegos o Museos si el tema es de ellos; si no, Agenda. */
 function bannerDeCat(cat = estado.cat) {
   const cats = catsFiltro(cat);
   if (!cats) return 0;
@@ -251,17 +255,17 @@ function bannerActual() {
   const k = BANNERS.findIndex((b) => b.seccion === estado.seccion);
   return k >= 0 ? k : null;
 }
-/** Sección y tema según la dirección: #eventos, #juegos, #museos, #restaurantes, #favoritos, #e-…, #r-… */
+/** Sección y tema según la dirección: #eventos, #conciertos, #juegos, #museos, #restaurantes, #favoritos, #e-…, #r-… */
 function aplicarHash() {
   estado.seccion = seccionDeHash();
   if (estado.seccion !== "agenda") return;
   const b = BANNERS.find((x) => x.hash === hashActual());
   if (b && b.cat !== "todas") estado.cat = b.cat;
-  else if (bannerDeCat() !== 0) estado.cat = "todas";   // #eventos, sin dirección o #e-… con el tema de Juegos o Museos: toda la agenda
+  else if (bannerDeCat() !== 0) estado.cat = "todas";   // #eventos, sin dirección o #e-… con el tema de un banner: toda la agenda
 }
 function irA(seccion) {
-  // La pestaña Agenda muestra la agenda completa: si se venía de Juegos o Museos, vuelve a "Todo"
-  // (un tema elegido con los botones de temas, como Metal, se mantiene)
+  // La pestaña Agenda muestra la agenda completa: si se venía de Conciertos, Juegos o Museos, vuelve a "Todo"
+  // (un tema elegido con los botones de temas, como Anime, se mantiene)
   if (seccion === "agenda" && bannerDeCat() !== 0) { estado.cat = "todas"; pintarChips(); pintar(); }
   const hash = seccion === "mapa" && MAPA.sel ? `#m-${MAPA.sel}` : `#${HASH_SECCION[seccion]}`;
   if (estado.seccion !== seccion) history.pushState(null, "", hash);
@@ -306,14 +310,11 @@ function pintarTodo() {
 
 // ---------- agenda: filtros ----------
 function filtrar() {
-  const h = hoy();
-  const limite = estado.periodo === "semana" ? 7 : estado.periodo === "mes" ? 30 : Infinity;
   const q = sinTildes(estado.texto.trim());
   const cats = catsFiltro();
   return EVENTOS.filter((e) => {
     if (!vigente(e)) return false;
     if (estado.soloNuevos) return NUEVOS.has(e.id);   // "Nuevos" muestra todo lo nuevo, sin otros filtros
-    if (dias(h, fecha(e.fecha_inicio)) > limite) return false;
     if (cats && !cats.includes(e.categoria)) return false;
     if (estado.soloRM && !COMUNAS_RM.test([e.lugar, e.comuna, e.ciudad, e.region, e.direccion].join(" "))) return false;
     if (q) {
@@ -357,7 +358,7 @@ function pintarChips() {
     { id: "todas", nombre: "Todo", emoji: "📰", n: vigentes.length },
     ...ORDEN_CATS.map((c) => ({ id: c.id, nombre: c.nombre, emoji: c.emoji, n: cuenta(c.id) })),
   ];
-  const cats = catsFiltro();   // con el banner Museos quedan marcados Museos y Exposiciones de arte
+  const cats = catsFiltro();   // los temas que muestra el banner o el botón elegido
   $("#chips").innerHTML = chips.map((c) =>
     `<button type="button" class="chip" data-cat="${esc(c.id)}" aria-pressed="${c.id === "todas" ? !cats : !!cats?.includes(c.id)}">` +
     `${icoCat(c.id, c.emoji)}${esc(c.nombre)} <span class="cuenta">${c.n}</span></button>`
@@ -366,7 +367,7 @@ function pintarChips() {
   if (estado.cat !== temaMostrado) { temaMostrado = estado.cat; mostrarTemaMarcado(); }
 }
 /** La fila de temas se desliza (en el celular no caben): que se vea el tema marcado, por ejemplo al pasar al banner
- *  Juegos o Museos, cuyos temas están al final de la fila. */
+ *  Conciertos, Juegos o Museos, cuyos temas están al final de la fila. */
 let temaMostrado = null;
 function mostrarTemaMarcado() {
   const fila = $("#chips");
@@ -865,13 +866,14 @@ function irABanner(k, suave = true) {
     pintarChips(); pintar();
   }
   estado.seccion = b.seccion;
-  // Pasar entre Agenda, Juegos y Museos no deja pasos en el historial; ir a Restaurantes o volver, sí (como una pestaña)
+  // Pasar entre los banners de la agenda (Agenda, Conciertos, Juegos, Museos) no deja pasos en el historial;
+  // ir a Restaurantes o volver, sí (como una pestaña)
   const hash = `#${b.hash}`;
   if (antes !== b.seccion) history.pushState(null, "", hash);
   else if (location.hash !== hash) history.replaceState(null, "", hash);
   pintarSecciones(suave);
   const anuncio = $("#anuncio-banner");   // para lectores de pantalla
-  if (anuncio) anuncio.textContent = `Sección: ${["Agenda", "Juegos", "Museos y exposiciones", "Restaurantes temáticos"][k]}`;
+  if (anuncio) anuncio.textContent = `Sección: ${b.nombre || b.id}`;
 }
 /** El banner se detuvo. Si lo deslizó la persona y quedó en otro, se muestra su sección.
  *  Devuelve true si lo puso en movimiento otra vez (cuando se detenga se vuelve a pasar por aquí). */
@@ -1196,10 +1198,10 @@ function pintarAgenda(lista) {
 }
 
 /** Las exposiciones abiertas por semanas o meses no tapan la agenda: se ven las 3 que cierran antes
- *  y un botón muestra el resto (al filtrar por arte o museos, o al buscar, se ven todas). */
+ *  y un botón muestra el resto (al filtrar por Museos, arte y cultura, o al buscar, se ven todas). */
 function htmlTemporadas(largas) {
   const todas = estado.verTemporadas || largas.length <= 4 || !!estado.texto || estado.soloNuevos
-    || !!catsFiltro()?.every((c) => c === "arte" || c === "museos");   // también con el banner Museos (arte + museos)
+    || !!catsFiltro()?.every((c) => c === "museos");   // también con el banner Museos
   const visibles = todas ? largas : largas.slice(0, 3);
   return `<h2 class="mes" id="t-temporadas" tabindex="-1">Exposiciones y temporadas abiertas</h2>` +
     visibles.map((e) => htmlNota(e)).join("") +
@@ -2040,8 +2042,8 @@ async function compartir(e) {
   } catch { /* cancelado */ }
 }
 
-/** Se eligió un tema con sus botones: el banner pasa al que le corresponde (Juegos, Museos o Agenda)
- *  y la dirección lo dice (#juegos, #museos o #eventos), salvo que apunte a un evento. */
+/** Se eligió un tema con sus botones: el banner pasa al que le corresponde (Conciertos, Juegos, Museos o Agenda)
+ *  y la dirección lo dice (#conciertos, #juegos, #museos o #eventos), salvo que apunte a un evento. */
 function temaCambiado() {
   const h = hashActual();
   if (!h || BANNERS.some((b) => b.hash === h)) history.replaceState(null, "", `#${BANNERS[bannerDeCat()].hash}`);
@@ -2065,13 +2067,6 @@ document.addEventListener("click", (ev) => {
     else estado.cat = chip.dataset.cat;
     pintarChips(); pintar();
     if (!chip.dataset.rm) temaCambiado();
-    return;
-  }
-  const seg = ev.target.closest("[data-periodo]");
-  if (seg) {
-    estado.periodo = seg.dataset.periodo;
-    document.querySelectorAll("[data-periodo]").forEach((b) => b.setAttribute("aria-pressed", String(b === seg)));
-    pintar();
     return;
   }
   const btn = ev.target.closest("[data-accion]");
@@ -2100,6 +2095,12 @@ $("#buscar").addEventListener("input", (ev) => {
   clearTimeout(espera);
   espera = setTimeout(() => { estado.texto = ev.target.value; pintar(); }, 150);
 });
+// En el celular el buscador comparte la fila con "Nuevos": el texto de ayuda largo no cabe
+const ANGOSTO = window.matchMedia("(max-width: 760px)");
+const AYUDA_BUSCAR = $("#buscar").placeholder;
+function ayudaBuscar() { $("#buscar").placeholder = ANGOSTO.matches ? "Buscar…" : AYUDA_BUSCAR; }
+ayudaBuscar();
+ANGOSTO.addEventListener?.("change", ayudaBuscar);
 
 window.addEventListener("popstate", () => {
   const cat = estado.cat;
@@ -2158,7 +2159,15 @@ async function iniciar() {
     const [cfg, datos] = agenda.value;
     ORDEN_CATS = cfg.categorias;
     CATS = Object.fromEntries(cfg.categorias.map((c) => [c.id, c]));
-    EVENTOS = datos.eventos || [];
+    // Un evento con un tema que ya no existe (p. ej. "metal", si una vuelta del robot con la configuración
+    // anterior lo subió justo al renombrar los temas) se muestra en su tema nuevo según temas_renombrados.
+    // El robot lo corrige en el archivo en su vuelta siguiente; si el tema se repartió (lista), va al primero.
+    const renombrados = cfg.temas_renombrados || {};
+    EVENTOS = (datos.eventos || []).map((e) => {
+      if (CATS[e.categoria]) return e;
+      const destino = [renombrados[e.categoria]].flat().find((id) => CATS[id]);
+      return destino ? { ...e, categoria: destino } : e;
+    });
     EVENTOS_CARGADOS = true;
     ULTIMA = datos.ultima_busqueda || {};
     if (Array.isArray(ULTIMA.nuevos_ids)) {

@@ -2,7 +2,7 @@
 
 _(antes «El Pregonero»)_
 
-Agenda personal de eventos en Chile, con formato de diario: ferias medievales, yokai y Japón tradicional, anime y cosplay, ilustración y cómic, conciertos de metal, fantasía, rol y juegos, exposiciones de arte y museos.
+Agenda personal de eventos en Chile, con formato de diario. Sus temas (en `config/gustos.json`): **Medieval, fantasía y rol** (ferias medievales y vikingas, recreación, Tolkien, rol, cine fantástico y de terror), **Yokai y Japón tradicional**, **Anime, manga y cosplay** (también videojuegos), **Ilustración y cómic**, **Conciertos** (metal y rock duro, y conciertos con música de videojuegos o de fantasía), **Juegos de mesa** (también cartas coleccionables y wargames) y **Museos, arte y cultura** (exposiciones de arte, museos y patrimonio). Los temas se reorganizaron el 8-11-2026: antes «Fantasía, rol y juegos», «Exposiciones de arte» y «Conciertos de metal» eran temas aparte.
 
 **Web:** https://rodneydelvalle.github.io/el-pregonero/ (se puede instalar como app en el celular)
 
@@ -21,11 +21,12 @@ La búsqueda automática no entra a Instagram ni a Facebook: respeta sus reglas 
 La cabecera tiene un banner por sección. Al deslizarlo con el dedo, tocar sus puntos, usar las flechas ‹ › (en el computador) o ← → con el foco en un punto, la página muestra la sección de ese banner:
 
 - **Agenda** (el diablillo con el mapa): todos los eventos, con filtros, buscador y botón 🆕 Nuevos. Las exposiciones que ya están abiertas van juntas en «Exposiciones y temporadas abiertas» (primero las que cierran antes), para no tapar lo que viene.
-- **Juegos** (la tienda de juegos): la agenda con el tema «Fantasía, rol y juegos».
-- **Museos** (el museo): la agenda con los temas «Museos y cultura» y «Exposiciones de arte».
+- **Conciertos** (el festival de metal): la agenda con el tema «Conciertos».
+- **Juegos** (la tienda de juegos): la agenda con el tema «Juegos de mesa».
+- **Museos** (el museo): la agenda con el tema «Museos, arte y cultura».
 - **Restaurantes** (el ramen): restaurantes temáticos japoneses, vikingos y medievales, góticos y geek en Santiago (`data/restaurantes.json`). La lista se armó el 6-11-2026: cada lugar lo verificó un agente independiente (que siga abierto, la dirección y que la temática sea real) y los que tienen algo por confirmar muestran un aviso ⚠. Los que cerraron o no calzaban quedaron fuera.
 
-Bajo la cabecera hay tres pestañas: **Agenda** (vuelve a la agenda completa), **Mapa del Aventurero** y **Mis favoritos** (lo que marcaste con ☆ Favorito). Elegir un tema en la agenda también mueve el banner (por ejemplo, «Exposiciones de arte» lo pasa a Museos). Cada sección tiene su dirección: `#eventos`, `#juegos`, `#museos`, `#restaurantes`, `#mapa` y `#favoritos`. Los banners están en `img/banner-*.webp` (3:1, en 900, 1400 y el tamaño original, más un JPG de 1200 de respaldo); su orden y su sección, en `BANNERS` de `app.js`.
+Bajo la cabecera hay tres pestañas: **Agenda** (vuelve a la agenda completa), **Mapa del Aventurero** y **Mis favoritos** (lo que marcaste con ☆ Favorito). Elegir un tema en la agenda también mueve el banner (por ejemplo, «Juegos de mesa» lo pasa a Juegos). Cada sección tiene su dirección: `#eventos`, `#conciertos`, `#juegos`, `#museos`, `#restaurantes`, `#mapa` y `#favoritos`. Los banners están en `img/banner-*.webp` (3:1, en 900, 1400 y el tamaño original, más un JPG de 1200 de respaldo); su orden y su sección, en `BANNERS` de `app.js`.
 
 En cada evento, restaurante y tienda, **🗺 Cómo llegar** abre Google Maps (en el celular, su app) con la ruta desde donde estás hasta el lugar.
 
@@ -67,7 +68,7 @@ Para activarlo (una sola vez):
 
 ## Personalizar
 
-- **Gustos y búsquedas:** `config/gustos.json`. Ahí se agregan categorías, palabras clave, búsquedas, fuentes fijas y cuentas de comunidades (`comunidades.cuentas`).
+- **Gustos y búsquedas:** `config/gustos.json`. Ahí se agregan categorías, palabras clave, búsquedas, fuentes fijas y cuentas de comunidades (`comunidades.cuentas`). Una categoría con `"peso": 2` (las que juntan dos temas: Medieval, fantasía y rol; Museos, arte y cultura) lee el doble de páginas con IA en cada búsqueda completa. Si cambias el `id` de una categoría, anota el viejo en `temas_renombrados` (id viejo → id nuevo, o una lista si el tema se repartió). Así el robot pasa solo sus eventos al tema nuevo en la vuelta siguiente, y mientras tanto la página ya los muestra ahí. Cambia también `BANNERS` e `ICONO_CAT` en `app.js` y las claves de `referenciales` en `data/lugares.json`.
 - **Ocultar un evento:** agrega su título, o parte de él, o su `id` a `data/ocultos.json`.
 - **Agregar eventos a mano:** crea un JSON con la lista de eventos y ejecuta `python scripts/actualizar.py --agregar archivo.json --origen manual`.
 

@@ -553,8 +553,8 @@ html:has(.visor[open]) { overflow: hidden; }
   .pestana { padding: 9px 14px 10px; font-size: 16.5px; gap: 7px; }
   .pestana .ico { width: 20px; height: 20px; }
   body { font-size: 16px; }
-  .fila-busqueda { gap: 10px; }
-  .buscador { order: 3; flex-basis: 100%; }
+  .fila-busqueda { gap: 10px; flex-wrap: nowrap; }   /* Nuevos y el buscador en una sola fila: la barra fija ocupa menos */
+  .fila-busqueda .buscador { flex-basis: 0; }
   .portada { grid-template-columns: 1fr; gap: 14px; }
   .principal { grid-row: auto; }
   .nota, .nota.sin-foto { grid-template-columns: 56px 1fr; gap: 12px; padding: 12px; }
@@ -905,4 +905,10 @@ html:has(.visor[open]) { overflow: hidden; }
   .btn-nuevos, .segmento button { font-size: 15px; }
   .segmento button { padding: 9px 13px; }
   .chip { font-size: 15px; padding: 7px 13px; }
+}
+/* Menos de 340 px (la pantalla de afuera de un Galaxy Fold, o un celular con zoom del 125 % o más): al lado de
+   «Nuevos» al buscador le quedaban 2 o 3 letras, así que vuelve a tener su propia fila. */
+@media (max-width: 340px) {
+  .fila-busqueda { flex-wrap: wrap; }
+  .fila-busqueda .buscador { flex-basis: 100%; }
 }

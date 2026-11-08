@@ -1096,7 +1096,6 @@ def url_https(u) -> str | None:
 
 
 def normalizar_evento(e: dict, cfg: dict, fuente_nombre: str, fuente_url: str, origen: str) -> dict | None:
-    ids = {c["id"] for c in cfg["categorias"]}
     titulo = sin_gritar(limpiar(e.get("titulo"))[:160])
     inicio = fecha_iso(e.get("fecha_inicio"))
     if not titulo or not inicio:
@@ -1113,16 +1112,13 @@ def normalizar_evento(e: dict, cfg: dict, fuente_nombre: str, fuente_url: str, o
     pais = sin_tildes(str(e.get("pais") or ""))
     if pais and pais not in ("chile", "cl"):
         return None
-    cat = e.get("categoria")
-    if cat not in ids:
-        cat = categorias_por_palabras(cfg, f"{titulo} {e.get('descripcion') or ''}")
-        cat = cat[0] if cat else None
+    cat = tema_vigente(cfg, e.get("categoria"), f"{titulo} {e.get('descripcion') or ''}")
     if not cat:
         return None
     url = e.get("url_entradas") or e.get("url") or fuente_url
     if not (isinstance(url, str) and url.startswith("http")):
         url = fuente_url
-    if (origen.startswith("ia") and not fin and inicio == HOY.isoformat() and cat in ("arte", "museos")
+    if (origen.startswith("ia") and not fin and inicio == HOY.isoformat() and cat == "museos"
             and not hora_hhmm(e.get("hora"))):
         return None  # una muestra "abierta desde hoy" sin día de cierre: volvería cada día con otro id
     imagen = url_https(e.get("imagen"))
@@ -1252,14 +1248,65 @@ def vigentes(eventos: list[dict], ocultos: list[str]) -> list[dict]:
 # ---------------------------------------------------------------- relevancia
 
 def patron_intereses(cfg: dict) -> re.Pattern:
-    palabras = sorted({sin_tildes(p) for c in cfg["categorias"] for p in c["palabras"]}, key=len, reverse=True)
+    palabras = sorted({sin_tildes(p) for c in cfg["categorias"]
+                       for p in (c.get("palabras") or []) + (c.get("palabras_secundarias") or [])}, key=len, reverse=True)
     return re.compile(r"\b(" + "|".join(re.escape(p) for p in palabras) + r")\b")
 
 
+def peso_tema(c: dict) -> int:
+    """'peso' de un tema en config/gustos.json (1 si no está o no es un número): cuántas páginas le tocan por vuelta."""
+    try:
+        return max(1, int(c.get("peso", 1)))
+    except (TypeError, ValueError):
+        return 1
+
+
 def categorias_por_palabras(cfg: dict, texto: str) -> list[str]:
+    """Temas cuyas palabras aparecen en el texto (palabras enteras, sin tildes), en el orden de la config.
+    Las 'palabras_secundarias' de un tema (las generales, como «terror» o «Tolkien» en Medieval) cuentan después:
+    si el texto calza con las palabras principales de otro tema (yokai, anime, conciertos…), ese va primero."""
     t = sin_tildes(texto)
-    return [c["id"] for c in cfg["categorias"]
-            if re.search(r"\b(" + "|".join(re.escape(sin_tildes(p)) for p in c["palabras"]) + r")\b", t)]
+
+    def calza(palabras) -> bool:
+        return bool(palabras) and bool(re.search(
+            r"\b(" + "|".join(re.escape(sin_tildes(p)) for p in palabras) + r")\b", t))
+    principales = [c["id"] for c in cfg["categorias"] if calza(c.get("palabras"))]
+    return principales + [c["id"] for c in cfg["categorias"]
+                          if c["id"] not in principales and calza(c.get("palabras_secundarias"))]
+
+
+def tema_vigente(cfg: dict, cat, texto: str) -> str | None:
+    """El tema actual de un evento. Si su id ya no existe (p. ej. 'metal', renombrado el 8-11-2026),
+    'temas_renombrados' de config/gustos.json dice a cuál pasó. Si un tema se repartió entre varios (lista),
+    deciden las palabras del evento y, si no calza ninguna, el primero de la lista. Sin alias, solo las palabras."""
+    ids = [c["id"] for c in cfg["categorias"]]
+    if cat in ids:
+        return cat
+    destino = (cfg.get("temas_renombrados") or {}).get(cat) if isinstance(cat, str) else None
+    por_palabras = categorias_por_palabras(cfg, texto)
+    if isinstance(destino, list):
+        destino = [d for d in destino if d in ids]
+        if destino:
+            return next((c for c in por_palabras if c in destino), destino[0])
+    elif destino in ids:
+        return destino
+    return por_palabras[0] if por_palabras else None
+
+
+def temas_al_dia(eventos: list[dict], cfg: dict) -> list[dict]:
+    """Pasa a su tema actual los eventos guardados con un id que ya no existe. Pasa si una vuelta del robot
+    con la configuración anterior subió sus eventos justo cuando se renombraron los temas: unir() nunca
+    cambia el tema de un evento que ya existe, así que sin esto quedarían fuera de todos los temas."""
+    ids = {c["id"] for c in cfg["categorias"]}
+    for e in eventos:
+        if e.get("categoria") not in ids:
+            nuevo = tema_vigente(cfg, e.get("categoria"), f"{e.get('titulo') or ''} {e.get('descripcion') or ''}")
+            if nuevo:
+                log(f"  tema '{e.get('categoria')}' → '{nuevo}': {e.get('titulo')}")
+                e["categoria"] = nuevo
+            else:
+                log(f"  tema '{e.get('categoria')}' sin equivalente (queda igual): {e.get('titulo')}")
+    return eventos
 
 
 RE_CHILE = re.compile(r"\b(chile|santiago|providencia|nunoa|las condes|maipu|valparaiso|vina del mar|"
@@ -1703,15 +1750,18 @@ def busqueda_completa(cfg: dict, ia: IA, vistos: dict, noticias_desde: dt.date |
                     candidatos[r["url"]] = r
     ordenados = sorted(candidatos.values(), key=lambda c: -c["puntaje"])
     ordenados = [c for c in ordenados if c["puntaje"] >= 2]
-    # Se intercalan las categorías (medieval, anime, metal, ...) para que el cupo de IA alcance para todas
+    # Se intercalan las categorías (medieval, anime, conciertos, ...) para que el cupo de IA alcance para todas;
+    # a un tema con "peso" 2 (los que juntan dos temas) le tocan dos páginas en cada vuelta
+    peso = {c["id"]: peso_tema(c) for c in cfg["categorias"]}
     por_categoria: dict[str, list[dict]] = {}
     for c in ordenados:
         por_categoria.setdefault(c["categoria"], []).append(c)
     ordenados = []
     while any(por_categoria.values()):
-        for lista in por_categoria.values():
-            if lista:
-                ordenados.append(lista.pop(0))
+        for cat_id, lista in por_categoria.items():
+            for _ in range(peso.get(cat_id, 1)):
+                if lista:
+                    ordenados.append(lista.pop(0))
     viejas -= set(candidatos)
     log(f"[búsquedas] {len(candidatos)} resultados nuevos, {len(ordenados)} prometedores, "
         f"{len(viejas)} noticias anteriores al {noticias_desde.strftime('%d-%m-%Y')} descartadas sin leer")
@@ -1732,7 +1782,8 @@ def busqueda_completa(cfg: dict, ia: IA, vistos: dict, noticias_desde: dt.date |
                 vistos[r["url"]] = HOY.isoformat()
     stats["redes_vistas"] = len(de_redes)
 
-    # 4) Páginas: reparte el cupo de IA entre categorías para que ninguna se quede sin revisar.
+    # 4) Páginas: reparte el cupo de IA entre categorías para que ninguna se quede sin revisar
+    #    (cada una lee hasta tope × su peso).
     #    Si se acaba el cupo, igual se leen las que traen datos estructurados (no gastan IA);
     #    las demás quedan pendientes para el día siguiente.
     por_cat: dict[str, int] = {}
@@ -1743,7 +1794,7 @@ def busqueda_completa(cfg: dict, ia: IA, vistos: dict, noticias_desde: dt.date |
             if sin_ia_hechas >= sin_ia_max:
                 break
             sin_ia_hechas += 1
-        elif por_cat.get(c["categoria"], 0) >= tope:
+        elif por_cat.get(c["categoria"], 0) >= tope * peso.get(c["categoria"], 1):
             continue
         log(f"[página] ({c['puntaje']}) {c['titulo'][:80]} — {c['url'][:100]}")
         try:
@@ -1791,7 +1842,7 @@ def main():
     if not cfg:
         sys.exit("No encuentro config/gustos.json")
     base = cargar_json(ARCH_EVENTOS, {"eventos": []})
-    eventos = base.get("eventos", [])
+    eventos = temas_al_dia(base.get("eventos", []), cfg)
     vistos = cargar_json(ARCH_VISTOS, {})
     ocultos = cargar_json(ARCH_OCULTOS, [])
     stats: dict = {}

@@ -1888,7 +1888,7 @@
     "descripcion": "Mesas con cómics, fanzines e ilustraciones en una feria bajo guirnaldas de luces"
    }
   ],
-  "metal": [
+  "conciertos": [
    {
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orategod_Metal_fest_2013.jpg/960px-Orategod_Metal_fest_2013.jpg",
     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orategod_Metal_fest_2013.jpg/330px-Orategod_Metal_fest_2013.jpg",
@@ -1897,7 +1897,7 @@
     "descripcion": "Banda chilena de death metal tocando en un festival al aire libre frente al público"
    }
   ],
-  "fantasia": [
+  "juegos": [
    {
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Play_Modena_2015_-_Wargame_tridimensionale_fantasy.jpg/1280px-Play_Modena_2015_-_Wargame_tridimensionale_fantasy.jpg",
     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Play_Modena_2015_-_Wargame_tridimensionale_fantasy.jpg/330px-Play_Modena_2015_-_Wargame_tridimensionale_fantasy.jpg",
@@ -1915,20 +1915,18 @@
   ],
   "museos": [
    {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/National_Museum_of_Natural_History_main_hall_Santiago_Chile_2009_May_24.JPG/1280px-National_Museum_of_Natural_History_main_hall_Santiago_Chile_2009_May_24.JPG",
-    "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/National_Museum_of_Natural_History_main_hall_Santiago_Chile_2009_May_24.JPG/330px-National_Museum_of_Natural_History_main_hall_Santiago_Chile_2009_May_24.JPG",
-    "pagina": "https://commons.wikimedia.org/wiki/File:National_Museum_of_Natural_History_main_hall_Santiago_Chile_2009_May_24.JPG",
-    "credito": "Foto: Jason Quinn · CC BY-SA 3.0 · Wikimedia Commons",
-    "descripcion": "Visitantes en el salón central del Museo Nacional de Historia Natural, con esqueleto de ballena"
-   }
-  ],
-  "arte": [
-   {
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Interior_Museo_Nacional_de_Bellas_Artes.jpg/1280px-Interior_Museo_Nacional_de_Bellas_Artes.jpg",
     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Interior_Museo_Nacional_de_Bellas_Artes.jpg/330px-Interior_Museo_Nacional_de_Bellas_Artes.jpg",
     "pagina": "https://commons.wikimedia.org/wiki/File:Interior_Museo_Nacional_de_Bellas_Artes.jpg",
     "credito": "Foto: Santiago Vicente Calvo · CC BY-SA 3.0 · Wikimedia Commons",
     "descripcion": "Hall del Museo Nacional de Bellas Artes con esculturas y visitantes bajo la cúpula"
+   },
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/National_Museum_of_Natural_History_main_hall_Santiago_Chile_2009_May_24.JPG/1280px-National_Museum_of_Natural_History_main_hall_Santiago_Chile_2009_May_24.JPG",
+    "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/National_Museum_of_Natural_History_main_hall_Santiago_Chile_2009_May_24.JPG/330px-National_Museum_of_Natural_History_main_hall_Santiago_Chile_2009_May_24.JPG",
+    "pagina": "https://commons.wikimedia.org/wiki/File:National_Museum_of_Natural_History_main_hall_Santiago_Chile_2009_May_24.JPG",
+    "credito": "Foto: Jason Quinn · CC BY-SA 3.0 · Wikimedia Commons",
+    "descripcion": "Visitantes en el salón central del Museo Nacional de Historia Natural, con esqueleto de ballena"
    }
   ]
  }

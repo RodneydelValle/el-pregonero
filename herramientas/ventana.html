@@ -129,7 +129,10 @@ ol.pasos { list-style: none; padding: 0; margin: 14px 0 0; }
 "use strict";
 const $ = (s) => document.querySelector(s);
 const MESES = ["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
-const CAT = { medieval: "⚔️ Medieval", yokai: "👺 Yokai", anime: "🎌 Anime", ilustracion: "🖋️ Ilustración", metal: "🤘 Metal", fantasia: "🐉 Fantasía" };
+// Nombres de los temas: los manda ventana_progreso.py desde config/gustos.json (d.temas). Esta lista es solo por si
+// falta ese dato (un ventana_progreso.py antiguo).
+const CAT = { medieval: "⚔️ Medieval, fantasía y rol", yokai: "👺 Yokai", anime: "🎌 Anime", ilustracion: "🖋️ Ilustración",
+  conciertos: "🤘 Conciertos", juegos: "🎲 Juegos de mesa", museos: "🏛️ Museos, arte y cultura" };
 const FRASES = [
   "¡Oíd, oíd! Recorriendo las ticketeras de la comarca…",
   "Preguntando a los buscadores por ferias medievales…",
@@ -238,7 +241,8 @@ function pintar(d) {
     $("#lista").innerHTML = r.eventos.length ? r.eventos.map((e) => {
       const [a, m, dd] = e.fecha.split("-");
       const extra = e.extra === "afiche" ? " · 📷 leído del afiche" : e.extra ? ` · ${esc(e.extra)}` : "";
-      return `<div class="ev"><div class="f"><big>${+dd}</big>${MESES[+m - 1]}</div><div class="t">${esc(e.titulo)}<span class="c">${esc(CAT[e.categoria] || e.categoria)}${extra}</span></div></div>`;
+      const tema = (d.temas || {})[e.categoria] || CAT[e.categoria] || e.categoria;
+      return `<div class="ev"><div class="f"><big>${+dd}</big>${MESES[+m - 1]}</div><div class="t">${esc(e.titulo)}<span class="c">${esc(tema)}${extra}</span></div></div>`;
     }).join("") : `<p class="vacio">La lista detallada aparece cuando la búsqueda lee páginas con IA. Los eventos de ticketeras se suman directo a la agenda.</p>`;
     $("#avisos").hidden = !r.avisos.length;
     $("#avisos").textContent = r.avisos.join(" · ");

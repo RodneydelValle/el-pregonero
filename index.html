@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>IMP TRAVEL</title>
-  <meta name="description" content="IMP TRAVEL: agenda de eventos en Chile (ferias medievales, yokai, anime, ilustración, metal y más), restaurantes temáticos y tus favoritos. Se actualiza sola cada hora.">
+  <meta name="description" content="IMP TRAVEL: agenda de eventos en Chile (ferias medievales, fantasía y rol, yokai, anime, ilustración, conciertos, juegos de mesa, museos y arte), restaurantes temáticos y tus favoritos. Se actualiza sola cada hora.">
   <meta name="theme-color" content="#760928">
   <meta name="color-scheme" content="light">
   <meta name="apple-mobile-web-app-title" content="IMP TRAVEL">
   <meta property="og:type" content="website">
   <meta property="og:title" content="IMP TRAVEL">
-  <meta property="og:description" content="Ferias medievales, yokai, anime, ilustración, metal y restaurantes temáticos en Chile.">
+  <meta property="og:description" content="Ferias medievales, fantasía, yokai, anime, ilustración, conciertos, juegos de mesa, museos y restaurantes temáticos en Chile.">
   <meta property="og:url" content="https://rodneydelvalle.github.io/el-pregonero/">
   <meta property="og:image" content="https://rodneydelvalle.github.io/el-pregonero/img/banner-1200.jpg">
   <meta property="og:image:width" content="1200">
@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Fira+Sans+Condensed:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&display=swap">
   <!-- ?v= sube cada vez que cambian styles.css o app.js: así nadie queda con una mezcla de la versión vieja y la nueva -->
-  <link rel="stylesheet" href="styles.css?v=13">
+  <link rel="stylesheet" href="styles.css?v=14">
 </head>
 <body>
   <!-- Íconos de la página (se usan con <svg><use href="#i-…"/></svg>) -->
@@ -96,6 +96,13 @@
           <img src="img/banner-1200.jpg" width="2172" height="724" fetchpriority="high" decoding="async"
                alt="Agenda: un diablillo rojo con mochila mira un mapa junto a un camino luminoso que une una feria medieval, un torii japonés, un evento gamer y un teatro">
         </picture>
+        <picture class="banner-cabecera" data-banner="conciertos" aria-hidden="true">
+          <source type="image/webp"
+                  data-srcset="img/banner-conciertos-900.webp 900w, img/banner-conciertos-1400.webp 1400w, img/banner-conciertos-2172.webp 2172w"
+                  sizes="(max-width: 1152px) calc(100vw - 32px), 1120px">
+          <img data-src="img/banner-conciertos-1200.jpg" width="2172" height="724" loading="lazy" decoding="async"
+               alt="Conciertos: el diablillo, un dragón y una elfa, con chaquetas de cuero, hacen el saludo metalero frente al escenario de un festival de metal al aire libre">
+        </picture>
         <picture class="banner-cabecera" data-banner="juegos" aria-hidden="true">
           <source type="image/webp"
                   data-srcset="img/banner-juegos-900.webp 900w, img/banner-juegos-1400.webp 1400w, img/banner-juegos-2000.webp 2000w"
@@ -122,8 +129,9 @@
       <button type="button" class="banners-flecha sig" data-banner-paso="1" tabindex="-1" aria-label="Sección siguiente">›</button>
       <div class="banners-puntos" role="group" aria-label="Banners de secciones">
         <button type="button" class="punto" data-banner="agenda" aria-label="Agenda: todos los eventos" title="Agenda: todos los eventos" aria-current="true"></button>
-        <button type="button" class="punto" data-banner="juegos" aria-label="Juegos: fantasía, rol y juegos" title="Juegos: fantasía, rol y juegos"></button>
-        <button type="button" class="punto" data-banner="museos" aria-label="Museos y exposiciones de arte" title="Museos y exposiciones de arte"></button>
+        <button type="button" class="punto" data-banner="conciertos" aria-label="Conciertos" title="Conciertos"></button>
+        <button type="button" class="punto" data-banner="juegos" aria-label="Juegos de mesa" title="Juegos de mesa"></button>
+        <button type="button" class="punto" data-banner="museos" aria-label="Museos, arte y cultura" title="Museos, arte y cultura"></button>
         <button type="button" class="punto" data-banner="restaurantes" aria-label="Restaurantes temáticos" title="Restaurantes temáticos"></button>
       </div>
       <p id="anuncio-banner" class="solo-lector" aria-live="polite"></p>
@@ -156,11 +164,6 @@
           <svg class="ico" aria-hidden="true" focusable="false"><use href="#i-lupa"/></svg>
           <input type="search" id="buscar" placeholder="Buscar banda, feria, lugar…" aria-label="Buscar eventos" autocomplete="off">
         </div>
-        <div class="segmento" role="group" aria-label="Cuándo">
-          <button type="button" data-periodo="todo" aria-pressed="true">Todo</button>
-          <button type="button" data-periodo="semana" aria-pressed="false">7 días</button>
-          <button type="button" data-periodo="mes" aria-pressed="false">30 días</button>
-        </div>
       </div>
       <div class="chips" id="chips" role="group" aria-label="Temas"></div>
     </nav>
@@ -174,7 +177,7 @@
       <section id="agenda" class="agenda" aria-label="Agenda"></section>
       <div id="vacio" class="vacio" hidden>
         <p class="vacio-titulo">Nada por aquí con esos filtros.</p>
-        <p>Prueba con otro tema o período, o pide una búsqueda nueva.</p>
+        <p>Prueba con otro tema, o pide una búsqueda nueva.</p>
       </div>
     </div>
   </div>
@@ -305,7 +308,7 @@
   </dialog>
 
   <div id="aviso" class="aviso" role="status" aria-live="polite" hidden></div>
-  <script src="app.js?v=13" defer></script>
+  <script src="app.js?v=14" defer></script>
   <script type="module" src="cuenta.js"></script>
 </body>
 </html>
