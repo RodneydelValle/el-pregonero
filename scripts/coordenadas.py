@@ -18,6 +18,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 import os
 import re
 import sys
@@ -77,18 +78,29 @@ NO_CALLE = re.compile(r"^(local|locales|piso|oficina|of\.|nivel|metro|galer|mall
 
 
 def calle_numero(direccion: str):
-    """'Galería de la Merced, Huérfanos 635, local 22 (…)' -> ('Huérfanos', 635)."""
+    """'Galería de la Merced, Huérfanos 635, local 22 (…)' -> ('Huérfanos', '635').
+    El número va como texto: en Chile '0350' (con cero delante, el tramo de Providencia) no es el 350."""
     d = re.sub(r"\(.*?\)", "", direccion or "")
     for parte in d.split(","):
         parte = parte.strip()
         if not parte or NO_CALLE.match(parte):
             continue
-        m = re.match(r"^(.*?[A-Za-zÁÉÍÓÚÑáéíóúñ.'’])\s+0*(\d{1,5}(?:\.\d{3})?)\b", parte)
+        m = re.match(r"^(.*?[A-Za-zÁÉÍÓÚÑáéíóúñ.'’])\s+(\d{1,5}(?:\.\d{3})?)\b", parte)
         if m:
             calle = re.sub(r"^(av\.?|avda\.?|avenida|calle|pasaje|psje\.?|paseo)\s+", "", m.group(1).strip(), flags=re.I)
             calle = re.sub(r"^dr\.?\s+", "Doctor ", calle, flags=re.I).replace("’", "'")
-            return calle.strip(), int(m.group(2).replace(".", ""))
+            return calle.strip(), m.group(2).replace(".", "")
     return None, None
+
+
+def con_cero(n: str) -> bool:
+    return len(n) > 1 and n.startswith("0")
+
+
+def distancia_km(a, b) -> float:
+    la1, lo1, la2, lo2 = map(math.radians, (a[0], a[1], b[0], b[1]))
+    h = math.sin((la2 - la1) / 2) ** 2 + math.cos(la1) * math.cos(la2) * math.sin((lo2 - lo1) / 2) ** 2
+    return 12742 * math.asin(math.sqrt(h))
 
 
 def variantes(calle: str) -> list[str]:
@@ -134,23 +146,34 @@ def geocodificar(lugares: list[dict]) -> dict[str, dict]:
     partes = "".join(f'nwr["addr:street"="{comillas(v)}"]["addr:housenumber"]{BBOX};' for vs in calles.values() for v in vs)
     log(f"[direcciones] {len(calles)} calles")
     numeros = []
-    for e in overpass(f"[out:json][timeout:180];({partes});out center tags;"):
-        t = e.get("tags", {})
-        la, lo = pos(e)
-        m = re.match(r"\d+", t.get("addr:housenumber", ""))
-        if la is not None and m:
-            numeros.append({"num": int(m.group()), "lat": la, "lng": lo, "calle": t.get("addr:street", "")})
+    if partes:
+        for e in overpass(f"[out:json][timeout:180];({partes});out center tags;"):
+            t = e.get("tags", {})
+            la, lo = pos(e)
+            m = re.match(r"\d+", t.get("addr:housenumber", "").strip())
+            if la is not None and m:
+                numeros.append({"txt": m.group(), "num": int(m.group()), "cero": con_cero(m.group()),
+                                "lat": la, "lng": lo, "calle": t.get("addr:street", "")})
     log(f"   {len(numeros)} números de esas calles")
+
+    comunas = {}
+
+    def comuna_de(la, lo):
+        k = (round(la, 5), round(lo, 5))
+        if k not in comunas:
+            area = overpass(f'[out:json][timeout:60];is_in({la},{lo})->.a;'
+                            f'area.a["admin_level"="8"]["boundary"="administrative"];out tags;', timeout=90)
+            comunas[k] = area[0]["tags"].get("name") if area else None
+        return comunas[k]
 
     resultados = {}
     for x in lugares:
         clave = x["_clave"]
         buscado = st(nombre_buscado(x))
-        calle = x["_calle"]
+        calle, numtxt = x["_calle"], x["_num"]
         de_calle = {st(v) for v in calles.get(calle, [])} if calle else set()
-        r = None
-        # por nombre: el nombre de OSM contiene el buscado (o al revés) y, si hay calle, que calce
-        cand = []
+        # Candidatos en orden de confianza; se queda el primero que cae en la comuna del dato
+        fuertes, debiles = [], []
         for e in por_nombre:
             t = e.get("tags", {})
             la, lo = pos(e)
@@ -160,50 +183,44 @@ def geocodificar(lugares: list[dict]) -> dict[str, dict]:
             puntos = 1
             if calle and st(t.get("addr:street")) in de_calle:
                 puntos += 2
-            if x["_num"] and str(x["_num"]) == re.sub(r"\D", "", t.get("addr:housenumber", "")):
+            hn = re.match(r"\d+", t.get("addr:housenumber", "").strip())
+            if numtxt and hn and hn.group() == numtxt:
                 puntos += 2
-            cand.append((puntos, la, lo, t.get("name"), t.get("addr:street") or "", t.get("addr:housenumber") or ""))
-        cand.sort(key=lambda c: -c[0])
-        if cand and (cand[0][0] >= 3 or len(cand) == 1 or x.get("buscar_osm")):
-            p = cand[0]
-            r = {"lat": p[1], "lng": p[2], "fuente": f"OpenStreetMap, por nombre: {p[3]} {p[4]} {p[5]}".strip()}
-        elif calle and x["_num"]:
-            misma = [n for n in numeros if st(n["calle"]) in de_calle]
-            exactos = [n for n in misma if n["num"] == x["_num"]]
-            if exactos:
-                n = exactos[0]
-                r = {"lat": n["lat"], "lng": n["lng"], "fuente": f"OpenStreetMap, dirección: {n['calle']} {n['num']}"}
-            else:
-                menores = sorted([n for n in misma if n["num"] < x["_num"]], key=lambda n: -n["num"])
-                mayores = sorted([n for n in misma if n["num"] > x["_num"]], key=lambda n: n["num"])
-                par = None
-                for a in menores[:8]:
-                    b = next((b for b in mayores[:8] if b["calle"] == a["calle"] and b["num"] - a["num"] <= 600), None)
-                    if b:
-                        par = (a, b)
-                        break
-                if par:
-                    a, b = par
-                    f = (x["_num"] - a["num"]) / (b["num"] - a["num"])
-                    r = {"lat": a["lat"] + f * (b["lat"] - a["lat"]), "lng": a["lng"] + f * (b["lng"] - a["lng"]),
-                         "fuente": f"OpenStreetMap, entre {a['calle']} {a['num']} y {b['num']}"}
-                else:
-                    cerca = sorted(misma, key=lambda n: abs(n["num"] - x["_num"]))
-                    if cerca and abs(cerca[0]["num"] - x["_num"]) <= 40:
-                        n = cerca[0]
-                        r = {"lat": n["lat"], "lng": n["lng"], "fuente": f"OpenStreetMap, número cercano: {n['calle']} {n['num']}"}
-        if not r:
-            log(f"?? {clave}: sin coordenadas (nombre: {len(cand)} parecidos; calle: {calle} {x['_num']})")
+            fuente = f"OpenStreetMap, por nombre: {t.get('name')} {t.get('addr:street') or ''} {t.get('addr:housenumber') or ''}".strip()
+            (fuertes if puntos >= 3 else debiles).append((puntos, la, lo, fuente))
+        fuertes.sort(key=lambda c: -c[0])
+        intentos = [(la, lo, f) for _, la, lo, f in fuertes[:2]]
+        if calle and numtxt:
+            n, cero = int(numtxt), con_cero(numtxt)
+            misma = [p for p in numeros if st(p["calle"]) in de_calle and p["cero"] == cero]
+            for p in [p for p in misma if p["num"] == n][:2]:
+                intentos.append((p["lat"], p["lng"], f"OpenStreetMap, dirección: {p['calle']} {p['txt']}"))
+            menores = sorted([p for p in misma if p["num"] < n], key=lambda p: -p["num"])[:8]
+            mayores = sorted([p for p in misma if p["num"] > n], key=lambda p: p["num"])[:8]
+            pares = sorted(((a, b) for a in menores for b in mayores
+                            if a["calle"] == b["calle"] and b["num"] - a["num"] <= 600
+                            and distancia_km((a["lat"], a["lng"]), (b["lat"], b["lng"])) <= 1.5),
+                           key=lambda ab: ab[1]["num"] - ab[0]["num"])
+            for a, b in pares[:3]:
+                f = (n - a["num"]) / (b["num"] - a["num"])
+                intentos.append((a["lat"] + f * (b["lat"] - a["lat"]), a["lng"] + f * (b["lng"] - a["lng"]),
+                                 f"OpenStreetMap, entre {a['calle']} {a['txt']} y {b['txt']}"))
+            for p in [p for p in sorted(misma, key=lambda p: abs(p["num"] - n)) if abs(p["num"] - n) <= 40][:2]:
+                intentos.append((p["lat"], p["lng"], f"OpenStreetMap, número cercano: {p['calle']} {p['txt']}"))
+        if x.get("buscar_osm") or not calle or len(debiles) <= 3:
+            intentos += [(la, lo, f) for _, la, lo, f in sorted(debiles, key=lambda c: -c[0])[:3]]
+        elegido, vistos = None, []
+        for la, lo, fuente in intentos[:7]:
+            comuna = comuna_de(la, lo)
+            if comuna and st(comuna) == st(x.get("comuna")):
+                elegido = {"lat": la, "lng": lo, "fuente": fuente}
+                break
+            vistos.append(f"{fuente} -> {comuna}")
+        if not elegido:
+            log(f"?? {clave}: sin coordenadas en {x.get('comuna')} ({len(intentos)} intentos: {'; '.join(vistos[:3])})")
             continue
-        # 3) la comuna del punto debe ser la del dato
-        area = overpass(f'[out:json][timeout:60];is_in({r["lat"]},{r["lng"]})->.a;'
-                        f'area.a["admin_level"="8"]["boundary"="administrative"];out tags;', timeout=90)
-        comuna = area[0]["tags"].get("name") if area else None
-        if not comuna or st(comuna) != st(x.get("comuna")):
-            log(f"?? {clave}: {r['fuente']} cae en {comuna}, no en {x.get('comuna')}: no se guarda")
-            continue
-        log(f"OK {clave}: {r['lat']:.6f}, {r['lng']:.6f} ({r['fuente']})")
-        resultados[clave] = r
+        log(f"OK {clave}: {elegido['lat']:.6f}, {elegido['lng']:.6f} ({elegido['fuente']})")
+        resultados[clave] = elegido
     return resultados
 
 
