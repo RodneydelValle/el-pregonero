@@ -1,12 +1,12 @@
 {
  "version": 1,
- "actualizado": "2026-11-08T11:30-03:00",
+ "actualizado": "2026-11-08T12:59-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-08T11:30-03:00",
+  "fecha": "2026-11-08T12:59-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 124,
-  "nuevos_esta_vez": 29,
+  "eventos_nuevos": 127,
+  "nuevos_esta_vez": 3,
   "nuevos_ids": [
    "429f8ea87c",
    "4fb5aa7103",
@@ -131,7 +131,10 @@
    "75862a4463",
    "133ae3025d",
    "1e71f05a47",
-   "be16a62f60"
+   "be16a62f60",
+   "b14d3de7f7",
+   "c23b38981c",
+   "54328215b8"
   ],
   "nuevos_desde": {
    "429f8ea87c": "2026-11-07T13:02-03:00",
@@ -257,22 +260,24 @@
    "75862a4463": "2026-11-08T11:30-03:00",
    "133ae3025d": "2026-11-08T11:30-03:00",
    "1e71f05a47": "2026-11-08T11:30-03:00",
-   "be16a62f60": "2026-11-08T11:30-03:00"
+   "be16a62f60": "2026-11-08T11:30-03:00",
+   "b14d3de7f7": "2026-11-08T12:59-03:00",
+   "c23b38981c": "2026-11-08T12:59-03:00",
+   "54328215b8": "2026-11-08T12:59-03:00"
   },
   "horas_nuevos": 24,
-  "llamadas_ia": 56,
+  "llamadas_ia": 2,
   "ia_sin_cupo": false,
   "ultima_completa": "2026-11-08T10:59-03:00",
-  "modo": "completa",
-  "paginas_revisadas": 53,
-  "busquedas": 77,
-  "fuentes_fijas": 11,
-  "errores": 25,
-  "noticias_desde": "2026-11-07",
-  "noticias_viejas_descartadas": 284,
-  "redes_vistas": 27
+  "modo": "rapida",
+  "paginas_revisadas": 0,
+  "busquedas": 0,
+  "fuentes_fijas": 8,
+  "errores": 2,
+  "noticias_desde": "2026-11-08",
+  "noticias_viejas_descartadas": 0
  },
- "total": 218,
+ "total": 221,
  "eventos": [
   {
    "titulo": "Mariposas y Polillas, Colores en Movimiento",
@@ -2840,6 +2845,10 @@
     {
      "nombre": "Keai",
      "url": "https://keai.cl/evento/feria-de-arte-artweek-2026-dia-2-20224"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/feria-de-arte-artweek-2026-dia-2-ijo75/"
     }
    ],
    "desde_imagen": true,
@@ -2847,7 +2856,7 @@
    "origen": "ia",
    "id": "f2299bd942",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Mercaderes de la Ruta: Festival medieval de Oriente",
@@ -4689,6 +4698,36 @@
    "actualizado": "2026-11-08"
   },
   {
+   "titulo": "Torneo Pokémon JCC en INACAP CARD FEST 2026 Los Ángeles",
+   "categoria": "juegos",
+   "fecha_inicio": "2026-11-15",
+   "fecha_fin": null,
+   "hora": "12:00",
+   "horario": null,
+   "lugar": "Auditorio INACAP",
+   "direccion": null,
+   "comuna": "Los Angeles",
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Se invita a participar en el Torneo de Pokémon JCC en el marco del INACAP CARD FEST 2026, una jornada para compartir, competir y disfruir de la pasión por el Juego de Cartas Coleccionables Pokémon. El torneo se realizará el 15 de noviembre",
+   "imagen": "https://img.vamoh.cl/events/8f76e4b3-f623-42b8-a1a2-5d8e5d75a6de.webp?v=d1e92e52",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/torneo-pokemon-jcc-en-inacap-card-fest-2026-los-angeles-bwg25/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/torneo-pokemon-jcc-en-inacap-card-fest-2026-los-angeles-bwg25/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "c23b38981c",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
+  },
+  {
    "titulo": "Welcome To The Show Vol.1 en Matsumoto Nikkei",
    "categoria": "medieval",
    "fecha_inicio": "2026-11-15",
@@ -4923,6 +4962,36 @@
    "id": "7d4495a696",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Medieval Fest llega a Mulchén con recreaciones, música en vivo y gastronomía",
+   "categoria": "medieval",
+   "fecha_inicio": "2026-11-21",
+   "fecha_fin": "2026-11-22",
+   "hora": "12:00",
+   "horario": null,
+   "lugar": "Parque Quinta Venecia",
+   "direccion": null,
+   "comuna": "Mulchén",
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Mulchén abre las puertas a una experiencia medieval épica. El Parque Quinta Venecia se transformará en un verdadero escenario medieval para recibir una nueva edición de Medieval Fest el 21 y 22 de noviembre. Durante dos jornadas completas s",
+   "imagen": "https://img.vamoh.cl/events/f1796635-4fc4-473d-a14f-3bc548e82ed7.webp?v=9a0c87ab",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/medieval-fest-llega-a-mulchen-con-recreaciones-musica-en-vivo-y-gastronomia-efojw/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/medieval-fest-llega-a-mulchen-con-recreaciones-musica-en-vivo-y-gastronomia-efojw/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "54328215b8",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Metal Sinfónico con From Wishes – Tributo a Nightwish y Deadly Mist",
@@ -5341,6 +5410,36 @@
    "confianza": "alta",
    "origen": "datos-estructurados",
    "id": "a5b11e25d7",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-08"
+  },
+  {
+   "titulo": "Anime Fest Music",
+   "categoria": "anime",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": "12:00",
+   "horario": null,
+   "lugar": "Estadio Sokol",
+   "direccion": null,
+   "comuna": "Antofagasta",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $10.000",
+   "descripcion": "🎤✨ ¡EL ANIME MUSIC FEST VIENE CON TODO! PARA CELEBRAR NUESTROS 25 AÑOS JUNTO A UDS ✨🎶 Este 28 de noviembre de 2026 prepárate para vivir una jornada llena de música, anime, nostalgia y mucha energía en el Estadio Sokol de Antofagasta. 💜🔥 🌟 I",
+   "imagen": "https://img.vamoh.cl/events/93866aee-5d6c-4993-80b6-c4129ed2403f.webp?v=e1de30ee",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/anime-fest-music-bq8g2/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/anime-fest-music-bq8g2/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "b14d3de7f7",
    "agregado": "2026-11-08",
    "actualizado": "2026-11-08"
   },
