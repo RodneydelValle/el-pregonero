@@ -1845,7 +1845,10 @@
     "https://www.oneupstore.cl/product/avanzado-one-piece-noviembre",
     "https://www.oneupstore.cl/collection/mangas",
     "https://www.torneostcg.cl/"
-   ]
+   ],
+   "lat": -33.521156,
+   "lng": -70.595485,
+   "coordenadas_fuente": "aproximada: centro de Julio Vildósola (323 m de largo; OSM no tiene sus números)"
   },
   {
    "id": "onplay-games",
