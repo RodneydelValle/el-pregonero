@@ -1,6 +1,6 @@
 {
  "version": 1,
- "revisado": "2026-11-07",
+ "revisado": "2026-11-09",
  "_nota": "Fotos de cada lugar (salas, teatros, museos). Un evento muestra las fotos de su lugar si su 'lugar' o su 'direccion' contienen el nombre o un alias (sin tildes, como palabras enteras); 'excluir' evita confundirlo con otra sede u otra ciudad. Las fotos se enlazan (no se copian): vienen de Wikimedia Commons, de los sitios oficiales o de la prensa, nunca de Instagram, Facebook ni Google Maps. 'referenciales' se muestran, marcadas como tales, solo si el evento no tiene afiche ni foto de su lugar. Revisar con: python scripts/fotos.py revisar",
  "lugares": [
   {
@@ -1835,6 +1835,604 @@
      "descripcion": "Prados, árboles y senderos del Parque El Llano en San Miguel"
     }
    ]
+  },
+  {
+   "id": "teatro-municipal-santiago",
+   "nombre": "Teatro Municipal de Santiago",
+   "alias": [
+    "teatro municipal de santiago",
+    "municipal de santiago opera nacional",
+    "agustinas 794"
+   ],
+   "excluir": [
+    "valparaiso",
+    "vina del mar",
+    "concepcion",
+    "valdivia",
+    "temuco",
+    "la serena",
+    "coquimbo",
+    "antofagasta",
+    "puerto montt",
+    "talca",
+    "rancagua",
+    "iquique",
+    "arica",
+    "punta arenas",
+    "chillan",
+    "osorno",
+    "calama",
+    "copiapo",
+    "curico",
+    "los angeles"
+   ],
+   "direccion": "Agustinas 794",
+   "comuna": "Santiago",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Teatro_Municipal%2C_Santiago_20230521_02.jpg/1280px-Teatro_Municipal%2C_Santiago_20230521_02.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Teatro_Municipal%2C_Santiago_20230521_02.jpg/330px-Teatro_Municipal%2C_Santiago_20230521_02.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Teatro_Municipal,_Santiago_20230521_02.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Fachada del Teatro Municipal de Santiago en calle Agustinas, con sus columnas y pendones"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Interior_Teatro_Municipal%2C_Santiago_20240419_01.jpg/1280px-Interior_Teatro_Municipal%2C_Santiago_20240419_01.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Interior_Teatro_Municipal%2C_Santiago_20240419_01.jpg/330px-Interior_Teatro_Municipal%2C_Santiago_20240419_01.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Interior_Teatro_Municipal,_Santiago_20240419_01.jpg",
+     "credito": "Foto: Carlos yo · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Sala principal con el telón rojo, los palcos dorados y el público en la platea"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Interior_de_la_sala_principal_del_Teatro_Municipal_de_Santiago_Chile.jpg/960px-Interior_de_la_sala_principal_del_Teatro_Municipal_de_Santiago_Chile.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Interior_de_la_sala_principal_del_Teatro_Municipal_de_Santiago_Chile.jpg/330px-Interior_de_la_sala_principal_del_Teatro_Municipal_de_Santiago_Chile.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Interior_de_la_sala_principal_del_Teatro_Municipal_de_Santiago_Chile.jpg",
+     "credito": "Foto: NicoStgo98 · CC0 · Wikimedia Commons",
+     "descripcion": "Lámpara de cristal bajo la cúpula pintada y los balcones de la sala principal"
+    }
+   ]
+  },
+  {
+   "id": "teatro-uc",
+   "nombre": "Teatro UC (Teatro de la Universidad Católica)",
+   "alias": [
+    "teatro uc",
+    "teatro universidad catolica",
+    "teatro de la universidad catolica",
+    "jorge washington 26"
+   ],
+   "excluir": [
+    "valparaiso",
+    "vina del mar",
+    "concepcion",
+    "valdivia",
+    "temuco",
+    "la serena",
+    "coquimbo",
+    "antofagasta",
+    "puerto montt",
+    "talca",
+    "rancagua",
+    "iquique",
+    "arica",
+    "punta arenas",
+    "chillan",
+    "osorno",
+    "calama",
+    "copiapo",
+    "curico",
+    "los angeles"
+   ],
+   "direccion": "Jorge Washington 26, Plaza Ñuñoa",
+   "comuna": "Ñuñoa",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Teatro_UC_%2834828380215%29.jpg/1280px-Teatro_UC_%2834828380215%29.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Teatro_UC_%2834828380215%29.jpg/330px-Teatro_UC_%2834828380215%29.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Teatro_UC_(34828380215).jpg",
+     "credito": "Foto: Pontificia Universidad Católica de Chile · CC BY-SA 2.0 · Wikimedia Commons",
+     "descripcion": "Fachada del Teatro Universidad Católica junto a la plaza Ñuñoa, con un gran lienzo de su cartelera"
+    }
+   ]
+  },
+  {
+   "id": "teatro-nacional-chileno",
+   "nombre": "Teatro Nacional Chileno (Sala Antonio Varas)",
+   "alias": [
+    "teatro nacional chileno",
+    "sala antonio varas",
+    "teatro antonio varas",
+    "morande 25"
+   ],
+   "excluir": [
+    "valparaiso",
+    "vina del mar",
+    "concepcion",
+    "valdivia",
+    "temuco",
+    "la serena",
+    "coquimbo",
+    "antofagasta",
+    "puerto montt",
+    "talca",
+    "rancagua",
+    "iquique",
+    "arica",
+    "punta arenas",
+    "chillan",
+    "osorno",
+    "calama",
+    "copiapo",
+    "curico",
+    "los angeles"
+   ],
+   "direccion": "Morandé 25",
+   "comuna": "Santiago",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Teatro_Nacional%2C_Santiago_20230811.jpg/1280px-Teatro_Nacional%2C_Santiago_20230811.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Teatro_Nacional%2C_Santiago_20230811.jpg/330px-Teatro_Nacional%2C_Santiago_20230811.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Teatro_Nacional,_Santiago_20230811.jpg",
+     "credito": "Foto: Carlos yo · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Acceso del Teatro Nacional Chileno con su marquesina y la boletería de la Sala Antonio Varas"
+    }
+   ]
+  },
+  {
+   "id": "teatro-universidad-de-chile",
+   "nombre": "Teatro Universidad de Chile (ex Teatro Baquedano)",
+   "alias": [
+    "teatro universidad de chile",
+    "teatro de la universidad de chile",
+    "teatro baquedano",
+    "providencia 043",
+    "providencia 43"
+   ],
+   "excluir": [
+    "valparaiso",
+    "vina del mar",
+    "concepcion",
+    "valdivia",
+    "temuco",
+    "la serena",
+    "coquimbo",
+    "antofagasta",
+    "puerto montt",
+    "talca",
+    "rancagua",
+    "iquique",
+    "arica",
+    "punta arenas",
+    "chillan",
+    "osorno",
+    "calama",
+    "copiapo",
+    "curico",
+    "los angeles",
+    "departamento de teatro",
+    "agustin sire",
+    "sergio aguirre",
+    "morande",
+    "antonio varas",
+    "teatro nacional chileno"
+   ],
+   "direccion": "Av. Providencia 043, Plaza Baquedano",
+   "comuna": "Providencia",
+   "fotos": [
+    {
+     "url": "https://www.ceacuchile.cl/wp-content/uploads/2026/03/1000029371-1-1536x861.jpg",
+     "mini": "https://www.ceacuchile.cl/wp-content/uploads/2026/03/1000029371-1-300x168.jpg",
+     "pagina": "https://www.ceacuchile.cl/presentacion-teatro/",
+     "credito": "Foto: sitio oficial del CEAC, Universidad de Chile",
+     "descripcion": "Acceso del Teatro Universidad de Chile con su marquesina azul, en la base de las torres de Plaza Baquedano"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Teatro_Universidad_de_Chile%2C_Providencia%2C_Santiago_20240412.jpg/1280px-Teatro_Universidad_de_Chile%2C_Providencia%2C_Santiago_20240412.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Teatro_Universidad_de_Chile%2C_Providencia%2C_Santiago_20240412.jpg/330px-Teatro_Universidad_de_Chile%2C_Providencia%2C_Santiago_20240412.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Teatro_Universidad_de_Chile,_Providencia,_Santiago_20240412.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Fachada del Teatro Universidad de Chile en 2024, con el letrero del CEAC sobre las puertas"
+    }
+   ]
+  },
+  {
+   "id": "teatro-oriente",
+   "nombre": "Teatro Oriente",
+   "alias": [
+    "teatro oriente",
+    "pedro de valdivia 099",
+    "pedro de valdivia 99"
+   ],
+   "excluir": [
+    "valparaiso",
+    "vina del mar",
+    "concepcion",
+    "valdivia",
+    "temuco",
+    "la serena",
+    "coquimbo",
+    "antofagasta",
+    "puerto montt",
+    "talca",
+    "rancagua",
+    "iquique",
+    "arica",
+    "punta arenas",
+    "chillan",
+    "osorno",
+    "calama",
+    "copiapo",
+    "curico",
+    "los angeles"
+   ],
+   "direccion": "Av. Pedro de Valdivia 099",
+   "comuna": "Providencia",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Teatro_Oriente%2C_Providencia%2C_Santiago_20250525.jpg/1280px-Teatro_Oriente%2C_Providencia%2C_Santiago_20250525.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Teatro_Oriente%2C_Providencia%2C_Santiago_20250525.jpg/330px-Teatro_Oriente%2C_Providencia%2C_Santiago_20250525.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Teatro_Oriente,_Providencia,_Santiago_20250525.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Edificio curvo del Teatro Oriente en avenida Pedro de Valdivia, con su letrero en lo alto"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Teatro_Oriente_Stgo.jpg/1280px-Teatro_Oriente_Stgo.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Teatro_Oriente_Stgo.jpg/330px-Teatro_Oriente_Stgo.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Teatro_Oriente_Stgo.jpg",
+     "credito": "Foto: Tomaso2702 · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Fachada del Teatro Oriente iluminada al anochecer, con sus letras rojas"
+    }
+   ]
+  },
+  {
+   "id": "teatro-nescafe-de-las-artes",
+   "nombre": "Teatro Nescafé de las Artes",
+   "alias": [
+    "teatro nescafe de las artes",
+    "nescafe de las artes",
+    "manuel montt 032",
+    "manuel montt 32"
+   ],
+   "excluir": [
+    "valparaiso",
+    "vina del mar",
+    "concepcion",
+    "valdivia",
+    "temuco",
+    "la serena",
+    "coquimbo",
+    "antofagasta",
+    "puerto montt",
+    "talca",
+    "rancagua",
+    "iquique",
+    "arica",
+    "punta arenas",
+    "chillan",
+    "osorno",
+    "calama",
+    "copiapo",
+    "curico",
+    "los angeles"
+   ],
+   "direccion": "Manuel Montt 032",
+   "comuna": "Providencia",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Teatro_Nescaf%C3%A9_de_las_Artes%2C_Providencia%2C_Santiago_20230323.jpg/1280px-Teatro_Nescaf%C3%A9_de_las_Artes%2C_Providencia%2C_Santiago_20230323.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Teatro_Nescaf%C3%A9_de_las_Artes%2C_Providencia%2C_Santiago_20230323.jpg/330px-Teatro_Nescaf%C3%A9_de_las_Artes%2C_Providencia%2C_Santiago_20230323.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Teatro_Nescaf%C3%A9_de_las_Artes,_Providencia,_Santiago_20230323.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Marquesina y accesos del Teatro Nescafé de las Artes en calle Manuel Montt"
+    }
+   ]
+  },
+  {
+   "id": "teatro-ictus",
+   "nombre": "Teatro Ictus (Sala La Comedia)",
+   "alias": [
+    "teatro ictus",
+    "sala la comedia",
+    "merced 349"
+   ],
+   "excluir": [
+    "valparaiso",
+    "vina del mar",
+    "concepcion",
+    "valdivia",
+    "temuco",
+    "la serena",
+    "coquimbo",
+    "antofagasta",
+    "puerto montt",
+    "talca",
+    "rancagua",
+    "iquique",
+    "arica",
+    "punta arenas",
+    "chillan",
+    "osorno",
+    "calama",
+    "copiapo",
+    "curico",
+    "los angeles"
+   ],
+   "direccion": "Merced 349, Barrio Lastarria",
+   "comuna": "Santiago",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Barrio_Lastarria_109.jpg/1280px-Barrio_Lastarria_109.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Barrio_Lastarria_109.jpg/330px-Barrio_Lastarria_109.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Barrio_Lastarria_109.jpg",
+     "credito": "Foto: Tommy Boy · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Entrada de la Sala La Comedia del Teatro Ictus en calle Merced, con su letrero del pez"
+    }
+   ]
+  },
+  {
+   "id": "teatro-mori-bellavista",
+   "nombre": "Teatro Mori Bellavista",
+   "alias": [
+    "teatro mori bellavista",
+    "mori bellavista",
+    "constitucion 183"
+   ],
+   "excluir": [
+    "valparaiso",
+    "vina del mar",
+    "concepcion",
+    "valdivia",
+    "temuco",
+    "la serena",
+    "coquimbo",
+    "antofagasta",
+    "puerto montt",
+    "talca",
+    "rancagua",
+    "iquique",
+    "arica",
+    "punta arenas",
+    "chillan",
+    "osorno",
+    "calama",
+    "copiapo",
+    "curico",
+    "los angeles",
+    "recoleta",
+    "bellavista 77",
+    "parque arauco",
+    "kennedy",
+    "vitacura",
+    "bicentenario 3800"
+   ],
+   "direccion": "Constitución 183, Barrio Bellavista",
+   "comuna": "Providencia",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Teatro_Camilo_Mori_f01.jpg/960px-Teatro_Camilo_Mori_f01.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Teatro_Camilo_Mori_f01.jpg/330px-Teatro_Camilo_Mori_f01.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Teatro_Camilo_Mori_f01.jpg",
+     "credito": "Foto: Rodrigo Fernández · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Pasaje de entrada al Teatro Mori bajo su toldo rojo, junto a la plaza Camilo Mori"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Teatro_Mori_%26_Bar_The_Clinic_fRF.jpg/1280px-Teatro_Mori_%26_Bar_The_Clinic_fRF.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Teatro_Mori_%26_Bar_The_Clinic_fRF.jpg/330px-Teatro_Mori_%26_Bar_The_Clinic_fRF.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Teatro_Mori_%26_Bar_The_Clinic_fRF.jpg",
+     "credito": "Foto: Rodrigo Fernández · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Casona de ladrillo del Teatro Mori en calle Constitución, con su toldo rojo en la esquina"
+    }
+   ]
+  },
+  {
+   "id": "teatro-teleton",
+   "nombre": "Teatro Teletón",
+   "alias": [
+    "teatro teleton",
+    "mario kreutzberger 1531"
+   ],
+   "excluir": [
+    "valparaiso",
+    "vina del mar",
+    "concepcion",
+    "valdivia",
+    "temuco",
+    "la serena",
+    "coquimbo",
+    "antofagasta",
+    "puerto montt",
+    "talca",
+    "rancagua",
+    "iquique",
+    "arica",
+    "punta arenas",
+    "chillan",
+    "osorno",
+    "calama",
+    "copiapo",
+    "curico",
+    "los angeles"
+   ],
+   "direccion": "Mario Kreutzberger 1531 (metro Santa Ana)",
+   "comuna": "Santiago",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Teatro_Telet%C3%B3n%2C_Santiago_20220619.jpg/1280px-Teatro_Telet%C3%B3n%2C_Santiago_20220619.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Teatro_Telet%C3%B3n%2C_Santiago_20220619.jpg/330px-Teatro_Telet%C3%B3n%2C_Santiago_20220619.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Teatro_Telet%C3%B3n,_Santiago_20220619.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Edificio del Teatro Teletón con su letrero rojo, cerca del metro Santa Ana"
+    },
+    {
+     "url": "https://teatroteleton.cl/wp-content/themes/teatro-teleton/img/teatro_cacio.jpg",
+     "mini": "https://teatroteleton.cl/wp-content/themes/teatro-teleton/img/teatro_cacio.jpg",
+     "pagina": "https://teatroteleton.cl/",
+     "credito": "Foto: sitio oficial del Teatro Teletón",
+     "descripcion": "Sala del Teatro Teletón con el escenario iluminado en rojo durante un concierto"
+    }
+   ]
+  },
+  {
+   "id": "teatro-municipal-las-condes",
+   "nombre": "Teatro Municipal de Las Condes",
+   "alias": [
+    "teatro municipal de las condes",
+    "apoquindo 3300"
+   ],
+   "direccion": "Av. Apoquindo 3300 (Centro Cívico)",
+   "comuna": "Las Condes",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Teatro_Municipal_de_Las_Condes%2C_Santiago_20220619_02.jpg/1280px-Teatro_Municipal_de_Las_Condes%2C_Santiago_20220619_02.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Teatro_Municipal_de_Las_Condes%2C_Santiago_20220619_02.jpg/330px-Teatro_Municipal_de_Las_Condes%2C_Santiago_20220619_02.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Teatro_Municipal_de_Las_Condes,_Santiago_20220619_02.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Acceso del Centro Cívico y Teatro Municipal de Las Condes en avenida Apoquindo"
+    }
+   ]
+  },
+  {
+   "id": "teatro-camilo-henriquez",
+   "nombre": "Teatro Camilo Henríquez",
+   "alias": [
+    "teatro camilo henriquez",
+    "amunategui 31"
+   ],
+   "excluir": [
+    "valparaiso",
+    "vina del mar",
+    "concepcion",
+    "valdivia",
+    "temuco",
+    "la serena",
+    "coquimbo",
+    "antofagasta",
+    "puerto montt",
+    "talca",
+    "rancagua",
+    "iquique",
+    "arica",
+    "punta arenas",
+    "chillan",
+    "osorno",
+    "calama",
+    "copiapo",
+    "curico",
+    "los angeles"
+   ],
+   "direccion": "Amunátegui 31 (Círculo de Periodistas)",
+   "comuna": "Santiago",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Teatro_Camilo_Henr%C3%ADquez%2C_Santiago_20230414.jpg/960px-Teatro_Camilo_Henr%C3%ADquez%2C_Santiago_20230414.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Teatro_Camilo_Henr%C3%ADquez%2C_Santiago_20230414.jpg/330px-Teatro_Camilo_Henr%C3%ADquez%2C_Santiago_20230414.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Teatro_Camilo_Henr%C3%ADquez,_Santiago_20230414.jpg",
+     "credito": "Foto: Carlos yo · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Entrada del Teatro Camilo Henríquez en calle Amunátegui, con su letrero blanco"
+    }
+   ]
+  },
+  {
+   "id": "teatro-san-gines",
+   "nombre": "Teatro San Ginés",
+   "alias": [
+    "teatro san gines",
+    "mallinkrodt 112"
+   ],
+   "excluir": [
+    "valparaiso",
+    "vina del mar",
+    "concepcion",
+    "valdivia",
+    "temuco",
+    "la serena",
+    "coquimbo",
+    "antofagasta",
+    "puerto montt",
+    "talca",
+    "rancagua",
+    "iquique",
+    "arica",
+    "punta arenas",
+    "chillan",
+    "osorno",
+    "calama",
+    "copiapo",
+    "curico",
+    "los angeles",
+    "mallinkrodt 76"
+   ],
+   "direccion": "Mallinkrodt 112, Barrio Bellavista",
+   "comuna": "Providencia",
+   "fotos": [
+    {
+     "url": "https://www.sangines.cl/wp-content/uploads/2024/01/foto-sala2-copia-3.jpg",
+     "mini": "https://www.sangines.cl/wp-content/uploads/2024/01/foto-sala2-copia-3.jpg",
+     "pagina": "https://www.sangines.cl/galeria-salas/",
+     "credito": "Foto: sitio oficial del Teatro San Ginés",
+     "descripcion": "Sala 2 del Teatro San Ginés vacía, con butacas azules, muros rojos y escenario ajedrezado"
+    }
+   ]
+  },
+  {
+   "id": "teatro-parque-cousino",
+   "nombre": "Teatro Parque Cousiño",
+   "alias": [
+    "teatro parque cousino",
+    "san ignacio de loyola 1249"
+   ],
+   "excluir": [
+    "valparaiso",
+    "vina del mar",
+    "concepcion",
+    "valdivia",
+    "temuco",
+    "la serena",
+    "coquimbo",
+    "antofagasta",
+    "puerto montt",
+    "talca",
+    "rancagua",
+    "iquique",
+    "arica",
+    "punta arenas",
+    "chillan",
+    "osorno",
+    "calama",
+    "copiapo",
+    "curico",
+    "los angeles"
+   ],
+   "direccion": "San Ignacio de Loyola 1249, Barrio Viel",
+   "comuna": "Santiago",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Teatro_Parque_Cousi%C3%B1o%2C_Santiago_20230818_01.jpg/960px-Teatro_Parque_Cousi%C3%B1o%2C_Santiago_20230818_01.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Teatro_Parque_Cousi%C3%B1o%2C_Santiago_20230818_01.jpg/330px-Teatro_Parque_Cousi%C3%B1o%2C_Santiago_20230818_01.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Teatro_Parque_Cousi%C3%B1o,_Santiago_20230818_01.jpg",
+     "credito": "Foto: Carlos Figueroa Rojas · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Fachada ornamentada del Teatro Parque Cousiño con su nombre en relieve"
+    }
+   ]
+  },
+  {
+   "id": "teatro-camino",
+   "nombre": "Teatro Camino",
+   "alias": [
+    "teatro camino",
+    "antupiren 9400"
+   ],
+   "direccion": "Antupirén 9400, Comunidad Ecológica",
+   "comuna": "Peñalolén",
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Teatro_Camino%2C_Pe%C3%B1alol%C3%A9n%2C_Santiago_20231021_02.jpg/1280px-Teatro_Camino%2C_Pe%C3%B1alol%C3%A9n%2C_Santiago_20231021_02.jpg",
+     "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Teatro_Camino%2C_Pe%C3%B1alol%C3%A9n%2C_Santiago_20231021_02.jpg/330px-Teatro_Camino%2C_Pe%C3%B1alol%C3%A9n%2C_Santiago_20231021_02.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Teatro_Camino,_Pe%C3%B1alol%C3%A9n,_Santiago_20231021_02.jpg",
+     "credito": "Foto: Carlos yo · CC BY-SA 4.0 · Wikimedia Commons",
+     "descripcion": "Edificio de madera y vidrio del Teatro Camino entre cactus y jardines, en Peñalolén"
+    }
+   ]
   }
  ],
  "referenciales": {
@@ -1927,6 +2525,22 @@
     "pagina": "https://commons.wikimedia.org/wiki/File:National_Museum_of_Natural_History_main_hall_Santiago_Chile_2009_May_24.JPG",
     "credito": "Foto: Jason Quinn · CC BY-SA 3.0 · Wikimedia Commons",
     "descripcion": "Visitantes en el salón central del Museo Nacional de Historia Natural, con esqueleto de ballena"
+   }
+  ],
+  "teatro": [
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Cornerstone_Playhouse.jpg/1280px-Cornerstone_Playhouse.jpg",
+    "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Cornerstone_Playhouse.jpg/330px-Cornerstone_Playhouse.jpg",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Cornerstone_Playhouse.jpg",
+    "credito": "Foto: Hunter Charnow · CC BY-SA 3.0 · Wikimedia Commons",
+    "descripcion": "Sala de teatro pequeña con butacas de colores frente al escenario y su telón iluminado"
+   },
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Hanau-Wilhelmsbad_-_Comoedienhaus_-_8530-32.jpg/1280px-Hanau-Wilhelmsbad_-_Comoedienhaus_-_8530-32.jpg",
+    "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Hanau-Wilhelmsbad_-_Comoedienhaus_-_8530-32.jpg/330px-Hanau-Wilhelmsbad_-_Comoedienhaus_-_8530-32.jpg",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Hanau-Wilhelmsbad_-_Comoedienhaus_-_8530-32.jpg",
+    "credito": "Foto: Sven Teschke, Büdingen · CC BY-SA 3.0 de · Wikimedia Commons",
+    "descripcion": "Platea y balcones de un teatro clásico vistos desde el escenario"
    }
   ]
  }
