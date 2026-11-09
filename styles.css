@@ -67,7 +67,8 @@ h2[tabindex="-1"]:focus { outline: none; }
 @media (max-width: 1232px) {
   .cabecera { margin: 0 -16px; }
 }
-/* Barra de arriba (granate con olas seigaiha): inicio de sesión con Google, o la persona y "Salir" */
+/* Barra de arriba (granate con olas seigaiha): a la izquierda "Descargar la app" (no en el celular); a la derecha el
+   inicio de sesión con Google, o la persona y "Salir" */
 .barra-cuenta {
   position: relative; z-index: 3;
   display: flex; align-items: center; justify-content: flex-end; gap: 12px;
@@ -79,7 +80,15 @@ h2[tabindex="-1"]:focus { outline: none; }
   box-shadow: 0 2px 8px rgba(40, 0, 10, .35);
   color: #fff4e4;
 }
-.zona-cuenta { display: flex; align-items: center; gap: 10px; }
+.zona-cuenta { display: flex; align-items: center; gap: 10px; margin-left: auto; }
+.btn-app {
+  display: inline-flex; align-items: center; gap: 8px; cursor: pointer;
+  font: 600 15px var(--sans); color: #fff4e4; background: rgba(0, 0, 0, .12);
+  border: 1.5px solid rgba(255, 236, 210, .8); border-radius: 999px; padding: 6px 16px 6px 12px;
+}
+.btn-app .ico { width: 20px; height: 20px; color: var(--oro-vivo); }
+.btn-app:hover { background: rgba(255, 255, 255, .12); }
+.btn-app:focus-visible { outline: 2px solid var(--oro-vivo); outline-offset: 2px; }
 .btn-google {
   display: inline-flex; align-items: center; gap: 10px; cursor: pointer;
   font: 500 14px/1.2 Roboto, system-ui, -apple-system, "Segoe UI", sans-serif; color: #1f1f1f; background: #fff;
@@ -510,7 +519,7 @@ html:has(.visor[open]) { overflow: hidden; }
 .pie-pagina::before { left: 0; }
 .pie-pagina::after { right: 0; transform: scaleX(-1); }
 .pie-pagina > .doble-regla { display: none; }
-.pie-columnas { display: grid; grid-template-columns: 1.3fr 1fr; gap: 32px; max-width: var(--ancho); margin: 0 auto; }
+.pie-columnas { max-width: var(--ancho); margin: 0 auto; }
 .pie-pagina h2 { font: 700 15px var(--sans); letter-spacing: .12em; text-transform: uppercase; margin: 0 0 8px; color: var(--oro-vivo); }
 .pie-pagina p { margin: 0 0 10px; color: #f1dfc4; font-size: 16px; }
 .pie-pagina a { color: #ffd98a; }
@@ -548,6 +557,8 @@ html:has(.visor[open]) { overflow: hidden; }
 @media (max-width: 760px) {
   .cabecera { margin: 0 -16px; }
   .barra-cuenta { min-height: 52px; justify-content: center; }
+  .btn-app { display: none; }   /* en el celular no se ofrece descargar la app */
+  .zona-cuenta { margin: 0 auto; }
   .cabecera { --logo-ancho: 96vw; }
   .secciones { margin-top: 10px; padding: 6px 6px 0; }
   .pestanas { width: 100%; }
@@ -576,7 +587,6 @@ html:has(.visor[open]) { overflow: hidden; }
   .visor-sig { right: 6px; }
   .dia-bloque .num { font-size: 28px; }
   .nota h3 { font-size: 20px; }
-  .pie-columnas { grid-template-columns: 1fr; gap: 12px; }
   .pie-pagina { padding-top: 52px; }
   .pie-pagina::before, .pie-pagina::after { top: -34px; width: 96px; }
 }

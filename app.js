@@ -2115,15 +2115,27 @@ window.addEventListener("popstate", () => {
 });
 
 // ---------- instalar como app (PWA) ----------
+// "Descargar la app" va arriba a la izquierda (en el celular no se muestra: lo esconde el CSS). Si el navegador
+// ofrece instalarla, abre su ventana; si no (ya instalada, o un navegador sin esa ventana), dice cómo hacerlo.
+// Dentro de la app instalada no se muestra.
 let promptInstalar = null;
-window.addEventListener("beforeinstallprompt", (ev) => {
-  ev.preventDefault(); promptInstalar = ev; $("#btn-instalar").hidden = false;
+const btnInstalar = $("#btn-instalar");
+if (window.matchMedia("(display-mode: standalone)").matches || navigator.standalone === true) btnInstalar.hidden = true;
+window.addEventListener("beforeinstallprompt", (ev) => { ev.preventDefault(); promptInstalar = ev; });
+window.addEventListener("appinstalled", () => {
+  promptInstalar = null; btnInstalar.hidden = true;
+  avisar("IMP TRAVEL quedó instalada como app");
 });
-$("#btn-instalar").addEventListener("click", async () => {
-  if (!promptInstalar) return;
-  promptInstalar.prompt();
-  await promptInstalar.userChoice.catch(() => null);
-  promptInstalar = null; $("#btn-instalar").hidden = true;
+btnInstalar.addEventListener("click", async () => {
+  if (promptInstalar) {
+    const p = promptInstalar;
+    promptInstalar = null;
+    p.prompt();
+    const r = await p.userChoice.catch(() => null);
+    if (r?.outcome === "accepted") btnInstalar.hidden = true;
+    return;
+  }
+  avisar("Para instalarla, usa el ícono de instalar en la barra de direcciones de Chrome o Edge. Si ya la instalaste, ábrela desde tu escritorio.");
 });
 if ("serviceWorker" in navigator && location.protocol !== "file:") {
   navigator.serviceWorker.register("sw.js").catch(() => {});

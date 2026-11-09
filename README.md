@@ -4,7 +4,7 @@ _(antes «El Pregonero»)_
 
 Agenda personal de eventos en Chile, con formato de diario. Sus temas (en `config/gustos.json`): **Medieval, fantasía y rol** (ferias medievales y vikingas, recreación, Tolkien, rol, cine fantástico y de terror), **Yokai y Japón tradicional**, **Anime, manga y cosplay** (también videojuegos), **Ilustración y cómic**, **Conciertos** (metal y rock duro, y conciertos con música de videojuegos o de fantasía), **Juegos de mesa** (también cartas coleccionables y wargames) y **Museos, arte y cultura** (exposiciones de arte, museos y patrimonio). Los temas se reorganizaron el 8-11-2026: antes «Fantasía, rol y juegos», «Exposiciones de arte» y «Conciertos de metal» eran temas aparte.
 
-**Web:** https://rodneydelvalle.github.io/el-pregonero/ (se puede instalar como app en el celular)
+**Web:** https://rodneydelvalle.github.io/el-pregonero/ (se puede instalar como app: en el computador, con «Descargar la app» arriba a la izquierda; en el celular, desde el menú del navegador)
 
 ## Cómo se actualiza
 

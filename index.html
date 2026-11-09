@@ -23,11 +23,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Fira+Sans+Condensed:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&display=swap">
   <!-- ?v= sube cada vez que cambian styles.css o app.js: así nadie queda con una mezcla de la versión vieja y la nueva -->
-  <link rel="stylesheet" href="styles.css?v=15">
+  <link rel="stylesheet" href="styles.css?v=16">
 </head>
 <body>
   <!-- Íconos de la página (se usan con <svg><use href="#i-…"/></svg>) -->
   <svg class="sprite" aria-hidden="true" focusable="false">
+<symbol id="i-descargar" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M12 3.5v11.5M6.8 10l5.2 5.2 5.2-5.2M4.5 19.5h15"/></symbol>
 <symbol id="i-calendario" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.8" rx="3"/><path d="M8 2.8v3.4M16 2.8v3.4"/></g><path fill="currentColor" stroke="none" d="M3.5 8a3 3 0 0 1 3-3h11a3 3 0 0 1 3 3v2h-17z"/><g fill="currentColor" stroke="none"><circle cx="8" cy="13.2" r="1.3"/><circle cx="12" cy="13.2" r="1.3"/><circle cx="16" cy="13.2" r="1.3"/><circle cx="8" cy="16.9" r="1.3"/><circle cx="12" cy="16.9" r="1.3"/><circle cx="16" cy="16.9" r="1.3"/></g></symbol>
 <symbol id="i-estrella" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M12 3.35L14.73 9.09L21.04 9.91L16.42 14.29L17.58 20.54L12 17.5L6.42 20.54L7.58 14.29L2.96 9.91L9.27 9.09Z"/></symbol>
 <symbol id="i-estrella-llena" viewBox="0 0 24 24"><path fill="#e0a12b" stroke="#a9661b" stroke-width="1.2" stroke-linejoin="round" d="M12 2.85L14.88 8.89L21.51 9.76L16.66 14.36L17.88 20.94L12 17.75L6.12 20.94L7.34 14.36L2.49 9.76L9.12 8.89Z"/><path fill="#f3c766" d="M11.45 8.05L12.65 10.59L15.44 10.95L13.4 12.88L13.92 15.65L11.45 14.3L8.98 15.65L9.5 12.88L7.46 10.95L10.25 10.59Z"/></symbol>
@@ -76,6 +77,8 @@
   <header class="cabecera">
     <!-- Barra de arriba: inicio de sesión con Google (o la persona y "Salir") -->
     <div class="barra-cuenta">
+      <!-- Instalar la página como app (en el celular no se muestra) -->
+      <button type="button" class="btn-app" id="btn-instalar"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-descargar"/></svg>Descargar la app</button>
       <div class="zona-cuenta" id="zona-cuenta" hidden>
         <button type="button" class="btn-google" id="btn-entrar"><svg class="logo-g" viewBox="0 0 48 48" aria-hidden="true" width="18" height="18"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>Iniciar sesión con Google</button>
         <div class="usuario" id="usuario" hidden>
@@ -298,17 +301,10 @@
     <div class="doble-regla" role="presentation"></div>
     <div class="pie-columnas">
       <div>
-        <h2>Cómo funciona</h2>
-        <p>Cada hora un robot revisa ticketeras y agendas de fans, y cada 6 horas busca además en las noticias, en comunidades y en museos. Una IA lee las páginas y también los afiches, porque muchas veces la fecha y el lugar solo están en la imagen. Las notas marcadas con 📷 salieron de un afiche y las con ⚠ conviene confirmarlas en la fuente.</p>
-        <p>Las fotos de los lugares vienen de sus sitios oficiales, de la prensa o de Wikimedia Commons (con licencia libre): en cada nota se pasan deslizando y al abrir una se ve de dónde es y quién la tomó.</p>
-        <p>«Cómo llegar» abre la ruta en Google Maps (en el celular, en su app). Si inicias sesión con Google, tus favoritos se guardan en tu cuenta y solo tú puedes verlos.</p>
-      </div>
-      <div>
         <h2>Pregonar ahora</h2>
         <p class="acciones-pie">
           <a id="btn-buscar" class="boton" target="_blank" rel="noopener">Buscar eventos ahora ↗</a>
           <a id="btn-gustos" class="boton secundario" target="_blank" rel="noopener">Editar mis gustos ↗</a>
-          <button id="btn-instalar" class="boton secundario" type="button" hidden>Instalar como app</button>
         </p>
         <p class="nota-pie" id="detalle-busqueda"></p>
       </div>
@@ -332,7 +328,7 @@
   </dialog>
 
   <div id="aviso" class="aviso" role="status" aria-live="polite" hidden></div>
-  <script src="app.js?v=15" defer></script>
+  <script src="app.js?v=16" defer></script>
   <script type="module" src="cuenta.js"></script>
 </body>
 </html>
