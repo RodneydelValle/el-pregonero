@@ -1,41 +1,13 @@
 {
  "version": 1,
- "actualizado": "2026-11-09T05:14-03:00",
+ "actualizado": "2026-11-09T16:43-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-09T05:14-03:00",
+  "fecha": "2026-11-09T16:43-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 38,
-  "nuevos_esta_vez": 2,
+  "eventos_nuevos": 27,
+  "nuevos_esta_vez": 17,
   "nuevos_ids": [
-   "a5b11e25d7",
-   "9b35a67d5a",
-   "5442a68a62",
-   "6ea8c4d016",
-   "ce8e5fa662",
-   "b063b90657",
-   "405fc7f9f0",
-   "28cdd347e9",
-   "2711e341c1",
-   "417c55f418",
-   "2550179711",
-   "8ddabd4d64",
-   "085e0d1d5e",
-   "6508a8b4f2",
-   "59d1c0f24e",
-   "0da2b36bb0",
-   "23a9bece3c",
-   "26912aaed8",
-   "b54f0831a9",
-   "03e4173194",
-   "9537803159",
-   "8ac63cc959",
-   "58bd029f33",
-   "1e71f05a47",
-   "be16a62f60",
-   "b14d3de7f7",
-   "c23b38981c",
-   "54328215b8",
    "ef40d88c07",
    "307971fb3d",
    "e138b01837",
@@ -45,37 +17,26 @@
    "0f7612191b",
    "f22fd483b9",
    "b96e10df68",
-   "63a4ac1676"
+   "63a4ac1676",
+   "41ac991fa0",
+   "5d05376a3b",
+   "11c4e7eab3",
+   "a5849a999a",
+   "2bcb9fe3bc",
+   "d2ee41ebee",
+   "4bcd76935a",
+   "72560091bb",
+   "1904aa1ecf",
+   "bdc767da74",
+   "9d415007b8",
+   "c467b0878b",
+   "c87b943bb7",
+   "e1a86e8618",
+   "dc7e2a27ca",
+   "5f701c673b",
+   "263bf2843f"
   ],
   "nuevos_desde": {
-   "a5b11e25d7": "2026-11-08T11:30-03:00",
-   "9b35a67d5a": "2026-11-08T11:30-03:00",
-   "5442a68a62": "2026-11-08T11:30-03:00",
-   "6ea8c4d016": "2026-11-08T11:30-03:00",
-   "ce8e5fa662": "2026-11-08T11:30-03:00",
-   "b063b90657": "2026-11-08T11:30-03:00",
-   "405fc7f9f0": "2026-11-08T11:30-03:00",
-   "28cdd347e9": "2026-11-08T11:30-03:00",
-   "2711e341c1": "2026-11-08T11:30-03:00",
-   "417c55f418": "2026-11-08T11:30-03:00",
-   "2550179711": "2026-11-08T11:30-03:00",
-   "8ddabd4d64": "2026-11-08T11:30-03:00",
-   "085e0d1d5e": "2026-11-08T11:30-03:00",
-   "6508a8b4f2": "2026-11-08T11:30-03:00",
-   "59d1c0f24e": "2026-11-08T11:30-03:00",
-   "0da2b36bb0": "2026-11-08T11:30-03:00",
-   "23a9bece3c": "2026-11-08T11:30-03:00",
-   "26912aaed8": "2026-11-08T11:30-03:00",
-   "b54f0831a9": "2026-11-08T11:30-03:00",
-   "03e4173194": "2026-11-08T11:30-03:00",
-   "9537803159": "2026-11-08T11:30-03:00",
-   "8ac63cc959": "2026-11-08T11:30-03:00",
-   "58bd029f33": "2026-11-08T11:30-03:00",
-   "1e71f05a47": "2026-11-08T11:30-03:00",
-   "be16a62f60": "2026-11-08T11:30-03:00",
-   "b14d3de7f7": "2026-11-08T12:59-03:00",
-   "c23b38981c": "2026-11-08T12:59-03:00",
-   "54328215b8": "2026-11-08T12:59-03:00",
    "ef40d88c07": "2026-11-08T17:46-03:00",
    "307971fb3d": "2026-11-08T17:46-03:00",
    "e138b01837": "2026-11-08T17:46-03:00",
@@ -85,22 +46,39 @@
    "0f7612191b": "2026-11-08T22:11-03:00",
    "f22fd483b9": "2026-11-08T22:11-03:00",
    "b96e10df68": "2026-11-09T05:14-03:00",
-   "63a4ac1676": "2026-11-09T05:14-03:00"
+   "63a4ac1676": "2026-11-09T05:14-03:00",
+   "41ac991fa0": "2026-11-09T16:43-03:00",
+   "5d05376a3b": "2026-11-09T16:43-03:00",
+   "11c4e7eab3": "2026-11-09T16:43-03:00",
+   "a5849a999a": "2026-11-09T16:43-03:00",
+   "2bcb9fe3bc": "2026-11-09T16:43-03:00",
+   "d2ee41ebee": "2026-11-09T16:43-03:00",
+   "4bcd76935a": "2026-11-09T16:43-03:00",
+   "72560091bb": "2026-11-09T16:43-03:00",
+   "1904aa1ecf": "2026-11-09T16:43-03:00",
+   "bdc767da74": "2026-11-09T16:43-03:00",
+   "9d415007b8": "2026-11-09T16:43-03:00",
+   "c467b0878b": "2026-11-09T16:43-03:00",
+   "c87b943bb7": "2026-11-09T16:43-03:00",
+   "e1a86e8618": "2026-11-09T16:43-03:00",
+   "dc7e2a27ca": "2026-11-09T16:43-03:00",
+   "5f701c673b": "2026-11-09T16:43-03:00",
+   "263bf2843f": "2026-11-09T16:43-03:00"
   },
   "horas_nuevos": 24,
   "llamadas_ia": 21,
   "ia_sin_cupo": false,
-  "ultima_completa": "2026-11-09T04:58-03:00",
+  "ultima_completa": "2026-11-09T15:48-03:00",
   "modo": "completa",
-  "paginas_revisadas": 19,
+  "paginas_revisadas": 22,
   "busquedas": 77,
   "fuentes_fijas": 11,
   "errores": 7,
-  "noticias_desde": "2026-11-08",
-  "noticias_viejas_descartadas": 244,
-  "redes_vistas": 15
+  "noticias_desde": "2026-11-09",
+  "noticias_viejas_descartadas": 262,
+  "redes_vistas": 2
  },
- "total": 215,
+ "total": 231,
  "eventos": [
   {
    "titulo": "Mariposas y Polillas, Colores en Movimiento",
@@ -891,6 +869,36 @@
    "origen": "claude",
    "id": "94601c7845",
    "agregado": "2026-11-07",
+   "actualizado": "2026-11-09"
+  },
+  {
+   "titulo": "El MNBA revisa la gestión de Luis Vargas Rosas",
+   "categoria": "museos",
+   "fecha_inicio": "2026-09-10",
+   "fecha_fin": "2027-02-28",
+   "hora": "10:00",
+   "horario": null,
+   "lugar": "Museo Nacional de Bellas Artes",
+   "direccion": "José Miguel de La Barra 650",
+   "comuna": "Santiago",
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Una gestión que transformó la relación entre museo, ciudad y arte contemporáneo es el foco de Luis Vargas Rosas. Un museo al ritmo de lo contemporáneo (1946-1970), exposición que el Museo Nacional de Bellas Artes presenta en el marco de su",
+   "imagen": "https://www.ed.cl/wp-content/uploads/2026/09/vargas.jpg",
+   "fotos": null,
+   "url": "https://www.ed.cl/event/el-mnba-revisa-la-gestion-de-luis-vargas-rosas/",
+   "fuentes": [
+    {
+     "nombre": "ED.cl",
+     "url": "https://www.ed.cl/recinto/museo-nacional-de-bellas-artes/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "263bf2843f",
+   "agregado": "2026-11-09",
    "actualizado": "2026-11-09"
   },
   {
@@ -2090,6 +2098,36 @@
    "actualizado": "2026-11-09"
   },
   {
+   "titulo": "Exposiciones «Sybir – Historias del exilio. Memoria y libertad» y «Aislados»",
+   "categoria": "museos",
+   "fecha_inicio": "2026-10-26",
+   "fecha_fin": "2026-11-22",
+   "hora": null,
+   "horario": null,
+   "lugar": "Museo de la Memoria y los Derechos Humanos",
+   "direccion": "Av. Matucana 50",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Muestra histórica sobre las deportaciones forzadas de ciudadanos polacos a Siberia durante la Segunda Guerra Mundial y relatos personales de supervivencia.",
+   "imagen": "https://www.gov.pl/photo/format/80460e60-0721-40c3-826f-5d399e44b8ea/resolution/1328x560",
+   "fotos": null,
+   "url": "https://www.gov.pl/web/chile-es/sybir--historias-del-exilio-memoria-y-libertad-y-aislados-en-el-museo-de-la-memoria-y-los-derechos-humanos-de-santiago",
+   "fuentes": [
+    {
+     "nombre": "Polonia en Chile",
+     "url": "https://www.gov.pl/web/chile-es/sybir--historias-del-exilio-memoria-y-libertad-y-aislados-en-el-museo-de-la-memoria-y-los-derechos-humanos-de-santiago"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "1904aa1ecf",
+   "agregado": "2026-11-09",
+   "actualizado": "2026-11-09"
+  },
+  {
    "titulo": "Odisea del Espacio: 25 años de Matucana 100",
    "categoria": "museos",
    "fecha_inicio": "2026-10-27",
@@ -2592,36 +2630,6 @@
    "actualizado": "2026-11-07"
   },
   {
-   "titulo": "Santiago Horror Film Festival 2026",
-   "categoria": "medieval",
-   "fecha_inicio": "2026-10-06",
-   "fecha_fin": "2026-10-10",
-   "hora": null,
-   "horario": null,
-   "lugar": "Cineteca Nacional, Palacio Pereira, Ondamedia y Nexo Cinema",
-   "direccion": null,
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Festival de cine fantástico, horror y fantasía con muestras, competencias y actividades.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://www.instagram.com/p/DeFkeczIKdn/",
-   "fuentes": [
-    {
-     "nombre": "instagram.com",
-     "url": "https://www.instagram.com/p/DeFkeczIKdn/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "baja",
-   "origen": "ia-resumen",
-   "id": "ec2a5e85cd",
-   "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
-  },
-  {
    "titulo": "Trazos. Lily Garafulic",
    "categoria": "museos",
    "fecha_inicio": "2026-11-06",
@@ -2950,6 +2958,36 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "Torneo Pokémon TCG x ETB",
+   "categoria": "juegos",
+   "fecha_inicio": "2026-11-09",
+   "fecha_fin": null,
+   "hora": "19:30",
+   "horario": null,
+   "lugar": "Trainers League",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Metropolitana",
+   "precio": "$4.000",
+   "descripcion": "Torneo semanal de cartas coleccionables Pokémon TCG en formato estándar, con una Elite Trainer Box de premio para el campeón.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.trainersleague.cl/eventos",
+   "fuentes": [
+    {
+     "nombre": "trainersleague.cl",
+     "url": "https://www.trainersleague.cl/eventos"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "9d415007b8",
+   "agregado": "2026-11-09",
+   "actualizado": "2026-11-09"
+  },
+  {
    "titulo": "Bunbury",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-09",
@@ -2980,6 +3018,36 @@
    "actualizado": "2026-11-08"
   },
   {
+   "titulo": "Torneo Super Smash Bros",
+   "categoria": "anime",
+   "fecha_inicio": "2026-11-10",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Trainers League",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Metropolitana",
+   "precio": "$3.000",
+   "descripcion": "Torneo competitivo de videojuegos de Super Smash Bros en Nintendo Switch organizado por Dragonslayer.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.trainersleague.cl/eventos",
+   "fuentes": [
+    {
+     "nombre": "trainersleague.cl",
+     "url": "https://www.trainersleague.cl/eventos"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "c467b0878b",
+   "agregado": "2026-11-09",
+   "actualizado": "2026-11-09"
+  },
+  {
    "titulo": "“Play: Una Travesía Geek”",
    "categoria": "anime",
    "fecha_inicio": "2026-11-10",
@@ -3008,6 +3076,36 @@
    "id": "9513b15e85",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Liga Gratis Mensual Pokémon TCG: Fecha 2 - Planta",
+   "categoria": "juegos",
+   "fecha_inicio": "2026-11-11",
+   "fecha_fin": null,
+   "hora": "19:30",
+   "horario": null,
+   "lugar": "Trainers League",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Segunda fecha de la liga gratuita de cartas Pokémon TCG. Formato estándar, el campeón clasifica a la gran final.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.trainersleague.cl/eventos",
+   "fuentes": [
+    {
+     "nombre": "trainersleague.cl",
+     "url": "https://www.trainersleague.cl/eventos"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "c87b943bb7",
+   "agregado": "2026-11-09",
+   "actualizado": "2026-11-09"
   },
   {
    "titulo": "Dragonfly en Chile",
@@ -3173,7 +3271,7 @@
    "region": "Metropolitana",
    "precio": "Gratis",
    "descripcion": "Exposición de artes visuales en el CEDOC del Museo Nacional de Bellas Artes.",
-   "imagen": null,
+   "imagen": "https://portalturismo.cl/wp-content/uploads/2026/11/rf-9300-los-cosmos-de-matta-mnba-y-cecrea-89a3d8.webp",
    "fotos": null,
    "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=2",
    "fuentes": [
@@ -3184,6 +3282,10 @@
     {
      "nombre": "mnba.gob.cl",
      "url": "https://www.mnba.gob.cl/cartelera"
+    },
+    {
+     "nombre": "Portal Turismo",
+     "url": "https://portalturismo.cl/evento/los-cosmos-de-matta-mnba-y-cecrea/"
     }
    ],
    "desde_imagen": false,
@@ -3191,7 +3293,67 @@
    "origen": "ia",
    "id": "e381f47523",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-09"
+  },
+  {
+   "titulo": "BAJ Valpo inaugura exposición colectiva del primer Laboratorio de Artes Visuales",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-12",
+   "fecha_fin": null,
+   "hora": "18:30",
+   "horario": null,
+   "lugar": "Balmaceda Arte Joven - Valparaíso",
+   "direccion": null,
+   "comuna": "Valparaíso",
+   "ciudad": null,
+   "region": null,
+   "precio": "Gratis",
+   "descripcion": "La muestra “Grabados de lo íntimo a lo indómito” reúne obras de 18 jóvenes artistas que participaron en la primera versión del Laboratorio de Artes Visuales de Balmaceda Arte Joven Valparaíso. Durante la inauguración se entregará gratuitame",
+   "imagen": "https://img.vamoh.cl/events/c6557e62-b2c9-4a0e-bdf8-75a00e85eb5c.webp?v=fc2bf7b1",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/baj-valpo-inaugura-exposicion-colectiva-del-primer-laboratorio-de-artes-visuales-1kwc7/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/baj-valpo-inaugura-exposicion-colectiva-del-primer-laboratorio-de-artes-visuales-1kwc7/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "5d05376a3b",
+   "agregado": "2026-11-09",
+   "actualizado": "2026-11-09"
+  },
+  {
+   "titulo": "Liga Mensual VGC Pokémon",
+   "categoria": "anime",
+   "fecha_inicio": "2026-11-12",
+   "fecha_fin": null,
+   "hora": "19:30",
+   "horario": null,
+   "lugar": "Trainers League",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Torneo de videojuegos Pokémon (VGC) en Nintendo Switch con batallas dobles y rondas suizas Bo1.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.trainersleague.cl/eventos",
+   "fuentes": [
+    {
+     "nombre": "trainersleague.cl",
+     "url": "https://www.trainersleague.cl/eventos"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "e1a86e8618",
+   "agregado": "2026-11-09",
+   "actualizado": "2026-11-09"
   },
   {
    "titulo": "Nu Metal Sessions Vol.5 Linkin Park Hybrid Theory en Casa Rockaxis",
@@ -3450,6 +3612,54 @@
     {
      "nombre": "VAMOH!",
      "url": "https://vamoh.cl/events/noche-de-museos-2026-g52ns/"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/noche-de-museos-en-museo-gabriela-mistral-de-vicuna-sunpr/"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/noche-de-museos-c1plw/"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/noche-de-museos-8s89j/"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/noche-de-museos-2026-qy4d8/"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/noche-de-museos-2026-dxy2p/"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/noche-de-museos-2026-6z0rj/"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/noche-de-museos-dcqu1/"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/noche-de-museos-60-40-de-las-ultimas-composiciones-al-pateando-piedras-rsrr8/"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/noche-de-museos-mediacion-teatral-violeta-en-escena-i2ne1/"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/paisajes-de-luz-viva-el-palacio-lyon-se-ilumina-en-noche-de-museos-2026-kmj88/"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/noche-de-museos-pn2f2/"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/codigo-ancestral-teatro-evolucion-e-inteligencia-artificial-en-noche-de-museos-2026-2putx/"
     }
    ],
    "desde_imagen": true,
@@ -3532,6 +3742,66 @@
    "actualizado": "2026-11-08"
   },
   {
+   "titulo": "Torneo Pokémon TCG del Sobre",
+   "categoria": "juegos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": "19:30",
+   "horario": null,
+   "lugar": "Trainers League",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Metropolitana",
+   "precio": "Desde $6.000",
+   "descripcion": "Torneo de cartas Pokémon TCG en formato estándar con entrega de sobres Delta y liga, además de premios al top.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.trainersleague.cl/eventos",
+   "fuentes": [
+    {
+     "nombre": "trainersleague.cl",
+     "url": "https://www.trainersleague.cl/eventos"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "dc7e2a27ca",
+   "agregado": "2026-11-09",
+   "actualizado": "2026-11-09"
+  },
+  {
+   "titulo": "Dangerous, Voidkult, Hela y Rogelio Ugarte",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Espacio Cultural La Juguera",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $3.500",
+   "descripcion": "Tocata de thrash metal en vivo con las bandas Dangerous, Voidkult, Hela y Rogelio Ugarte.",
+   "imagen": "https://salirsantiago.com/og.png",
+   "fotos": null,
+   "url": "https://salirsantiago.com/panorama/metal-forces-total-thrash-36eda748",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panorama/metal-forces-total-thrash-36eda748"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "72560091bb",
+   "agregado": "2026-11-09",
+   "actualizado": "2026-11-09"
+  },
+  {
    "titulo": "FILSA 2026: Feria Internacional del Libro de Santiago",
    "categoria": "ilustracion",
    "fecha_inicio": "2026-11-13",
@@ -3588,6 +3858,36 @@
    "confianza": "alta",
    "origen": "ia",
    "id": "63a4ac1676",
+   "agregado": "2026-11-09",
+   "actualizado": "2026-11-09"
+  },
+  {
+   "titulo": "Roberto Matta: la línea del duelo - Palacio Pereira",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": "2026-11-30",
+   "hora": null,
+   "horario": null,
+   "lugar": "Palacio Pereira",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Te invitamos a recorrer la exhibición \"Roberto Matta: la línea del duelo\", cuyo hito de apertura será en la Noche de Museos, integrándose al Circuito Matta Patrimonial.",
+   "imagen": "https://chilecultura.gob.cl/uploads/cropped_oCiT0mM.png",
+   "fotos": null,
+   "url": "https://chilecultura.gob.cl/events/41032/",
+   "fuentes": [
+    {
+     "nombre": "Chile Cultura",
+     "url": "https://chilecultura.gob.cl/events/41032/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "datos-estructurados",
+   "id": "4bcd76935a",
    "agregado": "2026-11-09",
    "actualizado": "2026-11-09"
   },
@@ -3780,6 +4080,36 @@
    "id": "c91ffc691a",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Torneo Pokémon TCG a Beneficio",
+   "categoria": "juegos",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": null,
+   "hora": "12:00",
+   "horario": null,
+   "lugar": "Trainers League",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Torneo solidario del juego de cartas coleccionables Pokémon TCG en formato estándar.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.trainersleague.cl/eventos",
+   "fuentes": [
+    {
+     "nombre": "trainersleague.cl",
+     "url": "https://www.trainersleague.cl/eventos"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "5f701c673b",
+   "agregado": "2026-11-09",
+   "actualizado": "2026-11-09"
   },
   {
    "titulo": "Club de dragones y mazmorras",
@@ -4320,6 +4650,36 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "Exposición “Olea, 25 años ilustrando”",
+   "categoria": "ilustracion",
+   "fecha_inicio": "2026-11-17",
+   "fecha_fin": null,
+   "hora": "19:30",
+   "horario": null,
+   "lugar": "El Parrón",
+   "direccion": "Fernández Concha 700",
+   "comuna": "Las Condes",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Muestra del destacado ilustrador chileno Francisco Javier Olea, que repasa 25 años de trayectoria con personajes de la cultura, el arte y la música reinterpretados con humor e ironía.",
+   "imagen": "https://agenda.unab.cl/app/uploads/2026/11/rrss-olea_1140x480-scaled.jpg",
+   "fotos": null,
+   "url": "https://agenda.unab.cl/evento/exposicion-olea-25-anos-ilustrando/",
+   "fuentes": [
+    {
+     "nombre": "agenda.unab.cl",
+     "url": "https://agenda.unab.cl/evento/exposicion-olea-25-anos-ilustrando/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "bdc767da74",
+   "agregado": "2026-11-09",
+   "actualizado": "2026-11-09"
+  },
+  {
    "titulo": "Tolomiro Todomiro: escultura de Matta en La Moneda",
    "categoria": "museos",
    "fecha_inicio": "2026-11-18",
@@ -4408,6 +4768,36 @@
    "id": "d98b42b746",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Surround Sessions: Kse|as Daylight Dies 20 Años en Casa Estudio Rockaxis",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-20",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Casa Estudio Rockaxis",
+   "direccion": "Av. Salvador 2549, 7750152 Ñuñoa, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Celebremos juntos los 20 años de As Daylight Dies con nuestro upmix en 7.1. Decretemos juntos de esta manera, el pronto retorno de las leyendas del Metal",
+   "imagen": "https://cdn.keai.cl/events/20510-7505828be0bcb79b382eff83b67b74f9.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/surround-sessions-kseas-daylight-dies-20-anos-en-casa-estudio-rockaxis-20510",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/surround-sessions-kseas-daylight-dies-20-anos-en-casa-estudio-rockaxis-20510"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "2bcb9fe3bc",
+   "agregado": "2026-11-09",
+   "actualizado": "2026-11-09"
   },
   {
    "titulo": "Demon Slayer en Concierto en Universidad Mayor",
@@ -4894,6 +5284,36 @@
    "actualizado": "2026-11-08"
   },
   {
+   "titulo": "Otakupeluzza, feria de anime",
+   "categoria": "anime",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": "2026-11-29",
+   "hora": "11:00",
+   "horario": null,
+   "lugar": "Plaza de las Artes",
+   "direccion": null,
+   "comuna": "Quillota",
+   "ciudad": null,
+   "region": null,
+   "precio": "Gratis",
+   "descripcion": null,
+   "imagen": "https://img.vamoh.cl/events/0482cf6c-3752-48d3-872f-717393bb71c0.webp?v=e0c0257e",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/otakupeluzza-feria-de-anime-pjhwh/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/otakupeluzza-feria-de-anime-pjhwh/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "41ac991fa0",
+   "agregado": "2026-11-09",
+   "actualizado": "2026-11-09"
+  },
+  {
    "titulo": "TCG Family Fest",
    "categoria": "juegos",
    "fecha_inicio": "2026-11-28",
@@ -5018,6 +5438,10 @@
     {
      "nombre": "Poleras de Rock",
      "url": "https://polerasderock.cl/pages/proximos-conciertos"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/chileterror-fest-ii-2026-qwkz4/"
     }
    ],
    "desde_imagen": true,
@@ -5270,6 +5694,36 @@
    "id": "be16a62f60",
    "agregado": "2026-11-08",
    "actualizado": "2026-11-08"
+  },
+  {
+   "titulo": "Lanzamiento Libro el Viaje de Liam de Valentina Herrera en Citylab, Gam",
+   "categoria": "ilustracion",
+   "fecha_inicio": "2026-11-30",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Citylab GAM",
+   "direccion": "Av. Libertador Bernardo O'Higgins 227",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "La literatura y la ilustración se unen en \"El viaje de Liam\" la nueva novela de Valentina Herrera @valelavaliente, ilustrada por Marcelo Pérez Dal",
+   "imagen": "https://cdn.keai.cl/events/20495-fa9a6cf544a14066bbff6fa2a88ef467.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/lanzamiento-libro-el-viaje-de-liam-de-valentina-herrera-en-citylab-gam-20495",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/lanzamiento-libro-el-viaje-de-liam-de-valentina-herrera-en-citylab-gam-20495"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "d2ee41ebee",
+   "agregado": "2026-11-09",
+   "actualizado": "2026-11-09"
   },
   {
    "titulo": "Dying Fetus",
@@ -5820,6 +6274,36 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "Noelia y la Navidad Viral en Espacio Diana - 12 de Diciembre",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-12-12",
+   "fecha_fin": null,
+   "hora": "16:30",
+   "horario": null,
+   "lugar": "Espacio Diana",
+   "direccion": "Arturo Prat 435, 8330484 Santiago, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Noelia y la Navidad Viral es una comedia musical familiar que combina la magia de la Navidad con un universo muy presente en la vida de niños, niñ",
+   "imagen": "https://cdn.keai.cl/events/20512-4f7a6e30c79175ba1f6b53ea8adce17b.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/noelia-y-la-navidad-viral-en-espacio-diana-12-de-diciembre-20512",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/noelia-y-la-navidad-viral-en-espacio-diana-12-de-diciembre-20512"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "a5849a999a",
+   "agregado": "2026-11-09",
+   "actualizado": "2026-11-09"
+  },
+  {
    "titulo": "Nu Metal Sessions Live en Espacio Cousiño",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-12",
@@ -5882,6 +6366,36 @@
    "id": "8f02eb5cce",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Noelia y la Navidad Viral en Espacio Diana - 13 de Diciembre",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-12-13",
+   "fecha_fin": null,
+   "hora": "16:30",
+   "horario": null,
+   "lugar": "Espacio Diana",
+   "direccion": "Arturo Prat 435, 8330484 Santiago, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Noelia y la Navidad Viral es una comedia musical familiar que combina la magia de la Navidad con un universo muy presente en la vida de niños, niñ",
+   "imagen": "https://cdn.keai.cl/events/20513-ef2ccedcd0e0f10742156b05058b14a7.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/noelia-y-la-navidad-viral-en-espacio-diana-13-de-diciembre-20513",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/noelia-y-la-navidad-viral-en-espacio-diana-13-de-diciembre-20513"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "11c4e7eab3",
+   "agregado": "2026-11-09",
+   "actualizado": "2026-11-09"
   },
   {
    "titulo": "Qyntral + Derringer en Mibar",
