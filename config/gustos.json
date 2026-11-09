@@ -336,6 +336,27 @@
         "nueva exposición museo Chile",
         "visita guiada nocturna museo Santiago"
       ]
+    },
+    {
+      "id": "teatro",
+      "nombre": "Teatro",
+      "emoji": "🎭",
+      "color": "#9d174d",
+      "descripcion": "obras de teatro (drama, comedia, tragedia), musicales, ópera, stand-up e improvisación, y teatro de títeres u objetos para adultos, en salas de Santiago. NO: conciertos aunque sean en un «Teatro» (Caupolicán, Coliseo, Teletón…), ni talleres, cursos, castings o charlas",
+      "palabras": [
+        "obra de teatro",
+        "obras de teatro",
+        "obra teatral",
+        "montaje teatral",
+        "puesta en escena",
+        "dramaturgia",
+        "teatro musical",
+        "comedia musical",
+        "stand up comedy",
+        "stand-up comedy",
+        "improvisacion teatral"
+      ],
+      "busquedas": []
     }
   ],
   "fuentes": [

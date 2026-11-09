@@ -23,11 +23,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Fira+Sans+Condensed:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&display=swap">
   <!-- ?v= sube cada vez que cambian styles.css o app.js: así nadie queda con una mezcla de la versión vieja y la nueva -->
-  <link rel="stylesheet" href="styles.css?v=16">
+  <link rel="stylesheet" href="styles.css?v=17">
 </head>
 <body>
   <!-- Íconos de la página (se usan con <svg><use href="#i-…"/></svg>) -->
   <svg class="sprite" aria-hidden="true" focusable="false">
+<symbol id="i-teatro" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4.2c3.2 1.3 6.4 1.3 9.6 0v5.6c0 3.4-2.1 5.9-4.8 5.9S3 13.2 3 9.8z"/><path d="M5.6 8.1h.01M9.9 8.1h.01M5.8 11.2c1.2.9 2.8.9 4 0"/><path d="M14.5 9.6c2.3.8 4.4.7 6.5-.3v5.3c0 3-1.9 5.3-4.3 5.3-1.6 0-3-.9-3.7-2.4"/><path d="M15.8 13.3h.01M19.6 13.3h.01M16 17.2c1-.8 2.5-.8 3.5 0"/></g></symbol>
 <symbol id="i-descargar" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M12 3.5v11.5M6.8 10l5.2 5.2 5.2-5.2M4.5 19.5h15"/></symbol>
 <symbol id="i-calendario" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.8" rx="3"/><path d="M8 2.8v3.4M16 2.8v3.4"/></g><path fill="currentColor" stroke="none" d="M3.5 8a3 3 0 0 1 3-3h11a3 3 0 0 1 3 3v2h-17z"/><g fill="currentColor" stroke="none"><circle cx="8" cy="13.2" r="1.3"/><circle cx="12" cy="13.2" r="1.3"/><circle cx="16" cy="13.2" r="1.3"/><circle cx="8" cy="16.9" r="1.3"/><circle cx="12" cy="16.9" r="1.3"/><circle cx="16" cy="16.9" r="1.3"/></g></symbol>
 <symbol id="i-estrella" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M12 3.35L14.73 9.09L21.04 9.91L16.42 14.29L17.58 20.54L12 17.5L6.42 20.54L7.58 14.29L2.96 9.91L9.27 9.09Z"/></symbol>
@@ -141,6 +142,13 @@
           <img data-src="img/banner-museos-1200.jpg" width="2000" height="667" loading="lazy" decoding="async"
                alt="Museos: el diablillo, con mochila y cámara, recorre un museo con un esqueleto de dinosaurio, una estatua griega, una armadura samurái y el busto de un faraón">
         </picture>
+        <picture class="banner-cabecera" data-banner="teatro" aria-hidden="true">
+          <source type="image/webp"
+                  data-srcset="img/banner-teatro-900.webp 900w, img/banner-teatro-1400.webp 1400w, img/banner-teatro-2172.webp 2172w"
+                  sizes="(max-width: 1152px) calc(100vw - 32px), 1120px">
+          <img data-src="img/banner-teatro-1200.jpg" width="2172" height="724" loading="lazy" decoding="async"
+               alt="Teatro: el diablillo, un dragón y una elfa lloran de risa en sus butacas con palomitas, bajo un estandarte con las máscaras del teatro">
+        </picture>
         <picture class="banner-cabecera" data-banner="restaurantes" aria-hidden="true">
           <source type="image/webp"
                   data-srcset="img/banner-restaurantes-900.webp 900w, img/banner-restaurantes-1400.webp 1400w, img/banner-restaurantes-2000.webp 2000w"
@@ -159,6 +167,7 @@
         <button type="button" class="punto" data-banner="conciertos" aria-label="Conciertos" title="Conciertos"></button>
         <button type="button" class="punto" data-banner="juegos" aria-label="Juegos de mesa" title="Juegos de mesa"></button>
         <button type="button" class="punto" data-banner="museos" aria-label="Museos, arte y cultura" title="Museos, arte y cultura"></button>
+        <button type="button" class="punto" data-banner="teatro" aria-label="Teatro" title="Teatro"></button>
         <button type="button" class="punto" data-banner="restaurantes" aria-label="Restaurantes temáticos" title="Restaurantes temáticos"></button>
       </div>
       <p id="anuncio-banner" class="solo-lector" aria-live="polite"></p>
@@ -306,7 +315,6 @@
           <a id="btn-buscar" class="boton" target="_blank" rel="noopener">Buscar eventos ahora ↗</a>
           <a id="btn-gustos" class="boton secundario" target="_blank" rel="noopener">Editar mis gustos ↗</a>
         </p>
-        <p class="nota-pie" id="detalle-busqueda"></p>
       </div>
     </div>
   </footer>
@@ -328,7 +336,7 @@
   </dialog>
 
   <div id="aviso" class="aviso" role="status" aria-live="polite" hidden></div>
-  <script src="app.js?v=16" defer></script>
+  <script src="app.js?v=17" defer></script>
   <script type="module" src="cuenta.js"></script>
 </body>
 </html>

@@ -28,6 +28,7 @@ const BANNERS = [
   { id: "conciertos", hash: "conciertos", seccion: "agenda", cat: "conciertos", nombre: "Conciertos" },
   { id: "juegos", hash: "juegos", seccion: "agenda", cat: "juegos", nombre: "Juegos de mesa" },
   { id: "museos", hash: "museos", seccion: "agenda", cat: "museos", nombre: "Museos, arte y cultura" },
+  { id: "teatro", hash: "teatro", seccion: "agenda", cat: "teatro", nombre: "Teatro" },
   { id: "restaurantes", hash: "restaurantes", seccion: "restaurantes", cat: null, nombre: "Restaurantes temáticos" },
 ];
 // Un banner también puede mostrar varios temas juntos: cat "grupo:x" y aquí { "grupo:x": ["tema1", "tema2"] }.
@@ -62,7 +63,7 @@ const $ = (s) => document.querySelector(s);
 // Íconos: están en el <svg class="sprite"> de index.html. Cada tema de la agenda tiene el suyo
 // (un tema nuevo sin ícono muestra su emoji de config/gustos.json).
 const ICONO_CAT = { todas: "i-cuadricula", medieval: "i-espadas", yokai: "i-torii", anime: "i-mando", ilustracion: "i-pincel",
-  conciertos: "i-guitarra", juegos: "i-dado6", museos: "i-museo" };
+  conciertos: "i-guitarra", juegos: "i-dado6", museos: "i-museo", teatro: "i-teatro" };
 function ico(id, clase = "") {
   return `<svg class="ico${clase ? " " + clase : ""}" aria-hidden="true" focusable="false"><use href="#${id}"/></svg>`;
 }
@@ -349,7 +350,8 @@ function pintarCabecera(datos) {
     if (u.busquedas) det.push(`${u.busquedas} búsquedas`);
     if (u.llamadas_ia) det.push(`${u.llamadas_ia} lecturas con IA`);
     if (u.ia_sin_cupo) det.push("la IA gratuita llegó a su límite del día");
-    $("#detalle-busqueda").textContent = `Última búsqueda: ${f.toLocaleString("es-CL", { dateStyle: "long", timeStyle: "short" })}${det.length ? " · " + det.join(" · ") : ""}. Total en agenda: ${datos.total ?? EVENTOS.length}.`;
+    const detalle = $("#detalle-busqueda");   // el texto de la última búsqueda se quitó del pie (9-11-2026); un index.html viejo aún lo tiene
+    if (detalle) detalle.textContent = `Última búsqueda: ${f.toLocaleString("es-CL", { dateStyle: "long", timeStyle: "short" })}${det.length ? " · " + det.join(" · ") : ""}. Total en agenda: ${datos.total ?? EVENTOS.length}.`;
   }
   const est = $("#estado-busqueda");
   if (est) est.textContent = txt;
@@ -1220,10 +1222,19 @@ function pintar() {
   pintarAgenda(lista);
   const vacio = $("#vacio");
   vacio.hidden = lista.length > 0 || estado.soloNuevos;   // en "Nuevos" el aviso lo da el recuadro
+  VACIO_NORMAL ??= vacio.innerHTML;
+  const cats = catsFiltro();
   if (AGENDA_FALLO) {
     vacio.innerHTML = `<p class="vacio-titulo">No se pudo cargar la agenda.</p><p>Revisa tu conexión y recarga la página.</p>`;
+  } else if (cats && !estado.texto && !estado.soloRM && EVENTOS_CARGADOS && !EVENTOS.some((e) => vigente(e) && cats.includes(e.categoria))) {
+    // Un tema sin ningún evento todavía (por ejemplo, uno recién agregado): no es "culpa" de los filtros
+    vacio.innerHTML = `<p class="vacio-titulo">Todavía no hay eventos de ${esc(CATS[estado.cat]?.nombre || "este tema")}.</p>` +
+      `<p>El robot los busca varias veces al día: apenas encuentre algo, aparece aquí.</p>`;
+  } else {
+    vacio.innerHTML = VACIO_NORMAL;
   }
 }
+let VACIO_NORMAL = null;   // el aviso de "Nada por aquí con esos filtros" de index.html
 
 function alternarNuevos(activar) {
   estado.soloNuevos = activar;
