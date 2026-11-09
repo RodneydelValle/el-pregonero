@@ -1,25 +1,14 @@
 {
  "version": 1,
- "actualizado": "2026-11-08T22:11-03:00",
+ "actualizado": "2026-11-09T05:14-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-08T22:11-03:00",
+  "fecha": "2026-11-09T05:14-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 51,
-  "nuevos_esta_vez": 3,
+  "eventos_nuevos": 38,
+  "nuevos_esta_vez": 2,
   "nuevos_ids": [
-   "1514b0f075",
-   "0843bbe6a1",
-   "9247df3468",
-   "93471e5952",
-   "13a2f1ca1d",
-   "a8349fbc4e",
-   "9d0deb2fe5",
-   "e158e32839",
-   "61695f41b1",
-   "87a2cca5aa",
    "a5b11e25d7",
-   "c4ef03af7f",
    "9b35a67d5a",
    "5442a68a62",
    "6ea8c4d016",
@@ -39,12 +28,9 @@
    "26912aaed8",
    "b54f0831a9",
    "03e4173194",
-   "0bfa0b69c5",
    "9537803159",
    "8ac63cc959",
    "58bd029f33",
-   "75862a4463",
-   "133ae3025d",
    "1e71f05a47",
    "be16a62f60",
    "b14d3de7f7",
@@ -54,25 +40,15 @@
    "307971fb3d",
    "e138b01837",
    "3429e9c5ae",
-   "e6df33fa62",
    "ae235db2f3",
    "39a39867fb",
    "0f7612191b",
-   "f22fd483b9"
+   "f22fd483b9",
+   "b96e10df68",
+   "63a4ac1676"
   ],
   "nuevos_desde": {
-   "1514b0f075": "2026-11-07T22:33-03:00",
-   "0843bbe6a1": "2026-11-07T22:33-03:00",
-   "9247df3468": "2026-11-07T22:33-03:00",
-   "93471e5952": "2026-11-07T22:33-03:00",
-   "13a2f1ca1d": "2026-11-07T22:33-03:00",
-   "a8349fbc4e": "2026-11-07T22:33-03:00",
-   "9d0deb2fe5": "2026-11-07T22:33-03:00",
-   "e158e32839": "2026-11-07T22:33-03:00",
-   "61695f41b1": "2026-11-07T22:33-03:00",
-   "87a2cca5aa": "2026-11-07T22:33-03:00",
    "a5b11e25d7": "2026-11-08T11:30-03:00",
-   "c4ef03af7f": "2026-11-08T11:30-03:00",
    "9b35a67d5a": "2026-11-08T11:30-03:00",
    "5442a68a62": "2026-11-08T11:30-03:00",
    "6ea8c4d016": "2026-11-08T11:30-03:00",
@@ -92,12 +68,9 @@
    "26912aaed8": "2026-11-08T11:30-03:00",
    "b54f0831a9": "2026-11-08T11:30-03:00",
    "03e4173194": "2026-11-08T11:30-03:00",
-   "0bfa0b69c5": "2026-11-08T11:30-03:00",
    "9537803159": "2026-11-08T11:30-03:00",
    "8ac63cc959": "2026-11-08T11:30-03:00",
    "58bd029f33": "2026-11-08T11:30-03:00",
-   "75862a4463": "2026-11-08T11:30-03:00",
-   "133ae3025d": "2026-11-08T11:30-03:00",
    "1e71f05a47": "2026-11-08T11:30-03:00",
    "be16a62f60": "2026-11-08T11:30-03:00",
    "b14d3de7f7": "2026-11-08T12:59-03:00",
@@ -107,25 +80,27 @@
    "307971fb3d": "2026-11-08T17:46-03:00",
    "e138b01837": "2026-11-08T17:46-03:00",
    "3429e9c5ae": "2026-11-08T17:46-03:00",
-   "e6df33fa62": "2026-11-08T17:46-03:00",
    "ae235db2f3": "2026-11-08T17:46-03:00",
    "39a39867fb": "2026-11-08T22:11-03:00",
    "0f7612191b": "2026-11-08T22:11-03:00",
-   "f22fd483b9": "2026-11-08T22:11-03:00"
+   "f22fd483b9": "2026-11-08T22:11-03:00",
+   "b96e10df68": "2026-11-09T05:14-03:00",
+   "63a4ac1676": "2026-11-09T05:14-03:00"
   },
   "horas_nuevos": 24,
-  "llamadas_ia": 5,
+  "llamadas_ia": 21,
   "ia_sin_cupo": false,
-  "ultima_completa": "2026-11-08T17:28-03:00",
-  "modo": "rapida",
-  "paginas_revisadas": 0,
-  "busquedas": 0,
-  "fuentes_fijas": 9,
-  "errores": 1,
+  "ultima_completa": "2026-11-09T04:58-03:00",
+  "modo": "completa",
+  "paginas_revisadas": 19,
+  "busquedas": 77,
+  "fuentes_fijas": 11,
+  "errores": 7,
   "noticias_desde": "2026-11-08",
-  "noticias_viejas_descartadas": 0
+  "noticias_viejas_descartadas": 244,
+  "redes_vistas": 15
  },
- "total": 230,
+ "total": 215,
  "eventos": [
   {
    "titulo": "Mariposas y Polillas, Colores en Movimiento",
@@ -391,7 +366,7 @@
    "origen": "claude",
    "id": "6dfafa8970",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-08"
+   "actualizado": "2026-11-09"
   },
   {
    "titulo": "Kume Mongen",
@@ -451,7 +426,7 @@
    "origen": "claude",
    "id": "562569f3c4",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-08"
+   "actualizado": "2026-11-09"
   },
   {
    "titulo": "Comadres",
@@ -481,7 +456,7 @@
    "origen": "claude",
    "id": "bfb912b5ba",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-08"
+   "actualizado": "2026-11-09"
   },
   {
    "titulo": "MAVI UC conmemora su 25° aniversario con gran exposición de su colección",
@@ -511,7 +486,7 @@
    "origen": "claude",
    "id": "3b3025cb65",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-08"
+   "actualizado": "2026-11-09"
   },
   {
    "titulo": "Me lo contó un pajarito",
@@ -710,7 +685,7 @@
    "origen": "claude",
    "id": "c74849a44f",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-08"
+   "actualizado": "2026-11-09"
   },
   {
    "titulo": "Casa común. 100 años de Parques Nacionales",
@@ -884,7 +859,7 @@
    "origen": "claude",
    "id": "43a0dd1f1a",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-08"
+   "actualizado": "2026-11-09"
   },
   {
    "titulo": "Ejercicios de Empatía: Tramas de lo Vivo (Trienal ART CUT 26)",
@@ -916,7 +891,7 @@
    "origen": "claude",
    "id": "94601c7845",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-08"
+   "actualizado": "2026-11-09"
   },
   {
    "titulo": "Luis Vargas Rosas. Un museo al ritmo de lo contemporáneo (1946 - 1970)",
@@ -1154,7 +1129,7 @@
    "origen": "claude",
    "id": "33a119f815",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-08"
+   "actualizado": "2026-11-09"
   },
   {
    "titulo": "Fotografía: alteraciones matéricas",
@@ -1188,7 +1163,7 @@
    "origen": "claude",
    "id": "0ba9aaeefc",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-08"
+   "actualizado": "2026-11-09"
   },
   {
    "titulo": "La Trayectoria Intermedial del Gesto - Valentina Díaz",
@@ -1362,7 +1337,7 @@
    "origen": "claude",
    "id": "fe429a2453",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-08"
+   "actualizado": "2026-11-09"
   },
   {
    "titulo": "Vitrina de objeto destacado: sarcófago de Ta-Sherit-Min",
@@ -1546,7 +1521,7 @@
    "origen": "claude",
    "id": "5ca969e3c6",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-08"
+   "actualizado": "2026-11-09"
   },
   {
    "titulo": "AzulVerde. Algas y comunidades en la costa pacífica americana",
@@ -1718,7 +1693,7 @@
    "origen": "claude",
    "id": "0ab446f27c",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-08"
+   "actualizado": "2026-11-09"
   },
   {
    "titulo": "Nosotros los chilenos: archivar para imaginarnos",
@@ -1752,7 +1727,7 @@
    "origen": "claude",
    "id": "4a3298ee26",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-08"
+   "actualizado": "2026-11-09"
   },
   {
    "titulo": "Recordar el futuro. Íconos del diseño y arte geométrico en Chile",
@@ -1820,7 +1795,7 @@
    "origen": "claude",
    "id": "dfa0189c0c",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-08"
+   "actualizado": "2026-11-09"
   },
   {
    "titulo": "Exposición “Cultivar la memoria de las mujeres del Elqui: Creación textil en torno a la poesía territorial de Gabriela Mistral”",
@@ -1951,36 +1926,6 @@
    "actualizado": "2026-11-07"
   },
   {
-   "titulo": "Fragmentos de lo propio",
-   "categoria": "museos",
-   "fecha_inicio": "2026-10-20",
-   "fecha_fin": "2026-11-08",
-   "hora": null,
-   "horario": null,
-   "lugar": "Espacio Wiphala, Nivel -1 Centro Cultural La Moneda",
-   "direccion": null,
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratis",
-   "descripcion": "En el marco del Mes de los Públicos, Fragmentos de lo propio reúne 11 autorretratos creados por jóvenes artistas de la Unidad de Terapias Artísticas Creativas (UTAC) de Teletón Santiago, en el marco de un vínculo…",
-   "imagen": "https://chilecultura.gob.cl/uploads/cropped_cpyDs59.png",
-   "fotos": null,
-   "url": "https://www.cclm.cl/exposicion/fragmentos-de-lo-propio/",
-   "fuentes": [
-    {
-     "nombre": "Chile Cultura",
-     "url": "https://chilecultura.gob.cl/events/40755/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "media",
-   "origen": "claude",
-   "id": "7010ac604a",
-   "agregado": "2026-11-07",
-   "actualizado": "2026-11-08"
-  },
-  {
    "titulo": "El Alma de la Forma",
    "categoria": "museos",
    "fecha_inicio": "2026-10-22",
@@ -2014,7 +1959,7 @@
    "origen": "claude",
    "id": "4d5808d49a",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-08"
+   "actualizado": "2026-11-09"
   },
   {
    "titulo": "Habitar en equilibrio: Aves y territorios, el arte de construir la vida",
@@ -2112,7 +2057,7 @@
    "origen": "claude",
    "id": "6e98a34c41",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-08"
+   "actualizado": "2026-11-09"
   },
   {
    "titulo": "Ruta Nativa: la huella que dejamos",
@@ -2142,7 +2087,7 @@
    "origen": "claude",
    "id": "a2ea3899ab",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-08"
+   "actualizado": "2026-11-09"
   },
   {
    "titulo": "Odisea del Espacio: 25 años de Matucana 100",
@@ -2232,7 +2177,7 @@
    "origen": "claude",
    "id": "fbe7d8bf46",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-08"
+   "actualizado": "2026-11-09"
   },
   {
    "titulo": "XIII Bienal Internacional de Artes de Valparaíso: fantasías, fantasmas y fulgores II",
@@ -2298,7 +2243,7 @@
    "origen": "claude",
    "id": "2b04adba08",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-08"
+   "actualizado": "2026-11-09"
   },
   {
    "titulo": "Valores de Chile: Personajes de nuestra historia en los billetes nacionales",
@@ -2677,36 +2622,6 @@
    "actualizado": "2026-11-07"
   },
   {
-   "titulo": "TINTA: Feria de Arte Impreso",
-   "categoria": "ilustracion",
-   "fecha_inicio": "2026-11-06",
-   "fecha_fin": "2026-11-08",
-   "hora": null,
-   "horario": null,
-   "lugar": "Campus Oriente UC",
-   "direccion": null,
-   "comuna": "Providencia",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Sexta edición de TINTA, feria dedicada al arte impreso y la ilustración en el Campus Oriente UC.",
-   "imagen": "https://festivalindex.com/static/brand/social/festivalindex-og-image-1200x630.png",
-   "fotos": null,
-   "url": "https://festivalindex.com/es-cl",
-   "fuentes": [
-    {
-     "nombre": "festivalindex.com",
-     "url": "https://festivalindex.com/es-cl"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "e6df33fa62",
-   "agregado": "2026-11-08",
-   "actualizado": "2026-11-08"
-  },
-  {
    "titulo": "Trazos. Lily Garafulic",
    "categoria": "museos",
    "fecha_inicio": "2026-11-06",
@@ -2773,229 +2688,6 @@
    "id": "25228fa03c",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
-  },
-  {
-   "titulo": "Feria de Arte Artweek 2026",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-07",
-   "fecha_fin": "2026-11-08",
-   "hora": "11:00",
-   "horario": "11:00 a 21:00 hrs",
-   "lugar": "Centro Cultural Estación Mapocho",
-   "direccion": "Plaza de la Cultura sin número ex estación de trenes Metro Cal y Canto, 8320000, Región Metropolitana",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Desde $3.000",
-   "descripcion": "Feria de arte con exposición y venta de obras de diversos artistas visuales.",
-   "imagen": "https://cdn.keai.cl/events/20224-5b0a9514c8d95e45303efe02de89a473.jpg",
-   "fotos": null,
-   "url": "https://vamoh.cl/events/medieval-party-veladaa-palacio-astoreca-ffsf2/",
-   "fuentes": [
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/medieval-party-veladaa-palacio-astoreca-ffsf2/"
-    },
-    {
-     "nombre": "Keai",
-     "url": "https://keai.cl/evento/feria-de-arte-artweek-2026-dia-2-20224"
-    },
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/feria-de-arte-artweek-2026-dia-2-ijo75/"
-    }
-   ],
-   "desde_imagen": true,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "f2299bd942",
-   "agregado": "2026-11-07",
-   "actualizado": "2026-11-08"
-  },
-  {
-   "titulo": "Mercaderes de la Ruta: Festival medieval de Oriente",
-   "categoria": "medieval",
-   "fecha_inicio": "2026-11-07",
-   "fecha_fin": "2026-11-08",
-   "hora": "11:00",
-   "lugar": "Casa de la Cultura de Ñuñoa",
-   "direccion": "Av. Irarrázaval 4055",
-   "comuna": "Ñuñoa",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "$4.400 por día · abono 2 días $7.600 · menores de 13 gratis",
-   "descripcion": "Único festival medieval de Chile inspirado en Oriente y las rutas de comercio: mercaderes, artesanos, henna, música, danza y cuentacuentos, de 11:00 a 20:00. Ven caracterizado: hay concursos.",
-   "imagen": "https://static-events.haulmer.com/v1/b356cc86-aca3-4ada-b445-8a10e938053d/banner-tuu_r301xxkU.png",
-   "url": "https://www.tuu.cl/mercaderes-de-la-ruta",
-   "fuentes": [
-    {
-     "nombre": "Instagram @mercadoyjuglares",
-     "url": "https://www.instagram.com/mercadoyjuglares/"
-    },
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/mercaderes-de-la-ruta-festival-medieval-de-oriente-whwsx/"
-    },
-    {
-     "nombre": "tuu.cl",
-     "url": "https://www.tuu.cl/mercaderes-de-la-ruta"
-    },
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/medieval-party-veladaa-palacio-astoreca-ffsf2/"
-    },
-    {
-     "nombre": "Chile es TUYO",
-     "url": "https://chileestuyo.cl/eventos/mercaderes-de-la-ruta-festival-medieval-de-oriente/"
-    },
-    {
-     "nombre": "tuu.cl",
-     "url": "https://www.tuu.cl/mercaderes-de-la-ruta?ref=keai"
-    },
-    {
-     "nombre": "Keai",
-     "url": "https://keai.cl/evento/mercaderes-de-la-ruta-20135"
-    },
-    {
-     "nombre": "Salir Santiago",
-     "url": "https://salirsantiago.com/panorama/festival-medieval-vikingo-3a7bc38c"
-    },
-    {
-     "nombre": "facebook.com",
-     "url": "https://www.facebook.com/Entremercadoyjuglares/"
-    }
-   ],
-   "desde_imagen": true,
-   "confianza": "alta",
-   "origen": "manual",
-   "id": "d30fc6d897",
-   "agregado": "2026-11-06",
-   "actualizado": "2026-11-08",
-   "horario": "11:00 a 20:00 hrs"
-  },
-  {
-   "titulo": "Yggdrasil Medieval Fest: Mercado Medieval",
-   "categoria": "medieval",
-   "fecha_inicio": "2026-11-07",
-   "fecha_fin": "2026-11-08",
-   "hora": "12:00",
-   "horario": "Sáb 7 y dom 8, 12:00–20:00",
-   "lugar": "Parque Llano Subercaseaux",
-   "direccion": "Parque Llano Subercaseaux, esquina Carlos Valdovinos",
-   "comuna": "San Miguel",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratis (entrada liberada)",
-   "descripcion": "Mercado medieval de inspiración vikinga: hidromiel, cerveza artesanal, artesanía, concursos y food trucks.",
-   "imagen": "https://rodneydelvalle.github.io/el-pregonero/img/afiches/yggdrasil-medieval-fest-2026.webp",
-   "fotos": null,
-   "url": "https://www.instagram.com/yggdrasilfestchile/",
-   "fuentes": [
-    {
-     "nombre": "Instagram @yggdrasilfestchile (afiche)",
-     "url": "https://www.instagram.com/yggdrasilfestchile/"
-    }
-   ],
-   "desde_imagen": true,
-   "confianza": "alta",
-   "origen": "manual",
-   "id": "c7c60f5db9",
-   "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
-  },
-  {
-   "titulo": "Nu-Metal & Punk",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-07",
-   "fecha_fin": "2026-11-08",
-   "hora": "21:00",
-   "horario": null,
-   "lugar": "Punto de Encuentro",
-   "direccion": null,
-   "comuna": "Coquimbo",
-   "ciudad": null,
-   "region": null,
-   "precio": "Desde $4.000",
-   "descripcion": "🔥 ¡NU-METAL Y PUNK CALIFORNIANO EN VIVO EN PUNTO DE ENCUENTRO! 🔥 Este SÁBADO 7 DE NOVIEMBRE prepárate para una noche cargada de riffs pesados, punk, nu-metal y clásicos de los 90 y 2000. 🤘💥 ¡4 TRIBUTOS EN UNA MISMA NOCHE! 🤘 @fuckthesistem_b",
-   "imagen": "https://img.vamoh.cl/events/50200d7e-9797-421e-a6ab-1bf84e31fbdb.webp?v=04fdad6c",
-   "fotos": null,
-   "url": "https://vamoh.cl/events/nu-metal-punk-en-punto-de-encuentro-coquimbo-1mrtr/",
-   "fuentes": [
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/nu-metal-punk-en-punto-de-encuentro-coquimbo-1mrtr/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "datos-estructurados",
-   "id": "c4ef03af7f",
-   "agregado": "2026-11-08",
-   "actualizado": "2026-11-08"
-  },
-  {
-   "titulo": "2da Feria de Ilustración, Cómic y Autoedición (Feria ICA 2026)",
-   "categoria": "ilustracion",
-   "fecha_inicio": "2026-11-07",
-   "fecha_fin": "2026-11-08",
-   "hora": null,
-   "horario": null,
-   "lugar": "Escuela de Diseño Gráfico UBB",
-   "direccion": "Av. Andrés Bello 720",
-   "comuna": "Chillán",
-   "ciudad": "Chillán",
-   "region": "Región de Ñuble",
-   "precio": "Gratis",
-   "descripcion": "Segunda versión de la Feria ICA, un espacio de encuentro con stands de ilustradores, editoriales independientes, charlas y talleres.",
-   "imagen": "https://farcodi.ubiobio.cl/wp-content/uploads/2026/11/unnamed.png",
-   "fotos": null,
-   "url": "https://feriaica.cl",
-   "fuentes": [
-    {
-     "nombre": "Facultad de Arquitectura Construcción y Diseño, FARCODI",
-     "url": "https://farcodi.ubiobio.cl/agenda/evento/23192/"
-    }
-   ],
-   "desde_imagen": true,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "f5670ec010",
-   "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
-  },
-  {
-   "titulo": "Art Week Chile 2026",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-07",
-   "fecha_fin": "2026-11-08",
-   "hora": null,
-   "horario": "Sáb 7 y dom 8, 11:00–21:00",
-   "lugar": "Centro Cultural Estación Mapocho",
-   "direccion": "Plaza de la Cultura s/n (Metro Puente Cal y Canto)",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "$3.000; menores de 10 y mayores de 70 gratis",
-   "descripcion": "Feria internacional de arte contemporáneo en la Estación Mapocho: más de 380 artistas emergentes y consagrados, con obras a precio de taller. Solo este fin de semana.",
-   "imagen": "https://assets.encancha.cl/social/323430-b48a4bdfb0.jpg",
-   "fotos": null,
-   "url": "https://www.artweekchile.cl/",
-   "fuentes": [
-    {
-     "nombre": "Art Week Chile (sitio oficial) y Meganoticias",
-     "url": "https://www.artweekchile.cl/"
-    },
-    {
-     "nombre": "En Cancha",
-     "url": "https://www.encancha.cl/enlahora/panoramas/2026/10/29/art-week-chile-2026-fecha-artistas-actividades-y-precios-de-la-feria-de-arte-internacional-323430.html"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "claude",
-   "id": "e09eb1beeb",
-   "agregado": "2026-11-07",
-   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Crear:Destruir:Transformar - Rincón de escucha",
@@ -3066,36 +2758,6 @@
    "confianza": "alta",
    "origen": "ia",
    "id": "a63a50166b",
-   "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
-  },
-  {
-   "titulo": "Exposición El jardín de los silencios",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-07",
-   "fecha_fin": "2026-11-08",
-   "hora": null,
-   "horario": null,
-   "lugar": "Centro Comunitario Casa Rota – Jardín 1",
-   "direccion": null,
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Muestra artística 'El jardín de los silencios' en el Centro Comunitario Casa Rota.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://salirsantiago.com/panorama/inauguracion-tercer-ciclo-exposiciones-2026-63874b36",
-   "fuentes": [
-    {
-     "nombre": "Salir Santiago",
-     "url": "https://salirsantiago.com/panorama/inauguracion-tercer-ciclo-exposiciones-2026-63874b36"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "6b80f85dd3",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
   },
@@ -3194,66 +2856,6 @@
    "actualizado": "2026-11-07"
   },
   {
-   "titulo": "Paisajes de Chile - Exposición Fotográfica",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-07",
-   "fecha_fin": "2026-11-08",
-   "hora": null,
-   "horario": null,
-   "lugar": "Casa Foto",
-   "direccion": null,
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratis",
-   "descripcion": "Exposición fotográfica que muestra hermosos paisajes de Chile en Casa Foto.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://salirsantiago.com/panorama/inauguracion-tercer-ciclo-exposiciones-2026-63874b36",
-   "fuentes": [
-    {
-     "nombre": "Salir Santiago",
-     "url": "https://salirsantiago.com/panorama/inauguracion-tercer-ciclo-exposiciones-2026-63874b36"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "5d6ef373bb",
-   "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
-  },
-  {
-   "titulo": "Prensado botánico Andrea Contreras",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-07",
-   "fecha_fin": "2026-11-08",
-   "hora": null,
-   "horario": null,
-   "lugar": "Matildas Hotel Boutique",
-   "direccion": null,
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Exposición de prensado botánico de la artista Andrea Contreras en Matildas Hotel Boutique.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://salirsantiago.com/panorama/inauguracion-tercer-ciclo-exposiciones-2026-63874b36",
-   "fuentes": [
-    {
-     "nombre": "Salir Santiago",
-     "url": "https://salirsantiago.com/panorama/inauguracion-tercer-ciclo-exposiciones-2026-63874b36"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "da7b2811ae",
-   "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
-  },
-  {
    "titulo": "Selfie - Alexis Carreño",
    "categoria": "museos",
    "fecha_inicio": "2026-11-07",
@@ -3286,200 +2888,6 @@
    "id": "a81ce004c8",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
-  },
-  {
-   "titulo": "League Cup Pokémon TCG - Deck Kingdom",
-   "categoria": "juegos",
-   "fecha_inicio": "2026-11-08",
-   "fecha_fin": null,
-   "hora": "09:00",
-   "horario": null,
-   "lugar": "Deck Kingdom (Torre de Batalla)",
-   "direccion": "Merced 832, Local 78",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "$12.000 CLP",
-   "descripcion": "Torneo oficial League Cup de Pokémon TCG en Deck Kingdom, Santiago Centro.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://www.torneostcg.cl/region-metropolitana/torneos/pokemon-tcg",
-   "fuentes": [
-    {
-     "nombre": "TorneosTCG",
-     "url": "https://www.torneostcg.cl/region-metropolitana/torneos/pokemon-tcg"
-    },
-    {
-     "nombre": "quieromilch",
-     "url": "https://www.quieromilch.cl/deck-kingdom/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "75862a4463",
-   "agregado": "2026-11-08",
-   "actualizado": "2026-11-08"
-  },
-  {
-   "titulo": "League Challenge Pokémon TCG - ZendiCard",
-   "categoria": "juegos",
-   "fecha_inicio": "2026-11-08",
-   "fecha_fin": null,
-   "hora": "11:00",
-   "horario": null,
-   "lugar": "ZendiCard",
-   "direccion": null,
-   "comuna": "San Miguel",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Torneo oficial League Challenge de Pokémon TCG en ZendiCard, San Miguel.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://www.torneostcg.cl/region-metropolitana/torneos/pokemon-tcg",
-   "fuentes": [
-    {
-     "nombre": "TorneosTCG",
-     "url": "https://www.torneostcg.cl/region-metropolitana/torneos/pokemon-tcg"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "133ae3025d",
-   "agregado": "2026-11-08",
-   "actualizado": "2026-11-08"
-  },
-  {
-   "titulo": "Performance sonora de Enrique Ramírez y Matthias Puech",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-08",
-   "fecha_fin": null,
-   "hora": "12:00",
-   "horario": null,
-   "lugar": "Museo Nacional de Bellas Artes",
-   "direccion": "José Miguel de la Barra 650",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratis",
-   "descripcion": "Performance sonora en el Hall del MNBA a cargo de Enrique Ramírez y Matthias Puech.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://www.mnba.gob.cl/cartelera",
-   "fuentes": [
-    {
-     "nombre": "mnba.gob.cl",
-     "url": "https://www.mnba.gob.cl/cartelera"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "464603118b",
-   "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
-  },
-  {
-   "titulo": "Pre-Release Star Trek · Domingo 8",
-   "categoria": "juegos",
-   "fecha_inicio": "2026-11-08",
-   "fecha_fin": null,
-   "hora": "15:00",
-   "horario": null,
-   "lugar": "Magic4ever",
-   "direccion": "Moneda 840",
-   "comuna": "Santiago",
-   "ciudad": null,
-   "region": null,
-   "precio": "Desde $44.990",
-   "descripcion": "Pre-release de Magic: The Gathering formato Sellado el domingo 8 de noviembre a las 15:00 en Magic4ever, Moneda 840, Santiago Centro. Inscripción $44.990. Prerelease oficial de Magic: The Gathering | Star Trek, una semana antes de que el se",
-   "imagen": "https://torneos.magic4ever.cl/m4e/horizontal.png",
-   "fotos": null,
-   "url": "https://torneos.magic4ever.cl/calendario/evento/619",
-   "fuentes": [
-    {
-     "nombre": "Magic4ever",
-     "url": "https://torneos.magic4ever.cl/calendario"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "datos-estructurados",
-   "id": "0bfa0b69c5",
-   "agregado": "2026-11-08",
-   "actualizado": "2026-11-08"
-  },
-  {
-   "titulo": "Modern Metal Sessions XIX",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-08",
-   "fecha_fin": null,
-   "hora": "16:00",
-   "horario": null,
-   "lugar": "Bar Oxido",
-   "direccion": "Purísima 287",
-   "comuna": "Recoleta",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratis",
-   "descripcion": "🤘 ¡VUELVEN LAS MODERN METAL SESSIONS! 🤘 Se viene la Modern Metal Sessions XIX con un cartel brutal que no te puedes perder. La cita es en el clásico Bar Óxido para vivir una tarde llena de puro metal. • 🗓️ Fecha: Domingo 08 de Noviembre • 🕓",
-   "imagen": "https://img.vamoh.cl/events/e2e8e817-5f70-4724-a374-85f8a6be3e25.webp?v=9f868291",
-   "fotos": null,
-   "url": "https://vamoh.cl/events/modern-metal-sessions-xix-tabtb/",
-   "fuentes": [
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/modern-metal-sessions-xix-tabtb/"
-    },
-    {
-     "nombre": "Salir Santiago",
-     "url": "https://salirsantiago.com/panoramas/tocata"
-    },
-    {
-     "nombre": "panoramas.app",
-     "url": "https://www.panoramas.app/eventos-este-fin-de-semana"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "datos-estructurados",
-   "id": "edf97cb654",
-   "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
-  },
-  {
-   "titulo": "Def Leppard - Live 2026 - with Special Guest Extreme",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-08",
-   "fecha_fin": null,
-   "hora": null,
-   "lugar": "Santander Arena - Santiago Centro",
-   "direccion": null,
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Concierto de Def Leppard y Extreme en Santander Arena. ¡Puro rock clásico!",
-   "imagen": "https://static.ptocdn.net/images/eventos/rec113_calugalistado.jpg",
-   "url": "https://www.puntoticket.com/def-leppard",
-   "fuentes": [
-    {
-     "nombre": "PuntoTicket",
-     "url": "https://www.puntoticket.com/def-leppard"
-    },
-    {
-     "nombre": "Poleras de Rock",
-     "url": "https://polerasderock.cl/pages/proximos-conciertos"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ticketera",
-   "id": "23e15c1070",
-   "agregado": "2026-11-06",
-   "actualizado": "2026-11-08"
   },
   {
    "titulo": "Felipe Balzo: Del Enigma al Juego",
@@ -3661,7 +3069,7 @@
    "origen": "claude",
    "id": "ae07a2796c",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-08"
+   "actualizado": "2026-11-09"
   },
   {
    "titulo": "Fluyen las miradas, florecen los derechos",
@@ -3721,7 +3129,7 @@
    "origen": "claude",
    "id": "3f73ac8f60",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-08"
+   "actualizado": "2026-11-09"
   },
   {
    "titulo": "Ill Niño en Chile",
@@ -4034,6 +3442,14 @@
     {
      "nombre": "mnhn.gob.cl",
      "url": "https://www.mnhn.gob.cl/cartelera/noche-de-museos-2026"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/noche-de-museos-en-mavi-uc-hosy6/"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/noche-de-museos-2026-g52ns/"
     }
    ],
    "desde_imagen": true,
@@ -4041,7 +3457,7 @@
    "origen": "ia",
    "id": "09cd96f442",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-08",
+   "actualizado": "2026-11-09",
    "horario": "Desde las 17:00; cada museo tiene su horario (gratis)",
    "fotos": [
     "https://www.mnhn.gob.cl/sites/www.mnhn.gob.cl/files/styles/4x3_mediano/public/2026-10/Nochemuseos.png?h=98f88c31&itok=GUofKna_"
@@ -4144,6 +3560,36 @@
    "id": "7e52ce1f07",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Magic: The Gathering | Star Trek",
+   "categoria": "juegos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": null,
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Lanzamiento de la colección Magic: The Gathering | Star Trek en tiendas especializadas.",
+   "imagen": "https://www.torneostcg.cl/opengraph-image",
+   "fotos": null,
+   "url": "https://www.torneostcg.cl/tcgs/magic-the-gathering",
+   "fuentes": [
+    {
+     "nombre": "TorneosTCG",
+     "url": "https://www.torneostcg.cl/tcgs/magic-the-gathering"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "63a4ac1676",
+   "agregado": "2026-11-09",
+   "actualizado": "2026-11-09"
   },
   {
    "titulo": "3° Planeta Cómic Fest",
@@ -4901,7 +4347,7 @@
    "origen": "claude",
    "id": "20d77619ca",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-08"
+   "actualizado": "2026-11-09"
   },
   {
    "titulo": "Hard & Dark en Rockstar Stage",
@@ -5579,7 +5025,7 @@
    "origen": "ticketera",
    "id": "c003178ec9",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-08"
+   "actualizado": "2026-11-09"
   },
   {
    "titulo": "Classic Thrash Attack: Artillery y Atrophy en Concepción",
@@ -5855,7 +5301,7 @@
    "origen": "ia",
    "id": "5197cbd0b7",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-08"
+   "actualizado": "2026-11-09"
   },
   {
    "titulo": "Pepo: antes y después de Condorito",
@@ -5895,7 +5341,7 @@
    "origen": "claude",
    "id": "3636e60042",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-08"
+   "actualizado": "2026-11-09"
   },
   {
    "titulo": "BABYMETAL",
@@ -6076,6 +5522,36 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "ANIME ALLSTAR - By Power Up",
+   "categoria": "anime",
+   "fecha_inicio": "2026-12-06",
+   "fecha_fin": null,
+   "hora": "17:00",
+   "horario": null,
+   "lugar": "Gran Arena Monticello",
+   "direccion": null,
+   "comuna": "Mostazal",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $34.500",
+   "descripcion": "ANIME ALLSTAR - BY POWER UP Hiroki Takahashi, Rodrigo Zea y César Franco, tres de las grandes voces que marcaron a generaciones de fanáticos del anime, llegan a Chile para ser parte de esta experiencia internacional. El próximo domingo 6 de",
+   "imagen": "https://img.vamoh.cl/events/4abf8f89-4ded-4f50-92de-490173d3ac9e.webp?v=131758f4",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/anime-allstar-by-power-up-opcgc/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/anime-allstar-by-power-up-opcgc/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "b96e10df68",
+   "agregado": "2026-11-09",
+   "actualizado": "2026-11-09"
+  },
+  {
    "titulo": "Doyle - Rockout-2026",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-06",
@@ -6221,7 +5697,7 @@
    "titulo": "FestiGame 2026: Entra al Juego",
    "categoria": "anime",
    "fecha_inicio": "2026-12-10",
-   "fecha_fin": null,
+   "fecha_fin": "2026-12-13",
    "hora": "10:00",
    "lugar": "Cenco Florida",
    "direccion": null,
@@ -6236,6 +5712,10 @@
     {
      "nombre": "allevents.in",
      "url": "https://allevents.in/santiago/anime"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/festigame-2026-entra-al-juego-qchni/"
     }
    ],
    "desde_imagen": false,
@@ -6243,7 +5723,7 @@
    "origen": "ia",
    "id": "40f8528656",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
+   "actualizado": "2026-11-09"
   },
   {
    "titulo": "Slayer — Santiago [Chile]",
@@ -6471,8 +5951,8 @@
    "lugar": "Teatro Cariola",
    "direccion": "San Diego 246, 8330309 Santiago, Región Metropolitana, Chile",
    "comuna": "Santiago",
-   "ciudad": null,
-   "region": null,
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
    "precio": "Desde $12.000",
    "descripcion": "𝗖𝗨𝗠𝗕𝗥𝗘 𝗗𝗘𝗟 𝗠𝗘𝗧𝗔𝗟 𝗖𝗛𝗜𝗟𝗘𝗡𝗢 𝟮𝟬𝟮𝟲 El 𝘃𝗶𝗲𝗿𝗻𝗲𝘀 𝟭𝟴 𝗱𝗲 𝗱𝗶𝗰𝗶𝗲𝗺𝗯𝗿𝗲 𝗱𝗲 𝟮𝟬𝟮𝟲, 𝗧𝗲𝗮𝘁𝗿𝗼 𝗖𝗮𝗿𝗶𝗼𝗹𝗮 recibirá la 𝗖𝘂𝗺𝗯𝗿𝗲 𝗱𝗲𝗹 𝗠𝗲𝘁𝗮𝗹 𝗖𝗵𝗶𝗹𝗲𝗻𝗼, una jornada que reunirá a 𝗗𝗼𝗿𝘀𝗼, 𝗗𝗲𝗰𝗲𝘀𝘀𝘂𝘀, 𝗠𝗮𝘄𝗶𝘇𝗮, 𝗖𝗿𝗶𝘁𝗶𝗰𝗮𝗹 𝗗𝗲𝗳𝗶",
    "imagen": "https://img.vamoh.cl/events/75c1b8d5-26b5-4399-894f-6a3f7525d017.webp?v=9d965a64",
@@ -6486,14 +5966,18 @@
     {
      "nombre": "passline.com",
      "url": "https://www.passline.com/eventos/cumbre-del-metal-chileno-2026"
+    },
+    {
+     "nombre": "musicachilena.cl",
+     "url": "https://www.musicachilena.cl/v2/cumbre-del-metal-chileno-2026-seis-bandas-legendarias-en-teatro-cariola/"
     }
    ],
-   "desde_imagen": false,
+   "desde_imagen": true,
    "confianza": "alta",
    "origen": "datos-estructurados",
    "id": "5442a68a62",
    "agregado": "2026-11-08",
-   "actualizado": "2026-11-08"
+   "actualizado": "2026-11-09"
   },
   {
    "titulo": "Alejandro Silva | «hyperspaced» | Sala Scd Bellavista",
