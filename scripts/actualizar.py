@@ -6,6 +6,8 @@ Solo usa servicios gratuitos:
     y páginas de entradas (TUU, Passline...). Todo lo que trae datos estructurados se lee sin IA.
   * IA: Gemini, plan gratis de Google AI Studio (con límite diario). Lee el texto y también
     las imágenes (afiches), porque muchas veces la fecha y el lugar solo están ahí.
+  * Imágenes: a los eventos que quedaron sin imagen les busca, sin IA, el afiche o la foto en su propia página
+    (en cada vuelta, con un tope de páginas).
 
 Uso:
   python scripts/actualizar.py                 # búsqueda completa
@@ -14,6 +16,7 @@ Uso:
   python scripts/actualizar.py --sin-ia        # solo fuentes que no necesitan IA
   python scripts/actualizar.py --agregar x.json --origen claude   # une eventos encontrados a mano
   python scripts/actualizar.py --limpiar       # solo quita eventos pasados y ocultos
+  python scripts/actualizar.py --solo-imagenes # solo busca las imágenes que faltan (sin IA; hasta 150 páginas)
 """
 from __future__ import annotations
 
@@ -105,11 +108,13 @@ def limpiar(t) -> str:
     return re.sub(r"\s+", " ", t).strip()
 
 
+PALABRAS_VACIAS = {"de", "la", "el", "los", "las", "en", "y", "del", "a", "un", "una", "con", "por",
+                   "para", "al", "the", "of", "and", "chile", "santiago", "2025", "2026", "2027",
+                   "tour", "show", "concierto", "evento", "festival", "feria"}
+
+
 def palabras_titulo(t: str) -> set[str]:
-    vacias = {"de", "la", "el", "los", "las", "en", "y", "del", "a", "un", "una", "con", "por",
-              "para", "al", "the", "of", "and", "chile", "santiago", "2025", "2026", "2027",
-              "tour", "show", "concierto", "evento", "festival", "feria"}
-    return {w for w in re.findall(r"[a-z0-9]+", sin_tildes(t)) if len(w) > 1 and w not in vacias}
+    return {w for w in re.findall(r"[a-z0-9]+", sin_tildes(t)) if len(w) > 1 and w not in PALABRAS_VACIAS}
 
 
 def parecido(a: str, b: str) -> float:
@@ -1823,6 +1828,715 @@ def busqueda_completa(cfg: dict, ia: IA, vistos: dict, noticias_desde: dt.date |
     return encontrados, stats
 
 
+# ---------------------------------------------------------------- imágenes de los eventos que no tienen (sin IA)
+#
+# Muchos eventos se leen de una cartelera (la del MAC, la del Patrimonio, la de Sonorock...) y quedan sin imagen:
+# la imagen de una cartelera es la del sitio o la de otro evento, así que no se usa. Este paso no gasta IA: abre el
+# enlace del evento y los de sus fuentes y, si es una cartelera, sigue el enlace de la cartelera que nombra al evento.
+# Solo se queda con una imagen si la página es la del evento (su título calza con el del evento y nombra uno de sus
+# días) y si la imagen, descargada, de verdad es una imagen grande y no la genérica del sitio. Busca en este orden:
+# JSON-LD, og:image, twitter:image, <link rel="image_src"> y, al final, la imagen destacada del contenido.
+
+# Nunca se toman fotos de redes sociales, mapas, reseñas, apps de delivery ni Pinterest (y esas páginas no se abren)
+DOMINIOS_SIN_FOTOS = ("instagram.com", "cdninstagram.com", "facebook.com", "fb.com", "fbcdn.net", "fbsbx.com",
+                      "tiktok.com", "tiktokcdn.com", "tiktokcdn-us.com", "google.com", "google.cl", "goo.gl",
+                      "googleusercontent.com", "googleapis.com", "gstatic.com", "ggpht.com", "tripadvisor.com",
+                      "tripadvisor.cl", "tacdn.com", "rappi.cl", "rappi.com", "pedidosya.cl", "pedidosya.com",
+                      "deliveryhero.io", "ubereats.com", "uber.com", "justo.mx", "justo.cl", "getjusto.com",
+                      "pinterest.com", "pinterest.cl", "pinimg.com", "wa.me")
+# Nombres de archivo de las imágenes genéricas de un sitio: logos, íconos, «sin imagen», la de compartir en redes...
+RE_IMG_GENERICA = re.compile(
+    r"(?<![a-z])(logos?|icons?|favicons?|avatars?|sprites?|pixel|gravatar|emoji|badges?|placeholders?|blank|spacer|"
+    r"loader|default|generic[oa]?s?|fallback|share|compartir|opengraph|og|ogimage|watermark|"
+    r"no[-_]?(img|image|imagen|foto|photo)|sin[-_]?(imagen|foto))(?![a-z])|\.svg|\.gif|\.ico", re.I)
+# Imágenes del contenido que se presentan como la principal de la página (la destacada de WordPress, un afiche...)
+RE_IMG_DESTACADA = re.compile(r"wp-post-image|post-thumbnail|featured|destacad|afiche|poster|flyer|portada|"
+                              r"imagen-evento|event-image|img-evento", re.I)
+# Palabras de cartelera: no distinguen un evento de otro al comparar títulos
+PALABRAS_GENERICAS = {"exposicion", "exposiciones", "muestra", "muestras", "exhibicion", "museo", "museos",
+                      "cartelera", "agenda", "entrada", "entradas", "ticket", "tickets", "venta", "inicio", "home",
+                      "noticia", "noticias", "panorama", "panoramas", "actividad", "actividades", "programacion",
+                      "conciertos", "eventos", "ferias", "festivales", "vivo", "gira", "presenta", "presentan",
+                      "llega", "regresa", "vuelve", "edicion", "temporada", "nueva", "nuevo", "inauguracion",
+                      "lanzamiento", "ano", "anos", "ver", "mas", "comprar", "info", "leer", "aqui", "oficial"}
+# Páginas a las que no se sigue un enlace de cartelera: tiendas, categorías, artistas, buscadores...
+# (en la cartelera de Poleras de Rock, «Los Tres» lleva a las poleras de Los Tres, no al concierto)
+RE_NO_ES_EVENTO = re.compile(r"/(collections?|products?|productos?|tienda|shop|store|categor[a-z]*|tags?|"
+                             r"etiquetas?|autor(es)?|authors?|artistas?|search|buscar|login|cart|carro)(/|$)", re.I)
+RE_ARCHIVO = re.compile(r"\.(jpe?g|png|webp|gif|svg|pdf|docx?|xlsx?|zip|mp3|mp4)$", re.I)
+# Versiones que el sitio achica, recorta o rellena (Drupal "styles/4x3_grande", Wagtail "fill-1200x630",
+# WordPress "-1024x576", "?width=1200&height=628&pad_color=..."): si hay una sin tocar, se prefiere esa
+RE_DERIVADA = re.compile(r"/styles/[^/]+/public/|\.fill-\d+x\d+|-\d{2,4}x\d{2,4}\.(?:jpe?g|png|webp)(?:\?|$)|"
+                         r"[?&](?:crop|fit|resize|w|h|width|height|pad_color)=", re.I)
+RE_ATRIBUTO = re.compile(r'([\w:-]+)\s*=\s*(?:"([^"]*)"|\'([^\']*)\')', re.S)
+# Tipos de JSON-LD que describen la página misma (su imagen es la de la página); los de sitio, lugar u
+# organización traen el logo y no se usan
+TIPOS_PAGINA_LD = {"WebPage", "ItemPage", "AboutPage", "Article", "NewsArticle", "BlogPosting", "Report",
+                   "CreativeWork", "VisualArtwork", "Product", "TheaterEvent"}
+MESES_FECHA = [("enero", "ene", "january", "jan"), ("febrero", "feb", "february"), ("marzo", "mar", "march"),
+               ("abril", "abr", "april", "apr"), ("mayo", "may"), ("junio", "jun", "june"), ("julio", "jul", "july"),
+               ("agosto", "ago", "august", "aug"), ("septiembre", "setiembre", "sept", "sep", "set", "september"),
+               ("octubre", "oct", "october"), ("noviembre", "nov", "november"), ("diciembre", "dic", "december", "dec")]
+# Imágenes revisadas a mano que no son del evento aunque la página las publique como suyas (por ejemplo, el logo
+# de una tienda Jumpseller guardado con otro nombre): nunca se usan
+IMAGENES_DESCARTADAS = {
+    "cdnx.jumpseller.com/yokai/image/82580234/pi_c3_b1ata_20celeste.png",   # logo de Yokai Social Club
+}
+CLAVE_IMAGEN = "#imagen "   # en data/vistos.json: "#imagen <id del evento>" → "AAAA-MM-DD|resultado|detalle"
+
+
+class TopeAlcanzado(Exception):
+    pass
+
+
+class NoEsHtml(Exception):
+    pass
+
+
+def en_dominios(url: str, lista) -> bool:
+    d = dominio(url)
+    return any(d == x or d.endswith("." + x) for x in lista)
+
+
+def atributos(etiqueta: str) -> dict:
+    """'<img src="a.jpg" alt=\'Afiche\'>' → {"src": "a.jpg", "alt": "Afiche"}."""
+    return {m[1].lower(): html.unescape(m[2] if m[2] is not None else m[3]) for m in RE_ATRIBUTO.finditer(etiqueta)}
+
+
+def claves_titulo(t: str) -> set[str]:
+    """Las palabras que distinguen un título (sin las vacías ni las de cartelera)."""
+    return palabras_titulo(t) - PALABRAS_GENERICAS
+
+
+def frase(t: str) -> str:
+    """'¡Ill Niño en Chile!' → ' ill nino en chile ' (para buscar un título como frase entera)."""
+    return " " + " ".join(re.findall(r"[a-z0-9]+", sin_tildes(t or ""))) + " "
+
+
+def nucleo(t: str, lugar: set[str]) -> str:
+    """El título sin las palabras de relleno de las puntas: 'Dragonfly en Chile' → ' dragonfly ',
+    'Exposición Salvataje' → ' salvataje ', 'John 5' → ' john 5 '."""
+    p = re.findall(r"[a-z0-9]+", sin_tildes(t or ""))
+
+    def sobra(w: str) -> bool:
+        return w in PALABRAS_VACIAS or w in PALABRAS_GENERICAS or w in lugar or bool(re.fullmatch(r"20\d\d", w))
+    while p and sobra(p[0]):
+        p.pop(0)
+    while p and sobra(p[-1]):
+        p.pop()
+    return " " + " ".join(p) + " "
+
+
+def contexto_evento(e: dict) -> dict:
+    """Lo que se compara con cada página: el título y sus partes, las palabras del lugar y los días del evento."""
+    t = e.get("titulo") or ""
+    lugar = palabras_titulo(" ".join(str(e.get(k) or "") for k in ("lugar", "comuna", "ciudad")))
+    variantes = [(t, True)]
+    # Lo que va entre comillas es el nombre de la obra: 'Muestra "De Cesante a Mirón" en MAC Parque Forestal'
+    for q in re.findall(r"[\"“«]([^\"”»]{4,})[\"”»]", t):
+        variantes.append((q, len(claves_titulo(q) - lugar) >= 2))
+    # La primera parte suele ser el nombre y el resto, el artista o la sede: 'Selfie - Alexis Carreño'
+    partes = re.split(r"\s+[-–—|·]\s+|:\s+|\.\s+", t)
+    if len(partes) > 1 and partes[0].strip():
+        variantes.append((partes[0], False))
+    fechas = {dt.date.fromisoformat(f) for f in (fecha_iso(e.get("fecha_inicio")), fecha_iso(e.get("fecha_fin"))) if f}
+    return {"titulo": t, "lugar": lugar, "variantes": variantes, "fechas": fechas}
+
+
+def calce(ctx: dict, texto: str) -> int:
+    """¿El texto (título de una página, de un enlace o de un JSON-LD) nombra al evento?
+    2: el título completo; 1: solo una parte («Selfie» de «Selfie - Alexis Carreño»); 0: no."""
+    if not texto:
+        return 0
+    kt = claves_titulo(texto) - ctx["lugar"]
+    largo = sum(1 for w in kt if not w.isdigit())
+    nt = frase(texto)
+    mejor = 0
+    for variante, completa in ctx["variantes"]:
+        kv = (claves_titulo(variante) - ctx["lugar"]) or claves_titulo(variante)
+        if not kv:
+            continue
+        if len(kv) >= 2:
+            # casi todas sus palabras, en un texto que no sea mucho más largo (una cartelera nombra a muchos eventos)
+            comunes = len(kv & kt)
+            ok = comunes >= max(2, 0.75 * len(kv)) and comunes >= 0.4 * largo
+        else:
+            # una sola palabra («Bunbury», «John 5»): tiene que estar como frase, en un texto corto; si es solo una
+            # parte del título («Selfie» de «Selfie - Alexis Carreño»), el texto no puede decir nada más
+            # («Exposición inmersiva» no calza con «Experiencia inmersiva»)
+            n = nucleo(variante, ctx["lugar"])
+            corto = largo <= 3 if completa else {w for w in kt if not w.isdigit()} <= kv
+            ok = len(n.strip()) >= 4 and n in nt and corto
+        if ok:
+            mejor = max(mejor, 2 if completa else 1)
+    return mejor
+
+
+def menciona_fecha(a: dict, fechas) -> bool:
+    """¿La página nombra alguno de los días del evento? («7 de noviembre», «Nov 7», «07.11.2026» o el startDate de
+    su JSON-LD). Si junto al día aparece otro año, no cuenta: es otra edición del evento."""
+    for d in fechas:
+        if d in a["fechas_ld"]:
+            return True
+        meses, dia = "|".join(MESES_FECHA[d.month - 1]), rf"0?{d.day}"
+        patrones = (rf"(?<!\d){dia}(?:\s*de\s*|\s*[-./]\s*|\s+)(?:{meses})\b\.?(?:,?\s*(?:de|del)?\s*(\d{{4}}))?",
+                    rf"\b(?:{meses})\.?\s+{dia}(?!\d)(?:[a-z]{{0,2}},?\s*(\d{{4}}))?",
+                    rf"(?<![\d.,/-]){dia}[-./]0?{d.month}(?:[-./]((?:20)?\d\d))?(?!\d)")
+        for p in patrones:
+            for m in re.finditer(p, a["texto"]):
+                if not m.group(1) or int(m.group(1)[-2:]) == d.year % 100:
+                    return True
+    return False
+
+
+def fechas_ld(n: dict) -> set[dt.date]:
+    """Los días de inicio y de término de un JSON-LD (en la fecha que dice y en la de Chile, si trae hora UTC)."""
+    res = set()
+    for c in ("startDate", "endDate"):
+        f = fecha_iso(n.get(c))
+        if f:
+            res.add(dt.date.fromisoformat(f))
+        d = a_hora_chile(n.get(c))
+        if d:
+            res.add(d.date())
+    return res
+
+
+def nodos_jsonld(pagina: str) -> list[dict]:
+    """Todos los objetos de los bloques JSON-LD de la página. Si un bloque viene roto (p. ej. comillas sin escapar en
+    la descripción, como en los museos del Patrimonio), se rescatan su tipo, su nombre, su imagen y sus fechas."""
+    nodos: list[dict] = []
+    for bloque in re.findall(r'<script[^>]+type=["\']application/ld\+json["\'][^>]*>(.*?)</script>',
+                             pagina, re.S | re.I):
+        bloque = bloque.strip().replace("<!--", "").replace("-->", "")
+        try:
+            datos = json.loads(bloque, strict=False)
+        except json.JSONDecodeError:
+            campos = {c: re.search(rf'"{c}"\s*:\s*\[?\s*"([^"]+)"', bloque)
+                      for c in ("@type", "name", "image", "startDate", "endDate")}
+            if not (campos["@type"] and campos["name"]):
+                continue
+            datos = {c: html.unescape(m.group(1)) for c, m in campos.items() if m}
+        nodos += [n for n in _recorrer(datos) if isinstance(n, dict)]
+    return nodos
+
+
+def imagenes_ld(n: dict, indice: dict) -> list[str]:
+    """Las imágenes de un objeto JSON-LD ("image", "primaryImageOfPage" o "thumbnailUrl"): texto, objeto, lista o
+    referencia "@id" a un ImageObject de la misma página (así las publica Yoast en WordPress)."""
+    res: list[str] = []
+    for campo in ("image", "primaryImageOfPage", "thumbnailUrl"):
+        valor = n.get(campo)
+        for x in valor if isinstance(valor, list) else [valor]:
+            if isinstance(x, dict):
+                if not (x.get("contentUrl") or x.get("url")) and isinstance(x.get("@id"), str):
+                    x = indice.get(x["@id"]) or {}
+                x = x.get("contentUrl") or x.get("url")
+            if isinstance(x, str) and x.strip() and x.strip() not in res:
+                res.append(x.strip())
+    return res
+
+
+def analizar_pagina(pagina: str, final: str) -> dict:
+    """Lo que sirve de una página para buscar el afiche de un evento (no depende del evento)."""
+    meta = metadatos(pagina)
+    nodos = nodos_jsonld(pagina)
+    indice = {n["@id"]: n for n in nodos if isinstance(n.get("@id"), str)}
+    eventos, otros = [], []
+    for n in nodos:
+        tipos = [t for t in (n.get("@type") if isinstance(n.get("@type"), list) else [n.get("@type")])
+                 if isinstance(t, str)]
+        if any(t.endswith("Event") for t in tipos):
+            eventos.append(n)
+        elif any(t in TIPOS_PAGINA_LD for t in tipos):
+            otros.append(n)
+    nombres = [meta.get("og:title"), meta.get("twitter:title"), meta.get("_title")]
+    for t in (meta.get("og:title"), meta.get("_title")):   # "SELFIE – Museo de Arte Contemporáneo | Facultad..."
+        nombres += re.split(r"\s+[|–—·•]\s+|\s+-\s+|\s+::\s+", t or "")
+    h1 = re.search(r"<h1[^>]*>(.*?)</h1>", pagina, re.S | re.I)
+    if h1:
+        nombres.append(limpiar(h1.group(1)))
+    nombres += [limpiar(n.get("name") or n.get("headline")) for n in otros]
+    distintos = {sin_tildes(limpiar(n.get("name"))) for n in eventos if n.get("name")}
+    if len(distintos) == 1:
+        nombres.append(limpiar(eventos[0].get("name")))
+    dias: set[dt.date] = set()
+    for n in eventos:
+        dias |= fechas_ld(n)
+    return {"final": final, "html": pagina, "meta": meta, "eventos": eventos, "otros": otros, "indice": indice,
+            "nombres": [x for x in nombres if x], "cartelera": len(distintos) >= 2, "fechas_ld": dias,
+            "portada": urllib.parse.urlparse(final).path in ("", "/"), "texto": sin_tildes(texto_plano(pagina))}
+
+
+def imagenes_de_meta(a: dict) -> set[str]:
+    """og:image y twitter:image de una página (como claves de imagen_clave)."""
+    m = a["meta"]
+    urls = [m.get(k) for k in ("og:image:secure_url", "og:image", "og:image:url", "twitter:image", "twitter:image:src")]
+    return {imagen_clave(u) for u in normalizar_imagenes(urls, a["final"])}
+
+
+def imagen_clave(u: str) -> str:
+    """La misma imagen aunque cambien el protocolo o los parámetros (?width=1200): sitio + ruta."""
+    p = urllib.parse.urlparse(u)
+    d = p.netloc.lower()
+    return (d[4:] if d.startswith("www.") else d) + p.path.lower()
+
+
+def normalizar_imagenes(urls, base: str) -> list[str]:
+    """Direcciones completas, en https y sin repetir."""
+    res: list[str] = []
+    for u in urls:
+        if isinstance(u, str) and u.strip():
+            u = url_https(urllib.parse.urljoin(base, html.unescape(u.strip())))
+            if u and u not in res:
+                res.append(u)
+    return res
+
+
+def version_original(u: str) -> str | None:
+    """La imagen original de una versión que el sitio achicó o recortó, cuando se puede deducir:
+    Drupal '/files/styles/4x3_grande/public/2026-07/x.jpg?itok=…' → '/files/2026-07/x.jpg' (el recorte 4:3 le
+    corta los costados a un afiche); WordPress 'x-1024x576.jpg' → 'x.jpg'."""
+    p = urllib.parse.urlparse(u)
+    ruta = re.sub(r"/styles/[^/]+/public/", "/", p.path)
+    ruta = re.sub(r"-\d{2,4}x\d{2,4}(\.(?:jpe?g|png|webp))$", r"\1", ruta, flags=re.I)
+    return urllib.parse.urlunparse(p._replace(path=ruta, query="")) if ruta != p.path else None
+
+
+def con_originales(urls: list[str]) -> list[str]:
+    """Antes de cada versión achicada o recortada, su original (si se puede deducir y no estaba ya)."""
+    res: list[str] = []
+    for u in urls:
+        o = version_original(u)
+        for x in (o, u):
+            if x and x not in res:
+                res.append(x)
+    return res
+
+
+def nombra_archivo(ctx: dict, src: str) -> bool:
+    """¿El nombre del archivo nombra al evento? Dos palabras de su título, o la más larga si es bien distintiva:
+    'cartelera_azulverde-1.width-1200.webp' es de «AzulVerde. Algas y comunidades...» (pero 'algas.jpg' no basta:
+    puede ser la de la charla de al lado)."""
+    archivo = sin_tildes(urllib.parse.unquote(urllib.parse.urlparse(src).path.rsplit("/", 1)[-1]))
+    palabras = {w for v, _ in ctx["variantes"] for w in claves_titulo(v) - ctx["lugar"] if len(w) >= 5}
+    if not palabras:
+        return False
+    larga = max(palabras, key=len)
+    return sum(1 for w in palabras if w in archivo) >= 2 or (len(larga) >= 7 and larga in archivo)
+
+
+def imagenes_destacadas(a: dict, ctx: dict) -> list[str]:
+    """Último recurso: imágenes del contenido que se presentan como la principal (la destacada de WordPress, un
+    afiche...), cuyo texto alternativo nombra al evento o cuyo nombre de archivo lo nombra. De cada una, la versión
+    más grande de su srcset."""
+    res = []
+    for m in re.finditer(r"<img\s[^>]*>", a["html"], re.I):
+        at = atributos(m.group(0))
+        src = at.get("data-src") or at.get("data-lazy-src") or at.get("src") or ""
+        mayor = 0.0
+        for parte in (at.get("data-srcset") or at.get("srcset") or "").split(","):
+            pedazos = parte.split()
+            if len(pedazos) == 2 and re.fullmatch(r"\d+(\.\d+)?[wx]", pedazos[1]) and float(pedazos[1][:-1]) > mayor:
+                mayor, src = float(pedazos[1][:-1]), pedazos[0]
+        if not src or src.startswith("data:"):
+            continue
+        senales = " ".join(at.get(k, "") for k in ("class", "id", "alt", "title"))
+        if not (RE_IMG_DESTACADA.search(senales) or calce(ctx, at.get("alt", "")) or nombra_archivo(ctx, src)):
+            continue
+        medidas = [int(at[k]) for k in ("width", "height") if re.fullmatch(r"\d{1,5}", at.get(k, "").strip())]
+        if medidas and max(medidas) < 400:
+            continue
+        res.append(src)
+    return normalizar_imagenes(res, a["final"])[:3]
+
+
+def imagenes_candidatas(a: dict, ctx: dict) -> tuple[list[str], list[str]]:
+    """Las imágenes de esta página que podrían ser las del evento, en orden de confianza: las de sus datos
+    (JSON-LD, og:image, twitter:image, image_src) y, aparte, las del contenido (solo si ninguna de las otras sirve)."""
+    fecha_ok = menciona_fecha(a, ctx["fechas"])
+    datos: list[str] = []
+    # Un JSON-LD de evento con el nombre y la fecha del evento trae su propia imagen (sirve hasta en una cartelera)
+    for n in a["eventos"]:
+        if calce(ctx, limpiar(n.get("name"))) and (fecha_ok or fechas_ld(n) & ctx["fechas"]):
+            datos += imagenes_ld(n, a["indice"])
+    contenido: list[str] = []
+    # La imagen de la página solo si la página es la del evento: no es la portada del sitio ni una cartelera,
+    # su título nombra al evento y nombra uno de sus días
+    if (not a["portada"] and not a["cartelera"] and fecha_ok
+            and max((calce(ctx, x) for x in a["nombres"]), default=0) > 0):
+        for n in a["eventos"] + a["otros"]:
+            datos += imagenes_ld(n, a["indice"])
+        m = a["meta"]
+        datos += [m.get(k) for k in ("og:image:secure_url", "og:image", "og:image:url", "twitter:image",
+                                     "twitter:image:src")]
+        enlace = re.search(r"<link\s[^>]*rel=[\"']image_src[\"'][^>]*>", a["html"], re.I)
+        if enlace:
+            datos.append(atributos(enlace.group(0)).get("href"))
+        contenido = imagenes_destacadas(a, ctx)
+    datos = con_originales(normalizar_imagenes(datos, a["final"]))
+    return datos, [u for u in con_originales(contenido) if u not in datos]
+
+
+def medidas_imagen(datos: bytes) -> tuple[int, int] | None:
+    """Ancho y alto leídos de la cabecera del archivo (JPEG, PNG, WebP o AVIF), para cuando no está Pillow."""
+    try:
+        if datos[:8] == b"\x89PNG\r\n\x1a\n":
+            return int.from_bytes(datos[16:20], "big"), int.from_bytes(datos[20:24], "big")
+        if datos[:4] == b"RIFF" and datos[8:12] == b"WEBP":
+            if datos[12:16] == b"VP8X":
+                return 1 + int.from_bytes(datos[24:27], "little"), 1 + int.from_bytes(datos[27:30], "little")
+            if datos[12:16] == b"VP8 ":
+                return (int.from_bytes(datos[26:28], "little") & 0x3FFF,
+                        int.from_bytes(datos[28:30], "little") & 0x3FFF)
+            if datos[12:16] == b"VP8L":
+                b = int.from_bytes(datos[21:25], "little")
+                return (b & 0x3FFF) + 1, ((b >> 14) & 0x3FFF) + 1
+        if datos[:2] == b"\xff\xd8":
+            i = 2
+            while i + 9 < len(datos):
+                if datos[i] != 0xFF:
+                    i += 1
+                    continue
+                marca = datos[i + 1]
+                if marca in (0xD8, 0x01, 0xFF) or 0xD0 <= marca <= 0xD7:
+                    i += 1 if marca == 0xFF else 2
+                    continue
+                if marca in (0xC0, 0xC1, 0xC2, 0xC3, 0xC5, 0xC6, 0xC7, 0xC9, 0xCA, 0xCB, 0xCD, 0xCE, 0xCF):
+                    return int.from_bytes(datos[i + 7:i + 9], "big"), int.from_bytes(datos[i + 5:i + 7], "big")
+                i += 2 + int.from_bytes(datos[i + 2:i + 4], "big")
+        if datos[4:8] == b"ftyp" and datos[8:12] in (b"avif", b"avis"):
+            medidas = [(int.from_bytes(datos[j + 8:j + 12], "big"), int.from_bytes(datos[j + 12:j + 16], "big"))
+                       for j in (m.start() for m in re.finditer(b"ispe", datos[:300_000]))]
+            if medidas:
+                return max(medidas, key=lambda x: x[0] * x[1])
+    except IndexError:
+        return None
+    return None
+
+
+def revisar_imagen(datos: bytes | None):
+    """(ancho, alto) si los datos son una imagen que sirve de afiche o de foto; si no, el motivo."""
+    if not datos:
+        return "pesa más de 8 MB"
+    if datos[:6] in (b"GIF87a", b"GIF89a"):
+        return "es un GIF"
+    medidas = medidas_imagen(datos)
+    if Image is not None:
+        try:
+            from PIL import ImageStat
+            im = Image.open(io.BytesIO(datos))
+            medidas = im.size
+            muestra = im.convert("L")
+            muestra.thumbnail((64, 64))
+            if max(ImageStat.Stat(muestra).stddev) < 6:
+                return "es un recuadro de un solo color"
+        except Exception:  # noqa: BLE001  (un formato que Pillow no abre: quedan las medidas de la cabecera)
+            pass
+    if not medidas:
+        return "no es una imagen"
+    ancho, alto = medidas
+    if min(ancho, alto) < 250 or max(ancho, alto) < 400:
+        return f"muy chica ({ancho}×{alto})"
+    if max(ancho, alto) > 3.2 * min(ancho, alto):
+        return f"franja muy alargada ({ancho}×{alto})"
+    return ancho, alto
+
+
+class Recolector:
+    """Lee páginas e imágenes para buscar afiches: recuerda lo que ya leyó en esta vuelta, espera entre dos pedidos
+    al mismo sitio y se detiene al llegar al tope de páginas o de tiempo (lo que falte queda para otra vuelta)."""
+
+    def __init__(self, max_paginas: int, segundos: float, pausa: float = 2.0):
+        self.max_paginas, self.pausa = max_paginas, pausa
+        self.hasta = time.monotonic() + segundos
+        self.leidas = 0
+        self.paginas: dict[str, object] = {}      # dirección → análisis de la página, o el error al abrirla
+        self.imagenes: dict[str, object] = {}     # dirección → (ancho, alto), o por qué no sirve
+        self.portadas: dict[str, set[str]] = {}   # sitio → imágenes de su portada (las genéricas del sitio)
+        self.genericas: set[str] = set()          # imágenes de portadas y carteleras: no son el afiche de un evento
+        self.ultimo: dict[str, float] = {}        # sitio → cuándo se le pidió algo por última vez
+        self.frenados: set[str] = set()           # sitios que pidieron ir más lento (429): no se les pide más
+
+    def _turno(self, url: str):
+        if time.monotonic() > self.hasta:
+            raise TopeAlcanzado("se acabó el tiempo de esta vuelta")
+        d = dominio(url)
+        espera = self.ultimo.get(d, 0.0) + self.pausa - time.monotonic()
+        if espera > 0:
+            time.sleep(espera)
+        self.ultimo[d] = time.monotonic()
+
+    def analisis(self, url: str) -> dict:
+        if url not in self.paginas:
+            if dominio(url) in self.frenados:
+                raise urllib.error.URLError("el sitio pidió ir más lento")
+            if not permitido(url):
+                self.paginas[url] = NoPermitido(f"robots.txt no permite leer {url}")
+            else:
+                if self.leidas >= self.max_paginas:
+                    raise TopeAlcanzado(f"se abrieron las {self.max_paginas} páginas de esta vuelta")
+                self._turno(url)
+                self.leidas += 1
+                try:
+                    pagina, tipo, final = descargar(url, timeout=20, intentos=1, revisar_robots=False)
+                    if "html" not in tipo.lower() and "<html" not in pagina[:500].lower():
+                        raise NoEsHtml(tipo)
+                    a = analizar_pagina(pagina, final)
+                    if a["portada"]:
+                        self.genericas |= imagenes_de_meta(a)
+                    self.paginas[url] = a
+                except Exception as e:  # noqa: BLE001
+                    if isinstance(e, urllib.error.HTTPError) and e.code == 429:
+                        self.frenados.add(dominio(url))
+                    self.paginas[url] = e
+        r = self.paginas[url]
+        if isinstance(r, Exception):
+            raise r
+        return r
+
+    def portada(self, url: str) -> set[str]:
+        """og:image y twitter:image de la portada del sitio: las imágenes genéricas del sitio."""
+        p = urllib.parse.urlparse(url)
+        base = f"{p.scheme}://{p.netloc}/"
+        if base not in self.portadas:
+            try:
+                self.portadas[base] = imagenes_de_meta(self.analisis(base))
+            except TopeAlcanzado:
+                raise
+            except Exception:  # noqa: BLE001  (sin portada no se sabe cuál es la genérica; quedan las otras pruebas)
+                self.portadas[base] = set()
+        return self.portadas[base]
+
+    def imagen(self, url: str):
+        """(ancho, alto) si la imagen sirve; si no, el motivo. Se descarga como la pide un visitante (sin Referer)."""
+        if url not in self.imagenes:
+            if dominio(url) in self.frenados:
+                return "no se pudo bajar (el sitio pidió ir más lento)"
+            if not permitido(url):
+                self.imagenes[url] = "robots.txt no permite bajarla"
+                return self.imagenes[url]
+            self._turno(url)
+            try:
+                datos, _, _ = descargar(url, binario=True, max_bytes=8_000_000, timeout=20, intentos=1)
+                self.imagenes[url] = revisar_imagen(datos)
+            except Exception as e:  # noqa: BLE001
+                if isinstance(e, urllib.error.HTTPError) and e.code == 429:
+                    self.frenados.add(dominio(url))
+                motivo = f"HTTP {e.code}" if isinstance(e, urllib.error.HTTPError) else type(e).__name__
+                self.imagenes[url] = f"no se pudo bajar ({motivo})"
+        return self.imagenes[url]
+
+
+def elegir_imagen(a: dict, ctx: dict, rec: Recolector, rechazos: list) -> str | None:
+    """La mejor imagen de la página para el evento, ya descargada y revisada; None si ninguna sirve."""
+    datos, contenido = imagenes_candidatas(a, ctx)
+    for grupo in (datos, contenido):
+        validas: list[tuple[int, str]] = []
+        for u in grupo[:8]:
+            motivo = None
+            if en_dominios(u, DOMINIOS_SIN_FOTOS):
+                motivo = "sitio del que no se toman fotos"
+            elif RE_IMG_GENERICA.search(urllib.parse.unquote(urllib.parse.urlparse(u).path)):
+                motivo = "nombre de imagen genérica (logo, ícono, «sin imagen»...)"
+            elif imagen_clave(u) in IMAGENES_DESCARTADAS:
+                motivo = "imagen descartada a mano (no es la del evento)"
+            elif imagen_clave(u) in rec.genericas:
+                motivo = "es la imagen de una cartelera o de la portada del sitio"
+            elif imagen_clave(u) in rec.portada(a["final"]):
+                motivo = "es la imagen de la portada del sitio"
+            else:
+                r = rec.imagen(u)
+                if isinstance(r, tuple):
+                    validas.append((r[0] * r[1], u))
+                    if len(validas) >= 3:
+                        break
+                    continue
+                motivo = r
+            if motivo.startswith("no se pudo bajar (HTTP 404") and any(version_original(x) == u for x in grupo):
+                continue   # el original deducido no existe: queda la versión que sí publicó la página
+            rechazos.append((u, motivo))
+        if validas:
+            # Primero las que el sitio no recortó ni achicó; entre ellas, la primera (la de más confianza), salvo
+            # que otra sea mucho más grande
+            sin_tocar = [v for v in validas if not RE_DERIVADA.search(v[1])] or validas
+            elegida = sin_tocar[0]
+            for v in sin_tocar[1:]:
+                if v[0] >= 1.8 * elegida[0]:
+                    elegida = v
+            return elegida[1]
+    return None
+
+
+def enlaces_al_evento(a: dict, ctx: dict, omitidos) -> list[str]:
+    """Enlaces de una cartelera cuyo texto (o el de su imagen) nombra al evento; los que mejor calzan, primero."""
+    propia = a["final"].split("#")[0].rstrip("/")
+    puntajes: dict[str, tuple] = {}
+    for m in re.finditer(r"<a\s([^>]*)>(.*?)</a>", a["html"], re.S | re.I):
+        at = atributos(m.group(1))
+        href = (at.get("href") or "").strip()
+        if not href or href.startswith(("#", "javascript:", "mailto:", "tel:", "whatsapp:")):
+            continue
+        url = urllib.parse.urljoin(a["final"], href).split("#")[0]
+        ruta = urllib.parse.urlparse(url).path
+        if (not url.startswith("http") or url.rstrip("/") == propia or ruta in ("", "/")
+                or RE_ARCHIVO.search(ruta) or RE_NO_ES_EVENTO.search(ruta) or en_dominios(url, omitidos)):
+            continue
+        textos = [limpiar(m.group(2)), at.get("title", ""), at.get("aria-label", "")]
+        textos += [atributos(t).get("alt", "") for t in re.findall(r"<img\s[^>]*>", m.group(2), re.I)]
+        for t in textos:
+            c = calce(ctx, t)
+            if c:
+                puntajes[url] = max(puntajes.get(url, (0, 0.0)), (c, parecido(ctx["titulo"], t)))
+    return [u for u, _ in sorted(puntajes.items(), key=lambda x: x[1], reverse=True)]
+
+
+def estado_error(e: Exception) -> str:
+    if isinstance(e, NoPermitido):
+        return "robots"
+    if isinstance(e, urllib.error.HTTPError):
+        return "no-hay" if e.code in (404, 410) else "bloqueada" if e.code in (401, 403) else "error"
+    return "no-hay" if isinstance(e, NoEsHtml) else "error"
+
+
+def buscar_imagen(e: dict, paginas: list[str], rec: Recolector, omitidos, rechazos: list) -> tuple:
+    """(imagen, resultado, página de la imagen) para un evento. Resultado: encontrada, no-hay, robots (robots.txt no
+    deja leer sus páginas), bloqueada (el sitio no deja entrar al robot) o error (de red: se reintenta mañana)."""
+    ctx = contexto_evento(e)
+    estados: list[str] = []
+    for url in paginas:
+        try:
+            a = rec.analisis(url)
+        except TopeAlcanzado:
+            raise
+        except Exception as ex:  # noqa: BLE001
+            estados.append(estado_error(ex))
+            continue
+        img = elegir_imagen(a, ctx, rec, rechazos)
+        if img:
+            return img, "encontrada", a["final"]
+        # Una cartelera (o la página del evento sin imagen propia): se sigue el enlace que nombra al evento.
+        # La imagen de la cartelera es la de otro evento o la del sitio: no puede ser la del evento.
+        enlaces = [x for x in enlaces_al_evento(a, ctx, omitidos) if x not in paginas][:2]
+        if enlaces:
+            rec.genericas |= imagenes_de_meta(a)
+        for destino in enlaces:
+            try:
+                b = rec.analisis(destino)
+            except TopeAlcanzado:
+                raise
+            except Exception as ex:  # noqa: BLE001
+                estados.append(estado_error(ex))
+                continue
+            if RE_NO_ES_EVENTO.search(urllib.parse.urlparse(b["final"]).path):
+                continue   # redirigió a una tienda o a una categoría
+            img = elegir_imagen(b, ctx, rec, rechazos)
+            if img:
+                return img, "encontrada", b["final"]
+        estados.append("no-hay")
+    # un error de red (o una imagen que no se pudo bajar por la red, no por un 404) se reintenta mañana
+    if "error" in estados or any(m.startswith("no se pudo bajar") and "HTTP 4" not in m for _, m in rechazos):
+        return None, "error", ""
+    if estados and all(s in ("robots", "bloqueada") for s in estados):
+        return None, estados[0], ""
+    return None, "no-hay", ""
+
+
+def mismo_espectaculo(a: dict, b: dict) -> bool:
+    """¿Dos eventos son el mismo espectáculo (otra fecha, otra ciudad u otro título para lo mismo)? Esos sí pueden
+    compartir el afiche: «Classic Thrash Attack ... en Valparaíso» y «... en Concepción»."""
+    if parecido(a["titulo"], b["titulo"]) >= 0.5:
+        return True
+    ka, kb = ((claves_titulo(x["titulo"]) - contexto_evento(x)["lugar"]) or claves_titulo(x["titulo"]) for x in (a, b))
+    comunes = ka & kb
+    return len(comunes) >= 2 or (len(comunes) == 1 and min(len(ka), len(kb)) == 1 and len(next(iter(comunes))) >= 5)
+
+
+def paginas_del_evento(e: dict, omitidos) -> list[str]:
+    """El enlace del evento y los de sus fuentes, sin los sitios que no se abren (redes sociales y omitidos)."""
+    res: list[str] = []
+    for u in [e.get("url")] + [f.get("url") for f in e.get("fuentes") or [] if isinstance(f, dict)]:
+        if isinstance(u, str) and u.startswith("http") and u not in res and not en_dominios(u, omitidos):
+            res.append(u)
+    return res
+
+
+def completar_imagenes(eventos: list[dict], cfg: dict, vistos: dict, max_paginas: int = 30,
+                       segundos: float = 420, informe: list | None = None) -> dict:
+    """Busca la imagen de los eventos vigentes que no tienen una propia (ni "imagen" ni "fotos"), los más próximos
+    primero, abriendo hasta max_paginas páginas. Cada intento queda en vistos["#imagen <id>"]: lo que no se encontró
+    se vuelve a buscar a los "dias_para_revisar_de_nuevo" días, y lo que falló por la red, al día siguiente.
+    No toca los eventos que solo tienen enlaces de Instagram o Facebook (el robot no los abre)."""
+    omitidos = DOMINIOS_SIN_FOTOS + tuple(cfg.get("dominios_omitidos", [])) + tuple(cfg.get("redes_solo_resumen", []))
+    dias = int(cfg.get("dias_para_revisar_de_nuevo", 7))
+    hoy = HOY.isoformat()
+    stats = {"sin_imagen": 0, "solo_redes": 0, "en_espera": 0, "revisados": 0, "encontradas": 0, "no_hay": 0,
+             "robots": 0, "errores": 0, "repetidas": 0}
+    pendientes = []
+    for e in eventos:
+        if url_https(e.get("imagen")) or any(url_https(u) for u in e.get("fotos") or []):
+            continue
+        stats["sin_imagen"] += 1
+        paginas = paginas_del_evento(e, omitidos)
+        if not paginas:
+            stats["solo_redes"] += 1
+            continue
+        previo = str(vistos.get(CLAVE_IMAGEN + str(e.get("id")), ""))
+        espera = 1 if previo[11:].startswith("error") else dias
+        if previo[:10] > (HOY - dt.timedelta(days=espera)).isoformat():
+            stats["en_espera"] += 1
+            continue
+        pendientes.append((e, paginas))
+    pendientes.sort(key=lambda x: (max(x[0]["fecha_inicio"], hoy), x[0].get("fecha_fin") or x[0]["fecha_inicio"]))
+    log(f"[imágenes] {stats['sin_imagen']} eventos sin imagen propia: {len(pendientes)} por revisar, "
+        f"{stats['en_espera']} revisados hace poco, {stats['solo_redes']} solo con enlaces de redes sociales")
+    rec = Recolector(max_paginas, segundos)
+    nuevas: list[dict] = []
+    for e, paginas in pendientes:
+        rechazos: list[tuple[str, str]] = []
+        try:
+            img, resultado, pagina = buscar_imagen(e, paginas, rec, omitidos, rechazos)
+        except TopeAlcanzado as t:
+            log(f"  {t}: {len(pendientes) - stats['revisados']} eventos quedan para la próxima vuelta")
+            break
+        stats["revisados"] += 1
+        if img:
+            e["imagen"] = img
+            nuevas.append(e)
+            log(f"   ✓ {e['titulo'][:70]} → {img}" + (f" (de {pagina})" if pagina != e.get("url") else ""))
+        else:
+            clave = {"no-hay": "no_hay", "error": "errores", "robots": "robots", "bloqueada": "robots"}[resultado]
+            stats[clave] += 1
+            motivos = "; ".join(f"{u[-60:]}: {m}" for u, m in rechazos[:3])
+            log(f"   ✗ {e['titulo'][:70]}: {resultado}" + (f" (descartadas: {motivos})" if motivos else ""))
+        vistos[CLAVE_IMAGEN + str(e.get("id"))] = f"{hoy}|{resultado}" + (f"|{pagina}" if pagina else "")
+        if informe is not None:
+            informe.append({"id": e.get("id"), "titulo": e["titulo"], "resultado": resultado, "imagen": img,
+                            "pagina": pagina, "paginas": paginas, "rechazos": rechazos})
+    # Una imagen que quedó en eventos que no son el mismo espectáculo es la genérica de algún sitio: se quita
+    por_imagen: dict[str, list[dict]] = {}
+    for e in eventos:
+        if url_https(e.get("imagen")):
+            por_imagen.setdefault(imagen_clave(e["imagen"]), []).append(e)
+    quitar = [e for e in nuevas
+              if any(o is not e and not mismo_espectaculo(e, o) for o in por_imagen[imagen_clave(e["imagen"])])]
+    for e in quitar:
+        log(f"   ✗ {e['titulo'][:70]}: su imagen también es la de otro evento distinto; no se usa ({e['imagen']})")
+        vistos[CLAVE_IMAGEN + str(e.get("id"))] = f"{hoy}|repetida|{e['imagen']}"
+        if informe is not None:
+            for x in informe:
+                if x["id"] == e.get("id"):
+                    x["resultado"] = "repetida"
+        e["imagen"] = None
+    stats["repetidas"] = len(quitar)
+    stats["encontradas"] = len(nuevas) - len(quitar)
+    stats["paginas_abiertas"] = rec.leidas
+    log(f"[imágenes] {stats['encontradas']} encontradas, {stats['no_hay']} sin imagen que sirva, "
+        f"{stats['robots']} bloqueadas por robots.txt o por el sitio, {stats['errores']} con errores de red "
+        f"(se reintentan mañana), {stats['repetidas']} descartadas por repetidas; {rec.leidas} páginas abiertas")
+    return stats
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--sin-ia", action="store_true", help="no usar GitHub Models")
@@ -1831,6 +2545,9 @@ def main():
     ap.add_argument("--limpiar", action="store_true", help="solo quitar eventos pasados y ocultos")
     ap.add_argument("--modo", choices=["completa", "rapida", "auto"], default="completa",
                     help="auto: la completa si ya pasaron 'horas_entre_completas' desde la anterior; si no, la rápida")
+    ap.add_argument("--solo-imagenes", nargs="?", const=150, type=int, metavar="PAGINAS",
+                    help="solo buscar las imágenes que les faltan a los eventos (sin IA ni búsqueda), abriendo hasta "
+                         "PAGINAS páginas (150 si no se indica)")
     args = ap.parse_args()
     inicio = dt.datetime.now(TZ)
     try:  # errors="replace": una línea del registro con una letra partida no debe botar al robot
@@ -1861,7 +2578,7 @@ def main():
             else:
                 log(f"  descartado (sin fecha válida, pasado o fuera de tus gustos): {e.get('titulo')}")
         stats = {"agregados_a_mano": len(lista)}
-    elif not args.limpiar:
+    elif not args.limpiar and args.solo_imagenes is None:
         variable = conf_ia.get("clave_env")
         clave = None if args.sin_ia else (os.environ.get(variable) if variable else token_github())
         ia = IA(conf_ia, clave, int(conf_ia.get("max_llamadas", 80)))
@@ -1898,6 +2615,16 @@ def main():
 
     eventos, ids_nuevos = unir(eventos, nuevos)
     eventos = vigentes(compactar(eventos), ocultos)
+    # Las imágenes que les faltan a los eventos (no gasta IA): en cada búsqueda, rápida o completa, con un tope de
+    # páginas por vuelta; con --solo-imagenes, solo este paso y con un tope más alto (para ponerse al día)
+    if args.solo_imagenes is not None or not (args.agregar or args.limpiar):
+        if args.solo_imagenes is not None:
+            paginas_img, segundos_img = max(1, args.solo_imagenes), 3600.0
+        else:
+            paginas_img = int(cfg.get("max_paginas_imagenes", 30))
+            segundos_img = float(cfg.get("max_segundos_imagenes", 420))
+        log("")
+        stats["imagenes_encontradas"] = completar_imagenes(eventos, cfg, vistos, paginas_img, segundos_img)["encontradas"]
     ids_vigentes = {e["id"] for e in eventos}
     ids_nuevos = [i for i in ids_nuevos if i in ids_vigentes]
     agregados = len(ids_nuevos)
@@ -1926,7 +2653,7 @@ def main():
     if args.agregar and args.origen == "manual":
         # Agregar a mano no es una búsqueda: se suman a los "nuevos" sin cambiar la hora de la búsqueda
         ultima = {**ultima, "nuevos_ids": ids_recientes, "nuevos_desde": marcas, "eventos_nuevos": len(marcas)}
-    elif not args.limpiar:
+    elif not args.limpiar and args.solo_imagenes is None:   # buscar solo imágenes no es una búsqueda de eventos
         ultima = {"fecha": ahora, "origen": args.origen if args.agregar else
                   ("github-actions" if os.environ.get("GITHUB_ACTIONS") else "local"),
                   "eventos_nuevos": len(marcas), "nuevos_esta_vez": agregados,
@@ -1939,7 +2666,8 @@ def main():
     guardar_json(ARCH_VISTOS, vistos)
     if not ARCH_OCULTOS.exists():
         guardar_json(ARCH_OCULTOS, [])
-    log(f"\nListo: {len(eventos)} eventos vigentes, {agregados} nuevos, {ia.usadas} llamadas a la IA.")
+    log(f"\nListo: {len(eventos)} eventos vigentes, {agregados} nuevos, {ia.usadas} llamadas a la IA"
+        + (f", {stats['imagenes_encontradas']} imágenes encontradas." if "imagenes_encontradas" in stats else "."))
 
 
 if __name__ == "__main__":

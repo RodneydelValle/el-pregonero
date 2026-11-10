@@ -12,6 +12,10 @@ on:
         description: "Solo publicar la web, sin buscar (no gasta IA)"
         type: boolean
         default: false
+      solo_imagenes:
+        description: "Solo rellenar las imágenes que les faltan a los eventos (sin IA ni búsqueda)"
+        type: boolean
+        default: false
   push:
     branches: [main]         # cualquier cambio en la web o en los gustos se publica al tiro
 
@@ -37,10 +41,15 @@ jobs:
       - name: Preparar
         run: pip install --quiet pillow tzdata
       - name: Buscar eventos
+        if: ${{ !inputs.solo_imagenes }}
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}   # IA gratis de Google AI Studio (lee páginas y afiches)
           MODO: ${{ github.event_name == 'schedule' && 'auto' || 'completa' }}
         run: python scripts/actualizar.py --modo "$MODO"
+      - name: Rellenar imágenes
+        # Relleno a pedido: abre hasta 150 páginas (la búsqueda normal ya busca unas 30 por vuelta)
+        if: ${{ inputs.solo_imagenes }}
+        run: python scripts/actualizar.py --solo-imagenes 150
       - name: Guardar resultados
         run: |
           git config user.name "el-pregonero[bot]"
