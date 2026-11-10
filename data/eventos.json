@@ -1,12 +1,12 @@
 {
  "version": 1,
- "actualizado": "2026-11-10T11:29-03:00",
+ "actualizado": "2026-11-10T14:57-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-10T11:29-03:00",
+  "fecha": "2026-11-10T14:57-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 136,
-  "nuevos_esta_vez": 30,
+  "eventos_nuevos": 145,
+  "nuevos_esta_vez": 9,
   "nuevos_ids": [
    "41ac991fa0",
    "5d05376a3b",
@@ -143,7 +143,16 @@
    "68c160506a",
    "6c5fdeb43e",
    "5a9f634843",
-   "584b87c424"
+   "584b87c424",
+   "4dcda2f9ab",
+   "bb3917442f",
+   "cf9b7b7976",
+   "5e85b66cca",
+   "c615559210",
+   "c3dd41f26f",
+   "3743d861b5",
+   "ccff163ce9",
+   "d498a8fcaf"
   ],
   "nuevos_desde": {
    "41ac991fa0": "2026-11-09T16:43-03:00",
@@ -281,23 +290,31 @@
    "68c160506a": "2026-11-10T11:29-03:00",
    "6c5fdeb43e": "2026-11-10T11:29-03:00",
    "5a9f634843": "2026-11-10T11:29-03:00",
-   "584b87c424": "2026-11-10T11:29-03:00"
+   "584b87c424": "2026-11-10T11:29-03:00",
+   "4dcda2f9ab": "2026-11-10T14:57-03:00",
+   "bb3917442f": "2026-11-10T14:57-03:00",
+   "cf9b7b7976": "2026-11-10T14:57-03:00",
+   "5e85b66cca": "2026-11-10T14:57-03:00",
+   "c615559210": "2026-11-10T14:57-03:00",
+   "c3dd41f26f": "2026-11-10T14:57-03:00",
+   "3743d861b5": "2026-11-10T14:57-03:00",
+   "ccff163ce9": "2026-11-10T14:57-03:00",
+   "d498a8fcaf": "2026-11-10T14:57-03:00"
   },
   "horas_nuevos": 24,
-  "llamadas_ia": 40,
+  "llamadas_ia": 3,
   "ia_sin_cupo": false,
   "ultima_completa": "2026-11-10T10:57-03:00",
-  "modo": "completa",
-  "paginas_revisadas": 41,
-  "busquedas": 96,
-  "fuentes_fijas": 14,
-  "errores": 8,
+  "modo": "rapida",
+  "paginas_revisadas": 0,
+  "busquedas": 0,
+  "fuentes_fijas": 9,
+  "errores": 2,
   "noticias_desde": "2026-11-10",
-  "noticias_viejas_descartadas": 454,
-  "redes_vistas": 9,
-  "imagenes_encontradas": 16
+  "noticias_viejas_descartadas": 0,
+  "imagenes_encontradas": 12
  },
- "total": 347,
+ "total": 355,
  "eventos": [
   {
    "titulo": "Mariposas y Polillas, Colores en Movimiento",
@@ -351,7 +368,7 @@
    "region": "Región Metropolitana",
    "precio": "Gratis",
    "descripcion": "Muestra dedicada a la obra del destacado artista chileno Roberto Matta en el MNBA.",
-   "imagen": null,
+   "imagen": "https://www.mnba.gob.cl/sites/www.mnba.gob.cl/files/2025-07/matta_web.jpg",
    "fotos": null,
    "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion",
    "fuentes": [
@@ -461,7 +478,7 @@
    "region": "Región Metropolitana",
    "precio": "Gratis",
    "descripcion": "Exposición conmemorativa por los 145 años de la colección del Museo Nacional de Bellas Artes.",
-   "imagen": null,
+   "imagen": "https://www.mnba.gob.cl/sites/www.mnba.gob.cl/files/2025-09/expo145anos_webVF.jpg",
    "fotos": null,
    "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion",
    "fuentes": [
@@ -499,7 +516,7 @@
    "region": "Región Metropolitana",
    "precio": "Gratis",
    "descripcion": "Muestra patrimonial sobre colecciones arqueológicas y su investigación en el MNHN.",
-   "imagen": null,
+   "imagen": "https://www.mnhn.gob.cl/sites/www.mnhn.gob.cl/files/2025-10/Vitrina.jpg",
    "fotos": null,
    "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion",
    "fuentes": [
@@ -699,7 +716,7 @@
    "region": "Región Metropolitana",
    "precio": "Gratis",
    "descripcion": "Exhibición temporal sobre avifauna en el Museo Nacional de Historia Natural.",
-   "imagen": null,
+   "imagen": "https://www.mnhn.gob.cl/sites/www.mnhn.gob.cl/files/2026-05/expopajaros.jpg",
    "fotos": null,
    "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion",
    "fuentes": [
@@ -763,7 +780,7 @@
    "region": "Región Metropolitana",
    "precio": "Entrada liberada",
    "descripcion": "Muestras inmersiva de la artista e ilustradora Andrea Franco en el Centro Cultural La Moneda, ideal para disfrutar en familia.",
-   "imagen": null,
+   "imagen": "https://www.santiagoturismo.cl/wp-content/uploads/2026/07/EXPOSICION-INMERSIVA-EN-CCLM.jpg",
    "fotos": null,
    "url": "https://www.santiagoturismo.cl/es/events/exposicion-inmersiva-en-centro-cultural-la-moneda/",
    "fuentes": [
@@ -2326,7 +2343,7 @@
    "region": "Valparaíso",
    "precio": "Gratis",
    "descripcion": "Exposición sobre aves y territorios en el Museo de Historia Natural de Valparaíso.",
-   "imagen": null,
+   "imagen": "https://www.mhnv.gob.cl/sites/www.mhnv.gob.cl/files/2026-10/WhatsApp%20Image%202026-10-16%20at%2012.44.00.jpeg",
    "fotos": null,
    "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=2",
    "fuentes": [
@@ -2772,7 +2789,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Exposición patrimonial conmemorativa por los 100 años del dramaturgo Sergio Vodanovic en la Sala Premios Nobel de la Biblioteca Nacional.",
-   "imagen": null,
+   "imagen": "https://www.bibliotecanacional.gob.cl/sites/www.bibliotecanacional.gob.cl/files/2026-11/POSTAL%2029%20OCT_0.jpg",
    "fotos": null,
    "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=2",
    "fuentes": [
@@ -3792,7 +3809,7 @@
    "region": "Región Metropolitana",
    "precio": "$16.500",
    "descripcion": "Show de stand-up comedy de Paloma Salas en el Club San Miguel.",
-   "imagen": null,
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/bf03a08103d3099eb809eff0fd0cbabf01daccdf.png?1792622382",
    "fotos": null,
    "url": "https://www.jaranax.com/eventos/region-metropolitana-de-santiago/comedia",
    "fuentes": [
@@ -3822,7 +3839,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Función única de la obra 'El Quinto Paso' en el Teatro Nescafé de las Artes.",
-   "imagen": null,
+   "imagen": "https://telonticket.cl/wp-content/uploads/2026/04/1-4.jpg",
    "fotos": null,
    "url": "https://telonticket.cl",
    "fuentes": [
@@ -3978,7 +3995,7 @@
    "region": "Los Ríos",
    "precio": "Gratis",
    "descripcion": "Exposición fotográfica en la Sala 5 del Museo de Sitio Castillo de Niebla.",
-   "imagen": null,
+   "imagen": "https://www.castillodeniebla.gob.cl/sites/www.castillodeniebla.gob.cl/files/2026-10/20x30_La%20Estrella_MG_3599%20%281%29.jpg",
    "fotos": null,
    "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=2",
    "fuentes": [
@@ -4138,7 +4155,7 @@
    "region": "Región Metropolitana",
    "precio": "$14.300",
    "descripcion": "Presentación de stand-up de Paloma Salas en Puente Alto.",
-   "imagen": null,
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/36c94a6ba5891f397d751d0c669a8bd666a2a3e7.png?1792622081",
    "fotos": null,
    "url": "https://www.jaranax.com/eventos/region-metropolitana-de-santiago/comedia",
    "fuentes": [
@@ -4202,7 +4219,7 @@
    "region": null,
    "precio": null,
    "descripcion": "Obra de teatro en cartelera. Fuera de la Región Metropolitana (descartar si aplica filtro estricto RM, pero cumple bases de Chile).",
-   "imagen": null,
+   "imagen": "https://telonticket.cl/wp-content/uploads/2025/04/1-11.jpg",
    "fotos": null,
    "url": "https://telonticket.cl",
    "fuentes": [
@@ -4561,6 +4578,36 @@
    "confianza": "alta",
    "origen": "ia",
    "id": "a00d6a1e64",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Show de comedia Hombre Pan en Combarbalá",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-12",
+   "fecha_fin": "2026-11-13",
+   "hora": "21:30",
+   "horario": null,
+   "lugar": "Castillo Lounge",
+   "direccion": null,
+   "comuna": "Combarbalá",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $8.000",
+   "descripcion": "Evento solo para Mayores de 18 Años. 🔥 ¡EL HOMBRE PAN LLEGA A COMBARBALÁ! 🥖🎤 Prepárate para una noche de comedia, desorden y risas sin filtro junto a El Hombre Pan, en un show donde puede pasar cualquier cosa… y probablemente pase. 😂 Este j",
+   "imagen": "https://img.vamoh.cl/events/bfc15b05-174c-47fe-83d9-028187fe18cc.webp?v=e7ca521e",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/show-de-comedia-ykc8a/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/show-de-comedia-ykc8a/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "d498a8fcaf",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-10"
   },
@@ -5641,6 +5688,36 @@
    "actualizado": "2026-11-10"
   },
   {
+   "titulo": "Noches de Comedia",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Casa Irarrázaval",
+   "direccion": null,
+   "comuna": "Ñuñoa",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $5.000",
+   "descripcion": "Ven a reir este viernes 13 de noviembre a una nueva fecha de Noches de comedia Panoramazo para reir y terminar la semana de buena gana Ven a reir junto a: -Benja Castro @benjajacastro -Eka Lorraine @eka_lorraine -Nacho Quezada @queso.quezad",
+   "imagen": "https://img.vamoh.cl/events/3e02861b-d163-4faf-9ed4-6b56e368ce8e.webp?v=6ec40992",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/noches-de-comedia-wiq9m/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/noches-de-comedia-wiq9m/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "c615559210",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Recreación Histórica Ferroportuaria – Noche de Museos 2026",
    "categoria": "museos",
    "fecha_inicio": "2026-11-13",
@@ -6255,36 +6332,6 @@
    "id": "c1981fd414",
    "agregado": "2026-11-06",
    "actualizado": "2026-11-10"
-  },
-  {
-   "titulo": "Noviembre - Medieval Party & Veladaa - Palacio Astoreca",
-   "categoria": "medieval",
-   "fecha_inicio": "2026-11-14",
-   "fecha_fin": null,
-   "hora": "12:00",
-   "horario": null,
-   "lugar": null,
-   "direccion": null,
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
-   "precio": null,
-   "descripcion": "Descubre NOVIEMBRE - MEDIEVAL PARTY & VELADAA - PALACIO ASTORECA en Keai. Evento en Santiago el 14/11/2026.",
-   "imagen": "https://cdn.keai.cl/events/18742-0757e922cc17cab549787ba186cb6959.jpg",
-   "fotos": null,
-   "url": "https://keai.cl/evento/noviembre-medieval-party-veladaa-palacio-astoreca-18742",
-   "fuentes": [
-    {
-     "nombre": "Keai",
-     "url": "https://keai.cl/evento/noviembre-medieval-party-veladaa-palacio-astoreca-18742"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "datos-estructurados",
-   "id": "c91ffc691a",
-   "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
   },
   {
    "titulo": "Torneo Pokémon TCG a Beneficio",
@@ -7839,6 +7886,36 @@
    "actualizado": "2026-11-08"
   },
   {
+   "titulo": "DEADPAN - Humor seco",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-21",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "La Grifería",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $5.000",
+   "descripcion": "La Comunidad Malgenio continúa su ciclo de stand up en La Grifería Santiago con una noche de humor seco, caras serias y MUCHOS CHISTES. No esperes emoción. Espera buenos remates.",
+   "imagen": "https://img.vamoh.cl/events/168c927b-cb32-42c3-aff0-8efeb13f6032.webp?v=90c676e7",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/deadpan-humor-seco-2r69p/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/deadpan-humor-seco-2r69p/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "cf9b7b7976",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Metal Sinfónico con From Wishes – Tributo a Nightwish y Deadly Mist",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-21",
@@ -7867,6 +7944,36 @@
    "id": "b063b90657",
    "agregado": "2026-11-08",
    "actualizado": "2026-11-08"
+  },
+  {
+   "titulo": "Abstracto: Unipersonal de Stand up de Iván García",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-21",
+   "fecha_fin": "2026-11-22",
+   "hora": "22:00",
+   "horario": null,
+   "lugar": "Happy People Comedy Bar",
+   "direccion": null,
+   "comuna": "Providencia",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $8.000",
+   "descripcion": "ABSTRACTO es un unipersonal de stand-up donde cada función se construye junto al público. Al comenzar la noche, cada mesa encontrará un sobre cerrado. Dentro habrá una premisa del show y una pieza de la obra visual de Abstracto. Durante la",
+   "imagen": "https://img.vamoh.cl/events/1eaa8802-3406-4d51-97ef-1e5b625a0706.webp?v=d8d38d69",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/abstracto-unipersonal-de-stand-up-de-ivan-garcia-e4sm6/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/abstracto-unipersonal-de-stand-up-de-ivan-garcia-e4sm6/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "ccff163ce9",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Pelao Rodrigo",
@@ -8901,6 +9008,36 @@
    "actualizado": "2026-11-10"
   },
   {
+   "titulo": "Los Monólogos de la vagina",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Republicano Bar - Sucursal Manuel Montt",
+   "direccion": null,
+   "comuna": "Rancagua",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $12.000",
+   "descripcion": "Evento solo para Mayores de 18 Años. 🎭✨ ¡Una noche de risas, talento y mucho humor en Republicano Bar! Llega “Los Monólogos de la Vagina”, de V (antes Eve Ensler), dirigida por Christian Villareal, con las increíbles Magdalena Marzolo, Fran",
+   "imagen": "https://img.vamoh.cl/events/81c52493-0681-406c-b803-fe04b6829d50.webp?v=eca87a15",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/los-monologos-de-la-vagina-2qoh1/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/los-monologos-de-la-vagina-2qoh1/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "3743d861b5",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Vicho Viciani",
    "categoria": "standup",
    "fecha_inicio": "2026-11-28",
@@ -8927,6 +9064,36 @@
    "confianza": "alta",
    "origen": "datos-estructurados",
    "id": "15da5f6ccd",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Comedia Fuerte",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": "2026-11-29",
+   "hora": "21:30",
+   "horario": null,
+   "lugar": "La Grifería",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $5.000",
+   "descripcion": "La Comunidad Malgenio llega con un show que viene sin filtro, sin vergüenza y con más color que tu ex intentando demostrar que ya te superó. 💅✨ 🔥 COMEDIA FUERTE 🔥 Un escenario, seis tremendos comediantes y cero posibilidades de salir siendo",
+   "imagen": "https://img.vamoh.cl/events/024b3d20-2670-4ef8-a996-dbb409e0a4e0.webp?v=dc34333c",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/comedia-fuerte-2s7tk/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/comedia-fuerte-2s7tk/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "5e85b66cca",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-10"
   },
@@ -9453,6 +9620,66 @@
    "id": "49bae6150e",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-08"
+  },
+  {
+   "titulo": "Juventudes Comediantes",
+   "categoria": "standup",
+   "fecha_inicio": "2026-12-04",
+   "fecha_fin": "2026-12-05",
+   "hora": "22:00",
+   "horario": null,
+   "lugar": "Espacio La Sala",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $3.000",
+   "descripcion": "¡La comedia se organiza y la risa se convierte en revolución! Llega Juventudes Comediantes, un show de stand-up comedy donde cuatro comediantes se toman el escenario para demostrar que el humor también puede ser un acto de rebeldía. Prepára",
+   "imagen": "https://img.vamoh.cl/events/d8e14bf2-20b1-4827-921e-2e8c310e861b.webp?v=d0d79c56",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/juventudes-comediantes-wey19/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/juventudes-comediantes-wey19/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "bb3917442f",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Pedro Ruminot En La Fuente Maestra de Chicureo",
+   "categoria": "standup",
+   "fecha_inicio": "2026-12-04",
+   "fecha_fin": null,
+   "hora": "22:30",
+   "horario": null,
+   "lugar": "La fuente maestra de chicureo",
+   "direccion": null,
+   "comuna": "Colina",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $16.000",
+   "descripcion": "Evento solo para Mayores de 16 Años. El comediante más irreverente de Chile regresa a los escenarios! Pedro Ruminot presenta su aclamado show \"Un resumen de todo este tiempo\", un recorrido hilarante, ácido y sin filtros por las locuras de l",
+   "imagen": "https://img.vamoh.cl/events/d50e0660-994e-45b2-85dd-4475a82321a5.webp?v=be1da7f9",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/pedro-ruminot-presenta-un-show-de-comedia-en-chicureo-bh2ge/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/pedro-ruminot-presenta-un-show-de-comedia-en-chicureo-bh2ge/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "c3dd41f26f",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Kanetis ...y Amigos en Sala Master",
@@ -11203,6 +11430,36 @@
    "id": "0f7612191b",
    "agregado": "2026-11-08",
    "actualizado": "2026-11-08"
+  },
+  {
+   "titulo": "Till Lindemann",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-04-20",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Caupolicán - Santiago Centro",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Concierto en solitario del vocalista de Rammstein, referente del metal industrial, en el Teatro Caupolicán.",
+   "imagen": "https://static.ptocdn.net/images/eventos/dgm184_calugalistado.jpg",
+   "fotos": null,
+   "url": "https://www.puntoticket.com/till-lindemann-live-scl-2027",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/till-lindemann-live-scl-2027"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "4dcda2f9ab",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Floor Jansen",
