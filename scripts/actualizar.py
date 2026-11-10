@@ -1123,9 +1123,9 @@ def normalizar_evento(e: dict, cfg: dict, fuente_nombre: str, fuente_url: str, o
     url = e.get("url_entradas") or e.get("url") or fuente_url
     if not (isinstance(url, str) and url.startswith("http")):
         url = fuente_url
-    if (origen.startswith("ia") and not fin and inicio == HOY.isoformat() and cat == "museos"
+    if (origen.startswith("ia") and not fin and inicio == HOY.isoformat() and cat in ("museos", "teatro", "standup")
             and not hora_hhmm(e.get("hora"))):
-        return None  # una muestra "abierta desde hoy" sin día de cierre: volvería cada día con otro id
+        return None  # una muestra u obra "abierta desde hoy" sin día de cierre: volvería cada día con otro id
     imagen = url_https(e.get("imagen"))
     fotos_in = e.get("fotos")
     fotos_in = [fotos_in] if isinstance(fotos_in, str) else fotos_in if isinstance(fotos_in, list) else []
@@ -1203,6 +1203,66 @@ def compactar(eventos: list[dict]) -> list[dict]:
     return res
 
 
+def texto_funciones(fechas: list[str], hora: str | None) -> str:
+    """['2026-11-13', '2026-11-14', '2026-12-04'] y '20:30' → 'Funciones: 13 y 14 de noviembre; 4 de diciembre, 20:30 h'."""
+    def y(xs: list[str]) -> str:
+        return xs[0] if len(xs) == 1 else ", ".join(xs[:-1]) + " y " + xs[-1]
+    dias = [dt.date.fromisoformat(f) for f in sorted(set(fechas))]
+    por_mes: dict[str, list[str]] = {}
+    for d in dias:
+        por_mes.setdefault(MESES[d.month - 1], []).append(str(d.day))
+    t = "Funciones: " + "; ".join(f"{y(ds)} de {mes}" for mes, ds in por_mes.items())
+    if len(t) > 70:  # la web lo muestra en una línea
+        t = f"{len(dias)} funciones, del {dias[0].day} de {MESES[dias[0].month - 1]} al {dias[-1].day} de {MESES[dias[-1].month - 1]}"
+    return t + (f", {hora} h" if hora else "")
+
+
+RUIDO_FUNCION = set(MESES) | set(MESES_CORTOS) | {sin_tildes(d) for d in DIAS} | {"hrs", "hr", "hs", "horas", "desde", "clp"}
+
+
+def juntar_funciones(eventos: list[dict], cfg: dict, max_dias: int = 120) -> list[dict]:
+    """Una obra se vende por función: San Ginés publica «Amantes, una vez al año» nueve veces y Ticketplus trae una fila
+    por función. En los temas con "juntar_funciones" (Teatro), las funciones con el mismo título y el mismo lugar van en
+    un solo evento, del primer al último día y con los días en 'horario' (la web lo muestra como temporada).
+    Para comparar títulos se quitan el día, la hora y el precio («Show impro-Fiebre de impro-Domingo 15 Noviembre 19hrs»).
+    En los demás temas no: dos conciertos de una banda son dos eventos."""
+    temas = {c["id"] for c in cfg["categorias"] if c.get("juntar_funciones")}
+    grupos: dict[tuple, list[dict]] = {}
+    res = []
+    for e in eventos:
+        palabras = " ".join(sorted(w for w in palabras_titulo(e["titulo"])
+                                   if w not in RUIDO_FUNCION and not re.fullmatch(r"\d+(hrs?|hs|h)?", w)))
+        if e.get("categoria") not in temas or not palabras:
+            res.append(e)
+            continue
+        grupos.setdefault((e["categoria"], palabras, " ".join(sorted(palabras_titulo(e.get("lugar") or "")))), []).append(e)
+    for funciones in grupos.values():
+        funciones.sort(key=lambda e: (e["fecha_inicio"], e.get("hora") or ""))
+        juntas: list[list[dict]] = []
+        for e in funciones:   # funciones a más de max_dias del estreno son otra temporada
+            if juntas and (dt.date.fromisoformat(e["fecha_inicio"])
+                           - dt.date.fromisoformat(juntas[-1][0]["fecha_inicio"])).days <= max_dias:
+                juntas[-1].append(e)
+            else:
+                juntas.append([e])
+        for grupo in juntas:
+            ev = grupo[0]
+            if len(grupo) > 1:
+                fin = max(x.get("fecha_fin") or x["fecha_inicio"] for x in grupo)
+                ev["fecha_fin"] = fin if fin != ev["fecha_inicio"] else None
+                horas = {x.get("hora") for x in grupo}
+                ev["hora"] = None
+                if not ev.get("horario"):
+                    ev["horario"] = texto_funciones([x["fecha_inicio"] for x in grupo], horas.pop() if len(horas) == 1 else None)
+                for x in grupo[1:]:
+                    for c in ("imagen", "precio", "descripcion", "direccion", "comuna"):
+                        ev[c] = ev.get(c) or x.get(c)
+                    urls = {f["url"] for f in ev.get("fuentes", [])}
+                    ev.setdefault("fuentes", []).extend(f for f in x.get("fuentes", []) if f["url"] not in urls)
+            res.append(ev)
+    return res
+
+
 def nuevo_id(ev: dict) -> str:
     base = sin_tildes(ev["titulo"]) + "|" + ev["fecha_inicio"]
     return hashlib.sha1(base.encode()).hexdigest()[:10]
@@ -1269,14 +1329,17 @@ def peso_tema(c: dict) -> int:
 def categorias_por_palabras(cfg: dict, texto: str) -> list[str]:
     """Temas cuyas palabras aparecen en el texto (palabras enteras, sin tildes), en el orden de la config.
     Las 'palabras_secundarias' de un tema (las generales, como «terror» o «Tolkien» en Medieval) cuentan después:
-    si el texto calza con las palabras principales de otro tema (yokai, anime, conciertos…), ese va primero."""
+    si el texto calza con las palabras principales de otro tema (yokai, anime, conciertos…), ese va primero.
+    'excluir' (opcional) deja fuera al tema si el texto tiene una de esas palabras: un «taller de dramaturgia» o un
+    «teatro infantil» no van en Teatro aunque digan «dramaturgia» u «obra de teatro»."""
     t = sin_tildes(texto)
 
     def calza(palabras) -> bool:
         return bool(palabras) and bool(re.search(
             r"\b(" + "|".join(re.escape(sin_tildes(p)) for p in palabras) + r")\b", t))
-    principales = [c["id"] for c in cfg["categorias"] if calza(c.get("palabras"))]
-    return principales + [c["id"] for c in cfg["categorias"]
+    temas = [c for c in cfg["categorias"] if not calza(c.get("excluir"))]
+    principales = [c["id"] for c in temas if calza(c.get("palabras"))]
+    return principales + [c["id"] for c in temas
                           if c["id"] not in principales and calza(c.get("palabras_secundarias"))]
 
 
@@ -1529,10 +1592,11 @@ def resumen(t: str, maximo: int = 220) -> str:
 
 
 def titulo_muestra(t: str) -> str:
-    """'Apertura exposición temporal “Electrizando la mente”' → 'Electrizando la mente'."""
+    """'Apertura exposición temporal “Electrizando la mente”' → 'Electrizando la mente'.
+    También para el teatro: 'Obra de teatro “La Batalla de San Tentorio”' → 'La Batalla de San Tentorio'."""
     t = limpiar(t)
-    sin = re.sub(r"^(apertura\s+(de\s+la\s+)?)?(nueva\s+)?(exposici[oó]n|muestra|exhibici[oó]n)(\s+temporal)?\s*:?\s*",
-                 "", t, flags=re.I)
+    sin = re.sub(r"^(apertura\s+(de\s+la\s+)?)?(nueva\s+)?(exposici[oó]n|muestra|exhibici[oó]n|obra\s+de\s+teatro|"
+                 r"obra\s+teatral)(\s+temporal)?\s*:?\s*", "", t, flags=re.I)
     if len(sin) >= 4:
         t = sin
     # "… - Exposición en el Centro de Extensión UC", "… - CCLM"
@@ -1545,9 +1609,17 @@ def titulo_muestra(t: str) -> str:
 
 
 def fuente_chilecultura(f: dict, cfg: dict) -> list[dict]:
-    """Muestras de la agenda Chile Cultura (API JSON; sin IA). La categoría viene de la fuente."""
+    """Muestras de la agenda Chile Cultura (API JSON; sin IA). La categoría viene de la fuente.
+    Opcionales de la fuente: 'disciplina_principal' (la búsqueda por Teatro trae también danza que se marcó además
+    como teatro) y 'excluir' (palabras del nombre o de la descripción que la dejan fuera, como «teatro familiar»).
+    'otras_categorias' (opcional): temas a los que pasa lo que calce con sus palabras, como el stand-up que Chile Cultura
+    marca como teatro («Show de Stand Up - El Cachafaz» va en Stand-up)."""
     res: list[dict] = []
     url, paginas = f["url"], 0
+    principal = f.get("disciplina_principal")
+    excluir = None
+    if f.get("excluir"):
+        excluir = re.compile(r"\b(" + "|".join(re.escape(sin_tildes(p)) for p in f["excluir"]) + r")\b")
     while url and paginas < 5:
         texto, _, final = descargar(url, max_bytes=20_000_000, timeout=60)
         datos = json.loads(texto)
@@ -1557,6 +1629,10 @@ def fuente_chilecultura(f: dict, cfg: dict) -> list[dict]:
             enlace = str(e.get("permalink") or "")
             inicio, fin = fecha_iso(e.get("start_date")), fecha_iso(e.get("end_date"))
             if not (nombre and inicio and fin) or RE_CC_NO.search(sin_tildes(nombre)):
+                continue
+            if principal and sin_tildes(e.get("main_discipline") or "") != sin_tildes(principal):
+                continue
+            if excluir and excluir.search(sin_tildes(f"{nombre} {limpiar(e.get('description'))}")):
                 continue
             if not lugar or RE_CC_EN_LINEA.search(sin_tildes(lugar)) or re.search(r"youtu\.?be|suyai", enlace, re.I):
                 continue  # sin lugar, videos y "galerías" en línea
@@ -1568,7 +1644,9 @@ def fuente_chilecultura(f: dict, cfg: dict) -> list[dict]:
                 continue  # el plazo de un concurso, no una muestra
             region = limpiar(e.get("region"))
             ev = {
-                "titulo": titulo_muestra(nombre), "categoria": f.get("categoria"),
+                "titulo": titulo_muestra(nombre), "categoria": next(
+                    (c for c in categorias_por_palabras(cfg, f"{nombre} {limpiar(e.get('description'))}")
+                     if c in (f.get("otras_categorias") or [])), f.get("categoria")),
                 "fecha_inicio": inicio, "fecha_fin": fin,
                 "lugar": lugar or None, "comuna": limpiar(e.get("commune")) or None,
                 "ciudad": "Santiago" if "metropolitana" in sin_tildes(region) else None,
@@ -2611,6 +2689,7 @@ def main():
         if modo == "completa":
             log(f"Noticias: solo las publicadas desde el {desde.strftime('%d-%m-%Y')}")
         nuevos, encontrado = busqueda_completa(cfg, ia, vistos, desde, completa=(modo == "completa"))
+        nuevos = juntar_funciones(nuevos, cfg)
         stats.update(encontrado)
 
     eventos, ids_nuevos = unir(eventos, nuevos)
