@@ -277,7 +277,7 @@
       "emoji": "🏛️",
       "color": "#6b4f2a",
       "peso": 2,
-      "descripcion": "exposiciones y muestras de arte en museos, centros culturales y galerías (pintura, escultura, fotografía artística, grabado, arte contemporáneo, instalaciones, arte textil o popular), inauguraciones, retrospectivas, bienales y ferias de arte; exposiciones de historia, ciencia, arqueología o patrimonio; Noche de Museos, Día del Patrimonio, visitas guiadas y recorridos nocturnos o patrimoniales, panoramas culturales gratuitos. NO: ferias de artesanía comercial, talleres pagados, actividades infantiles, tours de estadios ni ferias de vino, gastronómicas o comerciales",
+      "descripcion": "exposiciones y muestras de arte en museos, centros culturales y galerías (pintura, escultura, fotografía artística, grabado, arte contemporáneo, instalaciones, arte textil o popular), inauguraciones, retrospectivas, bienales y ferias de arte; exposiciones de historia, ciencia, arqueología o patrimonio; Noche de Museos, Día del Patrimonio, visitas guiadas y recorridos nocturnos o patrimoniales, panoramas culturales gratuitos, también en las comunas de la Región Metropolitana fuera del centro (casas de la cultura y agendas municipales de San Bernardo, Puente Alto, Maipú…). Si una página lista varias actividades de la Noche de Museos o del Día del Patrimonio en distintos lugares, cada actividad va como evento aparte con su lugar, comuna, dirección y hora (título «Actividad – Noche de Museos 2026»), no solo un evento general. NO: ferias de artesanía comercial, talleres pagados, actividades infantiles, tours de estadios ni ferias de vino, gastronómicas o comerciales",
       "palabras": [
         "exposicion de arte",
         "muestra de arte",
@@ -330,8 +330,10 @@
         "Noche de Museos Santiago",
         "Día del Patrimonio Cultural Chile",
         "panoramas gratis Santiago fin de semana",
-        "exposición museo Santiago",
-        "recorrido nocturno museo Santiago",
+        "Noche de Museos comunas Región Metropolitana",
+        "Noche de Museos San Bernardo Puente Alto Maipú",
+        "agenda cultural municipalidad Región Metropolitana panoramas gratis",
+        "recorrido patrimonial nocturno comuna Región Metropolitana",
         "exposición temporal museo Santiago",
         "nueva exposición museo Chile",
         "visita guiada nocturna museo Santiago"

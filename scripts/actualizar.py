@@ -1167,6 +1167,14 @@ def mismo_evento(a: dict, b: dict) -> bool:
     if not se_cruzan:
         return False
     p = parecido(a["titulo"], b["titulo"])
+    # En lugares claramente distintos (otra comuna, o nombres de lugar sin ninguna palabra en común) solo es el
+    # mismo si el título es casi idéntico: «Recorrido nocturno … – Noche de Museos» en San Bernardo no es el
+    # «Noche de Museos 2026» de los museos del centro, ni otra actividad de esa noche en otro lugar
+    ca, cb = (sin_tildes(x.get("comuna") or "").strip() for x in (a, b))
+    otro_lugar = (ca and cb and ca != cb) or (
+        a.get("lugar") and b.get("lugar") and parecido(a["lugar"], b["lugar"]) == 0)
+    if otro_lugar:
+        return p >= 0.8
     if p >= 0.5:
         return True
     # "Noche de Museos" y "Noche de Museos 2026 - Museo de la Música": uno contiene al otro
@@ -1380,7 +1388,13 @@ def temas_al_dia(eventos: list[dict], cfg: dict) -> list[dict]:
 RE_CHILE = re.compile(r"\b(chile|santiago|providencia|nunoa|las condes|maipu|valparaiso|vina del mar|"
                       r"concepcion|estacion central|recoleta|la florida|puente alto|temuco|la serena|"
                       r"antofagasta|rancagua|talca|movistar arena|teatro caupolican|blondie|gam|"
-                      r"parque o'?higgins|matucana|espacio riesco|teatro coliseo|club chocolate)\b")
+                      r"parque o'?higgins|matucana|espacio riesco|teatro coliseo|club chocolate|"
+                      # comunas de la Región Metropolitana fuera del centro (agendas municipales y prensa local)
+                      r"region metropolitana|san bernardo|pudahuel|quilicura|penalolen|la reina|vitacura|"
+                      r"lo barnechea|macul|san miguel|la cisterna|el bosque|la granja|la pintana|san joaquin|"
+                      r"independencia|quinta normal|lo prado|cerro navia|renca|conchali|huechuraba|cerrillos|"
+                      r"pedro aguirre cerda|lo espejo|san ramon|buin|paine|talagante|penaflor|melipilla|"
+                      r"pirque|san jose de maipo|padre hurtado|calera de tango|isla de maipo|curacavi)\b")
 DOMINIOS_ENTRADAS = {"tuu.cl", "passline.com", "ticketplus.cl", "puntoticket.com", "eventbrite.cl",
                      "eventbrite.com", "keai.cl", "vamoh.cl", "ecopass.cl", "welcu.com", "joinnus.com",
                      "ticketpro.cl", "portaldisc.com", "eventrid.cl"}
