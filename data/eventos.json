@@ -1,12 +1,12 @@
 {
  "version": 1,
- "actualizado": "2026-11-10T07:10-03:00",
+ "actualizado": "2026-11-10T10:01-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-10T07:10-03:00",
+  "fecha": "2026-11-10T10:01-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 26,
-  "nuevos_esta_vez": 7,
+  "eventos_nuevos": 106,
+  "nuevos_esta_vez": 80,
   "nuevos_ids": [
    "41ac991fa0",
    "5d05376a3b",
@@ -33,7 +33,87 @@
    "0356593f8f",
    "111b69f3ce",
    "0cbb8824af",
-   "2ff9635fda"
+   "2ff9635fda",
+   "c0bec6ebcf",
+   "d675aa8ff7",
+   "b600cb603a",
+   "27780d1fa6",
+   "d08ed80828",
+   "de7c922d9f",
+   "6e9935dc07",
+   "2a82160572",
+   "7c6d652efa",
+   "d9891a60f6",
+   "15da5f6ccd",
+   "e0434f0018",
+   "05949a81a4",
+   "4659744542",
+   "17c9f5ec10",
+   "14a0593db3",
+   "dfa6e0272b",
+   "8c54b364c8",
+   "6e254ffcde",
+   "7f206d1602",
+   "ab8e9daa61",
+   "455e856bc6",
+   "3c2f4079a7",
+   "11b9d904b2",
+   "4bf4666253",
+   "02b7a6056d",
+   "08a0a88e95",
+   "2a4ab1359e",
+   "92c52c439c",
+   "123c03116b",
+   "09897b6a7f",
+   "c1421516a4",
+   "f6c27c3093",
+   "fa04c2cbb0",
+   "feee41666f",
+   "6904c9314a",
+   "5ec4f7eb3c",
+   "3cd37e2764",
+   "81168c309f",
+   "468763aa57",
+   "f00b9088aa",
+   "9a60bed5f5",
+   "04d7a3e035",
+   "22cc304a56",
+   "e1a1867f70",
+   "70715e99b1",
+   "615e1e2ab1",
+   "a00d6a1e64",
+   "ffe31e45dd",
+   "725888a999",
+   "318a44c02c",
+   "24c25c0671",
+   "fb6d2e08df",
+   "5062f1da99",
+   "bfe140caa6",
+   "850cfb972b",
+   "fab1d830b2",
+   "b154be6f5a",
+   "2065a7a403",
+   "8aaa55bd85",
+   "6bceca0c1b",
+   "3ade752ddb",
+   "5f55b6dd8f",
+   "04fc5d9e78",
+   "b0399a8565",
+   "9a44d09fcd",
+   "126185128e",
+   "9c87353130",
+   "73fc126123",
+   "e59fa909d4",
+   "dbb05270e5",
+   "1f764cab94",
+   "963527e59c",
+   "f82d811468",
+   "29035eb82c",
+   "9a5e461544",
+   "af4c1f23e9",
+   "f219320f0e",
+   "92481dd16a",
+   "4d34976bfe"
   ],
   "nuevos_desde": {
    "41ac991fa0": "2026-11-09T16:43-03:00",
@@ -61,22 +141,103 @@
    "0356593f8f": "2026-11-10T07:10-03:00",
    "111b69f3ce": "2026-11-10T07:10-03:00",
    "0cbb8824af": "2026-11-10T07:10-03:00",
-   "2ff9635fda": "2026-11-10T07:10-03:00"
+   "2ff9635fda": "2026-11-10T07:10-03:00",
+   "c0bec6ebcf": "2026-11-10T10:01-03:00",
+   "d675aa8ff7": "2026-11-10T10:01-03:00",
+   "b600cb603a": "2026-11-10T10:01-03:00",
+   "27780d1fa6": "2026-11-10T10:01-03:00",
+   "d08ed80828": "2026-11-10T10:01-03:00",
+   "de7c922d9f": "2026-11-10T10:01-03:00",
+   "6e9935dc07": "2026-11-10T10:01-03:00",
+   "2a82160572": "2026-11-10T10:01-03:00",
+   "7c6d652efa": "2026-11-10T10:01-03:00",
+   "d9891a60f6": "2026-11-10T10:01-03:00",
+   "15da5f6ccd": "2026-11-10T10:01-03:00",
+   "e0434f0018": "2026-11-10T10:01-03:00",
+   "05949a81a4": "2026-11-10T10:01-03:00",
+   "4659744542": "2026-11-10T10:01-03:00",
+   "17c9f5ec10": "2026-11-10T10:01-03:00",
+   "14a0593db3": "2026-11-10T10:01-03:00",
+   "dfa6e0272b": "2026-11-10T10:01-03:00",
+   "8c54b364c8": "2026-11-10T10:01-03:00",
+   "6e254ffcde": "2026-11-10T10:01-03:00",
+   "7f206d1602": "2026-11-10T10:01-03:00",
+   "ab8e9daa61": "2026-11-10T10:01-03:00",
+   "455e856bc6": "2026-11-10T10:01-03:00",
+   "3c2f4079a7": "2026-11-10T10:01-03:00",
+   "11b9d904b2": "2026-11-10T10:01-03:00",
+   "4bf4666253": "2026-11-10T10:01-03:00",
+   "02b7a6056d": "2026-11-10T10:01-03:00",
+   "08a0a88e95": "2026-11-10T10:01-03:00",
+   "2a4ab1359e": "2026-11-10T10:01-03:00",
+   "92c52c439c": "2026-11-10T10:01-03:00",
+   "123c03116b": "2026-11-10T10:01-03:00",
+   "09897b6a7f": "2026-11-10T10:01-03:00",
+   "c1421516a4": "2026-11-10T10:01-03:00",
+   "f6c27c3093": "2026-11-10T10:01-03:00",
+   "fa04c2cbb0": "2026-11-10T10:01-03:00",
+   "feee41666f": "2026-11-10T10:01-03:00",
+   "6904c9314a": "2026-11-10T10:01-03:00",
+   "5ec4f7eb3c": "2026-11-10T10:01-03:00",
+   "3cd37e2764": "2026-11-10T10:01-03:00",
+   "81168c309f": "2026-11-10T10:01-03:00",
+   "468763aa57": "2026-11-10T10:01-03:00",
+   "f00b9088aa": "2026-11-10T10:01-03:00",
+   "9a60bed5f5": "2026-11-10T10:01-03:00",
+   "04d7a3e035": "2026-11-10T10:01-03:00",
+   "22cc304a56": "2026-11-10T10:01-03:00",
+   "e1a1867f70": "2026-11-10T10:01-03:00",
+   "70715e99b1": "2026-11-10T10:01-03:00",
+   "615e1e2ab1": "2026-11-10T10:01-03:00",
+   "a00d6a1e64": "2026-11-10T10:01-03:00",
+   "ffe31e45dd": "2026-11-10T10:01-03:00",
+   "725888a999": "2026-11-10T10:01-03:00",
+   "318a44c02c": "2026-11-10T10:01-03:00",
+   "24c25c0671": "2026-11-10T10:01-03:00",
+   "fb6d2e08df": "2026-11-10T10:01-03:00",
+   "5062f1da99": "2026-11-10T10:01-03:00",
+   "bfe140caa6": "2026-11-10T10:01-03:00",
+   "850cfb972b": "2026-11-10T10:01-03:00",
+   "fab1d830b2": "2026-11-10T10:01-03:00",
+   "b154be6f5a": "2026-11-10T10:01-03:00",
+   "2065a7a403": "2026-11-10T10:01-03:00",
+   "8aaa55bd85": "2026-11-10T10:01-03:00",
+   "6bceca0c1b": "2026-11-10T10:01-03:00",
+   "3ade752ddb": "2026-11-10T10:01-03:00",
+   "5f55b6dd8f": "2026-11-10T10:01-03:00",
+   "04fc5d9e78": "2026-11-10T10:01-03:00",
+   "b0399a8565": "2026-11-10T10:01-03:00",
+   "9a44d09fcd": "2026-11-10T10:01-03:00",
+   "126185128e": "2026-11-10T10:01-03:00",
+   "9c87353130": "2026-11-10T10:01-03:00",
+   "73fc126123": "2026-11-10T10:01-03:00",
+   "e59fa909d4": "2026-11-10T10:01-03:00",
+   "dbb05270e5": "2026-11-10T10:01-03:00",
+   "1f764cab94": "2026-11-10T10:01-03:00",
+   "963527e59c": "2026-11-10T10:01-03:00",
+   "f82d811468": "2026-11-10T10:01-03:00",
+   "29035eb82c": "2026-11-10T10:01-03:00",
+   "9a5e461544": "2026-11-10T10:01-03:00",
+   "af4c1f23e9": "2026-11-10T10:01-03:00",
+   "f219320f0e": "2026-11-10T10:01-03:00",
+   "92481dd16a": "2026-11-10T10:01-03:00",
+   "4d34976bfe": "2026-11-10T10:01-03:00"
   },
   "horas_nuevos": 24,
-  "llamadas_ia": 21,
+  "llamadas_ia": 40,
   "ia_sin_cupo": false,
-  "ultima_completa": "2026-11-10T06:48-03:00",
+  "ultima_completa": "2026-11-10T09:24-03:00",
   "modo": "completa",
-  "paginas_revisadas": 12,
-  "busquedas": 77,
-  "fuentes_fijas": 17,
-  "errores": 5,
-  "noticias_desde": "2026-11-09",
-  "noticias_viejas_descartadas": 262,
-  "redes_vistas": 4
+  "paginas_revisadas": 32,
+  "busquedas": 94,
+  "fuentes_fijas": 25,
+  "errores": 16,
+  "noticias_desde": "2026-11-10",
+  "noticias_viejas_descartadas": 368,
+  "redes_vistas": 9,
+  "imagenes_encontradas": 11
  },
- "total": 237,
+ "total": 317,
  "eventos": [
   {
    "titulo": "Mariposas y Polillas, Colores en Movimiento",
@@ -168,7 +329,7 @@
    "region": "Región Metropolitana",
    "precio": "Gratis",
    "descripcion": "Exposición patrimonial que conmemora el centenario de la donación bibliográfica de José Toribio Medina.",
-   "imagen": null,
+   "imagen": "https://www.bibliotecanacional.gob.cl/sites/www.bibliotecanacional.gob.cl/files/2025-08/Medina%205.png",
    "fotos": null,
    "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion",
    "fuentes": [
@@ -499,6 +660,36 @@
    "actualizado": "2026-11-10"
   },
   {
+   "titulo": "Moneda, poder y globalización: El viaje del real de a ocho",
+   "categoria": "museos",
+   "fecha_inicio": "2026-06-08",
+   "fecha_fin": "2026-11-30",
+   "hora": null,
+   "horario": null,
+   "lugar": "Museo Numismático del Banco Central de Chile",
+   "direccion": "Agustinas 1180",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Exposición de 2.500 monedas coloniales españolas de 8 reales rescatadas de la fragata Nuestra Señora de Las Mercedes.",
+   "imagen": "https://www.museobancocentral.cl/assets/wide/CaraySello.jpg",
+   "fotos": null,
+   "url": "https://www.museobancocentral.cl/exposicionestemporales.html",
+   "fuentes": [
+    {
+     "nombre": "museobancocentral.cl",
+     "url": "https://www.museobancocentral.cl/exposicionestemporales.html"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "2a82160572",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Exposición inmersiva: La ronda del Sol y la Luna",
    "categoria": "museos",
    "fecha_inicio": "2026-06-11",
@@ -583,7 +774,7 @@
    "region": "Región Metropolitana",
    "precio": "Gratis",
    "descripcion": "Exposición temporal en la Biblioteca Nacional sobre la historia del salitre y patrimonio documental chileno.",
-   "imagen": null,
+   "imagen": "https://www.bibliotecanacional.gob.cl/sites/www.bibliotecanacional.gob.cl/files/2026-07/Sin%20t%C3%ADtulo.jpg",
    "fotos": null,
    "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=1",
    "fuentes": [
@@ -613,7 +804,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Exposición de fotografía perteneciente a la colección del Museo de Arte Contemporáneo.",
-   "imagen": null,
+   "imagen": "https://mac.uchile.cl/wp-content/uploads/2026/07/modulacionesqn.jpg",
    "fotos": null,
    "url": "https://mac.uchile.cl/periodo/actuales/",
    "fuentes": [
@@ -632,6 +823,36 @@
    "id": "62f29994ca",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Malón en El Cachafaz",
+   "categoria": "standup",
+   "fecha_inicio": "2026-07-24",
+   "fecha_fin": "2026-12-26",
+   "hora": null,
+   "horario": null,
+   "lugar": "El Cachafaz",
+   "direccion": null,
+   "comuna": "Ñuñoa",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Todos los viernes y sábados a las 20 horas. Jorge Alís presenta un show de comedia potente y cercano, donde el humor funciona como una auténtica terapia grupal.",
+   "imagen": "https://chilecultura.gob.cl/uploads/cropped_kiUS0xG.png",
+   "fotos": null,
+   "url": "https://www.elcachafaz.cl",
+   "fuentes": [
+    {
+     "nombre": "Chile Cultura",
+     "url": "https://chilecultura.gob.cl/events/39205/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "datos-estructurados",
+   "id": "08a0a88e95",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Huidobro: amores, rebeldías y propuestas",
@@ -745,7 +966,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Exposición 'Geometría Sonora' en el Museo Ralli Santiago, explorando la relación entre arte, forma y sonido.",
-   "imagen": null,
+   "imagen": "https://static.arteinformado.com/resources/app/docs/evento/37/245837/000.jpg",
    "fotos": null,
    "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-santiago-409031_4_22",
    "fuentes": [
@@ -1881,7 +2102,7 @@
    "region": "Coquimbo",
    "precio": "Gratis",
    "descripcion": "Exposición de arte textil inspirada en la poesía territorial de Gabriela Mistral.",
-   "imagen": null,
+   "imagen": "https://www.bibliotecagabrielamistral.gob.cl/sites/www.bibliotecagabrielamistral.gob.cl/files/2026-10/Captura%20de%20pantalla%202026-10-07%20a%20la%28s%29%209.57.02%E2%80%AFa.m..png",
    "fotos": null,
    "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=2",
    "fuentes": [
@@ -1911,7 +2132,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Exposición colectiva de egresados en el Foro de las Artes 2026. Muestra de arte contemporáneo en Satélite 218.",
-   "imagen": null,
+   "imagen": "https://static.arteinformado.com/resources/app/docs/evento/78/247578/images.jpg",
    "fotos": null,
    "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-santiago-409031_4_22",
    "fuentes": [
@@ -2233,7 +2454,7 @@
    "region": "Región de Valparaíso",
    "precio": null,
    "descripcion": "Exposición artística 'Trayectos de la Carne' en Valparaíso. Arte y cultura.",
-   "imagen": null,
+   "imagen": "https://static.arteinformado.com/resources/app/docs/evento/87/247387/cheril_linett__proyecto_yeguada_latinoamericana__asunci__n_de_la_virgen__2023__registro_fotogr__fico_gi_del_r__o._ventanas__regi__n_de_valpara__so.jpg",
    "fotos": null,
    "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-de-arte-en-chile-cl_1",
    "fuentes": [
@@ -2314,6 +2535,44 @@
    "id": "362b1bc210",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Doña Rosita (anotada)",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-10-30",
+   "fecha_fin": "2026-11-15",
+   "hora": "20:00",
+   "horario": "Jue a Dom 20:00 hrs (Dom 19:00 hrs)",
+   "lugar": "GAM",
+   "direccion": "Av. Libertador Bernardo O'Higgins 227",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Montaje teatral basado en la clásica obra de Federico García Lorca.",
+   "imagen": "https://chilecultura.gob.cl/uploads/cropped_TzLWMDy.png",
+   "fotos": null,
+   "url": "https://gam.cl/es/que-hacer-en-gam/teatro/dona-rosita-anotada/",
+   "fuentes": [
+    {
+     "nombre": "Chile Cultura",
+     "url": "https://chilecultura.gob.cl/events/40133/"
+    },
+    {
+     "nombre": "GAM (teatro)",
+     "url": "https://gam.cl/es/que-hacer-en-gam/teatro/dona-rosita-anotada/"
+    },
+    {
+     "nombre": "TelonTicket (teatro)",
+     "url": "https://telonticket.cl/mep_cat/teatro/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "ab8e9daa61",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Hibridaciones de Francisca Larraín",
@@ -2483,7 +2742,7 @@
    "region": "Coquimbo",
    "precio": "Gratis",
    "descripcion": "Exposición de artes visuales en la Sala Laura Rodig del Museo Gabriela Mistral.",
-   "imagen": null,
+   "imagen": "https://www.mgmistral.gob.cl/sites/www.mgmistral.gob.cl/files/2026-10/WhatsApp%20Image%202026-10-19%20at%2016.03.53%20%282%29.jpeg",
    "fotos": null,
    "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=2",
    "fuentes": [
@@ -2560,6 +2819,40 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "Bruja",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-06",
+   "fecha_fin": "2026-12-10",
+   "hora": "20:30",
+   "horario": "Vie 20:30 hrs (6 y 13 nov), Jue 20:30 hrs (19 nov al 10 dic)",
+   "lugar": "Teatro Mori",
+   "direccion": "Constitución 183",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Obra de teatro en cartelera en Teatro Mori.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://teatromori.com/cartelera",
+   "fuentes": [
+    {
+     "nombre": "Teatro Mori",
+     "url": "https://teatromori.com/cartelera"
+    },
+    {
+     "nombre": "TelonTicket (teatro)",
+     "url": "https://telonticket.cl/mep_cat/teatro/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "c1421516a4",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "De Cesante a Mirón. Enrique Flores",
    "categoria": "museos",
    "fecha_inicio": "2026-11-06",
@@ -2607,7 +2900,7 @@
    "region": "Coquimbo",
    "precio": "Gratis",
    "descripcion": "Exposición de artes decorativas en el Museo del Limarí.",
-   "imagen": null,
+   "imagen": "https://www.museolimari.gob.cl/sites/www.museolimari.gob.cl/files/2026-10/Retazos%20de%20historia%20%281%29.png",
    "fotos": null,
    "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=2",
    "fuentes": [
@@ -2622,6 +2915,36 @@
    "id": "8330fb3ee5",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Hermoso Terror",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-06",
+   "fecha_fin": "2026-11-27",
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Azares - HUERFANOS 2146 SANTIAGO",
+   "direccion": "Huérfanos, 2146",
+   "comuna": "Santiago",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $6.720",
+   "descripcion": "“HERMOSO TERROR”Cia. Luz de FenixTeatro AdultoPúblico Objetivo: Teatro Adulto y JuvenilGénero: Teatro Musical Edad Recomendada: 14 +Días: Viernes 6, 13, 20 y 27 de Noviembre 2026Horario: 20:00 horasDuración: 135 minutos aprox. Valores: Gene",
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/ade9684372f4c5663044966ff826dcf6a66e70ea.jpg?1792450956",
+   "fotos": null,
+   "url": "https://ticketplus.cl/events/hermoso-terror",
+   "fuentes": [
+    {
+     "nombre": "Ticketplus (teatros)",
+     "url": "https://ticketplus.cl/events/hermoso-terror"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "850cfb972b",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "La oscuridad es la puerta. Amparo Sard",
@@ -2790,6 +3113,70 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "Mejor no decirlo",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-07",
+   "fecha_fin": "2026-12-12",
+   "hora": "20:00",
+   "horario": "Jueves a sábado a las 20:00 hrs (19 de noviembre: estreno cerrado)",
+   "lugar": "Teatro Mori",
+   "direccion": "Av. Bicentenario 3800",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Obra de teatro en cartelera en Teatro Mori.",
+   "imagen": "https://telonticket.cl/wp-content/uploads/2026/10/1-27.jpg",
+   "fotos": null,
+   "url": "https://teatromori.com/cartelera",
+   "fuentes": [
+    {
+     "nombre": "Teatro Mori",
+     "url": "https://teatromori.com/cartelera"
+    },
+    {
+     "nombre": "TelonTicket (teatro)",
+     "url": "https://telonticket.cl/mep_cat/teatro/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "feee41666f",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "El prestamista",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-07",
+   "fecha_fin": "2026-12-12",
+   "hora": "21:00",
+   "horario": "Sáb 7 y 14 nov; vie y sáb 20, 21, 27 y 28 nov; vie y sáb 4, 5, 11 y 12 dic a las",
+   "lugar": "Teatro Mori",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Un actor, tres sospechosos y una sola verdad en Teatro Mori.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://teatromori.com/cartelera",
+   "fuentes": [
+    {
+     "nombre": "Teatro Mori",
+     "url": "https://teatromori.com/cartelera"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "f6c27c3093",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Crear:Destruir:Transformar - Rincón de escucha",
    "categoria": "museos",
    "fecha_inicio": "2026-11-07",
@@ -2841,7 +3228,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Exposición de arte contemporáneo de Antonia Moena Burgos en el MAC.",
-   "imagen": null,
+   "imagen": "https://mac.uchile.cl/wp-content/uploads/2026/10/ca-6-01.jpg",
    "fotos": null,
    "url": "https://mac.uchile.cl/periodo/actuales/",
    "fuentes": [
@@ -2990,6 +3377,36 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "Ciclo Arbolitex",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-08",
+   "fecha_fin": "2026-11-22",
+   "hora": null,
+   "horario": null,
+   "lugar": "Centro Cultural Gabriela Mistral",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Por primera vez, Arbolitex llega a GAM con una propuesta de comedia al aire libre que invita a reunirse, disfrutar del humor y recuperar los espacios públicos como lugares de encuentro.",
+   "imagen": "https://chilecultura.gob.cl/uploads/cropped_dHDzv0M.png",
+   "fotos": null,
+   "url": "https://gam.cl/es/que-hacer-en-gam/stand-up-comedy/ciclo-arbolitex-en-gam/",
+   "fuentes": [
+    {
+     "nombre": "Chile Cultura",
+     "url": "https://chilecultura.gob.cl/events/40710/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "datos-estructurados",
+   "id": "3c2f4079a7",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Felipe Balzo: Del Enigma al Juego",
    "categoria": "museos",
    "fecha_inicio": "2026-11-08",
@@ -3080,6 +3497,134 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "Crónicas Desquiciadas",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-10",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": "Jueves a sábado a las 20:00 hrs (sin función los jueves 5, 12 y 19 de noviembre)",
+   "lugar": "Teatro Mori",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Comedia teatral en cartelera en Teatro Mori.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://teatromori.com/cartelera",
+   "fuentes": [
+    {
+     "nombre": "Teatro Mori",
+     "url": "https://teatromori.com/cartelera"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "5ec4f7eb3c",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Felipe Avello",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-10",
+   "fecha_fin": "2026-11-25",
+   "hora": "20:00",
+   "horario": "10, 17, 24 y 25 de noviembre a las 20:00 hrs",
+   "lugar": "Teatro Mori Recoleta",
+   "direccion": null,
+   "comuna": "Recoleta",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Show de stand-up comedy de Felipe Avello en Teatro Mori Recoleta.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://teatromori.com/cartelera",
+   "fuentes": [
+    {
+     "nombre": "Teatro Mori",
+     "url": "https://teatromori.com/cartelera"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "fa04c2cbb0",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Tengo Miedo Torero",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-10",
+   "fecha_fin": null,
+   "hora": "20:30",
+   "horario": "Jueves a sábado a las 20:30 hrs",
+   "lugar": "Teatro Mori",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Obra de teatro basada en la novela de Pedro Lemebel en Teatro Mori.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://teatromori.com/cartelera",
+   "fuentes": [
+    {
+     "nombre": "Teatro Mori",
+     "url": "https://teatromori.com/cartelera"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "6904c9314a",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Luis Slimming",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-10",
+   "fecha_fin": "2026-11-25",
+   "hora": "22:00",
+   "horario": "Funciones: 14 de noviembre; 4 de diciembre, 20:30 h",
+   "lugar": "Comedy Restobar",
+   "direccion": null,
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $18.000",
+   "descripcion": "😂 Luis Slimming, uno de los comediantes más destacados de la escena nacional, llega nuevamente al Comedy Restobar con una nueva jornada de Armando Chistes, un espacio donde el humor, las historias y la improvisación se mezclan para crear un",
+   "imagen": "https://img.vamoh.cl/events/3aa3d2b0-8428-4198-bde9-85849267825a.webp?v=07d95f0d",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/luis-slimming-28-de-octubre-19-30-hrs-comedy-restobar-1uxx3/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/luis-slimming-28-de-octubre-19-30-hrs-comedy-restobar-1uxx3/"
+    },
+    {
+     "nombre": "JaranaX",
+     "url": "https://www.jaranax.com/eventos/region-metropolitana-de-santiago/comedia"
+    },
+    {
+     "nombre": "ticketplus.cl",
+     "url": "https://ticketplus.cl/taxons/stand-up-y-shows"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "05949a81a4",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Liga Gratis Mensual Pokémon TCG: Fecha 2 - Planta",
    "categoria": "juegos",
    "fecha_inicio": "2026-11-11",
@@ -3110,6 +3655,66 @@
    "actualizado": "2026-11-09"
   },
   {
+   "titulo": "Paloma Salas en San Miguel",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-11",
+   "fecha_fin": null,
+   "hora": "19:30",
+   "horario": null,
+   "lugar": "Club San Miguel",
+   "direccion": null,
+   "comuna": "San Miguel",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "$16.500",
+   "descripcion": "Show de stand-up comedy de Paloma Salas en el Club San Miguel.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.jaranax.com/eventos/region-metropolitana-de-santiago/comedia",
+   "fuentes": [
+    {
+     "nombre": "JaranaX",
+     "url": "https://www.jaranax.com/eventos/region-metropolitana-de-santiago/comedia"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "b0399a8565",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "El Quinto Paso",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-11",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": "Mié 11 de noviembre a las 20:00 hrs",
+   "lugar": "Teatro Nescafé de las Artes",
+   "direccion": "Manuel Montt 032",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Función única de la obra 'El Quinto Paso' en el Teatro Nescafé de las Artes.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://telonticket.cl",
+   "fuentes": [
+    {
+     "nombre": "TelonTicket (teatro)",
+     "url": "https://telonticket.cl/mep_cat/teatro/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "81168c309f",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Obra de teatro \"Los Puentes de Madison\" - Extensión Cultural (Aporte Endowment UNAB)",
    "categoria": "teatro",
    "fecha_inicio": "2026-11-11",
@@ -3136,6 +3741,40 @@
    "confianza": "alta",
    "origen": "datos-estructurados",
    "id": "97a5f0b90c",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Carrera de Improvisadores",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-11",
+   "fecha_fin": "2026-12-02",
+   "hora": null,
+   "horario": "Miércoles a las 21:30 hrs",
+   "lugar": "Teatro Lospleimovil",
+   "direccion": "Dardignac #91",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "$10.000",
+   "descripcion": "Temporada de improvisación teatral en el Teatro Lospleimovil.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://telonticket.cl/",
+   "fuentes": [
+    {
+     "nombre": "Telon Ticket",
+     "url": "https://telonticket.cl/mep_cat/impro/"
+    },
+    {
+     "nombre": "lospleimovil.cl",
+     "url": "https://lospleimovil.cl/cartelera/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "e59fa909d4",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-10"
   },
@@ -3290,6 +3929,40 @@
    "actualizado": "2026-11-06"
   },
   {
+   "titulo": "La Araucana",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-11",
+   "fecha_fin": "2026-11-14",
+   "hora": null,
+   "horario": "Mié a Sáb 19:30 hrs",
+   "lugar": "Teatro Nacional Chileno Sala Antonio Varas",
+   "direccion": "Morandé 25",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Obra de teatro basada en el clásico poema épico de Alonso de Ercilla. Presentada en el Teatro Nacional Chileno.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://telonticket.cl",
+   "fuentes": [
+    {
+     "nombre": "TelonTicket (teatro)",
+     "url": "https://telonticket.cl/mep_cat/teatro/"
+    },
+    {
+     "nombre": "Telon Ticket",
+     "url": "https://telonticket.cl/mep_cat/musical/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "3cd37e2764",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Los Cosmos de Matta",
    "categoria": "museos",
    "fecha_inicio": "2026-11-11",
@@ -3328,6 +4001,40 @@
    "actualizado": "2026-11-10"
   },
   {
+   "titulo": "Paloma Salas en Puente Alto",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-11",
+   "fecha_fin": "2026-11-13",
+   "hora": null,
+   "horario": "Funciones: 11 y 13 de noviembre, 20:00 h",
+   "lugar": "Ruta 78",
+   "direccion": null,
+   "comuna": "Puente Alto",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "$14.300",
+   "descripcion": "Presentación de stand-up de Paloma Salas en Puente Alto.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.jaranax.com/eventos/region-metropolitana-de-santiago/comedia",
+   "fuentes": [
+    {
+     "nombre": "JaranaX",
+     "url": "https://www.jaranax.com/eventos/region-metropolitana-de-santiago/comedia"
+    },
+    {
+     "nombre": "ticketplus.cl",
+     "url": "https://ticketplus.cl/taxons/stand-up-y-shows"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "9a44d09fcd",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "BAJ Valpo inaugura exposición colectiva del primer Laboratorio de Artes Visuales",
    "categoria": "museos",
    "fecha_inicio": "2026-11-12",
@@ -3358,6 +4065,100 @@
    "actualizado": "2026-11-09"
   },
   {
+   "titulo": "Inter-Estelar",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-12",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": "Jue 12 de noviembre a las 19:00 hrs",
+   "lugar": "Liceo Sara Braun",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": "Punta Arenas",
+   "region": null,
+   "precio": null,
+   "descripcion": "Obra de teatro en cartelera. Fuera de la Región Metropolitana (descartar si aplica filtro estricto RM, pero cumple bases de Chile).",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://telonticket.cl",
+   "fuentes": [
+    {
+     "nombre": "TelonTicket (teatro)",
+     "url": "https://telonticket.cl/mep_cat/teatro/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "ia",
+   "id": "468763aa57",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Comienzo",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-12",
+   "fecha_fin": "2026-11-29",
+   "hora": "19:30",
+   "horario": "Jue a Dom 19:30 hrs (Dom 18:00 hrs)",
+   "lugar": "Teatro Zoco",
+   "direccion": "Av. La Dehesa 1500",
+   "comuna": "Lo Barnechea",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Obra de teatro dramática en cartelera en el Teatro Zoco.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.panoramas.app/eventos-esta-semana",
+   "fuentes": [
+    {
+     "nombre": "panoramas.app",
+     "url": "https://www.panoramas.app/eventos-esta-semana"
+    },
+    {
+     "nombre": "TelonTicket (teatro)",
+     "url": "https://telonticket.cl/mep_cat/teatro/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "2ff9635fda",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Gaymale",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-12",
+   "fecha_fin": "2026-11-14",
+   "hora": "19:30",
+   "horario": "Jue a Sáb 19:30 hrs",
+   "lugar": "Teatro Camilo Henríquez",
+   "direccion": "Amunátegui 31",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Obra de teatro contemporáneo en el tradicional Teatro Camilo Henríquez.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://telonticket.cl",
+   "fuentes": [
+    {
+     "nombre": "TelonTicket (teatro)",
+     "url": "https://telonticket.cl/mep_cat/teatro/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "9a60bed5f5",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Liga Mensual VGC Pokémon",
    "categoria": "anime",
    "fecha_inicio": "2026-11-12",
@@ -3386,6 +4187,36 @@
    "id": "e1a86e8618",
    "agregado": "2026-11-09",
    "actualizado": "2026-11-09"
+  },
+  {
+   "titulo": "Maldición Gitana",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-12",
+   "fecha_fin": "2026-11-14",
+   "hora": "19:30",
+   "horario": "Jue a Sáb 19:30 hrs",
+   "lugar": "Teatro Sidarte",
+   "direccion": "Ernesto Pinto Lagarrigue 131",
+   "comuna": "Recoleta",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Temporada de teatro en la sala del Teatro Sidarte en Bellavista.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://telonticket.cl",
+   "fuentes": [
+    {
+     "nombre": "TelonTicket (teatro)",
+     "url": "https://telonticket.cl/mep_cat/teatro/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "04d7a3e035",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Nu Metal Sessions Vol.5 Linkin Park Hybrid Theory en Casa Rockaxis",
@@ -3422,32 +4253,194 @@
    "actualizado": "2026-11-07"
   },
   {
-   "titulo": "Comienzo",
+   "titulo": "Bestia",
    "categoria": "teatro",
    "fecha_inicio": "2026-11-12",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": null,
-   "lugar": "Teatro Zoco",
-   "direccion": null,
-   "comuna": "Lo Barnechea",
+   "fecha_fin": "2026-11-21",
+   "hora": "20:00",
+   "horario": "Jue a Sáb 20:00 hrs",
+   "lugar": "Teatro La Memoria",
+   "direccion": "Bellavista 0503",
+   "comuna": "Providencia",
    "ciudad": "Santiago",
    "region": "Región Metropolitana",
    "precio": null,
-   "descripcion": "Obra de teatro dramática en cartelera en el Teatro Zoco.",
+   "descripcion": "Montaje de teatro contemporáneo en el Teatro La Memoria.",
    "imagen": null,
    "fotos": null,
-   "url": "https://www.panoramas.app/eventos-esta-semana",
+   "url": "https://telonticket.cl",
    "fuentes": [
     {
-     "nombre": "panoramas.app",
-     "url": "https://www.panoramas.app/eventos-esta-semana"
+     "nombre": "TelonTicket (teatro)",
+     "url": "https://telonticket.cl/mep_cat/teatro/"
     }
    ],
    "desde_imagen": false,
    "confianza": "alta",
    "origen": "ia",
-   "id": "2ff9635fda",
+   "id": "70715e99b1",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Empieza con D, siete letras",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-12",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": "Jue 12 de noviembre a las 20:00 hrs",
+   "lugar": "Teatro Nescafé de las Artes",
+   "direccion": "Manuel Montt 032",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Función especial de teatro en el Teatro Nescafé de las Artes.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://telonticket.cl",
+   "fuentes": [
+    {
+     "nombre": "TelonTicket (teatro)",
+     "url": "https://telonticket.cl/mep_cat/teatro/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "22cc304a56",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Se arrienda pieza para mujer sola",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-12",
+   "fecha_fin": "2026-11-22",
+   "hora": "20:00",
+   "horario": "Jue a Dom 20:00 hrs",
+   "lugar": "Teatro Del Puente",
+   "direccion": "Puente Pío Nono s/n",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Obra de teatro en cartelera en el emblemático Teatro Del Puente.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://telonticket.cl",
+   "fuentes": [
+    {
+     "nombre": "TelonTicket (teatro)",
+     "url": "https://telonticket.cl/mep_cat/teatro/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "e1a1867f70",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Cuerpo Docente",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-12",
+   "fecha_fin": "2026-11-26",
+   "hora": "20:15",
+   "horario": "Jueves 20:15 hrs",
+   "lugar": "Teatro San Ginés",
+   "direccion": "Mallinkrodt 112",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $8.760",
+   "descripcion": "Obra de teatro en cartelera en el Teatro San Ginés del barrio Bellavista.",
+   "imagen": "https://www.sangines.cl/wp-content/uploads/2026/11/640x640-copia.png",
+   "fotos": null,
+   "url": "https://telonticket.cl",
+   "fuentes": [
+    {
+     "nombre": "TelonTicket (teatro)",
+     "url": "https://telonticket.cl/mep_cat/teatro/"
+    },
+    {
+     "nombre": "Teatro San Ginés",
+     "url": "https://www.sangines.cl/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "615e1e2ab1",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Tengo miedo torero",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-12",
+   "fecha_fin": "2026-11-28",
+   "hora": "20:30",
+   "horario": "Jue a Sáb 20:30 hrs",
+   "lugar": "Teatro Mori Recoleta",
+   "direccion": "Constitución 183",
+   "comuna": "Recoleta",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Adaptación teatral de la célebre novela de Pedro Lemebel en Teatro Mori Recoleta.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://telonticket.cl",
+   "fuentes": [
+    {
+     "nombre": "TelonTicket (teatro)",
+     "url": "https://telonticket.cl/mep_cat/teatro/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "a00d6a1e64",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "El último improvisador",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-12",
+   "fecha_fin": "2026-11-26",
+   "hora": null,
+   "horario": "Jueves a las 21:30 hrs",
+   "lugar": "Teatro Lospleimovil, Santiago",
+   "direccion": "Dardignac #91",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde CLP 4.000",
+   "descripcion": "Show de improvisación teatral humorística en Teatro Lospleimovil.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://ticketplus.cl/events/el-ultimo-improvisador",
+   "fuentes": [
+    {
+     "nombre": "Ticketplus (teatros)",
+     "url": "https://ticketplus.cl/events/el-ultimo-improvisador"
+    },
+    {
+     "nombre": "Telon Ticket",
+     "url": "https://telonticket.cl/mep_cat/impro/"
+    },
+    {
+     "nombre": "lospleimovil.cl",
+     "url": "https://lospleimovil.cl/cartelera/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "24c25c0671",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-10"
   },
@@ -3510,6 +4503,82 @@
    "id": "5579008677",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Quiero ser una chica Almodóvar",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-12",
+   "fecha_fin": "2026-11-22",
+   "hora": null,
+   "horario": "Jue a Dom 19:30 hrs (Dom 18:30 hrs)",
+   "lugar": "GAM",
+   "direccion": "Av. Libertador Bernardo O'Higgins 227",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Obra de teatro en cartelera inspirada en el universo cinematográfico de Pedro Almodóvar.",
+   "imagen": "https://chilecultura.gob.cl/uploads/cropped_3wr3nEv.png",
+   "fotos": null,
+   "url": "https://gam.cl/es/que-hacer-en-gam/teatro/quiero-ser-una-chica-almodovar/",
+   "fuentes": [
+    {
+     "nombre": "Chile Cultura",
+     "url": "https://chilecultura.gob.cl/events/40688/"
+    },
+    {
+     "nombre": "GAM (teatro)",
+     "url": "https://gam.cl/es/que-hacer-en-gam/teatro/quiero-ser-una-chica-almodovar/"
+    },
+    {
+     "nombre": "TelonTicket (teatro)",
+     "url": "https://telonticket.cl/mep_cat/teatro/"
+    },
+    {
+     "nombre": "Telon Ticket",
+     "url": "https://telonticket.cl/mep_cat/musical/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "455e856bc6",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Solo nos queda cantar",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-12",
+   "fecha_fin": "2026-11-15",
+   "hora": null,
+   "horario": "Jue a Dom 19:30 hrs (Dom 18:30 hrs)",
+   "lugar": "Matucana 100",
+   "direccion": "Matucana 100",
+   "comuna": "Estación Central",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Montaje teatral contemporáneo en el Centro Cultural Matucana 100.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://telonticket.cl",
+   "fuentes": [
+    {
+     "nombre": "TelonTicket (teatro)",
+     "url": "https://telonticket.cl/mep_cat/teatro/"
+    },
+    {
+     "nombre": "Telon Ticket",
+     "url": "https://telonticket.cl/mep_cat/musical/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "f00b9088aa",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Conversatorio \"Piezas de Cerámica Nacional: Historia, coleccionismo y manufactura\"",
@@ -3786,6 +4855,36 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "Visita Nocturna Guiada por Astrónomos UC (Turno 1)",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": "18:30",
+   "horario": null,
+   "lugar": "Observatorio Foster",
+   "direccion": "Calle Manuel Foster S/N, Cerro San Cristóbal",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Metropolitana de Santiago",
+   "precio": "Gratuito (con inscripción previa)",
+   "descripcion": "Visita guiada nocturna por astrónomos UC en el Observatorio Foster en el marco de la Noche de Museos.",
+   "imagen": "https://nochedemuseos.cl/_nuxt/espacios-actividades-default.B_y5nZ1k.jpg",
+   "fotos": null,
+   "url": "https://observatoriofoster.com/noche-de-museos-2026/#inscripcion",
+   "fuentes": [
+    {
+     "nombre": "nochedemuseos.cl",
+     "url": "https://nochedemuseos.cl/actividades/496-visita-nocturna-guiada-por-astronomos-uc-turno-1"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "6e9935dc07",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Anime Symphony en Teatro Parque Cousiño",
    "categoria": "anime",
    "fecha_inicio": "2026-11-13",
@@ -3824,6 +4923,78 @@
    "actualizado": "2026-11-08"
   },
   {
+   "titulo": "Show de Stand Up - El Cachafaz",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": "2026-12-26",
+   "hora": "19:00",
+   "horario": "Funciones: 13 de noviembre, 20:30 h",
+   "lugar": "Teatro Cachafaz",
+   "direccion": "Av. Italia 1679",
+   "comuna": "Ñuñoa",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $6.600",
+   "descripcion": "Noche de stand-up comedy junto a Laly Jeldres, Samy Aguirre y Diego Larenas con miradas sobre la maternidad, familia y vida adulta.",
+   "imagen": "https://chilecultura.gob.cl/uploads/cropped_zboNOKe.png",
+   "fotos": null,
+   "url": "https://www.elcachafaz.cl/",
+   "fuentes": [
+    {
+     "nombre": "Chile Cultura",
+     "url": "https://chilecultura.gob.cl/events/39206/"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/show-de-stand-up-el-cachafaz-791jj/"
+    },
+    {
+     "nombre": "El Cachafaz",
+     "url": "https://www.elcachafaz.cl/"
+    },
+    {
+     "nombre": "JaranaX",
+     "url": "https://www.jaranax.com/eventos/region-metropolitana-de-santiago/comedia"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "d9891a60f6",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Chiqui Aguayo",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": "2026-12-12",
+   "hora": "19:30",
+   "horario": null,
+   "lugar": "Comedy Restobar",
+   "direccion": null,
+   "comuna": "Providencia",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $15.000",
+   "descripcion": "🎤 Chiqui Aguayo llega al escenario del Comedy Restobar con un show de stand up comedy sin filtro, cargado de anécdotas, ironía y risas aseguradas. Prepárate para disfrutar de una jornada imperdible junto a una de las comediantes más reconoc",
+   "imagen": "https://img.vamoh.cl/events/00174824-b566-4820-8d2b-a3fe11805e60.webp?v=e78a49b3",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/chiqui-aguayo-16-de-octubre-19-30-hrs-comedy-restobar-j7oqa/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/chiqui-aguayo-16-de-octubre-19-30-hrs-comedy-restobar-j7oqa/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "4659744542",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Torneo Pokémon TCG del Sobre",
    "categoria": "juegos",
    "fecha_inicio": "2026-11-13",
@@ -3852,6 +5023,66 @@
    "id": "dc7e2a27ca",
    "agregado": "2026-11-09",
    "actualizado": "2026-11-09"
+  },
+  {
+   "titulo": "Amarre: Desahogo, Comedia y Tarot en The Botanic Coffee 13 de Noviembre 20 Hrs",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "The Botanic Coffee",
+   "direccion": null,
+   "comuna": "Ñuñoa",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $6.900",
+   "descripcion": "AMARRE: DESAHOGO, COMEDIA Y TAROT EN THE BOTANIC COFFEE 13 DE NOVIEMBRE 20 HRS",
+   "imagen": "https://img.vamoh.cl/events/d5237fac-9264-4e22-b930-9f29c5bd4b0b.webp?v=76f4b2d0",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/amarre-desahogo-comedia-y-tarot-en-the-botanic-coffee-13-de-noviembre-20-hrs-57vvk/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/amarre-desahogo-comedia-y-tarot-en-the-botanic-coffee-13-de-noviembre-20-hrs-57vvk/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "dfa6e0272b",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Caballo",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": "2026-11-28",
+   "hora": "20:00",
+   "horario": "Vie y Sáb 20:00 hrs",
+   "lugar": "Teatro Ictus, Sala La Comedia",
+   "direccion": "Merced 349",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Montaje dramático en la histórica Sala La Comedia del Teatro Ictus.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://telonticket.cl",
+   "fuentes": [
+    {
+     "nombre": "TelonTicket (teatro)",
+     "url": "https://telonticket.cl/mep_cat/teatro/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "318a44c02c",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Dangerous, Voidkult, Hela y Rogelio Ugarte",
@@ -3884,6 +5115,288 @@
    "actualizado": "2026-11-09"
   },
   {
+   "titulo": "Historia de amor para un alma vieja",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": "2026-11-15",
+   "hora": "20:00",
+   "horario": "Vie a Dom 20:00 hrs (Dom 19:00 hrs)",
+   "lugar": "Teatro Camino",
+   "direccion": "Antupirén 9400",
+   "comuna": "Peñalolén",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Obra de teatro en el espacio cultural Teatro Camino en la precordillera.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://telonticket.cl",
+   "fuentes": [
+    {
+     "nombre": "TelonTicket (teatro)",
+     "url": "https://telonticket.cl/mep_cat/teatro/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "ffe31e45dd",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Macho alfa en terapia",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": "2026-11-21",
+   "hora": "20:00",
+   "horario": "Vie y Sáb 20:00 hrs",
+   "lugar": "Teatro Camino",
+   "direccion": "Antupirén 9400",
+   "comuna": "Peñalolén",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Comedia teatral sobre masculinidades en el Teatro Camino.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://telonticket.cl",
+   "fuentes": [
+    {
+     "nombre": "TelonTicket (teatro)",
+     "url": "https://telonticket.cl/mep_cat/teatro/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "725888a999",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Show de Stand up-Sala de profes- Viernes 13 Noviembre 20 hrs",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": "Funciones: 13 de noviembre",
+   "lugar": "El Cachafaz",
+   "direccion": "Av. Italia 1679",
+   "comuna": "Ñuñoa",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $8.800",
+   "descripcion": "Show de Stand up Sala Buenos Aires DESCRIPCIÓN DEL SHOW SALA DE PROFES – REUNIÓN EXTRAORDINARIA ¡ATENCIÓN, CUERPO DOCENTE Y APODERADOS INFILTRADOS! La Señorita Muñoz ha convocado a una nueva reunión extraordinaria y, como siempre, nadie sab",
+   "imagen": "https://img.vamoh.cl/events/14ede52e-d45e-45b9-a87a-c7ed61311912.webp?v=5fe4515b",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/show-de-stand-up-sala-de-profes-viernes-13-noviembre-20-hrs-hwd00/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/show-de-stand-up-sala-de-profes-viernes-13-noviembre-20-hrs-hwd00/"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/show-de-stand-up-sala-de-profes-viernes-13-noviembre-20-30hrs-niy9a/"
+    },
+    {
+     "nombre": "El Cachafaz",
+     "url": "https://www.elcachafaz.cl/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "7f206d1602",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Bombo Fica - 40 Años y No Me Di Cuenta",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Estacionamiento Mall Arauco Quilicura",
+   "direccion": null,
+   "comuna": "Quilicura",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $10.000",
+   "descripcion": "Celebración de trayectoria con el humor de Bombo Fica.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.jaranax.com/eventos/region-metropolitana-de-santiago/comedia",
+   "fuentes": [
+    {
+     "nombre": "JaranaX",
+     "url": "https://www.jaranax.com/eventos/region-metropolitana-de-santiago/comedia"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "126185128e",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Mala Leche - Impro humor negro",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": "21:00",
+   "horario": "Viernes a las 21:00 hrs",
+   "lugar": "Teatro Lospleimovil",
+   "direccion": "Dardignac #91",
+   "comuna": "Recoleta",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $7.000",
+   "descripcion": "Espectáculo de improvisación con humor negro por Lospleimovil.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.jaranax.com/eventos/region-metropolitana-de-santiago/comedia",
+   "fuentes": [
+    {
+     "nombre": "JaranaX",
+     "url": "https://www.jaranax.com/eventos/region-metropolitana-de-santiago/comedia"
+    },
+    {
+     "nombre": "lospleimovil.cl",
+     "url": "https://lospleimovil.cl/cartelera/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "9c87353130",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Ciclo de teatro - El Botones",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": "22:15",
+   "horario": null,
+   "lugar": "Teatro Cachafaz",
+   "direccion": "Av. Italia 1679",
+   "comuna": "Ñuñoa",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Obra teatral dirigida por Miguel Ángel Tapia que combina lenguaje popular y teatro de calidad, ambientada en un antiguo hotel.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.elcachafaz.cl/",
+   "fuentes": [
+    {
+     "nombre": "El Cachafaz",
+     "url": "https://www.elcachafaz.cl/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "fab1d830b2",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Amantes, Una Vez al Año",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": "2026-11-29",
+   "hora": null,
+   "horario": "Funciones: 13, 14, 15, 20, 21, 22, 27, 28 y 29 de noviembre",
+   "lugar": "Teatro San Ginés Mallinkrodt 112",
+   "direccion": "Providencia, Barrio Bellavista",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $14.800",
+   "descripcion": "Mara y Lorenzo se encuentran una vez al año, durante treinta años, para compartir un amor tan secreto como entrañable. Entre risas, desencuentros y el inevitable paso del tiempo, esta comedia romántica retrata con humor y emoción cómo cambi",
+   "imagen": "https://www.sangines.cl/wp-content/uploads/2026/09/grafica_amantes_ticketmaster_640x640.png",
+   "fotos": null,
+   "url": "https://www.sangines.cl/evento/amantes-una-vez-al-ano/",
+   "fuentes": [
+    {
+     "nombre": "Teatro San Ginés",
+     "url": "https://www.sangines.cl/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "8aaa55bd85",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Crónica de la Mujer Menos Mujer",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": "2026-11-14",
+   "hora": null,
+   "horario": "Funciones: 13 y 14 de noviembre",
+   "lugar": "Centro Cultural Mallinkrodt 76",
+   "direccion": "Providencia, Barrio Bellavista",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $10.000",
+   "descripcion": "Dos amigas recién graduadas del colegio vuelven a recorrer su niñez y adolescencia escolar. A lo largo del relato, estas atraviesan preguntas que desestabilizarán sus creencias tan arraigadas a ese patio de colegio. ¿Qué es ser mujer? ¿Qué",
+   "imagen": "https://www.sangines.cl/wp-content/uploads/2026/07/640x640-1-copia-1.png",
+   "fotos": null,
+   "url": "https://www.sangines.cl/evento/cronica-de-la-mujer-menos-mujer/",
+   "fuentes": [
+    {
+     "nombre": "Teatro San Ginés",
+     "url": "https://www.sangines.cl/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "b154be6f5a",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "FELICES LOS 3",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": "2026-11-28",
+   "hora": null,
+   "horario": "Funciones: 13, 14, 20, 21, 27 y 28 de noviembre",
+   "lugar": "Sala 2",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $15.300",
+   "descripcion": "Comedia protagonizada por Patricio Torres, Juan Pablo Saéz y Noelia Arias. Divertida comedia que muestra cómo han evolucionado las relaciones de pareja, amistad y de trabajo en los tiempos actuales gracias a la extraordinaria influencia de",
+   "imagen": "https://www.sangines.cl/wp-content/uploads/2026/09/640x640-1-scaled.png",
+   "fotos": null,
+   "url": "https://www.sangines.cl/evento/felices-los-3/",
+   "fuentes": [
+    {
+     "nombre": "Teatro San Ginés",
+     "url": "https://www.sangines.cl/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "2065a7a403",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "FILSA 2026: Feria Internacional del Libro de Santiago",
    "categoria": "ilustracion",
    "fecha_inicio": "2026-11-13",
@@ -3912,6 +5425,40 @@
    "id": "7e52ce1f07",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "La Batalla de San Tentorio",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": "2026-11-28",
+   "hora": null,
+   "horario": "Funciones: 13 de noviembre",
+   "lugar": "Teatro Bellavista",
+   "direccion": "Dardignac 0110",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Llega a Santiago una apuesta única de teatro hipnótico en Chile, una comedia y obra política que no es ideología, sino espejo social para públicos que buscan algo más que entretenimiento.",
+   "imagen": "https://chilecultura.gob.cl/uploads/cropped_v0M2yyC.png",
+   "fotos": null,
+   "url": "https://yaentre.cl/detalleEvento.php?id=148#entradas",
+   "fuentes": [
+    {
+     "nombre": "Chile Cultura",
+     "url": "https://chilecultura.gob.cl/events/40741/"
+    },
+    {
+     "nombre": "TelonTicket (teatro)",
+     "url": "https://telonticket.cl/mep_cat/teatro/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "datos-estructurados",
+   "id": "4bf4666253",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Magic: The Gathering | Star Trek",
@@ -3979,12 +5526,12 @@
    "fecha_inicio": "2026-11-14",
    "fecha_fin": null,
    "hora": "11:00",
-   "horario": null,
+   "horario": "11:00 a 18:00",
    "lugar": "Jardín y auditorio Fundación Av. Nueva Providencia 1995",
-   "direccion": null,
+   "direccion": "Av. Nueva Providencia 1995",
    "comuna": "Providencia",
-   "ciudad": null,
-   "region": null,
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
    "precio": "Gratis",
    "descripcion": "Por tercer año consecutivo, Grupo Planeta y la Fundación Cultural de Providencia realizarán Planeta Cómic Fest, encuentro dedicado al cómic, el manga, la ilustración y la novela gráfica que reunirá a destacados autores en una jornada gratui",
    "imagen": "https://img.vamoh.cl/referenciales/exposicion-ninos-manana-b51496cd.webp",
@@ -3994,14 +5541,18 @@
     {
      "nombre": "VAMOH!",
      "url": "https://vamoh.cl/events/3-planeta-comic-fest-3g3hy/"
+    },
+    {
+     "nombre": "ADN Radio",
+     "url": "https://www.adnradio.cl/2026/11/10/planeta-comic-fest-2026-vuelve-a-providencia-con-jornada-gratuita-de-manga-ilustracion-y-libros/"
     }
    ],
-   "desde_imagen": false,
+   "desde_imagen": true,
    "confianza": "alta",
    "origen": "datos-estructurados",
    "id": "4c39e5bf70",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "GAM y Periscopio presenta: Juegos de Mesa en BiblioGAM",
@@ -4228,6 +5779,36 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "Sudania – El Musical",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": "2026-11-28",
+   "hora": "16:00",
+   "horario": "Sábados 16:00 hrs",
+   "lugar": "Teatro Bellavista",
+   "direccion": "Dardignac 0110",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Vibrante propuesta de teatro musical familiar en el Teatro Bellavista.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://telonticket.cl",
+   "fuentes": [
+    {
+     "nombre": "Telon Ticket",
+     "url": "https://telonticket.cl/mep_cat/musical/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "9a5e461544",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Jornada Metal Extremo: Evil Steel & Revenge Zine",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-14",
@@ -4286,6 +5867,36 @@
    "id": "72ed90cd4d",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "An Idiot's Guide to Wine: Comedia entre copas",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": null,
+   "hora": "18:00",
+   "horario": null,
+   "lugar": "Club Subterráneo",
+   "direccion": null,
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $27.200",
+   "descripcion": "Show de comedia y cata de vinos en Club Subterráneo.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.jaranax.com/eventos/region-metropolitana-de-santiago/comedia",
+   "fuentes": [
+    {
+     "nombre": "JaranaX",
+     "url": "https://www.jaranax.com/eventos/region-metropolitana-de-santiago/comedia"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "73fc126123",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Fusion Shibuya en Playkingdom",
@@ -4378,6 +5989,36 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "ECOS",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": "Sábados a las 19:00 hrs",
+   "lugar": "Teatro Lospleimovil",
+   "direccion": "Dardignac #91",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "$10.000",
+   "descripcion": "Espectáculo de impro dramático y realista de la compañía Lospleimovil. Hay cosas que nunca dejan de resonar.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://lospleimovil.cl/cartelera/",
+   "fuentes": [
+    {
+     "nombre": "lospleimovil.cl",
+     "url": "https://lospleimovil.cl/cartelera/"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "29035eb82c",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Marty Friedman en Santiago",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-14",
@@ -4440,6 +6081,40 @@
    "actualizado": "2026-11-08"
   },
   {
+   "titulo": "Amantes, parejas disparejas",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": "2026-11-28",
+   "hora": "21:00",
+   "horario": "Sábados a las 21:00 hrs",
+   "lugar": "Teatro Lospleimovil, Santiago",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde CLP 7.000",
+   "descripcion": "Espectáculo de improvisación y comedia sobre relaciones de pareja en Lospleimovil.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://ticketplus.cl/events/amantes-parejas-disparejas-sabado",
+   "fuentes": [
+    {
+     "nombre": "Ticketplus (teatros)",
+     "url": "https://ticketplus.cl/events/amantes-parejas-disparejas-sabado"
+    },
+    {
+     "nombre": "Telon Ticket",
+     "url": "https://telonticket.cl/mep_cat/impro/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "5062f1da99",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Titanes en Mibar",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-14",
@@ -4470,6 +6145,36 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "Show impro-Fué Sin Queer Queriendo-Sábado 14 Noviembre 22:15 hrs",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": null,
+   "hora": "22:15",
+   "horario": null,
+   "lugar": "El Cachafaz",
+   "direccion": null,
+   "comuna": "Ñuñoa",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $8.800",
+   "descripcion": "Show en la Sala Principal. FUE SIN QUEER QUERIENDO Un zapping televisivo como nunca lo viste. FSQQ: Es un espectáculo novedoso, irreverente y lleno de sorpresas, que transforma el clásico zapping televisivo en una experiencia teatral en viv",
+   "imagen": "https://img.vamoh.cl/events/cb46161b-0fff-454f-acae-39d7bb5f0c00.webp?v=da361694",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/show-impro-fue-sin-queer-queriendo-sabado-14-noviembre-22-15-hrs-bklwh/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/show-impro-fue-sin-queer-queriendo-sabado-14-noviembre-22-15-hrs-bklwh/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "6e254ffcde",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Fiesta Otaku Aniversario #3",
    "categoria": "anime",
    "fecha_inicio": "2026-11-14",
@@ -4498,6 +6203,36 @@
    "id": "6ea8c4d016",
    "agregado": "2026-11-08",
    "actualizado": "2026-11-08"
+  },
+  {
+   "titulo": "Divorciados 2.0 (única Función)",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro San Ginés Mallinkrodt 112",
+   "direccion": "Providencia, Barrio Bellavista",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $25.000",
+   "descripcion": "Después del éxito televisivo de “Separados” y del fenómeno teatral que significó “Divorciados” en 2012, el grupo regresa con una nueva entrega: “Divorciados 2.0”. Han pasado los años y sus protagonistas ya no son los mismos, o al menos eso",
+   "imagen": "https://www.sangines.cl/wp-content/uploads/2026/04/640x640_Divorciados_SanGines.png",
+   "fotos": null,
+   "url": "https://www.sangines.cl/evento/divorciados-2-0-unica-funcion/",
+   "fuentes": [
+    {
+     "nombre": "Teatro San Ginés",
+     "url": "https://www.sangines.cl/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "6bceca0c1b",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Legendarium — El Legado de Tolkien",
@@ -4556,6 +6291,36 @@
    "id": "b54f0831a9",
    "agregado": "2026-11-08",
    "actualizado": "2026-11-08"
+  },
+  {
+   "titulo": "Los tres cantos del gallo",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Municipal de Iquique",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Obra de teatro presentada en el Teatro Municipal de Iquique.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://ticketplus.cl/events/los-tres-cantos-del-gallo",
+   "fuentes": [
+    {
+     "nombre": "Ticketplus (teatros)",
+     "url": "https://ticketplus.cl/events/los-tres-cantos-del-gallo"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "fb6d2e08df",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Ratos de Porão en Chile",
@@ -4680,6 +6445,36 @@
    "actualizado": "2026-11-08"
   },
   {
+   "titulo": "Fiebre de Impro",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-15",
+   "fecha_fin": "2026-12-20",
+   "hora": "19:00",
+   "horario": "Domingos a las 19:00 hrs",
+   "lugar": "Teatro Cachafaz",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Ciclo de improvisación teatral en el Teatro Cachafaz.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://telonticket.cl/",
+   "fuentes": [
+    {
+     "nombre": "Telon Ticket",
+     "url": "https://telonticket.cl/mep_cat/impro/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "dbb05270e5",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Nocturnal Depression en Chile",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-15",
@@ -4796,6 +6591,220 @@
    "actualizado": "2026-11-09"
   },
   {
+   "titulo": "La Remolienda y sus ánimas: Cancionero Dramático para Víctor Jara",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-17",
+   "fecha_fin": "2026-11-21",
+   "hora": "20:00",
+   "horario": "Mar a Sáb 20:00 hrs",
+   "lugar": "Teatro UC",
+   "direccion": "Joaquín Cabezas 25",
+   "comuna": "Ñuñoa",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Homenaje musical y dramático que cruza la memoria de La Remolienda y la obra de Víctor Jara.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://telonticket.cl",
+   "fuentes": [
+    {
+     "nombre": "Telon Ticket",
+     "url": "https://telonticket.cl/mep_cat/musical/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "af4c1f23e9",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Elektra",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-17",
+   "fecha_fin": "2026-11-29",
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Municipal de Santiago",
+   "direccion": "Agustinas 794",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $8.500",
+   "descripcion": "Impactante propuesta inmersiva de la ópera expresionista de Richard Strauss en el Teatro Municipal de Santiago.",
+   "imagen": "https://chilecultura.gob.cl/uploads/cropped_XsiE65n.png",
+   "fotos": null,
+   "url": "https://municipal.cl/",
+   "fuentes": [
+    {
+     "nombre": "Chile Cultura",
+     "url": "https://chilecultura.gob.cl/events/36673/"
+    },
+    {
+     "nombre": "Teatro Municipal de Santiago",
+     "url": "https://municipal.cl/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "2a4ab1359e",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "La Bandita Open Mic",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-17",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Palermo Teatro Bar",
+   "direccion": "José Manuel Infante 1414",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $10.000",
+   "descripcion": "Show de stand-up comedy con Piare, Vicho Viciani, Alex Ortiz y Pame Leiva como invitada especial.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://lacomedia.cl/evento/la-bandita-open-mic-en-palermo-17-11/",
+   "fuentes": [
+    {
+     "nombre": "lacomedia.cl",
+     "url": "https://lacomedia.cl/evento/la-bandita-open-mic-en-palermo-17-11/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "f82d811468",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Matadero Alma",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-17",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Municipal de Iquique",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Función de la obra de teatro Matadero Alma en Iquique.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://ticketplus.cl/events/matadero-alma-2026-11-12-20-00-00-0300",
+   "fuentes": [
+    {
+     "nombre": "Ticketplus (teatros)",
+     "url": "https://ticketplus.cl/events/matadero-alma-2026-11-12-20-00-00-0300"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "bfe140caa6",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "¡Parlamento!",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-18",
+   "fecha_fin": "2026-11-20",
+   "hora": "19:30",
+   "horario": "Mié a Vie 19:30 hrs",
+   "lugar": "Teatro Nacional Chileno Sala Antonio Varas",
+   "direccion": "Morandé 25",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Obra de teatro con fuerte componente musical y contingente en el Teatro Nacional Chileno.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://telonticket.cl",
+   "fuentes": [
+    {
+     "nombre": "Telon Ticket",
+     "url": "https://telonticket.cl/mep_cat/musical/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "f219320f0e",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Cazadores de Agua",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-18",
+   "fecha_fin": "2026-11-29",
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Municipal de Las Condes",
+   "direccion": "Av. Apoquindo 3300",
+   "comuna": "Las Condes",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Obra de teatro en cartelera en el Teatro Municipal de Las Condes.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://tmlascondes.cl/",
+   "fuentes": [
+    {
+     "nombre": "Teatro Municipal de Las Condes",
+     "url": "https://tmlascondes.cl/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "123c03116b",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Karol Blum – Popurrí",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-18",
+   "fecha_fin": "2026-11-19",
+   "hora": null,
+   "horario": "Funciones: 18 y 19 de noviembre",
+   "lugar": "Centro Cultural Mallinkrodt 76",
+   "direccion": "Providencia, Barrio Bellavista",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $20.000",
+   "descripcion": "“Popurrí es un espectáculo unipersonal de comedia donde una mujer intenta sobrevivir a una jornada en la que todo parece reclamar su atención al mismo tiempo; sus hijos, su expareja, su madre y un trabajo que le exige sonreír mientras todo",
+   "imagen": "https://www.sangines.cl/wp-content/uploads/2026/09/640x640_POPURRI.jpg",
+   "fotos": null,
+   "url": "https://www.sangines.cl/evento/karol-blum-popurri/",
+   "fuentes": [
+    {
+     "nombre": "Teatro San Ginés",
+     "url": "https://www.sangines.cl/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "3ade752ddb",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Tolomiro Todomiro: escultura de Matta en La Moneda",
    "categoria": "museos",
    "fecha_inicio": "2026-11-18",
@@ -4823,6 +6832,36 @@
    "origen": "claude",
    "id": "20d77619ca",
    "agregado": "2026-11-07",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Show de Comedia improvisada: Moyita y Pankeke",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-19",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Teatro Ictus, Sala La Comedia",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Show de comedia improvisada en Sala La Comedia de Teatro Ictus.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://telonticket.cl/",
+   "fuentes": [
+    {
+     "nombre": "Telon Ticket",
+     "url": "https://telonticket.cl/mep_cat/impro/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "1f764cab94",
+   "agregado": "2026-11-10",
    "actualizado": "2026-11-10"
   },
   {
@@ -4884,6 +6923,36 @@
    "id": "d98b42b746",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Sesión III - Pianista Boris Giltburg (Sonatas Beethoven)",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-19",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Municipal de Santiago",
+   "direccion": "Agustinas 794",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $3.500",
+   "descripcion": "El pianista Boris Giltburg interpreta sonatas tempranas de Beethoven y la emblemática Claro de luna.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://municipal.cl/",
+   "fuentes": [
+    {
+     "nombre": "Teatro Municipal de Santiago",
+     "url": "https://municipal.cl/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "b600cb603a",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Surround Sessions: Kse|as Daylight Dies 20 Años en Casa Estudio Rockaxis",
@@ -4976,6 +7045,40 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "Radioteatro: Martín Rivas",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-20",
+   "fecha_fin": "2026-11-28",
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Municipal de Santiago",
+   "direccion": "Agustinas 794",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Entrada general $18.000",
+   "descripcion": "Radioteatro que rinde homenaje a la histórica versión de 1954, reviviendo la clásica obra de Alberto Blest Gana.",
+   "imagen": "https://chilecultura.gob.cl/uploads/cropped_NhFaiBX.png",
+   "fotos": null,
+   "url": "https://municipal.cl/",
+   "fuentes": [
+    {
+     "nombre": "Chile Cultura",
+     "url": "https://chilecultura.gob.cl/events/36789/"
+    },
+    {
+     "nombre": "Teatro Municipal de Santiago",
+     "url": "https://municipal.cl/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "11b9d904b2",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Medieval Fest llega a Mulchén con recreaciones, música en vivo y gastronomía",
    "categoria": "medieval",
    "fecha_inicio": "2026-11-21",
@@ -5036,6 +7139,66 @@
    "actualizado": "2026-11-08"
   },
   {
+   "titulo": "Pelao Rodrigo",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-21",
+   "fecha_fin": "2026-11-22",
+   "hora": "22:30",
+   "horario": null,
+   "lugar": "Comedy Restobar",
+   "direccion": null,
+   "comuna": "Providencia",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $12.000",
+   "descripcion": "🎤😂 Pelao Rodrigo llega nuevamente al escenario del Comedy Restobar @comedy_restobar con toda su experiencia y estilo único para ofrecer una noche cargada de humor, ocurrencias y risas aseguradas. Prepárate para disfrutar de una función de c",
+   "imagen": "https://img.vamoh.cl/events/dda47cc3-5a1f-4015-8e68-764aa44ee877.webp?v=fee8067d",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/pelao-rodrigo-14-de-octubre-22-00-hrs-comedy-restobar-kejnq/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/pelao-rodrigo-14-de-octubre-22-00-hrs-comedy-restobar-kejnq/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "e0434f0018",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Merlina Addams y Su Loca Familia",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-21",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Centro Cultural Mallinkrodt 76",
+   "direccion": "Providencia, Barrio Bellavista",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $10.000",
+   "descripcion": "\"Merlina Addams y su loca familia\" es una comedia de teatro musical basada en la conocida serie Los Locos Addams, la cual nos presenta a los excéntricos miembros de una disparatada familia que residen en la Calle del Cementerio #0001 en una",
+   "imagen": "https://www.sangines.cl/wp-content/uploads/2026/11/Merlina_640x640-px-copia.png",
+   "fotos": null,
+   "url": "https://www.sangines.cl/evento/merlina-addams-y-su-loca-familia/",
+   "fuentes": [
+    {
+     "nombre": "Teatro San Ginés",
+     "url": "https://www.sangines.cl/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "5f55b6dd8f",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Saratoga en Chile",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-21",
@@ -5066,6 +7229,66 @@
    "id": "9b68238c51",
    "agregado": "2026-11-06",
    "actualizado": "2026-11-08"
+  },
+  {
+   "titulo": "Micrófono Abierto en GAM",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-22",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Centro Gabriela Mistral (GAM)",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Jornada de stand-up con rutinas de comedia en vivo en formato de micrófono abierto.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://gam.cl/es/que-hacer-en-gam/stand-up-comedy/microfono-abierto-en-gam/",
+   "fuentes": [
+    {
+     "nombre": "GAM (stand-up)",
+     "url": "https://gam.cl/es/que-hacer-en-gam/stand-up-comedy/microfono-abierto-en-gam/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "92c52c439c",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Sesión IV - Pianista Boris Giltburg (Sonatas Beethoven)",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-22",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Municipal de Santiago",
+   "direccion": "Agustinas 794",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $3.500",
+   "descripcion": "Último recital del Ciclo Beethoven con obras como la sonata Patética y Los adioses.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://municipal.cl/",
+   "fuentes": [
+    {
+     "nombre": "Teatro Municipal de Santiago",
+     "url": "https://municipal.cl/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "27780d1fa6",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Imitación a la vida",
@@ -5218,6 +7441,66 @@
    "id": "ce8e5fa662",
    "agregado": "2026-11-08",
    "actualizado": "2026-11-08"
+  },
+  {
+   "titulo": "La Consulta",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-26",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "La Sala",
+   "direccion": "Diagonal Paraguay 458",
+   "comuna": "Santiago",
+   "ciudad": null,
+   "region": null,
+   "precio": "Gratis",
+   "descripcion": "Comediantes prueban chistes nuevos en vivo. Ellos son los pacientes, tú decides el diagnóstico. Entrada liberada con reserva previa.",
+   "imagen": "https://risaycomedia.com/shows/la-consulta-sinfecha.jpg",
+   "fotos": null,
+   "url": "https://risaycomedia.com/la-consulta/",
+   "fuentes": [
+    {
+     "nombre": "risaycomedia.com",
+     "url": "https://www.risaycomedia.com/shows/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "963527e59c",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Asskha Sumathra… No Sé Qué Hago Aquí?",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-26",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Centro Cultural Mallinkrodt 76",
+   "direccion": "Providencia, Barrio Bellavista",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $20.000",
+   "descripcion": "Por primera vez en el Teatro San Ginés, llega el fenómeno de la comedia nacional Prepárate para reír de principio a fin con el increíble show de Asskha Sumathra: \"NO SE QUE HAGO AQUI\" Una rutina imperdible y totalmente renovada, repleta de",
+   "imagen": "https://www.sangines.cl/wp-content/uploads/2026/10/640x640-copia.png",
+   "fotos": null,
+   "url": "https://www.sangines.cl/evento/asskha-sumathra-no-se-que-hago-aqui/",
+   "fuentes": [
+    {
+     "nombre": "Teatro San Ginés",
+     "url": "https://www.sangines.cl/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "04fc5d9e78",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Festival Fauna Primavera 2026",
@@ -5430,6 +7713,70 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "La muerte del padre",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": "2026-12-13",
+   "hora": null,
+   "horario": null,
+   "lugar": "GAM",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Obra de teatro contemporáneo que explora vínculos familiares y la figura paterna.",
+   "imagen": "https://chilecultura.gob.cl/uploads/cropped_48S5UFL.png",
+   "fotos": null,
+   "url": "https://gam.cl/es/que-hacer-en-gam/teatro/la-muerte-del-padre/",
+   "fuentes": [
+    {
+     "nombre": "Chile Cultura",
+     "url": "https://chilecultura.gob.cl/events/40689/"
+    },
+    {
+     "nombre": "GAM (teatro)",
+     "url": "https://gam.cl/es/que-hacer-en-gam/teatro/la-muerte-del-padre/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "02b7a6056d",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Pedro Aznar - Una noche entre amigos",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Enjoy Santiago",
+   "direccion": null,
+   "comuna": "Rinconada",
+   "ciudad": "Los Andes",
+   "region": "Valparaíso",
+   "precio": "Desde $26.488",
+   "descripcion": "Concierto del reconocido músico argentino Pedro Aznar en Enjoy Santiago con su show Una noche entre amigos.",
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/61d35332bb00010b53bf6d50b88f47cfb46c6c68.png?1792163765",
+   "fotos": null,
+   "url": "https://ticketplus.cl/companies/fundacion-festival-internacional-teatro-a-mil",
+   "fuentes": [
+    {
+     "nombre": "ticketplus.cl",
+     "url": "https://ticketplus.cl/companies/fundacion-festival-internacional-teatro-a-mil"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "7c6d652efa",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "League Challenge Noviembre",
    "categoria": "juegos",
    "fecha_inicio": "2026-11-28",
@@ -5625,6 +7972,66 @@
    "origen": "ticketera",
    "id": "c003178ec9",
    "agregado": "2026-11-06",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Vicho Viciani",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Comedy Restobar",
+   "direccion": null,
+   "comuna": "Providencia",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $12.000",
+   "descripcion": "🎙️😂 Vicho Viciani llega al escenario del Comedy Restobar @comedy_restobar con lo mejor de su rutina para ofrecer una noche llena de risas, ocurrencias y momentos inolvidables. Prepárate para disfrutar de una jornada de stand up comedy carga",
+   "imagen": "https://img.vamoh.cl/events/186e02b5-c286-4b84-954d-004cf3134c4c.webp?v=f015765f",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/vicho-viciani-23-de-octubre-22-00-hrs-comedy-restobar-bu3pt/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/vicho-viciani-23-de-octubre-22-00-hrs-comedy-restobar-bu3pt/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "15da5f6ccd",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Carcass en Chile - Chile Terrorfest II",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Caupolicán",
+   "direccion": "San Diego 850",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Carcass encabeza el Chile Terrorfest II junto a Necrot en el Teatro Caupolicán.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://cuarteldelmetal.com/conciertos-chile/2026/05/conciertos-metal-en-chile/",
+   "fuentes": [
+    {
+     "nombre": "Cuartel del Metal",
+     "url": "https://cuarteldelmetal.com/conciertos-chile/2026/05/conciertos-metal-en-chile/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "d675aa8ff7",
+   "agregado": "2026-11-10",
    "actualizado": "2026-11-10"
   },
   {
@@ -6152,6 +8559,36 @@
    "actualizado": "2026-11-08"
   },
   {
+   "titulo": "Natalia Valdebenito Comedy Restobar",
+   "categoria": "standup",
+   "fecha_inicio": "2026-12-05",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Comedy Restobar",
+   "direccion": null,
+   "comuna": "Providencia",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $20.000",
+   "descripcion": "Natalia Valdebenito llega al Comedy Restobar en Providencia para una noche de stand up comedy cargada de risas, ironía y su particular mirada sobre las situaciones de la vida cotidiana. Reconocida por su estilo directo, agudo y lleno de hum",
+   "imagen": "https://img.vamoh.cl/events/0dfa9672-a662-4911-9a78-08464434d147.webp?v=f828ff94",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/natalia-valdebenito-comedy-restobar-7-de-noviembre-20-00-hrs-flkz9/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/natalia-valdebenito-comedy-restobar-7-de-noviembre-20-00-hrs-flkz9/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "14a0593db3",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Ladies Of Metal 3",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-05",
@@ -6180,6 +8617,36 @@
    "id": "032f3df471",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Jorge Alís: Humor QL Unplugged",
+   "categoria": "standup",
+   "fecha_inicio": "2026-12-05",
+   "fecha_fin": "2026-12-06",
+   "hora": "22:00",
+   "horario": null,
+   "lugar": "El Cachafaz",
+   "direccion": null,
+   "comuna": "Ñuñoa",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $17.300",
+   "descripcion": "Jorge Alís presenta una noche de humor, monólogos y música en vivo, en un formato cercano donde el público también forma parte del show. UNPLUG mezcla comedia, participación de la gente y micrófono abierto en una experiencia espontánea, don",
+   "imagen": "https://img.vamoh.cl/events/d971ded2-49ca-4f7a-a948-b071dea91d6f.webp?v=9670b102",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/jorge-alis-humor-ql-unplugged-wuiue/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/jorge-alis-humor-ql-unplugged-wuiue/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "8c54b364c8",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "ANIME ALLSTAR - By Power Up",
@@ -6544,6 +9011,36 @@
    "actualizado": "2026-11-08"
   },
   {
+   "titulo": "Concierto lírico: Asmik Grigorian",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-12",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Municipal de Santiago",
+   "direccion": "Agustinas 794",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $12.000",
+   "descripcion": "Concierto excepcional de la aclamada soprano lituana Asmik Grigorian en el Teatro Municipal.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://municipal.cl/",
+   "fuentes": [
+    {
+     "nombre": "Teatro Municipal de Santiago",
+     "url": "https://municipal.cl/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "d08ed80828",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Evento Navideño: Una navidad en el club",
    "categoria": "yokai",
    "fecha_inicio": "2026-12-12",
@@ -6728,6 +9225,40 @@
    "id": "f0fc9af27f",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Paloma Elgueta",
+   "categoria": "standup",
+   "fecha_inicio": "2026-12-18",
+   "fecha_fin": "2026-12-19",
+   "hora": "22:00",
+   "horario": null,
+   "lugar": "Comedy Restobar",
+   "direccion": null,
+   "comuna": "Providencia",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $10.000",
+   "descripcion": "🎤 Paloma Elgueta @palomoza, una de las destacadas de la cartelera nacional, llega al escenario del Comedy Restobar con una función muy especial que promete una jornada llena de humor y risas. Disfruta de la comedia en vivo en Providencia y",
+   "imagen": "https://img.vamoh.cl/events/b9beb9c5-f450-4e92-9d9f-a3d3b1a9aefd.webp?v=640a09d6",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/paloma-elgueta-6-de-noviembre-19-30-hrs-comedy-restobar-kmxuv/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/paloma-elgueta-6-de-noviembre-19-30-hrs-comedy-restobar-kmxuv/"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/paloma-salas-16-de-noviembre-19-30-hrs-comedy-restobar-nwjok/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "17c9f5ec10",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Conce Nü Metal Vol. 3.0",
@@ -6917,6 +9448,36 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "La Negra Ester",
+   "categoria": "teatro",
+   "fecha_inicio": "2027-01-02",
+   "fecha_fin": "2027-01-03",
+   "hora": "19:30",
+   "horario": "Sáb 19:30 hrs, Dom 19:00 hrs",
+   "lugar": "Teatro Nescafé de las Artes",
+   "direccion": "Av. Manuel Montt 032",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "El clásico indiscutible del teatro musical chileno de Roberto Parra en el Teatro Nescafé de las Artes.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://telonticket.cl",
+   "fuentes": [
+    {
+     "nombre": "Telon Ticket",
+     "url": "https://telonticket.cl/mep_cat/musical/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "92481dd16a",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Insecurity + Evil Madness",
    "categoria": "conciertos",
    "fecha_inicio": "2027-01-02",
@@ -6945,6 +9506,71 @@
    "id": "84b10367f6",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "FIXION Fest, Fantastic & Horror Film Festival From Chile",
+   "categoria": "medieval",
+   "fecha_inicio": "2027-01-03",
+   "fecha_fin": "2027-04-30",
+   "hora": null,
+   "horario": null,
+   "lugar": null,
+   "direccion": "Av. Andrés Bello 2425",
+   "comuna": "Santiago",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $12",
+   "descripcion": "El festival es con entrada libre y gratuita. FIXION Fest (A.K.A. FIXION-SARS) es el primer Festival de Cine Fantástico y de Terror de Chile. El primero se organizó hace 17 años, a partir del cual se realizaron 8 ediciones. Este año será la",
+   "imagen": "https://festhomedocs.com/festivals/4396/logo-uncut-4396.jpg",
+   "fotos": [
+    "https://festhomedocs.com/festivals/4396/foto1_small-4396.jpg",
+    "https://festhomedocs.com/festivals/4396/foto2_small-4396.jpg",
+    "https://festhomedocs.com/festivals/4396/foto3_small-4396.jpg",
+    "https://festhomedocs.com/festivals/4396/foto4_small-4396.jpg"
+   ],
+   "url": "https://festhome.com/festival/fixion-fest-festival-de-cine-fantastico-y-de-terror-de-chile",
+   "fuentes": [
+    {
+     "nombre": "Festhome",
+     "url": "https://filmmakers.festhome.com/es/festival/fixion-fest-festival-de-cine-fantastico-y-de-terror-de-chile"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "de7c922d9f",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Teatro a Mil: La Omisión de la Familia Coleman",
+   "categoria": "teatro",
+   "fecha_inicio": "2027-01-08",
+   "fecha_fin": "2027-01-10",
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Municipal de Las Condes",
+   "direccion": "Av. Apoquindo 3300",
+   "comuna": "Las Condes",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Presentación dentro del festival Teatro a Mil en el Teatro Municipal de Las Condes.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://tmlascondes.cl/",
+   "fuentes": [
+    {
+     "nombre": "Teatro Municipal de Las Condes",
+     "url": "https://tmlascondes.cl/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "09897b6a7f",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Metallica Sinfónico S&M",
@@ -7003,6 +9629,36 @@
    "id": "39a39867fb",
    "agregado": "2026-11-08",
    "actualizado": "2026-11-08"
+  },
+  {
+   "titulo": "Los Entendidos",
+   "categoria": "teatro",
+   "fecha_inicio": "2027-01-18",
+   "fecha_fin": "2027-01-20",
+   "hora": "19:00",
+   "horario": "Lun a Mié 19:00 hrs",
+   "lugar": "Matucana 100",
+   "direccion": "Matucana 100",
+   "comuna": "Estación Central",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Montaje escénico y musical en el Centro Cultural Matucana 100.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://telonticket.cl",
+   "fuentes": [
+    {
+     "nombre": "Telon Ticket",
+     "url": "https://telonticket.cl/mep_cat/musical/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "4d34976bfe",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "STUDIO GHIBLI SINFÓNICO - Teatro Municipal de Valparaíso",
@@ -7683,6 +10339,40 @@
    "id": "5ae5fe6040",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Tarja - Frisson Live 2027",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-06-07",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Teatro Coliseo - Santiago Centro",
+   "direccion": "Nataniel Cox 59",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "$39.000 (Platea Alta) en adelante",
+   "descripcion": "Concierto de la destacada cantante de metal sinfónico Tarja Turunen en el Teatro Coliseo.",
+   "imagen": "https://static.ptocdn.net/images/eventos/rec117_calugalistado.jpg",
+   "fotos": null,
+   "url": "https://www.puntoticket.com/tarja",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/tarja"
+    },
+    {
+     "nombre": "Futuro Chile",
+     "url": "https://www.futuro.cl/2026/11/lanzo-su-album-mas-pesado-en-anos-confirmo-concierto-en-chile-y-prepara-una-cita-imperdible-el-regreso-de-la-voz-del-metal-sinfonico/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "c0bec6ebcf",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Gackt Yellow Fried Chickenz - Back To Latam Tour 2027",
