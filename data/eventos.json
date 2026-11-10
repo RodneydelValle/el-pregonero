@@ -1,12 +1,12 @@
 {
  "version": 1,
- "actualizado": "2026-11-10T10:01-03:00",
+ "actualizado": "2026-11-10T11:29-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-10T10:01-03:00",
+  "fecha": "2026-11-10T11:29-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 106,
-  "nuevos_esta_vez": 80,
+  "eventos_nuevos": 136,
+  "nuevos_esta_vez": 30,
   "nuevos_ids": [
    "41ac991fa0",
    "5d05376a3b",
@@ -113,7 +113,37 @@
    "af4c1f23e9",
    "f219320f0e",
    "92481dd16a",
-   "4d34976bfe"
+   "4d34976bfe",
+   "88785c69f3",
+   "4e58c117e8",
+   "c5379480bd",
+   "4d3b01dafb",
+   "209acb1746",
+   "f492cc3527",
+   "7b65c300fb",
+   "3b8684cd1d",
+   "661823c2b5",
+   "52ba4c3ecc",
+   "7a39d3cf94",
+   "a9f07da20d",
+   "64bb8d7ecf",
+   "0b7b9100c9",
+   "4d317be93e",
+   "0eba82a1e3",
+   "83456c4dea",
+   "ca420522e2",
+   "8ed2c7cf9d",
+   "1f917a1993",
+   "3ba4d65bec",
+   "7034c2fc65",
+   "da9d3c6963",
+   "886189b6ab",
+   "331a174da6",
+   "6f4f251dfd",
+   "68c160506a",
+   "6c5fdeb43e",
+   "5a9f634843",
+   "584b87c424"
   ],
   "nuevos_desde": {
    "41ac991fa0": "2026-11-09T16:43-03:00",
@@ -221,23 +251,53 @@
    "af4c1f23e9": "2026-11-10T10:01-03:00",
    "f219320f0e": "2026-11-10T10:01-03:00",
    "92481dd16a": "2026-11-10T10:01-03:00",
-   "4d34976bfe": "2026-11-10T10:01-03:00"
+   "4d34976bfe": "2026-11-10T10:01-03:00",
+   "88785c69f3": "2026-11-10T11:29-03:00",
+   "4e58c117e8": "2026-11-10T11:29-03:00",
+   "c5379480bd": "2026-11-10T11:29-03:00",
+   "4d3b01dafb": "2026-11-10T11:29-03:00",
+   "209acb1746": "2026-11-10T11:29-03:00",
+   "f492cc3527": "2026-11-10T11:29-03:00",
+   "7b65c300fb": "2026-11-10T11:29-03:00",
+   "3b8684cd1d": "2026-11-10T11:29-03:00",
+   "661823c2b5": "2026-11-10T11:29-03:00",
+   "52ba4c3ecc": "2026-11-10T11:29-03:00",
+   "7a39d3cf94": "2026-11-10T11:29-03:00",
+   "a9f07da20d": "2026-11-10T11:29-03:00",
+   "64bb8d7ecf": "2026-11-10T11:29-03:00",
+   "0b7b9100c9": "2026-11-10T11:29-03:00",
+   "4d317be93e": "2026-11-10T11:29-03:00",
+   "0eba82a1e3": "2026-11-10T11:29-03:00",
+   "83456c4dea": "2026-11-10T11:29-03:00",
+   "ca420522e2": "2026-11-10T11:29-03:00",
+   "8ed2c7cf9d": "2026-11-10T11:29-03:00",
+   "1f917a1993": "2026-11-10T11:29-03:00",
+   "3ba4d65bec": "2026-11-10T11:29-03:00",
+   "7034c2fc65": "2026-11-10T11:29-03:00",
+   "da9d3c6963": "2026-11-10T11:29-03:00",
+   "886189b6ab": "2026-11-10T11:29-03:00",
+   "331a174da6": "2026-11-10T11:29-03:00",
+   "6f4f251dfd": "2026-11-10T11:29-03:00",
+   "68c160506a": "2026-11-10T11:29-03:00",
+   "6c5fdeb43e": "2026-11-10T11:29-03:00",
+   "5a9f634843": "2026-11-10T11:29-03:00",
+   "584b87c424": "2026-11-10T11:29-03:00"
   },
   "horas_nuevos": 24,
   "llamadas_ia": 40,
   "ia_sin_cupo": false,
-  "ultima_completa": "2026-11-10T09:24-03:00",
+  "ultima_completa": "2026-11-10T10:57-03:00",
   "modo": "completa",
-  "paginas_revisadas": 32,
-  "busquedas": 94,
-  "fuentes_fijas": 25,
-  "errores": 16,
+  "paginas_revisadas": 41,
+  "busquedas": 96,
+  "fuentes_fijas": 14,
+  "errores": 8,
   "noticias_desde": "2026-11-10",
-  "noticias_viejas_descartadas": 368,
+  "noticias_viejas_descartadas": 454,
   "redes_vistas": 9,
-  "imagenes_encontradas": 11
+  "imagenes_encontradas": 16
  },
- "total": 317,
+ "total": 347,
  "eventos": [
   {
    "titulo": "Mariposas y Polillas, Colores en Movimiento",
@@ -253,7 +313,7 @@
    "region": "Región Metropolitana",
    "precio": "Gratis",
    "descripcion": "Exposición temporal sobre mariposas y polillas en el Museo Nacional de Historia Natural.",
-   "imagen": null,
+   "imagen": "https://www.mnhn.gob.cl/sites/www.mnhn.gob.cl/files/2025-04/Tema%205%20Caja%202.jpg",
    "fotos": null,
    "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion",
    "fuentes": [
@@ -1202,7 +1262,7 @@
    "region": "Región de Valparaíso",
    "precio": null,
    "descripcion": "Muestra arqueológica e histórica sobre el patrimonio del pasado de la zona de Puchuncaví.",
-   "imagen": null,
+   "imagen": "https://www.mhnv.gob.cl/sites/www.mhnv.gob.cl/files/2026-08/IMG_3737.JPG",
    "fotos": null,
    "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=1",
    "fuentes": [
@@ -1330,7 +1390,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Exposición de Lizi Sánchez en el Museo de Arte Contemporáneo, sede Quinta Normal.",
-   "imagen": null,
+   "imagen": "https://mac.uchile.cl/wp-content/uploads/2026/08/DIFUSION-5.-Lizi-Sanchez-Transcript-N13-2024.-Installation-View-at-ICPNA-Lima.-Courtesy-of-the-artist_.jpg",
    "fotos": null,
    "url": "https://mac.uchile.cl/periodo/actuales/",
    "fuentes": [
@@ -1364,7 +1424,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Muestra patrimonial e investigativa basada en los archivos del Museo de Arte Contemporáneo.",
-   "imagen": null,
+   "imagen": "https://mac.uchile.cl/wp-content/uploads/2026/08/estratos_web.jpg",
    "fotos": null,
    "url": "https://mac.uchile.cl/periodo/actuales/",
    "fuentes": [
@@ -1470,7 +1530,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Exposición de arte contemporáneo de Valentina Díaz en el MAC Quinta Normal.",
-   "imagen": null,
+   "imagen": "https://mac.uchile.cl/wp-content/uploads/2026/08/El-alvo-del-Ballet-Neoconcreto_WEB.jpg",
    "fotos": null,
    "url": "https://mac.uchile.cl/periodo/actuales/",
    "fuentes": [
@@ -1508,7 +1568,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Muestra de arte contemporáneo en el MAC Quinta Normal.",
-   "imagen": null,
+   "imagen": "https://artes.uchile.cl/dam/jcr:9a55a318-26b7-4769-8487-bd26b28323a9/exposicion-en-la-punta-de-la-lengua.jpg",
    "fotos": null,
    "url": "https://artes.uchile.cl/agenda/exposiciones",
    "fuentes": [
@@ -1538,7 +1598,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Muestra audiovisual y artística de Andrés Denegri en MAC Quinta Normal.",
-   "imagen": null,
+   "imagen": "https://mac.uchile.cl/wp-content/uploads/2026/08/Denegri_web.jpg",
    "fotos": null,
    "url": "https://mac.uchile.cl/periodo/actuales/",
    "fuentes": [
@@ -1576,7 +1636,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Exposición de arte contemporáneo en la sede Quinta Normal del MAC.",
-   "imagen": null,
+   "imagen": "https://mac.uchile.cl/wp-content/uploads/2026/08/Menstruadero_WEB.jpg",
    "fotos": null,
    "url": "https://mac.uchile.cl/periodo/actuales/",
    "fuentes": [
@@ -2072,7 +2132,7 @@
    "region": "Región de Coquimbo",
    "precio": null,
    "descripcion": "Muestra bibliográfica y patrimonial de libros de Premios Nobel conservados por Gabriela Mistral.",
-   "imagen": null,
+   "imagen": "https://www.mgmistral.gob.cl/sites/www.mgmistral.gob.cl/files/2026-10/WhatsApp%20Image%202026-10-20%20at%2015.13.38.jpeg",
    "fotos": null,
    "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=1",
    "fuentes": [
@@ -2200,7 +2260,7 @@
    "region": null,
    "precio": null,
    "descripcion": "Muestra de artes visuales en el GAM que forma parte de la programación cultural de la temporada.",
-   "imagen": null,
+   "imagen": "https://gam.cl/media/images/PortadaSalvataje.2e16d0ba.fill-1200x630.png",
    "fotos": null,
    "url": "https://gam.cl/es/que-hacer-en-gam/artesvisuales/exposicion-salvataje/",
    "fuentes": [
@@ -2772,7 +2832,7 @@
    "region": "Valparaíso",
    "precio": "Gratis",
    "descripcion": "Exposición fotográfica de Domingo Ulloa sobre los inicios de la neurocirugía en Chile.",
-   "imagen": null,
+   "imagen": "https://www.mhnv.gob.cl/sites/www.mhnv.gob.cl/files/2026-10/1-03.png",
    "fotos": null,
    "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=2",
    "fuentes": [
@@ -3190,7 +3250,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Instalación y espacio de escucha en el Museo de Arte Contemporáneo.",
-   "imagen": null,
+   "imagen": "https://mac.uchile.cl/wp-content/uploads/2026/10/rinconescucha-1.jpg",
    "fotos": null,
    "url": "https://mac.uchile.cl/periodo/actuales/",
    "fuentes": [
@@ -3292,7 +3352,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Muestra artística de Isidora Correa ubicada en el zócalo del MAC Parque Forestal.",
-   "imagen": null,
+   "imagen": "https://mac.uchile.cl/wp-content/uploads/2026/10/01.jpg",
    "fotos": null,
    "url": "https://mac.uchile.cl/periodo/actuales/",
    "fuentes": [
@@ -3326,7 +3386,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Muestra artística en el MAC Parque Forestal.",
-   "imagen": null,
+   "imagen": "https://artes.uchile.cl/dam/jcr:9947c73a-71a4-4975-8e02-423a11472fe1/cesantemiron-flotante.jpg",
    "fotos": null,
    "url": "https://artes.uchile.cl/agenda/exposiciones",
    "fuentes": [
@@ -3356,7 +3416,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Muestra de arte contemporáneo de Alexis Carreño en el MAC.",
-   "imagen": null,
+   "imagen": "https://mac.uchile.cl/wp-content/uploads/2026/10/imagen1.jpg",
    "fotos": null,
    "url": "https://mac.uchile.cl/periodo/actuales/",
    "fuentes": [
@@ -3435,6 +3495,36 @@
    "id": "8ac63cc959",
    "agregado": "2026-11-08",
    "actualizado": "2026-11-08"
+  },
+  {
+   "titulo": "Cartas de Paulo",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-10",
+   "fecha_fin": null,
+   "hora": "18:00",
+   "horario": null,
+   "lugar": "Plataforma Cultural Campus Juan Gómez Millas Universidad de Chile",
+   "direccion": "Av. Grecia 3401",
+   "comuna": "Ñuñoa",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Proyección y actividad cultural en la Plataforma Cultural de la Universidad de Chile.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.jaranax.com/eventos/region-metropolitana-de-santiago/gratis",
+   "fuentes": [
+    {
+     "nombre": "JaranaX",
+     "url": "https://www.jaranax.com/eventos/region-metropolitana-de-santiago/gratis"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "88785c69f3",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Torneo Super Smash Bros",
@@ -3534,7 +3624,7 @@
    "hora": "20:00",
    "horario": "10, 17, 24 y 25 de noviembre a las 20:00 hrs",
    "lugar": "Teatro Mori Recoleta",
-   "direccion": null,
+   "direccion": "Bellavista 07",
    "comuna": "Recoleta",
    "ciudad": "Santiago",
    "region": "Región Metropolitana",
@@ -3547,12 +3637,46 @@
     {
      "nombre": "Teatro Mori",
      "url": "https://teatromori.com/cartelera"
+    },
+    {
+     "nombre": "Telon Ticket",
+     "url": "https://telonticket.cl/mep_cat/standup/"
     }
    ],
    "desde_imagen": false,
    "confianza": "alta",
    "origen": "ia",
    "id": "fa04c2cbb0",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Nacho Navarrete – NOTWORKING",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-10",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Teatro Mori Parque Arauco",
+   "direccion": "Av. Kennedy 5413",
+   "comuna": "Las Condes",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Show de stand-up comedy de Nacho Navarrete en Teatro Mori Parque Arauco.",
+   "imagen": "https://telonticket.cl/wp-content/uploads/2025/02/1-62.jpg",
+   "fotos": null,
+   "url": "https://telonticket.cl",
+   "fuentes": [
+    {
+     "nombre": "Telon Ticket",
+     "url": "https://telonticket.cl/mep_cat/standup/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "0eba82a1e3",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-10"
   },
@@ -4367,12 +4491,46 @@
     {
      "nombre": "Teatro San Ginés",
      "url": "https://www.sangines.cl/"
+    },
+    {
+     "nombre": "sangines.cl",
+     "url": "https://www.sangines.cl/cartelera/"
     }
    ],
    "desde_imagen": false,
    "confianza": "alta",
    "origen": "ia",
    "id": "615e1e2ab1",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Mi hermano es un idiota",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-12",
+   "fecha_fin": "2026-11-19",
+   "hora": "20:30",
+   "horario": null,
+   "lugar": "Teatro Mori Parque Arauco",
+   "direccion": "Av. Kennedy 5413",
+   "comuna": "Las Condes",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Show de comedia y stand-up en Teatro Mori Parque Arauco.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://telonticket.cl",
+   "fuentes": [
+    {
+     "nombre": "Telon Ticket",
+     "url": "https://telonticket.cl/mep_cat/standup/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "83456c4dea",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-10"
   },
@@ -4641,6 +4799,66 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "Noche de Museos 2026: Palacio de La Moneda",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": "14:30",
+   "horario": "14:30 a 18:00 hrs",
+   "lugar": "Palacio de La Moneda",
+   "direccion": "Moneda S/N",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Visita especial y recorrido por los patios interiores y espacios patrimoniales del Palacio de La Moneda en la Noche de Museos 2026.",
+   "imagen": "https://www.pudahuel.cl/wp-content/uploads/2026/11/Noche-de-museos.webp",
+   "fotos": null,
+   "url": "https://www.pudahuel.cl/noticias/2026/11/noche-de-museos-este-2026-el-imperdible-panorama-para-recorrer-la-cultura-de-noche/",
+   "fuentes": [
+    {
+     "nombre": "Pudahuel",
+     "url": "https://www.pudahuel.cl/noticias/2026/11/noche-de-museos-este-2026-el-imperdible-panorama-para-recorrer-la-cultura-de-noche/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "0b7b9100c9",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Bibliomóvil. Historias Sobre Ruedas – Noche de Museos 2026",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": "17:00",
+   "horario": "17:00 a 22:00",
+   "lugar": "Bibliomóvil",
+   "direccion": null,
+   "comuna": "Concepción",
+   "ciudad": "Concepción",
+   "region": "Biobío",
+   "precio": "Gratis",
+   "descripcion": "Actividad cultural itinerante en la Noche de Museos.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://nochedemuseos.cl/actividades",
+   "fuentes": [
+    {
+     "nombre": "nochedemuseos.cl",
+     "url": "https://nochedemuseos.cl/actividades"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "a9f07da20d",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Noche de Museos 2026",
    "categoria": "museos",
    "fecha_inicio": "2026-11-13",
@@ -4811,6 +5029,14 @@
     {
      "nombre": "La Tercera",
      "url": "https://www.latercera.com/servicios/noticia/cuando-es-la-noche-de-museos-y-como-buscar-actividades-gratuitas/"
+    },
+    {
+     "nombre": "CNN Chile",
+     "url": "https://www.cnnchile.com/cultura/noche-de-museos-2026-u-de-chile-sera-parte-con-exposiciones-talleres-gratis-musica-y-poesia/"
+    },
+    {
+     "nombre": "nochedemuseos.cl",
+     "url": "https://nochedemuseos.cl/actividades"
     }
    ],
    "desde_imagen": true,
@@ -4853,6 +5079,126 @@
    "id": "57bf3a4361",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "\"Cuentos de Carretera: Historias Sobre Dos Ruedas en 100 Palabras\" – Noche de Museos 2026",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": "18:00",
+   "horario": "18:00 a 23:00",
+   "lugar": "Museo",
+   "direccion": null,
+   "comuna": "Lautaro",
+   "ciudad": "Lautaro",
+   "region": "La Araucanía",
+   "precio": "Gratis",
+   "descripcion": "Actividad cultural en museo local por la Noche de Museos 2026.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://nochedemuseos.cl/actividades",
+   "fuentes": [
+    {
+     "nombre": "nochedemuseos.cl",
+     "url": "https://nochedemuseos.cl/actividades"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "209acb1746",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Charla Sobre Avalanchas – Noche de Museos 2026",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": "18:00",
+   "horario": "18:00 a 20:00",
+   "lugar": "Museo",
+   "direccion": null,
+   "comuna": "Los Andes",
+   "ciudad": "Los Andes",
+   "region": "Valparaíso",
+   "precio": "Gratis",
+   "descripcion": "Charla temática en museo local en el marco de la Noche de Museos.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://nochedemuseos.cl/actividades",
+   "fuentes": [
+    {
+     "nombre": "nochedemuseos.cl",
+     "url": "https://nochedemuseos.cl/actividades"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "661823c2b5",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Exposición “Fenómenos Vegetales” NEORURAL de Jorge Zambrano – Noche de Museos 2026",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": "18:00",
+   "horario": "18:00 a 03:00",
+   "lugar": "Sala de exposición museográfica",
+   "direccion": null,
+   "comuna": "Concepción",
+   "ciudad": "Concepción",
+   "region": "Biobío",
+   "precio": "Gratis",
+   "descripcion": "Exposición de arte contemporáneo en la Noche de Museos 2026.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://nochedemuseos.cl/actividades",
+   "fuentes": [
+    {
+     "nombre": "nochedemuseos.cl",
+     "url": "https://nochedemuseos.cl/actividades"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "f492cc3527",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Visita guiada al Museo Geológico – Noche de Museos 2026",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": "18:00",
+   "horario": "18:00 a 21:30",
+   "lugar": "Museo Geológico",
+   "direccion": null,
+   "comuna": "Antofagasta",
+   "ciudad": "Antofagasta",
+   "region": "Antofagasta",
+   "precio": "Gratis",
+   "descripcion": "Visita guiada especial por la Noche de Museos 2026.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://nochedemuseos.cl/actividades",
+   "fuentes": [
+    {
+     "nombre": "nochedemuseos.cl",
+     "url": "https://nochedemuseos.cl/actividades"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "7a39d3cf94",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Visita Nocturna Guiada por Astrónomos UC (Turno 1)",
@@ -4921,6 +5267,36 @@
    "id": "4d5f2940d2",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-08"
+  },
+  {
+   "titulo": "Lanzamiento Exposición \"Cuidemos a Chaiguao\" – Noche de Museos 2026",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": "19:00 a 19:30",
+   "lugar": "Museo Municipal de Quellón",
+   "direccion": null,
+   "comuna": "Quellón",
+   "ciudad": "Quellón",
+   "region": "Los Lagos",
+   "precio": "Gratis",
+   "descripcion": "Lanzamiento de exposición en el marco de la Noche de Museos 2026.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://nochedemuseos.cl/actividades",
+   "fuentes": [
+    {
+     "nombre": "nochedemuseos.cl",
+     "url": "https://nochedemuseos.cl/actividades"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "4d3b01dafb",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Show de Stand Up - El Cachafaz",
@@ -4995,6 +5371,36 @@
    "actualizado": "2026-11-10"
   },
   {
+   "titulo": "Noche de Museos y patrimonio en Andacollo – Noche de Museos 2026",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": "19:30",
+   "horario": "19:30 a 20:30",
+   "lugar": "Museo",
+   "direccion": null,
+   "comuna": "Andacollo",
+   "ciudad": "Andacollo",
+   "region": "Coquimbo",
+   "precio": "Gratis",
+   "descripcion": "Actividad patrimonial en Andacollo por la Noche de Museos.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://nochedemuseos.cl/actividades",
+   "fuentes": [
+    {
+     "nombre": "nochedemuseos.cl",
+     "url": "https://nochedemuseos.cl/actividades"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "64bb8d7ecf",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Torneo Pokémon TCG del Sobre",
    "categoria": "juegos",
    "fecha_inicio": "2026-11-13",
@@ -5023,6 +5429,36 @@
    "id": "dc7e2a27ca",
    "agregado": "2026-11-09",
    "actualizado": "2026-11-09"
+  },
+  {
+   "titulo": "¡Que comience la aventura! Una noche de patrimonio. – Noche de Museos 2026",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": "19:30",
+   "horario": "19:30 a 21:00",
+   "lugar": "Sala de exposición museográfica",
+   "direccion": null,
+   "comuna": "Iquique",
+   "ciudad": "Iquique",
+   "region": "Tarapacá",
+   "precio": "Gratis",
+   "descripcion": "Jornada patrimonial en sala de exposición por la Noche de Museos.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://nochedemuseos.cl/actividades",
+   "fuentes": [
+    {
+     "nombre": "nochedemuseos.cl",
+     "url": "https://nochedemuseos.cl/actividades"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "3b8684cd1d",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Amarre: Desahogo, Comedia y Tarot en The Botanic Coffee 13 de Noviembre 20 Hrs",
@@ -5115,6 +5551,36 @@
    "actualizado": "2026-11-09"
   },
   {
+   "titulo": "He Hare Hue Tao'a i te Pō – Noche de Museos 2026",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": "20:00 a 22:30",
+   "lugar": "Museo",
+   "direccion": null,
+   "comuna": "Isla de Pascua",
+   "ciudad": "Isla de Pascua",
+   "region": "Valparaíso",
+   "precio": "Gratis",
+   "descripcion": "Actividad patrimonial en el museo de Isla de Pascua por la Noche de Museos.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://nochedemuseos.cl/actividades",
+   "fuentes": [
+    {
+     "nombre": "nochedemuseos.cl",
+     "url": "https://nochedemuseos.cl/actividades"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "7b65c300fb",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Historia de amor para un alma vieja",
    "categoria": "teatro",
    "fecha_inicio": "2026-11-13",
@@ -5171,6 +5637,36 @@
    "confianza": "alta",
    "origen": "ia",
    "id": "725888a999",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Recreación Histórica Ferroportuaria – Noche de Museos 2026",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": "20:00 a 21:45",
+   "lugar": "Centro de difusión sobre arqueología",
+   "direccion": null,
+   "comuna": "Los Vilos",
+   "ciudad": "Los Vilos",
+   "region": "Coquimbo",
+   "precio": "Gratis",
+   "descripcion": "Recreación histórica en centro de difusión durante la Noche de Museos.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://nochedemuseos.cl/actividades",
+   "fuentes": [
+    {
+     "nombre": "nochedemuseos.cl",
+     "url": "https://nochedemuseos.cl/actividades"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "52ba4c3ecc",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-10"
   },
@@ -5327,6 +5823,10 @@
     {
      "nombre": "Teatro San Ginés",
      "url": "https://www.sangines.cl/"
+    },
+    {
+     "nombre": "sangines.cl",
+     "url": "https://www.sangines.cl/cartelera/"
     }
    ],
    "desde_imagen": false,
@@ -5357,6 +5857,10 @@
     {
      "nombre": "Teatro San Ginés",
      "url": "https://www.sangines.cl/"
+    },
+    {
+     "nombre": "sangines.cl",
+     "url": "https://www.sangines.cl/cartelera/"
     }
    ],
    "desde_imagen": false,
@@ -5387,6 +5891,10 @@
     {
      "nombre": "Teatro San Ginés",
      "url": "https://www.sangines.cl/"
+    },
+    {
+     "nombre": "sangines.cl",
+     "url": "https://www.sangines.cl/cartelera/"
     }
    ],
    "desde_imagen": false,
@@ -5489,6 +5997,66 @@
    "id": "63a4ac1676",
    "agregado": "2026-11-09",
    "actualizado": "2026-11-09"
+  },
+  {
+   "titulo": "Noche de Museos – Museo de Arte Contemporáneo, Sede Quinta Normal",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": "17:30–22:00",
+   "lugar": "Museo de Arte Contemporáneo (MAC) - Sede Quinta Normal",
+   "direccion": "Avenida Matucana 464",
+   "comuna": "Quinta Normal",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Apertura en horario especial por la Noche de Museos 2026 con exposiciones gratuitas.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.cnnchile.com/cultura/noche-de-museos-2026-u-de-chile-sera-parte-con-exposiciones-talleres-gratis-musica-y-poesia/",
+   "fuentes": [
+    {
+     "nombre": "CNN Chile",
+     "url": "https://www.cnnchile.com/cultura/noche-de-museos-2026-u-de-chile-sera-parte-con-exposiciones-talleres-gratis-musica-y-poesia/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "c5379480bd",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Pastor Rocha en San Fernando",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": null,
+   "direccion": null,
+   "comuna": "San Fernando",
+   "ciudad": "San Fernando",
+   "region": "Región del Libertador General Bernardo O'Higgins",
+   "precio": null,
+   "descripcion": "Show de stand-up comedy con Pastor Rocha.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://lacomedia.cl/",
+   "fuentes": [
+    {
+     "nombre": "lacomedia.cl",
+     "url": "https://lacomedia.cl/eventos/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "331a174da6",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Roberto Matta: la línea del duelo - Palacio Pereira",
@@ -6205,12 +6773,42 @@
    "actualizado": "2026-11-08"
   },
   {
-   "titulo": "Divorciados 2.0 (única Función)",
+   "titulo": "Diego Urrutia en Chillán",
    "categoria": "standup",
    "fecha_inicio": "2026-11-14",
    "fecha_fin": null,
    "hora": null,
    "horario": null,
+   "lugar": null,
+   "direccion": null,
+   "comuna": "Chillán",
+   "ciudad": "Chillán",
+   "region": "Región de Ñuble",
+   "precio": null,
+   "descripcion": "Show en vivo del comediante Diego Urrutia en Chillán.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://lacomedia.cl/",
+   "fuentes": [
+    {
+     "nombre": "lacomedia.cl",
+     "url": "https://lacomedia.cl/eventos/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "68c160506a",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Divorciados 2.0 (única Función)",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": "Funciones: 14 de noviembre",
    "lugar": "Teatro San Ginés Mallinkrodt 112",
    "direccion": "Providencia, Barrio Bellavista",
    "comuna": null,
@@ -6225,6 +6823,10 @@
     {
      "nombre": "Teatro San Ginés",
      "url": "https://www.sangines.cl/"
+    },
+    {
+     "nombre": "sangines.cl",
+     "url": "https://www.sangines.cl/cartelera/"
     }
    ],
    "desde_imagen": false,
@@ -6355,6 +6957,36 @@
    "actualizado": "2026-11-08"
   },
   {
+   "titulo": "Stand Up \"Con el ego hasta el cuello\"",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": null,
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Noche de stand-up comedy con el show \"Con el ego hasta el cuello\".",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://lacomedia.cl/",
+   "fuentes": [
+    {
+     "nombre": "lacomedia.cl",
+     "url": "https://lacomedia.cl/eventos/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "6f4f251dfd",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Torneo Pokémon JCC en INACAP CARD FEST 2026 Los Ángeles",
    "categoria": "juegos",
    "fecha_inicio": "2026-11-15",
@@ -6471,6 +7103,36 @@
    "confianza": "alta",
    "origen": "ia",
    "id": "dbb05270e5",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Felipe Izquierdo en «Soy el único que no me conozco»",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-15",
+   "fecha_fin": "2026-11-29",
+   "hora": "19:30",
+   "horario": null,
+   "lugar": "Teatro Mori Vitacura",
+   "direccion": "Av. Vitacura 3401",
+   "comuna": "Vitacura",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Nuevo espectáculo unipersonal de humor de Felipe Izquierdo.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://telonticket.cl",
+   "fuentes": [
+    {
+     "nombre": "Telon Ticket",
+     "url": "https://telonticket.cl/mep_cat/standup/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "ca420522e2",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-10"
   },
@@ -6745,6 +7407,44 @@
    "actualizado": "2026-11-10"
   },
   {
+   "titulo": "Karol Blum – Popurrí",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-18",
+   "fecha_fin": "2026-11-19",
+   "hora": "20:00",
+   "horario": "Funciones: 18 y 19 de noviembre",
+   "lugar": "Centro Cultural Mallinkrodt 76",
+   "direccion": "Providencia, Barrio Bellavista",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $20.000",
+   "descripcion": "“Popurrí es un espectáculo unipersonal de comedia donde una mujer intenta sobrevivir a una jornada en la que todo parece reclamar su atención al mismo tiempo; sus hijos, su expareja, su madre y un trabajo que le exige sonreír mientras todo",
+   "imagen": "https://www.sangines.cl/wp-content/uploads/2026/09/640x640_POPURRI.jpg",
+   "fotos": null,
+   "url": "https://www.sangines.cl/evento/karol-blum-popurri/",
+   "fuentes": [
+    {
+     "nombre": "Teatro San Ginés",
+     "url": "https://www.sangines.cl/"
+    },
+    {
+     "nombre": "sangines.cl",
+     "url": "https://www.sangines.cl/cartelera/"
+    },
+    {
+     "nombre": "Telon Ticket",
+     "url": "https://telonticket.cl/mep_cat/standup/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "3ade752ddb",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Cazadores de Agua",
    "categoria": "teatro",
    "fecha_inicio": "2026-11-18",
@@ -6771,36 +7471,6 @@
    "confianza": "alta",
    "origen": "ia",
    "id": "123c03116b",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
-  },
-  {
-   "titulo": "Karol Blum – Popurrí",
-   "categoria": "teatro",
-   "fecha_inicio": "2026-11-18",
-   "fecha_fin": "2026-11-19",
-   "hora": null,
-   "horario": "Funciones: 18 y 19 de noviembre",
-   "lugar": "Centro Cultural Mallinkrodt 76",
-   "direccion": "Providencia, Barrio Bellavista",
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
-   "precio": "Desde $20.000",
-   "descripcion": "“Popurrí es un espectáculo unipersonal de comedia donde una mujer intenta sobrevivir a una jornada en la que todo parece reclamar su atención al mismo tiempo; sus hijos, su expareja, su madre y un trabajo que le exige sonreír mientras todo",
-   "imagen": "https://www.sangines.cl/wp-content/uploads/2026/09/640x640_POPURRI.jpg",
-   "fotos": null,
-   "url": "https://www.sangines.cl/evento/karol-blum-popurri/",
-   "fuentes": [
-    {
-     "nombre": "Teatro San Ginés",
-     "url": "https://www.sangines.cl/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "datos-estructurados",
-   "id": "3ade752ddb",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-10"
   },
@@ -6955,6 +7625,36 @@
    "actualizado": "2026-11-10"
   },
   {
+   "titulo": "Juan Pablo López presenta – UN POCO CHILL",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-20",
+   "fecha_fin": "2026-11-21",
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Teatro Oriente",
+   "direccion": "Av. Pedro de Valdivia 099",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Juan Pablo López presenta su show de comedia Un Poco Chill.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://telonticket.cl",
+   "fuentes": [
+    {
+     "nombre": "Telon Ticket",
+     "url": "https://telonticket.cl/mep_cat/standup/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "8ed2c7cf9d",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Surround Sessions: Kse|as Daylight Dies 20 Años en Casa Estudio Rockaxis",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-20",
@@ -7013,6 +7713,36 @@
    "id": "0843bbe6a1",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Jorge Alís presenta «Malón!»",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-20",
+   "fecha_fin": "2026-11-27",
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Teatro Cachafaz",
+   "direccion": "Av. Eliodoro Yáñez 837",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "El comediante Jorge Alís presenta su show Malón! en Teatro Cachafaz.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://telonticket.cl",
+   "fuentes": [
+    {
+     "nombre": "Telon Ticket",
+     "url": "https://telonticket.cl/mep_cat/standup/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "1f917a1993",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Pentakle en Chile",
@@ -7169,12 +7899,42 @@
    "actualizado": "2026-11-10"
   },
   {
+   "titulo": "Claudio Michaux en Chicureo",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-21",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": null,
+   "direccion": null,
+   "comuna": "Colina",
+   "ciudad": "Chicureo",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Presentación de stand-up de Claudio Michaux en Chicureo.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://lacomedia.cl/",
+   "fuentes": [
+    {
+     "nombre": "lacomedia.cl",
+     "url": "https://lacomedia.cl/eventos/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "6c5fdeb43e",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Merlina Addams y Su Loca Familia",
    "categoria": "teatro",
    "fecha_inicio": "2026-11-21",
    "fecha_fin": null,
    "hora": null,
-   "horario": null,
+   "horario": "Funciones: 21 de noviembre",
    "lugar": "Centro Cultural Mallinkrodt 76",
    "direccion": "Providencia, Barrio Bellavista",
    "comuna": null,
@@ -7189,6 +7949,10 @@
     {
      "nombre": "Teatro San Ginés",
      "url": "https://www.sangines.cl/"
+    },
+    {
+     "nombre": "sangines.cl",
+     "url": "https://www.sangines.cl/cartelera/"
     }
    ],
    "desde_imagen": false,
@@ -7257,6 +8021,66 @@
    "confianza": "alta",
    "origen": "ticketera",
    "id": "92c52c439c",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Pablo Fábregas \"Inestable MONÓLOGOS\"",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-22",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": null,
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Show de monólogos de stand-up con Pablo Fábregas (Agotado).",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://lacomedia.cl/",
+   "fuentes": [
+    {
+     "nombre": "lacomedia.cl",
+     "url": "https://lacomedia.cl/eventos/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "5a9f634843",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Pablo Fábregas 2da Función",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-22",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": null,
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Segunda función del show de stand-up de Pablo Fábregas.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://lacomedia.cl/",
+   "fuentes": [
+    {
+     "nombre": "lacomedia.cl",
+     "url": "https://lacomedia.cl/eventos/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "584b87c424",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-10"
   },
@@ -7463,6 +8287,10 @@
     {
      "nombre": "risaycomedia.com",
      "url": "https://www.risaycomedia.com/shows/"
+    },
+    {
+     "nombre": "risaycomedia.com",
+     "url": "https://risaycomedia.com/la-consulta/"
     }
    ],
    "desde_imagen": false,
@@ -7477,13 +8305,13 @@
    "categoria": "teatro",
    "fecha_inicio": "2026-11-26",
    "fecha_fin": null,
-   "hora": null,
-   "horario": null,
+   "hora": "22:00",
+   "horario": "Funciones: 26 de noviembre",
    "lugar": "Centro Cultural Mallinkrodt 76",
    "direccion": "Providencia, Barrio Bellavista",
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
    "precio": "Desde $20.000",
    "descripcion": "Por primera vez en el Teatro San Ginés, llega el fenómeno de la comedia nacional Prepárate para reír de principio a fin con el increíble show de Asskha Sumathra: \"NO SE QUE HAGO AQUI\" Una rutina imperdible y totalmente renovada, repleta de",
    "imagen": "https://www.sangines.cl/wp-content/uploads/2026/10/640x640-copia.png",
@@ -7493,6 +8321,14 @@
     {
      "nombre": "Teatro San Ginés",
      "url": "https://www.sangines.cl/"
+    },
+    {
+     "nombre": "sangines.cl",
+     "url": "https://www.sangines.cl/cartelera/"
+    },
+    {
+     "nombre": "Telon Ticket",
+     "url": "https://telonticket.cl/mep_cat/standup/"
     }
    ],
    "desde_imagen": false,
@@ -7531,6 +8367,36 @@
    "id": "03e4173194",
    "agregado": "2026-11-08",
    "actualizado": "2026-11-08"
+  },
+  {
+   "titulo": "Que le corten la cabeza",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-26",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Universidad de Concepción",
+   "direccion": null,
+   "comuna": "Concepción",
+   "ciudad": "Concepción",
+   "region": "Biobío",
+   "precio": null,
+   "descripcion": "Obra de teatro presentada en el Teatro Universidad de Concepción.",
+   "imagen": "https://cdnp.puntoticket.com/content/images/categorias/4-teatro.png",
+   "fotos": null,
+   "url": "https://www.puntoticket.com/teatro",
+   "fuentes": [
+    {
+     "nombre": "puntoticket.com",
+     "url": "https://www.puntoticket.com/teatro"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "ia",
+   "id": "4d317be93e",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "YCS Santiago 2026",
@@ -7591,6 +8457,36 @@
    "id": "c1ccfb91de",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Lucho Miranda en vivo",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": null,
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Teatro Oriente",
+   "direccion": "Av. Pedro de Valdivia 099",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Show de stand-up comedy del comediante Lucho Miranda.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://telonticket.cl",
+   "fuentes": [
+    {
+     "nombre": "Telon Ticket",
+     "url": "https://telonticket.cl/mep_cat/standup/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "3ba4d65bec",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Maly Jorquera Stand Up Comedy en Ruta 78",
@@ -7972,6 +8868,36 @@
    "origen": "ticketera",
    "id": "c003178ec9",
    "agregado": "2026-11-06",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "El show de Felipe Avello en Gran Arena Monticello",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Gran Arena Monticello",
+   "direccion": "Panamericana Sur Km 57",
+   "comuna": "San Francisco de Mostazal",
+   "ciudad": "Mostazal",
+   "region": "Región de O'Higgins",
+   "precio": "Gratis",
+   "descripcion": "Felipe Avello se presenta en vivo en Gran Arena Monticello.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://telonticket.cl",
+   "fuentes": [
+    {
+     "nombre": "Telon Ticket",
+     "url": "https://telonticket.cl/mep_cat/standup/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "7034c2fc65",
+   "agregado": "2026-11-10",
    "actualizado": "2026-11-10"
   },
   {
@@ -8589,6 +9515,36 @@
    "actualizado": "2026-11-10"
   },
   {
+   "titulo": "El show de Felipe Avello en Concepción",
+   "categoria": "standup",
+   "fecha_inicio": "2026-12-05",
+   "fecha_fin": "2026-12-07",
+   "hora": "20:30",
+   "horario": null,
+   "lugar": "Teatro Universidad de Concepción",
+   "direccion": "O'Higgins 650",
+   "comuna": "Concepción",
+   "ciudad": "Concepción",
+   "region": "Región del Biobío",
+   "precio": null,
+   "descripcion": "Felipe Avello lleva su show de stand-up a Concepción.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://telonticket.cl",
+   "fuentes": [
+    {
+     "nombre": "Telon Ticket",
+     "url": "https://telonticket.cl/mep_cat/standup/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "da9d3c6963",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Ladies Of Metal 3",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-05",
@@ -8819,6 +9775,36 @@
    "id": "ebc364f471",
    "agregado": "2026-11-06",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Syntagma Musicum & Coro Madrigalista USACH - En la Rama Frondosa: Barroco Americano",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-09",
+   "fecha_fin": null,
+   "hora": "19:30",
+   "horario": null,
+   "lugar": "Teatro Aula Magna USACH",
+   "direccion": null,
+   "comuna": "Estación Central",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Concierto de música barroca americana a cargo de Syntagma Musicum y el Coro Madrigalista USACH.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.jaranax.com/eventos/region-metropolitana-de-santiago/gratis",
+   "fuentes": [
+    {
+     "nombre": "JaranaX",
+     "url": "https://www.jaranax.com/eventos/region-metropolitana-de-santiago/gratis"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "4e58c117e8",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "FestiGame 2026: Entra al Juego",
@@ -9539,6 +10525,36 @@
    "confianza": "alta",
    "origen": "datos-estructurados",
    "id": "de7c922d9f",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Chungo",
+   "categoria": "standup",
+   "fecha_inicio": "2027-01-07",
+   "fecha_fin": "2027-01-10",
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Teatro Nescafé de las Artes",
+   "direccion": "Av. Manuel Montt 032",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Show de comedia en el Teatro Nescafé de las Artes.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://telonticket.cl",
+   "fuentes": [
+    {
+     "nombre": "Telon Ticket",
+     "url": "https://telonticket.cl/mep_cat/standup/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "886189b6ab",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-10"
   },
@@ -10365,6 +11381,10 @@
     {
      "nombre": "Futuro Chile",
      "url": "https://www.futuro.cl/2026/11/lanzo-su-album-mas-pesado-en-anos-confirmo-concierto-en-chile-y-prepara-una-cita-imperdible-el-regreso-de-la-voz-del-metal-sinfonico/"
+    },
+    {
+     "nombre": "Diario La Hora",
+     "url": "https://lahora.cl/cultura/2026/11/10/la-voz-que-marco-una-era-del-metal-vuelve-a-chile-tarja-turunen-confirma-concierto/"
     }
    ],
    "desde_imagen": false,
