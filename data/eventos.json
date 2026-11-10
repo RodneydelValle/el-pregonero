@@ -1,29 +1,13 @@
 {
  "version": 1,
- "actualizado": "2026-11-10T14:57-03:00",
+ "actualizado": "2026-11-10T20:44-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-10T14:57-03:00",
+  "fecha": "2026-11-10T20:44-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 145,
-  "nuevos_esta_vez": 9,
+  "eventos_nuevos": 148,
+  "nuevos_esta_vez": 19,
   "nuevos_ids": [
-   "41ac991fa0",
-   "5d05376a3b",
-   "11c4e7eab3",
-   "a5849a999a",
-   "2bcb9fe3bc",
-   "d2ee41ebee",
-   "4bcd76935a",
-   "72560091bb",
-   "1904aa1ecf",
-   "bdc767da74",
-   "c467b0878b",
-   "c87b943bb7",
-   "e1a86e8618",
-   "dc7e2a27ca",
-   "5f701c673b",
-   "263bf2843f",
    "af9d7d7d65",
    "145744e1cd",
    "6dbce10344",
@@ -152,25 +136,28 @@
    "c3dd41f26f",
    "3743d861b5",
    "ccff163ce9",
-   "d498a8fcaf"
+   "d498a8fcaf",
+   "0f5abf50ce",
+   "3752e2ada7",
+   "0832807295",
+   "ca664fb52c",
+   "a4d17b55ae",
+   "c329ed61e6",
+   "d95079e4c0",
+   "33bf313ff0",
+   "b7163677f8",
+   "8a43b8fea5",
+   "27caaef7bb",
+   "58fdbe0a88",
+   "da20b86513",
+   "1f98d7f8f7",
+   "cf6fdc4d10",
+   "da87052eb4",
+   "e397d6852e",
+   "746b29b623",
+   "a989ad0987"
   ],
   "nuevos_desde": {
-   "41ac991fa0": "2026-11-09T16:43-03:00",
-   "5d05376a3b": "2026-11-09T16:43-03:00",
-   "11c4e7eab3": "2026-11-09T16:43-03:00",
-   "a5849a999a": "2026-11-09T16:43-03:00",
-   "2bcb9fe3bc": "2026-11-09T16:43-03:00",
-   "d2ee41ebee": "2026-11-09T16:43-03:00",
-   "4bcd76935a": "2026-11-09T16:43-03:00",
-   "72560091bb": "2026-11-09T16:43-03:00",
-   "1904aa1ecf": "2026-11-09T16:43-03:00",
-   "bdc767da74": "2026-11-09T16:43-03:00",
-   "c467b0878b": "2026-11-09T16:43-03:00",
-   "c87b943bb7": "2026-11-09T16:43-03:00",
-   "e1a86e8618": "2026-11-09T16:43-03:00",
-   "dc7e2a27ca": "2026-11-09T16:43-03:00",
-   "5f701c673b": "2026-11-09T16:43-03:00",
-   "263bf2843f": "2026-11-09T16:43-03:00",
    "af9d7d7d65": "2026-11-09T23:19-03:00",
    "145744e1cd": "2026-11-09T23:19-03:00",
    "6dbce10344": "2026-11-09T23:19-03:00",
@@ -299,22 +286,42 @@
    "c3dd41f26f": "2026-11-10T14:57-03:00",
    "3743d861b5": "2026-11-10T14:57-03:00",
    "ccff163ce9": "2026-11-10T14:57-03:00",
-   "d498a8fcaf": "2026-11-10T14:57-03:00"
+   "d498a8fcaf": "2026-11-10T14:57-03:00",
+   "0f5abf50ce": "2026-11-10T20:44-03:00",
+   "3752e2ada7": "2026-11-10T20:44-03:00",
+   "0832807295": "2026-11-10T20:44-03:00",
+   "ca664fb52c": "2026-11-10T20:44-03:00",
+   "a4d17b55ae": "2026-11-10T20:44-03:00",
+   "c329ed61e6": "2026-11-10T20:44-03:00",
+   "d95079e4c0": "2026-11-10T20:44-03:00",
+   "33bf313ff0": "2026-11-10T20:44-03:00",
+   "b7163677f8": "2026-11-10T20:44-03:00",
+   "8a43b8fea5": "2026-11-10T20:44-03:00",
+   "27caaef7bb": "2026-11-10T20:44-03:00",
+   "58fdbe0a88": "2026-11-10T20:44-03:00",
+   "da20b86513": "2026-11-10T20:44-03:00",
+   "1f98d7f8f7": "2026-11-10T20:44-03:00",
+   "cf6fdc4d10": "2026-11-10T20:44-03:00",
+   "da87052eb4": "2026-11-10T20:44-03:00",
+   "e397d6852e": "2026-11-10T20:44-03:00",
+   "746b29b623": "2026-11-10T20:44-03:00",
+   "a989ad0987": "2026-11-10T20:44-03:00"
   },
   "horas_nuevos": 24,
-  "llamadas_ia": 3,
+  "llamadas_ia": 31,
   "ia_sin_cupo": false,
-  "ultima_completa": "2026-11-10T10:57-03:00",
-  "modo": "rapida",
-  "paginas_revisadas": 0,
-  "busquedas": 0,
-  "fuentes_fijas": 9,
-  "errores": 2,
+  "ultima_completa": "2026-11-10T20:19-03:00",
+  "modo": "completa",
+  "paginas_revisadas": 30,
+  "busquedas": 96,
+  "fuentes_fijas": 14,
+  "errores": 10,
   "noticias_desde": "2026-11-10",
-  "noticias_viejas_descartadas": 0,
-  "imagenes_encontradas": 12
+  "noticias_viejas_descartadas": 363,
+  "redes_vistas": 5,
+  "imagenes_encontradas": 10
  },
- "total": 355,
+ "total": 374,
  "eventos": [
   {
    "titulo": "Mariposas y Polillas, Colores en Movimiento",
@@ -3899,7 +3906,7 @@
    "region": "Región Metropolitana",
    "precio": "$10.000",
    "descripcion": "Temporada de improvisación teatral en el Teatro Lospleimovil.",
-   "imagen": null,
+   "imagen": "https://veamos.cl/veamos_img/ev_6ad79a45c16af8.18977334.jpg",
    "fotos": null,
    "url": "https://telonticket.cl/",
    "fuentes": [
@@ -3910,6 +3917,10 @@
     {
      "nombre": "lospleimovil.cl",
      "url": "https://lospleimovil.cl/cartelera/"
+    },
+    {
+     "nombre": "Veamos.cl",
+     "url": "https://veamos.cl/evento/217176-carrera-de-improvisadores-7"
     }
    ],
    "desde_imagen": false,
@@ -4249,7 +4260,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Obra de teatro dramática en cartelera en el Teatro Zoco.",
-   "imagen": null,
+   "imagen": "https://static.ptocdn.net/images/eventos/zoc093_re_banner.jpg",
    "fotos": null,
    "url": "https://www.panoramas.app/eventos-esta-semana",
    "fuentes": [
@@ -4437,7 +4448,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Función especial de teatro en el Teatro Nescafé de las Artes.",
-   "imagen": null,
+   "imagen": "https://telonticket.cl/wp-content/uploads/2026/06/1-14.jpg",
    "fotos": null,
    "url": "https://telonticket.cl",
    "fuentes": [
@@ -4467,7 +4478,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Obra de teatro en cartelera en el emblemático Teatro Del Puente.",
-   "imagen": null,
+   "imagen": "https://telonticket.cl/wp-content/uploads/2026/10/1-6.jpg",
    "fotos": null,
    "url": "https://telonticket.cl",
    "fuentes": [
@@ -4535,7 +4546,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Show de comedia y stand-up en Teatro Mori Parque Arauco.",
-   "imagen": null,
+   "imagen": "https://telonticket.cl/wp-content/uploads/2026/09/1-75.jpg",
    "fotos": null,
    "url": "https://telonticket.cl",
    "fuentes": [
@@ -4565,7 +4576,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Adaptación teatral de la célebre novela de Pedro Lemebel en Teatro Mori Recoleta.",
-   "imagen": null,
+   "imagen": "https://telonticket.cl/wp-content/uploads/2026/07/1-64.jpg",
    "fotos": null,
    "url": "https://telonticket.cl",
    "fuentes": [
@@ -4625,7 +4636,7 @@
    "region": "Región Metropolitana",
    "precio": "Desde CLP 4.000",
    "descripcion": "Show de improvisación teatral humorística en Teatro Lospleimovil.",
-   "imagen": null,
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/ff910945ccb4013f1425b8a0347f5033241008af.jpg?1792688260",
    "fotos": null,
    "url": "https://ticketplus.cl/events/el-ultimo-improvisador",
    "fuentes": [
@@ -4765,7 +4776,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Montaje teatral contemporáneo en el Centro Cultural Matucana 100.",
-   "imagen": null,
+   "imagen": "https://telonticket.cl/wp-content/uploads/2025/01/1-49.jpg",
    "fotos": null,
    "url": "https://telonticket.cl",
    "fuentes": [
@@ -4799,7 +4810,7 @@
    "region": "Región Metropolitana",
    "precio": "Gratis",
    "descripcion": "Conversatorio sobre la historia, coleccionismo y manufactura de la cerámica nacional.",
-   "imagen": null,
+   "imagen": "https://www.artdec.gob.cl/sites/www.artdec.gob.cl/files/2026-11/24.26.14.01_1.jpg",
    "fotos": null,
    "url": "https://www.artdec.gob.cl/cartelera",
    "fuentes": [
@@ -4846,6 +4857,36 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "Noche de Museos en Andacollo",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": "12:00",
+   "horario": null,
+   "lugar": "Andacollo",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": "Gratis",
+   "descripcion": "Vive la Noche de Museos en Andacollo este 13 de noviembre. Recorre las salas patrimoniales y toda la historia minera con entrada libre.",
+   "imagen": "https://img.vamoh.cl/events/bff29014-46fa-4391-ac96-2c16d6ea9900.webp?v=3aceb5d8",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/noche-de-museos-en-andacollo-lq7as/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/noche-de-museos-en-andacollo-lq7as/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "0f5abf50ce",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Noche de Museos 2026: Palacio de La Moneda",
    "categoria": "museos",
    "fecha_inicio": "2026-11-13",
@@ -4866,6 +4907,10 @@
     {
      "nombre": "Pudahuel",
      "url": "https://www.pudahuel.cl/noticias/2026/11/noche-de-museos-este-2026-el-imperdible-panorama-para-recorrer-la-cultura-de-noche/"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/la-moneda-participara-en-la-noche-de-museos-2026-itgi9/"
     }
    ],
    "desde_imagen": false,
@@ -5084,6 +5129,18 @@
     {
      "nombre": "nochedemuseos.cl",
      "url": "https://nochedemuseos.cl/actividades"
+    },
+    {
+     "nombre": "patrimoniocultural.gob.cl",
+     "url": "https://www.patrimoniocultural.gob.cl/noticias/noche-de-museos-2026-reunira-mas-de-350-espacios-culturales-en-todas-las-regiones-del-pais"
+    },
+    {
+     "nombre": "El Mostrador",
+     "url": "https://www.elmostrador.cl/datos-utiles/2026/11/10/noche-de-museos-2026-como-encontrar-museos-y-panoramas-gratuitos-para-este-viernes/"
+    },
+    {
+     "nombre": "Meteored Chile",
+     "url": "https://www.meteored.cl/noticias/ocio/noche-de-los-museos-2026-en-santiago-horarios-y-los-lugares-clave-para-visitar-gratis-este-viernes.html"
     }
    ],
    "desde_imagen": true,
@@ -5188,6 +5245,36 @@
    "actualizado": "2026-11-10"
   },
   {
+   "titulo": "Concierto y lecturas mistralianas – Noche de Museos 2026",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": "18:00",
+   "horario": "Desde las 18:00 hrs",
+   "lugar": "Palacio Pereira",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratuito",
+   "descripcion": "Concierto de guitarras y lecturas de Gabriela Mistral en horario extendido por la Noche de Museos.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://nochedemuseos.cl",
+   "fuentes": [
+    {
+     "nombre": "Meteored Chile",
+     "url": "https://www.meteored.cl/noticias/ocio/noche-de-los-museos-2026-en-santiago-horarios-y-los-lugares-clave-para-visitar-gratis-este-viernes.html"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "cf6fdc4d10",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Exposición “Fenómenos Vegetales” NEORURAL de Jorge Zambrano – Noche de Museos 2026",
    "categoria": "museos",
    "fecha_inicio": "2026-11-13",
@@ -5214,6 +5301,66 @@
    "confianza": "alta",
    "origen": "ia",
    "id": "f492cc3527",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Recorrido Nocturno Barrio Yungay y Quinta Normal – Noche de Museos 2026",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": "18:00",
+   "horario": "18:00 a 21:00 hrs",
+   "lugar": "Salida Metro Quinta Normal",
+   "direccion": "Metro Quinta Normal",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratuito",
+   "descripcion": "Recorrido mediado por los museos Artequín, de la Educación Gabriela Mistral y Taller en la Noche de Museos.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://nochedemuseos.cl",
+   "fuentes": [
+    {
+     "nombre": "Meteored Chile",
+     "url": "https://www.meteored.cl/noticias/ocio/noche-de-los-museos-2026-en-santiago-horarios-y-los-lugares-clave-para-visitar-gratis-este-viernes.html"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "1f98d7f8f7",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Recorridos históricos y culturales – Noche de Museos 2026",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": "18:00",
+   "horario": "18:00 a 23:00 hrs",
+   "lugar": "Cementerio General de Santiago",
+   "direccion": "Profesor Alberto Zañartu 951",
+   "comuna": "Recoleta",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratuito",
+   "descripcion": "Recorridos guiados nocturnos e iluminación especial en el marco de la Noche de Museos 2026.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://nochedemuseos.cl",
+   "fuentes": [
+    {
+     "nombre": "Meteored Chile",
+     "url": "https://www.meteored.cl/noticias/ocio/noche-de-los-museos-2026-en-santiago-horarios-y-los-lugares-clave-para-visitar-gratis-este-viernes.html"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "da20b86513",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-10"
   },
@@ -5342,6 +5489,36 @@
    "confianza": "alta",
    "origen": "ia",
    "id": "4d3b01dafb",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Noche de Museos 2026: Museo Interactivo Mirador",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": "19:00–21:45",
+   "lugar": "Museo Interactivo Mirador (MIM)",
+   "direccion": "Avenida Punta Arenas 6711",
+   "comuna": "La Granja",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratuito",
+   "descripcion": "El MIM abre en horario nocturno por la Noche de Museos 2026 con entrada gratuita y experiencias interactivas especiales.",
+   "imagen": "https://enduring-authority-d160bd805e.media.strapiapp.com/2026_03_21_Dia_de_la_Astronomia_72_725476d9c2.JPG",
+   "fotos": null,
+   "url": "https://mim.cl",
+   "fuentes": [
+    {
+     "nombre": "mim.cl",
+     "url": "https://mim.cl/eventos/noche-de-museos-este-viernes-abrimos-en-horario-nocturno-y-con-entrada-gratuita"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "8a43b8fea5",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-10"
   },
@@ -5829,7 +6006,7 @@
    "region": "Región Metropolitana",
    "precio": "Desde $7.000",
    "descripcion": "Espectáculo de improvisación con humor negro por Lospleimovil.",
-   "imagen": null,
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/shares/823204218d8bfc3c0e6ad679eeb97c23ac7b946b.jpg?1788141638",
    "fotos": null,
    "url": "https://www.jaranax.com/eventos/region-metropolitana-de-santiago/comedia",
    "fuentes": [
@@ -5948,6 +6125,36 @@
    "actualizado": "2026-11-10"
   },
   {
+   "titulo": "Diego Urrutia - Detonado",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": "2026-11-20",
+   "hora": null,
+   "horario": "Viernes 13 y 20 de noviembre",
+   "lugar": "Teatro Fiebre",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "El comediante Diego Urrutia presenta su nuevo show de stand-up \"Detonado\" en Santiago.",
+   "imagen": "https://img.asmedia.epimg.net/resizer/v2/D6WFTPNB7RFFVOOPHNHZM4WP4E.webp?auth=e5cd41f7f09748c9c828f96a4d8d635acc610dfc405a463c858c219f01619f00&width=1472&height=828&focal=813%2C360",
+   "fotos": null,
+   "url": "https://www.lacomedia.cl",
+   "fuentes": [
+    {
+     "nombre": "Diario AS",
+     "url": "https://chile.as.com/tikitakas/diego-urrutia-presenta-su-nuevo-show-en-santiago-fecha-y-venta-de-entradas-f202611-n/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "a989ad0987",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "FELICES LOS 3",
    "categoria": "teatro",
    "fecha_inicio": "2026-11-13",
@@ -5978,6 +6185,40 @@
    "confianza": "alta",
    "origen": "datos-estructurados",
    "id": "2065a7a403",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "FIC Santiago 2026",
+   "categoria": "ilustracion",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": "2026-11-15",
+   "hora": null,
+   "horario": null,
+   "lugar": "Facultad de Arquitectura, Diseño y Estudios Creativos, Universidad Finis Terrae",
+   "direccion": "Av. Pedro de Valdivia 1224",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "El Festival Internacional del Cómic de Santiago celebra 15 años con más de 80 artistas, editoriales, charlas, talleres y zona manga.",
+   "imagen": "https://tecnautas.cl/wp-content/uploads/2026/11/FIC2026-COLOR-1-scaled.jpg",
+   "fotos": null,
+   "url": "https://tecnautas.cl/2026/11/10/fic-santiago-cambia-de-casa-y-celebra-sus-15-anos-con-mas-comic-y-manga/",
+   "fuentes": [
+    {
+     "nombre": "TECNAUTAS - TENDENCIAS QUE MARCAN LA PAUTA",
+     "url": "https://tecnautas.cl/2026/11/10/fic-santiago-cambia-de-casa-y-celebra-sus-15-anos-con-mas-comic-y-manga/"
+    },
+    {
+     "nombre": "El Diario Santiago",
+     "url": "https://eldiariosantiago.cl/2026/11/10/fic-santiago-celebra-15-anos-con-mas-de-80-artistas-y-una-nueva-sede-en-providencia/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "c329ed61e6",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-10"
   },
@@ -6119,7 +6360,7 @@
    "region": "Región del Libertador General Bernardo O'Higgins",
    "precio": null,
    "descripcion": "Show de stand-up comedy con Pastor Rocha.",
-   "imagen": null,
+   "imagen": "https://d319h6r8zq2kxk.cloudfront.net/wp-content/uploads/2026/10/13215210/1080x1080-ROCHA-SCHOOL-SAN-FERNA.jpg",
    "fotos": null,
    "url": "https://lacomedia.cl/",
    "fuentes": [
@@ -6820,6 +7061,66 @@
    "actualizado": "2026-11-08"
   },
   {
+   "titulo": "Basílica del Salvador – Día del Patrimonio Sagrado 2026",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Basílica del Salvador",
+   "direccion": "Huérfanos / Almirante Barroso (Barrio Brasil)",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Visitas y apertura especial de la Basílica del Salvador por el Día del Patrimonio Sagrado.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://aquitedateamos.cl/dia-del-patrimonio-sagrado-2026-30-lugares-abren-sus-puertas-para-descubrir-la-historia-el-arte-y-la-fe-de-santiago/",
+   "fuentes": [
+    {
+     "nombre": "aquitedateamos.cl",
+     "url": "https://aquitedateamos.cl/dia-del-patrimonio-sagrado-2026-30-lugares-abren-sus-puertas-para-descubrir-la-historia-el-arte-y-la-fe-de-santiago/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "a4d17b55ae",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Catedral Metropolitana de Santiago – Día del Patrimonio Sagrado 2026",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Catedral Metropolitana de Santiago",
+   "direccion": "Plaza de Armas",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Visitas guiadas y patrimonio histórico en la Catedral Metropolitana por el Día del Patrimonio Sagrado.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://aquitedateamos.cl/dia-del-patrimonio-sagrado-2026-30-lugares-abren-sus-puertas-para-descubrir-la-historia-el-arte-y-la-fe-de-santiago/",
+   "fuentes": [
+    {
+     "nombre": "aquitedateamos.cl",
+     "url": "https://aquitedateamos.cl/dia-del-patrimonio-sagrado-2026-30-lugares-abren-sus-puertas-para-descubrir-la-historia-el-arte-y-la-fe-de-santiago/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "ca664fb52c",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Diego Urrutia en Chillán",
    "categoria": "standup",
    "fecha_inicio": "2026-11-14",
@@ -6880,6 +7181,36 @@
    "confianza": "alta",
    "origen": "datos-estructurados",
    "id": "6bceca0c1b",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Iglesia San Francisco – Día del Patrimonio Sagrado 2026",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Iglesia San Francisco",
+   "direccion": "Alameda 834",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Visitas guiadas y actividades en la Iglesia San Francisco por el Día del Patrimonio Sagrado.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://aquitedateamos.cl/dia-del-patrimonio-sagrado-2026-30-lugares-abren-sus-puertas-para-descubrir-la-historia-el-arte-y-la-fe-de-santiago/",
+   "fuentes": [
+    {
+     "nombre": "aquitedateamos.cl",
+     "url": "https://aquitedateamos.cl/dia-del-patrimonio-sagrado-2026-30-lugares-abren-sus-puertas-para-descubrir-la-historia-el-arte-y-la-fe-de-santiago/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "3752e2ada7",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-10"
   },
@@ -6968,6 +7299,36 @@
    "confianza": "alta",
    "origen": "ticketera",
    "id": "fb6d2e08df",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Parroquia de La Veracruz – Día del Patrimonio Sagrado 2026",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Parroquia de La Veracruz",
+   "direccion": "J. Victorino Lastarria 304",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Apertura y visitas en la Parroquia de La Veracruz en el marco del Día del Patrimonio Sagrado.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://aquitedateamos.cl/dia-del-patrimonio-sagrado-2026-30-lugares-abren-sus-puertas-para-descubrir-la-historia-el-arte-y-la-fe-de-santiago/",
+   "fuentes": [
+    {
+     "nombre": "aquitedateamos.cl",
+     "url": "https://aquitedateamos.cl/dia-del-patrimonio-sagrado-2026-30-lugares-abren-sus-puertas-para-descubrir-la-historia-el-arte-y-la-fe-de-santiago/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "0832807295",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-10"
   },
@@ -7298,6 +7659,36 @@
    "id": "bdc767da74",
    "agregado": "2026-11-09",
    "actualizado": "2026-11-09"
+  },
+  {
+   "titulo": "Fucks News Noticreo - Chile",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-17",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": null,
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Show en vivo de Fucks News Noticreo con Camilo Pardo en Santiago de Chile.",
+   "imagen": "https://www.fucksnewsnoticreo.com/fucks/camilo-pardo.webp",
+   "fotos": null,
+   "url": "https://www.fucksnewsnoticreo.com/comediantes/camilo-pardo",
+   "fuentes": [
+    {
+     "nombre": "fucksnewsnoticreo.com",
+     "url": "https://www.fucksnewsnoticreo.com/comediantes/camilo-pardo"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "746b29b623",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "La Remolienda y sus ánimas: Cancionero Dramático para Víctor Jara",
@@ -8716,6 +9107,66 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "Concierto Orquestal: De Bach a Violeta Parra",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Municipal de Santiago",
+   "direccion": "Agustinas 794",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratuito",
+   "descripcion": "Concierto de la Orquesta Juvenil de la Fundación Belén Educa en el marco del Festival Fernando Rosas, con repertorio desde Bach a Violeta Parra.",
+   "imagen": "https://media.eldesconcierto.cl/p/7db8a2215ff48a4423f058fefe22e86a/adjuntos/378/imagenes/100/137/0100137438/1200x675/2181x1180:2201x1200/teatro-municipal-santiago.png",
+   "fotos": null,
+   "url": "https://eldesconcierto.cl/tendencias/de-bach-violeta-parra-teatro-municipal-ofrece-concierto-orquestal-gratuito-jovenes-promesas-musicales-n5463913",
+   "fuentes": [
+    {
+     "nombre": "El Desconcierto",
+     "url": "https://eldesconcierto.cl/tendencias/de-bach-violeta-parra-teatro-municipal-ofrece-concierto-orquestal-gratuito-jovenes-promesas-musicales-n5463913"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "58fdbe0a88",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Concierto de Orquesta Juvenil Belén Educa",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Municipal de Santiago",
+   "direccion": "Agustinas 794",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto de la Orquesta Juvenil Belén Educa junto a otras orquestas en el marco del Festival Fernando Rosas.",
+   "imagen": "https://www.24horas.cl/24horas/site/artic/20261110/imag/foto_0000001120261110143501/activi.webp",
+   "fotos": null,
+   "url": "https://www.24horas.cl/tendencias/espectaculos/concierto-de-orquesta-juvenil-belen-educa-en-teatro-municipal-de-santiago",
+   "fuentes": [
+    {
+     "nombre": "24horas.cl",
+     "url": "https://www.24horas.cl/tendencias/espectaculos/concierto-de-orquesta-juvenil-belen-educa-en-teatro-municipal-de-santiago"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "da87052eb4",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "La muerte del padre",
    "categoria": "teatro",
    "fecha_inicio": "2026-11-27",
@@ -8776,6 +9227,36 @@
    "confianza": "alta",
    "origen": "ia",
    "id": "7c6d652efa",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "League CUP - HuntercardTCG Centro",
+   "categoria": "juegos",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": "10:00",
+   "horario": null,
+   "lugar": "Huntercardtcg - Centro",
+   "direccion": "Compañía De Jesús 1390, Piso 16, Oficina 1604",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Torneo competitivo Play! Pokémon (League Cup) de Pokémon TCG en Huntercardtcg Centro.",
+   "imagen": "https://www.quieromilch.cl/og.png",
+   "fotos": null,
+   "url": "https://www.quieromilch.cl/huntercardtcg-centro/",
+   "fuentes": [
+    {
+     "nombre": "quieromilch",
+     "url": "https://www.quieromilch.cl/huntercardtcg-centro/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "27caaef7bb",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-10"
   },
@@ -9464,6 +9945,36 @@
    "actualizado": "2026-11-10"
   },
   {
+   "titulo": "Exposición Monos 70' 80' 90'",
+   "categoria": "ilustracion",
+   "fecha_inicio": "2026-12-01",
+   "fecha_fin": "2026-12-31",
+   "hora": null,
+   "horario": null,
+   "lugar": "Instituto Nacional de Ocupacionales (INO)",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Exposición colectiva de ilustración que reúne trabajos inspirados en personajes y estéticas de las décadas de los 70, 80 y 90.",
+   "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/jeansilstudio/DfSQyN-lByb_0.jpg",
+   "fotos": null,
+   "url": "https://salirsantiago.com/panorama/exposicion-monos-70-80-90-1296dedd",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panorama/exposicion-monos-70-80-90-1296dedd"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "33bf313ff0",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Pepo: antes y después de Condorito",
    "categoria": "ilustracion",
    "fecha_inicio": "2026-12-02",
@@ -9802,6 +10313,36 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "Sin Echarsela Comedia sin Censura",
+   "categoria": "standup",
+   "fecha_inicio": "2026-12-05",
+   "fecha_fin": "2026-12-06",
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Viña Stage",
+   "direccion": null,
+   "comuna": "Viña Del Mar",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $5.000",
+   "descripcion": "🎭🔥 ¡GRAN NOCHE DE HUMOR, JUEGOS, DIVERSIÓN, REGALOS Y MUCHO MÁS EN VIÑA DEL MAR! 😂🎤 Este próximo SÁBADO 5 DE DICIEMBRE, no te pierdas ¡SIN ECHÁRSELA! – COMEDIA SIN CENSURA en VIÑA STAGE MULTIESPACIO. Disfrutaremos de una noche de comedia ju",
+   "imagen": "https://img.vamoh.cl/events/029422ea-caae-42a4-b571-cd092aa272ba.webp?v=f093576f",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/sin-echarsela-comedia-sin-censura-o50la/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/sin-echarsela-comedia-sin-censura-o50la/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "e397d6852e",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Jorge Alís: Humor QL Unplugged",
    "categoria": "standup",
    "fecha_inicio": "2026-12-05",
@@ -10098,6 +10639,36 @@
    "id": "c5b1d7de21",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-08"
+  },
+  {
+   "titulo": "FestiGame 26",
+   "categoria": "anime",
+   "fecha_inicio": "2026-12-10",
+   "fecha_fin": "2026-12-13",
+   "hora": null,
+   "horario": null,
+   "lugar": "Cenco Florida",
+   "direccion": "Vicuña Mackenna Oriente 6100",
+   "comuna": "La Florida",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Festival de videojuegos, cosplay y cultura digital en Santiago.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://regalopro.cl/ferias/",
+   "fuentes": [
+    {
+     "nombre": "Guía de Regalos Promocionales",
+     "url": "https://regalopro.cl/ferias/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "d95079e4c0",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "FestiGame diciembre 2026",
@@ -10400,6 +10971,10 @@
     {
      "nombre": "musicachilena.cl",
      "url": "https://www.musicachilena.cl/v2/cumbre-del-metal-chileno-2026-seis-bandas-legendarias-en-teatro-cariola/"
+    },
+    {
+     "nombre": "klandestine.cl",
+     "url": "https://klandestine.cl/v2/categoria/conciertos/"
     }
    ],
    "desde_imagen": true,
@@ -10407,7 +10982,7 @@
    "origen": "datos-estructurados",
    "id": "5442a68a62",
    "agregado": "2026-11-08",
-   "actualizado": "2026-11-09"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Alejandro Silva | «hyperspaced» | Sala Scd Bellavista",
@@ -11220,6 +11795,10 @@
     {
      "nombre": "chaco.cl",
      "url": "https://chaco.cl/ch-aco-17/"
+    },
+    {
+     "nombre": "Guía de Regalos Promocionales",
+     "url": "https://regalopro.cl/ferias/"
     }
    ],
    "desde_imagen": false,
@@ -11227,7 +11806,7 @@
    "origen": "ia",
    "id": "4ac2d2534e",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Mago de Oz",
@@ -11648,6 +12227,36 @@
    "confianza": "alta",
    "origen": "ticketera",
    "id": "c0bec6ebcf",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Tarja Turunen en Chile",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-06-07",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Teatro Coliseo",
+   "direccion": "Nataniel Cox 59",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "La icónica voz del metal sinfónico, Tarja Turunen, se presenta en el Teatro Coliseo.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://klandestine.cl/v2/categoria/conciertos/",
+   "fuentes": [
+    {
+     "nombre": "klandestine.cl",
+     "url": "https://klandestine.cl/v2/categoria/conciertos/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "b7163677f8",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-10"
   },
