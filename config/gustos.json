@@ -342,7 +342,7 @@
       "nombre": "Teatro",
       "emoji": "🎭",
       "color": "#9d174d",
-      "descripcion": "obras de teatro (drama, comedia, tragedia), musicales, ópera, stand-up e improvisación, y teatro de títeres u objetos para adultos, en salas de Santiago. NO: conciertos aunque sean en un «Teatro» (Caupolicán, Coliseo, Teletón…), ni talleres, cursos, castings o charlas",
+      "descripcion": "obras de teatro (drama, comedia, tragedia), musicales, ópera e improvisación, y teatro de títeres u objetos para adultos, en salas de Santiago. NO: conciertos aunque sean en un «Teatro» (Caupolicán, Coliseo, Teletón…), ni talleres, cursos, castings o charlas",
       "palabras": [
         "obra de teatro",
         "obras de teatro",
@@ -352,9 +352,25 @@
         "dramaturgia",
         "teatro musical",
         "comedia musical",
-        "stand up comedy",
-        "stand-up comedy",
         "improvisacion teatral"
+      ],
+      "busquedas": []
+    },
+    {
+      "id": "standup",
+      "nombre": "Stand-up",
+      "emoji": "🎤",
+      "color": "#c2410c",
+      "descripcion": "shows de stand-up comedy, comediantes y humoristas en vivo, open mic de comedia en Santiago. NO: obras de teatro ni conciertos",
+      "palabras": [
+        "stand up",
+        "stand-up",
+        "standup",
+        "comedia en vivo",
+        "open mic de comedia",
+        "show de humor",
+        "comediante",
+        "humorista"
       ],
       "busquedas": []
     }

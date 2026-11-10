@@ -29,6 +29,7 @@ const BANNERS = [
   { id: "juegos", hash: "juegos", seccion: "agenda", cat: "juegos", nombre: "Juegos de mesa" },
   { id: "museos", hash: "museos", seccion: "agenda", cat: "museos", nombre: "Museos, arte y cultura" },
   { id: "teatro", hash: "teatro", seccion: "agenda", cat: "teatro", nombre: "Teatro" },
+  { id: "standup", hash: "standup", seccion: "agenda", cat: "standup", nombre: "Stand-up" },
   { id: "restaurantes", hash: "restaurantes", seccion: "restaurantes", cat: null, nombre: "Restaurantes temáticos" },
 ];
 // Un banner también puede mostrar varios temas juntos: cat "grupo:x" y aquí { "grupo:x": ["tema1", "tema2"] }.
@@ -63,7 +64,7 @@ const $ = (s) => document.querySelector(s);
 // Íconos: están en el <svg class="sprite"> de index.html. Cada tema de la agenda tiene el suyo
 // (un tema nuevo sin ícono muestra su emoji de config/gustos.json).
 const ICONO_CAT = { todas: "i-cuadricula", medieval: "i-espadas", yokai: "i-torii", anime: "i-mando", ilustracion: "i-pincel",
-  conciertos: "i-guitarra", juegos: "i-dado6", museos: "i-museo", teatro: "i-teatro" };
+  conciertos: "i-guitarra", juegos: "i-dado6", museos: "i-museo", teatro: "i-teatro", standup: "i-standup" };
 function ico(id, clase = "") {
   return `<svg class="ico${clase ? " " + clase : ""}" aria-hidden="true" focusable="false"><use href="#${id}"/></svg>`;
 }
