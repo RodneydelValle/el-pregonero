@@ -1,15 +1,13 @@
 {
  "version": 1,
- "actualizado": "2026-11-09T23:19-03:00",
+ "actualizado": "2026-11-10T07:10-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-09T23:19-03:00",
+  "fecha": "2026-11-10T07:10-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 23,
-  "nuevos_esta_vez": 4,
+  "eventos_nuevos": 26,
+  "nuevos_esta_vez": 7,
   "nuevos_ids": [
-   "b96e10df68",
-   "63a4ac1676",
    "41ac991fa0",
    "5d05376a3b",
    "11c4e7eab3",
@@ -20,7 +18,6 @@
    "72560091bb",
    "1904aa1ecf",
    "bdc767da74",
-   "9d415007b8",
    "c467b0878b",
    "c87b943bb7",
    "e1a86e8618",
@@ -30,11 +27,15 @@
    "af9d7d7d65",
    "145744e1cd",
    "6dbce10344",
-   "82c8e23241"
+   "97a5f0b90c",
+   "b83e2b9564",
+   "1528fac3d9",
+   "0356593f8f",
+   "111b69f3ce",
+   "0cbb8824af",
+   "2ff9635fda"
   ],
   "nuevos_desde": {
-   "b96e10df68": "2026-11-09T05:14-03:00",
-   "63a4ac1676": "2026-11-09T05:14-03:00",
    "41ac991fa0": "2026-11-09T16:43-03:00",
    "5d05376a3b": "2026-11-09T16:43-03:00",
    "11c4e7eab3": "2026-11-09T16:43-03:00",
@@ -45,7 +46,6 @@
    "72560091bb": "2026-11-09T16:43-03:00",
    "1904aa1ecf": "2026-11-09T16:43-03:00",
    "bdc767da74": "2026-11-09T16:43-03:00",
-   "9d415007b8": "2026-11-09T16:43-03:00",
    "c467b0878b": "2026-11-09T16:43-03:00",
    "c87b943bb7": "2026-11-09T16:43-03:00",
    "e1a86e8618": "2026-11-09T16:43-03:00",
@@ -55,22 +55,28 @@
    "af9d7d7d65": "2026-11-09T23:19-03:00",
    "145744e1cd": "2026-11-09T23:19-03:00",
    "6dbce10344": "2026-11-09T23:19-03:00",
-   "82c8e23241": "2026-11-09T23:19-03:00"
+   "97a5f0b90c": "2026-11-10T07:10-03:00",
+   "b83e2b9564": "2026-11-10T07:10-03:00",
+   "1528fac3d9": "2026-11-10T07:10-03:00",
+   "0356593f8f": "2026-11-10T07:10-03:00",
+   "111b69f3ce": "2026-11-10T07:10-03:00",
+   "0cbb8824af": "2026-11-10T07:10-03:00",
+   "2ff9635fda": "2026-11-10T07:10-03:00"
   },
   "horas_nuevos": 24,
-  "llamadas_ia": 22,
+  "llamadas_ia": 21,
   "ia_sin_cupo": false,
-  "ultima_completa": "2026-11-09T23:08-03:00",
+  "ultima_completa": "2026-11-10T06:48-03:00",
   "modo": "completa",
-  "paginas_revisadas": 18,
+  "paginas_revisadas": 12,
   "busquedas": 77,
-  "fuentes_fijas": 11,
-  "errores": 6,
+  "fuentes_fijas": 17,
+  "errores": 5,
   "noticias_desde": "2026-11-09",
-  "noticias_viejas_descartadas": 269,
-  "redes_vistas": 2
+  "noticias_viejas_descartadas": 262,
+  "redes_vistas": 4
  },
- "total": 235,
+ "total": 237,
  "eventos": [
   {
    "titulo": "Mariposas y Polillas, Colores en Movimiento",
@@ -108,7 +114,7 @@
    "origen": "ia",
    "id": "b240f6e84d",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-08"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Roberto Matta. Abrir la mirada",
@@ -146,7 +152,7 @@
    "origen": "ia",
    "id": "b91cbc5d41",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-08"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "El mundo en una biblioteca. Cien años de la donación de José Toribio Medina",
@@ -180,7 +186,7 @@
    "origen": "ia",
    "id": "6dd0741db1",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-08"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Un archivo en construcción: la obra de Tito Vásquez",
@@ -218,7 +224,7 @@
    "origen": "claude",
    "id": "ae5b603f04",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-08"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "145 años: Historias de una Colección",
@@ -256,7 +262,7 @@
    "origen": "ia",
    "id": "a2b9db3fc8",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-08"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Vitrina Colecciones arqueológicas y su estudio en el MNHN",
@@ -294,7 +300,7 @@
    "origen": "ia",
    "id": "50b4603a83",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-08"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Vertebrados: anatomía, evolución, extinción",
@@ -336,7 +342,7 @@
    "origen": "claude",
    "id": "6dfafa8970",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-09"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Kume Mongen",
@@ -396,7 +402,7 @@
    "origen": "claude",
    "id": "562569f3c4",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-09"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Comadres",
@@ -426,7 +432,7 @@
    "origen": "claude",
    "id": "bfb912b5ba",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-09"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "MAVI UC conmemora su 25° aniversario con gran exposición de su colección",
@@ -456,7 +462,7 @@
    "origen": "claude",
    "id": "3b3025cb65",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-09"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Me lo contó un pajarito",
@@ -490,7 +496,7 @@
    "origen": "ia",
    "id": "4f3ed2eb73",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Exposición inmersiva: La ronda del Sol y la Luna",
@@ -561,7 +567,7 @@
    "origen": "claude",
    "id": "4e82abe6b7",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Flor de Cobalto",
@@ -591,7 +597,7 @@
    "origen": "ia",
    "id": "6fd9b8d405",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Colección MAC: Modulaciones de la imagen fotográfica",
@@ -655,7 +661,7 @@
    "origen": "claude",
    "id": "c74849a44f",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-09"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Casa común. 100 años de Parques Nacionales",
@@ -692,7 +698,7 @@
    "categoria": "museos",
    "fecha_inicio": "2026-08-22",
    "fecha_fin": "2027-04-30",
-   "hora": null,
+   "hora": "12:00",
    "horario": "Mar a vie 10:00–17:00; sáb 10:00–14:00",
    "lugar": "Museo de Artes Decorativas",
    "direccion": "Av. Recoleta 683",
@@ -712,6 +718,10 @@
     {
      "nombre": "Servicio Nacional del Patrimonio (museos)",
      "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=1"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/nueva-exposicion-temporal-criaturas-de-tierra-animales-ceramicos-en-el-museo-de-artes-decorativas-7rvq1/"
     }
    ],
    "desde_imagen": false,
@@ -719,7 +729,7 @@
    "origen": "claude",
    "id": "0bdfd1df65",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Geometría Sonora",
@@ -795,7 +805,7 @@
    "origen": "claude",
    "id": "29e7f87994",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Intervención: Ximena Lecca en Sala Chile antes de Chile",
@@ -829,7 +839,37 @@
    "origen": "claude",
    "id": "43a0dd1f1a",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-09"
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Trienal Art Cut 26: Obra de Ximena Garrido-Lecca",
+   "categoria": "museos",
+   "fecha_inicio": "2026-09-01",
+   "fecha_fin": "2026-11-22",
+   "hora": null,
+   "horario": "Mar a dom, 10:00–18:00",
+   "lugar": "Museo Chileno de Arte Precolombino (Sala Chile antes de Chile)",
+   "direccion": "Bandera 361",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Exposición de la obra de Ximena Garrido-Lecca en el marco de la Trienal Art Cut 26 en la Sala Chile antes de Chile.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://museo.precolombino.cl/exposiciones-cartelera/cartelera/",
+   "fuentes": [
+    {
+     "nombre": "Museo Chileno de Arte Precolombino",
+     "url": "https://museo.precolombino.cl/exposiciones-cartelera/cartelera/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "0cbb8824af",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Ejercicios de Empatía: Tramas de lo Vivo (Trienal ART CUT 26)",
@@ -861,7 +901,7 @@
    "origen": "claude",
    "id": "94601c7845",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-09"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "El MNBA revisa la gestión de Luis Vargas Rosas",
@@ -925,7 +965,37 @@
    "origen": "claude",
    "id": "c32f483a1c",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Exhibición “Un viaje al pasado de Puchuncaví”",
+   "categoria": "museos",
+   "fecha_inicio": "2026-09-15",
+   "fecha_fin": "2026-12-30",
+   "hora": null,
+   "horario": "11:00–16:00",
+   "lugar": "Museo de Historia Natural de Valparaíso",
+   "direccion": "Condell 1546",
+   "comuna": "Valparaíso",
+   "ciudad": "Valparaíso",
+   "region": "Región de Valparaíso",
+   "precio": null,
+   "descripcion": "Muestra arqueológica e histórica sobre el patrimonio del pasado de la zona de Puchuncaví.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=1",
+   "fuentes": [
+    {
+     "nombre": "Servicio Nacional del Patrimonio (museos)",
+     "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=1"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "1528fac3d9",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Observaciones Americanas. Alberto Cruz visita el Museo Chileno de Arte Precolombino",
@@ -955,7 +1025,7 @@
    "origen": "claude",
    "id": "158c42778a",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Balmaceda Visual, Premoniciones",
@@ -1129,7 +1199,7 @@
    "origen": "claude",
    "id": "33a119f815",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-09"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Fotografía: alteraciones matéricas",
@@ -1163,7 +1233,7 @@
    "origen": "claude",
    "id": "0ba9aaeefc",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-09"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "La Trayectoria Intermedial del Gesto - Valentina Díaz",
@@ -1337,7 +1407,7 @@
    "origen": "claude",
    "id": "fe429a2453",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-09"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Vitrina de objeto destacado: sarcófago de Ta-Sherit-Min",
@@ -1371,7 +1441,7 @@
    "origen": "claude",
    "id": "bb4f9dcd21",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Vistas de taller, artistas, objetos e identidades (1880-1950)",
@@ -1405,7 +1475,7 @@
    "origen": "claude",
    "id": "ac7820b39e",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Dentro del Aire — Beatrice di Girolamo",
@@ -1521,37 +1591,7 @@
    "origen": "claude",
    "id": "5ca969e3c6",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-09"
-  },
-  {
-   "titulo": "AzulVerde. Algas y comunidades en la costa pacífica americana",
-   "categoria": "museos",
-   "fecha_inicio": "2026-10-05",
-   "fecha_fin": "2026-11-09",
-   "hora": null,
-   "horario": "10:00 a 18:00",
-   "lugar": "Museo Chileno de Arte Precolombino",
-   "direccion": "Bandera 361",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Exposición en el portal del museo sobre la relación entre algas y comunidades costeras.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://museo.precolombino.cl/exposiciones-cartelera/cartelera/",
-   "fuentes": [
-    {
-     "nombre": "Museo Chileno de Arte Precolombino",
-     "url": "https://museo.precolombino.cl/exposiciones-cartelera/cartelera/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "6d839fa102",
-   "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Ensueño — Raúl Cuello",
@@ -1659,7 +1699,7 @@
    "origen": "claude",
    "id": "526eb4a6d4",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Del espacio de acá",
@@ -1693,7 +1733,7 @@
    "origen": "claude",
    "id": "0ab446f27c",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-09"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Nosotros los chilenos: archivar para imaginarnos",
@@ -1727,7 +1767,7 @@
    "origen": "claude",
    "id": "4a3298ee26",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-09"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Recordar el futuro. Íconos del diseño y arte geométrico en Chile",
@@ -1795,7 +1835,37 @@
    "origen": "claude",
    "id": "dfa0189c0c",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-09"
+   "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Exhibición bibliográfica: Premios Nobel en la colección privada de Gabriela Mistral",
+   "categoria": "museos",
+   "fecha_inicio": "2026-10-13",
+   "fecha_fin": "2026-12-31",
+   "hora": null,
+   "horario": "10:00–17:00",
+   "lugar": "Museo Gabriela Mistral de Vicuña",
+   "direccion": "Gabriela Mistral 759",
+   "comuna": "Vicuña",
+   "ciudad": "Vicuña",
+   "region": "Región de Coquimbo",
+   "precio": null,
+   "descripcion": "Muestra bibliográfica y patrimonial de libros de Premios Nobel conservados por Gabriela Mistral.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=1",
+   "fuentes": [
+    {
+     "nombre": "Servicio Nacional del Patrimonio (museos)",
+     "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=1"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "0356593f8f",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Exposición “Cultivar la memoria de las mujeres del Elqui: Creación textil en torno a la poesía territorial de Gabriela Mistral”",
@@ -1923,7 +1993,7 @@
    "origen": "ticketera",
    "id": "2f1b68db8f",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "El Alma de la Forma",
@@ -1959,7 +2029,7 @@
    "origen": "claude",
    "id": "4d5808d49a",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-09"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Habitar en equilibrio: Aves y territorios, el arte de construir la vida",
@@ -2057,7 +2127,7 @@
    "origen": "claude",
    "id": "6e98a34c41",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-09"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Ruta Nativa: la huella que dejamos",
@@ -2087,7 +2157,7 @@
    "origen": "claude",
    "id": "a2ea3899ab",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-09"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Exposiciones «Sybir – Historias del exilio. Memoria y libertad» y «Aislados»",
@@ -2207,7 +2277,7 @@
    "origen": "claude",
    "id": "fbe7d8bf46",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-09"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "XIII Bienal Internacional de Artes de Valparaíso: fantasías, fantasmas y fulgores II",
@@ -2273,7 +2343,7 @@
    "origen": "claude",
    "id": "2b04adba08",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-09"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Valores de Chile: Personajes de nuestra historia en los billetes nacionales",
@@ -2307,7 +2377,7 @@
    "origen": "claude",
    "id": "ed05e88989",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Hilos de la Memoria — Mónica Undurraga",
@@ -2368,6 +2438,36 @@
    "id": "02b56d99df",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "El país en escena: Sergio Vodanovic, 100 años",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-05",
+   "fecha_fin": "2027-02-06",
+   "hora": null,
+   "horario": "Lun a vie, 09:15–18:00",
+   "lugar": "Biblioteca Nacional",
+   "direccion": "Libertador Bernardo O'Higgins 651",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Exposición patrimonial conmemorativa por los 100 años del dramaturgo Sergio Vodanovic en la Sala Premios Nobel de la Biblioteca Nacional.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=2",
+   "fuentes": [
+    {
+     "nombre": "Servicio Nacional del Patrimonio (museos)",
+     "url": "https://www.patrimoniocultural.gob.cl/cartelera/red-nacional?region=RM&tipo_evento=exposicion&page=2"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "111b69f3ce",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Exposición \"Liminal: el ruido que queda\"",
@@ -2619,7 +2719,7 @@
    "origen": "claude",
    "id": "daa19ce599",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Trazos. Lily Garafulic",
@@ -2920,126 +3020,6 @@
    "actualizado": "2026-11-08"
   },
   {
-   "titulo": "Lanzamiento: Museos en transformación. Política Nacional de Museos 2026-2031",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-09",
-   "fecha_fin": null,
-   "hora": "09:30",
-   "horario": null,
-   "lugar": "Museo Nacional de Bellas Artes",
-   "direccion": "José Miguel de la Barra 650",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratis",
-   "descripcion": "Encuentro y lanzamiento de la Política Nacional de Museos 2026-2031.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://www.mnba.gob.cl/cartelera",
-   "fuentes": [
-    {
-     "nombre": "mnba.gob.cl",
-     "url": "https://www.mnba.gob.cl/cartelera"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "352213a0ac",
-   "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
-  },
-  {
-   "titulo": "Exposición “Santiago Urbis Renovatio, 1848 – 1864”",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-09",
-   "fecha_fin": null,
-   "hora": "18:00",
-   "horario": null,
-   "lugar": "Museo de Santiago - Casa Colorada",
-   "direccion": "Merced 890",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratuito",
-   "descripcion": "Exposición histórica sobre la renovación urbana de Santiago en el siglo XIX, centrada en el arquitecto Claude François Brunet de Baines.",
-   "imagen": "https://media-front.elmostrador.cl/2026/11/Captura-de-Pantalla-2026-11-09-a-las-16.26.38-700x302.png",
-   "fotos": null,
-   "url": "https://www.elmostrador.cl/cultura/agenda/2026/11/09/exposicion-santiago-urbis-renovatio-1848-1864/",
-   "fuentes": [
-    {
-     "nombre": "El Mostrador",
-     "url": "https://www.elmostrador.cl/cultura/agenda/2026/11/09/exposicion-santiago-urbis-renovatio-1848-1864/"
-    }
-   ],
-   "desde_imagen": true,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "82c8e23241",
-   "agregado": "2026-11-09",
-   "actualizado": "2026-11-09"
-  },
-  {
-   "titulo": "Torneo Pokémon TCG x ETB",
-   "categoria": "juegos",
-   "fecha_inicio": "2026-11-09",
-   "fecha_fin": null,
-   "hora": "19:30",
-   "horario": null,
-   "lugar": "Trainers League",
-   "direccion": null,
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Metropolitana",
-   "precio": "$4.000",
-   "descripcion": "Torneo semanal de cartas coleccionables Pokémon TCG en formato estándar, con una Elite Trainer Box de premio para el campeón.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://www.trainersleague.cl/eventos",
-   "fuentes": [
-    {
-     "nombre": "trainersleague.cl",
-     "url": "https://www.trainersleague.cl/eventos"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "9d415007b8",
-   "agregado": "2026-11-09",
-   "actualizado": "2026-11-09"
-  },
-  {
-   "titulo": "Bunbury",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-09",
-   "fecha_fin": null,
-   "hora": "21:00",
-   "horario": null,
-   "lugar": "Santander Arena",
-   "direccion": null,
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Enrique Bunbury se presenta en vivo en Santiago con lo mejor de su repertorio de rock.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://polerasderock.cl/pages/proximos-conciertos",
-   "fuentes": [
-    {
-     "nombre": "Poleras de Rock",
-     "url": "https://polerasderock.cl/pages/proximos-conciertos"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "23a9bece3c",
-   "agregado": "2026-11-08",
-   "actualizado": "2026-11-08"
-  },
-  {
    "titulo": "Torneo Super Smash Bros",
    "categoria": "anime",
    "fecha_inicio": "2026-11-10",
@@ -3130,6 +3110,36 @@
    "actualizado": "2026-11-09"
   },
   {
+   "titulo": "Obra de teatro \"Los Puentes de Madison\" - Extensión Cultural (Aporte Endowment UNAB)",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-11",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Sede UNAB",
+   "direccion": null,
+   "comuna": "Las Condes",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $5.000",
+   "descripcion": "La legendaria historia de amor de Robert James Waller, inmortalizada en cine por Meryl Streep y Clint Eastwood, se presenta en versión teatral el miércoles 11 de noviembre a las 20:00 horas en el Salón Colonial del Campus Casona Las Condes.",
+   "imagen": "https://img.vamoh.cl/events/f7f63eca-9298-426b-8ca0-0b4cde4f27f5.webp?v=fb11127d",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/obra-de-teatro-los-puentes-de-madison-extension-cultural-aporte-endowment-unab-hv7i8/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/obra-de-teatro-los-puentes-de-madison-extension-cultural-aporte-endowment-unab-hv7i8/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "97a5f0b90c",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Dragonfly en Chile",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-11",
@@ -3189,7 +3199,7 @@
    "origen": "claude",
    "id": "ae07a2796c",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-09"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Fluyen las miradas, florecen los derechos",
@@ -3249,7 +3259,7 @@
    "origen": "claude",
    "id": "3f73ac8f60",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-09"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Ill Niño en Chile",
@@ -3315,7 +3325,7 @@
    "origen": "ia",
    "id": "e381f47523",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-09"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "BAJ Valpo inaugura exposición colectiva del primer Laboratorio de Artes Visuales",
@@ -3410,6 +3420,36 @@
    "id": "d04b8c1116",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Comienzo",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-12",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Zoco",
+   "direccion": null,
+   "comuna": "Lo Barnechea",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Obra de teatro dramática en cartelera en el Teatro Zoco.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.panoramas.app/eventos-esta-semana",
+   "fuentes": [
+    {
+     "nombre": "panoramas.app",
+     "url": "https://www.panoramas.app/eventos-esta-semana"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "2ff9635fda",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "John 5",
@@ -3694,6 +3734,14 @@
     {
      "nombre": "El Mostrador",
      "url": "https://www.elmostrador.cl/datos-utiles/2026/11/09/noche-de-museos-2026-como-encontrar-museos-y-panoramas-gratuitos-para-este-viernes/"
+    },
+    {
+     "nombre": "G5noticias",
+     "url": "https://g5noticias.cl/2026/11/10/centro-historico-de-santiago-activa-su-red-gastronomica-para-noche-de-museos-y-suma-alianza-con-cabify/"
+    },
+    {
+     "nombre": "La Tercera",
+     "url": "https://www.latercera.com/servicios/noticia/cuando-es-la-noche-de-museos-y-como-buscar-actividades-gratuitas/"
     }
    ],
    "desde_imagen": true,
@@ -3701,7 +3749,7 @@
    "origen": "ia",
    "id": "09cd96f442",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-09",
+   "actualizado": "2026-11-10",
    "horario": "Desde las 17:00; cada museo tiene su horario (gratis)",
    "fotos": [
     "https://www.mnhn.gob.cl/sites/www.mnhn.gob.cl/files/styles/4x3_mediano/public/2026-10/Nochemuseos.png?h=98f88c31&itok=GUofKna_"
@@ -3923,7 +3971,7 @@
    "origen": "datos-estructurados",
    "id": "4bcd76935a",
    "agregado": "2026-11-09",
-   "actualizado": "2026-11-09"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "3° Planeta Cómic Fest",
@@ -4076,6 +4124,10 @@
     {
      "nombre": "Paradondevamos.cl",
      "url": "https://paradondevamos.cl/Actividades/Detalles/12415"
+    },
+    {
+     "nombre": "panoramas.app",
+     "url": "https://www.panoramas.app/eventos-esta-semana"
     }
    ],
    "desde_imagen": false,
@@ -4083,7 +4135,7 @@
    "origen": "manual",
    "id": "c1981fd414",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Noviembre - Medieval Party & Veladaa - Palacio Astoreca",
@@ -4771,7 +4823,7 @@
    "origen": "claude",
    "id": "20d77619ca",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-09"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Hard & Dark en Rockstar Stage",
@@ -5258,6 +5310,36 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "Maly Jorquera Stand Up Comedy en Ruta 78",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": null,
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Bar Ruta 78",
+   "direccion": null,
+   "comuna": "Puente Alto",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $10.000",
+   "descripcion": "🌼🤸🏼‍♀️Maly Jorquiera en Bar Ruta 78 - Puente Alto🤸🏼‍♀️🌼 ¡Atención Puente Alto y alrededores! Este mes de Noviembre vuelve al escenario de BAR RUTA 78, la grande y única MALY JORQUIERA con su show de Stand Up Comedy; no te pierdas a uno de l",
+   "imagen": "https://img.vamoh.cl/events/8c244abf-5d88-4d04-8646-af3b78169ac0.webp?v=5dd36be2",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/maly-jorquera-stand-up-comedy-en-ruta-78-naa2o/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/maly-jorquera-stand-up-comedy-en-ruta-78-naa2o/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "b83e2b9564",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-10"
+  },
+  {
    "titulo": "Nightcrawler: Tributo a Judas Priest + Cronopolis en Good Luck Pizza & Drinks",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-27",
@@ -5543,7 +5625,7 @@
    "origen": "ticketera",
    "id": "c003178ec9",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-09"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Classic Thrash Attack: Artillery y Atrophy en Concepción",
@@ -5879,7 +5961,7 @@
    "origen": "ia",
    "id": "5197cbd0b7",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-09"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Pepo: antes y después de Condorito",
@@ -5919,7 +6001,7 @@
    "origen": "claude",
    "id": "3636e60042",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-09"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "BABYMETAL",
@@ -6772,7 +6854,7 @@
    "origen": "claude",
    "id": "0997d6f0b1",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Metal Forces Total Thrash",
