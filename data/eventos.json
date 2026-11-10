@@ -1,21 +1,13 @@
 {
  "version": 1,
- "actualizado": "2026-11-09T16:43-03:00",
+ "actualizado": "2026-11-09T23:19-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-09T16:43-03:00",
+  "fecha": "2026-11-09T23:19-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 27,
-  "nuevos_esta_vez": 17,
+  "eventos_nuevos": 23,
+  "nuevos_esta_vez": 4,
   "nuevos_ids": [
-   "ef40d88c07",
-   "307971fb3d",
-   "e138b01837",
-   "3429e9c5ae",
-   "ae235db2f3",
-   "39a39867fb",
-   "0f7612191b",
-   "f22fd483b9",
    "b96e10df68",
    "63a4ac1676",
    "41ac991fa0",
@@ -34,17 +26,13 @@
    "e1a86e8618",
    "dc7e2a27ca",
    "5f701c673b",
-   "263bf2843f"
+   "263bf2843f",
+   "af9d7d7d65",
+   "145744e1cd",
+   "6dbce10344",
+   "82c8e23241"
   ],
   "nuevos_desde": {
-   "ef40d88c07": "2026-11-08T17:46-03:00",
-   "307971fb3d": "2026-11-08T17:46-03:00",
-   "e138b01837": "2026-11-08T17:46-03:00",
-   "3429e9c5ae": "2026-11-08T17:46-03:00",
-   "ae235db2f3": "2026-11-08T17:46-03:00",
-   "39a39867fb": "2026-11-08T22:11-03:00",
-   "0f7612191b": "2026-11-08T22:11-03:00",
-   "f22fd483b9": "2026-11-08T22:11-03:00",
    "b96e10df68": "2026-11-09T05:14-03:00",
    "63a4ac1676": "2026-11-09T05:14-03:00",
    "41ac991fa0": "2026-11-09T16:43-03:00",
@@ -63,22 +51,26 @@
    "e1a86e8618": "2026-11-09T16:43-03:00",
    "dc7e2a27ca": "2026-11-09T16:43-03:00",
    "5f701c673b": "2026-11-09T16:43-03:00",
-   "263bf2843f": "2026-11-09T16:43-03:00"
+   "263bf2843f": "2026-11-09T16:43-03:00",
+   "af9d7d7d65": "2026-11-09T23:19-03:00",
+   "145744e1cd": "2026-11-09T23:19-03:00",
+   "6dbce10344": "2026-11-09T23:19-03:00",
+   "82c8e23241": "2026-11-09T23:19-03:00"
   },
   "horas_nuevos": 24,
-  "llamadas_ia": 21,
+  "llamadas_ia": 22,
   "ia_sin_cupo": false,
-  "ultima_completa": "2026-11-09T15:48-03:00",
+  "ultima_completa": "2026-11-09T23:08-03:00",
   "modo": "completa",
-  "paginas_revisadas": 22,
+  "paginas_revisadas": 18,
   "busquedas": 77,
   "fuentes_fijas": 11,
-  "errores": 7,
+  "errores": 6,
   "noticias_desde": "2026-11-09",
-  "noticias_viejas_descartadas": 262,
+  "noticias_viejas_descartadas": 269,
   "redes_vistas": 2
  },
- "total": 231,
+ "total": 235,
  "eventos": [
   {
    "titulo": "Mariposas y Polillas, Colores en Movimiento",
@@ -2958,6 +2950,36 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "Exposición “Santiago Urbis Renovatio, 1848 – 1864”",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-09",
+   "fecha_fin": null,
+   "hora": "18:00",
+   "horario": null,
+   "lugar": "Museo de Santiago - Casa Colorada",
+   "direccion": "Merced 890",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratuito",
+   "descripcion": "Exposición histórica sobre la renovación urbana de Santiago en el siglo XIX, centrada en el arquitecto Claude François Brunet de Baines.",
+   "imagen": "https://media-front.elmostrador.cl/2026/11/Captura-de-Pantalla-2026-11-09-a-las-16.26.38-700x302.png",
+   "fotos": null,
+   "url": "https://www.elmostrador.cl/cultura/agenda/2026/11/09/exposicion-santiago-urbis-renovatio-1848-1864/",
+   "fuentes": [
+    {
+     "nombre": "El Mostrador",
+     "url": "https://www.elmostrador.cl/cultura/agenda/2026/11/09/exposicion-santiago-urbis-renovatio-1848-1864/"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "82c8e23241",
+   "agregado": "2026-11-09",
+   "actualizado": "2026-11-09"
+  },
+  {
    "titulo": "Torneo Pokémon TCG x ETB",
    "categoria": "juegos",
    "fecha_inicio": "2026-11-09",
@@ -3660,6 +3682,18 @@
     {
      "nombre": "VAMOH!",
      "url": "https://vamoh.cl/events/codigo-ancestral-teatro-evolucion-e-inteligencia-artificial-en-noche-de-museos-2026-2putx/"
+    },
+    {
+     "nombre": "Home - Radio Agricultura",
+     "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/noche-de-museos-2026-museo-de-bomberos-abrira-gratis-con-juegos-y-actividades-para-toda-la-familia_20261109/"
+    },
+    {
+     "nombre": "G5noticias",
+     "url": "https://g5noticias.cl/2026/11/09/con-juego-de-pistas-y-recorridos-mediados-el-mubo-se-suma-a-una-nueva-edicion-de-noche-de-museos/"
+    },
+    {
+     "nombre": "El Mostrador",
+     "url": "https://www.elmostrador.cl/datos-utiles/2026/11/09/noche-de-museos-2026-como-encontrar-museos-y-panoramas-gratuitos-para-este-viernes/"
     }
    ],
    "desde_imagen": true,
@@ -4622,6 +4656,36 @@
    "actualizado": "2026-11-06"
   },
   {
+   "titulo": "Festival Monitos",
+   "categoria": "ilustracion",
+   "fecha_inicio": "2026-11-16",
+   "fecha_fin": "2026-11-22",
+   "hora": null,
+   "horario": null,
+   "lugar": "Concepción",
+   "direccion": null,
+   "comuna": "Concepción",
+   "ciudad": "Concepción",
+   "region": "Región del Biobío",
+   "precio": null,
+   "descripcion": "Semana dedicada a la ilustración con charlas, talleres y más de 40 exponentes en Concepción.",
+   "imagen": "https://i2.ondapress.com/?w=1200&h=630&q=90&src=https%3A%2F%2Fassets.ondapress.com%2Fsabescl%2F2026%2F11%2Fsabes-2026-11-09t172354-961a8475-1794255840.jpg",
+   "fotos": null,
+   "url": "https://sabes.cl/2026/11/09/feria-monitos-da-el-salto-con-charlas-talleres-y-mas-de-40-exponentes-de-la-ilustracion-en-concepcion/",
+   "fuentes": [
+    {
+     "nombre": "Sabes",
+     "url": "https://sabes.cl/2026/11/09/feria-monitos-da-el-salto-con-charlas-talleres-y-mas-de-40-exponentes-de-la-ilustracion-en-concepcion/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "6dbce10344",
+   "agregado": "2026-11-09",
+   "actualizado": "2026-11-09"
+  },
+  {
    "titulo": "ZZ Top",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-16",
@@ -5134,6 +5198,36 @@
    "actualizado": "2026-11-08"
   },
   {
+   "titulo": "YCS Santiago 2026",
+   "categoria": "juegos",
+   "fecha_inicio": "2026-11-26",
+   "fecha_fin": "2026-11-29",
+   "hora": null,
+   "horario": null,
+   "lugar": "Estación Mapocho",
+   "direccion": "Paseo Rosales 50",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Torneo internacional de cartas Yu-Gi-Oh! con torneos principales, premios y competencias.",
+   "imagen": "https://www.diarioantofagasta.cl/wp-content/uploads/2026/11/Some_Yu-Gi-Oh_cards-1024x685.jpg",
+   "fotos": null,
+   "url": "https://www.diarioantofagasta.cl/el-pais/233100/chile-sera-sede-de-un-torneo-internacional-de-cartas-yu-gi-oh-durante-noviembre/",
+   "fuentes": [
+    {
+     "nombre": "El Diario de Antofagasta",
+     "url": "https://www.diarioantofagasta.cl/el-pais/233100/chile-sera-sede-de-un-torneo-internacional-de-cartas-yu-gi-oh-durante-noviembre/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "145744e1cd",
+   "agregado": "2026-11-09",
+   "actualizado": "2026-11-09"
+  },
+  {
    "titulo": "Evangelion en Bar 44",
    "categoria": "anime",
    "fecha_inicio": "2026-11-27",
@@ -5508,6 +5602,36 @@
    "id": "6a9c1df7fe",
    "agregado": "2026-11-06",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Pato Pimienta y Juan Pablo Flores - Secreto en la montaña",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Casa Comedia - Providencia",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Show de comedia y stand-up en Casa Comedia. Calza en teatro por ser un espectáculo de humor en sala.",
+   "imagen": "https://static.ptocdn.net/event-resources/images/CCM006_calugalistado.webp?v=1794254628",
+   "fotos": null,
+   "url": "https://www.puntoticket.com/evento/secreto-en-la-montana",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/evento/secreto-en-la-montana"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "af9d7d7d65",
+   "agregado": "2026-11-09",
+   "actualizado": "2026-11-09"
   },
   {
    "titulo": "El Antro Anime On Tour",
