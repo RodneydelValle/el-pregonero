@@ -1,32 +1,13 @@
 {
  "version": 1,
- "actualizado": "2026-11-11T19:15-03:00",
+ "actualizado": "2026-11-12T00:03-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-11T19:15-03:00",
+  "fecha": "2026-11-12T00:03-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 69,
-  "nuevos_esta_vez": 24,
+  "eventos_nuevos": 51,
+  "nuevos_esta_vez": 1,
   "nuevos_ids": [
-   "0f5abf50ce",
-   "3752e2ada7",
-   "0832807295",
-   "ca664fb52c",
-   "a4d17b55ae",
-   "c329ed61e6",
-   "d95079e4c0",
-   "33bf313ff0",
-   "b7163677f8",
-   "8a43b8fea5",
-   "27caaef7bb",
-   "58fdbe0a88",
-   "da20b86513",
-   "1f98d7f8f7",
-   "cf6fdc4d10",
-   "da87052eb4",
-   "e397d6852e",
-   "746b29b623",
-   "a989ad0987",
    "c529fb19a9",
    "f74655b697",
    "d032a42359",
@@ -76,28 +57,10 @@
    "fb090519e2",
    "5a23d9c020",
    "b4ce3d179e",
-   "be8cf11158"
+   "be8cf11158",
+   "58d620429f"
   ],
   "nuevos_desde": {
-   "0f5abf50ce": "2026-11-10T20:44-03:00",
-   "3752e2ada7": "2026-11-10T20:44-03:00",
-   "0832807295": "2026-11-10T20:44-03:00",
-   "ca664fb52c": "2026-11-10T20:44-03:00",
-   "a4d17b55ae": "2026-11-10T20:44-03:00",
-   "c329ed61e6": "2026-11-10T20:44-03:00",
-   "d95079e4c0": "2026-11-10T20:44-03:00",
-   "33bf313ff0": "2026-11-10T20:44-03:00",
-   "b7163677f8": "2026-11-10T20:44-03:00",
-   "8a43b8fea5": "2026-11-10T20:44-03:00",
-   "27caaef7bb": "2026-11-10T20:44-03:00",
-   "58fdbe0a88": "2026-11-10T20:44-03:00",
-   "da20b86513": "2026-11-10T20:44-03:00",
-   "1f98d7f8f7": "2026-11-10T20:44-03:00",
-   "cf6fdc4d10": "2026-11-10T20:44-03:00",
-   "da87052eb4": "2026-11-10T20:44-03:00",
-   "e397d6852e": "2026-11-10T20:44-03:00",
-   "746b29b623": "2026-11-10T20:44-03:00",
-   "a989ad0987": "2026-11-10T20:44-03:00",
    "c529fb19a9": "2026-11-11T03:37-03:00",
    "f74655b697": "2026-11-11T03:37-03:00",
    "d032a42359": "2026-11-11T03:37-03:00",
@@ -147,23 +110,23 @@
    "fb090519e2": "2026-11-11T19:15-03:00",
    "5a23d9c020": "2026-11-11T19:15-03:00",
    "b4ce3d179e": "2026-11-11T19:15-03:00",
-   "be8cf11158": "2026-11-11T19:15-03:00"
+   "be8cf11158": "2026-11-11T19:15-03:00",
+   "58d620429f": "2026-11-12T00:03-03:00"
   },
   "horas_nuevos": 24,
-  "llamadas_ia": 41,
+  "llamadas_ia": 2,
   "ia_sin_cupo": false,
   "ultima_completa": "2026-11-11T18:56-03:00",
-  "modo": "completa",
-  "paginas_revisadas": 38,
-  "busquedas": 96,
-  "fuentes_fijas": 14,
-  "errores": 9,
+  "modo": "rapida",
+  "paginas_revisadas": 0,
+  "busquedas": 0,
+  "fuentes_fijas": 10,
+  "errores": 1,
   "noticias_desde": "2026-11-11",
-  "noticias_viejas_descartadas": 300,
-  "redes_vistas": 2,
-  "imagenes_encontradas": 7
+  "noticias_viejas_descartadas": 0,
+  "imagenes_encontradas": 12
  },
- "total": 418,
+ "total": 419,
  "eventos": [
   {
    "titulo": "Mariposas y Polillas, Colores en Movimiento",
@@ -9872,7 +9835,7 @@
    "region": "Región Metropolitana",
    "precio": "Gratis",
    "descripcion": "Show de stand-up comedy del comediante Lucho Miranda.",
-   "imagen": null,
+   "imagen": "https://telonticket.cl/wp-content/uploads/2025/09/1-40.jpg",
    "fotos": null,
    "url": "https://telonticket.cl",
    "fuentes": [
@@ -9992,7 +9955,7 @@
    "region": "Valparaíso",
    "precio": null,
    "descripcion": "Las leyendas del thrash metal Artillery y Atrophy se presentan en vivo en Valparaíso como parte de su gira por Chile.",
-   "imagen": null,
+   "imagen": "https://www.rockaxis.com/img/newsList/6251954.jpg",
    "fotos": null,
    "url": "https://www.passline.com",
    "fuentes": [
@@ -10442,7 +10405,7 @@
    "region": "Región de O'Higgins",
    "precio": "Gratis",
    "descripcion": "Felipe Avello se presenta en vivo en Gran Arena Monticello.",
-   "imagen": null,
+   "imagen": "https://telonticket.cl/wp-content/uploads/2025/02/1-72.jpg",
    "fotos": null,
    "url": "https://telonticket.cl",
    "fuentes": [
@@ -10592,7 +10555,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Carcass encabeza el Chile Terrorfest II junto a Necrot en el Teatro Caupolicán.",
-   "imagen": null,
+   "imagen": "https://cuarteldelmetal.com/wp-content/uploads/2026/05/Carcass_Metal_Frenzy_2024_21_28cropped29-scaled.jpg",
    "fotos": null,
    "url": "https://cuarteldelmetal.com/conciertos-chile/2026/05/conciertos-metal-en-chile/",
    "fuentes": [
@@ -10622,7 +10585,7 @@
    "region": "Biobío",
    "precio": null,
    "descripcion": "Las bandas internacionales de thrash metal Artillery y Atrophy llegan a Concepción en su esperado paso por el país.",
-   "imagen": null,
+   "imagen": "https://www.rockaxis.com/img/newsList/6251954.jpg",
    "fotos": null,
    "url": "https://www.passline.com",
    "fuentes": [
@@ -10651,7 +10614,7 @@
    "region": null,
    "precio": "Desde $22.400",
    "descripcion": "Tributo a Iron Maiden con Dennis Stratton, guitarrista original de la banda en 1980.",
-   "imagen": null,
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/ef87ae3e07f9d9305da0fe9c5e2e0f4880aa9040.jpeg?1793627904",
    "url": "https://ticketplus.cl/events/maiden-united-1980-feat-dennis-stratton-sabado-28-noviembre-club-subterraneo",
    "fuentes": [
     {
@@ -10774,7 +10737,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Tocata de rock y metal con Movimiento No Humano en Cajacústica.",
-   "imagen": null,
+   "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/cajacustica/DfRbmZ1sQQu_0.jpg",
    "fotos": null,
    "url": "https://salirsantiago.com/panoramas/tocata",
    "fuentes": [
@@ -10840,7 +10803,7 @@
    "region": "Metropolitana de Santiago",
    "precio": null,
    "descripcion": "Concierto de thrash metal con las agrupaciones Artillery y Atrophy en Sala RBX de Santiago.",
-   "imagen": null,
+   "imagen": "https://www.rockaxis.com/img/newsList/6251954.jpg",
    "fotos": null,
    "url": "https://www.passline.com",
    "fuentes": [
@@ -10929,7 +10892,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Concierto de Dying Fetus en Club Blondie.",
-   "imagen": null,
+   "imagen": "https://cuarteldelmetal.com/wp-content/uploads/2026/05/Dying_Fetus_Rockharz_2024_09-scaled.jpg",
    "url": "https://cuarteldelmetal.com/conciertos-chile/2026/05/conciertos-metal-en-chile/",
    "fuentes": [
     {
@@ -11052,6 +11015,36 @@
    "origen": "ticketera",
    "id": "f840300077",
    "agregado": "2026-11-06",
+   "actualizado": "2026-11-11"
+  },
+  {
+   "titulo": "Se Me Chispoteó - En Barbones Comedy",
+   "categoria": "standup",
+   "fecha_inicio": "2026-12-03",
+   "fecha_fin": "2026-12-04",
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Barbones Comedy",
+   "direccion": null,
+   "comuna": "Viña Del Mar",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $9.200",
+   "descripcion": "¿Te imaginas a un mexicano tratando de entender por qué le ponemos palta a todo? 🌭 Ricardo El Mexicano llega a Barbones Comedy en Viña con su rutina \"Se Me Chispoteó\". Este comediante ya es un local más y nos contará, con mucha chispa, cómo",
+   "imagen": "https://img.vamoh.cl/events/0f01f804-981f-4fc5-a2f2-7ca1f069dfb6.webp?v=f002b724",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/se-me-chispoteo-en-barbones-comedy-vl51m/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/se-me-chispoteo-en-barbones-comedy-vl51m/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "58d620429f",
+   "agregado": "2026-11-11",
    "actualizado": "2026-11-11"
   },
   {
@@ -11222,7 +11215,7 @@
    "region": null,
    "precio": "Desde $8.800",
    "descripcion": "Función de la obra La Dramática en el Teatro Cachafaz. Teatro contemporáneo imperdible.",
-   "imagen": null,
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/58226abc1443b07597e6c2b2ef82a787767fa06f.png?1794429548",
    "fotos": null,
    "url": "https://ticketplus.cl/events/ciclo-de-teatro-la-dramatica-viernes-4-de-diciembre-22-15-hrs",
    "fuentes": [
@@ -11550,7 +11543,7 @@
    "region": null,
    "precio": "Desde $5.000",
    "descripcion": "Tocata benéfica organizada por Sentinels Producciones en Macul.",
-   "imagen": null,
+   "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/todorockspa/DfSajVoJDe2_0.jpg",
    "fotos": null,
    "url": "https://salirsantiago.com/panorama/tocata-thrash-metal-street-punk-f7779f0c",
    "fuentes": [
@@ -11580,7 +11573,7 @@
    "region": "Región Metropolitana",
    "precio": "Desde $5.000",
    "descripcion": "Festival de música rock y underground en el Teatro Coliseo.",
-   "imagen": null,
+   "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/perroscontinaoficial/DeJ5vV9xtzl_0.jpg",
    "fotos": null,
    "url": "https://salirsantiago.com/panoramas/tocata",
    "fuentes": [
