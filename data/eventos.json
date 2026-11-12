@@ -1,33 +1,19 @@
 {
  "version": 1,
- "actualizado": "2026-11-12T00:03-03:00",
+ "actualizado": "2026-11-12T08:38-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-12T00:03-03:00",
+  "fecha": "2026-11-12T08:38-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 51,
-  "nuevos_esta_vez": 1,
+  "eventos_nuevos": 44,
+  "nuevos_esta_vez": 8,
   "nuevos_ids": [
-   "c529fb19a9",
-   "f74655b697",
-   "d032a42359",
-   "06818cdd97",
-   "237b5d07fc",
-   "9d9c59f1b3",
-   "0b66b6efb8",
-   "ecf37ece02",
-   "6696902819",
-   "f7e492f3a4",
-   "1427b063a9",
-   "5278478095",
    "8ef843409f",
    "e7954020ad",
    "226dd03252",
    "352569ade9",
-   "7669506590",
    "f8c26cbc9d",
    "2e24fdc5cb",
-   "395a344120",
    "a3f366e341",
    "22359681cf",
    "3da30d8e7e",
@@ -43,7 +29,6 @@
    "d2ded84cf9",
    "ce32e1c6d5",
    "75890a154b",
-   "d3fcce1ae0",
    "e68073d1ed",
    "bbe53e64c6",
    "54dd387c3b",
@@ -58,29 +43,23 @@
    "5a23d9c020",
    "b4ce3d179e",
    "be8cf11158",
-   "58d620429f"
+   "58d620429f",
+   "be8b37d10f",
+   "2caf43d202",
+   "e093b4d49c",
+   "bfb712e997",
+   "8ece3a9a0c",
+   "9d6ac7c134",
+   "159bd6ccca",
+   "2a51e4a7a0"
   ],
   "nuevos_desde": {
-   "c529fb19a9": "2026-11-11T03:37-03:00",
-   "f74655b697": "2026-11-11T03:37-03:00",
-   "d032a42359": "2026-11-11T03:37-03:00",
-   "06818cdd97": "2026-11-11T03:37-03:00",
-   "237b5d07fc": "2026-11-11T03:37-03:00",
-   "9d9c59f1b3": "2026-11-11T03:37-03:00",
-   "0b66b6efb8": "2026-11-11T03:37-03:00",
-   "ecf37ece02": "2026-11-11T03:37-03:00",
-   "6696902819": "2026-11-11T03:37-03:00",
-   "f7e492f3a4": "2026-11-11T03:37-03:00",
-   "1427b063a9": "2026-11-11T03:37-03:00",
-   "5278478095": "2026-11-11T03:37-03:00",
    "8ef843409f": "2026-11-11T12:06-03:00",
    "e7954020ad": "2026-11-11T12:06-03:00",
    "226dd03252": "2026-11-11T12:06-03:00",
    "352569ade9": "2026-11-11T12:06-03:00",
-   "7669506590": "2026-11-11T12:06-03:00",
    "f8c26cbc9d": "2026-11-11T12:06-03:00",
    "2e24fdc5cb": "2026-11-11T12:06-03:00",
-   "395a344120": "2026-11-11T12:06-03:00",
    "a3f366e341": "2026-11-11T12:06-03:00",
    "22359681cf": "2026-11-11T12:06-03:00",
    "3da30d8e7e": "2026-11-11T12:06-03:00",
@@ -96,7 +75,6 @@
    "d2ded84cf9": "2026-11-11T19:15-03:00",
    "ce32e1c6d5": "2026-11-11T19:15-03:00",
    "75890a154b": "2026-11-11T19:15-03:00",
-   "d3fcce1ae0": "2026-11-11T19:15-03:00",
    "e68073d1ed": "2026-11-11T19:15-03:00",
    "bbe53e64c6": "2026-11-11T19:15-03:00",
    "54dd387c3b": "2026-11-11T19:15-03:00",
@@ -111,22 +89,31 @@
    "5a23d9c020": "2026-11-11T19:15-03:00",
    "b4ce3d179e": "2026-11-11T19:15-03:00",
    "be8cf11158": "2026-11-11T19:15-03:00",
-   "58d620429f": "2026-11-12T00:03-03:00"
+   "58d620429f": "2026-11-12T00:03-03:00",
+   "be8b37d10f": "2026-11-12T08:38-03:00",
+   "2caf43d202": "2026-11-12T08:38-03:00",
+   "e093b4d49c": "2026-11-12T08:38-03:00",
+   "bfb712e997": "2026-11-12T08:38-03:00",
+   "8ece3a9a0c": "2026-11-12T08:38-03:00",
+   "9d6ac7c134": "2026-11-12T08:38-03:00",
+   "159bd6ccca": "2026-11-12T08:38-03:00",
+   "2a51e4a7a0": "2026-11-12T08:38-03:00"
   },
   "horas_nuevos": 24,
-  "llamadas_ia": 2,
+  "llamadas_ia": 29,
   "ia_sin_cupo": false,
-  "ultima_completa": "2026-11-11T18:56-03:00",
-  "modo": "rapida",
-  "paginas_revisadas": 0,
-  "busquedas": 0,
-  "fuentes_fijas": 10,
-  "errores": 1,
+  "ultima_completa": "2026-11-12T08:06-03:00",
+  "modo": "completa",
+  "paginas_revisadas": 27,
+  "busquedas": 96,
+  "fuentes_fijas": 17,
+  "errores": 9,
   "noticias_desde": "2026-11-11",
-  "noticias_viejas_descartadas": 0,
-  "imagenes_encontradas": 12
+  "noticias_viejas_descartadas": 290,
+  "redes_vistas": 8,
+  "imagenes_encontradas": 10
  },
- "total": 419,
+ "total": 417,
  "eventos": [
   {
    "titulo": "Mariposas y Polillas, Colores en Movimiento",
@@ -420,7 +407,7 @@
    "origen": "claude",
    "id": "6dfafa8970",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Kume Mongen",
@@ -480,7 +467,7 @@
    "origen": "claude",
    "id": "562569f3c4",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Comadres",
@@ -510,7 +497,7 @@
    "origen": "claude",
    "id": "bfb912b5ba",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "MAVI UC conmemora su 25° aniversario con gran exposición de su colección",
@@ -540,7 +527,7 @@
    "origen": "claude",
    "id": "3b3025cb65",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Me lo contó un pajarito",
@@ -769,7 +756,7 @@
    "origen": "datos-estructurados",
    "id": "08a0a88e95",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Huidobro: amores, rebeldías y propuestas",
@@ -799,7 +786,7 @@
    "origen": "claude",
    "id": "c74849a44f",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Casa común. 100 años de Parques Nacionales",
@@ -977,7 +964,7 @@
    "origen": "claude",
    "id": "43a0dd1f1a",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Trienal Art Cut 26: Obra de Ximena Garrido-Lecca",
@@ -1039,7 +1026,7 @@
    "origen": "claude",
    "id": "94601c7845",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "El MNBA revisa la gestión de Luis Vargas Rosas",
@@ -1160,6 +1147,10 @@
     {
      "nombre": "El Dínamo | Noticias de Chile y el mundo",
      "url": "https://www.eldinamo.cl/entretencion/panoramas/2026/11/11/noche-de-museos-2026-las-actividades-disponibles-en-santiago-regiones-y-todo-lo-que-debes-saber/"
+    },
+    {
+     "nombre": "Diario La Batalla de Maipú ®",
+     "url": "https://www.labatalla.cl/noche-de-museos-2026-los-panoramas-imperdibles/"
     }
    ],
    "desde_imagen": true,
@@ -1167,7 +1158,7 @@
    "origen": "claude",
    "id": "158c42778a",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Balmaceda Visual, Premoniciones",
@@ -1341,7 +1332,7 @@
    "origen": "claude",
    "id": "33a119f815",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Fotografía: alteraciones matéricas",
@@ -1375,7 +1366,7 @@
    "origen": "claude",
    "id": "0ba9aaeefc",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "La Trayectoria Intermedial del Gesto - Valentina Díaz",
@@ -1427,7 +1418,7 @@
    "comuna": "Quinta Normal",
    "ciudad": "Santiago",
    "region": "Región Metropolitana",
-   "precio": null,
+   "precio": "Gratuito",
    "descripcion": "Muestra de arte contemporáneo en el MAC Quinta Normal.",
    "imagen": "https://artes.uchile.cl/dam/jcr:9a55a318-26b7-4769-8487-bd26b28323a9/exposicion-en-la-punta-de-la-lengua.jpg",
    "fotos": null,
@@ -1436,6 +1427,10 @@
     {
      "nombre": "artes.uchile.cl",
      "url": "https://artes.uchile.cl/agenda/exposiciones"
+    },
+    {
+     "nombre": "Diario La Batalla de Maipú ®",
+     "url": "https://www.labatalla.cl/noche-de-museos-2026-los-panoramas-imperdibles/"
     }
    ],
    "desde_imagen": false,
@@ -1443,7 +1438,7 @@
    "origen": "ia",
    "id": "7a1851cf16",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Por Ambos Lados - Andrés Denegri",
@@ -1549,7 +1544,7 @@
    "origen": "claude",
    "id": "fe429a2453",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Vitrina de objeto destacado: sarcófago de Ta-Sherit-Min",
@@ -1733,7 +1728,7 @@
    "origen": "claude",
    "id": "5ca969e3c6",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Ensueño — Raúl Cuello",
@@ -1875,7 +1870,7 @@
    "origen": "claude",
    "id": "0ab446f27c",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Nosotros los chilenos: archivar para imaginarnos",
@@ -1909,7 +1904,7 @@
    "origen": "claude",
    "id": "4a3298ee26",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Recordar el futuro. Íconos del diseño y arte geométrico en Chile",
@@ -1977,7 +1972,7 @@
    "origen": "claude",
    "id": "dfa0189c0c",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Exhibición bibliográfica: Premios Nobel en la colección privada de Gabriela Mistral",
@@ -2171,7 +2166,7 @@
    "origen": "claude",
    "id": "4d5808d49a",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Habitar en equilibrio: Aves y territorios, el arte de construir la vida",
@@ -2269,7 +2264,7 @@
    "origen": "claude",
    "id": "6e98a34c41",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Ruta Nativa: la huella que dejamos",
@@ -2299,7 +2294,7 @@
    "origen": "claude",
    "id": "a2ea3899ab",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Exposiciones «Sybir – Historias del exilio. Memoria y libertad» y «Aislados»",
@@ -2419,7 +2414,7 @@
    "origen": "claude",
    "id": "fbe7d8bf46",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "XIII Bienal Internacional de Artes de Valparaíso: fantasías, fantasmas y fulgores II",
@@ -2493,7 +2488,7 @@
    "origen": "datos-estructurados",
    "id": "ab8e9daa61",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Hibridaciones de Francisca Larraín",
@@ -2523,7 +2518,7 @@
    "origen": "claude",
    "id": "2b04adba08",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Valores de Chile: Personajes de nuestra historia en los billetes nacionales",
@@ -2771,7 +2766,7 @@
    "origen": "ia",
    "id": "c1421516a4",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "De Cesante a Mirón. Enrique Flores",
@@ -3065,7 +3060,7 @@
    "origen": "ia",
    "id": "feee41666f",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "El prestamista",
@@ -3325,7 +3320,7 @@
    "origen": "datos-estructurados",
    "id": "3c2f4079a7",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Felipe Balzo: Del Enigma al Juego",
@@ -3430,246 +3425,38 @@
    "actualizado": "2026-11-10"
   },
   {
-   "titulo": "Noche de Museos 2026: más de 300 espacios culturales abrirán gratis en todo Chile",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-11",
-   "fecha_fin": null,
-   "hora": "06:00",
-   "horario": null,
-   "lugar": null,
-   "direccion": null,
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
-   "precio": null,
-   "descripcion": "Una noche para recorrer museos, descubrir exposiciones y visitar espacios culturales fuera de sus horarios habituales. El viernes 13 de noviembre se realizará una nueva edición de Noche de Museos, […] \\n",
-   "imagen": "https://www.ed.cl/wp-content/uploads/2026/07/columna-5.jpg",
-   "fotos": null,
-   "url": "https://www.ed.cl/event/noche-de-museos-2026-mas-de-300-espacios-culturales-abriran-gratis-en-todo-chile/",
-   "fuentes": [
-    {
-     "nombre": "ED.cl",
-     "url": "https://www.ed.cl/event/noche-de-museos-2026-mas-de-300-espacios-culturales-abriran-gratis-en-todo-chile/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "datos-estructurados",
-   "id": "d3fcce1ae0",
-   "agregado": "2026-11-11",
-   "actualizado": "2026-11-11"
-  },
-  {
-   "titulo": "Inauguración 5ª edición del Circuito Matta Patrimonial",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-11",
-   "fecha_fin": null,
-   "hora": "11:00",
-   "horario": null,
-   "lugar": "Centro Cultural La Moneda (Cineteca Nacional)",
-   "direccion": "Plaza de la Ciudadanía 26",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratuito",
-   "descripcion": "Inauguración del Circuito Matta Patrimonial con charla magistral y exhibición de la obra 'Etre Cible'.",
-   "imagen": "https://media-front.elmostrador.cl/2026/11/NN-000245-5576-700x450.jpg",
-   "fotos": null,
-   "url": "https://www.elmostrador.cl/cultura/2026/11/11/preocupacion-por-cuadro-de-matta-mientras-inauguran-circuito-patrimonial-dedicado-al-artista/",
-   "fuentes": [
-    {
-     "nombre": "El Mostrador",
-     "url": "https://www.elmostrador.cl/cultura/2026/11/11/preocupacion-por-cuadro-de-matta-mientras-inauguran-circuito-patrimonial-dedicado-al-artista/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "7669506590",
-   "agregado": "2026-11-11",
-   "actualizado": "2026-11-11"
-  },
-  {
-   "titulo": "Dragonfly en Chile",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-11",
-   "fecha_fin": null,
-   "hora": "17:00",
-   "lugar": "Sala RBX",
-   "direccion": "Av. Vicuña Mackenna 1220, Ñuñoa, Región Metropolitana",
-   "comuna": "Ñuñoa",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "La banda de heavy y power metal hispano-argentina Dragonfly se presenta en vivo en Sala RBX.",
-   "imagen": "https://cdn.keai.cl/events/17092-aeaff659bba1d1bef1d4f8ddf1fe7388.jpg",
-   "url": "https://sonorock.com/cartelera-metal-chile/",
-   "fuentes": [
-    {
-     "nombre": "SonorocK",
-     "url": "https://sonorock.com/cartelera-metal-chile/"
-    },
-    {
-     "nombre": "Keai",
-     "url": "https://keai.cl/evento/dragonfly-gira-sudamericana-en-sala-rbx-rock-bar-experience-17092"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "3b27b430ae",
-   "agregado": "2026-11-06",
-   "actualizado": "2026-11-11"
-  },
-  {
-   "titulo": "Liga Gratis Mensual Pokémon TCG: Fecha 2 - Planta",
-   "categoria": "juegos",
-   "fecha_inicio": "2026-11-11",
-   "fecha_fin": null,
-   "hora": "19:30",
-   "horario": null,
-   "lugar": "Trainers League",
-   "direccion": null,
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Metropolitana",
-   "precio": "Gratis",
-   "descripcion": "Segunda fecha de la liga gratuita de cartas Pokémon TCG. Formato estándar, el campeón clasifica a la gran final.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://www.trainersleague.cl/eventos",
-   "fuentes": [
-    {
-     "nombre": "trainersleague.cl",
-     "url": "https://www.trainersleague.cl/eventos"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "c87b943bb7",
-   "agregado": "2026-11-09",
-   "actualizado": "2026-11-09"
-  },
-  {
-   "titulo": "Paloma Salas en San Miguel",
-   "categoria": "standup",
-   "fecha_inicio": "2026-11-11",
-   "fecha_fin": null,
-   "hora": "19:30",
-   "horario": null,
-   "lugar": "Club San Miguel",
-   "direccion": null,
-   "comuna": "San Miguel",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "$16.500",
-   "descripcion": "Show de stand-up comedy de Paloma Salas en el Club San Miguel.",
-   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/bf03a08103d3099eb809eff0fd0cbabf01daccdf.png?1792622382",
-   "fotos": null,
-   "url": "https://www.jaranax.com/eventos/region-metropolitana-de-santiago/comedia",
-   "fuentes": [
-    {
-     "nombre": "JaranaX",
-     "url": "https://www.jaranax.com/eventos/region-metropolitana-de-santiago/comedia"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "b0399a8565",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
-  },
-  {
-   "titulo": "El Quinto Paso",
+   "titulo": "La Araucana",
    "categoria": "teatro",
    "fecha_inicio": "2026-11-11",
-   "fecha_fin": null,
-   "hora": "20:00",
-   "horario": "Mié 11 de noviembre a las 20:00 hrs",
-   "lugar": "Teatro Nescafé de las Artes",
-   "direccion": "Manuel Montt 032",
-   "comuna": "Providencia",
+   "fecha_fin": "2026-11-14",
+   "hora": "19:30",
+   "horario": "Mié a Sáb 19:30 hrs",
+   "lugar": "Teatro Nacional Chileno Sala Antonio Varas",
+   "direccion": "Morandé 25",
+   "comuna": "Santiago",
    "ciudad": "Santiago",
    "region": "Región Metropolitana",
    "precio": null,
-   "descripcion": "Función única de la obra 'El Quinto Paso' en el Teatro Nescafé de las Artes.",
-   "imagen": "https://telonticket.cl/wp-content/uploads/2026/04/1-4.jpg",
+   "descripcion": "Obra de teatro basada en el clásico poema épico de Alonso de Ercilla. Presentada en el Teatro Nacional Chileno.",
+   "imagen": null,
    "fotos": null,
    "url": "https://telonticket.cl",
    "fuentes": [
     {
      "nombre": "TelonTicket (teatro)",
      "url": "https://telonticket.cl/mep_cat/teatro/"
+    },
+    {
+     "nombre": "Telon Ticket",
+     "url": "https://telonticket.cl/mep_cat/musical/"
     }
    ],
    "desde_imagen": false,
    "confianza": "alta",
    "origen": "ia",
-   "id": "81168c309f",
+   "id": "3cd37e2764",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
-  },
-  {
-   "titulo": "Obra de teatro \"Los Puentes de Madison\" - Extensión Cultural (Aporte Endowment UNAB)",
-   "categoria": "teatro",
-   "fecha_inicio": "2026-11-11",
-   "fecha_fin": null,
-   "hora": "20:00",
-   "horario": null,
-   "lugar": "Sede UNAB",
-   "direccion": null,
-   "comuna": "Las Condes",
-   "ciudad": null,
-   "region": null,
-   "precio": "Desde $5.000",
-   "descripcion": "La legendaria historia de amor de Robert James Waller, inmortalizada en cine por Meryl Streep y Clint Eastwood, se presenta en versión teatral el miércoles 11 de noviembre a las 20:00 horas en el Salón Colonial del Campus Casona Las Condes.",
-   "imagen": "https://img.vamoh.cl/events/f7f63eca-9298-426b-8ca0-0b4cde4f27f5.webp?v=fb11127d",
-   "fotos": null,
-   "url": "https://vamoh.cl/events/obra-de-teatro-los-puentes-de-madison-extension-cultural-aporte-endowment-unab-hv7i8/",
-   "fuentes": [
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/obra-de-teatro-los-puentes-de-madison-extension-cultural-aporte-endowment-unab-hv7i8/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "datos-estructurados",
-   "id": "97a5f0b90c",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
-  },
-  {
-   "titulo": "RISAS EN CURSO Escuela de Stand Up",
-   "categoria": "standup",
-   "fecha_inicio": "2026-11-11",
-   "fecha_fin": null,
-   "hora": "20:45",
-   "horario": null,
-   "lugar": "Barbazul Pedro de Valdivia",
-   "direccion": null,
-   "comuna": "Providencia",
-   "ciudad": null,
-   "region": null,
-   "precio": "Desde $5.000",
-   "descripcion": "🔥RISAS EN CURSO SHOW DE COMEDIA de Escuela de Stand Up ESTUDIO FORMAS.😎🎤 BARBAZUL Pedro de Valdivia 1738 Providencia 😉🤪👍 Un Show y Espectáculo de principio a fin para pasar una gran noche de Diversión... ¡Déjate Sorprender! 💥Aquí pasan cosi",
-   "imagen": "https://img.vamoh.cl/events/92c199e4-c4c0-4d12-b730-b685b97f0d54.webp?v=204bed0d",
-   "fotos": null,
-   "url": "https://vamoh.cl/events/risas-en-curso-escuela-de-stand-up-uiwjh/",
-   "fuentes": [
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/risas-en-curso-escuela-de-stand-up-uiwjh/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "datos-estructurados",
-   "id": "ecf37ece02",
-   "agregado": "2026-11-11",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Carrera de Improvisadores",
@@ -3749,7 +3536,7 @@
    "origen": "claude",
    "id": "ae07a2796c",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Empieza con D, 7 letras – Santiago es Teatro",
@@ -3839,69 +3626,7 @@
    "origen": "claude",
    "id": "3f73ac8f60",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-11"
-  },
-  {
-   "titulo": "Ill Niño en Chile",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-11",
-   "fecha_fin": null,
-   "hora": null,
-   "lugar": "Teatro Cariola",
-   "direccion": null,
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "La reconocida banda de nu metal y metal alternativo Ill Niño regresa a Chile para presentarse en el Teatro Cariola.",
-   "imagen": null,
-   "url": "https://sonorock.com/cartelera-metal-chile/",
-   "fuentes": [
-    {
-     "nombre": "SonorocK",
-     "url": "https://sonorock.com/cartelera-metal-chile/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "32ed296aa6",
-   "agregado": "2026-11-06",
-   "actualizado": "2026-11-06"
-  },
-  {
-   "titulo": "La Araucana",
-   "categoria": "teatro",
-   "fecha_inicio": "2026-11-11",
-   "fecha_fin": "2026-11-14",
-   "hora": null,
-   "horario": "Mié a Sáb 19:30 hrs",
-   "lugar": "Teatro Nacional Chileno Sala Antonio Varas",
-   "direccion": "Morandé 25",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Obra de teatro basada en el clásico poema épico de Alonso de Ercilla. Presentada en el Teatro Nacional Chileno.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://telonticket.cl",
-   "fuentes": [
-    {
-     "nombre": "TelonTicket (teatro)",
-     "url": "https://telonticket.cl/mep_cat/teatro/"
-    },
-    {
-     "nombre": "Telon Ticket",
-     "url": "https://telonticket.cl/mep_cat/musical/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "3cd37e2764",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Los Cosmos de Matta",
@@ -3942,36 +3667,6 @@
    "actualizado": "2026-11-10"
   },
   {
-   "titulo": "Los puentes de Madison – Santiago es Teatro",
-   "categoria": "teatro",
-   "fecha_inicio": "2026-11-11",
-   "fecha_fin": "2026-11-14",
-   "hora": null,
-   "horario": null,
-   "lugar": null,
-   "direccion": null,
-   "comuna": null,
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Adaptación teatral de la romántica historia protagonizada por Blanca Lewin y César Caillet en Santiago es Teatro.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://www.radioactiva.cl/2026/11/santiago-es-teatro-reune-a-blanca-lewin-y-bastian-bodenhofer-en-destacadas-obras-cuando-y-donde-verlas/",
-   "fuentes": [
-    {
-     "nombre": "RadioActiva 92.5",
-     "url": "https://www.radioactiva.cl/2026/11/santiago-es-teatro-reune-a-blanca-lewin-y-bastian-bodenhofer-en-destacadas-obras-cuando-y-donde-verlas/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "media",
-   "origen": "ia",
-   "id": "be8cf11158",
-   "agregado": "2026-11-11",
-   "actualizado": "2026-11-11"
-  },
-  {
    "titulo": "Paloma Salas en Puente Alto",
    "categoria": "standup",
    "fecha_inicio": "2026-11-11",
@@ -4004,36 +3699,6 @@
    "id": "9a44d09fcd",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-10"
-  },
-  {
-   "titulo": "Rodrigo Gonzales y Mauricio Flores - Una noche en Casa Comedia",
-   "categoria": "standup",
-   "fecha_inicio": "2026-11-11",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": null,
-   "lugar": "Casa Comedia - Providencia",
-   "direccion": null,
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
-   "precio": null,
-   "descripcion": "Show de stand-up comedy y humor en vivo con Rodrigo Gonzales y Mauricio Flores en Providencia.",
-   "imagen": "https://static.ptocdn.net/event-resources/images/CCM003_calugalistado.webp?v=1793393444",
-   "fotos": null,
-   "url": "https://www.puntoticket.com/evento/una-noche-en-casa-comedia",
-   "fuentes": [
-    {
-     "nombre": "PuntoTicket",
-     "url": "https://www.puntoticket.com/evento/una-noche-en-casa-comedia"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ticketera",
-   "id": "395a344120",
-   "agregado": "2026-11-11",
-   "actualizado": "2026-11-11"
   },
   {
    "titulo": "BAJ Valpo inaugura exposición colectiva del primer Laboratorio de Artes Visuales",
@@ -4074,14 +3739,14 @@
    "horario": "Jue 12 de noviembre a las 19:00 hrs",
    "lugar": "Liceo Sara Braun",
    "direccion": null,
-   "comuna": null,
+   "comuna": "Punta Arenas",
    "ciudad": "Punta Arenas",
-   "region": null,
+   "region": "Magallanes y de la Antártica Chilena",
    "precio": null,
-   "descripcion": "Obra de teatro en cartelera. Fuera de la Región Metropolitana (descartar si aplica filtro estricto RM, pero cumple bases de Chile).",
+   "descripcion": "Obra de teatro en cartelera. Disfruta de las artes escénicas en vivo.",
    "imagen": "https://telonticket.cl/wp-content/uploads/2025/04/1-11.jpg",
    "fotos": null,
-   "url": "https://telonticket.cl",
+   "url": "https://telonticket.cl/",
    "fuentes": [
     {
      "nombre": "TelonTicket (teatro)",
@@ -4089,11 +3754,11 @@
     }
    ],
    "desde_imagen": false,
-   "confianza": "media",
+   "confianza": "alta",
    "origen": "ia",
    "id": "468763aa57",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Música: Los Mala Educación y Skul",
@@ -4157,7 +3822,7 @@
    "origen": "ia",
    "id": "2ff9635fda",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Gaymale",
@@ -4187,7 +3852,7 @@
    "origen": "ia",
    "id": "9a60bed5f5",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Liga Mensual VGC Pokémon",
@@ -4247,7 +3912,7 @@
    "origen": "ia",
    "id": "04d7a3e035",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Nu Metal Sessions Vol.5 Linkin Park Hybrid Theory en Casa Rockaxis",
@@ -4284,6 +3949,112 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "Openmic La Libreta #44",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-12",
+   "fecha_fin": null,
+   "hora": "19:30",
+   "horario": null,
+   "lugar": "Jardin de Gente",
+   "direccion": "Grajales 2160",
+   "comuna": "Santiago",
+   "ciudad": null,
+   "region": null,
+   "precio": "Gratis",
+   "descripcion": "Noche de stand up comedy en formato open mic, en su temporada número 44, conducida por Pancho Balmaceda.",
+   "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/jardindegente.cafe/DfiYYyZRAAc_0.jpg",
+   "fotos": null,
+   "url": "https://salirsantiago.com/panorama/openmic-la-libreta-44-9d086364",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panorama/openmic-la-libreta-44-9d086364"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "2a51e4a7a0",
+   "agregado": "2026-11-12",
+   "actualizado": "2026-11-12"
+  },
+  {
+   "titulo": "Quiero ser una chica Almodóvar",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-12",
+   "fecha_fin": "2026-11-22",
+   "hora": "19:30",
+   "horario": "Jue a Dom 19:30 hrs (Dom 18:30 hrs)",
+   "lugar": "GAM",
+   "direccion": "Av. Libertador Bernardo O'Higgins 227",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Obra de teatro en cartelera inspirada en el universo cinematográfico de Pedro Almodóvar.",
+   "imagen": "https://chilecultura.gob.cl/uploads/cropped_3wr3nEv.png",
+   "fotos": null,
+   "url": "https://gam.cl/es/que-hacer-en-gam/teatro/quiero-ser-una-chica-almodovar/",
+   "fuentes": [
+    {
+     "nombre": "Chile Cultura",
+     "url": "https://chilecultura.gob.cl/events/40688/"
+    },
+    {
+     "nombre": "GAM (teatro)",
+     "url": "https://gam.cl/es/que-hacer-en-gam/teatro/quiero-ser-una-chica-almodovar/"
+    },
+    {
+     "nombre": "TelonTicket (teatro)",
+     "url": "https://telonticket.cl/mep_cat/teatro/"
+    },
+    {
+     "nombre": "Telon Ticket",
+     "url": "https://telonticket.cl/mep_cat/musical/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "455e856bc6",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-12"
+  },
+  {
+   "titulo": "Solo nos queda cantar",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-12",
+   "fecha_fin": "2026-11-15",
+   "hora": "19:30",
+   "horario": "Jue a Dom 19:30 hrs (Dom 18:30 hrs)",
+   "lugar": "Matucana 100",
+   "direccion": "Matucana 100",
+   "comuna": "Estación Central",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Montaje teatral contemporáneo en el Centro Cultural Matucana 100.",
+   "imagen": "https://telonticket.cl/wp-content/uploads/2025/01/1-49.jpg",
+   "fotos": null,
+   "url": "https://telonticket.cl",
+   "fuentes": [
+    {
+     "nombre": "TelonTicket (teatro)",
+     "url": "https://telonticket.cl/mep_cat/teatro/"
+    },
+    {
+     "nombre": "Telon Ticket",
+     "url": "https://telonticket.cl/mep_cat/musical/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "f00b9088aa",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-12"
+  },
+  {
    "titulo": "Bestia",
    "categoria": "teatro",
    "fecha_inicio": "2026-11-12",
@@ -4311,7 +4082,7 @@
    "origen": "ia",
    "id": "70715e99b1",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Empieza con D, siete letras",
@@ -4341,7 +4112,7 @@
    "origen": "ia",
    "id": "22cc304a56",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Se arrienda pieza para mujer sola",
@@ -4371,7 +4142,7 @@
    "origen": "ia",
    "id": "e1a1867f70",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Cuerpo Docente",
@@ -4409,7 +4180,7 @@
    "origen": "ia",
    "id": "615e1e2ab1",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Mi hermano es un idiota",
@@ -4469,7 +4240,7 @@
    "origen": "ia",
    "id": "a00d6a1e64",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Show de comedia Hombre Pan en Combarbalá",
@@ -4630,82 +4401,6 @@
    "actualizado": "2026-11-07"
   },
   {
-   "titulo": "Quiero ser una chica Almodóvar",
-   "categoria": "teatro",
-   "fecha_inicio": "2026-11-12",
-   "fecha_fin": "2026-11-22",
-   "hora": null,
-   "horario": "Jue a Dom 19:30 hrs (Dom 18:30 hrs)",
-   "lugar": "GAM",
-   "direccion": "Av. Libertador Bernardo O'Higgins 227",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Obra de teatro en cartelera inspirada en el universo cinematográfico de Pedro Almodóvar.",
-   "imagen": "https://chilecultura.gob.cl/uploads/cropped_3wr3nEv.png",
-   "fotos": null,
-   "url": "https://gam.cl/es/que-hacer-en-gam/teatro/quiero-ser-una-chica-almodovar/",
-   "fuentes": [
-    {
-     "nombre": "Chile Cultura",
-     "url": "https://chilecultura.gob.cl/events/40688/"
-    },
-    {
-     "nombre": "GAM (teatro)",
-     "url": "https://gam.cl/es/que-hacer-en-gam/teatro/quiero-ser-una-chica-almodovar/"
-    },
-    {
-     "nombre": "TelonTicket (teatro)",
-     "url": "https://telonticket.cl/mep_cat/teatro/"
-    },
-    {
-     "nombre": "Telon Ticket",
-     "url": "https://telonticket.cl/mep_cat/musical/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "datos-estructurados",
-   "id": "455e856bc6",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-11"
-  },
-  {
-   "titulo": "Solo nos queda cantar",
-   "categoria": "teatro",
-   "fecha_inicio": "2026-11-12",
-   "fecha_fin": "2026-11-15",
-   "hora": null,
-   "horario": "Jue a Dom 19:30 hrs (Dom 18:30 hrs)",
-   "lugar": "Matucana 100",
-   "direccion": "Matucana 100",
-   "comuna": "Estación Central",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Montaje teatral contemporáneo en el Centro Cultural Matucana 100.",
-   "imagen": "https://telonticket.cl/wp-content/uploads/2025/01/1-49.jpg",
-   "fotos": null,
-   "url": "https://telonticket.cl",
-   "fuentes": [
-    {
-     "nombre": "TelonTicket (teatro)",
-     "url": "https://telonticket.cl/mep_cat/teatro/"
-    },
-    {
-     "nombre": "Telon Ticket",
-     "url": "https://telonticket.cl/mep_cat/musical/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "f00b9088aa",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
-  },
-  {
    "titulo": "Conversatorio \"Piezas de Cerámica Nacional: Historia, coleccionismo y manufactura\"",
    "categoria": "museos",
    "fecha_inicio": "2026-11-13",
@@ -4760,6 +4455,10 @@
     {
      "nombre": "G5noticias",
      "url": "https://g5noticias.cl/2026/11/10/fic-santiago-cambia-de-casa-y-celebra-sus-15-anos-con-mas-comic-y-manga/"
+    },
+    {
+     "nombre": "INFOGATE",
+     "url": "https://mail.infogate.cl/2026/11/fic-santiago-cambia-de-casa-y-celebra-sus-15-a-os-con-m-s-c-mic-y-manga/"
     }
    ],
    "desde_imagen": false,
@@ -4767,7 +4466,7 @@
    "origen": "datos-estructurados",
    "id": "9324abff5f",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Noche de Museos en Andacollo",
@@ -4824,6 +4523,10 @@
     {
      "nombre": "VAMOH!",
      "url": "https://vamoh.cl/events/la-moneda-participara-en-la-noche-de-museos-2026-itgi9/"
+    },
+    {
+     "nombre": "Diario La Batalla de Maipú ®",
+     "url": "https://www.labatalla.cl/noche-de-museos-2026-los-panoramas-imperdibles/"
     }
    ],
    "desde_imagen": false,
@@ -4831,7 +4534,7 @@
    "origen": "ia",
    "id": "0b7b9100c9",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Bibliomóvil. Historias Sobre Ruedas – Noche de Museos 2026",
@@ -4862,6 +4565,36 @@
    "id": "a9f07da20d",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Museo Nacional Aeronáutico y del Espacio – Noche de Museos 2026",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": "17:00",
+   "horario": "17:00–21:30",
+   "lugar": "Museo Nacional Aeronáutico y del Espacio",
+   "direccion": "Avenida Pedro Aguirre Cerda 5000",
+   "comuna": "Cerrillos",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratuito",
+   "descripcion": "Apertura nocturna con exhibición de aviones históricos, maquetas y recreaciones históricas.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.labatalla.cl/noche-de-museos-2026-los-panoramas-imperdibles/",
+   "fuentes": [
+    {
+     "nombre": "Diario La Batalla de Maipú ®",
+     "url": "https://www.labatalla.cl/noche-de-museos-2026-los-panoramas-imperdibles/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "bfb712e997",
+   "agregado": "2026-11-12",
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Noche de Museos 2026",
@@ -5078,6 +4811,18 @@
     {
      "nombre": "La Tercera",
      "url": "https://www.latercera.com/finde/noticia/la-noche-de-museos-tambien-sera-gastronomica-en-el-centro-de-santiago/"
+    },
+    {
+     "nombre": "La Nación",
+     "url": "https://www.lanacion.cl/con-juego-de-pistas-y-recorridos-mediados-el-mubo-se-suma-a-una-nueva-edicion-de-noche-de-museos/"
+    },
+    {
+     "nombre": "cultura.gob.cl",
+     "url": "https://www.cultura.gob.cl/agendacultural/noche-de-museos-2026-reunira-mas-de-350-espacios-culturales-en-todas-las-regiones-del-pais-con-mas-de-600-actividades-gratuitas/"
+    },
+    {
+     "nombre": "Diario La Batalla de Maipú ®",
+     "url": "https://www.labatalla.cl/noche-de-museos-2026-los-panoramas-imperdibles/"
     }
    ],
    "desde_imagen": true,
@@ -5085,7 +4830,7 @@
    "origen": "ia",
    "id": "09cd96f442",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-11",
+   "actualizado": "2026-11-12",
    "horario": "Desde las 17:00; cada museo tiene su horario (gratis)",
    "fotos": [
     "https://www.mnhn.gob.cl/sites/www.mnhn.gob.cl/files/styles/4x3_mediano/public/2026-10/Nochemuseos.png?h=98f88c31&itok=GUofKna_"
@@ -5460,6 +5205,36 @@
    "actualizado": "2026-11-08"
   },
   {
+   "titulo": "Casa – Taller Museo Sonoro – Organológico – Noche de Museos 2026",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": "19:00–21:00",
+   "lugar": "Casa – Taller Museo Sonoro – Organológico",
+   "direccion": "Julio Sosa 1502",
+   "comuna": "Maipú",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratuito",
+   "descripcion": "Recorridos guiados y exhibiciones de su archivo sonoro sobre instrumentos latinoamericanos y organología prehispánica.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.labatalla.cl/noche-de-museos-2026-los-panoramas-imperdibles/",
+   "fuentes": [
+    {
+     "nombre": "Diario La Batalla de Maipú ®",
+     "url": "https://www.labatalla.cl/noche-de-museos-2026-los-panoramas-imperdibles/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "e093b4d49c",
+   "agregado": "2026-11-12",
+   "actualizado": "2026-11-12"
+  },
+  {
    "titulo": "Lanzamiento Exposición \"Cuidemos a Chaiguao\" – Noche de Museos 2026",
    "categoria": "museos",
    "fecha_inicio": "2026-11-13",
@@ -5559,7 +5334,7 @@
    "origen": "datos-estructurados",
    "id": "d9891a60f6",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Chiqui Aguayo",
@@ -5739,7 +5514,7 @@
    "origen": "ia",
    "id": "318a44c02c",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Dangerous, Voidkult, Hela y Rogelio Ugarte",
@@ -5829,7 +5604,41 @@
    "origen": "ia",
    "id": "ffe31e45dd",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
+   "actualizado": "2026-11-12"
+  },
+  {
+   "titulo": "Los puentes de Madison – Santiago es Teatro",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": "2026-11-14",
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Teatro Nescafé de las Artes",
+   "direccion": "Manuel Montt 032",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Obra de teatro en cartelera. Disfruta de las artes escénicas en vivo.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://telonticket.cl/",
+   "fuentes": [
+    {
+     "nombre": "RadioActiva 92.5",
+     "url": "https://www.radioactiva.cl/2026/11/santiago-es-teatro-reune-a-blanca-lewin-y-bastian-bodenhofer-en-destacadas-obras-cuando-y-donde-verlas/"
+    },
+    {
+     "nombre": "TelonTicket (teatro)",
+     "url": "https://telonticket.cl/mep_cat/teatro/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "be8cf11158",
+   "agregado": "2026-11-11",
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Macho alfa en terapia",
@@ -5859,7 +5668,7 @@
    "origen": "ia",
    "id": "725888a999",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Noche de comedia",
@@ -6115,7 +5924,7 @@
    "origen": "datos-estructurados",
    "id": "8aaa55bd85",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Crónica de la Mujer Menos Mujer",
@@ -6149,7 +5958,7 @@
    "origen": "datos-estructurados",
    "id": "b154be6f5a",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Diego Urrutia - Detonado",
@@ -6213,7 +6022,7 @@
    "origen": "datos-estructurados",
    "id": "2065a7a403",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "FIC Santiago 2026",
@@ -6256,6 +6065,10 @@
     {
      "nombre": "Home - Radio Agricultura",
      "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/fic-santiago-2026-dibujante-de-masters-of-the-universe-encabezara-festival-gratuito-en-chile_20261111/"
+    },
+    {
+     "nombre": "INFOGATE",
+     "url": "https://infogate.cl/2026/11/fic-santiago-cambia-de-casa-y-celebra-sus-15-a-os-con-m-s-c-mic-y-manga/"
     }
    ],
    "desde_imagen": false,
@@ -6263,7 +6076,7 @@
    "origen": "ia",
    "id": "c329ed61e6",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "FILSA 2026: Feria Internacional del Libro de Santiago",
@@ -6361,7 +6174,37 @@
    "origen": "datos-estructurados",
    "id": "4bf4666253",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
+  },
+  {
+   "titulo": "Los tres cantos del gallo",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Municipal de Iquique",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Obra de teatro presentada en el Teatro Municipal de Iquique.",
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/4a8b4c2e0bdbba12db61287b5077a58c9c4e52fe.jpeg?1794326681",
+   "fotos": null,
+   "url": "https://ticketplus.cl/events/los-tres-cantos-del-gallo-2026-11-13-11-00-00-0300",
+   "fuentes": [
+    {
+     "nombre": "Ticketplus (teatros)",
+     "url": "https://ticketplus.cl/events/los-tres-cantos-del-gallo-2026-11-13-11-00-00-0300"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "9d6ac7c134",
+   "agregado": "2026-11-12",
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Magic: The Gathering | Star Trek",
@@ -6601,7 +6444,7 @@
    "origen": "datos-estructurados",
    "id": "4bcd76935a",
    "agregado": "2026-11-09",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "3° Planeta Cómic Fest",
@@ -7597,7 +7440,7 @@
    "origen": "datos-estructurados",
    "id": "6bceca0c1b",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Feria de Oficios y Artes Gráficas Kontrabando",
@@ -8227,7 +8070,7 @@
    "origen": "datos-estructurados",
    "id": "2a4ab1359e",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "La Bandita Open Mic",
@@ -8385,7 +8228,7 @@
    "origen": "datos-estructurados",
    "id": "3ade752ddb",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Cazadores de Agua",
@@ -8445,7 +8288,7 @@
    "origen": "claude",
    "id": "20d77619ca",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "A Rey Muerto y Rock and Road",
@@ -8839,7 +8682,7 @@
    "origen": "datos-estructurados",
    "id": "11b9d904b2",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Medieval Fest llega a Mulchén con recreaciones, música en vivo y gastronomía",
@@ -9113,7 +8956,7 @@
    "origen": "datos-estructurados",
    "id": "5f55b6dd8f",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Saratoga en Chile",
@@ -9579,7 +9422,7 @@
    "origen": "datos-estructurados",
    "id": "04fc5d9e78",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Escritura teatral: “Horacio”, de Sally Campusano",
@@ -10063,7 +9906,7 @@
    "origen": "datos-estructurados",
    "id": "02b7a6056d",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Pedro Aznar - Una noche entre amigos",
@@ -10169,7 +10012,7 @@
    "region": "Región Metropolitana",
    "precio": "Desde $20.000",
    "descripcion": "Jornada del Yu-Gi-Oh Championship Series (YCS) en categoría Avanzado, torneo del popular juego de cartas en Estación Mapocho.",
-   "imagen": null,
+   "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/estacionmapocho/DfkZmwQz7I5_0.jpg",
    "fotos": null,
    "url": "https://salirsantiago.com/panorama/patrimonio-ilustrado-e427bc42",
    "fuentes": [
@@ -10389,7 +10232,37 @@
    "origen": "ticketera",
    "id": "c003178ec9",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
+  },
+  {
+   "titulo": "Fiesta Medieval 2026",
+   "categoria": "medieval",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": "18:30",
+   "horario": null,
+   "lugar": "Universidad Finis Terrae",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Actividad cerrada para estudiantes de la Escuela de Historia.",
+   "imagen": "https://finis.cl/wp-content/uploads/2026/11/Agenda-web-2026-11-05T153110.287.jpg",
+   "fotos": null,
+   "url": "https://finis.cl/agenda/historia/fiesta-medieval-2026/",
+   "fuentes": [
+    {
+     "nombre": "Universidad Finis Terrae",
+     "url": "https://finis.cl/agenda/historia/fiesta-medieval-2026/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "2caf43d202",
+   "agregado": "2026-11-12",
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "El show de Felipe Avello en Gran Arena Monticello",
@@ -10880,6 +10753,36 @@
    "actualizado": "2026-11-09"
   },
   {
+   "titulo": "Conjugar: 1º Congreso Internacional de Diseño y Edición de Juegos de Mesa",
+   "categoria": "juegos",
+   "fecha_inicio": "2026-12-01",
+   "fecha_fin": "2026-12-02",
+   "hora": null,
+   "horario": null,
+   "lugar": "Club de la Unión de Valdivia",
+   "direccion": null,
+   "comuna": "Valdivia",
+   "ciudad": "Valdivia",
+   "region": "Región de Los Ríos",
+   "precio": null,
+   "descripcion": "Primer congreso internacional enfocado en la industria, diseño y edición de juegos de mesa en Chile, organizado por LudiChile con participantes de Alemania, España y México.",
+   "imagen": "https://chilecultura.gob.cl/uploads/cropped_kFt5uko.png",
+   "fotos": null,
+   "url": "https://chilecultura.gob.cl/events/23740/",
+   "fuentes": [
+    {
+     "nombre": "Chile cultura",
+     "url": "https://chilecultura.gob.cl/events/23740/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "8ece3a9a0c",
+   "agregado": "2026-11-12",
+   "actualizado": "2026-11-12"
+  },
+  {
    "titulo": "Dying Fetus",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-01",
@@ -10913,7 +10816,7 @@
    "origen": "ia",
    "id": "5197cbd0b7",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Exposición Monos 70' 80' 90'",
@@ -10983,7 +10886,7 @@
    "origen": "claude",
    "id": "3636e60042",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "BABYMETAL",
@@ -11687,7 +11590,7 @@
    "region": "Región Metropolitana",
    "precio": "Gratis",
    "descripcion": "Concierto de música barroca americana a cargo de Syntagma Musicum y el Coro Madrigalista USACH.",
-   "imagen": null,
+   "imagen": "https://images.portaldisc.com/eventos/22882.jpg",
    "fotos": null,
    "url": "https://www.jaranax.com/eventos/region-metropolitana-de-santiago/gratis",
    "fuentes": [
@@ -11818,7 +11721,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "El festival de videojuegos y cultura geek más importante de Chile. ¡Calza en anime y videojuegos!",
-   "imagen": null,
+   "imagen": "https://images.neventum.com/photos/2026/290/6ad407aec02a3-imagesjpg.jpg",
    "fotos": null,
    "url": "https://www.nferias.com/chile/",
    "fuentes": [
@@ -12286,7 +12189,7 @@
    "region": "Región Metropolitana",
    "precio": "Desde $6.000",
    "descripcion": "Noche de deathcore y metal extremo en Bar Óxido.",
-   "imagen": null,
+   "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/betrayaldevourscowards/DfH2fJhvHF7_0.jpg",
    "fotos": null,
    "url": "https://salirsantiago.com/panoramas/tocata",
    "fuentes": [
@@ -12340,6 +12243,36 @@
    "actualizado": "2026-11-10"
   },
   {
+   "titulo": "Medieval Party - Versión Navidad",
+   "categoria": "medieval",
+   "fecha_inicio": "2026-12-25",
+   "fecha_fin": "2026-12-27",
+   "hora": "12:00",
+   "horario": null,
+   "lugar": "Factoría Franklin",
+   "direccion": "Franklin #741",
+   "comuna": "Santiago",
+   "ciudad": null,
+   "region": null,
+   "precio": "Gratis",
+   "descripcion": "Feria temática de fantasía medieval con versión navideña que reúne cervezas artesanales, hidromiel, gastronomía y coctelería de autor.",
+   "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/calaveras.y.huesitos/DfiPuRExfOe_0.jpg",
+   "fotos": null,
+   "url": "https://salirsantiago.com/panorama/medieval-party-version-navidad-80333e9c",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panorama/medieval-party-version-navidad-80333e9c"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "be8b37d10f",
+   "agregado": "2026-11-12",
+   "actualizado": "2026-11-12"
+  },
+  {
    "titulo": "Metal Forces Total Thrash",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-26",
@@ -12353,7 +12286,7 @@
    "region": "Región Metropolitana",
    "precio": "Desde $5.000",
    "descripcion": "Festival de thrash metal con múltiples bandas en Arena Recoleta.",
-   "imagen": null,
+   "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/alcoholic_distro/Dd4xWzIRfI1_0.jpg",
    "fotos": null,
    "url": "https://salirsantiago.com/panoramas/tocata",
    "fuentes": [
@@ -12400,6 +12333,36 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "The Jury Experience – Travesía Mortal",
+   "categoria": "standup",
+   "fecha_inicio": "2026-12-27",
+   "fecha_fin": null,
+   "hora": "16:00",
+   "horario": null,
+   "lugar": "Teatro Mori Parque Arauco",
+   "direccion": "Av. Kennedy 5413",
+   "comuna": "Las Condes",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "CLP 30.0k",
+   "descripcion": "Experiencia interactiva de comedia y misterio en Teatro Mori Parque Arauco.",
+   "imagen": "https://cdn2.allevents.in/transup/f3/0e051f4d9a4429ae6be27084e31353/comedy.png",
+   "fotos": null,
+   "url": "https://allevents.in/santiago/comedy",
+   "fuentes": [
+    {
+     "nombre": "allevents.in",
+     "url": "https://allevents.in/santiago/comedy"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "159bd6ccca",
+   "agregado": "2026-11-12",
+   "actualizado": "2026-11-12"
+  },
+  {
    "titulo": "La Negra Ester",
    "categoria": "teatro",
    "fecha_inicio": "2027-01-02",
@@ -12443,7 +12406,7 @@
    "region": "Región Metropolitana",
    "precio": "Desde $7.000",
    "descripcion": "Tocata de metal underground con Insecurity y Evil Madness en Mi Bar.",
-   "imagen": null,
+   "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/insecurity.thrash/DfX0iDqmmLw_0.jpg",
    "fotos": null,
    "url": "https://salirsantiago.com/panoramas/tocata",
    "fuentes": [
@@ -12508,7 +12471,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Show de comedia en el Teatro Nescafé de las Artes.",
-   "imagen": null,
+   "imagen": "https://telonticket.cl/wp-content/uploads/2026/09/1-63.jpg",
    "fotos": null,
    "url": "https://telonticket.cl",
    "fuentes": [
@@ -12538,7 +12501,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Presentación dentro del festival Teatro a Mil en el Teatro Municipal de Las Condes.",
-   "imagen": null,
+   "imagen": "https://tmlascondes.cl/wp-content/uploads/2026/11/TMLC-Web_Cartelera-_doble-1200-x-680.png",
    "fotos": null,
    "url": "https://tmlascondes.cl/",
    "fuentes": [
@@ -13349,6 +13312,10 @@
     {
      "nombre": "iguanasong",
      "url": "https://iguanasong.com/calendario/categoria/black-metal/"
+    },
+    {
+     "nombre": "ruterosdelrock.cl",
+     "url": "https://ruterosdelrock.cl/emperor-alista-su-tercera-visita-a-chile-para-abril-de-2027/"
     }
    ],
    "desde_imagen": true,
@@ -13356,7 +13323,7 @@
    "origen": "ticketera",
    "id": "7df15a74fa",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-08"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "KK’s Priest - Latin American Tour 2027",
