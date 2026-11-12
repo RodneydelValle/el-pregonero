@@ -1,25 +1,13 @@
 {
  "version": 1,
- "actualizado": "2026-11-12T08:38-03:00",
+ "actualizado": "2026-11-12T16:33-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-12T08:38-03:00",
+  "fecha": "2026-11-12T16:33-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 44,
-  "nuevos_esta_vez": 8,
+  "eventos_nuevos": 50,
+  "nuevos_esta_vez": 18,
   "nuevos_ids": [
-   "8ef843409f",
-   "e7954020ad",
-   "226dd03252",
-   "352569ade9",
-   "f8c26cbc9d",
-   "2e24fdc5cb",
-   "a3f366e341",
-   "22359681cf",
-   "3da30d8e7e",
-   "efc05910f2",
-   "c33c626759",
-   "5befadaa6d",
    "934a4136c3",
    "5000337027",
    "bdc95842cd",
@@ -51,21 +39,27 @@
    "8ece3a9a0c",
    "9d6ac7c134",
    "159bd6ccca",
-   "2a51e4a7a0"
+   "2a51e4a7a0",
+   "c5363ba3a6",
+   "dbc0f7148b",
+   "4c3ee89a83",
+   "c2346ad1cd",
+   "a6a9a8f937",
+   "bd05dc44e0",
+   "01c57fa1c7",
+   "b8e3989b5a",
+   "cba44088a7",
+   "3de461aa3c",
+   "adc9dd6b83",
+   "f7f36f4923",
+   "a70d4597ce",
+   "14e24b15f3",
+   "fa15a0fffa",
+   "f8468f82af",
+   "6a116ac5d6",
+   "812cec76d6"
   ],
   "nuevos_desde": {
-   "8ef843409f": "2026-11-11T12:06-03:00",
-   "e7954020ad": "2026-11-11T12:06-03:00",
-   "226dd03252": "2026-11-11T12:06-03:00",
-   "352569ade9": "2026-11-11T12:06-03:00",
-   "f8c26cbc9d": "2026-11-11T12:06-03:00",
-   "2e24fdc5cb": "2026-11-11T12:06-03:00",
-   "a3f366e341": "2026-11-11T12:06-03:00",
-   "22359681cf": "2026-11-11T12:06-03:00",
-   "3da30d8e7e": "2026-11-11T12:06-03:00",
-   "efc05910f2": "2026-11-11T12:06-03:00",
-   "c33c626759": "2026-11-11T12:06-03:00",
-   "5befadaa6d": "2026-11-11T12:06-03:00",
    "934a4136c3": "2026-11-11T19:15-03:00",
    "5000337027": "2026-11-11T19:15-03:00",
    "bdc95842cd": "2026-11-11T19:15-03:00",
@@ -97,23 +91,41 @@
    "8ece3a9a0c": "2026-11-12T08:38-03:00",
    "9d6ac7c134": "2026-11-12T08:38-03:00",
    "159bd6ccca": "2026-11-12T08:38-03:00",
-   "2a51e4a7a0": "2026-11-12T08:38-03:00"
+   "2a51e4a7a0": "2026-11-12T08:38-03:00",
+   "c5363ba3a6": "2026-11-12T16:33-03:00",
+   "dbc0f7148b": "2026-11-12T16:33-03:00",
+   "4c3ee89a83": "2026-11-12T16:33-03:00",
+   "c2346ad1cd": "2026-11-12T16:33-03:00",
+   "a6a9a8f937": "2026-11-12T16:33-03:00",
+   "bd05dc44e0": "2026-11-12T16:33-03:00",
+   "01c57fa1c7": "2026-11-12T16:33-03:00",
+   "b8e3989b5a": "2026-11-12T16:33-03:00",
+   "cba44088a7": "2026-11-12T16:33-03:00",
+   "3de461aa3c": "2026-11-12T16:33-03:00",
+   "adc9dd6b83": "2026-11-12T16:33-03:00",
+   "f7f36f4923": "2026-11-12T16:33-03:00",
+   "a70d4597ce": "2026-11-12T16:33-03:00",
+   "14e24b15f3": "2026-11-12T16:33-03:00",
+   "fa15a0fffa": "2026-11-12T16:33-03:00",
+   "f8468f82af": "2026-11-12T16:33-03:00",
+   "6a116ac5d6": "2026-11-12T16:33-03:00",
+   "812cec76d6": "2026-11-12T16:33-03:00"
   },
   "horas_nuevos": 24,
   "llamadas_ia": 29,
   "ia_sin_cupo": false,
-  "ultima_completa": "2026-11-12T08:06-03:00",
+  "ultima_completa": "2026-11-12T15:55-03:00",
   "modo": "completa",
-  "paginas_revisadas": 27,
+  "paginas_revisadas": 30,
   "busquedas": 96,
-  "fuentes_fijas": 17,
-  "errores": 9,
-  "noticias_desde": "2026-11-11",
-  "noticias_viejas_descartadas": 290,
-  "redes_vistas": 8,
-  "imagenes_encontradas": 10
+  "fuentes_fijas": 14,
+  "errores": 8,
+  "noticias_desde": "2026-11-12",
+  "noticias_viejas_descartadas": 307,
+  "redes_vistas": 2,
+  "imagenes_encontradas": 3
  },
- "total": 417,
+ "total": 435,
  "eventos": [
   {
    "titulo": "Mariposas y Polillas, Colores en Movimiento",
@@ -3529,6 +3541,10 @@
     {
      "nombre": "cultura.gob.cl",
      "url": "https://www.cultura.gob.cl/agendacultural/ministro-francisco-undurraga-inaugura-5ta-edicion-del-circuito-matta-patrimonial-en-el-centro-cultural-la-moneda/"
+    },
+    {
+     "nombre": "G5noticias",
+     "url": "https://g5noticias.cl/2026/11/12/ministro-francisco-undurraga-inaugura-5ta-edicion-del-circuito-matta-patrimonial-en-el-centro-cultural-la-moneda/"
     }
    ],
    "desde_imagen": false,
@@ -4459,6 +4475,10 @@
     {
      "nombre": "INFOGATE",
      "url": "https://mail.infogate.cl/2026/11/fic-santiago-cambia-de-casa-y-celebra-sus-15-a-os-con-m-s-c-mic-y-manga/"
+    },
+    {
+     "nombre": "Crónica Digital",
+     "url": "https://cronicadigital.cl/festival-internacional-del-comic-fic-de-santiago-cambia-de-casa-y-celebra-sus-15-anos/"
     }
    ],
    "desde_imagen": false,
@@ -4527,6 +4547,10 @@
     {
      "nombre": "Diario La Batalla de Maipú ®",
      "url": "https://www.labatalla.cl/noche-de-museos-2026-los-panoramas-imperdibles/"
+    },
+    {
+     "nombre": "En Cancha",
+     "url": "https://www.encancha.cl/enlahora/movilidad/2026/11/12/red-movilidad-habilitara-recorrido-especial-por-noche-de-museos-2026-micro-llegara-a-25-espacios-patrimoniales-324953.html"
     }
    ],
    "desde_imagen": false,
@@ -4823,6 +4847,14 @@
     {
      "nombre": "Diario La Batalla de Maipú ®",
      "url": "https://www.labatalla.cl/noche-de-museos-2026-los-panoramas-imperdibles/"
+    },
+    {
+     "nombre": "La Tercera",
+     "url": "https://www.latercera.com/culto/noticia/noche-de-museos-2026-los-ocho-lugares-imperdibles-para-vivir-la-cultura-gratuita-este-viernes/"
+    },
+    {
+     "nombre": "En Cancha",
+     "url": "https://www.encancha.cl/enlahora/movilidad/2026/11/12/red-movilidad-habilitara-recorrido-especial-por-noche-de-museos-2026-micro-llegara-a-25-espacios-patrimoniales-324953.html"
     }
    ],
    "desde_imagen": true,
@@ -5285,6 +5317,10 @@
     {
      "nombre": "mim.cl",
      "url": "https://mim.cl/eventos/noche-de-museos-este-viernes-abrimos-en-horario-nocturno-y-con-entrada-gratuita"
+    },
+    {
+     "nombre": "En Cancha",
+     "url": "https://www.encancha.cl/enlahora/movilidad/2026/11/12/red-movilidad-habilitara-recorrido-especial-por-noche-de-museos-2026-micro-llegara-a-25-espacios-patrimoniales-324953.html"
     }
    ],
    "desde_imagen": false,
@@ -5292,7 +5328,7 @@
    "origen": "ia",
    "id": "8a43b8fea5",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Show de Stand Up - El Cachafaz",
@@ -5927,6 +5963,36 @@
    "actualizado": "2026-11-12"
   },
   {
+   "titulo": "Biblioteca Nacional de Chile – Noche de Museos 2026",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": "Horario extendido",
+   "lugar": "Biblioteca Nacional de Chile",
+   "direccion": "Av. Libertador Bernardo O'Higgins 651",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Apertura en horario extendido y gratuito por la Noche de Museos 2026.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.encancha.cl/enlahora/movilidad/2026/11/12/red-movilidad-habilitara-recorrido-especial-por-noche-de-museos-2026-micro-llegara-a-25-espacios-patrimoniales-324953.html",
+   "fuentes": [
+    {
+     "nombre": "En Cancha",
+     "url": "https://www.encancha.cl/enlahora/movilidad/2026/11/12/red-movilidad-habilitara-recorrido-especial-por-noche-de-museos-2026-micro-llegara-a-25-espacios-patrimoniales-324953.html"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "c2346ad1cd",
+   "agregado": "2026-11-12",
+   "actualizado": "2026-11-12"
+  },
+  {
    "titulo": "Crónica de la Mujer Menos Mujer",
    "categoria": "teatro",
    "fecha_inicio": "2026-11-13",
@@ -6141,6 +6207,36 @@
    "id": "c529fb19a9",
    "agregado": "2026-11-11",
    "actualizado": "2026-11-11"
+  },
+  {
+   "titulo": "Festival Ladera Sur",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": "2026-11-15",
+   "hora": null,
+   "horario": null,
+   "lugar": "Parque Santa Rosa de Apoquindo",
+   "direccion": "Av. Padre Hurtado Sur 1195",
+   "comuna": "Las Condes",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $8.000",
+   "descripcion": "Festival de la naturaleza con música en vivo, charlas, talleres, mercados y gastronomía.",
+   "imagen": "https://services.meteored.com/img/article/que-hacer-en-santiago-este-fin-de-semana-los-mejores-panoramas-del-13-al-15-de-noviembre-1794341389235_1280.png",
+   "fotos": null,
+   "url": "https://www.ticketmaster.cl",
+   "fuentes": [
+    {
+     "nombre": "Meteored Chile",
+     "url": "https://www.meteored.cl/noticias/ocio/que-hacer-en-santiago-este-fin-de-semana-los-mejores-panoramas-del-13-al-15-de-noviembre.html"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "f8468f82af",
+   "agregado": "2026-11-12",
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "La Batalla de San Tentorio",
@@ -6484,7 +6580,7 @@
    "titulo": "GAM y Periscopio presenta: Juegos de Mesa en BiblioGAM",
    "categoria": "juegos",
    "fecha_inicio": "2026-11-14",
-   "fecha_fin": null,
+   "fecha_fin": "2026-11-14",
    "hora": "11:00",
    "horario": null,
    "lugar": "Centro Gabriela Mistral - GAM - BiblioGAM (Edificio A, piso 3)",
@@ -6501,6 +6597,10 @@
     {
      "nombre": "Centro Gabriela Mistral - GAM",
      "url": "https://gam.cl/es/que-hacer-en-gam/actividades/gam-y-periscopio-presentan-juegos-de-mesa-en-bibliogam/"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/gam-y-periscopio-presenta-juegos-de-mesa-en-bibliogam-i7zmr/"
     }
    ],
    "desde_imagen": false,
@@ -6508,7 +6608,7 @@
    "origen": "datos-estructurados",
    "id": "ae235db2f3",
    "agregado": "2026-11-08",
-   "actualizado": "2026-11-08"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Gojira Fest",
@@ -6665,6 +6765,10 @@
     {
      "nombre": "panoramas.app",
      "url": "https://www.panoramas.app/eventos-esta-semana"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/medieval-party-veladaa-elfos-hadas-magia-1o5lp/"
     }
    ],
    "desde_imagen": false,
@@ -6672,7 +6776,37 @@
    "origen": "manual",
    "id": "c1981fd414",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-10"
+   "actualizado": "2026-11-12"
+  },
+  {
+   "titulo": "Socías TCG Challenge",
+   "categoria": "juegos",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": null,
+   "hora": "12:00",
+   "horario": null,
+   "lugar": "Tienda upa!",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratuito (requiere postulación)",
+   "descripcion": "Segunda edición del torneo de cartas coleccionables de Pokémon organizado junto al comediante Ignacio Socías.",
+   "imagen": "https://www.lacuarta.com/resizer/v2/YB7QS5WAS5ALJONL25U3E47NYU.png?auth=a0a4066ce36f25f5e399b0fbd1342da220cf6b1aacbf3b10bc98a4588015e429&height=630&width=1200&smart=true",
+   "fotos": null,
+   "url": "https://www.lacuarta.com/tendencias/noticia/pokemon-tcg-tendra-un-nuevo-campeonato-en-chile-con-ignacio-socias-y-premios-por-el-30-aniversario/",
+   "fuentes": [
+    {
+     "nombre": "La Cuarta",
+     "url": "https://www.lacuarta.com/tendencias/noticia/pokemon-tcg-tendra-un-nuevo-campeonato-en-chile-con-ignacio-socias-y-premios-por-el-30-aniversario/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "4c3ee89a83",
+   "agregado": "2026-11-12",
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Torneo Pokémon TCG a Beneficio",
@@ -7949,6 +8083,36 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "Ventanal Alameda: Dibujo chileno hoy, viñeta a viñeta",
+   "categoria": "ilustracion",
+   "fecha_inicio": "2026-11-17",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Centro Cultural Gabriela Mistral",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": null,
+   "region": null,
+   "precio": "Gratis",
+   "descripcion": "Con la ciudad de telón de fondo desde BiblioGAM, nace un nuevo escenario para la ebullición de ideas y el pensamiento contemporáneo. La decimotercera y última sesión de Ventanal Alameda abordará la evolución del dibujo nacional: desde la tr",
+   "imagen": "https://img.vamoh.cl/events/db8b0857-beaa-4f1f-9614-d4c82ae8b5e8.webp",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/ventanal-alameda-dibujo-chileno-hoy-vineta-a-vineta-3kgrz/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/ventanal-alameda-dibujo-chileno-hoy-vineta-a-vineta-3kgrz/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "dbc0f7148b",
+   "agregado": "2026-11-12",
+   "actualizado": "2026-11-12"
+  },
+  {
    "titulo": "Exposición “Olea, 25 años ilustrando”",
    "categoria": "ilustracion",
    "fecha_inicio": "2026-11-17",
@@ -8319,6 +8483,36 @@
    "id": "bdc95842cd",
    "agregado": "2026-11-11",
    "actualizado": "2026-11-11"
+  },
+  {
+   "titulo": "Hwang In Youp - To You 2026",
+   "categoria": "anime",
+   "fecha_inicio": "2026-11-19",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Teatro Caupolicán",
+   "direccion": "San Diego 850",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Metropolitana",
+   "precio": "desde $52.900",
+   "descripcion": "Encuentro con el actor y cantante coreano Hwang In Youp en su gira To You 2026.",
+   "imagen": "https://static.ptocdn.net/images/eventos/aas001v2_rs.jpg",
+   "fotos": null,
+   "url": "https://quehacerchile.cl/conciertos/anime/",
+   "fuentes": [
+    {
+     "nombre": "QuéHacer Chile",
+     "url": "https://quehacerchile.cl/conciertos/anime/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "a6a9a8f937",
+   "agregado": "2026-11-12",
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Show de Comedia improvisada: Moyita y Pankeke",
@@ -9152,7 +9346,7 @@
    "hora": "19:00",
    "horario": null,
    "lugar": "Teatro Municipal de Chillán",
-   "direccion": null,
+   "direccion": "Dieciocho de Septiembre 590",
    "comuna": "Chillán",
    "ciudad": "Chillán",
    "region": "Región de Ñuble",
@@ -9165,6 +9359,10 @@
     {
      "nombre": "Diario La Hora",
      "url": "https://lahora.cl/cultura/2026/11/11/el-barbero-de-sevilla-llega-gratis-a-vina-del-mar-y-chillan-en-noviembre/"
+    },
+    {
+     "nombre": "El Mostrador",
+     "url": "https://www.elmostrador.cl/cultura/agenda/2026/11/12/opera-el-barbero-de-sevilla-en-chillan/"
     }
    ],
    "desde_imagen": false,
@@ -9172,7 +9370,7 @@
    "origen": "ia",
    "id": "5a23d9c020",
    "agregado": "2026-11-11",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Concierto Internacional: Música medieval portuguesa",
@@ -9929,6 +10127,10 @@
     {
      "nombre": "ticketplus.cl",
      "url": "https://ticketplus.cl/companies/fundacion-festival-internacional-teatro-a-mil"
+    },
+    {
+     "nombre": "Fundación Teatro a Mil",
+     "url": "https://teatroamil.cl/en/"
     }
    ],
    "desde_imagen": true,
@@ -9936,7 +10138,7 @@
    "origen": "ia",
    "id": "7c6d652efa",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "League CUP - HuntercardTCG Centro",
@@ -10533,6 +10735,36 @@
    "actualizado": "2026-11-09"
   },
   {
+   "titulo": "Undertale Sinfónico",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Oriente",
+   "direccion": "Pedro de Valdivia 099",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto sinfónico con la música del popular videojuego Undertale.",
+   "imagen": "https://cdn.getcrowder.com/images/100e6775-495a-48b1-84be-66e8cb05cc37-640x640undertale.png",
+   "fotos": null,
+   "url": "https://quehacerchile.cl/conciertos/anime/",
+   "fuentes": [
+    {
+     "nombre": "QuéHacer Chile",
+     "url": "https://quehacerchile.cl/conciertos/anime/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "bd05dc44e0",
+   "agregado": "2026-11-12",
+   "actualizado": "2026-11-12"
+  },
+  {
    "titulo": "El Antro Anime On Tour",
    "categoria": "anime",
    "fecha_inicio": "2026-11-29",
@@ -10889,6 +11121,38 @@
    "actualizado": "2026-11-12"
   },
   {
+   "titulo": "Versailles - 2026 en Santiago Chile",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-03",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "lugar": "Teatro Coliseo - Santiago Centro",
+   "direccion": "Nataniel Cox 59",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Metropolitana",
+   "precio": "desde $44.850",
+   "descripcion": "Concierto de Versailles en el Teatro Coliseo. Visual kei y rock japonés tradicional.",
+   "imagen": "https://static.ptocdn.net/images/eventos/ncs013_calugalistado.jpg",
+   "url": "https://www.puntoticket.com/2026-versailles-en-santiago-de-chile",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/2026-versailles-en-santiago-de-chile"
+    },
+    {
+     "nombre": "QuéHacer Chile",
+     "url": "https://quehacerchile.cl/conciertos/anime/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "8aae86e35e",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-12"
+  },
+  {
    "titulo": "BABYMETAL",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-03",
@@ -10981,34 +11245,6 @@
    "id": "f7065bcba6",
    "agregado": "2026-11-06",
    "actualizado": "2026-11-11"
-  },
-  {
-   "titulo": "Versailles - 2026 en Santiago Chile",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-12-03",
-   "fecha_fin": null,
-   "hora": null,
-   "lugar": "Teatro Coliseo - Santiago Centro",
-   "direccion": null,
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
-   "precio": null,
-   "descripcion": "Concierto de Versailles en el Teatro Coliseo. Visual kei y rock japonés tradicional.",
-   "imagen": "https://static.ptocdn.net/images/eventos/ncs013_calugalistado.jpg",
-   "url": "https://www.puntoticket.com/2026-versailles-en-santiago-de-chile",
-   "fuentes": [
-    {
-     "nombre": "PuntoTicket",
-     "url": "https://www.puntoticket.com/2026-versailles-en-santiago-de-chile"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ticketera",
-   "id": "8aae86e35e",
-   "agregado": "2026-11-06",
-   "actualizado": "2026-11-07"
   },
   {
    "titulo": "Metal Darkness XXII",
@@ -12116,6 +12352,36 @@
    "actualizado": "2026-11-10"
   },
   {
+   "titulo": "Fuente Carrasco",
+   "categoria": "standup",
+   "fecha_inicio": "2026-12-18",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Club San Miguel",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": null,
+   "imagen": "https://static.ptocdn.net/images/eventos/edo152_calugalistado.jpg",
+   "fotos": null,
+   "url": "https://www.puntoticket.com/evento/fuentecarrasco-club-sanmiguel-dic",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/evento/fuentecarrasco-club-sanmiguel-dic"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "ticketera",
+   "id": "6a116ac5d6",
+   "agregado": "2026-11-12",
+   "actualizado": "2026-11-12"
+  },
+  {
    "titulo": "Conce Nü Metal Vol. 3.0",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-19",
@@ -12423,6 +12689,36 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "Festival Internacional Teatro a Mil 2027",
+   "categoria": "teatro",
+   "fecha_inicio": "2027-01-02",
+   "fecha_fin": "2027-01-27",
+   "hora": null,
+   "horario": null,
+   "lugar": "Diversos recintos",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Nueva edición del Festival Internacional Teatro a Mil con más de 90 obras de casi 20 países en Santiago y Chile.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://teatroamil.cl/en/",
+   "fuentes": [
+    {
+     "nombre": "Fundación Teatro a Mil",
+     "url": "https://teatroamil.cl/en/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "812cec76d6",
+   "agregado": "2026-11-12",
+   "actualizado": "2026-11-12"
+  },
+  {
    "titulo": "FIXION Fest, Fantastic & Horror Film Festival From Chile",
    "categoria": "medieval",
    "fecha_inicio": "2027-01-03",
@@ -12488,6 +12784,36 @@
    "actualizado": "2026-11-10"
   },
   {
+   "titulo": "FaceBrooklyn",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-01-08",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Caupolicán",
+   "direccion": "San Diego 850",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto de FaceBrooklyn en el Teatro Caupolicán.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-en-chile-2027/2026-11-09/124529.html",
+   "fuentes": [
+    {
+     "nombre": "Cooperativa.cl",
+     "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-en-chile-2027/2026-11-09/124529.html"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "01c57fa1c7",
+   "agregado": "2026-11-12",
+   "actualizado": "2026-11-12"
+  },
+  {
    "titulo": "Teatro a Mil: La Omisión de la Familia Coleman",
    "categoria": "teatro",
    "fecha_inicio": "2027-01-08",
@@ -12516,6 +12842,36 @@
    "id": "09897b6a7f",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Kidd Voodoo",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-01-09",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Quinta Vergara",
+   "direccion": "Errazuriz s/n",
+   "comuna": "Viña del Mar",
+   "ciudad": "Viña del Mar",
+   "region": "Región de Valparaíso",
+   "precio": null,
+   "descripcion": "Concierto de Kidd Voodoo en la Quinta Vergara.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-en-chile-2027/2026-11-09/124529.html",
+   "fuentes": [
+    {
+     "nombre": "Cooperativa.cl",
+     "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-en-chile-2027/2026-11-09/124529.html"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "b8e3989b5a",
+   "agregado": "2026-11-12",
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Metallica Sinfónico S&M",
@@ -12580,7 +12936,7 @@
    "categoria": "teatro",
    "fecha_inicio": "2027-01-13",
    "fecha_fin": "2027-01-24",
-   "hora": null,
+   "hora": "19:00",
    "horario": null,
    "lugar": "Teatro Municipal de Santiago",
    "direccion": "Agustinas 794",
@@ -12596,6 +12952,10 @@
     {
      "nombre": "CULTURIZARTE",
      "url": "https://culturizarte.cl/el-fenomeno-familiar-de-2025-la-novicia-rebelde-regresa-a-la-cartelera-del-teatro-municipal-de-santiago-en-2027/"
+    },
+    {
+     "nombre": "BioBioChile - La Red de Prensa Más Grande de Chile",
+     "url": "https://www.biobiochile.cl/noticias/artes-y-cultura/actualidad-cultural/2026/11/12/exitosa-obra-musical-la-novicia-rebelde-regresa-a-la-cartelera-del-teatro-municipal-de-santiago.shtml"
     }
    ],
    "desde_imagen": false,
@@ -12603,7 +12963,37 @@
    "origen": "ia",
    "id": "df115faab7",
    "agregado": "2026-11-11",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-12"
+  },
+  {
+   "titulo": "Festival In Rock",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-01-15",
+   "fecha_fin": "2027-01-16",
+   "hora": null,
+   "horario": null,
+   "lugar": null,
+   "direccion": null,
+   "comuna": "San Clemente",
+   "ciudad": "San Clemente",
+   "region": "Región del Maule",
+   "precio": null,
+   "descripcion": "Festival In Rock con Kuervos del Sur, FORCE, Combo Chabela y más.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-en-chile-2027/2026-11-09/124529.html",
+   "fuentes": [
+    {
+     "nombre": "Cooperativa.cl",
+     "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-en-chile-2027/2026-11-09/124529.html"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "cba44088a7",
+   "agregado": "2026-11-12",
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "STUDIO GHIBLI SINFÓNICO - Teatro Teletón",
@@ -12613,10 +13003,10 @@
    "hora": "19:00",
    "horario": null,
    "lugar": "Teatro Teletón",
-   "direccion": null,
+   "direccion": "Patricio Lynch 181",
    "comuna": "Santiago",
-   "ciudad": null,
-   "region": null,
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
    "precio": "Desde $27.000",
    "descripcion": "The Geek Orchestra presenta: STUDIO GHIBLI SINFÓNICO Vive la magia de un concierto inolvidable donde la música, las voces, imágenes de los mejores momentos y una gran puesta en escena te transportarán a la mente y corazón del gran Hayao Miy",
    "imagen": "https://img.vamoh.cl/events/d37388b8-260b-4407-b80d-0c90449eafac.webp?v=be533d90",
@@ -12626,6 +13016,10 @@
     {
      "nombre": "VAMOH!",
      "url": "https://vamoh.cl/events/studio-ghibli-sinfonico-teatro-teleton-uf4jc/"
+    },
+    {
+     "nombre": "Cooperativa.cl",
+     "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-en-chile-2027/2026-11-09/124529.html"
     }
    ],
    "desde_imagen": false,
@@ -12633,7 +13027,67 @@
    "origen": "datos-estructurados",
    "id": "39a39867fb",
    "agregado": "2026-11-08",
-   "actualizado": "2026-11-08"
+   "actualizado": "2026-11-12"
+  },
+  {
+   "titulo": "Geoff Tate",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-01-16",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Cariola",
+   "direccion": "San Diego 246",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto de Geoff Tate en el Teatro Cariola.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-en-chile-2027/2026-11-09/124529.html",
+   "fuentes": [
+    {
+     "nombre": "Cooperativa.cl",
+     "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-en-chile-2027/2026-11-09/124529.html"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "3de461aa3c",
+   "agregado": "2026-11-12",
+   "actualizado": "2026-11-12"
+  },
+  {
+   "titulo": "Rush",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-01-17",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Estadio Bicentenario La Florida",
+   "direccion": "Enrique Olivares 1003",
+   "comuna": "La Florida",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto de Rush en el Estadio Bicentenario La Florida.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-en-chile-2027/2026-11-09/124529.html",
+   "fuentes": [
+    {
+     "nombre": "Cooperativa.cl",
+     "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-en-chile-2027/2026-11-09/124529.html"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "adc9dd6b83",
+   "agregado": "2026-11-12",
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Los Entendidos",
@@ -12664,6 +13118,96 @@
    "id": "4d34976bfe",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Hellripper",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-01-20",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Club RBX",
+   "direccion": "Vicuña Mackenna 1220",
+   "comuna": "Ñuñoa",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto de Hellripper en Club RBX.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-en-chile-2027/2026-11-09/124529.html",
+   "fuentes": [
+    {
+     "nombre": "Cooperativa.cl",
+     "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-en-chile-2027/2026-11-09/124529.html"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "f7f36f4923",
+   "agregado": "2026-11-12",
+   "actualizado": "2026-11-12"
+  },
+  {
+   "titulo": "Melvins, Osees, Boris y más",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-01-21",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Coliseo",
+   "direccion": "Nataniel Cox 59",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto de Melvins, Osees, Boris, Frankie And The Witch Fingers y más en Teatro Coliseo.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-en-chile-2027/2026-11-09/124529.html",
+   "fuentes": [
+    {
+     "nombre": "Cooperativa.cl",
+     "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-en-chile-2027/2026-11-09/124529.html"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "a70d4597ce",
+   "agregado": "2026-11-12",
+   "actualizado": "2026-11-12"
+  },
+  {
+   "titulo": "Blaze Bayley",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-01-22",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Sala Metrónomo",
+   "direccion": "Ernesto Pinto Lagarrigue 179",
+   "comuna": "Recoleta",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto de Blaze Bayley en Sala Metrónomo.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-en-chile-2027/2026-11-09/124529.html",
+   "fuentes": [
+    {
+     "nombre": "Cooperativa.cl",
+     "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-en-chile-2027/2026-11-09/124529.html"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "14e24b15f3",
+   "agregado": "2026-11-12",
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "STUDIO GHIBLI SINFÓNICO - Teatro Municipal de Valparaíso",
@@ -12722,6 +13266,36 @@
    "id": "26b4265cd9",
    "agregado": "2026-11-06",
    "actualizado": "2026-11-06"
+  },
+  {
+   "titulo": "Freya Skye",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-01-23",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Coliseo",
+   "direccion": "Nataniel Cox 59",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto de Freya Skye en Teatro Coliseo.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-en-chile-2027/2026-11-09/124529.html",
+   "fuentes": [
+    {
+     "nombre": "Cooperativa.cl",
+     "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-en-chile-2027/2026-11-09/124529.html"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "fa15a0fffa",
+   "agregado": "2026-11-12",
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Silksong: En concierto",
@@ -12840,6 +13414,36 @@
    "id": "0b66b6efb8",
    "agregado": "2026-11-11",
    "actualizado": "2026-11-11"
+  },
+  {
+   "titulo": "Cavalera Chaos A.D.",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-03-04",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Caupolicán - Santiago Centro",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Los hermanos Max e Iggor Cavalera presentan en vivo y de forma íntegra el icónico álbum de thrash/groove metal 'Chaos A.D.' de Sepultura.",
+   "imagen": "https://static.ptocdn.net/images/eventos/hvp018_calugalistado.jpg",
+   "fotos": null,
+   "url": "https://www.puntoticket.com/cavalera-chaos-en-chile",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/cavalera-chaos-en-chile"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "c5363ba3a6",
+   "agregado": "2026-11-12",
+   "actualizado": "2026-11-12"
   },
   {
    "titulo": "Card-geek Puente Elantris",
@@ -13067,7 +13671,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Concierto internacional de death metal con Vomitory en RBX.",
-   "imagen": null,
+   "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/powerprodscl/DfC6iiYHGfa_0.jpg",
    "fotos": null,
    "url": "https://salirsantiago.com/panoramas/tocata",
    "fuentes": [
