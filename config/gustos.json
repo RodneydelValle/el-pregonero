@@ -205,9 +205,9 @@
     {
       "id": "conciertos",
       "nombre": "Conciertos",
-      "emoji": "🤘",
+      "emoji": "🎸",
       "color": "#334155",
-      "descripcion": "conciertos y festivales de heavy metal y sus subgéneros (thrash, death, black, doom, power, folk, symphonic, metalcore, nu metal) y de rock duro; también conciertos sinfónicos o en vivo con música de videojuegos, películas o series de fantasía. NO: conciertos de anime, J-pop, J-rock o idols japoneses (van en anime), salvo las bandas japonesas de metal, que sí van aquí",
+      "descripcion": "conciertos, tocatas y festivales de música en vivo de CUALQUIER género: rock, metal y sus subgéneros, pop, indie y alternativo, punk, electrónica, hip hop, trap, reggaetón, cumbia y tropical, folclor y trova, jazz y blues, música clásica, recitales y orquestas (la ópera va en teatro), y conciertos sinfónicos de música de videojuegos, anime, películas o series. NO: conciertos de anime, J-pop, J-rock o idols japoneses (van en anime), salvo las bandas japonesas de metal, que sí van aquí; tampoco ballet ni teatro musical (van en teatro)",
       "palabras": [
         "metal",
         "heavy metal",
@@ -220,7 +220,19 @@
         "nu metal",
         "metalfest",
         "hard rock",
-        "rock pesado"
+        "rock pesado",
+        "concierto",
+        "conciertos",
+        "tocata",
+        "festival de musica",
+        "reggaeton",
+        "cumbia",
+        "orquesta",
+        "sinfonico",
+        "indie",
+        "electronica",
+        "hip hop",
+        "jazz"
       ],
       "busquedas": [
         "concierto metal Santiago",
@@ -232,7 +244,18 @@
         "tocata metal Santiago",
         "agenda conciertos metal Chile",
         "concierto sinfónico música de videojuegos Santiago",
-        "concierto música de videojuegos Chile"
+        "concierto música de videojuegos Chile",
+        "conciertos Santiago esta semana",
+        "conciertos Chile próximos",
+        "concierto reggaetón Santiago",
+        "concierto trap Chile",
+        "concierto pop Santiago",
+        "concierto rock Santiago",
+        "concierto indie Santiago",
+        "fiesta electrónica Santiago DJ",
+        "concierto cumbia Santiago",
+        "concierto jazz Santiago",
+        "concierto orquesta sinfónica Santiago"
       ]
     },
     {
@@ -925,5 +948,238 @@
     "facebook.com",
     "fb.com"
   ],
-  "_nota_solo_datos_estructurados": "Sitios cuyo robots.txt pide no usar su contenido con IA (Content-Signal): se leen solo sus datos estructurados, nunca se mandan a Gemini."
+  "_nota_solo_datos_estructurados": "Sitios cuyo robots.txt pide no usar su contenido con IA (Content-Signal): se leen solo sus datos estructurados, nunca se mandan a Gemini.",
+  "_nota_generos": "Géneros de Conciertos: el orden de la lista es el de los botones de la página (Reggaetón al final, lo pidió el 13-11-2026). El robot pone 'genero' a cada concierto: primero por las 'palabras' (en el orden de 'prioridad'), y si ninguna calza, la IA lo elige por el artista. Sin género conocido se muestra en 'Otros'.",
+  "generos": [
+    {
+      "id": "rock",
+      "nombre": "Rock",
+      "emoji": "🎸",
+      "prioridad": 7,
+      "palabras": [
+        "rock",
+        "hard rock",
+        "punk",
+        "hardcore",
+        "grunge",
+        "rockabilly",
+        "post-hardcore",
+        "rock and roll",
+        "blues rock"
+      ]
+    },
+    {
+      "id": "metal",
+      "nombre": "Metal",
+      "emoji": "🤘",
+      "prioridad": 5,
+      "palabras": [
+        "metal",
+        "metalero",
+        "metalfest",
+        "metallica",
+        "thrash",
+        "deathcore",
+        "metalcore",
+        "black metal",
+        "death metal",
+        "doom",
+        "grindcore",
+        "power metal",
+        "heavy"
+      ]
+    },
+    {
+      "id": "pop",
+      "nombre": "Pop",
+      "emoji": "🎤",
+      "prioridad": 8,
+      "palabras": [
+        "pop",
+        "k-pop",
+        "kpop",
+        "balada",
+        "baladas"
+      ]
+    },
+    {
+      "id": "indie",
+      "nombre": "Indie y alternativo",
+      "emoji": "🌀",
+      "prioridad": 6,
+      "palabras": [
+        "indie",
+        "alternativo",
+        "alternativa",
+        "shoegaze",
+        "post-punk",
+        "psicodelia",
+        "psicodelico"
+      ]
+    },
+    {
+      "id": "electronica",
+      "nombre": "Electrónica",
+      "emoji": "🎛️",
+      "prioridad": 9,
+      "palabras": [
+        "electronica",
+        "techno",
+        "tecno",
+        "house",
+        "dj set",
+        "edm",
+        "synthwave",
+        "rave",
+        "trance"
+      ]
+    },
+    {
+      "id": "hiphop",
+      "nombre": "Hip hop y rap",
+      "emoji": "🎙️",
+      "prioridad": 4,
+      "palabras": [
+        "hip hop",
+        "hip-hop",
+        "rap",
+        "rapero",
+        "rapera",
+        "freestyle",
+        "batalla de gallos"
+      ]
+    },
+    {
+      "id": "trap",
+      "nombre": "Trap",
+      "emoji": "💎",
+      "prioridad": 3,
+      "palabras": [
+        "trap",
+        "trapero",
+        "trapera"
+      ]
+    },
+    {
+      "id": "cumbia",
+      "nombre": "Cumbia y tropical",
+      "emoji": "💃",
+      "prioridad": 10,
+      "palabras": [
+        "cumbia",
+        "salsa",
+        "bachata",
+        "merengue",
+        "tropical",
+        "cumbiambero"
+      ]
+    },
+    {
+      "id": "folclor",
+      "nombre": "Folclor y trova",
+      "emoji": "🪕",
+      "prioridad": 11,
+      "palabras": [
+        "folclor",
+        "folclore",
+        "folklore",
+        "folclorico",
+        "cueca",
+        "trova",
+        "canto nuevo",
+        "bolero",
+        "boleros",
+        "tango"
+      ]
+    },
+    {
+      "id": "jazz",
+      "nombre": "Jazz y blues",
+      "emoji": "🎷",
+      "prioridad": 12,
+      "palabras": [
+        "jazz",
+        "blues",
+        "swing",
+        "soul",
+        "funk",
+        "bossa nova"
+      ]
+    },
+    {
+      "id": "clasica",
+      "nombre": "Clásica y lírica",
+      "emoji": "🎻",
+      "prioridad": 13,
+      "palabras": [
+        "orquesta",
+        "sinfonica",
+        "sinfonico",
+        "filarmonica",
+        "opera",
+        "lirico",
+        "lirica",
+        "soprano",
+        "tenor",
+        "pianista",
+        "piano",
+        "recital",
+        "barroco",
+        "barroca",
+        "coro",
+        "camerata",
+        "cuarteto de cuerdas",
+        "beethoven",
+        "mozart",
+        "bach",
+        "chopin"
+      ]
+    },
+    {
+      "id": "bandas_sonoras",
+      "nombre": "Videojuegos, anime y cine",
+      "emoji": "🎮",
+      "prioridad": 1,
+      "palabras": [
+        "videojuego",
+        "videojuegos",
+        "banda sonora",
+        "soundtrack",
+        "ghibli",
+        "zelda",
+        "undertale",
+        "silksong",
+        "hollow knight",
+        "final fantasy",
+        "pokemon",
+        "anime",
+        "pelicula",
+        "peliculas",
+        "disney",
+        "harry potter",
+        "star wars"
+      ]
+    },
+    {
+      "id": "otros",
+      "nombre": "Otros",
+      "emoji": "🎵",
+      "prioridad": 99,
+      "palabras": []
+    },
+    {
+      "id": "reggaeton",
+      "nombre": "Reggaetón",
+      "emoji": "🔥",
+      "prioridad": 2,
+      "palabras": [
+        "reggaeton",
+        "regueton",
+        "reguetonero",
+        "perreo",
+        "dembow",
+        "urbano latino"
+      ]
+    }
+  ]
 }

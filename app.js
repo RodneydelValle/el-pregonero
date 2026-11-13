@@ -36,7 +36,7 @@ const BANNERS = [
 // Hoy ninguno lo usa (el 8-11-2026 las exposiciones de arte pasaron a ser parte de Museos).
 const GRUPOS = {};
 
-const estado = { seccion: "agenda", cat: "todas", texto: "", soloRM: false, soloNuevos: false, tema: "todos", verTemporadas: false };
+const estado = { seccion: "agenda", cat: "todas", texto: "", soloRM: false, soloNuevos: false, tema: "todos", verTemporadas: false, genero: "todos" };
 let EVENTOS = [];
 let EVENTOS_CARGADOS = false;
 let AGENDA_FALLO = false;
@@ -48,6 +48,13 @@ let ULTIMA = {};          // datos de la última búsqueda
 let NUEVOS = new Set();   // id de los eventos que agregó la última búsqueda
 let CATS = {};
 let ORDEN_CATS = [];
+// Géneros de Conciertos (config/gustos.json "generos", en el orden de los botones; Reggaetón al final)
+let GENEROS = [];
+let GENERO = {};
+/** Los botones de géneros aparecen solo cuando se está viendo Conciertos (su banner o su botón). */
+function enConciertos() { const c = catsFiltro(); return !!c && c.length === 1 && c[0] === "conciertos"; }
+/** Un concierto que el robot aún no clasifica (o con un género que ya no existe) va en «Otros». */
+function generoDe(e) { return GENERO[e.genero] ? e.genero : "otros"; }
 let RESTAURANTES = [];
 let TIENDAS = [];          // tiendas del Mapa del Aventurero (data/tiendas.json)
 let TIENDAS_FALLO = false;
@@ -322,9 +329,11 @@ function filtrar() {
     if (!vigente(e)) return false;
     if (estado.soloNuevos) return NUEVOS.has(e.id);   // "Nuevos" muestra todo lo nuevo, sin otros filtros
     if (cats && !cats.includes(e.categoria)) return false;
+    if (estado.genero !== "todos" && enConciertos() && generoDe(e) !== estado.genero) return false;
     if (estado.soloRM && !COMUNAS_RM.test([e.lugar, e.comuna, e.ciudad, e.region, e.direccion].join(" "))) return false;
     if (q) {
-      const t = sinTildes([e.titulo, e.lugar, e.comuna, e.ciudad, e.descripcion, CATS[e.categoria]?.nombre].join(" "));
+      const t = sinTildes([e.titulo, e.lugar, e.comuna, e.ciudad, e.descripcion, CATS[e.categoria]?.nombre,
+        e.categoria === "conciertos" ? GENERO[e.genero]?.nombre : ""].join(" "));
       if (!q.split(/\s+/).every((p) => t.includes(p))) return false;
     }
     return true;
@@ -372,6 +381,29 @@ function pintarChips() {
   ).join("") +
     `<button type="button" class="chip" data-rm="1" aria-pressed="${estado.soloRM}">${ico("i-pin-rm", "ico-pin")}Solo Región Metropolitana</button>`;
   if (estado.cat !== temaMostrado) { temaMostrado = estado.cat; mostrarTemaMarcado(); }
+  pintarGeneros(vigentes);
+}
+/** Segunda fila, solo en Conciertos: Todos + los géneros que tienen conciertos ahora (el orden es el de la config). */
+function pintarGeneros(vigentes) {
+  const fila = $("#chips-generos");
+  if (!fila) return;   // un index.html viejo en caché no tiene la fila
+  if (!enConciertos() || !GENEROS.length) {
+    estado.genero = "todos";
+    fila.hidden = true;
+    fila.innerHTML = "";
+    return;
+  }
+  const conciertos = vigentes.filter((e) => e.categoria === "conciertos");
+  const n = {};
+  conciertos.forEach((e) => { const g = generoDe(e); n[g] = (n[g] || 0) + 1; });
+  if (estado.genero !== "todos" && !n[estado.genero]) estado.genero = "todos";
+  const chips = [{ id: "todos", nombre: "Todos los géneros", emoji: "🎶", n: conciertos.length },
+    ...GENEROS.filter((g) => n[g.id]).map((g) => ({ ...g, n: n[g.id] }))];
+  fila.innerHTML = chips.map((c) =>
+    `<button type="button" class="chip chip-genero" data-genero="${esc(c.id)}" aria-pressed="${estado.genero === c.id}">` +
+    `<span class="emoji" aria-hidden="true">${esc(c.emoji || "🎵")}</span>${esc(c.nombre)} <span class="cuenta">${c.n}</span></button>`
+  ).join("");
+  fila.hidden = false;
 }
 /** La fila de temas se desliza (en el celular no caben): que se vea el tema marcado, por ejemplo al pasar al banner
  *  de un tema que está al final de la fila, como Juegos o Museos. */
@@ -391,7 +423,8 @@ function mostrarTemaMarcado() {
 function antetitulo(e) {
   const c = CATS[e.categoria] || { nombre: e.categoria, emoji: "•" };
   const nuevo = e.agregado && dias(fecha(e.agregado), hoy()) <= 2 ? '<span class="etiqueta nuevo">NUEVO</span>' : "";
-  return `<p class="antetitulo">${icoCat(e.categoria, c.emoji)}${esc(c.nombre)}${nuevo}</p>`;
+  const gen = e.categoria === "conciertos" && GENERO[e.genero] && e.genero !== "otros" ? ` · ${GENERO[e.genero].nombre}` : "";
+  return `<p class="antetitulo">${icoCat(e.categoria, c.emoji)}${esc(c.nombre)}${esc(gen)}${nuevo}</p>`;
 }
 
 function datosLinea(e) {
@@ -2079,6 +2112,7 @@ document.addEventListener("click", (ev) => {
   const chip = ev.target.closest(".chip");
   if (chip) {
     if (chip.dataset.tema) { estado.tema = chip.dataset.tema; pintarRestaurantes(); return; }
+    if (chip.dataset.genero) { estado.genero = chip.dataset.genero; pintarChips(); pintar(); return; }
     if (chip.dataset.rm) estado.soloRM = !estado.soloRM;
     else estado.cat = chip.dataset.cat;
     pintarChips(); pintar();
@@ -2187,6 +2221,8 @@ async function iniciar() {
     const [cfg, datos] = agenda.value;
     ORDEN_CATS = cfg.categorias;
     CATS = Object.fromEntries(cfg.categorias.map((c) => [c.id, c]));
+    GENEROS = Array.isArray(cfg.generos) ? cfg.generos : [];
+    GENERO = Object.fromEntries(GENEROS.map((g) => [g.id, g]));
     // Un evento con un tema que ya no existe (p. ej. "metal", si una vuelta del robot con la configuración
     // anterior lo subió justo al renombrar los temas) se muestra en su tema nuevo según temas_renombrados.
     // El robot lo corrige en el archivo en su vuelta siguiente; si el tema se repartió (lista), va al primero.

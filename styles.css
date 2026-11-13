@@ -261,6 +261,11 @@ h2[tabindex="-1"]:focus { outline: none; }
 .banner .fino { display: block; font: 14px/1.5 var(--sans); color: var(--tinta-suave); margin-top: 3px; }
 .chips { display: flex; gap: 10px; margin-top: 12px; overflow-x: auto; scrollbar-width: none; padding: 2px 2px 6px; }
 .chips::-webkit-scrollbar { display: none; }
+.chips[hidden] { display: none; }
+/* Géneros de Conciertos: segunda fila, un poco más chica que la de temas */
+.chips-generos { margin-top: 4px; gap: 8px; }
+.chip.chip-genero { font-size: 14.5px; padding: 5px 12px; gap: 6px; }
+.chip.chip-genero .emoji { font-size: 16px; line-height: 1; }
 /* Con el mouse, la fila de temas y el banner se arrastran de lado */
 @media (hover: hover) and (pointer: fine) {
   .chips, .banners-carril { cursor: grab; }

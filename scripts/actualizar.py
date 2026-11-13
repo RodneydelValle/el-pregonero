@@ -1318,6 +1318,61 @@ def vigentes(eventos: list[dict], ocultos: list[str]) -> list[dict]:
     return res
 
 
+# ---------------------------------------------------------------- géneros de los conciertos
+
+def genero_por_palabras(cfg: dict, texto: str) -> str | None:
+    """El género de un concierto según las palabras de config 'generos' (palabras enteras, sin tildes), probando los
+    géneros en el orden de su 'prioridad': «metal sinfónico» es Metal y «Undertale Sinfónico» es de videojuegos."""
+    t = sin_tildes(texto)
+    for g in sorted(cfg.get("generos") or [], key=lambda g: g.get("prioridad", 50)):
+        pal = g.get("palabras") or []
+        if pal and re.search(r"\b(" + "|".join(re.escape(sin_tildes(p)) for p in pal) + r")\b", t):
+            return g["id"]
+    return None
+
+
+def generos_al_dia(eventos: list[dict], cfg: dict, ia) -> int:
+    """Pone 'genero' a los conciertos que no lo tienen: primero por palabras del título y la descripción; los que
+    no dicen su estilo (p. ej. solo el nombre del artista) se le preguntan a la IA de una vez, en un solo listado.
+    Si la IA no está o no responde, quedan sin género (la página los muestra en «Otros») y se reintentan después."""
+    generos = cfg.get("generos") or []
+    ids = {g["id"] for g in generos}
+    if not ids:
+        return 0
+    faltan = []
+    for e in eventos:
+        if e.get("categoria") != "conciertos" or e.get("genero") in ids:
+            continue
+        g = genero_por_palabras(cfg, f'{e.get("titulo", "")} {e.get("descripcion") or ""}')
+        if g:
+            e["genero"] = g
+        else:
+            faltan.append(e)
+    puestos = 0
+    if faltan and ia is not None and ia.disponible():
+        lista = "\n".join(f'- "{g["id"]}": {g["nombre"]}' for g in generos)
+        sistema = (
+            "Clasificas conciertos en Chile por género musical. Géneros (usa exactamente estos id):\n" + lista + "\n"
+            "Usa tu conocimiento del artista o la banda. Un tributo va en el género de la banda homenajeada. "
+            "Un festival con varios estilos va en su estilo principal. Si de verdad no sabes, usa \"otros\". "
+            'Responde solo JSON: {"generos": {"<id del evento>": "<id del género>"}}')
+        for i in range(0, len(faltan), 80):
+            bloque = faltan[i:i + 80]
+            texto = "\n".join(f'{e["id"]} | {e["titulo"]} | {e.get("lugar") or ""} | {(e.get("descripcion") or "")[:140]}'
+                              for e in bloque)
+            try:
+                r = ia.json(sistema, texto, max_tokens=3000)
+            except (ValueError, SinCupo):
+                break
+            elegidos = (r or {}).get("generos") if isinstance(r, dict) else None
+            for e in bloque:
+                g = (elegidos or {}).get(e["id"])
+                if g in ids:
+                    e["genero"] = g
+                    puestos += 1
+    return puestos
+
+
 # ---------------------------------------------------------------- relevancia
 
 def patron_intereses(cfg: dict) -> re.Pattern:
@@ -2708,6 +2763,8 @@ def main():
 
     eventos, ids_nuevos = unir(eventos, nuevos)
     eventos = vigentes(compactar(eventos), ocultos)
+    if not args.limpiar and args.solo_imagenes is None:
+        stats["generos_ia"] = generos_al_dia(eventos, cfg, ia)
     # Las imágenes que les faltan a los eventos (no gasta IA): en cada búsqueda, rápida o completa, con un tope de
     # páginas por vuelta; con --solo-imagenes, solo este paso y con un tope más alto (para ponerse al día)
     if args.solo_imagenes is not None or not (args.agregar or args.limpiar):

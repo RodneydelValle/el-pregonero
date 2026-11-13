@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Fira+Sans+Condensed:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&display=swap">
   <!-- ?v= sube cada vez que cambian styles.css o app.js: así nadie queda con una mezcla de la versión vieja y la nueva -->
-  <link rel="stylesheet" href="styles.css?v=18">
+  <link rel="stylesheet" href="styles.css?v=19">
 </head>
 <body>
   <!-- Íconos de la página (se usan con <svg><use href="#i-…"/></svg>) -->
@@ -211,6 +211,7 @@
         </div>
       </div>
       <div class="chips" id="chips" role="group" aria-label="Temas"></div>
+      <div class="chips chips-generos" id="chips-generos" role="group" aria-label="Géneros de música" hidden></div>
     </nav>
 
     <div class="agenda-cuerpo">
@@ -345,7 +346,7 @@
   </dialog>
 
   <div id="aviso" class="aviso" role="status" aria-live="polite" hidden></div>
-  <script src="app.js?v=18" defer></script>
+  <script src="app.js?v=19" defer></script>
   <script type="module" src="cuenta.js"></script>
 </body>
 </html>
