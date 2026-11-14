@@ -1,12 +1,12 @@
 {
  "version": 1,
- "actualizado": "2026-11-14T14:24-03:00",
+ "actualizado": "2026-11-14T18:31-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-14T14:24-03:00",
+  "fecha": "2026-11-14T18:31-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 163,
-  "nuevos_esta_vez": 49,
+  "eventos_nuevos": 183,
+  "nuevos_esta_vez": 20,
   "nuevos_ids": [
    "8598b90364",
    "5cdf46ff3d",
@@ -170,7 +170,27 @@
    "2e89ea4c31",
    "b937fe271e",
    "5110ea20eb",
-   "44c5177b37"
+   "44c5177b37",
+   "a3f162c3f1",
+   "2d404b2f72",
+   "e9f61deda9",
+   "b5cbdda7a0",
+   "6dcf33adff",
+   "94028a0d28",
+   "779948e45a",
+   "1d3eada12a",
+   "4a83e2b404",
+   "1abd05c720",
+   "0cc615e9c7",
+   "393c6f1b3c",
+   "57b7e81ed7",
+   "082c5ef43c",
+   "2550997392",
+   "f37a507529",
+   "22ec1754f3",
+   "234fa8c6ca",
+   "5a4a33f4cf",
+   "dc78f24f9a"
   ],
   "nuevos_desde": {
    "8598b90364": "2026-11-13T19:57-03:00",
@@ -335,24 +355,43 @@
    "2e89ea4c31": "2026-11-14T14:24-03:00",
    "b937fe271e": "2026-11-14T14:24-03:00",
    "5110ea20eb": "2026-11-14T14:24-03:00",
-   "44c5177b37": "2026-11-14T14:24-03:00"
+   "44c5177b37": "2026-11-14T14:24-03:00",
+   "a3f162c3f1": "2026-11-14T18:31-03:00",
+   "2d404b2f72": "2026-11-14T18:31-03:00",
+   "e9f61deda9": "2026-11-14T18:31-03:00",
+   "b5cbdda7a0": "2026-11-14T18:31-03:00",
+   "6dcf33adff": "2026-11-14T18:31-03:00",
+   "94028a0d28": "2026-11-14T18:31-03:00",
+   "779948e45a": "2026-11-14T18:31-03:00",
+   "1d3eada12a": "2026-11-14T18:31-03:00",
+   "4a83e2b404": "2026-11-14T18:31-03:00",
+   "1abd05c720": "2026-11-14T18:31-03:00",
+   "0cc615e9c7": "2026-11-14T18:31-03:00",
+   "393c6f1b3c": "2026-11-14T18:31-03:00",
+   "57b7e81ed7": "2026-11-14T18:31-03:00",
+   "082c5ef43c": "2026-11-14T18:31-03:00",
+   "2550997392": "2026-11-14T18:31-03:00",
+   "f37a507529": "2026-11-14T18:31-03:00",
+   "22ec1754f3": "2026-11-14T18:31-03:00",
+   "234fa8c6ca": "2026-11-14T18:31-03:00",
+   "5a4a33f4cf": "2026-11-14T18:31-03:00",
+   "dc78f24f9a": "2026-11-14T18:31-03:00"
   },
   "horas_nuevos": 24,
-  "llamadas_ia": 33,
+  "llamadas_ia": 4,
   "ia_sin_cupo": false,
   "ultima_completa": "2026-11-14T14:06-03:00",
-  "modo": "completa",
-  "paginas_revisadas": 31,
-  "busquedas": 107,
-  "fuentes_fijas": 10,
-  "errores": 19,
+  "modo": "rapida",
+  "paginas_revisadas": 0,
+  "busquedas": 0,
+  "fuentes_fijas": 9,
+  "errores": 2,
   "noticias_desde": "2026-11-14",
-  "noticias_viejas_descartadas": 431,
-  "redes_vistas": 2,
-  "generos_ia": 22,
-  "imagenes_encontradas": 12
+  "noticias_viejas_descartadas": 0,
+  "generos_ia": 5,
+  "imagenes_encontradas": 2
  },
- "total": 555,
+ "total": 575,
  "eventos": [
   {
    "titulo": "Mariposas y Polillas, Colores en Movimiento",
@@ -4571,6 +4610,99 @@
    "actualizado": "2026-11-14"
   },
   {
+   "titulo": "Kaya Jazz Club | Jado & Su Cantina Band🎷",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": "2026-11-14",
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Kaya Social Club",
+   "direccion": null,
+   "comuna": "Copiapó",
+   "ciudad": null,
+   "region": null,
+   "precio": "Gratis",
+   "descripcion": "Evento solo para Mayores de 21 Años. ¡El patio vuelve a encontrarse con la música en vivo! Jado & su Cantina Band llegan a KAYA con una sesión llena de ritmo y personalidad. La noche continúa con una Jam de Música Popular, seguida de un DJ",
+   "imagen": "https://img.vamoh.cl/events/0392d5f3-ef00-491e-b971-861eb25e8d60.webp?v=21a84882",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/kaya-jazz-club-jado-su-cantina-band-pt1o3/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/kaya-jazz-club-jado-su-cantina-band-pt1o3/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "0cc615e9c7",
+   "agregado": "2026-11-14",
+   "actualizado": "2026-11-14",
+   "genero": "jazz"
+  },
+  {
+   "titulo": "Fotovoltaicos: Tocata Profondos",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": "2026-11-14",
+   "hora": "22:00",
+   "horario": null,
+   "lugar": "Barra Bass Bar",
+   "direccion": null,
+   "comuna": "Puerto Montt",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $4.000",
+   "descripcion": "PROFONDOS // NUESTRO PRIMER EP Les dejamos mas que invitados a este maravilloso evento, tu asistencia es más que necesaria y suficiente!! La recaudación generada es vital para seguir adelante con este proyecto que con tanta emoción nos da a",
+   "imagen": "https://img.vamoh.cl/events/a72e6c16-7a3e-4ef3-906a-e5d815df2d26.webp?v=233bfaaf",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/tocata-profondos-fotovoltaicos-en-barrabass-m36h1/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/tocata-profondos-fotovoltaicos-en-barrabass-m36h1/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "1abd05c720",
+   "agregado": "2026-11-14",
+   "actualizado": "2026-11-14",
+   "genero": "indie"
+  },
+  {
+   "titulo": "Evento de Cumbia & Salsa con Tributos Internacionales",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-13",
+   "fecha_fin": "2026-11-14",
+   "hora": "23:00",
+   "horario": null,
+   "lugar": "Bar Ruta 78",
+   "direccion": null,
+   "comuna": "Puente Alto",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $10.000",
+   "descripcion": "Evento solo para Mayores de 18 Años. 💃🏼✨Cumbia & Salsa en Ruta 78 con Los Tributos Oficiales de Ke-personajes y Marc Anthony✨🕺🏼 Por primera vez tenemos en el escenario de Puente Alto: Cumbia & Salsa para Tod@s ‼️ 💜 Agéndalo desde ya: No te",
+   "imagen": "https://img.vamoh.cl/events/76990983-5f35-45c4-908a-61d18f05681f.webp?v=acf3d7bc",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/evento-de-cumbia-salsa-con-tributos-internacionales-f3jtw/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/evento-de-cumbia-salsa-con-tributos-internacionales-f3jtw/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "393c6f1b3c",
+   "agregado": "2026-11-14",
+   "actualizado": "2026-11-14",
+   "genero": "cumbia"
+  },
+  {
    "titulo": "Amantes, Una Vez al Año",
    "categoria": "teatro",
    "fecha_inicio": "2026-11-13",
@@ -4935,6 +5067,36 @@
    "actualizado": "2026-11-13"
   },
   {
+   "titulo": "Exposición temporal Pikunche, memoria viva del territorio",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": "2026-11-28",
+   "hora": "10:00",
+   "horario": null,
+   "lugar": "Museo Regional de Rancagua",
+   "direccion": null,
+   "comuna": "Rancagua",
+   "ciudad": null,
+   "region": null,
+   "precio": "Gratis",
+   "descripcion": "Un recorrido por vestigios y la mirada de personas descendientes del pueblo pikunche",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://vamoh.cl/events/exposicion-temporal-pikunche-memoria-viva-del-territorio-o99m3/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/exposicion-temporal-pikunche-memoria-viva-del-territorio-o99m3/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "e9f61deda9",
+   "agregado": "2026-11-14",
+   "actualizado": "2026-11-14"
+  },
+  {
    "titulo": "3° Planeta Cómic Fest",
    "categoria": "anime",
    "fecha_inicio": "2026-11-14",
@@ -5197,6 +5359,37 @@
    "genero": "metal"
   },
   {
+   "titulo": "Concierto de Piano: “Baladas en Primavera”",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": null,
+   "hora": "12:00",
+   "horario": null,
+   "lugar": "Teatro UCSC",
+   "direccion": null,
+   "comuna": "Concepción",
+   "ciudad": null,
+   "region": null,
+   "precio": "Gratis",
+   "descripcion": "¡La primavera se vive al ritmo del piano en la UCSC! Cultural UCSC junto a la Escuela de Piano de Alto Rendimiento Risoluto, invita al concierto “Baladas en Primavera”, una presentación del pianista Sebastián Arredondo que nos invita a disf",
+   "imagen": "https://img.vamoh.cl/events/185742af-306d-47f6-a38a-4f2a062575e6.webp?v=c8217e64",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/concierto-de-piano-baladas-en-primavera-53poy/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/concierto-de-piano-baladas-en-primavera-53poy/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "2d404b2f72",
+   "agregado": "2026-11-14",
+   "actualizado": "2026-11-14",
+   "genero": "pop"
+  },
+  {
    "titulo": "Concierto: Las Cuatro Estaciones de Vivaldi",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-14",
@@ -5225,6 +5418,37 @@
    "id": "5d91c4ed82",
    "agregado": "2026-11-13",
    "actualizado": "2026-11-13",
+   "genero": "clasica"
+  },
+  {
+   "titulo": "Contrastes Europeos - Orquesta de Cámara del Municipal de Santiago",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": null,
+   "hora": "12:00",
+   "horario": null,
+   "lugar": "Teatro Zoco",
+   "direccion": null,
+   "comuna": "Lo Barnechea",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $13.225",
+   "descripcion": "TICKET PRECIO CARGO TOTAL ENTRADA GENERAL $25.000 $3.750 $28.750 MENORES DE 30 $11.500 $1.750 $13.225 MOVILIDAD REDUCIDA $25.000 $3.750 $28.750 El programa nos invita a un viaje geográfico y cultural a través de la versatilidad de las cuerd",
+   "imagen": "https://img.vamoh.cl/events/808db66c-94a2-4bd0-99d1-a221a3eac014.webp?v=f4cd6015",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/contrastes-europeos-orquesta-de-camara-del-municipal-de-santiago-4kbjh/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/contrastes-europeos-orquesta-de-camara-del-municipal-de-santiago-4kbjh/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "a3f162c3f1",
+   "agregado": "2026-11-14",
+   "actualizado": "2026-11-14",
    "genero": "clasica"
   },
   {
@@ -6458,6 +6682,37 @@
    "id": "6ea8c4d016",
    "agregado": "2026-11-08",
    "actualizado": "2026-11-08"
+  },
+  {
+   "titulo": "Vórtice Wild | Fiesta Flúor | Reggaeton Old vs New, Hits & Dancehall | DJ Noise",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": "2026-11-15",
+   "hora": "23:59",
+   "horario": null,
+   "lugar": "Pampa Restobar y Terrazas",
+   "direccion": null,
+   "comuna": "Natales",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $5.000",
+   "descripcion": "💚⚡ ¡Natales se prende en modo flúor! Vórtice Wild llega a Pampa Restobar con neón, glitter y DJ Noise en cabina. Reggaetón old vs. new, hits y dancehall en una misma pista. Ponte algo que brille, arma tu grupo y asegura tu entrada en TOLIV.",
+   "imagen": "https://img.vamoh.cl/events/baa74db1-5e68-44a2-af76-4d90d1b625c0.webp?v=29466dd3",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/vortice-wild-fiesta-fluor-reggaeton-old-vs-new-hits-dancehall-dj-noise-x7q7x/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/vortice-wild-fiesta-fluor-reggaeton-old-vs-new-hits-dancehall-dj-noise-x7q7x/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "779948e45a",
+   "agregado": "2026-11-14",
+   "actualizado": "2026-11-14",
+   "genero": "reggaeton"
   },
   {
    "titulo": "23ª Feria KONTRABANDO: Corazón Latinoamericano",
@@ -8094,7 +8349,8 @@
    "origen": "ia",
    "id": "c64d4dae36",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-14"
+   "actualizado": "2026-11-14",
+   "genero": "rock"
   },
   {
    "titulo": "Tolomiro Todomiro: escultura de Matta en La Moneda",
@@ -8531,6 +8787,37 @@
    "genero": "clasica"
   },
   {
+   "titulo": "Concierto por el Día de la Música, con la Orquesta Filarmónica Nahuelbuta",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-20",
+   "fecha_fin": "2026-11-22",
+   "hora": "11:00",
+   "horario": null,
+   "lugar": "Plaza de Armas",
+   "direccion": null,
+   "comuna": "Contulmo",
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Contulmo celebra 158 años con un programa de actividades de aniversario La comuna de Contulmo celebra 158 años de historia, identidad y tradición. Con este motivo, el alcalde Carlos Arturo Leal Neira y el Honorable Concejo Municipal invitan",
+   "imagen": "https://img.vamoh.cl/events/9b853756-a162-43c5-9725-08b7376b4649.webp?v=f14f2316",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/concierto-por-el-dia-de-la-musica-con-la-orquesta-filarmonica-nahuelbuta-zgnep/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/concierto-por-el-dia-de-la-musica-con-la-orquesta-filarmonica-nahuelbuta-zgnep/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "b5cbdda7a0",
+   "agregado": "2026-11-14",
+   "actualizado": "2026-11-14",
+   "genero": "clasica"
+  },
+  {
    "titulo": "“Materia y espíritu”: Víctor Hugo Pimentel presenta una exposición de arte sacro en Patio Aguacoya de Lumbre",
    "categoria": "museos",
    "fecha_inicio": "2026-11-20",
@@ -8882,6 +9169,36 @@
    "origen": "datos-estructurados",
    "id": "11b9d904b2",
    "agregado": "2026-11-10",
+   "actualizado": "2026-11-14"
+  },
+  {
+   "titulo": "Odioso!!! Que vuelvan los 90s con MrFeromonas - Stand Up Comedy",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-20",
+   "fecha_fin": "2026-11-21",
+   "hora": "21:10",
+   "horario": null,
+   "lugar": "Fuente SanMiguelina",
+   "direccion": null,
+   "comuna": "San Miguel",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $10.000",
+   "descripcion": "Odioso!!! Que vuelvan los 90s - Por primera vez en Fuente San Miguelina. MrFeromonas, el 2 veces a punto de ir al festival de Viña y otro par al festival de Olmué, nos muestra su exitoso trabajo; MrFeromonas (Marcelo González), el comediant",
+   "imagen": "https://img.vamoh.cl/events/efd4824c-e67c-448b-8b18-a7909c9cd2e6.webp?v=aa5b0f9d",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/odioso-que-vuelvan-los-90s-con-mrferomonas-stand-up-comedy-bwgid/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/odioso-que-vuelvan-los-90s-con-mrferomonas-stand-up-comedy-bwgid/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "dc78f24f9a",
+   "agregado": "2026-11-14",
    "actualizado": "2026-11-14"
   },
   {
@@ -10702,6 +11019,36 @@
    "actualizado": "2026-11-10"
   },
   {
+   "titulo": "TEATRO CACHAFAZ Ciclo de teatro-Podcast en vivo-La terapia QL del panda-Jueves 26 de Noviembre 19:30 hrs 26 NOV Desde: CLP 5.500 CLP",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-26",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": null,
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": null,
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/faf3d19567d5c19d6d835eb722280c6a11229cc0.png?1794689719",
+   "fotos": null,
+   "url": "https://ticketplus.cl/events/ciclo-de-teatro-podcast-en-vivo-la-terapia-ql-del-panda-jueves-26-de-noviembre-19-30-hrs",
+   "fuentes": [
+    {
+     "nombre": "Ticketplus",
+     "url": "https://ticketplus.cl/events/ciclo-de-teatro-podcast-en-vivo-la-terapia-ql-del-panda-jueves-26-de-noviembre-19-30-hrs"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "ticketera",
+   "id": "22ec1754f3",
+   "agregado": "2026-11-14",
+   "actualizado": "2026-11-14"
+  },
+  {
    "titulo": "YCS Santiago 2026",
    "categoria": "juegos",
    "fecha_inicio": "2026-11-26",
@@ -10773,7 +11120,7 @@
    "comuna": "Temuco",
    "ciudad": null,
    "region": null,
-   "precio": null,
+   "precio": "Gratis",
    "descripcion": "Una experiencia de mediación musical que invita a descubrir el universo que se construye detrás de una interpretación orquestal, reconociendo los sonidos, instrumentos, historias y elementos que dan vida a la música. A través de un espacio",
    "imagen": "https://img.vamoh.cl/events/64635f8a-a1ce-4301-adbd-786b3bd1109a.webp?v=ab7b631b",
    "fotos": null,
@@ -10782,6 +11129,10 @@
     {
      "nombre": "VAMOH!",
      "url": "https://vamoh.cl/events/concierto-de-mediacion-detras-de-cada-nota-4c6ke/"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/concierto-de-mediacion-detras-de-cada-nota-wwb21/"
     }
    ],
    "desde_imagen": false,
@@ -10819,6 +11170,37 @@
    "confianza": "alta",
    "origen": "datos-estructurados",
    "id": "b30ad6ce8e",
+   "agregado": "2026-11-14",
+   "actualizado": "2026-11-14",
+   "genero": "clasica"
+  },
+  {
+   "titulo": "Concierto El Viaje Coral: del motete a la ranchera - Coro Infanto Juvenil",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Sala de Artes Escénicas de Chiguayante",
+   "direccion": null,
+   "comuna": "Chiguayante",
+   "ciudad": null,
+   "region": null,
+   "precio": "Gratis",
+   "descripcion": null,
+   "imagen": "https://img.vamoh.cl/events/20c82c1c-dc3e-4816-8efc-7808e4267bb3.webp?v=ed9f74fa",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/concierto-el-viaje-coral-del-motete-a-la-ranchera-coro-infanto-juvenil-4pvgb/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/concierto-el-viaje-coral-del-motete-a-la-ranchera-coro-infanto-juvenil-4pvgb/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "6dcf33adff",
    "agregado": "2026-11-14",
    "actualizado": "2026-11-14",
    "genero": "clasica"
@@ -11534,6 +11916,37 @@
    "agregado": "2026-11-14",
    "actualizado": "2026-11-14",
    "genero": "clasica"
+  },
+  {
+   "titulo": "Encuentro Cultural en Conmemoración [ 53 Aniversario del Hip Hop ]",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": "12:00",
+   "horario": null,
+   "lugar": "Villa el esfuerzo",
+   "direccion": null,
+   "comuna": "El Bosque",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $3.000",
+   "descripcion": "Encuentro Cultural En conmemoración (53 Aniversario del HIP HOP) Sábado 28 de Noviembre / Avda. Central 509, El Bosque (Metro Copa Lo Martínez) Desde las 12:00Hrs Microfono Abierto EN VIVO: Omega el CTM Rapbrina LecheroMon Dibujosue ManchaT",
+   "imagen": "https://img.vamoh.cl/events/7273e626-111d-405f-8c4b-d237556a4709.webp?v=057284cb",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/encuentro-cultural-en-conmemoracion-53-aniversario-del-hip-hop-9gqyc/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/encuentro-cultural-en-conmemoracion-53-aniversario-del-hip-hop-9gqyc/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "2550997392",
+   "agregado": "2026-11-14",
+   "actualizado": "2026-11-14",
+   "genero": "hiphop"
   },
   {
    "titulo": "Haru Matsuri · Fiesta de Primavera en la Sociedad Japonesa de Beneficencia",
@@ -12496,6 +12909,36 @@
    "id": "33bf313ff0",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Chisteando stand up comedy",
+   "categoria": "standup",
+   "fecha_inicio": "2026-12-02",
+   "fecha_fin": null,
+   "hora": "19:30",
+   "horario": null,
+   "lugar": "Happy People Comedy Bar",
+   "direccion": null,
+   "comuna": "Providencia",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $12.000",
+   "descripcion": "CHISTEANDO es un nuevo ciclo de stand up comedy en Santiago de Chile pensado para quienes quieren descubrir comediantes, escuchar material nuevo y disfrutar de una noche de humor en vivo en Providencia. En cada edición, José Domínguez será",
+   "imagen": "https://img.vamoh.cl/events/8548ccc0-8e51-49cb-a643-0868b55d079b.webp?v=432d9524",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/chisteando-stand-up-comedy-pebze/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/chisteando-stand-up-comedy-pebze/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "234fa8c6ca",
+   "agregado": "2026-11-14",
+   "actualizado": "2026-11-14"
   },
   {
    "titulo": "Concierto Navidad Camerata Universidad Andrés Bello",
@@ -14370,6 +14813,37 @@
    "genero": "bandas_sonoras"
   },
   {
+   "titulo": "Concierto de Navidad del Coro Gustavo Wyneken en la Catedral de Los Ángeles",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-11",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Catedral de Los Ángeles",
+   "direccion": null,
+   "comuna": "Los Angeles",
+   "ciudad": null,
+   "region": null,
+   "precio": "Gratis",
+   "descripcion": "El Coro Gustavo Wyneken, Orquesta y Coro DSLA invitan a la comunidad a disfrutar de un concierto de navidad que se realizará en la Catedral de Los Ángeles, ubicada en Valdivia 298. El evento tendrá lugar el 11 de diciembre a las 20:00 horas",
+   "imagen": "https://img.vamoh.cl/events/428e9f21-d3a2-47d1-b75c-ecdb1c3ae188.webp?v=056f0396",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/concierto-de-navidad-del-coro-gustavo-wyneken-en-la-catedral-de-los-angeles-dnn9z/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/concierto-de-navidad-del-coro-gustavo-wyneken-en-la-catedral-de-los-angeles-dnn9z/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "082c5ef43c",
+   "agregado": "2026-11-14",
+   "actualizado": "2026-11-14",
+   "genero": "clasica"
+  },
+  {
    "titulo": "Illya Kuryaki & The Valderramas",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-11",
@@ -14399,6 +14873,36 @@
    "agregado": "2026-11-14",
    "actualizado": "2026-11-14",
    "genero": "hiphop"
+  },
+  {
+   "titulo": "Jorge Alís - MALON",
+   "categoria": "standup",
+   "fecha_inicio": "2026-12-11",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Cachafaz",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $19.800",
+   "descripcion": "Nuevo show de stand-up del comediante Jorge Alís en el Teatro Cachafaz. ¡Imperdible!",
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/f2a1cc82e7f2846ae4176e2c79a1c1169b3897c0.png?1794688959",
+   "fotos": null,
+   "url": "https://ticketplus.cl/events/jorge-alis-malon-viernes-11-diciembre-20-hrs",
+   "fuentes": [
+    {
+     "nombre": "Ticketplus",
+     "url": "https://ticketplus.cl/events/jorge-alis-malon-viernes-11-diciembre-20-hrs"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "f37a507529",
+   "agregado": "2026-11-14",
+   "actualizado": "2026-11-14"
   },
   {
    "titulo": "Sleeping With Sirens - AN ENDING IN ITSELF TOUR",
@@ -14499,6 +15003,37 @@
    "agregado": "2026-11-07",
    "actualizado": "2026-11-08",
    "genero": "metal"
+  },
+  {
+   "titulo": "Sala Rívoli presenta Bray On en Concierto",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-12",
+   "fecha_fin": "2026-12-13",
+   "hora": "22:30",
+   "horario": null,
+   "lugar": "Sala Rivoli",
+   "direccion": null,
+   "comuna": "Valparaíso",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $15.000",
+   "descripcion": "🔥🎤✨ ¡BRAY ON EN VIVO EN SALA RÍVOLI! ❤️ La voz que conquistó Chile y sorprendió a millones en redes sociales llega a Valparaíso para una noche inolvidable. 📅 Sábado 12 de Diciembre 🚪 Apertura: 20:00 hrs. 🎤 Show: 22:30 hrs. 📍 Sala Rívoli – V",
+   "imagen": "https://img.vamoh.cl/events/5fd375ad-827c-4b2e-a5ae-97570dbd4abb.webp?v=cf9723ab",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/sala-rivoli-presenta-bray-on-en-concierto-0runj/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/sala-rivoli-presenta-bray-on-en-concierto-0runj/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "94028a0d28",
+   "agregado": "2026-11-14",
+   "actualizado": "2026-11-14",
+   "genero": "pop"
   },
   {
    "titulo": "Akriila - El Tour de Lucy",
@@ -14687,6 +15222,37 @@
    "id": "11c4e7eab3",
    "agregado": "2026-11-09",
    "actualizado": "2026-11-09"
+  },
+  {
+   "titulo": "Bray On en Concierto - Santiago",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-13",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Salon Hotel Le Meridien",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $20.125",
+   "descripcion": null,
+   "imagen": "https://img.vamoh.cl/events/77d6d486-25f7-4d68-817f-a89076593e41.webp?v=1a923bf9",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/bray-on-en-concierto-santiago-4co7u/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/bray-on-en-concierto-santiago-4co7u/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "4a83e2b404",
+   "agregado": "2026-11-14",
+   "actualizado": "2026-11-14",
+   "genero": "pop"
   },
   {
    "titulo": "Anuel AA en Chile",
@@ -15141,6 +15707,37 @@
    "agregado": "2026-11-11",
    "actualizado": "2026-11-11",
    "genero": "metal"
+  },
+  {
+   "titulo": "Julius Popper en Concierto",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-18",
+   "fecha_fin": null,
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Teatro Lihuen - Concepción",
+   "direccion": null,
+   "comuna": "Concepción",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $10.000",
+   "descripcion": "JULIUS POPPER EN CONCIERTO Teatro Lihuén presenta a Julius Popper en vivo. La banda penquista Julius Popper regresa al escenario del Teatro Lihuén para ofrecer un concierto cargado de rock, blues y toda la energía que caracteriza su propues",
+   "imagen": "https://img.vamoh.cl/events/44003b8a-d023-4379-a4a9-ffef792e3a91.webp?v=05773b32",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/julius-popper-en-concierto-rdaur/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/julius-popper-en-concierto-rdaur/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "57b7e81ed7",
+   "agregado": "2026-11-14",
+   "actualizado": "2026-11-14",
+   "genero": "rock"
   },
   {
    "titulo": "Paloma Elgueta",
@@ -16116,6 +16713,36 @@
    "actualizado": "2026-11-12"
   },
   {
+   "titulo": "Exageraldo «Celebrando 10 Años de Comedia»",
+   "categoria": "standup",
+   "fecha_inicio": "2027-01-15",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Club de San Miguel",
+   "direccion": null,
+   "comuna": "San Miguel",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $5.000",
+   "descripcion": "¡Una década de humor merece una celebración a lo grande! Exageraldo llega al Club de San Miguel para festejar sus 10 años en la comedia con un recorrido por toda su evolución, desde sus inicios hasta hoy. Una noche para reír desde el chiste",
+   "imagen": "https://img.vamoh.cl/events/8d26f3ee-bd9a-4d97-9d5b-7a2e3207b36b.webp?v=4cb27d0e",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/exageraldo-celebrando-10-anos-de-comedia-uij3t/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/exageraldo-celebrando-10-anos-de-comedia-uij3t/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "5a4a33f4cf",
+   "agregado": "2026-11-14",
+   "actualizado": "2026-11-14"
+  },
+  {
    "titulo": "Chistes del Pi Stand Up Comedy para Parejas con MrFeromonas San Miguel",
    "categoria": "standup",
    "fecha_inicio": "2027-01-15",
@@ -16864,6 +17491,37 @@
    "id": "4fb5aa7103",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "The Legend en Concierto - Viña del Mar",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-02-06",
+   "fecha_fin": "2027-02-07",
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Teatro Municipal de Viña del Mar",
+   "direccion": null,
+   "comuna": "Viña Del Mar",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $23.000",
+   "descripcion": null,
+   "imagen": "https://img.vamoh.cl/events/2b9b2be9-6d4c-4cdb-9567-04b39a91ca11.webp?v=b89bd447",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/the-legend-en-concierto-vina-del-mar-k8o9a/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/the-legend-en-concierto-vina-del-mar-k8o9a/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "1d3eada12a",
+   "agregado": "2026-11-14",
+   "actualizado": "2026-11-14",
+   "genero": "clasica"
   },
   {
    "titulo": "Pitbull en Santiago",
