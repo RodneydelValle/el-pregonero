@@ -1,24 +1,18 @@
 {
  "version": 1,
- "actualizado": "2026-11-13T19:57-03:00",
+ "actualizado": "2026-11-14T00:19-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-13T19:57-03:00",
+  "fecha": "2026-11-14T00:19-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 98,
-  "nuevos_esta_vez": 81,
+  "eventos_nuevos": 89,
+  "nuevos_esta_vez": 11,
   "nuevos_ids": [
-   "a70cbb63d5",
-   "bb2fea1255",
    "277593a22e",
    "7fb2507d95",
    "f8d9e2c0dc",
-   "9bec830aa5",
-   "c5957ba10e",
    "0a954af3f5",
    "00d02f4960",
-   "6b98e9af59",
-   "90c1251a4a",
    "e03bfb6736",
    "b00381c341",
    "bbd26b1011",
@@ -34,17 +28,12 @@
    "8b3f3732fd",
    "4c8e8aa011",
    "7a1a15f67a",
-   "cea98b7cfa",
    "e693788f4a",
    "e7a69649a5",
    "f3e58f046e",
-   "35da1225ac",
-   "02b412957c",
    "02c5fff8d9",
    "d2b29fa2ce",
-   "434e570eb6",
    "1291cf01bf",
-   "30f510b3d1",
    "44bafaaf38",
    "dd58d16214",
    "4790c84ebf",
@@ -62,22 +51,13 @@
    "63ab3d3576",
    "2f25dd976e",
    "fd1a74827e",
-   "1894e5d998",
-   "148fbd5f57",
-   "2e6380784f",
-   "491661b739",
    "5d91c4ed82",
-   "aca8a060c8",
-   "4580c15678",
    "d4d1fd48fa",
-   "83a737ade8",
    "082b0313f7",
    "2d661e001a",
-   "83dda6d2ee",
    "4122ff73cc",
    "3ab12f2d38",
    "756b5f867f",
-   "245809ed2c",
    "01b589e0c6",
    "464635ae28",
    "7c1423df97",
@@ -105,20 +85,25 @@
    "0e063604e5",
    "dbfe2bce06",
    "fe7c9ae9fb",
-   "9fbfef1ccc"
+   "9fbfef1ccc",
+   "0a71956de0",
+   "838f702007",
+   "17df6a8ebe",
+   "fe3b758f71",
+   "4b663fc18f",
+   "a3a27de104",
+   "f3231ea8e6",
+   "ee0ff08613",
+   "ee37fd344a",
+   "fc875a0651",
+   "994b0cd99d"
   ],
   "nuevos_desde": {
-   "a70cbb63d5": "2026-11-12T21:23-03:00",
-   "bb2fea1255": "2026-11-12T21:23-03:00",
    "277593a22e": "2026-11-13T05:10-03:00",
    "7fb2507d95": "2026-11-13T05:10-03:00",
    "f8d9e2c0dc": "2026-11-13T05:10-03:00",
-   "9bec830aa5": "2026-11-13T05:10-03:00",
-   "c5957ba10e": "2026-11-13T05:10-03:00",
    "0a954af3f5": "2026-11-13T05:10-03:00",
    "00d02f4960": "2026-11-13T05:10-03:00",
-   "6b98e9af59": "2026-11-13T05:10-03:00",
-   "90c1251a4a": "2026-11-13T05:10-03:00",
    "e03bfb6736": "2026-11-13T05:10-03:00",
    "b00381c341": "2026-11-13T05:10-03:00",
    "bbd26b1011": "2026-11-13T05:10-03:00",
@@ -134,17 +119,12 @@
    "8b3f3732fd": "2026-11-13T19:57-03:00",
    "4c8e8aa011": "2026-11-13T19:57-03:00",
    "7a1a15f67a": "2026-11-13T19:57-03:00",
-   "cea98b7cfa": "2026-11-13T19:57-03:00",
    "e693788f4a": "2026-11-13T19:57-03:00",
    "e7a69649a5": "2026-11-13T19:57-03:00",
    "f3e58f046e": "2026-11-13T19:57-03:00",
-   "35da1225ac": "2026-11-13T19:57-03:00",
-   "02b412957c": "2026-11-13T19:57-03:00",
    "02c5fff8d9": "2026-11-13T19:57-03:00",
    "d2b29fa2ce": "2026-11-13T19:57-03:00",
-   "434e570eb6": "2026-11-13T19:57-03:00",
    "1291cf01bf": "2026-11-13T19:57-03:00",
-   "30f510b3d1": "2026-11-13T19:57-03:00",
    "44bafaaf38": "2026-11-13T19:57-03:00",
    "dd58d16214": "2026-11-13T19:57-03:00",
    "4790c84ebf": "2026-11-13T19:57-03:00",
@@ -162,22 +142,13 @@
    "63ab3d3576": "2026-11-13T19:57-03:00",
    "2f25dd976e": "2026-11-13T19:57-03:00",
    "fd1a74827e": "2026-11-13T19:57-03:00",
-   "1894e5d998": "2026-11-13T19:57-03:00",
-   "148fbd5f57": "2026-11-13T19:57-03:00",
-   "2e6380784f": "2026-11-13T19:57-03:00",
-   "491661b739": "2026-11-13T19:57-03:00",
    "5d91c4ed82": "2026-11-13T19:57-03:00",
-   "aca8a060c8": "2026-11-13T19:57-03:00",
-   "4580c15678": "2026-11-13T19:57-03:00",
    "d4d1fd48fa": "2026-11-13T19:57-03:00",
-   "83a737ade8": "2026-11-13T19:57-03:00",
    "082b0313f7": "2026-11-13T19:57-03:00",
    "2d661e001a": "2026-11-13T19:57-03:00",
-   "83dda6d2ee": "2026-11-13T19:57-03:00",
    "4122ff73cc": "2026-11-13T19:57-03:00",
    "3ab12f2d38": "2026-11-13T19:57-03:00",
    "756b5f867f": "2026-11-13T19:57-03:00",
-   "245809ed2c": "2026-11-13T19:57-03:00",
    "01b589e0c6": "2026-11-13T19:57-03:00",
    "464635ae28": "2026-11-13T19:57-03:00",
    "7c1423df97": "2026-11-13T19:57-03:00",
@@ -205,24 +176,34 @@
    "0e063604e5": "2026-11-13T19:57-03:00",
    "dbfe2bce06": "2026-11-13T19:57-03:00",
    "fe7c9ae9fb": "2026-11-13T19:57-03:00",
-   "9fbfef1ccc": "2026-11-13T19:57-03:00"
+   "9fbfef1ccc": "2026-11-13T19:57-03:00",
+   "0a71956de0": "2026-11-14T00:19-03:00",
+   "838f702007": "2026-11-14T00:19-03:00",
+   "17df6a8ebe": "2026-11-14T00:19-03:00",
+   "fe3b758f71": "2026-11-14T00:19-03:00",
+   "4b663fc18f": "2026-11-14T00:19-03:00",
+   "a3a27de104": "2026-11-14T00:19-03:00",
+   "f3231ea8e6": "2026-11-14T00:19-03:00",
+   "ee0ff08613": "2026-11-14T00:19-03:00",
+   "ee37fd344a": "2026-11-14T00:19-03:00",
+   "fc875a0651": "2026-11-14T00:19-03:00",
+   "994b0cd99d": "2026-11-14T00:19-03:00"
   },
   "horas_nuevos": 24,
-  "llamadas_ia": 55,
+  "llamadas_ia": 6,
   "ia_sin_cupo": false,
   "ultima_completa": "2026-11-13T19:37-03:00",
-  "modo": "completa",
-  "paginas_revisadas": 50,
-  "busquedas": 107,
-  "fuentes_fijas": 10,
-  "errores": 12,
+  "modo": "rapida",
+  "paginas_revisadas": 0,
+  "busquedas": 0,
+  "fuentes_fijas": 9,
+  "errores": 2,
   "noticias_desde": "2026-11-13",
-  "noticias_viejas_descartadas": 291,
-  "redes_vistas": 6,
-  "generos_ia": 29,
-  "imagenes_encontradas": 6
+  "noticias_viejas_descartadas": 0,
+  "generos_ia": 0,
+  "imagenes_encontradas": 12
  },
- "total": 524,
+ "total": 470,
  "eventos": [
   {
    "titulo": "Mariposas y Polillas, Colores en Movimiento",
@@ -2176,44 +2157,6 @@
    "actualizado": "2026-11-07"
   },
   {
-   "titulo": "Exposición colectiva de egresados en el Foro de las Artes 2026",
-   "categoria": "museos",
-   "fecha_inicio": "2026-10-16",
-   "fecha_fin": "2026-11-13",
-   "hora": null,
-   "horario": null,
-   "lugar": "Satélite 218",
-   "direccion": "Huelén 10, depto 3b",
-   "comuna": "Providencia",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Exposición colectiva de egresados en el Foro de las Artes 2026. Muestra de arte contemporáneo en Satélite 218.",
-   "imagen": "https://static.arteinformado.com/resources/app/docs/evento/78/247578/images.jpg",
-   "fotos": null,
-   "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-santiago-409031_4_22",
-   "fuentes": [
-    {
-     "nombre": "ARTEINFORMADO",
-     "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-santiago-409031_4_22"
-    },
-    {
-     "nombre": "ARTEINFORMADO",
-     "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-de-arte-en-santiago-region-metropolitana-chile-409031_1"
-    },
-    {
-     "nombre": "ARTEINFORMADO",
-     "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-de-arte-en-chile-cl_1"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "59d1c0f24e",
-   "agregado": "2026-11-08",
-   "actualizado": "2026-11-08"
-  },
-  {
    "titulo": "Muestra de Ilustraciones “excelencia Italiana. el Traje Nuevo de Pinocho”",
    "categoria": "ilustracion",
    "fecha_inicio": "2026-10-20",
@@ -2526,36 +2469,6 @@
    "id": "e138b01837",
    "agregado": "2026-11-08",
    "actualizado": "2026-11-08"
-  },
-  {
-   "titulo": "Index, \"Formas de lo incierto\"",
-   "categoria": "museos",
-   "fecha_inicio": "2026-10-29",
-   "fecha_fin": "2026-11-13",
-   "hora": null,
-   "horario": null,
-   "lugar": "Sala Santiago Nattino de APECH",
-   "direccion": null,
-   "comuna": "Providencia",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratis",
-   "descripcion": "Una imagen puede permitirnos reconocer algo y, al mismo tiempo, volverlo extraño. El propio reflejo, una fotografía familiar, una cama o un paisaje conservan señales de lo que conocemos, pero también revelan una…",
-   "imagen": "https://chilecultura.gob.cl/uploads/cropped_Ket0XOr.png",
-   "fotos": null,
-   "url": "https://www.apech.cl/",
-   "fuentes": [
-    {
-     "nombre": "Chile Cultura",
-     "url": "https://chilecultura.gob.cl/events/40660/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "media",
-   "origen": "claude",
-   "id": "fbe7d8bf46",
-   "agregado": "2026-11-07",
-   "actualizado": "2026-11-13"
   },
   {
    "titulo": "XIII Bienal Internacional de Artes de Valparaíso: fantasías, fantasmas y fulgores II",
@@ -3786,40 +3699,6 @@
    "actualizado": "2026-11-10"
   },
   {
-   "titulo": "Paloma Salas en Puente Alto",
-   "categoria": "standup",
-   "fecha_inicio": "2026-11-11",
-   "fecha_fin": "2026-11-13",
-   "hora": null,
-   "horario": "Funciones: 11 y 13 de noviembre, 20:00 h",
-   "lugar": "Ruta 78",
-   "direccion": null,
-   "comuna": "Puente Alto",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "$14.300",
-   "descripcion": "Presentación de stand-up de Paloma Salas en Puente Alto.",
-   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/36c94a6ba5891f397d751d0c669a8bd666a2a3e7.png?1792622081",
-   "fotos": null,
-   "url": "https://www.jaranax.com/eventos/region-metropolitana-de-santiago/comedia",
-   "fuentes": [
-    {
-     "nombre": "JaranaX",
-     "url": "https://www.jaranax.com/eventos/region-metropolitana-de-santiago/comedia"
-    },
-    {
-     "nombre": "ticketplus.cl",
-     "url": "https://ticketplus.cl/taxons/stand-up-y-shows"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "9a44d09fcd",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
-  },
-  {
    "titulo": "Comienzo",
    "categoria": "teatro",
    "fecha_inicio": "2026-11-12",
@@ -4085,7 +3964,7 @@
    "origen": "ia",
    "id": "615e1e2ab1",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-13"
+   "actualizado": "2026-11-14"
   },
   {
    "titulo": "Mi hermano es un idiota",
@@ -4150,36 +4029,6 @@
    "id": "a00d6a1e64",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-13"
-  },
-  {
-   "titulo": "Show de comedia Hombre Pan en Combarbalá",
-   "categoria": "standup",
-   "fecha_inicio": "2026-11-12",
-   "fecha_fin": "2026-11-13",
-   "hora": "21:30",
-   "horario": null,
-   "lugar": "Castillo Lounge",
-   "direccion": null,
-   "comuna": "Combarbalá",
-   "ciudad": null,
-   "region": null,
-   "precio": "Desde $8.000",
-   "descripcion": "Evento solo para Mayores de 18 Años. 🔥 ¡EL HOMBRE PAN LLEGA A COMBARBALÁ! 🥖🎤 Prepárate para una noche de comedia, desorden y risas sin filtro junto a El Hombre Pan, en un show donde puede pasar cualquier cosa… y probablemente pase. 😂 Este j",
-   "imagen": "https://img.vamoh.cl/events/bfc15b05-174c-47fe-83d9-028187fe18cc.webp?v=e7ca521e",
-   "fotos": null,
-   "url": "https://vamoh.cl/events/show-de-comedia-ykc8a/",
-   "fuentes": [
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/show-de-comedia-ykc8a/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "datos-estructurados",
-   "id": "d498a8fcaf",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
   },
   {
    "titulo": "El último improvisador",
@@ -4280,36 +4129,6 @@
    "actualizado": "2026-11-13"
   },
   {
-   "titulo": "Conversatorio \"Piezas de Cerámica Nacional: Historia, coleccionismo y manufactura\"",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "12:00",
-   "horario": "12:00 - 13:30",
-   "lugar": "Centro Patrimonial Recoleta Dominica",
-   "direccion": "Recoleta 683",
-   "comuna": "Recoleta",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratis",
-   "descripcion": "Conversatorio sobre la historia, coleccionismo y manufactura de la cerámica nacional.",
-   "imagen": "https://www.artdec.gob.cl/sites/www.artdec.gob.cl/files/2026-11/24.26.14.01_1.jpg",
-   "fotos": null,
-   "url": "https://www.artdec.gob.cl/cartelera",
-   "fuentes": [
-    {
-     "nombre": "artdec.gob.cl",
-     "url": "https://www.artdec.gob.cl/cartelera"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "5c3a5d1b2b",
-   "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
-  },
-  {
    "titulo": "Festival Internacional del Cómic de Santiago llega a la Universidad Finis Terrae",
    "categoria": "ilustracion",
    "fecha_inicio": "2026-11-13",
@@ -4361,1107 +4180,6 @@
    "origen": "datos-estructurados",
    "id": "9324abff5f",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-13"
-  },
-  {
-   "titulo": "Noche de Museos en Andacollo",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "12:00",
-   "horario": null,
-   "lugar": "Andacollo",
-   "direccion": null,
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
-   "precio": "Gratis",
-   "descripcion": "Vive la Noche de Museos en Andacollo este 13 de noviembre. Recorre las salas patrimoniales y toda la historia minera con entrada libre.",
-   "imagen": "https://img.vamoh.cl/events/bff29014-46fa-4391-ac96-2c16d6ea9900.webp?v=3aceb5d8",
-   "fotos": null,
-   "url": "https://vamoh.cl/events/noche-de-museos-en-andacollo-lq7as/",
-   "fuentes": [
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/noche-de-museos-en-andacollo-lq7as/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "datos-estructurados",
-   "id": "0f5abf50ce",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
-  },
-  {
-   "titulo": "Noche de Museos 2026: Palacio de La Moneda",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "14:30",
-   "horario": "14:30 a 18:00 hrs",
-   "lugar": "Palacio de La Moneda",
-   "direccion": "Moneda S/N",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratis",
-   "descripcion": "Visita especial y recorrido por los patios interiores y espacios patrimoniales del Palacio de La Moneda en la Noche de Museos 2026.",
-   "imagen": "https://www.pudahuel.cl/wp-content/uploads/2026/11/Noche-de-museos.webp",
-   "fotos": null,
-   "url": "https://www.pudahuel.cl/noticias/2026/11/noche-de-museos-este-2026-el-imperdible-panorama-para-recorrer-la-cultura-de-noche/",
-   "fuentes": [
-    {
-     "nombre": "Pudahuel",
-     "url": "https://www.pudahuel.cl/noticias/2026/11/noche-de-museos-este-2026-el-imperdible-panorama-para-recorrer-la-cultura-de-noche/"
-    },
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/la-moneda-participara-en-la-noche-de-museos-2026-itgi9/"
-    },
-    {
-     "nombre": "Diario La Batalla de Maipú ®",
-     "url": "https://www.labatalla.cl/noche-de-museos-2026-los-panoramas-imperdibles/"
-    },
-    {
-     "nombre": "En Cancha",
-     "url": "https://www.encancha.cl/enlahora/movilidad/2026/11/12/red-movilidad-habilitara-recorrido-especial-por-noche-de-museos-2026-micro-llegara-a-25-espacios-patrimoniales-324953.html"
-    },
-    {
-     "nombre": "CNN Chile",
-     "url": "https://www.cnnchile.com/cultura/noche-de-museos-2026-revisa-los-panoramas-gratuitos-horarios-y-actividades-disponibles/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "0b7b9100c9",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-13"
-  },
-  {
-   "titulo": "El Caribefunk",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "15:00",
-   "horario": null,
-   "lugar": "Club Ambar",
-   "direccion": null,
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Concierto de El Caribefunk en Club Ambar.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://goallconcerts.com/es/cl",
-   "fuentes": [
-    {
-     "nombre": "GoAllConcerts",
-     "url": "https://goallconcerts.com/es/cl"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "83a737ade8",
-   "agregado": "2026-11-13",
-   "actualizado": "2026-11-13",
-   "genero": "cumbia"
-  },
-  {
-   "titulo": "Actividad – Noche de Museos 2026: Museo Inmersivo Las Condes",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "17:00",
-   "horario": "17:00–23:00",
-   "lugar": "Museo Inmersivo Las Condes",
-   "direccion": null,
-   "comuna": "Las Condes",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratis",
-   "descripcion": "Recorrido y actividades gratuitas en horario extendido por la Noche de Museos.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://nochedemuseos.cl",
-   "fuentes": [
-    {
-     "nombre": "https://www.facebook.com/teletrece",
-     "url": "https://www.t13.cl/noticia/te-puede-servir/noche-museos-2026-revisa-panoramas-gratis-disponibles-para-este-viernes-12-11-2026"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "9bec830aa5",
-   "agregado": "2026-11-13",
-   "actualizado": "2026-11-13"
-  },
-  {
-   "titulo": "Actividad – Noche de Museos 2026: Parque por la Paz Villa Grimaldi",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "17:00",
-   "horario": "17:00–23:00",
-   "lugar": "Parque por la Paz Villa Grimaldi",
-   "direccion": "Av. José Arrieta 8401",
-   "comuna": "Peñalolén",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratis",
-   "descripcion": "Jornada de puertas abiertas y actividades patrimoniales en la Noche de Museos.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://nochedemuseos.cl",
-   "fuentes": [
-    {
-     "nombre": "https://www.facebook.com/teletrece",
-     "url": "https://www.t13.cl/noticia/te-puede-servir/noche-museos-2026-revisa-panoramas-gratis-disponibles-para-este-viernes-12-11-2026"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "c5957ba10e",
-   "agregado": "2026-11-13",
-   "actualizado": "2026-11-13"
-  },
-  {
-   "titulo": "Bibliomóvil. Historias Sobre Ruedas – Noche de Museos 2026",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "17:00",
-   "horario": "17:00 a 22:00",
-   "lugar": "Bibliomóvil",
-   "direccion": null,
-   "comuna": "Concepción",
-   "ciudad": "Concepción",
-   "region": "Biobío",
-   "precio": "Gratis",
-   "descripcion": "Actividad cultural itinerante en la Noche de Museos.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://nochedemuseos.cl/actividades",
-   "fuentes": [
-    {
-     "nombre": "nochedemuseos.cl",
-     "url": "https://nochedemuseos.cl/actividades"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "a9f07da20d",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
-  },
-  {
-   "titulo": "Museo Nacional Aeronáutico y del Espacio – Noche de Museos 2026",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "17:00",
-   "horario": "17:00–21:30",
-   "lugar": "Museo Nacional Aeronáutico y del Espacio",
-   "direccion": "Avenida Pedro Aguirre Cerda 5000",
-   "comuna": "Cerrillos",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratuito",
-   "descripcion": "Apertura nocturna con exhibición de aviones históricos, maquetas y recreaciones históricas.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://www.labatalla.cl/noche-de-museos-2026-los-panoramas-imperdibles/",
-   "fuentes": [
-    {
-     "nombre": "Diario La Batalla de Maipú ®",
-     "url": "https://www.labatalla.cl/noche-de-museos-2026-los-panoramas-imperdibles/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "bfb712e997",
-   "agregado": "2026-11-12",
-   "actualizado": "2026-11-12"
-  },
-  {
-   "titulo": "Noche de Museos 2026",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "17:00",
-   "lugar": "Museos del centro de Santiago (Bellas Artes, Historia Natural, MAC, Museo de la Música, Precolombino)",
-   "direccion": "Parque Forestal, Quinta Normal y casco histórico",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratis",
-   "descripcion": "Museos abiertos de noche y gratis: ballena iluminada en Historia Natural (17–23 h), Bellas Artes nocturno, música en vivo con rock en el Museo de la Música y taller de animales míticos en el Precolombino.",
-   "imagen": "https://www.adnradio.cl/resizer/v2/PO6KB5GWZJDX5OBAI7QYY2O6MM.png?auth=ec2847470e39b6d6f91d168210eb1d58ceac1f01380cd0bf70b959ab1e0746db&quality=70&width=1200&height=675&focal=352,232",
-   "url": "https://www.adnradio.cl/2026/11/04/santiago-se-prepara-para-una-nueva-noche-de-museos-revisa-todos-panoramas-gratuitos-que-podras-visitar/",
-   "fuentes": [
-    {
-     "nombre": "24horas.cl",
-     "url": "https://www.24horas.cl/te-sirve/noche-de-museos-2026-panoramas-imperdibles-para-disfrutar-en-esta-nueva"
-    },
-    {
-     "nombre": "ADN Radio",
-     "url": "https://www.adnradio.cl/2026/11/04/santiago-se-prepara-para-una-nueva-noche-de-museos-revisa-todos-panoramas-gratuitos-que-podras-visitar/"
-    },
-    {
-     "nombre": "Diario y Radio Universidad Chile",
-     "url": "https://radio.uchile.cl/2026/10/27/noche-de-museos-2026-abre-su-convocatoria-para-sumar-actividades-culturales-en-todo-chile/"
-    },
-    {
-     "nombre": "Home - Radio Agricultura",
-     "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/noche-de-museos-llega-a-santiago-conoce-los-espacios-de-la-universidad-de-chile-que-abriran-gratis_20261106/"
-    },
-    {
-     "nombre": "Ministerio de las Culturas, las Artes y el Patrimonio",
-     "url": "https://www.cultura.gob.cl/agendacultural/ministerio-de-las-culturas-abre-inscripciones-para-noche-de-museos-2026/"
-    },
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/noche-de-museos-en-la-region-del-maule-uf9vp/"
-    },
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/noche-de-museos-4sl6m/"
-    },
-    {
-     "nombre": "Museo Chileno de Arte Precolombino",
-     "url": "https://museo.precolombino.cl/exposiciones-cartelera/cartelera/"
-    },
-    {
-     "nombre": "Suitip",
-     "url": "https://www.suitip.cl/panoramas/guia/gratis"
-    },
-    {
-     "nombre": "mnhn.gob.cl",
-     "url": "https://www.mnhn.gob.cl/cartelera"
-    },
-    {
-     "nombre": "mac.uchile.cl",
-     "url": "https://mac.uchile.cl/actividades/"
-    },
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/noche-de-museos-2abzw/"
-    },
-    {
-     "nombre": "nochedemuseos.cl",
-     "url": "https://nochedemuseos.cl/preguntas-frecuentes"
-    },
-    {
-     "nombre": "nochedemuseos.cl",
-     "url": "https://nochedemuseos.cl/actividades/73-visita-guiada"
-    },
-    {
-     "nombre": "artdec.gob.cl",
-     "url": "https://www.artdec.gob.cl/cartelera"
-    },
-    {
-     "nombre": "instagram.com",
-     "url": "https://www.instagram.com/reel/DfSzznWyE0U/"
-    },
-    {
-     "nombre": "nochedemuseos.cl",
-     "url": "https://nochedemuseos.cl/actividades/416-exposiciones-mnba"
-    },
-    {
-     "nombre": "nochedemuseos.cl",
-     "url": "https://nochedemuseos.cl/actividades/77-visita-guiada"
-    },
-    {
-     "nombre": "patrimoniocultural.gob.cl",
-     "url": "https://www.patrimoniocultural.gob.cl/noticias/ministerio-de-las-culturas-abre-inscripciones-para-noche-de-museos-2026"
-    },
-    {
-     "nombre": "mnhn.gob.cl",
-     "url": "https://www.mnhn.gob.cl/cartelera/noche-de-museos-2026"
-    },
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/noche-de-museos-en-mavi-uc-hosy6/"
-    },
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/noche-de-museos-2026-g52ns/"
-    },
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/noche-de-museos-en-museo-gabriela-mistral-de-vicuna-sunpr/"
-    },
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/noche-de-museos-c1plw/"
-    },
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/noche-de-museos-8s89j/"
-    },
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/noche-de-museos-2026-qy4d8/"
-    },
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/noche-de-museos-2026-dxy2p/"
-    },
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/noche-de-museos-2026-6z0rj/"
-    },
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/noche-de-museos-dcqu1/"
-    },
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/noche-de-museos-60-40-de-las-ultimas-composiciones-al-pateando-piedras-rsrr8/"
-    },
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/noche-de-museos-mediacion-teatral-violeta-en-escena-i2ne1/"
-    },
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/paisajes-de-luz-viva-el-palacio-lyon-se-ilumina-en-noche-de-museos-2026-kmj88/"
-    },
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/noche-de-museos-pn2f2/"
-    },
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/codigo-ancestral-teatro-evolucion-e-inteligencia-artificial-en-noche-de-museos-2026-2putx/"
-    },
-    {
-     "nombre": "Home - Radio Agricultura",
-     "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/noche-de-museos-2026-museo-de-bomberos-abrira-gratis-con-juegos-y-actividades-para-toda-la-familia_20261109/"
-    },
-    {
-     "nombre": "G5noticias",
-     "url": "https://g5noticias.cl/2026/11/09/con-juego-de-pistas-y-recorridos-mediados-el-mubo-se-suma-a-una-nueva-edicion-de-noche-de-museos/"
-    },
-    {
-     "nombre": "El Mostrador",
-     "url": "https://www.elmostrador.cl/datos-utiles/2026/11/09/noche-de-museos-2026-como-encontrar-museos-y-panoramas-gratuitos-para-este-viernes/"
-    },
-    {
-     "nombre": "G5noticias",
-     "url": "https://g5noticias.cl/2026/11/10/centro-historico-de-santiago-activa-su-red-gastronomica-para-noche-de-museos-y-suma-alianza-con-cabify/"
-    },
-    {
-     "nombre": "La Tercera",
-     "url": "https://www.latercera.com/servicios/noticia/cuando-es-la-noche-de-museos-y-como-buscar-actividades-gratuitas/"
-    },
-    {
-     "nombre": "CNN Chile",
-     "url": "https://www.cnnchile.com/cultura/noche-de-museos-2026-u-de-chile-sera-parte-con-exposiciones-talleres-gratis-musica-y-poesia/"
-    },
-    {
-     "nombre": "nochedemuseos.cl",
-     "url": "https://nochedemuseos.cl/actividades"
-    },
-    {
-     "nombre": "patrimoniocultural.gob.cl",
-     "url": "https://www.patrimoniocultural.gob.cl/noticias/noche-de-museos-2026-reunira-mas-de-350-espacios-culturales-en-todas-las-regiones-del-pais"
-    },
-    {
-     "nombre": "El Mostrador",
-     "url": "https://www.elmostrador.cl/datos-utiles/2026/11/10/noche-de-museos-2026-como-encontrar-museos-y-panoramas-gratuitos-para-este-viernes/"
-    },
-    {
-     "nombre": "Meteored Chile",
-     "url": "https://www.meteored.cl/noticias/ocio/noche-de-los-museos-2026-en-santiago-horarios-y-los-lugares-clave-para-visitar-gratis-este-viernes.html"
-    },
-    {
-     "nombre": "24horas.cl",
-     "url": "https://www.24horas.cl/te-sirve/noche-museos-revisa-que-abrira-santiago-descuentos-viajes"
-    },
-    {
-     "nombre": "tvn.cl",
-     "url": "https://www.tvn.cl/actualidad-y-tendencias/tendencias/noche-de-museos-2026-que-recintos-abriran-en-santiago-y-como-conseguir-descuento-en-transporte-"
-    },
-    {
-     "nombre": "The Clinic",
-     "url": "https://www.theclinic.cl/2026/11/11/museos-gratis-espectaculos-y-recorridos-nocturnos-los-panoramas-que-tendran-la-noche-de-museos-este-viernes/"
-    },
-    {
-     "nombre": "El Dínamo | Noticias de Chile y el mundo",
-     "url": "https://www.eldinamo.cl/entretencion/panoramas/2026/11/11/noche-de-museos-2026-las-actividades-disponibles-en-santiago-regiones-y-todo-lo-que-debes-saber/"
-    },
-    {
-     "nombre": "LOS40",
-     "url": "https://los40.cl/2026/11/11/noche-de-museos-2026-ocho-panoramas-gratuitos-para-disfrutar-este-viernes-en-santiago/"
-    },
-    {
-     "nombre": "La Tercera",
-     "url": "https://www.latercera.com/finde/noticia/la-noche-de-museos-tambien-sera-gastronomica-en-el-centro-de-santiago/"
-    },
-    {
-     "nombre": "La Nación",
-     "url": "https://www.lanacion.cl/con-juego-de-pistas-y-recorridos-mediados-el-mubo-se-suma-a-una-nueva-edicion-de-noche-de-museos/"
-    },
-    {
-     "nombre": "cultura.gob.cl",
-     "url": "https://www.cultura.gob.cl/agendacultural/noche-de-museos-2026-reunira-mas-de-350-espacios-culturales-en-todas-las-regiones-del-pais-con-mas-de-600-actividades-gratuitas/"
-    },
-    {
-     "nombre": "Diario La Batalla de Maipú ®",
-     "url": "https://www.labatalla.cl/noche-de-museos-2026-los-panoramas-imperdibles/"
-    },
-    {
-     "nombre": "La Tercera",
-     "url": "https://www.latercera.com/culto/noticia/noche-de-museos-2026-los-ocho-lugares-imperdibles-para-vivir-la-cultura-gratuita-este-viernes/"
-    },
-    {
-     "nombre": "En Cancha",
-     "url": "https://www.encancha.cl/enlahora/movilidad/2026/11/12/red-movilidad-habilitara-recorrido-especial-por-noche-de-museos-2026-micro-llegara-a-25-espacios-patrimoniales-324953.html"
-    },
-    {
-     "nombre": "CNN Chile",
-     "url": "https://www.cnnchile.com/cultura/noche-de-museos-2026-revisa-los-panoramas-gratuitos-horarios-y-actividades-disponibles/"
-    },
-    {
-     "nombre": "https://www.facebook.com/teletrece",
-     "url": "https://www.t13.cl/noticia/te-puede-servir/noche-museos-2026-revisa-panoramas-gratis-disponibles-para-este-viernes-12-11-2026"
-    },
-    {
-     "nombre": "Chilevisión",
-     "url": "https://www.chilevision.cl/noticias/te-ayuda/una-ballena-gigante-y-peces-luminosos-se-tomaran-santiago-por-noche-de-museos-2026-donde-y-a-que-hora-verlos/"
-    },
-    {
-     "nombre": "Disfruta Santiago",
-     "url": "https://disfrutasantiago.cl/noche-de-museos-2026-santiago-se-ilumina-con-arte-historia-y-cultura/"
-    },
-    {
-     "nombre": "BioBioChile - La Red de Prensa Más Grande de Chile",
-     "url": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/11/13/hoy-es-noche-de-museos-2026-revisa-que-hacer-en-santiago-y-como-acceder-a-descuentos-en-transporte.shtml"
-    },
-    {
-     "nombre": "tvn.cl",
-     "url": "https://www.tvn.cl/actualidad-y-tendencias/tendencias/noche-de-museos-2026-revisa-los-panoramas-y-actividades-gratuitas-en-todo"
-    },
-    {
-     "nombre": "Home - Radio Agricultura",
-     "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/noche-de-museos-2026-revisa-los-horarios-y-actividades-gratuitas-para-este-viernes_20261113/"
-    }
-   ],
-   "desde_imagen": true,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "09cd96f442",
-   "agregado": "2026-11-06",
-   "actualizado": "2026-11-13",
-   "horario": "Desde las 17:00; cada museo tiene su horario (gratis)",
-   "fotos": [
-    "https://www.mnhn.gob.cl/sites/www.mnhn.gob.cl/files/styles/4x3_mediano/public/2026-10/Nochemuseos.png?h=98f88c31&itok=GUofKna_"
-   ]
-  },
-  {
-   "titulo": "Posada del Corregidor – Noche de Museos 2026",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "17:00",
-   "horario": "17:00 a 21:00",
-   "lugar": "Posada del Corregidor",
-   "direccion": "Sazié 175",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratis",
-   "descripcion": "Apertura al público y actividades culturales gratuitas durante la Noche de Museos 2026.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://www.eldinamo.cl/entretencion/panoramas/2026/11/11/noche-de-museos-2026-las-actividades-disponibles-en-santiago-regiones-y-todo-lo-que-debes-saber/",
-   "fuentes": [
-    {
-     "nombre": "El Dínamo | Noticias de Chile y el mundo",
-     "url": "https://www.eldinamo.cl/entretencion/panoramas/2026/11/11/noche-de-museos-2026-las-actividades-disponibles-en-santiago-regiones-y-todo-lo-que-debes-saber/"
-    }
-   ],
-   "desde_imagen": true,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "75890a154b",
-   "agregado": "2026-11-11",
-   "actualizado": "2026-11-11"
-  },
-  {
-   "titulo": "Recorrido \"Santiago Museos a Cielo Abierto\"",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "17:00",
-   "horario": null,
-   "lugar": "Oficina de Turismo Plaza de Armas",
-   "direccion": "Plaza de Armas S/N",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Metropolitana de Santiago",
-   "precio": "Gratuito",
-   "descripcion": "Recorrido guiado caminando por el entorno de Plaza de Armas en torno a espacios culturales e históricos.",
-   "imagen": "https://nochedemuseos.cl/_ipx/f_webp&q_75&fit_cover&s_860x532/https://nochedemuseos-cultura-gob-cl.s3.amazonaws.com/imagenes/06c99f5f-7fb3-491c-a63a-81d1e1b84886.jpg",
-   "fotos": null,
-   "url": "https://docs.google.com/forms/d/e/1FAIpQLScKz8CiWuf-C-6QRF5MNNAQits9kEOEqAKXuLCxtDu0PZ_Hzg/viewform",
-   "fuentes": [
-    {
-     "nombre": "nochedemuseos.cl",
-     "url": "https://nochedemuseos.cl/actividades/164-recorrido-santiago-museos-a-cielo-abierto"
-    }
-   ],
-   "desde_imagen": true,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "57bf3a4361",
-   "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
-  },
-  {
-   "titulo": "Recorrido Patrimonial en el INBA – Noche de Museos 2026",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "17:30",
-   "horario": null,
-   "lugar": "Internado Nacional Barros Arana (INBA)",
-   "direccion": "Santo Domingo #3535",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Metropolitana de Santiago",
-   "precio": "Gratis",
-   "descripcion": "Recorrido patrimonial por los espacios del INBA y su museo en el marco de la Noche de Museos.",
-   "imagen": "https://nochedemuseos.cl/_ipx/f_webp&q_75&fit_cover&s_860x532/https://nochedemuseos-cultura-gob-cl.s3.amazonaws.com/imagenes/ff2d6cc9-8527-48fc-a10b-b4d40ac18a2a.png",
-   "fotos": null,
-   "url": "https://nochedemuseos.cl/actividades/39-recorrido-patrimonial-en-el-inba",
-   "fuentes": [
-    {
-     "nombre": "nochedemuseos.cl",
-     "url": "https://nochedemuseos.cl/actividades/39-recorrido-patrimonial-en-el-inba"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "83dda6d2ee",
-   "agregado": "2026-11-13",
-   "actualizado": "2026-11-13"
-  },
-  {
-   "titulo": "\"Cuentos de Carretera: Historias Sobre Dos Ruedas en 100 Palabras\" – Noche de Museos 2026",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "18:00",
-   "horario": "18:00 a 23:00",
-   "lugar": "Museo",
-   "direccion": null,
-   "comuna": "Lautaro",
-   "ciudad": "Lautaro",
-   "region": "La Araucanía",
-   "precio": "Gratis",
-   "descripcion": "Actividad cultural en museo local por la Noche de Museos 2026.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://nochedemuseos.cl/actividades",
-   "fuentes": [
-    {
-     "nombre": "nochedemuseos.cl",
-     "url": "https://nochedemuseos.cl/actividades"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "209acb1746",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
-  },
-  {
-   "titulo": "115 años de objetos e historias que nos conectan – Noche de Museos 2026",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "18:00",
-   "horario": null,
-   "lugar": "Plaza de Armas de Santiago",
-   "direccion": "Plaza de Armas",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratis",
-   "descripcion": "Muestra especial al aire libre del Museo Histórico Nacional en la Noche de Museos 2026.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://www.adnradio.cl/2026/11/13/noche-de-museos-2026-horarios-actividades-y-como-encontrar-los-panoramas-gratuitos-en-chile/",
-   "fuentes": [
-    {
-     "nombre": "ADN Radio",
-     "url": "https://www.adnradio.cl/2026/11/13/noche-de-museos-2026-horarios-actividades-y-como-encontrar-los-panoramas-gratuitos-en-chile/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "35da1225ac",
-   "agregado": "2026-11-13",
-   "actualizado": "2026-11-13"
-  },
-  {
-   "titulo": "Charla Sobre Avalanchas – Noche de Museos 2026",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "18:00",
-   "horario": "18:00 a 20:00",
-   "lugar": "Museo",
-   "direccion": null,
-   "comuna": "Los Andes",
-   "ciudad": "Los Andes",
-   "region": "Valparaíso",
-   "precio": "Gratis",
-   "descripcion": "Charla temática en museo local en el marco de la Noche de Museos.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://nochedemuseos.cl/actividades",
-   "fuentes": [
-    {
-     "nombre": "nochedemuseos.cl",
-     "url": "https://nochedemuseos.cl/actividades"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "661823c2b5",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
-  },
-  {
-   "titulo": "Concierto y lecturas mistralianas – Noche de Museos 2026",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "18:00",
-   "horario": "Desde las 18:00 hrs",
-   "lugar": "Palacio Pereira",
-   "direccion": null,
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratuito",
-   "descripcion": "Concierto de guitarras y lecturas de Gabriela Mistral en horario extendido por la Noche de Museos.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://nochedemuseos.cl",
-   "fuentes": [
-    {
-     "nombre": "Meteored Chile",
-     "url": "https://www.meteored.cl/noticias/ocio/noche-de-los-museos-2026-en-santiago-horarios-y-los-lugares-clave-para-visitar-gratis-este-viernes.html"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "cf6fdc4d10",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
-  },
-  {
-   "titulo": "Demostración en vivo de modelado en cerámica – Noche de Museos 2026",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "18:00",
-   "horario": "18:00 a 22:00 horas",
-   "lugar": "Espacio cultural",
-   "direccion": "Constitución 8",
-   "comuna": "Providencia",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratis",
-   "descripcion": "Demostración de modelado en cerámica por la Noche de Museos 2026.",
-   "imagen": "https://nochedemuseos.cl/_ipx/f_webp&q_75&fit_cover&s_860x532/https://nochedemuseos-cultura-gob-cl.s3.amazonaws.com/imagenes/39283192-cb8f-4a46-96e9-fdf33d5ee853.jpg",
-   "fotos": null,
-   "url": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/11/13/hoy-es-noche-de-museos-2026-revisa-que-hacer-en-santiago-y-como-acceder-a-descuentos-en-transporte.shtml",
-   "fuentes": [
-    {
-     "nombre": "BioBioChile - La Red de Prensa Más Grande de Chile",
-     "url": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/11/13/hoy-es-noche-de-museos-2026-revisa-que-hacer-en-santiago-y-como-acceder-a-descuentos-en-transporte.shtml"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "1894e5d998",
-   "agregado": "2026-11-13",
-   "actualizado": "2026-11-13"
-  },
-  {
-   "titulo": "Exposición “Fenómenos Vegetales” NEORURAL de Jorge Zambrano – Noche de Museos 2026",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "18:00",
-   "horario": "18:00 a 03:00",
-   "lugar": "Sala de exposición museográfica",
-   "direccion": null,
-   "comuna": "Concepción",
-   "ciudad": "Concepción",
-   "region": "Biobío",
-   "precio": "Gratis",
-   "descripcion": "Exposición de arte contemporáneo en la Noche de Museos 2026.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://nochedemuseos.cl/actividades",
-   "fuentes": [
-    {
-     "nombre": "nochedemuseos.cl",
-     "url": "https://nochedemuseos.cl/actividades"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "f492cc3527",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
-  },
-  {
-   "titulo": "Museo de la Música Chilena – Noche de Museos 2026",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "18:00",
-   "horario": "Desde las 18:00 horas",
-   "lugar": "Museo de la Música Chilena",
-   "direccion": "Vasconia 1523-1605",
-   "comuna": "Providencia",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratuito",
-   "descripcion": "Velada con colecciones de instrumentos, archivos históricos y actuaciones en vivo en el marco de la Noche de Museos.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://www.nochedemuseos.cl",
-   "fuentes": [
-    {
-     "nombre": "LOS40",
-     "url": "https://los40.cl/2026/11/11/noche-de-museos-2026-ocho-panoramas-gratuitos-para-disfrutar-este-viernes-en-santiago/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "e68073d1ed",
-   "agregado": "2026-11-11",
-   "actualizado": "2026-11-11"
-  },
-  {
-   "titulo": "Presentación de chinchineros y organilleros – Noche de Museos 2026",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "18:00",
-   "horario": "18:00 a 19:00 horas",
-   "lugar": "Paseo Lourdes (frontis Basílica de Lourdes)",
-   "direccion": "Paseo Lourdes",
-   "comuna": "Quinta Normal",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratis",
-   "descripcion": "Presentación tradicional en el marco de la Noche de Museos 2026.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/11/13/hoy-es-noche-de-museos-2026-revisa-que-hacer-en-santiago-y-como-acceder-a-descuentos-en-transporte.shtml",
-   "fuentes": [
-    {
-     "nombre": "BioBioChile - La Red de Prensa Más Grande de Chile",
-     "url": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/11/13/hoy-es-noche-de-museos-2026-revisa-que-hacer-en-santiago-y-como-acceder-a-descuentos-en-transporte.shtml"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "148fbd5f57",
-   "agregado": "2026-11-13",
-   "actualizado": "2026-11-13"
-  },
-  {
-   "titulo": "Recorrido Nocturno Barrio Yungay y Quinta Normal – Noche de Museos 2026",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "18:00",
-   "horario": "18:00 a 21:00 hrs",
-   "lugar": "Salida Metro Quinta Normal",
-   "direccion": "Metro Quinta Normal",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratuito",
-   "descripcion": "Recorrido mediado por los museos Artequín, de la Educación Gabriela Mistral y Taller en la Noche de Museos.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://nochedemuseos.cl",
-   "fuentes": [
-    {
-     "nombre": "Meteored Chile",
-     "url": "https://www.meteored.cl/noticias/ocio/noche-de-los-museos-2026-en-santiago-horarios-y-los-lugares-clave-para-visitar-gratis-este-viernes.html"
-    },
-    {
-     "nombre": "BioBioChile - La Red de Prensa Más Grande de Chile",
-     "url": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/11/13/hoy-es-noche-de-museos-2026-revisa-que-hacer-en-santiago-y-como-acceder-a-descuentos-en-transporte.shtml"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "1f98d7f8f7",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-13"
-  },
-  {
-   "titulo": "Recorridos históricos y culturales – Noche de Museos 2026",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "18:00",
-   "horario": "18:00 a 23:00 hrs",
-   "lugar": "Cementerio General de Santiago",
-   "direccion": "Profesor Alberto Zañartu 951",
-   "comuna": "Recoleta",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratuito",
-   "descripcion": "Recorridos guiados nocturnos e iluminación especial en el marco de la Noche de Museos 2026.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://nochedemuseos.cl",
-   "fuentes": [
-    {
-     "nombre": "Meteored Chile",
-     "url": "https://www.meteored.cl/noticias/ocio/noche-de-los-museos-2026-en-santiago-horarios-y-los-lugares-clave-para-visitar-gratis-este-viernes.html"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "da20b86513",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
-  },
-  {
-   "titulo": "Visita guiada al Museo Geológico – Noche de Museos 2026",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "18:00",
-   "horario": "18:00 a 21:30",
-   "lugar": "Museo Geológico",
-   "direccion": null,
-   "comuna": "Antofagasta",
-   "ciudad": "Antofagasta",
-   "region": "Antofagasta",
-   "precio": "Gratis",
-   "descripcion": "Visita guiada especial por la Noche de Museos 2026.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://nochedemuseos.cl/actividades",
-   "fuentes": [
-    {
-     "nombre": "nochedemuseos.cl",
-     "url": "https://nochedemuseos.cl/actividades"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "7a39d3cf94",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
-  },
-  {
-   "titulo": "Visita Nocturna Guiada por Astrónomos UC (Turno 1)",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "18:30",
-   "horario": null,
-   "lugar": "Observatorio Foster",
-   "direccion": "Calle Manuel Foster S/N, Cerro San Cristóbal",
-   "comuna": "Providencia",
-   "ciudad": "Santiago",
-   "region": "Metropolitana de Santiago",
-   "precio": "Gratuito (con inscripción previa)",
-   "descripcion": "Visita guiada nocturna por astrónomos UC en el Observatorio Foster en el marco de la Noche de Museos.",
-   "imagen": "https://nochedemuseos.cl/_nuxt/espacios-actividades-default.B_y5nZ1k.jpg",
-   "fotos": null,
-   "url": "https://observatoriofoster.com/noche-de-museos-2026/#inscripcion",
-   "fuentes": [
-    {
-     "nombre": "nochedemuseos.cl",
-     "url": "https://nochedemuseos.cl/actividades/496-visita-nocturna-guiada-por-astronomos-uc-turno-1"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "6e9935dc07",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
-  },
-  {
-   "titulo": "Anime Symphony en Teatro Parque Cousiño",
-   "categoria": "anime",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "19:00",
-   "horario": null,
-   "lugar": "Teatro Parque Cousiño",
-   "direccion": "San Ignacio de Loyola 1249",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Desde $22.990",
-   "descripcion": "Concierto sinfónico con las mejores bandas sonoras de tus animes favoritos interpretadas por el Ensamble FandomQuest. ¡Ven con tu cosplay!",
-   "imagen": "https://images.portaldisc.com/l/eventos/360/21858.jpg?t=1791452294",
-   "fotos": null,
-   "url": "https://portaldisc.com/evento/animesymphonychile",
-   "fuentes": [
-    {
-     "nombre": "portaldisc.com",
-     "url": "https://portaldisc.com/evento/animesymphonychile"
-    },
-    {
-     "nombre": "Keai",
-     "url": "https://keai.cl/evento/anime-symphony-en-teatro-parque-cousino-17048"
-    },
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/anime-symphony-en-teatro-parque-cousino-1d8rt/"
-    }
-   ],
-   "desde_imagen": true,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "4d5f2940d2",
-   "agregado": "2026-11-07",
-   "actualizado": "2026-11-08"
-  },
-  {
-   "titulo": "Casa – Taller Museo Sonoro – Organológico – Noche de Museos 2026",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "19:00",
-   "horario": "19:00–21:00",
-   "lugar": "Casa – Taller Museo Sonoro – Organológico",
-   "direccion": "Julio Sosa 1502",
-   "comuna": "Maipú",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratuito",
-   "descripcion": "Recorridos guiados y exhibiciones de su archivo sonoro sobre instrumentos latinoamericanos y organología prehispánica.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://www.labatalla.cl/noche-de-museos-2026-los-panoramas-imperdibles/",
-   "fuentes": [
-    {
-     "nombre": "Diario La Batalla de Maipú ®",
-     "url": "https://www.labatalla.cl/noche-de-museos-2026-los-panoramas-imperdibles/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "e093b4d49c",
-   "agregado": "2026-11-12",
-   "actualizado": "2026-11-12"
-  },
-  {
-   "titulo": "Lanzamiento Exposición \"Cuidemos a Chaiguao\" – Noche de Museos 2026",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "19:00",
-   "horario": "19:00 a 19:30",
-   "lugar": "Museo Municipal de Quellón",
-   "direccion": null,
-   "comuna": "Quellón",
-   "ciudad": "Quellón",
-   "region": "Los Lagos",
-   "precio": "Gratis",
-   "descripcion": "Lanzamiento de exposición en el marco de la Noche de Museos 2026.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://nochedemuseos.cl/actividades",
-   "fuentes": [
-    {
-     "nombre": "nochedemuseos.cl",
-     "url": "https://nochedemuseos.cl/actividades"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "4d3b01dafb",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
-  },
-  {
-   "titulo": "Noche de Museos 2026: Museo Interactivo Mirador",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "19:00",
-   "horario": "19:00–21:45",
-   "lugar": "Museo Interactivo Mirador (MIM)",
-   "direccion": "Avenida Punta Arenas 6711",
-   "comuna": "La Granja",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratuito",
-   "descripcion": "El MIM abre en horario nocturno por la Noche de Museos 2026 con entrada gratuita y experiencias interactivas especiales.",
-   "imagen": "https://enduring-authority-d160bd805e.media.strapiapp.com/2026_03_21_Dia_de_la_Astronomia_72_725476d9c2.JPG",
-   "fotos": null,
-   "url": "https://mim.cl",
-   "fuentes": [
-    {
-     "nombre": "mim.cl",
-     "url": "https://mim.cl/eventos/noche-de-museos-este-viernes-abrimos-en-horario-nocturno-y-con-entrada-gratuita"
-    },
-    {
-     "nombre": "En Cancha",
-     "url": "https://www.encancha.cl/enlahora/movilidad/2026/11/12/red-movilidad-habilitara-recorrido-especial-por-noche-de-museos-2026-micro-llegara-a-25-espacios-patrimoniales-324953.html"
-    },
-    {
-     "nombre": "CNN Chile",
-     "url": "https://www.cnnchile.com/cultura/noche-de-museos-2026-revisa-los-panoramas-gratuitos-horarios-y-actividades-disponibles/"
-    },
-    {
-     "nombre": "https://www.facebook.com/teletrece",
-     "url": "https://www.t13.cl/noticia/te-puede-servir/noche-museos-2026-revisa-panoramas-gratis-disponibles-para-este-viernes-12-11-2026"
-    },
-    {
-     "nombre": "BioBioChile - La Red de Prensa Más Grande de Chile",
-     "url": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/11/13/hoy-es-noche-de-museos-2026-revisa-que-hacer-en-santiago-y-como-acceder-a-descuentos-en-transporte.shtml"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "8a43b8fea5",
-   "agregado": "2026-11-10",
    "actualizado": "2026-11-13"
   },
   {
@@ -5545,126 +4263,6 @@
    "actualizado": "2026-11-10"
   },
   {
-   "titulo": "Noche de Museos y patrimonio en Andacollo – Noche de Museos 2026",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "19:30",
-   "horario": "19:30 a 20:30",
-   "lugar": "Museo",
-   "direccion": null,
-   "comuna": "Andacollo",
-   "ciudad": "Andacollo",
-   "region": "Coquimbo",
-   "precio": "Gratis",
-   "descripcion": "Actividad patrimonial en Andacollo por la Noche de Museos.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://nochedemuseos.cl/actividades",
-   "fuentes": [
-    {
-     "nombre": "nochedemuseos.cl",
-     "url": "https://nochedemuseos.cl/actividades"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "64bb8d7ecf",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
-  },
-  {
-   "titulo": "Torneo Pokémon TCG del Sobre",
-   "categoria": "juegos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "19:30",
-   "horario": null,
-   "lugar": "Trainers League",
-   "direccion": null,
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Metropolitana",
-   "precio": "Desde $6.000",
-   "descripcion": "Torneo de cartas Pokémon TCG en formato estándar con entrega de sobres Delta y liga, además de premios al top.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://www.trainersleague.cl/eventos",
-   "fuentes": [
-    {
-     "nombre": "trainersleague.cl",
-     "url": "https://www.trainersleague.cl/eventos"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "dc7e2a27ca",
-   "agregado": "2026-11-09",
-   "actualizado": "2026-11-09"
-  },
-  {
-   "titulo": "¡Que comience la aventura! Una noche de patrimonio. – Noche de Museos 2026",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "19:30",
-   "horario": "19:30 a 21:00",
-   "lugar": "Sala de exposición museográfica",
-   "direccion": null,
-   "comuna": "Iquique",
-   "ciudad": "Iquique",
-   "region": "Tarapacá",
-   "precio": "Gratis",
-   "descripcion": "Jornada patrimonial en sala de exposición por la Noche de Museos.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://nochedemuseos.cl/actividades",
-   "fuentes": [
-    {
-     "nombre": "nochedemuseos.cl",
-     "url": "https://nochedemuseos.cl/actividades"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "3b8684cd1d",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
-  },
-  {
-   "titulo": "Amarre: Desahogo, Comedia y Tarot en The Botanic Coffee 13 de Noviembre 20 Hrs",
-   "categoria": "standup",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "20:00",
-   "horario": null,
-   "lugar": "The Botanic Coffee",
-   "direccion": null,
-   "comuna": "Ñuñoa",
-   "ciudad": null,
-   "region": null,
-   "precio": "Desde $6.900",
-   "descripcion": "AMARRE: DESAHOGO, COMEDIA Y TAROT EN THE BOTANIC COFFEE 13 DE NOVIEMBRE 20 HRS",
-   "imagen": "https://img.vamoh.cl/events/d5237fac-9264-4e22-b930-9f29c5bd4b0b.webp?v=76f4b2d0",
-   "fotos": null,
-   "url": "https://vamoh.cl/events/amarre-desahogo-comedia-y-tarot-en-the-botanic-coffee-13-de-noviembre-20-hrs-57vvk/",
-   "fuentes": [
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/amarre-desahogo-comedia-y-tarot-en-the-botanic-coffee-13-de-noviembre-20-hrs-57vvk/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "datos-estructurados",
-   "id": "dfa6e0272b",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
-  },
-  {
    "titulo": "Caballo",
    "categoria": "teatro",
    "fecha_inicio": "2026-11-13",
@@ -5693,159 +4291,6 @@
    "id": "318a44c02c",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-12"
-  },
-  {
-   "titulo": "Concierto Cielos 2026",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "20:00",
-   "horario": null,
-   "lugar": "Centro Cultural Huechuraba",
-   "direccion": "Avenida Recoleta 5660",
-   "comuna": "Huechuraba",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Iniciativa que combina música en vivo, arte visual y divulgación científica con la participación de destacadas investigadoras.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://www.chicureohoy.cl/panoramas/que-hacer-este-fin-de-semana-conoce-los-panoramas-del-13-al-15-de-noviembre-en-la-rm/",
-   "fuentes": [
-    {
-     "nombre": "Chicureo Hoy",
-     "url": "https://www.chicureohoy.cl/panoramas/que-hacer-este-fin-de-semana-conoce-los-panoramas-del-13-al-15-de-noviembre-en-la-rm/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "aca8a060c8",
-   "agregado": "2026-11-13",
-   "actualizado": "2026-11-13",
-   "genero": "otros"
-  },
-  {
-   "titulo": "Concierto de Los Santos Dumont",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "20:00",
-   "horario": null,
-   "lugar": "Teatro Mauri SCD",
-   "direccion": null,
-   "comuna": "Valparaíso",
-   "ciudad": "Valparaíso",
-   "region": "Región de Valparaíso",
-   "precio": null,
-   "descripcion": "La banda penquista presenta 'Canciones Chilenas', reingresando en clásicos fundamentales de la música nacional.",
-   "imagen": "https://images.portaldisc.com/l/eventos/360/20427.jpg?t=1790179066",
-   "fotos": null,
-   "url": "https://portaltickets.cl",
-   "fuentes": [
-    {
-     "nombre": "tvn.cl",
-     "url": "https://www.tvn.cl/hora-25/panoramas-de-fin-de-semana-revisa-las-fechas-y-entradas-para-filsa-"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "245809ed2c",
-   "agregado": "2026-11-13",
-   "actualizado": "2026-11-13",
-   "genero": "indie"
-  },
-  {
-   "titulo": "Crónicas Desquiciadas",
-   "categoria": "teatro",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "20:00",
-   "horario": "Jueves a sábado a las 20:00 hrs",
-   "lugar": "Teatro Mori",
-   "direccion": null,
-   "comuna": null,
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Comedia teatral en cartelera en Teatro Mori.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://teatromori.com/cartelera",
-   "fuentes": [
-    {
-     "nombre": "Teatro Mori",
-     "url": "https://teatromori.com/cartelera"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "media",
-   "origen": "ia",
-   "id": "6b98e9af59",
-   "agregado": "2026-11-13",
-   "actualizado": "2026-11-13"
-  },
-  {
-   "titulo": "Dangerous, Voidkult, Hela y Rogelio Ugarte",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "20:00",
-   "horario": null,
-   "lugar": "Espacio Cultural La Juguera",
-   "direccion": null,
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Desde $3.500",
-   "descripcion": "Tocata de thrash metal en vivo con las bandas Dangerous, Voidkult, Hela y Rogelio Ugarte.",
-   "imagen": "https://salirsantiago.com/og.png",
-   "fotos": null,
-   "url": "https://salirsantiago.com/panorama/metal-forces-total-thrash-36eda748",
-   "fuentes": [
-    {
-     "nombre": "Salir Santiago",
-     "url": "https://salirsantiago.com/panorama/metal-forces-total-thrash-36eda748"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "72560091bb",
-   "agregado": "2026-11-09",
-   "actualizado": "2026-11-09",
-   "genero": "metal"
-  },
-  {
-   "titulo": "He Hare Hue Tao'a i te Pō – Noche de Museos 2026",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "20:00",
-   "horario": "20:00 a 22:30",
-   "lugar": "Museo",
-   "direccion": null,
-   "comuna": "Isla de Pascua",
-   "ciudad": "Isla de Pascua",
-   "region": "Valparaíso",
-   "precio": "Gratis",
-   "descripcion": "Actividad patrimonial en el museo de Isla de Pascua por la Noche de Museos.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://nochedemuseos.cl/actividades",
-   "fuentes": [
-    {
-     "nombre": "nochedemuseos.cl",
-     "url": "https://nochedemuseos.cl/actividades"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "7b65c300fb",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
   },
   {
    "titulo": "Historia de amor para un alma vieja",
@@ -5942,387 +4387,6 @@
    "actualizado": "2026-11-12"
   },
   {
-   "titulo": "Noche de comedia",
-   "categoria": "standup",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "20:00",
-   "horario": null,
-   "lugar": "Espacio La Sala",
-   "direccion": null,
-   "comuna": "Santiago",
-   "ciudad": null,
-   "region": null,
-   "precio": "Desde $5.000",
-   "descripcion": "Noche de Comedia en La Sala Prepárate para una noche imperdible de risas y buen humor con un cartel de lujo. Ven a desconectarte y a pasar un gran momento en nuestro espacio de comedia. Viñeta Comidistas en escena: Matías, Jaccia, Héctor y",
-   "imagen": "https://img.vamoh.cl/events/3d2b47bc-897d-4419-bf56-3da809997477.webp?v=49885a51",
-   "fotos": null,
-   "url": "https://vamoh.cl/events/noche-de-comedia-jguhq/",
-   "fuentes": [
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/noche-de-comedia-jguhq/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "datos-estructurados",
-   "id": "6696902819",
-   "agregado": "2026-11-11",
-   "actualizado": "2026-11-11"
-  },
-  {
-   "titulo": "Noches de Comedia",
-   "categoria": "standup",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "20:00",
-   "horario": null,
-   "lugar": "Casa Irarrázaval",
-   "direccion": null,
-   "comuna": "Ñuñoa",
-   "ciudad": null,
-   "region": null,
-   "precio": "Desde $5.000",
-   "descripcion": "Ven a reir este viernes 13 de noviembre a una nueva fecha de Noches de comedia Panoramazo para reir y terminar la semana de buena gana Ven a reir junto a: -Benja Castro @benjajacastro -Eka Lorraine @eka_lorraine -Nacho Quezada @queso.quezad",
-   "imagen": "https://img.vamoh.cl/events/3e02861b-d163-4faf-9ed4-6b56e368ce8e.webp?v=6ec40992",
-   "fotos": null,
-   "url": "https://vamoh.cl/events/noches-de-comedia-wiq9m/",
-   "fuentes": [
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/noches-de-comedia-wiq9m/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "datos-estructurados",
-   "id": "c615559210",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
-  },
-  {
-   "titulo": "Recreación Histórica Ferroportuaria – Noche de Museos 2026",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "20:00",
-   "horario": "20:00 a 21:45",
-   "lugar": "Centro de difusión sobre arqueología",
-   "direccion": null,
-   "comuna": "Los Vilos",
-   "ciudad": "Los Vilos",
-   "region": "Coquimbo",
-   "precio": "Gratis",
-   "descripcion": "Recreación histórica en centro de difusión durante la Noche de Museos.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://nochedemuseos.cl/actividades",
-   "fuentes": [
-    {
-     "nombre": "nochedemuseos.cl",
-     "url": "https://nochedemuseos.cl/actividades"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "52ba4c3ecc",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
-  },
-  {
-   "titulo": "Seo2 vs Juan Sativo",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "20:00",
-   "horario": null,
-   "lugar": "Sala Master",
-   "direccion": "Miguel Claro 509",
-   "comuna": "Providencia",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "$7.000",
-   "descripcion": "Concierto de rap nacional con Seo2 y Juan Sativo en Sala Master.",
-   "imagen": "https://pmc5mmx4n3rfjmwd.public.blob.vercel-storage.com/events/ig-full/Der-6GLBZ7E.jpg",
-   "fotos": null,
-   "url": "https://eventospaloma.cl/panoramas/indie/santiago",
-   "fuentes": [
-    {
-     "nombre": "Paloma",
-     "url": "https://eventospaloma.cl/panoramas/indie/santiago"
-    }
-   ],
-   "desde_imagen": true,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "434e570eb6",
-   "agregado": "2026-11-13",
-   "actualizado": "2026-11-13",
-   "genero": "hiphop"
-  },
-  {
-   "titulo": "Show de Stand up-Sala de profes- Viernes 13 Noviembre 20 hrs",
-   "categoria": "standup",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "20:00",
-   "horario": "Funciones: 13 de noviembre",
-   "lugar": "El Cachafaz",
-   "direccion": "Av. Italia 1679",
-   "comuna": "Ñuñoa",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Desde $8.800",
-   "descripcion": "Show de Stand up Sala Buenos Aires DESCRIPCIÓN DEL SHOW SALA DE PROFES – REUNIÓN EXTRAORDINARIA ¡ATENCIÓN, CUERPO DOCENTE Y APODERADOS INFILTRADOS! La Señorita Muñoz ha convocado a una nueva reunión extraordinaria y, como siempre, nadie sab",
-   "imagen": "https://img.vamoh.cl/events/14ede52e-d45e-45b9-a87a-c7ed61311912.webp?v=5fe4515b",
-   "fotos": null,
-   "url": "https://vamoh.cl/events/show-de-stand-up-sala-de-profes-viernes-13-noviembre-20-hrs-hwd00/",
-   "fuentes": [
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/show-de-stand-up-sala-de-profes-viernes-13-noviembre-20-hrs-hwd00/"
-    },
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/show-de-stand-up-sala-de-profes-viernes-13-noviembre-20-30hrs-niy9a/"
-    },
-    {
-     "nombre": "El Cachafaz",
-     "url": "https://www.elcachafaz.cl/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "datos-estructurados",
-   "id": "7f206d1602",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
-  },
-  {
-   "titulo": "Bombo Fica - 40 Años y No Me Di Cuenta",
-   "categoria": "standup",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "21:00",
-   "horario": null,
-   "lugar": "Estacionamiento Mall Arauco Quilicura",
-   "direccion": null,
-   "comuna": "Quilicura",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Desde $10.000",
-   "descripcion": "Celebración de trayectoria con el humor de Bombo Fica.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://www.jaranax.com/eventos/region-metropolitana-de-santiago/comedia",
-   "fuentes": [
-    {
-     "nombre": "JaranaX",
-     "url": "https://www.jaranax.com/eventos/region-metropolitana-de-santiago/comedia"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "126185128e",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
-  },
-  {
-   "titulo": "MALA LECHE",
-   "categoria": "standup",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "21:00",
-   "horario": null,
-   "lugar": "Los Pleimovil",
-   "direccion": null,
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Show de stand-up comedy 'Mala Leche' en Los Pleimovil.",
-   "imagen": "https://veamos.cl/veamos_img/ev_6aa1bc98881903.26726457.jpg",
-   "fotos": null,
-   "url": "https://veamos.cl/agenda/standup",
-   "fuentes": [
-    {
-     "nombre": "Veamos.cl",
-     "url": "https://veamos.cl/agenda/standup"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "90c1251a4a",
-   "agregado": "2026-11-13",
-   "actualizado": "2026-11-13"
-  },
-  {
-   "titulo": "Mala Leche - Impro humor negro",
-   "categoria": "standup",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "21:00",
-   "horario": "Viernes a las 21:00 hrs",
-   "lugar": "Teatro Lospleimovil",
-   "direccion": "Dardignac #91",
-   "comuna": "Recoleta",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Desde $7.000",
-   "descripcion": "Espectáculo de improvisación con humor negro por Lospleimovil.",
-   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/shares/823204218d8bfc3c0e6ad679eeb97c23ac7b946b.jpg?1788141638",
-   "fotos": null,
-   "url": "https://www.jaranax.com/eventos/region-metropolitana-de-santiago/comedia",
-   "fuentes": [
-    {
-     "nombre": "JaranaX",
-     "url": "https://www.jaranax.com/eventos/region-metropolitana-de-santiago/comedia"
-    },
-    {
-     "nombre": "lospleimovil.cl",
-     "url": "https://lospleimovil.cl/cartelera/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "9c87353130",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
-  },
-  {
-   "titulo": "Museo Arqueológico de La Serena – Noche de Museos 2026",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "21:00",
-   "horario": "21:00–22:00",
-   "lugar": "Museo Arqueológico de La Serena",
-   "direccion": "Cordovez esq. Cienfuegos",
-   "comuna": "La Serena",
-   "ciudad": "La Serena",
-   "region": "Coquimbo",
-   "precio": "Gratis",
-   "descripcion": "Conversaciones acerca del origen y la historia en el marco de la Noche de Museos 2026.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://www.tvn.cl/actualidad-y-tendencias/tendencias/noche-de-museos-2026-revisa-los-panoramas-y-actividades-gratuitas-en-todo",
-   "fuentes": [
-    {
-     "nombre": "tvn.cl",
-     "url": "https://www.tvn.cl/actualidad-y-tendencias/tendencias/noche-de-museos-2026-revisa-los-panoramas-y-actividades-gratuitas-en-todo"
-    },
-    {
-     "nombre": "Home - Radio Agricultura",
-     "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/noche-de-museos-2026-revisa-los-horarios-y-actividades-gratuitas-para-este-viernes_20261113/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "2e6380784f",
-   "agregado": "2026-11-13",
-   "actualizado": "2026-11-13"
-  },
-  {
-   "titulo": "Museo de Sitio Castillo de Niebla – Noche de Museos 2026",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "21:00",
-   "horario": "21:00–23:00",
-   "lugar": "Museo de Sitio Castillo de Niebla",
-   "direccion": "Camino Niebla s/n",
-   "comuna": "Valdivia",
-   "ciudad": "Valdivia",
-   "region": "Los Ríos",
-   "precio": "Gratis",
-   "descripcion": "Presentación del «Relato de un Castillo Iluminado» por la Noche de Museos 2026.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://www.tvn.cl/actualidad-y-tendencias/tendencias/noche-de-museos-2026-revisa-los-panoramas-y-actividades-gratuitas-en-todo",
-   "fuentes": [
-    {
-     "nombre": "tvn.cl",
-     "url": "https://www.tvn.cl/actualidad-y-tendencias/tendencias/noche-de-museos-2026-revisa-los-panoramas-y-actividades-gratuitas-en-todo"
-    },
-    {
-     "nombre": "Home - Radio Agricultura",
-     "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/noche-de-museos-2026-revisa-los-horarios-y-actividades-gratuitas-para-este-viernes_20261113/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "491661b739",
-   "agregado": "2026-11-13",
-   "actualizado": "2026-11-13"
-  },
-  {
-   "titulo": "Presentación de jazz – Noche de Museos 2026",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "21:00",
-   "horario": "21:00–21:45",
-   "lugar": "Museo del Limarí",
-   "direccion": null,
-   "comuna": "Ovalle",
-   "ciudad": "Ovalle",
-   "region": "Región de Coquimbo",
-   "precio": "Gratis",
-   "descripcion": "Presentación musical de jazz en el Museo del Limarí por la Noche de Museos 2026.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://www.adnradio.cl/2026/11/13/noche-de-museos-2026-horarios-actividades-y-como-encontrar-los-panoramas-gratuitos-en-chile/",
-   "fuentes": [
-    {
-     "nombre": "ADN Radio",
-     "url": "https://www.adnradio.cl/2026/11/13/noche-de-museos-2026-horarios-actividades-y-como-encontrar-los-panoramas-gratuitos-en-chile/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "02b412957c",
-   "agregado": "2026-11-13",
-   "actualizado": "2026-11-13"
-  },
-  {
-   "titulo": "Ciclo de teatro - El Botones",
-   "categoria": "teatro",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": "22:15",
-   "horario": null,
-   "lugar": "Teatro Cachafaz",
-   "direccion": "Av. Italia 1679",
-   "comuna": "Ñuñoa",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Obra teatral dirigida por Miguel Ángel Tapia que combina lenguaje popular y teatro de calidad, ambientada en un antiguo hotel.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://www.elcachafaz.cl/",
-   "fuentes": [
-    {
-     "nombre": "El Cachafaz",
-     "url": "https://www.elcachafaz.cl/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "fab1d830b2",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-13"
-  },
-  {
    "titulo": "Amantes, Una Vez al Año",
    "categoria": "teatro",
    "fecha_inicio": "2026-11-13",
@@ -6354,37 +4418,7 @@
    "origen": "datos-estructurados",
    "id": "8aaa55bd85",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-13"
-  },
-  {
-   "titulo": "Biblioteca Nacional de Chile – Noche de Museos 2026",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": "Horario extendido",
-   "lugar": "Biblioteca Nacional de Chile",
-   "direccion": "Av. Libertador Bernardo O'Higgins 651",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratis",
-   "descripcion": "Apertura en horario extendido y gratuito por la Noche de Museos 2026.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://www.encancha.cl/enlahora/movilidad/2026/11/12/red-movilidad-habilitara-recorrido-especial-por-noche-de-museos-2026-micro-llegara-a-25-espacios-patrimoniales-324953.html",
-   "fuentes": [
-    {
-     "nombre": "En Cancha",
-     "url": "https://www.encancha.cl/enlahora/movilidad/2026/11/12/red-movilidad-habilitara-recorrido-especial-por-noche-de-museos-2026-micro-llegara-a-25-espacios-patrimoniales-324953.html"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "c2346ad1cd",
-   "agregado": "2026-11-12",
-   "actualizado": "2026-11-12"
+   "actualizado": "2026-11-14"
   },
   {
    "titulo": "Crónica de la Mujer Menos Mujer",
@@ -6418,7 +4452,7 @@
    "origen": "datos-estructurados",
    "id": "b154be6f5a",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-13"
+   "actualizado": "2026-11-14"
   },
   {
    "titulo": "Diego Urrutia - Detonado",
@@ -6482,7 +4516,7 @@
    "origen": "datos-estructurados",
    "id": "2065a7a403",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-13"
+   "actualizado": "2026-11-14"
   },
   {
    "titulo": "FIC Santiago 2026",
@@ -6679,309 +4713,6 @@
    "actualizado": "2026-11-13"
   },
   {
-   "titulo": "Los tres cantos del gallo",
-   "categoria": "teatro",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": null,
-   "lugar": "Teatro Municipal de Iquique",
-   "direccion": null,
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
-   "precio": null,
-   "descripcion": "Obra de teatro presentada en el Teatro Municipal de Iquique.",
-   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/4a8b4c2e0bdbba12db61287b5077a58c9c4e52fe.jpeg?1794326681",
-   "fotos": null,
-   "url": "https://ticketplus.cl/events/los-tres-cantos-del-gallo-2026-11-13-11-00-00-0300",
-   "fuentes": [
-    {
-     "nombre": "Ticketplus (teatros)",
-     "url": "https://ticketplus.cl/events/los-tres-cantos-del-gallo-2026-11-13-11-00-00-0300"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ticketera",
-   "id": "9d6ac7c134",
-   "agregado": "2026-11-12",
-   "actualizado": "2026-11-12"
-  },
-  {
-   "titulo": "MANU OM",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": null,
-   "lugar": "Centro Cultural Mallinkrodt 76",
-   "direccion": "Providencia, Barrio Bellavista",
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
-   "precio": "Desde $38.000",
-   "descripcion": "La voz de Manu Om llega a Chile como parte de su gira mundial “Manu Om Tour – Around the World with Full Band”, presentando una experiencia única de Kirtan y música mantra en vivo. Reconocido internacionalmente por su capacidad de unir espi",
-   "imagen": "https://www.sangines.cl/wp-content/uploads/2026/05/T-Ticket-chile640x640.png",
-   "fotos": null,
-   "url": "https://www.sangines.cl/evento/manu-om/",
-   "fuentes": [
-    {
-     "nombre": "Teatro San Ginés",
-     "url": "https://www.sangines.cl/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "datos-estructurados",
-   "id": "cea98b7cfa",
-   "agregado": "2026-11-13",
-   "actualizado": "2026-11-13",
-   "genero": "folclor"
-  },
-  {
-   "titulo": "Magic: The Gathering | Star Trek",
-   "categoria": "juegos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": null,
-   "lugar": null,
-   "direccion": null,
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
-   "precio": null,
-   "descripcion": "Lanzamiento de la colección Magic: The Gathering | Star Trek en tiendas especializadas.",
-   "imagen": "https://www.torneostcg.cl/opengraph-image",
-   "fotos": null,
-   "url": "https://www.torneostcg.cl/tcgs/magic-the-gathering",
-   "fuentes": [
-    {
-     "nombre": "TorneosTCG",
-     "url": "https://www.torneostcg.cl/tcgs/magic-the-gathering"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "63a4ac1676",
-   "agregado": "2026-11-09",
-   "actualizado": "2026-11-09"
-  },
-  {
-   "titulo": "Marty Friedman - Scenes 34th Anniversary Tour",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": null,
-   "lugar": "Club Segundo Piso",
-   "direccion": null,
-   "comuna": "Valparaíso",
-   "ciudad": "Valparaíso",
-   "region": "Valparaíso",
-   "precio": null,
-   "descripcion": "Concierto del guitarrista Marty Friedman celebrando los 34 años de su disco Scenes, junto a Asterism y Veraguas & The Relowkes.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://g5noticias.cl/2026/11/11/marty-friedman-confirma-a-asterism-y-bandas-nacionales-que-abriran-sus-conciertos-en-valparaiso-y-santiago/",
-   "fuentes": [
-    {
-     "nombre": "G5noticias",
-     "url": "https://g5noticias.cl/2026/11/11/marty-friedman-confirma-a-asterism-y-bandas-nacionales-que-abriran-sus-conciertos-en-valparaiso-y-santiago/"
-    }
-   ],
-   "desde_imagen": true,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "bbe53e64c6",
-   "agregado": "2026-11-11",
-   "actualizado": "2026-11-11",
-   "genero": "metal"
-  },
-  {
-   "titulo": "Museo Nacional de Historia Natural – Noche de Museos 2026",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": "Horario extendido",
-   "lugar": "Museo Nacional de Historia Natural",
-   "direccion": "Interior Parque Quinta Normal",
-   "comuna": "Quinta Normal",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratis",
-   "descripcion": "Actividades especiales e iluminación en el Parque Quinta Normal para la Noche de Museos 2026.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://www.eldinamo.cl/entretencion/panoramas/2026/11/11/noche-de-museos-2026-las-actividades-disponibles-en-santiago-regiones-y-todo-lo-que-debes-saber/",
-   "fuentes": [
-    {
-     "nombre": "El Dínamo | Noticias de Chile y el mundo",
-     "url": "https://www.eldinamo.cl/entretencion/panoramas/2026/11/11/noche-de-museos-2026-las-actividades-disponibles-en-santiago-regiones-y-todo-lo-que-debes-saber/"
-    }
-   ],
-   "desde_imagen": true,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "ce32e1c6d5",
-   "agregado": "2026-11-11",
-   "actualizado": "2026-11-11"
-  },
-  {
-   "titulo": "Noche de Museos 2026 en Estadio Nacional",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": "Tarde y noche",
-   "lugar": "Estadio Nacional",
-   "direccion": "Av. Grecia 2001",
-   "comuna": "Ñuñoa",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratis",
-   "descripcion": "Recorridos de la memoria en el Estadio Nacional en el marco de la Noche de Museos 2026.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://www.24horas.cl/te-sirve/noche-museos-revisa-que-abrira-santiago-descuentos-viajes",
-   "fuentes": [
-    {
-     "nombre": "24horas.cl",
-     "url": "https://www.24horas.cl/te-sirve/noche-museos-revisa-que-abrira-santiago-descuentos-viajes"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "8ef843409f",
-   "agregado": "2026-11-11",
-   "actualizado": "2026-11-11"
-  },
-  {
-   "titulo": "Noche de Museos 2026 en Observatorio Astronómico Manuel Foster",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": "Tarde y noche",
-   "lugar": "Observatorio Astronómico Manuel Foster",
-   "direccion": "Cumbre del Cerro San Cristóbal",
-   "comuna": "Providencia",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratis",
-   "descripcion": "Visitas y apertura especial del Observatorio Manuel Foster en la Noche de Museos.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://www.24horas.cl/te-sirve/noche-museos-revisa-que-abrira-santiago-descuentos-viajes",
-   "fuentes": [
-    {
-     "nombre": "24horas.cl",
-     "url": "https://www.24horas.cl/te-sirve/noche-museos-revisa-que-abrira-santiago-descuentos-viajes"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "e7954020ad",
-   "agregado": "2026-11-11",
-   "actualizado": "2026-11-11"
-  },
-  {
-   "titulo": "Noche de Museos – Museo de Arte Contemporáneo, Sede Quinta Normal",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": "17:30–22:00",
-   "lugar": "Museo de Arte Contemporáneo (MAC) - Sede Quinta Normal",
-   "direccion": "Avenida Matucana 464",
-   "comuna": "Quinta Normal",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratis",
-   "descripcion": "Apertura en horario especial por la Noche de Museos 2026 con exposiciones gratuitas.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://www.cnnchile.com/cultura/noche-de-museos-2026-u-de-chile-sera-parte-con-exposiciones-talleres-gratis-musica-y-poesia/",
-   "fuentes": [
-    {
-     "nombre": "CNN Chile",
-     "url": "https://www.cnnchile.com/cultura/noche-de-museos-2026-u-de-chile-sera-parte-con-exposiciones-talleres-gratis-musica-y-poesia/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "c5379480bd",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
-  },
-  {
-   "titulo": "Pastor Rocha en San Fernando",
-   "categoria": "standup",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": null,
-   "lugar": null,
-   "direccion": null,
-   "comuna": "San Fernando",
-   "ciudad": "San Fernando",
-   "region": "Región del Libertador General Bernardo O'Higgins",
-   "precio": null,
-   "descripcion": "Show de stand-up comedy con Pastor Rocha.",
-   "imagen": "https://d319h6r8zq2kxk.cloudfront.net/wp-content/uploads/2026/10/13215210/1080x1080-ROCHA-SCHOOL-SAN-FERNA.jpg",
-   "fotos": null,
-   "url": "https://lacomedia.cl/",
-   "fuentes": [
-    {
-     "nombre": "lacomedia.cl",
-     "url": "https://lacomedia.cl/eventos/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "331a174da6",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
-  },
-  {
-   "titulo": "Ratos de Porão en Concepción",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": null,
-   "lugar": null,
-   "direccion": null,
-   "comuna": null,
-   "ciudad": "Concepción",
-   "region": null,
-   "precio": null,
-   "descripcion": "Concierto de la banda brasileña de hardcore punk y crossover thrash Ratos de Porão en Concepción.",
-   "imagen": "https://goallconcerts.com/media/prensa/ratos-de-porao-concepcion-2026-11-13/ratos-de-porao-banda.webp",
-   "fotos": null,
-   "url": "https://goallconcerts.com/es/cl",
-   "fuentes": [
-    {
-     "nombre": "GoAllConcerts",
-     "url": "https://goallconcerts.com/es/cl"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "4580c15678",
-   "agregado": "2026-11-13",
-   "actualizado": "2026-11-13",
-   "genero": "metal"
-  },
-  {
    "titulo": "Roberto Matta: la línea del duelo - Palacio Pereira",
    "categoria": "museos",
    "fecha_inicio": "2026-11-13",
@@ -7010,37 +4741,6 @@
    "id": "4bcd76935a",
    "agregado": "2026-11-09",
    "actualizado": "2026-11-13"
-  },
-  {
-   "titulo": "Xina Mora",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-13",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": null,
-   "lugar": "Basel Venue",
-   "direccion": null,
-   "comuna": "Independencia",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Fiesta de música electrónica con Xina Mora en Basel Venue.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://raveme.cl/eventos/ciudad/santiago",
-   "fuentes": [
-    {
-     "nombre": "raveme.cl",
-     "url": "https://raveme.cl/eventos/ciudad/santiago"
-    }
-   ],
-   "desde_imagen": true,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "30f510b3d1",
-   "agregado": "2026-11-13",
-   "actualizado": "2026-11-13",
-   "genero": "electronica"
   },
   {
    "titulo": "3° Planeta Cómic Fest",
@@ -7601,6 +5301,37 @@
    "actualizado": "2026-11-11"
   },
   {
+   "titulo": "Concierto de Gala en el Maule: “La música es un lugar de encuentro”",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": null,
+   "hora": "18:00",
+   "horario": null,
+   "lugar": "Teatro Regional del Maule",
+   "direccion": null,
+   "comuna": "Talca",
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "El evento protagonizado por la Orquesta Sinfónica Juvenil Regional del Maule, conmemora los 25 años de FOJI. El Teatro Regional del Maule se vestirá de gala para la presentación de la Orquesta Sinfónica Juvenil Regional del Maule, elenco pe",
+   "imagen": "https://img.vamoh.cl/events/0fb713bc-3871-4b75-926a-351f1454fd5e.webp?v=246907d3",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/concierto-de-gala-en-el-maule-la-musica-es-un-lugar-de-encuentro-9vj6s/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/concierto-de-gala-en-el-maule-la-musica-es-un-lugar-de-encuentro-9vj6s/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "17df6a8ebe",
+   "agregado": "2026-11-14",
+   "actualizado": "2026-11-14",
+   "genero": "clasica"
+  },
+  {
    "titulo": "Fusion Shibuya en Playkingdom",
    "categoria": "anime",
    "fecha_inicio": "2026-11-14",
@@ -7691,6 +5422,37 @@
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07",
    "genero": "otros"
+  },
+  {
+   "titulo": "Concierto Homenaje a Benjamin Britten",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-14",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Teatro Municipal La Pintana",
+   "direccion": null,
+   "comuna": "La Pintana",
+   "ciudad": null,
+   "region": null,
+   "precio": "Gratis",
+   "descripcion": "Concierto Homenaje a Benjamin Britten La Orquesta Juvenil Municipal de La Pintana rinde homenaje a Benjamin Britten a 50 años de su muerte. Un concierto sobre memoria, duelo y permanencia, bajo la dirección de Fernando Saavedra y con la par",
+   "imagen": "https://img.vamoh.cl/events/f66840cb-295b-4196-8249-fa0c01f43b6f.webp?v=b4b3fbcd",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/concierto-homenaje-a-benjamin-britten-0nyby/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/concierto-homenaje-a-benjamin-britten-0nyby/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "4b663fc18f",
+   "agregado": "2026-11-14",
+   "actualizado": "2026-11-14",
+   "genero": "clasica"
   },
   {
    "titulo": "ECOS",
@@ -8351,7 +6113,7 @@
    "origen": "datos-estructurados",
    "id": "6bceca0c1b",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-13"
+   "actualizado": "2026-11-14"
   },
   {
    "titulo": "Easykid",
@@ -8500,7 +6262,7 @@
    "origen": "ia",
    "id": "356fc2e953",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-14"
   },
   {
    "titulo": "Los Tres — 30 años MTV Unplugged",
@@ -8716,6 +6478,37 @@
    "id": "787667fd1a",
    "agregado": "2026-11-13",
    "actualizado": "2026-11-13"
+  },
+  {
+   "titulo": "Coro AGACI en concierto",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-15",
+   "fecha_fin": null,
+   "hora": "12:00",
+   "horario": null,
+   "lugar": "Parroquia San Miguel.",
+   "direccion": null,
+   "comuna": "Punta Arenas",
+   "ciudad": null,
+   "region": null,
+   "precio": "Gratis",
+   "descripcion": "Presentación del coro de la Agrupación de Amigos de los Ciegos (AGACI). Esta agrupación vocal compartirá escenario con las solistas Karen González, Ana Espinoza, Paula Coronado y Nadia Antimán, todos bajo la dirección del profesor de música",
+   "imagen": "https://img.vamoh.cl/events/958d51da-bf06-4721-b14c-7b7bc40b70a7.webp?v=4cb2ebeb",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/coro-agaci-en-concierto-5d1wf/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/coro-agaci-en-concierto-5d1wf/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "ee0ff08613",
+   "agregado": "2026-11-14",
+   "actualizado": "2026-11-14",
+   "genero": "clasica"
   },
   {
    "titulo": "Torneo Pokémon JCC en INACAP CARD FEST 2026 Los Ángeles",
@@ -8969,6 +6762,37 @@
    "agregado": "2026-11-13",
    "actualizado": "2026-11-13",
    "genero": "electronica"
+  },
+  {
+   "titulo": "Concierto de piano Tomás Muñoz Fernández",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-16",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Auditorio Academia de Artes Musicales",
+   "direccion": null,
+   "comuna": "Temuco",
+   "ciudad": null,
+   "region": null,
+   "precio": "Gratis",
+   "descripcion": "Desde el Conservatorio Laurencia Contreras de la Universidad del Bio Bio, nos visita el joven pianista Tomás Muñoz quien interpretara un programa con autores universales. Entrada Liberada",
+   "imagen": "https://img.vamoh.cl/events/6f6ff6a1-7dad-4120-9a6f-1d0af2778e42.webp?v=35e8bb4b",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/concierto-de-piano-tomas-munoz-fernandez-3svmw/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/concierto-de-piano-tomas-munoz-fernandez-3svmw/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "fc875a0651",
+   "agregado": "2026-11-14",
+   "actualizado": "2026-11-14",
+   "genero": "clasica"
   },
   {
    "titulo": "Festival Monitos",
@@ -9377,7 +7201,38 @@
    "origen": "datos-estructurados",
    "id": "3ade752ddb",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-13"
+   "actualizado": "2026-11-14"
+  },
+  {
+   "titulo": "Tributo a Pxndx y Tronic: tocata solidaria en El Averno",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-18",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "El Averno",
+   "direccion": null,
+   "comuna": "Concepción",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $5.000",
+   "descripcion": "Tributo a Pxndx llega a El Averno este miércoles 18 de noviembre, a las 20:00 horas, como parte de una tocata especial que reúne a Nxt Pxndx, Capitán Caribe y Lo Mejor Que Nunca Pasó. Tres bandas, mucho pop punk y una razón que va más allá",
+   "imagen": "https://img.vamoh.cl/events/ebc35a87-8281-49d6-8a54-56f181bc6a40.webp?v=5057ae88",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/tributo-a-pxndx-y-tronic-tocata-solidaria-en-el-averno-s9l26/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/tributo-a-pxndx-y-tronic-tocata-solidaria-en-el-averno-s9l26/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "838f702007",
+   "agregado": "2026-11-14",
+   "actualizado": "2026-11-14",
+   "genero": "rock"
   },
   {
    "titulo": "Cazadores de Agua",
@@ -9438,6 +7293,37 @@
    "id": "20d77619ca",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-13"
+  },
+  {
+   "titulo": "Orquesta Marga Marga",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-19",
+   "fecha_fin": null,
+   "hora": "15:00",
+   "horario": null,
+   "lugar": "Museo Palacio Vergara",
+   "direccion": null,
+   "comuna": "Viña Del Mar",
+   "ciudad": null,
+   "region": null,
+   "precio": "Gratis",
+   "descripcion": "Ecos de una creación, con el Guitarrista César Farías La música nos invita a descubrir nuevos paisajes sonoros en un encuentro donde la sensibilidad, la creatividad y la riqueza de la música de cámara se unen para regalarnos una experiencia",
+   "imagen": "https://img.vamoh.cl/events/a1041224-8290-400d-8ae2-a7a840e11b1d.webp?v=9ad0e184",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/orquesta-marga-marga-6lyfq/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/orquesta-marga-marga-6lyfq/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "fe3b758f71",
+   "agregado": "2026-11-14",
+   "actualizado": "2026-11-14",
+   "genero": "clasica"
   },
   {
    "titulo": "A Rey Muerto y Rock and Road",
@@ -9752,6 +7638,37 @@
    "agregado": "2026-11-09",
    "actualizado": "2026-11-09",
    "genero": "metal"
+  },
+  {
+   "titulo": "Concierto 100 años Rotary Club",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-20",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Teatro Municipal de Antofagasta",
+   "direccion": null,
+   "comuna": "Antofagasta",
+   "ciudad": null,
+   "region": null,
+   "precio": "Gratis",
+   "descripcion": "Concierto VIII - Temporada Oficial 2026 - Orquesta Sinfónica de Antofagasta Director invitado: Christian Baeza Solista violín: Juan José Peña (Chile) PROGRAMA Camila Leal Obra comisionada, estreno absoluto Jean Sibelius Concierto para violí",
+   "imagen": "https://img.vamoh.cl/events/bf4831c9-85b9-4083-b8b9-d78fe0fd791a.webp?v=1db71949",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/concierto-100-anos-rotary-club-y0df6/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/concierto-100-anos-rotary-club-y0df6/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "ee37fd344a",
+   "agregado": "2026-11-14",
+   "actualizado": "2026-11-14",
+   "genero": "clasica"
   },
   {
    "titulo": "Demon Slayer en Concierto en Universidad Mayor",
@@ -10122,6 +8039,37 @@
    "genero": "otros"
   },
   {
+   "titulo": "Concierto Grupo Kamanchaca",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-21",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Casa Polanco",
+   "direccion": null,
+   "comuna": "Valparaíso",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $3.000",
+   "descripcion": "Peña entre familia y amigos en Casa Polanco el sábado 21 de noviembre desde las 19:00h a cargo del grupo Kamanchaca de Valparaíso y Resistencia Urbana de Santiago, haciendo un extenso recorrido por el folclore chileno y latinoamericano. Ade",
+   "imagen": "https://img.vamoh.cl/events/e189de5f-a496-49c2-8737-96ca28dc7b6f.webp?v=68d8f6a6",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/concierto-grupo-kamanchaca-qneor/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/concierto-grupo-kamanchaca-qneor/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "0a71956de0",
+   "agregado": "2026-11-14",
+   "actualizado": "2026-11-14",
+   "genero": "folclor"
+  },
+  {
    "titulo": "Dragon Ball en Press Start V2",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-21",
@@ -10396,7 +8344,7 @@
    "origen": "datos-estructurados",
    "id": "5f55b6dd8f",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-13"
+   "actualizado": "2026-11-14"
   },
   {
    "titulo": "Neo Santiago",
@@ -10903,6 +8851,37 @@
    "actualizado": "2026-11-13"
   },
   {
+   "titulo": "Orquesta Regional de Tarapacá",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-25",
+   "fecha_fin": "2026-11-27",
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Teatro Municipal de Iquique",
+   "direccion": null,
+   "comuna": "Iquique",
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "25, 26 y 27 de noviembre: Orquesta Regional de Tarapacá participa en la premiación del Concurso de Composición Musical Luis Advis 2026 La Orquesta Regional de Tarapacá será parte de las jornadas finales de premiación del XXII Concurso de Co",
+   "imagen": "https://img.vamoh.cl/events/c9fcbd54-481d-4c0d-a3a8-f685434e44bc.webp?v=70e91c78",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/orquesta-regional-de-tarapaca-cucqs/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/orquesta-regional-de-tarapaca-cucqs/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "a3a27de104",
+   "agregado": "2026-11-14",
+   "actualizado": "2026-11-14",
+   "genero": "clasica"
+  },
+  {
    "titulo": "Alexisonfire - Performs Crisis In Full",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-25",
@@ -10975,7 +8954,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Concierto del reconocido artista italiano Eros Ramazzotti en el Movistar Arena.",
-   "imagen": null,
+   "imagen": "https://concerts50.com/uploads/artist/90/e2/eros-ramazzotti/original_image/eros-ramazzotti.jpg?v=3taakgai",
    "fotos": null,
    "url": "https://concerts50.com/es/chile",
    "fuentes": [
@@ -11128,7 +9107,7 @@
    "origen": "datos-estructurados",
    "id": "04fc5d9e78",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-13"
+   "actualizado": "2026-11-14"
   },
   {
    "titulo": "Escritura teatral: “Horacio”, de Sally Campusano",
@@ -11235,7 +9214,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Concierto en vivo de Nano Stern en el Teatro NESCAFÉ de las Artes.",
-   "imagen": null,
+   "imagen": "https://latamenvivo.com/assets/img/photos/nano-stern-card.webp",
    "fotos": null,
    "url": "https://latamenvivo.com/ciudades/santiago/",
    "fuentes": [
@@ -11372,6 +9351,37 @@
    "agregado": "2026-11-11",
    "actualizado": "2026-11-11",
    "genero": "otros"
+  },
+  {
+   "titulo": "Concierto Santa Cecilia",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Teatro Municipal de Antofagasta",
+   "direccion": null,
+   "comuna": "Antofagasta",
+   "ciudad": null,
+   "region": null,
+   "precio": "Gratis",
+   "descripcion": "Director invitado Ronald Roco (Chile) Alumnos solistas de la Escuela de Música L.V Beethoven Obertura Egmont W.A Mozart Obertura de la ópera “Flauta Mágica” Concierto enmarcado en la celebración de la Semana de Santa Cecilia, festividad que",
+   "imagen": "https://img.vamoh.cl/events/9d8215ae-60f1-4ed2-86fc-a14ce80c4f54.webp?v=044ec2e1",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/concierto-santa-cecilia-x2mze/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/concierto-santa-cecilia-x2mze/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "f3231ea8e6",
+   "agregado": "2026-11-14",
+   "actualizado": "2026-11-14",
+   "genero": "clasica"
   },
   {
    "titulo": "Evangelion en Bar 44",
@@ -12049,7 +10059,7 @@
    "origen": "ticketera",
    "id": "c003178ec9",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-13",
+   "actualizado": "2026-11-14",
    "genero": "metal"
   },
   {
@@ -12293,6 +10303,36 @@
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07",
    "genero": "metal"
+  },
+  {
+   "titulo": "El Animal que habita en mí",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Cachafaz",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $8.800",
+   "descripcion": "Obra dramática presentada en el marco del Ciclo de Teatro de Teatro Cachafaz.",
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/71be660292cca65503a9ac84fa88bf72817b1472.png?1794423951",
+   "fotos": null,
+   "url": "https://ticketplus.cl/events/ciclo-de-teatro-el-animal-que-habita-en-mi-sabado-28-noviembre-20-hrs",
+   "fuentes": [
+    {
+     "nombre": "Ticketplus",
+     "url": "https://ticketplus.cl/events/ciclo-de-teatro-el-animal-que-habita-en-mi-sabado-28-noviembre-20-hrs"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "994b0cd99d",
+   "agregado": "2026-11-14",
+   "actualizado": "2026-11-14"
   },
   {
    "titulo": "Maiden United 1980 feat. Dennis Stratton",
@@ -12733,7 +10773,7 @@
    "origen": "ia",
    "id": "5197cbd0b7",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-13",
+   "actualizado": "2026-11-14",
    "genero": "metal"
   },
   {
@@ -13013,7 +11053,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Concierto de Nicky Jam en el Movistar Arena.",
-   "imagen": null,
+   "imagen": "https://concerts50.com/uploads/artist/cf/a9/nicky-jam/original_image/nicky-jam.jpg?v=dqk2qc7n",
    "fotos": null,
    "url": "https://concerts50.com/chile/santiago/g/reggaeton",
    "fuentes": [
@@ -13199,7 +11239,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Concierto en vivo de Gorillaz en el Estadio Bicentenario La Florida.",
-   "imagen": null,
+   "imagen": "https://latamenvivo.com/assets/img/photos/gorillaz-card.webp",
    "fotos": null,
    "url": "https://latamenvivo.com/ciudades/santiago/",
    "fuentes": [
@@ -13436,7 +11476,7 @@
    "fecha_inicio": "2026-12-05",
    "fecha_fin": "2026-12-06",
    "hora": "22:00",
-   "horario": null,
+   "horario": "Funciones: 4 y 26 de diciembre",
    "lugar": "El Cachafaz",
    "direccion": null,
    "comuna": "Ñuñoa",
@@ -13451,6 +11491,14 @@
     {
      "nombre": "VAMOH!",
      "url": "https://vamoh.cl/events/jorge-alis-humor-ql-unplugged-wuiue/"
+    },
+    {
+     "nombre": "Ticketplus",
+     "url": "https://ticketplus.cl/events/jorge-alis-malon-viernes-4-diciembre-20-hrs"
+    },
+    {
+     "nombre": "Ticketplus",
+     "url": "https://ticketplus.cl/events/jorge-alis-malon-sabado-26-diciembre-20-hrs"
     }
    ],
    "desde_imagen": false,
@@ -13458,7 +11506,7 @@
    "origen": "datos-estructurados",
    "id": "8c54b364c8",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
+   "actualizado": "2026-11-14"
   },
   {
    "titulo": "Gorillaz – The Mountain Tour",
@@ -13536,7 +11584,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Celebración de los 20 años de Movimiento Original en vivo en el Estadio Bicentenario La Florida.",
-   "imagen": null,
+   "imagen": "https://latamenvivo.com/assets/img/photos/movimiento-original-card.webp",
    "fotos": null,
    "url": "https://latamenvivo.com/ciudades/santiago/",
    "fuentes": [
@@ -13641,7 +11689,7 @@
    "origen": "datos-estructurados",
    "id": "e693788f4a",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-13",
+   "actualizado": "2026-11-14",
    "genero": "pop"
   },
   {
@@ -14375,7 +12423,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Concierto de Akriila en el Centro Cultural Estación Mapocho presentando El Tour de Lucy.",
-   "imagen": null,
+   "imagen": "https://latamenvivo.com/assets/img/photos/akriila-card.webp",
    "fotos": null,
    "url": "https://latamenvivo.com/ciudades/santiago/",
    "fuentes": [
@@ -14528,7 +12576,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Concierto del artista de trap y reggaetón Anuel AA en el Teatro Caupolicán.",
-   "imagen": null,
+   "imagen": "https://concerts50.com/uploads/artist/66/29/anuel-aa/original_image/anuel-aa.jpg?v=bbzybyhl",
    "fotos": null,
    "url": "https://concerts50.com/es/chile",
    "fuentes": [
@@ -16136,7 +14184,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Concierto de la superestrella del género urbano Karol G en el Estadio Nacional.",
-   "imagen": null,
+   "imagen": "https://concerts50.com/uploads/artist/3e/3b/karol-g/original_image/karol-g.jpg?v=bxyfjuvb",
    "fotos": null,
    "url": "https://concerts50.com/es/chile",
    "fuentes": [
@@ -16201,7 +14249,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Concierto de Karol G en el Estadio Nacional en su gira de reggaetón.",
-   "imagen": null,
+   "imagen": "https://concerts50.com/uploads/artist/3e/3b/karol-g/original_image/karol-g.jpg?v=bxyfjuvb",
    "fotos": null,
    "url": "https://concerts50.com/chile/santiago/g/reggaeton",
    "fuentes": [
@@ -16292,7 +14340,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Concierto de Karol G en el Estadio Nacional en su gira de reggaetón.",
-   "imagen": null,
+   "imagen": "https://concerts50.com/uploads/artist/3e/3b/karol-g/original_image/karol-g.jpg?v=bxyfjuvb",
    "fotos": null,
    "url": "https://concerts50.com/chile/santiago/g/reggaeton",
    "fuentes": [
@@ -16474,7 +14522,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Concierto de rock de Foo Fighters en el Parque Estadio Nacional.",
-   "imagen": null,
+   "imagen": "https://latamenvivo.com/assets/img/photos/foo-fighters-card.webp",
    "fotos": null,
    "url": "https://latamenvivo.com/ciudades/santiago/",
    "fuentes": [
