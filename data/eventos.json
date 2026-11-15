@@ -1,28 +1,13 @@
 {
  "version": 1,
- "actualizado": "2026-11-15T14:33-03:00",
+ "actualizado": "2026-11-15T18:53-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-15T14:33-03:00",
+  "fecha": "2026-11-15T18:53-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 146,
-  "nuevos_esta_vez": 22,
+  "eventos_nuevos": 143,
+  "nuevos_esta_vez": 12,
   "nuevos_ids": [
-   "e9f61deda9",
-   "b5cbdda7a0",
-   "6dcf33adff",
-   "94028a0d28",
-   "779948e45a",
-   "1d3eada12a",
-   "4a83e2b404",
-   "57b7e81ed7",
-   "082c5ef43c",
-   "2550997392",
-   "f37a507529",
-   "22ec1754f3",
-   "234fa8c6ca",
-   "5a4a33f4cf",
-   "dc78f24f9a",
    "1661519d4e",
    "7894d11145",
    "fbd2b8de8d",
@@ -153,24 +138,21 @@
    "8ccc194d9f",
    "e622903fcf",
    "05be6b409a",
-   "4599a3db89"
+   "4599a3db89",
+   "8d6b022dab",
+   "d1c930fd29",
+   "05c57a3d62",
+   "1e2ea01e65",
+   "7497f38a53",
+   "0f8b1a40f0",
+   "de0a676614",
+   "853eead8d3",
+   "ba19421141",
+   "0aa13c406f",
+   "56fc8c67f7",
+   "d2eede4b33"
   ],
   "nuevos_desde": {
-   "e9f61deda9": "2026-11-14T18:31-03:00",
-   "b5cbdda7a0": "2026-11-14T18:31-03:00",
-   "6dcf33adff": "2026-11-14T18:31-03:00",
-   "94028a0d28": "2026-11-14T18:31-03:00",
-   "779948e45a": "2026-11-14T18:31-03:00",
-   "1d3eada12a": "2026-11-14T18:31-03:00",
-   "4a83e2b404": "2026-11-14T18:31-03:00",
-   "57b7e81ed7": "2026-11-14T18:31-03:00",
-   "082c5ef43c": "2026-11-14T18:31-03:00",
-   "2550997392": "2026-11-14T18:31-03:00",
-   "f37a507529": "2026-11-14T18:31-03:00",
-   "22ec1754f3": "2026-11-14T18:31-03:00",
-   "234fa8c6ca": "2026-11-14T18:31-03:00",
-   "5a4a33f4cf": "2026-11-14T18:31-03:00",
-   "dc78f24f9a": "2026-11-14T18:31-03:00",
    "1661519d4e": "2026-11-14T23:10-03:00",
    "7894d11145": "2026-11-14T23:10-03:00",
    "fbd2b8de8d": "2026-11-14T23:10-03:00",
@@ -301,24 +283,35 @@
    "8ccc194d9f": "2026-11-15T14:33-03:00",
    "e622903fcf": "2026-11-15T14:33-03:00",
    "05be6b409a": "2026-11-15T14:33-03:00",
-   "4599a3db89": "2026-11-15T14:33-03:00"
+   "4599a3db89": "2026-11-15T14:33-03:00",
+   "8d6b022dab": "2026-11-15T18:53-03:00",
+   "d1c930fd29": "2026-11-15T18:53-03:00",
+   "05c57a3d62": "2026-11-15T18:53-03:00",
+   "1e2ea01e65": "2026-11-15T18:53-03:00",
+   "7497f38a53": "2026-11-15T18:53-03:00",
+   "0f8b1a40f0": "2026-11-15T18:53-03:00",
+   "de0a676614": "2026-11-15T18:53-03:00",
+   "853eead8d3": "2026-11-15T18:53-03:00",
+   "ba19421141": "2026-11-15T18:53-03:00",
+   "0aa13c406f": "2026-11-15T18:53-03:00",
+   "56fc8c67f7": "2026-11-15T18:53-03:00",
+   "d2eede4b33": "2026-11-15T18:53-03:00"
   },
   "horas_nuevos": 24,
-  "llamadas_ia": 22,
+  "llamadas_ia": 3,
   "ia_sin_cupo": false,
   "ultima_completa": "2026-11-15T14:09-03:00",
-  "modo": "completa",
-  "paginas_revisadas": 20,
-  "busquedas": 107,
+  "modo": "rapida",
+  "paginas_revisadas": 0,
+  "busquedas": 0,
   "fuentes_fijas": 9,
-  "errores": 23,
+  "errores": 2,
   "noticias_desde": "2026-11-15",
-  "noticias_viejas_descartadas": 420,
-  "redes_vistas": 1,
-  "generos_ia": 4,
-  "imagenes_encontradas": 19
+  "noticias_viejas_descartadas": 0,
+  "generos_ia": 5,
+  "imagenes_encontradas": 0
  },
- "total": 643,
+ "total": 655,
  "eventos": [
   {
    "titulo": "Mariposas y Polillas, Colores en Movimiento",
@@ -7835,6 +7828,37 @@
    "genero": "clasica"
   },
   {
+   "titulo": "Concierto especial · Side by Side: OCOM - OSNCH",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-20",
+   "fecha_fin": null,
+   "hora": "19:30",
+   "horario": null,
+   "lugar": "Gran Sala Sinfónica Nacional",
+   "direccion": null,
+   "comuna": "Providencia",
+   "ciudad": null,
+   "region": null,
+   "precio": "Gratis",
+   "descripcion": "Centro de Extensión Artística y Cultural Universidad de Chile Gran Sala Sinfónica Nacional Av. Vicuña Mackenna 20, Providencia, Región Metropolitana Concierto especial: Orquesta Comunitaria Metropolitana de Chile - Orquesta Sinfónica Nacion",
+   "imagen": "https://img.vamoh.cl/events/2b514441-a032-4582-882b-7f5b4575b6f6.webp?v=2b36914d",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/concierto-especial-side-by-side-ocom-osnch-6v2q7/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/concierto-especial-side-by-side-ocom-osnch-6v2q7/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "ba19421141",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15",
+   "genero": "clasica"
+  },
+  {
    "titulo": "Concierto 100 años Rotary Club",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-20",
@@ -7962,6 +7986,40 @@
    "id": "11b9d904b2",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-14"
+  },
+  {
+   "titulo": "MALA LECHE - Impro humor negro Lospleimovil",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-20",
+   "fecha_fin": "2026-11-21",
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Teatro Lospleimovil",
+   "direccion": null,
+   "comuna": "Recoleta",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $10.000",
+   "descripcion": "Comedia improvisada, sin filtro y sin censura Hilarante espectáculo de la compañía Lospleimovil, donde cuatro historias completamente improvisadas nacen frente al público a partir de la unión de las cuatro versiones del original juego de me",
+   "imagen": "https://img.vamoh.cl/events/0af7d651-fc9b-4488-ad98-f48d03aa0f08.webp?v=c3e2df1a",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/mala-leche-impro-humor-negro-lospleimovil-1o45x/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/mala-leche-impro-humor-negro-lospleimovil-1o45x/"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/ecos-lospleimovil-impro-humor-7qvpv/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "56fc8c67f7",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15"
   },
   {
    "titulo": "Spinetta Jazz",
@@ -8334,6 +8392,37 @@
    "actualizado": "2026-11-13"
   },
   {
+   "titulo": "Gastón Gómez Presenta Maestre Deis Trobador El Concierto",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-21",
+   "fecha_fin": null,
+   "hora": "12:00",
+   "horario": null,
+   "lugar": "Canto Bar",
+   "direccion": null,
+   "comuna": "Providencia",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $5.000",
+   "descripcion": "Gastón Gómez presenta MAESTRE DEIS TROBADOR el concierto El cantautor nacional se presentará junto a los artistas Arándano Música + Vicente Moya en el mítico Cantobar de Providencia, Santiago de Chile. Habrá lectura poética del libro homóni",
+   "imagen": "https://img.vamoh.cl/events/c8c908ca-8bfd-412b-9980-729d2b2d4dc9.webp?v=10e64c06",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/gaston-gomez-presenta-maestre-deis-trobador-el-concierto-fu325/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/gaston-gomez-presenta-maestre-deis-trobador-el-concierto-fu325/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "de0a676614",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15",
+   "genero": "folclor"
+  },
+  {
    "titulo": "Medieval Fest llega a Mulchén con recreaciones, música en vivo y gastronomía",
    "categoria": "medieval",
    "fecha_inicio": "2026-11-21",
@@ -8362,6 +8451,37 @@
    "id": "54328215b8",
    "agregado": "2026-11-08",
    "actualizado": "2026-11-08"
+  },
+  {
+   "titulo": "Concierto Orquesta Sinfónica de Lampa",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-21",
+   "fecha_fin": null,
+   "hora": "17:45",
+   "horario": null,
+   "lugar": "Sgto. Aldea 1026",
+   "direccion": null,
+   "comuna": "Lampa",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $5.000",
+   "descripcion": "Dia: Sábado 21 Hora: 18:00 horas Lugar: Teatro centro Cultural de Lampa (Sargento Aldea #1026)",
+   "imagen": "https://img.vamoh.cl/events/54af0f60-c20e-421a-a7ea-ed84760f18d8.webp?v=121bbabb",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/concierto-orquesta-sinfonica-de-lampa-9h6tc/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/concierto-orquesta-sinfonica-de-lampa-9h6tc/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "8d6b022dab",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15",
+   "genero": "clasica"
   },
   {
    "titulo": "Concierto La Puerto Orquesta",
@@ -8517,6 +8637,37 @@
    "agregado": "2026-11-13",
    "actualizado": "2026-11-13",
    "genero": "bandas_sonoras"
+  },
+  {
+   "titulo": "Concierto Despertar, Mordaz-A",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-21",
+   "fecha_fin": null,
+   "hora": "19:30",
+   "horario": null,
+   "lugar": "El Galpon",
+   "direccion": null,
+   "comuna": "Frutillar",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $3.500",
+   "descripcion": "🎶 CONCIERTO DESPERTAR | MORDAZ-A Este sábado 21 de noviembre tendremos el honor de recibir nuevamente en ElGalpón a Mordaz-A @mordaz_a , que llega para presentar en vivo su nuevo EP, Despertar. ​Este lanzamiento marca un antes y un después",
+   "imagen": "https://images.portaldisc.com/eventos/24656.jpg",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/concierto-despertar-mordaz-a-qyg55/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/concierto-despertar-mordaz-a-qyg55/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "05c57a3d62",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15",
+   "genero": "metal"
   },
   {
    "titulo": "Camila Moreno en GAM",
@@ -8775,6 +8926,37 @@
    "id": "ccff163ce9",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-15"
+  },
+  {
+   "titulo": "Boliche Restobar Presenta - Gato Jazz Trio - 21 NOV",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-21",
+   "fecha_fin": null,
+   "hora": "22:00",
+   "horario": null,
+   "lugar": "Boliche restopub",
+   "direccion": null,
+   "comuna": "Antofagasta",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $7.000",
+   "descripcion": "Seguimos con el Círculo de Jazz en Boliche Restobar. Este sábado 21 de noviembre presentamos a \"Gato Jazz Trío\" quienes con su particular estilo y fuerza jazzistica, nos deleitarán a partir de las 22:00 horas, en Avenida Angamos 10. Ven a s",
+   "imagen": "https://img.vamoh.cl/events/d4440253-9150-4ddd-806b-f0c40e3bebb9.webp?v=5f423885",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/boliche-restobar-presenta-gato-jazz-trio-21-nov-4g7sw/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/boliche-restobar-presenta-gato-jazz-trio-21-nov-4g7sw/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "1e2ea01e65",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15",
+   "genero": "jazz"
   },
   {
    "titulo": "Ciclo de teatro-Bodas de 3-Sábado 21 Noviembre 22:15 hrs",
@@ -13157,6 +13339,36 @@
    "actualizado": "2026-11-11"
   },
   {
+   "titulo": "Stand Up Comedy - Valentina Saini - Stoney",
+   "categoria": "standup",
+   "fecha_inicio": "2026-12-03",
+   "fecha_fin": null,
+   "hora": "21:30",
+   "horario": null,
+   "lugar": "Stoney Bar",
+   "direccion": null,
+   "comuna": "Quintero",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $11.500",
+   "descripcion": "Local abierto desde las 18:30 hrs",
+   "imagen": "https://img.vamoh.cl/events/d0707bf2-f4d5-43e1-a3a0-df696ed1df6f.webp?v=98b0ceff",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/stand-up-comedy-valentina-saini-stoney-sqns1/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/stand-up-comedy-valentina-saini-stoney-sqns1/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "d2eede4b33",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15"
+  },
+  {
    "titulo": "Atarashii Gakko en Caupolicán",
    "categoria": "anime",
    "fecha_inicio": "2026-12-03",
@@ -14569,6 +14781,37 @@
    "genero": "rock"
   },
   {
+   "titulo": "Lil Snow / Luna Roja / En Concierto / Domingo 06 Dic",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-06",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Club Ambar",
+   "direccion": null,
+   "comuna": "Recoleta",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $12.000",
+   "descripcion": "🔴🌕 LIL SNOW PRESENTA: LUNA ROJA 🌕🔴 🔥 ¡SANTIAGO, PREPÁRATE PARA VIVIR LUNA ROJA! 🔥 Este 6 de diciembre de 2026 , Lil Snow llega al escenario de Club Ámbar con un show que promete una noche cargada de energía, música y sorpresas. 🖤🐦‍⬛ Una exp",
+   "imagen": "https://img.vamoh.cl/events/7f03e3d9-0562-4e3d-b231-c475b94ee27f.webp?v=2d2fcaaa",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/lil-snow-luna-roja-en-concierto-domingo-06-dic-k06yq/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/lil-snow-luna-roja-en-concierto-domingo-06-dic-k06yq/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "853eead8d3",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15",
+   "genero": "trap"
+  },
+  {
    "titulo": "Malas Madres",
    "categoria": "teatro",
    "fecha_inicio": "2026-12-06",
@@ -15692,6 +15935,37 @@
    "actualizado": "2026-11-09"
   },
   {
+   "titulo": "Jah Love - Concierto Musical Cristiano",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-12",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "espacio K&M",
+   "direccion": null,
+   "comuna": "Coronel",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $15.000",
+   "descripcion": "Evento religioso un canto al señor",
+   "imagen": "https://img.vamoh.cl/events/782cbe94-746c-45f5-a0f8-893b140ac326.webp?v=78e25789",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/jah-love-concierto-musical-cristiano-7mkhe/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/jah-love-concierto-musical-cristiano-7mkhe/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "7497f38a53",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15",
+   "genero": "otros"
+  },
+  {
    "titulo": "Laró en Viña del Mar - Concierto para Todas Las Edades",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-12",
@@ -15817,6 +16091,37 @@
    "agregado": "2026-11-14",
    "actualizado": "2026-11-14",
    "genero": "pop"
+  },
+  {
+   "titulo": "La Brígida Orquesta en Puerto Montt",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-12",
+   "fecha_fin": "2026-12-13",
+   "hora": "22:00",
+   "horario": null,
+   "lugar": "Baradero Bar Cultural",
+   "direccion": null,
+   "comuna": "Puerto Montt",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $22.000",
+   "descripcion": "**La Brígida Orquesta presenta su nuevo disco en Baradero** Este 12 de diciembre, La Brígida Orquesta llega a Baradero de Puerto Montt para presentar su nuevo disco. Con once músicos en escena, La Brígida Orquesta desplegará su mezcla de ra",
+   "imagen": "https://img.vamoh.cl/events/d35eefb4-bfc6-45f1-b03e-5d1191cf3672.webp?v=73565d62",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/la-brigida-orquesta-en-puerto-montt-ynb3r/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/la-brigida-orquesta-en-puerto-montt-ynb3r/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "d1c930fd29",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15",
+   "genero": "clasica"
   },
   {
    "titulo": "Sala Rívoli presenta Bray On en Concierto",
@@ -16385,6 +16690,36 @@
    "agregado": "2026-11-14",
    "actualizado": "2026-11-14",
    "genero": "trap"
+  },
+  {
+   "titulo": "DAVID PEREZ EN PALERMO TEATRO BAR - Grabación de Especial de Comedia",
+   "categoria": "standup",
+   "fecha_inicio": "2026-12-16",
+   "fecha_fin": null,
+   "hora": "22:00",
+   "horario": null,
+   "lugar": "Palermo Teatro Bar",
+   "direccion": null,
+   "comuna": "Providencia",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $8.000",
+   "descripcion": "Una noche especial de stand-up comedy junto a David Pérez, quien llega a Palermo Teatro Bar con una presentación llena de humor, historias y situaciones con las que más de alguno se sentirá identificado. Esta función tendrá un ingrediente e",
+   "imagen": "https://img.vamoh.cl/events/eb18a6c9-f789-48c9-b397-5f55268264d0.webp?v=e936e0fe",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/david-perez-en-palermo-teatro-bar-grabacion-de-especial-de-comedia-7ikf2/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/david-perez-en-palermo-teatro-bar-grabacion-de-especial-de-comedia-7ikf2/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "0aa13c406f",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15"
   },
   {
    "titulo": "Javier Silvera: ¿lo Dejamos Hasta Acá? en Cantares Bar",
@@ -17472,6 +17807,37 @@
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07",
    "genero": "metal"
+  },
+  {
+   "titulo": "Julius Popper - Concierto Fin de Año",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-26",
+   "fecha_fin": null,
+   "hora": "21:30",
+   "horario": null,
+   "lugar": "Club Chocolate",
+   "direccion": null,
+   "comuna": "Recoleta",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $14.000",
+   "descripcion": "Evento solo para Mayores de 18 Años. JULIUS POPPER – CONCIERTO FIN DE AÑO SÁBADO 26 DE DICIEMBRE ★ CLUB CHOCOLATE (+18) Julius Popper cierra un año especialmente importante en su historia con un último gran concierto en Club Chocolate. Este",
+   "imagen": "https://img.vamoh.cl/events/ff6116da-558d-432e-8cbc-9fd6060ec51d.webp?v=602ed9a4",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/julius-popper-concierto-fin-de-ano-8choz/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/julius-popper-concierto-fin-de-ano-8choz/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "0f8b1a40f0",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15",
+   "genero": "rock"
   },
   {
    "titulo": "Fiesta Reggaetón Old School",
