@@ -1,88 +1,13 @@
 {
  "version": 1,
- "actualizado": "2026-11-15T07:15-03:00",
+ "actualizado": "2026-11-15T14:33-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-15T07:15-03:00",
+  "fecha": "2026-11-15T14:33-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 199,
-  "nuevos_esta_vez": 81,
+  "eventos_nuevos": 146,
+  "nuevos_esta_vez": 22,
   "nuevos_ids": [
-   "0f891f4baf",
-   "075e198dd5",
-   "027eedecba",
-   "ce76f80197",
-   "be95ab524e",
-   "b30ad6ce8e",
-   "81b6dcb498",
-   "4b90b4b87d",
-   "180b8faca6",
-   "517b9d6aea",
-   "09dde53587",
-   "a3ec3fd7f4",
-   "ae01aeec9a",
-   "737802a219",
-   "393abf11e8",
-   "f8747df089",
-   "558235c6d6",
-   "7c21f5b2e7",
-   "d254762c30",
-   "e177bbf791",
-   "5ed3920006",
-   "d60159c04a",
-   "66e917def1",
-   "3b72e035c1",
-   "b7455b7c9b",
-   "062e148c78",
-   "fe27d32fcc",
-   "57b684b75a",
-   "a66a908c01",
-   "580874b018",
-   "bcb86f6216",
-   "e0bc23ea98",
-   "34d943d6d8",
-   "669d9de44e",
-   "b9316d87da",
-   "08aec19694",
-   "1319e8a027",
-   "bdba94cff7",
-   "49968df067",
-   "2d0d9f7f7e",
-   "8f7112b418",
-   "31669b1c8c",
-   "97486db51a",
-   "e8906ad8da",
-   "93336c9e54",
-   "bbbd44b30c",
-   "04d046a32a",
-   "8a0919c881",
-   "6b80f326f1",
-   "2e03707294",
-   "5f5d56457c",
-   "6270c23ed7",
-   "b2f4ac4e18",
-   "b3e677ddfe",
-   "15ad1b7528",
-   "d930658602",
-   "3ccefe1e5f",
-   "9a75713a71",
-   "d93ec1bdee",
-   "3946452de0",
-   "e2970e04cc",
-   "47aaecf043",
-   "add1abaca2",
-   "c64d4dae36",
-   "9e1dc84422",
-   "649c18ee8d",
-   "52c8113b0b",
-   "f8f6ff6848",
-   "8a7266e0ff",
-   "798434cf22",
-   "4fae3c3cc4",
-   "2e89ea4c31",
-   "b937fe271e",
-   "5110ea20eb",
-   "44c5177b37",
    "e9f61deda9",
    "b5cbdda7a0",
    "6dcf33adff",
@@ -206,84 +131,31 @@
    "5531f666bd",
    "ddbafad0e4",
    "fd3c2e5e83",
-   "7529523efd"
+   "7529523efd",
+   "98ba1c7d95",
+   "8c896c1241",
+   "ea541852af",
+   "91a7439e0c",
+   "43deaeaa91",
+   "abd41e1127",
+   "0e4ef79dbb",
+   "292c7b78a0",
+   "df9e27e3f6",
+   "28f3d0ec97",
+   "b6e5e4a490",
+   "5573c81f14",
+   "05323a7fdd",
+   "bc6524a618",
+   "f631018c35",
+   "4c2342a26d",
+   "751b5a3f02",
+   "f180149fdc",
+   "8ccc194d9f",
+   "e622903fcf",
+   "05be6b409a",
+   "4599a3db89"
   ],
   "nuevos_desde": {
-   "0f891f4baf": "2026-11-14T07:57-03:00",
-   "075e198dd5": "2026-11-14T07:57-03:00",
-   "027eedecba": "2026-11-14T07:57-03:00",
-   "ce76f80197": "2026-11-14T07:57-03:00",
-   "be95ab524e": "2026-11-14T07:57-03:00",
-   "b30ad6ce8e": "2026-11-14T07:57-03:00",
-   "81b6dcb498": "2026-11-14T07:57-03:00",
-   "4b90b4b87d": "2026-11-14T07:57-03:00",
-   "180b8faca6": "2026-11-14T07:57-03:00",
-   "517b9d6aea": "2026-11-14T07:57-03:00",
-   "09dde53587": "2026-11-14T07:57-03:00",
-   "a3ec3fd7f4": "2026-11-14T07:57-03:00",
-   "ae01aeec9a": "2026-11-14T07:57-03:00",
-   "737802a219": "2026-11-14T07:57-03:00",
-   "393abf11e8": "2026-11-14T07:57-03:00",
-   "f8747df089": "2026-11-14T07:57-03:00",
-   "558235c6d6": "2026-11-14T07:57-03:00",
-   "7c21f5b2e7": "2026-11-14T07:57-03:00",
-   "d254762c30": "2026-11-14T07:57-03:00",
-   "e177bbf791": "2026-11-14T07:57-03:00",
-   "5ed3920006": "2026-11-14T07:57-03:00",
-   "d60159c04a": "2026-11-14T07:57-03:00",
-   "66e917def1": "2026-11-14T07:57-03:00",
-   "3b72e035c1": "2026-11-14T07:57-03:00",
-   "b7455b7c9b": "2026-11-14T07:57-03:00",
-   "062e148c78": "2026-11-14T07:57-03:00",
-   "fe27d32fcc": "2026-11-14T07:57-03:00",
-   "57b684b75a": "2026-11-14T07:57-03:00",
-   "a66a908c01": "2026-11-14T14:24-03:00",
-   "580874b018": "2026-11-14T14:24-03:00",
-   "bcb86f6216": "2026-11-14T14:24-03:00",
-   "e0bc23ea98": "2026-11-14T14:24-03:00",
-   "34d943d6d8": "2026-11-14T14:24-03:00",
-   "669d9de44e": "2026-11-14T14:24-03:00",
-   "b9316d87da": "2026-11-14T14:24-03:00",
-   "08aec19694": "2026-11-14T14:24-03:00",
-   "1319e8a027": "2026-11-14T14:24-03:00",
-   "bdba94cff7": "2026-11-14T14:24-03:00",
-   "49968df067": "2026-11-14T14:24-03:00",
-   "2d0d9f7f7e": "2026-11-14T14:24-03:00",
-   "8f7112b418": "2026-11-14T14:24-03:00",
-   "31669b1c8c": "2026-11-14T14:24-03:00",
-   "97486db51a": "2026-11-14T14:24-03:00",
-   "e8906ad8da": "2026-11-14T14:24-03:00",
-   "93336c9e54": "2026-11-14T14:24-03:00",
-   "bbbd44b30c": "2026-11-14T14:24-03:00",
-   "04d046a32a": "2026-11-14T14:24-03:00",
-   "8a0919c881": "2026-11-14T14:24-03:00",
-   "6b80f326f1": "2026-11-14T14:24-03:00",
-   "2e03707294": "2026-11-14T14:24-03:00",
-   "5f5d56457c": "2026-11-14T14:24-03:00",
-   "6270c23ed7": "2026-11-14T14:24-03:00",
-   "b2f4ac4e18": "2026-11-14T14:24-03:00",
-   "b3e677ddfe": "2026-11-14T14:24-03:00",
-   "15ad1b7528": "2026-11-14T14:24-03:00",
-   "d930658602": "2026-11-14T14:24-03:00",
-   "3ccefe1e5f": "2026-11-14T14:24-03:00",
-   "9a75713a71": "2026-11-14T14:24-03:00",
-   "d93ec1bdee": "2026-11-14T14:24-03:00",
-   "3946452de0": "2026-11-14T14:24-03:00",
-   "e2970e04cc": "2026-11-14T14:24-03:00",
-   "47aaecf043": "2026-11-14T14:24-03:00",
-   "add1abaca2": "2026-11-14T14:24-03:00",
-   "c64d4dae36": "2026-11-14T14:24-03:00",
-   "9e1dc84422": "2026-11-14T14:24-03:00",
-   "649c18ee8d": "2026-11-14T14:24-03:00",
-   "52c8113b0b": "2026-11-14T14:24-03:00",
-   "f8f6ff6848": "2026-11-14T14:24-03:00",
-   "8a7266e0ff": "2026-11-14T14:24-03:00",
-   "798434cf22": "2026-11-14T14:24-03:00",
-   "4fae3c3cc4": "2026-11-14T14:24-03:00",
-   "2e89ea4c31": "2026-11-14T14:24-03:00",
-   "b937fe271e": "2026-11-14T14:24-03:00",
-   "5110ea20eb": "2026-11-14T14:24-03:00",
-   "44c5177b37": "2026-11-14T14:24-03:00",
    "e9f61deda9": "2026-11-14T18:31-03:00",
    "b5cbdda7a0": "2026-11-14T18:31-03:00",
    "6dcf33adff": "2026-11-14T18:31-03:00",
@@ -407,24 +279,46 @@
    "5531f666bd": "2026-11-15T07:15-03:00",
    "ddbafad0e4": "2026-11-15T07:15-03:00",
    "fd3c2e5e83": "2026-11-15T07:15-03:00",
-   "7529523efd": "2026-11-15T07:15-03:00"
+   "7529523efd": "2026-11-15T07:15-03:00",
+   "98ba1c7d95": "2026-11-15T14:33-03:00",
+   "8c896c1241": "2026-11-15T14:33-03:00",
+   "ea541852af": "2026-11-15T14:33-03:00",
+   "91a7439e0c": "2026-11-15T14:33-03:00",
+   "43deaeaa91": "2026-11-15T14:33-03:00",
+   "abd41e1127": "2026-11-15T14:33-03:00",
+   "0e4ef79dbb": "2026-11-15T14:33-03:00",
+   "292c7b78a0": "2026-11-15T14:33-03:00",
+   "df9e27e3f6": "2026-11-15T14:33-03:00",
+   "28f3d0ec97": "2026-11-15T14:33-03:00",
+   "b6e5e4a490": "2026-11-15T14:33-03:00",
+   "5573c81f14": "2026-11-15T14:33-03:00",
+   "05323a7fdd": "2026-11-15T14:33-03:00",
+   "bc6524a618": "2026-11-15T14:33-03:00",
+   "f631018c35": "2026-11-15T14:33-03:00",
+   "4c2342a26d": "2026-11-15T14:33-03:00",
+   "751b5a3f02": "2026-11-15T14:33-03:00",
+   "f180149fdc": "2026-11-15T14:33-03:00",
+   "8ccc194d9f": "2026-11-15T14:33-03:00",
+   "e622903fcf": "2026-11-15T14:33-03:00",
+   "05be6b409a": "2026-11-15T14:33-03:00",
+   "4599a3db89": "2026-11-15T14:33-03:00"
   },
   "horas_nuevos": 24,
-  "llamadas_ia": 87,
+  "llamadas_ia": 22,
   "ia_sin_cupo": false,
-  "ultima_completa": "2026-11-15T06:24-03:00",
+  "ultima_completa": "2026-11-15T14:09-03:00",
   "modo": "completa",
-  "paginas_revisadas": 87,
+  "paginas_revisadas": 20,
   "busquedas": 107,
-  "fuentes_fijas": 11,
-  "errores": 33,
-  "noticias_desde": "2026-11-14",
-  "noticias_viejas_descartadas": 459,
-  "redes_vistas": 3,
-  "generos_ia": 26,
-  "imagenes_encontradas": 15
+  "fuentes_fijas": 9,
+  "errores": 23,
+  "noticias_desde": "2026-11-15",
+  "noticias_viejas_descartadas": 420,
+  "redes_vistas": 1,
+  "generos_ia": 4,
+  "imagenes_encontradas": 19
  },
- "total": 621,
+ "total": 643,
  "eventos": [
   {
    "titulo": "Mariposas y Polillas, Colores en Movimiento",
@@ -516,7 +410,7 @@
    "origen": "ia",
    "id": "b91cbc5d41",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-13"
+   "actualizado": "2026-11-15"
   },
   {
    "titulo": "El mundo en una biblioteca. Cien años de la donación de José Toribio Medina",
@@ -650,7 +544,7 @@
    "origen": "ia",
    "id": "a2b9db3fc8",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-13"
+   "actualizado": "2026-11-15"
   },
   {
    "titulo": "Vitrina Colecciones arqueológicas y su estudio en el MNHN",
@@ -1197,7 +1091,7 @@
    "origen": "claude",
    "id": "0bdfd1df65",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-10"
+   "actualizado": "2026-11-15"
   },
   {
    "titulo": "Geometría Sonora",
@@ -1433,7 +1327,7 @@
    "origen": "claude",
    "id": "c32f483a1c",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-10"
+   "actualizado": "2026-11-15"
   },
   {
    "titulo": "Exhibición “Un viaje al pasado de Puchuncaví”",
@@ -1959,7 +1853,7 @@
    "origen": "claude",
    "id": "ac7820b39e",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-10"
+   "actualizado": "2026-11-15"
   },
   {
    "titulo": "Llevaban un mundo nuevo en el corazón",
@@ -2158,7 +2052,7 @@
    "origen": "claude",
    "id": "526eb4a6d4",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-10"
+   "actualizado": "2026-11-15"
   },
   {
    "titulo": "Festival Teatro a Mil Sub-25",
@@ -3867,7 +3761,7 @@
    "origen": "ia",
    "id": "e381f47523",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-10"
+   "actualizado": "2026-11-15"
   },
   {
    "titulo": "Comienzo",
@@ -6706,6 +6600,36 @@
    "genero": "indie"
   },
   {
+   "titulo": "Víctor Castillo. La jaula invisible",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-17",
+   "fecha_fin": "2027-04-11",
+   "hora": null,
+   "horario": "Mar a dom, 10:00 - 18:30",
+   "lugar": "Museo Nacional de Bellas Artes",
+   "direccion": "José Miguel de la Barra 650",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Exposición de artes visuales de Víctor Castillo en la Sala Matta del MNBA.",
+   "imagen": "https://www.mnba.gob.cl/sites/www.mnba.gob.cl/files/2026-11/victorcastillo_web.jpg",
+   "fotos": null,
+   "url": "https://www.mnba.gob.cl/cartelera",
+   "fuentes": [
+    {
+     "nombre": "mnba.gob.cl",
+     "url": "https://www.mnba.gob.cl/cartelera"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "bc6524a618",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15"
+  },
+  {
    "titulo": "Visita guiada exposición: Mi nombre es Maipú y sueño que soy real",
    "categoria": "museos",
    "fecha_inicio": "2026-11-18",
@@ -7437,6 +7361,37 @@
    "genero": "metal"
   },
   {
+   "titulo": "Malagata reflejo azul (Concierto / Taquilla)",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-19",
+   "fecha_fin": "2026-11-20",
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Bodeguita de Nicanor",
+   "direccion": null,
+   "comuna": "Concepción",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $10.000",
+   "descripcion": "📅 Jueves 19 de noviembre desde las 21 horas",
+   "imagen": "https://img.vamoh.cl/events/c245a72f-d747-4eca-8ed6-25addd274e5f.webp?v=f0793cea",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/malagata-reflejo-azul-concierto-taquilla-qub4p/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/malagata-reflejo-azul-concierto-taquilla-qub4p/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "28f3d0ec97",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15",
+   "genero": "cumbia"
+  },
+  {
    "titulo": "Bombo Fica - En La Diabla Bar",
    "categoria": "standup",
    "fecha_inicio": "2026-11-19",
@@ -7592,6 +7547,36 @@
    "agregado": "2026-11-10",
    "actualizado": "2026-11-10",
    "genero": "clasica"
+  },
+  {
+   "titulo": "Visitas guiadas CEAC / Gran Sala Sinfónica Nacional",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-19",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Centro de Extensión Artística y Cultural Universidad de Chile",
+   "direccion": "Vicuña Mackenna 20",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde: CLP 3.850",
+   "descripcion": "Visita guiada por el Centro de Extensión Artística y Cultural de la Universidad de Chile y la Gran Sala Sinfónica Nacional.",
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/338578cdaee8894b8cb4c65d386c3d1b5eee4eab.png?1793301242",
+   "fotos": null,
+   "url": "https://ticketplus.cl/companies/gran-sala-sinfonica-nacional",
+   "fuentes": [
+    {
+     "nombre": "ticketplus.cl",
+     "url": "https://ticketplus.cl/companies/gran-sala-sinfonica-nacional"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "f631018c35",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15"
   },
   {
    "titulo": "Concierto por el Día de la Música, con la Orquesta Filarmónica Nahuelbuta",
@@ -8038,6 +8023,37 @@
    "id": "dc78f24f9a",
    "agregado": "2026-11-14",
    "actualizado": "2026-11-14"
+  },
+  {
+   "titulo": "Latente Jazz Club | Federico Dannemann Trio",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-20",
+   "fecha_fin": null,
+   "hora": "21:30",
+   "horario": null,
+   "lugar": "Sala Latente",
+   "direccion": null,
+   "comuna": "La Serena",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $10.000",
+   "descripcion": "🎻✨ Conciertos íntimos como en casa. Una noche para disfrutar del jazz de cerca, descubrir nuevas sonoridades y compartir la música en un ambiente íntimo y acogedor. Este 20 de noviembre, LATENTE JAZZ CLUB presenta a Federico Dannemann Trio,",
+   "imagen": "https://img.vamoh.cl/events/7762e1de-3ac6-42dd-8a06-36e20cd8ec3c.webp?v=caf71a4f",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/latente-jazz-club-federico-dannemann-trio-isroo/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/latente-jazz-club-federico-dannemann-trio-isroo/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "abd41e1127",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15",
+   "genero": "jazz"
   },
   {
    "titulo": "Mauricio Palma",
@@ -8599,6 +8615,41 @@
    "actualizado": "2026-11-10"
   },
   {
+   "titulo": "Francisco Villa en Concierto",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-21",
+   "fecha_fin": "2026-11-22",
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Cafetería popular",
+   "direccion": "Maipú 363, 8350466 Santiago, Región Metropolitana",
+   "comuna": "Santiago",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $10.000",
+   "descripcion": "Francisco \"Pancho\" Villa vuelve a la Cafetería Popular!",
+   "imagen": "https://img.vamoh.cl/events/769fb6e1-0481-400e-b069-7628eefb62db.webp?v=e0f30142",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/francisco-villa-en-concierto-nihh8/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/francisco-villa-en-concierto-nihh8/"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/francisco-villa-en-concierto-20718"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "91a7439e0c",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15",
+   "genero": "folclor"
+  },
+  {
    "titulo": "Metal Sinfónico con From Wishes – Tributo a Nightwish y Deadly Mist",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-21",
@@ -8630,6 +8681,68 @@
    "genero": "metal"
   },
   {
+   "titulo": "Enanitos Verdes sinfónico",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-21",
+   "fecha_fin": "2026-11-22",
+   "hora": "21:30",
+   "horario": null,
+   "lugar": "Magnolia Bar",
+   "direccion": null,
+   "comuna": "Chillán",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $10.000",
+   "descripcion": "Este 21 de noviembre, Galas del Tiempo presenta: Enanitos Verdes sinfónico. Los grandes éxitos de una de las bandas más emblemáticas del rock en español llegan a un nuevo universo sonoro, donde la energía del rock se encuentra con la orques",
+   "imagen": "https://img.vamoh.cl/events/7ca0efd7-3df9-4ec1-9ec2-c69397c31443.webp?v=d0e1ca92",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/enanitos-verdes-sinfonico-50xjb/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/enanitos-verdes-sinfonico-50xjb/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "43deaeaa91",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15",
+   "genero": "rock"
+  },
+  {
+   "titulo": "200 - Reggaetón Classics - Hotel W - Sábado 21",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-21",
+   "fecha_fin": "2026-11-22",
+   "hora": "22:00",
+   "horario": null,
+   "lugar": "Club Siete",
+   "direccion": "Isidora Goyenechea 3000, piso 4, 7550653 Las Condes, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Descubre 200 - REGGAETÓN CLASSICS - HOTEL W - SÁBADO 21 en Keai. Evento en Las Condes el 21/11/2026.",
+   "imagen": "https://cdn.keai.cl/events/20724-76be8115c8ba63e67627083baef6ee6f.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/200-reggaeton-classics-hotel-w-sabado-21-20724",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/200-reggaeton-classics-hotel-w-sabado-21-20724"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "05323a7fdd",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15",
+   "genero": "reggaeton"
+  },
+  {
    "titulo": "Abstracto: Unipersonal de Stand up de Iván García",
    "categoria": "standup",
    "fecha_inicio": "2026-11-21",
@@ -8637,7 +8750,7 @@
    "hora": "22:00",
    "horario": null,
    "lugar": "Happy People Comedy Bar",
-   "direccion": null,
+   "direccion": "Rancagua 395, 7501121 Providencia, Región Metropolitana",
    "comuna": "Providencia",
    "ciudad": null,
    "region": null,
@@ -8650,6 +8763,10 @@
     {
      "nombre": "VAMOH!",
      "url": "https://vamoh.cl/events/abstracto-unipersonal-de-stand-up-de-ivan-garcia-e4sm6/"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/abstracto-unipersonal-de-stand-up-de-ivan-garcia-20721"
     }
    ],
    "desde_imagen": false,
@@ -8657,7 +8774,7 @@
    "origen": "datos-estructurados",
    "id": "ccff163ce9",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
+   "actualizado": "2026-11-15"
   },
   {
    "titulo": "Ciclo de teatro-Bodas de 3-Sábado 21 Noviembre 22:15 hrs",
@@ -8720,6 +8837,40 @@
    "actualizado": "2026-11-10"
   },
   {
+   "titulo": "OTAKU DANCE - POKEMON 30º, Sab 21 Nov, Spot Freedom",
+   "categoria": "anime",
+   "fecha_inicio": "2026-11-21",
+   "fecha_fin": "2026-11-22",
+   "hora": "23:30",
+   "horario": null,
+   "lugar": "Club Freedom",
+   "direccion": "Av. Recoleta 345, 8420378 Recoleta, Región Metropolitana",
+   "comuna": "Recoleta",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $8.000",
+   "descripcion": "Evento solo para Mayores de 18 Años. 𝐎𝐓𝐀𝐊𝐔 𝐃𝐀𝐍𝐂𝐄 presenta: 𝟑𝟎 𝐀𝐍𝐈𝐕𝐄𝐑𝐒𝐀𝐑𝐈𝐎 𝐃𝐄 𝐏𝐎𝐊𝐄𝐌𝐎𝐍 Preventas disponibles en www.passline.cl 🎟️ Sábado 21 Noviembre desde las 23:30 hrs. SPOT FREEDOM📍 Av. Recoleta 345 (M. Patronato) ¡Preparen sus Pokébolas,",
+   "imagen": "https://img.vamoh.cl/events/1a4cfb21-2199-4a2f-af12-40da770e4acc.webp?v=d5501ff5",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/otaku-dance-pokemon-30-sab-21-nov-spot-freedom-a7gkl/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/otaku-dance-pokemon-30-sab-21-nov-spot-freedom-a7gkl/"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/otaku-dance-pokemon-30o-sab-21-nov-spot-freedom-20727"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "ea541852af",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15"
+  },
+  {
    "titulo": "Claudio Michaux en Chicureo",
    "categoria": "standup",
    "fecha_inicio": "2026-11-21",
@@ -8748,6 +8899,37 @@
    "id": "6c5fdeb43e",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Concierto 184° Aniversario Universidad de Chile",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-21",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Gran Sala Sinfónica Nacional",
+   "direccion": "Vicuña Mackenna 20",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde: CLP 5.500",
+   "descripcion": "Concierto de celebración del 184° Aniversario de la Universidad de Chile en la Gran Sala Sinfónica Nacional.",
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/0831b7d783edb3c86f5b05880663952776aeadeb.png?1793106842",
+   "fotos": null,
+   "url": "https://ticketplus.cl/companies/gran-sala-sinfonica-nacional",
+   "fuentes": [
+    {
+     "nombre": "ticketplus.cl",
+     "url": "https://ticketplus.cl/companies/gran-sala-sinfonica-nacional"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "751b5a3f02",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15",
+   "genero": "clasica"
   },
   {
    "titulo": "Djavan en Chile",
@@ -9105,6 +9287,36 @@
    "agregado": "2026-11-06",
    "actualizado": "2026-11-08",
    "genero": "metal"
+  },
+  {
+   "titulo": "Visitas guiadas CEAC / Gran Sala Sinfónica Nacional",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-21",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Centro de Extensión Artística y Cultural Universidad de Chile",
+   "direccion": "Vicuña Mackenna 20",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde: CLP 3.850",
+   "descripcion": "Visita guiada por el Centro de Extensión Artística y Cultural de la Universidad de Chile y la Gran Sala Sinfónica Nacional.",
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/338578cdaee8894b8cb4c65d386c3d1b5eee4eab.png?1793301242",
+   "fotos": null,
+   "url": "https://ticketplus.cl/companies/gran-sala-sinfonica-nacional",
+   "fuentes": [
+    {
+     "nombre": "ticketplus.cl",
+     "url": "https://ticketplus.cl/companies/gran-sala-sinfonica-nacional"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "4c2342a26d",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15"
   },
   {
    "titulo": "Micrófono Abierto en GAM",
@@ -9914,6 +10126,37 @@
    "genero": "rock"
   },
   {
+   "titulo": "[Templo Mayor] Orquesta del Conservatorio de Sydney",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-26",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Templo Mayor de Campus Oriente",
+   "direccion": null,
+   "comuna": "Providencia",
+   "ciudad": null,
+   "region": null,
+   "precio": "Gratis",
+   "descripcion": "Concierto extraordinario en Campus Oriente | Orquesta del Conservatorio de Sydney En un nuevo concierto extraordinario respecto de la programación artística 2026 del Instituto de Música UC, se hará presente la Orquesta Sinfónica del Conserv",
+   "imagen": "https://img.vamoh.cl/events/74b49ad6-6cea-40bc-8cb4-c58de9fe9899.webp?v=4673b273",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/templo-mayor-orquesta-del-conservatorio-de-sydney-ck16r/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/templo-mayor-orquesta-del-conservatorio-de-sydney-ck16r/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "b6e5e4a490",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15",
+   "genero": "clasica"
+  },
+  {
    "titulo": "Coro polifónico de Rancagua celebra sus 10 años con gran concierto aniversario en el Teatro Regional Lucho Gatica",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-26",
@@ -10080,6 +10323,37 @@
    "id": "04fc5d9e78",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-15"
+  },
+  {
+   "titulo": "Indie University Party • The New Old",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-26",
+   "fecha_fin": "2026-11-27",
+   "hora": "23:30",
+   "horario": null,
+   "lugar": "Blondie",
+   "direccion": "Avda Liber Bernardo O`Higgins 2879, Santiago, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Descubre Indie University Party • The New Old en Keai. Evento en Santiago el 26/11/2026.",
+   "imagen": "https://cdn.keai.cl/events/20745-a5e9cdbc0f1bcdd833f87843011cb792.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/indie-university-party-the-new-old-20745",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/indie-university-party-the-new-old-20745"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "5573c81f14",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15",
+   "genero": "indie"
   },
   {
    "titulo": "Alex Ortiz - En La Diabla Bar",
@@ -10330,6 +10604,36 @@
    "id": "22ec1754f3",
    "agregado": "2026-11-14",
    "actualizado": "2026-11-14"
+  },
+  {
+   "titulo": "Visitas guiadas CEAC / Gran Sala Sinfónica Nacional",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-26",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Centro de Extensión Artística y Cultural Universidad de Chile",
+   "direccion": "Vicuña Mackenna 20",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Visita guiada por el Centro de Extensión Artística y Cultural de la Universidad de Chile y la Gran Sala Sinfónica Nacional.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://ticketplus.cl/companies/gran-sala-sinfonica-nacional",
+   "fuentes": [
+    {
+     "nombre": "ticketplus.cl",
+     "url": "https://ticketplus.cl/companies/gran-sala-sinfonica-nacional"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "f180149fdc",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15"
   },
   {
    "titulo": "YCS Santiago 2026",
@@ -10764,6 +11068,72 @@
    "genero": "metal"
   },
   {
+   "titulo": "Tributo a Erasure / Noche Electronica",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": "2026-11-28",
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Club Clavero 46",
+   "direccion": null,
+   "comuna": "Puente Alto",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $3.000",
+   "descripcion": "Evento solo para Mayores de 18 Años. Ven a disfrutar de una noche con la mejor música electrónica de los 80 y 90, donde revisaremos los mejores éxitos de Erasure con el dúo Wonderland asi como también estará de invitado el grupo Devotion co",
+   "imagen": "https://img.vamoh.cl/events/a0753e45-00ff-49ef-9944-d5a8919ba180.webp?v=e8a2db12",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/tributo-a-erasure-noche-electronica-gjcvf/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/tributo-a-erasure-noche-electronica-gjcvf/"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/noche-electronica-tributo-a-depeche-mode-erasure-dre61/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "8c896c1241",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15",
+   "genero": "electronica"
+  },
+  {
+   "titulo": "SUPERNOVA concierto + fiesta",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": "2026-11-28",
+   "hora": "23:45",
+   "horario": null,
+   "lugar": "Brava Bar Los Andes",
+   "direccion": null,
+   "comuna": "Los Andes",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $5.000",
+   "descripcion": "Ven a cantar a todos pulmón las canciones que más de una vez dedicaste. SUPERNOVA se presenta en VIVO en Brava Los Andes Un concierto + fiesta para disfrutar de principio a fin Apertura de puertas 23:45 INVITACIONES para ingresos hasta las",
+   "imagen": "https://img.vamoh.cl/events/8a47c105-073b-41c5-8c46-f9194cff9c18.webp?v=f33bb91e",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/supernova-concierto-fiesta-25fbd/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/supernova-concierto-fiesta-25fbd/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "df9e27e3f6",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15",
+   "genero": "pop"
+  },
+  {
    "titulo": "CACHORROS",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-27",
@@ -10833,11 +11203,11 @@
    "hora": null,
    "horario": null,
    "lugar": "Gran Sala Sinfónica Nacional",
-   "direccion": null,
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
-   "precio": null,
+   "direccion": "Vicuña Mackenna 20",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde: CLP 5.500",
    "descripcion": "Concierto de música clásica y orquestal interpretado por la Orquesta Sinfónica Nacional de Chile.",
    "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/b04893a3a44a6d86e4d658f861089f91b768fc00.png?1787930934",
    "fotos": null,
@@ -10846,6 +11216,10 @@
     {
      "nombre": "Ticketplus",
      "url": "https://ticketplus.cl/events/la-previa-concierto-n-20-poemas-danzas-y-gloria"
+    },
+    {
+     "nombre": "ticketplus.cl",
+     "url": "https://ticketplus.cl/companies/gran-sala-sinfonica-nacional"
     }
    ],
    "desde_imagen": false,
@@ -11420,6 +11794,14 @@
     {
      "nombre": "songkick.com",
      "url": "https://www.songkick.com/metro-areas/27525-chile-santiago/genre/rock"
+    },
+    {
+     "nombre": "songkick.com",
+     "url": "https://www.songkick.com/es/metro-areas/27525-chile-santiago/2026/genre/rock"
+    },
+    {
+     "nombre": "songkick.com",
+     "url": "https://www.songkick.com/es/metro-areas/27525-chile-santiago"
     }
    ],
    "desde_imagen": true,
@@ -11890,6 +12272,36 @@
    "agregado": "2026-11-12",
    "actualizado": "2026-11-12",
    "genero": "bandas_sonoras"
+  },
+  {
+   "titulo": "Visitas guiadas CEAC / Gran Sala Sinfónica Nacional",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Centro de Extensión Artística y Cultural Universidad de Chile",
+   "direccion": "Vicuña Mackenna 20",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde: CLP 3.850",
+   "descripcion": "Visita guiada por el Centro de Extensión Artística y Cultural de la Universidad de Chile y la Gran Sala Sinfónica Nacional.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://ticketplus.cl/companies/gran-sala-sinfonica-nacional",
+   "fuentes": [
+    {
+     "nombre": "ticketplus.cl",
+     "url": "https://ticketplus.cl/companies/gran-sala-sinfonica-nacional"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "8ccc194d9f",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15"
   },
   {
    "titulo": "Boletería Itinerante Teatro a Mil - Biobío",
@@ -12903,6 +13315,37 @@
    "actualizado": "2026-11-15"
   },
   {
+   "titulo": "Concierto Banda DIFER",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-04",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Corporación Cultural San Pedro de la Paz",
+   "direccion": null,
+   "comuna": "San Pedro de la Paz",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $3.000",
+   "descripcion": "Con una propuesta musical que fusiona el rock y el pop, Difer se ha consolidado como una interesante agrupación de la escena musical de San Pedro de la Paz. Integrada por Diego Soto, Adolfo Soto, Jovan Soto y Bastian Reyes, la banda destaca",
+   "imagen": "https://img.vamoh.cl/events/c45eac20-e55d-4f8d-8bbc-f95d7cee3d61.webp?v=362bc4c4",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/concierto-banda-difer-ts3ra/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/concierto-banda-difer-ts3ra/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "0e4ef79dbb",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15",
+   "genero": "rock"
+  },
+  {
    "titulo": "Golosa La Orquesta y Kinmakirú en vivo",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-04",
@@ -12932,6 +13375,36 @@
    "agregado": "2026-11-15",
    "actualizado": "2026-11-15",
    "genero": "clasica"
+  },
+  {
+   "titulo": "Invasión: Stand Up de Otro Mundo",
+   "categoria": "standup",
+   "fecha_inicio": "2026-12-04",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Happy People Comedy Bar",
+   "direccion": null,
+   "comuna": "Providencia",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $5.000",
+   "descripcion": "¿Estás listo para el contacto final? \"Invasión\" aterriza en la cartelera de Happy People con una propuesta de stand up de otro planeta, con el ingenio de Simón Romero, el carisma de Pancho Rebolledo y la agudeza de La Karencita, invitada es",
+   "imagen": "https://img.vamoh.cl/events/b7589966-6d05-4b7a-944e-7191225da2b9.webp?v=a1c2530c",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/invasion-stand-up-de-otro-mundo-kuzdj/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/invasion-stand-up-de-otro-mundo-kuzdj/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "05be6b409a",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15"
   },
   {
    "titulo": "Metal Darkness XXII",
@@ -13196,6 +13669,37 @@
    "id": "187c9e69bc",
    "agregado": "2026-11-15",
    "actualizado": "2026-11-15"
+  },
+  {
+   "titulo": "Entropía Rítmica",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-04",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Gran Sala Sinfónica Nacional",
+   "direccion": "Vicuña Mackenna 20",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde: CLP 11.000",
+   "descripcion": "Concierto Entropía Rítmica en la Gran Sala Sinfónica Nacional.",
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/caff7961b23eb7980827cb2a9fd0cb24f3be6440.png?1790621893",
+   "fotos": null,
+   "url": "https://ticketplus.cl/companies/gran-sala-sinfonica-nacional",
+   "fuentes": [
+    {
+     "nombre": "ticketplus.cl",
+     "url": "https://ticketplus.cl/companies/gran-sala-sinfonica-nacional"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "e622903fcf",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15",
+   "genero": "clasica"
   },
   {
    "titulo": "Es lo que hay, o lo que va quedando",
@@ -14613,7 +15117,7 @@
    "origen": "datos-estructurados",
    "id": "c5b1d7de21",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-14",
+   "actualizado": "2026-11-15",
    "genero": "metal"
   },
   {
@@ -14842,10 +15346,10 @@
    "hora": "10:00",
    "horario": null,
    "lugar": "Gran Sala Sinfónica Nacional",
-   "direccion": null,
+   "direccion": "Vicuña Mackenna 20",
    "comuna": "Providencia",
-   "ciudad": null,
-   "region": null,
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
    "precio": "Desde $10.450",
    "descripcion": "Centro de Extensión Artística y Cultural Universidad de Chile Gran Sala Sinfónica Nacional Av. Vicuña Mackenna 20, Providencia, Región Metropolitana Concierto especial de fin de año • Gala Lírica Viernes 11 de diciembre de 2026 / 19:30 hora",
    "imagen": "https://img.vamoh.cl/events/3f5397ec-b135-407c-b690-c8874ee57aa3.webp",
@@ -14855,6 +15359,10 @@
     {
      "nombre": "VAMOH!",
      "url": "https://vamoh.cl/events/concierto-especial-de-fin-de-ano-gala-lirica-l7p5p/"
+    },
+    {
+     "nombre": "ticketplus.cl",
+     "url": "https://ticketplus.cl/companies/gran-sala-sinfonica-nacional"
     }
    ],
    "desde_imagen": false,
@@ -14862,7 +15370,7 @@
    "origen": "datos-estructurados",
    "id": "696a132e8f",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-14",
+   "actualizado": "2026-11-15",
    "genero": "clasica"
   },
   {
@@ -15593,6 +16101,10 @@
     {
      "nombre": "Fever",
      "url": "https://feverup.com/es/santiago/the-jazz-room"
+    },
+    {
+     "nombre": "Fever",
+     "url": "https://feverup.com/es/santiago/teatro"
     }
    ],
    "desde_imagen": false,
@@ -15600,7 +16112,7 @@
    "origen": "ia",
    "id": "b937fe271e",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-14",
+   "actualizado": "2026-11-15",
    "genero": "jazz"
   },
   {
@@ -17027,7 +17539,7 @@
    "titulo": "The Jury Experience – Travesía Mortal",
    "categoria": "standup",
    "fecha_inicio": "2026-12-27",
-   "fecha_fin": null,
+   "fecha_fin": "2027-01-10",
    "hora": "16:00",
    "horario": null,
    "lugar": "Teatro Mori Parque Arauco",
@@ -17044,6 +17556,10 @@
     {
      "nombre": "allevents.in",
      "url": "https://allevents.in/santiago/comedy"
+    },
+    {
+     "nombre": "Fever",
+     "url": "https://feverup.com/es/santiago/teatro"
     }
    ],
    "desde_imagen": false,
@@ -17051,7 +17567,7 @@
    "origen": "ia",
    "id": "159bd6ccca",
    "agregado": "2026-11-12",
-   "actualizado": "2026-11-12"
+   "actualizado": "2026-11-15"
   },
   {
    "titulo": "Drácula",
@@ -18019,7 +18535,7 @@
    "region": null,
    "precio": "Desde $10.171",
    "descripcion": "Montaje teatral contemporáneo presentado en el Centro GAM.",
-   "imagen": null,
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/3632f1dd24515e9529919e8da0223c773ac86455.png?1793893309",
    "fotos": null,
    "url": "https://teatro-a-mil.ticketplus.cl/events/arde-FITAM2027",
    "fuentes": [
@@ -18067,6 +18583,37 @@
    "genero": "metal"
   },
   {
+   "titulo": "De Saloon",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-01-22",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Ceina",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde CLP 17.800",
+   "descripcion": "Concierto en vivo de la emblemática banda chilena de rock y pop alternativo De Saloon en Teatro Ceina.",
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/c3238dc970ab27f4dfe62166f0a20451543471c7.png?1792593245",
+   "fotos": null,
+   "url": "https://teatro-a-mil.ticketplus.cl/events/de-saloon-FITAM2027",
+   "fuentes": [
+    {
+     "nombre": "Ticketplus",
+     "url": "https://teatro-a-mil.ticketplus.cl/events/de-saloon-FITAM2027"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "98ba1c7d95",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15",
+   "genero": "indie"
+  },
+  {
    "titulo": "Dónde Viven los Bárbaros",
    "categoria": "teatro",
    "fecha_inicio": "2027-01-22",
@@ -18080,7 +18627,7 @@
    "region": null,
    "precio": "Desde $12.714",
    "descripcion": "Reconocida obra de dramaturgia chilena contemporánea sobre la violencia, los prejuicios y la paranoia social.",
-   "imagen": null,
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/2812163285c681c96ba1da9518aa5ffd056d4a19.png?1791397839",
    "fotos": null,
    "url": "https://teatro-a-mil.ticketplus.cl/events/donde-viven-los-barbaros-FITAM2027",
    "fuentes": [
@@ -18110,7 +18657,7 @@
    "region": null,
    "precio": "Desde $10.171",
    "descripcion": "Obra de teatro en el histórico espacio Teatro La Memoria.",
-   "imagen": null,
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/529d4666df7ee55a0e92e91ce1bacfae262f5fb7.png?1791410988",
    "fotos": null,
    "url": "https://teatro-a-mil.ticketplus.cl/events/letters-FITAM2027",
    "fuentes": [
@@ -18140,7 +18687,7 @@
    "region": null,
    "precio": "Desde $8.476",
    "descripcion": "Obra dramática en cartelera en el Centro Cultural Matucana 100.",
-   "imagen": null,
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/159812a9367494f1efeb6ee8ff02843c9f667b45.png?1793023098",
    "fotos": null,
    "url": "https://teatro-a-mil.ticketplus.cl/events/los-huesos-FITAM2027",
    "fuentes": [
@@ -18170,7 +18717,7 @@
    "region": null,
    "precio": "Desde $10.171",
    "descripcion": "Montaje de teatro dramático en el Teatro Sidarte de Recoleta.",
-   "imagen": null,
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/1afbaa9c45dcba1223fe61315868165ede07180f.png?1793373971",
    "fotos": null,
    "url": "https://teatro-a-mil.ticketplus.cl/events/venado-asesino-FITAM2027",
    "fuentes": [
@@ -18246,6 +18793,37 @@
    "actualizado": "2026-11-06"
   },
   {
+   "titulo": "The Legend - el Concierto-temuco",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-01-23",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Teatro Municipal de Temuco",
+   "direccion": null,
+   "comuna": "Temuco",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $15.000",
+   "descripcion": "THE LEGEND – EL CONCIERTO La música de Michael Jackson vuelve a cobrar vida en un espectacular concierto protagonizado por Sebastián Suárez, reconocido intérprete que lleva al escenario la fuerza, energía y emoción de las grandes canciones",
+   "imagen": "https://img.vamoh.cl/events/ce9b2859-4725-4147-8f04-8578dbc97dd7.webp?v=28b8dcb1",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/the-legend-el-concierto-temuco-35r05/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/the-legend-el-concierto-temuco-35r05/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "292c7b78a0",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15",
+   "genero": "pop"
+  },
+  {
    "titulo": "Calenda Maia",
    "categoria": "conciertos",
    "fecha_inicio": "2027-01-23",
@@ -18259,7 +18837,7 @@
    "region": null,
    "precio": "Desde $16.952",
    "descripcion": "Concierto de la destacada agrupación chilena de música y performance medieval.",
-   "imagen": null,
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/67fe4e0280fbd45917735ba2aba666bd8bc79032.png?1793893939",
    "fotos": null,
    "url": "https://teatro-a-mil.ticketplus.cl/events/calenda-maia-FITAM2027",
    "fuentes": [
@@ -18290,7 +18868,7 @@
    "region": null,
    "precio": "Desde $10.383",
    "descripcion": "Adaptación teatral basada en la obra literaria de Cristina Rivera Garza.",
-   "imagen": null,
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/a27814301f82af4d9cd3ed7d342b424762a3f11a.png?1793990442",
    "fotos": null,
    "url": "https://teatro-a-mil.ticketplus.cl/events/el-invencible-verano-de-liliana-tm-vina-del-mar-2027",
    "fuentes": [
@@ -18320,7 +18898,7 @@
    "region": null,
    "precio": "Desde $6.781",
    "descripcion": "Pieza teatral contemporánea en Matucana 100.",
-   "imagen": null,
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/46377084b1ee24db75e1975a634fbdf3d2432d51.png?1793024742",
    "fotos": null,
    "url": "https://teatro-a-mil.ticketplus.cl/events/exhumar-FITAM2027",
    "fuentes": [
@@ -18381,7 +18959,7 @@
    "region": null,
    "precio": "Desde $8.476",
    "descripcion": "Obra teatral en Centro GAM.",
-   "imagen": null,
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/70e1ac3f59f51d0c733bcddbbca396c1db74b796.png?1791407930",
    "fotos": null,
    "url": "https://teatro-a-mil.ticketplus.cl/events/ser-o-no-ser-de-carton-FITAM2027",
    "fuentes": [
@@ -18418,6 +18996,10 @@
     {
      "nombre": "Fever",
      "url": "https://feverup.com/es/santiago/the-jazz-room"
+    },
+    {
+     "nombre": "Fever",
+     "url": "https://feverup.com/es/santiago/teatro"
     }
    ],
    "desde_imagen": false,
@@ -18425,7 +19007,7 @@
    "origen": "ia",
    "id": "4fae3c3cc4",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-14",
+   "actualizado": "2026-11-15",
    "genero": "jazz"
   },
   {
@@ -18442,7 +19024,7 @@
    "region": null,
    "precio": "Desde $9.536",
    "descripcion": "Presentación musical del ensamble de cinto instrumental en GAM.",
-   "imagen": null,
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/dbccd8585572143c1a04eb2c15b59791f8ab616e.png?1793893480",
    "fotos": null,
    "url": "https://teatro-a-mil.ticketplus.cl/events/aban-ensemble-FITAM2027",
    "fuentes": [
@@ -18473,7 +19055,7 @@
    "region": null,
    "precio": "Desde $10.171",
    "descripcion": "Obra dramática y de comedia filosófica en Teatro Mori Bellavista.",
-   "imagen": null,
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/cf1fd0d112814b7f07f14b07e504d2042eea918f.png?1791411156",
    "fotos": null,
    "url": "https://teatro-a-mil.ticketplus.cl/events/los-socrates-y-el-misterio-de-la-caverna-FITAM2027",
    "fuentes": [
@@ -18503,7 +19085,7 @@
    "region": null,
    "precio": "Desde $11.866",
    "descripcion": "Tocata en vivo de música indie y alternativa en el Centro Cultural Ceina.",
-   "imagen": null,
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/65f79dfdfd607665034d4774877d277ec8b32f9b.png?1792592691",
    "fotos": null,
    "url": "https://teatro-a-mil.ticketplus.cl/events/maria-y-los-templos-javiera-electra-FITAM2027",
    "fuentes": [
@@ -18710,6 +19292,36 @@
    "agregado": "2026-11-13",
    "actualizado": "2026-11-13",
    "genero": "reggaeton"
+  },
+  {
+   "titulo": "The Jury Experience - Muerte por IA",
+   "categoria": "teatro",
+   "fecha_inicio": "2027-01-31",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Mori Parque Arauco",
+   "direccion": "Av. Presidente Kennedy 5413",
+   "comuna": "Las Condes",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $23.200",
+   "descripcion": "Obra de teatro interactiva de juicio donde el público es el jurado en un caso de homicidio por IA.",
+   "imagen": "https://applications-media.feverup.com/image/upload/f_auto,w_720,h_720/fever2/plan/photo/8d859624-90e0-11f1-a9d4-a233f6906938.jpg",
+   "fotos": null,
+   "url": "https://feverup.com/es/santiago/teatro",
+   "fuentes": [
+    {
+     "nombre": "Fever",
+     "url": "https://feverup.com/es/santiago/teatro"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "4599a3db89",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15"
   },
   {
    "titulo": "D'espairsRay",
