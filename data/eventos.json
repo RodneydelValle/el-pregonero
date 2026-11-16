@@ -1,41 +1,13 @@
 {
  "version": 1,
- "actualizado": "2026-11-15T18:53-03:00",
+ "actualizado": "2026-11-15T23:25-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-15T18:53-03:00",
+  "fecha": "2026-11-15T23:25-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 143,
-  "nuevos_esta_vez": 12,
+  "eventos_nuevos": 121,
+  "nuevos_esta_vez": 6,
   "nuevos_ids": [
-   "1661519d4e",
-   "7894d11145",
-   "fbd2b8de8d",
-   "364bbeaacd",
-   "ca68870864",
-   "4ab62c3f4e",
-   "37999c3fef",
-   "96d47c3da8",
-   "69f64ec041",
-   "c0abb1a67e",
-   "0f1ba818be",
-   "696a132e8f",
-   "b41be20b15",
-   "ea623c25d0",
-   "ecd8a9e0b2",
-   "6e52ccb8ca",
-   "94fcf8af76",
-   "ef2c25423f",
-   "449f513536",
-   "682f291413",
-   "49d16d9e07",
-   "ec7fdf3538",
-   "fe070711f0",
-   "641c3c6f1e",
-   "26a2b7b47d",
-   "37fb634040",
-   "8d4d71327f",
-   "b1cd175b82",
    "b834fe92c9",
    "bdd1aeb4f4",
    "2c2e3a4515",
@@ -150,37 +122,15 @@
    "ba19421141",
    "0aa13c406f",
    "56fc8c67f7",
-   "d2eede4b33"
+   "d2eede4b33",
+   "fc3225e371",
+   "df308cfc77",
+   "e8dee67892",
+   "21a856ef44",
+   "88b0476a32",
+   "3888df0af2"
   ],
   "nuevos_desde": {
-   "1661519d4e": "2026-11-14T23:10-03:00",
-   "7894d11145": "2026-11-14T23:10-03:00",
-   "fbd2b8de8d": "2026-11-14T23:10-03:00",
-   "364bbeaacd": "2026-11-14T23:10-03:00",
-   "ca68870864": "2026-11-14T23:10-03:00",
-   "4ab62c3f4e": "2026-11-14T23:10-03:00",
-   "37999c3fef": "2026-11-14T23:10-03:00",
-   "96d47c3da8": "2026-11-14T23:10-03:00",
-   "69f64ec041": "2026-11-14T23:10-03:00",
-   "c0abb1a67e": "2026-11-14T23:10-03:00",
-   "0f1ba818be": "2026-11-14T23:10-03:00",
-   "696a132e8f": "2026-11-14T23:10-03:00",
-   "b41be20b15": "2026-11-14T23:10-03:00",
-   "ea623c25d0": "2026-11-14T23:10-03:00",
-   "ecd8a9e0b2": "2026-11-14T23:10-03:00",
-   "6e52ccb8ca": "2026-11-14T23:10-03:00",
-   "94fcf8af76": "2026-11-14T23:10-03:00",
-   "ef2c25423f": "2026-11-14T23:10-03:00",
-   "449f513536": "2026-11-14T23:10-03:00",
-   "682f291413": "2026-11-14T23:10-03:00",
-   "49d16d9e07": "2026-11-14T23:10-03:00",
-   "ec7fdf3538": "2026-11-14T23:10-03:00",
-   "fe070711f0": "2026-11-14T23:10-03:00",
-   "641c3c6f1e": "2026-11-14T23:10-03:00",
-   "26a2b7b47d": "2026-11-14T23:10-03:00",
-   "37fb634040": "2026-11-14T23:10-03:00",
-   "8d4d71327f": "2026-11-14T23:10-03:00",
-   "b1cd175b82": "2026-11-14T23:10-03:00",
    "b834fe92c9": "2026-11-15T07:15-03:00",
    "bdd1aeb4f4": "2026-11-15T07:15-03:00",
    "2c2e3a4515": "2026-11-15T07:15-03:00",
@@ -295,23 +245,30 @@
    "ba19421141": "2026-11-15T18:53-03:00",
    "0aa13c406f": "2026-11-15T18:53-03:00",
    "56fc8c67f7": "2026-11-15T18:53-03:00",
-   "d2eede4b33": "2026-11-15T18:53-03:00"
+   "d2eede4b33": "2026-11-15T18:53-03:00",
+   "fc3225e371": "2026-11-15T23:25-03:00",
+   "df308cfc77": "2026-11-15T23:25-03:00",
+   "e8dee67892": "2026-11-15T23:25-03:00",
+   "21a856ef44": "2026-11-15T23:25-03:00",
+   "88b0476a32": "2026-11-15T23:25-03:00",
+   "3888df0af2": "2026-11-15T23:25-03:00"
   },
   "horas_nuevos": 24,
-  "llamadas_ia": 3,
+  "llamadas_ia": 18,
   "ia_sin_cupo": false,
-  "ultima_completa": "2026-11-15T14:09-03:00",
-  "modo": "rapida",
-  "paginas_revisadas": 0,
-  "busquedas": 0,
-  "fuentes_fijas": 9,
-  "errores": 2,
+  "ultima_completa": "2026-11-15T23:05-03:00",
+  "modo": "completa",
+  "paginas_revisadas": 14,
+  "busquedas": 107,
+  "fuentes_fijas": 10,
+  "errores": 18,
   "noticias_desde": "2026-11-15",
-  "noticias_viejas_descartadas": 0,
-  "generos_ia": 5,
+  "noticias_viejas_descartadas": 419,
+  "redes_vistas": 3,
+  "generos_ia": 1,
   "imagenes_encontradas": 0
  },
- "total": 655,
+ "total": 661,
  "eventos": [
   {
    "titulo": "Mariposas y Polillas, Colores en Movimiento",
@@ -5676,6 +5633,68 @@
    "genero": "cumbia"
   },
   {
+   "titulo": "Creamfields Chile 2026 - 21 Años",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-15",
+   "fecha_fin": null,
+   "hora": "13:01",
+   "horario": null,
+   "lugar": null,
+   "direccion": null,
+   "comuna": "Santiago Centro",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Festival de música electrónica Creamfields Chile en su edición 21 años.",
+   "imagen": "https://www.suitip.cl/panoramas/opengraph-image?e6883bd9c23dc7b1",
+   "fotos": null,
+   "url": "https://www.suitip.cl/panoramas/guia",
+   "fuentes": [
+    {
+     "nombre": "Suitip",
+     "url": "https://www.suitip.cl/panoramas/guia"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "e8dee67892",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15",
+   "genero": "electronica"
+  },
+  {
+   "titulo": "Concierto de Gongs Inmersivo",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-15",
+   "fecha_fin": null,
+   "hora": "16:00",
+   "horario": null,
+   "lugar": "Teatro Comunitario Novedades",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $10.000",
+   "descripcion": "Concierto de Gongs Inmersivo: Un viaje sonoro hacia tu interior. Vive una experiencia única en Chile el próximo domingo 15 de noviembre, de 16:00 a 17:30 hrs, en el Teatro Comunitario Novedades. El ensamble instrumental Puja Gong Chile te g",
+   "imagen": "https://img.vamoh.cl/events/8d573ee2-1254-4c0f-910e-bdf9264c5690.webp?v=731e0667",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/concierto-de-gongs-inmersivo-en-teatro-novedades-9vtqf/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/concierto-de-gongs-inmersivo-en-teatro-novedades-9vtqf/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "fc3225e371",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15",
+   "genero": "otros"
+  },
+  {
    "titulo": "WACKEN METAL BATTLE CHILE HEAT 6 - VALPARAÍSO - Trotamundos Valparaíso",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-15",
@@ -6195,6 +6214,39 @@
    "genero": "clasica"
   },
   {
+   "titulo": "ZZ Top",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-16",
+   "fecha_fin": null,
+   "hora": "21:00",
+   "lugar": "Teatro Caupolicán - Santiago Centro",
+   "direccion": "San Diego 850",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "$60.950 a $109.250",
+   "descripcion": "Concierto de ZZ Top en el Teatro Caupolicán. Rock clásico y blues rock en vivo.",
+   "imagen": "https://static.ptocdn.net/images/eventos/eff031_calugalistado.jpg",
+   "url": "https://www.puntoticket.com/zz-top",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/zz-top"
+    },
+    {
+     "nombre": "FM Plus | Sin Clásicos... Imposible!",
+     "url": "https://www.fmplus.cl/categoria/magazine/zz-top-regresa-chile-clasicos-rock"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "cb4dec6816",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-15",
+   "genero": "rock"
+  },
+  {
    "titulo": "Edo Caroe - No Tiene Show en Bares",
    "categoria": "standup",
    "fecha_inicio": "2026-11-16",
@@ -6253,35 +6305,6 @@
    "id": "6dbce10344",
    "agregado": "2026-11-09",
    "actualizado": "2026-11-09"
-  },
-  {
-   "titulo": "ZZ Top",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-16",
-   "fecha_fin": null,
-   "hora": null,
-   "lugar": "Teatro Caupolicán - Santiago Centro",
-   "direccion": null,
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
-   "precio": null,
-   "descripcion": "Concierto de ZZ Top en el Teatro Caupolicán. Rock clásico y blues rock en vivo.",
-   "imagen": "https://static.ptocdn.net/images/eventos/eff031_calugalistado.jpg",
-   "url": "https://www.puntoticket.com/zz-top",
-   "fuentes": [
-    {
-     "nombre": "PuntoTicket",
-     "url": "https://www.puntoticket.com/zz-top"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ticketera",
-   "id": "cb4dec6816",
-   "agregado": "2026-11-06",
-   "actualizado": "2026-11-07",
-   "genero": "rock"
   },
   {
    "titulo": "Ventanal Alameda: Dibujo chileno hoy, viñeta a viñeta",
@@ -7011,6 +7034,37 @@
    "actualizado": "2026-11-13"
   },
   {
+   "titulo": "Ensayo abierto: Orquesta Sinfónica ULS",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-19",
+   "fecha_fin": null,
+   "hora": "11:00",
+   "horario": null,
+   "lugar": "La Serena",
+   "direccion": null,
+   "comuna": "La Serena",
+   "ciudad": "La Serena",
+   "region": "Coquimbo",
+   "precio": "Gratis",
+   "descripcion": "Ensayo abierto de la Orquesta Sinfónica ULS cerrando su temporada con homenaje a la violista Penélope Knuth.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.diarioeldia.cl/noticias/2026/11/15/156906-orquesta-sinfonica-uls-cerrara-su-temporada-con-emotivo-homenaje-a-destacada-violista",
+   "fuentes": [
+    {
+     "nombre": "Diario el Día",
+     "url": "https://www.diarioeldia.cl/noticias/2026/11/15/156906-orquesta-sinfonica-uls-cerrara-su-temporada-con-emotivo-homenaje-a-destacada-violista"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "21a856ef44",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15",
+   "genero": "clasica"
+  },
+  {
    "titulo": "VIII Concierto de Temporada: La Concertante de Mozart",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-19",
@@ -7383,6 +7437,37 @@
    "agregado": "2026-11-15",
    "actualizado": "2026-11-15",
    "genero": "cumbia"
+  },
+  {
+   "titulo": "Almighty en Chile Tour",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-19",
+   "fecha_fin": "2026-11-29",
+   "hora": null,
+   "horario": null,
+   "lugar": null,
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "El exponente del trap latino Almighty se presenta en Chile como parte de su gira nacional.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.instagram.com/p/Dfck9xnG9QP/",
+   "fuentes": [
+    {
+     "nombre": "instagram.com",
+     "url": "https://www.instagram.com/p/Dfck9xnG9QP/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "ia-resumen",
+   "id": "df308cfc77",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15",
+   "genero": "trap"
   },
   {
    "titulo": "Bombo Fica - En La Diabla Bar",
@@ -7887,6 +7972,37 @@
    "id": "ee37fd344a",
    "agregado": "2026-11-14",
    "actualizado": "2026-11-14",
+   "genero": "clasica"
+  },
+  {
+   "titulo": "Concierto de cierre de temporada: Orquesta Sinfónica ULS",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-20",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Catedral de La Serena",
+   "direccion": null,
+   "comuna": "La Serena",
+   "ciudad": "La Serena",
+   "region": "Coquimbo",
+   "precio": "Gratis",
+   "descripcion": "Concierto de cierre de temporada de la Orquesta Sinfónica ULS con obras de Mozart, Haydn y Enrique Soro.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.diarioeldia.cl/noticias/2026/11/15/156906-orquesta-sinfonica-uls-cerrara-su-temporada-con-emotivo-homenaje-a-destacada-violista",
+   "fuentes": [
+    {
+     "nombre": "Diario el Día",
+     "url": "https://www.diarioeldia.cl/noticias/2026/11/15/156906-orquesta-sinfonica-uls-cerrara-su-temporada-con-emotivo-homenaje-a-destacada-violista"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "88b0476a32",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15",
    "genero": "clasica"
   },
   {
@@ -14076,6 +14192,37 @@
    "genero": "otros"
   },
   {
+   "titulo": "Revolution Rock Festival",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-05",
+   "fecha_fin": null,
+   "hora": "14:00",
+   "horario": null,
+   "lugar": "Teatro Cariola",
+   "direccion": "San Diego 246",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Festival de rock, punk y ska con Los Miserables, Fiskales Ad-Hok, Las Manos de Filippi, Sonora de Llegar y Robo Hormiga.",
+   "imagen": "https://www.passline.com/imagenes/eventos/-788298-rec.jpg",
+   "fotos": null,
+   "url": "https://www.passline.com/eventos/revolution-rock-festival",
+   "fuentes": [
+    {
+     "nombre": "passline.com",
+     "url": "https://www.passline.com/eventos/revolution-rock-festival"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "3888df0af2",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-15",
+   "genero": "rock"
+  },
+  {
    "titulo": "Tokatas en el Ring 2: Crossface (Metal)",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-05",
@@ -16493,7 +16640,7 @@
    "comuna": "Santiago",
    "ciudad": "Santiago",
    "region": "Región Metropolitana",
-   "precio": null,
+   "precio": "$18.400 - $87.400",
    "descripcion": "Concierto del artista de trap y reggaetón Anuel AA en el Teatro Caupolicán.",
    "imagen": "https://concerts50.com/uploads/artist/66/29/anuel-aa/original_image/anuel-aa.jpg?v=bbzybyhl",
    "fotos": null,
@@ -16510,6 +16657,10 @@
     {
      "nombre": "concerts50.com",
      "url": "https://concerts50.com/chile/santiago/g/reggaeton"
+    },
+    {
+     "nombre": "Iguana Producciones",
+     "url": "https://iguanalive.com/cl/shows/anuel-aa-movistar-arena-2026.html"
     }
    ],
    "desde_imagen": false,
@@ -16517,7 +16668,7 @@
    "origen": "ia",
    "id": "3ab12f2d38",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-13",
+   "actualizado": "2026-11-15",
    "genero": "reggaeton"
   },
   {
