@@ -1,35 +1,13 @@
 {
  "version": 1,
- "actualizado": "2026-11-16T07:29-03:00",
+ "actualizado": "2026-11-16T18:09-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-16T07:29-03:00",
+  "fecha": "2026-11-16T18:09-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 78,
-  "nuevos_esta_vez": 40,
+  "eventos_nuevos": 91,
+  "nuevos_esta_vez": 35,
   "nuevos_ids": [
-   "98ba1c7d95",
-   "8c896c1241",
-   "ea541852af",
-   "91a7439e0c",
-   "43deaeaa91",
-   "abd41e1127",
-   "0e4ef79dbb",
-   "292c7b78a0",
-   "df9e27e3f6",
-   "28f3d0ec97",
-   "b6e5e4a490",
-   "5573c81f14",
-   "05323a7fdd",
-   "bc6524a618",
-   "f631018c35",
-   "4c2342a26d",
-   "751b5a3f02",
-   "f180149fdc",
-   "8ccc194d9f",
-   "e622903fcf",
-   "05be6b409a",
-   "4599a3db89",
    "8d6b022dab",
    "d1c930fd29",
    "05c57a3d62",
@@ -85,31 +63,44 @@
    "888e0df523",
    "bab1876807",
    "8aee324baa",
-   "e0fcdec3ca"
+   "e0fcdec3ca",
+   "24eb75f560",
+   "c92e1edc4d",
+   "6c296f9334",
+   "77b4beaea8",
+   "99619356a0",
+   "ab1f0c95c3",
+   "64acea10f1",
+   "2df0b2ab30",
+   "e7a1904106",
+   "a704bc239b",
+   "5d53876868",
+   "e731156831",
+   "364bb1e0f0",
+   "3f993e13ec",
+   "113a7dee11",
+   "555bb9b8a7",
+   "c7b5dce669",
+   "a81f74fc38",
+   "de8d42fe3c",
+   "76bbaa4189",
+   "fbd64aa53d",
+   "830a260cbe",
+   "8cad1edd65",
+   "2fc8193496",
+   "a666149e0b",
+   "50a1437f96",
+   "b0493151a7",
+   "9abe6a1224",
+   "621e820618",
+   "700861991b",
+   "5e23a1b3c4",
+   "9dcf14ec75",
+   "8fb6b62b81",
+   "d971166969",
+   "1b466ad00e"
   ],
   "nuevos_desde": {
-   "98ba1c7d95": "2026-11-15T14:33-03:00",
-   "8c896c1241": "2026-11-15T14:33-03:00",
-   "ea541852af": "2026-11-15T14:33-03:00",
-   "91a7439e0c": "2026-11-15T14:33-03:00",
-   "43deaeaa91": "2026-11-15T14:33-03:00",
-   "abd41e1127": "2026-11-15T14:33-03:00",
-   "0e4ef79dbb": "2026-11-15T14:33-03:00",
-   "292c7b78a0": "2026-11-15T14:33-03:00",
-   "df9e27e3f6": "2026-11-15T14:33-03:00",
-   "28f3d0ec97": "2026-11-15T14:33-03:00",
-   "b6e5e4a490": "2026-11-15T14:33-03:00",
-   "5573c81f14": "2026-11-15T14:33-03:00",
-   "05323a7fdd": "2026-11-15T14:33-03:00",
-   "bc6524a618": "2026-11-15T14:33-03:00",
-   "f631018c35": "2026-11-15T14:33-03:00",
-   "4c2342a26d": "2026-11-15T14:33-03:00",
-   "751b5a3f02": "2026-11-15T14:33-03:00",
-   "f180149fdc": "2026-11-15T14:33-03:00",
-   "8ccc194d9f": "2026-11-15T14:33-03:00",
-   "e622903fcf": "2026-11-15T14:33-03:00",
-   "05be6b409a": "2026-11-15T14:33-03:00",
-   "4599a3db89": "2026-11-15T14:33-03:00",
    "8d6b022dab": "2026-11-15T18:53-03:00",
    "d1c930fd29": "2026-11-15T18:53-03:00",
    "05c57a3d62": "2026-11-15T18:53-03:00",
@@ -165,24 +156,59 @@
    "888e0df523": "2026-11-16T07:29-03:00",
    "bab1876807": "2026-11-16T07:29-03:00",
    "8aee324baa": "2026-11-16T07:29-03:00",
-   "e0fcdec3ca": "2026-11-16T07:29-03:00"
+   "e0fcdec3ca": "2026-11-16T07:29-03:00",
+   "24eb75f560": "2026-11-16T18:09-03:00",
+   "c92e1edc4d": "2026-11-16T18:09-03:00",
+   "6c296f9334": "2026-11-16T18:09-03:00",
+   "77b4beaea8": "2026-11-16T18:09-03:00",
+   "99619356a0": "2026-11-16T18:09-03:00",
+   "ab1f0c95c3": "2026-11-16T18:09-03:00",
+   "64acea10f1": "2026-11-16T18:09-03:00",
+   "2df0b2ab30": "2026-11-16T18:09-03:00",
+   "e7a1904106": "2026-11-16T18:09-03:00",
+   "a704bc239b": "2026-11-16T18:09-03:00",
+   "5d53876868": "2026-11-16T18:09-03:00",
+   "e731156831": "2026-11-16T18:09-03:00",
+   "364bb1e0f0": "2026-11-16T18:09-03:00",
+   "3f993e13ec": "2026-11-16T18:09-03:00",
+   "113a7dee11": "2026-11-16T18:09-03:00",
+   "555bb9b8a7": "2026-11-16T18:09-03:00",
+   "c7b5dce669": "2026-11-16T18:09-03:00",
+   "a81f74fc38": "2026-11-16T18:09-03:00",
+   "de8d42fe3c": "2026-11-16T18:09-03:00",
+   "76bbaa4189": "2026-11-16T18:09-03:00",
+   "fbd64aa53d": "2026-11-16T18:09-03:00",
+   "830a260cbe": "2026-11-16T18:09-03:00",
+   "8cad1edd65": "2026-11-16T18:09-03:00",
+   "2fc8193496": "2026-11-16T18:09-03:00",
+   "a666149e0b": "2026-11-16T18:09-03:00",
+   "50a1437f96": "2026-11-16T18:09-03:00",
+   "b0493151a7": "2026-11-16T18:09-03:00",
+   "9abe6a1224": "2026-11-16T18:09-03:00",
+   "621e820618": "2026-11-16T18:09-03:00",
+   "700861991b": "2026-11-16T18:09-03:00",
+   "5e23a1b3c4": "2026-11-16T18:09-03:00",
+   "9dcf14ec75": "2026-11-16T18:09-03:00",
+   "8fb6b62b81": "2026-11-16T18:09-03:00",
+   "d971166969": "2026-11-16T18:09-03:00",
+   "1b466ad00e": "2026-11-16T18:09-03:00"
   },
   "horas_nuevos": 24,
-  "llamadas_ia": 53,
+  "llamadas_ia": 28,
   "ia_sin_cupo": false,
-  "ultima_completa": "2026-11-16T06:41-03:00",
+  "ultima_completa": "2026-11-16T17:28-03:00",
   "modo": "completa",
-  "paginas_revisadas": 52,
+  "paginas_revisadas": 25,
   "busquedas": 107,
-  "fuentes_fijas": 26,
-  "errores": 25,
-  "noticias_desde": "2026-11-15",
-  "noticias_viejas_descartadas": 384,
-  "redes_vistas": 3,
-  "generos_ia": 6,
-  "imagenes_encontradas": 8
+  "fuentes_fijas": 10,
+  "errores": 18,
+  "noticias_desde": "2026-11-16",
+  "noticias_viejas_descartadas": 404,
+  "redes_vistas": 0,
+  "generos_ia": 13,
+  "imagenes_encontradas": 12
  },
- "total": 658,
+ "total": 693,
  "eventos": [
   {
    "titulo": "Mariposas y Polillas, Colores en Movimiento",
@@ -6482,7 +6508,7 @@
    "origen": "datos-estructurados",
    "id": "3780d0e660",
    "agregado": "2026-11-15",
-   "actualizado": "2026-11-15",
+   "actualizado": "2026-11-16",
    "genero": "otros"
   },
   {
@@ -6702,6 +6728,37 @@
    "agregado": "2026-11-14",
    "actualizado": "2026-11-14",
    "genero": "clasica"
+  },
+  {
+   "titulo": "Concierto Contradicción 30 años",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-20",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Corporación Cultural San Pedro de la Paz",
+   "direccion": null,
+   "comuna": "San Pedro de la Paz",
+   "ciudad": null,
+   "region": null,
+   "precio": "Gratis",
+   "descripcion": "CONTRADICCIÓN | 30 años de música sampedrina La banda sampedrina Contradicción celebra 30 años de trayectoria musical, marcando tres décadas de historia, pasión y rock. Te invitamos a ser parte de esta presentación especial, donde la música",
+   "imagen": "https://img.vamoh.cl/events/15869fd4-f001-4ee8-9135-4c3a8e85b460.webp?v=e37b0d94",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/concierto-contradiccion-30-anos-2rhzl/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/concierto-contradiccion-30-anos-2rhzl/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "e7a1904106",
+   "agregado": "2026-11-16",
+   "actualizado": "2026-11-16",
+   "genero": "rock"
   },
   {
    "titulo": "Cruces entre pintura, sonido y video en INDISTINTA, la nueva exposición de Mario Z",
@@ -6926,6 +6983,37 @@
    "id": "ba19421141",
    "agregado": "2026-11-15",
    "actualizado": "2026-11-15",
+   "genero": "clasica"
+  },
+  {
+   "titulo": "Orquesta Sinfónica Nacional: Aniversario Universidad de Chile",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-20",
+   "fecha_fin": "2026-11-21",
+   "hora": "19:30",
+   "horario": "Viernes 20 (comunidad universitaria) y sábado 21 a las 19:30 hrs",
+   "lugar": "Gran Sala Sinfónica Nacional",
+   "direccion": "Av. Vicuña Mackenna 20",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $5.000",
+   "descripcion": "Concierto de la Orquesta Sinfónica Nacional celebrando los 184 años de la Universidad de Chile con obras de Orrego Salas, Mozart y Schubert.",
+   "imagen": "https://www.adnradio.cl/resizer/v2/C6NNNQJGAJC3ZHFET3BKYJBSYU.jpg?auth=a33b0c520a3fb316b57c679da5924efdef28aa408a53d59c4257ae0f55fc6848&quality=70&width=1200&height=675&smart=true",
+   "fotos": null,
+   "url": "https://www.ticketplus.cl",
+   "fuentes": [
+    {
+     "nombre": "ADN Radio",
+     "url": "https://www.adnradio.cl/2026/11/16/orquesta-sinfonica-nacional-celebra-nuevo-aniversario-de-la-universidad-de-chile-con-concierto-especial-el-programa/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "a666149e0b",
+   "agregado": "2026-11-16",
+   "actualizado": "2026-11-16",
    "genero": "clasica"
   },
   {
@@ -8149,6 +8237,37 @@
    "genero": "trap"
   },
   {
+   "titulo": "Hunter X 2011 en Press Start",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-21",
+   "fecha_fin": "2026-11-22",
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Press Start Restobar Providencia",
+   "direccion": "Av. Francisco Bilbao 769, 8320000 Providencia, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "🎵Consonantia les trae un concierto dedicado exclusivamente a la banda sonora de Hunter x de 2011🎵 En esta experiencia musical, el públic",
+   "imagen": "https://cdn.keai.cl/events/20789-92bb2ac8ff70b155f3da4546de1e8937.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/hunter-x-2011-en-press-start-20789",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/hunter-x-2011-en-press-start-20789"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "e731156831",
+   "agregado": "2026-11-16",
+   "actualizado": "2026-11-16",
+   "genero": "bandas_sonoras"
+  },
+  {
    "titulo": "Metal Sinfónico con From Wishes – Tributo a Nightwish y Deadly Mist",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-21",
@@ -9270,7 +9389,7 @@
    "origen": "datos-estructurados",
    "id": "3d21bb59ae",
    "agregado": "2026-11-15",
-   "actualizado": "2026-11-15",
+   "actualizado": "2026-11-16",
    "genero": "clasica"
   },
   {
@@ -9336,6 +9455,37 @@
    "id": "9b96ad62cf",
    "agregado": "2026-11-13",
    "actualizado": "2026-11-13"
+  },
+  {
+   "titulo": "JAZZ CLUB 🎵 MIÉRCOLES 25 NOVIEMBRE ★ Club Subterráneo",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-25",
+   "fecha_fin": null,
+   "hora": "18:00",
+   "horario": null,
+   "lugar": "Club Subterraneo",
+   "direccion": null,
+   "comuna": "Providencia",
+   "ciudad": null,
+   "region": null,
+   "precio": "Gratis",
+   "descripcion": "Este MIÉRCOLES 25 DE NOVIEMBRE ♫ FABRICIO LABRIN CUARTETO ★ Jazz Club 🎷 FABRICIO LABRIN CUARTETO Fabricio Labrin Cuarteto llega a Club Subterráneo para una noche de jazz en vivo. 🎶 Lugar: Club Subterráneo Fecha: Miércoles 25 de noviembre Ho",
+   "imagen": "https://img.vamoh.cl/events/c1fc34dd-63cb-4543-99f3-6c8a72e6673b.webp?v=a82cc973",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/jazz-club-miercoles-25-noviembre-club-subterraneo-3hvke/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/jazz-club-miercoles-25-noviembre-club-subterraneo-3hvke/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "2df0b2ab30",
+   "agregado": "2026-11-16",
+   "actualizado": "2026-11-16",
+   "genero": "jazz"
   },
   {
    "titulo": "El Barbero de Sevilla",
@@ -9591,7 +9741,7 @@
    "origen": "datos-estructurados",
    "id": "f1d600c64d",
    "agregado": "2026-11-15",
-   "actualizado": "2026-11-15",
+   "actualizado": "2026-11-16",
    "genero": "clasica"
   },
   {
@@ -9839,6 +9989,37 @@
    "genero": "clasica"
   },
   {
+   "titulo": "Concierto Mitos y Leyendas",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-26",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Teatro Municipal de San Javier",
+   "direccion": null,
+   "comuna": "San Javier",
+   "ciudad": null,
+   "region": null,
+   "precio": "Gratis",
+   "descripcion": "La Orquesta de Cuerdas del Teatro Municipal de San Javier presentará “Mitos y Leyendas”, un concierto dirigido por los maestros Pedro Sierra y Dorian Lamotte, con la participación de Solange Navarrete y Dorian Lamotte como solistas. La prop",
+   "imagen": "https://img.vamoh.cl/events/e5179262-b728-443b-accb-72f7b73dc964.webp?v=54470821",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/concierto-mitos-y-leyendas-7n29o/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/concierto-mitos-y-leyendas-7n29o/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "a704bc239b",
+   "agregado": "2026-11-16",
+   "actualizado": "2026-11-16",
+   "genero": "clasica"
+  },
+  {
    "titulo": "Desde Portugal a La Reina: un viaje por la música medieval ibérica",
    "categoria": "medieval",
    "fecha_inicio": "2026-11-26",
@@ -9932,6 +10113,37 @@
    "id": "963527e59c",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Jesucristo Superhistórico Concierto Promocional",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-26",
+   "fecha_fin": "2026-11-27",
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Montañita Las Vizcachas",
+   "direccion": null,
+   "comuna": "Puente Alto",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $6.000",
+   "descripcion": "Evento solo para Mayores de 18 Años. En forma exclusiva y promocional Jesucristo Superhistórico Concierto en vivo se presentará en Montañita Las Vizcachas, dando el puntapié inicial a la gira 2027. El elenco mostrará una versión con una vis",
+   "imagen": "https://img.vamoh.cl/events/66f73759-9350-4c6b-a385-23aa8207e9e4.webp?v=031beaed",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/jesucristo-superhistorico-concierto-promocional-p9g1g/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/jesucristo-superhistorico-concierto-promocional-p9g1g/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "64acea10f1",
+   "agregado": "2026-11-16",
+   "actualizado": "2026-11-16",
+   "genero": "otros"
   },
   {
    "titulo": "Asskha Sumathra… No Sé Qué Hago Aquí?",
@@ -10795,7 +11007,7 @@
    "hora": "21:00",
    "horario": null,
    "lugar": "Club Clavero 46",
-   "direccion": null,
+   "direccion": "Clavero 46, 8210698 Puente Alto, Región Metropolitana",
    "comuna": "Puente Alto",
    "ciudad": null,
    "region": null,
@@ -10812,6 +11024,14 @@
     {
      "nombre": "VAMOH!",
      "url": "https://vamoh.cl/events/noche-electronica-tributo-a-depeche-mode-erasure-dre61/"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/noche-electronica-tributo-a-depeche-mode-erasure-20765"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/tributo-a-erasure-noche-electronica-20763"
     }
    ],
    "desde_imagen": false,
@@ -10819,8 +11039,39 @@
    "origen": "datos-estructurados",
    "id": "8c896c1241",
    "agregado": "2026-11-15",
-   "actualizado": "2026-11-15",
+   "actualizado": "2026-11-16",
    "genero": "electronica"
+  },
+  {
+   "titulo": "Indie Music Party: The Strokes - 4 Pistas de Baile",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": "2026-11-28",
+   "hora": "23:30",
+   "horario": null,
+   "lugar": "Blondie",
+   "direccion": "Avda Liber Bernardo O`Higgins 2879, Santiago, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Descubre Indie Music Party: The Strokes - 4 Pistas de Baile en Keai. Evento en Santiago el 27/11/2026.",
+   "imagen": "https://cdn.keai.cl/events/20768-25d6d71e8608b971fd841ed0ca3bd467.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/indie-music-party-the-strokes-4-pistas-de-baile-20768",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/indie-music-party-the-strokes-4-pistas-de-baile-20768"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "76bbaa4189",
+   "agregado": "2026-11-16",
+   "actualizado": "2026-11-16",
+   "genero": "indie"
   },
   {
    "titulo": "SUPERNOVA concierto + fiesta",
@@ -11392,12 +11643,12 @@
    "fecha_inicio": "2026-11-28",
    "fecha_fin": null,
    "hora": "12:00",
-   "horario": null,
+   "horario": "12:00 a 17:00 hrs",
    "lugar": "Sociedad Japonesa de Beneficiencia",
-   "direccion": null,
+   "direccion": "Alcántara 772",
    "comuna": "Las Condes",
-   "ciudad": null,
-   "region": null,
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
    "precio": "Desde $3.000",
    "descripcion": "🌸 ¡Celebremos juntos la primavera japonesa! Shinraikai, grupo de jóvenes Nikkei, te invita al Haru Matsuri: una jornada para disfrutar de la cultura japonesa, compartir y apoyar a nuestros emprendedores. Encontrarás curry rice, bebestibles,",
    "imagen": "https://img.vamoh.cl/events/0526fead-7723-464a-9d82-5a9f417e5ccf.webp?v=450e0a28",
@@ -11407,6 +11658,10 @@
     {
      "nombre": "VAMOH!",
      "url": "https://vamoh.cl/events/haru-matsuri-fiesta-de-primavera-en-la-sociedad-japonesa-de-beneficencia-z230e/"
+    },
+    {
+     "nombre": "La Nación",
+     "url": "https://www.lanacion.cl/que-hacer-en-santiago-conoce-los-eventos-y-panoramas-que-todavia-puedes-disfrutar-antes-de-que-termine-noviembre/"
     }
    ],
    "desde_imagen": false,
@@ -11414,7 +11669,73 @@
    "origen": "datos-estructurados",
    "id": "d5f62b4132",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-16"
+  },
+  {
+   "titulo": "Tierra Maldita Fest",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": "14:00",
+   "horario": null,
+   "lugar": "Camino Noviciado con cruce Peralillo",
+   "direccion": "Camino Noviciado con cruce Peralillo",
+   "comuna": "Lampa",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Preventa 1: $5.000 / Preventa 2: $8.000 / General: $10.000",
+   "descripcion": "Festival de rock y metal con 24 bandas en tres escenarios, estética postapocalíptica inspirada en Mad Max, derby de motos e Interceptor V8.",
+   "imagen": "https://www.futuro.cl/wp-content/uploads/2026/11/tierra-maldita.webp",
+   "fotos": null,
+   "url": "https://www.portaldisc.com",
+   "fuentes": [
+    {
+     "nombre": "Futuro Chile",
+     "url": "https://www.futuro.cl/2026/11/mad-max-llega-a-lampa-un-festival-de-rock-y-metal-tendra-24-bandas-motos-y-el-legendario-interceptor-v8/"
+    },
+    {
+     "nombre": "iRock.CL | Noticias, Reviews, Entrevistas y más.",
+     "url": "https://www.irock.cl/tierra-maldita-fest-debuta-este-28-de-noviembre-en-lampa/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "fbd64aa53d",
+   "agregado": "2026-11-16",
+   "actualizado": "2026-11-16",
+   "genero": "metal"
+  },
+  {
+   "titulo": "Todoscontrakst!: Patética Ética + Neftalinas + los Pejerreyes + Black Sunset en Escuela Popular de Artes",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": "17:00",
+   "horario": null,
+   "lugar": "Santa rosa 955",
+   "direccion": "Santa rosa 955",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "¡Con mucha felicidad les comunicamos que realizaremos una tocata el próximo **28 de noviembre, a las 17:00 horas**, en @escuela_popular_artes955 (Av. Santa Rosa",
+   "imagen": "https://cdn.keai.cl/events/20793-6c58118b222243b6f137484fbc876abf.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/todoscontrakst-patetica-etica-neftalinas-los-pejerreyes-black-sunset-en-escuela-popular-de-artes-20793",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/todoscontrakst-patetica-etica-neftalinas-los-pejerreyes-black-sunset-en-escuela-popular-de-artes-20793"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "555bb9b8a7",
+   "agregado": "2026-11-16",
+   "actualizado": "2026-11-16",
+   "genero": "rock"
   },
   {
    "titulo": "ChileTerror Fest II: Carcass, Necrot y más",
@@ -11558,6 +11879,37 @@
    "actualizado": "2026-11-14"
   },
   {
+   "titulo": "Encuentro Internacional de Charangos 2026 en Cafetería Popular",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": "19:30",
+   "horario": null,
+   "lugar": "Cafetería Popular",
+   "direccion": "Maipú 363, 8350466 Santiago, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "En el marco del Encuentro Internacional de Charangos, cerramos el día celebrando con un concierto íntimo y vibrante junto a: - Charango Project &m",
+   "imagen": "https://cdn.keai.cl/events/20791-0172f20d211af761f4b651f6126a187b.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/encuentro-internacional-de-charangos-2026-en-cafeteria-popular-20791",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/encuentro-internacional-de-charangos-2026-en-cafeteria-popular-20791"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "364bb1e0f0",
+   "agregado": "2026-11-16",
+   "actualizado": "2026-11-16",
+   "genero": "folclor"
+  },
+  {
    "titulo": "El Animal que habita en mí",
    "categoria": "teatro",
    "fecha_inicio": "2026-11-28",
@@ -11650,6 +12002,37 @@
    "id": "3743d861b5",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Newen Afrobeat en Concierto",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Vicuña",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": null,
+   "imagen": "https://img.vamoh.cl/events/ff8cbd10-880d-4055-b5c7-a3a5decd5373.webp?v=4c72d794",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/newen-afrobeat-en-concierto-cxykm/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/newen-afrobeat-en-concierto-cxykm/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "5d53876868",
+   "agregado": "2026-11-16",
+   "actualizado": "2026-11-16",
+   "genero": "indie"
   },
   {
    "titulo": "Vicho Viciani",
@@ -12121,7 +12504,7 @@
    "hora": "17:00",
    "horario": null,
    "lugar": "Teatro Fábrica",
-   "direccion": null,
+   "direccion": "Av. Gral. Bustamante 530, 7501502 Santiago, Providencia, Región Metropolitana",
    "comuna": "Providencia",
    "ciudad": null,
    "region": null,
@@ -12134,6 +12517,10 @@
     {
      "nombre": "VAMOH!",
      "url": "https://vamoh.cl/events/flor-de-tocata-436dy/"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/flor-de-tocata-paulice-lazaro-soho-carino-club-ziska-en-teatro-fabrica-20781"
     }
    ],
    "desde_imagen": false,
@@ -12141,7 +12528,7 @@
    "origen": "datos-estructurados",
    "id": "37999c3fef",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-14",
+   "actualizado": "2026-11-16",
    "genero": "indie"
   },
   {
@@ -12999,6 +13386,36 @@
    "genero": "otros"
   },
   {
+   "titulo": "Luis Slimming en La Fuente Maestra",
+   "categoria": "standup",
+   "fecha_inicio": "2026-12-03",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "La Fuente Maestra, Chicureo",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": "CLP 19.800",
+   "descripcion": "Show de stand-up comedy de Luis Slimming en Chicureo.",
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/7385ea659d6c846ce9610dce45decafedbd5c2df.jpg?1794846797",
+   "fotos": null,
+   "url": "https://ticketplus.cl/events/luis-slimming-chicureo-la-fuente-maestra-03-de-diciembre-22-00-hrs",
+   "fuentes": [
+    {
+     "nombre": "Ticketplus",
+     "url": "https://ticketplus.cl/events/luis-slimming-chicureo-la-fuente-maestra-03-de-diciembre-22-00-hrs"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "9abe6a1224",
+   "agregado": "2026-11-16",
+   "actualizado": "2026-11-16"
+  },
+  {
    "titulo": "Marc Almond",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-03",
@@ -13183,6 +13600,37 @@
    "actualizado": "2026-11-15"
   },
   {
+   "titulo": "Kingdom Hearts en Concierto",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-04",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Teatro Azares",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $12.000",
+   "descripcion": "¡NUEVA Y ÚLTIMA FUNCIÓN! Por triple sold out abrimos un nuevo show en un nuevo recinto: El Teatro Azares. Te presentamos KINGDOM HEARTS EN CONCIERTO, un recorrido musical desde el primer juego (2002) hasta Melody of Memory (2020). Ven a rev",
+   "imagen": "https://img.vamoh.cl/events/df128627-7aa4-44b0-b28f-25d1abf7233c.webp?v=f8cae8db",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/kingdom-hearts-en-concierto-en-teatro-azares-18aq1/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/kingdom-hearts-en-concierto-en-teatro-azares-18aq1/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "77b4beaea8",
+   "agregado": "2026-11-16",
+   "actualizado": "2026-11-16",
+   "genero": "bandas_sonoras"
+  },
+  {
    "titulo": "Metal Darkness XXII",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-04",
@@ -13294,6 +13742,37 @@
    "agregado": "2026-11-13",
    "actualizado": "2026-11-16",
    "genero": "reggaeton"
+  },
+  {
+   "titulo": "Brenndv - Live Experiencie 001 - el Taller Spot",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-04",
+   "fecha_fin": "2026-12-05",
+   "hora": "21:30",
+   "horario": null,
+   "lugar": "Lugar Secreto",
+   "direccion": "Se anunciará al comprar el ticket",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "BRENNDV — LIVE SESSION + FIESTA & After❤️‍🔥 Una noche para conectar con la música electrónica, el baile y la expe",
+   "imagen": "https://cdn.keai.cl/events/20780-b8176e4dec2ca439d41f0b747c11b8f9.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/brenndv-live-experiencie-001-el-taller-spot-20780",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/brenndv-live-experiencie-001-el-taller-spot-20780"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "de8d42fe3c",
+   "agregado": "2026-11-16",
+   "actualizado": "2026-11-16",
+   "genero": "electronica"
   },
   {
    "titulo": "Juventudes Comediantes",
@@ -13741,6 +14220,99 @@
    "genero": "reggaeton"
   },
   {
+   "titulo": "Concierto de Gamelan en Teatro Novedades",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-05",
+   "fecha_fin": null,
+   "hora": "18:00",
+   "horario": null,
+   "lugar": "Teatro Novedades",
+   "direccion": "Cueto 257, 8350513 Santiago, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "El Gamelán es un ensamble instrumental o instrumento colectivo originario de Indonesia que comprende percusiones melódicas en bronce (metaló",
+   "imagen": "https://cdn.keai.cl/events/20807-d480d63d05be8a27c1adde50a09a025a.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/concierto-de-gamelan-en-teatro-novedades-20807",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/concierto-de-gamelan-en-teatro-novedades-20807"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "3f993e13ec",
+   "agregado": "2026-11-16",
+   "actualizado": "2026-11-16",
+   "genero": "otros"
+  },
+  {
+   "titulo": "Cuarteto Fest Tercera Edición en Escuela Popular de Artes 955",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-05",
+   "fecha_fin": null,
+   "hora": "18:00",
+   "horario": null,
+   "lugar": "Santa rosa 955",
+   "direccion": "Santa rosa 955",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Tercera edición de la tocata organizada oficialmente por estudiantes de Projazz DATOS PRÁCTICOS Hora de Apertura de Puertas: 18:00 Hora aprox. de",
+   "imagen": "https://cdn.keai.cl/events/20792-957fbce3c6f4e2760cfd8fc538798c39.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/cuarteto-fest-tercera-edicion-en-escuela-popular-de-artes-955-20792",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/cuarteto-fest-tercera-edicion-en-escuela-popular-de-artes-955-20792"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "c7b5dce669",
+   "agregado": "2026-11-16",
+   "actualizado": "2026-11-16",
+   "genero": "jazz"
+  },
+  {
+   "titulo": "Julián Semler en Concierto",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-05",
+   "fecha_fin": null,
+   "hora": "19:30",
+   "horario": null,
+   "lugar": "Centro Cultural La Casona 234",
+   "direccion": null,
+   "comuna": "Vicuña",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $10.000",
+   "descripcion": "La música tiene la capacidad de conectarnos con los paisajes, las historias y las personas que dan vida a nuestros territorios. Este 5 de diciembre recibimos en Espacio Cultural La Casona 234 a Julián Semler, cantautor chileno que, a través",
+   "imagen": "https://img.vamoh.cl/events/1f12b1d7-6f7a-4954-9c83-c9d66cb9b604.webp?v=ec29902a",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/julian-semler-en-concierto-85gu0/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/julian-semler-en-concierto-85gu0/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "6c296f9334",
+   "agregado": "2026-11-16",
+   "actualizado": "2026-11-16",
+   "genero": "folclor"
+  },
+  {
    "titulo": "Kanetis ...y Amigos en Sala Master",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-05",
@@ -13834,6 +14406,37 @@
    "id": "14a0593db3",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Aticoy | Presentación en Pulsar Off | el Mundo Folkpop de «inconsciente» en Sala Scd Bellavista",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-05",
+   "fecha_fin": "2026-12-06",
+   "hora": "20:30",
+   "horario": null,
+   "lugar": "Sala SCD Bellavista",
+   "direccion": "Sta. Filomena 110, 8420433 Recoleta, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Aticoy, proyecto de la cantante, compositora y guitarrista chilena Nataly Orellana, llega a la Sala SCD Bellavista en el marco de Pulsar Off con un concierto qu",
+   "imagen": "https://cdn.keai.cl/events/20785-e8ba9fdeee5582c25b07fb068fc1fbfa.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/aticoy-presentacion-en-pulsar-off-el-mundo-folkpop-de-inconsciente-en-sala-scd-bellavista-20785",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/aticoy-presentacion-en-pulsar-off-el-mundo-folkpop-de-inconsciente-en-sala-scd-bellavista-20785"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "a81f74fc38",
+   "agregado": "2026-11-16",
+   "actualizado": "2026-11-16",
+   "genero": "indie"
   },
   {
    "titulo": "El show de Felipe Avello en Concepción",
@@ -14162,6 +14765,36 @@
    "genero": "electronica"
   },
   {
+   "titulo": "Luis Slimming en Bar Coyote",
+   "categoria": "standup",
+   "fecha_inicio": "2026-12-05",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Bar Coyote, San Vicente",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": "CLP 16.500",
+   "descripcion": "Show de stand-up comedy de Luis Slimming en San Vicente.",
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/8f4b5f928c76b60ae0f174f160cd5d0c840ade87.jpg?1794846948",
+   "fotos": null,
+   "url": "https://ticketplus.cl/events/luis-slimming-san-vicente-bar-coyote-5-de-diciembre-20-00-hrs",
+   "fuentes": [
+    {
+     "nombre": "Ticketplus",
+     "url": "https://ticketplus.cl/events/luis-slimming-san-vicente-bar-coyote-5-de-diciembre-20-00-hrs"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "621e820618",
+   "agregado": "2026-11-16",
+   "actualizado": "2026-11-16"
+  },
+  {
    "titulo": "Movimiento Original - 20 Años",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-05",
@@ -14363,7 +14996,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Presentación musical en vivo de Ángel Parra Trío.",
-   "imagen": null,
+   "imagen": "https://tmlascondes.cl/wp-content/uploads/2026/09/WEB_APT_2-COLUMNAS.jpg",
    "fotos": null,
    "url": "https://tmlascondes.cl/",
    "fuentes": [
@@ -14823,6 +15456,37 @@
    "genero": "reggaeton"
   },
   {
+   "titulo": "Queen Sinfónico",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-08",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Teatro Municipal de Santiago",
+   "direccion": "Agustinas 794",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "$10.500 a $70.000",
+   "descripcion": "Concierto sinfónico con 90 artistas reviviendo los grandes éxitos de Queen en el Teatro Municipal de Santiago.",
+   "imagen": "https://assets.radioagricultura.cl/2026/11/Queen-Sinfonico-1024x538.jpg",
+   "fotos": null,
+   "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/queen-como-nunca-antes-90-artistas-reviviran-sus-himnos-en-un-concierto-sinfonico-en-santiago_20261116/",
+   "fuentes": [
+    {
+     "nombre": "Home - Radio Agricultura",
+     "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/queen-como-nunca-antes-90-artistas-reviviran-sus-himnos-en-un-concierto-sinfonico-en-santiago_20261116/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "8cad1edd65",
+   "agregado": "2026-11-16",
+   "actualizado": "2026-11-16",
+   "genero": "clasica"
+  },
+  {
    "titulo": "Candelabro - en teatro Caupolicán 2026",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-08",
@@ -15213,6 +15877,40 @@
    "actualizado": "2026-11-08"
   },
   {
+   "titulo": "Luis Slimming en Distrito San Ignacio",
+   "categoria": "standup",
+   "fecha_inicio": "2026-12-10",
+   "fecha_fin": "2026-12-30",
+   "hora": null,
+   "horario": "Funciones: 10 y 30 de diciembre",
+   "lugar": "Distrito San Ignacio",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": "CLP 13.200",
+   "descripcion": "Show de stand-up comedy de Luis Slimming.",
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/1207f23b120ada88842253a06a3abab32eaed0c1.jpg?1794847314",
+   "fotos": null,
+   "url": "https://ticketplus.cl/events/luis-slimming-distrito-san-ignacio-10-de-diciembre-20-30-hrs",
+   "fuentes": [
+    {
+     "nombre": "Ticketplus",
+     "url": "https://ticketplus.cl/events/luis-slimming-distrito-san-ignacio-10-de-diciembre-20-30-hrs"
+    },
+    {
+     "nombre": "Ticketplus",
+     "url": "https://ticketplus.cl/events/luis-slimming-distrito-san-ignacio-30-de-diciembre-20-30-hrs"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "700861991b",
+   "agregado": "2026-11-16",
+   "actualizado": "2026-11-16"
+  },
+  {
    "titulo": "Woman In Rock - En La Diabla Bar",
    "categoria": "standup",
    "fecha_inicio": "2026-12-10",
@@ -15597,6 +16295,37 @@
    "actualizado": "2026-11-15"
   },
   {
+   "titulo": "Concierto Familiar Despertando a la Musica: De Pinos y Pesebres",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-12",
+   "fecha_fin": null,
+   "hora": "11:00",
+   "horario": null,
+   "lugar": "Aula Magna Biblioteca, Universidad de los Andes",
+   "direccion": "Monseñor Álvaro del Portillo, 12455",
+   "comuna": "Las Condes",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $8.000",
+   "descripcion": "Niños a partir de 2 años pagan entrada. Niños de 0-1 año tienen entrada liberada.Despertando a la música es un programa de conciertos mediados y participativos que nació el año 2011 en la Universidad de los Andes, y está orientado a niños y",
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/37396ad7a37471c38dd66506cc3b314f72bcd87f.jpg?1794842730",
+   "fotos": null,
+   "url": "https://ticketplus.cl/events/concierto-familiar-de-pinos-y-pesebres",
+   "fuentes": [
+    {
+     "nombre": "Ticketplus",
+     "url": "https://ticketplus.cl/events/concierto-familiar-de-pinos-y-pesebres"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "c92e1edc4d",
+   "agregado": "2026-11-16",
+   "actualizado": "2026-11-16",
+   "genero": "clasica"
+  },
+  {
    "titulo": "Rol a la Orden · El proyecto B (Fallout)",
    "categoria": "medieval",
    "fecha_inicio": "2026-12-12",
@@ -15715,6 +16444,37 @@
    "id": "a5849a999a",
    "agregado": "2026-11-09",
    "actualizado": "2026-11-09"
+  },
+  {
+   "titulo": "Rude Beer Sessions Volumen 4: Manifiesto Ska Jazz + Chuck Vega en Rocka'rolla's",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-12",
+   "fecha_fin": null,
+   "hora": "18:00",
+   "horario": null,
+   "lugar": "Av. Ricardo Cumming 78",
+   "direccion": "Av. Ricardo Cumming 78",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "⚡Rude Beer Sessions Vol. 4⚡ 📣Despedimos el año con una nueva versión de este gran evento que reúne lo mejor la cultura",
+   "imagen": "https://cdn.keai.cl/events/20804-a86668be0c5a0247d7291441d0ce6665.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/rude-beer-sessions-volumen-4-manifiesto-ska-jazz-chuck-vega-en-rockarollas-20804",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/rude-beer-sessions-volumen-4-manifiesto-ska-jazz-chuck-vega-en-rockarollas-20804"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "113a7dee11",
+   "agregado": "2026-11-16",
+   "actualizado": "2026-11-16",
+   "genero": "jazz"
   },
   {
    "titulo": "Jah Love - Concierto Musical Cristiano",
@@ -16102,6 +16862,36 @@
    "genero": "indie"
   },
   {
+   "titulo": "Luis Slimming en Carbón Restaurant",
+   "categoria": "standup",
+   "fecha_inicio": "2026-12-12",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Carbón Restaurant, Reñaca",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": "CLP 19.800",
+   "descripcion": "Show de stand-up comedy de Luis Slimming en Reñaca.",
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/1b4810068080a77eaf9f6c1a952c60d0002b5e3d.jpg?1794847396",
+   "fotos": null,
+   "url": "https://ticketplus.cl/events/luis-slimming-renaca-carbon-restaurant-12-de-diciembre-21-00-hrs",
+   "fuentes": [
+    {
+     "nombre": "Ticketplus",
+     "url": "https://ticketplus.cl/events/luis-slimming-renaca-carbon-restaurant-12-de-diciembre-21-00-hrs"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "5e23a1b3c4",
+   "agregado": "2026-11-16",
+   "actualizado": "2026-11-16"
+  },
+  {
    "titulo": "Macha y el Bloque Depresivo",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-12",
@@ -16478,6 +17268,67 @@
    "genero": "trap"
   },
   {
+   "titulo": "Luis Slimming en Espacio Brooklyn",
+   "categoria": "standup",
+   "fecha_inicio": "2026-12-14",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Espacio Brooklyn, Pudahuel",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": "CLP 11.000",
+   "descripcion": "Show de stand-up comedy de Luis Slimming en Pudahuel.",
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/77d01e1a60ee5cc387f35dfd7c1d303c4e1476ad.jpg?1794847618",
+   "fotos": null,
+   "url": "https://ticketplus.cl/events/luis-slimming-pudahuel-espacio-brooklyn-14-de-diciembre-22-00-hrs",
+   "fuentes": [
+    {
+     "nombre": "Ticketplus",
+     "url": "https://ticketplus.cl/events/luis-slimming-pudahuel-espacio-brooklyn-14-de-diciembre-22-00-hrs"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "9dcf14ec75",
+   "agregado": "2026-11-16",
+   "actualizado": "2026-11-16"
+  },
+  {
+   "titulo": "Concierto 1 - Cuentos y Carnaval: Poemas Sinfónicos",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-15",
+   "fecha_fin": "2026-12-16",
+   "hora": "19:30",
+   "horario": null,
+   "lugar": "Centro Cultural Estación Mapocho",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $5.000",
+   "descripcion": "Cuentos y Carnaval: Poemas Sinfónicos ¡La Orquesta de Cámara de Santiago regresa a Estación Mapocho! ¿Puede la música contar una historia sin utilizar palabras? La Orquesta de Cámara de Santiago vuelve a la Sala de las Artes del Centro Cult",
+   "imagen": "https://img.vamoh.cl/events/905fd058-1715-43ef-864b-d6e5eabe6f3f.webp?v=4778bcce",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/concierto-1-cuentos-y-carnaval-poemas-sinfonicos-dg2c1/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/concierto-1-cuentos-y-carnaval-poemas-sinfonicos-dg2c1/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "ab1f0c95c3",
+   "agregado": "2026-11-16",
+   "actualizado": "2026-11-16",
+   "genero": "clasica"
+  },
+  {
    "titulo": "DAVID PEREZ EN PALERMO TEATRO BAR - Grabación de Especial de Comedia",
    "categoria": "standup",
    "fecha_inicio": "2026-12-16",
@@ -16506,6 +17357,36 @@
    "id": "0aa13c406f",
    "agregado": "2026-11-15",
    "actualizado": "2026-11-15"
+  },
+  {
+   "titulo": "Luis Slimming en Tío Tomate",
+   "categoria": "standup",
+   "fecha_inicio": "2026-12-16",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Tío Tomate, La Dehesa",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": "CLP 16.500",
+   "descripcion": "Show de stand-up comedy de Luis Slimming en La Dehesa.",
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/d342df11384a0695eb1c76c7d37738b9b429be4a.jpg?1794847852",
+   "fotos": null,
+   "url": "https://ticketplus.cl/events/luis-slimming-la-dehesa-tio-tomate-16-de-diciembre-21-00-hrs",
+   "fuentes": [
+    {
+     "nombre": "Ticketplus",
+     "url": "https://ticketplus.cl/events/luis-slimming-la-dehesa-tio-tomate-16-de-diciembre-21-00-hrs"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "8fb6b62b81",
+   "agregado": "2026-11-16",
+   "actualizado": "2026-11-16"
   },
   {
    "titulo": "Javier Silvera: ¿lo Dejamos Hasta Acá? en Cantares Bar",
@@ -17404,6 +18285,36 @@
    "genero": "cumbia"
   },
   {
+   "titulo": "Luis Slimming en Patio Bulnes",
+   "categoria": "standup",
+   "fecha_inicio": "2026-12-22",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Patio Bulnes, Linderos",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": "CLP 16.500",
+   "descripcion": "Show de stand-up comedy de Luis Slimming en Linderos.",
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/0696c77744e057d0ee6adee2d8b120156f9065b9.jpg?1794848093",
+   "fotos": null,
+   "url": "https://ticketplus.cl/events/luis-slimming-linderos-patio-bulnes-22-de-diciembre-22-00-hrs",
+   "fuentes": [
+    {
+     "nombre": "Ticketplus",
+     "url": "https://ticketplus.cl/events/luis-slimming-linderos-patio-bulnes-22-de-diciembre-22-00-hrs"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "d971166969",
+   "agregado": "2026-11-16",
+   "actualizado": "2026-11-16"
+  },
+  {
    "titulo": "Concierto Navidad UC: El Mesías",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-23",
@@ -17773,7 +18684,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Concierto en vivo que reúne a Eva Ayllón, Inti-Illimani Histórico y Cuarteto Austral.",
-   "imagen": null,
+   "imagen": "https://tmlascondes.cl/wp-content/uploads/2026/10/WEB_EVA_2-COLUMNAS.jpg",
    "fotos": null,
    "url": "https://tmlascondes.cl/",
    "fuentes": [
@@ -17789,6 +18700,36 @@
    "agregado": "2026-11-16",
    "actualizado": "2026-11-16",
    "genero": "folclor"
+  },
+  {
+   "titulo": "Luis Slimming en Comadre Lola",
+   "categoria": "standup",
+   "fecha_inicio": "2026-12-29",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Comadre Lola, Quilicura",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": "CLP 16.500",
+   "descripcion": "Show de stand-up comedy de Luis Slimming en Quilicura.",
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/b2d204550b58ba91289390c9138b324ce039c3c3.jpg?1794848285",
+   "fotos": null,
+   "url": "https://ticketplus.cl/events/luis-slimming-comadre-lola-quilicura-29-de-diciembre-21-00-hrs",
+   "fuentes": [
+    {
+     "nombre": "Ticketplus",
+     "url": "https://ticketplus.cl/events/luis-slimming-comadre-lola-quilicura-29-de-diciembre-21-00-hrs"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "1b466ad00e",
+   "agregado": "2026-11-16",
+   "actualizado": "2026-11-16"
   },
   {
    "titulo": "Manuel Garcia: CONCIERTO FIN DE ANO - la Gran Sala Sinfonica Nacional",
@@ -18231,6 +19172,36 @@
    "id": "df115faab7",
    "agregado": "2026-11-11",
    "actualizado": "2026-11-12"
+  },
+  {
+   "titulo": "Un carnaval de fracasos",
+   "categoria": "teatro",
+   "fecha_inicio": "2027-01-14",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Matucana 100",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": "CLP 8.476",
+   "descripcion": "Obra de teatro presentada en el Centro Cultural Matucana 100.",
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/3d85325d496344835a7545956d34a7aa87f54fd6.png?1793023625",
+   "fotos": null,
+   "url": "https://teatro-a-mil.ticketplus.cl/events/un-carnaval-de-fracasos-FITAM2027",
+   "fuentes": [
+    {
+     "nombre": "Ticketplus",
+     "url": "https://teatro-a-mil.ticketplus.cl/events/un-carnaval-de-fracasos-FITAM2027"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "b0493151a7",
+   "agregado": "2026-11-16",
+   "actualizado": "2026-11-16"
   },
   {
    "titulo": "Exageraldo «Celebrando 10 Años de Comedia»",
@@ -19360,6 +20331,36 @@
    "genero": "reggaeton"
   },
   {
+   "titulo": "Felipe Avello en Enjoy Santiago",
+   "categoria": "standup",
+   "fecha_inicio": "2027-01-29",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Enjoy Santiago",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": "CLP 34.500",
+   "descripcion": "Show de stand-up comedy del comediante chileno Felipe Avello en Enjoy Santiago.",
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/3ef29255b6649f99834198091e928c562fc46b31.png?1794342039",
+   "fotos": null,
+   "url": "https://ticketplus.cl/events/felipe-avello-en-enjoy-santiago-2027",
+   "fuentes": [
+    {
+     "nombre": "Ticketplus",
+     "url": "https://ticketplus.cl/events/felipe-avello-en-enjoy-santiago-2027"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "50a1437f96",
+   "agregado": "2026-11-16",
+   "actualizado": "2026-11-16"
+  },
+  {
    "titulo": "NeoFest - Previa del Año Nuevo Lunar",
    "categoria": "anime",
    "fecha_inicio": "2027-01-30",
@@ -19636,6 +20637,37 @@
    "agregado": "2026-11-14",
    "actualizado": "2026-11-14",
    "genero": "reggaeton"
+  },
+  {
+   "titulo": "Noche De Tocata Con Get Away + Indio Loco",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-02-12",
+   "fecha_fin": "2027-02-13",
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Restaurant Cocina Clandestina",
+   "direccion": null,
+   "comuna": "Providencia",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $3.000",
+   "descripcion": "Detalles del evento Hora de Apertura de Puertas: 21:00 hrs Hora aprox. de inicio del show: 22:00 hrs Hora aprox. de término del evento: 01:00 hrs Sobre el estacionamiento: subterráneo pagado hasta 02:00 hrs Síguenos y etiquétanos en @getawa",
+   "imagen": "https://img.vamoh.cl/events/545ed1b7-c15d-452c-82a8-9984b14c98dd.webp?v=edfba2c5",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/noche-de-tocata-con-get-away-indio-loco-xz3p0/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/noche-de-tocata-con-get-away-indio-loco-xz3p0/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "99619356a0",
+   "agregado": "2026-11-16",
+   "actualizado": "2026-11-16",
+   "genero": "rock"
   },
   {
    "titulo": "Ovniotaku",
@@ -20438,14 +21470,14 @@
    "categoria": "conciertos",
    "fecha_inicio": "2027-03-20",
    "fecha_fin": null,
-   "hora": null,
+   "hora": "18:00",
    "horario": null,
    "lugar": "Espacio Riesco",
    "direccion": "El Salto 5000",
    "comuna": "Santiago",
    "ciudad": null,
    "region": null,
-   "precio": null,
+   "precio": "Desde $46.000",
    "descripcion": "I love Reggaeton 2027 at Espacio Riesco at 2027-03-20",
    "imagen": "https://images.sk-static.com/images/media/profile_images/events/43374459/huge_avatar?series_id=3747840",
    "fotos": null,
@@ -20458,6 +21490,10 @@
     {
      "nombre": "songkick.com",
      "url": "https://www.songkick.com/es/metro-areas/27525-chile-santiago/genre/pop"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/i-love-reggaeton-chile-en-espacio-riesco-blolu/"
     }
    ],
    "desde_imagen": false,
@@ -20465,7 +21501,7 @@
    "origen": "ticketera",
    "id": "4d3b6f62e7",
    "agregado": "2026-11-15",
-   "actualizado": "2026-11-15",
+   "actualizado": "2026-11-16",
    "genero": "reggaeton"
   },
   {
@@ -20696,7 +21732,7 @@
    "hora": "19:00",
    "horario": null,
    "lugar": "Teatro Parque Cousiño",
-   "direccion": null,
+   "direccion": "San Ignacio de Loyola 1249, 8360326 Santiago, Región Metropolitana",
    "comuna": "Santiago",
    "ciudad": null,
    "region": null,
@@ -20709,6 +21745,10 @@
     {
      "nombre": "VAMOH!",
      "url": "https://vamoh.cl/events/sinfonia-de-abril-shigatsu-wa-kimi-no-uso-en-concierto-w0yjj/"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/sinfonia-de-abril-shigatsu-wa-kimi-no-uso-en-concierto-en-teatro-cousino-20784"
     }
    ],
    "desde_imagen": false,
@@ -20716,7 +21756,7 @@
    "origen": "datos-estructurados",
    "id": "1661519d4e",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-14",
+   "actualizado": "2026-11-16",
    "genero": "bandas_sonoras"
   },
   {
@@ -21103,30 +22143,34 @@
    "categoria": "conciertos",
    "fecha_inicio": "2027-05-01",
    "fecha_fin": null,
-   "hora": null,
+   "hora": "20:00",
    "horario": null,
-   "lugar": "Teatro Coliseo - Santiago Centro",
+   "lugar": "Teatro Coliseo",
    "direccion": null,
-   "comuna": null,
+   "comuna": "Santiago",
    "ciudad": null,
    "region": null,
-   "precio": null,
-   "descripcion": null,
-   "imagen": "https://static.ptocdn.net/images/eventos/hvp017_calugalistado.jpg",
+   "precio": "Desde $34.500",
+   "descripcion": "La Orquesta Fernández Fierro llega a Chile el próximo Sábado 1 de Mayo de 2027, para traer su disruptivo tango, que fusiona la herencia porteña con la energía del rock. Con 25 años de trayectoria, la Orquesta Fernández Fierro emergió como u",
+   "imagen": "https://img.vamoh.cl/events/534ae86b-afce-491f-875b-78744e22ac3f.webp?v=515c32a6",
    "fotos": null,
-   "url": "https://www.puntoticket.com/orquesta-fernandez-fierro",
+   "url": "https://vamoh.cl/events/orquesta-fernandez-fierro-en-teatro-coliseo-kkhwj/",
    "fuentes": [
     {
      "nombre": "PuntoTicket",
      "url": "https://www.puntoticket.com/orquesta-fernandez-fierro"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/orquesta-fernandez-fierro-en-teatro-coliseo-kkhwj/"
     }
    ],
    "desde_imagen": false,
-   "confianza": "media",
+   "confianza": "alta",
    "origen": "ticketera",
    "id": "768760a2cb",
    "agregado": "2026-11-15",
-   "actualizado": "2026-11-15",
+   "actualizado": "2026-11-16",
    "genero": "clasica"
   },
   {
@@ -21189,6 +22233,37 @@
    "agregado": "2026-11-15",
    "actualizado": "2026-11-15",
    "genero": "clasica"
+  },
+  {
+   "titulo": "Brad Mehldau Trío en Chile",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-05-16",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Nescafé de las Artes",
+   "direccion": "Av. Manuel Montt 032",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "El destacado pianista de jazz Brad Mehldau se presentará en formato trío junto a Larry Grenadier y Marcus Gilmore.",
+   "imagen": "https://www.cooperativa.cl/noticias/imag/fotos/logo-cooperativa-cl-facebook-1200x630.jpg",
+   "fotos": null,
+   "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/brad-mehldau-figura-del-piano-jazz-agenda-concierto-en-santiago/2026-11-16/134753.html",
+   "fuentes": [
+    {
+     "nombre": "Cooperativa.cl",
+     "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/brad-mehldau-figura-del-piano-jazz-agenda-concierto-en-santiago/2026-11-16/134753.html"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "2fc8193496",
+   "agregado": "2026-11-16",
+   "actualizado": "2026-11-16",
+   "genero": "jazz"
   },
   {
    "titulo": "Mass Of Fermenting Dregs",
@@ -21282,6 +22357,68 @@
    "agregado": "2026-11-14",
    "actualizado": "2026-11-14",
    "genero": "indie"
+  },
+  {
+   "titulo": "Los Dos Carnales en Chile",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-05-23",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Caupolicán - Santiago Centro",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Concierto de la agrupación mexicana de música regional mexicana en el Teatro Caupolicán.",
+   "imagen": "https://static.ptocdn.net/images/eventos/iam005_calugalistado.jpg",
+   "fotos": null,
+   "url": "https://www.puntoticket.com/evento/los-dos-carnales-en-chile-teatro-caupolican-mayo-2027",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/evento/los-dos-carnales-en-chile-teatro-caupolican-mayo-2027"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "24eb75f560",
+   "agregado": "2026-11-16",
+   "actualizado": "2026-11-16",
+   "genero": "cumbia"
+  },
+  {
+   "titulo": "Isabel Pantoja en Chile - Tour Marinero de Luces",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-05-25",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Santander Arena",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Isabel Pantoja se presenta en Chile con su gira 'Marinero de Luces, 40 años después World Tour'.",
+   "imagen": "https://assets.radioagricultura.cl/2026/11/FotoJet-89-1024x605.jpg",
+   "fotos": null,
+   "url": "https://www.puntoticket.com",
+   "fuentes": [
+    {
+     "nombre": "Home - Radio Agricultura",
+     "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/isabel-pantoja-vuelve-a-chile-revisa-cuando-sera-su-concierto-y-desde-cuando-comprar-entradas_20261116/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "830a260cbe",
+   "agregado": "2026-11-16",
+   "actualizado": "2026-11-16",
+   "genero": "clasica"
   },
   {
    "titulo": "Beth Gibbons",
