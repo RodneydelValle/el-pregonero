@@ -1,8 +1,10 @@
 rules_version = '2';
-// Reglas de Firestore para IMP TRAVEL: cada persona solo puede leer y escribir SUS favoritos.
+// Reglas de Firestore para IMP TRAVEL y el Visor de Perfil.
 // Se pegan en la consola de Firebase → Firestore Database → Reglas → Publicar.
 service cloud.firestore {
   match /databases/{database}/documents {
+
+    // ===== IMP TRAVEL: cada persona solo puede leer y escribir SUS favoritos =====
     match /favoritos/{uid} {
       allow read, delete: if request.auth != null && request.auth.uid == uid;
       // Solo listas de id cortos (letras, números, "-" y "_"): nada de datos arbitrarios ni textos gigantes.
@@ -15,6 +17,47 @@ service cloud.firestore {
         && request.resource.data.restaurantes.join(',').matches('^([A-Za-z0-9_-]{1,64}(,[A-Za-z0-9_-]{1,64})*)?$')
         && request.resource.data.actualizado == request.time;
     }
+
+    // ===== Visor de Perfil (maqueta de Instagram del equipo de la Lotería) =====
+    // Acceso abierto a propósito (lo decidió el dueño): cualquiera con el visor puede ver y editar.
+    // Solo se limita la forma y el tamaño de los datos para que no sirva para guardar otras cosas.
+    // visor_equipo = proyectos del equipo; visor_pruebas = pruebas automáticas.
+    function texto(v, max) { return v is string && v.size() <= max; }
+    function imagen(v) {
+      return v is string && (v == ''
+        || v.matches('^https://res[.]cloudinary[.]com/[a-z0-9_-]{1,60}/image/upload/[A-Za-z0-9._~/%,:-]{1,400}$'));
+    }
+    function perfilValido(p) {
+      return p is map
+        && p.keys().hasOnly(['usuario', 'nombre', 'avatar', 'aro', 'verif', 'pubs', 'seguidores', 'seguidos', 'cat', 'bio', 'enlace', 'botones', 'azul'])
+        && texto(p.get('usuario', ''), 60) && texto(p.get('nombre', ''), 80) && imagen(p.get('avatar', ''))
+        && p.get('aro', true) is bool && p.get('verif', false) is bool && p.get('azul', true) is bool
+        && texto(p.get('pubs', ''), 20) && texto(p.get('seguidores', ''), 20) && texto(p.get('seguidos', ''), 20)
+        && texto(p.get('cat', ''), 60) && texto(p.get('bio', ''), 500)
+        && texto(p.get('enlace', ''), 120) && texto(p.get('botones', ''), 120);
+    }
+    match /{coleccion}/{sid} {
+      allow read, delete: if coleccion in ['visor_equipo', 'visor_pruebas'];
+      allow create, update: if coleccion in ['visor_equipo', 'visor_pruebas']
+        && sid.matches('^[A-Za-z0-9]{4,40}$')
+        && request.resource.data.keys().hasOnly(['nombre', 'perfil', 'destacadas', 'creado'])
+        && texto(request.resource.data.nombre, 80)
+        && perfilValido(request.resource.data.perfil)
+        && request.resource.data.destacadas is list && request.resource.data.destacadas.size() <= 30
+        && request.resource.data.creado is number;
+      match /posts/{pid} {
+        allow read, delete: if coleccion in ['visor_equipo', 'visor_pruebas'];
+        allow create, update: if coleccion in ['visor_equipo', 'visor_pruebas']
+          && pid.matches('^[A-Za-z0-9]{4,40}$')
+          && request.resource.data.keys().hasOnly(['img', 'desc', 'tipo', 'propuesta', 'fijado', 'o', 'creado'])
+          && imagen(request.resource.data.img) && request.resource.data.img != ''
+          && texto(request.resource.data.desc, 2200)
+          && request.resource.data.tipo in ['foto', 'carrusel', 'reel']
+          && request.resource.data.propuesta is bool && request.resource.data.fijado is bool
+          && request.resource.data.o is number && request.resource.data.creado is number;
+      }
+    }
+
     // Todo lo demás queda cerrado.
     match /{documento=**} {
       allow read, write: if false;
