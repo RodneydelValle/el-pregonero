@@ -1,11 +1,11 @@
 {
  "version": 1,
- "actualizado": "2026-11-18T01:48-03:00",
+ "actualizado": "2026-11-18T19:22-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-18T01:48-03:00",
+  "fecha": "2026-11-18T19:22-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 72,
+  "eventos_nuevos": 110,
   "nuevos_esta_vez": 38,
   "nuevos_ids": [
    "6f06dd9aff",
@@ -79,7 +79,45 @@
    "7ed5999ce0",
    "0adfcfabd0",
    "46ddde1bf0",
-   "77ca6c0998"
+   "77ca6c0998",
+   "412b638ee9",
+   "0feb9fa010",
+   "d86c4e83e8",
+   "ae83e6bf22",
+   "060b0b1d7e",
+   "0382da7e3d",
+   "0fd4e48d87",
+   "47419c76d9",
+   "2bbfede164",
+   "cf135c934c",
+   "865ffb0758",
+   "05babbffb2",
+   "46c6448562",
+   "674a829ad6",
+   "8cc82d6db5",
+   "011a8d5a57",
+   "f182693055",
+   "7b9f84b6e3",
+   "03b02f9269",
+   "5f29657baf",
+   "a09728f5b0",
+   "c520c92c94",
+   "c15e186ad0",
+   "e672468c07",
+   "5ced51d5ce",
+   "28f9bcd097",
+   "de912c3780",
+   "d013b106f8",
+   "d1a9a58e54",
+   "25a4d7f874",
+   "2ef0661a4b",
+   "a128cac6bc",
+   "a103e48986",
+   "fc9ce5cc97",
+   "66231f4e7b",
+   "33c2eebfd5",
+   "08fd4e5df2",
+   "bc240d9894"
   ],
   "nuevos_desde": {
    "6f06dd9aff": "2026-11-17T19:45-03:00",
@@ -153,24 +191,62 @@
    "7ed5999ce0": "2026-11-18T01:48-03:00",
    "0adfcfabd0": "2026-11-18T01:48-03:00",
    "46ddde1bf0": "2026-11-18T01:48-03:00",
-   "77ca6c0998": "2026-11-18T01:48-03:00"
+   "77ca6c0998": "2026-11-18T01:48-03:00",
+   "412b638ee9": "2026-11-18T19:22-03:00",
+   "0feb9fa010": "2026-11-18T19:22-03:00",
+   "d86c4e83e8": "2026-11-18T19:22-03:00",
+   "ae83e6bf22": "2026-11-18T19:22-03:00",
+   "060b0b1d7e": "2026-11-18T19:22-03:00",
+   "0382da7e3d": "2026-11-18T19:22-03:00",
+   "0fd4e48d87": "2026-11-18T19:22-03:00",
+   "47419c76d9": "2026-11-18T19:22-03:00",
+   "2bbfede164": "2026-11-18T19:22-03:00",
+   "cf135c934c": "2026-11-18T19:22-03:00",
+   "865ffb0758": "2026-11-18T19:22-03:00",
+   "05babbffb2": "2026-11-18T19:22-03:00",
+   "46c6448562": "2026-11-18T19:22-03:00",
+   "674a829ad6": "2026-11-18T19:22-03:00",
+   "8cc82d6db5": "2026-11-18T19:22-03:00",
+   "011a8d5a57": "2026-11-18T19:22-03:00",
+   "f182693055": "2026-11-18T19:22-03:00",
+   "7b9f84b6e3": "2026-11-18T19:22-03:00",
+   "03b02f9269": "2026-11-18T19:22-03:00",
+   "5f29657baf": "2026-11-18T19:22-03:00",
+   "a09728f5b0": "2026-11-18T19:22-03:00",
+   "c520c92c94": "2026-11-18T19:22-03:00",
+   "c15e186ad0": "2026-11-18T19:22-03:00",
+   "e672468c07": "2026-11-18T19:22-03:00",
+   "5ced51d5ce": "2026-11-18T19:22-03:00",
+   "28f9bcd097": "2026-11-18T19:22-03:00",
+   "de912c3780": "2026-11-18T19:22-03:00",
+   "d013b106f8": "2026-11-18T19:22-03:00",
+   "d1a9a58e54": "2026-11-18T19:22-03:00",
+   "25a4d7f874": "2026-11-18T19:22-03:00",
+   "2ef0661a4b": "2026-11-18T19:22-03:00",
+   "a128cac6bc": "2026-11-18T19:22-03:00",
+   "a103e48986": "2026-11-18T19:22-03:00",
+   "fc9ce5cc97": "2026-11-18T19:22-03:00",
+   "66231f4e7b": "2026-11-18T19:22-03:00",
+   "33c2eebfd5": "2026-11-18T19:22-03:00",
+   "08fd4e5df2": "2026-11-18T19:22-03:00",
+   "bc240d9894": "2026-11-18T19:22-03:00"
   },
   "horas_nuevos": 24,
-  "llamadas_ia": 50,
+  "llamadas_ia": 57,
   "ia_sin_cupo": false,
-  "ultima_completa": "2026-11-18T01:19-03:00",
+  "ultima_completa": "2026-11-18T18:55-03:00",
   "modo": "completa",
-  "paginas_revisadas": 46,
+  "paginas_revisadas": 55,
   "busquedas": 107,
-  "fuentes_fijas": 12,
+  "fuentes_fijas": 9,
   "errores": 28,
-  "noticias_desde": "2026-11-17",
-  "noticias_viejas_descartadas": 423,
-  "redes_vistas": 1,
-  "generos_ia": 10,
-  "imagenes_encontradas": 9
+  "noticias_desde": "2026-11-18",
+  "noticias_viejas_descartadas": 412,
+  "redes_vistas": 4,
+  "generos_ia": 14,
+  "imagenes_encontradas": 7
  },
- "total": 768,
+ "total": 806,
  "eventos": [
   {
    "titulo": "Mariposas y Polillas, Colores en Movimiento",
@@ -4008,6 +4084,10 @@
     {
      "nombre": "lospleimovil.cl",
      "url": "https://lospleimovil.cl/cartelera/"
+    },
+    {
+     "nombre": "Telon Ticket",
+     "url": "https://telonticket.cl/obra/el-ultimo-improvisador/"
     }
    ],
    "desde_imagen": false,
@@ -4470,6 +4550,10 @@
     {
      "nombre": "TelonTicket (teatro)",
      "url": "https://telonticket.cl/mep_cat/teatro/"
+    },
+    {
+     "nombre": "El Mostrador",
+     "url": "https://www.elmostrador.cl/cultura/agenda/2026/11/18/sudania-el-musical-en-providencia/"
     }
    ],
    "desde_imagen": false,
@@ -5017,6 +5101,68 @@
    "actualizado": "2026-11-14"
   },
   {
+   "titulo": "Jazz Club en Club Subterráneo",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-18",
+   "fecha_fin": null,
+   "hora": "18:00",
+   "horario": null,
+   "lugar": "Club Subterráneo",
+   "direccion": "Orrego Luco 46",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto de jazz en vivo en Club Subterráneo.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://zonora.cl/tocatas/santiago",
+   "fuentes": [
+    {
+     "nombre": "Zonora",
+     "url": "https://zonora.cl/tocatas/santiago"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "d1a9a58e54",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18",
+   "genero": "jazz"
+  },
+  {
+   "titulo": "Auros Trío en Sala Isidora Zegers",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-18",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Sala Isidora Zegers",
+   "direccion": "Compañía 1264",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Concierto de Chilenos y latinoamericanos para dos saxofones y piano, Temporada de Conciertos DMUS 2026.",
+   "imagen": "https://images.portaldisc.com/l/eventos/360/24586.jpg",
+   "fotos": null,
+   "url": "https://portaltickets.cl",
+   "fuentes": [
+    {
+     "nombre": "Zonora",
+     "url": "https://zonora.cl/tocatas/santiago"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "25a4d7f874",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18",
+   "genero": "clasica"
+  },
+  {
    "titulo": "El Barbero de Sevilla",
    "categoria": "teatro",
    "fecha_inicio": "2026-11-18",
@@ -5208,6 +5354,37 @@
    "genero": "otros"
   },
   {
+   "titulo": "Surround Sessions: BMTH Live in Sao Paulo",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-18",
+   "fecha_fin": null,
+   "hora": "19:30",
+   "horario": null,
+   "lugar": "Casa Estudio Rockaxis",
+   "direccion": null,
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Sesión musical en vivo en Casa Estudio Rockaxis.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://zonora.cl/tocatas/santiago",
+   "fuentes": [
+    {
+     "nombre": "Zonora",
+     "url": "https://zonora.cl/tocatas/santiago"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "2ef0661a4b",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18",
+   "genero": "metal"
+  },
+  {
    "titulo": "¡Parlamento!",
    "categoria": "teatro",
    "fecha_inicio": "2026-11-18",
@@ -5306,6 +5483,37 @@
    "actualizado": "2026-11-18"
   },
   {
+   "titulo": "Ciclo Grandes Voces Grandes Mujeres",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-18",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Sala SCD Egaña",
+   "direccion": null,
+   "comuna": "La Reina",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto del ciclo Grandes Voces Grandes Mujeres en Sala SCD Egaña.",
+   "imagen": "https://api.zonora.cl/api/pinata/bafkreigdglpu5jteug55gkwj3kuekj4tlmnhagzar22qabbnqabxe4q5z4",
+   "fotos": null,
+   "url": "https://zonora.cl/tocatas/santiago",
+   "fuentes": [
+    {
+     "nombre": "Zonora",
+     "url": "https://zonora.cl/tocatas/santiago"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "a103e48986",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18",
+   "genero": "clasica"
+  },
+  {
    "titulo": "Karol Blum – Popurrí",
    "categoria": "teatro",
    "fecha_inicio": "2026-11-18",
@@ -5361,8 +5569,8 @@
    "lugar": "Sala SCD Bellavista",
    "direccion": null,
    "comuna": "Recoleta",
-   "ciudad": null,
-   "region": null,
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
    "precio": "Desde $10.000",
    "descripcion": "Nico Carreño presenta su nuevo EP “Te quedaste, a pesar de las dudas” en un concierto de lanzamiento a realizarse en la sala SCD de Bellavista, el día miércoles 18 de noviembre a las 20:30 hrs. Será un show donde se presentará íntegramente",
    "imagen": "https://img.vamoh.cl/events/840f2e05-093e-4c46-a476-e70f47e92045.webp?v=90bbda2b",
@@ -5372,6 +5580,10 @@
     {
      "nombre": "VAMOH!",
      "url": "https://vamoh.cl/events/nico-carreno-presenta-te-quedaste-a-pesar-de-las-dudas-concierto-de-lanzamiento-nuevo-ep-sala-en-scd-bellavista-7duzi/"
+    },
+    {
+     "nombre": "Zonora",
+     "url": "https://zonora.cl/tocatas/santiago"
     }
    ],
    "desde_imagen": false,
@@ -5444,6 +5656,37 @@
    "genero": "rock"
   },
   {
+   "titulo": "Trunco presenta El pasto del vecino",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-18",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Sala Master",
+   "direccion": null,
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Presentación en vivo de Trunco en Sala Master.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://zonora.cl/tocatas/santiago",
+   "fuentes": [
+    {
+     "nombre": "Zonora",
+     "url": "https://zonora.cl/tocatas/santiago"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "a128cac6bc",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18",
+   "genero": "indie"
+  },
+  {
    "titulo": "Jazz en Vivo Vol III",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-18",
@@ -5475,6 +5718,37 @@
    "genero": "jazz"
   },
   {
+   "titulo": "Plumas + Crettino en Bar de René",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-18",
+   "fecha_fin": null,
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Peces de Ciudad",
+   "direccion": null,
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Tocata en vivo de Plumas y Crettino.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://zonora.cl/tocatas/santiago",
+   "fuentes": [
+    {
+     "nombre": "Zonora",
+     "url": "https://zonora.cl/tocatas/santiago"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "fc9ce5cc97",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18",
+   "genero": "indie"
+  },
+  {
    "titulo": "Piano Open Mic con Rodrigo Carrazana",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-18",
@@ -5504,6 +5778,37 @@
    "agregado": "2026-11-18",
    "actualizado": "2026-11-18",
    "genero": "clasica"
+  },
+  {
+   "titulo": "Orquesta La Belira + Cumbia Choriza",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-18",
+   "fecha_fin": null,
+   "hora": "22:30",
+   "horario": null,
+   "lugar": "Teatro del Puente",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Noche de cumbia con la Orquesta La Belira y Cumbia Choriza.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://zonora.cl/tocatas/santiago",
+   "fuentes": [
+    {
+     "nombre": "Zonora",
+     "url": "https://zonora.cl/tocatas/santiago"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "66231f4e7b",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18",
+   "genero": "cumbia"
   },
   {
    "titulo": "Llenando de Cumbia La Primavera: Orquesta La Belira + Cumbia Choriza Se Toman La Maestra Vida",
@@ -6044,7 +6349,7 @@
    "comuna": "Las Condes",
    "ciudad": "Santiago",
    "region": "Región Metropolitana",
-   "precio": null,
+   "precio": "Desde $33.000",
    "descripcion": "La reconocida banda tributo The Beetles presenta 'Anthology – Sinfónico' junto a la Orquesta Filodramática de Chile.",
    "imagen": "https://los40.cl/resizer/v2/RLMNSOGJYZBABH5KBJIGKWZO7E.jpg?auth=1c66ff219d4c5cc7dc975b13a057047afbcc8d816d7fd1b4ade76c336b2cdf5f&quality=70&width=1200&height=675&smart=true",
    "fotos": null,
@@ -6053,6 +6358,10 @@
     {
      "nombre": "LOS40",
      "url": "https://los40.cl/2026/11/16/the-beatles-llegan-en-version-sinfonica-a-chile-2026-fechas-lugar-y-detalles-del-espectaculo/"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/entradas-para-the-beetles-anthology-sinfonico-5wojq/"
     }
    ],
    "desde_imagen": false,
@@ -6060,7 +6369,7 @@
    "origen": "ia",
    "id": "5b413804fd",
    "agregado": "2026-11-17",
-   "actualizado": "2026-11-17",
+   "actualizado": "2026-11-18",
    "genero": "clasica"
   },
   {
@@ -6608,6 +6917,10 @@
     {
      "nombre": "Teatro San Ginés",
      "url": "https://www.sangines.cl/"
+    },
+    {
+     "nombre": "sangines.cl",
+     "url": "https://www.sangines.cl/cartelera/"
     }
    ],
    "desde_imagen": false,
@@ -6651,6 +6964,36 @@
    "agregado": "2026-11-13",
    "actualizado": "2026-11-14",
    "genero": "indie"
+  },
+  {
+   "titulo": "Peter Pollak: Vuelve a la pintura",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-19",
+   "fecha_fin": "2026-11-22",
+   "hora": null,
+   "horario": null,
+   "lugar": null,
+   "direccion": null,
+   "comuna": null,
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Exposición de pintura que marca el retorno de Peter Pollak a las artes visuales tras su trayectoria en la arquitectura.",
+   "imagen": "https://www.ed.cl/wp-content/uploads/2026/11/pp.jpg",
+   "fotos": null,
+   "url": "https://www.ed.cl/event/la-artesania-y-el-arte-superlativo-de-japon-llegan-a-providencia/",
+   "fuentes": [
+    {
+     "nombre": "ED.cl",
+     "url": "https://www.ed.cl/event/la-artesania-y-el-arte-superlativo-de-japon-llegan-a-providencia/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "ia",
+   "id": "5f29657baf",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18"
   },
   {
    "titulo": "Sesión III - Pianista Boris Giltburg (Sonatas Beethoven)",
@@ -7127,6 +7470,68 @@
    "genero": "clasica"
   },
   {
+   "titulo": "Orquesta Filarmónica de Los Ríos presenta: Romanticismo Sinfónico",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-20",
+   "fecha_fin": null,
+   "hora": "19:30",
+   "horario": null,
+   "lugar": "Teatro Regional Cervantes",
+   "direccion": null,
+   "comuna": "Valdivia",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $2.500",
+   "descripcion": "PROGRAMA DE CONCIERTO \"ROMANTICISMO SINFÓNICO\" Orquesta Filarmónica de Los Ríos Director Invitado: Jaime Cofre Flores Notas de Programa: El programa de hoy, presentado por la Orquesta Filarmónica de Los Ríos bajo la dirección del maestro Ja",
+   "imagen": "https://img.vamoh.cl/events/eccbc4e7-2c50-44ba-b1f8-d990799188d3.webp?v=417952bf",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/orquesta-filarmonica-de-los-rios-presenta-romanticismo-sinfonico-vd1in/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/orquesta-filarmonica-de-los-rios-presenta-romanticismo-sinfonico-vd1in/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "865ffb0758",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18",
+   "genero": "clasica"
+  },
+  {
+   "titulo": "Orquesta Sinfónica Nacional: 184 años de la Universidad de Chile",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-20",
+   "fecha_fin": "2026-11-21",
+   "hora": "19:30",
+   "horario": "Viernes (comunidad universitaria) y sábado 21 a las 19:30 hrs",
+   "lugar": "Gran Sala Sinfónica Nacional",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto de la Orquesta Sinfónica Nacional celebrando los 184 años de la Universidad de Chile bajo la dirección de Diego Naser.",
+   "imagen": "https://uchile-media-storage.nyc3.digitaloceanspaces.com/wp-content/uploads/2026/11/18091732/diego-naser.jpg",
+   "fotos": null,
+   "url": "https://www.ticketplus.cl",
+   "fuentes": [
+    {
+     "nombre": "Diario y Radio Universidad Chile",
+     "url": "https://radio.uchile.cl/2026/11/18/orquesta-sinfonica-nacional-celebra-los-184-anos-de-la-universidad-de-chile-con-concierto-especial/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "de912c3780",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18",
+   "genero": "clasica"
+  },
+  {
    "titulo": "Orquesta Sinfónica Nacional: Aniversario Universidad de Chile",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-20",
@@ -7190,6 +7595,68 @@
    "id": "78aad0d25e",
    "agregado": "2026-11-17",
    "actualizado": "2026-11-17"
+  },
+  {
+   "titulo": "Tributo Bee Gees en Club Providencia",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-20",
+   "fecha_fin": null,
+   "hora": "19:30",
+   "horario": null,
+   "lugar": "Club Providencia",
+   "direccion": null,
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto tributo a Bee Gees en Club Providencia.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://zonora.cl/tocatas/santiago",
+   "fuentes": [
+    {
+     "nombre": "Zonora",
+     "url": "https://zonora.cl/tocatas/santiago"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "33c2eebfd5",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18",
+   "genero": "pop"
+  },
+  {
+   "titulo": "Chamullentos en Liguria Lastarria",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-20",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Bar Liguria - Lastarria",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Presentación musical de Chamullentos en Bar Liguria Lastarria.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://zonora.cl/tocatas/santiago",
+   "fuentes": [
+    {
+     "nombre": "Zonora",
+     "url": "https://zonora.cl/tocatas/santiago"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "08fd4e5df2",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18",
+   "genero": "cumbia"
   },
   {
    "titulo": "Concierto 100 años Rotary Club",
@@ -7267,8 +7734,8 @@
    "lugar": "Auditorio Universidad Mayor",
    "direccion": null,
    "comuna": "Providencia",
-   "ciudad": null,
-   "region": null,
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
    "precio": "Desde $8.000",
    "descripcion": "🎶Consonantia les presenta un espectacular concierto tributo al anime Demon Slayer con instrumentos y voz🎶 En esta presentación, abordaremos la banda sonora de uno de los animes más importantes de la actualidad con una variada setlist que in",
    "imagen": "https://img.vamoh.cl/events/8c9c2096-84a4-41d0-958c-9f9dccdd2101.webp?v=11ab3e48",
@@ -7278,6 +7745,10 @@
     {
      "nombre": "VAMOH!",
      "url": "https://vamoh.cl/events/demon-slayer-en-concierto-en-universidad-mayor-9ywjj/"
+    },
+    {
+     "nombre": "Zonora",
+     "url": "https://zonora.cl/tocatas/santiago"
     }
    ],
    "desde_imagen": false,
@@ -7285,7 +7756,7 @@
    "origen": "datos-estructurados",
    "id": "5b7275a7b6",
    "agregado": "2026-11-17",
-   "actualizado": "2026-11-17",
+   "actualizado": "2026-11-18",
    "genero": "bandas_sonoras"
   },
   {
@@ -7378,6 +7849,37 @@
    "agregado": "2026-11-18",
    "actualizado": "2026-11-18",
    "genero": "hiphop"
+  },
+  {
+   "titulo": "Los Tres Tenores Chilenos - en Concierto",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-20",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Teatro Provincial de Curico",
+   "direccion": null,
+   "comuna": "Curicó",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $31.360",
+   "descripcion": "LOS TRES TENORES CHILENOS – EN CONCIERTO Tres voces, una gran tradición y una noche para emocionarse. Los Tres Tenores Chilenos, Leonardo Pohl, Gonzalo Tomckowiack y José Azócar, llegan al Teatro Provincial de Curicó para presentar un conci",
+   "imagen": "https://img.vamoh.cl/events/95d728bf-1a20-4c04-b099-84b7bbd5e014.webp?v=a400d677",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/los-tres-tenores-chilenos-en-concierto-r2ws7/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/los-tres-tenores-chilenos-en-concierto-r2ws7/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "cf135c934c",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18",
+   "genero": "clasica"
   },
   {
    "titulo": "Radioteatro: Martín Rivas",
@@ -8224,6 +8726,37 @@
    "actualizado": "2026-11-17"
   },
   {
+   "titulo": "Cultura Vinilo: Especial Feria de CDs, Vinilos y Cassettes",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-21",
+   "fecha_fin": null,
+   "hora": "13:00",
+   "horario": "13:00–20:00 hrs",
+   "lugar": "Quercus Bar",
+   "direccion": "Santa Magdalena 61, local 6",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Feria especial dedicada a los formatos clásicos de la música: CDs, vinilos y cassettes. Encuentra ediciones descatalogadas.",
+   "imagen": "https://www.futuro.cl/wp-content/uploads/2026/11/cultura-vinilo.webp",
+   "fotos": null,
+   "url": "https://www.futuro.cl/2026/11/buscas-ese-disco-que-ya-no-esta-en-spotify-feria-de-cds-vinilos-y-cassettes-regresa-a-santiago/",
+   "fuentes": [
+    {
+     "nombre": "Futuro Chile",
+     "url": "https://www.futuro.cl/2026/11/buscas-ese-disco-que-ya-no-esta-en-spotify-feria-de-cds-vinilos-y-cassettes-regresa-a-santiago/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "5ced51d5ce",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18",
+   "genero": "otros"
+  },
+  {
    "titulo": "Concierto Orquesta Sinfónica de Lampa",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-21",
@@ -8283,6 +8816,68 @@
    "id": "f2f807b453",
    "agregado": "2026-11-13",
    "actualizado": "2026-11-13",
+   "genero": "clasica"
+  },
+  {
+   "titulo": "Concierto folclórico Conjunto Tierra Chilena",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-21",
+   "fecha_fin": null,
+   "hora": "18:00",
+   "horario": null,
+   "lugar": "Aula Magna de la Universidad de Santiago (USACH)",
+   "direccion": "Avenida Víctor Jara 3659",
+   "comuna": "Estación Central",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Disfruta un concierto folclórico gratuito del Conjunto Tierra Chilena, con música, danza y homenaje a su fundador.",
+   "imagen": "https://assets.radioagricultura.cl/2026/11/Tierra-Chilena-1024x538.jpg",
+   "fotos": null,
+   "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/buscas-panoramas-gratis-concierto-folclorico-llega-a-santiago-este-sabado-21-de-noviembre_20261118/",
+   "fuentes": [
+    {
+     "nombre": "Home - Radio Agricultura",
+     "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/buscas-panoramas-gratis-concierto-folclorico-llega-a-santiago-este-sabado-21-de-noviembre_20261118/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "c520c92c94",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18",
+   "genero": "folclor"
+  },
+  {
+   "titulo": "Sinfónico 11: Hacia el nuevo horizonte",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-21",
+   "fecha_fin": null,
+   "hora": "18:00",
+   "horario": null,
+   "lugar": "Teatro Universidad de Concepción",
+   "direccion": null,
+   "comuna": "Concepción",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $3.600",
+   "descripcion": "Bruch/ Concierto para violín N°1 Respighi/ Fuentes de Roma - Pinos de Roma Luis Toro Araya (Chile), director titular y artístico Raquel Areal Martínez (España)(debut en Chile), violín Políticas de Sala Para que disfrutes plenamente tu exper",
+   "imagen": "https://img.vamoh.cl/events/72ceed7d-9a94-450c-befd-c91674827e68.webp",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/sinfonico-11-hacia-el-nuevo-horizonte-g618z/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/sinfonico-11-hacia-el-nuevo-horizonte-g618z/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "0feb9fa010",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18",
    "genero": "clasica"
   },
   {
@@ -8829,6 +9424,37 @@
    "genero": "clasica"
   },
   {
+   "titulo": "Sinfonía Del Gran Baile - Orquesta de Mujeres de Antofagasta",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-21",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Teatro Municipal de Antofagasta",
+   "direccion": null,
+   "comuna": "Antofagasta",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $11.200",
+   "descripcion": "Sinfonía Del Gran Baile Orquesta de Mujeres de Antofagasta La Corporación Cultural de Antofagasta junto a la Academia AIMA te invitan al “Concierto Escénico de la Orquesta de Mujeres de Antofagasta”, un espectáculo que considera una elegant",
+   "imagen": "https://img.vamoh.cl/events/c3e66161-1b77-4174-8c65-dca001186a08.webp?v=d9fd231c",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/sinfonia-del-gran-baile-orquesta-de-mujeres-de-antofagasta-2e4kh/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/sinfonia-del-gran-baile-orquesta-de-mujeres-de-antofagasta-2e4kh/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "d86c4e83e8",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18",
+   "genero": "clasica"
+  },
+  {
    "titulo": "Saratoga en Chile",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-21",
@@ -8999,6 +9625,37 @@
    "genero": "metal"
   },
   {
+   "titulo": "21/11 Sábado de Conciertos: los Piolitas en el Huaso Enrique",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-21",
+   "fecha_fin": "2026-11-22",
+   "hora": "21:30",
+   "horario": null,
+   "lugar": "El Huaso Enrique",
+   "direccion": "Maipú 462, 8350432 Santiago, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "🇨🇱 IMPORTANTE 🇨🇱 Una vez comprada la entrada debe escribir VIA WHATSAPP de forma OBLIGATORIA al +56920701885 para reservar su m",
+   "imagen": "https://cdn.keai.cl/events/20908-707a6ba3c389a9ff34a8fda33bb04a0f.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/2111-sabado-de-conciertos-los-piolitas-en-el-huaso-enrique-20908",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/2111-sabado-de-conciertos-los-piolitas-en-el-huaso-enrique-20908"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "011a8d5a57",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18",
+   "genero": "folclor"
+  },
+  {
    "titulo": "Enanitos Verdes sinfónico",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-21",
@@ -9154,6 +9811,37 @@
    "id": "ddbafad0e4",
    "agregado": "2026-11-15",
    "actualizado": "2026-11-15"
+  },
+  {
+   "titulo": "Cgs Jazz Trío en Hidden Cocktail Room",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-21",
+   "fecha_fin": "2026-11-22",
+   "hora": "22:30",
+   "horario": null,
+   "lugar": "Hidden Cocktail Room",
+   "direccion": "Barón Pierre de Coubertin 62, 8330018 Santiago, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "🎷 CGS TRÍO JAZZ EN HIDDEN COCKTAIL ROOM 🥃 La música en vivo se toma la noche de Santiago. Este sábado 21 de noviembre, di",
+   "imagen": "https://cdn.keai.cl/events/20910-0af22c9680b06d938bd61fc2669b6013.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/cgs-jazz-trio-en-hidden-cocktail-room-20910",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/cgs-jazz-trio-en-hidden-cocktail-room-20910"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "03b02f9269",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18",
+   "genero": "jazz"
   },
   {
    "titulo": "Pelao Rodrigo",
@@ -9836,7 +10524,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Espectáculo musical en Fundación CorpArtes.",
-   "imagen": null,
+   "imagen": "https://telonticket.cl/wp-content/uploads/2026/11/1-29.jpg",
    "fotos": null,
    "url": "https://telonticket.cl/mep_cat/musical/",
    "fuentes": [
@@ -9897,7 +10585,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Show de monólogos de stand-up con Pablo Fábregas (Agotado).",
-   "imagen": null,
+   "imagen": "https://d319h6r8zq2kxk.cloudfront.net/wp-content/uploads/2026/09/12111757/WhatsApp-Image-2026-09-11-at-1.51.23-PM.jpeg",
    "fotos": null,
    "url": "https://lacomedia.cl/",
    "fuentes": [
@@ -9927,7 +10615,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Segunda función del show de stand-up de Pablo Fábregas.",
-   "imagen": null,
+   "imagen": "https://d319h6r8zq2kxk.cloudfront.net/wp-content/uploads/2026/10/13143256/WhatsApp-Image-2026-10-13-at-14.16.51.jpeg",
    "fotos": null,
    "url": "https://lacomedia.cl/",
    "fuentes": [
@@ -10271,6 +10959,36 @@
    "id": "58bd029f33",
    "agregado": "2026-11-08",
    "actualizado": "2026-11-16"
+  },
+  {
+   "titulo": "¿Y si la fruta nunca fue el verdadero pecado?",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-25",
+   "fecha_fin": "2026-12-31",
+   "hora": "10:30",
+   "horario": "Mar a dom, 10:30–19:00",
+   "lugar": "Museo Ralli",
+   "direccion": null,
+   "comuna": "Vitacura",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Nueva exposición temporal en el Museo Ralli que invita a reflexionar sobre la iconografía y el simbolismo de la fruta.",
+   "imagen": "https://www.ed.cl/wp-content/uploads/2026/11/zamora.jpg",
+   "fotos": null,
+   "url": "https://www.ed.cl/event/la-artesania-y-el-arte-superlativo-de-japon-llegan-a-providencia/",
+   "fuentes": [
+    {
+     "nombre": "ED.cl",
+     "url": "https://www.ed.cl/event/la-artesania-y-el-arte-superlativo-de-japon-llegan-a-providencia/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "a09728f5b0",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18"
   },
   {
    "titulo": "Boletería Itinerante Teatro a Mil - Plaza de Armas",
@@ -11760,6 +12478,14 @@
     {
      "nombre": "CEAC",
      "url": "https://www.ceacuchile.cl/entradas/"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/la-previa-concierto-n20-poemas-danzas-y-gloria-bwaoa/"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/concierto-n20-poemas-danzas-y-gloria-soxwr/"
     }
    ],
    "desde_imagen": false,
@@ -11767,7 +12493,7 @@
    "origen": "ticketera",
    "id": "0f225210f6",
    "agregado": "2026-11-15",
-   "actualizado": "2026-11-16",
+   "actualizado": "2026-11-18",
    "genero": "clasica"
   },
   {
@@ -11830,6 +12556,37 @@
    "id": "db7677cfa1",
    "agregado": "2026-11-17",
    "actualizado": "2026-11-17",
+   "genero": "clasica"
+  },
+  {
+   "titulo": "Concierto IX - Haydn: Los Adioses",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Teatro Municipal de Temuco",
+   "direccion": null,
+   "comuna": "Temuco",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $8.381",
+   "descripcion": "El IX Concierto de la Temporada 2026 de la Orquesta Filarmónica de Temuco, “Haydn: Los Adioses”, bajo la dirección de David Ayma, invita al público a explorar los viajes, las despedidas y los reencuentros a través de la música de Joseph Hay",
+   "imagen": "https://img.vamoh.cl/events/c1932c4b-5d06-41de-b42b-417b78888201.webp?v=8022d592",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/concierto-ix-haydn-los-adioses-y7tda/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/concierto-ix-haydn-los-adioses-y7tda/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "2bbfede164",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18",
    "genero": "clasica"
   },
   {
@@ -12413,6 +13170,36 @@
    "actualizado": "2026-11-15"
   },
   {
+   "titulo": "Festival del Guatón Loyola 2026",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": "2026-11-28",
+   "hora": null,
+   "horario": null,
+   "lugar": "Parque Urbano Ambrosio O’Higgins",
+   "direccion": null,
+   "comuna": "Los Andes",
+   "ciudad": "Los Andes",
+   "region": "Región de Valparaíso",
+   "precio": null,
+   "descripcion": "XXV edición del Festival del Guatón Loyola con música, folclore y las presentaciones de los comediantes Felipe Parra y Claudio Michaux.",
+   "imagen": "https://media.chilevision.cl/2026/11/Diseno-sin-titulo-13-1200x675.png",
+   "fotos": null,
+   "url": "https://www.chilevision.cl/programas/festivales-chv/dos-noches-con-risas-aseguradas-conoce-que-humoristas-se-presentaran-en-el-festival-del-guaton-loyola-2026/",
+   "fuentes": [
+    {
+     "nombre": "Chilevisión",
+     "url": "https://www.chilevision.cl/programas/festivales-chv/dos-noches-con-risas-aseguradas-conoce-que-humoristas-se-presentaran-en-el-festival-del-guaton-loyola-2026/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "bc240d9894",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18"
+  },
+  {
    "titulo": "Kard World Tour NOWHERE en Chile",
    "categoria": "anime",
    "fecha_inicio": "2026-11-27",
@@ -12992,7 +13779,7 @@
    "origen": "ticketera",
    "id": "c003178ec9",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-16",
+   "actualizado": "2026-11-18",
    "genero": "metal"
   },
   {
@@ -13054,6 +13841,37 @@
    "id": "37fb634040",
    "agregado": "2026-11-14",
    "actualizado": "2026-11-14"
+  },
+  {
+   "titulo": "Alberto Plaza,Sinfónico,Talca",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": "19:30",
+   "horario": null,
+   "lugar": "Teatro Regional del Maule",
+   "direccion": null,
+   "comuna": "Talca",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $36.000",
+   "descripcion": "El reconocido cantautor nacional llega al Teatro Regional del Maule con su ESENCIAL TOUR 2026. Un concierto donde sus grandes éxitos cobran una nueva dimensión con 26 músicos en escena, elevando su repertorio a una experiencia sonora emocio",
+   "imagen": "https://img.vamoh.cl/events/5f3a3472-da7f-453e-9c8a-6457dfa71c5a.webp?v=4147f935",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/alberto-plaza-sinfonico-talca-411hc/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/alberto-plaza-sinfonico-talca-411hc/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "47419c76d9",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18",
+   "genero": "clasica"
   },
   {
    "titulo": "Encuentro Internacional de Charangos 2026 en Cafetería Popular",
@@ -13242,6 +14060,37 @@
    "actualizado": "2026-11-10"
   },
   {
+   "titulo": "Jowell y Randy Concierto 3D",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": "2026-11-29",
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Quinta Vergara",
+   "direccion": null,
+   "comuna": "Viña Del Mar",
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Lista de Espera ¡Ups! Los tickets están agotados. Deja tus datos y te avisaremos tan pronto se liberen más cupos. Es un espectáculo inmersivo que repasa más de 25 años de carrera del dúo y está planteado como una experiencia audiovisual com",
+   "imagen": "https://img.vamoh.cl/events/6ae45c6b-0d8e-403c-bb22-6aba171e14c6.webp",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/jowell-y-randy-concierto-3d-6fr9c/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/jowell-y-randy-concierto-3d-6fr9c/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "674a829ad6",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18",
+   "genero": "reggaeton"
+  },
+  {
    "titulo": "Comedia Fuerte",
    "categoria": "standup",
    "fecha_inicio": "2026-11-28",
@@ -13270,6 +14119,37 @@
    "id": "5e85b66cca",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Miguelo en Concierto en Kunstmann Craft Bar Viña del Mar",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": "22:00",
+   "horario": null,
+   "lugar": "Kunstmann CraftBar Viña del Mar",
+   "direccion": null,
+   "comuna": "Viña Del Mar",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $15.000",
+   "descripcion": "Evento solo para Mayores de 15 Años. ¡Prepárate para vivir una noche llena de música, energía y grandes recuerdos junto a Miguelo! Este sábado 28 de noviembre, Kunstmann Craft Bar Viña del Mar te invita a disfrutar de una presentación en vi",
+   "imagen": "https://img.vamoh.cl/events/00d34f74-88a7-4c63-8335-57ce2a601778.webp?v=cc0a44e0",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/miguelo-en-concierto-en-kunstmann-craft-bar-vina-del-mar-t2ecg/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/miguelo-en-concierto-en-kunstmann-craft-bar-vina-del-mar-t2ecg/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "0fd4e48d87",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18",
+   "genero": "pop"
   },
   {
    "titulo": "Ciclo de teatro-Boda de 3-Sábado 28 Noviembre 22:15 hrs",
@@ -13607,6 +14487,37 @@
    "id": "f54c633d4d",
    "agregado": "2026-11-13",
    "actualizado": "2026-11-13"
+  },
+  {
+   "titulo": "Concierto de Matorral en Festival Chile Jazz",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-29",
+   "fecha_fin": null,
+   "hora": "12:00",
+   "horario": null,
+   "lugar": "Persa Víctor Manuel",
+   "direccion": "Víctor Manuel 2200",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "La banda Matorral se presenta de forma gratuita en la plaza central del Persa Víctor Manuel en el marco del Festival Chile Jazz 2026.",
+   "imagen": "https://ww2.tvn.cl/tvn/site/artic/20261118/imag/foto_0000000820261118143857/Matorral_05_Foto_por_Pablo_Selman.jpg",
+   "fotos": null,
+   "url": "https://www.tvn.cl/hora-25/musica/concierto-gratuito-en-el-persa-victor-manuel-matorral-se-suma-al",
+   "fuentes": [
+    {
+     "nombre": "tvn.cl",
+     "url": "https://www.tvn.cl/hora-25/musica/concierto-gratuito-en-el-persa-victor-manuel-matorral-se-suma-al"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "e672468c07",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18",
+   "genero": "jazz"
   },
   {
    "titulo": "Concierto gratuito en Rilán: OCPM y Academia de Artes Islas al Sur celebran el Bicentenario de Chiloé",
@@ -14390,6 +15301,37 @@
    "actualizado": "2026-11-13"
   },
   {
+   "titulo": "XXVI Festival Internacional de Jazz de Valdivia & World Music",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-03",
+   "fecha_fin": "2026-12-05",
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Teatro Regional Cervantes",
+   "direccion": null,
+   "comuna": "Valdivia",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $5.000",
+   "descripcion": "En el Teatro Regional Cervantes se llevará a cabo la versión XXVI del Festival Internacional de Jazz Valdivia & World Tour. Hoy se presentan: Acuarteto (Felipe Carrasco) Chile; y John Scofield (A Espinosa SCO) Chile. La Asociación Patrimoni",
+   "imagen": "https://img.vamoh.cl/events/71a45081-25eb-4de4-a0a0-f7a36ea79384.webp?v=19250f84",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/xxvi-festival-internacional-de-jazz-de-valdivia-world-music-l4uz5/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/xxvi-festival-internacional-de-jazz-de-valdivia-world-music-l4uz5/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "0382da7e3d",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18",
+   "genero": "jazz"
+  },
+  {
    "titulo": "Versailles - 2026 en Santiago Chile",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-03",
@@ -15103,6 +16045,45 @@
    "genero": "clasica"
   },
   {
+   "titulo": "Gorillaz",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-04",
+   "fecha_fin": null,
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Estadio Bicentenario La Florida",
+   "direccion": "Enrique Olivares 1003",
+   "comuna": "La Florida",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "$58.000 a $250.000 (más cargos)",
+   "descripcion": "Concierto en vivo de Gorillaz en el Estadio Bicentenario La Florida.",
+   "imagen": "https://latamenvivo.com/assets/img/photos/gorillaz-card.webp",
+   "fotos": null,
+   "url": "https://latamenvivo.com/ciudades/santiago/",
+   "fuentes": [
+    {
+     "nombre": "LatamEnVivo",
+     "url": "https://latamenvivo.com/ciudades/santiago/"
+    },
+    {
+     "nombre": "Cooperativa.cl",
+     "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-2026-en-chile/2025-12-01/082152.html"
+    },
+    {
+     "nombre": "Rock&Pop",
+     "url": "https://www.rockandpop.cl/2026/11/ultima-oportunidad-para-ver-a-gorillaz-en-chile-cuales-son-las-entradas-disponibles-para-el-concierto-en-santiago/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "607b690004",
+   "agregado": "2026-11-13",
+   "actualizado": "2026-11-18",
+   "genero": "indie"
+  },
+  {
    "titulo": "Nicky Jam en Santiago",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-04",
@@ -15394,41 +16375,6 @@
    "id": "54dd387c3b",
    "agregado": "2026-11-11",
    "actualizado": "2026-11-13",
-   "genero": "indie"
-  },
-  {
-   "titulo": "Gorillaz",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-12-04",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": null,
-   "lugar": "Estadio Bicentenario La Florida",
-   "direccion": "Enrique Olivares 1003",
-   "comuna": "La Florida",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Concierto en vivo de Gorillaz en el Estadio Bicentenario La Florida.",
-   "imagen": "https://latamenvivo.com/assets/img/photos/gorillaz-card.webp",
-   "fotos": null,
-   "url": "https://latamenvivo.com/ciudades/santiago/",
-   "fuentes": [
-    {
-     "nombre": "LatamEnVivo",
-     "url": "https://latamenvivo.com/ciudades/santiago/"
-    },
-    {
-     "nombre": "Cooperativa.cl",
-     "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-2026-en-chile/2025-12-01/082152.html"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "607b690004",
-   "agregado": "2026-11-13",
-   "actualizado": "2026-11-15",
    "genero": "indie"
   },
   {
@@ -15892,6 +16838,10 @@
     {
      "nombre": "Keai",
      "url": "https://keai.cl/evento/aticoy-presentacion-en-pulsar-off-el-mundo-folkpop-de-inconsciente-en-sala-scd-bellavista-20785"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/comedor-off-pulsar-en-sala-scd-bellavista-20909"
     }
    ],
    "desde_imagen": false,
@@ -15899,7 +16849,7 @@
    "origen": "datos-estructurados",
    "id": "a81f74fc38",
    "agregado": "2026-11-16",
-   "actualizado": "2026-11-16",
+   "actualizado": "2026-11-18",
    "genero": "indie"
   },
   {
@@ -16165,6 +17115,37 @@
    "id": "0a954af3f5",
    "agregado": "2026-11-13",
    "actualizado": "2026-11-14"
+  },
+  {
+   "titulo": "Tributo a Judas Priest Vs Pantera en Biker Chop",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-05",
+   "fecha_fin": "2026-12-06",
+   "hora": "22:00",
+   "horario": null,
+   "lugar": "Biker Chop",
+   "direccion": "Carlos Valdovinos 1989",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "🔥 ¡UNA NOCHE DE HEAVY METAL EN BIKERCHOP! 🤘 Prepárate para una jornada cargada de potencia, riffs demoledores y puro metal. Este",
+   "imagen": "https://cdn.keai.cl/events/20925-24a99c0b2d958adf8a9953c58d37b071.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/tributo-a-judas-priest-vs-pantera-en-biker-chop-20925",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/tributo-a-judas-priest-vs-pantera-en-biker-chop-20925"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "7b9f84b6e3",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18",
+   "genero": "metal"
   },
   {
    "titulo": "Fiesta Reggaeton Old School en Casino Enjoy Viña del Mar - Sabado 5 de Diciembre (old School University)",
@@ -16433,6 +17414,10 @@
     {
      "nombre": "Teatro San Ginés",
      "url": "https://www.sangines.cl/"
+    },
+    {
+     "nombre": "sangines.cl",
+     "url": "https://www.sangines.cl/cartelera/"
     }
    ],
    "desde_imagen": false,
@@ -17143,6 +18128,36 @@
    "genero": "metal"
   },
   {
+   "titulo": "Festival Pulso Lírico 2026 – Inauguración",
+   "categoria": "museos",
+   "fecha_inicio": "2026-12-09",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Museo del Sonido",
+   "direccion": "Huérfanos 2919",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Inauguración de la cuarta edición del Festival Pulso Lírico con lecturas poéticas, música en vivo y la rapera Martina Estela.",
+   "imagen": "https://assets.radioagricultura.cl/2026/11/Festival-Pulso-Lirico-2026-1024x538.jpg",
+   "fotos": null,
+   "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/festival-pulso-lirico-2026-llega-a-santiago-con-poesia-y-rap-gratis-fechas-y-programacion_20261118/",
+   "fuentes": [
+    {
+     "nombre": "Home - Radio Agricultura",
+     "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/festival-pulso-lirico-2026-llega-a-santiago-con-poesia-y-rap-gratis-fechas-y-programacion_20261118/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "c15e186ad0",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18"
+  },
+  {
    "titulo": "Nito Mestre en Chile en Vivo Sala Master - Miercoles 9 Diciembre",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-09",
@@ -17270,6 +18285,10 @@
     {
      "nombre": "Rock&Pop",
      "url": "https://www.rockandpop.cl/2026/11/festigame-2026-confirma-sus-principales-atracciones-y-hay-un-protagonista-que-se-roba-las-miradas/"
+    },
+    {
+     "nombre": "Radio Concierto Chile",
+     "url": "https://www.concierto.cl/2026/11/festigame-2026-revela-sus-grandes-atracciones-y-confirma-una-edicion-de-mas-de-8-000-m%C2%B2/"
     }
    ],
    "desde_imagen": false,
@@ -18317,6 +19336,37 @@
    "genero": "jazz"
   },
   {
+   "titulo": "BABY JEY EN IQUIQUE | SABADO 12 DE DICIEMBRE (Concierto para todas las edades)",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-12",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Furia Discoteca",
+   "direccion": null,
+   "comuna": "Iquique",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $20.000",
+   "descripcion": "Iquique será el epicentro del Plug Baby Jey , uno de los artistas más sólidos de la escena en Chile, desembarca en medio de su exitosa gira nacional e internacional por Sudamérica y tras el lanzamiento del universo de su esperado álbum JPAI",
+   "imagen": "https://img.vamoh.cl/events/99e69c06-3e77-4b44-9354-f008683497b8.webp?v=42853ea7",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/baby-jey-en-iquique-sabado-12-de-diciembre-concierto-para-todas-las-edades-dzcv5/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/baby-jey-en-iquique-sabado-12-de-diciembre-concierto-para-todas-las-edades-dzcv5/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "ae83e6bf22",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18",
+   "genero": "trap"
+  },
+  {
    "titulo": "Jah Love - Concierto Musical Cristiano",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-12",
@@ -18412,6 +19462,37 @@
    "agregado": "2026-11-07",
    "actualizado": "2026-11-08",
    "genero": "metal"
+  },
+  {
+   "titulo": "Andrés Pérez Cuarteto | «psicosis» | Ciclo Instrumentistas en Sala Scd Bellavista",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-12",
+   "fecha_fin": "2026-12-13",
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Sala SCD Bellavista",
+   "direccion": "Sta. Filomena 110, 8420433 Recoleta, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Este concierto repasara algunas obras de los discos solistas así como piezas inéditas que han surgido en este ultimo proceso creativo, post Opera y post ensambl",
+   "imagen": "https://cdn.keai.cl/events/20929-7140e698a005a9c628f8a7536073706f.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/andres-perez-cuarteto-psicosis-ciclo-instrumentistas-en-sala-scd-bellavista-20929",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/andres-perez-cuarteto-psicosis-ciclo-instrumentistas-en-sala-scd-bellavista-20929"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "f182693055",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18",
+   "genero": "clasica"
   },
   {
    "titulo": "De Súbito - Grandes Éxitos en Sala Scd Egaña",
@@ -19503,6 +20584,37 @@
    "genero": "trap"
   },
   {
+   "titulo": "BABY JEY EN COPIAPÓ | VIERNES 18 DE DICIEMBRE (Concierto para todas las edades)",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-18",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Amma Club",
+   "direccion": null,
+   "comuna": "Copiapó",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $25.000",
+   "descripcion": "Copiapó será el epicentro del Trap & Plug: Baby Jey, uno de los artistas más sólidos de la escena en Chile, desembarca por primera vez en la Región de Atacama en medio de su exitosa gira nacional e internacional por Sudamérica y tras el lan",
+   "imagen": "https://img.vamoh.cl/events/d94b8ad2-8f88-4388-9372-bb50e0f77e27.webp?v=34275f2d",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/baby-jey-en-copiapo-viernes-18-de-diciembre-concierto-para-todas-las-edades-xwxrj/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/baby-jey-en-copiapo-viernes-18-de-diciembre-concierto-para-todas-las-edades-xwxrj/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "060b0b1d7e",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18",
+   "genero": "trap"
+  },
+  {
    "titulo": "Cumbre del Metal Chileno 2026",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-18",
@@ -19955,6 +21067,37 @@
    "genero": "bandas_sonoras"
   },
   {
+   "titulo": "Festival de Cumbia - El Biza - La Gran America Junior - La Sonora del VitoLko - La Quinta Kumbia",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-19",
+   "fecha_fin": "2026-12-20",
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Trotamundos Valparaíso",
+   "direccion": null,
+   "comuna": "Valparaíso",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $7.000",
+   "descripcion": "Evento solo para Mayores de 18 Años. Apertura Trotamundos Terraza Buenavista 19hrs Apertura Sala Principal 20hrs Show desde las 22hrs",
+   "imagen": "https://img.vamoh.cl/events/185ef347-032b-4c28-baa0-85ac3251c090.webp?v=92b2fc94",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/festival-de-cumbia-el-biza-la-gran-america-junior-la-sonora-del-vitolko-la-quinta-kumbia-dgf76/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/festival-de-cumbia-el-biza-la-gran-america-junior-la-sonora-del-vitolko-la-quinta-kumbia-dgf76/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "46c6448562",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18",
+   "genero": "cumbia"
+  },
+  {
    "titulo": "León Murillo - La noche es en Casa Comedia",
    "categoria": "standup",
    "fecha_inicio": "2026-12-19",
@@ -20279,6 +21422,37 @@
    "genero": "cumbia"
   },
   {
+   "titulo": "Ensamble de la Escuela de Flautistas en Concierto con el Cuarteto Tahay y Añañuca en Plectrum Studio",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-22",
+   "fecha_fin": null,
+   "hora": "17:30",
+   "horario": null,
+   "lugar": "Plectrum Studio",
+   "direccion": "Padre Orellana 1265, 8360090 Santiago, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Dos formaciones de flautas alternan música de cámara y melodías latinoamericanas, desde Bozza y Piazzolla hasta «El cóndor pas",
+   "imagen": "https://cdn.keai.cl/events/20913-9b385b59136c88a61261e10edc888468.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/ensamble-de-la-escuela-de-flautistas-en-concierto-con-el-cuarteto-tahay-y-ananuca-en-plectrum-studio-20913",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/ensamble-de-la-escuela-de-flautistas-en-concierto-con-el-cuarteto-tahay-y-ananuca-en-plectrum-studio-20913"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "8cc82d6db5",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18",
+   "genero": "clasica"
+  },
+  {
    "titulo": "Luis Slimming en Patio Bulnes",
    "categoria": "standup",
    "fecha_inicio": "2026-12-22",
@@ -20595,6 +21769,37 @@
    "agregado": "2026-11-15",
    "actualizado": "2026-11-15",
    "genero": "folclor"
+  },
+  {
+   "titulo": "Primavera de Praga en Sala SCD Bellavista",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-26",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Sala SCD Bellavista",
+   "direccion": "Santa Filomena 110",
+   "comuna": "Recoleta",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "$12.000",
+   "descripcion": "La banda Primavera de Praga regresa a los escenarios para presentar sus clásicos y nuevas canciones en la Sala SCD Bellavista.",
+   "imagen": "https://www.rockandpop.cl/wp-content/uploads/2026/11/Primavera-de-praga-web.webp",
+   "fotos": null,
+   "url": "https://www.portaltickets.cl",
+   "fuentes": [
+    {
+     "nombre": "Rock&Pop",
+     "url": "https://www.rockandpop.cl/conciertos/primavera-de-praga-vuelve-a-tocar-en-santiago-presentara-clasicos-y-nuevas-canciones-en-la-scd-bellavista/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "d013b106f8",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18",
+   "genero": "indie"
   },
   {
    "titulo": "The Jury Experience – Travesía Mortal",
@@ -21200,6 +22405,36 @@
    "id": "df115faab7",
    "agregado": "2026-11-11",
    "actualizado": "2026-11-12"
+  },
+  {
+   "titulo": "Ludocrónicas Reforjadas",
+   "categoria": "medieval",
+   "fecha_inicio": "2027-01-14",
+   "fecha_fin": null,
+   "hora": "11:00",
+   "horario": null,
+   "lugar": "Biblioteca Municipal Nicomedes Guzmán",
+   "direccion": "Calle Riquelme #226",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratuito",
+   "descripcion": "Jornada de juegos de rol, mesa y exhibición de combate medieval junto a la comunidad Ludocrónicas y Guardia León.",
+   "imagen": "https://www.santiagocultura.cl/wp-content/uploads/2023/01/BANNER-LUDOCRONICAS-1-970x315.jpg",
+   "fotos": null,
+   "url": "https://fb.me/e/2bpGGOplC",
+   "fuentes": [
+    {
+     "nombre": "santiagocultura.cl",
+     "url": "https://www.santiagocultura.cl/jornada-de-juegos-de-mesa-rol-y-mas-en-ludocronicas-reforjadas/"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "28f9bcd097",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18"
   },
   {
    "titulo": "Sodamania Sinfónico: Tributo Soda Stereo en Aula Magna Manuel de Salas",
@@ -22525,6 +23760,41 @@
    "actualizado": "2026-11-16"
   },
   {
+   "titulo": "16 Años de Fiebre de Cumbia",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-01-30",
+   "fecha_fin": null,
+   "hora": "11:00",
+   "horario": null,
+   "lugar": "Eventos Munich",
+   "direccion": null,
+   "comuna": "Peñaflor",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $30.000",
+   "descripcion": "Evento solo para Mayores de 18 Años. Fiebre de Cumbia se toma el Centro de Eventos Munich (Malloco) este 30 de enero para celebrar sus 16 años. Serán más de 10 horas continuas de pura CUMBIA , un cartel con las mejores bandas de cumbia chil",
+   "imagen": "https://img.vamoh.cl/events/f4ff0604-a400-44b6-b83b-cbc9be89c17c.webp?v=84147a3b",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/fiebre-de-cumbia-16-anos-xb92k/",
+   "fuentes": [
+    {
+     "nombre": "facebook.com",
+     "url": "https://www.facebook.com/Fiebredecumbiachile/"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/fiebre-de-cumbia-16-anos-xb92k/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia-resumen",
+   "id": "f3e58f046e",
+   "agregado": "2026-11-13",
+   "actualizado": "2026-11-18",
+   "genero": "cumbia"
+  },
+  {
    "titulo": "NeoFest - Previa del Año Nuevo Lunar",
    "categoria": "anime",
    "fecha_inicio": "2027-01-30",
@@ -22617,37 +23887,6 @@
    "agregado": "2026-11-13",
    "actualizado": "2026-11-13",
    "genero": "reggaeton"
-  },
-  {
-   "titulo": "16 Años de Fiebre de Cumbia",
-   "categoria": "conciertos",
-   "fecha_inicio": "2027-01-30",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": null,
-   "lugar": "Centro de Eventos Munich",
-   "direccion": null,
-   "comuna": "Peñaflor",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Celebración de los 16 años de Fiebre de Cumbia con gran show en vivo en Malloco.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://www.facebook.com/Fiebredecumbiachile/",
-   "fuentes": [
-    {
-     "nombre": "facebook.com",
-     "url": "https://www.facebook.com/Fiebredecumbiachile/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "baja",
-   "origen": "ia-resumen",
-   "id": "f3e58f046e",
-   "agregado": "2026-11-13",
-   "actualizado": "2026-11-13",
-   "genero": "cumbia"
   },
   {
    "titulo": "Karol G en Santiago",
@@ -22892,6 +24131,40 @@
    "id": "d2b29fa2ce",
    "agregado": "2026-11-13",
    "actualizado": "2026-11-13"
+  },
+  {
+   "titulo": "My Hero Academia in Concert",
+   "categoria": "anime",
+   "fecha_inicio": "2027-02-13",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Teatro Coliseo - Santiago Centro",
+   "direccion": "Nataniel Cox 59",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "$50.000 - $80.000",
+   "descripcion": "Concierto sinfónico con la música oficial del anime My Hero Academia.",
+   "imagen": "https://static.ptocdn.net/images/eventos/cco128_calugalistado.jpg",
+   "fotos": null,
+   "url": "https://www.puntoticket.com/mha-inconcert-chile",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/mha-inconcert-chile"
+    },
+    {
+     "nombre": "cdnp.puntoticket.com",
+     "url": "https://cdnp.puntoticket.com/mha-inconcert-chile"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "412b638ee9",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18"
   },
   {
    "titulo": "Schranz or Die",
@@ -24945,6 +26218,37 @@
    "id": "b7163677f8",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-10",
+   "genero": "metal"
+  },
+  {
+   "titulo": "Javier Zeta Dominguez presentando Mago de Oz Sinfonico",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-06-12",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Teatro Cariola",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $35.000",
+   "descripcion": "Evento para todo público. JAVIER ZETA DOMÍNGUEZ, llega a Chile para presentar un SHOW SINFÓNICO junto a la majestuosa ORQUESTA SINFÓNICA DEL DIABLO. Una experiencia única donde los grandes himnos del rock y el metal se encontrarán con la fu",
+   "imagen": "https://img.vamoh.cl/events/655e1b2d-cca0-4eb7-b2e2-28a3b7d67cce.webp?v=b7e70994",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/javier-zeta-dominguez-presentando-mago-de-oz-sinfonico-q1oy6/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/javier-zeta-dominguez-presentando-mago-de-oz-sinfonico-q1oy6/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "05babbffb2",
+   "agregado": "2026-11-18",
+   "actualizado": "2026-11-18",
    "genero": "metal"
   },
   {
