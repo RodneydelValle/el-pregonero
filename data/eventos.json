@@ -1,12 +1,12 @@
 {
  "version": 1,
- "actualizado": "2026-11-19T10:33-03:00",
+ "actualizado": "2026-11-19T18:55-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-19T10:33-03:00",
+  "fecha": "2026-11-19T18:55-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 77,
-  "nuevos_esta_vez": 10,
+  "eventos_nuevos": 94,
+  "nuevos_esta_vez": 17,
   "nuevos_ids": [
    "412b638ee9",
    "0feb9fa010",
@@ -84,7 +84,24 @@
    "2e30f080dd",
    "6e66242bf8",
    "1c8c0bc185",
-   "41110424f6"
+   "41110424f6",
+   "18ff9d4e09",
+   "08048dabd3",
+   "93d61d9b9d",
+   "eb0c18d58c",
+   "90b4353370",
+   "6bf145ad64",
+   "170680230d",
+   "7981cb0edc",
+   "fd761261aa",
+   "40f26d4f41",
+   "a36fae5d63",
+   "3141669464",
+   "6a118684a8",
+   "0acfebb80c",
+   "dbe5a8c3a1",
+   "3338fdf895",
+   "99616659ff"
   ],
   "nuevos_desde": {
    "412b638ee9": "2026-11-18T19:22-03:00",
@@ -163,24 +180,41 @@
    "2e30f080dd": "2026-11-19T10:33-03:00",
    "6e66242bf8": "2026-11-19T10:33-03:00",
    "1c8c0bc185": "2026-11-19T10:33-03:00",
-   "41110424f6": "2026-11-19T10:33-03:00"
+   "41110424f6": "2026-11-19T10:33-03:00",
+   "18ff9d4e09": "2026-11-19T18:55-03:00",
+   "08048dabd3": "2026-11-19T18:55-03:00",
+   "93d61d9b9d": "2026-11-19T18:55-03:00",
+   "eb0c18d58c": "2026-11-19T18:55-03:00",
+   "90b4353370": "2026-11-19T18:55-03:00",
+   "6bf145ad64": "2026-11-19T18:55-03:00",
+   "170680230d": "2026-11-19T18:55-03:00",
+   "7981cb0edc": "2026-11-19T18:55-03:00",
+   "fd761261aa": "2026-11-19T18:55-03:00",
+   "40f26d4f41": "2026-11-19T18:55-03:00",
+   "a36fae5d63": "2026-11-19T18:55-03:00",
+   "3141669464": "2026-11-19T18:55-03:00",
+   "6a118684a8": "2026-11-19T18:55-03:00",
+   "0acfebb80c": "2026-11-19T18:55-03:00",
+   "dbe5a8c3a1": "2026-11-19T18:55-03:00",
+   "3338fdf895": "2026-11-19T18:55-03:00",
+   "99616659ff": "2026-11-19T18:55-03:00"
   },
   "horas_nuevos": 24,
-  "llamadas_ia": 30,
+  "llamadas_ia": 45,
   "ia_sin_cupo": false,
-  "ultima_completa": "2026-11-19T10:04-03:00",
+  "ultima_completa": "2026-11-19T18:32-03:00",
   "modo": "completa",
-  "paginas_revisadas": 28,
+  "paginas_revisadas": 42,
   "busquedas": 107,
-  "fuentes_fijas": 10,
-  "errores": 23,
+  "fuentes_fijas": 9,
+  "errores": 24,
   "noticias_desde": "2026-11-19",
-  "noticias_viejas_descartadas": 419,
+  "noticias_viejas_descartadas": 369,
   "redes_vistas": 4,
-  "generos_ia": 3,
-  "imagenes_encontradas": 7
+  "generos_ia": 2,
+  "imagenes_encontradas": 12
  },
- "total": 832,
+ "total": 849,
  "eventos": [
   {
    "titulo": "Mariposas y Polillas, Colores en Movimiento",
@@ -1018,6 +1052,10 @@
     {
      "nombre": "ED.cl",
      "url": "https://www.ed.cl/recinto/centro-cultural-la-moneda/"
+    },
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/lugar/centro-cultural-la-moneda-santiago"
     }
    ],
    "desde_imagen": false,
@@ -1025,7 +1063,7 @@
    "origen": "claude",
    "id": "44a03de0a7",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-16"
+   "actualizado": "2026-11-19"
   },
   {
    "titulo": "Criaturas de Tierra: Animales Cerámicos en el Museo de Artes Decorativas",
@@ -1989,6 +2027,10 @@
     {
      "nombre": "ED.cl",
      "url": "https://www.ed.cl/event/enrique-ramirez-presenta-24-obras-en-el-museo-de-bellas-artes/"
+    },
+    {
+     "nombre": "Disfruta Santiago",
+     "url": "https://disfrutasantiago.cl/events/te-creo-paisaje-enrique-ramirez-mnba/"
     }
    ],
    "desde_imagen": false,
@@ -3597,7 +3639,7 @@
    "origen": "ia",
    "id": "e59fa909d4",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-18"
+   "actualizado": "2026-11-19"
   },
   {
    "titulo": "El universo de Matta: Être Cible (Ser el blanco)",
@@ -6589,6 +6631,36 @@
    "actualizado": "2026-11-19"
   },
   {
+   "titulo": "Exposición El universo de Matta",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-19",
+   "fecha_fin": "2027-01-03",
+   "hora": null,
+   "horario": null,
+   "lugar": "Centro Cultural La Moneda",
+   "direccion": "Plaza de la Ciudadanía 26",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Muestra dedicada a la obra del reconocido artista Roberto Matta.",
+   "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/mnbachile/DfVJxKlHREA_0.jpg",
+   "fotos": null,
+   "url": "https://salirsantiago.com/lugar/centro-cultural-la-moneda-santiago",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/lugar/centro-cultural-la-moneda-santiago"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "eb0c18d58c",
+   "agregado": "2026-11-19",
+   "actualizado": "2026-11-19"
+  },
+  {
    "titulo": "Fichas a la calle: juegos de mesa",
    "categoria": "juegos",
    "fecha_inicio": "2026-11-19",
@@ -6626,7 +6698,7 @@
    "hora": null,
    "horario": null,
    "lugar": "Club Chocolate",
-   "direccion": null,
+   "direccion": "Ernesto Pinto Lagarrigue 192",
    "comuna": "Recoleta",
    "ciudad": "Santiago",
    "region": "Región Metropolitana",
@@ -6643,6 +6715,10 @@
     {
      "nombre": "songkick.com",
      "url": "https://www.songkick.com/es/metro-areas/27525-chile-santiago/genre/indie-alternative"
+    },
+    {
+     "nombre": "songkick.com",
+     "url": "https://www.songkick.com/es/metro-areas/27525-chile-santiago/2026/genre/indie-alternative"
     }
    ],
    "desde_imagen": false,
@@ -6650,8 +6726,39 @@
    "origen": "ia",
    "id": "5051c48d89",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-14",
+   "actualizado": "2026-11-19",
    "genero": "indie"
+  },
+  {
+   "titulo": "La Nueva Imperial en SCD Egaña",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-19",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "SCD Egaña",
+   "direccion": "Av. Larraín 5862",
+   "comuna": "La Reina",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "La Nueva Imperial presenta su último concierto del año celebrando en grande en la sala SCD Egaña.",
+   "imagen": "https://www.larata.cl/wp-content/uploads/2026/11/La-Nueva-imperial-1080x720-1.jpeg",
+   "fotos": null,
+   "url": "https://www.larata.cl/category/tocatas/",
+   "fuentes": [
+    {
+     "nombre": "La Rata",
+     "url": "https://www.larata.cl/category/tocatas/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "ia",
+   "id": "6bf145ad64",
+   "agregado": "2026-11-19",
+   "actualizado": "2026-11-19",
+   "genero": "folclor"
   },
   {
    "titulo": "Peter Pollak: Vuelve a la pintura",
@@ -6682,6 +6789,36 @@
    "id": "5f29657baf",
    "agregado": "2026-11-18",
    "actualizado": "2026-11-18"
+  },
+  {
+   "titulo": "Recordar el futuro: El arte de sentarse",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-19",
+   "fecha_fin": "2026-11-29",
+   "hora": null,
+   "horario": null,
+   "lugar": "Centro Cultural La Moneda",
+   "direccion": "Plaza de la Ciudadanía 26",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Exposición artística en el Centro Cultural La Moneda.",
+   "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/culturallascondes/DfYTVcSlP9J_0.jpg",
+   "fotos": null,
+   "url": "https://salirsantiago.com/lugar/centro-cultural-la-moneda-santiago",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/lugar/centro-cultural-la-moneda-santiago"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "93d61d9b9d",
+   "agregado": "2026-11-19",
+   "actualizado": "2026-11-19"
   },
   {
    "titulo": "Sesión III - Pianista Boris Giltburg (Sonatas Beethoven)",
@@ -8356,6 +8493,36 @@
    "actualizado": "2026-11-17"
   },
   {
+   "titulo": "Encuentro de Star Wars en Cerrillos",
+   "categoria": "medieval",
+   "fecha_inicio": "2026-11-21",
+   "fecha_fin": null,
+   "hora": "10:00",
+   "horario": "10:00 a 16:00 horas",
+   "lugar": "Museo Nacional Aeronáutico y del Espacio",
+   "direccion": "Avenida Pedro Aguirre Cerda 5000",
+   "comuna": "Cerrillos",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratuito",
+   "descripcion": "Séptimo Encuentro de Amigos de La Orden Gris con cosplay, LEGO y actividades de Star Wars y ciencia ficción.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.fmdos.cl/noticias/seis-panoramas-gratis-en-santiago-para-este-fin-de-semana-que-hacer-este-21-y-22-de-noviembre/",
+   "fuentes": [
+    {
+     "nombre": "FMDOS",
+     "url": "https://www.fmdos.cl/noticias/seis-panoramas-gratis-en-santiago-para-este-fin-de-semana-que-hacer-este-21-y-22-de-noviembre/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "08048dabd3",
+   "agregado": "2026-11-19",
+   "actualizado": "2026-11-19"
+  },
+  {
    "titulo": "League Challenge - Pokémon TCG",
    "categoria": "juegos",
    "fecha_inicio": "2026-11-21",
@@ -8453,7 +8620,7 @@
    "hora": "12:00",
    "horario": "Sáb y dom 12:00–19:30",
    "lugar": "Plaza Chacabuco",
-   "direccion": null,
+   "direccion": "Plaza Chacabuco",
    "comuna": "Independencia",
    "ciudad": "Santiago",
    "region": "Región Metropolitana",
@@ -8466,6 +8633,10 @@
     {
      "nombre": "Rock&Pop",
      "url": "https://www.rockandpop.cl/2026/11/sin-planes-para-el-fin-de-semana-5-panoramas-gratuitos-en-santiago-que-puedes-disfrutar-este-21-y-22-de-noviembre/"
+    },
+    {
+     "nombre": "FMDOS",
+     "url": "https://www.fmdos.cl/noticias/seis-panoramas-gratis-en-santiago-para-este-fin-de-semana-que-hacer-este-21-y-22-de-noviembre/"
     }
    ],
    "desde_imagen": false,
@@ -8473,7 +8644,7 @@
    "origen": "ia",
    "id": "11784e37ba",
    "agregado": "2026-11-17",
-   "actualizado": "2026-11-17"
+   "actualizado": "2026-11-19"
   },
   {
    "titulo": "Gastón Gómez Presenta Maestre Deis Trobador El Concierto",
@@ -8596,6 +8767,37 @@
    "agregado": "2026-11-18",
    "actualizado": "2026-11-18",
    "genero": "otros"
+  },
+  {
+   "titulo": "Morbid Rites II",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-21",
+   "fecha_fin": null,
+   "hora": "15:00",
+   "horario": null,
+   "lugar": "Arena Recoleta",
+   "direccion": null,
+   "comuna": "Recoleta",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Festival de metal underground con las bandas Apostasy, Bloody Cross, Communion, Death Yell y Ripper.",
+   "imagen": "https://unholy.cl/wp-content/uploads/2026/09/LaOpera.png",
+   "fotos": null,
+   "url": "https://unholy.cl/agenda/",
+   "fuentes": [
+    {
+     "nombre": "unholy.cl",
+     "url": "https://unholy.cl/agenda/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "90b4353370",
+   "agregado": "2026-11-19",
+   "actualizado": "2026-11-19",
+   "genero": "metal"
   },
   {
    "titulo": "Concierto Orquesta Sinfónica de Lampa",
@@ -9095,6 +9297,36 @@
    "genero": "rock"
   },
   {
+   "titulo": "Chilenos Todos: Rubén Oyarzo y Sr. Kamposs",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-21",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "La Sala",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Show de stand-up con Rubén Oyarzo y Sr. Kamposs.",
+   "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/lasalacl/DfzvgYxSXl1_0.jpg",
+   "fotos": null,
+   "url": "https://salirsantiago.com/panoramas/stand-up/santiago-centro?lang=pt",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/stand-up/santiago-centro?lang=pt"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "7981cb0edc",
+   "agregado": "2026-11-19",
+   "actualizado": "2026-11-19"
+  },
+  {
    "titulo": "Concierto trío atisbos",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-21",
@@ -9135,8 +9367,8 @@
    "lugar": "La Grifería",
    "direccion": null,
    "comuna": "Santiago",
-   "ciudad": null,
-   "region": null,
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
    "precio": "Desde $5.000",
    "descripcion": "La Comunidad Malgenio continúa su ciclo de stand up en La Grifería Santiago con una noche de humor seco, caras serias y MUCHOS CHISTES. No esperes emoción. Espera buenos remates.",
    "imagen": "https://img.vamoh.cl/events/168c927b-cb32-42c3-aff0-8efeb13f6032.webp?v=90c676e7",
@@ -9146,6 +9378,10 @@
     {
      "nombre": "VAMOH!",
      "url": "https://vamoh.cl/events/deadpan-humor-seco-2r69p/"
+    },
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/stand-up/santiago-centro?lang=pt"
     }
    ],
    "desde_imagen": false,
@@ -9153,7 +9389,7 @@
    "origen": "datos-estructurados",
    "id": "cf9b7b7976",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
+   "actualizado": "2026-11-19"
   },
   {
    "titulo": "Francisco Villa en Concierto",
@@ -9586,6 +9822,36 @@
    "agregado": "2026-11-15",
    "actualizado": "2026-11-15",
    "genero": "rock"
+  },
+  {
+   "titulo": "Ordinarios - Stand Up Malgenio",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-21",
+   "fecha_fin": null,
+   "hora": "21:30",
+   "horario": null,
+   "lugar": "La Grifería",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Show de stand-up con el estilo malgenio en La Grifería.",
+   "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/malgeniocomedia/DfFJwH6EbNu_0.jpg",
+   "fotos": null,
+   "url": "https://salirsantiago.com/panoramas/stand-up/santiago-centro?lang=pt",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/stand-up/santiago-centro?lang=pt"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "0acfebb80c",
+   "agregado": "2026-11-19",
+   "actualizado": "2026-11-19"
   },
   {
    "titulo": "200 - Reggaetón Classics - Hotel W - Sábado 21",
@@ -11860,6 +12126,36 @@
    "genero": "clasica"
   },
   {
+   "titulo": "Schoprendentes Vol.15 - Show de Comedia",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-26",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Bar Cervecería Darkolics",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Grátis",
+   "descripcion": "Show de comedia en Bar Cervecería Darkolics.",
+   "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/samuovalle/Df2V1t3RfOl_0.jpg",
+   "fotos": null,
+   "url": "https://salirsantiago.com/panoramas/stand-up/santiago-centro?lang=pt",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/stand-up/santiago-centro?lang=pt"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "6a118684a8",
+   "agregado": "2026-11-19",
+   "actualizado": "2026-11-19"
+  },
+  {
    "titulo": "Jesucristo Superhistórico Concierto Promocional",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-26",
@@ -11893,6 +12189,36 @@
    "agregado": "2026-11-16",
    "actualizado": "2026-11-19",
    "genero": "otros"
+  },
+  {
+   "titulo": "Emilio Lovera y Laureano Márquez",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-26",
+   "fecha_fin": null,
+   "hora": "21:30",
+   "horario": null,
+   "lugar": "Aula Magna CEINA",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "A partir de $22.000",
+   "descripcion": "Presentación de los comediantes Emilio Lovera y Laureano Márquez.",
+   "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/partner360pro/DeXuqCIxRde_0.jpg",
+   "fotos": null,
+   "url": "https://salirsantiago.com/panoramas/stand-up/santiago-centro?lang=pt",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/stand-up/santiago-centro?lang=pt"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "40f26d4f41",
+   "agregado": "2026-11-19",
+   "actualizado": "2026-11-19"
   },
   {
    "titulo": "Asskha Sumathra… No Sé Qué Hago Aquí?",
@@ -13008,6 +13334,36 @@
    "genero": "jazz"
   },
   {
+   "titulo": "Arpías y Arcanos",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": null,
+   "hora": "22:00",
+   "horario": null,
+   "lugar": "La Sala",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Show de comedia en La Sala.",
+   "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/lasalacl/DfsTbW_mwLA_0.jpg",
+   "fotos": null,
+   "url": "https://salirsantiago.com/panoramas/stand-up/santiago-centro?lang=pt",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/stand-up/santiago-centro?lang=pt"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "3141669464",
+   "agregado": "2026-11-19",
+   "actualizado": "2026-11-19"
+  },
+  {
    "titulo": "Indie Music Party: The Strokes - 4 Pistas de Baile",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-27",
@@ -13359,6 +13715,36 @@
    "agregado": "2026-11-10",
    "actualizado": "2026-11-12",
    "genero": "rock"
+  },
+  {
+   "titulo": "Yo, Comediante - Stand Up",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "La Sala",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Noche de stand-up comedy en La Sala.",
+   "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/lasalacl/DezonPgueMi_0.jpg",
+   "fotos": null,
+   "url": "https://salirsantiago.com/panoramas/stand-up/santiago-centro?lang=pt",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/stand-up/santiago-centro?lang=pt"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "a36fae5d63",
+   "agregado": "2026-11-19",
+   "actualizado": "2026-11-19"
   },
   {
    "titulo": "League CUP - HuntercardTCG Centro",
@@ -14248,6 +14634,36 @@
    "genero": "pop"
   },
   {
+   "titulo": "Noches de Comedia: Cabro Decente y más",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": "22:00",
+   "horario": null,
+   "lugar": "Peluquería Francesa",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Show de stand-up con Cabro Decente y invitados.",
+   "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/peluqueriafrancesa/DfZ3y6PRQUe_0.jpg",
+   "fotos": null,
+   "url": "https://salirsantiago.com/panoramas/stand-up/santiago-centro?lang=pt",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/stand-up/santiago-centro?lang=pt"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "fd761261aa",
+   "agregado": "2026-11-19",
+   "actualizado": "2026-11-19"
+  },
+  {
    "titulo": "Ciclo de teatro-Boda de 3-Sábado 28 Noviembre 22:15 hrs",
    "categoria": "teatro",
    "fecha_inicio": "2026-11-28",
@@ -14453,6 +14869,10 @@
     {
      "nombre": "Rockaxis",
      "url": "https://www.rockaxis.com/rock/noticia/45300/entrada-en-mano-los-conciertos-que-se-vienen/"
+    },
+    {
+     "nombre": "Futuro Chile",
+     "url": "https://www.futuro.cl/2026/11/gana-entradas-para-el-concierto-de-un-historico-de-iron-maiden-dennis-stratton-llega-por-primera-vez-a-chile/"
     }
    ],
    "desde_imagen": false,
@@ -14460,7 +14880,7 @@
    "origen": "ticketera",
    "id": "6a9c1df7fe",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-14",
+   "actualizado": "2026-11-19",
    "genero": "metal"
   },
   {
@@ -15560,6 +15980,10 @@
     {
      "nombre": "La Máquina Medio",
      "url": "https://lamaquinamedio.com/decessus-abrira-el-esperado-concierto-de-babymetal-en-chile-quienes-son-y-donde-verlas/"
+    },
+    {
+     "nombre": "La Máquina Medio",
+     "url": "https://lamaquinamedio.com/babymetal-en-chile-2026-el-posible-setlist-que-la-banda-japonesa-podria-presentar-en-el-santander-arena/"
     }
    ],
    "desde_imagen": true,
@@ -15567,7 +15991,7 @@
    "origen": "ticketera",
    "id": "f840300077",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-17",
+   "actualizado": "2026-11-19",
    "genero": "metal"
   },
   {
@@ -16392,8 +16816,8 @@
    "lugar": "Espacio La Sala",
    "direccion": null,
    "comuna": "Santiago",
-   "ciudad": null,
-   "region": null,
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
    "precio": "Desde $3.000",
    "descripcion": "¡La comedia se organiza y la risa se convierte en revolución! Llega Juventudes Comediantes, un show de stand-up comedy donde cuatro comediantes se toman el escenario para demostrar que el humor también puede ser un acto de rebeldía. Prepára",
    "imagen": "https://img.vamoh.cl/events/d8e14bf2-20b1-4827-921e-2e8c310e861b.webp?v=d0d79c56",
@@ -16403,6 +16827,10 @@
     {
      "nombre": "VAMOH!",
      "url": "https://vamoh.cl/events/juventudes-comediantes-wey19/"
+    },
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/stand-up/santiago-centro?lang=pt"
     }
    ],
    "desde_imagen": false,
@@ -16410,7 +16838,7 @@
    "origen": "datos-estructurados",
    "id": "bb3917442f",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
+   "actualizado": "2026-11-19"
   },
   {
    "titulo": "Ciclo de teatro: La Dramática",
@@ -18958,7 +19386,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Festival de videojuegos, cosplay y cultura digital en Santiago.",
-   "imagen": null,
+   "imagen": "https://regalopro.cl/assets/branding/regalopro-marca.png",
    "fotos": null,
    "url": "https://regalopro.cl/ferias/",
    "fuentes": [
@@ -18972,7 +19400,7 @@
    "origen": "ia",
    "id": "d95079e4c0",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
+   "actualizado": "2026-11-19"
   },
   {
    "titulo": "FestiGame diciembre 2026",
@@ -19452,6 +19880,10 @@
     {
      "nombre": "songkick.com",
      "url": "https://www.songkick.com/es/metro-areas/27525-chile-santiago/genre/indie-alternative"
+    },
+    {
+     "nombre": "songkick.com",
+     "url": "https://www.songkick.com/es/metro-areas/27525-chile-santiago/2026/genre/indie-alternative"
     }
    ],
    "desde_imagen": false,
@@ -19459,7 +19891,7 @@
    "origen": "ticketera",
    "id": "429f8ea87c",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-14",
+   "actualizado": "2026-11-19",
    "genero": "rock"
   },
   {
@@ -20768,7 +21200,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Espectáculo escénico en Matucana 100.",
-   "imagen": null,
+   "imagen": "https://telonticket.cl/wp-content/uploads/2026/11/1-36.jpg",
    "fotos": null,
    "url": "https://telonticket.cl/mep_cat/musical/",
    "fuentes": [
@@ -21054,6 +21486,10 @@
     {
      "nombre": "PuntoTicket",
      "url": "https://www.puntoticket.com/evento/ellende-thyrfing-2026-chile-blondie-dic-2026"
+    },
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/evento/ellende-thyrfing-2026-chile-epicentro-dic-2026"
     }
    ],
    "desde_imagen": false,
@@ -21061,7 +21497,7 @@
    "origen": "ticketera",
    "id": "2dafda391c",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-15",
+   "actualizado": "2026-11-19",
    "genero": "metal"
   },
   {
@@ -21927,6 +22363,10 @@
     {
      "nombre": "Cooperativa.cl",
      "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-2026-en-chile/2025-12-01/082152.html"
+    },
+    {
+     "nombre": "songkick.com",
+     "url": "https://www.songkick.com/es/metro-areas/27525-chile-santiago/2026/genre/indie-alternative"
     }
    ],
    "desde_imagen": false,
@@ -21934,7 +22374,7 @@
    "origen": "datos-estructurados",
    "id": "b2f4ac4e18",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-15",
+   "actualizado": "2026-11-19",
    "genero": "cumbia"
   },
   {
@@ -22438,7 +22878,7 @@
    "region": "Región Metropolitana",
    "precio": "Gratis",
    "descripcion": "Show de humor y stand-up en el Centro Cultural Matucana 100.",
-   "imagen": null,
+   "imagen": "https://www.m100.cl/wp-content/uploads/2026/10/ser-humano_cabecera-1920x600px.jpg",
    "fotos": null,
    "url": "https://telonticket.cl/mep_cat/standup/",
    "fuentes": [
@@ -22449,6 +22889,10 @@
     {
      "nombre": "Matucana 100 (teatro)",
      "url": "https://www.m100.cl/programacion/teatro/"
+    },
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/stand-up/santiago-centro?lang=pt"
     }
    ],
    "desde_imagen": false,
@@ -22811,6 +23255,36 @@
    "actualizado": "2026-11-19"
   },
   {
+   "titulo": "Azul - Festival Teatro a Mil 2027",
+   "categoria": "teatro",
+   "fecha_inicio": "2027-01-07",
+   "fecha_fin": "2027-01-09",
+   "hora": "19:00",
+   "horario": "7 al 9 ene, 19:00 h",
+   "lugar": "Centro Cultural Matucana 100",
+   "direccion": "Av. Matucana #100",
+   "comuna": "Estación Central",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Obra 'Azul' de Apolo Vidal en el Festival Teatro a Mil 2027, una experiencia íntima que transforma el duelo en un ritual escénico.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.m100.cl/programacion/teatro/festival-teatro-a-mil-2027/",
+   "fuentes": [
+    {
+     "nombre": "Matucana 100 - Centro Cultural",
+     "url": "https://www.m100.cl/programacion/teatro/festival-teatro-a-mil-2027/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "dbe5a8c3a1",
+   "agregado": "2026-11-19",
+   "actualizado": "2026-11-19"
+  },
+  {
    "titulo": "Chungo",
    "categoria": "standup",
    "fecha_inicio": "2027-01-07",
@@ -22839,6 +23313,36 @@
    "id": "886189b6ab",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "El Rucio de los Cuchillos",
+   "categoria": "teatro",
+   "fecha_inicio": "2027-01-07",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Nacional Chileno",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $10.171",
+   "descripcion": "Obra clásica de la dramaturgia chilena en el Teatro Nacional Chileno. Calza en teatro.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://teatro-a-mil.ticketplus.cl/events/el-rucio-de-los-cuchillos-FITAM2027",
+   "fuentes": [
+    {
+     "nombre": "Ticketplus",
+     "url": "https://teatro-a-mil.ticketplus.cl/events/el-rucio-de-los-cuchillos-FITAM2027"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "170680230d",
+   "agregado": "2026-11-19",
+   "actualizado": "2026-11-19"
   },
   {
    "titulo": "El beso de Rock Hudson",
@@ -23088,6 +23592,36 @@
    "id": "df115faab7",
    "agregado": "2026-11-11",
    "actualizado": "2026-11-12"
+  },
+  {
+   "titulo": "Los Huesos - Festival Teatro a Mil 2027",
+   "categoria": "teatro",
+   "fecha_inicio": "2027-01-13",
+   "fecha_fin": "2027-01-15",
+   "hora": "19:00",
+   "horario": "13, 14 y 15 ene, 19:00 h",
+   "lugar": "Centro Cultural Matucana 100",
+   "direccion": "Av. Matucana #100",
+   "comuna": "Estación Central",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Nueva creación de Manuela Infante en Teatro a Mil 2027 que explora las huellas de la desaparición forzada.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.m100.cl/programacion/teatro/festival-teatro-a-mil-2027/",
+   "fuentes": [
+    {
+     "nombre": "Matucana 100 - Centro Cultural",
+     "url": "https://www.m100.cl/programacion/teatro/festival-teatro-a-mil-2027/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "3338fdf895",
+   "agregado": "2026-11-19",
+   "actualizado": "2026-11-19"
   },
   {
    "titulo": "Ludocrónicas Reforjadas",
@@ -23601,6 +24135,10 @@
     {
      "nombre": "Telon Ticket",
      "url": "https://telonticket.cl/mep_cat/musical/"
+    },
+    {
+     "nombre": "Matucana 100 - Centro Cultural",
+     "url": "https://www.m100.cl/programacion/teatro/festival-teatro-a-mil-2027/"
     }
    ],
    "desde_imagen": false,
@@ -23608,7 +24146,7 @@
    "origen": "ia",
    "id": "4d34976bfe",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-18"
+   "actualizado": "2026-11-19"
   },
   {
    "titulo": "Cariño Malo",
@@ -23731,6 +24269,36 @@
    "agregado": "2026-11-12",
    "actualizado": "2026-11-12",
    "genero": "metal"
+  },
+  {
+   "titulo": "Parque Nacional - Festival Teatro a Mil 2027",
+   "categoria": "teatro",
+   "fecha_inicio": "2027-01-21",
+   "fecha_fin": "2027-01-22",
+   "hora": "20:00",
+   "horario": "21 ene 20 h - 22 ene 18 h",
+   "lugar": "Centro Cultural Matucana 100",
+   "direccion": "Av. Matucana #100",
+   "comuna": "Estación Central",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Experiencia teatral surrealista del grupo BESA (Argentina) en Teatro a Mil 2027.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.m100.cl/programacion/teatro/festival-teatro-a-mil-2027/",
+   "fuentes": [
+    {
+     "nombre": "Matucana 100 - Centro Cultural",
+     "url": "https://www.m100.cl/programacion/teatro/festival-teatro-a-mil-2027/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "99616659ff",
+   "agregado": "2026-11-19",
+   "actualizado": "2026-11-19"
   },
   {
    "titulo": "Levitation Chile",
@@ -25468,6 +26036,37 @@
    "genero": "metal"
   },
   {
+   "titulo": "Tiny Fest - Tortoise",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-03-06",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Cúpula Parque O'Higgins - Santiago Centro",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Festival musical con la presentación de la influyente banda instrumental Tortoise.",
+   "imagen": "https://static.ptocdn.net/images/eventos/trp065_calugalistado.jpg",
+   "fotos": null,
+   "url": "https://www.puntoticket.com/tiny-fest-2027",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/tiny-fest-2027"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "18ff9d4e09",
+   "agregado": "2026-11-19",
+   "actualizado": "2026-11-19",
+   "genero": "indie"
+  },
+  {
    "titulo": "Undertale: The Determination Symphony",
    "categoria": "conciertos",
    "fecha_inicio": "2027-03-06",
@@ -25790,6 +26389,10 @@
     {
      "nombre": "songkick.com",
      "url": "https://www.songkick.com/metro-areas/27525-chile-santiago/genre/pop"
+    },
+    {
+     "nombre": "panoramon",
+     "url": "https://panoramon.cl/evento/pt-i-love-reggaeton-2027"
     }
    ],
    "desde_imagen": false,
@@ -25797,7 +26400,7 @@
    "origen": "ticketera",
    "id": "4d3b6f62e7",
    "agregado": "2026-11-15",
-   "actualizado": "2026-11-17",
+   "actualizado": "2026-11-19",
    "genero": "reggaeton"
   },
   {
