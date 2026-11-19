@@ -1,48 +1,13 @@
 {
  "version": 1,
- "actualizado": "2026-11-19T00:47-03:00",
+ "actualizado": "2026-11-19T10:33-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-19T00:47-03:00",
+  "fecha": "2026-11-19T10:33-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 102,
-  "nuevos_esta_vez": 36,
+  "eventos_nuevos": 77,
+  "nuevos_esta_vez": 10,
   "nuevos_ids": [
-   "33f7de4937",
-   "341a1a6813",
-   "93e0f9d801",
-   "6b91e2190d",
-   "da098a5fd2",
-   "ed9408076b",
-   "f4bbc190c7",
-   "d9f7e1f90c",
-   "4e9361c397",
-   "55248f1804",
-   "8a5afae7a1",
-   "1821ab80ae",
-   "69259e60a7",
-   "f206adc247",
-   "48d291d640",
-   "7d134793ac",
-   "077054ff99",
-   "b3b2a8b192",
-   "e5983c6ca0",
-   "3ddfd9d4e4",
-   "d9487d57d1",
-   "ec3385e8b0",
-   "130a051681",
-   "8a6215aca8",
-   "29f195ed65",
-   "271aac5210",
-   "6230fd2aeb",
-   "08e8b063ce",
-   "6e990735bf",
-   "3734eaff08",
-   "e0dcf3eddf",
-   "7ed5999ce0",
-   "0adfcfabd0",
-   "46ddde1bf0",
-   "77ca6c0998",
    "412b638ee9",
    "0feb9fa010",
    "d86c4e83e8",
@@ -109,44 +74,19 @@
    "4b9a7c2472",
    "83237968a2",
    "3ea02a0a8a",
-   "b8515a965f"
+   "b8515a965f",
+   "d0df6edb0c",
+   "b411f25921",
+   "b165d5a513",
+   "ca7ad97ffa",
+   "16cb7fa91a",
+   "034976f50c",
+   "2e30f080dd",
+   "6e66242bf8",
+   "1c8c0bc185",
+   "41110424f6"
   ],
   "nuevos_desde": {
-   "33f7de4937": "2026-11-18T01:48-03:00",
-   "341a1a6813": "2026-11-18T01:48-03:00",
-   "93e0f9d801": "2026-11-18T01:48-03:00",
-   "6b91e2190d": "2026-11-18T01:48-03:00",
-   "da098a5fd2": "2026-11-18T01:48-03:00",
-   "ed9408076b": "2026-11-18T01:48-03:00",
-   "f4bbc190c7": "2026-11-18T01:48-03:00",
-   "d9f7e1f90c": "2026-11-18T01:48-03:00",
-   "4e9361c397": "2026-11-18T01:48-03:00",
-   "55248f1804": "2026-11-18T01:48-03:00",
-   "8a5afae7a1": "2026-11-18T01:48-03:00",
-   "1821ab80ae": "2026-11-18T01:48-03:00",
-   "69259e60a7": "2026-11-18T01:48-03:00",
-   "f206adc247": "2026-11-18T01:48-03:00",
-   "48d291d640": "2026-11-18T01:48-03:00",
-   "7d134793ac": "2026-11-18T01:48-03:00",
-   "077054ff99": "2026-11-18T01:48-03:00",
-   "b3b2a8b192": "2026-11-18T01:48-03:00",
-   "e5983c6ca0": "2026-11-18T01:48-03:00",
-   "3ddfd9d4e4": "2026-11-18T01:48-03:00",
-   "d9487d57d1": "2026-11-18T01:48-03:00",
-   "ec3385e8b0": "2026-11-18T01:48-03:00",
-   "130a051681": "2026-11-18T01:48-03:00",
-   "8a6215aca8": "2026-11-18T01:48-03:00",
-   "29f195ed65": "2026-11-18T01:48-03:00",
-   "271aac5210": "2026-11-18T01:48-03:00",
-   "6230fd2aeb": "2026-11-18T01:48-03:00",
-   "08e8b063ce": "2026-11-18T01:48-03:00",
-   "6e990735bf": "2026-11-18T01:48-03:00",
-   "3734eaff08": "2026-11-18T01:48-03:00",
-   "e0dcf3eddf": "2026-11-18T01:48-03:00",
-   "7ed5999ce0": "2026-11-18T01:48-03:00",
-   "0adfcfabd0": "2026-11-18T01:48-03:00",
-   "46ddde1bf0": "2026-11-18T01:48-03:00",
-   "77ca6c0998": "2026-11-18T01:48-03:00",
    "412b638ee9": "2026-11-18T19:22-03:00",
    "0feb9fa010": "2026-11-18T19:22-03:00",
    "d86c4e83e8": "2026-11-18T19:22-03:00",
@@ -213,24 +153,34 @@
    "4b9a7c2472": "2026-11-19T00:47-03:00",
    "83237968a2": "2026-11-19T00:47-03:00",
    "3ea02a0a8a": "2026-11-19T00:47-03:00",
-   "b8515a965f": "2026-11-19T00:47-03:00"
+   "b8515a965f": "2026-11-19T00:47-03:00",
+   "d0df6edb0c": "2026-11-19T10:33-03:00",
+   "b411f25921": "2026-11-19T10:33-03:00",
+   "b165d5a513": "2026-11-19T10:33-03:00",
+   "ca7ad97ffa": "2026-11-19T10:33-03:00",
+   "16cb7fa91a": "2026-11-19T10:33-03:00",
+   "034976f50c": "2026-11-19T10:33-03:00",
+   "2e30f080dd": "2026-11-19T10:33-03:00",
+   "6e66242bf8": "2026-11-19T10:33-03:00",
+   "1c8c0bc185": "2026-11-19T10:33-03:00",
+   "41110424f6": "2026-11-19T10:33-03:00"
   },
   "horas_nuevos": 24,
-  "llamadas_ia": 76,
+  "llamadas_ia": 30,
   "ia_sin_cupo": false,
-  "ultima_completa": "2026-11-19T00:26-03:00",
+  "ultima_completa": "2026-11-19T10:04-03:00",
   "modo": "completa",
-  "paginas_revisadas": 60,
+  "paginas_revisadas": 28,
   "busquedas": 107,
-  "fuentes_fijas": 23,
-  "errores": 21,
-  "noticias_desde": "2026-11-18",
-  "noticias_viejas_descartadas": 394,
-  "redes_vistas": 6,
+  "fuentes_fijas": 10,
+  "errores": 23,
+  "noticias_desde": "2026-11-19",
+  "noticias_viejas_descartadas": 419,
+  "redes_vistas": 4,
   "generos_ia": 3,
-  "imagenes_encontradas": 12
+  "imagenes_encontradas": 7
  },
- "total": 822,
+ "total": 832,
  "eventos": [
   {
    "titulo": "Mariposas y Polillas, Colores en Movimiento",
@@ -4559,7 +4509,7 @@
    "hora": "18:00",
    "horario": null,
    "lugar": "Club Subterráneo",
-   "direccion": null,
+   "direccion": "Orrego Luco 46",
    "comuna": "Providencia",
    "ciudad": "Santiago",
    "region": "Región Metropolitana",
@@ -4583,7 +4533,7 @@
    "origen": "ia",
    "id": "73fc126123",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-19"
   },
   {
    "titulo": "La Batalla de San Tentorio",
@@ -5737,6 +5687,36 @@
    "actualizado": "2026-11-18"
   },
   {
+   "titulo": "Hector Monki stand up el capitalino",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-19",
+   "fecha_fin": null,
+   "hora": "19:30",
+   "horario": null,
+   "lugar": null,
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Descubre Hector Monki stand up el capitalino en Keai. Evento en Providencia el 19/11/2026.",
+   "imagen": "https://cdn.keai.cl/events/21021-c0438302f636cac2fe35838ea0f5e1c0.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/hector-monki-stand-up-el-capitalino-21021",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/hector-monki-stand-up-el-capitalino-21021"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "1c8c0bc185",
+   "agregado": "2026-11-19",
+   "actualizado": "2026-11-19"
+  },
+  {
    "titulo": "Pedro Ruminot en Vivo",
    "categoria": "standup",
    "fecha_inicio": "2026-11-19",
@@ -6301,6 +6281,36 @@
    "actualizado": "2026-11-19"
   },
   {
+   "titulo": "Stand Up Comedy con Che Copete y Marlen Olivari en Ruta 78",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-19",
+   "fecha_fin": "2026-11-20",
+   "hora": "21:30",
+   "horario": null,
+   "lugar": null,
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Descubre Stand Up Comedy con Che Copete y Marlen Olivari en Ruta 78 en Keai. Evento en Puente Alto el 19/11/2026.",
+   "imagen": "https://cdn.keai.cl/events/21017-c1952922c058c6ed9265bcaab90cfa8a.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/stand-up-comedy-con-che-copete-y-marlen-olivari-en-ruta-78-21017",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/stand-up-comedy-con-che-copete-y-marlen-olivari-en-ruta-78-21017"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "41110424f6",
+   "agregado": "2026-11-19",
+   "actualizado": "2026-11-19"
+  },
+  {
    "titulo": "Jam Session",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-19",
@@ -6511,7 +6521,7 @@
    "origen": "datos-estructurados",
    "id": "3780d0e660",
    "agregado": "2026-11-15",
-   "actualizado": "2026-11-16",
+   "actualizado": "2026-11-19",
    "genero": "otros"
   },
   {
@@ -6885,6 +6895,37 @@
    "agregado": "2026-11-14",
    "actualizado": "2026-11-14",
    "genero": "clasica"
+  },
+  {
+   "titulo": "Lanzamiento Electrónica Chilena Vol. 2: Tierras Raras - RAUVERSION",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-20",
+   "fecha_fin": null,
+   "hora": "18:00",
+   "horario": null,
+   "lugar": "Lanzamiento Electrónica Chilena Vol. 2: Tierras Raras - RAUVERSION",
+   "direccion": "Lanzamiento Electrónica Chilena Vol. 2: Tierras Raras - RAUVERSION",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Un elenco de lujo da vida a Electrónica Chilena Vol. 2: Tierras Raras El esperado segundo volumen en vinilo de Rauversion reúne a Leonino (Jorge González), Dand",
+   "imagen": "https://cdn.keai.cl/events/20959-2c0034c3354f3ebae3ca47a8c8b0226e.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/lanzamiento-electronica-chilena-vol-2-tierras-raras-rauversion-20959",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/lanzamiento-electronica-chilena-vol-2-tierras-raras-rauversion-20959"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "ca7ad97ffa",
+   "agregado": "2026-11-19",
+   "actualizado": "2026-11-19",
+   "genero": "electronica"
   },
   {
    "titulo": "Concierto Contradicción 30 años",
@@ -7686,6 +7727,37 @@
    "id": "888e0df523",
    "agregado": "2026-11-16",
    "actualizado": "2026-11-18"
+  },
+  {
+   "titulo": "Concierto Jirafas del Sol y Juan Gómez",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-20",
+   "fecha_fin": "2026-11-21",
+   "hora": "20:30",
+   "horario": null,
+   "lugar": "La Juguera Espacio Cultural",
+   "direccion": "Rogelio Ugarte 1162, 8360022 Santiago, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Descubre Concierto Jirafas del Sol y Juan Gómez en Keai. Evento en Santiago el 20/11/2026.",
+   "imagen": "https://cdn.keai.cl/events/21014-793327a9f51f84809bbb045a44cffb3e.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/concierto-jirafas-del-sol-y-juan-gomez-21014",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/concierto-jirafas-del-sol-y-juan-gomez-21014"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "b411f25921",
+   "agregado": "2026-11-19",
+   "actualizado": "2026-11-19",
+   "genero": "indie"
   },
   {
    "titulo": "Las mal portadas",
@@ -9768,6 +9840,37 @@
    "actualizado": "2026-11-15"
   },
   {
+   "titulo": "Sábado Pop Vs Reggaeton 🪩 21 Nov",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-21",
+   "fecha_fin": "2026-11-22",
+   "hora": "23:30",
+   "horario": null,
+   "lugar": "Illuminati Disco",
+   "direccion": "Antonia López de Bello 133, 8420431 Recoleta, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Descubre SÁBADO POP VS REGGAETON 🪩 21 Nov en Keai. Evento en Recoleta el 21/11/2026.",
+   "imagen": "https://cdn.keai.cl/events/20941-efa9db09632f1da8a5a58593fc988b8f.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/sabado-pop-vs-reggaeton-21-nov-20941",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/sabado-pop-vs-reggaeton-21-nov-20941"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "16cb7fa91a",
+   "agregado": "2026-11-19",
+   "actualizado": "2026-11-19",
+   "genero": "reggaeton"
+  },
+  {
    "titulo": "Bodas de 3",
    "categoria": "teatro",
    "fecha_inicio": "2026-11-21",
@@ -10814,7 +10917,7 @@
    "origen": "datos-estructurados",
    "id": "3d21bb59ae",
    "agregado": "2026-11-15",
-   "actualizado": "2026-11-16",
+   "actualizado": "2026-11-19",
    "genero": "clasica"
   },
   {
@@ -11290,7 +11393,7 @@
    "origen": "datos-estructurados",
    "id": "f1d600c64d",
    "agregado": "2026-11-15",
-   "actualizado": "2026-11-16",
+   "actualizado": "2026-11-19",
    "genero": "clasica"
   },
   {
@@ -11777,6 +11880,10 @@
     {
      "nombre": "VAMOH!",
      "url": "https://vamoh.cl/events/jesucristo-superhistorico-concierto-promocional-p9g1g/"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/jesucristo-superhistorico-concierto-promocional-20990"
     }
    ],
    "desde_imagen": false,
@@ -11784,7 +11891,7 @@
    "origen": "datos-estructurados",
    "id": "64acea10f1",
    "agregado": "2026-11-16",
-   "actualizado": "2026-11-16",
+   "actualizado": "2026-11-19",
    "genero": "otros"
   },
   {
@@ -12703,7 +12810,7 @@
    "titulo": "Maly Jorquera Stand Up Comedy en Ruta 78",
    "categoria": "teatro",
    "fecha_inicio": "2026-11-27",
-   "fecha_fin": null,
+   "fecha_fin": "2026-11-28",
    "hora": "21:00",
    "horario": null,
    "lugar": "Bar Ruta 78",
@@ -12720,6 +12827,10 @@
     {
      "nombre": "VAMOH!",
      "url": "https://vamoh.cl/events/maly-jorquera-stand-up-comedy-en-ruta-78-naa2o/"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/maly-jorquera-stand-up-comedy-en-ruta-78-21005"
     }
    ],
    "desde_imagen": false,
@@ -12727,7 +12838,7 @@
    "origen": "datos-estructurados",
    "id": "b83e2b9564",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-10"
+   "actualizado": "2026-11-19"
   },
   {
    "titulo": "Mijares - Sinfónico",
@@ -13397,7 +13508,7 @@
    "origen": "ia",
    "id": "f28d4517a9",
    "agregado": "2026-11-11",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-19"
   },
   {
    "titulo": "Otakupeluzza, feria de anime",
@@ -13450,6 +13561,10 @@
     {
      "nombre": "VAMOH!",
      "url": "https://vamoh.cl/events/tcg-family-fest-yfphc/"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/tcg-family-fest-20999"
     }
    ],
    "desde_imagen": false,
@@ -13457,7 +13572,7 @@
    "origen": "datos-estructurados",
    "id": "a5b11e25d7",
    "agregado": "2026-11-08",
-   "actualizado": "2026-11-08"
+   "actualizado": "2026-11-19"
   },
   {
    "titulo": "Anime Fest Music",
@@ -14190,7 +14305,7 @@
    "origen": "ia",
    "id": "5befadaa6d",
    "agregado": "2026-11-11",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-19"
   },
   {
    "titulo": "Boda de 3",
@@ -14221,6 +14336,37 @@
    "id": "8d149676b5",
    "agregado": "2026-11-16",
    "actualizado": "2026-11-16"
+  },
+  {
+   "titulo": "Candlelight: Tributo a Phil Collins",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": "2027-02-14",
+   "hora": null,
+   "horario": null,
+   "lugar": "Centro Cultural CEINA",
+   "direccion": "Arturo Prat 33",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto tributo a Phil Collins iluminado por miles de velas.",
+   "imagen": "https://applications-media.feverup.com/image/upload/f_auto,w_720,h_720/fever2/plan/photo/472ba57a-08f4-11f1-ba4c-96135da4558e.jpg",
+   "fotos": null,
+   "url": "https://feverup.com/es/santiago?seasonal=p94e42p",
+   "fuentes": [
+    {
+     "nombre": "Fever",
+     "url": "https://feverup.com/es/santiago?seasonal=p94e42p"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "6e66242bf8",
+   "agregado": "2026-11-19",
+   "actualizado": "2026-11-19",
+   "genero": "pop"
   },
   {
    "titulo": "Carcass en Chile - Chile Terrorfest II",
@@ -15295,7 +15441,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Explora el duelo de quienes viven la muerte de sus hijos y la incertidumbre de quien debe auxiliarlos.",
-   "imagen": null,
+   "imagen": "https://www.m100.cl/wp-content/uploads/2026/10/Tal-tal_slidehome_1920x1488.jpg",
    "fotos": null,
    "url": "https://www.m100.cl/programacion/teatro/",
    "fuentes": [
@@ -15593,10 +15739,10 @@
    "hora": null,
    "horario": null,
    "lugar": "Casa Comedia - Providencia",
-   "direccion": null,
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
+   "direccion": "Constitución N° 97",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Show de stand-up y humor del reconocido comediante nacional celebrando sus 40 años de trayectoria.",
    "imagen": "https://static.ptocdn.net/event-resources/images/CCM007_calugalistado.webp?v=1794590248",
@@ -15606,6 +15752,10 @@
     {
      "nombre": "PuntoTicket",
      "url": "https://www.puntoticket.com/evento/40-anos-y-no-me-di-ni-cuenta"
+    },
+    {
+     "nombre": "casacomedia.cl",
+     "url": "https://www.casacomedia.cl/cartelera/"
     }
    ],
    "desde_imagen": false,
@@ -15613,7 +15763,7 @@
    "origen": "ticketera",
    "id": "3a72bd3e9a",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-13"
+   "actualizado": "2026-11-19"
   },
   {
    "titulo": "Feria Pulsar",
@@ -16071,7 +16221,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Concierto de blues en vivo con Felipe Toro Blues Trio.",
-   "imagen": null,
+   "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/rockstarstage/Dfz54CyqTUT_0.jpg",
    "fotos": null,
    "url": "https://salirsantiago.com/panoramas/jam-open-mic",
    "fuentes": [
@@ -16395,10 +16545,10 @@
    "hora": null,
    "horario": null,
    "lugar": "Casa Comedia - Providencia",
-   "direccion": null,
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
+   "direccion": "Constitución N° 97",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Obra de teatro protagonizada por Magdalena Max Neef y Josefina Velasco.",
    "imagen": "https://static.ptocdn.net/event-resources/images/CCM010_calugalistado.webp?v=1794591030",
@@ -16408,6 +16558,10 @@
     {
      "nombre": "PuntoTicket",
      "url": "https://www.puntoticket.com/evento/es-lo-que-hay-o-lo-que-va-quedando"
+    },
+    {
+     "nombre": "casacomedia.cl",
+     "url": "https://www.casacomedia.cl/cartelera/"
     }
    ],
    "desde_imagen": false,
@@ -16415,7 +16569,7 @@
    "origen": "ticketera",
    "id": "bd33b6e86a",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-13"
+   "actualizado": "2026-11-19"
   },
   {
    "titulo": "Giant Rooks",
@@ -16431,7 +16585,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Concierto de la banda alemana de indie rock Giant Rooks en Teatro La Cúpula.",
-   "imagen": null,
+   "imagen": "https://latamenvivo.com/assets/img/photos/giant-rooks-card.webp",
    "fotos": null,
    "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/conciertos-diciembre-2026/2026-11-01/135438.html",
    "fuentes": [
@@ -16836,10 +16990,10 @@
    "hora": "19:30",
    "horario": null,
    "lugar": "Casa Comedia",
-   "direccion": null,
+   "direccion": "Constitución N° 97",
    "comuna": "Providencia",
-   "ciudad": null,
-   "region": null,
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
    "precio": "Desde $13.800",
    "descripcion": "Los cuatro panelistas delos jueves en Not News 00; dueños de un estilo propio, carisma, opinión y un sentido del humor infinito, se encuentran con su público en vivo para chismear, pelar, analizar y reír cara a cara con sus seguidores. Noti",
    "imagen": "https://img.vamoh.cl/events/aeab73eb-0c72-493a-9611-7c682bd55f6d.webp?v=4542531a",
@@ -16853,6 +17007,10 @@
     {
      "nombre": "VAMOH!",
      "url": "https://vamoh.cl/events/not-panel-show-not-panel-en-vivo-en-casa-comedia-4yd6p/"
+    },
+    {
+     "nombre": "casacomedia.cl",
+     "url": "https://www.casacomedia.cl/cartelera/"
     }
    ],
    "desde_imagen": false,
@@ -16860,7 +17018,7 @@
    "origen": "ticketera",
    "id": "5974b82b54",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-14"
+   "actualizado": "2026-11-19"
   },
   {
    "titulo": "Luis Slimming en Bar Coyote",
@@ -17517,7 +17675,7 @@
    "region": null,
    "precio": null,
    "descripcion": "Ópera en el GAM. Funciones viernes, sábado y domingo.",
-   "imagen": null,
+   "imagen": "https://gam.cl/media/images/Panoramica3.52edb4a9.fill-1200x630.png",
    "fotos": null,
    "url": "https://gam.cl/es/que-hacer-en-gam/nueva-opera/nunca-mas/",
    "fuentes": [
@@ -17541,10 +17699,10 @@
    "hora": null,
    "horario": null,
    "lugar": "Casa Comedia - Providencia",
-   "direccion": null,
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
+   "direccion": "Constitución N° 97",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Nuevo espectáculo de stand-up del comediante Rodrigo Villegas.",
    "imagen": "https://static.ptocdn.net/event-resources/images/CCM009_calugalistado.webp?v=1794591515",
@@ -17554,6 +17712,10 @@
     {
      "nombre": "PuntoTicket",
      "url": "https://www.puntoticket.com/evento/esto-es-para-ustedes"
+    },
+    {
+     "nombre": "casacomedia.cl",
+     "url": "https://www.casacomedia.cl/cartelera/"
     }
    ],
    "desde_imagen": false,
@@ -17561,7 +17723,7 @@
    "origen": "ticketera",
    "id": "1a31fe0a02",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-13"
+   "actualizado": "2026-11-19"
   },
   {
    "titulo": "Sergio Sacoto: Reencuentro en Teatro San Ginés",
@@ -18403,7 +18565,7 @@
    "region": null,
    "precio": null,
    "descripcion": "Festival de artes escénicas y teatro en el GAM.",
-   "imagen": null,
+   "imagen": "https://gam.cl/media/images/Diseno_sin_titulo_3.2e16d0ba.fill-1200x630.jpg",
    "fotos": null,
    "url": "https://gam.cl/es/que-hacer-en-gam/teatro/festival-enai-2026/",
    "fuentes": [
@@ -18433,7 +18595,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Jam session de jazz manouche con Gypsy Trío.",
-   "imagen": null,
+   "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/gypsytrio/DfvVihFhl-b_0.jpg",
    "fotos": null,
    "url": "https://salirsantiago.com/panoramas/jam-open-mic",
    "fuentes": [
@@ -18493,6 +18655,10 @@
     {
      "nombre": "Radio Corazón",
      "url": "https://www.corazon.cl/2026/11/festigame-2026-anuncia-zonas-de-videojuegos-torneos-e-invitados-para-su-regreso-a-santiago-como-comprar-entradas-para-el-evento/"
+    },
+    {
+     "nombre": "Fever",
+     "url": "https://feverup.com/es/santiago?seasonal=p94e42p"
     }
    ],
    "desde_imagen": false,
@@ -18544,6 +18710,10 @@
     {
      "nombre": "Rock Cultura",
      "url": "https://rockcultura.com/eventos/chile/santiago"
+    },
+    {
+     "nombre": "PowerOfMetal.cl",
+     "url": "https://powerofmetal.cl/clouds-debutara-en-chile-con-dos-conciertos-en-enero-de-2027/"
     }
    ],
    "desde_imagen": true,
@@ -18551,7 +18721,7 @@
    "origen": "datos-estructurados",
    "id": "c5b1d7de21",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-17",
+   "actualizado": "2026-11-19",
    "genero": "metal"
   },
   {
@@ -19825,6 +19995,37 @@
    "genero": "folclor"
   },
   {
+   "titulo": "Chaicura en Bar 38",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-12",
+   "fecha_fin": "2026-12-13",
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "BAR 38",
+   "direccion": "Av. Concha y Toro 685, 8150215 Puente Alto, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "CHAICURA EN VIVO EN BAR 38 🎸🔥 ​Este sábado 12 de diciembre, el rock y el metal progresivo de raíz mapuche vuelven a casa en",
+   "imagen": "https://cdn.keai.cl/events/21046-220a238c864c784180f91d315c9885a8.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/chaicura-en-bar-38-21046",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/chaicura-en-bar-38-21046"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "d0df6edb0c",
+   "agregado": "2026-11-19",
+   "actualizado": "2026-11-19",
+   "genero": "metal"
+  },
+  {
    "titulo": "Luis Slimming en Carbón Restaurant",
    "categoria": "standup",
    "fecha_inicio": "2026-12-12",
@@ -19950,6 +20151,37 @@
    "agregado": "2026-11-14",
    "actualizado": "2026-11-14",
    "genero": "pop"
+  },
+  {
+   "titulo": "Nu Metal Sessions Party",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-12",
+   "fecha_fin": null,
+   "hora": "23:30",
+   "horario": null,
+   "lugar": "Espacio Cousiño",
+   "direccion": null,
+   "comuna": "Santiago Centro",
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Nu Metal Sessions Party: tocata de nu metal en vivo el sábado 12 de diciembre a las 23:30 hrs. en Espacio Cousiño, Santiago Centro.",
+   "imagen": "https://colorfans.cl/wp-content/uploads/2026/11/rf-65432-nu-metal-sessions-party-espacio-cousino--19e2e6.webp",
+   "fotos": null,
+   "url": "https://colorfans.cl/evento/nu-metal-sessions-party-espacio-cousino-12-diciembre-2026/",
+   "fuentes": [
+    {
+     "nombre": "ColorFans",
+     "url": "https://colorfans.cl/evento/nu-metal-sessions-party-espacio-cousino-12-diciembre-2026/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "034976f50c",
+   "agregado": "2026-11-19",
+   "actualizado": "2026-11-19",
+   "genero": "metal"
   },
   {
    "titulo": "Akriila - El Tour de Lucy",
@@ -21385,10 +21617,10 @@
    "hora": "21:00",
    "horario": null,
    "lugar": "Casa Comedia - Providencia",
-   "direccion": null,
+   "direccion": "Constitución N° 97",
    "comuna": "Providencia",
-   "ciudad": null,
-   "region": null,
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
    "precio": "Desde $14.950",
    "descripcion": "Show de stand-up comedy a cargo de León Murillo.",
    "imagen": "https://static.ptocdn.net/event-resources/images/CCM008_calugalistado.webp?v=1794586212",
@@ -21402,6 +21634,10 @@
     {
      "nombre": "VAMOH!",
      "url": "https://vamoh.cl/events/leon-murillo-la-noche-es-en-casa-comedia-nj7oj/"
+    },
+    {
+     "nombre": "casacomedia.cl",
+     "url": "https://www.casacomedia.cl/cartelera/"
     }
    ],
    "desde_imagen": false,
@@ -21409,7 +21645,7 @@
    "origen": "ticketera",
    "id": "9026b787e6",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-14"
+   "actualizado": "2026-11-19"
   },
   {
    "titulo": "Stand Up Comedy",
@@ -22110,6 +22346,10 @@
     {
      "nombre": "Fever",
      "url": "https://feverup.com/es/santiago/teatro"
+    },
+    {
+     "nombre": "Fever",
+     "url": "https://feverup.com/es/santiago?seasonal=p94e42p"
     }
    ],
    "desde_imagen": false,
@@ -22117,7 +22357,38 @@
    "origen": "ia",
    "id": "159bd6ccca",
    "agregado": "2026-11-12",
-   "actualizado": "2026-11-15"
+   "actualizado": "2026-11-19"
+  },
+  {
+   "titulo": "El fin de Nickla 12",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-27",
+   "fecha_fin": null,
+   "hora": "18:00",
+   "horario": null,
+   "lugar": "Sala Bondie",
+   "direccion": "Sala Bondie",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "El final de Nickla 12 llega a sala Blondie para despedir el 2026 con el ultimo concierto de su carrera.",
+   "imagen": "https://cdn.keai.cl/events/20979-620c70f82d434d3034bd80ef4cbc5436.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/el-fin-de-nickla-12-20979",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/el-fin-de-nickla-12-20979"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "b165d5a513",
+   "agregado": "2026-11-19",
+   "actualizado": "2026-11-19",
+   "genero": "rock"
   },
   {
    "titulo": "Drácula",
@@ -24064,6 +24335,10 @@
     {
      "nombre": "Fever",
      "url": "https://feverup.com/es/santiago/teatro"
+    },
+    {
+     "nombre": "Fever",
+     "url": "https://feverup.com/es/santiago?seasonal=p94e42p"
     }
    ],
    "desde_imagen": false,
@@ -24071,7 +24346,7 @@
    "origen": "ia",
    "id": "4fae3c3cc4",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-15",
+   "actualizado": "2026-11-19",
    "genero": "jazz"
   },
   {
@@ -24363,6 +24638,37 @@
    "agregado": "2026-11-13",
    "actualizado": "2026-11-13",
    "genero": "reggaeton"
+  },
+  {
+   "titulo": "CLOUDS en Chile",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-01-30",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Cariola",
+   "direccion": "San Diego 246",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "La banda internacional de doom metal CLOUDS debuta en Chile junto a Mar de Grises, Call Ov The Void, Weight of Emptiness y Bosque de Hualles.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://powerofmetal.cl/clouds-debutara-en-chile-con-dos-conciertos-en-enero-de-2027/",
+   "fuentes": [
+    {
+     "nombre": "PowerOfMetal.cl",
+     "url": "https://powerofmetal.cl/clouds-debutara-en-chile-con-dos-conciertos-en-enero-de-2027/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "2e30f080dd",
+   "agregado": "2026-11-19",
+   "actualizado": "2026-11-19",
+   "genero": "metal"
   },
   {
    "titulo": "Festival Solo Zoco",
@@ -26904,6 +27210,10 @@
     {
      "nombre": "LOS40",
      "url": "https://los40.cl/2026/11/17/se-acabo-la-espera-don-omar-confirma-concierto-en-chile-2027-fecha-preventa-y-precios/"
+    },
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/don-omar-2027"
     }
    ],
    "desde_imagen": false,
@@ -26911,7 +27221,7 @@
    "origen": "ia",
    "id": "3ddfd9d4e4",
    "agregado": "2026-11-18",
-   "actualizado": "2026-11-18",
+   "actualizado": "2026-11-19",
    "genero": "reggaeton"
   },
   {
