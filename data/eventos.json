@@ -1,52 +1,16 @@
 {
  "version": 1,
- "actualizado": "2026-11-19T18:55-03:00",
+ "actualizado": "2026-11-20T00:32-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-19T18:55-03:00",
+  "fecha": "2026-11-20T00:32-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 94,
+  "eventos_nuevos": 70,
   "nuevos_esta_vez": 17,
   "nuevos_ids": [
-   "412b638ee9",
-   "0feb9fa010",
-   "d86c4e83e8",
-   "ae83e6bf22",
-   "060b0b1d7e",
-   "0382da7e3d",
-   "0fd4e48d87",
-   "47419c76d9",
-   "2bbfede164",
-   "cf135c934c",
-   "865ffb0758",
-   "05babbffb2",
-   "46c6448562",
-   "674a829ad6",
-   "8cc82d6db5",
-   "011a8d5a57",
-   "f182693055",
-   "7b9f84b6e3",
-   "03b02f9269",
-   "5f29657baf",
-   "a09728f5b0",
-   "c520c92c94",
-   "c15e186ad0",
-   "e672468c07",
-   "5ced51d5ce",
-   "28f9bcd097",
-   "de912c3780",
-   "d013b106f8",
-   "33c2eebfd5",
-   "08fd4e5df2",
-   "bc240d9894",
    "88f078b30f",
    "9133a6f10a",
    "1c3a9828a6",
-   "47566d8f4e",
-   "980f0410d4",
-   "2ea66e8fec",
-   "508dead702",
-   "ed857b910c",
    "cc86a3e4f8",
    "cb243c58ab",
    "9a0db1ddc0",
@@ -72,9 +36,6 @@
    "120d582a83",
    "a4991dcce1",
    "4b9a7c2472",
-   "83237968a2",
-   "3ea02a0a8a",
-   "b8515a965f",
    "d0df6edb0c",
    "b411f25921",
    "b165d5a513",
@@ -83,14 +44,12 @@
    "034976f50c",
    "2e30f080dd",
    "6e66242bf8",
-   "1c8c0bc185",
    "41110424f6",
    "18ff9d4e09",
    "08048dabd3",
    "93d61d9b9d",
    "eb0c18d58c",
    "90b4353370",
-   "6bf145ad64",
    "170680230d",
    "7981cb0edc",
    "fd761261aa",
@@ -101,48 +60,29 @@
    "0acfebb80c",
    "dbe5a8c3a1",
    "3338fdf895",
-   "99616659ff"
+   "99616659ff",
+   "bd2c0da0de",
+   "43b0a968a5",
+   "21411f29b3",
+   "7c9ec78787",
+   "dcdf48cb32",
+   "02b9cdfd37",
+   "0d5f302042",
+   "b06a9c5ea9",
+   "5756b2d107",
+   "af38cee365",
+   "8296e1f6c0",
+   "66612aa733",
+   "32e6b410ed",
+   "a38af78b43",
+   "8aa0bc02e6",
+   "3b55394ae8",
+   "611e283b7e"
   ],
   "nuevos_desde": {
-   "412b638ee9": "2026-11-18T19:22-03:00",
-   "0feb9fa010": "2026-11-18T19:22-03:00",
-   "d86c4e83e8": "2026-11-18T19:22-03:00",
-   "ae83e6bf22": "2026-11-18T19:22-03:00",
-   "060b0b1d7e": "2026-11-18T19:22-03:00",
-   "0382da7e3d": "2026-11-18T19:22-03:00",
-   "0fd4e48d87": "2026-11-18T19:22-03:00",
-   "47419c76d9": "2026-11-18T19:22-03:00",
-   "2bbfede164": "2026-11-18T19:22-03:00",
-   "cf135c934c": "2026-11-18T19:22-03:00",
-   "865ffb0758": "2026-11-18T19:22-03:00",
-   "05babbffb2": "2026-11-18T19:22-03:00",
-   "46c6448562": "2026-11-18T19:22-03:00",
-   "674a829ad6": "2026-11-18T19:22-03:00",
-   "8cc82d6db5": "2026-11-18T19:22-03:00",
-   "011a8d5a57": "2026-11-18T19:22-03:00",
-   "f182693055": "2026-11-18T19:22-03:00",
-   "7b9f84b6e3": "2026-11-18T19:22-03:00",
-   "03b02f9269": "2026-11-18T19:22-03:00",
-   "5f29657baf": "2026-11-18T19:22-03:00",
-   "a09728f5b0": "2026-11-18T19:22-03:00",
-   "c520c92c94": "2026-11-18T19:22-03:00",
-   "c15e186ad0": "2026-11-18T19:22-03:00",
-   "e672468c07": "2026-11-18T19:22-03:00",
-   "5ced51d5ce": "2026-11-18T19:22-03:00",
-   "28f9bcd097": "2026-11-18T19:22-03:00",
-   "de912c3780": "2026-11-18T19:22-03:00",
-   "d013b106f8": "2026-11-18T19:22-03:00",
-   "33c2eebfd5": "2026-11-18T19:22-03:00",
-   "08fd4e5df2": "2026-11-18T19:22-03:00",
-   "bc240d9894": "2026-11-18T19:22-03:00",
    "88f078b30f": "2026-11-19T00:47-03:00",
    "9133a6f10a": "2026-11-19T00:47-03:00",
    "1c3a9828a6": "2026-11-19T00:47-03:00",
-   "47566d8f4e": "2026-11-19T00:47-03:00",
-   "980f0410d4": "2026-11-19T00:47-03:00",
-   "2ea66e8fec": "2026-11-19T00:47-03:00",
-   "508dead702": "2026-11-19T00:47-03:00",
-   "ed857b910c": "2026-11-19T00:47-03:00",
    "cc86a3e4f8": "2026-11-19T00:47-03:00",
    "cb243c58ab": "2026-11-19T00:47-03:00",
    "9a0db1ddc0": "2026-11-19T00:47-03:00",
@@ -168,9 +108,6 @@
    "120d582a83": "2026-11-19T00:47-03:00",
    "a4991dcce1": "2026-11-19T00:47-03:00",
    "4b9a7c2472": "2026-11-19T00:47-03:00",
-   "83237968a2": "2026-11-19T00:47-03:00",
-   "3ea02a0a8a": "2026-11-19T00:47-03:00",
-   "b8515a965f": "2026-11-19T00:47-03:00",
    "d0df6edb0c": "2026-11-19T10:33-03:00",
    "b411f25921": "2026-11-19T10:33-03:00",
    "b165d5a513": "2026-11-19T10:33-03:00",
@@ -179,14 +116,12 @@
    "034976f50c": "2026-11-19T10:33-03:00",
    "2e30f080dd": "2026-11-19T10:33-03:00",
    "6e66242bf8": "2026-11-19T10:33-03:00",
-   "1c8c0bc185": "2026-11-19T10:33-03:00",
    "41110424f6": "2026-11-19T10:33-03:00",
    "18ff9d4e09": "2026-11-19T18:55-03:00",
    "08048dabd3": "2026-11-19T18:55-03:00",
    "93d61d9b9d": "2026-11-19T18:55-03:00",
    "eb0c18d58c": "2026-11-19T18:55-03:00",
    "90b4353370": "2026-11-19T18:55-03:00",
-   "6bf145ad64": "2026-11-19T18:55-03:00",
    "170680230d": "2026-11-19T18:55-03:00",
    "7981cb0edc": "2026-11-19T18:55-03:00",
    "fd761261aa": "2026-11-19T18:55-03:00",
@@ -197,24 +132,41 @@
    "0acfebb80c": "2026-11-19T18:55-03:00",
    "dbe5a8c3a1": "2026-11-19T18:55-03:00",
    "3338fdf895": "2026-11-19T18:55-03:00",
-   "99616659ff": "2026-11-19T18:55-03:00"
+   "99616659ff": "2026-11-19T18:55-03:00",
+   "bd2c0da0de": "2026-11-20T00:32-03:00",
+   "43b0a968a5": "2026-11-20T00:32-03:00",
+   "21411f29b3": "2026-11-20T00:32-03:00",
+   "7c9ec78787": "2026-11-20T00:32-03:00",
+   "dcdf48cb32": "2026-11-20T00:32-03:00",
+   "02b9cdfd37": "2026-11-20T00:32-03:00",
+   "0d5f302042": "2026-11-20T00:32-03:00",
+   "b06a9c5ea9": "2026-11-20T00:32-03:00",
+   "5756b2d107": "2026-11-20T00:32-03:00",
+   "af38cee365": "2026-11-20T00:32-03:00",
+   "8296e1f6c0": "2026-11-20T00:32-03:00",
+   "66612aa733": "2026-11-20T00:32-03:00",
+   "32e6b410ed": "2026-11-20T00:32-03:00",
+   "a38af78b43": "2026-11-20T00:32-03:00",
+   "8aa0bc02e6": "2026-11-20T00:32-03:00",
+   "3b55394ae8": "2026-11-20T00:32-03:00",
+   "611e283b7e": "2026-11-20T00:32-03:00"
   },
   "horas_nuevos": 24,
-  "llamadas_ia": 45,
+  "llamadas_ia": 44,
   "ia_sin_cupo": false,
-  "ultima_completa": "2026-11-19T18:32-03:00",
+  "ultima_completa": "2026-11-20T00:14-03:00",
   "modo": "completa",
-  "paginas_revisadas": 42,
+  "paginas_revisadas": 39,
   "busquedas": 107,
-  "fuentes_fijas": 9,
-  "errores": 24,
+  "fuentes_fijas": 14,
+  "errores": 18,
   "noticias_desde": "2026-11-19",
-  "noticias_viejas_descartadas": 369,
-  "redes_vistas": 4,
-  "generos_ia": 2,
-  "imagenes_encontradas": 12
+  "noticias_viejas_descartadas": 423,
+  "redes_vistas": 2,
+  "generos_ia": 8,
+  "imagenes_encontradas": 11
  },
- "total": 849,
+ "total": 830,
  "eventos": [
   {
    "titulo": "Mariposas y Polillas, Colores en Movimiento",
@@ -253,6 +205,10 @@
     {
      "nombre": "mhn.gob.cl",
      "url": "https://www.mhn.gob.cl/cartelera/red-nacional"
+    },
+    {
+     "nombre": "mnba.gob.cl",
+     "url": "https://www.mnba.gob.cl/cartelera/red-nacional"
     }
    ],
    "desde_imagen": false,
@@ -260,7 +216,7 @@
    "origen": "ia",
    "id": "b240f6e84d",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-19"
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "Roberto Matta. Abrir la mirada",
@@ -299,6 +255,10 @@
     {
      "nombre": "mhn.gob.cl",
      "url": "https://www.mhn.gob.cl/cartelera/red-nacional"
+    },
+    {
+     "nombre": "mnba.gob.cl",
+     "url": "https://www.mnba.gob.cl/cartelera/red-nacional"
     }
    ],
    "desde_imagen": false,
@@ -306,7 +266,7 @@
    "origen": "ia",
    "id": "b91cbc5d41",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-19"
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "El mundo en una biblioteca. Cien años de la donación de José Toribio Medina",
@@ -341,6 +301,10 @@
     {
      "nombre": "mhn.gob.cl",
      "url": "https://www.mhn.gob.cl/cartelera/red-nacional"
+    },
+    {
+     "nombre": "mnba.gob.cl",
+     "url": "https://www.mnba.gob.cl/cartelera/red-nacional"
     }
    ],
    "desde_imagen": false,
@@ -348,7 +312,7 @@
    "origen": "ia",
    "id": "6dd0741db1",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-19"
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "Un archivo en construcción: la obra de Tito Vásquez",
@@ -387,6 +351,10 @@
     {
      "nombre": "mhn.gob.cl",
      "url": "https://www.mhn.gob.cl/cartelera/red-nacional"
+    },
+    {
+     "nombre": "mnba.gob.cl",
+     "url": "https://www.mnba.gob.cl/cartelera/red-nacional"
     }
    ],
    "desde_imagen": false,
@@ -394,7 +362,7 @@
    "origen": "claude",
    "id": "ae5b603f04",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-19"
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "145 años: Historias de una Colección",
@@ -437,6 +405,18 @@
     {
      "nombre": "circuitosantiago.cl",
      "url": "https://www.circuitosantiago.cl/categoria/exposiciones/"
+    },
+    {
+     "nombre": "mnba.gob.cl",
+     "url": "https://www.mnba.gob.cl/cartelera/145-anos-historias-de-una-coleccion"
+    },
+    {
+     "nombre": "mnba.gob.cl",
+     "url": "https://www.mnba.gob.cl/noticias/145-anos-historias-de-una-coleccion"
+    },
+    {
+     "nombre": "mnba.gob.cl",
+     "url": "https://www.mnba.gob.cl/cartelera/red-nacional"
     }
    ],
    "desde_imagen": false,
@@ -444,7 +424,7 @@
    "origen": "ia",
    "id": "a2b9db3fc8",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-19"
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "Vitrina Colecciones arqueológicas y su estudio en el MNHN",
@@ -487,6 +467,10 @@
     {
      "nombre": "circuitosantiago.cl",
      "url": "https://www.circuitosantiago.cl/categoria/exposiciones/"
+    },
+    {
+     "nombre": "mnba.gob.cl",
+     "url": "https://www.mnba.gob.cl/cartelera/red-nacional"
     }
    ],
    "desde_imagen": false,
@@ -494,7 +478,7 @@
    "origen": "ia",
    "id": "50b4603a83",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-19"
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "Vertebrados: anatomía, evolución, extinción",
@@ -541,6 +525,10 @@
     {
      "nombre": "circuitosantiago.cl",
      "url": "https://www.circuitosantiago.cl/categoria/exposiciones/"
+    },
+    {
+     "nombre": "mnba.gob.cl",
+     "url": "https://www.mnba.gob.cl/cartelera/red-nacional"
     }
    ],
    "desde_imagen": false,
@@ -548,7 +536,7 @@
    "origen": "claude",
    "id": "6dfafa8970",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-19"
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "Kume Mongen",
@@ -3231,7 +3219,7 @@
    "origen": "ia",
    "id": "feee41666f",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-19"
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "El prestamista",
@@ -3821,7 +3809,7 @@
    "origen": "ia",
    "id": "2ff9635fda",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-18"
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "Quiero ser una chica Almodóvar",
@@ -3863,7 +3851,7 @@
    "origen": "datos-estructurados",
    "id": "455e856bc6",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-18"
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "Bestia",
@@ -3893,7 +3881,7 @@
    "origen": "ia",
    "id": "70715e99b1",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-18"
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "Se arrienda pieza para mujer sola",
@@ -3927,7 +3915,7 @@
    "origen": "ia",
    "id": "e1a1867f70",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-19"
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "Cuerpo Docente",
@@ -3964,40 +3952,6 @@
    "confianza": "alta",
    "origen": "ia",
    "id": "615e1e2ab1",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-18"
-  },
-  {
-   "titulo": "Mi hermano es un idiota",
-   "categoria": "standup",
-   "fecha_inicio": "2026-11-12",
-   "fecha_fin": "2026-11-19",
-   "hora": "20:30",
-   "horario": "Jueves a las 20:30",
-   "lugar": "Teatro Mori Parque Arauco",
-   "direccion": "Av. Kennedy 5413",
-   "comuna": "Las Condes",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Show de comedia y stand-up en Teatro Mori Parque Arauco.",
-   "imagen": "https://telonticket.cl/wp-content/uploads/2026/09/1-75.jpg",
-   "fotos": null,
-   "url": "https://telonticket.cl",
-   "fuentes": [
-    {
-     "nombre": "Telon Ticket",
-     "url": "https://telonticket.cl/mep_cat/standup/"
-    },
-    {
-     "nombre": "Teatro Mori",
-     "url": "https://teatromori.com/cartelera"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "83456c4dea",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-18"
   },
@@ -4265,7 +4219,7 @@
    "origen": "ia",
    "id": "318a44c02c",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-14"
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "Macho alfa en terapia",
@@ -4295,7 +4249,7 @@
    "origen": "ia",
    "id": "725888a999",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-14"
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "Amantes, Una Vez al Año",
@@ -4329,7 +4283,7 @@
    "origen": "datos-estructurados",
    "id": "8aaa55bd85",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-19"
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "Diego Urrutia - Detonado",
@@ -4609,7 +4563,7 @@
    "origen": "datos-estructurados",
    "id": "4bf4666253",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-18"
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "Amantes, parejas disparejas",
@@ -4920,7 +4874,7 @@
    "origen": "ia",
    "id": "af4c1f23e9",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-18"
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "Elektra",
@@ -5021,44 +4975,6 @@
    "actualizado": "2026-11-14"
   },
   {
-   "titulo": "El Barbero de Sevilla",
-   "categoria": "teatro",
-   "fecha_inicio": "2026-11-18",
-   "fecha_fin": "2026-11-19",
-   "hora": "19:00",
-   "horario": "18 y 19 de noviembre a las 19:00 horas",
-   "lugar": "Teatro Municipal de Viña del Mar",
-   "direccion": null,
-   "comuna": "Viña del Mar",
-   "ciudad": "Viña del Mar",
-   "region": "Región de Valparaíso",
-   "precio": "Gratis",
-   "descripcion": "La Ópera de Cámara del Teatro Municipal de Santiago presenta la clásica ópera de Rossini en Viña del Mar con entrada liberada.",
-   "imagen": "https://img.lahora.cl/upload/2026/11/17161D524C42456D14170F55504944711F121C1853404477101E.jpg",
-   "fotos": null,
-   "url": "https://lahora.cl/cultura/2026/11/11/el-barbero-de-sevilla-llega-gratis-a-vina-del-mar-y-chillan-en-noviembre/",
-   "fuentes": [
-    {
-     "nombre": "Diario La Hora",
-     "url": "https://lahora.cl/cultura/2026/11/11/el-barbero-de-sevilla-llega-gratis-a-vina-del-mar-y-chillan-en-noviembre/"
-    },
-    {
-     "nombre": "La Cuarta",
-     "url": "https://www.lacuarta.com/tendencias/noticia/opera-gratis-y-de-calidad-anuncian-presentaciones-gratuitas-de-el-barbero-de-sevilla-en-dos-regiones-del-pais/"
-    },
-    {
-     "nombre": "tvn.cl",
-     "url": "https://www.tvn.cl/actualidad-y-tendencias/tendencias/con-entradas-gratuitas-teatro-municipal-de-santiago-llevara-el-barbero-de"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "fb090519e2",
-   "agregado": "2026-11-11",
-   "actualizado": "2026-11-14"
-  },
-  {
    "titulo": "La nave de los locos y locOnas",
    "categoria": "teatro",
    "fecha_inicio": "2026-11-18",
@@ -5086,7 +5002,7 @@
    "origen": "ia",
    "id": "48f48a81f6",
    "agregado": "2026-11-16",
-   "actualizado": "2026-11-18"
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "¡Parlamento!",
@@ -5120,7 +5036,7 @@
    "origen": "ia",
    "id": "f219320f0e",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-18"
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "Cazadores de Agua",
@@ -5154,53 +5070,7 @@
    "origen": "ia",
    "id": "123c03116b",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-19"
-  },
-  {
-   "titulo": "Karol Blum – Popurrí",
-   "categoria": "teatro",
-   "fecha_inicio": "2026-11-18",
-   "fecha_fin": "2026-11-19",
-   "hora": "20:00",
-   "horario": "Funciones: 18 y 19 de noviembre",
-   "lugar": "Centro Cultural Mallinkrodt 76",
-   "direccion": "Providencia, Barrio Bellavista",
-   "comuna": "Providencia",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Desde $20.000",
-   "descripcion": "“Popurrí es un espectáculo unipersonal de comedia donde una mujer intenta sobrevivir a una jornada en la que todo parece reclamar su atención al mismo tiempo; sus hijos, su expareja, su madre y un trabajo que le exige sonreír mientras todo",
-   "imagen": "https://www.sangines.cl/wp-content/uploads/2026/09/640x640_POPURRI.jpg",
-   "fotos": null,
-   "url": "https://www.sangines.cl/evento/karol-blum-popurri/",
-   "fuentes": [
-    {
-     "nombre": "Teatro San Ginés",
-     "url": "https://www.sangines.cl/"
-    },
-    {
-     "nombre": "sangines.cl",
-     "url": "https://www.sangines.cl/cartelera/"
-    },
-    {
-     "nombre": "Telon Ticket",
-     "url": "https://telonticket.cl/mep_cat/standup/"
-    },
-    {
-     "nombre": "Veamos.cl",
-     "url": "https://veamos.cl/agenda/standup"
-    },
-    {
-     "nombre": "TelonTicket (teatro)",
-     "url": "https://telonticket.cl/mep_cat/teatro/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "datos-estructurados",
-   "id": "3ade752ddb",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-19"
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "Que le corten la cabeza",
@@ -5233,37 +5103,6 @@
    "actualizado": "2026-11-18"
   },
   {
-   "titulo": "Llenando de Cumbia La Primavera: Orquesta La Belira + Cumbia Choriza Se Toman La Maestra Vida",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-18",
-   "fecha_fin": "2026-11-19",
-   "hora": "23:30",
-   "horario": null,
-   "lugar": "Salsoteca Maestra Vida",
-   "direccion": null,
-   "comuna": "Recoleta",
-   "ciudad": null,
-   "region": null,
-   "precio": "Desde $6.000",
-   "descripcion": "¡Llenando de Cumbia la Primavera en Maestra Vida! Este miércoles 18 de noviembre, el templo de la bohemia santiaguina se enciende para recibir una noche inolvidable de ritmo, baile y pura gozadera. Ven a vivir el hito imperdible de la tempo",
-   "imagen": "https://img.vamoh.cl/events/10c86fba-a313-42a8-8c0c-243a29a4a885.webp?v=7675f3cc",
-   "fotos": null,
-   "url": "https://vamoh.cl/events/llenando-de-cumbia-la-primavera-orquesta-la-belira-cumbia-choriza-se-toman-la-maestra-vida-leby7/",
-   "fuentes": [
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/llenando-de-cumbia-la-primavera-orquesta-la-belira-cumbia-choriza-se-toman-la-maestra-vida-leby7/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "datos-estructurados",
-   "id": "7d134793ac",
-   "agregado": "2026-11-18",
-   "actualizado": "2026-11-18",
-   "genero": "cumbia"
-  },
-  {
    "titulo": "Tolomiro Todomiro: escultura de Matta en La Moneda",
    "categoria": "museos",
    "fecha_inicio": "2026-11-18",
@@ -5292,41 +5131,6 @@
    "id": "20d77619ca",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-13"
-  },
-  {
-   "titulo": "Ensayo abierto: Orquesta Sinfónica ULS",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-19",
-   "fecha_fin": null,
-   "hora": "11:00",
-   "horario": null,
-   "lugar": "La Serena",
-   "direccion": null,
-   "comuna": "La Serena",
-   "ciudad": "La Serena",
-   "region": "Coquimbo",
-   "precio": "Gratis",
-   "descripcion": "Ensayo abierto de la Orquesta Sinfónica ULS cerrando su temporada con homenaje a la violista Penélope Knuth.",
-   "imagen": "https://img.vamoh.cl/events/03384852-57d3-4413-a6b6-ed1af0713333.webp?v=daeccee0",
-   "fotos": null,
-   "url": "https://www.diarioeldia.cl/noticias/2026/11/15/156906-orquesta-sinfonica-uls-cerrara-su-temporada-con-emotivo-homenaje-a-destacada-violista",
-   "fuentes": [
-    {
-     "nombre": "Diario el Día",
-     "url": "https://www.diarioeldia.cl/noticias/2026/11/15/156906-orquesta-sinfonica-uls-cerrara-su-temporada-con-emotivo-homenaje-a-destacada-violista"
-    },
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/orquesta-sinfonica-uls-ensayo-general-abierto-a-publico-la-concertante-de-mozart-qk4xd/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "21a856ef44",
-   "agregado": "2026-11-15",
-   "actualizado": "2026-11-17",
-   "genero": "clasica"
   },
   {
    "titulo": "VIII Concierto de Temporada: La Concertante de Mozart",
@@ -5360,315 +5164,6 @@
    "genero": "clasica"
   },
   {
-   "titulo": "Orquesta Popular: Tangos, boleros y vals",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-19",
-   "fecha_fin": null,
-   "hora": "13:30",
-   "horario": null,
-   "lugar": "Campus San Joaquín",
-   "direccion": null,
-   "comuna": "Macul",
-   "ciudad": null,
-   "region": null,
-   "precio": "Gratis",
-   "descripcion": "Lugar: Complejo Andrónico Luksic Abaroa Este programa te invita a pasear por algunos de los géneros más emblemáticos de la música popular latinoamericana, reuniendo obras que han acompañado generaciones de oyentes a través de historias de a",
-   "imagen": "https://img.vamoh.cl/events/f28ebfd6-3575-4fbc-a9ec-57037c8faf4d.webp?v=77d2bb2b",
-   "fotos": null,
-   "url": "https://vamoh.cl/events/orquesta-popular-tangos-boleros-y-vals-m6duz/",
-   "fuentes": [
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/orquesta-popular-tangos-boleros-y-vals-m6duz/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "datos-estructurados",
-   "id": "2d0d9f7f7e",
-   "agregado": "2026-11-14",
-   "actualizado": "2026-11-14",
-   "genero": "folclor"
-  },
-  {
-   "titulo": "Orquesta Marga Marga",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-19",
-   "fecha_fin": null,
-   "hora": "15:00",
-   "horario": null,
-   "lugar": "Museo Palacio Vergara",
-   "direccion": null,
-   "comuna": "Viña Del Mar",
-   "ciudad": null,
-   "region": null,
-   "precio": "Gratis",
-   "descripcion": "Ecos de una creación, con el Guitarrista César Farías La música nos invita a descubrir nuevos paisajes sonoros en un encuentro donde la sensibilidad, la creatividad y la riqueza de la música de cámara se unen para regalarnos una experiencia",
-   "imagen": "https://img.vamoh.cl/events/a1041224-8290-400d-8ae2-a7a840e11b1d.webp?v=9ad0e184",
-   "fotos": null,
-   "url": "https://vamoh.cl/events/orquesta-marga-marga-6lyfq/",
-   "fuentes": [
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/orquesta-marga-marga-6lyfq/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "datos-estructurados",
-   "id": "fe3b758f71",
-   "agregado": "2026-11-14",
-   "actualizado": "2026-11-14",
-   "genero": "clasica"
-  },
-  {
-   "titulo": "Chile imaginar Chile. Lectura poética",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-19",
-   "fecha_fin": null,
-   "hora": "18:30",
-   "horario": null,
-   "lugar": "Museo Chileno de Arte Precolombino",
-   "direccion": "Bandera 361",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Lectura poética presencial que invita a reflexionar sobre el territorio y la identidad en el Museo Precolombino.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://museo.precolombino.cl/exposiciones-cartelera/cartelera/",
-   "fuentes": [
-    {
-     "nombre": "Museo Chileno de Arte Precolombino",
-     "url": "https://museo.precolombino.cl/exposiciones-cartelera/cartelera/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "e49c62fcbc",
-   "agregado": "2026-11-16",
-   "actualizado": "2026-11-16"
-  },
-  {
-   "titulo": "Jazz en el Montecarmelo: V Festival de Bandas Santa Cecilia",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-19",
-   "fecha_fin": null,
-   "hora": "18:30",
-   "horario": null,
-   "lugar": "Sala Capilla Centro Cultural Montecarmelo",
-   "direccion": "Bellavista 0594",
-   "comuna": "Providencia",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratis",
-   "descripcion": "El encuentro se realizará el jueves 19 de noviembre, a las 18:30 horas, en el Centro Cultural Montecarmelo de Providencia. La actividad será gratuita y abierta a toda la comunidad. En el marco del Día Internacional del Músico, el próximo ju",
-   "imagen": "https://img.vamoh.cl/events/0d39f7ec-d94d-41f2-8157-d894afd63e97.webp?v=acd9f51c",
-   "fotos": null,
-   "url": "https://vamoh.cl/events/jazz-en-el-montecarmelo-v-festival-de-bandas-santa-cecilia-6w7ub/",
-   "fuentes": [
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/jazz-en-el-montecarmelo-v-festival-de-bandas-santa-cecilia-6w7ub/"
-    },
-    {
-     "nombre": "ColorFans",
-     "url": "https://colorfans.cl/eventos/santiago/noviembre-2026/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "datos-estructurados",
-   "id": "180b8faca6",
-   "agregado": "2026-11-14",
-   "actualizado": "2026-11-19",
-   "genero": "jazz"
-  },
-  {
-   "titulo": "A Rey Muerto y Rock and Road",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-19",
-   "fecha_fin": null,
-   "hora": "19:00",
-   "horario": null,
-   "lugar": "Casa en el Aire",
-   "direccion": null,
-   "comuna": "Providencia",
-   "ciudad": "Santiago",
-   "region": null,
-   "precio": "Desde $3.000",
-   "descripcion": "Tocata de rock con A Rey Muerto y Rock and Road.",
-   "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/todorockspa/DetvHI1Tb2D_0.jpg",
-   "fotos": null,
-   "url": "https://salirsantiago.com/panorama/tocata-thrash-metal-street-punk-f7779f0c",
-   "fuentes": [
-    {
-     "nombre": "Salir Santiago",
-     "url": "https://salirsantiago.com/panorama/tocata-thrash-metal-street-punk-f7779f0c"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "bdc95842cd",
-   "agregado": "2026-11-11",
-   "actualizado": "2026-11-11",
-   "genero": "rock"
-  },
-  {
-   "titulo": "Exposición “Territorio Sensible: La expresión del paisaje y la figura” de Peter Pollak",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-19",
-   "fecha_fin": null,
-   "hora": "19:00",
-   "horario": null,
-   "lugar": "Galería La Sala",
-   "direccion": null,
-   "comuna": "Vitacura",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratis",
-   "descripcion": "Muestra de pintura del artista visual chileno Peter Pollak que reúne obras inspiradas en la naturaleza, paisajes y figura humana.",
-   "imagen": "https://assets.radioagricultura.cl/2026/11/Cedida5-1024x538.png",
-   "fotos": null,
-   "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/exposicion-gratuita-en-santiago-peter-pollak-presenta-sus-pinturas-inspiradas-en-paisajes-y-figuras-humanas_20261116/",
-   "fuentes": [
-    {
-     "nombre": "Home - Radio Agricultura",
-     "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/exposicion-gratuita-en-santiago-peter-pollak-presenta-sus-pinturas-inspiradas-en-paisajes-y-figuras-humanas_20261116/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "3cad5e2902",
-   "agregado": "2026-11-17",
-   "actualizado": "2026-11-17"
-  },
-  {
-   "titulo": "League Challenge - Pokémon TCG",
-   "categoria": "juegos",
-   "fecha_inicio": "2026-11-19",
-   "fecha_fin": null,
-   "hora": "19:00",
-   "horario": null,
-   "lugar": "Samurai TCG",
-   "direccion": null,
-   "comuna": "Providencia",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Torneo oficial League Challenge de Pokémon TCG en Samurai TCG, Providencia.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://www.torneostcg.cl/region-metropolitana/torneos/pokemon-tcg",
-   "fuentes": [
-    {
-     "nombre": "TorneosTCG",
-     "url": "https://www.torneostcg.cl/region-metropolitana/torneos/pokemon-tcg"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "5d1f67b319",
-   "agregado": "2026-11-16",
-   "actualizado": "2026-11-16"
-  },
-  {
-   "titulo": "Sicalípticas: Cabaret Galáctico",
-   "categoria": "standup",
-   "fecha_inicio": "2026-11-19",
-   "fecha_fin": null,
-   "hora": "19:00",
-   "horario": null,
-   "lugar": "Teatro Fábrica",
-   "direccion": null,
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Show de comedia y cabaret con tintes galácticos en Teatro Fábrica.",
-   "imagen": "https://colorfans.cl/wp-content/uploads/2026/10/rf-48964-sicalipticas-cabaret-galactico-teatro-fa-227d6b.webp",
-   "fotos": null,
-   "url": "https://colorfans.cl/eventos/santiago/noviembre-2026/",
-   "fuentes": [
-    {
-     "nombre": "ColorFans",
-     "url": "https://colorfans.cl/eventos/santiago/noviembre-2026/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "media",
-   "origen": "ia",
-   "id": "83237968a2",
-   "agregado": "2026-11-19",
-   "actualizado": "2026-11-19"
-  },
-  {
-   "titulo": "Sonidos en expansión: Concierto final del ensamble de egreso del área de música de ESAM",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-19",
-   "fecha_fin": null,
-   "hora": "19:00",
-   "horario": null,
-   "lugar": "Auditorio Municipal de Maipú",
-   "direccion": null,
-   "comuna": "Maipú",
-   "ciudad": null,
-   "region": null,
-   "precio": "Gratis",
-   "descripcion": "🎶 ¡Te invitamos al Concierto de Egreso del Área de Música de ESAM! Después de años de aprendizaje, ensayos y mucha música, llega el momento de subir al escenario y compartir todo lo aprendido. Las y los estudiantes que finalizan su formació",
-   "imagen": "https://img.vamoh.cl/events/4cbaa66a-9149-4a77-a936-6086fc941adb.webp?v=b7f0f9e1",
-   "fotos": null,
-   "url": "https://vamoh.cl/events/sonidos-en-expansion-concierto-final-del-ensamble-de-egreso-del-area-de-musica-de-esam-rxu0e/",
-   "fuentes": [
-    {
-     "nombre": "VAMOH!",
-     "url": "https://vamoh.cl/events/sonidos-en-expansion-concierto-final-del-ensamble-de-egreso-del-area-de-musica-de-esam-rxu0e/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "datos-estructurados",
-   "id": "669d9de44e",
-   "agregado": "2026-11-14",
-   "actualizado": "2026-11-14",
-   "genero": "clasica"
-  },
-  {
-   "titulo": "Liga VGC - Fecha 3",
-   "categoria": "juegos",
-   "fecha_inicio": "2026-11-19",
-   "fecha_fin": null,
-   "hora": "19:15",
-   "horario": null,
-   "lugar": "Trainers League",
-   "direccion": null,
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratis",
-   "descripcion": "Torneo de videojuegos Pokémon VGC regulación MC en Trainers League.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://www.trainersleague.cl/eventos",
-   "fuentes": [
-    {
-     "nombre": "trainersleague.cl",
-     "url": "https://www.trainersleague.cl/eventos"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "20373f4e45",
-   "agregado": "2026-11-17",
-   "actualizado": "2026-11-17"
-  },
-  {
    "titulo": "Cambio de turno",
    "categoria": "teatro",
    "fecha_inicio": "2026-11-19",
@@ -5696,7 +5191,7 @@
    "origen": "ia",
    "id": "eb61da4f37",
    "agregado": "2026-11-16",
-   "actualizado": "2026-11-18"
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "Ensayo sobre el descanso",
@@ -5726,67 +5221,7 @@
    "origen": "ia",
    "id": "41a6c9cf15",
    "agregado": "2026-11-16",
-   "actualizado": "2026-11-18"
-  },
-  {
-   "titulo": "Hector Monki stand up el capitalino",
-   "categoria": "standup",
-   "fecha_inicio": "2026-11-19",
-   "fecha_fin": null,
-   "hora": "19:30",
-   "horario": null,
-   "lugar": null,
-   "direccion": null,
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
-   "precio": null,
-   "descripcion": "Descubre Hector Monki stand up el capitalino en Keai. Evento en Providencia el 19/11/2026.",
-   "imagen": "https://cdn.keai.cl/events/21021-c0438302f636cac2fe35838ea0f5e1c0.jpg",
-   "fotos": null,
-   "url": "https://keai.cl/evento/hector-monki-stand-up-el-capitalino-21021",
-   "fuentes": [
-    {
-     "nombre": "Keai",
-     "url": "https://keai.cl/evento/hector-monki-stand-up-el-capitalino-21021"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "datos-estructurados",
-   "id": "1c8c0bc185",
-   "agregado": "2026-11-19",
-   "actualizado": "2026-11-19"
-  },
-  {
-   "titulo": "Pedro Ruminot en Vivo",
-   "categoria": "standup",
-   "fecha_inicio": "2026-11-19",
-   "fecha_fin": null,
-   "hora": "19:30",
-   "horario": null,
-   "lugar": "Comedy",
-   "direccion": null,
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Nuevo show de stand-up comedy a cargo de Pedro Ruminot.",
-   "imagen": "https://colorfans.cl/wp-content/uploads/2026/11/rf-63742-pedro-ruminot-comedy-19-noviembre-2026-dd7eb9.webp",
-   "fotos": null,
-   "url": "https://colorfans.cl/eventos/santiago/noviembre-2026/",
-   "fuentes": [
-    {
-     "nombre": "ColorFans",
-     "url": "https://colorfans.cl/eventos/santiago/noviembre-2026/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "3ea02a0a8a",
-   "agregado": "2026-11-19",
-   "actualizado": "2026-11-19"
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "Anthology – Sinfónico: The Beetles con Orquesta Filodramática",
@@ -5828,131 +5263,6 @@
    "genero": "clasica"
   },
   {
-   "titulo": "Hwang In Youp - To You 2026",
-   "categoria": "anime",
-   "fecha_inicio": "2026-11-19",
-   "fecha_fin": null,
-   "hora": "20:00",
-   "horario": null,
-   "lugar": "Teatro Caupolicán",
-   "direccion": "San Diego 850",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Metropolitana",
-   "precio": "desde $52.900",
-   "descripcion": "Encuentro con el actor y cantante coreano Hwang In Youp en su gira To You 2026.",
-   "imagen": "https://static.ptocdn.net/images/eventos/aas001v2_rs.jpg",
-   "fotos": null,
-   "url": "https://quehacerchile.cl/conciertos/anime/",
-   "fuentes": [
-    {
-     "nombre": "QuéHacer Chile",
-     "url": "https://quehacerchile.cl/conciertos/anime/"
-    },
-    {
-     "nombre": "PuntoTicket",
-     "url": "https://www.puntoticket.com/inyoup-tour"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "a6a9a8f937",
-   "agregado": "2026-11-12",
-   "actualizado": "2026-11-15"
-  },
-  {
-   "titulo": "Nano Stern en La Serena",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-19",
-   "fecha_fin": null,
-   "hora": "20:00",
-   "horario": null,
-   "lugar": "Teatro Vive Centenario",
-   "direccion": null,
-   "comuna": "La Serena",
-   "ciudad": "La Serena",
-   "region": "Coquimbo",
-   "precio": null,
-   "descripcion": "Presentación musical en vivo del cantautor chileno Nano Stern en el Teatro Vive Centenario de La Serena.",
-   "imagen": "https://colorfans.cl/wp-content/uploads/2026/10/rf-15813-nano-stern-teatro-vive-centenario-la-ser-175c76.webp",
-   "fotos": null,
-   "url": "https://colorfans.cl/evento/kizunafest-spooky-yokai-parque-pedro-de-valdivia-31-octubre-2026/",
-   "fuentes": [
-    {
-     "nombre": "ColorFans",
-     "url": "https://colorfans.cl/evento/kizunafest-spooky-yokai-parque-pedro-de-valdivia-31-octubre-2026/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "7dfe56fe94",
-   "agregado": "2026-11-15",
-   "actualizado": "2026-11-15",
-   "genero": "folclor"
-  },
-  {
-   "titulo": "Pastor Rocha en Valdivia",
-   "categoria": "standup",
-   "fecha_inicio": "2026-11-19",
-   "fecha_fin": null,
-   "hora": "20:00",
-   "horario": null,
-   "lugar": null,
-   "direccion": null,
-   "comuna": "Valdivia",
-   "ciudad": "Valdivia",
-   "region": "Los Ríos",
-   "precio": null,
-   "descripcion": "Show de stand-up comedy de Pastor Rocha en Valdivia.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://lacomedia.cl/eventos/",
-   "fuentes": [
-    {
-     "nombre": "lacomedia.cl",
-     "url": "https://lacomedia.cl/eventos/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "6e990735bf",
-   "agregado": "2026-11-18",
-   "actualizado": "2026-11-18"
-  },
-  {
-   "titulo": "Show de Comedia improvisada: Moyita y Pankeke",
-   "categoria": "teatro",
-   "fecha_inicio": "2026-11-19",
-   "fecha_fin": null,
-   "hora": "20:00",
-   "horario": "Jueves 19 de noviembre a las 20:00",
-   "lugar": "Teatro Ictus, Sala La Comedia",
-   "direccion": null,
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratis",
-   "descripcion": "Show de comedia improvisada en Sala La Comedia de Teatro Ictus.",
-   "imagen": "https://telonticket.cl/wp-content/uploads/2026/03/1-70.jpg",
-   "fotos": null,
-   "url": "https://telonticket.cl/",
-   "fuentes": [
-    {
-     "nombre": "Telon Ticket",
-     "url": "https://telonticket.cl/mep_cat/impro/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "1f764cab94",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-18"
-  },
-  {
    "titulo": "Estampida humana",
    "categoria": "teatro",
    "fecha_inicio": "2026-11-19",
@@ -5981,37 +5291,6 @@
    "id": "44078a5fa4",
    "agregado": "2026-11-16",
    "actualizado": "2026-11-18"
-  },
-  {
-   "titulo": "Cantautorxs en Cuarentena: Ani del Mar y más",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-19",
-   "fecha_fin": null,
-   "hora": "21:00",
-   "horario": null,
-   "lugar": "Darkolics",
-   "direccion": null,
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratis",
-   "descripcion": "Tocata de cantautorxs con Ani del Mar en Darkolics.",
-   "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/darkolicsoficial/DfUl6VZxclR_0.jpg",
-   "fotos": null,
-   "url": "https://salirsantiago.com/panoramas/jam-open-mic",
-   "fuentes": [
-    {
-     "nombre": "Salir Santiago",
-     "url": "https://salirsantiago.com/panoramas/jam-open-mic"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "d9487d57d1",
-   "agregado": "2026-11-18",
-   "actualizado": "2026-11-18",
-   "genero": "indie"
   },
   {
    "titulo": "Ciro Apl en Cantina la Chimba",
@@ -6043,68 +5322,6 @@
    "agregado": "2026-11-17",
    "actualizado": "2026-11-17",
    "genero": "otros"
-  },
-  {
-   "titulo": "Cries + Defragment",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-19",
-   "fecha_fin": null,
-   "hora": "21:00",
-   "horario": null,
-   "lugar": "Bar de René",
-   "direccion": "Santa Isabel 0369",
-   "comuna": "Providencia",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Concierto de rock en vivo con las bandas Cries y Defragment en el clásico Bar de René.",
-   "imagen": "https://colorfans.cl/wp-content/uploads/2026/10/rf-16114-cries-defragment-bar-de-rene-19-noviembr-131495.webp",
-   "fotos": null,
-   "url": "https://colorfans.cl/eventos/santiago/noviembre-2026/",
-   "fuentes": [
-    {
-     "nombre": "ColorFans",
-     "url": "https://colorfans.cl/eventos/santiago/noviembre-2026/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "508dead702",
-   "agregado": "2026-11-19",
-   "actualizado": "2026-11-19",
-   "genero": "rock"
-  },
-  {
-   "titulo": "Fiskales Ad Hok 31 Años de Traga",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-19",
-   "fecha_fin": null,
-   "hora": "21:00",
-   "horario": null,
-   "lugar": "MiBar",
-   "direccion": "Santa Isabel 0350",
-   "comuna": "Providencia",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Concierto de la legendaria banda de punk rock Fiskales Ad Hok celebrando 31 años del disco Traga.",
-   "imagen": "https://colorfans.cl/wp-content/uploads/2026/10/rf-46758-fiskales-ad-hok-31-anos-de-traga-mibar-1-c70f2e.webp",
-   "fotos": null,
-   "url": "https://colorfans.cl/eventos/santiago/noviembre-2026/",
-   "fuentes": [
-    {
-     "nombre": "ColorFans",
-     "url": "https://colorfans.cl/eventos/santiago/noviembre-2026/"
-    }
-   ],
-   "desde_imagen": true,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "980f0410d4",
-   "agregado": "2026-11-19",
-   "actualizado": "2026-11-19",
-   "genero": "rock"
   },
   {
    "titulo": "Hard & Dark en Rockstar Stage",
@@ -6231,98 +5448,6 @@
    "genero": "metal"
   },
   {
-   "titulo": "Milonga Jueves en Teatro Cachafaz",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-19",
-   "fecha_fin": null,
-   "hora": "21:00",
-   "horario": null,
-   "lugar": "Teatro Cachafaz",
-   "direccion": "Av. Italia #1679",
-   "comuna": "Ñuñoa",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Música en vivo de tango junto a Jaime Molina, Matías Velázquez y Nicolás Ibarra en Teatro Cachafaz.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://www.elcachafaz.cl/",
-   "fuentes": [
-    {
-     "nombre": "El Cachafaz",
-     "url": "https://www.elcachafaz.cl/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "47566d8f4e",
-   "agregado": "2026-11-19",
-   "actualizado": "2026-11-19",
-   "genero": "folclor"
-  },
-  {
-   "titulo": "Ventrial y Forzaken",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-19",
-   "fecha_fin": null,
-   "hora": "21:00",
-   "horario": null,
-   "lugar": "House Rock & Blues",
-   "direccion": "Rosre 586",
-   "comuna": "Ñuñoa",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Noche de rock y metal en vivo con las bandas Ventrial y Forzaken.",
-   "imagen": "https://colorfans.cl/wp-content/uploads/2026/10/rf-45885-ventrial-y-forzaken-house-rock-blues-19--0dabb5.webp",
-   "fotos": null,
-   "url": "https://colorfans.cl/eventos/santiago/noviembre-2026/",
-   "fuentes": [
-    {
-     "nombre": "ColorFans",
-     "url": "https://colorfans.cl/eventos/santiago/noviembre-2026/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "ed857b910c",
-   "agregado": "2026-11-19",
-   "actualizado": "2026-11-19",
-   "genero": "metal"
-  },
-  {
-   "titulo": "Checho Hirane: Ni facho ni comunacho",
-   "categoria": "standup",
-   "fecha_inicio": "2026-11-19",
-   "fecha_fin": null,
-   "hora": "21:30",
-   "horario": null,
-   "lugar": "Casa Tudor",
-   "direccion": null,
-   "comuna": "Talagante",
-   "ciudad": "Talagante",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Show de stand-up comedy de Checho Hirane en Casa Tudor, Talagante.",
-   "imagen": "https://pmc5mmx4n3rfjmwd.public.blob.vercel-storage.com/events/ig-full/Det2OnKR3CY.jpg",
-   "fotos": null,
-   "url": "https://eventospaloma.cl/panoramas/stand-up",
-   "fuentes": [
-    {
-     "nombre": "Paloma",
-     "url": "https://eventospaloma.cl/panoramas/stand-up"
-    }
-   ],
-   "desde_imagen": true,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "b8515a965f",
-   "agregado": "2026-11-19",
-   "actualizado": "2026-11-19"
-  },
-  {
    "titulo": "Stand Up Comedy con Che Copete y Marlen Olivari en Ruta 78",
    "categoria": "standup",
    "fecha_inicio": "2026-11-19",
@@ -6351,68 +5476,6 @@
    "id": "41110424f6",
    "agregado": "2026-11-19",
    "actualizado": "2026-11-19"
-  },
-  {
-   "titulo": "Jam Session",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-19",
-   "fecha_fin": null,
-   "hora": "21:45",
-   "horario": null,
-   "lugar": "Club de Jazz de Santiago",
-   "direccion": null,
-   "comuna": "La Reina",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Desde $8.000",
-   "descripcion": "Jam session en vivo en el Club de Jazz de Santiago.",
-   "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/clubdejazz.santiago/DfQmHQNFSdI_0.jpg",
-   "fotos": null,
-   "url": "https://salirsantiago.com/panoramas/jam-open-mic",
-   "fuentes": [
-    {
-     "nombre": "Salir Santiago",
-     "url": "https://salirsantiago.com/panoramas/jam-open-mic"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "ec3385e8b0",
-   "agregado": "2026-11-18",
-   "actualizado": "2026-11-18",
-   "genero": "jazz"
-  },
-  {
-   "titulo": "RUMBA Full Ultrabailable",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-19",
-   "fecha_fin": null,
-   "hora": "23:00",
-   "horario": null,
-   "lugar": "Club Subterráneo",
-   "direccion": "Paseo Orrego Luco 46",
-   "comuna": "Providencia",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Entre $11.200 y $16.800",
-   "descripcion": "Fiesta y música en vivo con lo mejor de la cumbia y la electrónica en Club Subterráneo.",
-   "imagen": "https://colorfans.cl/wp-content/uploads/2026/10/rf-52898-rumba-full-ultrabailable-club-subterrane-69be65.webp",
-   "fotos": null,
-   "url": "https://colorfans.cl/eventos/santiago/noviembre-2026/",
-   "fuentes": [
-    {
-     "nombre": "ColorFans",
-     "url": "https://colorfans.cl/eventos/santiago/noviembre-2026/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "2ea66e8fec",
-   "agregado": "2026-11-19",
-   "actualizado": "2026-11-19",
-   "genero": "electronica"
   },
   {
    "titulo": "Almighty en Chile Tour",
@@ -6446,66 +5509,6 @@
    "genero": "trap"
   },
   {
-   "titulo": "Alteradita: Un show de Lis La Cubana en Talca",
-   "categoria": "standup",
-   "fecha_inicio": "2026-11-19",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": null,
-   "lugar": null,
-   "direccion": null,
-   "comuna": "Talca",
-   "ciudad": "Talca",
-   "region": "Maule",
-   "precio": null,
-   "descripcion": "Show de stand-up comedy de Lis La Cubana.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://lacomedia.cl/eventos/",
-   "fuentes": [
-    {
-     "nombre": "lacomedia.cl",
-     "url": "https://lacomedia.cl/eventos/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "3734eaff08",
-   "agregado": "2026-11-18",
-   "actualizado": "2026-11-18"
-  },
-  {
-   "titulo": "Bombo Fica - En La Diabla Bar",
-   "categoria": "standup",
-   "fecha_inicio": "2026-11-19",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": null,
-   "lugar": "La Diabla Bar - San Felipe",
-   "direccion": null,
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
-   "precio": null,
-   "descripcion": "Show de humor del reconocido comediante chileno Bombo Fica.",
-   "imagen": "https://static.ptocdn.net/event-resources/images/IVE005_calugalistado.webp?v=1792592947",
-   "fotos": null,
-   "url": "https://www.puntoticket.com/evento/bombo-fica-en-la-diabla-bar",
-   "fuentes": [
-    {
-     "nombre": "PuntoTicket",
-     "url": "https://www.puntoticket.com/evento/bombo-fica-en-la-diabla-bar"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ticketera",
-   "id": "8e73086388",
-   "agregado": "2026-11-15",
-   "actualizado": "2026-11-15"
-  },
-  {
    "titulo": "Chistes de Chile",
    "categoria": "teatro",
    "fecha_inicio": "2026-11-19",
@@ -6534,37 +5537,6 @@
    "id": "0e063604e5",
    "agregado": "2026-11-13",
    "actualizado": "2026-11-13"
-  },
-  {
-   "titulo": "Concierto poético-teatral Mistral: Gabriela y yo",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-19",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": null,
-   "lugar": "Centro Cultural Carabineros de Chile",
-   "direccion": "1605 Vasconia",
-   "comuna": "Providencia",
-   "ciudad": null,
-   "region": null,
-   "precio": null,
-   "descripcion": "Ven a disfrutar un montaje único de poesía y teatro inspirada en Gabriela Mistral que te va a emocionar.",
-   "imagen": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1196609788%2F1170662714273%2F1%2Foriginal.20261026-164340?crop=focalpoint&fit=crop&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=d00739f6d7eba2291d2bbc91b7ad3728",
-   "fotos": null,
-   "url": "https://www.eventbrite.cl/e/concierto-poetico-teatral-mistral-gabriela-y-yo-tickets-2003929487040",
-   "fuentes": [
-    {
-     "nombre": "Eventbrite",
-     "url": "https://www.eventbrite.cl/d/chile--santiago/all-events/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "datos-estructurados",
-   "id": "3780d0e660",
-   "agregado": "2026-11-15",
-   "actualizado": "2026-11-19",
-   "genero": "otros"
   },
   {
    "titulo": "Crónicas Desquiciadas",
@@ -6628,7 +5600,7 @@
    "origen": "datos-estructurados",
    "id": "7748de9020",
    "agregado": "2026-11-17",
-   "actualizado": "2026-11-19"
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "Exposición El universo de Matta",
@@ -6691,76 +5663,6 @@
    "actualizado": "2026-11-19"
   },
   {
-   "titulo": "Kakkmaddafakka",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-19",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": null,
-   "lugar": "Club Chocolate",
-   "direccion": "Ernesto Pinto Lagarrigue 192",
-   "comuna": "Recoleta",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Concierto en vivo de Kakkmaddafakka en Club Chocolate.",
-   "imagen": "https://latamenvivo.com/assets/img/photos/kakkmaddafakka-card.webp",
-   "fotos": null,
-   "url": "https://latamenvivo.com/ciudades/santiago/",
-   "fuentes": [
-    {
-     "nombre": "LatamEnVivo",
-     "url": "https://latamenvivo.com/ciudades/santiago/"
-    },
-    {
-     "nombre": "songkick.com",
-     "url": "https://www.songkick.com/es/metro-areas/27525-chile-santiago/genre/indie-alternative"
-    },
-    {
-     "nombre": "songkick.com",
-     "url": "https://www.songkick.com/es/metro-areas/27525-chile-santiago/2026/genre/indie-alternative"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "5051c48d89",
-   "agregado": "2026-11-13",
-   "actualizado": "2026-11-19",
-   "genero": "indie"
-  },
-  {
-   "titulo": "La Nueva Imperial en SCD Egaña",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-19",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": null,
-   "lugar": "SCD Egaña",
-   "direccion": "Av. Larraín 5862",
-   "comuna": "La Reina",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "La Nueva Imperial presenta su último concierto del año celebrando en grande en la sala SCD Egaña.",
-   "imagen": "https://www.larata.cl/wp-content/uploads/2026/11/La-Nueva-imperial-1080x720-1.jpeg",
-   "fotos": null,
-   "url": "https://www.larata.cl/category/tocatas/",
-   "fuentes": [
-    {
-     "nombre": "La Rata",
-     "url": "https://www.larata.cl/category/tocatas/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "media",
-   "origen": "ia",
-   "id": "6bf145ad64",
-   "agregado": "2026-11-19",
-   "actualizado": "2026-11-19",
-   "genero": "folclor"
-  },
-  {
    "titulo": "Peter Pollak: Vuelve a la pintura",
    "categoria": "museos",
    "fecha_inicio": "2026-11-19",
@@ -6819,67 +5721,6 @@
    "id": "93d61d9b9d",
    "agregado": "2026-11-19",
    "actualizado": "2026-11-19"
-  },
-  {
-   "titulo": "Sesión III - Pianista Boris Giltburg (Sonatas Beethoven)",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-19",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": null,
-   "lugar": "Teatro Municipal de Santiago",
-   "direccion": "Agustinas 794",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Desde $3.500",
-   "descripcion": "El pianista Boris Giltburg interpreta sonatas tempranas de Beethoven y la emblemática Claro de luna.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://municipal.cl/",
-   "fuentes": [
-    {
-     "nombre": "Teatro Municipal de Santiago",
-     "url": "https://municipal.cl/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "b600cb603a",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-19",
-   "genero": "clasica"
-  },
-  {
-   "titulo": "Visitas guiadas CEAC / Gran Sala Sinfónica Nacional",
-   "categoria": "museos",
-   "fecha_inicio": "2026-11-19",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": null,
-   "lugar": "Centro de Extensión Artística y Cultural Universidad de Chile",
-   "direccion": "Vicuña Mackenna 20",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Desde: CLP 3.850",
-   "descripcion": "Visita guiada por el Centro de Extensión Artística y Cultural de la Universidad de Chile y la Gran Sala Sinfónica Nacional.",
-   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/338578cdaee8894b8cb4c65d386c3d1b5eee4eab.png?1793301242",
-   "fotos": null,
-   "url": "https://ticketplus.cl/companies/gran-sala-sinfonica-nacional",
-   "fuentes": [
-    {
-     "nombre": "ticketplus.cl",
-     "url": "https://ticketplus.cl/companies/gran-sala-sinfonica-nacional"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "f631018c35",
-   "agregado": "2026-11-15",
-   "actualizado": "2026-11-15"
   },
   {
    "titulo": "Concierto por el Día de la Música, con la Orquesta Filarmónica Nahuelbuta",
@@ -7199,7 +6040,7 @@
    "origen": "ia",
    "id": "1616e2fa9d",
    "agregado": "2026-11-16",
-   "actualizado": "2026-11-18"
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "Obra de teatro \"El mote con huesillos (O nuestra bebida nacional)\"",
@@ -7676,6 +6517,66 @@
    "actualizado": "2026-11-07"
   },
   {
+   "titulo": "El Sur o cómo morir en una pelea a cuchillos",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-20",
+   "fecha_fin": "2026-11-21",
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Teatro Sidarte",
+   "direccion": null,
+   "comuna": "Recoleta",
+   "ciudad": "Santiago",
+   "region": "Metropolitana",
+   "precio": null,
+   "descripcion": "Montaje de teatro chileno contemporáneo en Teatro Sidarte.",
+   "imagen": "https://telonticket.cl/wp-content/uploads/2026/11/1-13.jpg",
+   "fotos": null,
+   "url": "https://telonticket.cl/mep_cat/teatro/",
+   "fuentes": [
+    {
+     "nombre": "TelonTicket (teatro)",
+     "url": "https://telonticket.cl/mep_cat/teatro/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "611e283b7e",
+   "agregado": "2026-11-20",
+   "actualizado": "2026-11-20"
+  },
+  {
+   "titulo": "Gens",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-20",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Teatro Nescafé de las Artes",
+   "direccion": null,
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Metropolitana",
+   "precio": null,
+   "descripcion": "Función teatral en Teatro Nescafé de las Artes.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://telonticket.cl/mep_cat/teatro/",
+   "fuentes": [
+    {
+     "nombre": "TelonTicket (teatro)",
+     "url": "https://telonticket.cl/mep_cat/teatro/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "3b55394ae8",
+   "agregado": "2026-11-20",
+   "actualizado": "2026-11-20"
+  },
+  {
    "titulo": "Jorge Alís - MALÓN",
    "categoria": "standup",
    "fecha_inicio": "2026-11-20",
@@ -7765,6 +6666,36 @@
    "agregado": "2026-11-18",
    "actualizado": "2026-11-18",
    "genero": "hiphop"
+  },
+  {
+   "titulo": "Las hermanas del viento",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-20",
+   "fecha_fin": "2026-11-29",
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Teatro Centro Cultural de Las Condes",
+   "direccion": null,
+   "comuna": "Las Condes",
+   "ciudad": "Santiago",
+   "region": "Metropolitana",
+   "precio": null,
+   "descripcion": "Temporada teatral en el Centro Cultural de Las Condes.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://telonticket.cl/mep_cat/teatro/",
+   "fuentes": [
+    {
+     "nombre": "TelonTicket (teatro)",
+     "url": "https://telonticket.cl/mep_cat/teatro/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "8aa0bc02e6",
+   "agregado": "2026-11-20",
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "Los Tres Tenores Chilenos - en Concierto",
@@ -7863,7 +6794,37 @@
    "origen": "ia",
    "id": "888e0df523",
    "agregado": "2026-11-16",
-   "actualizado": "2026-11-18"
+   "actualizado": "2026-11-20"
+  },
+  {
+   "titulo": "Tres Marías y una Rosa",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-20",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Teatro Municipal de Ovalle",
+   "direccion": null,
+   "comuna": "Ovalle",
+   "ciudad": "Ovalle",
+   "region": "Coquimbo",
+   "precio": null,
+   "descripcion": "Clásico del teatro chileno en el Teatro Municipal de Ovalle.",
+   "imagen": "https://telonticket.cl/wp-content/uploads/2026/01/1-66.jpg",
+   "fotos": null,
+   "url": "https://telonticket.cl/mep_cat/teatro/",
+   "fuentes": [
+    {
+     "nombre": "TelonTicket (teatro)",
+     "url": "https://telonticket.cl/mep_cat/teatro/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "a38af78b43",
+   "agregado": "2026-11-20",
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "Concierto Jirafas del Sol y Juan Gómez",
@@ -7994,6 +6955,37 @@
    "id": "56fc8c67f7",
    "agregado": "2026-11-15",
    "actualizado": "2026-11-18"
+  },
+  {
+   "titulo": "Scharas: Lanzamiento Disco Benditos Sean los Malditos en Mibar",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-20",
+   "fecha_fin": null,
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "MIBAR",
+   "direccion": null,
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $7.000",
+   "descripcion": "Concierto de lanzamiento de disco de Scharas en Mibar.",
+   "imagen": "https://eventhoy.com/media/images/bb/bb7244213db5ff868453c33eeeef74b5b71389527bc90448d2a4685d07539355.webp",
+   "fotos": null,
+   "url": "https://eventhoy.com/categoria/fiestas",
+   "fuentes": [
+    {
+     "nombre": "EventHoy",
+     "url": "https://eventhoy.com/categoria/fiestas"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "8296e1f6c0",
+   "agregado": "2026-11-20",
+   "actualizado": "2026-11-20",
+   "genero": "rock"
   },
   {
    "titulo": "Spinetta Jazz",
@@ -8191,10 +7183,10 @@
    "horario": null,
    "lugar": "Cementerio General (Entrada por Recoleta)",
    "direccion": "Entrada Recoleta/Valdivieso, a un costado del metro Cementerios",
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
-   "precio": null,
+   "comuna": "Recoleta",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $20.000",
    "descripcion": "Paranormal de Media Noche es un recorrido especial guiado por Edson Valdivia, director de cine de terror premiado internacionalmente, en una ruta donde la noche",
    "imagen": "https://cdn.keai.cl/events/20855-7de1e2a742e67eaa741b3fff53fed687.jpg",
    "fotos": null,
@@ -8203,6 +7195,10 @@
     {
      "nombre": "Keai",
      "url": "https://keai.cl/evento/tour-nocturno-en-cementerio-general-paranormal-de-media-noche-con-edson-valdivia-viernes-20-de-septiembre-del-2026-2315-horas-20855"
+    },
+    {
+     "nombre": "EventHoy",
+     "url": "https://eventhoy.com/categoria/fiestas"
     }
    ],
    "desde_imagen": false,
@@ -8210,7 +7206,7 @@
    "origen": "datos-estructurados",
    "id": "a5aedeecb7",
    "agregado": "2026-11-17",
-   "actualizado": "2026-11-17"
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "Blues Sessions",
@@ -8319,7 +7315,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Noche de minimal y techno con la leyenda Jeff Mills en Basel Venue.",
-   "imagen": null,
+   "imagen": "https://wsrv.nl/?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fraveme-a0776.firebasestorage.app%2Fo%2Fevents%252FiQWP7iFI1LyTUXPUNw3I%252Fcover-1789049813165-h64fpndx.webp%3Falt%3Dmedia%26token%3Dd40a46f5-c5d1-4b82-a9ac-6db63872cb7b&w=3840&q=75&output=webp&we",
    "fotos": null,
    "url": "https://raveme.cl/eventos/ciudad/santiago",
    "fuentes": [
@@ -8798,6 +7794,37 @@
    "agregado": "2026-11-19",
    "actualizado": "2026-11-19",
    "genero": "metal"
+  },
+  {
+   "titulo": "Entre HipHopers Session #02",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-21",
+   "fecha_fin": null,
+   "hora": "17:00",
+   "horario": null,
+   "lugar": "Casa Entretelandia",
+   "direccion": null,
+   "comuna": "Estación Central",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "$3.000",
+   "descripcion": "Tocata y sesión de música hip hop en vivo en Casa Entretelandia.",
+   "imagen": "https://eventhoy.com/media/images/9e/9edb7bc29d342094f86f9d0184800bd4d48c05692b27505e6d4dd3938c839d2f.webp",
+   "fotos": null,
+   "url": "https://eventhoy.com/categoria/fiestas",
+   "fuentes": [
+    {
+     "nombre": "EventHoy",
+     "url": "https://eventhoy.com/categoria/fiestas"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "66612aa733",
+   "agregado": "2026-11-20",
+   "actualizado": "2026-11-20",
+   "genero": "hiphop"
   },
   {
    "titulo": "Concierto Orquesta Sinfónica de Lampa",
@@ -9689,6 +8716,10 @@
     {
      "nombre": "panoramas.app",
      "url": "https://www.panoramas.app/eventos-este-fin-de-semana"
+    },
+    {
+     "nombre": "Rock&Pop",
+     "url": "https://www.rockandpop.cl/2026/11/ed-sheeran-en-chile-2026-confirman-horarios-teloneros-y-objetos-prohibidos-para-sus-conciertos/"
     }
    ],
    "desde_imagen": false,
@@ -9696,7 +8727,7 @@
    "origen": "ia",
    "id": "b124c10a1f",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-17",
+   "actualizado": "2026-11-20",
    "genero": "pop"
   },
   {
@@ -10417,7 +9448,7 @@
    "origen": "datos-estructurados",
    "id": "5f55b6dd8f",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-19"
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "Neo Santiago",
@@ -11183,7 +10214,7 @@
    "origen": "datos-estructurados",
    "id": "3d21bb59ae",
    "agregado": "2026-11-15",
-   "actualizado": "2026-11-19",
+   "actualizado": "2026-11-20",
    "genero": "clasica"
   },
   {
@@ -11659,7 +10690,7 @@
    "origen": "datos-estructurados",
    "id": "f1d600c64d",
    "agregado": "2026-11-15",
-   "actualizado": "2026-11-19",
+   "actualizado": "2026-11-20",
    "genero": "clasica"
   },
   {
@@ -12268,7 +11299,7 @@
    "origen": "datos-estructurados",
    "id": "04fc5d9e78",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-19"
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "Indie University Party • The New Old",
@@ -13682,6 +12713,37 @@
    "actualizado": "2026-11-19"
   },
   {
+   "titulo": "Mujeres que brillan: Recital de Violín y Piano",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Colegio Alemán de La Serena",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": "CLP 4.400",
+   "descripcion": "Recital de música clásica con violín y piano interpretado en La Serena.",
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/9714ab9a5b0e48500d7e152d9e7621410e8bc36f.png?1794513518",
+   "fotos": null,
+   "url": "https://ticketplus.cl/events/mujeres-que-brillan-recital-de-violin-y-piano",
+   "fuentes": [
+    {
+     "nombre": "Ticketplus",
+     "url": "https://ticketplus.cl/events/mujeres-que-brillan-recital-de-violin-y-piano"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "bd2c0da0de",
+   "agregado": "2026-11-20",
+   "actualizado": "2026-11-20",
+   "genero": "clasica"
+  },
+  {
    "titulo": "Pedro Aznar - Una noche entre amigos",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-27",
@@ -14315,6 +13377,10 @@
     {
      "nombre": "VAMOH!",
      "url": "https://vamoh.cl/events/show-de-stand-up-las-mal-portadas-sabado-28-noviembre-19hrs-nqjj9/"
+    },
+    {
+     "nombre": "Ticketplus",
+     "url": "https://ticketplus.cl/events/show-de-stand-up-las-mal-portadas-sabado-28-noviembre-19hrs"
     }
    ],
    "desde_imagen": false,
@@ -14322,7 +13388,7 @@
    "origen": "datos-estructurados",
    "id": "37fb634040",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-14"
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "Alberto Plaza,Sinfónico,Talca",
@@ -18185,7 +17251,7 @@
    "origen": "datos-estructurados",
    "id": "e693788f4a",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-19",
+   "actualizado": "2026-11-20",
    "genero": "pop"
   },
   {
@@ -19197,7 +18263,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Obra o musical en Teatro Estudio 13.",
-   "imagen": null,
+   "imagen": "https://telonticket.cl/wp-content/uploads/2026/03/1-68.jpg",
    "fotos": null,
    "url": "https://telonticket.cl/mep_cat/musical/",
    "fuentes": [
@@ -19820,6 +18886,37 @@
    "id": "f37a507529",
    "agregado": "2026-11-14",
    "actualizado": "2026-11-14"
+  },
+  {
+   "titulo": "Kuervos del Sur en Sala Metrónomo",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-11",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Sala Metrónomo",
+   "direccion": "Ernesto Pinto Lagarrigue 179",
+   "comuna": "Recoleta",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "La banda nacional Kuervos del Sur se presenta en vivo para cerrar el año repasando los grandes éxitos de su discografía.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://linktr.ee/kuervosdelsur",
+   "fuentes": [
+    {
+     "nombre": "La Cuarta",
+     "url": "https://www.lacuarta.com/espectaculos/noticia/kuervos-del-sur-anuncia-conciertos-de-fin-de-ano-en-santiago-valparaiso-y-concepcion/"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "43b0a968a5",
+   "agregado": "2026-11-20",
+   "actualizado": "2026-11-20",
+   "genero": "rock"
   },
   {
    "titulo": "Pedro Ruminot - En La Diabla Bar",
@@ -21261,7 +20358,7 @@
    "region": "Región Metropolitana",
    "precio": "Desde: CLP 14.300",
    "descripcion": "La comediante Paloma Salas se presenta en vivo en Puente Alto.",
-   "imagen": null,
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/3793fd762a120f6689cb11eda6e7dfd97036cb25.png?1794970723",
    "fotos": null,
    "url": "https://ticketplus.cl",
    "fuentes": [
@@ -21888,7 +20985,7 @@
    "origen": "ticketera",
    "id": "6a116ac5d6",
    "agregado": "2026-11-12",
-   "actualizado": "2026-11-12"
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "Gonzalez & Los Asistentes - 25 Años Cerrado Con LLave",
@@ -21919,6 +21016,37 @@
    "id": "bdd1aeb4f4",
    "agregado": "2026-11-15",
    "actualizado": "2026-11-15",
+   "genero": "rock"
+  },
+  {
+   "titulo": "Kuervos del Sur en Trotamundos",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-18",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Trotamundos Terraza",
+   "direccion": "Aníbal Pinto 851",
+   "comuna": "Quilpué",
+   "ciudad": "Quilpué",
+   "region": "Región de Valparaíso",
+   "precio": null,
+   "descripcion": "Concierto de cierre de año de Kuervos del Sur en la Región de Valparaíso, recorriendo lo mejor de su repertorio.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://linktr.ee/kuervosdelsur",
+   "fuentes": [
+    {
+     "nombre": "La Cuarta",
+     "url": "https://www.lacuarta.com/espectaculos/noticia/kuervos-del-sur-anuncia-conciertos-de-fin-de-ano-en-santiago-valparaiso-y-concepcion/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "21411f29b3",
+   "agregado": "2026-11-20",
+   "actualizado": "2026-11-20",
    "genero": "rock"
   },
   {
@@ -22240,6 +21368,67 @@
    "agregado": "2026-11-13",
    "actualizado": "2026-11-13",
    "genero": "electronica"
+  },
+  {
+   "titulo": "Kuervos del Sur en Teatro Lihuén",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-19",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Lihuén",
+   "direccion": null,
+   "comuna": "Concepción",
+   "ciudad": "Concepción",
+   "region": "Región del Biobío",
+   "precio": null,
+   "descripcion": "Presentación en vivo de Kuervos del Sur en Concepción con un repaso por toda su discografía.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://linktr.ee/kuervosdelsur",
+   "fuentes": [
+    {
+     "nombre": "La Cuarta",
+     "url": "https://www.lacuarta.com/espectaculos/noticia/kuervos-del-sur-anuncia-conciertos-de-fin-de-ano-en-santiago-valparaiso-y-concepcion/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "7c9ec78787",
+   "agregado": "2026-11-20",
+   "actualizado": "2026-11-20",
+   "genero": "rock"
+  },
+  {
+   "titulo": "Sala de profes",
+   "categoria": "standup",
+   "fecha_inicio": "2026-12-19",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Cachafaz",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": "CLP 6.600",
+   "descripcion": "Show de comedia y stand-up en el Teatro Cachafaz.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://ticketplus.cl/events/show-de-stand-up-sala-de-profes-sabado-19-diciembre-20-30hrs",
+   "fuentes": [
+    {
+     "nombre": "Ticketplus",
+     "url": "https://ticketplus.cl/events/show-de-stand-up-sala-de-profes-sabado-19-diciembre-20-30hrs"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "32e6b410ed",
+   "agregado": "2026-11-20",
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "Ángelo Pierattini + Estoy Bien",
@@ -22862,7 +22051,7 @@
    "origen": "ticketera",
    "id": "a70cbb63d5",
    "agregado": "2026-11-12",
-   "actualizado": "2026-11-14"
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "Ser humano",
@@ -23110,9 +22299,9 @@
    "comuna": "Santiago",
    "ciudad": "Santiago",
    "region": "Región Metropolitana",
-   "precio": null,
+   "precio": "Desde $2.000",
    "descripcion": "Nueva edición del Festival Internacional Teatro a Mil con más de 90 obras de casi 20 países en Santiago y Chile.",
-   "imagen": null,
+   "imagen": "https://teatroamil.cl/media/images/Copia_de_El-invencibl.2e16d0ba.fill-1200x630.format-jpeg.jpg",
    "fotos": null,
    "url": "https://teatroamil.cl/en/",
    "fuentes": [
@@ -23126,7 +22315,7 @@
    "origen": "ia",
    "id": "812cec76d6",
    "agregado": "2026-11-12",
-   "actualizado": "2026-11-12"
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "Inauguracion Festival Antof a Mil 2027: Concierto Gratuito Banda Otra Otra",
@@ -23208,7 +22397,7 @@
    "region": null,
    "precio": null,
    "descripcion": "Obra de teatro dramática en cartelera del GAM.",
-   "imagen": null,
+   "imagen": "https://gam.cl/media/images/la_clausura_del_amor.2e16d0ba.fill-1200x630.png",
    "fotos": null,
    "url": "https://gam.cl/es/que-hacer-en-gam/teatro/la-clausura-del-amor/",
    "fuentes": [
@@ -23238,7 +22427,7 @@
    "region": null,
    "precio": null,
    "descripcion": "Temporada de teatro contemporáneo en el GAM.",
-   "imagen": null,
+   "imagen": "https://gam.cl/media/images/hermanas.2e16d0ba.fill-1200x630.png",
    "fotos": null,
    "url": "https://gam.cl/es/que-hacer-en-gam/teatro/hermanas/",
    "fuentes": [
@@ -23328,7 +22517,7 @@
    "region": null,
    "precio": "Desde $10.171",
    "descripcion": "Obra clásica de la dramaturgia chilena en el Teatro Nacional Chileno. Calza en teatro.",
-   "imagen": null,
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/e5a69c7af67e77351de42dd085e301ea2c2792ed.png?1795111620",
    "fotos": null,
    "url": "https://teatro-a-mil.ticketplus.cl/events/el-rucio-de-los-cuchillos-FITAM2027",
    "fuentes": [
@@ -23402,7 +22591,7 @@
    "origen": "ia",
    "id": "01c57fa1c7",
    "agregado": "2026-11-12",
-   "actualizado": "2026-11-12",
+   "actualizado": "2026-11-20",
    "genero": "otros"
   },
   {
@@ -23434,6 +22623,37 @@
    "id": "8050145fd1",
    "agregado": "2026-11-19",
    "actualizado": "2026-11-19"
+  },
+  {
+   "titulo": "Necrosis",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-01-08",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Cariola",
+   "direccion": "San Diego 246",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto de la banda de thrash metal Necrosis en el Teatro Cariola.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-en-chile-2027/2026-11-09/124529.html",
+   "fuentes": [
+    {
+     "nombre": "Cooperativa.cl",
+     "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-en-chile-2027/2026-11-09/124529.html"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "dcdf48cb32",
+   "agregado": "2026-11-20",
+   "actualizado": "2026-11-20",
+   "genero": "metal"
   },
   {
    "titulo": "Teatro a Mil: La Omisión de la Familia Coleman",
@@ -23526,7 +22746,7 @@
    "origen": "ia",
    "id": "b8e3989b5a",
    "agregado": "2026-11-12",
-   "actualizado": "2026-11-12",
+   "actualizado": "2026-11-20",
    "genero": "reggaeton"
   },
   {
@@ -23847,7 +23067,7 @@
    "fecha_fin": "2027-01-16",
    "hora": null,
    "horario": null,
-   "lugar": null,
+   "lugar": "San Clemente, Panguipulli",
    "direccion": null,
    "comuna": "San Clemente",
    "ciudad": "San Clemente",
@@ -23868,7 +23088,7 @@
    "origen": "ia",
    "id": "cba44088a7",
    "agregado": "2026-11-12",
-   "actualizado": "2026-11-12",
+   "actualizado": "2026-11-20",
    "genero": "rock"
   },
   {
@@ -24011,7 +23231,7 @@
    "origen": "datos-estructurados",
    "id": "39a39867fb",
    "agregado": "2026-11-08",
-   "actualizado": "2026-11-15",
+   "actualizado": "2026-11-20",
    "genero": "bandas_sonoras"
   },
   {
@@ -24072,7 +23292,7 @@
    "origen": "ia",
    "id": "3de461aa3c",
    "agregado": "2026-11-12",
-   "actualizado": "2026-11-12",
+   "actualizado": "2026-11-20",
    "genero": "metal"
   },
   {
@@ -24111,7 +23331,7 @@
    "origen": "ia",
    "id": "adc9dd6b83",
    "agregado": "2026-11-12",
-   "actualizado": "2026-11-17",
+   "actualizado": "2026-11-20",
    "genero": "rock"
   },
   {
@@ -24267,7 +23487,7 @@
    "origen": "ia",
    "id": "f7f36f4923",
    "agregado": "2026-11-12",
-   "actualizado": "2026-11-12",
+   "actualizado": "2026-11-20",
    "genero": "metal"
   },
   {
@@ -24359,7 +23579,7 @@
    "origen": "ia",
    "id": "a70d4597ce",
    "agregado": "2026-11-12",
-   "actualizado": "2026-11-12",
+   "actualizado": "2026-11-20",
    "genero": "rock"
   },
   {
@@ -24420,7 +23640,7 @@
    "origen": "ia",
    "id": "14e24b15f3",
    "agregado": "2026-11-12",
-   "actualizado": "2026-11-12",
+   "actualizado": "2026-11-20",
    "genero": "metal"
   },
   {
@@ -24814,7 +24034,7 @@
    "origen": "ia",
    "id": "fa15a0fffa",
    "agregado": "2026-11-12",
-   "actualizado": "2026-11-12",
+   "actualizado": "2026-11-20",
    "genero": "pop"
   },
   {
@@ -25245,28 +24465,32 @@
    "fecha_fin": null,
    "hora": null,
    "horario": null,
-   "lugar": "Teatro Zoco",
+   "lugar": "Teatro Zoco - Lo Barnechea",
    "direccion": null,
    "comuna": "Lo Barnechea",
    "ciudad": "Santiago",
    "region": "Región Metropolitana",
    "precio": null,
-   "descripcion": "Festival de teatro en Teatro Zoco que incluye obras unipersonales destacadas.",
-   "imagen": "https://cdnp.puntoticket.com/content/images/categorias/4-teatro.png",
+   "descripcion": "Ciclo y festival teatral de monólogos y artes escénicas en Teatro Zoco.",
+   "imagen": "https://static.ptocdn.net/images/eventos/ptt044_calugalistado.jpg",
    "fotos": null,
-   "url": "https://www.puntoticket.com",
+   "url": "https://www.puntoticket.com/festival-solo-zoco",
    "fuentes": [
     {
      "nombre": "puntoticket.com",
      "url": "https://www.puntoticket.com/teatro"
+    },
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/festival-solo-zoco"
     }
    ],
    "desde_imagen": false,
-   "confianza": "media",
+   "confianza": "alta",
    "origen": "ia",
    "id": "4b9a7c2472",
    "agregado": "2026-11-19",
-   "actualizado": "2026-11-19"
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "Karol G en Santiago",
@@ -25764,7 +24988,7 @@
    "origen": "ia",
    "id": "0b66b6efb8",
    "agregado": "2026-11-11",
-   "actualizado": "2026-11-11"
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "The Jazz Room: Un Viaje al Corazón de Nueva Orleans",
@@ -25969,7 +25193,7 @@
    "origen": "ticketera",
    "id": "c5363ba3a6",
    "agregado": "2026-11-12",
-   "actualizado": "2026-11-18",
+   "actualizado": "2026-11-20",
    "genero": "metal"
   },
   {
@@ -26435,6 +25659,37 @@
    "genero": "indie"
   },
   {
+   "titulo": "Manuel García",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-03-25",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Regional Lucho Gatica",
+   "direccion": "Millanes 342",
+   "comuna": "Rancagua",
+   "ciudad": "Rancagua",
+   "region": "Región de O'Higgins",
+   "precio": null,
+   "descripcion": "Concierto de Manuel García en Rancagua.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-en-chile-2027/2026-11-09/124529.html",
+   "fuentes": [
+    {
+     "nombre": "Cooperativa.cl",
+     "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-en-chile-2027/2026-11-09/124529.html"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "02b9cdfd37",
+   "agregado": "2026-11-20",
+   "actualizado": "2026-11-20",
+   "genero": "folclor"
+  },
+  {
    "titulo": "Vomitory - In Death Throes Tour",
    "categoria": "conciertos",
    "fecha_inicio": "2027-03-26",
@@ -26442,7 +25697,7 @@
    "hora": "20:00",
    "horario": null,
    "lugar": "Rock Bar Xperience / RBX",
-   "direccion": null,
+   "direccion": "Vicuña Mackenna 1220",
    "comuna": "Ñuñoa",
    "ciudad": "Santiago",
    "region": "Región Metropolitana",
@@ -26455,6 +25710,10 @@
     {
      "nombre": "Salir Santiago",
      "url": "https://salirsantiago.com/panoramas/tocata"
+    },
+    {
+     "nombre": "Cooperativa.cl",
+     "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-en-chile-2027/2026-11-09/124529.html"
     }
    ],
    "desde_imagen": false,
@@ -26462,8 +25721,70 @@
    "origen": "ia",
    "id": "e9015dff95",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07",
+   "actualizado": "2026-11-20",
    "genero": "metal"
+  },
+  {
+   "titulo": "La Oreja de Van Gogh",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-03-26",
+   "fecha_fin": "2027-03-30",
+   "hora": null,
+   "horario": null,
+   "lugar": "Santander Arena",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Conciertos de La Oreja de Van Gogh en Santiago.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-en-chile-2027/2026-11-09/124529.html",
+   "fuentes": [
+    {
+     "nombre": "Cooperativa.cl",
+     "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-en-chile-2027/2026-11-09/124529.html"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "5756b2d107",
+   "agregado": "2026-11-20",
+   "actualizado": "2026-11-20",
+   "genero": "pop"
+  },
+  {
+   "titulo": "Manuel García",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-03-26",
+   "fecha_fin": "2027-03-27",
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Municipal Viña del Mar",
+   "direccion": "Fuschlocher 709",
+   "comuna": "Viña del Mar",
+   "ciudad": "Viña del Mar",
+   "region": "Región de Valparaíso",
+   "precio": null,
+   "descripcion": "Conciertos de Manuel García en el Teatro Municipal de Viña del Mar.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-en-chile-2027/2026-11-09/124529.html",
+   "fuentes": [
+    {
+     "nombre": "Cooperativa.cl",
+     "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-en-chile-2027/2026-11-09/124529.html"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "0d5f302042",
+   "agregado": "2026-11-20",
+   "actualizado": "2026-11-20",
+   "genero": "folclor"
   },
   {
    "titulo": "Pixies en Santiago",
@@ -26494,6 +25815,10 @@
     {
      "nombre": "PuntoTicket",
      "url": "https://www.puntoticket.com/evento/pixies"
+    },
+    {
+     "nombre": "Cooperativa.cl",
+     "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-en-chile-2027/2026-11-09/124529.html"
     }
    ],
    "desde_imagen": false,
@@ -26501,8 +25826,39 @@
    "origen": "ia",
    "id": "d60159c04a",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-15",
+   "actualizado": "2026-11-20",
    "genero": "rock"
+  },
+  {
+   "titulo": "Fiebre de Cumbia",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-03-30",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Múnich Malloco",
+   "direccion": "Camino Melipilla",
+   "comuna": "Peñaflor",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Festival tropical con Ke Personajes, Santaferia, Leo Rey, Gondwana + Quique Neira y más.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-en-chile-2027/2026-11-09/124529.html",
+   "fuentes": [
+    {
+     "nombre": "Cooperativa.cl",
+     "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-en-chile-2027/2026-11-09/124529.html"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "b06a9c5ea9",
+   "agregado": "2026-11-20",
+   "actualizado": "2026-11-20",
+   "genero": "cumbia"
   },
   {
    "titulo": "Louis Tomlinson",
@@ -26525,6 +25881,10 @@
     {
      "nombre": "songkick.com",
      "url": "https://www.songkick.com/es/metro-areas/27525-chile-santiago/genre/indie-alternative"
+    },
+    {
+     "nombre": "Cooperativa.cl",
+     "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-en-chile-2027/2026-11-09/124529.html"
     }
    ],
    "desde_imagen": false,
@@ -26532,7 +25892,38 @@
    "origen": "ia",
    "id": "52c8113b0b",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-14",
+   "actualizado": "2026-11-20",
+   "genero": "pop"
+  },
+  {
+   "titulo": "Luis Fonsi",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-04-01",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Santander Arena",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto de Luis Fonsi en Santiago.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-en-chile-2027/2026-11-09/124529.html",
+   "fuentes": [
+    {
+     "nombre": "Cooperativa.cl",
+     "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-en-chile-2027/2026-11-09/124529.html"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "af38cee365",
+   "agregado": "2026-11-20",
+   "actualizado": "2026-11-20",
    "genero": "pop"
   },
   {
@@ -26542,7 +25933,7 @@
    "fecha_fin": null,
    "hora": "21:00",
    "lugar": "Teatro Caupolicán - Santiago Centro",
-   "direccion": null,
+   "direccion": "San Diego 850",
    "comuna": "Santiago",
    "ciudad": "Santiago",
    "region": "Región Metropolitana",
@@ -26558,6 +25949,10 @@
     {
      "nombre": "Rock Cultura",
      "url": "https://rockcultura.com/eventos/chile/santiago"
+    },
+    {
+     "nombre": "Cooperativa.cl",
+     "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-en-chile-2027/2026-11-09/124529.html"
     }
    ],
    "desde_imagen": false,
@@ -26565,7 +25960,7 @@
    "origen": "ticketera",
    "id": "57d089bde2",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-17",
+   "actualizado": "2026-11-20",
    "genero": "rock"
   },
   {
