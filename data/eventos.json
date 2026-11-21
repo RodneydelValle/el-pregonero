@@ -1,43 +1,13 @@
 {
  "version": 1,
- "actualizado": "2026-11-21T14:53-03:00",
+ "actualizado": "2026-11-21T20:29-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-21T14:53-03:00",
+  "fecha": "2026-11-21T20:29-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 84,
-  "nuevos_esta_vez": 24,
+  "eventos_nuevos": 63,
+  "nuevos_esta_vez": 9,
   "nuevos_ids": [
-   "243e480187",
-   "2a1e58c78b",
-   "01940e0cd1",
-   "f7b11cc1cc",
-   "73913ebc0a",
-   "8035d5544c",
-   "b53e2bdc14",
-   "0ca89d7bee",
-   "d314218b34",
-   "95707bf2c2",
-   "f8f135a821",
-   "231084c8ca",
-   "4a8a4da045",
-   "36357f8759",
-   "e38896575b",
-   "5f560bd70f",
-   "5c379b5803",
-   "e772df52dc",
-   "6d90c5aa61",
-   "a19c5d3f78",
-   "e01f6ec91b",
-   "346fc91872",
-   "92944cbbff",
-   "1e7eb3a032",
-   "ba08d24191",
-   "b36f8a15e7",
-   "406ae00ffe",
-   "adde159abd",
-   "05cf44f8c5",
-   "3235e18ea2",
    "44784eedc2",
    "f6caa632a9",
    "28b4a1974a",
@@ -91,39 +61,18 @@
    "1a27535cbe",
    "57524caad4",
    "5b56210dce",
-   "da631d0f88"
+   "da631d0f88",
+   "e1766fdf2b",
+   "b2217852ee",
+   "72892298a2",
+   "1336bbdb53",
+   "2d547c9b0d",
+   "aa2b754e1d",
+   "afc7538e23",
+   "ffde47a2f6",
+   "788fd75cf1"
   ],
   "nuevos_desde": {
-   "243e480187": "2026-11-20T17:38-03:00",
-   "2a1e58c78b": "2026-11-20T17:38-03:00",
-   "01940e0cd1": "2026-11-20T17:38-03:00",
-   "f7b11cc1cc": "2026-11-20T17:38-03:00",
-   "73913ebc0a": "2026-11-20T17:38-03:00",
-   "8035d5544c": "2026-11-20T17:38-03:00",
-   "b53e2bdc14": "2026-11-20T17:38-03:00",
-   "0ca89d7bee": "2026-11-20T17:38-03:00",
-   "d314218b34": "2026-11-20T17:38-03:00",
-   "95707bf2c2": "2026-11-20T17:38-03:00",
-   "f8f135a821": "2026-11-20T17:38-03:00",
-   "231084c8ca": "2026-11-20T17:38-03:00",
-   "4a8a4da045": "2026-11-20T17:38-03:00",
-   "36357f8759": "2026-11-20T17:38-03:00",
-   "e38896575b": "2026-11-20T17:38-03:00",
-   "5f560bd70f": "2026-11-20T17:38-03:00",
-   "5c379b5803": "2026-11-20T17:38-03:00",
-   "e772df52dc": "2026-11-20T17:38-03:00",
-   "6d90c5aa61": "2026-11-20T17:38-03:00",
-   "a19c5d3f78": "2026-11-20T17:38-03:00",
-   "e01f6ec91b": "2026-11-20T17:38-03:00",
-   "346fc91872": "2026-11-20T17:38-03:00",
-   "92944cbbff": "2026-11-20T17:38-03:00",
-   "1e7eb3a032": "2026-11-20T17:38-03:00",
-   "ba08d24191": "2026-11-20T17:38-03:00",
-   "b36f8a15e7": "2026-11-20T17:38-03:00",
-   "406ae00ffe": "2026-11-20T17:38-03:00",
-   "adde159abd": "2026-11-20T17:38-03:00",
-   "05cf44f8c5": "2026-11-20T17:38-03:00",
-   "3235e18ea2": "2026-11-20T17:38-03:00",
    "44784eedc2": "2026-11-20T22:40-03:00",
    "f6caa632a9": "2026-11-20T22:40-03:00",
    "28b4a1974a": "2026-11-20T22:40-03:00",
@@ -177,24 +126,33 @@
    "1a27535cbe": "2026-11-21T14:53-03:00",
    "57524caad4": "2026-11-21T14:53-03:00",
    "5b56210dce": "2026-11-21T14:53-03:00",
-   "da631d0f88": "2026-11-21T14:53-03:00"
+   "da631d0f88": "2026-11-21T14:53-03:00",
+   "e1766fdf2b": "2026-11-21T20:29-03:00",
+   "b2217852ee": "2026-11-21T20:29-03:00",
+   "72892298a2": "2026-11-21T20:29-03:00",
+   "1336bbdb53": "2026-11-21T20:29-03:00",
+   "2d547c9b0d": "2026-11-21T20:29-03:00",
+   "aa2b754e1d": "2026-11-21T20:29-03:00",
+   "afc7538e23": "2026-11-21T20:29-03:00",
+   "ffde47a2f6": "2026-11-21T20:29-03:00",
+   "788fd75cf1": "2026-11-21T20:29-03:00"
   },
   "horas_nuevos": 24,
-  "llamadas_ia": 26,
+  "llamadas_ia": 24,
   "ia_sin_cupo": false,
-  "ultima_completa": "2026-11-21T14:30-03:00",
+  "ultima_completa": "2026-11-21T20:14-03:00",
   "modo": "completa",
-  "paginas_revisadas": 23,
+  "paginas_revisadas": 21,
   "busquedas": 107,
   "fuentes_fijas": 9,
-  "errores": 21,
+  "errores": 20,
   "noticias_desde": "2026-11-21",
-  "noticias_viejas_descartadas": 412,
+  "noticias_viejas_descartadas": 411,
   "redes_vistas": 1,
   "generos_ia": 2,
-  "imagenes_encontradas": 12
+  "imagenes_encontradas": 4
  },
- "total": 889,
+ "total": 898,
  "eventos": [
   {
    "titulo": "Mariposas y Polillas, Colores en Movimiento",
@@ -4276,6 +4234,10 @@
     {
      "nombre": "ticketplus.cl",
      "url": "https://ticketplus.cl/states/region-metropolitana"
+    },
+    {
+     "nombre": "Ticketplus",
+     "url": "https://ticketplus.cl/events/show-de-stand-up-queda-poquito-27-de-noviembre-22-15-hrs"
     }
    ],
    "desde_imagen": false,
@@ -7033,6 +6995,10 @@
     {
      "nombre": "Paloma",
      "url": "https://eventospaloma.cl/panoramas/jazz/santiago"
+    },
+    {
+     "nombre": "Paloma",
+     "url": "https://eventospaloma.cl/panoramas/jazz"
     }
    ],
    "desde_imagen": true,
@@ -7040,7 +7006,7 @@
    "origen": "ia",
    "id": "b16f9748f8",
    "agregado": "2026-11-20",
-   "actualizado": "2026-11-20",
+   "actualizado": "2026-11-21",
    "genero": "jazz"
   },
   {
@@ -7753,6 +7719,37 @@
    "genero": "hiphop"
   },
   {
+   "titulo": "La Brígida Orquesta en Teatro Coliseo",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-21",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Teatro Coliseo",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "$18.400",
+   "descripcion": "Concierto en vivo de La Brígida Orquesta en el Teatro Coliseo.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://eventospaloma.cl/panoramas/jazz",
+   "fuentes": [
+    {
+     "nombre": "Paloma",
+     "url": "https://eventospaloma.cl/panoramas/jazz"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "e1766fdf2b",
+   "agregado": "2026-11-21",
+   "actualizado": "2026-11-21",
+   "genero": "clasica"
+  },
+  {
    "titulo": "Proyección: Choibá: La Danza de la Ballena Yubarta",
    "categoria": "museos",
    "fecha_inicio": "2026-11-21",
@@ -8039,6 +8036,10 @@
     {
      "nombre": "concerts50.com",
      "url": "https://concerts50.com/es/chile"
+    },
+    {
+     "nombre": "concerts50.com",
+     "url": "https://concerts50.com/chile/santiago/g/alternative"
     }
    ],
    "desde_imagen": false,
@@ -9095,7 +9096,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Festival open air de música electrónica en Espacio Riesco.",
-   "imagen": null,
+   "imagen": "https://wsrv.nl/?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fraveme-a0776.firebasestorage.app%2Fo%2Fevents%252FHDlfPZyET3OXJ0rLTGfh%252Fcover-1790004044891-za0aq53s.webp%3Falt%3Dmedia%26token%3D7fc5b33d-ea6d-44a5-be33-59b616330d75&w=3840&q=75&output=webp&we",
    "fotos": null,
    "url": "https://raveme.cl/eventos/ciudad/santiago",
    "fuentes": [
@@ -9108,12 +9109,12 @@
      "url": "https://enconcierto.cl/calendario"
     }
    ],
-   "desde_imagen": false,
+   "desde_imagen": true,
    "confianza": "alta",
    "origen": "ia",
    "id": "1ca4c6ee83",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-20",
+   "actualizado": "2026-11-21",
    "genero": "electronica"
   },
   {
@@ -9684,6 +9685,10 @@
     {
      "nombre": "EN CONCIERTO",
      "url": "https://enconcierto.cl/calendario"
+    },
+    {
+     "nombre": "concerts50.com",
+     "url": "https://concerts50.com/chile/santiago/g/alternative"
     }
    ],
    "desde_imagen": false,
@@ -9691,7 +9696,7 @@
    "origen": "ia",
    "id": "49d16d9e07",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-20",
+   "actualizado": "2026-11-21",
    "genero": "trap"
   },
   {
@@ -10114,6 +10119,37 @@
    "actualizado": "2026-11-13"
   },
   {
+   "titulo": "JAZZ CLUB - Fabricio Labrín Cuarteto",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-25",
+   "fecha_fin": null,
+   "hora": "18:00",
+   "horario": null,
+   "lugar": "Club Subterráneo",
+   "direccion": null,
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Presentación de Fabricio Labrín Cuarteto en Club Subterráneo.",
+   "imagen": "https://eventospaloma.cl/_next/image?url=https%3A%2F%2Fpmc5mmx4n3rfjmwd.public.blob.vercel-storage.com%2Fevents%2Fsrc%2Fticketplus%2Fjazz-club-miercoles-25-noviembre-club-subterraneo.jpg&w=3840&q=75&dpl=dpl_2zwzKEexH8dgxUg4W5bnjFV4MCGC",
+   "fotos": null,
+   "url": "https://eventospaloma.cl/panoramas/jazz",
+   "fuentes": [
+    {
+     "nombre": "Paloma",
+     "url": "https://eventospaloma.cl/panoramas/jazz"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "b2217852ee",
+   "agregado": "2026-11-21",
+   "actualizado": "2026-11-21",
+   "genero": "jazz"
+  },
+  {
    "titulo": "JAZZ CLUB 🎵 MIÉRCOLES 25 NOVIEMBRE ★ Club Subterráneo",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-25",
@@ -10532,6 +10568,36 @@
    "id": "01986e1b10",
    "agregado": "2026-11-15",
    "actualizado": "2026-11-15"
+  },
+  {
+   "titulo": "Noche de los Teatros 2026",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-26",
+   "fecha_fin": null,
+   "hora": "13:00",
+   "horario": "13:00 a 16:00 hrs",
+   "lugar": "Centro Cultural Gabriela Mistral (GAM)",
+   "direccion": "Av. Libertador Bernardo O'Higgins 227",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "$1.000",
+   "descripcion": "Venta presencial de mil entradas a mil pesos para más de 25 obras de teatro de la Región Metropolitana.",
+   "imagen": "https://static.theclinic.cl/media/og-watermarked/20261121-1825114-mil-entradas-a-1-000-para-25-obras_-donde-comprar-las-entradas-para-la-noche-de-los-teatros.jpg",
+   "fotos": null,
+   "url": "https://www.theclinic.cl/2026/11/21/mil-entradas-a-1-000-para-25-obras-donde-comprar-las-entradas-para-la-noche-de-los-teatros-y-cual-es-la-cartelera-del-evento/",
+   "fuentes": [
+    {
+     "nombre": "The Clinic",
+     "url": "https://www.theclinic.cl/2026/11/21/mil-entradas-a-1-000-para-25-obras-donde-comprar-las-entradas-para-la-noche-de-los-teatros-y-cual-es-la-cartelera-del-evento/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "788fd75cf1",
+   "agregado": "2026-11-21",
+   "actualizado": "2026-11-21"
   },
   {
    "titulo": "Bibliocharla: ¿Arte abstracto o no figurativo?",
@@ -11040,6 +11106,10 @@
     {
      "nombre": "Paloma",
      "url": "https://eventospaloma.cl/panoramas/jazz/santiago"
+    },
+    {
+     "nombre": "Paloma",
+     "url": "https://eventospaloma.cl/panoramas/jazz"
     }
    ],
    "desde_imagen": false,
@@ -11047,7 +11117,7 @@
    "origen": "datos-estructurados",
    "id": "d9f7e1f90c",
    "agregado": "2026-11-18",
-   "actualizado": "2026-11-20",
+   "actualizado": "2026-11-21",
    "genero": "jazz"
   },
   {
@@ -12027,6 +12097,36 @@
    "id": "c1ccfb91de",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Hermanos Ilabaca en Teatro Nescafé de las Artes",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Teatro Nescafé de las Artes",
+   "direccion": null,
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto de los Hermanos Ilabaca en el Teatro Nescafé de las Artes.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://eventospaloma.cl/panoramas/jazz",
+   "fuentes": [
+    {
+     "nombre": "Paloma",
+     "url": "https://eventospaloma.cl/panoramas/jazz"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "72892298a2",
+   "agregado": "2026-11-21",
+   "actualizado": "2026-11-21"
   },
   {
    "titulo": "Jorge Alís - MALON",
@@ -14359,6 +14459,10 @@
     {
      "nombre": "Paloma",
      "url": "https://eventospaloma.cl/panoramas/jazz/santiago"
+    },
+    {
+     "nombre": "Paloma",
+     "url": "https://eventospaloma.cl/panoramas/jazz"
     }
    ],
    "desde_imagen": false,
@@ -14366,7 +14470,7 @@
    "origen": "ia",
    "id": "268323baec",
    "agregado": "2026-11-20",
-   "actualizado": "2026-11-20",
+   "actualizado": "2026-11-21",
    "genero": "indie"
   },
   {
@@ -14628,6 +14732,10 @@
     {
      "nombre": "Cooperativa.cl",
      "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-2026-en-chile/2025-12-01/082152.html"
+    },
+    {
+     "nombre": "concerts50.com",
+     "url": "https://concerts50.com/chile/santiago/g/alternative"
     }
    ],
    "desde_imagen": true,
@@ -14635,7 +14743,7 @@
    "origen": "ticketera",
    "id": "41da085532",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-15",
+   "actualizado": "2026-11-21",
    "genero": "indie"
   },
   {
@@ -15566,6 +15674,10 @@
     {
      "nombre": "Keai",
      "url": "https://keai.cl/evento/babymetal-21128"
+    },
+    {
+     "nombre": "concerts50.com",
+     "url": "https://concerts50.com/chile/santiago/g/alternative"
     }
    ],
    "desde_imagen": true,
@@ -15573,7 +15685,7 @@
    "origen": "ticketera",
    "id": "f840300077",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-20",
+   "actualizado": "2026-11-21",
    "genero": "metal"
   },
   {
@@ -16021,6 +16133,10 @@
     {
      "nombre": "Paloma",
      "url": "https://eventospaloma.cl/panoramas/jazz/santiago"
+    },
+    {
+     "nombre": "Paloma",
+     "url": "https://eventospaloma.cl/panoramas/jazz"
     }
    ],
    "desde_imagen": false,
@@ -16028,7 +16144,7 @@
    "origen": "ticketera",
    "id": "13508cfea6",
    "agregado": "2026-11-15",
-   "actualizado": "2026-11-20",
+   "actualizado": "2026-11-21",
    "genero": "jazz"
   },
   {
@@ -16384,6 +16500,10 @@
     {
      "nombre": "EN CONCIERTO",
      "url": "https://enconcierto.cl/calendario"
+    },
+    {
+     "nombre": "concerts50.com",
+     "url": "https://concerts50.com/chile/santiago/g/alternative"
     }
    ],
    "desde_imagen": false,
@@ -16391,7 +16511,7 @@
    "origen": "ia",
    "id": "607b690004",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-20",
+   "actualizado": "2026-11-21",
    "genero": "indie"
   },
   {
@@ -17445,6 +17565,68 @@
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07",
    "genero": "metal"
+  },
+  {
+   "titulo": "Cristóbal Briceño",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-05",
+   "fecha_fin": null,
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Teatro Coliseo",
+   "direccion": "Nataniel Cox 59",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto del cantautor chileno Cristóbal Briceño en el Teatro Coliseo.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://concerts50.com/chile/santiago/g/alternative",
+   "fuentes": [
+    {
+     "nombre": "concerts50.com",
+     "url": "https://concerts50.com/chile/santiago/g/alternative"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "afc7538e23",
+   "agregado": "2026-11-21",
+   "actualizado": "2026-11-21",
+   "genero": "indie"
+  },
+  {
+   "titulo": "Dennis Chambers y Christian Gálvez Quartet",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-05",
+   "fecha_fin": null,
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Teatro Aula Magna Manuel de Salas",
+   "direccion": null,
+   "comuna": "Ñuñoa",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Presentación estelar de jazz fusion con Dennis Chambers y Christian Gálvez Quartet.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://eventospaloma.cl/panoramas/jazz",
+   "fuentes": [
+    {
+     "nombre": "Paloma",
+     "url": "https://eventospaloma.cl/panoramas/jazz"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "1336bbdb53",
+   "agregado": "2026-11-21",
+   "actualizado": "2026-11-21",
+   "genero": "jazz"
   },
   {
    "titulo": "Nicky Jam - Bohemio Tour",
@@ -18728,12 +18910,12 @@
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-08",
    "fecha_fin": null,
-   "hora": null,
+   "hora": "20:30",
    "lugar": "Teatro Caupolicán - Santiago Centro",
-   "direccion": null,
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
+   "direccion": "San Diego 850",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Festival Candelabro en el Teatro Caupolicán, evento destacado de música pesada.",
    "imagen": "https://static.ptocdn.net/images/eventos/arm011_calugalistado.jpg",
@@ -18742,6 +18924,10 @@
     {
      "nombre": "PuntoTicket",
      "url": "https://www.puntoticket.com/evento/candelabro-caupolican-dic-2026"
+    },
+    {
+     "nombre": "concerts50.com",
+     "url": "https://concerts50.com/chile/santiago/g/alternative"
     }
    ],
    "desde_imagen": false,
@@ -18749,7 +18935,7 @@
    "origen": "ticketera",
    "id": "9345063da7",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-06",
+   "actualizado": "2026-11-21",
    "genero": "metal"
   },
   {
@@ -18942,6 +19128,37 @@
    "genero": "clasica"
   },
   {
+   "titulo": "Como Asesinar a Felipes en Fluvial 10",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-09",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Fluvial 10",
+   "direccion": null,
+   "comuna": "Valdivia",
+   "ciudad": "Valdivia",
+   "region": "Región de Los Ríos",
+   "precio": null,
+   "descripcion": "Concierto de Como Asesinar a Felipes en el festival Fluvial 10.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://eventospaloma.cl/panoramas/jazz",
+   "fuentes": [
+    {
+     "nombre": "Paloma",
+     "url": "https://eventospaloma.cl/panoramas/jazz"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "2d547c9b0d",
+   "agregado": "2026-11-21",
+   "actualizado": "2026-11-21",
+   "genero": "hiphop"
+  },
+  {
    "titulo": "Javiera Mena",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-09",
@@ -19094,7 +19311,7 @@
    "titulo": "Slayer — Santiago [Chile]",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-10",
-   "fecha_fin": null,
+   "fecha_fin": "2026-12-11",
    "hora": "14:00",
    "horario": null,
    "lugar": "Estadio Santa Laura Usek",
@@ -19102,7 +19319,7 @@
    "comuna": "Independencia",
    "ciudad": "Santiago",
    "region": "Región Metropolitana",
-   "precio": null,
+   "precio": "Desde $69.000",
    "descripcion": "wp:paragraph La gira latinoamericana con la que Slayer conmemorará el 40 aniversario de Reign In Blood sigue tomando forma y ya tiene una parada confirmada para Chile. La legendaria banda de thrash metal se presentará el próximo 10 de dicie",
    "imagen": "https://summainferno.com/wp-content/uploads/2026/05/image-144.png",
    "fotos": null,
@@ -19139,6 +19356,14 @@
     {
      "nombre": "Rock Cultura",
      "url": "https://rockcultura.com/eventos/chile"
+    },
+    {
+     "nombre": "concerts50.com",
+     "url": "https://concerts50.com/chile/santiago/g/alternative"
+    },
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/slayer-reign-in-blood-0d9wj/"
     }
    ],
    "desde_imagen": true,
@@ -19210,6 +19435,36 @@
    "agregado": "2026-11-13",
    "actualizado": "2026-11-13",
    "genero": "folclor"
+  },
+  {
+   "titulo": "Temporada Lírica Internacional: Il Trovatore",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-12-10",
+   "fecha_fin": "2026-12-19",
+   "hora": "19:30",
+   "horario": null,
+   "lugar": "Teatro Municipal de Santiago",
+   "direccion": "Agustinas 794",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $12",
+   "descripcion": "Nueva producción escénica de la célebre ópera de Giuseppe Verdi en el Teatro Municipal de Santiago.",
+   "imagen": "https://cultores.org/og-image.png",
+   "fotos": null,
+   "url": "https://www.cultores.org/organizaciones/teatro-municipal-de-santiago-opera-nacional-de-chile",
+   "fuentes": [
+    {
+     "nombre": "Cultores",
+     "url": "https://www.cultores.org/organizaciones/teatro-municipal-de-santiago-opera-nacional-de-chile"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "ffde47a2f6",
+   "agregado": "2026-11-21",
+   "actualizado": "2026-11-21"
   },
   {
    "titulo": "Boîte Bijoux",
@@ -21501,7 +21756,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Concierto de Anuel AA en Santiago.",
-   "imagen": null,
+   "imagen": "https://static.ptocdn.net/images/eventos/jts123_rs.jpg",
    "fotos": null,
    "url": "https://iguanalive.com/cl/proximos-shows.html",
    "fuentes": [
@@ -22481,7 +22736,7 @@
    "region": "Región Metropolitana",
    "precio": "desde $18.400",
    "descripcion": "Concierto de Anuel AA en Santiago.",
-   "imagen": null,
+   "imagen": "https://static.ptocdn.net/images/eventos/jts123_rs.jpg",
    "fotos": null,
    "url": "https://iguanalive.com/cl/proximos-shows.html",
    "fuentes": [
@@ -25223,6 +25478,36 @@
    "actualizado": "2026-11-19"
   },
   {
+   "titulo": "Museo de 31 Minutos en el MUT",
+   "categoria": "museos",
+   "fecha_inicio": "2027-01-15",
+   "fecha_fin": "2027-03-14",
+   "hora": null,
+   "horario": "Mar a dom, 10:00–20:00",
+   "lugar": "Mercado Urbano Tobalaba (MUT)",
+   "direccion": "Av. Apoquindo 2730",
+   "comuna": "Las Condes",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Exposición que recorre los más de 20 años de historia de 31 Minutos con títeres, maquetas y material inédito.",
+   "imagen": "https://www.radioimagina.cl/wp-content/uploads/2025/10/31-minutos-2-1.webp",
+   "fotos": null,
+   "url": "https://ticketplus.cl",
+   "fuentes": [
+    {
+     "nombre": "Radio Imagina",
+     "url": "https://www.radioimagina.cl/2026/11/vuelve-el-museo-de-31-minutos-revisa-fecha-y-recinto-confirmado/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "aa2b754e1d",
+   "agregado": "2026-11-21",
+   "actualizado": "2026-11-21"
+  },
+  {
    "titulo": "The Jazz Room: Tributo a Frank Sinatra y Louis Armstrong",
    "categoria": "conciertos",
    "fecha_inicio": "2027-01-16",
@@ -26065,7 +26350,7 @@
    "region": "Región de Coquimbo",
    "precio": null,
    "descripcion": "Blaze Bayley se presenta en La Serena en el aniversario de Ruteros del Rock.",
-   "imagen": null,
+   "imagen": "https://rockcultura.com/storage/media/events/rc2_185_20270123.jpg",
    "fotos": null,
    "url": "https://rockcultura.com/eventos/chile",
    "fuentes": [
@@ -26693,13 +26978,13 @@
    "categoria": "anime",
    "fecha_inicio": "2027-02-04",
    "fecha_fin": null,
-   "hora": null,
+   "hora": "20:00",
    "horario": null,
    "lugar": "Teatro Coliseo - Santiago Centro",
-   "direccion": null,
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
+   "direccion": "Nataniel Cox 59",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Histórica banda japonesa de visual kei y rock/metal gótico llega a Chile.",
    "imagen": "https://static.ptocdn.net/images/eventos/ncs014_calugalistado.jpg",
@@ -26709,6 +26994,10 @@
     {
      "nombre": "PuntoTicket",
      "url": "https://www.puntoticket.com/2027-despairs-ray-en-santiago-de-chile"
+    },
+    {
+     "nombre": "concerts50.com",
+     "url": "https://concerts50.com/chile/santiago/g/alternative"
     }
    ],
    "desde_imagen": false,
@@ -26716,7 +27005,7 @@
    "origen": "ticketera",
    "id": "4fb5aa7103",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-21"
   },
   {
    "titulo": "The Legend en Concierto - Viña del Mar",
@@ -26900,6 +27189,10 @@
     {
      "nombre": "Keai",
      "url": "https://keai.cl/evento/my-hero-academia-in-concert-21211"
+    },
+    {
+     "nombre": "Panoramas",
+     "url": "https://www.panoramas.app/evento/my-hero-academia-in-concert"
     }
    ],
    "desde_imagen": true,
@@ -26907,7 +27200,7 @@
    "origen": "ticketera",
    "id": "412b638ee9",
    "agregado": "2026-11-18",
-   "actualizado": "2026-11-20"
+   "actualizado": "2026-11-21"
   },
   {
    "titulo": "Schranz or Die",
@@ -29465,7 +29758,7 @@
    "categoria": "conciertos",
    "fecha_inicio": "2027-09-12",
    "fecha_fin": null,
-   "hora": null,
+   "hora": "21:00",
    "horario": null,
    "lugar": "Estadio Nacional",
    "direccion": "Av. Grecia 2001",
@@ -29489,6 +29782,10 @@
     {
      "nombre": "Rock Cultura",
      "url": "https://rockcultura.com/eventos/chile"
+    },
+    {
+     "nombre": "concerts50.com",
+     "url": "https://concerts50.com/chile/santiago/g/alternative"
     }
    ],
    "desde_imagen": false,
