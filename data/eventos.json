@@ -1,29 +1,13 @@
 {
  "version": 1,
- "actualizado": "2026-11-20T17:38-03:00",
+ "actualizado": "2026-11-20T22:40-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-20T17:38-03:00",
+  "fecha": "2026-11-20T22:40-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 90,
-  "nuevos_esta_vez": 32,
+  "eventos_nuevos": 91,
+  "nuevos_esta_vez": 17,
   "nuevos_ids": [
-   "18ff9d4e09",
-   "08048dabd3",
-   "93d61d9b9d",
-   "eb0c18d58c",
-   "90b4353370",
-   "170680230d",
-   "7981cb0edc",
-   "fd761261aa",
-   "40f26d4f41",
-   "a36fae5d63",
-   "3141669464",
-   "6a118684a8",
-   "0acfebb80c",
-   "dbe5a8c3a1",
-   "3338fdf895",
-   "99616659ff",
    "bd2c0da0de",
    "43b0a968a5",
    "21411f29b3",
@@ -97,25 +81,26 @@
    "406ae00ffe",
    "adde159abd",
    "05cf44f8c5",
-   "3235e18ea2"
+   "3235e18ea2",
+   "44784eedc2",
+   "f6caa632a9",
+   "28b4a1974a",
+   "bd6d2bb0e2",
+   "2be4c655af",
+   "38f326ba51",
+   "37b5078ecc",
+   "3ab115efd0",
+   "bcf63ced1a",
+   "2adb21f757",
+   "7f32ea3ebf",
+   "93d97a37c5",
+   "5b324f41f4",
+   "1e470353dc",
+   "7a481859a7",
+   "1979d20e13",
+   "59db96932f"
   ],
   "nuevos_desde": {
-   "18ff9d4e09": "2026-11-19T18:55-03:00",
-   "08048dabd3": "2026-11-19T18:55-03:00",
-   "93d61d9b9d": "2026-11-19T18:55-03:00",
-   "eb0c18d58c": "2026-11-19T18:55-03:00",
-   "90b4353370": "2026-11-19T18:55-03:00",
-   "170680230d": "2026-11-19T18:55-03:00",
-   "7981cb0edc": "2026-11-19T18:55-03:00",
-   "fd761261aa": "2026-11-19T18:55-03:00",
-   "40f26d4f41": "2026-11-19T18:55-03:00",
-   "a36fae5d63": "2026-11-19T18:55-03:00",
-   "3141669464": "2026-11-19T18:55-03:00",
-   "6a118684a8": "2026-11-19T18:55-03:00",
-   "0acfebb80c": "2026-11-19T18:55-03:00",
-   "dbe5a8c3a1": "2026-11-19T18:55-03:00",
-   "3338fdf895": "2026-11-19T18:55-03:00",
-   "99616659ff": "2026-11-19T18:55-03:00",
    "bd2c0da0de": "2026-11-20T00:32-03:00",
    "43b0a968a5": "2026-11-20T00:32-03:00",
    "21411f29b3": "2026-11-20T00:32-03:00",
@@ -189,24 +174,40 @@
    "406ae00ffe": "2026-11-20T17:38-03:00",
    "adde159abd": "2026-11-20T17:38-03:00",
    "05cf44f8c5": "2026-11-20T17:38-03:00",
-   "3235e18ea2": "2026-11-20T17:38-03:00"
+   "3235e18ea2": "2026-11-20T17:38-03:00",
+   "44784eedc2": "2026-11-20T22:40-03:00",
+   "f6caa632a9": "2026-11-20T22:40-03:00",
+   "28b4a1974a": "2026-11-20T22:40-03:00",
+   "bd6d2bb0e2": "2026-11-20T22:40-03:00",
+   "2be4c655af": "2026-11-20T22:40-03:00",
+   "38f326ba51": "2026-11-20T22:40-03:00",
+   "37b5078ecc": "2026-11-20T22:40-03:00",
+   "3ab115efd0": "2026-11-20T22:40-03:00",
+   "bcf63ced1a": "2026-11-20T22:40-03:00",
+   "2adb21f757": "2026-11-20T22:40-03:00",
+   "7f32ea3ebf": "2026-11-20T22:40-03:00",
+   "93d97a37c5": "2026-11-20T22:40-03:00",
+   "5b324f41f4": "2026-11-20T22:40-03:00",
+   "1e470353dc": "2026-11-20T22:40-03:00",
+   "7a481859a7": "2026-11-20T22:40-03:00",
+   "1979d20e13": "2026-11-20T22:40-03:00",
+   "59db96932f": "2026-11-20T22:40-03:00"
   },
   "horas_nuevos": 24,
-  "llamadas_ia": 40,
+  "llamadas_ia": 3,
   "ia_sin_cupo": false,
   "ultima_completa": "2026-11-20T17:16-03:00",
-  "modo": "completa",
-  "paginas_revisadas": 40,
-  "busquedas": 107,
+  "modo": "rapida",
+  "paginas_revisadas": 0,
+  "busquedas": 0,
   "fuentes_fijas": 9,
-  "errores": 28,
+  "errores": 2,
   "noticias_desde": "2026-11-20",
-  "noticias_viejas_descartadas": 416,
-  "redes_vistas": 1,
-  "generos_ia": 6,
-  "imagenes_encontradas": 2
+  "noticias_viejas_descartadas": 0,
+  "generos_ia": 2,
+  "imagenes_encontradas": 0
  },
- "total": 887,
+ "total": 903,
  "eventos": [
   {
    "titulo": "Festival Internacional de Ilustración Festilus",
@@ -6667,40 +6668,6 @@
    "actualizado": "2026-11-20"
   },
   {
-   "titulo": "Fuente Carrasco - Fuente Carrasco",
-   "categoria": "standup",
-   "fecha_inicio": "2026-11-20",
-   "fecha_fin": null,
-   "hora": "20:00",
-   "horario": null,
-   "lugar": "Club San Miguel",
-   "direccion": null,
-   "comuna": "San Miguel",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Show de comedia en vivo en Club San Miguel.",
-   "imagen": "https://static.ptocdn.net/images/eventos/edo150_calugalistado.jpg",
-   "fotos": null,
-   "url": "https://www.suitip.cl/panoramas/guia/hoy",
-   "fuentes": [
-    {
-     "nombre": "PuntoTicket",
-     "url": "https://www.puntoticket.com/evento/fuentecarrasco-club-sanmiguel-nov"
-    },
-    {
-     "nombre": "Suitip",
-     "url": "https://www.suitip.cl/panoramas/guia/hoy"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ticketera",
-   "id": "630092b309",
-   "agregado": "2026-11-15",
-   "actualizado": "2026-11-20"
-  },
-  {
    "titulo": "Gens",
    "categoria": "teatro",
    "fecha_inicio": "2026-11-20",
@@ -6886,7 +6853,7 @@
    "titulo": "Lucas Espinoza – Comedia en vivo",
    "categoria": "standup",
    "fecha_inicio": "2026-11-20",
-   "fecha_fin": null,
+   "fecha_fin": "2026-11-21",
    "hora": "20:00",
    "horario": null,
    "lugar": "Casa Comedia",
@@ -6911,6 +6878,10 @@
     {
      "nombre": "Suitip",
      "url": "https://www.suitip.cl/panoramas/guia/hoy"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/lucas-espinoza-comedia-en-vivo-21091"
     }
    ],
    "desde_imagen": false,
@@ -7176,6 +7147,37 @@
    "actualizado": "2026-11-19"
   },
   {
+   "titulo": "Camila - Tour Adiós",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-20",
+   "fecha_fin": "2026-11-21",
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Beaucheff 1204, Santiago Centro",
+   "direccion": "Beaucheff 1204, Santiago Centro",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Camila se despide de Chile con su última gira “Tour Adiós”Camila se despide de Chile con un concierto único e irrepetible",
+   "imagen": "https://cdn.keai.cl/events/21092-54302856e5b5774b2ed553bf93693edb.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/camila-tour-adios-21092",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/camila-tour-adios-21092"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "3ab115efd0",
+   "agregado": "2026-11-20",
+   "actualizado": "2026-11-20",
+   "genero": "pop"
+  },
+  {
    "titulo": "Camila en Concierto",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-20",
@@ -7273,6 +7275,37 @@
    "origen": "ia",
    "id": "4790c84ebf",
    "agregado": "2026-11-13",
+   "actualizado": "2026-11-20",
+   "genero": "electronica"
+  },
+  {
+   "titulo": "Jeff Mills - DAME Presenta: 30 Aniversario Liquid Room Mix",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-20",
+   "fecha_fin": "2026-11-21",
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Avenida Independencia 565, Independencia, Santiago Metropolitan Region 8380000, Chile",
+   "direccion": "Avenida Independencia 565, Independencia, Santiago Metropolitan Region 8380000, Chile",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "JEFF MILLS30° ANIVERSARIO LIQUID ROOM MIXDAME presenta el tour oficial que conmemora uno de los sets más influyentes en la historia de la música electrónica.A 3",
+   "imagen": "https://cdn.keai.cl/events/21093-f7affbf59b46906a961ec1797f37220a.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/jeff-mills-dame-presenta-30-aniversario-liquid-room-mix-21093",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/jeff-mills-dame-presenta-30-aniversario-liquid-room-mix-21093"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "37b5078ecc",
+   "agregado": "2026-11-20",
    "actualizado": "2026-11-20",
    "genero": "electronica"
   },
@@ -8811,7 +8844,7 @@
    "titulo": "La Brigida Orquesta - Lanzamiento Nuevo Disco",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-21",
-   "fecha_fin": null,
+   "fecha_fin": "2026-11-22",
    "hora": "20:00",
    "horario": "20:00",
    "lugar": "Teatro Coliseo",
@@ -8844,6 +8877,10 @@
     {
      "nombre": "Paloma",
      "url": "https://eventospaloma.cl/panoramas/jazz/santiago"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/la-brigida-orquesta-lanzamiento-nuevo-disco-21097"
     }
    ],
    "desde_imagen": false,
@@ -9087,6 +9124,41 @@
    "agregado": "2026-11-16",
    "actualizado": "2026-11-16",
    "genero": "trap"
+  },
+  {
+   "titulo": "Djavan en Chile",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-21",
+   "fecha_fin": "2026-11-22",
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Teatro Caupolicán",
+   "direccion": "San Diego 853",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "El destacado cantautor brasileño Djavan se presenta en vivo en el Teatro Caupolicán.",
+   "imagen": "https://cdn.keai.cl/events/21098-fe5b5f757f68f7ac28041da1b5999c58.jpg",
+   "fotos": null,
+   "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-2026-en-chile/2025-12-01/082152.html",
+   "fuentes": [
+    {
+     "nombre": "Cooperativa.cl",
+     "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-2026-en-chile/2025-12-01/082152.html"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/djavan-21098"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "0e7d1c0078",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-20",
+   "genero": "jazz"
   },
   {
    "titulo": "Ed Sheeran",
@@ -9697,37 +9769,6 @@
    "agregado": "2026-11-19",
    "actualizado": "2026-11-19",
    "genero": "hiphop"
-  },
-  {
-   "titulo": "Djavan en Chile",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-21",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": null,
-   "lugar": "Teatro Caupolicán",
-   "direccion": "San Diego 853",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "El destacado cantautor brasileño Djavan se presenta en vivo en el Teatro Caupolicán.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-2026-en-chile/2025-12-01/082152.html",
-   "fuentes": [
-    {
-     "nombre": "Cooperativa.cl",
-     "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-2026-en-chile/2025-12-01/082152.html"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "0e7d1c0078",
-   "agregado": "2026-11-15",
-   "actualizado": "2026-11-15",
-   "genero": "jazz"
   },
   {
    "titulo": "Festival Coke Studio 2026",
@@ -10946,6 +10987,44 @@
    "genero": "jazz"
   },
   {
+   "titulo": "Claudio Michaux en bares",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-25",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Casa Comedia",
+   "direccion": "Constitución 97",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Show de stand-up comedy de Claudio Michaux que combina humor, contingencia e improvisación cercana con los asistentes.",
+   "imagen": "https://static.ptocdn.net/event-resources/images/CCM001_calugalistado.webp?v=1793384508",
+   "fotos": null,
+   "url": "https://www.puntoticket.com",
+   "fuentes": [
+    {
+     "nombre": "casacomedia.cl",
+     "url": "https://www.casacomedia.cl/cartelera/"
+    },
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/evento/claudio-michaux"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/claudio-michaux-claudio-michaux-en-bares-21114"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "efc05910f2",
+   "agregado": "2026-11-11",
+   "actualizado": "2026-11-20"
+  },
+  {
    "titulo": "El Barbero de Sevilla",
    "categoria": "teatro",
    "fecha_inicio": "2026-11-25",
@@ -11230,40 +11309,6 @@
    "agregado": "2026-11-06",
    "actualizado": "2026-11-07",
    "genero": "rock"
-  },
-  {
-   "titulo": "Claudio Michaux en bares",
-   "categoria": "standup",
-   "fecha_inicio": "2026-11-25",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": null,
-   "lugar": "Casa Comedia",
-   "direccion": "Constitución 97",
-   "comuna": "Providencia",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Show de stand-up comedy de Claudio Michaux que combina humor, contingencia e improvisación cercana con los asistentes.",
-   "imagen": "https://static.ptocdn.net/event-resources/images/CCM001_calugalistado.webp?v=1793384508",
-   "fotos": null,
-   "url": "https://www.puntoticket.com",
-   "fuentes": [
-    {
-     "nombre": "casacomedia.cl",
-     "url": "https://www.casacomedia.cl/cartelera/"
-    },
-    {
-     "nombre": "PuntoTicket",
-     "url": "https://www.puntoticket.com/evento/claudio-michaux"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "efc05910f2",
-   "agregado": "2026-11-11",
-   "actualizado": "2026-11-15"
   },
   {
    "titulo": "Concierto El Salvador y Chile unidos a través de la música",
@@ -11640,6 +11685,40 @@
    "actualizado": "2026-11-14"
   },
   {
+   "titulo": "Fernando Larraín y Nicolás Larraín - Hermanos Larraín",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-26",
+   "fecha_fin": "2026-11-27",
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Casa Comedia - Providencia",
+   "direccion": "Constitución 97, Providencia, Santiago Metropolitan Region 7500000, Chile",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Show de comedia y conversación de los hermanos Larraín.",
+   "imagen": "https://static.ptocdn.net/event-resources/images/CCM004_calugalistado.webp?v=1793561121",
+   "fotos": null,
+   "url": "https://www.puntoticket.com/evento/hermanos-larrain",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/evento/hermanos-larrain"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/fernando-larrain-y-nicolas-larrain-hermanos-larrain-21118"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "08e2ee0000",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-20"
+  },
+  {
    "titulo": "Grupo Merkén en Concierto",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-26",
@@ -11861,6 +11940,36 @@
    "id": "6a118684a8",
    "agregado": "2026-11-19",
    "actualizado": "2026-11-19"
+  },
+  {
+   "titulo": "Don Carter - Stand Up Comedy",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-26",
+   "fecha_fin": "2026-11-27",
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "El Rodeo 12850, Lo Barnechea, Región Metropolitana, Chile",
+   "direccion": "El Rodeo 12850, Lo Barnechea, Región Metropolitana, Chile",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "¡Don Carter llega a Flannery’s Train Station! 🎤🍻 Prepárate para una noche de humor sin filtro en nuestra terraza. Ven con tus amigos a disfrutar del stand up,",
+   "imagen": "https://cdn.keai.cl/events/21057-da8d9fe7c3bba9fb0cf868086c03c1a3.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/don-carter-stand-up-comedy-21057",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/don-carter-stand-up-comedy-21057"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "59db96932f",
+   "agregado": "2026-11-20",
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "Jesucristo Superhistórico Concierto Promocional",
@@ -12097,36 +12206,6 @@
    "id": "65a5dcf383",
    "agregado": "2026-11-16",
    "actualizado": "2026-11-16"
-  },
-  {
-   "titulo": "Fernando Larraín y Nicolás Larraín - Hermanos Larraín",
-   "categoria": "standup",
-   "fecha_inicio": "2026-11-26",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": null,
-   "lugar": "Casa Comedia - Providencia",
-   "direccion": null,
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
-   "precio": null,
-   "descripcion": "Show de comedia y conversación de los hermanos Larraín.",
-   "imagen": "https://static.ptocdn.net/event-resources/images/CCM004_calugalistado.webp?v=1793561121",
-   "fotos": null,
-   "url": "https://www.puntoticket.com/evento/hermanos-larrain",
-   "fuentes": [
-    {
-     "nombre": "PuntoTicket",
-     "url": "https://www.puntoticket.com/evento/hermanos-larrain"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ticketera",
-   "id": "08e2ee0000",
-   "agregado": "2026-11-15",
-   "actualizado": "2026-11-15"
   },
   {
    "titulo": "Festival Fauna Primavera 2026",
@@ -13801,7 +13880,7 @@
    "hora": "12:00",
    "horario": null,
    "lugar": "Villa el esfuerzo",
-   "direccion": null,
+   "direccion": "Av. Central 509, 8030341 El Bosque, Región Metropolitana, Chile",
    "comuna": "El Bosque",
    "ciudad": null,
    "region": null,
@@ -13814,6 +13893,10 @@
     {
      "nombre": "VAMOH!",
      "url": "https://vamoh.cl/events/encuentro-cultural-en-conmemoracion-53-aniversario-del-hip-hop-9gqyc/"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/encuentro-cultural-en-conmemoracion-53-aniversario-del-hip-hop-21066"
     }
    ],
    "desde_imagen": false,
@@ -13821,7 +13904,7 @@
    "origen": "datos-estructurados",
    "id": "2550997392",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-14",
+   "actualizado": "2026-11-20",
    "genero": "hiphop"
   },
   {
@@ -14026,6 +14109,10 @@
     {
      "nombre": "songkick.com",
      "url": "https://www.songkick.com/es/metro-areas/27525-chile-santiago"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/chileterror-fest-ii-2026-21123"
     }
    ],
    "desde_imagen": true,
@@ -14447,6 +14534,40 @@
    "genero": "reggaeton"
   },
   {
+   "titulo": "Pato Pimienta y Juan Pablo Flores - Secreto en la montaña",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": "2026-11-29",
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Casa Comedia - Providencia",
+   "direccion": "Constitución 97, Providencia, Santiago Metropolitan Region 7500000, Chile",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Show de comedia y stand-up en Casa Comedia. Calza en teatro por ser un espectáculo de humor en sala.",
+   "imagen": "https://static.ptocdn.net/event-resources/images/CCM006_calugalistado.webp?v=1794254628",
+   "fotos": null,
+   "url": "https://www.puntoticket.com/evento/secreto-en-la-montana",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/evento/secreto-en-la-montana"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/pato-pimienta-y-juan-pablo-flores-secreto-en-la-montana-21124"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "af9d7d7d65",
+   "agregado": "2026-11-09",
+   "actualizado": "2026-11-20"
+  },
+  {
    "titulo": "Comedia Fuerte",
    "categoria": "standup",
    "fecha_inicio": "2026-11-28",
@@ -14791,36 +14912,6 @@
    "agregado": "2026-11-13",
    "actualizado": "2026-11-13",
    "genero": "jazz"
-  },
-  {
-   "titulo": "Pato Pimienta y Juan Pablo Flores - Secreto en la montaña",
-   "categoria": "teatro",
-   "fecha_inicio": "2026-11-28",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": null,
-   "lugar": "Casa Comedia - Providencia",
-   "direccion": null,
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
-   "precio": null,
-   "descripcion": "Show de comedia y stand-up en Casa Comedia. Calza en teatro por ser un espectáculo de humor en sala.",
-   "imagen": "https://static.ptocdn.net/event-resources/images/CCM006_calugalistado.webp?v=1794254628",
-   "fotos": null,
-   "url": "https://www.puntoticket.com/evento/secreto-en-la-montana",
-   "fuentes": [
-    {
-     "nombre": "PuntoTicket",
-     "url": "https://www.puntoticket.com/evento/secreto-en-la-montana"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ticketera",
-   "id": "af9d7d7d65",
-   "agregado": "2026-11-09",
-   "actualizado": "2026-11-17"
   },
   {
    "titulo": "Undertale Sinfónico",
@@ -16083,7 +16174,7 @@
    "titulo": "BABYMETAL",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-03",
-   "fecha_fin": null,
+   "fecha_fin": "2026-12-04",
    "hora": "21:00",
    "lugar": "Santander Arena - Santiago Centro",
    "direccion": "Beauchef 1204",
@@ -16126,6 +16217,10 @@
     {
      "nombre": "EN CONCIERTO",
      "url": "https://enconcierto.cl/calendario"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/babymetal-21128"
     }
    ],
    "desde_imagen": true,
@@ -16196,6 +16291,44 @@
    "id": "58d620429f",
    "agregado": "2026-11-11",
    "actualizado": "2026-11-11"
+  },
+  {
+   "titulo": "Bombo Fica - 40 AÑOS Y NO ME DI NI CUENTA",
+   "categoria": "standup",
+   "fecha_inicio": "2026-12-03",
+   "fecha_fin": "2026-12-04",
+   "hora": "21:30",
+   "horario": null,
+   "lugar": "Casa Comedia - Providencia",
+   "direccion": "Constitución N° 97",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Show de stand-up y humor del reconocido comediante nacional celebrando sus 40 años de trayectoria.",
+   "imagen": "https://static.ptocdn.net/event-resources/images/CCM007_calugalistado.webp?v=1794590248",
+   "fotos": null,
+   "url": "https://www.puntoticket.com/evento/40-anos-y-no-me-di-ni-cuenta",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/evento/40-anos-y-no-me-di-ni-cuenta"
+    },
+    {
+     "nombre": "casacomedia.cl",
+     "url": "https://www.casacomedia.cl/cartelera/"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/bombo-fica-40-anos-y-no-me-di-ni-cuenta-21129"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "3a72bd3e9a",
+   "agregado": "2026-11-13",
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "Stand Up Comedy - Valentina Saini - Stoney",
@@ -16300,40 +16433,6 @@
    "id": "f7065bcba6",
    "agregado": "2026-11-06",
    "actualizado": "2026-11-15"
-  },
-  {
-   "titulo": "Bombo Fica - 40 AÑOS Y NO ME DI NI CUENTA",
-   "categoria": "standup",
-   "fecha_inicio": "2026-12-03",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": null,
-   "lugar": "Casa Comedia - Providencia",
-   "direccion": "Constitución N° 97",
-   "comuna": "Providencia",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Show de stand-up y humor del reconocido comediante nacional celebrando sus 40 años de trayectoria.",
-   "imagen": "https://static.ptocdn.net/event-resources/images/CCM007_calugalistado.webp?v=1794590248",
-   "fotos": null,
-   "url": "https://www.puntoticket.com/evento/40-anos-y-no-me-di-ni-cuenta",
-   "fuentes": [
-    {
-     "nombre": "PuntoTicket",
-     "url": "https://www.puntoticket.com/evento/40-anos-y-no-me-di-ni-cuenta"
-    },
-    {
-     "nombre": "casacomedia.cl",
-     "url": "https://www.casacomedia.cl/cartelera/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ticketera",
-   "id": "3a72bd3e9a",
-   "agregado": "2026-11-13",
-   "actualizado": "2026-11-19"
   },
   {
    "titulo": "Feria Pulsar",
@@ -17259,6 +17358,36 @@
    "genero": "clasica"
   },
   {
+   "titulo": "Nadie nos invitó",
+   "categoria": "standup",
+   "fecha_inicio": "2026-12-04",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Cachafaz",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $6.600",
+   "descripcion": "Show de stand up comedy en Teatro Cachafaz.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://ticketplus.cl/events/show-de-stand-up-nadie-nos-invito-viernes-4-diciembre-20-30hrs",
+   "fuentes": [
+    {
+     "nombre": "Ticketplus",
+     "url": "https://ticketplus.cl/events/show-de-stand-up-nadie-nos-invito-viernes-4-diciembre-20-30hrs"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "bcf63ced1a",
+   "agregado": "2026-11-20",
+   "actualizado": "2026-11-20"
+  },
+  {
    "titulo": "Taburete",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-04",
@@ -17632,6 +17761,10 @@
     {
      "nombre": "casacomedia.cl",
      "url": "https://www.casacomedia.cl/cartelera/"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/not-panel-show-not-panel-en-vivo-en-casa-comedia-21134"
     }
    ],
    "desde_imagen": false,
@@ -17639,7 +17772,7 @@
    "origen": "ticketera",
    "id": "5974b82b54",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-19"
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "Luis Slimming en Bar Coyote",
@@ -18014,6 +18147,44 @@
    "genero": "clasica"
   },
   {
+   "titulo": "Rodrigo Villegas - Esto es para ustedes",
+   "categoria": "standup",
+   "fecha_inicio": "2026-12-05",
+   "fecha_fin": "2026-12-06",
+   "hora": "22:00",
+   "horario": null,
+   "lugar": "Casa Comedia - Providencia",
+   "direccion": "Constitución N° 97",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Nuevo espectáculo de stand-up del comediante Rodrigo Villegas.",
+   "imagen": "https://static.ptocdn.net/event-resources/images/CCM009_calugalistado.webp?v=1794591515",
+   "fotos": null,
+   "url": "https://www.puntoticket.com/evento/esto-es-para-ustedes",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/evento/esto-es-para-ustedes"
+    },
+    {
+     "nombre": "casacomedia.cl",
+     "url": "https://www.casacomedia.cl/cartelera/"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/rodrigo-villegas-esto-es-para-ustedes-21140"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "1a31fe0a02",
+   "agregado": "2026-11-13",
+   "actualizado": "2026-11-20"
+  },
+  {
    "titulo": "TEATRO CACHAFAZ Ciclo de teatro-UNPLUG-Sábado 5 Diciembre 22 hrs 05 DIC Desde: CLP 16.500 CLP",
    "categoria": "teatro",
    "fecha_inicio": "2026-12-05",
@@ -18368,40 +18539,6 @@
    "actualizado": "2026-11-19"
   },
   {
-   "titulo": "Rodrigo Villegas - Esto es para ustedes",
-   "categoria": "standup",
-   "fecha_inicio": "2026-12-05",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": null,
-   "lugar": "Casa Comedia - Providencia",
-   "direccion": "Constitución N° 97",
-   "comuna": "Providencia",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Nuevo espectáculo de stand-up del comediante Rodrigo Villegas.",
-   "imagen": "https://static.ptocdn.net/event-resources/images/CCM009_calugalistado.webp?v=1794591515",
-   "fotos": null,
-   "url": "https://www.puntoticket.com/evento/esto-es-para-ustedes",
-   "fuentes": [
-    {
-     "nombre": "PuntoTicket",
-     "url": "https://www.puntoticket.com/evento/esto-es-para-ustedes"
-    },
-    {
-     "nombre": "casacomedia.cl",
-     "url": "https://www.casacomedia.cl/cartelera/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ticketera",
-   "id": "1a31fe0a02",
-   "agregado": "2026-11-13",
-   "actualizado": "2026-11-19"
-  },
-  {
    "titulo": "Sergio Sacoto: Reencuentro en Teatro San Ginés",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-05",
@@ -18533,6 +18670,36 @@
    "genero": "electronica"
   },
   {
+   "titulo": "Varieté de comedia",
+   "categoria": "standup",
+   "fecha_inicio": "2026-12-05",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Cachafaz",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $6.600",
+   "descripcion": "Varieté de comedia y stand up en Teatro Cachafaz.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://ticketplus.cl/events/show-de-stand-up-variete-de-comedia-sabado-5-diciembre-19hrs",
+   "fuentes": [
+    {
+     "nombre": "Ticketplus",
+     "url": "https://ticketplus.cl/events/show-de-stand-up-variete-de-comedia-sabado-5-diciembre-19hrs"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "2adb21f757",
+   "agregado": "2026-11-20",
+   "actualizado": "2026-11-20"
+  },
+  {
    "titulo": "ANIME ALLSTAR - By Power Up",
    "categoria": "anime",
    "fecha_inicio": "2026-12-06",
@@ -18623,6 +18790,37 @@
    "agregado": "2026-11-15",
    "actualizado": "2026-11-15",
    "genero": "trap"
+  },
+  {
+   "titulo": "Omar Courtz",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-06",
+   "fecha_fin": "2026-12-07",
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Beaucheff 1204, Santiago Centro",
+   "direccion": "Beaucheff 1204, Santiago Centro",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Omar Courtz llega a Chile para presentarse en el Movistar Arena este 6 y 7 de diciembre a las 21:00 hrs. Vive una noche llena de reggaetón, trap y música urbana",
+   "imagen": "https://cdn.keai.cl/events/21145-7be005b5ff63b8f3fcd1469c3bb2ae08.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/omar-courtz-21145",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/omar-courtz-21145"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "38f326ba51",
+   "agregado": "2026-11-20",
+   "actualizado": "2026-11-20",
+   "genero": "reggaeton"
   },
   {
    "titulo": "Malas Madres",
@@ -18819,7 +19017,7 @@
    "hora": "21:00",
    "horario": null,
    "lugar": "Teatro Caupolicán",
-   "direccion": null,
+   "direccion": "San Diego 850, 8330840 Santiago, Región Metropolitana",
    "comuna": "Santiago",
    "ciudad": null,
    "region": null,
@@ -18836,6 +19034,10 @@
     {
      "nombre": "VAMOH!",
      "url": "https://vamoh.cl/events/homenaje-a-cerati-30-anos-del-ultimo-concierto-de-soda-stereo-241ws/"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/homenaje-a-cerati-30-anos-del-ultimo-concierto-de-soda-stereo-21148"
     }
    ],
    "desde_imagen": false,
@@ -18843,8 +19045,47 @@
    "origen": "ticketera",
    "id": "43484aa7e7",
    "agregado": "2026-11-15",
-   "actualizado": "2026-11-17",
+   "actualizado": "2026-11-20",
    "genero": "rock"
+  },
+  {
+   "titulo": "Kidd Voodoo - Euforia Stadium",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-07",
+   "fecha_fin": "2026-12-08",
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Estadio Monumental",
+   "direccion": "Av. Marathon 5300, Macul, Región Metropolitana",
+   "comuna": "Macul",
+   "ciudad": "Santiago",
+   "region": "Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto masivo de Kidd Voodoo en el Estadio Monumental.",
+   "imagen": "https://cdn.keai.cl/events/21147-2ad02e344a2ac388318840f195d0ca99.jpg",
+   "fotos": null,
+   "url": "https://www.quehacerchile.cl/conciertos/trap/",
+   "fuentes": [
+    {
+     "nombre": "QuéHacer Chile",
+     "url": "https://www.quehacerchile.cl/conciertos/trap/"
+    },
+    {
+     "nombre": "puntoticket.com",
+     "url": "https://www.puntoticket.com/musica"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/kidd-voodoo-euforia-stadium-21147"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "ec7fdf3538",
+   "agregado": "2026-11-14",
+   "actualizado": "2026-11-20",
+   "genero": "trap"
   },
   {
    "titulo": "Argy",
@@ -18876,41 +19117,6 @@
    "agregado": "2026-11-13",
    "actualizado": "2026-11-13",
    "genero": "electronica"
-  },
-  {
-   "titulo": "Kidd Voodoo - Euforia Stadium",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-12-07",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": null,
-   "lugar": "Estadio Monumental",
-   "direccion": null,
-   "comuna": "Macul",
-   "ciudad": "Santiago",
-   "region": "Metropolitana",
-   "precio": null,
-   "descripcion": "Concierto masivo de Kidd Voodoo en el Estadio Monumental.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://www.quehacerchile.cl/conciertos/trap/",
-   "fuentes": [
-    {
-     "nombre": "QuéHacer Chile",
-     "url": "https://www.quehacerchile.cl/conciertos/trap/"
-    },
-    {
-     "nombre": "puntoticket.com",
-     "url": "https://www.puntoticket.com/musica"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "ec7fdf3538",
-   "agregado": "2026-11-14",
-   "actualizado": "2026-11-15",
-   "genero": "trap"
   },
   {
    "titulo": "Manuel Turizo en Gran Arena Monticello",
@@ -19230,6 +19436,37 @@
    "agregado": "2026-11-10",
    "actualizado": "2026-11-10",
    "genero": "clasica"
+  },
+  {
+   "titulo": "Javiera Mena",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-09",
+   "fecha_fin": "2026-12-10",
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Beaucheff 1204, Santiago Centro",
+   "direccion": "Beaucheff 1204, Santiago Centro",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Javiera Mena llega al Santander Arena este 9 de diciembre a las 21:00 hrs para presentar un concierto imperdible en Santiago. Vive una noche llena de pop, elect",
+   "imagen": "https://cdn.keai.cl/events/21153-e26f635294e3a9bd54855f8db9a429d6.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/javiera-mena-21153",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/javiera-mena-21153"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "2be4c655af",
+   "agregado": "2026-11-20",
+   "actualizado": "2026-11-20",
+   "genero": "pop"
   },
   {
    "titulo": "Festival ENAI 2026",
@@ -20002,6 +20239,41 @@
    "genero": "clasica"
   },
   {
+   "titulo": "Jere Klein - El Llamado",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-11",
+   "fecha_fin": "2026-12-12",
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Beaucheff 1204, Santiago Centro",
+   "direccion": "Beaucheff 1204, Santiago Centro",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Jere Klein llega al Santander Arena este 11 de diciembre a las 21:00 hrs para una noche llena de música, energía y reggaetón. Disfruta en vivo al destacado arti",
+   "imagen": "https://cdn.keai.cl/events/21156-32d1b9483f704a45d8cfa3053743e81e.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/jere-klein-el-llamado-21156",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/el-llamado-jere-klein-2026"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/jere-klein-el-llamado-21156"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "de6f4a66da",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-20",
+   "genero": "trap"
+  },
+  {
    "titulo": "Fluvial 2026: Teatro Cervantes: La Brígida Orquesta",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-11",
@@ -20112,37 +20384,6 @@
    "agregado": "2026-11-14",
    "actualizado": "2026-11-14",
    "genero": "hiphop"
-  },
-  {
-   "titulo": "Jere Klein - El Llamado",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-12-11",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": null,
-   "lugar": "Santander Arena - Santiago Centro",
-   "direccion": null,
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
-   "precio": null,
-   "descripcion": null,
-   "imagen": "https://static.ptocdn.net/images/eventos/fps001_calugalistado.jpg",
-   "fotos": null,
-   "url": "https://www.puntoticket.com/el-llamado-jere-klein-2026",
-   "fuentes": [
-    {
-     "nombre": "PuntoTicket",
-     "url": "https://www.puntoticket.com/el-llamado-jere-klein-2026"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "media",
-   "origen": "ticketera",
-   "id": "de6f4a66da",
-   "agregado": "2026-11-15",
-   "actualizado": "2026-11-15",
-   "genero": "trap"
   },
   {
    "titulo": "Jorge Alís - MALON",
@@ -21240,6 +21481,36 @@
    "genero": "electronica"
   },
   {
+   "titulo": "Tri yisus",
+   "categoria": "standup",
+   "fecha_inicio": "2026-12-12",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Cachafaz",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $6.600",
+   "descripcion": "Show de stand up comedy en Teatro Cachafaz.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://ticketplus.cl/events/show-de-stand-up-tri-yisus-sabado-12-diciembre-19hrs",
+   "fuentes": [
+    {
+     "nombre": "Ticketplus",
+     "url": "https://ticketplus.cl/events/show-de-stand-up-tri-yisus-sabado-12-diciembre-19hrs"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "7f32ea3ebf",
+   "agregado": "2026-11-20",
+   "actualizado": "2026-11-20"
+  },
+  {
    "titulo": "Noelia y la Navidad Viral en Espacio Diana - 13 de Diciembre",
    "categoria": "teatro",
    "fecha_inicio": "2026-12-13",
@@ -21299,6 +21570,41 @@
    "agregado": "2026-11-20",
    "actualizado": "2026-11-20",
    "genero": "folclor"
+  },
+  {
+   "titulo": "Katseye - el Gran Concierto, Tribute Experience Tour",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-13",
+   "fecha_fin": null,
+   "hora": "19:30",
+   "horario": null,
+   "lugar": "Teatro Coliseo",
+   "direccion": "Nataniel Cox 59, 8330165 Santiago, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Entradas para KATSEYE - The Tribute Experience en Teatro Coliseo, Santiago. 13 de diciembre 2026, 19:30 hrs. Vive una experiencia tributo inspirada en el fenóme",
+   "imagen": "https://cdn.keai.cl/events/21164-46db82373f9de86d51560ab9a6bd6cf6.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/katseye-el-gran-concierto-tribute-experience-tour-21164",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/katseye-el-gran-concierto-tribute-experience-tour"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/katseye-el-gran-concierto-tribute-experience-tour-21164"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "692c143bdd",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-20",
+   "genero": "pop"
   },
   {
    "titulo": "Bray On en Concierto - Santiago",
@@ -21375,6 +21681,37 @@
    "genero": "reggaeton"
   },
   {
+   "titulo": "De La Rose",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-13",
+   "fecha_fin": "2026-12-14",
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Teatro Caupolicán",
+   "direccion": "San Diego 850, 8330840 Santiago, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "De La Rose llega a Chile para presentarse en el Teatro Caupolicán este 13 de Diciembre a las 21:00 hrs. Vive una noche llena de reggaetón, música urbana y energ",
+   "imagen": "https://cdn.keai.cl/events/21165-833f2b0fb85cb139d9b56073805bd90d.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/de-la-rose-21165",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/de-la-rose-21165"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "bd6d2bb0e2",
+   "agregado": "2026-11-20",
+   "actualizado": "2026-11-20",
+   "genero": "reggaeton"
+  },
+  {
    "titulo": "Anuel AA - World Tour",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-13",
@@ -21439,37 +21776,6 @@
    "agregado": "2026-11-14",
    "actualizado": "2026-11-14",
    "genero": "trap"
-  },
-  {
-   "titulo": "Katseye - el Gran Concierto, Tribute Experience Tour",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-12-13",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": null,
-   "lugar": "Teatro Coliseo - Santiago Centro",
-   "direccion": null,
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
-   "precio": null,
-   "descripcion": null,
-   "imagen": "https://static.ptocdn.net/images/eventos/cco127_calugalistado.jpg",
-   "fotos": null,
-   "url": "https://www.puntoticket.com/katseye-el-gran-concierto-tribute-experience-tour",
-   "fuentes": [
-    {
-     "nombre": "PuntoTicket",
-     "url": "https://www.puntoticket.com/katseye-el-gran-concierto-tribute-experience-tour"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "media",
-   "origen": "ticketera",
-   "id": "692c143bdd",
-   "agregado": "2026-11-15",
-   "actualizado": "2026-11-15",
-   "genero": "pop"
   },
   {
    "titulo": "Santiago Rocks 2026",
@@ -21736,6 +22042,36 @@
    "genero": "rock"
   },
   {
+   "titulo": "Open Mike: Felipe Izquierdo en El Honesto Mike Vitacura",
+   "categoria": "standup",
+   "fecha_inicio": "2026-12-16",
+   "fecha_fin": null,
+   "hora": "19:30",
+   "horario": null,
+   "lugar": "El Honesto Mike Vitacura",
+   "direccion": "Vitacura #4607",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Open Mike presenta: Felipe Izquierdo Felipe nos trae su nuevo show \" LA FILOSOFÍA DEL HUMOR\" al escenario de El Honesto Mike en Vitacura 🎙️ Apertura de puertas",
+   "imagen": "https://cdn.keai.cl/events/21059-46b19df866309f21c4cb3bfdd9661ee6.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/open-mike-felipe-izquierdo-en-el-honesto-mike-vitacura-21059",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/open-mike-felipe-izquierdo-en-el-honesto-mike-vitacura-21059"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "1979d20e13",
+   "agregado": "2026-11-20",
+   "actualizado": "2026-11-20"
+  },
+  {
    "titulo": "Orquesta & Coro Sinfónico Usach - Bach / Albinoni",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-16",
@@ -21957,6 +22293,43 @@
    "genero": "clasica"
   },
   {
+   "titulo": "ELLENDE + THYRFING 2026 Chile",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-17",
+   "fecha_fin": "2026-12-18",
+   "hora": "20:00",
+   "lugar": "Blondie - Santiago Centro",
+   "direccion": "Huérfanos 786, 8320193 Santiago, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Concierto conjunto de Ellende y Thyrfing en Blondie, exponentes del metal extremo.",
+   "imagen": "https://static.ptocdn.net/images/eventos/hvp015_calugalistado.jpg",
+   "url": "https://www.puntoticket.com/evento/ellende-thyrfing-2026-chile-blondie-dic-2026",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/evento/ellende-thyrfing-2026-chile-blondie-dic-2026"
+    },
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/evento/ellende-thyrfing-2026-chile-epicentro-dic-2026"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/ellende-thyrfing-2026-chile-21167"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "2dafda391c",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-20",
+   "genero": "metal"
+  },
+  {
    "titulo": "Javier Silvera: ¿lo Dejamos Hasta Acá? en Cantares Bar",
    "categoria": "standup",
    "fecha_inicio": "2026-12-17",
@@ -22018,6 +22391,67 @@
    "genero": "indie"
   },
   {
+   "titulo": "Jairo Vera - Genesis 2026",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-17",
+   "fecha_fin": "2026-12-18",
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Beaucheff 1204, Santiago Centro",
+   "direccion": "Beaucheff 1204, Santiago Centro",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Jairo Vera llega al Movistar Arena este 17 de diciembre a las 21:00 hrs para protagonizar uno de los conciertos más esperados del año. Vive una noche llena de m",
+   "imagen": "https://cdn.keai.cl/events/21168-6feb07ff9c0977610cafdcdd7efb9032.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/jairo-vera-genesis-2026-21168",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/jairo-vera-genesis-2026-21168"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "28b4a1974a",
+   "agregado": "2026-11-20",
+   "actualizado": "2026-11-20",
+   "genero": "trap"
+  },
+  {
+   "titulo": "León Murillo - La noche es en Casa Comedia",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-12-17",
+   "fecha_fin": "2026-12-18",
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Constitución 97, Providencia, Santiago Metropolitan Region 7500000, Chile",
+   "direccion": "Constitución 97, Providencia, Santiago Metropolitan Region 7500000, Chile",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "León nos trae un unipersonal tan personal como único, un show con material permanente renovado. Ven a ser parte de esta experiencia y ríe de principio a fin con",
+   "imagen": "https://cdn.keai.cl/events/21169-452493456e69f8a7d70b09ef4560a24d.webp",
+   "fotos": null,
+   "url": "https://keai.cl/evento/leon-murillo-la-noche-es-en-casa-comedia-21169",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/leon-murillo-la-noche-es-en-casa-comedia-21169"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "1e470353dc",
+   "agregado": "2026-11-20",
+   "actualizado": "2026-11-20"
+  },
+  {
    "titulo": "Qyntral + Derringer en Mibar",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-17",
@@ -22077,39 +22511,6 @@
    "id": "f8d9e2c0dc",
    "agregado": "2026-11-13",
    "actualizado": "2026-11-13"
-  },
-  {
-   "titulo": "ELLENDE + THYRFING 2026 Chile",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-12-17",
-   "fecha_fin": null,
-   "hora": null,
-   "lugar": "Blondie - Santiago Centro",
-   "direccion": null,
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
-   "precio": null,
-   "descripcion": "Concierto conjunto de Ellende y Thyrfing en Blondie, exponentes del metal extremo.",
-   "imagen": "https://static.ptocdn.net/images/eventos/hvp015_calugalistado.jpg",
-   "url": "https://www.puntoticket.com/evento/ellende-thyrfing-2026-chile-blondie-dic-2026",
-   "fuentes": [
-    {
-     "nombre": "PuntoTicket",
-     "url": "https://www.puntoticket.com/evento/ellende-thyrfing-2026-chile-blondie-dic-2026"
-    },
-    {
-     "nombre": "PuntoTicket",
-     "url": "https://www.puntoticket.com/evento/ellende-thyrfing-2026-chile-epicentro-dic-2026"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ticketera",
-   "id": "2dafda391c",
-   "agregado": "2026-11-06",
-   "actualizado": "2026-11-19",
-   "genero": "metal"
   },
   {
    "titulo": "Jairo Vera en Santander Arena",
@@ -22345,6 +22746,87 @@
    "genero": "indie"
   },
   {
+   "titulo": "Fuente Carrasco",
+   "categoria": "standup",
+   "fecha_inicio": "2026-12-18",
+   "fecha_fin": "2026-12-19",
+   "hora": "20:00",
+   "horario": "Funciones: 20 de noviembre; 18 de diciembre, 20:00 h",
+   "lugar": "Club San Miguel",
+   "direccion": "Llano Subercaseaux 3597, 8910183 San Miguel, Región Metropolitana",
+   "comuna": "San Miguel",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Show de comedia en vivo en Club San Miguel.",
+   "imagen": "https://static.ptocdn.net/images/eventos/edo152_calugalistado.jpg",
+   "fotos": null,
+   "url": "https://www.puntoticket.com/evento/fuentecarrasco-club-sanmiguel-dic",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/evento/fuentecarrasco-club-sanmiguel-dic"
+    },
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/evento/fuentecarrasco-club-sanmiguel-nov"
+    },
+    {
+     "nombre": "Suitip",
+     "url": "https://www.suitip.cl/panoramas/guia/hoy"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/fuente-carrasco-fuente-carrasco-21090"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/fuente-carrasco-21170"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "ticketera",
+   "id": "6a116ac5d6",
+   "agregado": "2026-11-12",
+   "actualizado": "2026-11-20"
+  },
+  {
+   "titulo": "Gonzalez & Los Asistentes - 25 Años Cerrado Con LLave",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-18",
+   "fecha_fin": "2026-12-19",
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Aula Magna Manuel de Salas - Ñuñoa",
+   "direccion": "Avenida Irarrázaval 3780, Ñuñoa, Santiago Metropolitan Region 7750000, Chile",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Concierto de celebración de los 25 años de Gonzalez & Los Asistentes.",
+   "imagen": "https://static.ptocdn.net/images/eventos/ppr042_calugalistado.jpg",
+   "fotos": null,
+   "url": "https://www.puntoticket.com/evento/gonzalez-y-los-asistentes-santiago",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/evento/gonzalez-y-los-asistentes-santiago"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/gonzalez-los-asistentes-25-anos-cerrado-con-llave-21171"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "bdd1aeb4f4",
+   "agregado": "2026-11-15",
+   "actualizado": "2026-11-20",
+   "genero": "rock"
+  },
+  {
    "titulo": "Un Espactáculo Sin Preparar",
    "categoria": "teatro",
    "fecha_inicio": "2026-12-18",
@@ -22533,67 +23015,6 @@
    "genero": "trap"
   },
   {
-   "titulo": "Fuente Carrasco",
-   "categoria": "standup",
-   "fecha_inicio": "2026-12-18",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": null,
-   "lugar": "Club San Miguel",
-   "direccion": null,
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
-   "precio": null,
-   "descripcion": null,
-   "imagen": "https://static.ptocdn.net/images/eventos/edo152_calugalistado.jpg",
-   "fotos": null,
-   "url": "https://www.puntoticket.com/evento/fuentecarrasco-club-sanmiguel-dic",
-   "fuentes": [
-    {
-     "nombre": "PuntoTicket",
-     "url": "https://www.puntoticket.com/evento/fuentecarrasco-club-sanmiguel-dic"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "media",
-   "origen": "ticketera",
-   "id": "6a116ac5d6",
-   "agregado": "2026-11-12",
-   "actualizado": "2026-11-20"
-  },
-  {
-   "titulo": "Gonzalez & Los Asistentes - 25 Años Cerrado Con LLave",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-12-18",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": null,
-   "lugar": "Aula Magna Manuel de Salas - Ñuñoa",
-   "direccion": null,
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
-   "precio": null,
-   "descripcion": "Concierto de celebración de los 25 años de Gonzalez & Los Asistentes.",
-   "imagen": "https://static.ptocdn.net/images/eventos/ppr042_calugalistado.jpg",
-   "fotos": null,
-   "url": "https://www.puntoticket.com/evento/gonzalez-y-los-asistentes-santiago",
-   "fuentes": [
-    {
-     "nombre": "PuntoTicket",
-     "url": "https://www.puntoticket.com/evento/gonzalez-y-los-asistentes-santiago"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ticketera",
-   "id": "bdd1aeb4f4",
-   "agregado": "2026-11-15",
-   "actualizado": "2026-11-15",
-   "genero": "rock"
-  },
-  {
    "titulo": "Kuervos del Sur en Trotamundos",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-18",
@@ -22749,6 +23170,36 @@
    "genero": "bandas_sonoras"
   },
   {
+   "titulo": "Fede Vigevani",
+   "categoria": "standup",
+   "fecha_inicio": "2026-12-19",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Claro Arena",
+   "direccion": "Cv Las Flores 13000, Las Condes, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "El Mundo de Fede Vigevani llega a Chile para presentarse en Claro Arena este 19 de diciembre a las 19:00 hrs. Vive una experiencia llena de diversión, humor, de",
+   "imagen": "https://cdn.keai.cl/events/21174-d67912c907bc629ecf74cc5beaf21be8.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/fede-vigevani-21174",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/fede-vigevani-21174"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "5b324f41f4",
+   "agregado": "2026-11-20",
+   "actualizado": "2026-11-20"
+  },
+  {
    "titulo": "Festival de Cumbia - El Biza - La Gran America Junior - La Sonora del VitoLko - La Quinta Kumbia",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-19",
@@ -22808,6 +23259,45 @@
    "id": "1e7eb3a032",
    "agregado": "2026-11-20",
    "actualizado": "2026-11-20"
+  },
+  {
+   "titulo": "Astro",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-19",
+   "fecha_fin": "2026-12-20",
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Teatro Coliseo",
+   "direccion": "Nataniel Cox 59",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto de la banda Astro en el Teatro Coliseo.",
+   "imagen": "https://static.ptocdn.net/images/eventos/fna385_calugalistado.jpg",
+   "fotos": null,
+   "url": "https://www.rockaxis.com/rock/noticia/45300/entrada-en-mano-los-conciertos-que-se-vienen/",
+   "fuentes": [
+    {
+     "nombre": "Rockaxis",
+     "url": "https://www.rockaxis.com/rock/noticia/45300/entrada-en-mano-los-conciertos-que-se-vienen/"
+    },
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/evento/astro-teatro-coliseo"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/astro-21176"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "449f513536",
+   "agregado": "2026-11-14",
+   "actualizado": "2026-11-20",
+   "genero": "indie"
   },
   {
    "titulo": "León Murillo - La noche es en Casa Comedia",
@@ -22938,41 +23428,6 @@
    "agregado": "2026-11-14",
    "actualizado": "2026-11-14",
    "genero": "trap"
-  },
-  {
-   "titulo": "Astro",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-12-19",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": null,
-   "lugar": "Teatro Coliseo",
-   "direccion": "Nataniel Cox 59",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Concierto de la banda Astro en el Teatro Coliseo.",
-   "imagen": "https://static.ptocdn.net/images/eventos/fna385_calugalistado.jpg",
-   "fotos": null,
-   "url": "https://www.rockaxis.com/rock/noticia/45300/entrada-en-mano-los-conciertos-que-se-vienen/",
-   "fuentes": [
-    {
-     "nombre": "Rockaxis",
-     "url": "https://www.rockaxis.com/rock/noticia/45300/entrada-en-mano-los-conciertos-que-se-vienen/"
-    },
-    {
-     "nombre": "PuntoTicket",
-     "url": "https://www.puntoticket.com/evento/astro-teatro-coliseo"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "449f513536",
-   "agregado": "2026-11-14",
-   "actualizado": "2026-11-15",
-   "genero": "indie"
   },
   {
    "titulo": "Crave 2026",
@@ -23158,6 +23613,36 @@
    "agregado": "2026-11-14",
    "actualizado": "2026-11-14",
    "genero": "bandas_sonoras"
+  },
+  {
+   "titulo": "Open Mike: Luis Slimming en El Honesto Mike Vitacura",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-12-21",
+   "fecha_fin": "2026-12-22",
+   "hora": "21:30",
+   "horario": null,
+   "lugar": "El Honesto Mike Vitacura",
+   "direccion": "Vitacura #4607",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Open Mike presenta: Luis Slimming Armando Chistes es el nuevo show de Luis Slimming, una oportunidad única para ver a Don Comedia en su estado más real. Luis se",
+   "imagen": "https://cdn.keai.cl/events/21061-1e90d7fc0b66637355f40a74819af25d.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/open-mike-luis-slimming-en-el-honesto-mike-vitacura-21061",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/open-mike-luis-slimming-en-el-honesto-mike-vitacura-21061"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "7a481859a7",
+   "agregado": "2026-11-20",
+   "actualizado": "2026-11-20"
   },
   {
    "titulo": "Caribe Music Fest 2026 @ Santander Arena",
@@ -23961,8 +24446,8 @@
    "titulo": "Anyma Presents Æden",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-31",
-   "fecha_fin": null,
-   "hora": null,
+   "fecha_fin": "2027-01-01",
+   "hora": "20:00",
    "horario": null,
    "lugar": "Espacio Riesco",
    "direccion": "Av. El Salto 5000",
@@ -23986,6 +24471,10 @@
     {
      "nombre": "puntoticket.com",
      "url": "https://www.puntoticket.com/musica"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/anyma-21180"
     }
    ],
    "desde_imagen": false,
@@ -23993,7 +24482,7 @@
    "origen": "ia",
    "id": "63ab3d3576",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-15",
+   "actualizado": "2026-11-20",
    "genero": "electronica"
   },
   {
@@ -24335,6 +24824,36 @@
    "actualizado": "2026-11-19"
   },
   {
+   "titulo": "Prima Facie - Festival Solo Zoco",
+   "categoria": "teatro",
+   "fecha_inicio": "2027-01-08",
+   "fecha_fin": null,
+   "hora": "19:30",
+   "horario": null,
+   "lugar": "Avenida La Dehesa 1500, Lo Barnechea, Santiago Metropolitan Region 7690000, Chile",
+   "direccion": "Avenida La Dehesa 1500, Lo Barnechea, Santiago Metropolitan Region 7690000, Chile",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "PREVENTA (hasta el 30 de noviembre)VENTA GENERAL“Prima Facie” es un poderoso monólogo que revela las grietas del sistema judicial frente a la violencia sexual.",
+   "imagen": "https://cdn.keai.cl/events/21187-facef9ae561c868b40d6aa371ba7913f.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/prima-facie-festival-solo-zoco-21187",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/prima-facie-festival-solo-zoco-21187"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "93d97a37c5",
+   "agregado": "2026-11-20",
+   "actualizado": "2026-11-20"
+  },
+  {
    "titulo": "El beso de Rock Hudson",
    "categoria": "teatro",
    "fecha_inicio": "2027-01-08",
@@ -24485,6 +25004,37 @@
    "id": "09897b6a7f",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-19"
+  },
+  {
+   "titulo": "Tkm Fest",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-01-09",
+   "fecha_fin": null,
+   "hora": "15:00",
+   "horario": null,
+   "lugar": "Parque Ciudad Empresarial",
+   "direccion": "8580676 Huechuraba, Santiago Metropolitan Region",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Entradas para TKM Fest en Parque Ciudad Empresarial, Santiago. 9 de enero 2027, 15:00 hrs. Una nueva fiesta que mezcla lo mejor de la cumbia, la música urbana y",
+   "imagen": "https://cdn.keai.cl/events/21190-a56317ee24bb309dcea694642f238345.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/tkm-fest-21190",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/tkm-fest-21190"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "f6caa632a9",
+   "agregado": "2026-11-20",
+   "actualizado": "2026-11-20",
+   "genero": "cumbia"
   },
   {
    "titulo": "Metallica Sinfónico S&M",
@@ -25718,6 +26268,37 @@
    "id": "f0465d98a5",
    "agregado": "2026-11-15",
    "actualizado": "2026-11-15"
+  },
+  {
+   "titulo": "Sundeck - Mathame presenta: NEO Santiago",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-01-23",
+   "fecha_fin": null,
+   "hora": "17:00",
+   "horario": null,
+   "lugar": "Espacio Riesco",
+   "direccion": "Av. El Salto 5000, 8440000 Huechuraba, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Sundeck - Mathame presenta: NEO Santiago llega a Espacio Riesco este 23 de enero a las 17:00 hrs para una jornada de música electrónica, baile y experiencias al",
+   "imagen": "https://cdn.keai.cl/events/21196-e4db9d05507149e9bc725241e079247f.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/sundeck-mathame-presenta-neo-santiago-21196",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/sundeck-mathame-presenta-neo-santiago-21196"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "44784eedc2",
+   "agregado": "2026-11-20",
+   "actualizado": "2026-11-20",
+   "genero": "electronica"
   },
   {
    "titulo": "STUDIO GHIBLI SINFÓNICO - Teatro Municipal de Valparaíso",
