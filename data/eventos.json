@@ -1,31 +1,13 @@
 {
  "version": 1,
- "actualizado": "2026-11-22T08:56-03:00",
+ "actualizado": "2026-11-22T16:57-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-22T08:56-03:00",
+  "fecha": "2026-11-22T16:57-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 63,
-  "nuevos_esta_vez": 36,
+  "eventos_nuevos": 59,
+  "nuevos_esta_vez": 14,
   "nuevos_ids": [
-   "a3db2fab1d",
-   "b6bfbb5da8",
-   "c6403605aa",
-   "a576b88e11",
-   "85b75460f3",
-   "421b449cb7",
-   "0e8b8cd0ba",
-   "f1523ee592",
-   "bef493fa1b",
-   "f25ee3bad5",
-   "829ff1a0ef",
-   "1d5e691f4d",
-   "da7b3a10b3",
-   "74f18cdd7f",
-   "2b19890881",
-   "1a27535cbe",
-   "5b56210dce",
-   "da631d0f88",
    "b2217852ee",
    "72892298a2",
    "1336bbdb53",
@@ -70,27 +52,23 @@
    "2e0ae52089",
    "2a739653cf",
    "30e41e486f",
-   "d61da03c0f"
+   "d61da03c0f",
+   "ab7d4985ae",
+   "537fa4d333",
+   "b75a7b6045",
+   "b354f23ac5",
+   "b110ac10e9",
+   "7ed9e18356",
+   "7fe57c0973",
+   "3959592772",
+   "431e05e7f8",
+   "ada5189e80",
+   "890d86db3b",
+   "77f29f7f37",
+   "dfc7d55b52",
+   "fc0fdb10cd"
   ],
   "nuevos_desde": {
-   "a3db2fab1d": "2026-11-21T14:53-03:00",
-   "b6bfbb5da8": "2026-11-21T14:53-03:00",
-   "c6403605aa": "2026-11-21T14:53-03:00",
-   "a576b88e11": "2026-11-21T14:53-03:00",
-   "85b75460f3": "2026-11-21T14:53-03:00",
-   "421b449cb7": "2026-11-21T14:53-03:00",
-   "0e8b8cd0ba": "2026-11-21T14:53-03:00",
-   "f1523ee592": "2026-11-21T14:53-03:00",
-   "bef493fa1b": "2026-11-21T14:53-03:00",
-   "f25ee3bad5": "2026-11-21T14:53-03:00",
-   "829ff1a0ef": "2026-11-21T14:53-03:00",
-   "1d5e691f4d": "2026-11-21T14:53-03:00",
-   "da7b3a10b3": "2026-11-21T14:53-03:00",
-   "74f18cdd7f": "2026-11-21T14:53-03:00",
-   "2b19890881": "2026-11-21T14:53-03:00",
-   "1a27535cbe": "2026-11-21T14:53-03:00",
-   "5b56210dce": "2026-11-21T14:53-03:00",
-   "da631d0f88": "2026-11-21T14:53-03:00",
    "b2217852ee": "2026-11-21T20:29-03:00",
    "72892298a2": "2026-11-21T20:29-03:00",
    "1336bbdb53": "2026-11-21T20:29-03:00",
@@ -135,24 +113,38 @@
    "2e0ae52089": "2026-11-22T08:56-03:00",
    "2a739653cf": "2026-11-22T08:56-03:00",
    "30e41e486f": "2026-11-22T08:56-03:00",
-   "d61da03c0f": "2026-11-22T08:56-03:00"
+   "d61da03c0f": "2026-11-22T08:56-03:00",
+   "ab7d4985ae": "2026-11-22T16:57-03:00",
+   "537fa4d333": "2026-11-22T16:57-03:00",
+   "b75a7b6045": "2026-11-22T16:57-03:00",
+   "b354f23ac5": "2026-11-22T16:57-03:00",
+   "b110ac10e9": "2026-11-22T16:57-03:00",
+   "7ed9e18356": "2026-11-22T16:57-03:00",
+   "7fe57c0973": "2026-11-22T16:57-03:00",
+   "3959592772": "2026-11-22T16:57-03:00",
+   "431e05e7f8": "2026-11-22T16:57-03:00",
+   "ada5189e80": "2026-11-22T16:57-03:00",
+   "890d86db3b": "2026-11-22T16:57-03:00",
+   "77f29f7f37": "2026-11-22T16:57-03:00",
+   "dfc7d55b52": "2026-11-22T16:57-03:00",
+   "fc0fdb10cd": "2026-11-22T16:57-03:00"
   },
   "horas_nuevos": 24,
-  "llamadas_ia": 66,
+  "llamadas_ia": 24,
   "ia_sin_cupo": false,
-  "ultima_completa": "2026-11-22T08:26-03:00",
+  "ultima_completa": "2026-11-22T16:38-03:00",
   "modo": "completa",
-  "paginas_revisadas": 57,
+  "paginas_revisadas": 28,
   "busquedas": 107,
-  "fuentes_fijas": 26,
-  "errores": 20,
-  "noticias_desde": "2026-11-21",
-  "noticias_viejas_descartadas": 397,
-  "redes_vistas": 4,
-  "generos_ia": 0,
-  "imagenes_encontradas": 14
+  "fuentes_fijas": 9,
+  "errores": 18,
+  "noticias_desde": "2026-11-22",
+  "noticias_viejas_descartadas": 426,
+  "redes_vistas": 0,
+  "generos_ia": 6,
+  "imagenes_encontradas": 5
  },
- "total": 847,
+ "total": 861,
  "eventos": [
   {
    "titulo": "Mariposas y Polillas, Colores en Movimiento",
@@ -4522,6 +4514,10 @@
     {
      "nombre": "Fever",
      "url": "https://feverup.com/es/santiago?seasonal=p94e42p"
+    },
+    {
+     "nombre": "Fever",
+     "url": "https://feverup.com/es/santiago/the-jazz-room"
     }
    ],
    "desde_imagen": false,
@@ -4529,7 +4525,7 @@
    "origen": "ia",
    "id": "73fc126123",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-19"
+   "actualizado": "2026-11-22"
   },
   {
    "titulo": "La Batalla de San Tentorio",
@@ -6428,6 +6424,10 @@
     {
      "nombre": "EN CONCIERTO",
      "url": "https://enconcierto.cl/calendario"
+    },
+    {
+     "nombre": "raveme.cl",
+     "url": "https://raveme.cl/eventos"
     }
    ],
    "desde_imagen": true,
@@ -6435,7 +6435,7 @@
    "origen": "ia",
    "id": "1ca4c6ee83",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-21",
+   "actualizado": "2026-11-22",
    "genero": "electronica"
   },
   {
@@ -7287,7 +7287,8 @@
    "origen": "datos-estructurados",
    "id": "39d08ea79e",
    "agregado": "2026-11-22",
-   "actualizado": "2026-11-22"
+   "actualizado": "2026-11-22",
+   "genero": "clasica"
   },
   {
    "titulo": "Tinta Fresca: Cierre del Programa de Composición con Recital",
@@ -7439,7 +7440,8 @@
    "origen": "ia",
    "id": "db9df064f1",
    "agregado": "2026-11-22",
-   "actualizado": "2026-11-22"
+   "actualizado": "2026-11-22",
+   "genero": "clasica"
   },
   {
    "titulo": "Imitación a la vida",
@@ -9208,14 +9210,18 @@
     {
      "nombre": "lareinadeldato.cl",
      "url": "https://lareinadeldato.cl/datos/panoramas-culturales-noviembre-2026-en-santiago/"
+    },
+    {
+     "nombre": "Tusdj Latinoamérica",
+     "url": "https://www.tusdj.com/fiestas/santiago/"
     }
    ],
-   "desde_imagen": false,
+   "desde_imagen": true,
    "confianza": "alta",
    "origen": "ia",
    "id": "03e4173194",
    "agregado": "2026-11-08",
-   "actualizado": "2026-11-17",
+   "actualizado": "2026-11-22",
    "genero": "indie"
   },
   {
@@ -10570,6 +10576,10 @@
     {
      "nombre": "Chilevisión",
      "url": "https://www.chilevision.cl/programas/festivales-chv/dos-noches-con-risas-aseguradas-conoce-que-humoristas-se-presentaran-en-el-festival-del-guaton-loyola-2026/"
+    },
+    {
+     "nombre": "Chilevisión",
+     "url": "https://www.chilevision.cl/festivales-chv/"
     }
    ],
    "desde_imagen": false,
@@ -10577,7 +10587,7 @@
    "origen": "ia",
    "id": "bc240d9894",
    "agregado": "2026-11-18",
-   "actualizado": "2026-11-18"
+   "actualizado": "2026-11-22"
   },
   {
    "titulo": "Kard World Tour NOWHERE en Chile",
@@ -10794,6 +10804,36 @@
    "id": "1e71f05a47",
    "agregado": "2026-11-08",
    "actualizado": "2026-11-08"
+  },
+  {
+   "titulo": "Tacita Ishi Fest",
+   "categoria": "anime",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": "10:00",
+   "horario": "10:00 a 23:00 hrs",
+   "lugar": "Plaza Presidente Balmaceda",
+   "direccion": null,
+   "comuna": "Curacaví",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Festival geek, anime y cosplay con música en vivo, torneo de Beyblade, videojuegos y vehículos temáticos.",
+   "imagen": "https://assets.encancha.cl/social/326112-f5373f2b79.jpg",
+   "fotos": null,
+   "url": "https://www.encancha.cl/enlahora/panoramas/2026/11/22/tendra-a-vegeta-y-gta-vi-para-jugar-el-imperdible-festival-a-40-minutos-de-santiago-326112.html",
+   "fuentes": [
+    {
+     "nombre": "En Cancha",
+     "url": "https://www.encancha.cl/enlahora/panoramas/2026/11/22/tendra-a-vegeta-y-gta-vi-para-jugar-el-imperdible-festival-a-40-minutos-de-santiago-326112.html"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "537fa4d333",
+   "agregado": "2026-11-22",
+   "actualizado": "2026-11-22"
   },
   {
    "titulo": "YCS Avanzado - Yu-Gi-Oh!",
@@ -12060,6 +12100,37 @@
    "genero": "metal"
   },
   {
+   "titulo": "Chiloé Jazz 2026",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Plaza de Armas de Castro",
+   "direccion": null,
+   "comuna": "Castro, Chiloé",
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Chiloé Jazz 2026 en Plaza de Armas de Castro, Castro, Chiloé. Dennis Chambers, Christian Gálvez Quartet, Antonella Sigala, Fede Vaz, Rolando Maldonado y Banda Nave",
+   "imagen": "https://chilejazz.cl/assets/images/logo-redes-487-x-487-px-2.png",
+   "fotos": null,
+   "url": "https://chilejazz.cl/conciertos.html",
+   "fuentes": [
+    {
+     "nombre": "Portal Chile Jazz Fest",
+     "url": "https://chilejazz.cl/conciertos.html"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "ada5189e80",
+   "agregado": "2026-11-22",
+   "actualizado": "2026-11-22",
+   "genero": "jazz"
+  },
+  {
    "titulo": "Classic Thrash Attack: Artillery y Atrophy en Concepción",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-28",
@@ -12148,6 +12219,10 @@
     {
      "nombre": "raveme.cl",
      "url": "https://raveme.cl/eventos/ciudad/santiago"
+    },
+    {
+     "nombre": "raveme.cl",
+     "url": "https://raveme.cl/eventos"
     }
    ],
    "desde_imagen": false,
@@ -12155,8 +12230,39 @@
    "origen": "ia",
    "id": "24d9a40a01",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-13",
+   "actualizado": "2026-11-22",
    "genero": "jazz"
+  },
+  {
+   "titulo": "Road to Tranceformations Chile",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Sala Omnium",
+   "direccion": "Av. Apoquindo 4900",
+   "comuna": "Las Condes",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Evento de música electrónica y trance rumbo a Tranceformations Chile.",
+   "imagen": "https://kn6kang47jzl4ttd.public.blob.vercel-storage.com/producers/b819b3f7-3f09-454a-b32f-717341160954/event-media/0a5c9a1e-df49-413c-9c24-c3b3ffc67b74/UGeENgs5ykfcHzL7EXQ9s.png",
+   "fotos": null,
+   "url": "https://rtfchile.evently.cl",
+   "fuentes": [
+    {
+     "nombre": "raveme.cl",
+     "url": "https://raveme.cl/eventos"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "b110ac10e9",
+   "agregado": "2026-11-22",
+   "actualizado": "2026-11-22",
+   "genero": "electronica"
   },
   {
    "titulo": "Undertale Sinfónico",
@@ -12270,6 +12376,10 @@
     {
      "nombre": "tvn.cl",
      "url": "https://www.tvn.cl/hora-25/musica/concierto-gratuito-en-el-persa-victor-manuel-matorral-se-suma-al"
+    },
+    {
+     "nombre": "Portal Chile Jazz Fest",
+     "url": "https://chilejazz.cl/conciertos.html"
     }
    ],
    "desde_imagen": false,
@@ -12277,7 +12387,7 @@
    "origen": "ia",
    "id": "e672468c07",
    "agregado": "2026-11-18",
-   "actualizado": "2026-11-18",
+   "actualizado": "2026-11-22",
    "genero": "jazz"
   },
   {
@@ -13462,6 +13572,10 @@
     {
      "nombre": "VAMOH!",
      "url": "https://vamoh.cl/events/xxvi-festival-internacional-de-jazz-de-valdivia-world-music-l4uz5/"
+    },
+    {
+     "nombre": "Portal Chile Jazz Fest",
+     "url": "https://chilejazz.cl/conciertos.html"
     }
    ],
    "desde_imagen": false,
@@ -13469,7 +13583,7 @@
    "origen": "datos-estructurados",
    "id": "0382da7e3d",
    "agregado": "2026-11-18",
-   "actualizado": "2026-11-18",
+   "actualizado": "2026-11-22",
    "genero": "jazz"
   },
   {
@@ -14405,6 +14519,10 @@
     {
      "nombre": "GoAllConcerts",
      "url": "https://goallconcerts.com/es/conciertos/cl/santiago"
+    },
+    {
+     "nombre": "raveme.cl",
+     "url": "https://raveme.cl/eventos"
     }
    ],
    "desde_imagen": false,
@@ -14412,7 +14530,7 @@
    "origen": "ia",
    "id": "3eae9d578e",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-15",
+   "actualizado": "2026-11-22",
    "genero": "electronica"
   },
   {
@@ -14581,7 +14699,7 @@
    "origen": "ia",
    "id": "607b690004",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-21",
+   "actualizado": "2026-11-22",
    "genero": "indie"
   },
   {
@@ -14917,7 +15035,8 @@
    "origen": "ia",
    "id": "8b504624e9",
    "agregado": "2026-11-22",
-   "actualizado": "2026-11-22"
+   "actualizado": "2026-11-22",
+   "genero": "pop"
   },
   {
    "titulo": "Giant Rooks",
@@ -15132,6 +15251,10 @@
     {
      "nombre": "portaldisc.com",
      "url": "https://portaldisc.com/evento/feriapulsar2026"
+    },
+    {
+     "nombre": "Inside Santiago",
+     "url": "https://insidesantiago.com/events"
     }
    ],
    "desde_imagen": false,
@@ -15139,7 +15262,7 @@
    "origen": "ia",
    "id": "9d9c59f1b3",
    "agregado": "2026-11-11",
-   "actualizado": "2026-11-11",
+   "actualizado": "2026-11-22",
    "genero": "otros"
   },
   {
@@ -16287,6 +16410,10 @@
     {
      "nombre": "raveme.cl",
      "url": "https://raveme.cl/eventos/ciudad/santiago"
+    },
+    {
+     "nombre": "raveme.cl",
+     "url": "https://raveme.cl/eventos"
     }
    ],
    "desde_imagen": false,
@@ -16294,7 +16421,7 @@
    "origen": "ia",
    "id": "222847a042",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-13",
+   "actualizado": "2026-11-22",
    "genero": "electronica"
   },
   {
@@ -16329,7 +16456,7 @@
    "origen": "ia",
    "id": "6f1e6221f6",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-20",
+   "actualizado": "2026-11-22",
    "genero": "hiphop"
   },
   {
@@ -16620,6 +16747,37 @@
    "genero": "rock"
   },
   {
+   "titulo": "Coquimbo Jazz · 3ª edición",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-06",
+   "fecha_fin": null,
+   "hora": "18:30",
+   "horario": null,
+   "lugar": "Muelle de Coquimbo, sector Waterpolo",
+   "direccion": null,
+   "comuna": "Coquimbo",
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Coquimbo Jazz · 3ª edición en Muelle de Coquimbo, sector Waterpolo, Coquimbo. Dennis Chambers & Christian Gálvez Quartet · entrada liberada",
+   "imagen": "https://chilejazz.cl/assets/images/logo-redes-487-x-487-px-2.png",
+   "fotos": null,
+   "url": "https://chilejazz.cl/conciertos.html",
+   "fuentes": [
+    {
+     "nombre": "Portal Chile Jazz Fest",
+     "url": "https://chilejazz.cl/conciertos.html"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "890d86db3b",
+   "agregado": "2026-11-22",
+   "actualizado": "2026-11-22",
+   "genero": "jazz"
+  },
+  {
    "titulo": "Trinidad",
    "categoria": "teatro",
    "fecha_inicio": "2026-12-06",
@@ -16746,6 +16904,36 @@
    "actualizado": "2026-11-16"
   },
   {
+   "titulo": "Ballet of Lights: La Bella Durmiente",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-12-06",
+   "fecha_fin": "2027-02-13",
+   "hora": null,
+   "horario": null,
+   "lugar": "Centro Cultural CEINA",
+   "direccion": "Arturo Prat 33",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $20.800",
+   "descripcion": "Espectáculo deslumbrante de ballet clásico con iluminación especial.",
+   "imagen": "https://applications-media.feverup.com/image/upload/f_auto/fever2/filter/photo/38623720-0a35-11f0-82ac-3a1c2e5b15e6.jpg",
+   "fotos": null,
+   "url": "https://feverup.com/es/santiago/the-jazz-room",
+   "fuentes": [
+    {
+     "nombre": "Fever",
+     "url": "https://feverup.com/es/santiago/the-jazz-room"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "fc0fdb10cd",
+   "agregado": "2026-11-22",
+   "actualizado": "2026-11-22"
+  },
+  {
    "titulo": "Doyle - Rockout-2026",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-06",
@@ -16830,6 +17018,10 @@
     {
      "nombre": "raveme.cl",
      "url": "https://raveme.cl/eventos/ciudad/santiago"
+    },
+    {
+     "nombre": "raveme.cl",
+     "url": "https://raveme.cl/eventos"
     }
    ],
    "desde_imagen": false,
@@ -16837,7 +17029,7 @@
    "origen": "ia",
    "id": "eba9056786",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-13",
+   "actualizado": "2026-11-22",
    "genero": "electronica"
   },
   {
@@ -17001,6 +17193,10 @@
     {
      "nombre": "raveme.cl",
      "url": "https://raveme.cl/eventos/ciudad/santiago"
+    },
+    {
+     "nombre": "raveme.cl",
+     "url": "https://raveme.cl/eventos"
     }
    ],
    "desde_imagen": false,
@@ -17008,7 +17204,7 @@
    "origen": "ia",
    "id": "0c2922262e",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-13",
+   "actualizado": "2026-11-22",
    "genero": "electronica"
   },
   {
@@ -17542,6 +17738,10 @@
     {
      "nombre": "Fever",
      "url": "https://feverup.com/es/santiago?seasonal=p94e42p"
+    },
+    {
+     "nombre": "Fever",
+     "url": "https://feverup.com/es/santiago/the-jazz-room"
     }
    ],
    "desde_imagen": false,
@@ -17616,7 +17816,7 @@
    "origen": "datos-estructurados",
    "id": "c5b1d7de21",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-21",
+   "actualizado": "2026-11-22",
    "genero": "metal"
   },
   {
@@ -17890,6 +18090,10 @@
     {
      "nombre": "Fever",
      "url": "https://feverup.com/es/santiago/the-jazz-room"
+    },
+    {
+     "nombre": "raveme.cl",
+     "url": "https://raveme.cl/eventos"
     }
    ],
    "desde_imagen": false,
@@ -17897,7 +18101,7 @@
    "origen": "ia",
    "id": "420c0da7c2",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-14",
+   "actualizado": "2026-11-22",
    "genero": "electronica"
   },
   {
@@ -18589,7 +18793,7 @@
    "origen": "ticketera",
    "id": "429f8ea87c",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-19",
+   "actualizado": "2026-11-22",
    "genero": "rock"
   },
   {
@@ -18813,6 +19017,37 @@
    "genero": "jazz"
   },
   {
+   "titulo": "Tarde de Jazz · 2° aniversario SomosZen",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-12",
+   "fecha_fin": null,
+   "hora": "18:00",
+   "horario": null,
+   "lugar": "SomosZen Cafetería",
+   "direccion": "Bandera 620, local 311, Santiago Centro",
+   "comuna": "Santiago",
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Tarde de Jazz · 2° aniversario SomosZen en SomosZen Cafetería, Santiago. Bandera 620, local 311, Santiago Centro · cuarteto de jazz · entrada liberada, sin inscripción",
+   "imagen": "https://chilejazz.cl/assets/images/logo-redes-487-x-487-px-2.png",
+   "fotos": null,
+   "url": "https://chilejazz.cl/conciertos.html",
+   "fuentes": [
+    {
+     "nombre": "Portal Chile Jazz Fest",
+     "url": "https://chilejazz.cl/conciertos.html"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "77f29f7f37",
+   "agregado": "2026-11-22",
+   "actualizado": "2026-11-22",
+   "genero": "jazz"
+  },
+  {
    "titulo": "The Jazz Room: Tributo a Marvin Gaye – Una noche de soul",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-12",
@@ -18848,7 +19083,7 @@
    "origen": "ia",
    "id": "b937fe271e",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-17",
+   "actualizado": "2026-11-22",
    "genero": "jazz"
   },
   {
@@ -19384,7 +19619,7 @@
    "origen": "ia",
    "id": "63aa56e48c",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-14",
+   "actualizado": "2026-11-22",
    "genero": "indie"
   },
   {
@@ -19451,6 +19686,37 @@
    "agregado": "2026-11-10",
    "actualizado": "2026-11-22",
    "genero": "clasica"
+  },
+  {
+   "titulo": "Danay Suarez",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-12",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Roma",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto de la cantante cubana de soul, R&B y hip hop Danay Suárez.",
+   "imagen": "https://images.sk-static.com/images/media/img/col6/20261106-221208-570928.jpg",
+   "fotos": null,
+   "url": "https://www.songkick.com/es/metro-areas/27525-chile-santiago/genre/indie-alternative",
+   "fuentes": [
+    {
+     "nombre": "songkick.com",
+     "url": "https://www.songkick.com/es/metro-areas/27525-chile-santiago/genre/indie-alternative"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "b354f23ac5",
+   "agregado": "2026-11-22",
+   "actualizado": "2026-11-22",
+   "genero": "hiphop"
   },
   {
    "titulo": "Evento Navideño: Una navidad en el club",
@@ -19577,6 +19843,10 @@
     {
      "nombre": "raveme.cl",
      "url": "https://raveme.cl/eventos/ciudad/santiago"
+    },
+    {
+     "nombre": "raveme.cl",
+     "url": "https://raveme.cl/eventos"
     }
    ],
    "desde_imagen": false,
@@ -19584,7 +19854,7 @@
    "origen": "ia",
    "id": "86de6838fd",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-13",
+   "actualizado": "2026-11-22",
    "genero": "electronica"
   },
   {
@@ -21581,6 +21851,10 @@
     {
      "nombre": "raveme.cl",
      "url": "https://raveme.cl/eventos/ciudad/santiago"
+    },
+    {
+     "nombre": "raveme.cl",
+     "url": "https://raveme.cl/eventos"
     }
    ],
    "desde_imagen": false,
@@ -21588,7 +21862,7 @@
    "origen": "ia",
    "id": "98372af057",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-13",
+   "actualizado": "2026-11-22",
    "genero": "electronica"
   },
   {
@@ -21746,6 +22020,37 @@
    "genero": "bandas_sonoras"
   },
   {
+   "titulo": "Parklive - Franky Rizardo",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-20",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Espacio Ritoque",
+   "direccion": null,
+   "comuna": "Quintero",
+   "ciudad": "Valparaíso",
+   "region": "Región de Valparaíso",
+   "precio": null,
+   "descripcion": "Fiesta Parklive junto al reconocido DJ Franky Rizardo.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://raveme.cl/eventos",
+   "fuentes": [
+    {
+     "nombre": "raveme.cl",
+     "url": "https://raveme.cl/eventos"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "7ed9e18356",
+   "agregado": "2026-11-22",
+   "actualizado": "2026-11-22",
+   "genero": "electronica"
+  },
+  {
    "titulo": "Open Mike: Luis Slimming en El Honesto Mike Vitacura",
    "categoria": "teatro",
    "fecha_inicio": "2026-12-21",
@@ -21815,7 +22120,7 @@
    "origen": "datos-estructurados",
    "id": "b2f4ac4e18",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-19",
+   "actualizado": "2026-11-22",
    "genero": "cumbia"
   },
   {
@@ -22636,6 +22941,10 @@
     {
      "nombre": "Keai",
      "url": "https://keai.cl/evento/anyma-21180"
+    },
+    {
+     "nombre": "raveme.cl",
+     "url": "https://raveme.cl/eventos"
     }
    ],
    "desde_imagen": false,
@@ -22643,7 +22952,7 @@
    "origen": "ia",
    "id": "63ab3d3576",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-20",
+   "actualizado": "2026-11-22",
    "genero": "electronica"
   },
   {
@@ -23084,6 +23393,37 @@
    "genero": "otros"
   },
   {
+   "titulo": "Festival Internacional de Jazz de Tongoy 2027",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-01-08",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Paseo Borde Costero, Playa Grande",
+   "direccion": null,
+   "comuna": "Tongoy, Coquimbo",
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Festival Internacional de Jazz de Tongoy 2027 en Paseo Borde Costero, Playa Grande, Tongoy, Coquimbo. 8, 9 y 10 de enero · Christian Gálvez Organ Trio, Crisol Big Band, Subiabre Dixieland y más",
+   "imagen": "https://chilejazz.cl/assets/images/logo-redes-487-x-487-px-2.png",
+   "fotos": null,
+   "url": "https://chilejazz.cl/conciertos.html",
+   "fuentes": [
+    {
+     "nombre": "Portal Chile Jazz Fest",
+     "url": "https://chilejazz.cl/conciertos.html"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "dfc7d55b52",
+   "agregado": "2026-11-22",
+   "actualizado": "2026-11-22",
+   "genero": "jazz"
+  },
+  {
    "titulo": "Hijo, madre y padre se sientan en la mesa en silencio",
    "categoria": "teatro",
    "fecha_inicio": "2027-01-08",
@@ -23299,6 +23639,37 @@
    "agregado": "2026-11-12",
    "actualizado": "2026-11-20",
    "genero": "reggaeton"
+  },
+  {
+   "titulo": "Piknic Electronik: Enero",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-01-10",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Parque Ciudad Empresarial",
+   "direccion": null,
+   "comuna": "Huechuraba",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Jornada dominical de música electrónica al aire libre.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://raveme.cl/eventos",
+   "fuentes": [
+    {
+     "nombre": "raveme.cl",
+     "url": "https://raveme.cl/eventos"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "7fe57c0973",
+   "agregado": "2026-11-22",
+   "actualizado": "2026-11-22",
+   "genero": "electronica"
   },
   {
    "titulo": "Amour | Amor Festival",
@@ -23698,6 +24069,10 @@
     {
      "nombre": "raveme.cl",
      "url": "https://raveme.cl/eventos/ciudad/santiago"
+    },
+    {
+     "nombre": "raveme.cl",
+     "url": "https://raveme.cl/eventos"
     }
    ],
    "desde_imagen": false,
@@ -23705,7 +24080,7 @@
    "origen": "ia",
    "id": "2f25dd976e",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-13",
+   "actualizado": "2026-11-22",
    "genero": "electronica"
   },
   {
@@ -23951,7 +24326,7 @@
    "origen": "ia",
    "id": "adc9dd6b83",
    "agregado": "2026-11-12",
-   "actualizado": "2026-11-21",
+   "actualizado": "2026-11-22",
    "genero": "rock"
   },
   {
@@ -24849,6 +25224,37 @@
    "genero": "pop"
   },
   {
+   "titulo": "Neo",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-01-23",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Parque Ciudad Empresarial",
+   "direccion": null,
+   "comuna": "Huechuraba",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Festival y evento de música electrónica Neo.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://raveme.cl/eventos",
+   "fuentes": [
+    {
+     "nombre": "raveme.cl",
+     "url": "https://raveme.cl/eventos"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "3959592772",
+   "agregado": "2026-11-22",
+   "actualizado": "2026-11-22",
+   "genero": "electronica"
+  },
+  {
    "titulo": "RuPaul Dj Set",
    "categoria": "conciertos",
    "fecha_inicio": "2027-01-23",
@@ -24949,7 +25355,7 @@
    "origen": "ia",
    "id": "4fae3c3cc4",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-19",
+   "actualizado": "2026-11-22",
    "genero": "jazz"
   },
   {
@@ -25307,6 +25713,37 @@
    "actualizado": "2026-11-20"
   },
   {
+   "titulo": "Hernán Cattaneo",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-01-30",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Parque Ciudad Empresarial",
+   "direccion": null,
+   "comuna": "Huechuraba",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto y sesión extendida del maestro del progressive house Hernán Cattaneo.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://raveme.cl/eventos",
+   "fuentes": [
+    {
+     "nombre": "raveme.cl",
+     "url": "https://raveme.cl/eventos"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "431e05e7f8",
+   "agregado": "2026-11-22",
+   "actualizado": "2026-11-22",
+   "genero": "electronica"
+  },
+  {
    "titulo": "The Jury Experience - Muerte por IA",
    "categoria": "teatro",
    "fecha_inicio": "2027-01-31",
@@ -25361,6 +25798,10 @@
     {
      "nombre": "concerts50.com",
      "url": "https://concerts50.com/chile/santiago/g/alternative"
+    },
+    {
+     "nombre": "songkick.com",
+     "url": "https://www.songkick.com/es/metro-areas/27525-chile-santiago/genre/indie-alternative"
     }
    ],
    "desde_imagen": false,
@@ -25368,7 +25809,7 @@
    "origen": "ticketera",
    "id": "4fb5aa7103",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-21"
+   "actualizado": "2026-11-22"
   },
   {
    "titulo": "The Legend en Concierto - Viña del Mar",
@@ -25462,6 +25903,37 @@
    "agregado": "2026-11-16",
    "actualizado": "2026-11-16",
    "genero": "rock"
+  },
+  {
+   "titulo": "Kamijo",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-02-12",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Club Chocolate",
+   "direccion": "Ernesto Pinto Lagarrigue 192",
+   "comuna": "Recoleta",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto del reconocido artista japonés de visual kei y metal sinfónico Kamijo.",
+   "imagen": "https://images.sk-static.com/images/media/img/col6/20240525-181732-487792.jpg",
+   "fotos": null,
+   "url": "https://www.songkick.com/es/metro-areas/27525-chile-santiago/genre/indie-alternative",
+   "fuentes": [
+    {
+     "nombre": "songkick.com",
+     "url": "https://www.songkick.com/es/metro-areas/27525-chile-santiago/genre/indie-alternative"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "b75a7b6045",
+   "agregado": "2026-11-22",
+   "actualizado": "2026-11-22",
+   "genero": "metal"
   },
   {
    "titulo": "Ovniotaku",
@@ -25586,6 +26058,10 @@
     {
      "nombre": "raveme.cl",
      "url": "https://raveme.cl/eventos/ciudad/santiago"
+    },
+    {
+     "nombre": "raveme.cl",
+     "url": "https://raveme.cl/eventos"
     }
    ],
    "desde_imagen": false,
@@ -25593,7 +26069,7 @@
    "origen": "ia",
    "id": "fd1a74827e",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-13",
+   "actualizado": "2026-11-22",
    "genero": "electronica"
   },
   {
@@ -25621,6 +26097,10 @@
     {
      "nombre": "PuntoTicket",
      "url": "https://www.puntoticket.com/miranda-y-lali-2027"
+    },
+    {
+     "nombre": "songkick.com",
+     "url": "https://www.songkick.com/es/metro-areas/27525-chile-santiago/genre/indie-alternative"
     }
    ],
    "desde_imagen": false,
@@ -25628,7 +26108,7 @@
    "origen": "ia",
    "id": "66e917def1",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-17",
+   "actualizado": "2026-11-22",
    "genero": "pop"
   },
   {
@@ -25856,7 +26336,7 @@
    "origen": "ia",
    "id": "b6a1419b07",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-21",
+   "actualizado": "2026-11-22",
    "genero": "rock"
   },
   {
@@ -25887,7 +26367,7 @@
    "origen": "ia",
    "id": "9e1dc84422",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-14",
+   "actualizado": "2026-11-22",
    "genero": "electronica"
   },
   {
@@ -25922,7 +26402,7 @@
    "origen": "ia",
    "id": "3b72e035c1",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-14",
+   "actualizado": "2026-11-22",
    "genero": "rock"
   },
   {
@@ -25958,6 +26438,10 @@
     {
      "nombre": "Keai",
      "url": "https://keai.cl/evento/cavalera-chaos-ad-21215"
+    },
+    {
+     "nombre": "songkick.com",
+     "url": "https://www.songkick.com/es/metro-areas/27525-chile-santiago/genre/indie-alternative"
     }
    ],
    "desde_imagen": false,
@@ -25965,7 +26449,7 @@
    "origen": "ticketera",
    "id": "c5363ba3a6",
    "agregado": "2026-11-12",
-   "actualizado": "2026-11-20",
+   "actualizado": "2026-11-22",
    "genero": "metal"
   },
   {
@@ -26027,7 +26511,8 @@
    "origen": "ia",
    "id": "563fb75a7d",
    "agregado": "2026-11-22",
-   "actualizado": "2026-11-22"
+   "actualizado": "2026-11-22",
+   "genero": "folclor"
   },
   {
    "titulo": "Card-geek Puente Elantris",
@@ -26278,6 +26763,10 @@
     {
      "nombre": "Ruta Rock",
      "url": "https://www.rutarock.com/seccion/cartelera/cartelera-chile/"
+    },
+    {
+     "nombre": "raveme.cl",
+     "url": "https://raveme.cl/eventos"
     }
    ],
    "desde_imagen": true,
@@ -26285,7 +26774,7 @@
    "origen": "datos-estructurados",
    "id": "737802a219",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-15",
+   "actualizado": "2026-11-22",
    "genero": "indie"
   },
   {
@@ -26381,7 +26870,7 @@
    "origen": "ia",
    "id": "649c18ee8d",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-14",
+   "actualizado": "2026-11-22",
    "genero": "indie"
   },
   {
@@ -26698,7 +27187,7 @@
    "origen": "ia",
    "id": "d60159c04a",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-20",
+   "actualizado": "2026-11-22",
    "genero": "rock"
   },
   {
@@ -26764,7 +27253,7 @@
    "origen": "ia",
    "id": "52c8113b0b",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-20",
+   "actualizado": "2026-11-22",
    "genero": "pop"
   },
   {
@@ -26849,7 +27338,7 @@
    "horario": null,
    "lugar": "Cúpula Parque O'Higgins - Santiago Centro",
    "direccion": null,
-   "comuna": null,
+   "comuna": "Santiago",
    "ciudad": null,
    "region": null,
    "precio": null,
@@ -26861,6 +27350,10 @@
     {
      "nombre": "PuntoTicket",
      "url": "https://www.puntoticket.com/evento/victor-wooten-and-the-wooten-brothers"
+    },
+    {
+     "nombre": "Portal Chile Jazz Fest",
+     "url": "https://chilejazz.cl/conciertos.html"
     }
    ],
    "desde_imagen": false,
@@ -26868,7 +27361,7 @@
    "origen": "ticketera",
    "id": "2597176442",
    "agregado": "2026-11-17",
-   "actualizado": "2026-11-17",
+   "actualizado": "2026-11-22",
    "genero": "jazz"
   },
   {
@@ -27124,7 +27617,7 @@
    "origen": "ia",
    "id": "f8f6ff6848",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-14",
+   "actualizado": "2026-11-22",
    "genero": "rock"
   },
   {
@@ -27225,7 +27718,8 @@
    "origen": "ia",
    "id": "78b38bb5f1",
    "agregado": "2026-11-22",
-   "actualizado": "2026-11-22"
+   "actualizado": "2026-11-22",
+   "genero": "cumbia"
   },
   {
    "titulo": "Saurom - XXX Aniversario En Chile",
@@ -27410,6 +27904,10 @@
     {
      "nombre": "songkick.com",
      "url": "https://www.songkick.com/es/metro-areas/27525-chile-santiago/this-weekend"
+    },
+    {
+     "nombre": "songkick.com",
+     "url": "https://www.songkick.com/es/metro-areas/27525-chile-santiago/genre/indie-alternative"
     }
    ],
    "desde_imagen": false,
@@ -27417,7 +27915,7 @@
    "origen": "ticketera",
    "id": "4dcda2f9ab",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-18",
+   "actualizado": "2026-11-22",
    "genero": "metal"
   },
   {
@@ -27561,7 +28059,7 @@
    "origen": "ticketera",
    "id": "7df15a74fa",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-15",
+   "actualizado": "2026-11-22",
    "genero": "metal"
   },
   {
@@ -27907,7 +28405,7 @@
    "origen": "ia",
    "id": "8a7266e0ff",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-14",
+   "actualizado": "2026-11-22",
    "genero": "indie"
   },
   {
@@ -28221,7 +28719,7 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Concierto de la banda de metal Slipknot en el Estadio Nacional.",
-   "imagen": null,
+   "imagen": "https://concerts50.com/uploads/artist/f3/ec/slipknot/original_image/slipknot.jpg?v=4ijrv57w",
    "fotos": null,
    "url": "https://latamenvivo.com/ciudades/santiago/",
    "fuentes": [
@@ -28247,8 +28745,38 @@
    "origen": "ia",
    "id": "d88d699752",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-21",
+   "actualizado": "2026-11-22",
    "genero": "metal"
+  },
+  {
+   "titulo": "SAFA - Santiago Festival de las Artes",
+   "categoria": "museos",
+   "fecha_inicio": "2027-10-06",
+   "fecha_fin": "2027-10-11",
+   "hora": null,
+   "horario": null,
+   "lugar": "Centro Cultural La Moneda",
+   "direccion": "Plaza de la Ciudadanía 26",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Metropolitana",
+   "precio": null,
+   "descripcion": "Festival de las artes con programación cultural y exposiciones en el Centro Cultural La Moneda.",
+   "imagen": "https://www.safa.cl/img/og-image.png",
+   "fotos": null,
+   "url": "https://www.safa.cl/programa/espacio/156",
+   "fuentes": [
+    {
+     "nombre": "SAFA",
+     "url": "https://www.safa.cl/programa/espacio/156"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "media",
+   "origen": "ia",
+   "id": "ab7d4985ae",
+   "agregado": "2026-11-22",
+   "actualizado": "2026-11-22"
   },
   {
    "titulo": "Don Omar en Chile 2027 - The Last King World Tour",
@@ -28293,7 +28821,7 @@
    "hora": null,
    "horario": null,
    "lugar": "Parque Cerrillos",
-   "direccion": null,
+   "direccion": "Pedro Aguirre Cerda 6100",
    "comuna": "Cerrillos",
    "ciudad": "Santiago",
    "region": "Región Metropolitana",
@@ -28326,6 +28854,10 @@
     {
      "nombre": "El Dínamo | Noticias de Chile y el mundo",
      "url": "https://www.eldinamo.cl/entretencion/2026/11/17/faith-no-more-vuelve-a-chile-la-banda-de-mike-patton-confirma-su-regreso-para-noviembre-2027/"
+    },
+    {
+     "nombre": "songkick.com",
+     "url": "https://www.songkick.com/es/metro-areas/27525-chile-santiago/genre/indie-alternative"
     }
    ],
    "desde_imagen": true,
@@ -28333,7 +28865,7 @@
    "origen": "ticketera",
    "id": "65eea38a42",
    "agregado": "2026-11-17",
-   "actualizado": "2026-11-18",
+   "actualizado": "2026-11-22",
    "genero": "indie"
   }
  ]
