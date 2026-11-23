@@ -1,21 +1,13 @@
 {
  "version": 1,
- "actualizado": "2026-11-22T16:57-03:00",
+ "actualizado": "2026-11-22T21:52-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-22T16:57-03:00",
+  "fecha": "2026-11-22T21:52-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 59,
-  "nuevos_esta_vez": 14,
+  "eventos_nuevos": 51,
+  "nuevos_esta_vez": 0,
   "nuevos_ids": [
-   "b2217852ee",
-   "72892298a2",
-   "1336bbdb53",
-   "2d547c9b0d",
-   "aa2b754e1d",
-   "afc7538e23",
-   "ffde47a2f6",
-   "788fd75cf1",
    "d02c9f758f",
    "9133a6f10a",
    "132a6cb016",
@@ -69,14 +61,6 @@
    "fc0fdb10cd"
   ],
   "nuevos_desde": {
-   "b2217852ee": "2026-11-21T20:29-03:00",
-   "72892298a2": "2026-11-21T20:29-03:00",
-   "1336bbdb53": "2026-11-21T20:29-03:00",
-   "2d547c9b0d": "2026-11-21T20:29-03:00",
-   "aa2b754e1d": "2026-11-21T20:29-03:00",
-   "afc7538e23": "2026-11-21T20:29-03:00",
-   "ffde47a2f6": "2026-11-21T20:29-03:00",
-   "788fd75cf1": "2026-11-21T20:29-03:00",
    "d02c9f758f": "2026-11-22T00:15-03:00",
    "9133a6f10a": "2026-11-22T08:56-03:00",
    "132a6cb016": "2026-11-22T08:56-03:00",
@@ -130,19 +114,18 @@
    "fc0fdb10cd": "2026-11-22T16:57-03:00"
   },
   "horas_nuevos": 24,
-  "llamadas_ia": 24,
+  "llamadas_ia": 3,
   "ia_sin_cupo": false,
   "ultima_completa": "2026-11-22T16:38-03:00",
-  "modo": "completa",
-  "paginas_revisadas": 28,
-  "busquedas": 107,
+  "modo": "rapida",
+  "paginas_revisadas": 0,
+  "busquedas": 0,
   "fuentes_fijas": 9,
-  "errores": 18,
+  "errores": 2,
   "noticias_desde": "2026-11-22",
-  "noticias_viejas_descartadas": 426,
-  "redes_vistas": 0,
-  "generos_ia": 6,
-  "imagenes_encontradas": 5
+  "noticias_viejas_descartadas": 0,
+  "generos_ia": 1,
+  "imagenes_encontradas": 0
  },
  "total": 861,
  "eventos": [
@@ -9932,7 +9915,8 @@
    "origen": "ia",
    "id": "72892298a2",
    "agregado": "2026-11-21",
-   "actualizado": "2026-11-21"
+   "actualizado": "2026-11-21",
+   "genero": "rock"
   },
   {
    "titulo": "Jorge Alís - MALON",
