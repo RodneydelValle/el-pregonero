@@ -1,61 +1,13 @@
 {
  "version": 1,
- "actualizado": "2026-11-23T06:39-03:00",
+ "actualizado": "2026-11-23T19:13-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-23T06:39-03:00",
+  "fecha": "2026-11-23T19:13-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 73,
-  "nuevos_esta_vez": 25,
+  "eventos_nuevos": 37,
+  "nuevos_esta_vez": 12,
   "nuevos_ids": [
-   "9133a6f10a",
-   "132a6cb016",
-   "0cb198d1fd",
-   "23cd772b67",
-   "e0cb9d459f",
-   "39d08ea79e",
-   "8a8cebe705",
-   "abc07117ff",
-   "957e2e1478",
-   "d09fd3f508",
-   "db9df064f1",
-   "1729a8711d",
-   "7a22b9b8a5",
-   "8b504624e9",
-   "6928583afe",
-   "563fb75a7d",
-   "78b38bb5f1",
-   "1c2a69069f",
-   "f76f14132c",
-   "a0d8eb6e20",
-   "b690e14b09",
-   "15b036a501",
-   "b2667aef4a",
-   "91c584c265",
-   "31cd3d96f8",
-   "5ea6c12e6f",
-   "ddbab4ca24",
-   "c26635db2c",
-   "c980242a44",
-   "7794ac7d3a",
-   "2e0ae52089",
-   "2a739653cf",
-   "30e41e486f",
-   "d61da03c0f",
-   "ab7d4985ae",
-   "537fa4d333",
-   "b75a7b6045",
-   "b354f23ac5",
-   "b110ac10e9",
-   "7ed9e18356",
-   "7fe57c0973",
-   "3959592772",
-   "431e05e7f8",
-   "ada5189e80",
-   "890d86db3b",
-   "77f29f7f37",
-   "dfc7d55b52",
-   "fc0fdb10cd",
    "02b0a8b418",
    "dfbf6d5676",
    "3c67bd04b6",
@@ -80,57 +32,21 @@
    "0fbe47d528",
    "eaf52b3fff",
    "a20746cf0e",
-   "6435be3e85"
+   "6435be3e85",
+   "f96c4467b8",
+   "f3029fe5dd",
+   "6fe4733e9d",
+   "d7d0c6b44a",
+   "82023bb6a6",
+   "93f74d1e88",
+   "c3afad25ec",
+   "fa82bebe2f",
+   "ecf1849be1",
+   "50a9e6a62d",
+   "8d4306cddc",
+   "600e599a69"
   ],
   "nuevos_desde": {
-   "9133a6f10a": "2026-11-22T08:56-03:00",
-   "132a6cb016": "2026-11-22T08:56-03:00",
-   "0cb198d1fd": "2026-11-22T08:56-03:00",
-   "23cd772b67": "2026-11-22T08:56-03:00",
-   "e0cb9d459f": "2026-11-22T08:56-03:00",
-   "39d08ea79e": "2026-11-22T08:56-03:00",
-   "8a8cebe705": "2026-11-22T08:56-03:00",
-   "abc07117ff": "2026-11-22T08:56-03:00",
-   "957e2e1478": "2026-11-22T08:56-03:00",
-   "d09fd3f508": "2026-11-22T08:56-03:00",
-   "db9df064f1": "2026-11-22T08:56-03:00",
-   "1729a8711d": "2026-11-22T08:56-03:00",
-   "7a22b9b8a5": "2026-11-22T08:56-03:00",
-   "8b504624e9": "2026-11-22T08:56-03:00",
-   "6928583afe": "2026-11-22T08:56-03:00",
-   "563fb75a7d": "2026-11-22T08:56-03:00",
-   "78b38bb5f1": "2026-11-22T08:56-03:00",
-   "1c2a69069f": "2026-11-22T08:56-03:00",
-   "f76f14132c": "2026-11-22T08:56-03:00",
-   "a0d8eb6e20": "2026-11-22T08:56-03:00",
-   "b690e14b09": "2026-11-22T08:56-03:00",
-   "15b036a501": "2026-11-22T08:56-03:00",
-   "b2667aef4a": "2026-11-22T08:56-03:00",
-   "91c584c265": "2026-11-22T08:56-03:00",
-   "31cd3d96f8": "2026-11-22T08:56-03:00",
-   "5ea6c12e6f": "2026-11-22T08:56-03:00",
-   "ddbab4ca24": "2026-11-22T08:56-03:00",
-   "c26635db2c": "2026-11-22T08:56-03:00",
-   "c980242a44": "2026-11-22T08:56-03:00",
-   "7794ac7d3a": "2026-11-22T08:56-03:00",
-   "2e0ae52089": "2026-11-22T08:56-03:00",
-   "2a739653cf": "2026-11-22T08:56-03:00",
-   "30e41e486f": "2026-11-22T08:56-03:00",
-   "d61da03c0f": "2026-11-22T08:56-03:00",
-   "ab7d4985ae": "2026-11-22T16:57-03:00",
-   "537fa4d333": "2026-11-22T16:57-03:00",
-   "b75a7b6045": "2026-11-22T16:57-03:00",
-   "b354f23ac5": "2026-11-22T16:57-03:00",
-   "b110ac10e9": "2026-11-22T16:57-03:00",
-   "7ed9e18356": "2026-11-22T16:57-03:00",
-   "7fe57c0973": "2026-11-22T16:57-03:00",
-   "3959592772": "2026-11-22T16:57-03:00",
-   "431e05e7f8": "2026-11-22T16:57-03:00",
-   "ada5189e80": "2026-11-22T16:57-03:00",
-   "890d86db3b": "2026-11-22T16:57-03:00",
-   "77f29f7f37": "2026-11-22T16:57-03:00",
-   "dfc7d55b52": "2026-11-22T16:57-03:00",
-   "fc0fdb10cd": "2026-11-22T16:57-03:00",
    "02b0a8b418": "2026-11-23T06:39-03:00",
    "dfbf6d5676": "2026-11-23T06:39-03:00",
    "3c67bd04b6": "2026-11-23T06:39-03:00",
@@ -155,24 +71,36 @@
    "0fbe47d528": "2026-11-23T06:39-03:00",
    "eaf52b3fff": "2026-11-23T06:39-03:00",
    "a20746cf0e": "2026-11-23T06:39-03:00",
-   "6435be3e85": "2026-11-23T06:39-03:00"
+   "6435be3e85": "2026-11-23T06:39-03:00",
+   "f96c4467b8": "2026-11-23T19:13-03:00",
+   "f3029fe5dd": "2026-11-23T19:13-03:00",
+   "6fe4733e9d": "2026-11-23T19:13-03:00",
+   "d7d0c6b44a": "2026-11-23T19:13-03:00",
+   "82023bb6a6": "2026-11-23T19:13-03:00",
+   "93f74d1e88": "2026-11-23T19:13-03:00",
+   "c3afad25ec": "2026-11-23T19:13-03:00",
+   "fa82bebe2f": "2026-11-23T19:13-03:00",
+   "ecf1849be1": "2026-11-23T19:13-03:00",
+   "50a9e6a62d": "2026-11-23T19:13-03:00",
+   "8d4306cddc": "2026-11-23T19:13-03:00",
+   "600e599a69": "2026-11-23T19:13-03:00"
   },
   "horas_nuevos": 24,
-  "llamadas_ia": 81,
+  "llamadas_ia": 32,
   "ia_sin_cupo": false,
-  "ultima_completa": "2026-11-23T06:03-03:00",
+  "ultima_completa": "2026-11-23T18:22-03:00",
   "modo": "completa",
-  "paginas_revisadas": 82,
+  "paginas_revisadas": 37,
   "busquedas": 107,
   "fuentes_fijas": 9,
-  "errores": 39,
-  "noticias_desde": "2026-11-22",
-  "noticias_viejas_descartadas": 440,
-  "redes_vistas": 2,
-  "generos_ia": 5,
-  "imagenes_encontradas": 12
+  "errores": 28,
+  "noticias_desde": "2026-11-23",
+  "noticias_viejas_descartadas": 429,
+  "redes_vistas": 1,
+  "generos_ia": 1,
+  "imagenes_encontradas": 5
  },
- "total": 833,
+ "total": 845,
  "eventos": [
   {
    "titulo": "Mariposas y Polillas, Colores en Movimiento",
@@ -423,6 +351,10 @@
     {
      "nombre": "mnba.gob.cl",
      "url": "https://www.mnba.gob.cl/cartelera/red-nacional"
+    },
+    {
+     "nombre": "patrimoniocultural.gob.cl",
+     "url": "https://www.patrimoniocultural.gob.cl/noticias/el-mnba-celebro-145-anos-y-renovo-su-muestra-permanente-con-300-obras"
     }
    ],
    "desde_imagen": false,
@@ -1937,6 +1869,42 @@
    "actualizado": "2026-11-23"
   },
   {
+   "titulo": "Alien: El Origen, by H.R. Giger",
+   "categoria": "museos",
+   "fecha_inicio": "2026-10-07",
+   "fecha_fin": "2026-12-31",
+   "hora": null,
+   "horario": "Horario de funcionamiento del Metro",
+   "lugar": "Suizspacio, Estación Ñuñoa (Líneas 3 y 6)",
+   "direccion": "Av. Irarrázaval con Pedro de Valdivia",
+   "comuna": "Ñuñoa",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratuito (pagando el pasaje del Metro)",
+   "descripcion": "Primera exposición museográfica autorizada del universo de H.R. Giger y Alien en Sudamérica, explorando su icónica obra de cine y ciencia ficción.",
+   "imagen": "https://www.metro.cl/images/fotoCompartir.jpg",
+   "fotos": [
+    "https://media-front.elmostrador.cl/2026/10/Afiche-Exhibicion-2026-scaled.jpg"
+   ],
+   "url": "https://www.metro.cl/noticias/alien-llega-al-metro-de-santiago-muestra-sobre-el-universo-de-hr-giger-debuta-en-sudamerica-con-acceso-gratuito",
+   "fuentes": [
+    {
+     "nombre": "El Mostrador y Radio Agricultura (citando a Metro de Santiago)",
+     "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/alien-llega-gratis-al-metro-de-santiago-donde-y-hasta-cuando-visitar-la-muestra-de-h-r-giger_20261015/"
+    },
+    {
+     "nombre": "Metro de Santiago",
+     "url": "https://www.metro.cl/noticias/alien-llega-al-metro-de-santiago-muestra-sobre-el-universo-de-hr-giger-debuta-en-sudamerica-con-acceso-gratuito"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "claude",
+   "id": "aff6ce01a9",
+   "agregado": "2026-11-07",
+   "actualizado": "2026-11-23"
+  },
+  {
    "titulo": "Ensueño — Raúl Cuello",
    "categoria": "museos",
    "fecha_inicio": "2026-10-07",
@@ -2019,38 +1987,6 @@
    "id": "526eb4a6d4",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-23"
-  },
-  {
-   "titulo": "Alien: El Origen, by H.R. Giger",
-   "categoria": "museos",
-   "fecha_inicio": "2026-10-08",
-   "fecha_fin": "2026-12-31",
-   "hora": null,
-   "horario": "En el horario del Metro",
-   "lugar": "Suizspacio, estación Ñuñoa del Metro",
-   "direccion": "Estación Ñuñoa (combinación Líneas 3 y 6), nivel -3",
-   "comuna": "Ñuñoa",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Gratis (solo se necesita un ingreso válido al Metro)",
-   "descripcion": "Primera muestra en Sudamérica avalada por el Museo H.R. Giger: reproducciones de obras y esculturas, audiovisuales y una línea de tiempo del artista suizo que diseñó el monstruo de Alien, en el Suizspacio del Metro Ñuñoa.",
-   "imagen": "https://assets.radioagricultura.cl/2026/10/Metro-de-Santiago-3-1024x538.jpg",
-   "fotos": [
-    "https://media-front.elmostrador.cl/2026/10/Afiche-Exhibicion-2026-scaled.jpg"
-   ],
-   "url": "https://www.elmostrador.cl/cultura/2026/10/05/obra-del-creador-de-alien-expone-por-primera-vez-en-chile/",
-   "fuentes": [
-    {
-     "nombre": "El Mostrador y Radio Agricultura (citando a Metro de Santiago)",
-     "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/alien-llega-gratis-al-metro-de-santiago-donde-y-hasta-cuando-visitar-la-muestra-de-h-r-giger_20261015/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "media",
-   "origen": "claude",
-   "id": "aff6ce01a9",
-   "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
   },
   {
    "titulo": "Festival Teatro a Mil Sub-25",
@@ -5989,7 +5925,7 @@
    "origen": "datos-estructurados",
    "id": "3d21bb59ae",
    "agregado": "2026-11-15",
-   "actualizado": "2026-11-21",
+   "actualizado": "2026-11-23",
    "genero": "clasica"
   },
   {
@@ -6694,7 +6630,7 @@
    "origen": "datos-estructurados",
    "id": "f1d600c64d",
    "agregado": "2026-11-15",
-   "actualizado": "2026-11-21",
+   "actualizado": "2026-11-23",
    "genero": "clasica"
   },
   {
@@ -9285,6 +9221,36 @@
    "actualizado": "2026-11-15"
   },
   {
+   "titulo": "Lo que la noche le cuenta al día: más de medio siglo de arte argentino",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": "2027-03-07",
+   "hora": null,
+   "horario": null,
+   "lugar": "Centro Cultural La Moneda",
+   "direccion": "Plaza de la Ciudadanía 26",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Exposición que reúne más de medio siglo de arte argentino en la Sala Andes del Centro Cultural La Moneda.",
+   "imagen": "https://www.lacuarta.com/resizer/v2/VGUGYLJF55C6VH5FACR2CMMPXA.jpg?auth=3415051b019d055dcbe59856b4e6b60e1dfb8633d1e30de0d4cca017cc251c40&height=630&width=1200&smart=true",
+   "fotos": null,
+   "url": "https://www.lacuarta.com/servicios/noticia/lo-que-la-noche-le-cuenta-al-dia-mas-de-medio-siglo-de-arte-argentino-llega-al-centro-cultural-la-moneda/",
+   "fuentes": [
+    {
+     "nombre": "La Cuarta",
+     "url": "https://www.lacuarta.com/servicios/noticia/lo-que-la-noche-le-cuenta-al-dia-mas-de-medio-siglo-de-arte-argentino-llega-al-centro-cultural-la-moneda/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "d7d0c6b44a",
+   "agregado": "2026-11-23",
+   "actualizado": "2026-11-23"
+  },
+  {
    "titulo": "Mujeres que brillan: Recital de Violín y Piano",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-27",
@@ -11453,6 +11419,37 @@
    "genero": "clasica"
   },
   {
+   "titulo": "Testament en Santiago",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-29",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Teatro Caupolicán",
+   "direccion": "San Diego 850",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto de la legendaria banda de thrash metal Testament en el Teatro Caupolicán.",
+   "imagen": "https://s1.ticketm.net/dam/a/131/ab81c5b7-0696-46e1-873d-3d9b9ee92131_SOURCE",
+   "fotos": null,
+   "url": "https://goallconcerts.com/es/conciertos/cl/santiago",
+   "fuentes": [
+    {
+     "nombre": "GoAllConcerts",
+     "url": "https://goallconcerts.com/es/conciertos/cl/santiago"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "93f74d1e88",
+   "agregado": "2026-11-23",
+   "actualizado": "2026-11-23",
+   "genero": "metal"
+  },
+  {
    "titulo": "A Perfect Circle + Puscifer",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-29",
@@ -11919,6 +11916,37 @@
    "genero": "jazz"
   },
   {
+   "titulo": "Machine Girl en Santiago",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-01",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Sala Metrónomo",
+   "direccion": "Ernesto Pinto Lagarrigue 179",
+   "comuna": "Recursos",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto del proyecto de música electrónica y digital hardcore Machine Girl en Sala Metrónomo.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://goallconcerts.com/es/conciertos/cl/santiago",
+   "fuentes": [
+    {
+     "nombre": "GoAllConcerts",
+     "url": "https://goallconcerts.com/es/conciertos/cl/santiago"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "c3afad25ec",
+   "agregado": "2026-11-23",
+   "actualizado": "2026-11-23",
+   "genero": "rock"
+  },
+  {
    "titulo": "Luis Slimming / Happy People / Providencia / 1 de Diciembre / 19:30 hrs",
    "categoria": "teatro",
    "fecha_inicio": "2026-12-01",
@@ -12074,6 +12102,36 @@
    "agregado": "2026-11-23",
    "actualizado": "2026-11-23",
    "genero": "clasica"
+  },
+  {
+   "titulo": "Danza: Las Voces del Mar - Academia Attitude Danza & Bienestar",
+   "categoria": "medieval",
+   "fecha_inicio": "2026-12-01",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Centro Cultural Carabineros de Chile",
+   "direccion": "1605 Vasconia",
+   "comuna": "Providencia",
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Sumérgete en un viaje de movimiento y energía con la Academia Attitude Danza & Bienestar, a través de la fantasía del océano",
+   "imagen": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1198312031%2F1170662714273%2F1%2Foriginal.20261119-113233?crop=focalpoint&fit=crop&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=6011c301020cc86706002efb5aa37a8a",
+   "fotos": null,
+   "url": "https://www.eventbrite.cl/e/danza-las-voces-del-mar-academia-attitude-danza-bienestar-tickets-2005041766899",
+   "fuentes": [
+    {
+     "nombre": "Eventbrite",
+     "url": "https://www.eventbrite.cl/d/chile--santiago/all-events/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "f96c4467b8",
+   "agregado": "2026-11-23",
+   "actualizado": "2026-11-23"
   },
   {
    "titulo": "Dying Fetus",
@@ -12287,7 +12345,7 @@
    "region": "Región Metropolitana",
    "precio": "Gratis",
    "descripcion": "Concierto navideño del Coro Polifónico Integral Usach.",
-   "imagen": null,
+   "imagen": "https://2hmeot5qnhx91ehd.public.blob.vercel-storage.com/catalogo/panoramas/usach-coro-polifonico-esperando-la-navidad-2026.jpg",
    "fotos": null,
    "url": "https://www.suitip.cl/panoramas/guia/gratis",
    "fuentes": [
@@ -13289,6 +13347,10 @@
     {
      "nombre": "24horas.cl",
      "url": "https://www.24horas.cl/tendencias/espectaculos/veronica-villarroel-teatro-municipal-"
+    },
+    {
+     "nombre": "ADN Radio",
+     "url": "https://www.adnradio.cl/2026/11/23/veronica-villarroel-vuelve-al-teatro-municipal-de-santiago-con-recital-solidario-fecha-y-entradas/"
     }
    ],
    "desde_imagen": true,
@@ -13296,7 +13358,7 @@
    "origen": "datos-estructurados",
    "id": "24baf836b8",
    "agregado": "2026-11-17",
-   "actualizado": "2026-11-20",
+   "actualizado": "2026-11-23",
    "genero": "clasica"
   },
   {
@@ -13337,7 +13399,7 @@
    "hora": "20:00",
    "horario": null,
    "lugar": "Bar de René",
-   "direccion": null,
+   "direccion": "Santa Isabel 0369",
    "comuna": "Santiago",
    "ciudad": "Santiago",
    "region": "Región Metropolitana",
@@ -13357,7 +13419,7 @@
    "origen": "ia",
    "id": "b4a3a9113a",
    "agregado": "2026-11-15",
-   "actualizado": "2026-11-15",
+   "actualizado": "2026-11-23",
    "genero": "clasica"
   },
   {
@@ -13464,7 +13526,7 @@
    "hora": "20:00",
    "horario": null,
    "lugar": "Teatro C",
-   "direccion": null,
+   "direccion": "Av. Vitacura 8620",
    "comuna": "Providencia",
    "ciudad": "Santiago",
    "region": "Región Metropolitana",
@@ -13492,7 +13554,7 @@
    "origen": "ia",
    "id": "3eae9d578e",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-22",
+   "actualizado": "2026-11-23",
    "genero": "electronica"
   },
   {
@@ -14153,7 +14215,7 @@
    "region": null,
    "precio": "CLP 13.200",
    "descripcion": "Presentación en vivo del comediante Luis Slimming.",
-   "imagen": null,
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/00c75ef6de51bbe8dda335841eedb5cf824cf6fb.jpg?1793038176",
    "fotos": null,
    "url": "https://ticketplus.cl/events/luis-slimming-distrito-san-ignacio-04-diciembre-20-30-hrs",
    "fuentes": [
@@ -15690,6 +15752,36 @@
    "actualizado": "2026-11-20"
   },
   {
+   "titulo": "Mega Feria Friki",
+   "categoria": "anime",
+   "fecha_inicio": "2026-12-06",
+   "fecha_fin": null,
+   "hora": "12:00",
+   "horario": "12:00 a 19:00 hrs",
+   "lugar": "Parque Bicentenario de Cerrillos",
+   "direccion": "Avenida Pedro Aguirre Cerda 6100",
+   "comuna": "Cerrillos",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Evento con 300 stands, lucha libre, videojuegos, K-pop y espectáculos de anime.",
+   "imagen": "https://www.adnradio.cl/resizer/v2/ZO3ZMYGORJH4LFYG5DY5ODK4FI.jpg?auth=9448b8baa7c284c95774a00e4027ffe4d3f9c4d508d2c5f557e8447c57273172&quality=70&width=1200&height=675&focal=568,488",
+   "fotos": null,
+   "url": "https://www.adnradio.cl/2026/11/23/mega-feria-friki-llega-a-cerrillos-con-300-stands-lucha-libre-videojuegos-y-espectaculos-de-anime-cuando-y-donde-sera/",
+   "fuentes": [
+    {
+     "nombre": "ADN Radio",
+     "url": "https://www.adnradio.cl/2026/11/23/mega-feria-friki-llega-a-cerrillos-con-300-stands-lucha-libre-videojuegos-y-espectaculos-de-anime-cuando-y-donde-sera/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "82023bb6a6",
+   "agregado": "2026-11-23",
+   "actualizado": "2026-11-23"
+  },
+  {
    "titulo": "Hard & Loud",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-06",
@@ -16670,6 +16762,37 @@
    "genero": "pop"
   },
   {
+   "titulo": "Concierto Rumbo al Nuevo Mundo - Orquesta Sinfónica UNIACC",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-09",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Centro Cultural Carabineros de Chile",
+   "direccion": "1605 Vasconia",
+   "comuna": "Providencia",
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Prepárate para un viaje musical increíble con la Orquesta Sinfónica UNIACC",
+   "imagen": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1198312130%2F1170662714273%2F1%2Foriginal.20261119-113430?crop=focalpoint&fit=crop&w=512&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=42dc01b27bb9d880526505345c3140bc",
+   "fotos": null,
+   "url": "https://www.eventbrite.cl/e/concierto-rumbo-al-nuevo-mundo-orquesta-sinfonica-uniacc-tickets-2005042680632",
+   "fuentes": [
+    {
+     "nombre": "Eventbrite",
+     "url": "https://www.eventbrite.cl/d/chile--santiago/all-events/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "f3029fe5dd",
+   "agregado": "2026-11-23",
+   "actualizado": "2026-11-23",
+   "genero": "clasica"
+  },
+  {
    "titulo": "Festival ENAI 2026",
    "categoria": "teatro",
    "fecha_inicio": "2026-12-09",
@@ -16781,6 +16904,10 @@
     {
      "nombre": "Fever",
      "url": "https://feverup.com/es/santiago/the-jazz-room"
+    },
+    {
+     "nombre": "Funko Pop Chile",
+     "url": "https://www.funkopop.cl/eventos/festigame-2026-santiago"
     }
    ],
    "desde_imagen": false,
@@ -16788,7 +16915,7 @@
    "origen": "ia",
    "id": "40f8528656",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-22",
+   "actualizado": "2026-11-23",
    "horario": "11:00 a 20:00 hrs"
   },
   {
@@ -16855,7 +16982,7 @@
    "origen": "datos-estructurados",
    "id": "c5b1d7de21",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-22",
+   "actualizado": "2026-11-23",
    "genero": "metal"
   },
   {
@@ -19733,7 +19860,7 @@
    "region": null,
    "precio": "CLP 14.300",
    "descripcion": "Show de stand-up comedy de Paloma Salas con su rutina Ruta 78 en Puente Alto.",
-   "imagen": null,
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/3793fd762a120f6689cb11eda6e7dfd97036cb25.png?1794970723",
    "fotos": null,
    "url": "https://ticketplus.cl/events/paloma-salas-pte-alto-ruta-78-13-de-noviembre-20-00-hrs",
    "fuentes": [
@@ -20007,6 +20134,37 @@
    "id": "f8d9e2c0dc",
    "agregado": "2026-11-13",
    "actualizado": "2026-11-13"
+  },
+  {
+   "titulo": "Concierto Gloria Sinfónico - OSIM y CORO estudiantes y niños y niñas FOJI",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-17",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Centro Cultural Carabineros de Chile",
+   "direccion": "1605 Vasconia",
+   "comuna": "Providencia",
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "La Fundación de Orquestas Juveniles e Infantiles de Chile (FOJI) presenta el concierto Gloria Sinfónico de OSIM y Coro de estudiantes",
+   "imagen": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1198312270%2F1170662714273%2F1%2Foriginal.20261119-113731?crop=focalpoint&fit=crop&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=331b177b832fde198a43735600ef8b55",
+   "fotos": null,
+   "url": "https://www.eventbrite.cl/e/concierto-gloria-sinfonico-osim-y-coro-estudiantes-y-ninos-y-ninas-foji-tickets-2005047203159",
+   "fuentes": [
+    {
+     "nombre": "Eventbrite",
+     "url": "https://www.eventbrite.cl/d/chile--santiago/all-events/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "6fe4733e9d",
+   "agregado": "2026-11-23",
+   "actualizado": "2026-11-23",
+   "genero": "clasica"
   },
   {
    "titulo": "Jairo Vera en Santander Arena",
@@ -24919,6 +25077,36 @@
    "actualizado": "2026-11-23"
   },
   {
+   "titulo": "Comer, Rezar, We!@r",
+   "categoria": "standup",
+   "fecha_inicio": "2027-02-05",
+   "fecha_fin": "2027-02-06",
+   "hora": null,
+   "horario": null,
+   "lugar": "Hotel Antay de Arica",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": null,
+   "imagen": "https://static.ptocdn.net/images/eventos/lei001_calugalistado.jpg",
+   "fotos": null,
+   "url": "https://www.puntoticket.com/evento/comer-rezar-antay-feb",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/evento/comer-rezar-antay-feb"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "ticketera",
+   "id": "50a9e6a62d",
+   "agregado": "2026-11-23",
+   "actualizado": "2026-11-23"
+  },
+  {
    "titulo": "The Legend en Concierto - Viña del Mar",
    "categoria": "conciertos",
    "fecha_inicio": "2027-02-06",
@@ -25010,6 +25198,36 @@
    "agregado": "2026-11-16",
    "actualizado": "2026-11-16",
    "genero": "rock"
+  },
+  {
+   "titulo": "Comer, Rezar, We!@r",
+   "categoria": "standup",
+   "fecha_inicio": "2027-02-12",
+   "fecha_fin": "2027-02-13",
+   "hora": null,
+   "horario": null,
+   "lugar": "Corporación Municipal de Antofagasta",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": null,
+   "imagen": "https://static.ptocdn.net/images/eventos/lei002_calugalistado.jpg",
+   "fotos": null,
+   "url": "https://www.puntoticket.com/evento/comer-rezar-antofagasta-feb",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/evento/comer-rezar-antofagasta-feb"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "ticketera",
+   "id": "8d4306cddc",
+   "agregado": "2026-11-23",
+   "actualizado": "2026-11-23"
   },
   {
    "titulo": "Kamijo",
@@ -25225,6 +25443,36 @@
    "agregado": "2026-11-14",
    "actualizado": "2026-11-23",
    "genero": "pop"
+  },
+  {
+   "titulo": "Comer, Rezar, We!@r",
+   "categoria": "standup",
+   "fecha_inicio": "2027-02-19",
+   "fecha_fin": "2027-02-20",
+   "hora": null,
+   "horario": null,
+   "lugar": "Hotel Gavina - Iquique",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": null,
+   "imagen": "https://static.ptocdn.net/images/eventos/lei003_calugalistado.jpg",
+   "fotos": null,
+   "url": "https://www.puntoticket.com/evento/comer-rezar-iquique-feb",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/evento/comer-rezar-iquique-feb"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "ticketera",
+   "id": "600e599a69",
+   "agregado": "2026-11-23",
+   "actualizado": "2026-11-23"
   },
   {
    "titulo": "Rich Rose “el Concierto”",
@@ -25606,11 +25854,11 @@
    "titulo": "Manuel García",
    "categoria": "conciertos",
    "fecha_inicio": "2027-03-05",
-   "fecha_fin": null,
+   "fecha_fin": "2027-03-13",
    "hora": "22:30",
-   "horario": null,
+   "horario": "5, 6, 12 y 13 de marzo de 2027",
    "lugar": "Teatro Nescafé de las Artes",
-   "direccion": null,
+   "direccion": "Av. Manuel Montt 032",
    "comuna": "Providencia",
    "ciudad": "Santiago",
    "region": "Región Metropolitana",
@@ -25623,6 +25871,10 @@
     {
      "nombre": "QuéHacer Chile",
      "url": "https://quehacerchile.cl/conciertos/indie/"
+    },
+    {
+     "nombre": "Rock&Pop",
+     "url": "https://www.rockandpop.cl/2026/11/manuel-garcia-celebrara-los-80-anos-de-silvio-rodriguez-con-gira-especial-por-chile-confirma-conciertos-en-santiago-y-regiones/"
     }
    ],
    "desde_imagen": false,
@@ -25630,7 +25882,7 @@
    "origen": "ia",
    "id": "563fb75a7d",
    "agregado": "2026-11-22",
-   "actualizado": "2026-11-22",
+   "actualizado": "2026-11-23",
    "genero": "folclor"
   },
   {
@@ -25825,7 +26077,7 @@
    "fecha_fin": null,
    "hora": "19:00",
    "horario": null,
-   "lugar": null,
+   "lugar": "Cerrillos",
    "direccion": null,
    "comuna": "Santiago",
    "ciudad": "Santiago",
@@ -25846,7 +26098,7 @@
    "origen": "ia",
    "id": "e5b099f24e",
    "agregado": "2026-11-15",
-   "actualizado": "2026-11-15",
+   "actualizado": "2026-11-23",
    "genero": "indie"
   },
   {
@@ -26647,6 +26899,37 @@
    "actualizado": "2026-11-23"
   },
   {
+   "titulo": "Faith No More, Alice in Chains y Mastodon en Chile",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-04-11",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Parque Cerrillos",
+   "direccion": null,
+   "comuna": "Cerrillos",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto de Faith No More, Alice in Chains y Mastodon en el Parque Cerrillos.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.rutarock.com/seccion/cartelera/cartelera-chile/",
+   "fuentes": [
+    {
+     "nombre": "Ruta Rock",
+     "url": "https://www.rutarock.com/seccion/cartelera/cartelera-chile/"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "fa82bebe2f",
+   "agregado": "2026-11-23",
+   "actualizado": "2026-11-23",
+   "genero": "metal"
+  },
+  {
    "titulo": "Rick Wakeman and Son",
    "categoria": "conciertos",
    "fecha_inicio": "2027-04-11",
@@ -27002,8 +27285,8 @@
    "titulo": "Till Lindemann",
    "categoria": "conciertos",
    "fecha_inicio": "2027-04-20",
-   "fecha_fin": null,
-   "hora": null,
+   "fecha_fin": "2027-04-21",
+   "hora": "21:00",
    "horario": null,
    "lugar": "Teatro Caupolicán - Santiago Centro",
    "direccion": "San Diego 850",
@@ -27035,9 +27318,13 @@
     {
      "nombre": "songkick.com",
      "url": "https://www.songkick.com/es/metro-areas/27525-chile-santiago/tonight"
+    },
+    {
+     "nombre": "DUPLOS",
+     "url": "https://duplos.cl/musica/till-lindemann-segundo-concierto-chile-2027-entradas/286033/2026/11/23/"
     }
    ],
-   "desde_imagen": false,
+   "desde_imagen": true,
    "confianza": "alta",
    "origen": "ticketera",
    "id": "4dcda2f9ab",
@@ -27472,6 +27759,37 @@
    "agregado": "2026-11-07",
    "actualizado": "2026-11-15",
    "genero": "indie"
+  },
+  {
+   "titulo": "Epic Rock Fest III: Agnostic Front",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-05-22",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Club Hípico",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Agnostic Front se suma a la tercera edición del Epic Rock Fest en el Club Hípico.",
+   "imagen": "https://www.rutarock.com/wp-content/uploads/2026/11/epic-rock-fest.jpg",
+   "fotos": null,
+   "url": "https://www.rutarock.com/seccion/cartelera/cartelera-chile/",
+   "fuentes": [
+    {
+     "nombre": "Ruta Rock",
+     "url": "https://www.rutarock.com/seccion/cartelera/cartelera-chile/"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "ecf1849be1",
+   "agregado": "2026-11-23",
+   "actualizado": "2026-11-23",
+   "genero": "rock"
   },
   {
    "titulo": "Jay Wheeler - World Tour Jay Wheeler",
