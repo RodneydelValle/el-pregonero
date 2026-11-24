@@ -1,12 +1,12 @@
 {
  "version": 1,
- "actualizado": "2026-11-23T19:13-03:00",
+ "actualizado": "2026-11-24T03:30-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-23T19:13-03:00",
+  "fecha": "2026-11-24T03:30-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 37,
-  "nuevos_esta_vez": 12,
+  "eventos_nuevos": 51,
+  "nuevos_esta_vez": 17,
   "nuevos_ids": [
    "02b0a8b418",
    "dfbf6d5676",
@@ -15,7 +15,6 @@
    "6c143a0159",
    "b3185ddd9e",
    "c5daf8bdab",
-   "7205bd604a",
    "05a11bc883",
    "73a777d24b",
    "3d42e9abe1",
@@ -29,8 +28,6 @@
    "b84d5fac9a",
    "015d6bef6b",
    "39e66d867b",
-   "0fbe47d528",
-   "eaf52b3fff",
    "a20746cf0e",
    "6435be3e85",
    "f96c4467b8",
@@ -44,7 +41,24 @@
    "ecf1849be1",
    "50a9e6a62d",
    "8d4306cddc",
-   "600e599a69"
+   "600e599a69",
+   "5f90da817a",
+   "4073acc16c",
+   "4c2dc7f925",
+   "3f8360f92e",
+   "cb81223289",
+   "3c77505e05",
+   "6f31859d65",
+   "959efbb3d2",
+   "e99f8e5ea0",
+   "c6f9d83b88",
+   "15888103b9",
+   "cdafc49bc7",
+   "81ccff8e36",
+   "4e794c8aef",
+   "a879375eab",
+   "c7a800d544",
+   "ef62b12901"
   ],
   "nuevos_desde": {
    "02b0a8b418": "2026-11-23T06:39-03:00",
@@ -54,7 +68,6 @@
    "6c143a0159": "2026-11-23T06:39-03:00",
    "b3185ddd9e": "2026-11-23T06:39-03:00",
    "c5daf8bdab": "2026-11-23T06:39-03:00",
-   "7205bd604a": "2026-11-23T06:39-03:00",
    "05a11bc883": "2026-11-23T06:39-03:00",
    "73a777d24b": "2026-11-23T06:39-03:00",
    "3d42e9abe1": "2026-11-23T06:39-03:00",
@@ -68,8 +81,6 @@
    "b84d5fac9a": "2026-11-23T06:39-03:00",
    "015d6bef6b": "2026-11-23T06:39-03:00",
    "39e66d867b": "2026-11-23T06:39-03:00",
-   "0fbe47d528": "2026-11-23T06:39-03:00",
-   "eaf52b3fff": "2026-11-23T06:39-03:00",
    "a20746cf0e": "2026-11-23T06:39-03:00",
    "6435be3e85": "2026-11-23T06:39-03:00",
    "f96c4467b8": "2026-11-23T19:13-03:00",
@@ -83,24 +94,41 @@
    "ecf1849be1": "2026-11-23T19:13-03:00",
    "50a9e6a62d": "2026-11-23T19:13-03:00",
    "8d4306cddc": "2026-11-23T19:13-03:00",
-   "600e599a69": "2026-11-23T19:13-03:00"
+   "600e599a69": "2026-11-23T19:13-03:00",
+   "5f90da817a": "2026-11-24T03:30-03:00",
+   "4073acc16c": "2026-11-24T03:30-03:00",
+   "4c2dc7f925": "2026-11-24T03:30-03:00",
+   "3f8360f92e": "2026-11-24T03:30-03:00",
+   "cb81223289": "2026-11-24T03:30-03:00",
+   "3c77505e05": "2026-11-24T03:30-03:00",
+   "6f31859d65": "2026-11-24T03:30-03:00",
+   "959efbb3d2": "2026-11-24T03:30-03:00",
+   "e99f8e5ea0": "2026-11-24T03:30-03:00",
+   "c6f9d83b88": "2026-11-24T03:30-03:00",
+   "15888103b9": "2026-11-24T03:30-03:00",
+   "cdafc49bc7": "2026-11-24T03:30-03:00",
+   "81ccff8e36": "2026-11-24T03:30-03:00",
+   "4e794c8aef": "2026-11-24T03:30-03:00",
+   "a879375eab": "2026-11-24T03:30-03:00",
+   "c7a800d544": "2026-11-24T03:30-03:00",
+   "ef62b12901": "2026-11-24T03:30-03:00"
   },
   "horas_nuevos": 24,
-  "llamadas_ia": 32,
+  "llamadas_ia": 55,
   "ia_sin_cupo": false,
-  "ultima_completa": "2026-11-23T18:22-03:00",
+  "ultima_completa": "2026-11-24T03:01-03:00",
   "modo": "completa",
-  "paginas_revisadas": 37,
+  "paginas_revisadas": 59,
   "busquedas": 107,
-  "fuentes_fijas": 9,
-  "errores": 28,
+  "fuentes_fijas": 12,
+  "errores": 14,
   "noticias_desde": "2026-11-23",
-  "noticias_viejas_descartadas": 429,
+  "noticias_viejas_descartadas": 421,
   "redes_vistas": 1,
-  "generos_ia": 1,
-  "imagenes_encontradas": 5
+  "generos_ia": 5,
+  "imagenes_encontradas": 7
  },
- "total": 845,
+ "total": 857,
  "eventos": [
   {
    "titulo": "Mariposas y Polillas, Colores en Movimiento",
@@ -150,7 +178,7 @@
    "origen": "ia",
    "id": "b240f6e84d",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-20"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Roberto Matta. Abrir la mirada",
@@ -200,7 +228,7 @@
    "origen": "ia",
    "id": "b91cbc5d41",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-23"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "El mundo en una biblioteca. Cien años de la donación de José Toribio Medina",
@@ -246,7 +274,7 @@
    "origen": "ia",
    "id": "6dd0741db1",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-20"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Un archivo en construcción: la obra de Tito Vásquez",
@@ -296,7 +324,7 @@
    "origen": "claude",
    "id": "ae5b603f04",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-20"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "145 años: Historias de una Colección",
@@ -362,7 +390,7 @@
    "origen": "ia",
    "id": "a2b9db3fc8",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-23"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Vitrina Colecciones arqueológicas y su estudio en el MNHN",
@@ -416,7 +444,7 @@
    "origen": "ia",
    "id": "50b4603a83",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-20"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Vertebrados: anatomía, evolución, extinción",
@@ -474,7 +502,7 @@
    "origen": "claude",
    "id": "6dfafa8970",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-20"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Kume Mongen",
@@ -1095,7 +1123,7 @@
    "origen": "ia",
    "id": "0da2b36bb0",
    "agregado": "2026-11-08",
-   "actualizado": "2026-11-16"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "La vida en una mirada. Fernando Opazo",
@@ -1817,7 +1845,7 @@
    "origen": "claude",
    "id": "347d5f69b6",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-16"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Tiempo de sombreros, 1920-1960. Colección Museo Histórico Nacional",
@@ -1944,7 +1972,7 @@
    "origen": "claude",
    "id": "2683b909e8",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-16"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Enrique Ramírez. Te creo paisaje",
@@ -1979,6 +2007,18 @@
     {
      "nombre": "Disfruta Santiago",
      "url": "https://disfrutasantiago.cl/events/te-creo-paisaje-enrique-ramirez-mnba/"
+    },
+    {
+     "nombre": "ARTEINFORMADO",
+     "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-de-arte-en-chile-cl_1"
+    },
+    {
+     "nombre": "ARTEINFORMADO",
+     "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-de-arte-en-santiago-region-metropolitana-chile-409031_1"
+    },
+    {
+     "nombre": "ARTEINFORMADO",
+     "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-santiago-409031_4_22"
     }
    ],
    "desde_imagen": false,
@@ -1986,7 +2026,7 @@
    "origen": "claude",
    "id": "526eb4a6d4",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-23"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Festival Teatro a Mil Sub-25",
@@ -2835,7 +2875,7 @@
    "origen": "ia",
    "id": "c1421516a4",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-22"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "De Cesante a Mirón. Enrique Flores",
@@ -3111,7 +3151,7 @@
    "origen": "ia",
    "id": "feee41666f",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-22"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "El prestamista",
@@ -3134,6 +3174,10 @@
     {
      "nombre": "Teatro Mori",
      "url": "https://teatromori.com/cartelera"
+    },
+    {
+     "nombre": "TelonTicket (teatro)",
+     "url": "https://telonticket.cl/mep_cat/teatro/"
     }
    ],
    "desde_imagen": false,
@@ -3141,7 +3185,7 @@
    "origen": "ia",
    "id": "f6c27c3093",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-22"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Crear:Destruir:Transformar - Rincón de escucha",
@@ -3743,7 +3787,7 @@
    "origen": "ia",
    "id": "2ff9635fda",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-23"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Cuerpo Docente",
@@ -3781,7 +3825,7 @@
    "origen": "ia",
    "id": "615e1e2ab1",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-22"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Tengo miedo torero",
@@ -3815,7 +3859,7 @@
    "origen": "ia",
    "id": "a00d6a1e64",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-22"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "El último improvisador",
@@ -3917,7 +3961,7 @@
    "origen": "ia",
    "id": "57d32cfcc5",
    "agregado": "2026-11-16",
-   "actualizado": "2026-11-16"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Amantes, Una Vez al Año",
@@ -3955,7 +3999,7 @@
    "origen": "datos-estructurados",
    "id": "8aaa55bd85",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-23"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Show de Stand Up - El Cachafaz",
@@ -4225,7 +4269,7 @@
    "origen": "ia",
    "id": "9a5e461544",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-18"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "An Idiot's Guide to Wine: Comedia entre copas",
@@ -4233,7 +4277,7 @@
    "fecha_inicio": "2026-11-14",
    "fecha_fin": "2027-02-20",
    "hora": "18:00",
-   "horario": null,
+   "horario": "Funciones: 5 de diciembre",
    "lugar": "Club Subterráneo",
    "direccion": "Orrego Luco 46",
    "comuna": "Providencia",
@@ -4256,6 +4300,14 @@
     {
      "nombre": "Fever",
      "url": "https://feverup.com/es/santiago/the-jazz-room"
+    },
+    {
+     "nombre": "Vamos",
+     "url": "https://www.vamoseventos.com/santiago/teatro"
+    },
+    {
+     "nombre": "vamoseventos.com",
+     "url": "https://www.vamoseventos.com/santiago"
     }
    ],
    "desde_imagen": false,
@@ -4263,7 +4315,7 @@
    "origen": "ia",
    "id": "73fc126123",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-22"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "La Batalla de San Tentorio",
@@ -4297,7 +4349,7 @@
    "origen": "datos-estructurados",
    "id": "4bf4666253",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-22"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Amantes, parejas disparejas",
@@ -4583,6 +4635,18 @@
     {
      "nombre": "mnba.gob.cl",
      "url": "https://www.mnba.gob.cl/cartelera"
+    },
+    {
+     "nombre": "ARTEINFORMADO",
+     "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-de-arte-en-chile-cl_1"
+    },
+    {
+     "nombre": "ARTEINFORMADO",
+     "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-de-arte-en-santiago-region-metropolitana-chile-409031_1"
+    },
+    {
+     "nombre": "ARTEINFORMADO",
+     "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-santiago-409031_4_22"
     }
    ],
    "desde_imagen": false,
@@ -4590,7 +4654,7 @@
    "origen": "ia",
    "id": "bc6524a618",
    "agregado": "2026-11-15",
-   "actualizado": "2026-11-23"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Imprenta e Editorial - Workshop de Grabado y Fanzine / Autopublicación",
@@ -4654,7 +4718,7 @@
    "origen": "ia",
    "id": "123c03116b",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-22"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Tolomiro Todomiro: escultura de Matta en La Moneda",
@@ -4692,7 +4756,7 @@
    "fecha_inicio": "2026-11-19",
    "fecha_fin": "2026-12-05",
    "hora": "20:30",
-   "horario": null,
+   "horario": "Mié a sáb, 20:30",
    "lugar": "Teatro UC",
    "direccion": "Jorge Washington 26",
    "comuna": "Ñuñoa",
@@ -4714,7 +4778,7 @@
    "origen": "ia",
    "id": "44078a5fa4",
    "agregado": "2026-11-16",
-   "actualizado": "2026-11-22"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Almighty en Chile Tour",
@@ -4809,7 +4873,7 @@
    "origen": "datos-estructurados",
    "id": "7748de9020",
    "agregado": "2026-11-17",
-   "actualizado": "2026-11-23"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Exposición El universo de Matta",
@@ -5081,7 +5145,7 @@
    "origen": "ia",
    "id": "888e0df523",
    "agregado": "2026-11-16",
-   "actualizado": "2026-11-20"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Mauricio Palma",
@@ -5238,6 +5302,44 @@
    "actualizado": "2026-11-21"
   },
   {
+   "titulo": "La promesa de una trenza",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-21",
+   "fecha_fin": "2026-12-13",
+   "hora": null,
+   "horario": null,
+   "lugar": "Galería Metropolitana",
+   "direccion": "Félix Mendelssohn 2941",
+   "comuna": "Pedro Aguirre Cerda",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Exposición artística en Galería Metropolitana.",
+   "imagen": "https://static.arteinformado.com/resources/app/docs/evento/84/247884/invitacio__n_aylen_ayala.jpg",
+   "fotos": null,
+   "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-de-arte-en-chile-cl_1",
+   "fuentes": [
+    {
+     "nombre": "ARTEINFORMADO",
+     "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-de-arte-en-chile-cl_1"
+    },
+    {
+     "nombre": "ARTEINFORMADO",
+     "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-de-arte-en-santiago-region-metropolitana-chile-409031_1"
+    },
+    {
+     "nombre": "ARTEINFORMADO",
+     "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-santiago-409031_4_22"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "cdafc49bc7",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24"
+  },
+  {
    "titulo": "Long Island, llagas-desierto-disco",
    "categoria": "teatro",
    "fecha_inicio": "2026-11-21",
@@ -5389,88 +5491,6 @@
    "actualizado": "2026-11-22"
   },
   {
-   "titulo": "Naza en Santiago",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-22",
-   "fecha_fin": "2026-11-23",
-   "hora": null,
-   "horario": null,
-   "lugar": "Centro Arte Alameda",
-   "direccion": null,
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Concierto de Naza en el Centro Arte Alameda.",
-   "imagen": "https://d1j41obag63mfa.cloudfront.net/foto/afiches/6cfac856-f3c1-407a-9462-d28181a3b05b-753b97c16bdf.webp",
-   "fotos": null,
-   "url": "https://resonarapp.cl/e/6f38ae04-b09d-45f9-ab16-742970a475d3",
-   "fuentes": [
-    {
-     "nombre": "Resonar",
-     "url": "https://resonarapp.cl/e/6f38ae04-b09d-45f9-ab16-742970a475d3"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "7205bd604a",
-   "agregado": "2026-11-23",
-   "actualizado": "2026-11-23",
-   "genero": "hiphop"
-  },
-  {
-   "titulo": "CA7RIEL y Paco Amoroso - Free Spirits World Tour",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-23",
-   "fecha_fin": null,
-   "hora": "19:00",
-   "horario": null,
-   "lugar": "Movistar Arena",
-   "direccion": "Beaucheff 1204",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Metropolitana",
-   "precio": null,
-   "descripcion": "Concierto del dúo CA7RIEL y Paco Amoroso en el Movistar Arena dentro de su gira mundial.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://www.quehacerchile.cl/conciertos/trap/",
-   "fuentes": [
-    {
-     "nombre": "QuéHacer Chile",
-     "url": "https://www.quehacerchile.cl/conciertos/trap/"
-    },
-    {
-     "nombre": "Cooperativa.cl",
-     "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-2026-en-chile/2025-12-01/082152.html"
-    },
-    {
-     "nombre": "GoAllConcerts",
-     "url": "https://goallconcerts.com/es/conciertos/cl/santiago"
-    },
-    {
-     "nombre": "EN CONCIERTO",
-     "url": "https://enconcierto.cl/calendario"
-    },
-    {
-     "nombre": "concerts50.com",
-     "url": "https://concerts50.com/chile/santiago/g/alternative"
-    },
-    {
-     "nombre": "songkick.com",
-     "url": "https://www.songkick.com/es/metro-areas/27525-chile-santiago/tonight"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "49d16d9e07",
-   "agregado": "2026-11-14",
-   "actualizado": "2026-11-23",
-   "genero": "trap"
-  },
-  {
    "titulo": "Primera Semana de Encuentro de la Escena Callejera y Conferencias Escénicas",
    "categoria": "teatro",
    "fecha_inicio": "2026-11-23",
@@ -5577,66 +5597,6 @@
    "actualizado": "2026-11-23"
   },
   {
-   "titulo": "El Club de los Tigres",
-   "categoria": "standup",
-   "fecha_inicio": "2026-11-23",
-   "fecha_fin": null,
-   "hora": "20:00",
-   "horario": null,
-   "lugar": "Happy People – Teatro Restaurant",
-   "direccion": null,
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Show de stand-up y humor en vivo en Happy People – Teatro Restaurant.",
-   "imagen": "https://d1j41obag63mfa.cloudfront.net/foto/afiches/d812d64f-8e58-40b0-ab11-d057f1d4cf9f-27845a6b3702.webp",
-   "fotos": null,
-   "url": "https://resonarapp.cl/humor/santiago",
-   "fuentes": [
-    {
-     "nombre": "Resonar",
-     "url": "https://resonarapp.cl/humor/santiago"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "0fbe47d528",
-   "agregado": "2026-11-23",
-   "actualizado": "2026-11-23"
-  },
-  {
-   "titulo": "Lunes de hueveo con Don Carter: invitado Edo Caroe",
-   "categoria": "standup",
-   "fecha_inicio": "2026-11-23",
-   "fecha_fin": null,
-   "hora": "20:00",
-   "horario": null,
-   "lugar": "Palermo Teatro Bar",
-   "direccion": null,
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Show de humor con Don Carter y el invitado Edo Caroe en Palermo Teatro Bar.",
-   "imagen": "https://d1j41obag63mfa.cloudfront.net/foto/afiches/c96f68cf-808c-4b0e-9794-b3ebbb74e8af-9a9e1b66793a.webp",
-   "fotos": null,
-   "url": "https://resonarapp.cl/humor/santiago",
-   "fuentes": [
-    {
-     "nombre": "Resonar",
-     "url": "https://resonarapp.cl/humor/santiago"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "eaf52b3fff",
-   "agregado": "2026-11-23",
-   "actualizado": "2026-11-23"
-  },
-  {
    "titulo": "Feria de Libros «Leer es un Regalo» 2026",
    "categoria": "museos",
    "fecha_inicio": "2026-11-23",
@@ -5699,49 +5659,6 @@
    "id": "3f73ac8f60",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-23"
-  },
-  {
-   "titulo": "My Dying Bride en Chile",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-23",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": null,
-   "lugar": "Teatro Cariola",
-   "direccion": "San Diego 246",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "La mítica banda británica de doom metal My Dying Bride se presenta en el Teatro Cariola.",
-   "imagen": "https://www.irock.cl/wp-content/uploads/2026/11/unnamed-13.png",
-   "fotos": null,
-   "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-2026-en-chile/2025-12-01/082152.html",
-   "fuentes": [
-    {
-     "nombre": "Cooperativa.cl",
-     "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-2026-en-chile/2025-12-01/082152.html"
-    },
-    {
-     "nombre": "iRock.CL | Noticias, Reviews, Entrevistas y más.",
-     "url": "https://www.irock.cl/mortajas-y-blackflow-abriran-el-show-de-my-dying-bride-en-santiago/"
-    },
-    {
-     "nombre": "GoAllConcerts",
-     "url": "https://goallconcerts.com/es/cl"
-    },
-    {
-     "nombre": "songkick.com",
-     "url": "https://www.songkick.com/es/metro-areas/27525-chile-santiago/tonight"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "9665419f46",
-   "agregado": "2026-11-15",
-   "actualizado": "2026-11-23",
-   "genero": "metal"
   },
   {
    "titulo": "Concierto del taller corporativo \"Saxo & Flauta Traversa\"",
@@ -5814,9 +5731,9 @@
    "horario": null,
    "lugar": "Santiago",
    "direccion": "Santiago, Santiago",
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
    "precio": "Gratis",
    "descripcion": "Concierto gratuito: «Tinta fresca» es el martes 24 de noviembre de 2026 a las 19:00 en Teatro Municipal de Santiago, Santiago.",
    "imagen": "https://municipal.cl/content/uploads/2026/03/T26_TintaFresca_RRSS_Web_Desktop.jpg",
@@ -5826,6 +5743,10 @@
     {
      "nombre": "CTXplorer",
      "url": "https://ctxplorer.com/blog/metal-internacional-santiago-conciertos-2026-2027"
+    },
+    {
+     "nombre": "CTXplorer",
+     "url": "https://ctxplorer.com/cl/santiago/conciertos"
     }
    ],
    "desde_imagen": false,
@@ -5833,7 +5754,7 @@
    "origen": "datos-estructurados",
    "id": "39d08ea79e",
    "agregado": "2026-11-22",
-   "actualizado": "2026-11-22",
+   "actualizado": "2026-11-24",
    "genero": "clasica"
   },
   {
@@ -5866,6 +5787,66 @@
    "agregado": "2026-11-20",
    "actualizado": "2026-11-20",
    "genero": "clasica"
+  },
+  {
+   "titulo": "League Challenge - Pokémon TCG",
+   "categoria": "juegos",
+   "fecha_inicio": "2026-11-24",
+   "fecha_fin": null,
+   "hora": "19:30",
+   "horario": null,
+   "lugar": "Single Planet",
+   "direccion": null,
+   "comuna": "Santiago Centro",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Torneo League Challenge de Pokémon TCG en Single Planet.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.torneostcg.cl/region-metropolitana/torneos/pokemon-tcg",
+   "fuentes": [
+    {
+     "nombre": "TorneosTCG",
+     "url": "https://www.torneostcg.cl/region-metropolitana/torneos/pokemon-tcg"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "6f31859d65",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24"
+  },
+  {
+   "titulo": "El Open Más Completo",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-24",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "La Sala",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Show de stand-up y open mic de comedia para disfrutar esta noche en Santiago.",
+   "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/dondelachipi/DgF9QXckS5G_0.jpg",
+   "fotos": null,
+   "url": "https://salirsantiago.com/panoramas/open-mic-de-comedia/esta-noche",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/open-mic-de-comedia/esta-noche"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "ef62b12901",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Expertas en Nada Show en Vivo",
@@ -5929,6 +5910,37 @@
    "genero": "clasica"
   },
   {
+   "titulo": "Concierto Orquesta De Camara Del Municipal De Santiago",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-24",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Monseñor Álvaro del Portillo 12455",
+   "direccion": "Monseñor Álvaro del Portillo 12455",
+   "comuna": "Santiago",
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $10.000",
+   "descripcion": "Concierto Orquesta De Camara Del Municipal De Santiago en vivo en Monseñor Álvaro del Portillo 12455, Santiago. Consulta entradas, fechas, horarios y ubicación en Vamos Eventos.",
+   "imagen": "https://kohxjulvxrlyyxqbtlxi.supabase.co/storage/v1/object/public/vamos-event-media/events/1681bc30-ec77-4457-bead-52f351c3243d/c7c7876b-2a99-4c4a-8fa0-1d94c20ea0b7.jpeg",
+   "fotos": null,
+   "url": "https://www.vamoseventos.com/event/concierto-orquesta-de-camara-del-municipal-de-sant-15bb4fe3-190b-4e8d-a7b5-30eb2d159158",
+   "fuentes": [
+    {
+     "nombre": "vamoseventos.com",
+     "url": "https://www.vamoseventos.com/santiago/conciertos/esta-semana"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "5f90da817a",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
+   "genero": "clasica"
+  },
+  {
    "titulo": "Coronel Valverde en Happy People",
    "categoria": "standup",
    "fecha_inicio": "2026-11-24",
@@ -5979,6 +5991,10 @@
     {
      "nombre": "QuéHacer Chile",
      "url": "https://quehacerchile.cl/conciertos/pop/"
+    },
+    {
+     "nombre": "CTXplorer",
+     "url": "https://ctxplorer.com/cl/santiago/conciertos"
     }
    ],
    "desde_imagen": false,
@@ -5986,7 +6002,7 @@
    "origen": "ia",
    "id": "db9df064f1",
    "agregado": "2026-11-22",
-   "actualizado": "2026-11-22",
+   "actualizado": "2026-11-24",
    "genero": "clasica"
   },
   {
@@ -6001,7 +6017,7 @@
    "comuna": "Providencia",
    "ciudad": "Santiago",
    "region": "Región Metropolitana",
-   "precio": null,
+   "precio": "Gratis",
    "descripcion": "Exposición de arte en el Centro Cultural de España.",
    "imagen": "https://static.arteinformado.com/resources/app/docs/evento/10/246910/imitacion_a_la_vida_cce_chile.jpg",
    "fotos": null,
@@ -6014,6 +6030,10 @@
     {
      "nombre": "ARTEINFORMADO",
      "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-de-arte-en-chile-cl_1"
+    },
+    {
+     "nombre": "ARTEINFORMADO",
+     "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-santiago-409031_4_22"
     }
    ],
    "desde_imagen": false,
@@ -6021,7 +6041,7 @@
    "origen": "ia",
    "id": "58bd029f33",
    "agregado": "2026-11-08",
-   "actualizado": "2026-11-16"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "XLOV - Latam Tour II",
@@ -6265,6 +6285,36 @@
    "actualizado": "2026-11-17"
   },
   {
+   "titulo": "League Challenge - Pokémon TCG",
+   "categoria": "juegos",
+   "fecha_inicio": "2026-11-25",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Arcadia Village Melipilla",
+   "direccion": null,
+   "comuna": "Melipilla",
+   "ciudad": "Melipilla",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Torneo League Challenge de Pokémon TCG en Arcadia Village.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.torneostcg.cl/region-metropolitana/torneos/pokemon-tcg",
+   "fuentes": [
+    {
+     "nombre": "TorneosTCG",
+     "url": "https://www.torneostcg.cl/region-metropolitana/torneos/pokemon-tcg"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "959efbb3d2",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24"
+  },
+  {
    "titulo": "Concierto Internacional: Música medieval portuguesa",
    "categoria": "medieval",
    "fecha_inicio": "2026-11-25",
@@ -6293,6 +6343,36 @@
    "id": "be2a0b9bda",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07"
+  },
+  {
+   "titulo": "Final Liga Oops - Pokémon TCG",
+   "categoria": "juegos",
+   "fecha_inicio": "2026-11-25",
+   "fecha_fin": null,
+   "hora": "19:30",
+   "horario": null,
+   "lugar": "Oops",
+   "direccion": null,
+   "comuna": "Santiago Centro",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Final de Liga Oops de Pokémon TCG.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.torneostcg.cl/region-metropolitana/torneos/pokemon-tcg",
+   "fuentes": [
+    {
+     "nombre": "TorneosTCG",
+     "url": "https://www.torneostcg.cl/region-metropolitana/torneos/pokemon-tcg"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "e99f8e5ea0",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Encuentros con Kramer",
@@ -6386,7 +6466,7 @@
    "origen": "ia",
    "id": "c26635db2c",
    "agregado": "2026-11-22",
-   "actualizado": "2026-11-22"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Las Alucines",
@@ -6754,6 +6834,36 @@
    "actualizado": "2026-11-22"
   },
   {
+   "titulo": "League Challenge - Pokémon TCG",
+   "categoria": "juegos",
+   "fecha_inicio": "2026-11-26",
+   "fecha_fin": null,
+   "hora": "18:30",
+   "horario": null,
+   "lugar": "Magicsur La Reina",
+   "direccion": "Avenida Ossa",
+   "comuna": "La Reina",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Torneo League Challenge de Pokémon TCG en Magicsur La Reina.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.torneostcg.cl/region-metropolitana/torneos/pokemon-tcg",
+   "fuentes": [
+    {
+     "nombre": "TorneosTCG",
+     "url": "https://www.torneostcg.cl/region-metropolitana/torneos/pokemon-tcg"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "c6f9d83b88",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24"
+  },
+  {
    "titulo": "Eros Ramazzotti en Chile",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-26",
@@ -6817,6 +6927,36 @@
    "id": "bbbd44b30c",
    "agregado": "2026-11-14",
    "actualizado": "2026-11-14"
+  },
+  {
+   "titulo": "League Cup - Pokémon TCG",
+   "categoria": "juegos",
+   "fecha_inicio": "2026-11-26",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Samurai TCG",
+   "direccion": null,
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Torneo League Cup de Pokémon TCG en Samurai TCG.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.torneostcg.cl/region-metropolitana/torneos/pokemon-tcg",
+   "fuentes": [
+    {
+     "nombre": "TorneosTCG",
+     "url": "https://www.torneostcg.cl/region-metropolitana/torneos/pokemon-tcg"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "15888103b9",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Música: Glasgow8, Demian y Omni",
@@ -6981,7 +7121,7 @@
    "fecha_inicio": "2026-11-26",
    "fecha_fin": "2026-12-05",
    "hora": "19:30",
-   "horario": null,
+   "horario": "Jue a sáb, 19:30",
    "lugar": "Teatro Sidarte",
    "direccion": "Ernesto Pinto Lagarrigue 131",
    "comuna": "Recoltea",
@@ -7003,7 +7143,7 @@
    "origen": "ia",
    "id": "7794ac7d3a",
    "agregado": "2026-11-22",
-   "actualizado": "2026-11-22"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Malgenio Comedy Workshop Final Showcase",
@@ -7075,7 +7215,7 @@
    "fecha_inicio": "2026-11-26",
    "fecha_fin": "2026-12-05",
    "hora": "19:30",
-   "horario": null,
+   "horario": "Jue a sáb, 19:30",
    "lugar": "Teatro Camilo Henríquez",
    "direccion": "Amunátegui 31",
    "comuna": "Santiago",
@@ -7097,7 +7237,7 @@
    "origen": "ia",
    "id": "c980242a44",
    "agregado": "2026-11-22",
-   "actualizado": "2026-11-22"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Concierto Mitos y Leyendas",
@@ -7611,7 +7751,7 @@
    "origen": "datos-estructurados",
    "id": "04fc5d9e78",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-23"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Nico Ruiz en Puerto Varas",
@@ -7813,7 +7953,7 @@
    "origen": "ia",
    "id": "03e4173194",
    "agregado": "2026-11-08",
-   "actualizado": "2026-11-23",
+   "actualizado": "2026-11-24",
    "genero": "indie"
   },
   {
@@ -7845,6 +7985,37 @@
    "id": "c33c626759",
    "agregado": "2026-11-11",
    "actualizado": "2026-11-11"
+  },
+  {
+   "titulo": "Leo Middea",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-26",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": null,
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto de Leo Middea en Santiago.",
+   "imagen": "https://s1.ticketm.net/dam/a/2a0/da0bf6de-9d71-42ca-b75d-6196ae7d82a0_SOURCE",
+   "fotos": null,
+   "url": "https://ctxplorer.com/cl/santiago/conciertos",
+   "fuentes": [
+    {
+     "nombre": "CTXplorer",
+     "url": "https://ctxplorer.com/cl/santiago/conciertos"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "4c2dc7f925",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
+   "genero": "folclor"
   },
   {
    "titulo": "Nano Stern",
@@ -7910,6 +8081,37 @@
    "id": "4d317be93e",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Video + Show en Santiago",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-26",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": null,
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Presentación de Video + Show en Santiago.",
+   "imagen": "https://ctxplorer.com/media/prensa/video-show-santiago-2026-11-26/img-5.jpg",
+   "fotos": null,
+   "url": "https://ctxplorer.com/cl/santiago/conciertos",
+   "fuentes": [
+    {
+     "nombre": "CTXplorer",
+     "url": "https://ctxplorer.com/cl/santiago/conciertos"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "4073acc16c",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
+   "genero": "otros"
   },
   {
    "titulo": "Visitas guiadas CEAC / Gran Sala Sinfónica Nacional",
@@ -8310,7 +8512,7 @@
    "fecha_inicio": "2026-11-27",
    "fecha_fin": "2026-12-13",
    "hora": "19:30",
-   "horario": null,
+   "horario": "Vie a dom",
    "lugar": "GAM",
    "direccion": "Av. Libertador Bernardo O'Higgins 227",
    "comuna": "Santiago",
@@ -8340,7 +8542,7 @@
    "origen": "datos-estructurados",
    "id": "02b7a6056d",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-22"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Primer Concierto de Gala \" Un Viaje en el Tiempo \"",
@@ -9026,6 +9228,36 @@
    "genero": "otros"
   },
   {
+   "titulo": "Carta de amor",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": "2026-11-28",
+   "hora": null,
+   "horario": "Vie y sáb, 20:00",
+   "lugar": "Teatro Biobío",
+   "direccion": null,
+   "comuna": "Concepción",
+   "ciudad": "Concepción",
+   "region": "Región del Biobío",
+   "precio": null,
+   "descripcion": "Obra de teatro en el escenario del Teatro Biobío.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://telonticket.cl/mep_cat/teatro/",
+   "fuentes": [
+    {
+     "nombre": "TelonTicket (teatro)",
+     "url": "https://telonticket.cl/mep_cat/teatro/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "4e794c8aef",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24"
+  },
+  {
    "titulo": "Classic Thrash Attack: Artillery y Atrophy en Valparaíso",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-27",
@@ -9157,6 +9389,67 @@
    "actualizado": "2026-11-23"
   },
   {
+   "titulo": "FORCE + AISA en Santiago",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": null,
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto de FORCE y AISA en Santiago.",
+   "imagen": "https://ctxplorer.com/media/prensa/aisa-santiago-2026-11-27/img-1.jpg",
+   "fotos": null,
+   "url": "https://ctxplorer.com/cl/santiago/conciertos",
+   "fuentes": [
+    {
+     "nombre": "CTXplorer",
+     "url": "https://ctxplorer.com/cl/santiago/conciertos"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "3f8360f92e",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
+   "genero": "hiphop"
+  },
+  {
+   "titulo": "Felices Los Tres",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": "2026-11-28",
+   "hora": null,
+   "horario": "Vie y sáb, 20:30",
+   "lugar": "Teatro San Ginés",
+   "direccion": null,
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Comedia teatral en cartelera en el Teatro San Ginés.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://telonticket.cl/mep_cat/teatro/",
+   "fuentes": [
+    {
+     "nombre": "TelonTicket (teatro)",
+     "url": "https://telonticket.cl/mep_cat/teatro/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "a879375eab",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24"
+  },
+  {
    "titulo": "Festival del Guatón Loyola 2026",
    "categoria": "standup",
    "fecha_inicio": "2026-11-27",
@@ -9241,6 +9534,10 @@
     {
      "nombre": "La Cuarta",
      "url": "https://www.lacuarta.com/servicios/noticia/lo-que-la-noche-le-cuenta-al-dia-mas-de-medio-siglo-de-arte-argentino-llega-al-centro-cultural-la-moneda/"
+    },
+    {
+     "nombre": "tvn.cl",
+     "url": "https://www.tvn.cl/actualidad-y-tendencias/tendencias/centro-cultural-la-moneda-presenta-exposicion-de-arte-argentino-con"
     }
    ],
    "desde_imagen": false,
@@ -9248,7 +9545,37 @@
    "origen": "ia",
    "id": "d7d0c6b44a",
    "agregado": "2026-11-23",
-   "actualizado": "2026-11-23"
+   "actualizado": "2026-11-24"
+  },
+  {
+   "titulo": "Malas Madres",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": "2026-11-28",
+   "hora": null,
+   "horario": "Vie y sáb, 22:15",
+   "lugar": "Teatro Mori Parque Arauco",
+   "direccion": null,
+   "comuna": "Las Condes",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Comedia teatral en temporada en Teatro Mori Parque Arauco.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://telonticket.cl/mep_cat/teatro/",
+   "fuentes": [
+    {
+     "nombre": "TelonTicket (teatro)",
+     "url": "https://telonticket.cl/mep_cat/teatro/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "c7a800d544",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Mujeres que brillan: Recital de Violín y Piano",
@@ -9320,9 +9647,9 @@
    "titulo": "Prohibido suicidarse en primavera",
    "categoria": "teatro",
    "fecha_inicio": "2026-11-27",
-   "fecha_fin": null,
+   "fecha_fin": "2026-11-29",
    "hora": null,
-   "horario": null,
+   "horario": "Vie a dom",
    "lugar": "Teatro Camino",
    "direccion": null,
    "comuna": "Santiago",
@@ -9337,6 +9664,10 @@
     {
      "nombre": "Resonar",
      "url": "https://resonarapp.cl/teatro/santiago"
+    },
+    {
+     "nombre": "TelonTicket (teatro)",
+     "url": "https://telonticket.cl/mep_cat/teatro/"
     }
    ],
    "desde_imagen": false,
@@ -9344,7 +9675,7 @@
    "origen": "ia",
    "id": "74f18cdd7f",
    "agregado": "2026-11-21",
-   "actualizado": "2026-11-21"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Yo, Comediante - Stand Up",
@@ -9840,6 +10171,10 @@
     {
      "nombre": "iRock.CL | Noticias, Reviews, Entrevistas y más.",
      "url": "https://www.irock.cl/tierra-maldita-fest-debuta-este-28-de-noviembre-en-lampa/"
+    },
+    {
+     "nombre": "CTXplorer",
+     "url": "https://ctxplorer.com/cl/santiago/conciertos"
     }
    ],
    "desde_imagen": false,
@@ -9847,7 +10182,7 @@
    "origen": "ia",
    "id": "fbd64aa53d",
    "agregado": "2026-11-16",
-   "actualizado": "2026-11-16",
+   "actualizado": "2026-11-24",
    "genero": "metal"
   },
   {
@@ -9967,7 +10302,7 @@
    "origen": "ticketera",
    "id": "c003178ec9",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-23",
+   "actualizado": "2026-11-24",
    "genero": "metal"
   },
   {
@@ -10735,7 +11070,7 @@
    "origen": "ticketera",
    "id": "8d149676b5",
    "agregado": "2026-11-16",
-   "actualizado": "2026-11-16"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Candlelight: Tributo a Phil Collins",
@@ -10925,7 +11260,7 @@
    "origen": "ticketera",
    "id": "6a9c1df7fe",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-23",
+   "actualizado": "2026-11-24",
    "genero": "metal"
   },
   {
@@ -10962,6 +11297,68 @@
    "agregado": "2026-11-13",
    "actualizado": "2026-11-22",
    "genero": "jazz"
+  },
+  {
+   "titulo": "Peces Raros en Fauna Primavera",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": null,
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Presentación de Peces Raros en el festival Fauna Primavera en Santiago.",
+   "imagen": "https://ctxplorer.com/media/prensa/gratis-cdmx/tarjetas/peces-raros-en-fauna-primavera-santiago-2026-11-28.webp",
+   "fotos": null,
+   "url": "https://ctxplorer.com/cl/santiago/conciertos",
+   "fuentes": [
+    {
+     "nombre": "CTXplorer",
+     "url": "https://ctxplorer.com/cl/santiago/conciertos"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "3c77505e05",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
+   "genero": "indie"
+  },
+  {
+   "titulo": "Pedro Aznar: «Una noche entre amigos»",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": null,
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto de Pedro Aznar titulado «Una noche entre amigos» en Santiago.",
+   "imagen": "https://municipal.cl/content/uploads/2026/11/T26_Web_Adapt_PedroAznar_Mobile.jpg",
+   "fotos": null,
+   "url": "https://ctxplorer.com/cl/santiago/conciertos",
+   "fuentes": [
+    {
+     "nombre": "CTXplorer",
+     "url": "https://ctxplorer.com/cl/santiago/conciertos"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "cb81223289",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
+   "genero": "rock"
   },
   {
    "titulo": "Road to Tranceformations Chile",
@@ -11119,6 +11516,36 @@
    "agregado": "2026-11-18",
    "actualizado": "2026-11-22",
    "genero": "jazz"
+  },
+  {
+   "titulo": "Ludidazo: Feria de juegos de mesa",
+   "categoria": "juegos",
+   "fecha_inicio": "2026-11-29",
+   "fecha_fin": null,
+   "hora": "12:00",
+   "horario": "12:00 a 20:00 H",
+   "lugar": "Centro Cultural de Puente Alto",
+   "direccion": "Av. Eyzaguirre 02115",
+   "comuna": "Puente Alto",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Feria de juegos de mesa, cartas coleccionables, rol y cultura geek en Puente Alto. ¡Entrada liberada!",
+   "imagen": "https://visitsantiago.travel/wp-content/uploads/2026/11/Ludidazo.jpg",
+   "fotos": null,
+   "url": "https://visitsantiago.travel/en/panorama/ludidazo-feria-de-juuegos-de-mesa/",
+   "fuentes": [
+    {
+     "nombre": "Visit Santiago Travel",
+     "url": "https://visitsantiago.travel/en/panorama/ludidazo-feria-de-juuegos-de-mesa/"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "81ccff8e36",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Matorral en Persa Víctor Manuel",
@@ -11495,7 +11922,7 @@
    "origen": "ticketera",
    "id": "41da085532",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-23",
+   "actualizado": "2026-11-24",
    "genero": "indie"
   },
   {
@@ -12175,7 +12602,7 @@
    "origen": "ia",
    "id": "5197cbd0b7",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-23",
+   "actualizado": "2026-11-24",
    "genero": "metal"
   },
   {
@@ -12770,7 +13197,7 @@
    "origen": "ticketera",
    "id": "f840300077",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-23",
+   "actualizado": "2026-11-24",
    "genero": "metal"
   },
   {
@@ -12938,7 +13365,7 @@
    "origen": "ticketera",
    "id": "9abe6a1224",
    "agregado": "2026-11-16",
-   "actualizado": "2026-11-20"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Matías Tamayo en Vivo",
@@ -13033,7 +13460,7 @@
    "origen": "ia",
    "id": "ea623c25d0",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-14",
+   "actualizado": "2026-11-24",
    "genero": "otros"
   },
   {
@@ -14714,7 +15141,7 @@
    "origen": "ticketera",
    "id": "621e820618",
    "agregado": "2026-11-16",
-   "actualizado": "2026-11-19"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Natalia Valdebenito Comedy Restobar",
@@ -15622,7 +16049,7 @@
    "origen": "datos-estructurados",
    "id": "e693788f4a",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-23",
+   "actualizado": "2026-11-24",
    "genero": "pop"
   },
   {
@@ -17382,7 +17809,7 @@
    "origen": "ticketera",
    "id": "700861991b",
    "agregado": "2026-11-16",
-   "actualizado": "2026-11-20"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Woman In Rock - En La Diabla Bar",
@@ -18024,7 +18451,7 @@
    "origen": "datos-estructurados",
    "id": "c92e1edc4d",
    "agregado": "2026-11-16",
-   "actualizado": "2026-11-20",
+   "actualizado": "2026-11-24",
    "genero": "clasica"
   },
   {
@@ -18055,7 +18482,7 @@
    "origen": "datos-estructurados",
    "id": "c1b47aaf66",
    "agregado": "2026-11-16",
-   "actualizado": "2026-11-16"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Rol a la Orden · La plaga del oeste (Zombicide Chronicles)",
@@ -18085,7 +18512,7 @@
    "origen": "datos-estructurados",
    "id": "c65520ba49",
    "agregado": "2026-11-16",
-   "actualizado": "2026-11-16"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Rol a la Orden · Negociaciones agresivas (Dungeons & Dragons)",
@@ -18115,7 +18542,7 @@
    "origen": "datos-estructurados",
    "id": "db99bc6ec9",
    "agregado": "2026-11-16",
-   "actualizado": "2026-11-16"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Medieval Party & Veladaa",
@@ -18272,6 +18699,10 @@
     {
      "nombre": "VAMOH!",
      "url": "https://vamoh.cl/events/the-jazz-room-tributo-a-marvin-gaye-una-noche-de-soul-hq3j9/"
+    },
+    {
+     "nombre": "vamoseventos.com",
+     "url": "https://www.vamoseventos.com/santiago"
     }
    ],
    "desde_imagen": false,
@@ -18279,7 +18710,7 @@
    "origen": "ia",
    "id": "b937fe271e",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-22",
+   "actualizado": "2026-11-24",
    "genero": "jazz"
   },
   {
@@ -18657,7 +19088,7 @@
    "origen": "ticketera",
    "id": "5e23a1b3c4",
    "agregado": "2026-11-16",
-   "actualizado": "2026-11-19"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Nico Carreño | Concierto de Lanzamiento Nuevo Ep «Te Quedaste a Pesar de Las Dudas» Terraza Estado, Rancagua",
@@ -18980,7 +19411,7 @@
    "origen": "ia",
    "id": "6e52ccb8ca",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-14",
+   "actualizado": "2026-11-24",
    "genero": "indie"
   },
   {
@@ -19019,7 +19450,7 @@
    "origen": "ia",
    "id": "ecd8a9e0b2",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-22",
+   "actualizado": "2026-11-24",
    "genero": "cumbia"
   },
   {
@@ -19398,7 +19829,7 @@
    "origen": "ia",
    "id": "464635ae28",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-22",
+   "actualizado": "2026-11-24",
    "genero": "rock"
   },
   {
@@ -19467,7 +19898,7 @@
    "origen": "ticketera",
    "id": "9dcf14ec75",
    "agregado": "2026-11-16",
-   "actualizado": "2026-11-20"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Anuel AA en Santander Arena",
@@ -19814,7 +20245,7 @@
    "origen": "ticketera",
    "id": "8fb6b62b81",
    "agregado": "2026-11-16",
-   "actualizado": "2026-11-19"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "DAVID PEREZ EN PALERMO TEATRO BAR - Grabación de Especial de Comedia",
@@ -20303,7 +20734,7 @@
    "origen": "datos-estructurados",
    "id": "5442a68a62",
    "agregado": "2026-11-08",
-   "actualizado": "2026-11-16",
+   "actualizado": "2026-11-24",
    "genero": "metal"
   },
   {
@@ -20731,7 +21162,7 @@
    "origen": "ia",
    "id": "94fcf8af76",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-14",
+   "actualizado": "2026-11-24",
    "genero": "indie"
   },
   {
@@ -20958,7 +21389,7 @@
    "origen": "ia",
    "id": "449f513536",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-22",
+   "actualizado": "2026-11-24",
    "genero": "indie"
   },
   {
@@ -21215,7 +21646,7 @@
    "origen": "ia",
    "id": "ef2c25423f",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-14",
+   "actualizado": "2026-11-24",
    "genero": "rock"
   },
   {
@@ -21381,7 +21812,7 @@
    "origen": "datos-estructurados",
    "id": "b2f4ac4e18",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-22",
+   "actualizado": "2026-11-24",
    "genero": "cumbia"
   },
   {
@@ -21451,7 +21882,7 @@
    "origen": "ticketera",
    "id": "d971166969",
    "agregado": "2026-11-16",
-   "actualizado": "2026-11-20"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "JAZZ CLUB 🎵 MIÉRCOLES 23 DICIEMBRE ★ Club Subterráneo",
@@ -22105,7 +22536,7 @@
    "origen": "ticketera",
    "id": "1b466ad00e",
    "agregado": "2026-11-16",
-   "actualizado": "2026-11-20"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "JAZZ CLUB 🎵 MIÉRCOLES 30 DICIEMBRE ★ Club Subterráneo",
@@ -23403,6 +23834,14 @@
     {
      "nombre": "Radio Imagina",
      "url": "https://www.radioimagina.cl/2026/11/vuelve-el-museo-de-31-minutos-revisa-fecha-y-recinto-confirmado/"
+    },
+    {
+     "nombre": "meganoticias.cl",
+     "url": "https://www.meganoticias.cl/tendencias/537117-31-minutos-museo-31-exposicion-mut-entradas-fechas-horarios-24-11-2026.html"
+    },
+    {
+     "nombre": "tvn.cl",
+     "url": "https://www.tvn.cl/actualidad-y-tendencias/tendencias/esta-de-vuelta-exposicion-museo-31-confirma-su-retorno-a-santiago"
     }
    ],
    "desde_imagen": false,
@@ -23410,7 +23849,7 @@
    "origen": "ia",
    "id": "aa2b754e1d",
    "agregado": "2026-11-21",
-   "actualizado": "2026-11-21"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "The Jazz Room: Tributo a Frank Sinatra y Louis Armstrong",
@@ -23437,6 +23876,10 @@
     {
      "nombre": "VAMOH!",
      "url": "https://vamoh.cl/events/the-jazz-room-tributo-a-frank-sinatra-y-louis-armstrong-pe9ut/"
+    },
+    {
+     "nombre": "vamoseventos.com",
+     "url": "https://www.vamoseventos.com/santiago/genero/jazz"
     }
    ],
    "desde_imagen": false,
@@ -23444,7 +23887,7 @@
    "origen": "ia",
    "id": "2e89ea4c31",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-17",
+   "actualizado": "2026-11-24",
    "genero": "jazz"
   },
   {
@@ -24808,7 +25251,7 @@
    "origen": "ticketera",
    "id": "50a1437f96",
    "agregado": "2026-11-16",
-   "actualizado": "2026-11-19"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "16 Años de Fiebre de Cumbia",
@@ -27504,7 +27947,7 @@
    "origen": "ia",
    "id": "798434cf22",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-14",
+   "actualizado": "2026-11-24",
    "genero": "cumbia"
   },
   {
@@ -28228,7 +28671,7 @@
    "categoria": "conciertos",
    "fecha_inicio": "2027-10-27",
    "fecha_fin": null,
-   "hora": null,
+   "hora": "21:00",
    "horario": null,
    "lugar": "Estadio Monumental",
    "direccion": "Av. Marathon 5300",
@@ -28248,14 +28691,18 @@
     {
      "nombre": "PuntoTicket",
      "url": "https://www.puntoticket.com/don-omar-2027"
+    },
+    {
+     "nombre": "cdnp.puntoticket.com",
+     "url": "https://cdnp.puntoticket.com/don-omar-2027"
     }
    ],
-   "desde_imagen": false,
+   "desde_imagen": true,
    "confianza": "alta",
    "origen": "ia",
    "id": "3ddfd9d4e4",
    "agregado": "2026-11-18",
-   "actualizado": "2026-11-19",
+   "actualizado": "2026-11-24",
    "genero": "reggaeton"
   },
   {
