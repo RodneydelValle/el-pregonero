@@ -18,10 +18,25 @@ service cloud.firestore {
         && request.resource.data.actualizado == request.time;
     }
 
-    // ===== Visor de Perfil (maqueta de Instagram del equipo de la Lotería) =====
-    // Acceso abierto a propósito (lo decidió el dueño): cualquiera con el visor puede ver y editar.
-    // Solo se limita la forma y el tamaño de los datos para que no sirva para guardar otras cosas.
-    // visor_equipo = proyectos del equipo; visor_pruebas = pruebas automáticas.
+    // ===== Visor de Perfil (maqueta de Instagram) =====
+    // Perfiles PÚBLICOS (visor_equipo; visor_pruebas = pruebas automáticas): acceso abierto a propósito
+    // (lo decidió el dueño): cualquiera con el visor puede ver y editar. Solo se limita la forma y el tamaño.
+    // Perfiles OCULTOS (visor_oculto; visor_pruebas_oculto = pruebas): solo el administrador (por su uid)
+    // los crea, borra y elige quién los ve (lista «lectores» de correos). Las personas de esa lista, con sesión
+    // iniciada y correo verificado, los ven y editan, pero no pueden cambiar la lista.
+    function esAdminVisor() { return request.auth != null && request.auth.uid == 'mu9z2GNHceR3xoNxK2oK4DLToVk1'; }
+    function esLector(lectores) {
+      return request.auth != null && request.auth.token.get('email_verified', false) == true
+        && request.auth.token.get('email', '') is string
+        && request.auth.token.get('email', '').lower() in lectores;
+    }
+    function esPublica(c) { return c in ['visor_equipo', 'visor_pruebas']; }
+    function esOculta(c) { return c in ['visor_oculto', 'visor_pruebas_oculto']; }
+    // resource.data.lectores directo (todo perfil oculto lo trae): así Firestore puede comprobar la consulta array-contains
+    function puedeVer(d) { return esAdminVisor() || esLector(d.lectores); }
+    function puedeVerPerfil(c, sid) {
+      return esAdminVisor() || esLector(get(/databases/$(database)/documents/$(c)/$(sid)).data.get('lectores', []));
+    }
     function texto(v, max) { return v is string && v.size() <= max; }
     function imagen(v) {
       return v is string && (v == ''
@@ -36,25 +51,41 @@ service cloud.firestore {
         && texto(p.get('cat', ''), 60) && texto(p.get('bio', ''), 500)
         && texto(p.get('enlace', ''), 120) && texto(p.get('botones', ''), 120);
     }
+    // hasta 50 correos en minúsculas; si algún elemento no es texto, join() falla y se rechaza
+    function lectoresValidos(l) {
+      return l is list && l.size() <= 50 && l.join(',').size() <= 6000
+        && l.join(',').matches('^([^,@ A-Z]{1,64}@[^,@ A-Z]{1,100}(,[^,@ A-Z]{1,64}@[^,@ A-Z]{1,100})*)?$');
+    }
+    function metaValida(d, oculto) {
+      return d.keys().hasOnly(['nombre', 'perfil', 'destacadas', 'creado', 'lectores'])
+        && texto(d.nombre, 80) && perfilValido(d.perfil)
+        && d.destacadas is list && d.destacadas.size() <= 30
+        && d.creado is number
+        && ((!oculto && !('lectores' in d)) || (oculto && lectoresValidos(d.get('lectores', null))));
+    }
+    function postValido(d) {
+      return d.keys().hasOnly(['img', 'desc', 'tipo', 'propuesta', 'fijado', 'o', 'creado'])
+        && imagen(d.img) && d.img != ''
+        && texto(d.desc, 2200)
+        && d.tipo in ['foto', 'carrusel', 'reel']
+        && d.propuesta is bool && d.fijado is bool
+        && d.o is number && d.creado is number;
+    }
     match /{coleccion}/{sid} {
-      allow read, delete: if coleccion in ['visor_equipo', 'visor_pruebas'];
-      allow create, update: if coleccion in ['visor_equipo', 'visor_pruebas']
-        && sid.matches('^[A-Za-z0-9]{4,40}$')
-        && request.resource.data.keys().hasOnly(['nombre', 'perfil', 'destacadas', 'creado'])
-        && texto(request.resource.data.nombre, 80)
-        && perfilValido(request.resource.data.perfil)
-        && request.resource.data.destacadas is list && request.resource.data.destacadas.size() <= 30
-        && request.resource.data.creado is number;
+      allow read: if esPublica(coleccion) || (esOculta(coleccion) && puedeVer(resource.data));
+      allow delete: if esPublica(coleccion) || (esOculta(coleccion) && esAdminVisor());
+      allow create: if sid.matches('^[A-Za-z0-9]{4,40}$')
+        && ((esPublica(coleccion) && metaValida(request.resource.data, false))
+          || (esOculta(coleccion) && esAdminVisor() && metaValida(request.resource.data, true)));
+      allow update: if sid.matches('^[A-Za-z0-9]{4,40}$')
+        && ((esPublica(coleccion) && metaValida(request.resource.data, false))
+          || (esOculta(coleccion) && metaValida(request.resource.data, true)
+            && (esAdminVisor()
+              || (esLector(resource.data.get('lectores', [])) && request.resource.data.lectores == resource.data.lectores))));
       match /posts/{pid} {
-        allow read, delete: if coleccion in ['visor_equipo', 'visor_pruebas'];
-        allow create, update: if coleccion in ['visor_equipo', 'visor_pruebas']
-          && pid.matches('^[A-Za-z0-9]{4,40}$')
-          && request.resource.data.keys().hasOnly(['img', 'desc', 'tipo', 'propuesta', 'fijado', 'o', 'creado'])
-          && imagen(request.resource.data.img) && request.resource.data.img != ''
-          && texto(request.resource.data.desc, 2200)
-          && request.resource.data.tipo in ['foto', 'carrusel', 'reel']
-          && request.resource.data.propuesta is bool && request.resource.data.fijado is bool
-          && request.resource.data.o is number && request.resource.data.creado is number;
+        allow read, delete: if esPublica(coleccion) || (esOculta(coleccion) && puedeVerPerfil(coleccion, sid));
+        allow create, update: if pid.matches('^[A-Za-z0-9]{4,40}$') && postValido(request.resource.data)
+          && (esPublica(coleccion) || (esOculta(coleccion) && puedeVerPerfil(coleccion, sid)));
       }
     }
 
