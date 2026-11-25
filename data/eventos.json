@@ -1,47 +1,13 @@
 {
  "version": 1,
- "actualizado": "2026-11-24T03:30-03:00",
+ "actualizado": "2026-11-24T23:48-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-24T03:30-03:00",
+  "fecha": "2026-11-24T23:48-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 51,
-  "nuevos_esta_vez": 17,
+  "eventos_nuevos": 63,
+  "nuevos_esta_vez": 46,
   "nuevos_ids": [
-   "02b0a8b418",
-   "dfbf6d5676",
-   "3c67bd04b6",
-   "abf159976e",
-   "6c143a0159",
-   "b3185ddd9e",
-   "c5daf8bdab",
-   "05a11bc883",
-   "73a777d24b",
-   "3d42e9abe1",
-   "1ab64ad2a8",
-   "ecb3696419",
-   "da09cebb2b",
-   "6d7a765b18",
-   "f4655d7154",
-   "7e7a5d6ea2",
-   "f610b30f0a",
-   "b84d5fac9a",
-   "015d6bef6b",
-   "39e66d867b",
-   "a20746cf0e",
-   "6435be3e85",
-   "f96c4467b8",
-   "f3029fe5dd",
-   "6fe4733e9d",
-   "d7d0c6b44a",
-   "82023bb6a6",
-   "93f74d1e88",
-   "c3afad25ec",
-   "fa82bebe2f",
-   "ecf1849be1",
-   "50a9e6a62d",
-   "8d4306cddc",
-   "600e599a69",
    "5f90da817a",
    "4073acc16c",
    "4c2dc7f925",
@@ -58,43 +24,55 @@
    "4e794c8aef",
    "a879375eab",
    "c7a800d544",
-   "ef62b12901"
+   "ef62b12901",
+   "6f7aac78ef",
+   "b291488b46",
+   "e4deb4ca02",
+   "8edf30907e",
+   "6fb2281dea",
+   "fbd48400e1",
+   "c29b8906fe",
+   "1296871a9e",
+   "0b59b868cd",
+   "c6a203b1e4",
+   "9121aa3e7d",
+   "b3b8797707",
+   "841591f820",
+   "21686e54d4",
+   "a252d88ec1",
+   "79638a32c2",
+   "3f2c968da9",
+   "f852f268a6",
+   "c40601c4fe",
+   "3129d3aa46",
+   "01143764d0",
+   "aad9c1d2d4",
+   "30218a67e3",
+   "6689887d38",
+   "3b085bebcc",
+   "e44a757a27",
+   "10bd2c18d9",
+   "36d589be48",
+   "ed545061e3",
+   "ad97bc03a0",
+   "36076878d2",
+   "7b64b61a8a",
+   "8149205e6b",
+   "e67b98ab78",
+   "aaf0dfd377",
+   "983bac8352",
+   "148f22762a",
+   "c31753928e",
+   "636e3a912d",
+   "09818f650f",
+   "2f2e160d80",
+   "d5232b7f27",
+   "716db1cc23",
+   "1e1d6dc303",
+   "ad62547788",
+   "6472ceba8c"
   ],
   "nuevos_desde": {
-   "02b0a8b418": "2026-11-23T06:39-03:00",
-   "dfbf6d5676": "2026-11-23T06:39-03:00",
-   "3c67bd04b6": "2026-11-23T06:39-03:00",
-   "abf159976e": "2026-11-23T06:39-03:00",
-   "6c143a0159": "2026-11-23T06:39-03:00",
-   "b3185ddd9e": "2026-11-23T06:39-03:00",
-   "c5daf8bdab": "2026-11-23T06:39-03:00",
-   "05a11bc883": "2026-11-23T06:39-03:00",
-   "73a777d24b": "2026-11-23T06:39-03:00",
-   "3d42e9abe1": "2026-11-23T06:39-03:00",
-   "1ab64ad2a8": "2026-11-23T06:39-03:00",
-   "ecb3696419": "2026-11-23T06:39-03:00",
-   "da09cebb2b": "2026-11-23T06:39-03:00",
-   "6d7a765b18": "2026-11-23T06:39-03:00",
-   "f4655d7154": "2026-11-23T06:39-03:00",
-   "7e7a5d6ea2": "2026-11-23T06:39-03:00",
-   "f610b30f0a": "2026-11-23T06:39-03:00",
-   "b84d5fac9a": "2026-11-23T06:39-03:00",
-   "015d6bef6b": "2026-11-23T06:39-03:00",
-   "39e66d867b": "2026-11-23T06:39-03:00",
-   "a20746cf0e": "2026-11-23T06:39-03:00",
-   "6435be3e85": "2026-11-23T06:39-03:00",
-   "f96c4467b8": "2026-11-23T19:13-03:00",
-   "f3029fe5dd": "2026-11-23T19:13-03:00",
-   "6fe4733e9d": "2026-11-23T19:13-03:00",
-   "d7d0c6b44a": "2026-11-23T19:13-03:00",
-   "82023bb6a6": "2026-11-23T19:13-03:00",
-   "93f74d1e88": "2026-11-23T19:13-03:00",
-   "c3afad25ec": "2026-11-23T19:13-03:00",
-   "fa82bebe2f": "2026-11-23T19:13-03:00",
-   "ecf1849be1": "2026-11-23T19:13-03:00",
-   "50a9e6a62d": "2026-11-23T19:13-03:00",
-   "8d4306cddc": "2026-11-23T19:13-03:00",
-   "600e599a69": "2026-11-23T19:13-03:00",
    "5f90da817a": "2026-11-24T03:30-03:00",
    "4073acc16c": "2026-11-24T03:30-03:00",
    "4c2dc7f925": "2026-11-24T03:30-03:00",
@@ -111,24 +89,70 @@
    "4e794c8aef": "2026-11-24T03:30-03:00",
    "a879375eab": "2026-11-24T03:30-03:00",
    "c7a800d544": "2026-11-24T03:30-03:00",
-   "ef62b12901": "2026-11-24T03:30-03:00"
+   "ef62b12901": "2026-11-24T03:30-03:00",
+   "6f7aac78ef": "2026-11-24T23:48-03:00",
+   "b291488b46": "2026-11-24T23:48-03:00",
+   "e4deb4ca02": "2026-11-24T23:48-03:00",
+   "8edf30907e": "2026-11-24T23:48-03:00",
+   "6fb2281dea": "2026-11-24T23:48-03:00",
+   "fbd48400e1": "2026-11-24T23:48-03:00",
+   "c29b8906fe": "2026-11-24T23:48-03:00",
+   "1296871a9e": "2026-11-24T23:48-03:00",
+   "0b59b868cd": "2026-11-24T23:48-03:00",
+   "c6a203b1e4": "2026-11-24T23:48-03:00",
+   "9121aa3e7d": "2026-11-24T23:48-03:00",
+   "b3b8797707": "2026-11-24T23:48-03:00",
+   "841591f820": "2026-11-24T23:48-03:00",
+   "21686e54d4": "2026-11-24T23:48-03:00",
+   "a252d88ec1": "2026-11-24T23:48-03:00",
+   "79638a32c2": "2026-11-24T23:48-03:00",
+   "3f2c968da9": "2026-11-24T23:48-03:00",
+   "f852f268a6": "2026-11-24T23:48-03:00",
+   "c40601c4fe": "2026-11-24T23:48-03:00",
+   "3129d3aa46": "2026-11-24T23:48-03:00",
+   "01143764d0": "2026-11-24T23:48-03:00",
+   "aad9c1d2d4": "2026-11-24T23:48-03:00",
+   "30218a67e3": "2026-11-24T23:48-03:00",
+   "6689887d38": "2026-11-24T23:48-03:00",
+   "3b085bebcc": "2026-11-24T23:48-03:00",
+   "e44a757a27": "2026-11-24T23:48-03:00",
+   "10bd2c18d9": "2026-11-24T23:48-03:00",
+   "36d589be48": "2026-11-24T23:48-03:00",
+   "ed545061e3": "2026-11-24T23:48-03:00",
+   "ad97bc03a0": "2026-11-24T23:48-03:00",
+   "36076878d2": "2026-11-24T23:48-03:00",
+   "7b64b61a8a": "2026-11-24T23:48-03:00",
+   "8149205e6b": "2026-11-24T23:48-03:00",
+   "e67b98ab78": "2026-11-24T23:48-03:00",
+   "aaf0dfd377": "2026-11-24T23:48-03:00",
+   "983bac8352": "2026-11-24T23:48-03:00",
+   "148f22762a": "2026-11-24T23:48-03:00",
+   "c31753928e": "2026-11-24T23:48-03:00",
+   "636e3a912d": "2026-11-24T23:48-03:00",
+   "09818f650f": "2026-11-24T23:48-03:00",
+   "2f2e160d80": "2026-11-24T23:48-03:00",
+   "d5232b7f27": "2026-11-24T23:48-03:00",
+   "716db1cc23": "2026-11-24T23:48-03:00",
+   "1e1d6dc303": "2026-11-24T23:48-03:00",
+   "ad62547788": "2026-11-24T23:48-03:00",
+   "6472ceba8c": "2026-11-24T23:48-03:00"
   },
   "horas_nuevos": 24,
-  "llamadas_ia": 55,
+  "llamadas_ia": 46,
   "ia_sin_cupo": false,
-  "ultima_completa": "2026-11-24T03:01-03:00",
+  "ultima_completa": "2026-11-24T23:26-03:00",
   "modo": "completa",
-  "paginas_revisadas": 59,
+  "paginas_revisadas": 44,
   "busquedas": 107,
-  "fuentes_fijas": 12,
+  "fuentes_fijas": 9,
   "errores": 14,
-  "noticias_desde": "2026-11-23",
-  "noticias_viejas_descartadas": 421,
-  "redes_vistas": 1,
-  "generos_ia": 5,
-  "imagenes_encontradas": 7
+  "noticias_desde": "2026-11-24",
+  "noticias_viejas_descartadas": 395,
+  "redes_vistas": 5,
+  "generos_ia": 15,
+  "imagenes_encontradas": 8
  },
- "total": 857,
+ "total": 903,
  "eventos": [
   {
    "titulo": "Mariposas y Polillas, Colores en Movimiento",
@@ -512,11 +536,11 @@
    "hora": null,
    "horario": null,
    "lugar": "Museo de Artes Visuales MAVI UC",
-   "direccion": null,
+   "direccion": "Lastarria 307",
    "comuna": "Santiago",
    "ciudad": "Santiago",
    "region": "Región Metropolitana",
-   "precio": null,
+   "precio": "Gratis",
    "descripcion": "Exposición en el MAVI UC que forma parte de la cartelera cultural de Santiago.",
    "imagen": "https://www.circuitosantiago.cl/wp-content/uploads/2026/07/kumemongen-1536x862.jpg",
    "fotos": null,
@@ -532,7 +556,7 @@
    "origen": "ia",
    "id": "3429e9c5ae",
    "agregado": "2026-11-08",
-   "actualizado": "2026-11-16"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Más allá del aplauso. Don Francisco y la solidaridad",
@@ -563,6 +587,36 @@
    "id": "8c231e0edd",
    "agregado": "2026-11-16",
    "actualizado": "2026-11-16"
+  },
+  {
+   "titulo": "Paz y justicia",
+   "categoria": "museos",
+   "fecha_inicio": "2026-03-02",
+   "fecha_fin": "2027-04-29",
+   "hora": null,
+   "horario": null,
+   "lugar": null,
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Exposición temática sobre paz y justicia en Santiago.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.circuitosantiago.cl/categoria/exposiciones/",
+   "fuentes": [
+    {
+     "nombre": "circuitosantiago.cl",
+     "url": "https://www.circuitosantiago.cl/categoria/exposiciones/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "media",
+   "origen": "ia",
+   "id": "aaf0dfd377",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Pueblos originarios y artesanos",
@@ -662,11 +716,11 @@
    "hora": null,
    "horario": null,
    "lugar": "Museo de Artes Visuales MAVI UC",
-   "direccion": null,
+   "direccion": "Lastarria 307",
    "comuna": "Santiago",
    "ciudad": "Santiago",
    "region": "Metropolitana",
-   "precio": null,
+   "precio": "Gratis",
    "descripcion": "Muestra conmemorativa con obras destacadas del acervo artístico del Museo de Artes Visuales MAVI UC.",
    "imagen": "https://chilecultura.gob.cl/uploads/cropped_7jaC30J.png",
    "fotos": null,
@@ -686,7 +740,7 @@
    "origen": "claude",
    "id": "3b3025cb65",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-16"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Me lo contó un pajarito",
@@ -780,7 +834,7 @@
    "origen": "datos-estructurados",
    "id": "9a16b7b569",
    "agregado": "2026-11-16",
-   "actualizado": "2026-11-16"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Exposición inmersiva: La ronda del Sol y la Luna",
@@ -803,6 +857,10 @@
     {
      "nombre": "santiagoturismo.cl",
      "url": "https://www.santiagoturismo.cl/es/events/exposicion-inmersiva-en-centro-cultural-la-moneda/"
+    },
+    {
+     "nombre": "circuitosantiago.cl",
+     "url": "https://www.circuitosantiago.cl/categoria/exposiciones/"
     }
    ],
    "desde_imagen": false,
@@ -810,7 +868,7 @@
    "origen": "ia",
    "id": "bc60672df9",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "La Veta",
@@ -1047,7 +1105,7 @@
    "origen": "claude",
    "id": "44a03de0a7",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-19"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Criaturas de Tierra: Animales Cerámicos en el Museo de Artes Decorativas",
@@ -3382,6 +3440,10 @@
     {
      "nombre": "artes.uchile.cl",
      "url": "https://artes.uchile.cl/agenda/exposiciones/2"
+    },
+    {
+     "nombre": "artes.uchile.cl",
+     "url": "https://artes.uchile.cl/agenda/246355/inauguracion-ultimo-ciclo-de-exposiciones-en-mac-parque-forestal-"
     }
    ],
    "desde_imagen": false,
@@ -3389,7 +3451,7 @@
    "origen": "ia",
    "id": "c62ab5b922",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-23"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Muestra \"Extremofilia\"",
@@ -3514,6 +3576,10 @@
     {
      "nombre": "Veamos.cl",
      "url": "https://veamos.cl/agenda/standup"
+    },
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/show-de-humor/esta-noche"
     }
    ],
    "desde_imagen": false,
@@ -3521,7 +3587,7 @@
    "origen": "ia",
    "id": "fa04c2cbb0",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-21"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Luis Slimming",
@@ -3556,6 +3622,10 @@
     {
      "nombre": "Ticketplus",
      "url": "https://ticketplus.cl/events/luis-slimming-bongo-club-restobar-san-bernardo-25-de-noviembre-22-00-hrs"
+    },
+    {
+     "nombre": "ColorFans",
+     "url": "https://colorfans.cl/eventos/santiago/"
     }
    ],
    "desde_imagen": false,
@@ -3563,7 +3633,7 @@
    "origen": "datos-estructurados",
    "id": "05949a81a4",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-23"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Exposición: Un animador, una orquesta, mil historias",
@@ -3594,6 +3664,36 @@
    "id": "69f407e2a6",
    "agregado": "2026-11-17",
    "actualizado": "2026-11-17"
+  },
+  {
+   "titulo": "Una obra monumental de Roberto Matta se exhibe gratis en La Moneda",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-11",
+   "fecha_fin": "2027-01-03",
+   "hora": "10:15",
+   "horario": null,
+   "lugar": "Centro Cultural La Moneda",
+   "direccion": "Plaza de la Ciudadanía 26",
+   "comuna": "Santiago",
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Una ciudad imaginaria que parece flotar en el espacio, estructuras mecánicas y formas geométricas que se desplazan en un universo inestable. Así es Être Cible (Ser el blanco), una pintura de gran formato de Roberto Matta que se exhibe en el",
+   "imagen": "https://www.ed.cl/wp-content/uploads/2026/11/agenda1.jpg",
+   "fotos": null,
+   "url": "https://www.ed.cl/event/una-obra-monumental-de-roberto-matta-se-exhibe-gratis-en-la-moneda/",
+   "fuentes": [
+    {
+     "nombre": "ED.cl",
+     "url": "https://www.ed.cl/recinto/centro-cultural-la-moneda/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "ad97bc03a0",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Carrera de Improvisadores",
@@ -3924,6 +4024,10 @@
     {
      "nombre": "Bienal Internacional de Artes de Valparaíso (BIAV)",
      "url": "https://biav.cl/evento/matta-memorias-de-guerra/"
+    },
+    {
+     "nombre": "El Mostrador",
+     "url": "https://www.elmostrador.cl/aqui-valparaiso/2026/11/24/matta-desembarca-en-el-parque-cultural-de-valparaiso-con-exposicion-de-mas-de-200-obras/"
     }
    ],
    "desde_imagen": false,
@@ -3931,7 +4035,7 @@
    "origen": "claude",
    "id": "5579008677",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Tres series para Caracas",
@@ -5597,6 +5701,36 @@
    "actualizado": "2026-11-23"
   },
   {
+   "titulo": "Exposición Proyecto de investigación-creación \"Palomita Ilustrada\"",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-23",
+   "fecha_fin": "2026-11-27",
+   "hora": null,
+   "horario": "Lun a vie, 10:00–14:00",
+   "lugar": "Biblioteca Central FAU",
+   "direccion": "Portugal 84",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Exposición de narrativa visual ilustrada inspirada en Palomita Blanca, Los Blops y Raúl Ruiz. En Biblioteca Central FAU.",
+   "imagen": "https://img.vamoh.cl/events/fa3012d8-a232-486b-91d6-4e02ea16c6cb.webp?v=cbf0748c",
+   "fotos": null,
+   "url": "https://vamoh.cl/events/exposicion-proyecto-de-investigacion-creacion-palomita-ilustrada-d6h22/",
+   "fuentes": [
+    {
+     "nombre": "VAMOH!",
+     "url": "https://vamoh.cl/events/exposicion-proyecto-de-investigacion-creacion-palomita-ilustrada-d6h22/"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "e67b98ab78",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24"
+  },
+  {
    "titulo": "Feria de Libros «Leer es un Regalo» 2026",
    "categoria": "museos",
    "fecha_inicio": "2026-11-23",
@@ -5689,6 +5823,41 @@
    "id": "1319e8a027",
    "agregado": "2026-11-14",
    "actualizado": "2026-11-14",
+   "genero": "clasica"
+  },
+  {
+   "titulo": "Concierto Orquesta De Camara Del Municipal De Santiago",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-24",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Monseñor Álvaro del Portillo 12455",
+   "direccion": "Monseñor Álvaro del Portillo 12455",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $10.000",
+   "descripcion": "Concierto Orquesta De Camara Del Municipal De Santiago en vivo en Monseñor Álvaro del Portillo 12455, Santiago. Consulta entradas, fechas, horarios y ubicación en Vamos Eventos.",
+   "imagen": "https://kohxjulvxrlyyxqbtlxi.supabase.co/storage/v1/object/public/vamos-event-media/events/1681bc30-ec77-4457-bead-52f351c3243d/c7c7876b-2a99-4c4a-8fa0-1d94c20ea0b7.jpeg",
+   "fotos": null,
+   "url": "https://www.vamoseventos.com/event/concierto-orquesta-de-camara-del-municipal-de-sant-15bb4fe3-190b-4e8d-a7b5-30eb2d159158",
+   "fuentes": [
+    {
+     "nombre": "vamoseventos.com",
+     "url": "https://www.vamoseventos.com/santiago/conciertos/esta-semana"
+    },
+    {
+     "nombre": "ColorFans",
+     "url": "https://colorfans.cl/eventos/santiago/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "5f90da817a",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
    "genero": "clasica"
   },
   {
@@ -5789,6 +5958,36 @@
    "genero": "clasica"
   },
   {
+   "titulo": "Todo Bajo Control",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-24",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Teatro Oriente",
+   "direccion": "Av. Pedro de Valdivia 099",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Obra de teatro en cartelera en el Teatro Oriente.",
+   "imagen": "https://colorfans.cl/wp-content/uploads/2026/11/rf-64206-todo-bajo-control-teatro-oriente-24-novi-45a7c3.webp",
+   "fotos": null,
+   "url": "https://colorfans.cl/eventos/santiago/",
+   "fuentes": [
+    {
+     "nombre": "ColorFans",
+     "url": "https://colorfans.cl/eventos/santiago/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "ad62547788",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24"
+  },
+  {
    "titulo": "League Challenge - Pokémon TCG",
    "categoria": "juegos",
    "fecha_inicio": "2026-11-24",
@@ -5816,6 +6015,40 @@
    "origen": "ia",
    "id": "6f31859d65",
    "agregado": "2026-11-24",
+   "actualizado": "2026-11-24"
+  },
+  {
+   "titulo": "Coronel Valverde en Happy People",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-24",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Happy People",
+   "direccion": null,
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Show de stand-up de Coronel Valverde en Providencia.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://lacomedia.cl/eventos/",
+   "fuentes": [
+    {
+     "nombre": "lacomedia.cl",
+     "url": "https://lacomedia.cl/eventos/"
+    },
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/show-de-humor/esta-noche"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "e0dcf3eddf",
+   "agregado": "2026-11-18",
    "actualizado": "2026-11-24"
   },
   {
@@ -5879,6 +6112,158 @@
    "actualizado": "2026-11-21"
   },
   {
+   "titulo": "Luis Castillo, Joaquín Alvarez, Retrato Hablado, Era Plástica",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-24",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Cocina Clandestina",
+   "direccion": "Antonia López de Bello 0108",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto en vivo con Luis Castillo, Joaquín Alvarez, Retrato Hablado y Era Plástica.",
+   "imagen": "https://colorfans.cl/wp-content/uploads/2026/11/rf-59276-retrato-hablado-era-plastica-joaquin-alv-18aab1.webp",
+   "fotos": null,
+   "url": "https://colorfans.cl/eventos/santiago/",
+   "fuentes": [
+    {
+     "nombre": "ColorFans",
+     "url": "https://colorfans.cl/eventos/santiago/"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "ed545061e3",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
+   "genero": "indie"
+  },
+  {
+   "titulo": "Roastizado – Nico Pontigo",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-24",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Centro Cultural San Ginés",
+   "direccion": "Mallinkrodt 112",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Entre $13.200 y $27.500",
+   "descripcion": "Show de stand-up comedy de Nico Pontigo en el Centro Cultural San Ginés.",
+   "imagen": "https://colorfans.cl/wp-content/uploads/2026/11/rf-56115-roastizado-nico-pontigo-centro-cultural--2cebb2.webp",
+   "fotos": null,
+   "url": "https://colorfans.cl/eventos/santiago/",
+   "fuentes": [
+    {
+     "nombre": "ColorFans",
+     "url": "https://colorfans.cl/eventos/santiago/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "1e1d6dc303",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24"
+  },
+  {
+   "titulo": "Smokeless Roast: Nico Pontigo y más",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-24",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Centro Cultural San Ginés",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Show de stand-up y roast con Nico Pontigo y más comediantes en el Centro Cultural San Ginés.",
+   "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/sebaarancibia555/DflDJFclvpw_0.jpg",
+   "fotos": null,
+   "url": "https://salirsantiago.com/panoramas/show-de-humor/esta-noche",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/show-de-humor/esta-noche"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "716db1cc23",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24"
+  },
+  {
+   "titulo": "Show de Humor: Chris Daved & Darcy La Divina",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-24",
+   "fecha_fin": null,
+   "hora": "22:00",
+   "horario": null,
+   "lugar": "La Prohibida Restobar",
+   "direccion": null,
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Show de humor y stand-up con Chris Daved y Darcy La Divina en La Prohibida Restobar.",
+   "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/laprohibidarestobar/DgD2iqeBt1j_0.jpg",
+   "fotos": null,
+   "url": "https://salirsantiago.com/panoramas/show-de-humor/esta-noche",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/show-de-humor/esta-noche"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "d5232b7f27",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24"
+  },
+  {
+   "titulo": "Martes Se Sale! – DJ Byte Bday",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-24",
+   "fecha_fin": null,
+   "hora": "23:00",
+   "horario": null,
+   "lugar": "Club Subterráneo",
+   "direccion": "Orrego Luco 46",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Entre $11.200 y $16.800",
+   "descripcion": "Fiesta ultrabailable con DJ Byte celebrando su cumpleaños en Club Subterráneo.",
+   "imagen": "https://colorfans.cl/wp-content/uploads/2026/10/rf-52913-martes-se-sale-club-subterraneo-24-novie-0ccdb1.webp",
+   "fotos": null,
+   "url": "https://colorfans.cl/eventos/santiago/",
+   "fuentes": [
+    {
+     "nombre": "ColorFans",
+     "url": "https://colorfans.cl/eventos/santiago/"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "36d589be48",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
+   "genero": "electronica"
+  },
+  {
    "titulo": "Concierto Clásicos de España - Auditivo Live",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-24",
@@ -5908,67 +6293,6 @@
    "agregado": "2026-11-15",
    "actualizado": "2026-11-23",
    "genero": "clasica"
-  },
-  {
-   "titulo": "Concierto Orquesta De Camara Del Municipal De Santiago",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-24",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": null,
-   "lugar": "Monseñor Álvaro del Portillo 12455",
-   "direccion": "Monseñor Álvaro del Portillo 12455",
-   "comuna": "Santiago",
-   "ciudad": null,
-   "region": null,
-   "precio": "Desde $10.000",
-   "descripcion": "Concierto Orquesta De Camara Del Municipal De Santiago en vivo en Monseñor Álvaro del Portillo 12455, Santiago. Consulta entradas, fechas, horarios y ubicación en Vamos Eventos.",
-   "imagen": "https://kohxjulvxrlyyxqbtlxi.supabase.co/storage/v1/object/public/vamos-event-media/events/1681bc30-ec77-4457-bead-52f351c3243d/c7c7876b-2a99-4c4a-8fa0-1d94c20ea0b7.jpeg",
-   "fotos": null,
-   "url": "https://www.vamoseventos.com/event/concierto-orquesta-de-camara-del-municipal-de-sant-15bb4fe3-190b-4e8d-a7b5-30eb2d159158",
-   "fuentes": [
-    {
-     "nombre": "vamoseventos.com",
-     "url": "https://www.vamoseventos.com/santiago/conciertos/esta-semana"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "datos-estructurados",
-   "id": "5f90da817a",
-   "agregado": "2026-11-24",
-   "actualizado": "2026-11-24",
-   "genero": "clasica"
-  },
-  {
-   "titulo": "Coronel Valverde en Happy People",
-   "categoria": "standup",
-   "fecha_inicio": "2026-11-24",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": null,
-   "lugar": "Happy People",
-   "direccion": null,
-   "comuna": "Providencia",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Show de stand-up de Coronel Valverde en Providencia.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://lacomedia.cl/eventos/",
-   "fuentes": [
-    {
-     "nombre": "lacomedia.cl",
-     "url": "https://lacomedia.cl/eventos/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "e0dcf3eddf",
-   "agregado": "2026-11-18",
-   "actualizado": "2026-11-18"
   },
   {
    "titulo": "Dimash Qudaibergen - World Tour Dimensions",
@@ -7846,6 +8170,37 @@
    "actualizado": "2026-11-23"
   },
   {
+   "titulo": "Club Subterráneo Blues Sessions",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-26",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Club Subterráneo",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $17.250",
+   "descripcion": "Sesión de música blues en vivo en Club Subterráneo.",
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/c1e46aae9f544079dae80083ee6516b4242cd26d.png?1795534686",
+   "fotos": null,
+   "url": "https://ticketplus.cl/events/blues-sessions-jueves-26-noviembre-club-subterraneo",
+   "fuentes": [
+    {
+     "nombre": "Ticketplus",
+     "url": "https://ticketplus.cl/events/blues-sessions-jueves-26-noviembre-club-subterraneo"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "8edf30907e",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
+   "genero": "jazz"
+  },
+  {
    "titulo": "Escritura teatral: “Horacio”, de Sally Campusano",
    "categoria": "teatro",
    "fecha_inicio": "2026-11-26",
@@ -8381,6 +8736,10 @@
     {
      "nombre": "Keai",
      "url": "https://keai.cl/evento/crsisis-de-media-tarde-en-teatro-fabrica-20886"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/crisis-de-media-tarde-en-teatro-fabrica-20886"
     }
    ],
    "desde_imagen": false,
@@ -8388,7 +8747,7 @@
    "origen": "datos-estructurados",
    "id": "2e88b12792",
    "agregado": "2026-11-17",
-   "actualizado": "2026-11-17"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Concierto Lunar",
@@ -9067,6 +9426,37 @@
    "genero": "jazz"
   },
   {
+   "titulo": "Felipe Duhart Quinteto en Grez",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": "2026-11-28",
+   "hora": "21:30",
+   "horario": null,
+   "lugar": "Bar Grez",
+   "direccion": "Dr. Manuel Barros Borgoño 81, 7500593 Providencia, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "¡Felipe Duhart Quinteto regresa a Santiago con una noche imperdible de jazz contemporáneo en Bar Grez! Tras una exitosa gira por Colombia —c",
+   "imagen": "https://cdn.keai.cl/events/21714-62bd9eaf5422c505f4e3d357c82ad535.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/felipe-duhart-quinteto-en-grez-21714",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/felipe-duhart-quinteto-en-grez-21714"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "aad9c1d2d4",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
+   "genero": "jazz"
+  },
+  {
    "titulo": "Arpías y Arcanos",
    "categoria": "standup",
    "fecha_inicio": "2026-11-27",
@@ -9103,6 +9493,37 @@
    "id": "3141669464",
    "agregado": "2026-11-19",
    "actualizado": "2026-11-23"
+  },
+  {
+   "titulo": "Noche Travesuras - Reggaeton Old School",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": "2026-11-28",
+   "hora": "22:00",
+   "horario": null,
+   "lugar": null,
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Descubre NOCHE TRAVESURAS - REGGAETON OLD SCHOOL en Keai. Evento en Puente Alto el 27/11/2026.",
+   "imagen": "https://cdn.keai.cl/events/21668-422300ca43a5adaa5c46054f5dd0bbf9.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/noche-travesuras-reggaeton-old-school-21668",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/noche-travesuras-reggaeton-old-school-21668"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "6689887d38",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
+   "genero": "reggaeton"
   },
   {
    "titulo": "Show de stand up-Queda poquito-27 de Noviembre 22:15 hrs",
@@ -9355,6 +9776,36 @@
    "genero": "clasica"
   },
   {
+   "titulo": "De Marta Minujín a León Ferrari: 50 años de arte argentino llegan a La Moneda",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": "2027-03-07",
+   "hora": null,
+   "horario": null,
+   "lugar": "Centro Cultural La Moneda",
+   "direccion": "Plaza de la Ciudadanía 26",
+   "comuna": "Santiago",
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Más de medio siglo de arte argentino cruzará la cordillera con Lo que la noche le cuenta al día, una exposición que reunirá a 21 artistas de distintas generaciones en el Centro Cultural La Moneda. La muestra, que se podrá visitar desde el 2",
+   "imagen": "https://www.ed.cl/wp-content/uploads/2026/11/argentina.jpg",
+   "fotos": null,
+   "url": "https://www.ed.cl/event/de-marta-minujin-a-leon-ferrari-50-anos-de-arte-argentino-llegan-a-la-moneda/",
+   "fuentes": [
+    {
+     "nombre": "ED.cl",
+     "url": "https://www.ed.cl/recinto/centro-cultural-la-moneda/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "36076878d2",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24"
+  },
+  {
    "titulo": "EDO CAROE",
    "categoria": "standup",
    "fecha_inicio": "2026-11-27",
@@ -9525,7 +9976,7 @@
    "comuna": "Santiago",
    "ciudad": "Santiago",
    "region": "Región Metropolitana",
-   "precio": null,
+   "precio": "Gratis",
    "descripcion": "Exposición que reúne más de medio siglo de arte argentino en la Sala Andes del Centro Cultural La Moneda.",
    "imagen": "https://www.lacuarta.com/resizer/v2/VGUGYLJF55C6VH5FACR2CMMPXA.jpg?auth=3415051b019d055dcbe59856b4e6b60e1dfb8633d1e30de0d4cca017cc251c40&height=630&width=1200&smart=true",
    "fotos": null,
@@ -9538,6 +9989,14 @@
     {
      "nombre": "tvn.cl",
      "url": "https://www.tvn.cl/actualidad-y-tendencias/tendencias/centro-cultural-la-moneda-presenta-exposicion-de-arte-argentino-con"
+    },
+    {
+     "nombre": "El Desconcierto",
+     "url": "https://eldesconcierto.cl/tendencias/arte-argentino-santiago-21-creadores-llegan-al-cclm-mas-medio-siglo-historia-n5464350"
+    },
+    {
+     "nombre": "FMDOS",
+     "url": "https://www.fmdos.cl/noticias/panorama-gratis-en-santiago-mas-de-20-artistas-argentinos-llegan-a-santiago-con-una-increible-exposicion/"
     }
    ],
    "desde_imagen": false,
@@ -9633,6 +10092,10 @@
     {
      "nombre": "Fundación Teatro a Mil",
      "url": "https://teatroamil.cl/en/"
+    },
+    {
+     "nombre": "Fundación Teatro a Mil",
+     "url": "https://staging.teatroamil.cl/en/"
     }
    ],
    "desde_imagen": true,
@@ -9640,7 +10103,7 @@
    "origen": "ia",
    "id": "7c6d652efa",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-12",
+   "actualizado": "2026-11-24",
    "genero": "rock"
   },
   {
@@ -10186,6 +10649,41 @@
    "genero": "metal"
   },
   {
+   "titulo": "Las Aventuras de Peer Gynt - Orq. de Camara Stgo. en el Teatrillo - 28 Nov - 17pm",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": "17:00",
+   "horario": null,
+   "lugar": "El Teatrillo",
+   "direccion": "Condell 520, 7500875 Providencia, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "El Teatrillo y Orquesta de Cámara de Santiago presentan: 🎭 ¡Una aventura donde la música cobra vida! 🎼🎺 Peer Gyn",
+   "imagen": "https://cdn.keai.cl/events/21719-6d7f7f1d232f8c92a56bbd086e3bc79c.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/las-aventuras-de-peer-gynt-orq-de-camara-stgo-en-el-teatrillo-28-nov-17pm-21719",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/las-aventuras-de-peer-gynt-orq-de-camara-stgo-en-el-teatrillo-28-nov-17pm-21719"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/las-aventuras-de-peer-gynt-orq-de-camara-stgo-en-el-teatrillo-28-nov-12pm-21718"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "c29b8906fe",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
+   "genero": "clasica"
+  },
+  {
    "titulo": "Todoscontrakst!: Patética Ética + Neftalinas + los Pejerreyes + Black Sunset en Escuela Popular de Artes",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-28",
@@ -10716,6 +11214,37 @@
    "actualizado": "2026-11-10"
   },
   {
+   "titulo": "Filarmónica al Parque",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": "20:30",
+   "horario": null,
+   "lugar": "Explanada del Parque Araucano",
+   "direccion": "Parque Araucano",
+   "comuna": "Las Condes",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Concierto gratuito al aire libre con la Filarmónica de Santiago y la Orquesta Sinfónica Nacional Juvenil.",
+   "imagen": "https://los40.cl/resizer/v2/JFE7SUSW4VFCJCVYCCLU2OJYZA.jpg?auth=c538d5ce2a8a2ed9374dff9e090df8df755d6531dc32017e2a1c5b996e8f499c&quality=70&width=1200&height=675&smart=true",
+   "fotos": null,
+   "url": "https://los40.cl/2026/11/24/musica-en-vivo-y-gratis-parque-araucano-recibira-concierto-con-mas-de-120-musicos-y-asi-puedes-asistir/",
+   "fuentes": [
+    {
+     "nombre": "LOS40",
+     "url": "https://los40.cl/2026/11/24/musica-en-vivo-y-gratis-parque-araucano-recibira-concierto-con-mas-de-120-musicos-y-asi-puedes-asistir/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "148f22762a",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
+   "genero": "clasica"
+  },
+  {
    "titulo": "Show de stand up-El club de las malas decisiones-Sábado 28 noviembre 20:30hrs",
    "categoria": "standup",
    "fecha_inicio": "2026-11-28",
@@ -10916,6 +11445,37 @@
    "id": "5e85b66cca",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-23"
+  },
+  {
+   "titulo": "200 - Reggaetón Classics - Hotel W - Sábado 28",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": "2026-11-29",
+   "hora": "22:00",
+   "horario": null,
+   "lugar": "Club Siete",
+   "direccion": "Isidora Goyenechea 3000, piso 4, 7550653 Las Condes, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Descubre 200 - REGGAETÓN CLASSICS - HOTEL W - SÁBADO 28 en Keai. Evento en Las Condes el 28/11/2026.",
+   "imagen": "https://cdn.keai.cl/events/21674-c80eb4fee77144b4054984f8ba661098.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/200-reggaeton-classics-hotel-w-sabado-28-21674",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/200-reggaeton-classics-hotel-w-sabado-28-21674"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "30218a67e3",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
+   "genero": "reggaeton"
   },
   {
    "titulo": "Miguelo en Concierto en Kunstmann Craft Bar Viña del Mar",
@@ -12765,8 +13325,8 @@
    "fecha_fin": null,
    "hora": "19:00",
    "horario": null,
-   "lugar": null,
-   "direccion": null,
+   "lugar": "Aula Magna USACH",
+   "direccion": "El Belloto 3735, 9170125 Santiago, Estación Central, Región Metropolitana",
    "comuna": "Estación Central",
    "ciudad": "Santiago",
    "region": "Región Metropolitana",
@@ -12779,6 +13339,10 @@
     {
      "nombre": "Suitip",
      "url": "https://www.suitip.cl/panoramas/guia/gratis"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/coro-polifonico-integral-usach-iv-encuentro-coral-esperando-navidad-en-teatro-aula-magna-usach-21798"
     }
    ],
    "desde_imagen": false,
@@ -12786,7 +13350,7 @@
    "origen": "ia",
    "id": "dfbf6d5676",
    "agregado": "2026-11-23",
-   "actualizado": "2026-11-23",
+   "actualizado": "2026-11-24",
    "genero": "clasica"
   },
   {
@@ -12852,6 +13416,37 @@
    "id": "b9316d87da",
    "agregado": "2026-11-14",
    "actualizado": "2026-11-14",
+   "genero": "clasica"
+  },
+  {
+   "titulo": "Concierto de Navidad: Camerata UNAB y Coro Colegio Los Alerces",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-02",
+   "fecha_fin": null,
+   "hora": "19:30",
+   "horario": null,
+   "lugar": "Patio Andino",
+   "direccion": "Paseo Pie Andino 4850",
+   "comuna": "Lo Barnechea",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratuito",
+   "descripcion": "Concierto navideño gratuito de la Camerata UNAB y el Coro del Colegio Los Alerces en Lo Barnechea.",
+   "imagen": "https://assets.radioagricultura.cl/2026/11/Freepik-1-1024x538.jpg",
+   "fotos": null,
+   "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/concierto-de-navidad-gratis-en-santiago-revisa-cuando-sera-donde-se-realizara-y-como-asistir_20261124/",
+   "fuentes": [
+    {
+     "nombre": "Home - Radio Agricultura",
+     "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/concierto-de-navidad-gratis-en-santiago-revisa-cuando-sera-donde-se-realizara-y-como-asistir_20261124/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "c31753928e",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
    "genero": "clasica"
   },
   {
@@ -12964,6 +13559,68 @@
    "actualizado": "2026-11-22"
   },
   {
+   "titulo": "Cuarteto Ajeno: Concierto de Lanzamiento Tetralogía del Camino en Oculto Spot",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-03",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Paseo Phillips 16 Quinto piso",
+   "direccion": "Paseo Phillips 16 Quinto piso",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Cuarteto Ajeno presenta LA TETRALOGÍA DEL CAMINO El próximo jueves 3 de diciembre, Cuarteto Ajeno presenta su EP debut: Tetralogía del Cam",
+   "imagen": "https://cdn.keai.cl/events/21723-cc3fe0af6292b2537d70203018653296.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/cuarteto-ajeno-concierto-de-lanzamiento-tetralogia-del-camino-en-oculto-spot-21723",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/cuarteto-ajeno-concierto-de-lanzamiento-tetralogia-del-camino-en-oculto-spot-21723"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "01143764d0",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
+   "genero": "folclor"
+  },
+  {
+   "titulo": "La Tarde Urbana en Hub Gregor",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-03",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Pedro Leon Ugalde 1659",
+   "direccion": "Pedro Leon Ugalde 1659",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Descripción del evento: La tarde urbana 🌟🎶 Regresamos con nuevas fechas para seguir haciendo comunidad hip Hop, ven a mostrar y compart",
+   "imagen": "https://cdn.keai.cl/events/21778-4a3429630cf8d3267882cc43f5c3854c.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/la-tarde-urbana-en-hub-gregor-21778",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/la-tarde-urbana-en-hub-gregor-21778"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "c6a203b1e4",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
+   "genero": "hiphop"
+  },
+  {
    "titulo": "XXVI Festival Internacional de Jazz de Valdivia & World Music",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-03",
@@ -12997,6 +13654,37 @@
    "agregado": "2026-11-18",
    "actualizado": "2026-11-22",
    "genero": "jazz"
+  },
+  {
+   "titulo": "123x Mi Cueca Chilena | «de Regreso a la Capital» en Sala Scd Bellavista",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-03",
+   "fecha_fin": "2026-12-04",
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Sala SCD Bellavista",
+   "direccion": "Sta. Filomena 110, 8420433 Recoleta, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "El día jueves 12 de noviembre, el grupo temuquense 123xMi cueca chilena, dará un concierto en vivo por primera vez en una Sala SCD, permitiendo regresar a la ca",
+   "imagen": "https://cdn.keai.cl/events/21732-b8c6077626643de1cd293b0a14d82f0b.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/123x-mi-cueca-chilena-de-regreso-a-la-capital-en-sala-scd-bellavista-21732",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/123x-mi-cueca-chilena-de-regreso-a-la-capital-en-sala-scd-bellavista-21732"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "3129d3aa46",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
+   "genero": "folclor"
   },
   {
    "titulo": "Felipe Avello",
@@ -13190,6 +13878,10 @@
     {
      "nombre": "QuéHacer Chile",
      "url": "https://quehacerchile.cl/conciertos/pop/"
+    },
+    {
+     "nombre": "La Cuarta",
+     "url": "https://www.lacuarta.com/espectaculos/noticia/babymetal-en-chile-aun-quedan-entradas-para-su-concierto-en-el-santander-arena/"
     }
    ],
    "desde_imagen": true,
@@ -13433,6 +14125,37 @@
    "genero": "metal"
   },
   {
+   "titulo": "Club Subterráneo Blues Sessions",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-03",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Club Subterráneo",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Sesión de música blues en vivo en Club Subterráneo.",
+   "imagen": "https://ticketing-uploads-1.ticketplus.global/images/thumbs/3536a422c76ab6f2ec3ef6e34b253d4f4c29297c.png?1795535171",
+   "fotos": null,
+   "url": "https://ticketplus.cl/events/blues-sessions-jueves-03-diciembre-club-subterraneo",
+   "fuentes": [
+    {
+     "nombre": "Ticketplus",
+     "url": "https://ticketplus.cl/events/blues-sessions-jueves-03-diciembre-club-subterraneo"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "6fb2281dea",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
+   "genero": "jazz"
+  },
+  {
    "titulo": "Feria Pulsar",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-03",
@@ -13460,6 +14183,37 @@
    "origen": "ia",
    "id": "ea623c25d0",
    "agregado": "2026-11-14",
+   "actualizado": "2026-11-24",
+   "genero": "otros"
+  },
+  {
+   "titulo": "Festival IN-EDIT Chile 2026",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-03",
+   "fecha_fin": "2026-12-10",
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Nescafé de las Artes y Cineteca Nacional",
+   "direccion": "Manuel Montt 032 / Plaza de la Ciudadanía 26",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Varía según función",
+   "descripcion": "Festival internacional de cine y documental musical que reúne proyecciones, conciertos y charlas.",
+   "imagen": "https://media.pagina7.cl/2026/11/festival-in-edit-chile.jpg",
+   "fotos": null,
+   "url": "https://www.pagina7.cl/entretencion/festival-in-edit-chile-2026-documentales-actividades-horarios-y-venta-de-entradas/",
+   "fuentes": [
+    {
+     "nombre": "Página 7",
+     "url": "https://www.pagina7.cl/entretencion/festival-in-edit-chile-2026-documentales-actividades-horarios-y-venta-de-entradas/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "983bac8352",
+   "agregado": "2026-11-24",
    "actualizado": "2026-11-24",
    "genero": "otros"
   },
@@ -13643,6 +14397,67 @@
    "id": "f1523ee592",
    "agregado": "2026-11-21",
    "actualizado": "2026-11-21"
+  },
+  {
+   "titulo": "Lanzamiento Lp Antü Lewfü – Camilo Antileo en Casona Compañía",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-04",
+   "fecha_fin": null,
+   "hora": "06:00",
+   "horario": null,
+   "lugar": "Casona Compañía",
+   "direccion": "Compañía de Jesús 2820, 8350470 Santiago, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "El cantautor mapuche Camilo Antileo presenta en vivo “Antü Lewfü” (Sol / Río), su primer álbum de larga duración (LP), en un concierto íntimo y gratuito en el c",
+   "imagen": "https://cdn.keai.cl/events/21771-d9ba90bc33dc48a264816b1cb4d3c544.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/lanzamiento-lp-antu-lewfu-camilo-antileo-en-casona-compania-21771",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/lanzamiento-lp-antu-lewfu-camilo-antileo-en-casona-compania-21771"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "b3b8797707",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
+   "genero": "folclor"
+  },
+  {
+   "titulo": "Romanos Romanos Romanos: Lanzamiento de Disco en Espacio Viel - 4 de Diciembre",
+   "categoria": "medieval",
+   "fecha_inicio": "2026-12-04",
+   "fecha_fin": null,
+   "hora": "18:00",
+   "horario": null,
+   "lugar": "Espacio Viel",
+   "direccion": "Santiago 1530, 8360426 Santiago, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "¡¡50 AÑOS DEL DISCO QUE CAMBIÓ LA HISTORIA!! Este 4 de diciembre, damas y caballeros, les invitamos a conmemorar un acontecimiento hi",
+   "imagen": "https://cdn.keai.cl/events/21733-dfd369a29bf317ba6b5808ab527d7020.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/romanos-romanos-romanos-lanzamiento-de-disco-en-espacio-viel-4-de-diciembre-21733",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/romanos-romanos-romanos-lanzamiento-de-disco-en-espacio-viel-4-de-diciembre-21733"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "c40601c4fe",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Concierto Banda DIFER",
@@ -13985,6 +14800,37 @@
    "genero": "electronica"
   },
   {
+   "titulo": "Rock&maipucinos Vol.1 en Bar Panguipulli",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-04",
+   "fecha_fin": "2026-12-05",
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Bar Panguipulli",
+   "direccion": "Av. Portales 575, 9274743 Maipú, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "ROCK & MAIPUCINOS VOL.1 Se acerca este primer encuentro de bandas maipucinas de indie rock: Brillo ET, Plaza de Nadie y Nazareno da Silva se presentan en el m&",
+   "imagen": "https://cdn.keai.cl/events/21775-b530913014e1a9e9e83f996020b10eaa.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/rockmaipucinos-vol1-en-bar-panguipulli-21775",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/rockmaipucinos-vol1-en-bar-panguipulli-21775"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "fbd48400e1",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
+   "genero": "indie"
+  },
+  {
    "titulo": "Show de stand up-Nadie nos invitó-Viernes 4 Diciembre 20:30hrs",
    "categoria": "standup",
    "fecha_inicio": "2026-12-04",
@@ -14147,6 +14993,10 @@
     {
      "nombre": "concerts50.com",
      "url": "https://concerts50.com/chile/santiago/g/alternative"
+    },
+    {
+     "nombre": "En Cancha",
+     "url": "https://www.encancha.cl/enlahora/panoramas/2026/11/19/panoramas-para-diciembre-2026-los-10-conciertos-que-se-tomaran-santiago-antes-de-fin-de-ano-326387.html"
     }
    ],
    "desde_imagen": false,
@@ -14154,7 +15004,7 @@
    "origen": "ia",
    "id": "607b690004",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-23",
+   "actualizado": "2026-11-24",
    "genero": "indie"
   },
   {
@@ -14198,6 +15048,10 @@
     {
      "nombre": "QuéHacer Chile",
      "url": "https://quehacerchile.cl/conciertos/reggaeton/"
+    },
+    {
+     "nombre": "En Cancha",
+     "url": "https://www.encancha.cl/enlahora/panoramas/2026/11/19/panoramas-para-diciembre-2026-los-10-conciertos-que-se-tomaran-santiago-antes-de-fin-de-ano-326387.html"
     }
    ],
    "desde_imagen": false,
@@ -14205,7 +15059,7 @@
    "origen": "ia",
    "id": "f21b5cd6a0",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-23",
+   "actualizado": "2026-11-24",
    "genero": "reggaeton"
   },
   {
@@ -14720,6 +15574,36 @@
    "genero": "pop"
   },
   {
+   "titulo": "3era Feria de las Artes Gráficas",
+   "categoria": "ilustracion",
+   "fecha_inicio": "2026-12-05",
+   "fecha_fin": "2026-12-06",
+   "hora": "12:00",
+   "horario": "12:00–19:30 hrs",
+   "lugar": "Parque Inés de Suárez",
+   "direccion": "Av. Francisco Bilbao 5651",
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratuito",
+   "descripcion": "Tercera edición de la Feria de Artes Gráficas Safari, reuniendo ilustración, fanzines, libros de autor y gráfica contemporánea al aire libre.",
+   "imagen": "https://visitsantiago.travel/wp-content/uploads/2026/11/Artes-graficas.jpg",
+   "fotos": null,
+   "url": "https://visitsantiago.travel/panorama/3era-feria-de-las-artes-graficas/",
+   "fuentes": [
+    {
+     "nombre": "Visit Santiago Travel",
+     "url": "https://visitsantiago.travel/panorama/3era-feria-de-las-artes-graficas/"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "8149205e6b",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24"
+  },
+  {
    "titulo": "Feria Pulsar 2026",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-05",
@@ -14784,6 +15668,37 @@
    "agregado": "2026-11-15",
    "actualizado": "2026-11-15",
    "genero": "rock"
+  },
+  {
+   "titulo": "Las Aventuras de Peer Gynt - Orq. de Camara Stgo. en el Teatrillo - 05 Dic - 17pm",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-05",
+   "fecha_fin": null,
+   "hora": "17:00",
+   "horario": null,
+   "lugar": "El Teatrillo",
+   "direccion": "Condell 520, 7500875 Providencia, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "El Teatrillo y Orquesta de Cámara de Santiago presentan: 🎭 ¡Una aventura donde la música cobra vida! 🎼🎺 Peer Gyn",
+   "imagen": "https://cdn.keai.cl/events/21722-540c00559512eaec8de093c5e888cdc7.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/las-aventuras-de-peer-gynt-orq-de-camara-stgo-en-el-teatrillo-05-dic-17pm-21722",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/las-aventuras-de-peer-gynt-orq-de-camara-stgo-en-el-teatrillo-05-dic-17pm-21722"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "0b59b868cd",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
+   "genero": "clasica"
   },
   {
    "titulo": "Tocata Halloween 2026 en El Refugio [Reagendado]",
@@ -14881,6 +15796,37 @@
    "agregado": "2026-11-14",
    "actualizado": "2026-11-14",
    "genero": "reggaeton"
+  },
+  {
+   "titulo": "Belencha + Julio Piña: Última Íntima del Año en la Azotea",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-05",
+   "fecha_fin": null,
+   "hora": "18:00",
+   "horario": null,
+   "lugar": "Barrio Yungay",
+   "direccion": "Barrio Yungay",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "ÚLTIMA TOCATA ÌNTIMA EN LA AZOTEA DE ESTE AÑO La azotea vuelve a abrirse para recibirles y hacer un último conciertos-tertulias co",
+   "imagen": "https://cdn.keai.cl/events/21762-0232b3460cd880cd4f095a2b12788b7c.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/belencha-julio-pina-ultima-intima-del-ano-en-la-azotea-21762",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/belencha-julio-pina-ultima-intima-del-ano-en-la-azotea-21762"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "a252d88ec1",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
+   "genero": "folclor"
   },
   {
    "titulo": "Concierto de Gamelan en Teatro Novedades",
@@ -15241,6 +16187,14 @@
     {
      "nombre": "Keai",
      "url": "https://keai.cl/evento/comedor-off-pulsar-en-sala-scd-bellavista-20909"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/comedor-off-pulsar-sala-scd-bellavista-20909"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/aticoy-el-mundo-folkpop-de-inconsciente-off-pulsar-sala-scd-bellavista-20785"
     }
    ],
    "desde_imagen": false,
@@ -15248,7 +16202,7 @@
    "origen": "datos-estructurados",
    "id": "a81f74fc38",
    "agregado": "2026-11-16",
-   "actualizado": "2026-11-18",
+   "actualizado": "2026-11-24",
    "genero": "indie"
   },
   {
@@ -15914,6 +16868,37 @@
    "genero": "electronica"
   },
   {
+   "titulo": "Maná en Santiago",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-05",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Estadio Monumental",
+   "direccion": null,
+   "comuna": "Macul",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto de la banda mexicana Maná en el Estadio Monumental.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.encancha.cl/enlahora/panoramas/2026/11/19/panoramas-para-diciembre-2026-los-10-conciertos-que-se-tomaran-santiago-antes-de-fin-de-ano-326387.html",
+   "fuentes": [
+    {
+     "nombre": "En Cancha",
+     "url": "https://www.encancha.cl/enlahora/panoramas/2026/11/19/panoramas-para-diciembre-2026-los-10-conciertos-que-se-tomaran-santiago-antes-de-fin-de-ano-326387.html"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "3b085bebcc",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
+   "genero": "rock"
+  },
+  {
    "titulo": "Movimiento Original - 20 Años",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-05",
@@ -16270,6 +17255,37 @@
    "actualizado": "2026-11-09"
   },
   {
+   "titulo": "Concierto de Navidad y Videojuegos en Espacio Diana",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-06",
+   "fecha_fin": null,
+   "hora": "17:00",
+   "horario": null,
+   "lugar": "Espacio Diana",
+   "direccion": "Arturo Prat 435, 8330484 Santiago, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "CONCIERTO DE NAVIDAD Y VIDEO JUEGOS Te invitamos a vivir un concierto único en esta navidad pensado en toda la familia, con un programa que abarca desde clásic",
+   "imagen": "https://cdn.keai.cl/events/21777-016c1d6f796fd54e43b373281a0c7982.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/concierto-de-navidad-y-videojuegos-en-espacio-diana-21777",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/concierto-de-navidad-y-videojuegos-en-espacio-diana-21777"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "9121aa3e7d",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
+   "genero": "bandas_sonoras"
+  },
+  {
    "titulo": "Beatlemania en Concierto",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-06",
@@ -16421,6 +17437,10 @@
     {
      "nombre": "PuntoTicket",
      "url": "https://www.puntoticket.com/omar-courtz"
+    },
+    {
+     "nombre": "En Cancha",
+     "url": "https://www.encancha.cl/enlahora/panoramas/2026/11/19/panoramas-para-diciembre-2026-los-10-conciertos-que-se-tomaran-santiago-antes-de-fin-de-ano-326387.html"
     }
    ],
    "desde_imagen": false,
@@ -16428,7 +17448,7 @@
    "origen": "datos-estructurados",
    "id": "38f326ba51",
    "agregado": "2026-11-20",
-   "actualizado": "2026-11-23",
+   "actualizado": "2026-11-24",
    "genero": "reggaeton"
   },
   {
@@ -16720,6 +17740,10 @@
     {
      "nombre": "Keai",
      "url": "https://keai.cl/evento/kidd-voodoo-euforia-stadium-21147"
+    },
+    {
+     "nombre": "En Cancha",
+     "url": "https://www.encancha.cl/enlahora/panoramas/2026/11/19/panoramas-para-diciembre-2026-los-10-conciertos-que-se-tomaran-santiago-antes-de-fin-de-ano-326387.html"
     }
    ],
    "desde_imagen": false,
@@ -16727,7 +17751,7 @@
    "origen": "ia",
    "id": "ec7fdf3538",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-20",
+   "actualizado": "2026-11-24",
    "genero": "trap"
   },
   {
@@ -16974,6 +17998,37 @@
    "genero": "metal"
   },
   {
+   "titulo": "Vibrafest",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-08",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": null,
+   "direccion": null,
+   "comuna": "Cerrillos",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Festival musical Vibrafest en la comuna de Cerrillos.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.encancha.cl/enlahora/panoramas/2026/11/19/panoramas-para-diciembre-2026-los-10-conciertos-que-se-tomaran-santiago-antes-de-fin-de-ano-326387.html",
+   "fuentes": [
+    {
+     "nombre": "En Cancha",
+     "url": "https://www.encancha.cl/enlahora/panoramas/2026/11/19/panoramas-para-diciembre-2026-los-10-conciertos-que-se-tomaran-santiago-antes-de-fin-de-ano-326387.html"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "e44a757a27",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
+   "genero": "otros"
+  },
+  {
    "titulo": "JAZZ CLUB 🎵 MIÉRCOLES 09 DICIEMBRE ★ Club Subterráneo",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-09",
@@ -17033,6 +18088,37 @@
    "id": "c15e186ad0",
    "agregado": "2026-11-18",
    "actualizado": "2026-11-18"
+  },
+  {
+   "titulo": "Natalia Sáez en Bar de René",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-09",
+   "fecha_fin": null,
+   "hora": "19:30",
+   "horario": null,
+   "lugar": "Av. Santa Isabel 0369",
+   "direccion": "Av. Santa Isabel 0369",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "¡¡Estoy emocionada de hacer mi primer concierto en Chile!! Mi nombre es Natalia Sáez y soy una cantautora panameña de indie latin po",
+   "imagen": "https://cdn.keai.cl/events/21767-3c28ec9ef1700e416210337a8f4ec40c.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/natalia-saez-en-bar-de-rene-21767",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/natalia-saez-en-bar-de-rene-21767"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "21686e54d4",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
+   "genero": "indie"
   },
   {
    "titulo": "Nito Mestre en Chile en Vivo Sala Master - Miercoles 9 Diciembre",
@@ -17402,6 +18488,10 @@
     {
      "nombre": "VAMOH!",
      "url": "https://vamoh.cl/events/slayer-reign-in-blood-0d9wj/"
+    },
+    {
+     "nombre": "En Cancha",
+     "url": "https://www.encancha.cl/enlahora/panoramas/2026/11/19/panoramas-para-diciembre-2026-los-10-conciertos-que-se-tomaran-santiago-antes-de-fin-de-ano-326387.html"
     }
    ],
    "desde_imagen": true,
@@ -17409,8 +18499,38 @@
    "origen": "datos-estructurados",
    "id": "c5b1d7de21",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-23",
+   "actualizado": "2026-11-24",
    "genero": "metal"
+  },
+  {
+   "titulo": "Obra de Teatro: Hasta Que el Peso Caiga en Sala de las Artes Víctor Jara",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-12-10",
+   "fecha_fin": null,
+   "hora": "16:00",
+   "horario": null,
+   "lugar": "Sala de las Artes Víctor Jara",
+   "direccion": "Av. Víctor Jara 3555, 9170124 Santiago, Estación Central, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "UNA FUNERARIA,UN GENERAL Y UN ATAÚD DEMASIADO BARATO 2026. En una funeraria, León, Ernesto, Wellington yValentino reciben un encargo difíc",
+   "imagen": "https://cdn.keai.cl/events/21789-9a30d89b1439639e504d193c72b21472.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/obra-de-teatro-hasta-que-el-peso-caiga-en-sala-de-las-artes-victor-jara-21789",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/obra-de-teatro-hasta-que-el-peso-caiga-en-sala-de-las-artes-victor-jara-21789"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "2f2e160d80",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "CIUDAD NÓMADE 🎵 JUEVES 10 DICIEMBRE ★ Club Subterráneo",
@@ -17734,8 +18854,8 @@
    "fecha_fin": "2026-12-13",
    "hora": null,
    "horario": null,
-   "lugar": null,
-   "direccion": null,
+   "lugar": "Espacio Riesco",
+   "direccion": "Av. El Salto 5000",
    "comuna": "Santiago",
    "ciudad": "Santiago",
    "region": "Región Metropolitana",
@@ -17752,6 +18872,10 @@
     {
      "nombre": "nferias.com",
      "url": "https://www.nferias.com/santiago-chile/"
+    },
+    {
+     "nombre": "nferias.com",
+     "url": "https://www.nferias.com/festigame/"
     }
    ],
    "desde_imagen": false,
@@ -17759,7 +18883,7 @@
    "origen": "ia",
    "id": "9537803159",
    "agregado": "2026-11-08",
-   "actualizado": "2026-11-20"
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Luis Slimming en Distrito San Ignacio",
@@ -18107,6 +19231,36 @@
    "agregado": "2026-11-15",
    "actualizado": "2026-11-23",
    "genero": "trap"
+  },
+  {
+   "titulo": "Sugestión + Super Perfundo + Ciudad de Tar en Plaza Victoria",
+   "categoria": "medieval",
+   "fecha_inicio": "2026-12-11",
+   "fecha_fin": "2026-12-12",
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Plaza Victoria",
+   "direccion": "Av. Sta. Isabel 052, Providencia, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "SUGESTIÓN presenta \"Terror Analógico\" junto a Super Perfundo y Ciudad de Tar en Plaza Victoria Este viernes 11 de diciembre, la música expe",
+   "imagen": "https://cdn.keai.cl/events/21735-8c84cf5d102caaf0d6cfdb87dff2816d.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/sugestion-super-perfundo-ciudad-de-tar-en-plaza-victoria-21735",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/sugestion-super-perfundo-ciudad-de-tar-en-plaza-victoria-21735"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "f852f268a6",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Sexual Democracia: en Concierto de Gala",
@@ -18609,6 +19763,41 @@
    "actualizado": "2026-11-09"
   },
   {
+   "titulo": "Las Aventuras de Peer Gynt - Orq. de Camara Stgo. en el Teatrillo - 12 Dic - 17pm",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-12",
+   "fecha_fin": null,
+   "hora": "17:00",
+   "horario": null,
+   "lugar": "El Teatrillo",
+   "direccion": "Condell 520, 7500875 Providencia, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "El Teatrillo y Orquesta de Cámara de Santiago presentan: 🎭 ¡Una aventura donde la música cobra vida! 🎼🎺 Peer Gyn",
+   "imagen": "https://cdn.keai.cl/events/21721-3bd782cca8417eaec954696675de1048.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/las-aventuras-de-peer-gynt-orq-de-camara-stgo-en-el-teatrillo-12-dic-17pm-21721",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/las-aventuras-de-peer-gynt-orq-de-camara-stgo-en-el-teatrillo-12-dic-17pm-21721"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/las-aventuras-de-peer-gynt-orq-de-camara-stgo-en-el-teatrillo-12-dic-12pm-21720"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "1296871a9e",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
+   "genero": "clasica"
+  },
+  {
    "titulo": "Rude Beer Sessions Volumen 4: Manifiesto Ska Jazz + Chuck Vega en Rocka'rolla's",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-12",
@@ -18810,7 +19999,7 @@
    "titulo": "Nu Metal Sessions Live en Espacio Cousiño",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-12",
-   "fecha_fin": null,
+   "fecha_fin": "2026-12-13",
    "hora": "19:00",
    "horario": null,
    "lugar": "Espacio Cousiño",
@@ -18831,6 +20020,10 @@
     {
      "nombre": "VAMOH!",
      "url": "https://vamoh.cl/events/nu-metal-sessions-live-en-espacio-cousino-mphu8/"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/nu-metal-sessions-party-en-espacio-cousino-21725"
     }
    ],
    "desde_imagen": false,
@@ -18838,7 +20031,7 @@
    "origen": "datos-estructurados",
    "id": "93471e5952",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-08",
+   "actualizado": "2026-11-24",
    "genero": "metal"
   },
   {
@@ -18923,6 +20116,14 @@
     {
      "nombre": "Keai",
      "url": "https://keai.cl/evento/andres-perez-cuarteto-psicosis-ciclo-instrumentistas-en-sala-scd-bellavista-20929"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/andres-perez-cuarteto-psicosis-ciclo-instrumentistas-sala-scd-bellavista-20929"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/cler-canifru-10-anos-ciclo-instrumentistas-sala-scd-bellavista-19825"
     }
    ],
    "desde_imagen": false,
@@ -18930,7 +20131,7 @@
    "origen": "datos-estructurados",
    "id": "f182693055",
    "agregado": "2026-11-18",
-   "actualizado": "2026-11-18",
+   "actualizado": "2026-11-24",
    "genero": "clasica"
   },
   {
@@ -19794,6 +20995,37 @@
    "genero": "trap"
   },
   {
+   "titulo": "Anuel en Santiago",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-13",
+   "fecha_fin": "2026-12-19",
+   "hora": null,
+   "horario": "13, 14, 18 y 19 de diciembre",
+   "lugar": "Santander Arena",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Conciertos del artista urbano Anuel en el Santander Arena.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.encancha.cl/enlahora/panoramas/2026/11/19/panoramas-para-diciembre-2026-los-10-conciertos-que-se-tomaran-santiago-antes-de-fin-de-ano-326387.html",
+   "fuentes": [
+    {
+     "nombre": "En Cancha",
+     "url": "https://www.encancha.cl/enlahora/panoramas/2026/11/19/panoramas-para-diciembre-2026-los-10-conciertos-que-se-tomaran-santiago-antes-de-fin-de-ano-326387.html"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "10bd2c18d9",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
+   "genero": "trap"
+  },
+  {
    "titulo": "Santiago Rocks 2026",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-13",
@@ -19822,6 +21054,10 @@
     {
      "nombre": "Rockaxis",
      "url": "https://www.rockaxis.com/rock/noticia/45300/entrada-en-mano-los-conciertos-que-se-vienen/"
+    },
+    {
+     "nombre": "En Cancha",
+     "url": "https://www.encancha.cl/enlahora/panoramas/2026/11/19/panoramas-para-diciembre-2026-los-10-conciertos-que-se-tomaran-santiago-antes-de-fin-de-ano-326387.html"
     }
    ],
    "desde_imagen": false,
@@ -20099,7 +21335,7 @@
    "hora": "19:30",
    "horario": null,
    "lugar": "Teatro Aula Magna, Universidad de Santiago (USACH)",
-   "direccion": null,
+   "direccion": "El Belloto 3735, 9170125 Santiago, Estación Central, Región Metropolitana",
    "comuna": "Estación Central",
    "ciudad": null,
    "region": null,
@@ -20112,6 +21348,10 @@
     {
      "nombre": "VAMOH!",
      "url": "https://vamoh.cl/events/orquesta-coro-sinfonico-usach-bach-albinoni-0495a/"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/concierto-de-navidad-orquesta-coro-sinfonico-usach-bach-albinoni-en-teatro-aula-magna-usach-21786"
     }
    ],
    "desde_imagen": false,
@@ -20119,7 +21359,7 @@
    "origen": "datos-estructurados",
    "id": "46c16e85c4",
    "agregado": "2026-11-17",
-   "actualizado": "2026-11-17",
+   "actualizado": "2026-11-24",
    "genero": "clasica"
   },
   {
@@ -20340,6 +21580,37 @@
    "id": "13c6b00c22",
    "agregado": "2026-11-17",
    "actualizado": "2026-11-17",
+   "genero": "clasica"
+  },
+  {
+   "titulo": "Orquesta Sinfónica Providencia: Sinfonía de Navidad en Aula Magna Fundadores",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-17",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Lord Cochrane 418",
+   "direccion": "Lord Cochrane 418",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "🎄✨ ¡La magia de la Navidad llega a la OSINP! ✨🎶 Te invitamos a vivir una noche especial llena de música, emoci&oacut",
+   "imagen": "https://cdn.keai.cl/events/21756-0c1744a66b1c01c8c10f34c01cecd0ab.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/orquesta-sinfonica-providencia-sinfonia-de-navidad-en-aula-magna-fundadores-21756",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/orquesta-sinfonica-providencia-sinfonia-de-navidad-en-aula-magna-fundadores-21756"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "79638a32c2",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
    "genero": "clasica"
   },
   {
@@ -20789,6 +22060,10 @@
     {
      "nombre": "Keai",
      "url": "https://keai.cl/evento/alejandro-silva-hyperspaced-sala-scd-bellavista-19820"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/alejandro-silva-hyperspaced-ciclo-instrumentistas-sala-scd-bellavista-19820"
     }
    ],
    "desde_imagen": false,
@@ -20796,8 +22071,39 @@
    "origen": "datos-estructurados",
    "id": "f0fc9af27f",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-07",
+   "actualizado": "2026-11-24",
    "genero": "metal"
+  },
+  {
+   "titulo": "Concierto San Bernardo Big Band en Espacio Diana",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-18",
+   "fecha_fin": "2026-12-19",
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Espacio Diana",
+   "direccion": "Arturo Prat 435, 8330484 Santiago, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Desde el sur de la Región Metropolitana, llega la San Bernardo Big Band. Agrupación musical con 11 años de trayectoria. Desde su creación han recorrido más de 4",
+   "imagen": "https://cdn.keai.cl/events/21769-16f1aecc8038c58c9a2642ebe1d1c236.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/concierto-san-bernardo-big-band-en-espacio-diana-21769",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/concierto-san-bernardo-big-band-en-espacio-diana-21769"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "841591f820",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
+   "genero": "jazz"
   },
   {
    "titulo": "Fitzroya en la Casa en el Aire",
@@ -21164,6 +22470,36 @@
    "agregado": "2026-11-14",
    "actualizado": "2026-11-24",
    "genero": "indie"
+  },
+  {
+   "titulo": "Vicho Viciani en bares",
+   "categoria": "standup",
+   "fecha_inicio": "2026-12-18",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Casa Comedia - Providencia",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Show de stand-up comedy de Vicho Viciani en Casa Comedia. Calza en standup.",
+   "imagen": "https://static.ptocdn.net/event-resources/images/CCM012_calugalistado.webp?v=1795454316",
+   "fotos": null,
+   "url": "https://www.puntoticket.com/evento/vicho-viciani-en-bares",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/evento/vicho-viciani-en-bares"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "09818f650f",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Conce Nü Metal Vol. 3.0",
@@ -21949,6 +23285,37 @@
    "agregado": "2026-11-13",
    "actualizado": "2026-11-22",
    "genero": "clasica"
+  },
+  {
+   "titulo": "Piazzolla por Sexteto Bandó en Sala Master",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-23",
+   "fecha_fin": null,
+   "hora": "19:30",
+   "horario": null,
+   "lugar": "Sala Master",
+   "direccion": "Miguel Claro 509, 7500695 Providencia, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Sexteto Bandó cierra su temporada 2026 con un concierto dedicado íntegramente a la música de Astor Piazzolla, marcando además su deb",
+   "imagen": "https://cdn.keai.cl/events/21751-88981244b74096e02250262bdb238406.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/piazzolla-por-sexteto-bando-en-sala-master-21751",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/piazzolla-por-sexteto-bando-en-sala-master-21751"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "3f2c968da9",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
+   "genero": "jazz"
   },
   {
    "titulo": "Concierto Navideño",
@@ -23346,13 +24713,17 @@
    "region": "Región Metropolitana",
    "precio": null,
    "descripcion": "Jornada dominical de música electrónica al aire libre.",
-   "imagen": null,
+   "imagen": "https://static.ptocdn.net/images/eventos/glo220_calugalistado.jpg",
    "fotos": null,
    "url": "https://raveme.cl/eventos",
    "fuentes": [
     {
      "nombre": "raveme.cl",
      "url": "https://raveme.cl/eventos"
+    },
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/piknicelectronik-enero"
     }
    ],
    "desde_imagen": false,
@@ -23360,7 +24731,7 @@
    "origen": "ia",
    "id": "7fe57c0973",
    "agregado": "2026-11-22",
-   "actualizado": "2026-11-22",
+   "actualizado": "2026-11-24",
    "genero": "electronica"
   },
   {
@@ -24096,6 +25467,36 @@
    "id": "2157eb9732",
    "agregado": "2026-11-19",
    "actualizado": "2026-11-19"
+  },
+  {
+   "titulo": "Platea Professionals’ Week 2027",
+   "categoria": "teatro",
+   "fecha_inicio": "2027-01-18",
+   "fecha_fin": "2027-01-23",
+   "hora": null,
+   "horario": null,
+   "lugar": null,
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Semana del Festival Internacional Teatro a Mil donde programadores y artistas de artes escénicas se reúnen.",
+   "imagen": "https://www.tvn.cl/tvn/site/artic/20261124/imag/foto_0000002820261124172413/obra.jpg",
+   "fotos": null,
+   "url": "https://www.tvn.cl/especiales/teatro-a-mil/noticias/platea-professionals-week-la-semana-en-que-las-artes-escenicas-del-mundo-se-encuentran-en-santiago-de-chile",
+   "fuentes": [
+    {
+     "nombre": "tvn.cl",
+     "url": "https://www.tvn.cl/especiales/teatro-a-mil/noticias/platea-professionals-week-la-semana-en-que-las-artes-escenicas-del-mundo-se-encuentran-en-santiago-de-chile"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "6472ceba8c",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24"
   },
   {
    "titulo": "Ojitos de cordero",
@@ -25352,6 +26753,37 @@
    "genero": "bandas_sonoras"
   },
   {
+   "titulo": "Bubaseta / Féfé / Leeroy - One Shot Tour",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-01-30",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Coliseo - Santiago Centro",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Concierto de rap y música urbana con Bubaseta, Féfé y Leeroy. Calza en conciertos.",
+   "imagen": "https://static.ptocdn.net/images/eventos/cco120_calugalistado.jpg",
+   "fotos": null,
+   "url": "https://www.puntoticket.com/bubaseta-fefe-leeroy",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/bubaseta-fefe-leeroy"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "6f7aac78ef",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
+   "genero": "hiphop"
+  },
+  {
    "titulo": "CLOUDS en Chile",
    "categoria": "conciertos",
    "fecha_inicio": "2027-01-30",
@@ -26146,6 +27578,68 @@
    "genero": "rock"
   },
   {
+   "titulo": "LP",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-02-28",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Caupolicán - Santiago Centro",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Concierto en vivo de la cantautora estadounidense LP. Calza en conciertos.",
+   "imagen": "https://static.ptocdn.net/images/eventos/lot239_calugalistado.jpg",
+   "fotos": null,
+   "url": "https://www.puntoticket.com/lp-2027",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/lp-2027"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "b291488b46",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
+   "genero": "indie"
+  },
+  {
+   "titulo": "LP en Chile - 10 años de Lost on You",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-02-28",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Caupolicán",
+   "direccion": "San Diego 850",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "La artista LP se presenta en el Teatro Caupolicán celebrando los 10 años de su disco Lost on You y presentando su nuevo álbum Room 12.",
+   "imagen": "https://www.concierto.cl/wp-content/uploads/2026/11/LP.webp",
+   "fotos": null,
+   "url": "https://www.puntoticket.com",
+   "fuentes": [
+    {
+     "nombre": "Radio Concierto Chile",
+     "url": "https://www.concierto.cl/2026/11/367530lp-vuelve-a-chile-la-artista-celebrara-los-10-anos-de-lost-on-you-con-un-concierto-especial-en-santiago/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "7b64b61a8a",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
+   "genero": "indie"
+  },
+  {
    "titulo": "Modeselektor Live",
    "categoria": "conciertos",
    "fecha_inicio": "2027-02-28",
@@ -26723,6 +28217,37 @@
    "agregado": "2026-11-06",
    "actualizado": "2026-11-23",
    "genero": "metal"
+  },
+  {
+   "titulo": "Estereo Picnic 2027",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-03-19",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Chile Festivales",
+   "direccion": "Chile Festivales",
+   "comuna": "Santiago",
+   "ciudad": null,
+   "region": null,
+   "precio": "Gratis",
+   "descripcion": "Estereo Picnic 2027 en vivo en Chile Festivales, Santiago. Consulta entradas, fechas, horarios y ubicación en Vamos Eventos.",
+   "imagen": "https://kohxjulvxrlyyxqbtlxi.supabase.co/storage/v1/object/public/vamos-event-media/events/373252fa-c0ba-4473-aeee-5e9fc4c8a0a8/819a621e-a810-44a6-a07c-a715a1ce54c1.jpg",
+   "fotos": null,
+   "url": "https://www.vamoseventos.com/event/estereo-picnic-2027-b4dabd90-5c11-485b-91f7-7bc8b200c1f8",
+   "fuentes": [
+    {
+     "nombre": "vamoseventos.com",
+     "url": "https://www.vamoseventos.com/santiago/genero/indie-rock"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "636e3a912d",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
+   "genero": "indie"
   },
   {
    "titulo": "I Love Reggaeton Chile - Espacio Riesco 2027",
@@ -27949,6 +29474,37 @@
    "agregado": "2026-11-14",
    "actualizado": "2026-11-24",
    "genero": "cumbia"
+  },
+  {
+   "titulo": "Cultura Profética",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-04-25",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Santander Arena - Santiago Centro",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Concierto de la reconocida banda de reggae puertorriqueña. Calza en conciertos.",
+   "imagen": "https://static.ptocdn.net/images/eventos/lot235_calugalistado.jpg",
+   "fotos": null,
+   "url": "https://www.puntoticket.com/cultura-profetica-2027",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/cultura-profetica-2027"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "e4deb4ca02",
+   "agregado": "2026-11-24",
+   "actualizado": "2026-11-24",
+   "genero": "indie"
   },
   {
    "titulo": "KK’s Priest - Latin American Tour 2027",
