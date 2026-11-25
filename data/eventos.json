@@ -1,12 +1,12 @@
 {
  "version": 1,
- "actualizado": "2026-11-25T10:37-03:00",
+ "actualizado": "2026-11-25T19:54-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-25T10:37-03:00",
+  "fecha": "2026-11-25T19:54-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 44,
-  "nuevos_esta_vez": 4,
+  "eventos_nuevos": 73,
+  "nuevos_esta_vez": 29,
   "nuevos_ids": [
    "6f7aac78ef",
    "b291488b46",
@@ -51,7 +51,36 @@
    "658520fb33",
    "f35a81abe4",
    "91ed44eabe",
-   "cd8de3aa4d"
+   "cd8de3aa4d",
+   "9a39c0c22e",
+   "1a931aaf5e",
+   "73914e1402",
+   "fdb4185457",
+   "00640ed853",
+   "8119c13e58",
+   "603d090251",
+   "ad9213a82c",
+   "f4210440b7",
+   "2c06a67f30",
+   "25d116c432",
+   "6e147ff65f",
+   "2828dd3796",
+   "41cf345705",
+   "3200e82853",
+   "53ec5761e7",
+   "c7c70d6e93",
+   "98c59b0924",
+   "a70be69099",
+   "e6d4503146",
+   "eef65337d8",
+   "17e64ad6d6",
+   "7d819db0a9",
+   "ca9fa2a3de",
+   "bf8c532e93",
+   "37e6e640d7",
+   "b591073983",
+   "57676904db",
+   "0f46c34062"
   ],
   "nuevos_desde": {
    "6f7aac78ef": "2026-11-24T23:48-03:00",
@@ -97,24 +126,53 @@
    "658520fb33": "2026-11-25T10:37-03:00",
    "f35a81abe4": "2026-11-25T10:37-03:00",
    "91ed44eabe": "2026-11-25T10:37-03:00",
-   "cd8de3aa4d": "2026-11-25T10:37-03:00"
+   "cd8de3aa4d": "2026-11-25T10:37-03:00",
+   "9a39c0c22e": "2026-11-25T19:54-03:00",
+   "1a931aaf5e": "2026-11-25T19:54-03:00",
+   "73914e1402": "2026-11-25T19:54-03:00",
+   "fdb4185457": "2026-11-25T19:54-03:00",
+   "00640ed853": "2026-11-25T19:54-03:00",
+   "8119c13e58": "2026-11-25T19:54-03:00",
+   "603d090251": "2026-11-25T19:54-03:00",
+   "ad9213a82c": "2026-11-25T19:54-03:00",
+   "f4210440b7": "2026-11-25T19:54-03:00",
+   "2c06a67f30": "2026-11-25T19:54-03:00",
+   "25d116c432": "2026-11-25T19:54-03:00",
+   "6e147ff65f": "2026-11-25T19:54-03:00",
+   "2828dd3796": "2026-11-25T19:54-03:00",
+   "41cf345705": "2026-11-25T19:54-03:00",
+   "3200e82853": "2026-11-25T19:54-03:00",
+   "53ec5761e7": "2026-11-25T19:54-03:00",
+   "c7c70d6e93": "2026-11-25T19:54-03:00",
+   "98c59b0924": "2026-11-25T19:54-03:00",
+   "a70be69099": "2026-11-25T19:54-03:00",
+   "e6d4503146": "2026-11-25T19:54-03:00",
+   "eef65337d8": "2026-11-25T19:54-03:00",
+   "17e64ad6d6": "2026-11-25T19:54-03:00",
+   "7d819db0a9": "2026-11-25T19:54-03:00",
+   "ca9fa2a3de": "2026-11-25T19:54-03:00",
+   "bf8c532e93": "2026-11-25T19:54-03:00",
+   "37e6e640d7": "2026-11-25T19:54-03:00",
+   "b591073983": "2026-11-25T19:54-03:00",
+   "57676904db": "2026-11-25T19:54-03:00",
+   "0f46c34062": "2026-11-25T19:54-03:00"
   },
   "horas_nuevos": 24,
-  "llamadas_ia": 39,
+  "llamadas_ia": 34,
   "ia_sin_cupo": false,
-  "ultima_completa": "2026-11-25T09:52-03:00",
+  "ultima_completa": "2026-11-25T19:30-03:00",
   "modo": "completa",
-  "paginas_revisadas": 39,
+  "paginas_revisadas": 31,
   "busquedas": 107,
-  "fuentes_fijas": 23,
-  "errores": 14,
-  "noticias_desde": "2026-11-24",
-  "noticias_viejas_descartadas": 418,
-  "redes_vistas": 0,
-  "generos_ia": 0,
-  "imagenes_encontradas": 0
+  "fuentes_fijas": 9,
+  "errores": 19,
+  "noticias_desde": "2026-11-25",
+  "noticias_viejas_descartadas": 416,
+  "redes_vistas": 5,
+  "generos_ia": 9,
+  "imagenes_encontradas": 6
  },
- "total": 888,
+ "total": 917,
  "eventos": [
   {
    "titulo": "Mariposas y Polillas, Colores en Movimiento",
@@ -868,6 +926,10 @@
     {
      "nombre": "QuéHacer Chile",
      "url": "https://quehacerchile.cl/exposiciones/"
+    },
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/exposicion/gratis"
     }
    ],
    "desde_imagen": false,
@@ -875,7 +937,7 @@
    "origen": "claude",
    "id": "4e82abe6b7",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-23"
+   "actualizado": "2026-11-25"
   },
   {
    "titulo": "Exposición sobre cerámica, territorio y cuerpo \"La veta\" en el MAPA",
@@ -1098,6 +1160,10 @@
     {
      "nombre": "VAMOH!",
      "url": "https://vamoh.cl/events/nueva-exposicion-temporal-criaturas-de-tierra-animales-ceramicos-en-el-museo-de-artes-decorativas-7rvq1/"
+    },
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/exposicion/gratis"
     }
    ],
    "desde_imagen": false,
@@ -1105,7 +1171,7 @@
    "origen": "claude",
    "id": "0bdfd1df65",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-23"
+   "actualizado": "2026-11-25"
   },
   {
    "titulo": "Geometría Sonora",
@@ -1748,6 +1814,10 @@
     {
      "nombre": "artes.uchile.cl",
      "url": "https://artes.uchile.cl/agenda/exposiciones"
+    },
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/exposicion/gratis"
     }
    ],
    "desde_imagen": false,
@@ -1755,7 +1825,7 @@
    "origen": "ia",
    "id": "73a777d24b",
    "agregado": "2026-11-23",
-   "actualizado": "2026-11-23"
+   "actualizado": "2026-11-25"
   },
   {
    "titulo": "Vitrina de objeto destacado: sarcófago de Ta-Sherit-Min",
@@ -2043,6 +2113,10 @@
     {
      "nombre": "ED.cl",
      "url": "https://www.ed.cl/recinto/museo-nacional-de-bellas-artes/"
+    },
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/exposicion/gratis"
     }
    ],
    "desde_imagen": false,
@@ -3265,7 +3339,7 @@
    "comuna": "Santiago",
    "ciudad": "Santiago",
    "region": "Región Metropolitana",
-   "precio": null,
+   "precio": "Gratis",
    "descripcion": "Exposición de arte contemporáneo de Antonia Moena Burgos en el MAC.",
    "imagen": "https://mac.uchile.cl/wp-content/uploads/2026/10/ca-6-01.jpg",
    "fotos": null,
@@ -3278,6 +3352,10 @@
     {
      "nombre": "mac.uchile.cl",
      "url": "https://mac.uchile.cl/exposiciones/"
+    },
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/exposicion/gratis"
     }
    ],
    "desde_imagen": false,
@@ -3285,7 +3363,7 @@
    "origen": "ia",
    "id": "a63a50166b",
    "agregado": "2026-11-07",
-   "actualizado": "2026-11-23"
+   "actualizado": "2026-11-25"
   },
   {
    "titulo": "Exposición \"Selfie\"",
@@ -4747,6 +4825,10 @@
     {
      "nombre": "ARTEINFORMADO",
      "url": "https://www.arteinformado.com/agenda/exposiciones/exposiciones-santiago-409031_4_22"
+    },
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/exposicion/gratis"
     }
    ],
    "desde_imagen": false,
@@ -4754,7 +4836,7 @@
    "origen": "ia",
    "id": "bc6524a618",
    "agregado": "2026-11-15",
-   "actualizado": "2026-11-24"
+   "actualizado": "2026-11-25"
   },
   {
    "titulo": "Imprenta e Editorial - Workshop de Grabado y Fanzine / Autopublicación",
@@ -6399,6 +6481,36 @@
    "genero": "rock"
   },
   {
+   "titulo": "Burchard: trayectoria fundamental",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-25",
+   "fecha_fin": "2027-01-14",
+   "hora": null,
+   "horario": null,
+   "lugar": "Centro Cultural El Tranque",
+   "direccion": null,
+   "comuna": "Lo Barnechea",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Muestra retrospectiva sobre la trayectoria fundamental de Burchard.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://salirsantiago.com/panoramas/exposicion/gratis",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/exposicion/gratis"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "98c59b0924",
+   "agregado": "2026-11-25",
+   "actualizado": "2026-11-25"
+  },
+  {
    "titulo": "Concierto El Salvador y Chile unidos a través de la música",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-25",
@@ -6428,6 +6540,216 @@
    "agregado": "2026-11-15",
    "actualizado": "2026-11-23",
    "genero": "clasica"
+  },
+  {
+   "titulo": "Exposición \"Mollusca. Poesía de caracolas\"",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-25",
+   "fecha_fin": "2027-01-29",
+   "hora": null,
+   "horario": null,
+   "lugar": "Sala Museo Gabriela Mistral",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Exposición temática sobre moluscos y caracolas en la Sala Museo Gabriela Mistral.",
+   "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/web/web_47efdd854b1ac349.jpg",
+   "fotos": null,
+   "url": "https://salirsantiago.com/panoramas/exposicion/gratis",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/exposicion/gratis"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "a70be69099",
+   "agregado": "2026-11-25",
+   "actualizado": "2026-11-25"
+  },
+  {
+   "titulo": "Exposición Ciudad Imaginada - Álvaro Bindis",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-25",
+   "fecha_fin": "2026-12-13",
+   "hora": null,
+   "horario": null,
+   "lugar": "Lo Matta Cultural",
+   "direccion": null,
+   "comuna": "Vitacura",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Exposición Ciudad Imaginada del artista Álvaro Bindis en Lo Matta Cultural.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://salirsantiago.com/panoramas/exposicion/gratis",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/exposicion/gratis"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "6e147ff65f",
+   "agregado": "2026-11-25",
+   "actualizado": "2026-11-25"
+  },
+  {
+   "titulo": "Exposición «Chile a través del arte y la IA»",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-25",
+   "fecha_fin": "2026-12-18",
+   "hora": null,
+   "horario": null,
+   "lugar": "Campus República, Universidad Andrés Bello",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Exposición que fusiona el arte y la inteligencia artificial en la UNAB.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://salirsantiago.com/panoramas/exposicion/gratis",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/exposicion/gratis"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "41cf345705",
+   "agregado": "2026-11-25",
+   "actualizado": "2026-11-25"
+  },
+  {
+   "titulo": "Exposición “Olea, 25 años ilustrando”",
+   "categoria": "ilustracion",
+   "fecha_inicio": "2026-11-25",
+   "fecha_fin": "2026-12-18",
+   "hora": null,
+   "horario": null,
+   "lugar": "Campus Casona Las Condes, Universidad Andrés Bello",
+   "direccion": null,
+   "comuna": "Las Condes",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Retrospectiva de los 25 años de trayectoria del ilustrador Olea.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://salirsantiago.com/panoramas/exposicion/gratis",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/exposicion/gratis"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "c7c70d6e93",
+   "agregado": "2026-11-25",
+   "actualizado": "2026-11-25"
+  },
+  {
+   "titulo": "La Marcha de las Ánimas - Marién Leible",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-25",
+   "fecha_fin": "2026-12-04",
+   "hora": null,
+   "horario": null,
+   "lugar": "Centro de Atención al Vecino",
+   "direccion": null,
+   "comuna": "Peñalolén",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Exposición artística de Marién Leible en Peñalolén.",
+   "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/chimkowecentro/Dfpx_A5peLB_0.jpg",
+   "fotos": null,
+   "url": "https://salirsantiago.com/panoramas/exposicion/gratis",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/exposicion/gratis"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "e6d4503146",
+   "agregado": "2026-11-25",
+   "actualizado": "2026-11-25"
+  },
+  {
+   "titulo": "La hora del té",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-25",
+   "fecha_fin": "2026-11-30",
+   "hora": null,
+   "horario": null,
+   "lugar": "Casa Museo Santa Rosa de Apoquindo",
+   "direccion": null,
+   "comuna": "Padre Hurtado",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Exposición cultural en la Casa Museo Santa Rosa de Apoquindo.",
+   "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/web/web_fd7041e0e0fa4ef4_o.jpg",
+   "fotos": null,
+   "url": "https://salirsantiago.com/panoramas/exposicion/gratis",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/exposicion/gratis"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "2828dd3796",
+   "agregado": "2026-11-25",
+   "actualizado": "2026-11-25"
+  },
+  {
+   "titulo": "María Teresa Williams: La tierra de uno",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-25",
+   "fecha_fin": "2026-11-29",
+   "hora": null,
+   "horario": null,
+   "lugar": "Salas de Exposición Centro Cultural Las Condes",
+   "direccion": null,
+   "comuna": "Las Condes",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Muestra pictórica y visual de María Teresa Williams.",
+   "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/web/web_03bdccf3b60dff8e_o.jpg",
+   "fotos": null,
+   "url": "https://salirsantiago.com/panoramas/exposicion/gratis",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/exposicion/gratis"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "53ec5761e7",
+   "agregado": "2026-11-25",
+   "actualizado": "2026-11-25"
   },
   {
    "titulo": "Escucha Creativa Comunidad de Caminantes – Recorrido patrimonial",
@@ -8016,6 +8338,36 @@
    "genero": "clasica"
   },
   {
+   "titulo": "Exposición \"Anatomía Poética\"",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": null,
+   "hora": "16:00",
+   "horario": null,
+   "lugar": "Centro de Extensión Cultural UBO",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Exposición de arte en la Universidad Bernardo O'Higgins.",
+   "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/web/web_6cd6fb15b1956447_o.jpg",
+   "fotos": null,
+   "url": "https://salirsantiago.com/panoramas/exposicion/gratis",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/exposicion/gratis"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "3200e82853",
+   "agregado": "2026-11-25",
+   "actualizado": "2026-11-25"
+  },
+  {
    "titulo": "Visita guiada histórica patrimonial por el edificio GAM",
    "categoria": "museos",
    "fecha_inicio": "2026-11-27",
@@ -8948,6 +9300,37 @@
    "actualizado": "2026-11-22"
   },
   {
+   "titulo": "Frank New Jazz Trío en Hidden Cocktail Room",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": "2026-11-28",
+   "hora": "22:30",
+   "horario": null,
+   "lugar": "Hidden Cocktail Room",
+   "direccion": "Barón Pierre de Coubertin 62, 8330018 Santiago, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "FRANK NEW JAZZ TRÍO EN HIDDENBAR Una noche para dejarse llevar por la magia del jazz, sus matices y su elegancia. Este viernes, Frank New Jazz Tr&iacu",
+   "imagen": "https://cdn.keai.cl/events/21832-4ba69dde7ef3ebd0b2f9e9ef30e1b3be.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/frank-new-jazz-trio-en-hidden-cocktail-room-21832",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/frank-new-jazz-trio-en-hidden-cocktail-room-21832"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "ad9213a82c",
+   "agregado": "2026-11-25",
+   "actualizado": "2026-11-25",
+   "genero": "jazz"
+  },
+  {
    "titulo": "Indie Music Party: The Strokes - 4 Pistas de Baile",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-27",
@@ -9561,6 +9944,36 @@
    "id": "a36fae5d63",
    "agregado": "2026-11-19",
    "actualizado": "2026-11-19"
+  },
+  {
+   "titulo": "Celebración 15 años Viva Leer Copec",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": "10:00",
+   "horario": "10:00–20:00 hrs",
+   "lugar": "Centro Cultural Gabriela Mistral (GAM)",
+   "direccion": "Av. Libertador Bernardo O'Higgins 227",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Jornada cultural gratuita por los 15 años de Viva Leer Copec en el GAM, con cuentacuentos, teatro, talleres y música en vivo.",
+   "imagen": "https://assets.encancha.cl/social/326473-c33f93bf51.jpg",
+   "fotos": null,
+   "url": "https://www.encancha.cl/enlahora/panoramas/2026/11/25/panorama-gratis-en-el-gam-para-este-fin-de-semana-326473.html",
+   "fuentes": [
+    {
+     "nombre": "En Cancha",
+     "url": "https://www.encancha.cl/enlahora/panoramas/2026/11/25/panorama-gratis-en-el-gam-para-este-fin-de-semana-326473.html"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "eef65337d8",
+   "agregado": "2026-11-25",
+   "actualizado": "2026-11-25"
   },
   {
    "titulo": "League CUP - HuntercardTCG Centro",
@@ -10626,6 +11039,14 @@
     {
      "nombre": "LOS40",
      "url": "https://los40.cl/2026/11/24/musica-en-vivo-y-gratis-parque-araucano-recibira-concierto-con-mas-de-120-musicos-y-asi-puedes-asistir/"
+    },
+    {
+     "nombre": "La Cuarta",
+     "url": "https://www.lacuarta.com/musica/noticia/filarmonica-al-parque-el-concierto-gratuito-que-reunira-a-mas-de-120-musicos-en-el-parque-araucano/"
+    },
+    {
+     "nombre": "tvn.cl",
+     "url": "https://www.tvn.cl/hora-25/musica/filarmonica-al-parque-concierto-gratuito-reunira-a-mas-de-120-musicos"
     }
    ],
    "desde_imagen": false,
@@ -10633,7 +11054,7 @@
    "origen": "ia",
    "id": "148f22762a",
    "agregado": "2026-11-24",
-   "actualizado": "2026-11-24",
+   "actualizado": "2026-11-25",
    "genero": "clasica"
   },
   {
@@ -11490,6 +11911,10 @@
     {
      "nombre": "Visit Santiago Travel",
      "url": "https://visitsantiago.travel/en/panorama/ludidazo-feria-de-juuegos-de-mesa/"
+    },
+    {
+     "nombre": "Visit Santiago Travel",
+     "url": "https://visitsantiago.travel/panorama/ludidazo-feria-de-juuegos-de-mesa/"
     }
    ],
    "desde_imagen": true,
@@ -11497,7 +11922,7 @@
    "origen": "ia",
    "id": "81ccff8e36",
    "agregado": "2026-11-24",
-   "actualizado": "2026-11-24"
+   "actualizado": "2026-11-25"
   },
   {
    "titulo": "Matorral en Persa Víctor Manuel",
@@ -14966,6 +15391,36 @@
    "genero": "pop"
   },
   {
+   "titulo": "Mercado Ñuñoa Juega",
+   "categoria": "juegos",
+   "fecha_inicio": "2026-12-05",
+   "fecha_fin": null,
+   "hora": "11:00",
+   "horario": "11:00 a 20:00 horas",
+   "lugar": "Casa de la Cultura de Ñuñoa",
+   "direccion": "Av. Irarrázaval 4055",
+   "comuna": "Ñuñoa",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Feria de juegos de mesa con editoriales, tiendas, mesas de demostración, concursos y descuentos de hasta un 70%.",
+   "imagen": "https://www.adnradio.cl/resizer/v2/RJAZK2F2WNHYRDKLGG27JVU4KM.jpg?auth=756bdc763b28f0494c1d7cf8ee01603dc060a80884ecbf292c8a6006d6724762&quality=70&width=1200&height=675&focal=534,486",
+   "fotos": null,
+   "url": "https://www.adnradio.cl/2026/11/25/nunoa-tendra-feria-de-juegos-de-mesa-con-entrada-gratis-y-grandes-descuentos-revisa-cuando-y-donde/",
+   "fuentes": [
+    {
+     "nombre": "ADN Radio",
+     "url": "https://www.adnradio.cl/2026/11/25/nunoa-tendra-feria-de-juegos-de-mesa-con-entrada-gratis-y-grandes-descuentos-revisa-cuando-y-donde/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "25d116c432",
+   "agregado": "2026-11-25",
+   "actualizado": "2026-11-25"
+  },
+  {
    "titulo": "3era Feria de las Artes Gráficas",
    "categoria": "ilustracion",
    "fecha_inicio": "2026-12-05",
@@ -15058,7 +15513,7 @@
    "origen": "ia",
    "id": "3888df0af2",
    "agregado": "2026-11-15",
-   "actualizado": "2026-11-15",
+   "actualizado": "2026-11-25",
    "genero": "rock"
   },
   {
@@ -15122,6 +15577,37 @@
    "agregado": "2026-11-18",
    "actualizado": "2026-11-18",
    "genero": "rock"
+  },
+  {
+   "titulo": "Tocata Inercia Profondos",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-05",
+   "fecha_fin": null,
+   "hora": "17:00",
+   "horario": null,
+   "lugar": "Refugio Bar",
+   "direccion": "Maipú 122",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Tocata Inercia Pro-fondos Seguimos trabajando en lo que viene y queremos compartir parte de ese camino con ustedes. Nos reunimos junto a Abismo Silencioso, Era",
+   "imagen": "https://cdn.keai.cl/events/19212-132a626fda2a29987900d91ae07e4399.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/tocata-inercia-profondos-19212",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/tocata-inercia-profondos-19212"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "fdb4185457",
+   "agregado": "2026-11-25",
+   "actualizado": "2026-11-25",
+   "genero": "indie"
   },
   {
    "titulo": "Tokatas en el Ring 2: Crossface (Metal)",
@@ -15281,6 +15767,41 @@
    "agregado": "2026-11-16",
    "actualizado": "2026-11-16",
    "genero": "jazz"
+  },
+  {
+   "titulo": "C7: Réquiem de guerra",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-05",
+   "fecha_fin": "2026-12-06",
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Teatro Municipal de Santiago",
+   "direccion": "Agustinas 794",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $4.500",
+   "descripcion": "Concierto sinfónico Réquiem de guerra en el Teatro Municipal.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://municipal.cl/",
+   "fuentes": [
+    {
+     "nombre": "Teatro Municipal de Santiago",
+     "url": "https://municipal.cl/"
+    },
+    {
+     "nombre": "ColorFans",
+     "url": "https://colorfans.cl/lugar/teatro-municipal-de-santiago/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "1c3a9828a6",
+   "agregado": "2026-11-19",
+   "actualizado": "2026-11-25",
+   "genero": "clasica"
   },
   {
    "titulo": "Show de Stand up-Varieté de comedia- Sábado 5 Diciembre 19hrs",
@@ -15852,6 +16373,37 @@
    "genero": "clasica"
   },
   {
+   "titulo": "05/12 Sábado de Conciertos: Grupo Cal y Canto en el Huaso Enrique",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-05",
+   "fecha_fin": "2026-12-06",
+   "hora": "21:30",
+   "horario": null,
+   "lugar": "El Huaso Enrique",
+   "direccion": "Maipú 462, 8350432 Santiago, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "🇨🇱 IMPORTANTE 🇨🇱 Una vez comprada la entrada debe escribir VIA WHATSAPP de forma OBLIGATORIA al +56920701885 para reservar su m",
+   "imagen": "https://cdn.keai.cl/events/21844-4574e9db3be52b62a83bcb893c4a2668.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/0512-sabado-de-conciertos-grupo-cal-y-canto-en-el-huaso-enrique-21844",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/0512-sabado-de-conciertos-grupo-cal-y-canto-en-el-huaso-enrique-21844"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "73914e1402",
+   "agregado": "2026-11-25",
+   "actualizado": "2026-11-25",
+   "genero": "folclor"
+  },
+  {
    "titulo": "Jorge Alís: Humor QL Unplugged",
    "categoria": "standup",
    "fecha_inicio": "2026-12-05",
@@ -16096,37 +16648,6 @@
    "agregado": "2026-11-16",
    "actualizado": "2026-11-16",
    "genero": "reggaeton"
-  },
-  {
-   "titulo": "C7: Réquiem de guerra",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-12-05",
-   "fecha_fin": "2026-12-06",
-   "hora": null,
-   "horario": null,
-   "lugar": "Teatro Municipal de Santiago",
-   "direccion": "Agustinas 794",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Desde $4.500",
-   "descripcion": "Concierto sinfónico Réquiem de guerra en el Teatro Municipal.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://municipal.cl/",
-   "fuentes": [
-    {
-     "nombre": "Teatro Municipal de Santiago",
-     "url": "https://municipal.cl/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "1c3a9828a6",
-   "agregado": "2026-11-19",
-   "actualizado": "2026-11-25",
-   "genero": "clasica"
   },
   {
    "titulo": "Cuarteto de Nos",
@@ -17204,7 +17725,7 @@
    "origen": "ia",
    "id": "ec7fdf3538",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-24",
+   "actualizado": "2026-11-25",
    "genero": "trap"
   },
   {
@@ -17612,7 +18133,7 @@
    "hora": "19:30",
    "horario": null,
    "lugar": "Teatro Aula Magna USACH",
-   "direccion": null,
+   "direccion": "El Belloto 3735, 9170125 Santiago, Estación Central, Región Metropolitana",
    "comuna": "Estación Central",
    "ciudad": "Santiago",
    "region": "Región Metropolitana",
@@ -17625,6 +18146,10 @@
     {
      "nombre": "JaranaX",
      "url": "https://www.jaranax.com/eventos/region-metropolitana-de-santiago/gratis"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/syntagma-musicum-coro-madrigalista-usach-en-la-rama-frondosa-barroco-americano-teatro-aula-magna-usach-21849"
     }
    ],
    "desde_imagen": false,
@@ -17632,7 +18157,7 @@
    "origen": "ia",
    "id": "4e58c117e8",
    "agregado": "2026-11-10",
-   "actualizado": "2026-11-10",
+   "actualizado": "2026-11-25",
    "genero": "clasica"
   },
   {
@@ -19900,7 +20425,7 @@
    "origen": "ia",
    "id": "63aa56e48c",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-22",
+   "actualizado": "2026-11-25",
    "genero": "indie"
   },
   {
@@ -20067,6 +20592,36 @@
    "agregado": "2026-11-14",
    "actualizado": "2026-11-24",
    "genero": "indie"
+  },
+  {
+   "titulo": "Las mal portadas",
+   "categoria": "standup",
+   "fecha_inicio": "2026-12-12",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Teatro Cachafaz",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $6.600",
+   "descripcion": "Show de stand-up comedy en vivo presentado en el Teatro Cachafaz.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://ticketplus.cl/events/show-de-stand-up-las-mal-portadas-sabado-12-diciembre-20-30hrs",
+   "fuentes": [
+    {
+     "nombre": "Ticketplus",
+     "url": "https://ticketplus.cl/events/show-de-stand-up-las-mal-portadas-sabado-12-diciembre-20-30hrs"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "37e6e640d7",
+   "agregado": "2026-11-25",
+   "actualizado": "2026-11-25"
   },
   {
    "titulo": "Macha y el Bloque Depresivo",
@@ -20347,6 +20902,37 @@
    "genero": "pop"
   },
   {
+   "titulo": "Música de Películas: El Universo de John Williams",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-13",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Teatro Municipal de Santiago",
+   "direccion": "Agustinas 794",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "La Orquesta Filarmónica de Santiago interpreta las icónicas bandas sonoras de John Williams bajo la dirección de Paolo Bortolameolli.",
+   "imagen": "https://lamaquinamedio.com/wp-content/uploads/2026/11/John-Williams-llega-al-Teatro-Municipal-de-Santiago-con-un-concierto-dedicado-a-sus-grandes-bandas-sonoras.jpg",
+   "fotos": null,
+   "url": "https://lamaquinamedio.com/john-williams-llega-al-teatro-municipal-de-santiago-con-homenaje-de-primer-nivel-entradas-y-detalles-aca/",
+   "fuentes": [
+    {
+     "nombre": "La Máquina Medio",
+     "url": "https://lamaquinamedio.com/john-williams-llega-al-teatro-municipal-de-santiago-con-homenaje-de-primer-nivel-entradas-y-detalles-aca/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "17e64ad6d6",
+   "agregado": "2026-11-25",
+   "actualizado": "2026-11-25",
+   "genero": "bandas_sonoras"
+  },
+  {
    "titulo": "Anuel AA en Chile",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-13",
@@ -20460,7 +21046,7 @@
    "origen": "ia",
    "id": "fe070711f0",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-23",
+   "actualizado": "2026-11-25",
    "genero": "reggaeton"
   },
   {
@@ -20546,6 +21132,10 @@
     {
      "nombre": "SymphonyLocator",
      "url": "https://www.symphonylocator.com/es/hall/teatro-municipal-santiago/"
+    },
+    {
+     "nombre": "ColorFans",
+     "url": "https://colorfans.cl/lugar/teatro-municipal-de-santiago/"
     }
    ],
    "desde_imagen": false,
@@ -20553,7 +21143,7 @@
    "origen": "ia",
    "id": "b65be04a70",
    "agregado": "2026-11-20",
-   "actualizado": "2026-11-20"
+   "actualizado": "2026-11-25"
   },
   {
    "titulo": "Luis Slimming en Espacio Brooklyn",
@@ -20629,7 +21219,7 @@
    "origen": "ia",
    "id": "d93ec1bdee",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-21",
+   "actualizado": "2026-11-25",
    "genero": "trap"
   },
   {
@@ -20879,6 +21469,37 @@
    "id": "a4991dcce1",
    "agregado": "2026-11-19",
    "actualizado": "2026-11-19"
+  },
+  {
+   "titulo": "Última del Año: Sangre y Polillas en Radio Escena",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-16",
+   "fecha_fin": "2026-12-17",
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Radio Escena",
+   "direccion": "metro República - Maturana 9, 8320000 Santiago, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "EL AÑO SE VA, GARY SE QUEDA!! Leyeron el diario?? Última tocata del año!! Esta vez estaremos junto a Sindicato imaginario y al debut de L",
+   "imagen": "https://cdn.keai.cl/events/21835-36acddebb4e8e5874569db3d59fdc19e.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/ultima-del-ano-sangre-y-polillas-en-radio-escena-21835",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/ultima-del-ano-sangre-y-polillas-en-radio-escena-21835"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "603d090251",
+   "agregado": "2026-11-25",
+   "actualizado": "2026-11-25",
+   "genero": "rock"
   },
   {
    "titulo": "Luis Slimming / La Dehesa / Tío Tomate / 16 de Diciembre / 21:00 hrs.",
@@ -21177,10 +21798,10 @@
    "horario": null,
    "lugar": "Beaucheff 1204, Santiago Centro",
    "direccion": "Beaucheff 1204, Santiago Centro",
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
-   "precio": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "desde $11.990",
    "descripcion": "Jairo Vera llega al Movistar Arena este 17 de diciembre a las 21:00 hrs para protagonizar uno de los conciertos más esperados del año. Vive una noche llena de m",
    "imagen": "https://cdn.keai.cl/events/21168-6feb07ff9c0977610cafdcdd7efb9032.jpg",
    "fotos": null,
@@ -21189,6 +21810,10 @@
     {
      "nombre": "Keai",
      "url": "https://keai.cl/evento/jairo-vera-genesis-2026-21168"
+    },
+    {
+     "nombre": "QuéHacer Chile",
+     "url": "https://www.quehacerchile.cl/conciertos/trap/"
     }
    ],
    "desde_imagen": false,
@@ -21196,7 +21821,7 @@
    "origen": "datos-estructurados",
    "id": "28b4a1974a",
    "agregado": "2026-11-20",
-   "actualizado": "2026-11-20",
+   "actualizado": "2026-11-25",
    "genero": "trap"
   },
   {
@@ -22644,6 +23269,37 @@
    "genero": "clasica"
   },
   {
+   "titulo": "Bajo las Luces de Broadway en Sala Master",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-22",
+   "fecha_fin": "2026-12-23",
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Sala Master",
+   "direccion": "Miguel Claro 509, 7500695 Providencia, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "“Bajo las luces de Broadway” nace de una idea de hacer un concierto pensado por y para los amantes del teatro musical, impulsado por la vocal coach Paula Contre",
+   "imagen": "https://cdn.keai.cl/events/21831-1bb62794d8ec75933368d76de358cf27.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/bajo-las-luces-de-broadway-en-sala-master-21831",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/bajo-las-luces-de-broadway-en-sala-master-21831"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "f4210440b7",
+   "agregado": "2026-11-25",
+   "actualizado": "2026-11-25",
+   "genero": "clasica"
+  },
+  {
    "titulo": "Luis Slimming en Patio Bulnes",
    "categoria": "standup",
    "fecha_inicio": "2026-12-22",
@@ -23059,6 +23715,37 @@
    "agregado": "2026-11-14",
    "actualizado": "2026-11-14",
    "genero": "reggaeton"
+  },
+  {
+   "titulo": "Aerobica - Verano Caliente Open Air",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-26",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Centro Cultural Matucana 100 - Estación Central",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Fiesta y show de música electrónica y baile con el dúo Aerobica al aire libre en Matucana 100.",
+   "imagen": "https://static.ptocdn.net/event-resources/images/FNA390_calugalistado.webp?v=1795547006",
+   "fotos": null,
+   "url": "https://www.puntoticket.com/evento/aerobica-verano-caliente",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/evento/aerobica-verano-caliente"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "9a39c0c22e",
+   "agregado": "2026-11-25",
+   "actualizado": "2026-11-25",
+   "genero": "electronica"
   },
   {
    "titulo": "Eva Ayllón+Inti Illimani Histórico+Cuarteto Austral",
@@ -23697,6 +24384,36 @@
    "actualizado": "2026-11-19"
   },
   {
+   "titulo": "Historia de la violencia – Teatro a Mil 2027",
+   "categoria": "teatro",
+   "fecha_inicio": "2027-01-05",
+   "fecha_fin": "2027-01-06",
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Centro Cultural Matucana 100",
+   "direccion": "Matucana 100",
+   "comuna": "Estación Central",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $15.000",
+   "descripcion": "Obra del director alemán Thomas Ostermeier en Teatro a Mil 2027, adaptación sobre la violencia, el racismo y la homofobia.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://teatroamil.cl",
+   "fuentes": [
+    {
+     "nombre": "Chile es TUYO",
+     "url": "https://chileestuyo.cl/siete-obras-para-vivir-teatro-a-mil-2027-en-santiago/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "b591073983",
+   "agregado": "2026-11-25",
+   "actualizado": "2026-11-25"
+  },
+  {
    "titulo": "Azul - Festival Teatro a Mil 2027",
    "categoria": "teatro",
    "fecha_inicio": "2027-01-07",
@@ -23708,7 +24425,7 @@
    "comuna": "Estación Central",
    "ciudad": "Santiago",
    "region": "Región Metropolitana",
-   "precio": null,
+   "precio": "Desde $15.000",
    "descripcion": "Obra 'Azul' de Apolo Vidal en el Festival Teatro a Mil 2027, una experiencia íntima que transforma el duelo en un ritual escénico.",
    "imagen": null,
    "fotos": null,
@@ -23721,6 +24438,10 @@
     {
      "nombre": "Matucana 100 (teatro)",
      "url": "https://www.m100.cl/programacion/teatro/"
+    },
+    {
+     "nombre": "Chile es TUYO",
+     "url": "https://chileestuyo.cl/siete-obras-para-vivir-teatro-a-mil-2027-en-santiago/"
     }
    ],
    "desde_imagen": false,
@@ -23728,7 +24449,7 @@
    "origen": "ia",
    "id": "dbe5a8c3a1",
    "agregado": "2026-11-19",
-   "actualizado": "2026-11-22"
+   "actualizado": "2026-11-25"
   },
   {
    "titulo": "Chungo",
@@ -23820,6 +24541,36 @@
    "id": "170680230d",
    "agregado": "2026-11-19",
    "actualizado": "2026-11-19"
+  },
+  {
+   "titulo": "El juicio Pelicot – Teatro a Mil 2027",
+   "categoria": "teatro",
+   "fecha_inicio": "2027-01-08",
+   "fecha_fin": null,
+   "hora": "18:00",
+   "horario": null,
+   "lugar": "Centro Cultural CEINA",
+   "direccion": "Arturo Prat 33",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $8.000",
+   "descripcion": "Obra que reconstruye el caso de Gisèle Pelicot en el marco del festival Teatro a Mil 2027.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://teatroamil.cl",
+   "fuentes": [
+    {
+     "nombre": "Chile es TUYO",
+     "url": "https://chileestuyo.cl/siete-obras-para-vivir-teatro-a-mil-2027-en-santiago/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "0f46c34062",
+   "agregado": "2026-11-25",
+   "actualizado": "2026-11-25"
   },
   {
    "titulo": "Prima Facie - Festival Solo Zoco",
@@ -24229,6 +24980,37 @@
    "agregado": "2026-11-22",
    "actualizado": "2026-11-25",
    "genero": "electronica"
+  },
+  {
+   "titulo": "La Familia Crece en Insert Coin",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-01-10",
+   "fecha_fin": null,
+   "hora": "18:00",
+   "horario": null,
+   "lugar": "Insert Coin Resto Bar",
+   "direccion": "José Domingo Cañas 2306",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "✨Consonantia les trae una nueva fecha de su concierto dedicado a uno de los grandes animes doblados en chile, La Familia Crece (Marmalade Boy)✨ E",
+   "imagen": "https://cdn.keai.cl/events/21840-80d58d689a332fdfaee7c2efca5de9bf.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/la-familia-crece-en-insert-coin-21840",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/la-familia-crece-en-insert-coin-21840"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "8119c13e58",
+   "agregado": "2026-11-25",
+   "actualizado": "2026-11-25",
+   "genero": "bandas_sonoras"
   },
   {
    "titulo": "Amour | Amor Festival",
@@ -24933,6 +25715,36 @@
    "id": "4d34976bfe",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-19"
+  },
+  {
+   "titulo": "Sus faldas son olas – Teatro a Mil 2027",
+   "categoria": "teatro",
+   "fecha_inicio": "2027-01-18",
+   "fecha_fin": "2027-01-19",
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "Centro Cultural Gabriela Mistral (GAM)",
+   "direccion": "Av. Libertador Bernardo O'Higgins 227",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "$12.000",
+   "descripcion": "Concierto escénico sobre la migración protagonizado por Deysi Forcades en Teatro a Mil 2027.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://teatroamil.cl",
+   "fuentes": [
+    {
+     "nombre": "Chile es TUYO",
+     "url": "https://chileestuyo.cl/siete-obras-para-vivir-teatro-a-mil-2027-en-santiago/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "57676904db",
+   "agregado": "2026-11-25",
+   "actualizado": "2026-11-25"
   },
   {
    "titulo": "Cariño Malo",
@@ -26410,6 +27222,37 @@
    "actualizado": "2026-11-15"
   },
   {
+   "titulo": "Orquesta Sinfónica Nacional de Chile",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-02-02",
+   "fecha_fin": null,
+   "hora": "19:30",
+   "horario": null,
+   "lugar": "Teatro del Lago",
+   "direccion": "Av. Philippi 1000, Frutillar, Chile",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": "Desde $18.500",
+   "descripcion": "Dirección: Carlos Vieu",
+   "imagen": "https://pub-90ddb6fa04e149a1af6a081839703b22.r2.dev/eventos/2026/84c2d13b-445f-4313-92df-7a7d1d84a3cc-1200x630.webp",
+   "fotos": null,
+   "url": "https://semanasmusicales.cl/eventos/orquesta-sinfonica-nacional-chile-2027",
+   "fuentes": [
+    {
+     "nombre": "semanasmusicales.cl",
+     "url": "https://semanasmusicales.cl/eventos/orquesta-sinfonica-nacional-chile-2027"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "2c06a67f30",
+   "agregado": "2026-11-25",
+   "actualizado": "2026-11-25",
+   "genero": "clasica"
+  },
+  {
    "titulo": "D'espairsRay",
    "categoria": "anime",
    "fecha_inicio": "2027-02-04",
@@ -26480,6 +27323,37 @@
    "id": "50a9e6a62d",
    "agregado": "2026-11-23",
    "actualizado": "2026-11-23"
+  },
+  {
+   "titulo": "Kidd Voodoo - Ojitos Verdes Tour",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-02-06",
+   "fecha_fin": null,
+   "hora": "20:30",
+   "horario": null,
+   "lugar": "Gran Arena Monticello",
+   "direccion": null,
+   "comuna": "Mostazal",
+   "ciudad": "Mostazal",
+   "region": "Región de O'Higgins",
+   "precio": null,
+   "descripcion": "Kidd Voodoo se presenta en Gran Arena Monticello en el marco de su Ojitos Verdes Tour.",
+   "imagen": "https://granarenamonticello.cl/wp-content/uploads/2026/10/570X350_KIDD-VOODOO-OJITOS-VERDES-TOUR.jpg",
+   "fotos": null,
+   "url": "https://granarenamonticello.cl",
+   "fuentes": [
+    {
+     "nombre": "QuéHacer Chile",
+     "url": "https://www.quehacerchile.cl/conciertos/trap/"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "bf8c532e93",
+   "agregado": "2026-11-25",
+   "actualizado": "2026-11-25",
+   "genero": "trap"
   },
   {
    "titulo": "The Legend en Concierto - Viña del Mar",
@@ -26910,6 +27784,45 @@
    "agregado": "2026-11-15",
    "actualizado": "2026-11-15",
    "genero": "jazz"
+  },
+  {
+   "titulo": "Laura Pausini - Yo Canto World Tour 2027",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-02-23",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Claro Arena - Las Condes",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto en vivo de la cantante italiana Laura Pausini en el marco de su gira mundial.",
+   "imagen": "https://static.ptocdn.net/images/eventos/mul085_calugalistado.jpg",
+   "fotos": null,
+   "url": "https://www.puntoticket.com/laura-pausini",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/laura-pausini"
+    },
+    {
+     "nombre": "FMDOS",
+     "url": "https://www.fmdos.cl/noticias/laura-pausini-anuncia-nuevo-concierto-en-chile-fecha-lugar-y-cuando-comprar-entradas-para-su-show-en-santiago/"
+    },
+    {
+     "nombre": "Radio Imagina",
+     "url": "https://www.radioimagina.cl/2026/11/laura-pausini-regresa-a-santiago-concierto-en-claro-arena-tendra-importantes-descuentos/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "1a931aaf5e",
+   "agregado": "2026-11-25",
+   "actualizado": "2026-11-25",
+   "genero": "pop"
   },
   {
    "titulo": "Social Distortion",
@@ -27805,6 +28718,37 @@
    "genero": "reggaeton"
   },
   {
+   "titulo": "Acid King - Club Ámbar",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-03-23",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Club Ambar",
+   "direccion": "Ernesto Pinto Lagarrigue 154, 8420492 Santiago, Recoleta, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "CONCIERTO BANDA ACID KING EN CHILEEvento sólo para mayores de 18 años",
+   "imagen": "https://cdn.keai.cl/events/21850-606b5f4d4026793c4c9faf53632e3ede.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/acid-king-club-ambar-21850",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/acid-king-club-ambar-21850"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "00640ed853",
+   "agregado": "2026-11-25",
+   "actualizado": "2026-11-25",
+   "genero": "metal"
+  },
+  {
    "titulo": "Pixies",
    "categoria": "conciertos",
    "fecha_inicio": "2027-03-24",
@@ -28538,6 +29482,45 @@
    "genero": "rock"
   },
   {
+   "titulo": "Deep Purple en Chile",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-04-15",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Santander Arena",
+   "direccion": null,
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "La legendaria banda británica de hard rock Deep Purple se presenta en vivo en Santiago con su nueva fecha.",
+   "imagen": "https://assets.radioagricultura.cl/2026/11/Deep-Purple-1024x538.jpg",
+   "fotos": null,
+   "url": "https://www.puntoticket.com",
+   "fuentes": [
+    {
+     "nombre": "Home - Radio Agricultura",
+     "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/deep-purple-confirma-nueva-fecha-en-chile-cuando-sera-el-concierto-y-que-pasara-con-las-entradas_20261125/"
+    },
+    {
+     "nombre": "La Máquina Medio",
+     "url": "https://lamaquinamedio.com/deep-purple-reagenda-su-concierto-en-chile-cuando-y-donde-se-presentara-la-banda/"
+    },
+    {
+     "nombre": "Radio Concierto Chile",
+     "url": "https://www.concierto.cl/2026/11/deep-purple-reprograma-su-concierto-en-chile-revisa-nueva-la-fecha-en-el-santander-arena-que-pasara-con-las-entradas-y-devoluciones/"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "7d819db0a9",
+   "agregado": "2026-11-25",
+   "actualizado": "2026-11-25",
+   "genero": "rock"
+  },
+  {
    "titulo": "Chuchú Bermudas & Willie DeVille - El Pez Que Fuma - Tour 2027",
    "categoria": "conciertos",
    "fecha_inicio": "2027-04-16",
@@ -29077,6 +30060,41 @@
    "agregado": "2026-11-15",
    "actualizado": "2026-11-23",
    "genero": "clasica"
+  },
+  {
+   "titulo": "Mon Laferte en el Estadio Nacional",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-05-01",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Estadio Nacional",
+   "direccion": "Av. Grecia 2001",
+   "comuna": "Ñuñoa",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "La aclamada cantante chilena Mon Laferte se presenta en el Estadio Nacional en el marco de su gira internacional Femme Fatale Tour.",
+   "imagen": "https://www.adnradio.cl/resizer/v2/XEGDGTPPQFA75K7DRPDHT6WVCU.jpg?auth=58b1190fba47b5e649aede2b2fe04f08f33bf57a1f7bc06138fd89d7128289dd&quality=70&width=1200&height=675&focal=497,500",
+   "fotos": null,
+   "url": "https://www.adnradio.cl/2026/11/25/mon-laferte-anuncia-historico-concierto-en-el-estadio-nacional-de-chile-revisa-cuando-sera/",
+   "fuentes": [
+    {
+     "nombre": "ADN Radio",
+     "url": "https://www.adnradio.cl/2026/11/25/mon-laferte-anuncia-historico-concierto-en-el-estadio-nacional-de-chile-revisa-cuando-sera/"
+    },
+    {
+     "nombre": "FMDOS",
+     "url": "https://www.fmdos.cl/noticias/mon-laferte-anuncia-concierto-en-el-estadio-nacional-cuando-sera-y-como-comprar-entradas/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "ca9fa2a3de",
+   "agregado": "2026-11-25",
+   "actualizado": "2026-11-25",
+   "genero": "pop"
   },
   {
    "titulo": "Soen — Reliance Tour 2027 en Santiago",
