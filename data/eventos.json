@@ -1,17 +1,13 @@
 {
  "version": 1,
- "actualizado": "2026-11-26T02:26-03:00",
+ "actualizado": "2026-11-26T12:27-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-26T02:26-03:00",
+  "fecha": "2026-11-26T12:27-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 43,
-  "nuevos_esta_vez": 10,
+  "eventos_nuevos": 45,
+  "nuevos_esta_vez": 6,
   "nuevos_ids": [
-   "658520fb33",
-   "f35a81abe4",
-   "91ed44eabe",
-   "cd8de3aa4d",
    "9a39c0c22e",
    "1a931aaf5e",
    "73914e1402",
@@ -50,13 +46,15 @@
    "875636a9f3",
    "429b049d6f",
    "74ccdb7a3d",
-   "975ae17378"
+   "975ae17378",
+   "092dc686b2",
+   "18c4e5d197",
+   "75aae8d6aa",
+   "e7a9298145",
+   "8a097a1a6d",
+   "877fcf3d11"
   ],
   "nuevos_desde": {
-   "658520fb33": "2026-11-25T10:37-03:00",
-   "f35a81abe4": "2026-11-25T10:37-03:00",
-   "91ed44eabe": "2026-11-25T10:37-03:00",
-   "cd8de3aa4d": "2026-11-25T10:37-03:00",
    "9a39c0c22e": "2026-11-25T19:54-03:00",
    "1a931aaf5e": "2026-11-25T19:54-03:00",
    "73914e1402": "2026-11-25T19:54-03:00",
@@ -95,24 +93,30 @@
    "875636a9f3": "2026-11-26T02:26-03:00",
    "429b049d6f": "2026-11-26T02:26-03:00",
    "74ccdb7a3d": "2026-11-26T02:26-03:00",
-   "975ae17378": "2026-11-26T02:26-03:00"
+   "975ae17378": "2026-11-26T02:26-03:00",
+   "092dc686b2": "2026-11-26T12:27-03:00",
+   "18c4e5d197": "2026-11-26T12:27-03:00",
+   "75aae8d6aa": "2026-11-26T12:27-03:00",
+   "e7a9298145": "2026-11-26T12:27-03:00",
+   "8a097a1a6d": "2026-11-26T12:27-03:00",
+   "877fcf3d11": "2026-11-26T12:27-03:00"
   },
   "horas_nuevos": 24,
-  "llamadas_ia": 49,
+  "llamadas_ia": 15,
   "ia_sin_cupo": false,
-  "ultima_completa": "2026-11-26T02:01-03:00",
+  "ultima_completa": "2026-11-26T12:14-03:00",
   "modo": "completa",
-  "paginas_revisadas": 48,
+  "paginas_revisadas": 12,
   "busquedas": 107,
-  "fuentes_fijas": 12,
-  "errores": 22,
-  "noticias_desde": "2026-11-25",
-  "noticias_viejas_descartadas": 444,
+  "fuentes_fijas": 9,
+  "errores": 16,
+  "noticias_desde": "2026-11-26",
+  "noticias_viejas_descartadas": 355,
   "redes_vistas": 1,
-  "generos_ia": 3,
-  "imagenes_encontradas": 6
+  "generos_ia": 0,
+  "imagenes_encontradas": 3
  },
- "total": 909,
+ "total": 915,
  "eventos": [
   {
    "titulo": "Mariposas y Polillas, Colores en Movimiento",
@@ -7422,6 +7426,36 @@
    "actualizado": "2026-11-11"
   },
   {
+   "titulo": "Inédita exposición de teléfonos y lentes del Cardenal Chomali",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-26",
+   "fecha_fin": "2026-12-05",
+   "hora": null,
+   "horario": null,
+   "lugar": "Museo Destino Valparaíso",
+   "direccion": null,
+   "comuna": "Valparaíso",
+   "ciudad": "Valparaíso",
+   "region": "Región de Valparaíso",
+   "precio": null,
+   "descripcion": "Exposición de colección personal de teléfonos y anteojos antiguos del Cardenal Fernando Chomali sobre la comunicación humana.",
+   "imagen": "https://visionuniversitaria.uc.cl/wp-content/uploads/2026/11/700-x-380-45.png",
+   "fotos": null,
+   "url": "https://visionuniversitaria.uc.cl/cultura/cardenal-chomali-exposicion-de-telefonos-y-lentes/",
+   "fuentes": [
+    {
+     "nombre": "Visión Universitaria UC",
+     "url": "https://visionuniversitaria.uc.cl/cultura/cardenal-chomali-exposicion-de-telefonos-y-lentes/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "877fcf3d11",
+   "agregado": "2026-11-26",
+   "actualizado": "2026-11-26"
+  },
+  {
    "titulo": "Leo Middea",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-26",
@@ -9552,6 +9586,36 @@
    "actualizado": "2026-11-19"
   },
   {
+   "titulo": "Ghiblimania – Edición Literaria",
+   "categoria": "anime",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": "11:00",
+   "horario": null,
+   "lugar": "Productora de Eventos",
+   "direccion": null,
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Evento temático de anime inspirado en el universo Ghibli con enfoque literario.",
+   "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/maniageek.cl/DfrWO0wgQsF_0.jpg",
+   "fotos": null,
+   "url": "https://salirsantiago.com/top/ferias",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/top/ferias"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "75aae8d6aa",
+   "agregado": "2026-11-26",
+   "actualizado": "2026-11-26"
+  },
+  {
    "titulo": "Liga Juegomania GO League Challenge November",
    "categoria": "juegos",
    "fecha_inicio": "2026-11-28",
@@ -9778,6 +9842,36 @@
    "id": "d5f62b4132",
    "agregado": "2026-11-07",
    "actualizado": "2026-11-21"
+  },
+  {
+   "titulo": "FestiAnime Feria de Anime y Cultura",
+   "categoria": "anime",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": "12:30",
+   "horario": null,
+   "lugar": "FestiAnime",
+   "direccion": null,
+   "comuna": "Conchalí",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Feria dedicada al anime, manga y cultura otaku.",
+   "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/festianime/DflB7P5KOaA_0.jpg",
+   "fotos": null,
+   "url": "https://salirsantiago.com/top/ferias",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/top/ferias"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "8a097a1a6d",
+   "agregado": "2026-11-26",
+   "actualizado": "2026-11-26"
   },
   {
    "titulo": "Gloria Benavides y Horacio Saavedra en Concierto",
@@ -10847,6 +10941,37 @@
    "actualizado": "2026-11-20"
   },
   {
+   "titulo": "Sábado Pop Vs Reggaeton 💫 28 Nov",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": "2026-11-29",
+   "hora": "23:30",
+   "horario": null,
+   "lugar": "Illuminati Disco",
+   "direccion": "Antonia López de Bello 133, 8420431 Recoleta, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Descubre SÁBADO POP VS REGGAETON 💫 28 nov en Keai. Evento en Recoleta el 28/11/2026.",
+   "imagen": "https://cdn.keai.cl/events/21867-2c93f368b032679734c5dc5ba27481f4.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/sabado-pop-vs-reggaeton-28-nov-21867",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/sabado-pop-vs-reggaeton-28-nov-21867"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "18c4e5d197",
+   "agregado": "2026-11-26",
+   "actualizado": "2026-11-26",
+   "genero": "reggaeton"
+  },
+  {
    "titulo": "Alex y Coto",
    "categoria": "standup",
    "fecha_inicio": "2026-11-28",
@@ -10962,9 +11087,13 @@
     {
      "nombre": "PowerOfMetal.cl",
      "url": "https://powerofmetal.cl/entrevista-moyses-kolesne-krisiun-2026/"
+    },
+    {
+     "nombre": "fromhell.cl",
+     "url": "https://fromhell.cl/chile-terrorfest-ii-carcass-testament-y-la-elite-del-metal-extremo-regresan-a-santiago-en-2026/"
     }
    ],
-   "desde_imagen": false,
+   "desde_imagen": true,
    "confianza": "alta",
    "origen": "ia",
    "id": "d675aa8ff7",
@@ -11881,14 +12010,18 @@
     {
      "nombre": "Cooperativa.cl",
      "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-2026-en-chile/2025-12-01/082152.html"
+    },
+    {
+     "nombre": "fromhell.cl",
+     "url": "https://fromhell.cl/chile-terrorfest-ii-carcass-testament-y-la-elite-del-metal-extremo-regresan-a-santiago-en-2026/"
     }
    ],
-   "desde_imagen": false,
+   "desde_imagen": true,
    "confianza": "alta",
    "origen": "ia",
    "id": "d141cc4f9d",
    "agregado": "2026-11-15",
-   "actualizado": "2026-11-23",
+   "actualizado": "2026-11-26",
    "genero": "metal"
   },
   {
@@ -16669,6 +16802,36 @@
    "actualizado": "2026-11-20"
   },
   {
+   "titulo": "Magical Fest - Edición Navidad",
+   "categoria": "anime",
+   "fecha_inicio": "2026-12-06",
+   "fecha_fin": null,
+   "hora": "11:00",
+   "horario": null,
+   "lugar": "Magical Fest Chile",
+   "direccion": null,
+   "comuna": "Puente Alto",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Festival geek y de cultura pop con temática navideña.",
+   "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/magicalfestchile/DfnmMJ9lsfE_0.jpg",
+   "fotos": null,
+   "url": "https://salirsantiago.com/top/ferias",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/top/ferias"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "e7a9298145",
+   "agregado": "2026-11-26",
+   "actualizado": "2026-11-26"
+  },
+  {
    "titulo": "Mega Feria Friki",
    "categoria": "anime",
    "fecha_inicio": "2026-12-06",
@@ -19585,7 +19748,7 @@
    "titulo": "Show de Stand up-Tri yisus- Sábado 12 Diciembre 19hrs",
    "categoria": "standup",
    "fecha_inicio": "2026-12-12",
-   "fecha_fin": null,
+   "fecha_fin": "2026-12-13",
    "hora": "19:00",
    "horario": null,
    "lugar": "Avenida Italia, Ñuñoa",
@@ -19602,6 +19765,10 @@
     {
      "nombre": "Keai",
      "url": "https://keai.cl/evento/show-de-stand-up-tri-yisus-sabado-12-diciembre-19hrs-21555"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/show-de-stand-up-las-mal-portadas-sabado-12-diciembre-2030hrs-21879"
     }
    ],
    "desde_imagen": false,
@@ -19609,7 +19776,7 @@
    "origen": "datos-estructurados",
    "id": "bef493fa1b",
    "agregado": "2026-11-21",
-   "actualizado": "2026-11-21"
+   "actualizado": "2026-11-26"
   },
   {
    "titulo": "Un bel dì, vedremo (Madama Butterfly) de Giacomo Puccini",
@@ -23172,8 +23339,8 @@
    "lugar": "Factoría Franklin",
    "direccion": "Franklin #741",
    "comuna": "Santiago",
-   "ciudad": null,
-   "region": null,
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
    "precio": "Gratis",
    "descripcion": "Feria temática de fantasía medieval con versión navideña que reúne cervezas artesanales, hidromiel, gastronomía y coctelería de autor.",
    "imagen": "https://pskbrtbqneztksbzwaab.supabase.co/storage/v1/object/public/panoramas-media/radar/thumbs/calaveras.y.huesitos/DfiPuRExfOe_0.jpg",
@@ -23183,6 +23350,10 @@
     {
      "nombre": "Salir Santiago",
      "url": "https://salirsantiago.com/panorama/medieval-party-version-navidad-80333e9c"
+    },
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/top/ferias"
     }
    ],
    "desde_imagen": false,
@@ -23190,7 +23361,7 @@
    "origen": "datos-estructurados",
    "id": "be8b37d10f",
    "agregado": "2026-11-12",
-   "actualizado": "2026-11-12"
+   "actualizado": "2026-11-26"
   },
   {
    "titulo": "Metal Forces Total Thrash",
@@ -28268,6 +28439,37 @@
    "agregado": "2026-11-06",
    "actualizado": "2026-11-23",
    "genero": "metal"
+  },
+  {
+   "titulo": "Celine Dion Sinfonico",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-03-19",
+   "fecha_fin": "2027-03-20",
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Fundación CorpArtes",
+   "direccion": "Rosario Nte 660, Las Condes, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "✨ ¡POR PRIMERA VEZ EN CHILE! CÉLINE DION SINFÓNICO ✨El homenaje definitivo a una de las voces más extraordinarias de todos los tiempos.Merlin Comunicaciones tra",
+   "imagen": "https://cdn.keai.cl/events/21882-6d297a12a97d532a27f93c1acc99aab0.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/celine-dion-sinfonico-21882",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/celine-dion-sinfonico-21882"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "092dc686b2",
+   "agregado": "2026-11-26",
+   "actualizado": "2026-11-26",
+   "genero": "clasica"
   },
   {
    "titulo": "Estereo Picnic 2027",
