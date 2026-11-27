@@ -1,42 +1,13 @@
 {
  "version": 1,
- "actualizado": "2026-11-26T12:27-03:00",
+ "actualizado": "2026-11-26T21:04-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-26T12:27-03:00",
+  "fecha": "2026-11-26T21:04-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 45,
-  "nuevos_esta_vez": 6,
+  "eventos_nuevos": 27,
+  "nuevos_esta_vez": 11,
   "nuevos_ids": [
-   "9a39c0c22e",
-   "1a931aaf5e",
-   "73914e1402",
-   "fdb4185457",
-   "00640ed853",
-   "8119c13e58",
-   "603d090251",
-   "ad9213a82c",
-   "f4210440b7",
-   "2c06a67f30",
-   "25d116c432",
-   "6e147ff65f",
-   "2828dd3796",
-   "41cf345705",
-   "3200e82853",
-   "53ec5761e7",
-   "c7c70d6e93",
-   "98c59b0924",
-   "a70be69099",
-   "e6d4503146",
-   "eef65337d8",
-   "17e64ad6d6",
-   "7d819db0a9",
-   "ca9fa2a3de",
-   "bf8c532e93",
-   "37e6e640d7",
-   "b591073983",
-   "57676904db",
-   "0f46c34062",
    "5b59db8db2",
    "8b84fa44af",
    "776087f5d0",
@@ -52,38 +23,20 @@
    "75aae8d6aa",
    "e7a9298145",
    "8a097a1a6d",
-   "877fcf3d11"
+   "877fcf3d11",
+   "c540f8444b",
+   "8f3482d2b2",
+   "811b286c76",
+   "c634160237",
+   "d716514b9e",
+   "999248c9a2",
+   "010839849b",
+   "1059dad551",
+   "1759b9e73a",
+   "370c476f46",
+   "1ab7b8c4c5"
   ],
   "nuevos_desde": {
-   "9a39c0c22e": "2026-11-25T19:54-03:00",
-   "1a931aaf5e": "2026-11-25T19:54-03:00",
-   "73914e1402": "2026-11-25T19:54-03:00",
-   "fdb4185457": "2026-11-25T19:54-03:00",
-   "00640ed853": "2026-11-25T19:54-03:00",
-   "8119c13e58": "2026-11-25T19:54-03:00",
-   "603d090251": "2026-11-25T19:54-03:00",
-   "ad9213a82c": "2026-11-25T19:54-03:00",
-   "f4210440b7": "2026-11-25T19:54-03:00",
-   "2c06a67f30": "2026-11-25T19:54-03:00",
-   "25d116c432": "2026-11-25T19:54-03:00",
-   "6e147ff65f": "2026-11-25T19:54-03:00",
-   "2828dd3796": "2026-11-25T19:54-03:00",
-   "41cf345705": "2026-11-25T19:54-03:00",
-   "3200e82853": "2026-11-25T19:54-03:00",
-   "53ec5761e7": "2026-11-25T19:54-03:00",
-   "c7c70d6e93": "2026-11-25T19:54-03:00",
-   "98c59b0924": "2026-11-25T19:54-03:00",
-   "a70be69099": "2026-11-25T19:54-03:00",
-   "e6d4503146": "2026-11-25T19:54-03:00",
-   "eef65337d8": "2026-11-25T19:54-03:00",
-   "17e64ad6d6": "2026-11-25T19:54-03:00",
-   "7d819db0a9": "2026-11-25T19:54-03:00",
-   "ca9fa2a3de": "2026-11-25T19:54-03:00",
-   "bf8c532e93": "2026-11-25T19:54-03:00",
-   "37e6e640d7": "2026-11-25T19:54-03:00",
-   "b591073983": "2026-11-25T19:54-03:00",
-   "57676904db": "2026-11-25T19:54-03:00",
-   "0f46c34062": "2026-11-25T19:54-03:00",
    "5b59db8db2": "2026-11-26T02:26-03:00",
    "8b84fa44af": "2026-11-26T02:26-03:00",
    "776087f5d0": "2026-11-26T02:26-03:00",
@@ -99,24 +52,35 @@
    "75aae8d6aa": "2026-11-26T12:27-03:00",
    "e7a9298145": "2026-11-26T12:27-03:00",
    "8a097a1a6d": "2026-11-26T12:27-03:00",
-   "877fcf3d11": "2026-11-26T12:27-03:00"
+   "877fcf3d11": "2026-11-26T12:27-03:00",
+   "c540f8444b": "2026-11-26T21:04-03:00",
+   "8f3482d2b2": "2026-11-26T21:04-03:00",
+   "811b286c76": "2026-11-26T21:04-03:00",
+   "c634160237": "2026-11-26T21:04-03:00",
+   "d716514b9e": "2026-11-26T21:04-03:00",
+   "999248c9a2": "2026-11-26T21:04-03:00",
+   "010839849b": "2026-11-26T21:04-03:00",
+   "1059dad551": "2026-11-26T21:04-03:00",
+   "1759b9e73a": "2026-11-26T21:04-03:00",
+   "370c476f46": "2026-11-26T21:04-03:00",
+   "1ab7b8c4c5": "2026-11-26T21:04-03:00"
   },
   "horas_nuevos": 24,
-  "llamadas_ia": 15,
+  "llamadas_ia": 20,
   "ia_sin_cupo": false,
-  "ultima_completa": "2026-11-26T12:14-03:00",
+  "ultima_completa": "2026-11-26T20:52-03:00",
   "modo": "completa",
-  "paginas_revisadas": 12,
+  "paginas_revisadas": 18,
   "busquedas": 107,
   "fuentes_fijas": 9,
-  "errores": 16,
+  "errores": 11,
   "noticias_desde": "2026-11-26",
-  "noticias_viejas_descartadas": 355,
-  "redes_vistas": 1,
-  "generos_ia": 0,
-  "imagenes_encontradas": 3
+  "noticias_viejas_descartadas": 386,
+  "redes_vistas": 0,
+  "generos_ia": 2,
+  "imagenes_encontradas": 2
  },
- "total": 915,
+ "total": 926,
  "eventos": [
   {
    "titulo": "Mariposas y Polillas, Colores en Movimiento",
@@ -6785,11 +6749,11 @@
    "titulo": "Kaídos en Vivo: Una Noche de Hard Rock y Desvelo",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-26",
-   "fecha_fin": null,
+   "fecha_fin": "2026-11-27",
    "hora": "20:00",
    "horario": null,
    "lugar": "House of Rock & Blues Bar",
-   "direccion": null,
+   "direccion": "República de Israel 960, Ñuñoa, Región Metropolitana",
    "comuna": "Ñuñoa",
    "ciudad": null,
    "region": null,
@@ -6802,6 +6766,10 @@
     {
      "nombre": "VAMOH!",
      "url": "https://vamoh.cl/events/kaidos-en-vivo-una-noche-de-hard-rock-y-desvelo-en-house-rock-blues-5d9bx/"
+    },
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/kaidos-en-vivo-una-noche-de-hard-rock-y-desvelo-en-house-rock-blues-18537"
     }
    ],
    "desde_imagen": false,
@@ -6809,7 +6777,7 @@
    "origen": "datos-estructurados",
    "id": "ce8e5fa662",
    "agregado": "2026-11-08",
-   "actualizado": "2026-11-08",
+   "actualizado": "2026-11-26",
    "genero": "rock"
   },
   {
@@ -7162,6 +7130,36 @@
    "actualizado": "2026-11-26"
   },
   {
+   "titulo": "Pedro Ruminot en Bar Comedy",
+   "categoria": "standup",
+   "fecha_inicio": "2026-11-26",
+   "fecha_fin": null,
+   "hora": "22:30",
+   "horario": null,
+   "lugar": "Bar Comedy",
+   "direccion": "Malaga 892",
+   "comuna": "Las Condes",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Show de stand-up comedy de Pedro Ruminot en el Bar Comedy.",
+   "imagen": "https://www.comedy.cl/assets/managed/15d240b8b7100c9260f80f20c61090b0360e1d2859cc525db031b460102c19ed.webp",
+   "fotos": null,
+   "url": "https://www.comedy.cl/index.html",
+   "fuentes": [
+    {
+     "nombre": "comedy.cl",
+     "url": "https://www.comedy.cl/index.html"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "1ab7b8c4c5",
+   "agregado": "2026-11-26",
+   "actualizado": "2026-11-26"
+  },
+  {
    "titulo": "Nico Ruiz en Puerto Varas",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-26",
@@ -7313,6 +7311,36 @@
    "id": "5278478095",
    "agregado": "2026-11-11",
    "actualizado": "2026-11-11"
+  },
+  {
+   "titulo": "Exposiciones \"Sinapsis Musical\" y \"Cerámica: un espacio de creación en estado de encierro\"",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-26",
+   "fecha_fin": "2026-12-31",
+   "hora": null,
+   "horario": "Lun a vie, 09:00–18:00",
+   "lugar": "Galería de Arte del Campus Central, Universidad Autónoma",
+   "direccion": null,
+   "comuna": "Talca",
+   "ciudad": "Talca",
+   "region": "Región del Maule",
+   "precio": "Gratuito",
+   "descripcion": "Doble exposición de pintura abstracta de Luis Arteaga y obras en cerámica de la Penitenciaría de Curicó.",
+   "imagen": "https://www.uautonoma.cl/content/uploads/2026/11/IMG_8635.jpg",
+   "fotos": null,
+   "url": "https://www.uautonoma.cl/noticias/oleo-y-ceramica-visten-vitrinas/",
+   "fuentes": [
+    {
+     "nombre": "Universidad Autónoma de Chile",
+     "url": "https://www.uautonoma.cl/noticias/oleo-y-ceramica-visten-vitrinas/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "d716514b9e",
+   "agregado": "2026-11-26",
+   "actualizado": "2026-11-26"
   },
   {
    "titulo": "Feria de Homenaje al Libro Indígena e Intercultural",
@@ -9346,6 +9374,67 @@
    "actualizado": "2026-11-24"
   },
   {
+   "titulo": "Sebastián Mendoza en Concepción - Tour Legado",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "La Bodeguita de Nicanor",
+   "direccion": null,
+   "comuna": "Concepción",
+   "ciudad": "Concepción",
+   "region": "Biobío",
+   "precio": null,
+   "descripcion": "El referente de la cumbia norteña argentina, Sebastián Mendoza, se presenta en vivo con su 'Tour Legado'.",
+   "imagen": "https://www.corazon.cl/wp-content/uploads/2026/11/Sebastian-Mendoza-Santiago-y-concepcion.webp",
+   "fotos": null,
+   "url": "https://tuacceso.cl",
+   "fuentes": [
+    {
+     "nombre": "Radio Corazón",
+     "url": "https://www.corazon.cl/2026/11/sebastian-mendoza-regresa-a-chile-con-dos-conciertos-fechas-ciudades-y-donde-comprar-entradas-para-el-tour-legado/"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "1059dad551",
+   "agregado": "2026-11-26",
+   "actualizado": "2026-11-26",
+   "genero": "cumbia"
+  },
+  {
+   "titulo": "Tour Nocturno: Misterios y Esculturas",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Cementerio General",
+   "direccion": "Profesor Zañartu 951",
+   "comuna": "Recoleta",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "$9.000",
+   "descripcion": "Recorrido nocturno a pie por el Cementerio General enfocado en misterios y esculturas patrimoniales.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://tour.cementeriogeneral.cl/categoria-producto/tours-nocturnos/",
+   "fuentes": [
+    {
+     "nombre": "tour.cementeriogeneral.cl",
+     "url": "https://tour.cementeriogeneral.cl/categoria-producto/tours-nocturnos/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "010839849b",
+   "agregado": "2026-11-26",
+   "actualizado": "2026-11-26"
+  },
+  {
    "titulo": "Yo, Comediante - Stand Up",
    "categoria": "standup",
    "fecha_inicio": "2026-11-27",
@@ -10777,6 +10866,37 @@
    "actualizado": "2026-11-21"
   },
   {
+   "titulo": "28/11 Sábado de Conciertos - Ventisquero en el Huaso Enrique",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": "2026-11-29",
+   "hora": "21:30",
+   "horario": null,
+   "lugar": "El Huaso Enrique",
+   "direccion": "Maipú 462, 8350432 Santiago, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "🇨🇱 IMPORTANTE 🇨🇱 Una vez comprada la entrada debe escribir VIA WHATSAPP de forma OBLIGATORIA al +56920701885 para reservar su m",
+   "imagen": "https://cdn.keai.cl/events/21895-a1fc56d9bca91c30d7f4ff7f2eb7713d.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/2811-sabado-de-conciertos-ventisquero-en-el-huaso-enrique-21895",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/2811-sabado-de-conciertos-ventisquero-en-el-huaso-enrique-21895"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "c540f8444b",
+   "agregado": "2026-11-26",
+   "actualizado": "2026-11-26",
+   "genero": "folclor"
+  },
+  {
    "titulo": "Comedia Fuerte",
    "categoria": "standup",
    "fecha_inicio": "2026-11-28",
@@ -11388,6 +11508,37 @@
    "agregado": "2026-11-22",
    "actualizado": "2026-11-22",
    "genero": "electronica"
+  },
+  {
+   "titulo": "Sebastián Mendoza en Santiago - Tour Legado",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Ruta 78",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "El referente de la cumbia norteña argentina, Sebastián Mendoza, llega a Santiago con su 'Tour Legado'.",
+   "imagen": "https://www.corazon.cl/wp-content/uploads/2026/11/Sebastian-Mendoza-Santiago-y-concepcion.webp",
+   "fotos": null,
+   "url": "https://passline.com",
+   "fuentes": [
+    {
+     "nombre": "Radio Corazón",
+     "url": "https://www.corazon.cl/2026/11/sebastian-mendoza-regresa-a-chile-con-dos-conciertos-fechas-ciudades-y-donde-comprar-entradas-para-el-tour-legado/"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "1759b9e73a",
+   "agregado": "2026-11-26",
+   "actualizado": "2026-11-26",
+   "genero": "cumbia"
   },
   {
    "titulo": "Undertale Sinfónico",
@@ -12054,6 +12205,36 @@
    "agregado": "2026-11-07",
    "actualizado": "2026-11-07",
    "genero": "metal"
+  },
+  {
+   "titulo": "Concurso de Cosplay Umamusume en Club Hípico",
+   "categoria": "anime",
+   "fecha_inicio": "2026-11-29",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Club Hípico de Santiago",
+   "direccion": "Blanco Encalada 2540",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concurso al mejor cosplay de la franquicia Umamusume: Pretty Derby en el marco de El Ensayo Mega 2026.",
+   "imagen": "https://www.alertageekchile.cl/wp-content/uploads/2026/11/Banner-noticia-Umamusume-Chile.jpg",
+   "fotos": null,
+   "url": "https://www.alertageekchile.cl/2026/11/26/club-hipico-de-santiago-confirma-actividad-de-umamusume-para-este-domingo-cambia-las-carreras-por-concurso-al-mejor-cosplay/",
+   "fuentes": [
+    {
+     "nombre": "Alerta Geek",
+     "url": "https://www.alertageekchile.cl/2026/11/26/club-hipico-de-santiago-confirma-actividad-de-umamusume-para-este-domingo-cambia-las-carreras-por-concurso-al-mejor-cosplay/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "811b286c76",
+   "agregado": "2026-11-26",
+   "actualizado": "2026-11-26"
   },
   {
    "titulo": "Los Dos Carnales",
@@ -13688,6 +13869,10 @@
     {
      "nombre": "Página 7",
      "url": "https://www.pagina7.cl/entretencion/festival-in-edit-chile-2026-documentales-actividades-horarios-y-venta-de-entradas/"
+    },
+    {
+     "nombre": "Home - Radio Agricultura",
+     "url": "https://www.radioagricultura.cl/entretencion/hoy-se-sale/festival-in-edit-chile-2026-programacion-actividades-gratis_20261126/"
     }
    ],
    "desde_imagen": false,
@@ -13695,7 +13880,7 @@
    "origen": "ia",
    "id": "983bac8352",
    "agregado": "2026-11-24",
-   "actualizado": "2026-11-24",
+   "actualizado": "2026-11-26",
    "genero": "otros"
   },
   {
@@ -14540,7 +14725,7 @@
    "origen": "ia",
    "id": "f21b5cd6a0",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-24",
+   "actualizado": "2026-11-26",
    "genero": "reggaeton"
   },
   {
@@ -15150,6 +15335,36 @@
    "genero": "otros"
   },
   {
+   "titulo": "La Japanese Feria Edición Navideña",
+   "categoria": "yokai",
+   "fecha_inicio": "2026-12-05",
+   "fecha_fin": null,
+   "hora": "13:00",
+   "horario": null,
+   "lugar": "Frontis Museo MAC",
+   "direccion": "Plazoleta Francisco Brugnoli",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Edición navideña de feria temática japonesa con emprendimientos, cultura y tradición.",
+   "imagen": "https://salirsantiago.com/og.png",
+   "fotos": null,
+   "url": "https://salirsantiago.com/panoramas/feria-de-diseno/navidad",
+   "fuentes": [
+    {
+     "nombre": "Salir Santiago",
+     "url": "https://salirsantiago.com/panoramas/feria-de-diseno/navidad"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "999248c9a2",
+   "agregado": "2026-11-26",
+   "actualizado": "2026-11-26"
+  },
+  {
    "titulo": "Revolution Rock Festival",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-05",
@@ -15695,6 +15910,36 @@
    "id": "14a0593db3",
    "agregado": "2026-11-10",
    "actualizado": "2026-11-10"
+  },
+  {
+   "titulo": "Variete Cultural Clandestina en Santiago",
+   "categoria": "standup",
+   "fecha_inicio": "2026-12-05",
+   "fecha_fin": "2026-12-06",
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Lugar Secreto",
+   "direccion": "Se anunciará al comprar el ticket",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "La Varieté Cultural Clandestina, es un encuentro artístico alternativo que reúne música, teatro, poesía, humor, circo y performance en un ambiente íntimo, bohem",
+   "imagen": "https://cdn.keai.cl/events/21893-4a98eb76273926145ac31c1dfb9ecee0.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/variete-cultural-clandestina-en-santiago-21893",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/variete-cultural-clandestina-en-santiago-21893"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "370c476f46",
+   "agregado": "2026-11-26",
+   "actualizado": "2026-11-26"
   },
   {
    "titulo": "Ángel Parra Trío",
@@ -28472,6 +28717,37 @@
    "genero": "clasica"
   },
   {
+   "titulo": "La Otra + Amigos en Sala Máster",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-03-19",
+   "fecha_fin": "2027-03-20",
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Sala Master",
+   "direccion": "Miguel Claro 509, 7500695 Providencia, Región Metropolitana",
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "La Otra se despide de su gira por Chile 2027 con un concierto íntimo, en la que participarán diversos artistas de la escena musical chilena. Un broche de oro pa",
+   "imagen": "https://cdn.keai.cl/events/21902-2b2097cddeb869941e85190d3445bd3c.jpg",
+   "fotos": null,
+   "url": "https://keai.cl/evento/la-otra-amigos-en-sala-master-21902",
+   "fuentes": [
+    {
+     "nombre": "Keai",
+     "url": "https://keai.cl/evento/la-otra-amigos-en-sala-master-21902"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "8f3482d2b2",
+   "agregado": "2026-11-26",
+   "actualizado": "2026-11-26",
+   "genero": "indie"
+  },
+  {
    "titulo": "Estereo Picnic 2027",
    "categoria": "conciertos",
    "fecha_inicio": "2027-03-19",
@@ -28645,6 +28921,37 @@
    "agregado": "2026-11-15",
    "actualizado": "2026-11-15",
    "genero": "indie"
+  },
+  {
+   "titulo": "Pretty Boy Floyd en Chile",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-03-24",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Sala RBX",
+   "direccion": "Vicuña Mackenna 2820",
+   "comuna": "Ñuñoa",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "La banda estadounidense de glam metal Pretty Boy Floyd se presenta en vivo en Sala RBX trayendo los clásicos de su álbum debut.",
+   "imagen": "https://www.futuro.cl/wp-content/uploads/2026/11/Pretty-Boy-Floyd.webp",
+   "fotos": null,
+   "url": "https://www.portaltickets.cl",
+   "fuentes": [
+    {
+     "nombre": "Futuro Chile",
+     "url": "https://www.futuro.cl/2026/11/pretty-boy-floyd-trae-de-vuelta-el-desenfreno-del-glam-metal-de-hollywood-con-show-en-santiago/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "c634160237",
+   "agregado": "2026-11-26",
+   "actualizado": "2026-11-26",
+   "genero": "metal"
   },
   {
    "titulo": "Pixies - Santander Arena - Teatro del Lago",
