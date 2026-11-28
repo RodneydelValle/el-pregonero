@@ -1,23 +1,13 @@
 {
  "version": 1,
- "actualizado": "2026-11-27T16:19-03:00",
+ "actualizado": "2026-11-27T23:19-03:00",
  "zona_horaria": "America/Santiago",
  "ultima_busqueda": {
-  "fecha": "2026-11-27T16:19-03:00",
+  "fecha": "2026-11-27T23:19-03:00",
   "origen": "github-actions",
-  "eventos_nuevos": 41,
-  "nuevos_esta_vez": 27,
+  "eventos_nuevos": 49,
+  "nuevos_esta_vez": 18,
   "nuevos_ids": [
-   "c540f8444b",
-   "8f3482d2b2",
-   "811b286c76",
-   "c634160237",
-   "d716514b9e",
-   "999248c9a2",
-   "010839849b",
-   "1059dad551",
-   "1759b9e73a",
-   "370c476f46",
    "05047d792f",
    "9d7ce311f2",
    "ea2d00e139",
@@ -48,19 +38,27 @@
    "6c47e99dff",
    "09eecd1177",
    "67c4e8a36f",
-   "7e8c45619d"
+   "7e8c45619d",
+   "8a5857ae18",
+   "23eb60126f",
+   "3a140a232f",
+   "06942f7533",
+   "6c55e486b4",
+   "46caf9a501",
+   "017c18a070",
+   "8ac3daa66b",
+   "76026f4033",
+   "0c9bd3a100",
+   "4772b0c87c",
+   "2130d9e1f1",
+   "e0564581ac",
+   "8ee9f970a6",
+   "3e0e1cc33d",
+   "89f48ddecb",
+   "815c1fdafa",
+   "96e43008fd"
   ],
   "nuevos_desde": {
-   "c540f8444b": "2026-11-26T21:04-03:00",
-   "8f3482d2b2": "2026-11-26T21:04-03:00",
-   "811b286c76": "2026-11-26T21:04-03:00",
-   "c634160237": "2026-11-26T21:04-03:00",
-   "d716514b9e": "2026-11-26T21:04-03:00",
-   "999248c9a2": "2026-11-26T21:04-03:00",
-   "010839849b": "2026-11-26T21:04-03:00",
-   "1059dad551": "2026-11-26T21:04-03:00",
-   "1759b9e73a": "2026-11-26T21:04-03:00",
-   "370c476f46": "2026-11-26T21:04-03:00",
    "05047d792f": "2026-11-27T05:46-03:00",
    "9d7ce311f2": "2026-11-27T05:46-03:00",
    "ea2d00e139": "2026-11-27T05:46-03:00",
@@ -91,24 +89,42 @@
    "6c47e99dff": "2026-11-27T16:19-03:00",
    "09eecd1177": "2026-11-27T16:19-03:00",
    "67c4e8a36f": "2026-11-27T16:19-03:00",
-   "7e8c45619d": "2026-11-27T16:19-03:00"
+   "7e8c45619d": "2026-11-27T16:19-03:00",
+   "8a5857ae18": "2026-11-27T23:19-03:00",
+   "23eb60126f": "2026-11-27T23:19-03:00",
+   "3a140a232f": "2026-11-27T23:19-03:00",
+   "06942f7533": "2026-11-27T23:19-03:00",
+   "6c55e486b4": "2026-11-27T23:19-03:00",
+   "46caf9a501": "2026-11-27T23:19-03:00",
+   "017c18a070": "2026-11-27T23:19-03:00",
+   "8ac3daa66b": "2026-11-27T23:19-03:00",
+   "76026f4033": "2026-11-27T23:19-03:00",
+   "0c9bd3a100": "2026-11-27T23:19-03:00",
+   "4772b0c87c": "2026-11-27T23:19-03:00",
+   "2130d9e1f1": "2026-11-27T23:19-03:00",
+   "e0564581ac": "2026-11-27T23:19-03:00",
+   "8ee9f970a6": "2026-11-27T23:19-03:00",
+   "3e0e1cc33d": "2026-11-27T23:19-03:00",
+   "89f48ddecb": "2026-11-27T23:19-03:00",
+   "815c1fdafa": "2026-11-27T23:19-03:00",
+   "96e43008fd": "2026-11-27T23:19-03:00"
   },
   "horas_nuevos": 24,
-  "llamadas_ia": 41,
+  "llamadas_ia": 25,
   "ia_sin_cupo": false,
-  "ultima_completa": "2026-11-27T15:57-03:00",
+  "ultima_completa": "2026-11-27T22:58-03:00",
   "modo": "completa",
-  "paginas_revisadas": 39,
+  "paginas_revisadas": 24,
   "busquedas": 107,
   "fuentes_fijas": 10,
-  "errores": 9,
+  "errores": 8,
   "noticias_desde": "2026-11-27",
-  "noticias_viejas_descartadas": 407,
-  "redes_vistas": 1,
-  "generos_ia": 3,
-  "imagenes_encontradas": 16
+  "noticias_viejas_descartadas": 421,
+  "redes_vistas": 0,
+  "generos_ia": 2,
+  "imagenes_encontradas": 0
  },
- "total": 911,
+ "total": 929,
  "eventos": [
   {
    "titulo": "Mariposas y Polillas, Colores en Movimiento",
@@ -5905,6 +5921,69 @@
    "actualizado": "2026-11-25"
   },
   {
+   "titulo": "Festival Fauna Primavera 2026",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-26",
+   "fecha_fin": "2026-11-28",
+   "hora": "16:00",
+   "horario": null,
+   "lugar": "Parque Ciudad Empresarial",
+   "direccion": "Av. del Valle 850",
+   "comuna": "Huechuraba",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $60.000",
+   "descripcion": "Festival de rock y música alternativa con The Strokes, New Order, Johnny Marr y más.",
+   "imagen": "https://static.ptocdn.net/images/eventos/fna377v2_rs.jpg",
+   "fotos": null,
+   "url": "https://puntoticket.com",
+   "fuentes": [
+    {
+     "nombre": "Poleras de Rock",
+     "url": "https://polerasderock.cl/pages/proximos-conciertos"
+    },
+    {
+     "nombre": "Inside Santiago",
+     "url": "https://insidesantiago.com/events"
+    },
+    {
+     "nombre": "Rockaxis",
+     "url": "https://www.rockaxis.com/rock/noticia/45300/entrada-en-mano-los-conciertos-que-se-vienen/"
+    },
+    {
+     "nombre": "lareinadeldato.cl",
+     "url": "https://lareinadeldato.cl/datos/panoramas-culturales-noviembre-2026-en-santiago/"
+    },
+    {
+     "nombre": "Tusdj Latinoamérica",
+     "url": "https://www.tusdj.com/fiestas/santiago/"
+    },
+    {
+     "nombre": "Suitip",
+     "url": "https://www.suitip.cl/panoramas/guia/este-fin-de-semana"
+    },
+    {
+     "nombre": "puntoticket.com",
+     "url": "https://www.puntoticket.com/teatro"
+    },
+    {
+     "nombre": "FMDOS",
+     "url": "https://www.fmdos.cl/noticias/5-panoramas-en-santiago-para-este-fin-de-semana-que-hacer-este-27-28-y-29-de-noviembre/"
+    },
+    {
+     "nombre": "El Dínamo | Noticias de Chile y el mundo",
+     "url": "https://www.eldinamo.cl/entretencion/panoramas/2026/11/26/no-importa-el-calor-fauna-primavera-gorillaz-filarmonica-al-parque-y-dos-exposiciones-imperdibles/"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "03e4173194",
+   "agregado": "2026-11-08",
+   "actualizado": "2026-11-27",
+   "genero": "indie"
+  },
+  {
    "titulo": "Inauguración exposición: “Criaturas del Sol” de Javier Coronado",
    "categoria": "museos",
    "fecha_inicio": "2026-11-26",
@@ -6220,65 +6299,6 @@
    "actualizado": "2026-11-22"
   },
   {
-   "titulo": "Festival Fauna Primavera 2026",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-26",
-   "fecha_fin": "2026-11-28",
-   "hora": null,
-   "horario": null,
-   "lugar": "Parque Ciudad Empresarial",
-   "direccion": "Av. del Valle 850",
-   "comuna": "Huechuraba",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Desde $60.000",
-   "descripcion": "Festival de rock y música alternativa con The Strokes, New Order, Johnny Marr y más.",
-   "imagen": "https://static.ptocdn.net/images/eventos/fna377v2_rs.jpg",
-   "fotos": null,
-   "url": "https://puntoticket.com",
-   "fuentes": [
-    {
-     "nombre": "Poleras de Rock",
-     "url": "https://polerasderock.cl/pages/proximos-conciertos"
-    },
-    {
-     "nombre": "Inside Santiago",
-     "url": "https://insidesantiago.com/events"
-    },
-    {
-     "nombre": "Rockaxis",
-     "url": "https://www.rockaxis.com/rock/noticia/45300/entrada-en-mano-los-conciertos-que-se-vienen/"
-    },
-    {
-     "nombre": "lareinadeldato.cl",
-     "url": "https://lareinadeldato.cl/datos/panoramas-culturales-noviembre-2026-en-santiago/"
-    },
-    {
-     "nombre": "Tusdj Latinoamérica",
-     "url": "https://www.tusdj.com/fiestas/santiago/"
-    },
-    {
-     "nombre": "Suitip",
-     "url": "https://www.suitip.cl/panoramas/guia/este-fin-de-semana"
-    },
-    {
-     "nombre": "puntoticket.com",
-     "url": "https://www.puntoticket.com/teatro"
-    },
-    {
-     "nombre": "FMDOS",
-     "url": "https://www.fmdos.cl/noticias/5-panoramas-en-santiago-para-este-fin-de-semana-que-hacer-este-27-28-y-29-de-noviembre/"
-    }
-   ],
-   "desde_imagen": true,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "03e4173194",
-   "agregado": "2026-11-08",
-   "actualizado": "2026-11-27",
-   "genero": "indie"
-  },
-  {
    "titulo": "Inédita exposición de teléfonos y lentes del Cardenal Chomali",
    "categoria": "museos",
    "fecha_inicio": "2026-11-26",
@@ -6524,6 +6544,37 @@
    "actualizado": "2026-11-22"
   },
   {
+   "titulo": "Festival de la Voz Escolar y Tomy Rey, El Legado",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": null,
+   "hora": "17:00",
+   "horario": null,
+   "lugar": "Plaza de Armas de Lampa",
+   "direccion": null,
+   "comuna": "Lampa",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Festival de la voz escolar con presentación especial de Tomy Rey, El Legado.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.chicureohoy.cl/panoramas/teatro-musica-y-ferias-los-panoramas-para-este-fin-de-semana-en-la-zona-norte-de-la-rm/",
+   "fuentes": [
+    {
+     "nombre": "Chicureo Hoy",
+     "url": "https://www.chicureohoy.cl/panoramas/teatro-musica-y-ferias-los-panoramas-para-este-fin-de-semana-en-la-zona-norte-de-la-rm/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "76026f4033",
+   "agregado": "2026-11-27",
+   "actualizado": "2026-11-27",
+   "genero": "cumbia"
+  },
+  {
    "titulo": "Concierto «Chiloé Bicentenario» de la Orquesta de Cámara de Puerto Montt en Ancud",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-27",
@@ -6552,6 +6603,37 @@
    "id": "b30ad6ce8e",
    "agregado": "2026-11-14",
    "actualizado": "2026-11-14",
+   "genero": "clasica"
+  },
+  {
+   "titulo": "20° Festival de Orquestas Juveniles Fernando Rosas - Concierto de Cierre",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Teatro Municipal de Santiago",
+   "direccion": "Agustinas 794",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto de cierre del 20° Festival de Orquestas Juveniles Fernando Rosas por la OSNJ y la Filarmónica de Santiago.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://foji.cl/agenda-foji/",
+   "fuentes": [
+    {
+     "nombre": "foji.cl",
+     "url": "https://foji.cl/agenda-foji/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "3e0e1cc33d",
+   "agregado": "2026-11-27",
+   "actualizado": "2026-11-27",
    "genero": "clasica"
   },
   {
@@ -6618,6 +6700,36 @@
    "id": "2e88b12792",
    "agregado": "2026-11-17",
    "actualizado": "2026-11-24"
+  },
+  {
+   "titulo": "Obra “¡No estamos locos! (Somos diferentes)”",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Centro Cultural de Tiltil",
+   "direccion": "Arturo Prat 215",
+   "comuna": "Tiltil",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Comedia basada en una versión libre de la obra “TOC TOC” de Laurent Baffie.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.chicureohoy.cl/panoramas/teatro-musica-y-ferias-los-panoramas-para-este-fin-de-semana-en-la-zona-norte-de-la-rm/",
+   "fuentes": [
+    {
+     "nombre": "Chicureo Hoy",
+     "url": "https://www.chicureohoy.cl/panoramas/teatro-musica-y-ferias-los-panoramas-para-este-fin-de-semana-en-la-zona-norte-de-la-rm/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "815c1fdafa",
+   "agregado": "2026-11-27",
+   "actualizado": "2026-11-27"
   },
   {
    "titulo": "Torneo Pauper Magic4ever",
@@ -7019,6 +7131,37 @@
    "genero": "rock"
   },
   {
+   "titulo": "Jazz en Cochiguaz",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Refugio El Colorao",
+   "direccion": null,
+   "comuna": "Cochiguaz",
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Jazz en Cochiguaz en Refugio El Colorao, Cochiguaz. Cupos limitados · reservas +56 9 8878 9342",
+   "imagen": "https://chilejazz.cl/assets/images/logo-redes-487-x-487-px-2.png",
+   "fotos": null,
+   "url": "https://chilejazz.cl/conciertos.html",
+   "fuentes": [
+    {
+     "nombre": "Portal Chile Jazz Fest",
+     "url": "https://chilejazz.cl/conciertos.html"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "2130d9e1f1",
+   "agregado": "2026-11-27",
+   "actualizado": "2026-11-27",
+   "genero": "jazz"
+  },
+  {
    "titulo": "Jorge Alís - MALON",
    "categoria": "standup",
    "fecha_inicio": "2026-11-27",
@@ -7055,6 +7198,37 @@
    "id": "4ee15b5c20",
    "agregado": "2026-11-13",
    "actualizado": "2026-11-25"
+  },
+  {
+   "titulo": "Concierto al aire libre Filarmónica de Santiago y FOJI",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": null,
+   "hora": "20:30",
+   "horario": null,
+   "lugar": "Parque Araucano",
+   "direccion": null,
+   "comuna": "Las Condes",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Más de 120 músicos bajo la dirección de Paolo Bortolameolli en un espectáculo sinfónico.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.chicureohoy.cl/panoramas/teatro-musica-y-ferias-los-panoramas-para-este-fin-de-semana-en-la-zona-norte-de-la-rm/",
+   "fuentes": [
+    {
+     "nombre": "Chicureo Hoy",
+     "url": "https://www.chicureohoy.cl/panoramas/teatro-musica-y-ferias-los-panoramas-para-este-fin-de-semana-en-la-zona-norte-de-la-rm/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "0c9bd3a100",
+   "agregado": "2026-11-27",
+   "actualizado": "2026-11-27",
+   "genero": "clasica"
   },
   {
    "titulo": "Los Disociados",
@@ -7312,6 +7486,41 @@
    "genero": "metal"
   },
   {
+   "titulo": "Sebastián Mendoza en Concepción - Tour Legado",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": null,
+   "hora": "21:00",
+   "horario": null,
+   "lugar": "La Bodeguita de Nicanor",
+   "direccion": "Aníbal Pinto 1661",
+   "comuna": "Concepción",
+   "ciudad": "Concepción",
+   "region": "Biobío",
+   "precio": null,
+   "descripcion": "El referente de la cumbia norteña argentina, Sebastián Mendoza, se presenta en vivo con su 'Tour Legado'.",
+   "imagen": "https://www.corazon.cl/wp-content/uploads/2026/11/Sebastian-Mendoza-Santiago-y-concepcion.webp",
+   "fotos": null,
+   "url": "https://tuacceso.cl",
+   "fuentes": [
+    {
+     "nombre": "Radio Corazón",
+     "url": "https://www.corazon.cl/2026/11/sebastian-mendoza-regresa-a-chile-con-dos-conciertos-fechas-ciudades-y-donde-comprar-entradas-para-el-tour-legado/"
+    },
+    {
+     "nombre": "aquitedateamos.cl",
+     "url": "https://aquitedateamos.cl/sebastian-mendoza-regresa-a-chile-con-su-tour-legado-dos-unicos-conciertos-en-concepcion-y-santiago/"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "1059dad551",
+   "agregado": "2026-11-26",
+   "actualizado": "2026-11-27",
+   "genero": "cumbia"
+  },
+  {
    "titulo": "Shakespeare Se Arrienda",
    "categoria": "teatro",
    "fecha_inicio": "2026-11-27",
@@ -7445,6 +7654,68 @@
    "agregado": "2026-11-24",
    "actualizado": "2026-11-24",
    "genero": "jazz"
+  },
+  {
+   "titulo": "Jam Session del Centro Cultural de Jazz de Valdivia · Roberto Sánchez",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": null,
+   "hora": "21:30",
+   "horario": null,
+   "lugar": "Café With Love",
+   "direccion": "Yungay 735",
+   "comuna": "Valdivia",
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Jam Session del Centro Cultural de Jazz de Valdivia · Roberto Sánchez en Café With Love, Valdivia. Yungay 735 · con Alexander Squiff y Jesús Leyton · $5.000, músicos que tocan gratis",
+   "imagen": "https://chilejazz.cl/assets/images/logo-redes-487-x-487-px-2.png",
+   "fotos": null,
+   "url": "https://chilejazz.cl/conciertos.html",
+   "fuentes": [
+    {
+     "nombre": "Portal Chile Jazz Fest",
+     "url": "https://chilejazz.cl/conciertos.html"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "4772b0c87c",
+   "agregado": "2026-11-27",
+   "actualizado": "2026-11-27",
+   "genero": "jazz"
+  },
+  {
+   "titulo": "Rock en vivo con Rock & Road",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": null,
+   "hora": "21:30",
+   "horario": null,
+   "lugar": "El Establo",
+   "direccion": null,
+   "comuna": "Colina",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Presentación en vivo de la agrupación Rock & Road interpretando clásicos del rock de los 70 y 80.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.chicureohoy.cl/panoramas/teatro-musica-y-ferias-los-panoramas-para-este-fin-de-semana-en-la-zona-norte-de-la-rm/",
+   "fuentes": [
+    {
+     "nombre": "Chicureo Hoy",
+     "url": "https://www.chicureohoy.cl/panoramas/teatro-musica-y-ferias-los-panoramas-para-este-fin-de-semana-en-la-zona-norte-de-la-rm/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "017c18a070",
+   "agregado": "2026-11-27",
+   "actualizado": "2026-11-27",
+   "genero": "rock"
   },
   {
    "titulo": "Arpías y Arcanos",
@@ -7668,6 +7939,36 @@
    "agregado": "2026-11-15",
    "actualizado": "2026-11-23",
    "genero": "otros"
+  },
+  {
+   "titulo": "Cantineras, Heroínas en la Guerra del Pacífico",
+   "categoria": "museos",
+   "fecha_inicio": "2026-11-27",
+   "fecha_fin": "2027-01-29",
+   "hora": null,
+   "horario": "Mar a vie 09:30–16:30, Sáb 10:00–14:00",
+   "lugar": "Museo Histórico y Militar de Chile",
+   "direccion": "Avenida Blanco Encalada 1550",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Exposición escultórica del Dr. Héctor Valdés que homenajea a las mujeres cantineras de la Guerra del Pacífico.",
+   "imagen": "https://archivos2.nyc3.digitaloceanspaces.com/elmauleinforma/wp-content/uploads/2026/11/27081728/IMG-20261126-WA1062.jpg",
+   "fotos": null,
+   "url": "https://elmauleinforma.cl/inauguran-en-santiago-exposicion-escultorica-sobre-las-mujeres-cantineras-de-la-guerra-del-pacifico/",
+   "fuentes": [
+    {
+     "nombre": "El Maule Informa",
+     "url": "https://elmauleinforma.cl/inauguran-en-santiago-exposicion-escultorica-sobre-las-mujeres-cantineras-de-la-guerra-del-pacifico/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "46caf9a501",
+   "agregado": "2026-11-27",
+   "actualizado": "2026-11-27"
   },
   {
    "titulo": "Carta de amor",
@@ -8162,37 +8463,6 @@
    "actualizado": "2026-11-24"
   },
   {
-   "titulo": "Sebastián Mendoza en Concepción - Tour Legado",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-11-27",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": null,
-   "lugar": "La Bodeguita de Nicanor",
-   "direccion": null,
-   "comuna": "Concepción",
-   "ciudad": "Concepción",
-   "region": "Biobío",
-   "precio": null,
-   "descripcion": "El referente de la cumbia norteña argentina, Sebastián Mendoza, se presenta en vivo con su 'Tour Legado'.",
-   "imagen": "https://www.corazon.cl/wp-content/uploads/2026/11/Sebastian-Mendoza-Santiago-y-concepcion.webp",
-   "fotos": null,
-   "url": "https://tuacceso.cl",
-   "fuentes": [
-    {
-     "nombre": "Radio Corazón",
-     "url": "https://www.corazon.cl/2026/11/sebastian-mendoza-regresa-a-chile-con-dos-conciertos-fechas-ciudades-y-donde-comprar-entradas-para-el-tour-legado/"
-    }
-   ],
-   "desde_imagen": true,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "1059dad551",
-   "agregado": "2026-11-26",
-   "actualizado": "2026-11-26",
-   "genero": "cumbia"
-  },
-  {
    "titulo": "Tour Nocturno: Misterios y Esculturas",
    "categoria": "museos",
    "fecha_inicio": "2026-11-27",
@@ -8498,6 +8768,36 @@
    "origen": "ia",
    "id": "cb243c58ab",
    "agregado": "2026-11-19",
+   "actualizado": "2026-11-27"
+  },
+  {
+   "titulo": "Feria MyyHobbys Chicureo",
+   "categoria": "juegos",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": "11:00",
+   "horario": "11:00–19:00",
+   "lugar": "Laguna Piedra Roja",
+   "direccion": null,
+   "comuna": "Colina",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Segunda edición de la feria dedicada al coleccionismo, el modelismo y distintas aficiones.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.chicureohoy.cl/panoramas/teatro-musica-y-ferias-los-panoramas-para-este-fin-de-semana-en-la-zona-norte-de-la-rm/",
+   "fuentes": [
+    {
+     "nombre": "Chicureo Hoy",
+     "url": "https://www.chicureohoy.cl/panoramas/teatro-musica-y-ferias-los-panoramas-para-este-fin-de-semana-en-la-zona-norte-de-la-rm/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "8ac3daa66b",
+   "agregado": "2026-11-27",
    "actualizado": "2026-11-27"
   },
   {
@@ -9174,6 +9474,36 @@
    "actualizado": "2026-11-26"
   },
   {
+   "titulo": "Obra “Juan Salvador Tramoya”",
+   "categoria": "teatro",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Centro Cultural de Tiltil",
+   "direccion": "Arturo Prat 215",
+   "comuna": "Tiltil",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Montaje de La Mona Ilustre que combina humor y fantasía para mayores de 8 años.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.chicureohoy.cl/panoramas/teatro-musica-y-ferias-los-panoramas-para-este-fin-de-semana-en-la-zona-norte-de-la-rm/",
+   "fuentes": [
+    {
+     "nombre": "Chicureo Hoy",
+     "url": "https://www.chicureohoy.cl/panoramas/teatro-musica-y-ferias-los-panoramas-para-este-fin-de-semana-en-la-zona-norte-de-la-rm/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "96e43008fd",
+   "agregado": "2026-11-27",
+   "actualizado": "2026-11-27"
+  },
+  {
    "titulo": "Show de Stand up-Las mal portadas- Sábado 28 Noviembre 19hrs",
    "categoria": "standup",
    "fecha_inicio": "2026-11-28",
@@ -9463,6 +9793,41 @@
    "genero": "indie"
   },
   {
+   "titulo": "Sebastián Mendoza en Santiago - Tour Legado",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-11-28",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": null,
+   "lugar": "Ruta 78",
+   "direccion": "Independencia 043",
+   "comuna": "Puente Alto",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "El referente de la cumbia norteña argentina, Sebastián Mendoza, llega a Santiago con su 'Tour Legado'.",
+   "imagen": "https://www.corazon.cl/wp-content/uploads/2026/11/Sebastian-Mendoza-Santiago-y-concepcion.webp",
+   "fotos": null,
+   "url": "https://passline.com",
+   "fuentes": [
+    {
+     "nombre": "Radio Corazón",
+     "url": "https://www.corazon.cl/2026/11/sebastian-mendoza-regresa-a-chile-con-dos-conciertos-fechas-ciudades-y-donde-comprar-entradas-para-el-tour-legado/"
+    },
+    {
+     "nombre": "aquitedateamos.cl",
+     "url": "https://aquitedateamos.cl/sebastian-mendoza-regresa-a-chile-con-su-tour-legado-dos-unicos-conciertos-en-concepcion-y-santiago/"
+    }
+   ],
+   "desde_imagen": true,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "1759b9e73a",
+   "agregado": "2026-11-26",
+   "actualizado": "2026-11-27",
+   "genero": "cumbia"
+  },
+  {
    "titulo": "Vicho Viciani",
    "categoria": "standup",
    "fecha_inicio": "2026-11-28",
@@ -9525,6 +9890,18 @@
     {
      "nombre": "La Tercera",
      "url": "https://www.latercera.com/finde/noticia/guia-del-ocio-panoramas-escogidos-para-el-fin-de-semana-del-28-y-29-de-noviembre/"
+    },
+    {
+     "nombre": "El Dínamo | Noticias de Chile y el mundo",
+     "url": "https://www.eldinamo.cl/entretencion/panoramas/2026/11/26/no-importa-el-calor-fauna-primavera-gorillaz-filarmonica-al-parque-y-dos-exposiciones-imperdibles/"
+    },
+    {
+     "nombre": "Portal Metropolitano",
+     "url": "https://portalmetropolitano.cl/filarmonica-al-parque-concierto-gratuito-reunira-a-mas-de-120-musicos-en-las-condes/"
+    },
+    {
+     "nombre": "foji.cl",
+     "url": "https://foji.cl/agenda-foji/"
     }
    ],
    "desde_imagen": false,
@@ -10113,7 +10490,7 @@
    "origen": "datos-estructurados",
    "id": "ada5189e80",
    "agregado": "2026-11-22",
-   "actualizado": "2026-11-22",
+   "actualizado": "2026-11-27",
    "genero": "jazz"
   },
   {
@@ -10374,35 +10751,35 @@
    "genero": "electronica"
   },
   {
-   "titulo": "Sebastián Mendoza en Santiago - Tour Legado",
+   "titulo": "Robinson Khoury MŸA · debut en Chile",
    "categoria": "conciertos",
    "fecha_inicio": "2026-11-28",
    "fecha_fin": null,
    "hora": null,
    "horario": null,
-   "lugar": "Ruta 78",
+   "lugar": "Teatro Nescafé de las Artes",
    "direccion": null,
-   "comuna": null,
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
+   "comuna": "Santiago",
+   "ciudad": null,
+   "region": null,
    "precio": null,
-   "descripcion": "El referente de la cumbia norteña argentina, Sebastián Mendoza, llega a Santiago con su 'Tour Legado'.",
-   "imagen": "https://www.corazon.cl/wp-content/uploads/2026/11/Sebastian-Mendoza-Santiago-y-concepcion.webp",
+   "descripcion": "Robinson Khoury MŸA · debut en Chile en Teatro Nescafé de las Artes, Santiago. Trombonista francés · jazz, música árabe, funk y electrónica",
+   "imagen": "https://chilejazz.cl/assets/images/logo-redes-487-x-487-px-2.png",
    "fotos": null,
-   "url": "https://passline.com",
+   "url": "https://chilejazz.cl/conciertos.html",
    "fuentes": [
     {
-     "nombre": "Radio Corazón",
-     "url": "https://www.corazon.cl/2026/11/sebastian-mendoza-regresa-a-chile-con-dos-conciertos-fechas-ciudades-y-donde-comprar-entradas-para-el-tour-legado/"
+     "nombre": "Portal Chile Jazz Fest",
+     "url": "https://chilejazz.cl/conciertos.html"
     }
    ],
-   "desde_imagen": true,
+   "desde_imagen": false,
    "confianza": "alta",
-   "origen": "ia",
-   "id": "1759b9e73a",
-   "agregado": "2026-11-26",
-   "actualizado": "2026-11-26",
-   "genero": "cumbia"
+   "origen": "datos-estructurados",
+   "id": "e0564581ac",
+   "agregado": "2026-11-27",
+   "actualizado": "2026-11-27",
+   "genero": "electronica"
   },
   {
    "titulo": "Undertale Sinfónico",
@@ -10527,7 +10904,7 @@
    "origen": "ia",
    "id": "e672468c07",
    "agregado": "2026-11-18",
-   "actualizado": "2026-11-22",
+   "actualizado": "2026-11-27",
    "genero": "jazz"
   },
   {
@@ -12119,6 +12496,36 @@
    "genero": "folclor"
   },
   {
+   "titulo": "Feria de Vinos Descorchados",
+   "categoria": "museos",
+   "fecha_inicio": "2026-12-03",
+   "fecha_fin": "2026-12-04",
+   "hora": "19:00",
+   "horario": "Jueves y viernes de 19:00 a 22:30 hrs",
+   "lugar": "Mandarin Oriental",
+   "direccion": "Av. Presidente Kennedy 4601",
+   "comuna": "Las Condes",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "$125.000 por día",
+   "descripcion": "Edición 18 de la feria de vinos de Patricio Tapia con más de 60 viñas y etiquetas mejor evaluadas de Descorchados 2026.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.ex-ante.cl/cultura/panoramas-diciembre-2026-santiago/",
+   "fuentes": [
+    {
+     "nombre": "Ex-ante",
+     "url": "https://www.ex-ante.cl/cultura/panoramas-diciembre-2026-santiago/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "3a140a232f",
+   "agregado": "2026-11-27",
+   "actualizado": "2026-11-27"
+  },
+  {
    "titulo": "La Tarde Urbana",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-03",
@@ -12212,7 +12619,7 @@
    "origen": "datos-estructurados",
    "id": "0382da7e3d",
    "agregado": "2026-11-18",
-   "actualizado": "2026-11-22",
+   "actualizado": "2026-11-27",
    "genero": "jazz"
   },
   {
@@ -12476,6 +12883,10 @@
     {
      "nombre": "La Cuarta",
      "url": "https://www.lacuarta.com/espectaculos/noticia/babymetal-en-chile-aun-quedan-entradas-para-su-concierto-en-el-santander-arena/"
+    },
+    {
+     "nombre": "concerts50.com",
+     "url": "https://concerts50.com/es/venues/chile/santiago/movistar-arena"
     }
    ],
    "desde_imagen": true,
@@ -12483,7 +12894,7 @@
    "origen": "ticketera",
    "id": "f840300077",
    "agregado": "2026-11-06",
-   "actualizado": "2026-11-24",
+   "actualizado": "2026-11-27",
    "genero": "metal"
   },
   {
@@ -13132,6 +13543,37 @@
    "genero": "jazz"
   },
   {
+   "titulo": "Chelo y Jazz Trío",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-04",
+   "fecha_fin": null,
+   "hora": "19:30",
+   "horario": null,
+   "lugar": "Museo Histórico y Casa de la Cultura",
+   "direccion": null,
+   "comuna": "Villa Alegre",
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Chelo y Jazz Trío en Museo Histórico y Casa de la Cultura, Villa Alegre. Violonchelo y jazz desde el Maule · entrada liberada",
+   "imagen": "https://chilejazz.cl/assets/images/logo-redes-487-x-487-px-2.png",
+   "fotos": null,
+   "url": "https://chilejazz.cl/conciertos.html",
+   "fuentes": [
+    {
+     "nombre": "Portal Chile Jazz Fest",
+     "url": "https://chilejazz.cl/conciertos.html"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "datos-estructurados",
+   "id": "8ee9f970a6",
+   "agregado": "2026-11-27",
+   "actualizado": "2026-11-27",
+   "genero": "jazz"
+  },
+  {
    "titulo": "Concierto Especial | Entropía Rítmica",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-04",
@@ -13371,7 +13813,7 @@
    "horario": null,
    "lugar": "Cafetería Popular",
    "direccion": "Maipú 363, 8350466 Santiago, Región Metropolitana",
-   "comuna": null,
+   "comuna": "Santiago",
    "ciudad": null,
    "region": null,
    "precio": null,
@@ -13383,6 +13825,10 @@
     {
      "nombre": "Keai",
      "url": "https://keai.cl/evento/nelson-laplagne-organsm-trio-en-cafeteria-popular-21961"
+    },
+    {
+     "nombre": "Portal Chile Jazz Fest",
+     "url": "https://chilejazz.cl/conciertos.html"
     }
    ],
    "desde_imagen": false,
@@ -13630,6 +14076,10 @@
     {
      "nombre": "En Cancha",
      "url": "https://www.encancha.cl/enlahora/panoramas/2026/11/19/panoramas-para-diciembre-2026-los-10-conciertos-que-se-tomaran-santiago-antes-de-fin-de-ano-326387.html"
+    },
+    {
+     "nombre": "El Dínamo | Noticias de Chile y el mundo",
+     "url": "https://www.eldinamo.cl/entretencion/panoramas/2026/11/26/no-importa-el-calor-fauna-primavera-gorillaz-filarmonica-al-parque-y-dos-exposiciones-imperdibles/"
     }
    ],
    "desde_imagen": false,
@@ -13637,7 +14087,7 @@
    "origen": "ia",
    "id": "607b690004",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-24",
+   "actualizado": "2026-11-27",
    "genero": "indie"
   },
   {
@@ -13723,6 +14173,10 @@
     {
      "nombre": "En Cancha",
      "url": "https://www.encancha.cl/enlahora/panoramas/2026/11/19/panoramas-para-diciembre-2026-los-10-conciertos-que-se-tomaran-santiago-antes-de-fin-de-ano-326387.html"
+    },
+    {
+     "nombre": "concerts50.com",
+     "url": "https://concerts50.com/es/venues/chile/santiago/movistar-arena"
     }
    ],
    "desde_imagen": false,
@@ -13730,7 +14184,7 @@
    "origen": "ia",
    "id": "f21b5cd6a0",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-26",
+   "actualizado": "2026-11-27",
    "genero": "reggaeton"
   },
   {
@@ -16152,6 +16606,36 @@
    "actualizado": "2026-11-26"
   },
   {
+   "titulo": "Otakupeluzza",
+   "categoria": "anime",
+   "fecha_inicio": "2026-12-06",
+   "fecha_fin": null,
+   "hora": "11:30",
+   "horario": "11:30–19:30 horas",
+   "lugar": "Centro Cultural de Puente Alto",
+   "direccion": "Eyzaguirre 02115",
+   "comuna": "Puente Alto",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Gratis",
+   "descripcion": "Encuentro de anime, manga, cosplay y cultura asiática con concursos, zona gamer, K-pop y música en vivo.",
+   "imagen": "https://www.lanacion.cl/wp-content/uploads/2026/11/png-24.png",
+   "fotos": null,
+   "url": "https://www.lanacion.cl/que-hacer-en-santiago-descubre-los-mejores-panoramas-eventos-y-actividades-para-disfrutar-durante-diciembre/",
+   "fuentes": [
+    {
+     "nombre": "La Nación",
+     "url": "https://www.lanacion.cl/que-hacer-en-santiago-descubre-los-mejores-panoramas-eventos-y-actividades-para-disfrutar-durante-diciembre/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "6c55e486b4",
+   "agregado": "2026-11-27",
+   "actualizado": "2026-11-27"
+  },
+  {
    "titulo": "Mega Feria Friki",
    "categoria": "anime",
    "fecha_inicio": "2026-12-06",
@@ -16332,7 +16816,7 @@
    "origen": "datos-estructurados",
    "id": "890d86db3b",
    "agregado": "2026-11-22",
-   "actualizado": "2026-11-22",
+   "actualizado": "2026-11-27",
    "genero": "jazz"
   },
   {
@@ -16917,6 +17401,47 @@
    "genero": "clasica"
   },
   {
+   "titulo": "Deep Purple",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-08",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "lugar": "Santander Arena - Santiago Centro",
+   "direccion": "Beaucheff 1204",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": null,
+   "descripcion": "Concierto de la legendaria banda de rock duro y metal clásico Deep Purple en Santiago.",
+   "imagen": "https://static.ptocdn.net/images/eventos/rec112_calugalistado.jpg",
+   "url": "https://www.puntoticket.com/deep-purple",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/deep-purple"
+    },
+    {
+     "nombre": "puntoticket.com",
+     "url": "https://www.puntoticket.com/musica"
+    },
+    {
+     "nombre": "EN CONCIERTO",
+     "url": "https://enconcierto.cl/calendario"
+    },
+    {
+     "nombre": "concerts50.com",
+     "url": "https://concerts50.com/es/venues/chile/santiago/movistar-arena"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "30f5e90162",
+   "agregado": "2026-11-06",
+   "actualizado": "2026-11-27",
+   "genero": "rock"
+  },
+  {
    "titulo": "Candelabro - en teatro Caupolicán 2026",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-08",
@@ -16952,43 +17477,6 @@
    "agregado": "2026-11-06",
    "actualizado": "2026-11-22",
    "genero": "metal"
-  },
-  {
-   "titulo": "Deep Purple",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-12-08",
-   "fecha_fin": null,
-   "hora": null,
-   "lugar": "Santander Arena - Santiago Centro",
-   "direccion": "Beaucheff 1204",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": null,
-   "descripcion": "Concierto de la legendaria banda de rock duro y metal clásico Deep Purple en Santiago.",
-   "imagen": "https://static.ptocdn.net/images/eventos/rec112_calugalistado.jpg",
-   "url": "https://www.puntoticket.com/deep-purple",
-   "fuentes": [
-    {
-     "nombre": "PuntoTicket",
-     "url": "https://www.puntoticket.com/deep-purple"
-    },
-    {
-     "nombre": "puntoticket.com",
-     "url": "https://www.puntoticket.com/musica"
-    },
-    {
-     "nombre": "EN CONCIERTO",
-     "url": "https://enconcierto.cl/calendario"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ticketera",
-   "id": "30f5e90162",
-   "agregado": "2026-11-06",
-   "actualizado": "2026-11-23",
-   "genero": "rock"
   },
   {
    "titulo": "Slaughter to Prevail",
@@ -18580,6 +19068,37 @@
    "actualizado": "2026-11-27"
   },
   {
+   "titulo": "Franco el Gorila - La Última Generación Old School del Año",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-11",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Arena Hipódromo - Independencia",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Concierto de reggaetón y música urbana con los clásicos de Franco El Gorila en vivo.",
+   "imagen": "https://static.ptocdn.net/event-resources/images/NEX008_calugalistado.webp?v=1795808329",
+   "fotos": null,
+   "url": "https://www.puntoticket.com/evento/franco-el-gorila-generacion-old-school",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/evento/franco-el-gorila-generacion-old-school"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "8a5857ae18",
+   "agregado": "2026-11-27",
+   "actualizado": "2026-11-27",
+   "genero": "reggaeton"
+  },
+  {
    "titulo": "Illya Kuryaki & The Valderramas",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-11",
@@ -19057,7 +19576,7 @@
    "origen": "datos-estructurados",
    "id": "77f29f7f37",
    "agregado": "2026-11-22",
-   "actualizado": "2026-11-22",
+   "actualizado": "2026-11-27",
    "genero": "jazz"
   },
   {
@@ -19133,6 +19652,41 @@
    "agregado": "2026-11-18",
    "actualizado": "2026-11-18",
    "genero": "trap"
+  },
+  {
+   "titulo": "Concierto lírico: Asmik Grigorian",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-12",
+   "fecha_fin": null,
+   "hora": "19:00",
+   "horario": null,
+   "lugar": "Teatro Municipal de Santiago",
+   "direccion": "Agustinas 794",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Desde $12.000",
+   "descripcion": "Concierto excepcional de la aclamada soprano lituana Asmik Grigorian en el Teatro Municipal.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://municipal.cl/",
+   "fuentes": [
+    {
+     "nombre": "Teatro Municipal de Santiago",
+     "url": "https://municipal.cl/"
+    },
+    {
+     "nombre": "Ex-ante",
+     "url": "https://www.ex-ante.cl/cultura/panoramas-diciembre-2026-santiago/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "d08ed80828",
+   "agregado": "2026-11-10",
+   "actualizado": "2026-11-27",
+   "genero": "clasica"
   },
   {
    "titulo": "Jah Love - Concierto Musical Cristiano",
@@ -19720,37 +20274,6 @@
    "actualizado": "2026-11-22"
   },
   {
-   "titulo": "Concierto lírico: Asmik Grigorian",
-   "categoria": "conciertos",
-   "fecha_inicio": "2026-12-12",
-   "fecha_fin": null,
-   "hora": null,
-   "horario": null,
-   "lugar": "Teatro Municipal de Santiago",
-   "direccion": "Agustinas 794",
-   "comuna": "Santiago",
-   "ciudad": "Santiago",
-   "region": "Región Metropolitana",
-   "precio": "Desde $12.000",
-   "descripcion": "Concierto excepcional de la aclamada soprano lituana Asmik Grigorian en el Teatro Municipal.",
-   "imagen": null,
-   "fotos": null,
-   "url": "https://municipal.cl/",
-   "fuentes": [
-    {
-     "nombre": "Teatro Municipal de Santiago",
-     "url": "https://municipal.cl/"
-    }
-   ],
-   "desde_imagen": false,
-   "confianza": "alta",
-   "origen": "ia",
-   "id": "d08ed80828",
-   "agregado": "2026-11-10",
-   "actualizado": "2026-11-25",
-   "genero": "clasica"
-  },
-  {
    "titulo": "Danay Suarez",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-12",
@@ -20025,6 +20548,10 @@
     {
      "nombre": "Panoramas",
      "url": "https://www.panoramas.app/evento/santiago-rocks-2026"
+    },
+    {
+     "nombre": "festivalear.com",
+     "url": "https://festivalear.com/cl/es/eventos/festival-santiago-rocks"
     }
    ],
    "desde_imagen": false,
@@ -20032,7 +20559,7 @@
    "origen": "ia",
    "id": "464635ae28",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-25",
+   "actualizado": "2026-11-27",
    "genero": "rock"
   },
   {
@@ -20230,6 +20757,10 @@
     {
      "nombre": "Iguana Producciones",
      "url": "https://iguanalive.com/cl/proximos-shows.html"
+    },
+    {
+     "nombre": "concerts50.com",
+     "url": "https://concerts50.com/es/venues/chile/santiago/movistar-arena"
     }
    ],
    "desde_imagen": false,
@@ -20237,7 +20768,7 @@
    "origen": "ia",
    "id": "3ab12f2d38",
    "agregado": "2026-11-13",
-   "actualizado": "2026-11-22",
+   "actualizado": "2026-11-27",
    "genero": "reggaeton"
   },
   {
@@ -20886,6 +21417,36 @@
    "agregado": "2026-11-27",
    "actualizado": "2026-11-27",
    "genero": "pop"
+  },
+  {
+   "titulo": "Yerko Puchento - El Metáfora",
+   "categoria": "standup",
+   "fecha_inicio": "2026-12-16",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Casa Comedia - Providencia",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Show de humor y comedia en vivo del reconocido personaje de Daniel Alcaíno.",
+   "imagen": "https://static.ptocdn.net/event-resources/images/CCM015_calugalistado.webp?v=1795806015",
+   "fotos": null,
+   "url": "https://www.puntoticket.com/evento/el-metafora",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/evento/el-metafora"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "89f48ddecb",
+   "agregado": "2026-11-27",
+   "actualizado": "2026-11-27"
   },
   {
    "titulo": "Orquesta Sinfónica ULS · ENSAYO GENERAL ABIERTO A PÚBLICO · CONCIERTO FIN DE AÑO",
@@ -21790,7 +22351,7 @@
    "hora": "21:00",
    "horario": null,
    "lugar": "Sala Ángel Piana Temuco",
-   "direccion": null,
+   "direccion": "General Carrera 690",
    "comuna": "Temuco",
    "ciudad": null,
    "region": null,
@@ -21803,6 +22364,10 @@
     {
      "nombre": "VAMOH!",
      "url": "https://vamoh.cl/events/angel-piana-jazz-night-temuco-zu0dt/"
+    },
+    {
+     "nombre": "Portal Chile Jazz Fest",
+     "url": "https://chilejazz.cl/conciertos.html"
     }
    ],
    "desde_imagen": false,
@@ -21810,7 +22375,7 @@
    "origen": "datos-estructurados",
    "id": "7894d11145",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-14",
+   "actualizado": "2026-11-27",
    "genero": "jazz"
   },
   {
@@ -23641,6 +24206,37 @@
    "genero": "electronica"
   },
   {
+   "titulo": "Disco Night Fever 2027",
+   "categoria": "conciertos",
+   "fecha_inicio": "2026-12-31",
+   "fecha_fin": null,
+   "hora": "20:00",
+   "horario": "Jueves 31 dic, de 20:00 a 04:00",
+   "lugar": "Hotel Sheraton Santiago",
+   "direccion": null,
+   "comuna": "Providencia",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "$399.000 por persona",
+   "descripcion": "Fiesta de año nuevo con temática setentera, bandas en vivo como Los Joseph Band y The Classic Band, cena buffet y barra.",
+   "imagen": null,
+   "fotos": null,
+   "url": "https://www.ex-ante.cl/cultura/panoramas-diciembre-2026-santiago/",
+   "fuentes": [
+    {
+     "nombre": "Ex-ante",
+     "url": "https://www.ex-ante.cl/cultura/panoramas-diciembre-2026-santiago/"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ia",
+   "id": "06942f7533",
+   "agregado": "2026-11-27",
+   "actualizado": "2026-11-27",
+   "genero": "otros"
+  },
+  {
    "titulo": "Año Nuevo 2027: Kidd Voodoo + La Combo Tortuga",
    "categoria": "conciertos",
    "fecha_inicio": "2026-12-31",
@@ -24200,7 +24796,7 @@
    "origen": "datos-estructurados",
    "id": "dfc7d55b52",
    "agregado": "2026-11-22",
-   "actualizado": "2026-11-22",
+   "actualizado": "2026-11-27",
    "genero": "jazz"
   },
   {
@@ -28727,10 +29323,10 @@
    "categoria": "conciertos",
    "fecha_inicio": "2027-03-31",
    "fecha_fin": null,
-   "hora": null,
+   "hora": "21:00",
    "horario": null,
    "lugar": "Santander Arena",
-   "direccion": null,
+   "direccion": "Tupper 1941",
    "comuna": "Santiago",
    "ciudad": "Santiago",
    "region": "Región Metropolitana",
@@ -28747,6 +29343,10 @@
     {
      "nombre": "Cooperativa.cl",
      "url": "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-en-chile-2027/2026-11-09/124529.html"
+    },
+    {
+     "nombre": "concerts50.com",
+     "url": "https://concerts50.com/es/venues/chile/santiago/movistar-arena"
     }
    ],
    "desde_imagen": false,
@@ -28754,7 +29354,7 @@
    "origen": "ia",
    "id": "52c8113b0b",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-22",
+   "actualizado": "2026-11-27",
    "genero": "pop"
   },
   {
@@ -28862,7 +29462,7 @@
    "origen": "ticketera",
    "id": "2597176442",
    "agregado": "2026-11-17",
-   "actualizado": "2026-11-25",
+   "actualizado": "2026-11-27",
    "genero": "jazz"
   },
   {
@@ -28898,10 +29498,10 @@
    "categoria": "conciertos",
    "fecha_inicio": "2027-04-03",
    "fecha_fin": null,
-   "hora": null,
+   "hora": "21:00",
    "horario": null,
    "lugar": "Santander Arena",
-   "direccion": null,
+   "direccion": "Tupper 1941",
    "comuna": "Santiago",
    "ciudad": "Santiago",
    "region": "Región Metropolitana",
@@ -28914,6 +29514,10 @@
     {
      "nombre": "songkick.com",
      "url": "https://www.songkick.com/es/metro-areas/27525-chile-santiago/genre/reggae"
+    },
+    {
+     "nombre": "concerts50.com",
+     "url": "https://concerts50.com/es/venues/chile/santiago/movistar-arena"
     }
    ],
    "desde_imagen": false,
@@ -28921,7 +29525,7 @@
    "origen": "ia",
    "id": "e177bbf791",
    "agregado": "2026-11-14",
-   "actualizado": "2026-11-14",
+   "actualizado": "2026-11-27",
    "genero": "electronica"
   },
   {
@@ -29903,6 +30507,37 @@
    "actualizado": "2026-11-15"
   },
   {
+   "titulo": "Marc Martel and Starship",
+   "categoria": "conciertos",
+   "fecha_inicio": "2027-05-15",
+   "fecha_fin": null,
+   "hora": null,
+   "horario": null,
+   "lugar": "Santander Arena - Santiago Centro",
+   "direccion": null,
+   "comuna": null,
+   "ciudad": null,
+   "region": null,
+   "precio": null,
+   "descripcion": "Concierto de rock en vivo con la presentación de Marc Martel y la banda Starship.",
+   "imagen": "https://static.ptocdn.net/images/eventos/ft0107_calugalistado.jpg",
+   "fotos": null,
+   "url": "https://www.puntoticket.com/marc-martel-starship",
+   "fuentes": [
+    {
+     "nombre": "PuntoTicket",
+     "url": "https://www.puntoticket.com/marc-martel-starship"
+    }
+   ],
+   "desde_imagen": false,
+   "confianza": "alta",
+   "origen": "ticketera",
+   "id": "23eb60126f",
+   "agregado": "2026-11-27",
+   "actualizado": "2026-11-27",
+   "genero": "rock"
+  },
+  {
    "titulo": "Twilight in Concert",
    "categoria": "conciertos",
    "fecha_inicio": "2027-05-15",
@@ -30298,11 +30933,11 @@
    "hora": null,
    "horario": null,
    "lugar": "Teatro Caupolicán - Santiago Centro",
-   "direccion": null,
-   "comuna": null,
-   "ciudad": null,
-   "region": null,
-   "precio": null,
+   "direccion": "San Diego 850",
+   "comuna": "Santiago",
+   "ciudad": "Santiago",
+   "region": "Región Metropolitana",
+   "precio": "Cancha: $52.000, Platea: $45.000, Palcos: $65.000",
    "descripcion": "Concierto de la destacada banda neerlandesa de metal sinfónico Within Temptation.",
    "imagen": "https://static.ptocdn.net/images/eventos/chj015_calugalistado.jpg",
    "fotos": null,
@@ -30311,6 +30946,10 @@
     {
      "nombre": "PuntoTicket",
      "url": "https://www.puntoticket.com/evento/within-temptation-junio-2027"
+    },
+    {
+     "nombre": "Futuro Chile",
+     "url": "https://www.futuro.cl/2026/11/within-temptation-vuelve-a-chile-con-nuevo-disco-y-una-gira-que-promete-repasar-sus-grandes-himnos-del-metal-sinfonico/"
     }
    ],
    "desde_imagen": false,
